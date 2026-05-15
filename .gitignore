@@ -16,7 +16,6 @@ build/
 # Gradle Wrapper
 !gradlew
 !gradlew.bat
-!gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
 
 # JVM crash logs
@@ -91,6 +90,7 @@ desktop.ini
 
 # 保留本地依赖与 Gradle Wrapper
 !libs/*.jar
+!gradle/wrapper/gradle-wrapper.jar
 
 # =========================
 # Environment files
