@@ -1,7 +1,6 @@
 # =========================
 # IntelliJ IDEA
 # =========================
-out/
 .idea/
 .idea_modules/
 *.iml
@@ -14,8 +13,11 @@ out/
 build/
 **/build/
 
-# Gradle wrapper binaries
+# Gradle Wrapper
+!gradlew
+!gradlew.bat
 !gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
 # JVM crash logs
 hs_err_pid*
@@ -30,11 +32,13 @@ logs/
 crash-reports/
 saves/
 screenshots/
-resourcepacks/
-shaderpacks/
 
-# Local runtime/config cache
-config/
+# 可按需取消注释
+# resourcepacks/
+# shaderpacks/
+# config/
+
+# Local runtime/cache
 local/
 kubejs/exported/
 
@@ -84,8 +88,9 @@ desktop.ini
 # Packaging
 # =========================
 *.jar
+
+# 保留本地依赖与 Gradle Wrapper
 !libs/*.jar
-libs/*.jar
 
 # =========================
 # Environment files
