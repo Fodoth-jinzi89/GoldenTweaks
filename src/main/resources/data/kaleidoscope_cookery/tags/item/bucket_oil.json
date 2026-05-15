@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "createaddition:seed_oil_bucket",
+      "required": false
+    },
+	{
+      "id": "createdieselgenerators:crude_oil_bucket",
+      "required": false
+    },
+	{
+      "id": "createdieselgenerators:biodiesel_bucket",
+      "required": false
+    },
+	{
+      "id": "createdieselgenerators:crude_oil_bucket",
+      "required": false
+    },
+	{
+      "id": "createdieselgenerators:diesel_bucket",
+      "required": false
+    },
+	{
+      "id": "createdieselgenerators:gasoline_bucket",
+      "required": false
+    },
+	{
+      "id": "createdieselgenerators:plant_oil_bucket",
+      "required": false
+    },
+	{
+      "id": "createpropulsion:turpentine_bucket",
+      "required": false
+    },
+	{
+      "id": "createpropulsion:turpentine_bucket",
+      "required": false
+    }
+  ]
+}

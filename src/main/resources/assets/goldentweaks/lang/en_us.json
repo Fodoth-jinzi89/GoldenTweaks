@@ -1,0 +1,77 @@
+{
+  "config.goldentweaks.title": "Golden Tweaks",
+
+  "config.goldentweaks.pickup": "Pickup Interaction",
+  "config.goldentweaks.pickup.tooltip": "Settings related to item pickup interaction.",
+
+  "config.goldentweaks.pickup.base_pickup_reach": "Base Pickup Reach",
+  "config.goldentweaks.pickup.base_pickup_reach.tooltip": "Base item pickup reach distance.",
+
+  "config.goldentweaks.pickup.extended_reach_bonus": "Extended Reach Bonus",
+  "config.goldentweaks.pickup.extended_reach_bonus.tooltip": "Additional pickup reach for creative and spectator players.",
+
+  "config.goldentweaks.pickup.search_box_inflate": "Search Box Inflate",
+  "config.goldentweaks.pickup.search_box_inflate.tooltip": "Additional expansion size for the pickup search box.",
+
+  "config.goldentweaks.pickup.trace_bias": "Trace Bias",
+  "config.goldentweaks.pickup.trace_bias.tooltip": "Entity tracing bias used during pickup detection.",
+
+  "config.goldentweaks.pickup.max_targets": "Maximum Targets",
+  "config.goldentweaks.pickup.max_targets.tooltip": "Maximum number of item entities processed per click.",
+
+  "config.goldentweaks.pickup.allow_through_walls": "Allow Through Walls",
+  "config.goldentweaks.pickup.allow_through_walls.tooltip": "Allows item pickup through solid blocks.",
+
+  "config.goldentweaks.pickup.allow_sneak_pickup": "Allow Sneak Pickup",
+  "config.goldentweaks.pickup.allow_sneak_pickup.tooltip": "Allows item pickup while sneaking.",
+
+  "config.goldentweaks.pickup.block_use": "Block Use",
+  "config.goldentweaks.pickup.block_use.tooltip": "Prevents original right click behavior when using pickup interaction.",
+
+  "config.goldentweaks.pickup.allow_continuous_pickup": "Allow Continuous Pickup",
+  "config.goldentweaks.pickup.allow_continuous_pickup.tooltip": "Allows holding right click to continuously pick up nearby items.",
+
+  "config.goldentweaks.pickup.continuous_pickup_interval": "Continuous Pickup Interval",
+  "config.goldentweaks.pickup.continuous_pickup_interval.tooltip": "Tick interval between continuous pickup scans while holding right click.",
+
+  "config.goldentweaks.category.building": "Building & Rendering",
+  "config.goldentweaks.dsa": "DSA Mode",
+  "config.goldentweaks.dsa.tooltip": "Direct State Access rendering mode.",
+  "config.goldentweaks.dsa.all": "All",
+  "config.goldentweaks.dsa.vbo": "VBO",
+  "config.goldentweaks.dsa.fbo": "FBO",
+  "config.goldentweaks.dsa.off": "Off",
+  "config.goldentweaks.dsa_variant": "DSA Variant",
+  "config.goldentweaks.dsa_variant.tooltip": "Which DSA extension to use.",
+  "config.goldentweaks.dsa_variant.core": "Core",
+  "config.goldentweaks.dsa_variant.arb": "ARB",
+  "config.goldentweaks.vertex_format_cache": "Vertex Format Cache",
+  "config.goldentweaks.vertex_format_cache.tooltip": "Cache vertex formats to reduce recompilation.",
+  "config.goldentweaks.render_cycle_pool_size": "Render Cycle Pool Size",
+  "config.goldentweaks.render_cycle_pool_size.tooltip": "Size of the buffer pool for render cycles.",
+
+  "config.goldentweaks.category.misc": "Miscellaneous",
+  "config.goldentweaks.renderbuffer_depth": "Renderbuffer Depth",
+  "config.goldentweaks.renderbuffer_depth.tooltip": "Enable depth attachment for render buffers.",
+  "config.goldentweaks.fast_math": "Fast Math",
+  "config.goldentweaks.fast_math.tooltip": "Use faster but less accurate math functions.",
+  "config.goldentweaks.tex_barrier": "Texture Barrier",
+  "config.goldentweaks.tex_barrier.tooltip": "Insert texture barriers when needed.",
+  "config.goldentweaks.batch_text_rendering": "Batch Text Rendering",
+  "config.goldentweaks.batch_text_rendering.tooltip": "Batch text draw calls for performance.",
+  "config.goldentweaks.smart_culling": "Smart Culling",
+  "config.goldentweaks.smart_culling.tooltip": "Culling strategy for invisible geometry.",
+  "config.goldentweaks.smart_culling.off": "Off",
+  "config.goldentweaks.smart_culling.base": "Base",
+  "config.goldentweaks.smart_culling.simd": "SIMD",
+
+  "config.goldentweaks.category.balance": "Balance",
+  "config.goldentweaks.balance": "Balance",
+
+  "config.goldentweaks.balance.evolved_mekanism_solar_multiplier": "Evolved Mekanism Solar Multiplier",
+  "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.tooltip": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output."
+
+
+
+
+}

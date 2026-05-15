@@ -1,0 +1,94 @@
+# =========================
+# IntelliJ IDEA
+# =========================
+out/
+.idea/
+.idea_modules/
+*.iml
+out/
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+**/build/
+
+# Gradle wrapper binaries
+!gradle/wrapper/gradle-wrapper.jar
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# =========================
+# Minecraft / NeoForge
+# =========================
+run/
+runs/
+logs/
+crash-reports/
+saves/
+screenshots/
+resourcepacks/
+shaderpacks/
+
+# Local runtime/config cache
+config/
+local/
+kubejs/exported/
+
+# Generated game data
+generated/
+src/generated/
+
+# =========================
+# Forge / NeoForge cache
+# =========================
+.minecraftforge/
+libraries/
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# =========================
+# Java
+# =========================
+*.class
+
+# =========================
+# Native / LWJGL dumps
+# =========================
+*.hprof
+*.lck
+
+# =========================
+# Packaging
+# =========================
+*.jar
+!libs/*.jar
+libs/*.jar
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*

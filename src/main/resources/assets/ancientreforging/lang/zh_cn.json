@@ -1,0 +1,173 @@
+{
+  "block.ancientreforging.ancient_reforging_table": "远古重铸台",
+  "block.ancientreforging.ancient_reforging_table.desc": "使用重生印记与稀有材料重铸物品",
+
+  "item.ancientreforging.ancient_material": "无尽显化",
+  "rarity.ancientreforging:ancient": "远古",
+
+  "affix.ancientreforging:armor/attribute/blessed": "神佑",
+  "affix.ancientreforging:armor/attribute/blessed.suffix": "生命的",
+
+  "affix.ancientreforging:armor/attribute/windswept": "风袭",
+  "affix.ancientreforging:armor/attribute/windswept.suffix": "激流的",
+
+  "affix.ancientreforging:armor/attribute/ironforged": "铁铸",
+  "affix.ancientreforging:armor/attribute/ironforged.suffix": "钢铁的",
+
+  "affix.ancientreforging:melee/attribute/violent": "暴烈",
+  "affix.ancientreforging:melee/attribute/violent.suffix": "屠戮的",
+
+  "affix.ancientreforging:ranged/attribute/windswept": "风袭",
+  "affix.ancientreforging:ranged/attribute/windswept.suffix": "疾风的",
+
+  "affix.ancientreforging:melee/attribute/graceful": "优雅",
+  "affix.ancientreforging:melee/attribute/graceful.suffix": "绅士的",
+
+  "affix.ancientreforging:melee/attribute/forceful": "蛮横",
+  "affix.ancientreforging:melee/attribute/forceful.suffix": "蛮牛的",
+
+  "affix.ancientreforging:armor/attribute/aquatic": "深海",
+  "affix.ancientreforging:armor/attribute/aquatic.suffix": "海渊的",
+
+  "affix.ancientreforging:armor/attribute/gravitational": "引力",
+  "affix.ancientreforging:armor/attribute/gravitational.suffix": "重力的",
+
+  "affix.ancientreforging:breaker/attribute/lengthy": "延展",
+  "affix.ancientreforging:breaker/attribute/lengthy.suffix": "手长的",
+
+  "affix.ancientreforging:breaker/attribute/experienced": "博学",
+  "affix.ancientreforging:breaker/attribute/experienced.suffix": "学者的",
+
+  "affix.ancientreforging:melee/attribute/elongated": "长锋",
+  "affix.ancientreforging:melee/attribute/elongated.suffix": "远战的",
+
+  "affix.ancientreforging:ranged/attribute/agile": "迅捷",
+  "affix.ancientreforging:ranged/attribute/agile.suffix": "灵巧的",
+
+  "affix.ancientreforging:armor/attribute/steel_touched": "钢赐",
+  "affix.ancientreforging:armor/attribute/steel_touched.suffix": "守卫者的",
+
+  "affix.ancientreforging:armor/attribute/stalwart": "坚毅",
+  "affix.ancientreforging:armor/attribute/stalwart.suffix": "顽强的",
+
+  "affix.ancientreforging:armor/attribute/elastic": "灵跃",
+  "affix.ancientreforging:armor/attribute/elastic.suffix": "攀行的",
+
+  "affix.ancientreforging:armor/attribute/fortunate": "鸿运",
+  "affix.ancientreforging:armor/attribute/fortunate.suffix": "四叶草的",
+
+  "affix.ancientreforging:armor/attribute/winged": "羽翼",
+  "affix.ancientreforging:armor/attribute/winged.suffix": "苍穹的",
+
+  "affix.ancientreforging:melee/attribute/intricate": "精妙",
+  "affix.ancientreforging:melee/attribute/intricate.suffix": "洞察的",
+
+  "affix.ancientreforging:melee/attribute/lacerating": "裂创",
+  "affix.ancientreforging:melee/attribute/lacerating.suffix": "破伤的",
+
+  "affix.ancientreforging:melee/attribute/glacial": "霜寒",
+  "affix.ancientreforging:melee/attribute/glacial.suffix": "冰原的",
+
+  "affix.ancientreforging:melee/attribute/infernal": "炼狱",
+  "affix.ancientreforging:melee/attribute/infernal.suffix": "试炼的",
+
+  "affix.ancientreforging:melee/attribute/vampiric": "血噬",
+  "affix.ancientreforging:melee/attribute/vampiric.suffix": "放血的",
+
+  "affix.ancientreforging:melee/attribute/piercing": "穿刺",
+  "affix.ancientreforging:melee/attribute/piercing.suffix": "破灭的",
+
+  "affix.ancientreforging:weapon/attribute/shredding": "撕裂",
+  "affix.ancientreforging:weapon/attribute/shredding.suffix": "风暴的",
+
+  "affix.ancientreforging:melee/attribute/giant_slaying": "巨人猎杀",
+  "affix.ancientreforging:melee/attribute/giant_slaying.suffix": "巨像的",
+
+  "affix.ancientreforging:melee/attribute/berserking": "狂战",
+  "affix.ancientreforging:melee/attribute/berserking.suffix": "狂战的",
+
+  "affix.ancientreforging:breaker/attribute/destructive": "毁灭",
+  "affix.ancientreforging:breaker/attribute/destructive.suffix": "破灭的",
+
+  "affix.ancientreforging:ranged/attribute/elven": "精灵",
+  "affix.ancientreforging:ranged/attribute/elven.suffix": "精灵的",
+
+  "affix.ancientreforging:ranged/attribute/streamlined": "流线",
+  "affix.ancientreforging:ranged/attribute/streamlined.suffix": "狙击的",
+
+  "affix.ancientreforging:melee/mob_effect/elusive": "幻踪",
+  "affix.ancientreforging:melee/mob_effect/elusive.suffix": "闪避的",
+
+  "affix.ancientreforging:breaker/mob_effect/swift": "迅击",
+  "affix.ancientreforging:breaker/mob_effect/swift.suffix": "粉碎的",
+
+  "affix.ancientreforging:breaker/mob_effect/spelunkers": "洞窟行者",
+  "affix.ancientreforging:breaker/mob_effect/spelunkers.suffix": "探穴的",
+
+  "affix.ancientreforging:ranged/mob_effect/ensnaring": "缠猎",
+  "affix.ancientreforging:ranged/mob_effect/ensnaring.suffix": "猎食的",
+
+  "affix.ancientreforging:shield/mob_effect/venomous": "毒牙",
+  "affix.ancientreforging:shield/mob_effect/venomous.suffix": "蛇影的",
+
+  "affix.ancientreforging:ranged/mob_effect/fleeting": "疾影",
+  "affix.ancientreforging:ranged/mob_effect/fleeting.suffix": "游侠的",
+
+  "affix.ancientreforging:melee/mob_effect/weakening": "虚弱",
+  "affix.ancientreforging:melee/mob_effect/weakening.suffix": "衰败的",
+
+  "affix.ancientreforging:armor/mob_effect/bolstering": "振奋",
+  "affix.ancientreforging:armor/mob_effect/bolstering.suffix": "坚韧的",
+
+  "affix.ancientreforging:armor/mob_effect/revitalizing": "复苏",
+  "affix.ancientreforging:armor/mob_effect/revitalizing.suffix": "泉源的",
+
+  "affix.ancientreforging:armor/mob_effect/nimble": "灵巧",
+  "affix.ancientreforging:armor/mob_effect/nimble.suffix": "狐影的",
+
+  "affix.ancientreforging:armor/mob_effect/blinding": "致盲",
+  "affix.ancientreforging:armor/mob_effect/blinding.suffix": "黑暗的",
+
+  "affix.ancientreforging:ranged/mob_effect/shulkers": "潜影侵染",
+  "affix.ancientreforging:ranged/mob_effect/shulkers.suffix": "漂浮的",
+
+  "affix.ancientreforging:shield/mob_effect/withering": "凋零",
+  "affix.ancientreforging:shield/mob_effect/withering.suffix": "凋零的",
+
+  "affix.ancientreforging:ranged/spectral": "幽影",
+  "affix.ancientreforging:ranged/spectral.suffix": "孤魂的",
+  "affix.ancientreforging:ranged/spectral.desc": "你有 %s%% 概率射出第二支箭矢",
+
+  "affix.ancientreforging:ranged/magical": "奥术",
+  "affix.ancientreforging:ranged/magical.suffix": "秘法的",
+  "affix.ancientreforging:ranged/magical.desc": "你的箭矢造成魔法伤害",
+
+  "affix.ancientreforging:melee/festive": "欢庆",
+  "affix.ancientreforging:melee/festive.suffix": "狂欢的",
+  "affix.ancientreforging:melee/festive.desc": "被击杀的敌人有 %s%% 概率触发战利品大爆发",
+
+  "affix.ancientreforging:melee/thunderstruck": "雷磔",
+  "affix.ancientreforging:melee/thunderstruck.suffix": "溅射的",
+  "affix.ancientreforging:melee/thunderstruck.desc": "你的攻击会对附近敌人造成 %s 点伤害",
+
+  "affix.ancientreforging:shield/retreating": "后跃",
+  "affix.ancientreforging:shield/retreating.suffix": "弄臣的",
+  "affix.ancientreforging:shield/retreating.desc": "近战格挡时，你会向后跃开",
+
+  "affix.ancientreforging:generic/telepathic": "念动",
+  "affix.ancientreforging:generic/telepathic.suffix": "时空的",
+  "affix.ancientreforging:generic/telepathic.desc.weapon": "生物掉落物会传送到你身边",
+  "affix.ancientreforging:generic/telepathic.desc.tool": "方块掉落物会传送到你身边",
+
+  "affix.ancientreforging:melee/executing": "处决",
+  "affix.ancientreforging:melee/executing.suffix": "斩杀的",
+  "affix.ancientreforging:melee/executing.desc": "生命值低于 %s%% 的敌人将被直接处决",
+
+  "affix.ancientreforging:melee/cleaving": "劈斩",
+  "affix.ancientreforging:melee/cleaving.suffix": "屠夫的",
+  "affix.ancientreforging:melee/cleaving.desc": "攻击有 %s%% 概率同时命中最多 %s 个附近敌人",
+
+  "affix.ancientreforging:breaker/ability/enlightened": "启明",
+  "affix.ancientreforging:breaker/ability/enlightened.suffix": "光明的",
+  "affix.ancientreforging:breaker/ability/enlightened.desc": "此工具可消耗 %s 耐久自动放置火把"
+}
