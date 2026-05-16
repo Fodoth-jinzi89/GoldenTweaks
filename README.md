@@ -124,9 +124,9 @@ Some features may be highly experimental.
 
 ## License
 
-MIT License
+GPL-3.0-only License
 
-Unless otherwise specified.
+Inherited from `GPUBooster`.
 
 ---
 
@@ -250,6 +250,6 @@ GoldenTweaks 并不试图成为一个“万能优化模组”。
 
 ## 许可证
 
-MIT License
+GPL-3.0-only License
 
-除非另有说明。
+由 `GPU Booster` 继承。
