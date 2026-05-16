@@ -29,6 +29,8 @@ This mod is designed as a practical collection of fixes, experimental optimizati
 - SIMD utility implementations
 - GPU-side rendering experiments
 
+**Note:** Rendering optimizations is off when using `Vulkan`, `SuperResolution`, `Veil` for better compatibility.
+
 ### Gameplay Tweaks
 - Right-click to collect items
 - Interaction fixes
@@ -152,6 +154,8 @@ GoldenTweaks 专注于：
 - 降低渲染开销
 - SIMD 工具实现
 - GPU 侧渲染实验
+
+**提示：** 使用 `Vulkan`、`SuperResolution`、`Veil` 时，为保证兼容性，会关闭渲染优化。
 
 ### 游戏玩法增强
 - 右键收集物品
