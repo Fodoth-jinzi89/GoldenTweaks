@@ -29,7 +29,7 @@ This mod is designed as a practical collection of fixes, experimental optimizati
 - SIMD utility implementations
 - GPU-side rendering experiments
 
-**Note:** Rendering optimizations is off when using `Vulkan`, `SuperResolution`, `Veil` for better compatibility.
+**Note:** Rendering optimization is off when using `Vulkan`, `SuperResolution`, `Veil` for better compatibility.
 
 ### Gameplay Tweaks
 - Right-click to collect items
