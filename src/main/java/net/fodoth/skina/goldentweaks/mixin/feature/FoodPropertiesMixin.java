@@ -1,5 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.feature;
 
+import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Final;
@@ -34,6 +35,8 @@ public class FoodPropertiesMixin {
             List<FoodProperties.PossibleEffect> effects,
             CallbackInfo ci
     ) {
-        this.canAlwaysEat = true;
+        if (GoldenTweaksCommonConfig.isAlwaysEdible()) {
+            this.canAlwaysEat = true;
+        }
     }
 }

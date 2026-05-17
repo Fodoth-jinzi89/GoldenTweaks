@@ -30,6 +30,10 @@ public final class GoldenTweaksClientConfig {
 
     public static final ModConfigSpec.EnumValue<SmartCullingType> SMART_CULLING;
 
+    // Debug
+    public static final ModConfigSpec.BooleanValue DEBUG_GUI_INSPECTOR;
+    public static final ModConfigSpec.BooleanValue DEBUG_GUI_COPY_TO_CLIPBOARD;
+
     static {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
@@ -41,18 +45,22 @@ public final class GoldenTweaksClientConfig {
 
         DSA_MODE = builder
                 .translation(key("dsa"))
+                .comment(comment("dsa"))
                 .defineEnum("dsa", DSAMode.ALL);
 
         DSA_VARIANT = builder
                 .translation(key("dsa_variant"))
+                .comment(comment("dsa_variant"))
                 .defineEnum("dsaVariant", DSAVariant.CORE);
 
         VERTEX_FORMAT_CACHE = builder
                 .translation(key("vertex_format_cache"))
+                .comment(comment("vertex_format_cache"))
                 .define("vertexFormatCache", false);
 
         RENDER_CYCLE_POOL_SIZE = builder
                 .translation(key("render_cycle_pool_size"))
+                .comment(comment("render_cycle_pool_size"))
                 .defineInRange("renderCyclePoolSize", 256, 128, 432);
 
         builder.pop();
@@ -65,23 +73,46 @@ public final class GoldenTweaksClientConfig {
 
         RENDERBUFFER_DEPTH = builder
                 .translation(key("renderbuffer_depth"))
+                .comment(comment("renderbuffer_depth"))
                 .define("renderbufferDepth", true);
 
         FAST_MATH = builder
                 .translation(key("fast_math"))
+                .comment(comment("fast_math"))
                 .define("fastMath", true);
 
         TEX_BARRIER = builder
                 .translation(key("tex_barrier"))
+                .comment(comment("tex_barrier"))
                 .define("texBarrier", true);
 
         BATCH_TEXT_RENDERING = builder
                 .translation(key("batch_text_rendering"))
+                .comment(comment("batch_text_rendering"))
                 .define("batchTextRendering", true);
 
         SMART_CULLING = builder
                 .translation(key("smart_culling"))
+                .comment(comment("smart_culling"))
                 .defineEnum("smartCulling", SmartCullingType.BASE);
+
+        builder.pop();
+
+        /*
+         * Debug
+         */
+        builder.translation(key("category.debug"));
+        builder.push("debug");
+
+        DEBUG_GUI_INSPECTOR = builder
+                .translation(key("debug_gui_inspector"))
+                .comment(comment("debug_gui_inspector"))
+                .define("debugGuiInspector", false);
+
+        DEBUG_GUI_COPY_TO_CLIPBOARD = builder
+                .translation(key("debug_gui_copy_to_clipboard"))
+                .comment(comment("debug_gui_copy_to_clipboard"))
+                .define("debugGuiCopyToClipboard", true);
 
         builder.pop();
 
@@ -114,6 +145,16 @@ public final class GoldenTweaksClientConfig {
                         && ModList.get().isLoaded("sodium");
 
         return ClientSetupEvent.DSA && cfg;
+    }
+
+    public static boolean doDebugGuiInspector() {
+        if (!GTState.isReady()) return false;
+        return DEBUG_GUI_INSPECTOR.get();
+    }
+
+    public static boolean doDebugGuiCopyToClipboard() {
+        if (!GTState.isReady()) return false;
+        return DEBUG_GUI_COPY_TO_CLIPBOARD.get();
     }
 
     private static String key(String path) {

@@ -10,6 +10,7 @@ import net.fodoth.skina.goldentweaks.gpubooster.client.renderer.gl.VertexBufferC
 import net.fodoth.skina.goldentweaks.util.DSAMode;
 import net.fodoth.skina.goldentweaks.util.GTState;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -30,12 +31,20 @@ public class ClientSetupEvent {
 
         GTState.setReady();
 
-        ModLoadingContext.get().registerExtensionPoint(
-                IConfigScreenFactory.class,
-                () -> (mc, parent) -> GoldenTweaksConfigScreen.create(parent)
-        );
+        // Only register Cloth Config screen when Cloth Config exists
+        if (ModList.get().isLoaded("cloth_config")) {
+
+            ModLoadingContext.get().registerExtensionPoint(
+                    IConfigScreenFactory.class,
+                    () -> (mc, parent) ->
+                            GoldenTweaksConfigScreen.create(parent)
+            );
+
+
+        }
 
         RenderSystem.recordRenderCall(() -> {
+
             GLCapabilities caps = GL.getCapabilities();
 
             GL46 = caps.OpenGL46;
@@ -47,7 +56,9 @@ public class ClientSetupEvent {
                 VertexBufferCache.init();
             }
 
-            GoldenTweaks.LOGGER.info("GPUBooster caps initialized.");
+            GoldenTweaks.LOGGER.info(
+                    "GPUBooster caps initialized."
+            );
         });
 
         if (GoldenTweaksClientConfig.VERTEX_FORMAT_CACHE.get()) {
@@ -57,7 +68,9 @@ public class ClientSetupEvent {
                     DefaultVertexFormat.NEW_ENTITY
             );
 
-            GoldenTweaks.LOGGER.debug("Cacheable vertex formats added.");
+            GoldenTweaks.LOGGER.debug(
+                    "Cacheable vertex formats added."
+            );
         }
     }
 }

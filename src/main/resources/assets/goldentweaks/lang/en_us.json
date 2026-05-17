@@ -2,65 +2,65 @@
   "config.goldentweaks.title": "Golden Tweaks",
 
   "config.goldentweaks.pickup": "Pickup Interaction",
-  "config.goldentweaks.pickup.tooltip": "Settings related to item pickup interaction.",
+  "config.goldentweaks.pickup.comment": "Settings related to item pickup interaction.",
 
   "config.goldentweaks.pickup.base_pickup_reach": "Base Pickup Reach",
-  "config.goldentweaks.pickup.base_pickup_reach.tooltip": "Base item pickup reach distance.",
+  "config.goldentweaks.pickup.base_pickup_reach.comment": "Base item pickup reach distance.",
 
   "config.goldentweaks.pickup.extended_reach_bonus": "Extended Reach Bonus",
-  "config.goldentweaks.pickup.extended_reach_bonus.tooltip": "Additional pickup reach for creative and spectator players.",
+  "config.goldentweaks.pickup.extended_reach_bonus.comment": "Additional pickup reach for creative and spectator players.",
 
   "config.goldentweaks.pickup.search_box_inflate": "Search Box Inflate",
-  "config.goldentweaks.pickup.search_box_inflate.tooltip": "Additional expansion size for the pickup search box.",
+  "config.goldentweaks.pickup.search_box_inflate.comment": "Additional expansion size for the pickup search box.",
 
   "config.goldentweaks.pickup.trace_bias": "Trace Bias",
-  "config.goldentweaks.pickup.trace_bias.tooltip": "Entity tracing bias used during pickup detection.",
+  "config.goldentweaks.pickup.trace_bias.comment": "Entity tracing bias used during pickup detection.",
 
   "config.goldentweaks.pickup.max_targets": "Maximum Targets",
-  "config.goldentweaks.pickup.max_targets.tooltip": "Maximum number of item entities processed per click.",
+  "config.goldentweaks.pickup.max_targets.comment": "Maximum number of item entities processed per click.",
 
   "config.goldentweaks.pickup.allow_through_walls": "Allow Through Walls",
-  "config.goldentweaks.pickup.allow_through_walls.tooltip": "Allows item pickup through solid blocks.",
+  "config.goldentweaks.pickup.allow_through_walls.comment": "Allows item pickup through solid blocks.",
 
   "config.goldentweaks.pickup.allow_sneak_pickup": "Allow Sneak Pickup",
-  "config.goldentweaks.pickup.allow_sneak_pickup.tooltip": "Allows item pickup while sneaking.",
+  "config.goldentweaks.pickup.allow_sneak_pickup.comment": "Allows item pickup while sneaking.",
 
   "config.goldentweaks.pickup.block_use": "Block Use",
-  "config.goldentweaks.pickup.block_use.tooltip": "Prevents original right click behavior when using pickup interaction.",
+  "config.goldentweaks.pickup.block_use.comment": "Prevents original right click behavior when using pickup interaction.",
 
   "config.goldentweaks.pickup.allow_continuous_pickup": "Allow Continuous Pickup",
-  "config.goldentweaks.pickup.allow_continuous_pickup.tooltip": "Allows holding right click to continuously pick up nearby items.",
+  "config.goldentweaks.pickup.allow_continuous_pickup.comment": "Allows holding right click to continuously pick up nearby items.",
 
   "config.goldentweaks.pickup.continuous_pickup_interval": "Continuous Pickup Interval",
-  "config.goldentweaks.pickup.continuous_pickup_interval.tooltip": "Tick interval between continuous pickup scans while holding right click.",
+  "config.goldentweaks.pickup.continuous_pickup_interval.comment": "Tick interval between continuous pickup scans while holding right click.",
 
   "config.goldentweaks.category.building": "Building & Rendering",
   "config.goldentweaks.dsa": "DSA Mode",
-  "config.goldentweaks.dsa.tooltip": "Direct State Access rendering mode.",
+  "config.goldentweaks.dsa.comment": "Direct State Access rendering mode.",
   "config.goldentweaks.dsa.all": "All",
   "config.goldentweaks.dsa.vbo": "VBO",
   "config.goldentweaks.dsa.fbo": "FBO",
   "config.goldentweaks.dsa.off": "Off",
   "config.goldentweaks.dsa_variant": "DSA Variant",
-  "config.goldentweaks.dsa_variant.tooltip": "Which DSA extension to use.",
+  "config.goldentweaks.dsa_variant.comment": "Which DSA extension to use.",
   "config.goldentweaks.dsa_variant.core": "Core",
   "config.goldentweaks.dsa_variant.arb": "ARB",
   "config.goldentweaks.vertex_format_cache": "Vertex Format Cache",
-  "config.goldentweaks.vertex_format_cache.tooltip": "Cache vertex formats to reduce recompilation.",
+  "config.goldentweaks.vertex_format_cache.comment": "Cache vertex formats to reduce recompilation.",
   "config.goldentweaks.render_cycle_pool_size": "Render Cycle Pool Size",
-  "config.goldentweaks.render_cycle_pool_size.tooltip": "Size of the buffer pool for render cycles.",
+  "config.goldentweaks.render_cycle_pool_size.comment": "Size of the buffer pool for render cycles.",
 
   "config.goldentweaks.category.misc": "Miscellaneous",
   "config.goldentweaks.renderbuffer_depth": "Renderbuffer Depth",
-  "config.goldentweaks.renderbuffer_depth.tooltip": "Enable depth attachment for render buffers.",
+  "config.goldentweaks.renderbuffer_depth.comment": "Enable depth attachment for render buffers.",
   "config.goldentweaks.fast_math": "Fast Math",
-  "config.goldentweaks.fast_math.tooltip": "Use faster but less accurate math functions.",
+  "config.goldentweaks.fast_math.comment": "Use faster but less accurate math functions.",
   "config.goldentweaks.tex_barrier": "Texture Barrier",
-  "config.goldentweaks.tex_barrier.tooltip": "Insert texture barriers when needed.",
+  "config.goldentweaks.tex_barrier.comment": "Insert texture barriers when needed.",
   "config.goldentweaks.batch_text_rendering": "Batch Text Rendering",
-  "config.goldentweaks.batch_text_rendering.tooltip": "Batch text draw calls for performance.",
+  "config.goldentweaks.batch_text_rendering.comment": "Batch text draw calls for performance.",
   "config.goldentweaks.smart_culling": "Smart Culling",
-  "config.goldentweaks.smart_culling.tooltip": "Culling strategy for invisible geometry.",
+  "config.goldentweaks.smart_culling.comment": "Culling strategy for invisible geometry.",
   "config.goldentweaks.smart_culling.off": "Off",
   "config.goldentweaks.smart_culling.base": "Base",
   "config.goldentweaks.smart_culling.simd": "SIMD",
@@ -69,7 +69,22 @@
   "config.goldentweaks.balance": "Balance",
 
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier": "Evolved Mekanism Solar Multiplier",
-  "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.tooltip": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output."
+  "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output.",
+  "config.goldentweaks.balance.recycler_factory_stack_upgrades": "Recycler Factory Stack Upgrades",
+  "config.goldentweaks.balance.recycler_factory_stack_upgrades.comment": "Allow Mekanism Extras recycler factories to use Stack upgrades.",
+
+  "config.goldentweaks.category.feature": "Features",
+
+  "config.goldentweaks.feature.always_edible_food": "Always Edible Food",
+  "config.goldentweaks.feature.always_edible_food.comment": "Allows all food items to be eaten even when the player is fully saturated.",
+
+  "config.goldentweaks.category.debug": "Debug",
+
+  "config.goldentweaks.debug.debug_gui_inspector": "GUI Inspector",
+  "config.goldentweaks.debug.debug_gui_inspector.comment": "Shift + Middle Click widgets to inspect GUI class information",
+
+  "config.goldentweaks.debug.debug_gui_copy_to_clipboard": "Copy GUI Debug To Clipboard",
+  "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "Automatically copy GUI debug information to clipboard"
 
 
 
