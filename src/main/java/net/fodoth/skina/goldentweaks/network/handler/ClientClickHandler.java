@@ -21,12 +21,18 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.List;
 
-@EventBusSubscriber(modid = GoldenTweaks.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(
+        modid = GoldenTweaks.MODID,
+        value = Dist.CLIENT
+)
 public final class ClientClickHandler {
 
-    private static int holdTickCounter;
-    private static boolean rightDown;
+    private static int holdTickCounter = 0;
+    private static boolean rightDown = false;
 
+    // =========================
+    // Mouse input tracking
+    // =========================
     @SubscribeEvent
     public static void onMouseButton(InputEvent.MouseButton.Pre event) {
 
@@ -47,6 +53,7 @@ public final class ClientClickHandler {
                     ? player.getMainHandItem()
                     : ItemStack.EMPTY;
 
+            // ✔ 关键修复：只在“发生拾取”时阻止 use
             if (picked && (mainHand.isEmpty()
                     || GoldenTweaksCommonConfig.BLOCK_USE.get())) {
 
@@ -62,16 +69,20 @@ public final class ClientClickHandler {
         }
     }
 
+    // =========================
+    // Tick continuous pickup
+    // =========================
     @SubscribeEvent
     public static void onClientTick(ClientTickEvent.Post event) {
 
         Minecraft mc = Minecraft.getInstance();
         LocalPlayer player = mc.player;
 
-        if (player == null
-                || mc.level == null
-                || mc.screen != null) {
+        if (player == null || mc.level == null) {
+            return;
+        }
 
+        if (mc.screen != null) {
             return;
         }
 
@@ -80,9 +91,9 @@ public final class ClientClickHandler {
             return;
         }
 
-        if (++holdTickCounter
-                < GoldenTweaksCommonConfig.CONTINUOUS_PICKUP_INTERVAL.get()) {
+        holdTickCounter++;
 
+        if (holdTickCounter < GoldenTweaksCommonConfig.CONTINUOUS_PICKUP_INTERVAL.get()) {
             return;
         }
 
@@ -91,6 +102,9 @@ public final class ClientClickHandler {
         tryPickup(mc);
     }
 
+    // =========================
+    // Pickup logic
+    // =========================
     private static boolean tryPickup(Minecraft mc) {
 
         LocalPlayer player = mc.player;
@@ -101,7 +115,6 @@ public final class ClientClickHandler {
 
         if (player.isShiftKeyDown()
                 && !GoldenTweaksCommonConfig.ALLOW_SNEAK_PICKUP.get()) {
-
             return false;
         }
 
@@ -114,9 +127,10 @@ public final class ClientClickHandler {
 
         Vec3 reachEnd = eye.add(look.scale(maxReach));
 
-        AABB searchBox = player.getBoundingBox()
-                .expandTowards(look.scale(maxReach))
-                .inflate(GoldenTweaksCommonConfig.SEARCH_BOX_INFLATE.get());
+        AABB searchBox =
+                player.getBoundingBox()
+                        .expandTowards(look.scale(maxReach))
+                        .inflate(GoldenTweaksCommonConfig.SEARCH_BOX_INFLATE.get());
 
         List<GetEntityHitResult.TraceHit> hits =
                 GetEntityHitResult.traceEntities(
@@ -136,11 +150,11 @@ public final class ClientClickHandler {
             return false;
         }
 
-        hits.forEach(hit ->
-                PacketDistributor.sendToServer(
-                        new C2SPickupItemPacket(hit.entity().getId())
-                )
-        );
+        for (GetEntityHitResult.TraceHit hit : hits) {
+            PacketDistributor.sendToServer(
+                    new C2SPickupItemPacket(hit.entity().getId())
+            );
+        }
 
         player.swing(InteractionHand.MAIN_HAND);
 
@@ -148,9 +162,11 @@ public final class ClientClickHandler {
     }
 
     public static double getMaxReach(Player player) {
+        boolean extended =
+                player.isCreative() || player.isSpectator();
 
         return GoldenTweaksCommonConfig.BASE_PICKUP_REACH.get()
-                + ((player.isCreative() || player.isSpectator())
+                + (extended
                 ? GoldenTweaksCommonConfig.EXTENDED_REACH_BONUS.get()
                 : 0.0D);
     }
@@ -158,3 +174,4 @@ public final class ClientClickHandler {
     private ClientClickHandler() {
     }
 }
+
