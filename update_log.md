@@ -1,5 +1,18 @@
 # GoldenTweaks Update Log
 
+## 2026.05.18 — v1.0
+
+### Golden Tweaks
+- 现在背包已满时右键拾取能够使得多余的物品飞向玩家
+  - [C2SPickupItemPacket](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SPickupItemPacket.java)
+  - 可以用这个功能，长按右键，在背包已满的状况下提着物品移动
+- 删除了多余的类
+  
+### Silent Gear
+- 修复了材料书打开会使每个玩家打开界面的问题
+  - [MaterialBookItemMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/MaterialBookItemMixin.java)
+  - [S2COpenMaterialBookPacket](src/main/java/net/fodoth/skina/goldentweaks/network/packet/S2COpenMaterialBookPacket.java)
+
 ## 2026.05.17 — v0.9
 
 ### Golden Tweaks

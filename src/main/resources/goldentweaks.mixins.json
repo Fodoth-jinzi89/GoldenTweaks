@@ -18,6 +18,7 @@
     "fix.CreateJEISubtypeMixin",
     "fix.DefaultAttributesMixin",
     "fix.MaidAIChatManagerMixin",
+    "fix.MaterialBookItemMixin",
     "fix.MekanismWeaponryPlayerSkinServiceMixin",
     "fix.MiscSceneMixin",
     "fix.RRLSConfigMixin",

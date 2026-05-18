@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
@@ -20,18 +21,12 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.List;
 
-@EventBusSubscriber(
-        modid = GoldenTweaks.MODID,
-        value = Dist.CLIENT
-)
+@EventBusSubscriber(modid = GoldenTweaks.MODID, value = Dist.CLIENT)
 public final class ClientClickHandler {
 
-    private static int holdTickCounter = 0;
-    private static boolean rightDown = false;
+    private static int holdTickCounter;
+    private static boolean rightDown;
 
-    // =========================
-    // Mouse input tracking
-    // =========================
     @SubscribeEvent
     public static void onMouseButton(InputEvent.MouseButton.Pre event) {
 
@@ -52,7 +47,6 @@ public final class ClientClickHandler {
                     ? player.getMainHandItem()
                     : ItemStack.EMPTY;
 
-            // ✔ 关键修复：只在“发生拾取”时阻止 use
             if (picked && (mainHand.isEmpty()
                     || GoldenTweaksCommonConfig.BLOCK_USE.get())) {
 
@@ -68,20 +62,16 @@ public final class ClientClickHandler {
         }
     }
 
-    // =========================
-    // Tick continuous pickup
-    // =========================
     @SubscribeEvent
     public static void onClientTick(ClientTickEvent.Post event) {
 
         Minecraft mc = Minecraft.getInstance();
         LocalPlayer player = mc.player;
 
-        if (player == null || mc.level == null) {
-            return;
-        }
+        if (player == null
+                || mc.level == null
+                || mc.screen != null) {
 
-        if (mc.screen != null) {
             return;
         }
 
@@ -90,9 +80,9 @@ public final class ClientClickHandler {
             return;
         }
 
-        holdTickCounter++;
+        if (++holdTickCounter
+                < GoldenTweaksCommonConfig.CONTINUOUS_PICKUP_INTERVAL.get()) {
 
-        if (holdTickCounter < GoldenTweaksCommonConfig.CONTINUOUS_PICKUP_INTERVAL.get()) {
             return;
         }
 
@@ -101,9 +91,6 @@ public final class ClientClickHandler {
         tryPickup(mc);
     }
 
-    // =========================
-    // Pickup logic
-    // =========================
     private static boolean tryPickup(Minecraft mc) {
 
         LocalPlayer player = mc.player;
@@ -114,6 +101,7 @@ public final class ClientClickHandler {
 
         if (player.isShiftKeyDown()
                 && !GoldenTweaksCommonConfig.ALLOW_SNEAK_PICKUP.get()) {
+
             return false;
         }
 
@@ -122,21 +110,13 @@ public final class ClientClickHandler {
         Vec3 eye = player.getEyePosition(pt);
         Vec3 look = player.getViewVector(pt);
 
-        boolean extended =
-                player.isCreative() || player.isSpectator();
-
-        double maxReach =
-                GoldenTweaksCommonConfig.BASE_PICKUP_REACH.get()
-                        + (extended
-                        ? GoldenTweaksCommonConfig.EXTENDED_REACH_BONUS.get()
-                        : 0.0D);
+        double maxReach = getMaxReach(player);
 
         Vec3 reachEnd = eye.add(look.scale(maxReach));
 
-        AABB searchBox =
-                player.getBoundingBox()
-                        .expandTowards(look.scale(maxReach))
-                        .inflate(GoldenTweaksCommonConfig.SEARCH_BOX_INFLATE.get());
+        AABB searchBox = player.getBoundingBox()
+                .expandTowards(look.scale(maxReach))
+                .inflate(GoldenTweaksCommonConfig.SEARCH_BOX_INFLATE.get());
 
         List<GetEntityHitResult.TraceHit> hits =
                 GetEntityHitResult.traceEntities(
@@ -156,15 +136,23 @@ public final class ClientClickHandler {
             return false;
         }
 
-        for (GetEntityHitResult.TraceHit hit : hits) {
-            PacketDistributor.sendToServer(
-                    new C2SPickupItemPacket(hit.entity().getId())
-            );
-        }
+        hits.forEach(hit ->
+                PacketDistributor.sendToServer(
+                        new C2SPickupItemPacket(hit.entity().getId())
+                )
+        );
 
         player.swing(InteractionHand.MAIN_HAND);
 
         return true;
+    }
+
+    public static double getMaxReach(Player player) {
+
+        return GoldenTweaksCommonConfig.BASE_PICKUP_REACH.get()
+                + ((player.isCreative() || player.isSpectator())
+                ? GoldenTweaksCommonConfig.EXTENDED_REACH_BONUS.get()
+                : 0.0D);
     }
 
     private ClientClickHandler() {
