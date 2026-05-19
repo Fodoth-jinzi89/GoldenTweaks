@@ -9,7 +9,7 @@
     "balance.ExtraMoreMachineBlockTypesMixin",
     "balance.accessor.BlockTypeAccessor",
     "feature.DisableSalvageCharmAnvilMixin",
-    "feature.FoodPropertiesMixin",
+    "feature.PlayerMixin",
     "fix.AliOptionalItemPoolMixin",
     "fix.AnnuusServerMixin",
     "fix.ATCEventsMixin",
