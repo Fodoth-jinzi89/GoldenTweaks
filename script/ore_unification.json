@@ -43,6 +43,24 @@
   },
   {
     "matchItems": [
+      "#c:plates/aluminum"
+    ],
+    "resultItems": "alltheores:aluminum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/aluminum"
+    ],
+    "resultItems": "alltheores:aluminum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/aluminum"
+    ],
+    "resultItems": "alltheores:aluminum_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/aluminum"
     ],
     "resultItems": "alltheores:aluminum_block"
@@ -88,6 +106,24 @@
       "#mekanism:dusts/copper"
     ],
     "resultItems": "alltheores:copper_dust"
+  },
+  {
+    "matchItems": [
+      "#mekanism:plates/copper"
+    ],
+    "resultItems": "alltheores:copper_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:rods/copper"
+    ],
+    "resultItems": "alltheores:copper_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:gears/copper"
+    ],
+    "resultItems": "alltheores:copper_gear"
   },
   {
     "matchItems": [
@@ -139,6 +175,24 @@
   },
   {
     "matchItems": [
+      "#c:plates/iron"
+    ],
+    "resultItems": "alltheores:iron_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/iron"
+    ],
+    "resultItems": "alltheores:iron_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/iron"
+    ],
+    "resultItems": "alltheores:iron_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/iron"
     ],
     "resultItems": "alltheores:iron_block"
@@ -184,6 +238,24 @@
       "#c:dusts/gold"
     ],
     "resultItems": "alltheores:gold_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/gold"
+    ],
+    "resultItems": "alltheores:gold_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/gold"
+    ],
+    "resultItems": "alltheores:gold_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/gold"
+    ],
+    "resultItems": "alltheores:gold_gear"
   },
   {
     "matchItems": [
@@ -235,6 +307,24 @@
   },
   {
     "matchItems": [
+      "#mekanism:plates/lead"
+    ],
+    "resultItems": "alltheores:lead_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:rods/lead"
+    ],
+    "resultItems": "alltheores:lead_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:gears/lead"
+    ],
+    "resultItems": "alltheores:lead_gear"
+  },
+  {
+    "matchItems": [
       "#mekanism:storage_blocks/lead"
     ],
     "resultItems": "alltheores:lead_block"
@@ -280,6 +370,24 @@
       "#c:dusts/nickel"
     ],
     "resultItems": "alltheores:nickel_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/nickel"
+    ],
+    "resultItems": "alltheores:nickel_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/nickel"
+    ],
+    "resultItems": "alltheores:nickel_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/nickel"
+    ],
+    "resultItems": "alltheores:nickel_gear"
   },
   {
     "matchItems": [
@@ -331,6 +439,24 @@
   },
   {
     "matchItems": [
+      "#c:plates/silver"
+    ],
+    "resultItems": "alltheores:silver_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/silver"
+    ],
+    "resultItems": "alltheores:silver_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/silver"
+    ],
+    "resultItems": "alltheores:silver_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/silver"
     ],
     "resultItems": "alltheores:silver_block"
@@ -376,6 +502,24 @@
       "#mekanism:dusts/tin"
     ],
     "resultItems": "alltheores:tin_dust"
+  },
+  {
+    "matchItems": [
+      "#mekanism:plates/tin"
+    ],
+    "resultItems": "alltheores:tin_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:rods/tin"
+    ],
+    "resultItems": "alltheores:tin_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:gears/tin"
+    ],
+    "resultItems": "alltheores:tin_gear"
   },
   {
     "matchItems": [
@@ -427,6 +571,24 @@
   },
   {
     "matchItems": [
+      "#mekanism:plates/uranium"
+    ],
+    "resultItems": "alltheores:uranium_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:rods/uranium"
+    ],
+    "resultItems": "alltheores:uranium_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:gears/uranium"
+    ],
+    "resultItems": "alltheores:uranium_gear"
+  },
+  {
+    "matchItems": [
       "#mekanism:storage_blocks/uranium"
     ],
     "resultItems": "alltheores:uranium_block"
@@ -472,6 +634,24 @@
       "#mekanism:dusts/osmium"
     ],
     "resultItems": "alltheores:osmium_dust"
+  },
+  {
+    "matchItems": [
+      "#mekanism:plates/osmium"
+    ],
+    "resultItems": "alltheores:osmium_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:rods/osmium"
+    ],
+    "resultItems": "alltheores:osmium_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:gears/osmium"
+    ],
+    "resultItems": "alltheores:osmium_gear"
   },
   {
     "matchItems": [
@@ -523,6 +703,24 @@
   },
   {
     "matchItems": [
+      "#c:plates/zinc"
+    ],
+    "resultItems": "alltheores:zinc_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/zinc"
+    ],
+    "resultItems": "alltheores:zinc_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/zinc"
+    ],
+    "resultItems": "alltheores:zinc_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/zinc"
     ],
     "resultItems": "alltheores:zinc_block"
@@ -568,6 +766,24 @@
       "#c:dusts/platinum"
     ],
     "resultItems": "alltheores:platinum_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/platinum"
+    ],
+    "resultItems": "alltheores:platinum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/platinum"
+    ],
+    "resultItems": "alltheores:platinum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/platinum"
+    ],
+    "resultItems": "alltheores:platinum_gear"
   },
   {
     "matchItems": [
@@ -619,6 +835,24 @@
   },
   {
     "matchItems": [
+      "#c:plates/iridium"
+    ],
+    "resultItems": "alltheores:iridium_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/iridium"
+    ],
+    "resultItems": "alltheores:iridium_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/iridium"
+    ],
+    "resultItems": "alltheores:iridium_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/iridium"
     ],
     "resultItems": "alltheores:iridium_block"
@@ -664,6 +898,24 @@
       "#c:dusts/electrum"
     ],
     "resultItems": "alltheores:electrum_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/electrum"
+    ],
+    "resultItems": "alltheores:electrum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/electrum"
+    ],
+    "resultItems": "alltheores:electrum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/electrum"
+    ],
+    "resultItems": "alltheores:electrum_gear"
   },
   {
     "matchItems": [
@@ -715,6 +967,24 @@
   },
   {
     "matchItems": [
+      "#mekanism:plates/steel"
+    ],
+    "resultItems": "alltheores:steel_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:rods/steel"
+    ],
+    "resultItems": "alltheores:steel_plate"
+  },
+  {
+    "matchItems": [
+      "#mekanism:gears/steel"
+    ],
+    "resultItems": "alltheores:steel_gear"
+  },
+  {
+    "matchItems": [
       "#mekanism:storage_blocks/steel"
     ],
     "resultItems": "alltheores:steel_block"
@@ -763,57 +1033,27 @@
   },
   {
     "matchItems": [
+      "#c:plates/bronze"
+    ],
+    "resultItems": "alltheores:bronze_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/bronze"
+    ],
+    "resultItems": "alltheores:bronze_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/bronze"
+    ],
+    "resultItems": "alltheores:bronze_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/bronze"
     ],
     "resultItems": "alltheores:bronze_block"
-  },
-  {
-    "matchItems": [
-      "#c:ores/brass"
-    ],
-    "resultItems": "alltheores:brass_ore"
-  },
-  {
-    "matchItems": [
-      "#c:ores/deepslate_brass"
-    ],
-    "resultItems": "alltheores:deepslate_brass_ore"
-  },
-  {
-    "matchItems": [
-      "#c:raw_materials/brass"
-    ],
-    "resultItems": "alltheores:raw_brass"
-  },
-  {
-    "matchItems": [
-      "#c:storage_blocks/raw_brass"
-    ],
-    "resultItems": "alltheores:raw_brass_block"
-  },
-  {
-    "matchItems": [
-      "#c:ingots/brass"
-    ],
-    "resultItems": "alltheores:brass_ingot"
-  },
-  {
-    "matchItems": [
-      "#c:nuggets/brass"
-    ],
-    "resultItems": "alltheores:brass_nugget"
-  },
-  {
-    "matchItems": [
-      "#c:dusts/brass"
-    ],
-    "resultItems": "alltheores:brass_dust"
-  },
-  {
-    "matchItems": [
-      "#c:storage_blocks/brass"
-    ],
-    "resultItems": "alltheores:brass_block"
   },
   {
     "matchItems": [
@@ -856,6 +1096,24 @@
       "#c:dusts/tungsten"
     ],
     "resultItems": "alltheores:tungsten_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/tungsten"
+    ],
+    "resultItems": "alltheores:tungsten_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/tungsten"
+    ],
+    "resultItems": "alltheores:tungsten_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/tungsten"
+    ],
+    "resultItems": "alltheores:tungsten_gear"
   },
   {
     "matchItems": [
@@ -907,6 +1165,24 @@
   },
   {
     "matchItems": [
+      "#c:plates/mithril"
+    ],
+    "resultItems": "alltheores:mithril_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/mithril"
+    ],
+    "resultItems": "alltheores:mithril_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/mithril"
+    ],
+    "resultItems": "alltheores:mithril_gear"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/mithril"
     ],
     "resultItems": "alltheores:mithril_block"
@@ -952,6 +1228,24 @@
       "#c:dusts/constantan"
     ],
     "resultItems": "alltheores:constantan_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/constantan"
+    ],
+    "resultItems": "alltheores:constantan_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/constantan"
+    ],
+    "resultItems": "alltheores:constantan_plate"
+  },
+  {
+    "matchItems": [
+      "#c:gears/constantan"
+    ],
+    "resultItems": "alltheores:constantan_gear"
   },
   {
     "matchItems": [

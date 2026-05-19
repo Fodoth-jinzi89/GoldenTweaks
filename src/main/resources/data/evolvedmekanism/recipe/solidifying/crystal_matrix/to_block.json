@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "duration": 540,
+  "item_input": {
+    "item": "evolvedmekanism:mold_storage_block"
+  },
+  "fluid_input": {
+    "fluid": "avaritia_integration:molten_crystal_matrix",
+    "amount": 810
+  },
+  "extra_input": {
+    "fluid": "mekanism:oxygen",
+    "amount": 810
+  },
+  "output": {
+    "item": "avaritia:crystal_matrix"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_integration"
+    }
+  ]
+}

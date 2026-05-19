@@ -1,0 +1,16 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "avaritia:neutron_rod"
+  },
+  "output": {
+    "id": "avaritia_integration:molten_neutron",
+    "amount": 45
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    }
+  ]
+}

@@ -20,7 +20,6 @@ ORES = [
     "electrum",
     "steel",
     "bronze",
-    "brass",
     "tungsten",
     "mithril",
     "constantan"
@@ -46,11 +45,17 @@ MEKANISM_GEMS = {
     "fluorite"
 }
 
+# 使用 Create tag 的金属
+CREATE_METALS = {
+    "brass"
+}
+
 
 def resolve_tag(material: str, category: str):
     """
     金属:
-        ores / raw_materials / ingots / nuggets / dusts / storage_blocks
+        ores / raw_materials / ingots / nuggets
+        dusts / plates / storage_blocks
 
     宝石:
         gems / storage_blocks
@@ -66,10 +71,15 @@ def resolve_tag(material: str, category: str):
     if category == "storage_blocks" and material in MEKANISM_GEMS:
         return f"#mekanism:storage_blocks/{material}"
 
-    # metals
+    # Create metals
+    if material in CREATE_METALS:
+        return f"#create:{category}/{material}"
+
+    # Mekanism metals
     if material in MEKANISM_METALS:
         return f"#mekanism:{category}/{material}"
 
+    # default c tag
     return f"#c:{category}/{material}"
 
 
@@ -121,6 +131,24 @@ def gen_metal_entry(metal: str):
     entries.append({
         "matchItems": [resolve_tag(metal, "dusts")],
         "resultItems": f"{MODID}:{metal}_dust"
+    })
+
+    # plate
+    entries.append({
+        "matchItems": [resolve_tag(metal, "plates")],
+        "resultItems": f"{MODID}:{metal}_plate"
+    })
+
+    # rod
+    entries.append({
+        "matchItems": [resolve_tag(metal, "rods")],
+        "resultItems": f"{MODID}:{metal}_plate"
+    })
+
+    # rod
+    entries.append({
+        "matchItems": [resolve_tag(metal, "gears")],
+        "resultItems": f"{MODID}:{metal}_gear"
     })
 
     # block

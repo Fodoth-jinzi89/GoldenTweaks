@@ -146,3 +146,10 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "createnuclear"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"

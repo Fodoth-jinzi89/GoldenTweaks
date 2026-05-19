@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "createnuclear:stone_types/autunite"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "chance": 0.4,
+      "id": "create:crushed_raw_uranium"
+    },
+	{
+      "chance": 0.4,
+      "id": "mekanism:nugget_uranium"
+    }
+  ]
+}

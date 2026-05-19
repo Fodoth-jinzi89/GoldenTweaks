@@ -1,0 +1,16 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "avaritia:star_fuel"
+  },
+  "output": {
+    "id": "avaritia_integration:molten_star",
+    "amount": 90
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_integration"
+    }
+  ]
+}

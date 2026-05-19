@@ -1,5 +1,16 @@
 # GoldenTweaks Update Log
 
+## 2026.05.19 — v1.1
+
+### Evolved Mekanism
+- 添加联动配方
+- 添加汉化
+
+### Create Nuclear
+- 添加联动配方
+- 添加汉化
+
+
 ## 2026.05.18 — v1.0
 
 ### Golden Tweaks
