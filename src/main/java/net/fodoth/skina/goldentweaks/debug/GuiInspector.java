@@ -2,11 +2,15 @@ package net.fodoth.skina.goldentweaks.debug;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
+import net.fodoth.skina.goldentweaks.util.ItemDebugUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.components.Renderable;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -21,6 +25,10 @@ public class GuiInspector {
         sb.append("========== GOLDEN UI INSPECTOR ==========\n");
 
         Screen screen = mc.screen;
+
+        // ================= ITEM CONTEXT =================
+        dumpItem(mc, sb);
+
 
         // ================= SCREEN =================
         if (screen != null) {
@@ -87,10 +95,8 @@ public class GuiInspector {
 
         String result = sb.toString();
 
-        // ================= LOG =================
         GoldenTweaks.LOGGER.warn(result);
 
-        // ================= CLIPBOARD =================
         if (GoldenTweaksClientConfig.doDebugGuiCopyToClipboard()) {
             try {
                 mc.keyboardHandler.setClipboard(result);
@@ -98,6 +104,29 @@ public class GuiInspector {
                 GoldenTweaks.LOGGER.warn("[GT-UI] clipboard failed: {}", e.getMessage());
             }
         }
+    }
+
+    // ================= ITEM CONTEXT =================
+    private static void dumpItem(Minecraft mc, StringBuilder sb) {
+
+        ItemStack stack = ItemStack.EMPTY;
+
+        Screen screen = mc.screen;
+
+        // 优先：容器 GUI hovered slot
+        if (screen instanceof AbstractContainerScreen<?> container) {
+            Slot slot = container.getSlotUnderMouse();
+            if (slot != null && slot.hasItem()) {
+                stack = slot.getItem();
+            }
+        }
+
+        // fallback：主手
+        if (stack.isEmpty() && mc.player != null) {
+            stack = mc.player.getMainHandItem();
+        }
+
+        dumpItemContext(mc, stack, sb);
     }
 
     // ================= Widget =================
@@ -152,4 +181,14 @@ public class GuiInspector {
             sb.append("hudError=").append(e.getMessage()).append("\n");
         }
     }
+
+    private static void dumpItemContext(Minecraft mc, ItemStack stack, StringBuilder sb) {
+
+        try {
+            ItemDebugUtil.dumpItemInfo(stack, sb);
+        } catch (Exception e) {
+            sb.append("[ITEM ERROR] ").append(e.getMessage()).append("\n");
+        }
+    }
+
 }

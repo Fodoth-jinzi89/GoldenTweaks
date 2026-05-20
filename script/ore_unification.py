@@ -142,7 +142,7 @@ def gen_metal_entry(metal: str):
     # rod
     entries.append({
         "matchItems": [resolve_tag(metal, "rods")],
-        "resultItems": f"{MODID}:{metal}_plate"
+        "resultItems": f"{MODID}:{metal}_rod"
     })
 
     # rod

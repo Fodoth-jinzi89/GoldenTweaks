@@ -20,7 +20,7 @@ for key, value in data.items():
     fluid_name = key[len(PREFIX):]
 
     # block
-    result[f"block.{MODID}.{fluid_name}_fluid"] = value
+    result[f"block.{MODID}.{fluid_name}"] = value
 
     # fluid source
     result[f"fluid.{MODID}.{fluid_name}"] = value

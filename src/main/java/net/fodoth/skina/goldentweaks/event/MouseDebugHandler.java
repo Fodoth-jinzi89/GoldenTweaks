@@ -5,6 +5,7 @@ import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.debug.GuiInspector;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.player.LocalPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.InputEvent;
@@ -21,32 +22,38 @@ public class MouseDebugHandler {
         }
 
         Minecraft mc = Minecraft.getInstance();
-        if (mc.screen == null) {
-            GoldenTweaks.LOGGER.debug("[GT-INPUT] No active screen (mc.screen == null)");
+        LocalPlayer player = mc.player;
+
+        if (mc.screen == null || player == null) {
+            GoldenTweaks.LOGGER.debug("[GT-INPUT] No active screen or player");
             return;
         }
 
         int button = event.getButton();
         int action = event.getAction();
 
+        // 只处理 PRESS
         if (action != 0) {
-            GoldenTweaks.LOGGER.debug(
-                    "[GT-INPUT] Ignored action: {} (only PRESS=0 allowed)",
-                    action
-            );
             return;
         }
 
         boolean shift = Screen.hasShiftDown();
+        boolean alt = Screen.hasAltDown();
 
+
+        // ======================================================
+        // ② SHIFT + 中键 => GUI Inspector
+        // ======================================================
         if (!shift || button != 2) {
             GoldenTweaks.LOGGER.debug(
-                    "[GT-INPUT] Input mismatch: shift={}, button={} (need shift + middle click)",
+                    "[GT-INPUT] Input mismatch: shift={}, alt={}, button={}",
                     shift,
+                    alt,
                     button
             );
             return;
         }
+
         double mouseX = mc.mouseHandler.xpos()
                 * mc.getWindow().getGuiScaledWidth()
                 / mc.getWindow().getScreenWidth();
@@ -56,9 +63,7 @@ public class MouseDebugHandler {
                 / mc.getWindow().getScreenHeight();
 
         GoldenTweaks.LOGGER.warn(
-                "[GT-INPUT] mouse button={} action={} pos=({}, {}) screen={}",
-                button,
-                action,
+                "[GT-INPUT] GUI inspect at ({}, {}) screen={}",
                 mouseX,
                 mouseY,
                 mc.screen.getClass().getSimpleName()

@@ -1,0 +1,78 @@
+{
+  "itemGroup.aces_spell_utils": "Ace的法术工具",
+  "creative_tab.aces_spell_utils.items": "Ace的法术工具示例物品",
+
+  "school.aces_spell_utils.ritual": "秘仪",
+
+  "rarity.aces_spell_utils_rarity_accursed.name": "诅咒",
+  "rarity.aces_spell_utils_rarity_aquatic.name": "海渊",
+  "rarity.aces_spell_utils_rarity_sculk.name": "幽匿",
+  "rarity.aces_spell_utils_rarity_cosmic.name": "星穹",
+  "rarity.aces_spell_utils_rarity_glacial.name": "冰川",
+  "rarity.aces_spell_utils_rarity_verdant.name": "苍翠",
+  "rarity.aces_spell_utils_rarity_forbidden.name": "禁忌",
+  "rarity.aces_spell_utils_rarity_arid.name": "荒漠",
+
+  "aces_spell_utils.configuration.title": "Ace的法术工具配置",
+  "aces_spell_utils.configuration.section.aces_spell_utils.common.toml": "Ace的法术工具配置",
+  "aces_spell_utils.configuration.section.aces_spell_utils.common.toml.title": "Ace的法术工具配置",
+
+  "curios.identifier.sheath": "刀鞘",
+  "curios.modifiers.sheath": "刀鞘",
+  "curios.modifiers.null": "空修饰符",
+
+  "attribute.aces_spell_utils.mana_steal": "法力窃取",
+  "attribute.aces_spell_utils.mana_rend": "法力撕裂",
+  "attribute.aces_spell_utils.goliath_slayer": "巨像猎手",
+  "attribute.aces_spell_utils.spell_res_penetration": "法术抗性穿透",
+  "attribute.aces_spell_utils.hunger_steal": "饥饿窃取",
+  "attribute.aces_spell_utils.evasive": "闪避",
+  "attribute.aces_spell_utils.magic_damage_crit_chance": "法术暴击率",
+  "attribute.aces_spell_utils.magic_damage_crit_damage": "法术暴击伤害",
+  "attribute.aces_spell_utils.magic_projectile_crit_chance": "法术弹射物暴击率",
+  "attribute.aces_spell_utils.magic_projectile_crit_damage": "法术弹射物暴击伤害",
+  "attribute.aces_spell_utils.magic_projectile_damage": "法术弹射物伤害",
+  "attribute.aces_spell_utils.life_recovery": "生命恢复",
+
+  "attribute.aces_spell_utils.ritual_magic_resist": "秘仪法术抗性",
+  "attribute.aces_spell_utils.ritual_spell_power": "秘仪法术强度",
+  "attribute.aces_spell_utils.hydro_magic_resist": "海洋法术抗性",
+  "attribute.aces_spell_utils.hydro_spell_power": "海洋法术强度",
+  "attribute.aces_spell_utils.technomancy_magic_resist": "科技法术抗性",
+  "attribute.aces_spell_utils.technomancy_spell_power": "科技法术强度",
+
+  "ui.aces_spell_utils.refinement": "%d 精炼",
+
+  "tooltip.aces_spell_utils.active_ability": "主动能力（冷却：%s）：",
+  "item.aces_spell_utils.more_details1": "按下 [SHIFT] 查看被动能力",
+  "item.aces_spell_utils.more_details2": "按下 [ALT] 查看主动能力",
+  "item.aces_spell_utils.heavy_gun_info": "这是重型枪械；仅能在主手持有时右键施法",
+  "item.aces_spell_utils.light_gun_info": "这是轻型枪械；副手持有时也可右键施法",
+
+  "item.aces_spell_utils.example_sheath": "白银刀鞘",
+  "item.aces_spell_utils.example_sheath.desc": "命中时，从目标头顶召唤彗星坠落",
+  "item.aces_spell_utils.example_staff": "白银法杖",
+  "item.aces_spell_utils.example_imbue_staff": "遗弃者法杖",
+  "item.aces_spell_utils.example_curio": "骷髅吊坠",
+  "item.aces_spell_utils.example_curio.desc": "散发着死亡气息的吊坠",
+  "item.aces_spell_utils.example_imbue_curio": "燃烧核心",
+  "item.aces_spell_utils.example_imbue_curio.desc": "一件触碰时灼热无比的奇异物体",
+  "item.aces_spell_utils.example_passive_ability_spellbook": "寰宇法典",
+  "item.aces_spell_utils.example_passive_ability_spellbook.desc": "命中时，从目标头顶召唤彗星坠落",
+  "item.aces_spell_utils.example_loot_bag": "提洛斯回响战利品袋",
+  "item.aces_spell_utils.example_loot_bag.desc": "包含原初受火者“提洛斯回响”的战利品",
+
+  "item.aces_spell_utils.example_gun": "裂栓等离子步枪",
+  "item.aces_spell_utils.example_gun.desc": "裂栓被动能力",
+  "item.aces_spell_utils.example_gun.desc2": "裂栓主动能力",
+
+  "item.aces_spell_utils.example_ap_sword": "夜之锋刃",
+  "item.aces_spell_utils.example_ap_sword.desc": "夜之锋刃被动能力",
+  "item.aces_spell_utils.example_ap_sword.desc2": "夜之锋刃主动能力",
+
+  "item.aces_spell_utils.example_ap_magic_sword": "暗脉",
+  "item.aces_spell_utils.example_ap_magic_sword.desc": "暗脉被动能力",
+  "item.aces_spell_utils.example_ap_magic_sword.desc2": "暗脉主动能力",
+
+  "entity.aces_spell_utils.test_boss": "测试Boss"
+}

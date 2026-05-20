@@ -1,5 +1,44 @@
 # GoldenTweaks Update Log
 
+## 2026.05.20 — v1.2
+
+### Golden Tweaks
+- 更改了永久可食用的实现方式
+  - 现在能够正确响应配置变化
+- GUI 调试器新增物品调试功能
+  - Shift + 鼠标中键可在日志打印鼠标悬浮/主手物品信息
+- 增加了一众模组的汉化
+
+### Maid Beacon
+- 尝试修复在 Immersive Optimizations 等异步模组存在时，退出存档删除持久实体会使游戏崩溃的问题
+  - [MaidTrackerMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maid/MaidTrackerMixin.java)
+
+### Too Many Recipe Viewers
+- 压制了 Iron's Jewelery 的报错
+  - [StackHelperMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/StackHelperMixin.java)
+
+### Additional Attributes
+- 修复了卷轴放进 AE 会崩溃的问题
+  - [SpellUtilsMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/SpellUtilsMixin.java)
+
+### Evolved Mekanism
+- 修复了化学混合机配方问题
+  - [ChemixerRecipeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ChemixerRecipeMixin.java)
+  - [BasicChemixerRecipeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/BasicChemixerRecipeMixin.java)
+  - [EMJEIMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/EMJEIMixin.java)
+- 修复了 APT 在客户端未完成加载时就读取内部存储的问题
+  - [APTPortEnergySafeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mek/APTPortEnergySafeMixin.java)
+  - [MultiblockDataMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mek/MultiblockDataMixin.java)
+  
+### Mekanism More Machines
+- 添加联动配方
+
+### DnDecor
+- 添加汉化
+
+### DnDesires
+- 添加汉化
+
 ## 2026.05.19 — v1.1
 
 ### Evolved Mekanism
@@ -43,7 +82,7 @@
 
 ### Gameplay
 - 增加“所有食物始终可食用”功能
-  - [FoodPropertiesMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/FoodPropertiesMixin.java)
+  - [FoodPropertiesMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/PlayerMixin.java)
   - 默认启用
   - 可在 `机制` 分类中关闭
 
