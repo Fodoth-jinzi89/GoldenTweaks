@@ -22,15 +22,14 @@ ORES = [
     "bronze",
     "tungsten",
     "mithril",
-    "constantan"
+    "constantan",
+    "brass"
 ]
 
-# Gems
 GEMS = [
     "fluorite"
 ]
 
-# 使用 Mekanism tag 的金属
 MEKANISM_METALS = {
     "osmium",
     "steel",
@@ -40,121 +39,103 @@ MEKANISM_METALS = {
     "uranium"
 }
 
-# 使用 Mekanism tag 的宝石
 MEKANISM_GEMS = {
     "fluorite"
 }
 
-# 使用 Create tag 的金属
 CREATE_METALS = {
+    "copper",
+    "iron",
+    "gold",
     "brass"
 }
 
 
 def resolve_tag(material: str, category: str):
     """
-    金属:
-        ores / raw_materials / ingots / nuggets
-        dusts / plates / storage_blocks
-
-    宝石:
-        gems / storage_blocks
+    只负责 matchItems（输入来源 tag）
     """
 
-    # gems
-    if category == "gems":
-        if material in MEKANISM_GEMS:
-            return f"#mekanism:gems/{material}"
-        return f"#c:gems/{material}"
-
-    # storage block for gems
-    if category == "storage_blocks" and material in MEKANISM_GEMS:
-        return f"#mekanism:storage_blocks/{material}"
-
-    # Create metals
-    if material in CREATE_METALS:
-        return f"#create:{category}/{material}"
-
-    # Mekanism metals
-    if material in MEKANISM_METALS:
-        return f"#mekanism:{category}/{material}"
-
-    # default c tag
     return f"#c:{category}/{material}"
+
+
+def resolve_result_item(material: str, category: str):
+    """
+    只负责输出 item（resultItems）
+    """
+
+    # plate 特殊：Create 优先
+    if category == "plates" and material in CREATE_METALS:
+        if material == "gold":
+            return f"create:golden_sheet"
+        return f"create:{material}_sheet"
+
+    # Mekanism 输出体系
+    if material in MEKANISM_METALS:
+        return f"mekanism:{material}_{category[:-1]}"
+
+    # 默认输出（本模组）
+    return f"{MODID}:{material}_{category[:-1]}"
 
 
 def gen_metal_entry(metal: str):
     entries = []
 
-    # ore
     entries.append({
         "matchItems": [resolve_tag(metal, "ores")],
         "resultItems": f"{MODID}:{metal}_ore"
     })
 
-    # deepslate ore
     entries.append({
         "matchItems": [
-            resolve_tag(metal, "ores").replace(
-                "ores/",
-                "ores/deepslate_"
-            )
+            resolve_tag(metal, "ores").replace("ores/", "ores/deepslate_")
         ],
         "resultItems": f"{MODID}:deepslate_{metal}_ore"
     })
 
-    # raw
     entries.append({
         "matchItems": [resolve_tag(metal, "raw_materials")],
         "resultItems": f"{MODID}:raw_{metal}"
     })
 
-    # raw block
     entries.append({
         "matchItems": [f"#c:storage_blocks/raw_{metal}"],
         "resultItems": f"{MODID}:raw_{metal}_block"
     })
 
-    # ingot
     entries.append({
         "matchItems": [resolve_tag(metal, "ingots")],
-        "resultItems": f"{MODID}:{metal}_ingot"
+        "resultItems": resolve_result_item(metal, "ingots")
     })
 
-    # nugget
     entries.append({
         "matchItems": [resolve_tag(metal, "nuggets")],
-        "resultItems": f"{MODID}:{metal}_nugget"
+        "resultItems": resolve_result_item(metal, "nuggets")
     })
 
-    # dust
     entries.append({
         "matchItems": [resolve_tag(metal, "dusts")],
-        "resultItems": f"{MODID}:{metal}_dust"
+        "resultItems": resolve_result_item(metal, "dusts")
     })
 
-    # plate
     entries.append({
         "matchItems": [resolve_tag(metal, "plates")],
-        "resultItems": f"{MODID}:{metal}_plate"
+        "resultItems": resolve_result_item(metal, "plates")
     })
 
-    # rod
     entries.append({
         "matchItems": [resolve_tag(metal, "rods")],
-        "resultItems": f"{MODID}:{metal}_rod"
+        "resultItems": resolve_result_item(metal, "rods")
     })
 
-    # rod
     entries.append({
         "matchItems": [resolve_tag(metal, "gears")],
-        "resultItems": f"{MODID}:{metal}_gear"
+        "resultItems": resolve_result_item(metal, "gears")
     })
 
-    # block
     entries.append({
         "matchItems": [resolve_tag(metal, "storage_blocks")],
-        "resultItems": f"{MODID}:{metal}_block"
+        "resultItems": resolve_result_item(metal, "storage_blocks")
     })
 
     return entries
@@ -163,13 +144,11 @@ def gen_metal_entry(metal: str):
 def gen_gem_entry(gem: str):
     entries = []
 
-    # gem
     entries.append({
         "matchItems": [resolve_tag(gem, "gems")],
         "resultItems": f"{MODID}:{gem}"
     })
 
-    # storage block
     entries.append({
         "matchItems": [resolve_tag(gem, "storage_blocks")],
         "resultItems": f"{MODID}:{gem}_block"

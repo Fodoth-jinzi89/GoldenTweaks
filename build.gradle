@@ -170,6 +170,8 @@ dependencies {
     compileOnly "maven.modrinth:tmrv:0.7.3+mc.21.1"
     compileOnly "maven.modrinth:touhou-little-maid-beacon:1.0.1-bugfix"
 
+    compileOnly "maven.modrinth:advanced-loot-info:9jJT2Kmz"
+
     compileOnly fileTree(dir: 'libs/run', include: ['*.jar'])
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
 }

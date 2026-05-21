@@ -1,0 +1,31 @@
+{
+  "item.questshop.coin": "金币",
+  "tooltip.questshop.coin": "§9右键消耗。SHIFT+右键消耗整组。§r",
+
+  "command.questshop.player_only": "该命令只能由玩家使用。",
+  "command.questshop.no_team": "%s 不在任何队伍中。",
+  "command.questshop.coins_show": "%s 的队伍拥有 %s 金币。",
+  "command.questshop.coins_added": "已向 %s 添加 %s 金币。当前总数：%s。",
+  "command.questshop.coins_removed": "已从 %s 移除 %s 金币。当前总数：%s。",
+  "command.questshop.coins_set": "已将 %s 队伍的金币设置为 %s。",
+
+  "questshop.buy.ok": "购买成功！",
+  "questshop.buy.invalid": "该商店条目已不可用。",
+  "questshop.buy.no_coins": "金币不足。",
+  "questshop.buy.no_space": "背包空间不足。",
+  "questshop.buy.locked": "该分类已被锁定。",
+  "questshop.buy.failed": "购买失败",
+  "questshop.buy.toast.detail": "已购买 x%1$s %2$s（-%3$s 金币）",
+  "questshop.category.locked": "该分类已被锁定。",
+
+  "reward.questshop.coins.amount": "数量",
+  "reward.questshop.coins.title": "金币：%s",
+
+  "reward.questshop.category.category": "分类",
+  "reward.questshop.category.unlock": "解锁",
+  "reward.questshop.category.title.unlock": "解锁分类 %s",
+  "reward.questshop.category.title.lock": "锁定分类 %s",
+
+  "ftbquests.reward.questshop.coins": "金币",
+  "ftbquests.reward.questshop.category": "分类"
+}
