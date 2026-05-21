@@ -62,6 +62,7 @@
   "client": [
     "fix.ApothesisClientLanguageMixin",
     "fix.ModernUITextRenderTypeMixin",
+    "fix.questshop.ShopMenuScreenLocalizationMixin",
     "gpubooster.SetGLVersionMixin",
     "gpubooster.access.MainTargetDimensionAccessor",
     "gpubooster.dsa.BufferBuilderMixin",

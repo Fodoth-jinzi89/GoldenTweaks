@@ -1,6 +1,6 @@
 {
   "item.questshop.coin": "金币",
-  "tooltip.questshop.coin": "§9右键消耗。SHIFT+右键消耗整组。§r",
+  "tooltip.questshop.coin": "§9右键存入银行。SHIFT+右键存入整组。§r",
 
   "command.questshop.player_only": "该命令只能由玩家使用。",
   "command.questshop.no_team": "%s 不在任何队伍中。",
@@ -15,7 +15,7 @@
   "questshop.buy.no_space": "背包空间不足。",
   "questshop.buy.locked": "该分类已被锁定。",
   "questshop.buy.failed": "购买失败",
-  "questshop.buy.toast.detail": "已购买 x%1$s %2$s（-%3$s 金币）",
+  "questshop.buy.toast.detail": "已购买 %2$s x%1$s（-%3$s 金币）",
   "questshop.category.locked": "该分类已被锁定。",
 
   "reward.questshop.coins.amount": "数量",
@@ -27,5 +27,9 @@
   "reward.questshop.category.title.lock": "锁定分类 %s",
 
   "ftbquests.reward.questshop.coins": "金币",
-  "ftbquests.reward.questshop.category": "分类"
+  "ftbquests.reward.questshop.category": "分类",
+
+  "gui.questshop.title": "商店",
+  "gui.questshop.coins": "金币：%s",
+  "gui.questshop.buy": "购买"
 }

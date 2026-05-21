@@ -1,5 +1,11 @@
 # GoldenTweaks Update Log
 
+## 2026.05.21 — v1.3
+
+### Questshop
+- 修复了硬编码无法本地化的问题
+  - 添加本地化
+
 ## 2026.05.20 — v1.2
 
 ### Golden Tweaks

@@ -172,6 +172,10 @@ dependencies {
 
     compileOnly "maven.modrinth:advanced-loot-info:9jJT2Kmz"
 
-    compileOnly fileTree(dir: 'libs/run', include: ['*.jar'])
+
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+
+    runtimeOnly fileTree(dir: 'libs/run', include: ['*.jar'])
+
+    implementation fileTree(dir: 'libs/implementation', include: ['*.jar'])
 }
