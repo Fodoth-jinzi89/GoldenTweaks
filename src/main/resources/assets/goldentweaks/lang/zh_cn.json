@@ -74,5 +74,15 @@
   "config.goldentweaks.debug.debug_gui_inspector.comment": "Shift + 鼠标中键点击组件以检查 GUI 类信息",
 
   "config.goldentweaks.debug.debug_gui_copy_to_clipboard": "复制 GUI 调试信息到剪贴板",
-  "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "自动将 GUI 调试信息复制到剪贴板"
+  "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "自动将 GUI 调试信息复制到剪贴板",
+
+  "itemGroup.goldentweaks.familiars": "Golden Tweaks丨魔宠扩展",
+
+  "item.goldentweaks.armor_plate_tier_4": "IV级护甲板",
+  "item.goldentweaks.armor_plate_tier_5": "V级护甲板",
+  "item.goldentweaks.armor_plate_tier_6": "VI级护甲板",
+  "item.goldentweaks.armor_plate_tier_7": "VII级护甲板",
+  "item.goldentweaks.armor_plate_tier_8": "VIII级护甲板",
+  "item.goldentweaks.armor_plate_tier_9": "IX级护甲板",
+  "item.goldentweaks.armor_plate_tier_10": "X级护甲板"
 }

@@ -10,6 +10,13 @@
     "balance.accessor.BlockTypeAccessor",
     "feature.DisableSalvageCharmAnvilMixin",
     "feature.PlayerMixin",
+    "feature.alshanex_familiars.AbstractSpellCastingPetConsumableMixin",
+    "feature.alshanex_familiars.ConsumableTypeMixin",
+    "feature.alshanex_familiars.FamiliarConsumableComponentMixin",
+    "feature.alshanex_familiars.FamiliarConsumableIntegrationMixin",
+    "feature.alshanex_familiars.FamiliarManagerMixin",
+    "feature.alshanex_familiars.accessor.EntityAccessor",
+    "feature.attributefix.RangeConfigMixin",
     "fix.AliOptionalItemPoolMixin",
     "fix.AnnuusServerMixin",
     "fix.ATCEventsMixin",
@@ -60,6 +67,9 @@
     "requireAnnotations": true
   },
   "client": [
+    "feature.alshanex_familiars.FamiliarSelectionScreenMixin",
+    "feature.alshanex_familiars.FamiliarStorageScreenMixin",
+    "feature.alshanex_familiars.accessor.ScreenAccessor",
     "fix.ApothesisClientLanguageMixin",
     "fix.ModernUITextRenderTypeMixin",
     "fix.questshop.ShopMenuScreenLocalizationMixin",

@@ -343,3 +343,24 @@ versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies."${mod_id}"]]
+modId = "fluxnetworks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "densemekanism"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "alshanex_familiars"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+

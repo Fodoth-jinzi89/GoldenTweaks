@@ -2,7 +2,9 @@ package net.fodoth.skina.goldentweaks.network;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPickupItemPacket;
+import net.fodoth.skina.goldentweaks.network.packet.S2CConsumableSyncPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2COpenMaterialBookPacket;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
@@ -10,6 +12,7 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
 @EventBusSubscriber(modid = GoldenTweaks.MODID)
 public class ModNetworking {
+
 
     @SubscribeEvent
     public static void register(RegisterPayloadHandlersEvent event) {
@@ -26,6 +29,12 @@ public class ModNetworking {
                 S2COpenMaterialBookPacket.TYPE,
                 S2COpenMaterialBookPacket.STREAM_CODEC,
                 S2COpenMaterialBookPacket::handle
+        );
+
+        registrar.playToClient(
+                S2CConsumableSyncPacket.TYPE,
+                S2CConsumableSyncPacket.STREAM_CODEC,
+                S2CConsumableSyncPacket::handle
         );
     }
 }

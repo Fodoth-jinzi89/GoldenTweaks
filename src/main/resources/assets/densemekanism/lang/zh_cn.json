@@ -1,0 +1,13 @@
+{
+  "block.densemekanism.dense_deepslate_fluorite_ore": "致密深层氟石矿石",
+  "block.densemekanism.dense_deepslate_lead_ore": "致密深层铅矿石",
+  "block.densemekanism.dense_deepslate_osmium_ore": "致密深层锇矿石",
+  "block.densemekanism.dense_deepslate_tin_ore": "致密深层锡矿石",
+  "block.densemekanism.dense_deepslate_uranium_ore": "致密深层铀矿石",
+  "block.densemekanism.dense_fluorite_ore": "致密氟石矿石",
+  "block.densemekanism.dense_lead_ore": "致密铅矿石",
+  "block.densemekanism.dense_osmium_ore": "致密锇矿石",
+  "block.densemekanism.dense_tin_ore": "致密锡矿石",
+  "block.densemekanism.dense_uranium_ore": "致密铀矿石",
+  "itemGroup.densemekanism": "通用机械丨致密矿石"
+}

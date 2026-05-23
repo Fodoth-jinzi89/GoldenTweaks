@@ -430,6 +430,7 @@
   "item.traveloptics.random_imbue_curio.nature_unassigned.tooltip": "§e右键单击§2以注入自然法术！",
   "item.traveloptics.sanctified_spell_slot_upgrade": "神圣法术槽改进",
   "item.traveloptics.sanctified_spell_slot_upgrade.guide": "需要合成。",
+  "item.traveloptics.shellbound": "贝缚",
   "item.traveloptics.scourge_of_the_sands.evo_one.active.tooltip": "§e★ §f[进阶等级 1] 范围增加 §b+6 §f格，最大目标数增加 §b+4",
   "item.traveloptics.scourge_of_the_sands.evo_one.inactive.tooltip": "§7☆ [进阶等级 1] 范围增加 §3+6 §7格，最大目标数增加 §3+4",
   "item.traveloptics.scourge_of_the_sands.evo_three.active.tooltip": "§e★ §f[进阶等级 3] 两种显化的伤害现在都会受到 §b神圣法术强度 §f加成",

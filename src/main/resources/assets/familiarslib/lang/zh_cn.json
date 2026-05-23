@@ -73,9 +73,9 @@
 
   "item.familiarslib.familiar_spellbook.desc": "装备时，这本法术书会将你与你驯服的魔宠连接起来，使你能够与它们共享魔法属性。",
   "item.familiarslib.consumable.tooltip.type": "类型：%s",
-  "item.familiarslib.consumable.tooltip.bonus": "加成：%s",
-  "item.familiarslib.consumable.tooltip.limit": "阶级限制：%s",
-  "item.familiarslib.consumable.tooltip.tier": "阶级：%d",
+  "item.familiarslib.consumable.tooltip.bonus": "每个增加：%s",
+  "item.familiarslib.consumable.tooltip.limit": "最大总量：%s",
+  "item.familiarslib.consumable.tooltip.tier": "等级：%d",
   "item.familiarslib.consumable.tooltip.food": "食物值：%d",
 
   "consumable.type.armor": "护甲",

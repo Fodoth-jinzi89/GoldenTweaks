@@ -84,7 +84,19 @@
   "config.goldentweaks.debug.debug_gui_inspector.comment": "Shift + Middle Click widgets to inspect GUI class information",
 
   "config.goldentweaks.debug.debug_gui_copy_to_clipboard": "Copy GUI Debug To Clipboard",
-  "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "Automatically copy GUI debug information to clipboard"
+  "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "Automatically copy GUI debug information to clipboard",
+
+  "itemGroup.goldentweaks.familiars": "Golden Tweaks: Familiars",
+
+
+  "item.goldentweaks.armor_plate_tier_4": "Tier IV Armor Plate",
+  "item.goldentweaks.armor_plate_tier_5": "Tier V Armor Plate",
+  "item.goldentweaks.armor_plate_tier_6": "Tier VI Armor Plate",
+  "item.goldentweaks.armor_plate_tier_7": "Tier VII Armor Plate",
+  "item.goldentweaks.armor_plate_tier_8": "Tier VIII Armor Plate",
+  "item.goldentweaks.armor_plate_tier_9": "Tier IX Armor Plate",
+  "item.goldentweaks.armor_plate_tier_10": "Tier X Armor Plate"
+
 
 
 

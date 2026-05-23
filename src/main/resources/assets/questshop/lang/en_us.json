@@ -31,6 +31,10 @@
 
   "gui.questshop.title": "Quest Shop",
   "gui.questshop.coins": "Coins: %s",
-  "gui.questshop.buy": "Buy"
+  "gui.questshop.buy": "Buy",
+  
+  "ftbteamsconfig.questshop": "Quest Shop",
+  "ftbteamsconfig.questshop.category_settings": "Category Settings",
+  "ftbteamsconfig.questshop.coins": "Coins"
   
 }

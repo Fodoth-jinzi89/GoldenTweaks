@@ -31,5 +31,9 @@
 
   "gui.questshop.title": "商店",
   "gui.questshop.coins": "金币：%s",
-  "gui.questshop.buy": "购买"
+  "gui.questshop.buy": "购买",
+  
+  "ftbteamsconfig.questshop": "任务商店配置",
+  "ftbteamsconfig.questshop.category_settings": "分类解锁情况",
+  "ftbteamsconfig.questshop.coins": "队伍金币余额"
 }

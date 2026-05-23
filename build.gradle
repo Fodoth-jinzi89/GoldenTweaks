@@ -157,7 +157,7 @@ dependencies {
     compileOnly "maven.modrinth:neoecoae:1.3.4"
     compileOnly "curse.maven:avaritia-integration-1347675:7849138"
 
-    compileOnly "maven.modrinth:irons-spells-n-spellbooks:1.21.1-3.15.6"
+    implementation "maven.modrinth:irons-spells-n-spellbooks:1.21.1-3.15.6"
     compileOnly "maven.modrinth:additional-attributes:ZQ340JcB"
 
     compileOnly "maven.modrinth:cloth-config:15.0.140+neoforge"

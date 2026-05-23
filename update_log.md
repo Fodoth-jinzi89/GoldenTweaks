@@ -1,5 +1,17 @@
 # GoldenTweaks Update Log
 
+## 2026.05.23 — v1.4
+
+### Alshanex Familiars
+- 增加联动物品，重新搓了一整套属性系统，解放属性上限
+  - [相关文件](src/main/java/net/fodoth/skina/goldentweaks/compat/alshanex_familiars)
+  - [相关mixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/alshanex_familiars)
+- GUI 还没修好
+
+### Attribute Fix
+- 设置 Config 默认值的上下限为近乎无限（DOUBLE.MAX_VALUE）
+  - [RangeConfigMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/attributefix/RangeConfigMixin.java)
+
 ## 2026.05.21 — v1.3
 
 ### Questshop
