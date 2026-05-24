@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "goldentweaks:magic_power_tier_1",
+    "goldentweaks:magic_power_tier_2",
+    "goldentweaks:magic_power_tier_3",
+    "goldentweaks:magic_power_tier_4",
+    "goldentweaks:magic_power_tier_5",
+    "goldentweaks:magic_power_tier_6",
+    "goldentweaks:magic_power_tier_7",
+    "goldentweaks:magic_power_tier_8",
+    "goldentweaks:magic_power_tier_9",
+    "goldentweaks:magic_power_tier_10"
+  ]
+}

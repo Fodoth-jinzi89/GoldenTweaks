@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "goldentweaks:armor_plate_tier_4",
+    "goldentweaks:life_fruit_tier_4",
+    "goldentweaks:magic_power_tier_4",
+    "goldentweaks:magic_resist_tier_4",
+    "goldentweaks:armor_plate_tier_5",
+    "goldentweaks:life_fruit_tier_5",
+    "goldentweaks:magic_power_tier_5",
+    "goldentweaks:magic_resist_tier_5",
+    "goldentweaks:armor_plate_tier_6",
+    "goldentweaks:life_fruit_tier_6",
+    "goldentweaks:magic_power_tier_6",
+    "goldentweaks:magic_resist_tier_6"
+  ]
+}

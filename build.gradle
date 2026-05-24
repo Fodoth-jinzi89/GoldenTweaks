@@ -140,11 +140,13 @@ dependencies {
     compileOnly "maven.modrinth:annuus:fz24WWx1"
 
 
-    compileOnly "maven.modrinth:mekanism:5KzzycBT"
-    compileOnly "maven.modrinth:mekanismmoremachine:1.21.1-1.3.3"
-    compileOnly "maven.modrinth:mekanism_extra:1.21.1-1.4.0"
-    compileOnly "maven.modrinth:iglee-library:5mObcFWo"
-    compileOnly "maven.modrinth:evolved-mekanism:3vuQZTlx"
+    implementation "maven.modrinth:mekanism:5KzzycBT"
+    implementation "maven.modrinth:mekanismmoremachine:1.21.1-1.3.3"
+    implementation "maven.modrinth:mekanism_extra:1.21.1-1.4.0"
+    implementation "maven.modrinth:iglee-library:5mObcFWo"
+    implementation "maven.modrinth:evolved-mekanism:3vuQZTlx"
+
+
     compileOnly "maven.modrinth:all-the-compatibility:v.3.9.1"
     compileOnly "maven.modrinth:modonomicon:1.21.1-1.120.1"
     compileOnly "maven.modrinth:justenoughcharacters:4.5.23"

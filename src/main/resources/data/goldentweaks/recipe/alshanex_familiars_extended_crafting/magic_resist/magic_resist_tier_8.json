@@ -1,0 +1,70 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+
+  "pattern": [
+    "   AAA   ",
+    "  ABBBA  ",
+    " ABBBBBA ",
+    "ABBDDDBBA",
+    "ABCEFECBA",
+    "ABBDEDBBA",
+    " ABBDBBA ",
+    "  ABCBA  ",
+    "    A    "
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "B": {
+      "item": "silentgear:azure_silver_block"
+    },
+    "C": {
+      "item": "spectrum:paltaeria_floatblock"
+    },
+    "D": {
+      "item": "spectrum:paltaeria_gem"
+    },
+    "E": {
+      "item": "hazennstuff:arcane_steel_block"
+    },
+    "F": {
+      "item": "cataclysm:storm_eye"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:magic_resist_tier_8",
+	"count": 1
+  }
+}

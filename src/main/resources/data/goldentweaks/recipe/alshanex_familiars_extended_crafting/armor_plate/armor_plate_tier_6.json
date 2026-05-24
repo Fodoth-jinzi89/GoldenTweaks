@@ -1,0 +1,39 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    }
+  ],
+
+  "pattern": [
+    "  AAA  ",
+    " ABBBA ",
+    "ABBBBBA",
+    "ABBCBBA",
+    "ABBBBBA",
+    " ABBBA ",
+    " AAAAA "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/netherite"
+    },
+    "B": {
+      "tag": "c:storage_blocks/netherite"
+    },
+    "C": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:armor_plate_tier_6",
+    "count": 4
+  }
+}

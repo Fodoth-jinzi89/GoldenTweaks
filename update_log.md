@@ -1,5 +1,11 @@
 # GoldenTweaks Update Log
 
+## 2026.05.24 — v1.5
+
+### Alshanex Familiars
+- 完善联动物品，写好合成表
+- 修好 GUI
+
 ## 2026.05.23 — v1.4
 
 ### Alshanex Familiars
