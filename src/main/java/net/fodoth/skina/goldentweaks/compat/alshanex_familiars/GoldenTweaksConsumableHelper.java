@@ -8,6 +8,7 @@ import net.fodoth.skina.goldentweaks.network.packet.S2CConsumableSyncPacket;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -16,6 +17,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -73,6 +75,10 @@ public class GoldenTweaksConsumableHelper {
     // =========================================================
     // 核心写入（唯一入口）
     // =========================================================
+
+    public static void saveData(AbstractSpellCastingPet familiar) {
+        saveData(familiar, getData(familiar));
+    }
 
     public static void saveData(AbstractSpellCastingPet familiar,
                                 GoldenTweaksConsumableData data) {
@@ -145,6 +151,10 @@ public class GoldenTweaksConsumableHelper {
         return new GoldenTweaksConsumableData(nbt.getCompound(NBT_KEY));
     }
 
+    public static CompoundTag toNBT(AbstractSpellCastingPet pet) {
+        return toNBT(getData(pet));
+    }
+
     public static CompoundTag toNBT(GoldenTweaksConsumableData data) {
 
         CompoundTag tag = new CompoundTag();
@@ -154,6 +164,26 @@ public class GoldenTweaksConsumableHelper {
         }
 
         return tag;
+    }
+
+    public static CompoundTag createFamiliarNBT(AbstractSpellCastingPet familiar) {
+        CompoundTag nbt = new CompoundTag();
+
+        familiar.saveWithoutId(nbt);
+
+        nbt.putFloat("currentHealth", familiar.getHealth());
+        nbt.putFloat("baseMaxHealth", familiar.getBaseMaxHealth());
+        nbt.putString("id", EntityType.getKey(familiar.getType()).toString());
+
+        if (familiar.hasCustomName()) {
+            nbt.putString("customName", Objects.requireNonNull(familiar.getCustomName()).getString());
+        }
+
+        GoldenTweaksConsumableData data = new GoldenTweaksConsumableData(nbt);
+
+        GoldenTweaksConsumableHelper.saveData(familiar, data);
+
+        return nbt;
     }
 
     public static GoldenTweaksConsumableData fromNBT(CompoundTag tag) {

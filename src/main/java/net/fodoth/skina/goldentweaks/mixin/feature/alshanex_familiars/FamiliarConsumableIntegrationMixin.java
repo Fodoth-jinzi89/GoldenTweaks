@@ -5,7 +5,6 @@ import net.alshanex.familiarslib.util.consumables.FamiliarConsumableComponent;
 import net.alshanex.familiarslib.util.consumables.FamiliarConsumableIntegration;
 import net.alshanex.familiarslib.util.consumables.FamiliarConsumableSystem;
 import net.alshanex.familiarslib.util.consumables.FamiliarConsumableSystem.ConsumableType;
-import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableData;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableHelper;
 import net.fodoth.skina.goldentweaks.network.packet.S2CConsumableSyncPacket;
@@ -27,17 +26,6 @@ import static net.alshanex.familiarslib.util.consumables.FamiliarConsumableInteg
 
 @Mixin(FamiliarConsumableIntegration.class)
 public abstract class FamiliarConsumableIntegrationMixin {
-
-
-    @Unique
-    private static void gtLog(String msg, Object... args) {
-        GoldenTweaks.LOGGER.debug("[GT-Consumable] " + msg, args);
-    }
-
-    @Unique
-    private static void gtInfo(String msg, Object... args) {
-        GoldenTweaks.LOGGER.info("[GT-Consumable] " + msg, args);
-    }
 
     @Shadow
     private static String getTypeTranslationKey(ConsumableType type) {
@@ -177,44 +165,31 @@ public abstract class FamiliarConsumableIntegrationMixin {
             Player player,
             ItemStack itemStack
     ) {
-        int entityId = familiar.getId();
-
-        gtInfo("interaction START entity={} player={} item={}",
-                entityId,
-                player.getName().getString(),
-                itemStack.getItem());
 
         FamiliarConsumableComponent component =
                 getConsumableComponent(itemStack);
 
         if (component == null) {
-            gtLog("component NULL entity={}", entityId);
             return InteractionResult.PASS;
         }
 
         if (familiar.level().isClientSide) {
-            gtLog("client side cancel entity={}", entityId);
             return InteractionResult.CONSUME;
         }
 
         GoldenTweaksConsumableData data =
                 GoldenTweaksConsumableHelper.getData(familiar);
 
-        ConsumableType type = component.type();
+        ConsumableType type =
+                component.type();
 
         double currentValue =
                 data.getValue(type);
-
-        gtLog("current value entity={} type={} value={}",
-                entityId, type, currentValue);
 
         int maxAllowed =
                 component.getLimit();
 
         if (currentValue >= maxAllowed) {
-
-            gtInfo("MAX REACHED entity={} type={} value={}/{}",
-                    entityId, type, currentValue, maxAllowed);
 
             goldentweaks$sendActionBar(
                     player,
@@ -233,13 +208,7 @@ public abstract class FamiliarConsumableIntegrationMixin {
         int maxUsableTier =
                 getMaxUsableTier(familiar, type);
 
-        gtLog("tier check entity={} tier={} maxTier={}",
-                entityId, component.tier(), maxUsableTier);
-
         if (component.tier() > maxUsableTier) {
-
-            gtInfo("TIER BLOCKED entity={} tier={} max={}",
-                    entityId, component.tier(), maxUsableTier);
 
             goldentweaks$sendActionBar(
                     player,
@@ -259,20 +228,18 @@ public abstract class FamiliarConsumableIntegrationMixin {
                 maxAllowed
         );
 
-        gtInfo("APPLY entity={} type={} {} -> {} (+{})",
-                entityId,
+        GoldenTweaksConsumableHelper.setValue(
+                familiar,
                 type,
-                currentValue,
-                newValue,
-                component.getBonus()
+                newValue
         );
-
-
-        GoldenTweaksConsumableHelper.setValue(familiar, type, newValue);
 
         PacketDistributor.sendToPlayersTrackingEntity(
                 familiar,
-                new S2CConsumableSyncPacket(familiar.getId(), data)
+                new S2CConsumableSyncPacket(
+                        familiar.getId(),
+                        GoldenTweaksConsumableHelper.getData(familiar)
+                )
         );
 
         if (type == ConsumableType.HEALTH) {
@@ -288,7 +255,8 @@ public abstract class FamiliarConsumableIntegrationMixin {
                         Component.translatable(
                                 getTypeTranslationKey(type)
                         ),
-                        goldentweaks$formatValue(newValue) + getUnitSuffix(type)
+                        goldentweaks$formatValue(newValue)
+                                + getUnitSuffix(type)
                 ),
                 ChatFormatting.GREEN
         );
@@ -307,6 +275,7 @@ public abstract class FamiliarConsumableIntegrationMixin {
             FamiliarConsumableSystem.ConsumableData data,
             ConsumableType type
     ) {
+
         return goldentweaks$getMaxUsableTierInternal(
                 data.getValue(type),
                 type
@@ -370,9 +339,7 @@ public abstract class FamiliarConsumableIntegrationMixin {
             AbstractSpellCastingPet familiar
     ) {
 
-        GoldenTweaksConsumableHelper.sync(
-                familiar
-        );
+        GoldenTweaksConsumableHelper.sync(familiar);
     }
 
     /**

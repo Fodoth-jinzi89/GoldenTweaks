@@ -4,11 +4,12 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import net.alshanex.familiarslib.data.PlayerFamiliarData;
 import net.alshanex.familiarslib.entity.AbstractSpellCastingPet;
 import net.alshanex.familiarslib.network.ReleaseFamiliarPacket;
+import net.alshanex.familiarslib.network.SelectFamiliarPacket;
 import net.alshanex.familiarslib.registry.AttachmentRegistry;
 import net.alshanex.familiarslib.screen.FamiliarSelectionScreen;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GTConfirmReleaseScreen;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GTFamiliarEntry;
-import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableData;
+import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableHelper;
 import net.fodoth.skina.goldentweaks.mixin.feature.alshanex_familiars.accessor.ScreenAccessor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -28,11 +29,14 @@ import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
+
+import static net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER;
 
 
 @Mixin(FamiliarSelectionScreen.class)
@@ -68,6 +72,9 @@ public abstract class FamiliarSelectionScreenMixin {
 
     @Shadow
     private void drawItemIcon(GuiGraphics guiGraphics, ResourceLocation texture, int x, int y) {}
+
+    @Shadow
+    private void updateReleaseButtonVisibility() {}
 
 
 
@@ -122,9 +129,7 @@ public abstract class FamiliarSelectionScreenMixin {
             float health = nbt.getFloat("currentHealth");
             if (health <= 0) health = baseMaxHealth;
 
-            CompoundTag gtTag = nbt.getCompound("gt_consumable");
-            GoldenTweaksConsumableData gtData =
-                    GoldenTweaksConsumableData.fromNBT(gtTag);
+            var gtData = GoldenTweaksConsumableHelper.getData(familiar);
 
             int armor = (int) gtData.getArmor();
             int enraged = (int) gtData.getEnraged();
@@ -282,14 +287,27 @@ public abstract class FamiliarSelectionScreenMixin {
     @Inject(method = "onReleaseButtonPressed", at = @At("HEAD"), cancellable = true)
     private void gt$onReleaseButtonPressed(Button button, CallbackInfo ci) {
 
-        if (this.selectedFamiliarId == null) return;
+        LOGGER.info("[GT Debug] Release button pressed. selectedFamiliarId={}", this.selectedFamiliarId);
+
+        if (this.selectedFamiliarId == null) {
+            LOGGER.warn("[GT Debug] Abort: selectedFamiliarId is null");
+            return;
+        }
 
         FamiliarSelectionScreen self = (FamiliarSelectionScreen)(Object)this;
 
         Object raw = getSelectedEntry();
-        if (!(raw instanceof GTFamiliarEntry selectedEntry)) return;
+        LOGGER.info("[GT Debug] Raw selected entry = {}", raw);
+
+        if (!(raw instanceof GTFamiliarEntry selectedEntry)) {
+            LOGGER.warn("[GT Debug] Abort: selected entry is not GTFamiliarEntry, actual={}",
+                    raw == null ? "null" : raw.getClass().getName());
+            return;
+        }
 
         String familiarName = selectedEntry.displayName();
+        LOGGER.info("[GT Debug] Selected familiar: id={}, name={}",
+                this.selectedFamiliarId, familiarName);
 
         Component title = Component.translatable("ui.familiarslib.confirm_release");
         Component message = Component.translatable(
@@ -303,18 +321,27 @@ public abstract class FamiliarSelectionScreenMixin {
                         title,
                         message,
                         confirmed -> {
+
+                            LOGGER.info("[GT Debug] Confirm dialog result = {}", confirmed);
+
                             if (confirmed) {
+                                LOGGER.info("[GT Debug] Sending ReleaseFamiliarPacket for id={}",
+                                        this.selectedFamiliarId);
+
                                 PacketDistributor.sendToServer(
                                         new ReleaseFamiliarPacket(this.selectedFamiliarId)
                                 );
+                            } else {
+                                LOGGER.info("[GT Debug] Release canceled by user");
                             }
                         }
                 )
         );
 
+        LOGGER.info("[GT Debug] Opened confirm screen");
+
         ci.cancel();
     }
-
     /**
      * @author Fodoth_jinzi89
      * @reason use Golden Tweaks data
@@ -476,6 +503,48 @@ public abstract class FamiliarSelectionScreenMixin {
                 enragedY + 4,
                 0xFFAA33FF
         );
+    }
+
+    @Inject(
+            method = "mouseClicked",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private void gt$mouseClicked(
+            double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir
+    ) {
+
+        if (button == 0
+                && mouseX >= (double) this.rightPanelX
+                && mouseX < (double) (this.rightPanelX + 200)
+                && mouseY >= (double) this.panelY
+                && mouseY < (double) (this.panelY + 300)) {
+
+            int relativeY =
+                    (int) (mouseY - (double) this.panelY + (double) this.scrollOffset);
+
+            int itemIndex =
+                    relativeY / 80;
+
+            if (itemIndex >= 0
+                    && itemIndex < this.familiarEntries.size()) {
+
+                GTFamiliarEntry selected =
+                        this.familiarEntries.get(itemIndex);
+
+                this.selectedFamiliarId = selected.id();
+
+                PacketDistributor.sendToServer(
+                        new SelectFamiliarPacket(selected.id())
+                );
+
+                this.updateReleaseButtonVisibility();
+
+                cir.setReturnValue(true);
+                cir.cancel();
+            }
+        }
+
     }
 
 

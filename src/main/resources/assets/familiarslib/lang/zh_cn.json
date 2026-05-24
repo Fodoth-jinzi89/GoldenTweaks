@@ -32,7 +32,7 @@
   "tooltip.familiarslib.totem": "一个小型图腾，可用于绑定魔宠",
 
   "message.familiarslib.consumable.success": "已将 %s 强化至 %s！",
-  "message.familiarslib.consumable.max_reached": "该精华无法再进一步提升 %s！",
+  "message.familiarslib.consumable.max_reached": "该物品无法再进一步提升 %s！",
   "message.familiarslib.consumable.tier_too_high": "无法使用 %d 阶消耗品！可使用的最高阶级为 %d。",
   "message.familiarslib.consumable.failed": "强化魔宠失败！",
   "message.familiarslib.familiar_not_found": "未找到魔宠",
