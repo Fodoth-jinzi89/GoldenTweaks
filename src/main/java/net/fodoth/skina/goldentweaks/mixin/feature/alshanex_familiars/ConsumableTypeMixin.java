@@ -30,17 +30,17 @@ public class ConsumableTypeMixin {
             }
 
             case HEALTH -> {
-                int[] values = {10, 25, 50, 75, 100, 125, 150, 175, 200, 250};
+                int[] values = {4, 6, 8, 32, 64, 128, 512, 2048, 8192, 65536};
                 cir.setReturnValue(values[Math.min(values.length - 1, tier - 1)]);
             }
 
             case SPELL_POWER -> {
-                int[] values = {3, 5, 15, 20, 25, 30, 40, 50, 60, 75};
+                int[] values = {3, 6, 9, 18, 36, 72, 288, 1152, 4608, 36864};
                 cir.setReturnValue(values[Math.min(values.length - 1, tier - 1)]);
             }
 
             case SPELL_RESIST -> {
-                int[] values = {3, 5, 15, 20, 25, 30, 40, 50, 60, 76};
+                int[] values = {2, 2, 2, 5, 5, 5, 10, 10, 10, 10};
                 cir.setReturnValue(values[Math.min(values.length - 1, tier - 1)]);
             }
 
@@ -72,17 +72,17 @@ public class ConsumableTypeMixin {
             }
 
             case HEALTH -> {
-                int[] values = {50, 100, 150, 200, 250, 300, 350, 400, 450, 500};
+                int[] values = {20, 32, 40, 80, 160, 640, 2560, 10240, 40960, Integer.MAX_VALUE};
                 cir.setReturnValue(values[Math.min(values.length - 1, tier - 1)]);
             }
 
             case SPELL_POWER -> {
-                int[] values = {15, 30, 45, 60, 75, 90, 120, 150, 200, 255};
+                int[] values = {15, 30, 45, 90, 180, 360, 1440, 5760, 23040, Integer.MAX_VALUE};
                 cir.setReturnValue(values[Math.min(values.length - 1, tier - 1)]);
             }
 
             case SPELL_RESIST -> {
-                int[] values = {15, 30, 45, 60, 75, 90, 120, 150, 200, 256};
+                int[] values = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
                 cir.setReturnValue(values[Math.min(values.length - 1, tier - 1)]);
             }
 

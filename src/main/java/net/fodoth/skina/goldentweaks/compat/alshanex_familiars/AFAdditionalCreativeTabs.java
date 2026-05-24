@@ -23,6 +23,9 @@ public class AFAdditionalCreativeTabs {
                     ))
                     .displayItems((parameters, output) -> {
 
+                        output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_1.get());
+                        output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_2.get());
+                        output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_3.get());
                         output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_4.get());
                         output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_5.get());
                         output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_6.get());
@@ -30,6 +33,36 @@ public class AFAdditionalCreativeTabs {
                         output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_8.get());
                         output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_9.get());
                         output.accept(AFAdditionalItemsRegistry.ARMOR_PLATE_TIER_10.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_1.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_2.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_3.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_4.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_5.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_6.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_7.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_8.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_9.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_POWER_TIER_10.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_1.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_2.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_3.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_4.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_5.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_6.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_7.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_8.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_9.get());
+                        output.accept(AFAdditionalItemsRegistry.MAGIC_RESIST_TIER_10.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_1.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_2.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_3.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_4.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_5.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_6.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_7.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_8.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_9.get());
+                        output.accept(AFAdditionalItemsRegistry.LIFE_FRUIT_TIER_10.get());
 
                     })
                     .build()

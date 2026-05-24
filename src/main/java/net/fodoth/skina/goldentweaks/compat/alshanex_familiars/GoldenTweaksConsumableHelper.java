@@ -118,9 +118,9 @@ public class GoldenTweaksConsumableHelper {
         GoldenTweaksConsumableData data;
 
         if (sourceTag.contains(NBT_KEY)) {
-            data = new GoldenTweaksConsumableData(sourceTag.getCompound(NBT_KEY));
+            data = loadFromNBT(sourceTag);
         } else {
-            data = new GoldenTweaksConsumableData();
+            data = migrateFromVanilla(sourceTag);
         }
 
         CACHE.put(familiar.getUUID(), data);
@@ -169,6 +169,8 @@ public class GoldenTweaksConsumableHelper {
     public static CompoundTag createFamiliarNBT(AbstractSpellCastingPet familiar) {
         CompoundTag nbt = new CompoundTag();
 
+        GoldenTweaksConsumableData data = getData(familiar);
+
         familiar.saveWithoutId(nbt);
 
         nbt.putFloat("currentHealth", familiar.getHealth());
@@ -179,8 +181,7 @@ public class GoldenTweaksConsumableHelper {
             nbt.putString("customName", Objects.requireNonNull(familiar.getCustomName()).getString());
         }
 
-        GoldenTweaksConsumableData data = new GoldenTweaksConsumableData(nbt);
-
+        saveToNBT(nbt, data);
         GoldenTweaksConsumableHelper.saveData(familiar, data);
 
         return nbt;

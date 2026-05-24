@@ -69,6 +69,7 @@
   "client": [
     "feature.alshanex_familiars.FamiliarSelectionScreenMixin",
     "feature.alshanex_familiars.FamiliarStorageScreenMixin",
+    "feature.alshanex_familiars.MonocleOverlayMixin",
     "feature.alshanex_familiars.accessor.ScreenAccessor",
     "fix.ApothesisClientLanguageMixin",
     "fix.ModernUITextRenderTypeMixin",

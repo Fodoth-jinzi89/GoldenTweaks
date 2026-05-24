@@ -358,7 +358,14 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies."${mod_id}"]]
-modId = "alshanex_familiars"
+modId = "attributefix"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "prickle"
 type = "optional"
 versionRange = "*"
 ordering = "AFTER"

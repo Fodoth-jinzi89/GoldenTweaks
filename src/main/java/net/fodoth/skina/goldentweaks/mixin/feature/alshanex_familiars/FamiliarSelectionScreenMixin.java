@@ -117,6 +117,7 @@ public abstract class FamiliarSelectionScreenMixin {
 
             familiar.load(nbt);
             familiar.setUUID(id);
+            GoldenTweaksConsumableHelper.loadDataIntoCache(familiar, nbt);
 
             String displayName = familiar.hasCustomName()
                     ? Objects.requireNonNull(familiar.getCustomName()).getString()
