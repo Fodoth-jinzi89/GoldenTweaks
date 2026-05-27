@@ -40,8 +40,6 @@
     "fix.maid.MaidTrackerMixin",
     "fix.mek.APTPortEnergySafeMixin",
     "fix.mek.MultiblockDataMixin",
-    "fix.neoforge.ConfigValueMixin",
-    "fix.neoforge.accessor.ModConfigSpecAccessor",
     "fix.tmrv.StackHelperMixin",
     "optimization.EccentricTomeMixin",
     "shut.AnimationCodecsMixin",
