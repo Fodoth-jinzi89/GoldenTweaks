@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import java.util.List;
 import java.util.function.Supplier;
 
-@Mixin(ModConfigSpec.ConfigValue.class)
+@Mixin(targets = "net.neoforged.neoforge.common.ModConfigSpec$ConfigValue")
 public abstract class ConfigValueMixin<T> {
 
     @Shadow
