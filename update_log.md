@@ -1,12 +1,29 @@
 # GoldenTweaks Update Log
 
-## 2026.05.27 — v1.8
+## 2026.05.28 — v1.8
 
 ### Create Submarine
 - 添加汉化
 
 ### Mekmm
 - 添加联动配方
+
+### T.O Magic n' Extras
+- 禁用进入世界时提示
+  - [IncompatibilityCheckerEventMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/IncompatibilityCheckerEventMixin.java)
+
+### Touhou Little Maid: Spell
+### Ramization
+- 禁用导致崩溃的 Mixin
+  - [GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)
+
+### Too Many Recipe Viewers
+- 禁用刷屏日志
+  - [TooManyRecipeViewersModMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/TooManyRecipeViewersModMixin.java)
+
+### CCB Tweaks
+- 修复 Config 过早加载问题
+  - [ReleaseMouseMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ccbtweaks/ReleaseMouseMixin.java)
 
 
 ## 2026.05.25 — v1.7

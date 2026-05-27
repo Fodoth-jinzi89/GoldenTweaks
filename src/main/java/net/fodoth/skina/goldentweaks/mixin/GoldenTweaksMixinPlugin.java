@@ -74,6 +74,15 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return true;
         }
 
+        // 万法皆通 mixin 写错
+        if (mixinClassName.contains("com.github.yimeng261.maidspell.mixin.tlm.MaidFeedOwnerTaskMixin")) {
+            return false;
+        }
+
+        if (mixinClassName.contains("com.konrados.ramization.mixin.MixinTextureAtlas")) {
+            return false;
+        }
+
         // NONE：全部加载
         return true;
     }

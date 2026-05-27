@@ -35,6 +35,7 @@
     "fix.SpellUtilsMixin",
     "fix.TritiumRandomManagerMixin",
     "fix.VanillaShaderProcessorMixin",
+    "fix.ccbtweaks.ReleaseMouseMixin",
     "fix.cdg.CDGSpriteShiftsMixin",
     "fix.create.SymmetryHandlerMixin",
     "fix.maid.MaidTrackerMixin",
@@ -50,6 +51,7 @@
     "shut.ContinuityClientMixin",
     "shut.CustomUniformsMixin",
     "shut.EmiLogMixin",
+    "shut.IncompatibilityCheckerEventMixin",
     "shut.LootDataTypeMixin",
     "shut.ModBusEventsMixin",
     "shut.PathPackResourcesMixin",
@@ -95,6 +97,7 @@
     "shut.SoundEngineMixin",
     "shut.SoundManagerMixin",
     "shut.SpriteContentsMixin",
-    "shut.SpriteLoaderMixin"
+    "shut.SpriteLoaderMixin",
+    "shut.TooManyRecipeViewersModMixin"
   ]
 }
