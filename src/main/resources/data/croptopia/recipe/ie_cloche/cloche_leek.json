@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:leek_seed"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "results": [
+    {
+      "id": "croptopia:leek",
+      "Count": 2
+    },
+    {
+      "id": "croptopia:leek_seed"
+    }
+  ],
+  "time": 640,
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "croptopia:leek_crop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

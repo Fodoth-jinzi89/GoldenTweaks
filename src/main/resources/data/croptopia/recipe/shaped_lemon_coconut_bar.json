@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "314",
+    "526"
+  ],
+  "key": {
+    "1": {
+      "tag": "c:lemons"
+    },
+    "2": {
+      "tag": "c:coconuts"
+    },
+    "3": {
+      "item": "minecraft:sugar"
+    },
+    "4": {
+      "item": "minecraft:egg"
+    },
+    "5": {
+      "tag": "c:butters"
+    },
+    "6": {
+      "tag": "c:flour"
+    }
+  },
+  "result": {
+    "id": "croptopia:lemon_coconut_bar",
+    "count": 2
+  }
+}

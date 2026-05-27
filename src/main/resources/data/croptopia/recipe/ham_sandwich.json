@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    {
+      "tag": "c:cheeses"
+    }
+  ],
+  "result": {
+    "id": "croptopia:ham_sandwich",
+    "count": 1
+  }
+}

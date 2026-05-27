@@ -1,0 +1,55 @@
+{
+    "entity": "minecraft:hoglin",
+    "variants": [
+        "minecraft:zoglin"
+    ],
+    "name": {
+        "translate": "entity.minecraft.hoglin",
+        "color": "#E8A074"
+    },
+    "display": {},
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.hoglin",
+    "fabricator_drops": [
+        {
+            "id": "minecraft:porkchop",
+            "count": 32
+        },
+        {
+            "id": "minecraft:leather",
+            "count": 16
+        },
+        {
+            "id": "farmersdelight:ham",
+            "optional": true,
+            "count": 4
+        },
+        {
+            "id": "kaleidoscope_cookery:oil",
+            "optional": true,
+            "count": 16
+        },
+        {
+            "id": "kaleidoscope_nether:hoglin_tusk",
+            "optional": true,
+            "count": 4
+        },
+        {
+            "id": "kaleidoscope_nether:hoglin_hide",
+            "optional": true,
+            "count": 4
+        },
+        {
+            "id": "kaleidoscope_nether:ham",
+            "optional": true,
+            "count": 4
+        }
+    ]
+}

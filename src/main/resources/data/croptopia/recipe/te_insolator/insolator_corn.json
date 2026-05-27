@@ -1,0 +1,23 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "croptopia:corn_seed"
+  },
+  "result": [
+    {
+      "item": "croptopia:corn",
+      "chance": 2.0
+    },
+    {
+      "item": "croptopia:corn_seed",
+      "chance": 1.1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    }
+  ],
+  "water_mod": 0.5
+}

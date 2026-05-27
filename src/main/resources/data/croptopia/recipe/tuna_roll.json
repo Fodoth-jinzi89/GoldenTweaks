@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "tag": "c:tuna"
+    },
+    "2": {
+      "item": "minecraft:dried_kelp"
+    },
+    "3": {
+      "tag": "c:rice"
+    },
+    "4": {
+      "tag": "c:onions"
+    }
+  },
+  "pattern": [
+    "234",
+    " 1 "
+  ],
+  "result": {
+    "count": 2,
+    "id": "croptopia:tuna_roll"
+  }
+}

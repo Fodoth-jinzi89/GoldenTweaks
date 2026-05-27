@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:rice_seed"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "results": [
+    {
+      "id": "croptopia:rice",
+      "Count": 2
+    },
+    {
+      "id": "croptopia:rice_seed"
+    }
+  ],
+  "time": 640,
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "croptopia:rice_crop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:cantaloupe_seed"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "results": [
+    {
+      "id": "croptopia:cantaloupe",
+      "Count": 2
+    },
+    {
+      "id": "croptopia:cantaloupe_seed"
+    }
+  ],
+  "time": 640,
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "croptopia:cantaloupe_crop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

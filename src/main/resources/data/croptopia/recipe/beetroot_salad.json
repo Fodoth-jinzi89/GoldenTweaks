@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:beetroot"
+    },
+    "4": {
+      "tag": "c:cheeses"
+    },
+    "5": {
+      "tag": "c:lemons"
+    },
+    "6": {
+      "item": "croptopia:cooking_pot"
+    },
+    "7": {
+      "tag": "c:lettuce"
+    }
+  },
+  "pattern": [
+    "111",
+    "745",
+    " 6 "
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:beetroot_salad"
+  }
+}

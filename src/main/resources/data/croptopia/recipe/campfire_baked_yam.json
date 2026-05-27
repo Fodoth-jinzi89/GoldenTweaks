@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "tag": "c:yams"
+  },
+  "result": {
+    "id": "croptopia:baked_yam"
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

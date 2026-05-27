@@ -70,89 +70,74 @@ def resolve_result_item(material: str, category: str):
             return f"create:golden_sheet"
         return f"create:{material}_sheet"
 
+    if material in CREATE_METALS:
+        if material == "brass" and category in {"ingots", "storage_blocks", "nuggets"}:
+            if category == "storage_blocks":
+                return f"create:{material}_block"
+            singular = category[:-1]  # ingots -> ingot, nuggets -> nugget
+            return f"create:{material}_{singular}"
+
     # Mekanism 输出体系
     if material in MEKANISM_METALS:
+        if category == "storage_blocks":
+            return f"mekanism:{material}_block"
         return f"mekanism:{material}_{category[:-1]}"
 
     # 默认输出（本模组）
+    if category == "storage_blocks":
+        return f"{MODID}:{material}_block"
     return f"{MODID}:{material}_{category[:-1]}"
 
 
 def gen_metal_entry(metal: str):
-    entries = []
-
-    entries.append({
+    entries = [{
         "matchItems": [resolve_tag(metal, "ores")],
         "resultItems": f"{MODID}:{metal}_ore"
-    })
-
-    entries.append({
+    }, {
         "matchItems": [
             resolve_tag(metal, "ores").replace("ores/", "ores/deepslate_")
         ],
         "resultItems": f"{MODID}:deepslate_{metal}_ore"
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "raw_materials")],
         "resultItems": f"{MODID}:raw_{metal}"
-    })
-
-    entries.append({
+    }, {
         "matchItems": [f"#c:storage_blocks/raw_{metal}"],
         "resultItems": f"{MODID}:raw_{metal}_block"
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "ingots")],
         "resultItems": resolve_result_item(metal, "ingots")
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "nuggets")],
         "resultItems": resolve_result_item(metal, "nuggets")
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "dusts")],
         "resultItems": resolve_result_item(metal, "dusts")
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "plates")],
         "resultItems": resolve_result_item(metal, "plates")
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "rods")],
         "resultItems": resolve_result_item(metal, "rods")
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "gears")],
         "resultItems": resolve_result_item(metal, "gears")
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(metal, "storage_blocks")],
         "resultItems": resolve_result_item(metal, "storage_blocks")
-    })
+    }]
 
     return entries
 
 
 def gen_gem_entry(gem: str):
-    entries = []
-
-    entries.append({
+    entries = [{
         "matchItems": [resolve_tag(gem, "gems")],
         "resultItems": f"{MODID}:{gem}"
-    })
-
-    entries.append({
+    }, {
         "matchItems": [resolve_tag(gem, "storage_blocks")],
         "resultItems": f"{MODID}:{gem}_block"
-    })
+    }]
 
     return entries
 

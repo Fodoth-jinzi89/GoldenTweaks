@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:grape_seed"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "results": [
+    {
+      "id": "croptopia:grape",
+      "Count": 2
+    },
+    {
+      "id": "croptopia:grape_seed"
+    }
+  ],
+  "time": 640,
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "croptopia:grape_crop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ public class ConfigScreenHelper {
 
     private static Class<?> ENTRY_CLASS;
 
+
     static {
         try {
             ENTRY_CLASS = Class.forName(

@@ -1,5 +1,28 @@
 # GoldenTweaks Update Log
 
+## 2026.05.25 — v1.7
+
+### Spectrum
+- 添加联动配方
+
+### Create
+- 修复对称之杖和 Sable 的兼容性问题
+  - [SymmetryHandlerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/SymmetryHandlerMixin.java)
+## 2026.05.25 — v1.6
+
+### Alshanex Familiars
+- 继续修复 GUI
+
+### Evolved Mekanism
+- 添加合金炉联动配方
+
+### Croptopia
+- 添加汉化及 Mekmm 种植机配方
+
+### Create Diesel Generators
+- 修复初始化问题
+  - [CDGSpriteShiftsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/cdg/CDGSpriteShiftsMixin.java)
+
 ## 2026.05.24 — v1.5
 
 ### Alshanex Familiars

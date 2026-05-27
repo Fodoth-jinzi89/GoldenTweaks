@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:pineapple_seed"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "results": [
+    {
+      "id": "croptopia:pineapple",
+      "Count": 2
+    },
+    {
+      "id": "croptopia:pineapple_seed"
+    }
+  ],
+  "time": 640,
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "croptopia:pineapple_crop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

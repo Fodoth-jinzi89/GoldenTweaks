@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "c:chocolates"
+    },
+    {
+      "tag": "c:milks"
+    },
+    {
+      "item": "croptopia:vanilla_ice_cream"
+    }
+  ],
+  "result": {
+    "id": "croptopia:chocolate_milkshake",
+    "count": 1
+  }
+}

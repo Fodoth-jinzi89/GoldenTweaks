@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "evolvedmekanism:apt",
+  "chemical_input": {
+    "amount": 100,
+    "chemical": "mekanism:spent_nuclear_waste"
+  },
+  "item_input": {
+    "item": "spectrum:clover"
+  },
+  "output": {
+    "id": "spectrum:four_leaf_clover"
+  },
+  "per_tick_usage": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:olives"
+    },
+    {
+      "tag": "c:olives"
+    },
+    {
+      "item": "croptopia:food_press"
+    }
+  ],
+  "result": {
+    "id": "croptopia:olive_oil"
+  }
+}

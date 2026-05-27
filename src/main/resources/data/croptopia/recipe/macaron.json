@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:egg"
+    },
+    "2": {
+      "item": "minecraft:sugar"
+    },
+    "5": {
+      "tag": "c:almonds"
+    },
+    "6": {
+      "item": "croptopia:food_press"
+    }
+  },
+  "pattern": [
+    "122",
+    "565"
+  ],
+  "result": {
+    "count": 2,
+    "id": "croptopia:macaron"
+  }
+}

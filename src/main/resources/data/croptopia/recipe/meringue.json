@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:egg"
+    },
+    "2": {
+      "tag": "c:salts"
+    },
+    "3": {
+      "item": "minecraft:sugar"
+    },
+    "4": {
+      "tag": "c:vanilla"
+    }
+  },
+  "pattern": [
+    "243",
+    "111"
+  ],
+  "result": {
+    "count": 2,
+    "id": "croptopia:meringue"
+  }
+}

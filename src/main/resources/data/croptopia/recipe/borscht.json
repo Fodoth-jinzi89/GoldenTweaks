@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:carrot"
+    },
+    "2": {
+      "item": "minecraft:potato"
+    },
+    "3": {
+      "item": "minecraft:beetroot"
+    },
+    "4": {
+      "tag": "c:onions"
+    },
+    "5": {
+      "tag": "c:tomatoes"
+    },
+    "6": {
+      "tag": "c:water_bottles"
+    },
+    "7": {
+      "tag": "c:cabbage"
+    },
+    "8": {
+      "item": "croptopia:cooking_pot"
+    },
+    "9": {
+      "tag": "c:garlic"
+    }
+  },
+  "pattern": [
+    "123",
+    "456",
+    "789"
+  ],
+  "result": {
+    "count": 2,
+    "id": "croptopia:borscht"
+  }
+}

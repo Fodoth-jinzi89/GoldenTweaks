@@ -1,0 +1,12 @@
+{
+  "name": "玉米粉蒸肉",
+  "icon": "croptopia:tamales",
+  "category": "croptopia:meals",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:tamales",
+      "text": "食谱指南。"
+    }
+  ]
+}

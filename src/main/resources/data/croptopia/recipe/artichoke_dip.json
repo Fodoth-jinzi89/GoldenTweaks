@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:artichokes"
+    },
+    {
+      "tag": "c:cheeses"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:artichoke_dip"
+  }
+}

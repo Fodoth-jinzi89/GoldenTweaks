@@ -1,0 +1,21 @@
+{
+  "type": "evolvedmekanism:alloying",
+  "extra_input": {
+    "item": "silentgear:crimson_steel_ingot"
+  },
+  "second_extra_input": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "main_input": {
+    "item": "silentgear:azure_electrum_ingot"
+  },
+  "output": {
+    "id": "silentgear:tyrian_steel_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    }
+  ]
+}

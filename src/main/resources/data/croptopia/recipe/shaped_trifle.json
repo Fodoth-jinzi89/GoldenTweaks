@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 5 ",
+    "647",
+    "123"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:egg"
+    },
+    "2": {
+      "tag": "c:milks"
+    },
+    "3": {
+      "tag": "c:vanilla"
+    },
+    "4": {
+      "tag": "c:wines"
+    },
+    "5": {
+      "tag": "c:strawberries"
+    },
+    "6": {
+      "item": "minecraft:bread"
+    },
+    "7": {
+      "tag": "c:butters"
+    }
+  },
+  "result": {
+    "id": "croptopia:trifle",
+    "count": 1
+  }
+}

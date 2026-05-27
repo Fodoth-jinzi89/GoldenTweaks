@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "c:leek"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "tag": "c:milks"
+    }
+  ],
+  "result": {
+    "id": "croptopia:leek_soup",
+    "count": 1
+  }
+}

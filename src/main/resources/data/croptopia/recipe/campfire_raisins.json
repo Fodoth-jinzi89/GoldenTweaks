@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "tag": "c:grapes"
+  },
+  "result": {
+    "id": "croptopia:raisins"
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

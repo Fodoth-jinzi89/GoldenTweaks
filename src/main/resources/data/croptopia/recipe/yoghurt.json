@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "c:milks"
+    },
+    {
+      "tag": "c:strawberries"
+    }
+  ],
+  "result": {
+    "id": "croptopia:yoghurt",
+    "count": 1
+  }
+}

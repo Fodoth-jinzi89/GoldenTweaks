@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:oat"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:oat_seed"
+  }
+}

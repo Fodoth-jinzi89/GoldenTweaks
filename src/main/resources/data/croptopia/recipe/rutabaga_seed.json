@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:rutabagas"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:rutabaga_seed"
+  }
+}

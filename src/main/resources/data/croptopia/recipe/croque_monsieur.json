@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "croptopia:frying_pan"
+    },
+    "2": {
+      "item": "minecraft:bread"
+    },
+    "3": {
+      "tag": "c:cheeses"
+    },
+    "4": {
+      "tag": "croptopia:pork_replacements"
+    },
+    "5": {
+      "tag": "c:butters"
+    },
+    "6": {
+      "tag": "c:flour"
+    }
+  },
+  "pattern": [
+    " 1 ",
+    " 26",
+    "435"
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:croque_monsieur"
+  }
+}

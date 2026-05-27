@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "spectrum:brown_sapling"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 6,
+    "id": "spectrum:brown_log"
+  },
+  "secondary_output": {
+    "count": 4,
+    "id": "spectrum:brown_pigment"
+  },
+  "per_tick_usage": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "牧羊人馅饼",
+  "icon": "croptopia:shepherds_pie",
+  "category": "croptopia:meals",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:shaped_shepherds_pie",
+      "text": "牧羊人馅饼的食谱。"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "辣酱玉米饼馅",
+  "icon": "croptopia:enchilada",
+  "category": "croptopia:meals",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:enchilada",
+      "text": "玉米卷饼的食谱。"
+    }
+  ]
+}

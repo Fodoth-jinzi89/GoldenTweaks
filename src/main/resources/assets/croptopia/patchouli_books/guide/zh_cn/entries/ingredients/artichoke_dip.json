@@ -1,0 +1,12 @@
+{
+  "name": "朝鲜蓟浸",
+  "icon": "croptopia:artichoke_dip",
+  "category": "croptopia:ingredients",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:artichoke_dip",
+      "text": "洋蓟酱的食谱。"
+    }
+  ]
+}

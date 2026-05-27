@@ -1,5 +1,6 @@
 package net.fodoth.skina.goldentweaks;
 
+import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
@@ -10,6 +11,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import org.slf4j.Logger;
 
 @Mod(GoldenTweaks.MODID)
@@ -35,6 +37,15 @@ public class GoldenTweaks {
             LOGGER.info("Detected alshanex_familiars, registering compatibility content");
             AFAdditionalItemsRegistry.register(modEventBus);
             AFAdditionalCreativeTabs.register(modEventBus);
+        }
+
+        modEventBus.addListener(this::onClientSetup);
+    }
+
+    private void onClientSetup(final FMLClientSetupEvent event) {
+        if (ModList.get().isLoaded("createdieselgenerators")) {
+            LOGGER.info("Detected createdieselgenerators, delayed init");
+            event.enqueueWork(CDGSpriteShifts::init);
         }
     }
 }

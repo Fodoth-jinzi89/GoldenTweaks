@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:toasts"
+    },
+    {
+      "tag": "c:butters"
+    }
+  ],
+  "result": {
+    "id": "croptopia:buttered_toast",
+    "count": 1
+  }
+}

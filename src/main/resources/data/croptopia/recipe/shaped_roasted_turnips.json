@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "213",
+    "465"
+  ],
+  "key": {
+    "1": {
+      "tag": "c:turnips"
+    },
+    "2": {
+      "tag": "c:olive_oils"
+    },
+    "3": {
+      "tag": "c:garlic"
+    },
+    "4": {
+      "tag": "c:salts"
+    },
+    "5": {
+      "item": "croptopia:pepper"
+    },
+    "6": {
+      "item": "croptopia:frying_pan"
+    }
+  },
+  "result": {
+    "id": "croptopia:roasted_turnips",
+    "count": 2
+  }
+}

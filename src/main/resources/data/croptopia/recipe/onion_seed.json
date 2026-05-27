@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:onions"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:onion_seed"
+  }
+}

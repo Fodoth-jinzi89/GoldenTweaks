@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tortillas"
+    },
+    {
+      "tag": "c:rice"
+    },
+    {
+      "tag": "c:blackbeans"
+    },
+    {
+      "tag": "c:tomatoes"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "croptopia:burrito"
+  }
+}
