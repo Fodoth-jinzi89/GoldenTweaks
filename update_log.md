@@ -1,5 +1,18 @@
 # GoldenTweaks Update Log
 
+## 2026.05.27 — v1.8
+
+### Neoforge
+- 修复模组配置文件加载顺序问题
+  - [ConfigValueMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/neoforge/ConfigValueMixin.java)
+
+### Create Submarine
+- 添加汉化
+
+### Mekmm
+- 添加联动配方
+
+
 ## 2026.05.25 — v1.7
 
 ### Spectrum
