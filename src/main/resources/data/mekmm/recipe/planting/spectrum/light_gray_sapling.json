@@ -22,5 +22,6 @@
     "count": 4,
     "id": "spectrum:light_gray_pigment"
   },
+    "secondary_chance": 0.80,
   "per_tick_usage": true
 }

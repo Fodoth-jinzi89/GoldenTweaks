@@ -20,7 +20,7 @@
   },
   "secondary_output": {
     "count": 2,
-    "id": "spectrum:prickly_bayleafb"
+    "id": "spectrum:prickly_bayleaf"
   },
   "secondary_chance": 0.50,
   "per_tick_usage": true

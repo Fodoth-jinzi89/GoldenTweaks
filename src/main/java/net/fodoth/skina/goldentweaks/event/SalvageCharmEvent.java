@@ -1,8 +1,15 @@
 package net.fodoth.skina.goldentweaks.event;
 
+import com.chen1335.apotheosisThings.component.SalvagingCharmConfig;
+import dev.shadowsoffire.apotheosis.loot.LootRarity;
+import dev.shadowsoffire.apotheosis.loot.RarityRegistry;
+import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.minecraft.core.component.DataComponentType;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -11,7 +18,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -23,93 +29,72 @@ public class SalvageCharmEvent {
 
     private static final int COOLDOWN_TICKS = 10;
 
-    @SubscribeEvent
-    public static void onRightClick(PlayerInteractEvent.RightClickItem event) {
+    /*
+     * Cached reflection metadata
+     */
+    private static Object SALVAGING_CHARM_HOLDER;
 
-        Player player = event.getEntity();
+    private static Object SALVAGING_CHARM_CONFIG_HOLDER;
 
-        if (player.level().isClientSide) {
-            return;
-        }
+    private static Method HOLDER_GET;
 
-        // 冷却期间直接禁用右键
-        if (getCooldown(player) > 0) {
-            event.setCanceled(true);
-            return;
-        }
+    private static Field RARITY_FIELD;
+
+    private static Method DYNAMIC_HOLDER_GET_ID;
+
+    static {
 
         try {
 
-            ItemStack charm = player.getMainHandItem();
-            ItemStack salvage = player.getOffhandItem();
-
             /*
-             * 获取：
              * ATItems.SALVAGING_CHARM
              */
             Class<?> atItemsClass = Class.forName(
                     "com.chen1335.apotheosisThings.object.ATItems"
             );
 
-            Field charmField = atItemsClass.getDeclaredField("SALVAGING_CHARM");
-            Object holder = charmField.get(null);
+            Field charmField =
+                    atItemsClass.getDeclaredField(
+                            "SALVAGING_CHARM"
+                    );
 
-            Method getMethod = holder.getClass().getMethod("get");
-            Item charmItem = (Item) getMethod.invoke(holder);
-
-            // 主手必须是 SALVAGING_CHARM
-            if (!charm.is(charmItem)) {
-                return;
-            }
+            SALVAGING_CHARM_HOLDER =
+                    charmField.get(null);
 
             /*
-             * 判断是否是 SalvageItem
+             * DeferredHolder#get
+             */
+            HOLDER_GET =
+                    SALVAGING_CHARM_HOLDER
+                            .getClass()
+                            .getMethod("get");
+
+            /*
+             * SalvageItem#rarity
              */
             Class<?> salvageItemClass = Class.forName(
                     "dev.shadowsoffire.apotheosis.affix.salvaging.SalvageItem"
             );
 
-            if (!salvageItemClass.isInstance(salvage.getItem())) {
-                return;
-            }
+            RARITY_FIELD =
+                    salvageItemClass.getDeclaredField(
+                            "rarity"
+                    );
+
+            RARITY_FIELD.setAccessible(true);
 
             /*
-             * 获取 rarity 字段
+             * DynamicHolder#getId
              */
-            Field rarityField =
-                    salvageItemClass.getDeclaredField("rarity");
-
-            rarityField.setAccessible(true);
-
-            Object dynamicHolder =
-                    rarityField.get(salvage.getItem());
-
-            /*
-             * DynamicHolder#get
-             */
-            Method dynamicHolderGet =
-                    dynamicHolder.getClass().getMethod("get");
-
-            Object rarity =
-                    dynamicHolderGet.invoke(dynamicHolder);
-
-            /*
-             * new SalvagingCharmConfig(rarity)
-             */
-            Class<?> configClass = Class.forName(
-                    "com.chen1335.apotheosisThings.component.SalvagingCharmConfig"
+            Class<?> dynamicHolderClass = Class.forName(
+                    "dev.shadowsoffire.placebo.reload.DynamicHolder"
             );
 
-            Constructor<?> configConstructor =
-                    configClass.getDeclaredConstructors()[0];
-
-            configConstructor.setAccessible(true);
-
-            Object config =
-                    configConstructor.newInstance(rarity);
+            DYNAMIC_HOLDER_GET_ID =
+                    dynamicHolderClass.getMethod("getId");
 
             /*
-             * 获取 ATDataComponents.SALVAGING_CHARM_CONFIG
+             * ATDataComponents.SALVAGING_CHARM_CONFIG
              */
             Class<?> dataComponentsClass = Class.forName(
                     "com.chen1335.apotheosisThings.object.ATDataComponents"
@@ -120,55 +105,179 @@ public class SalvageCharmEvent {
                             "SALVAGING_CHARM_CONFIG"
                     );
 
-            Object componentHolder = componentField.get(null);
+            SALVAGING_CHARM_CONFIG_HOLDER =
+                    componentField.get(null);
 
-            Method componentGet =
-                    componentHolder.getClass().getMethod("get");
+        } catch (Exception exception) {
 
-            Object dataComponentType =
-                    componentGet.invoke(componentHolder);
+            GoldenTweaks.LOGGER.warn(
+                    "Failed to initialize SalvageCharmEvent reflection cache.",
+                    exception
+            );
+        }
+    }
+
+    @SubscribeEvent
+    public static void onRightClick(PlayerInteractEvent.RightClickItem event) {
+
+        Player player = event.getEntity();
+
+        /*
+         * 仅服务端执行
+         */
+        if (player.level().isClientSide) {
+            return;
+        }
+
+        /*
+         * cooldown
+         */
+        if (getCooldown(player) > 0) {
+
+            event.setCanceled(true);
+
+            event.setCancellationResult(
+                    InteractionResult.SUCCESS
+            );
+
+            return;
+        }
+
+        try {
+
+            ItemStack charm =
+                    player.getMainHandItem();
+
+            ItemStack salvage =
+                    player.getOffhandItem();
 
             /*
-             * ItemStack#set(component, value)
+             * 延迟获取 item
              */
-            Method setMethod = null;
+            Item salvagingCharm =
+                    (Item) HOLDER_GET.invoke(
+                            SALVAGING_CHARM_HOLDER
+                    );
 
-            for (Method method : ItemStack.class.getMethods()) {
-
-                if (!method.getName().equals("set")) {
-                    continue;
-                }
-
-                Class<?>[] params = method.getParameterTypes();
-
-                if (params.length != 2) {
-                    continue;
-                }
-
-                if (!params[0].isInstance(dataComponentType)) {
-                    continue;
-                }
-
-                setMethod = method;
-                break;
-            }
-
-            if (setMethod == null) {
+            /*
+             * 主手必须是 charm
+             */
+            if (!charm.is(salvagingCharm)) {
                 return;
             }
 
-            setMethod.invoke(charm, dataComponentType, config);
+            /*
+             * 必须是 SalvageItem
+             */
+            Object dynamicHolder =
+                    RARITY_FIELD.get(
+                            salvage.getItem()
+                    );
 
-            // 消耗一个副手物品
+            if (dynamicHolder == null) {
+                return;
+            }
+
+            /*
+             * 获取 rarity id
+             */
+            ResourceLocation rarityId =
+                    (ResourceLocation)
+                            DYNAMIC_HOLDER_GET_ID.invoke(
+                                    dynamicHolder
+                            );
+
+            /*
+             * 防止 empty:empty
+             */
+            if (rarityId == null
+                    || rarityId.equals(
+                    ResourceLocation.fromNamespaceAndPath(
+                            "empty",
+                            "empty"
+                    )
+            )) {
+
+                GoldenTweaks.LOGGER.warn(
+                        "Blocked invalid rarity id: {}",
+                        rarityId
+                );
+
+                return;
+            }
+
+            /*
+             * registry lookup
+             */
+            LootRarity rarity =
+                    RarityRegistry.INSTANCE.getValue(
+                            rarityId
+                    );
+
+            if (rarity == null) {
+
+                GoldenTweaks.LOGGER.warn(
+                        "Failed to resolve rarity: {}",
+                        rarityId
+                );
+
+                return;
+            }
+
+            /*
+             * 创建 config
+             */
+            SalvagingCharmConfig config =
+                    new SalvagingCharmConfig(
+                            rarity
+                    );
+
+            /*
+             * 延迟获取 component
+             */
+            @SuppressWarnings("unchecked")
+            DataComponentType<SalvagingCharmConfig> component =
+                    (DataComponentType<SalvagingCharmConfig>)
+                            HOLDER_GET.invoke(
+                                    SALVAGING_CHARM_CONFIG_HOLDER
+                            );
+
+            /*
+             * 写入 component
+             */
+            charm.set(
+                    component,
+                    config
+            );
+
+            /*
+             * 消耗副手
+             */
             salvage.shrink(1);
 
-            // 设置冷却
-            setCooldown(player, COOLDOWN_TICKS);
+            /*
+             * 强制同步容器
+             */
+            player.containerMenu.broadcastChanges();
 
-            // 动画
-            player.swing(event.getHand());
+            /*
+             * cooldown
+             */
+            setCooldown(
+                    player,
+                    COOLDOWN_TICKS
+            );
 
-            // 音效
+            /*
+             * 动画
+             */
+            player.swing(
+                    event.getHand()
+            );
+
+            /*
+             * 音效
+             */
             player.level().playSound(
                     null,
                     player.blockPosition(),
@@ -178,9 +287,21 @@ public class SalvageCharmEvent {
                     1.1F
             );
 
+            /*
+             * 阻止原逻辑继续执行
+             */
             event.setCanceled(true);
 
-        } catch (Exception ignored) {
+            event.setCancellationResult(
+                    InteractionResult.SUCCESS
+            );
+
+        } catch (Exception exception) {
+
+            GoldenTweaks.LOGGER.warn(
+                    "Failed to apply salvaging charm config.",
+                    exception
+            );
         }
     }
 
@@ -193,28 +314,51 @@ public class SalvageCharmEvent {
             return;
         }
 
-        int cooldown = getCooldown(player);
+        int cooldown =
+                getCooldown(player);
 
         if (cooldown > 0) {
-            setCooldown(player, cooldown - 1);
+
+            setCooldown(
+                    player,
+                    cooldown - 1
+            );
         }
     }
 
-    private static int getCooldown(Player player) {
+    private static int getCooldown(
+            Player player
+    ) {
 
-        CompoundTag tag = player.getPersistentData();
+        CompoundTag tag =
+                player.getPersistentData();
 
-        return tag.getInt(COOLDOWN_TAG);
+        return tag.getInt(
+                COOLDOWN_TAG
+        );
     }
 
-    private static void setCooldown(Player player, int ticks) {
+    private static void setCooldown(
+            Player player,
+            int ticks
+    ) {
 
-        CompoundTag tag = player.getPersistentData();
+        CompoundTag tag =
+                player.getPersistentData();
 
         if (ticks <= 0) {
-            tag.remove(COOLDOWN_TAG);
+
+            tag.remove(
+                    COOLDOWN_TAG
+            );
+
         } else {
-            tag.putInt(COOLDOWN_TAG, ticks);
+
+            tag.putInt(
+                    COOLDOWN_TAG,
+                    ticks
+            );
         }
     }
 }
+

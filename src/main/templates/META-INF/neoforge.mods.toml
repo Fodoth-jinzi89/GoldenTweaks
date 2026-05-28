@@ -419,3 +419,10 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "apotheosis_things"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"

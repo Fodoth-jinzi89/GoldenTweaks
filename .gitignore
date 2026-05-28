@@ -89,7 +89,8 @@ desktop.ini
 *.jar
 
 # 保留本地依赖与 Gradle Wrapper
-!libs/*.jar
+!libs/
+!libs/**
 !gradle/wrapper/gradle-wrapper.jar
 
 # =========================

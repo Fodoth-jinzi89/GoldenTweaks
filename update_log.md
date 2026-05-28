@@ -1,5 +1,14 @@
 # GoldenTweaks Update Log
 
+## 2026.05.29 — v1.9
+
+### Apotheosis Things
+- 继续修复分解护符
+
+### Cmpackagecouriers
+- 修复渲染崩溃
+
+
 ## 2026.05.28 — v1.8
 
 ### Create Submarine
