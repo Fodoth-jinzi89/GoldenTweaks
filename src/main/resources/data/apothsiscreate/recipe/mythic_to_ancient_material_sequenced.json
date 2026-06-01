@@ -1,0 +1,150 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    }
+  ],
+  "ingredient": {
+    "item": "apotheosis:mythic_material"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "ancientreforging:ancient_material"
+    },
+    {
+      "chance": 5.0,
+      "id": "spectrum:bismuth_flake"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        },
+        {
+          "item": "apotheosis:mythic_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        },
+        {
+          "item": "spectrum:bismuth_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        },
+        {
+          "item": "ae2cs:purified_irradiated_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "evolvedmekanism:molten_crystaltine",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "evolvedmekanism:molten_enhanced_ender_ingot",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "apotheosis:mythic_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:mythic_material"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "apotheosis:mythic_material"
+  }
+}

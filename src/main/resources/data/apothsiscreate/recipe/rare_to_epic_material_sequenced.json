@@ -1,0 +1,128 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "ingredient": {
+    "item": "apotheosis:rare_material"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "apotheosis:epic_material"
+    },
+    {
+      "chance": 5.0,
+      "id": "ae2cs:resonating_crystal_dust"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:rare_material"
+        },
+        {
+          "item": "apotheosis:rare_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:rare_material"
+        },
+        {
+          "item": "spectrum:citrine_powder"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:rare_material"
+        },
+        {
+          "item": "ae2cs:purified_resonating_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "apotheosis:rare_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "apotheosis:rare_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "apotheosis:rare_material"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "evolvedmekanism:molten_diamond",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:rare_material"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "apotheosis:rare_material"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "spectrum:copper_cluster"
+        }
+      ]
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "count": 8,
+      "id": "spectrum:pure_copper"
+    }
+  ]
+}

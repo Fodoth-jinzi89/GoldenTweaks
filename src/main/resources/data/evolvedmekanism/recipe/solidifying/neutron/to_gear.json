@@ -5,20 +5,20 @@
     "item": "evolvedmekanism:mold_gear"
   },
   "fluid_input": {
-    "fluid": "avaritia_integration:molten_neutron",
+    "fluid": "evolvedmekanism:molten_neutronium",
     "amount": 360
   },
   "extra_input": {
-    "fluid": "mekanism:oxygen",
+    "fluid": "neoecoae:cryotheum_solution",
     "amount": 360
   },
   "output": {
-    "item": "avaritia_integration:neutron_gear"
+    "item": "avaritia:neutron_gear"
   },
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "avaritia_integration"
+      "modid": "avaritia"
     }
   ]
 }

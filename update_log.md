@@ -1,5 +1,26 @@
 # GoldenTweaks Update Log
 
+## 2026.05.30 — v2.0
+
+### Spectrum
+- 添加联动配方
+
+### Travelers Titles
+- 修复传送石碑标题错误发给所有玩家的问题
+  - [NeoForgeWaystonesCompatHelperMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/travelerstitles/NeoForgeWaystonesCompatHelperMixin.java)
+
+### Sable
+- 修复缓存崩溃
+  - [VoxelNeighborhoodStateMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/sable/VoxelNeighborhoodStateMixin.java)
+
+### JAOPCA
+- 禁止下载语言文件
+  - [LocalizationRepoHandlerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/jaopca/LocalizationRepoHandlerMixin.java)
+
+### AE2
+- 修复固定项目的表达式写反的问题
+  - [PinnedKeysMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2/PinnedKeysMixin.java)
+
 ## 2026.05.29 — v1.9
 
 ### Apotheosis Things
@@ -7,6 +28,7 @@
 
 ### Cmpackagecouriers
 - 修复渲染崩溃
+  - [CardboardPlaneItemRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/cmpackagecouriers/CardboardPlaneItemRendererMixin.java)
 
 
 ## 2026.05.28 — v1.8
@@ -101,13 +123,13 @@
 
 ### Additional Attributes
 - 修复了卷轴放进 AE 会崩溃的问题
-  - [SpellUtilsMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/SpellUtilsMixin.java)
+  - [SpellUtilsMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/irons_spellbooks/SpellUtilsMixin.java)
 
 ### Evolved Mekanism
 - 修复了化学混合机配方问题
-  - [ChemixerRecipeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ChemixerRecipeMixin.java)
-  - [BasicChemixerRecipeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/BasicChemixerRecipeMixin.java)
-  - [EMJEIMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/EMJEIMixin.java)
+  - [ChemixerRecipeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/evolvedmekanism/ChemixerRecipeMixin.java)
+  - [BasicChemixerRecipeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/evolvedmekanism/BasicChemixerRecipeMixin.java)
+  - [EMJEIMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/evolvedmekanism/EMJEIMixin.java)
 - 修复了 APT 在客户端未完成加载时就读取内部存储的问题
   - [APTPortEnergySafeMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mek/APTPortEnergySafeMixin.java)
   - [MultiblockDataMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mek/MultiblockDataMixin.java)
@@ -142,7 +164,7 @@
   
 ### Silent Gear
 - 修复了材料书打开会使每个玩家打开界面的问题
-  - [MaterialBookItemMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/MaterialBookItemMixin.java)
+  - [MaterialBookItemMixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/silentgear/MaterialBookItemMixin.java)
   - [S2COpenMaterialBookPacket](src/main/java/net/fodoth/skina/goldentweaks/network/packet/S2COpenMaterialBookPacket.java)
 
 ## 2026.05.17 — v0.9

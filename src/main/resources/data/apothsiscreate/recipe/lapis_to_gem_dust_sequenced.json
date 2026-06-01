@@ -1,0 +1,70 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "dndesires"
+    }
+  ],
+  "ingredient": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "apotheosis:gem_dust"
+    },
+    {
+      "chance": 5.0,
+      "id": "dndesires:lapis_lazuli_shard"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:lapis_lazuli"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:lapis_lazuli"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "minecraft:lapis_lazuli"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:lapis_lazuli"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:lapis_lazuli"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:lapis_lazuli"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}

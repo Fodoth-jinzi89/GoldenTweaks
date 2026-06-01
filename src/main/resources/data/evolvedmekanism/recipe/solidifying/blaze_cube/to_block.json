@@ -9,11 +9,11 @@
     "amount": 810
   },
   "extra_input": {
-    "fluid": "mekanism:oxygen",
+    "fluid": "neoecoae:cryotheum_solution",
     "amount": 810
   },
   "output": {
-    "item": "avaritia_integration:blaze_cube_block"
+    "item": "avaritia:blaze_cube_block"
   },
   "neoforge:conditions": [
     {

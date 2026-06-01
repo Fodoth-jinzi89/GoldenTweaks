@@ -9,15 +9,19 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
     }
   ],
 
   "pattern": [
     "  AAA  ",
     " ABBBA ",
-    "ABBBBBA",
-    "ABBCBBA",
-    "ABBBBBA",
+    "ABDDDBA",
+    "ABDCDBA",
+    "ABDDDBA",
     " ABBBA ",
     " AAAAA "
   ],
@@ -30,6 +34,9 @@
     },
     "C": {
       "item": "minecraft:armadillo_scute"
+    },
+    "D": {
+      "item": "apotheosis:common_material"
     }
   },
   "result": {

@@ -93,19 +93,19 @@
     "matchItems": [
       "#c:ingots/copper"
     ],
-    "resultItems": "mekanism:copper_ingot"
+    "resultItems": "alltheores:copper_ingot"
   },
   {
     "matchItems": [
       "#c:nuggets/copper"
     ],
-    "resultItems": "mekanism:copper_nugget"
+    "resultItems": "alltheores:copper_nugget"
   },
   {
     "matchItems": [
       "#c:dusts/copper"
     ],
-    "resultItems": "mekanism:copper_dust"
+    "resultItems": "alltheores:copper_dust"
   },
   {
     "matchItems": [
@@ -117,19 +117,19 @@
     "matchItems": [
       "#c:rods/copper"
     ],
-    "resultItems": "mekanism:copper_rod"
+    "resultItems": "alltheores:copper_rod"
   },
   {
     "matchItems": [
       "#c:gears/copper"
     ],
-    "resultItems": "mekanism:copper_gear"
+    "resultItems": "alltheores:copper_gear"
   },
   {
     "matchItems": [
       "#c:storage_blocks/copper"
     ],
-    "resultItems": "mekanism:copper_block"
+    "resultItems": "alltheores:copper_block"
   },
   {
     "matchItems": [
@@ -291,43 +291,43 @@
     "matchItems": [
       "#c:ingots/lead"
     ],
-    "resultItems": "mekanism:lead_ingot"
+    "resultItems": "mekanism:ingot_lead"
   },
   {
     "matchItems": [
       "#c:nuggets/lead"
     ],
-    "resultItems": "mekanism:lead_nugget"
+    "resultItems": "mekanism:nugget_lead"
   },
   {
     "matchItems": [
       "#c:dusts/lead"
     ],
-    "resultItems": "mekanism:lead_dust"
+    "resultItems": "mekanism:dust_lead"
   },
   {
     "matchItems": [
       "#c:plates/lead"
     ],
-    "resultItems": "mekanism:lead_plate"
+    "resultItems": "alltheores:lead_plate"
   },
   {
     "matchItems": [
       "#c:rods/lead"
     ],
-    "resultItems": "mekanism:lead_rod"
+    "resultItems": "alltheores:lead_rod"
   },
   {
     "matchItems": [
       "#c:gears/lead"
     ],
-    "resultItems": "mekanism:lead_gear"
+    "resultItems": "alltheores:lead_gear"
   },
   {
     "matchItems": [
       "#c:storage_blocks/lead"
     ],
-    "resultItems": "mekanism:lead_block"
+    "resultItems": "mekanism:block_lead"
   },
   {
     "matchItems": [
@@ -489,43 +489,43 @@
     "matchItems": [
       "#c:ingots/tin"
     ],
-    "resultItems": "mekanism:tin_ingot"
+    "resultItems": "mekanism:ingot_tin"
   },
   {
     "matchItems": [
       "#c:nuggets/tin"
     ],
-    "resultItems": "mekanism:tin_nugget"
+    "resultItems": "mekanism:nugget_tin"
   },
   {
     "matchItems": [
       "#c:dusts/tin"
     ],
-    "resultItems": "mekanism:tin_dust"
+    "resultItems": "mekanism:dust_tin"
   },
   {
     "matchItems": [
       "#c:plates/tin"
     ],
-    "resultItems": "mekanism:tin_plate"
+    "resultItems": "alltheores:tin_plate"
   },
   {
     "matchItems": [
       "#c:rods/tin"
     ],
-    "resultItems": "mekanism:tin_rod"
+    "resultItems": "alltheores:tin_rod"
   },
   {
     "matchItems": [
       "#c:gears/tin"
     ],
-    "resultItems": "mekanism:tin_gear"
+    "resultItems": "alltheores:tin_gear"
   },
   {
     "matchItems": [
       "#c:storage_blocks/tin"
     ],
-    "resultItems": "mekanism:tin_block"
+    "resultItems": "mekanism:block_tin"
   },
   {
     "matchItems": [
@@ -555,43 +555,43 @@
     "matchItems": [
       "#c:ingots/uranium"
     ],
-    "resultItems": "mekanism:uranium_ingot"
+    "resultItems": "mekanism:ingot_uranium"
   },
   {
     "matchItems": [
       "#c:nuggets/uranium"
     ],
-    "resultItems": "mekanism:uranium_nugget"
+    "resultItems": "mekanism:nugget_uranium"
   },
   {
     "matchItems": [
       "#c:dusts/uranium"
     ],
-    "resultItems": "mekanism:uranium_dust"
+    "resultItems": "mekanism:dust_uranium"
   },
   {
     "matchItems": [
       "#c:plates/uranium"
     ],
-    "resultItems": "mekanism:uranium_plate"
+    "resultItems": "alltheores:uranium_plate"
   },
   {
     "matchItems": [
       "#c:rods/uranium"
     ],
-    "resultItems": "mekanism:uranium_rod"
+    "resultItems": "alltheores:uranium_rod"
   },
   {
     "matchItems": [
       "#c:gears/uranium"
     ],
-    "resultItems": "mekanism:uranium_gear"
+    "resultItems": "alltheores:uranium_gear"
   },
   {
     "matchItems": [
       "#c:storage_blocks/uranium"
     ],
-    "resultItems": "mekanism:uranium_block"
+    "resultItems": "mekanism:block_uranium"
   },
   {
     "matchItems": [
@@ -621,43 +621,43 @@
     "matchItems": [
       "#c:ingots/osmium"
     ],
-    "resultItems": "mekanism:osmium_ingot"
+    "resultItems": "mekanism:ingot_osmium"
   },
   {
     "matchItems": [
       "#c:nuggets/osmium"
     ],
-    "resultItems": "mekanism:osmium_nugget"
+    "resultItems": "mekanism:nugget_osmium"
   },
   {
     "matchItems": [
       "#c:dusts/osmium"
     ],
-    "resultItems": "mekanism:osmium_dust"
+    "resultItems": "mekanism:dust_osmium"
   },
   {
     "matchItems": [
       "#c:plates/osmium"
     ],
-    "resultItems": "mekanism:osmium_plate"
+    "resultItems": "alltheores:osmium_plate"
   },
   {
     "matchItems": [
       "#c:rods/osmium"
     ],
-    "resultItems": "mekanism:osmium_rod"
+    "resultItems": "alltheores:osmium_rod"
   },
   {
     "matchItems": [
       "#c:gears/osmium"
     ],
-    "resultItems": "mekanism:osmium_gear"
+    "resultItems": "alltheores:osmium_gear"
   },
   {
     "matchItems": [
       "#c:storage_blocks/osmium"
     ],
-    "resultItems": "mekanism:osmium_block"
+    "resultItems": "mekanism:block_osmium"
   },
   {
     "matchItems": [
@@ -951,43 +951,43 @@
     "matchItems": [
       "#c:ingots/steel"
     ],
-    "resultItems": "mekanism:steel_ingot"
+    "resultItems": "mekanism:ingot_steel"
   },
   {
     "matchItems": [
       "#c:nuggets/steel"
     ],
-    "resultItems": "mekanism:steel_nugget"
+    "resultItems": "mekanism:nugget_steel"
   },
   {
     "matchItems": [
       "#c:dusts/steel"
     ],
-    "resultItems": "mekanism:steel_dust"
+    "resultItems": "mekanism:dust_steel"
   },
   {
     "matchItems": [
       "#c:plates/steel"
     ],
-    "resultItems": "mekanism:steel_plate"
+    "resultItems": "alltheores:steel_plate"
   },
   {
     "matchItems": [
       "#c:rods/steel"
     ],
-    "resultItems": "mekanism:steel_rod"
+    "resultItems": "alltheores:steel_rod"
   },
   {
     "matchItems": [
       "#c:gears/steel"
     ],
-    "resultItems": "mekanism:steel_gear"
+    "resultItems": "alltheores:steel_gear"
   },
   {
     "matchItems": [
       "#c:storage_blocks/steel"
     ],
-    "resultItems": "mekanism:steel_block"
+    "resultItems": "mekanism:block_steel"
   },
   {
     "matchItems": [

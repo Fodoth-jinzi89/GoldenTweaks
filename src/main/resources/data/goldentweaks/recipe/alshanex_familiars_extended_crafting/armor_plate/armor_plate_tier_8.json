@@ -21,17 +21,21 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
     }
   ],
 
   "pattern": [
     "   AAA   ",
     "  ABBBA  ",
-    " ABBCBBA ",
-    "ABBDEDBBA",
+    " ABGCGBA ",
+    "ABGDEDGBA",
     "ABCDFDCBA",
-    "ABBDGDBBA",
-    " ABBHBBA ",
+    "ABGDEDGBA",
+    " ABGCGBA ",
     "  ABBBA  ",
     "  AAAAA  "
   ],
@@ -46,19 +50,16 @@
       "item": "spectrum:paltaeria_floatblock"
     },
     "D": {
-      "item": "spectrum:pure_azurite"
+      "item": "spectrum:raw_azurite"
     },
     "E": {
-      "item": "mekanism:mekasuit_helmet"
+      "item": "spectrum:pure_azurite"
     },
     "F": {
-      "item": "mekanism:mekasuit_bodyarmor"
+      "item": "minecraft:reinforced_deepslate"
     },
     "G": {
-      "item": "mekanism:mekasuit_pants"
-    },
-    "H": {
-      "item": "mekanism:mekasuit_boots"
+      "item": "apotheosis:rare_material"
     }
   },
 

@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "duration": 240,
+  "item_input": {
+    "item": "evolvedmekanism:mold_gear"
+  },
+  "fluid_input": {
+    "fluid": "evolvedmekanism:molten_infinity",
+    "amount": 360
+  },
+  "extra_input": {
+    "fluid": "mekanism_extras:polonium-208",
+    "amount": 360
+  },
+  "output": {
+    "item": "avaritia_integration:infinity_gear"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_integration"
+    }
+  ]
+}

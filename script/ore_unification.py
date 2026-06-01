@@ -35,7 +35,6 @@ MEKANISM_METALS = {
     "steel",
     "lead",
     "tin",
-    "copper",
     "uranium"
 }
 
@@ -78,10 +77,10 @@ def resolve_result_item(material: str, category: str):
             return f"create:{material}_{singular}"
 
     # Mekanism 输出体系
-    if material in MEKANISM_METALS:
+    if material in MEKANISM_METALS and category in {"ingots", "storage_blocks", "nuggets", "dusts"}:
         if category == "storage_blocks":
-            return f"mekanism:{material}_block"
-        return f"mekanism:{material}_{category[:-1]}"
+            return f"mekanism:block_{material}"
+        return f"mekanism:{category[:-1]}_{material}"
 
     # 默认输出（本模组）
     if category == "storage_blocks":

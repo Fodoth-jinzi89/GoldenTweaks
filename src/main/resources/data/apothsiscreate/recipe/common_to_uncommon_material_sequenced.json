@@ -1,0 +1,128 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "ingredient": {
+    "item": "apotheosis:common_material"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "apotheosis:uncommon_material"
+    },
+    {
+      "chance": 5.0,
+      "id": "ae2:fluix_dust"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:common_material"
+        },
+        {
+          "item": "apotheosis:common_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:common_material"
+        },
+        {
+          "item": "spectrum:amethyst_powder"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:common_material"
+        },
+        {
+          "item": "ae2cs:purified_fluix_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "apotheosis:common_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "apotheosis:common_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "apotheosis:common_material"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "evolvedmekanism:molten_iron",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:common_material"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "apotheosis:common_material"
+  }
+}

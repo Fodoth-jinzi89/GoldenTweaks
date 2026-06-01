@@ -5,11 +5,11 @@
     "item": "evolvedmekanism:mold_wire"
   },
   "fluid_input": {
-    "fluid": "evolvedmekanism:molten_neutron",
+    "fluid": "evolvedmekanism:molten_neutronium",
     "amount": 45
   },
   "extra_input": {
-    "fluid": "mekanism:oxygen",
+    "fluid": "neoecoae:cryotheum_solution",
     "amount": 45
   },
   "output": {

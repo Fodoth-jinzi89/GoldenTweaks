@@ -9,15 +9,19 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
     }
   ],
 
   "pattern": [
     "   A   ",
     "  ABA  ",
-    " ABBBA ",
-    "ABBCBBA",
-    "ABBBBBA",
+    " ADDDA ",
+    "ABDCDBA",
+    "ABDDDBA",
     " ABBBA ",
     "  AAA  "
   ],
@@ -30,10 +34,13 @@
     },
     "C": {
       "item": "irons_spellbooks:arcane_ingot"
+    },
+    "D": {
+      "item": "apotheosis:common_material"
     }
   },
   "result": {
     "id": "goldentweaks:magic_power_tier_6",
-	"count": 1
+	"count": 4
   }
 }

@@ -17,17 +17,29 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ancientreforging"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
     }
   ],
 
   "pattern": [
     "   AAA   ",
     "  ABBBA  ",
-    " ABBBBBA ",
-    "ABBDDDBBA",
+    " ABIBIBA ",
+    "ABGHDHGBA",
     "ABCEFECBA",
-    "ABBDEDBBA",
-    " ABBDBBA ",
+    "ABGHEHGBA",
+    " ABIDIBA ",
     "  ABCBA  ",
     "    A    "
   ],
@@ -49,6 +61,15 @@
     },
     "F": {
       "item": "avaritia:infinity_catalyst"
+    },
+    "G": {
+      "item": "apotheosis:mythic_material"
+    },
+    "H": {
+      "item": "ancientreforging:ancient_material"
+    },
+    "I": {
+      "item": "spectrum:mixed_refined_crystal_bricks"
     }
   },
 

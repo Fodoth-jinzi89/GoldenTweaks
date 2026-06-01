@@ -24,21 +24,21 @@
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "cataclysm"
+      "modid": "ae2"
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "ae2"
+      "modid": "apotheosis"
     }
   ],
   "pattern": [
     "   AAA   ",
     "  ABBBA  ",
-    " ABBCBBA ",
-    "ABBDEDBBA",
+    " ABGCGBA ",
+    "ABGDEDGBA",
     "ABCDFDCBA",
-    "ABBDGDBBA",
-    " ABBHBBA ",
+    "ABGDEDGBA",
+    " ABGCGBA ",
     "  ABBBA  ",
     "  AAAAA  "
   ],
@@ -53,19 +53,16 @@
       "item": "spectrum:hover_block"
     },
     "D": {
-      "item": "spectrum:pure_fluix"
+      "item": "spectrum:neolith"
     },
     "E": {
-      "item": "cataclysm:monstrous_helm"
+      "item": "spectrum:pure_fluix"
     },
     "F": {
-      "item": "cataclysm:bloom_stone_pauldrons"
+      "item": "minecraft:dragon_egg"
     },
     "G": {
-      "item": "cataclysm:ignitium_leggings"
-    },
-    "H": {
-      "item": "cataclysm:cursium_boots"
+      "item": "apotheosis:epic_material"
     }
   },
 

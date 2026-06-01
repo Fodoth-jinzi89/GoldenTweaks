@@ -1,0 +1,146 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "ingredient": {
+    "item": "apotheosis:epic_material"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "apotheosis:mythic_material"
+    },
+    {
+      "chance": 5.0,
+      "id": "ae2cs:irradiated_crystal_dust"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        },
+        {
+          "item": "apotheosis:epic_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        },
+        {
+          "item": "spectrum:onyx_powder"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        },
+        {
+          "item": "ae2cs:purified_irradiated_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "evolvedmekanism:molten_signalum",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "evolvedmekanism:molten_lumium",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "apotheosis:epic_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "apotheosis:epic_material"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "apotheosis:epic_material"
+  }
+}

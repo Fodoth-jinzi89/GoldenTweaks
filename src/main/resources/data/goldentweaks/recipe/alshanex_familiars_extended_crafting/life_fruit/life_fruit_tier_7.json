@@ -29,17 +29,21 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "kaleidoscope_nether"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
     }
   ],
 
   "pattern": [
     "   AAA   ",
     " AABBBAA ",
-    " ABBCBBA ",
-    "ABBDEDBBA",
+    " ABJCJBA ",
+    "ABJDEDJBA",
     "ABFEGEHBA",
-    "ABBDEDBBA",
-    " ABBIBBA ",
+    "ABJDEDJBA",
+    " ABJIJBA ",
     " AABBBAA ",
     "   AAA   "
   ],
@@ -70,6 +74,9 @@
     },
     "I": {
       "item": "spectrum:enchanted_golden_carrot"
+    },
+    "J": {
+      "item": "apotheosis:uncommon_material"
     }
   },
   "result": {

@@ -9,7 +9,7 @@
     "amount": 45
   },
   "extra_input": {
-    "fluid": "mekanism:oxygen",
+    "fluid": "neoecoae:cryotheum_solution",
     "amount": 45
   },
   "output": {

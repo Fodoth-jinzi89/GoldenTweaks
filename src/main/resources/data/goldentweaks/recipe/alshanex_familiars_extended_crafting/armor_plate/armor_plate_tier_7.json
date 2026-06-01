@@ -21,17 +21,21 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
     }
   ],
 
   "pattern": [
     "   AAA   ",
     "  ABBBA  ",
-    " ABBCBBA ",
-    "ABBDEDBBA",
+    " ABGCGBA ",
+    "ABGDEDGBA",
     "ABCDFDCBA",
-    "ABBDGDBBA",
-    " ABBHBBA ",
+    "ABGDEDGBA",
+    " ABGCGBA ",
     "  ABBBA  ",
     "  AAAAA  "
   ],
@@ -46,19 +50,16 @@
       "item": "spectrum:stratine_floatblock"
     },
     "D": {
-      "item": "spectrum:stratine_gem"
+      "item": "spectrum:stratine_fragments"
     },
     "E": {
-      "item": "spectrum:bedrock_helmet"
+      "item": "spectrum:stratine_gem"
     },
     "F": {
-      "item": "spectrum:bedrock_chestplate"
+      "item": "spectrum:bedrock_dust_block"
     },
     "G": {
-      "item": "spectrum:bedrock_leggings"
-    },
-    "H": {
-      "item": "spectrum:bedrock_boots"
+      "item": "apotheosis:uncommon_material"
     }
   },
   "result": {
