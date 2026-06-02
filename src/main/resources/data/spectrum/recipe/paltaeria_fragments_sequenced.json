@@ -1,0 +1,101 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "kaleidoscope_tavern"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "ingredient": {
+    "item": "minecraft:torchflower_seeds"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "spectrum:paltaeria_fragments"
+    },
+    {
+      "chance": 5.0,
+      "id": "spectrum:paltaeria_gem"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:torchflower_seeds"
+        },
+        {
+          "type": "fluid_stack",
+          "fluid": "kaleidoscope_tavern:ice_grape_juice",
+          "amount": 20
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:torchflower_seeds"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:torchflower_seeds"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:torchflower_seeds"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:torchflower_seeds"
+        },
+        {
+          "item": "silentgear:crushed_shulker_shell"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:torchflower_seeds"
+        }
+      ]
+    },
+    {
+      "type": "northstar:engraving",
+      "ingredients": [
+        {
+          "item": "minecraft:torchflower_seeds"
+        }
+      ],
+      "processing_time": 40,
+      "results": [
+        {
+          "id": "minecraft:torchflower_seeds"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:torchflower_seeds"
+  }
+}
