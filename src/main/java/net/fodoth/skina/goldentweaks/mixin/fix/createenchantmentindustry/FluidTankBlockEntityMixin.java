@@ -1,4 +1,4 @@
-package net.fodoth.skina.goldentweaks.mixin.fix.create;
+package net.fodoth.skina.goldentweaks.mixin.fix.createenchantmentindustry;
 
 import com.simibubi.create.content.fluids.tank.FluidTankBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,10 +14,21 @@ public class FluidTankBlockEntityMixin {
             at = @At("RETURN"),
             cancellable = true
     )
-    private void goldentweaks$neverReturnNull(
+    private void goldentweaks$fixCEIPonder(
             CallbackInfoReturnable<FluidTankBlockEntity> cir
     ) {
-        if (cir.getReturnValue() == null) {
+        if (cir.getReturnValue() != null) {
+            return;
+        }
+
+        boolean ceiPonderCall = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE)
+                .walk(stream -> stream.anyMatch(frame ->
+                        frame.getClassName().equals(
+                                "plus.dragons.createenchantmentindustry.client.ponder.scene.MiscScene"
+                        )
+                ));
+
+        if (ceiPonderCall) {
             cir.setReturnValue((FluidTankBlockEntity) (Object) this);
         }
     }

@@ -1,0 +1,28 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_enchantment_industry"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "create_sa"
+    }
+  ],
+  "duration": 8,
+  "item_input": {
+    "item": "evolvedmekanism:mold_ingot"
+  },
+  "fluid_input": {
+    "fluid": "create_enchantment_industry:experience",
+    "amount": 12
+  },
+  "extra_input": {
+    "fluid": "minecraft:water",
+    "amount": 12
+  },
+  "output": {
+    "item": "create_sa:heap_of_experience"
+  }
+}

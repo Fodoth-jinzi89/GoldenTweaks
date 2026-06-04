@@ -1,0 +1,15 @@
+{
+  "gui.ae2peat.AccessSearchModeBoth": "同时搜索样板与机器",
+  "gui.ae2peat.AccessSearchModeCategory": "搜索模式",
+  "gui.ae2peat.AccessSearchModeMachine": "仅搜索机器",
+  "gui.ae2peat.AccessSearchModePattern": "仅搜索样板",
+  "gui.ae2peat.AutoEncodeCategory": "自动编码（实验性功能）",
+  "gui.ae2peat.AutoFilterCategory": "自动过滤（实验性功能）",
+  "gui.ae2peat.Disabled": "禁用",
+  "gui.ae2peat.Enabled": "启用",
+  "gui.ae2peat.ModName": "AE2 样板编码访问终端",
+  "gui.ae2peat.PatternEncodingAccessTerminalShort": "样板编码访问终端",
+  "item.ae2peat.pattern_encoding_access_terminal": "ME 样板编码访问终端",
+  "item.ae2peat.wireless_pattern_encoding_access_terminal": "无线样板编码访问终端",
+  "key.ae2peat.category": "AE2 样板编码访问终端"
+}

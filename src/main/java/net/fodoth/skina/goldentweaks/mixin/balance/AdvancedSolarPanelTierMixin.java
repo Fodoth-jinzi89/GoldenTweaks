@@ -18,20 +18,20 @@ public class AdvancedSolarPanelTierMixin {
         int base;
 
         switch (tier) {
-            case ADVANCED -> base = 2;
-            case ELITE -> base = 3;
-            case ULTIMATE -> base = 4;
-            case OVERCLOCKED -> base = 5;
-            case QUANTUM -> base = 6;
-            case DENSE -> base = 7;
-            case MULTIVERSAL -> base = 8;
-            case CREATIVE -> base = 16;
+            case ADVANCED -> base = 8;
+            case ELITE -> base = 24;
+            case ULTIMATE -> base = 72;
+            case OVERCLOCKED -> base = 216;
+            case QUANTUM -> base = 648;
+            case DENSE -> base = 1944;
+            case MULTIVERSAL -> base = 5832;
+            case CREATIVE -> base = 17496;
             default -> {
                 return;
             }
         }
 
-        int boost = GoldenTweaksCommonConfig.EVOLVED_MEKANISM_SOLAR_MULTIPLIER.get();
+        int boost = GoldenTweaksCommonConfig.getEmSolarMultiplier();
 
         cir.setReturnValue(base * boost);
     }

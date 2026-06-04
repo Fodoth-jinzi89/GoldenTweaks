@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_enchantment_industry"
+    }
+  ],
+  "duration": 2,
+  "item_input": {
+    "item": "evolvedmekanism:mold_nugget"
+  },
+  "fluid_input": {
+    "fluid": "create_enchantment_industry:experience",
+    "amount": 3
+  },
+  "extra_input": {
+    "fluid": "minecraft:water",
+    "amount": 3
+  },
+  "output": {
+    "item": "create:experience_nugget"
+  }
+}

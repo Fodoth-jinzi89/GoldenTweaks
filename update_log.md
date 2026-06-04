@@ -1,5 +1,31 @@
 # GoldenTweaks Update Log
 
+## 2026.06.04 — v2.1
+
+### Evolved Mekanism
+- 重新调整了太阳能平衡
+
+### Quest Shop
+- 尝试修复重启后任务类型丢失问题
+
+### Aeronautics
+- 修复 JEI 插件加载过早的问题
+
+### Create
+- 修复线程不安全问题
+
+### Create Enchantment Industry
+- 修复带储罐的思索崩溃问题
+
+### Fluid Logistics
+- 修复无限流体储罐未正确响应配置的问题
+
+### Geckolib
+- 修复找不到光照文件引起字体渲染错误的问题
+
+### Golden Tweaks
+- 添加汉化和联动配方
+
 ## 2026.05.30 — v2.0
 
 ### Spectrum

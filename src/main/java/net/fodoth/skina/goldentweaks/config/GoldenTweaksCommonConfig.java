@@ -125,7 +125,7 @@ public final class GoldenTweaksCommonConfig {
         EVOLVED_MEKANISM_SOLAR_MULTIPLIER = builder
                 .translation(key("balance.evolved_mekanism.solar_multiplier"))
                 .comment(comment("balance.evolved_mekanism.solar_multiplier"))
-                .defineInRange("solarMultiplier", 2700, 1, Integer.MAX_VALUE);
+                .defineInRange("solarMultiplier", 1, 1, Integer.MAX_VALUE);
 
         builder.pop();
 
@@ -162,6 +162,15 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return RECYCLER_FACTORY_STACK_UPGRADES.get();
+    }
+
+    public static int getEmSolarMultiplier() {
+
+        if (!GTState.isReady()) {
+            return 1;
+        }
+
+        return EVOLVED_MEKANISM_SOLAR_MULTIPLIER.get();
     }
 
     private static String key(String path) {

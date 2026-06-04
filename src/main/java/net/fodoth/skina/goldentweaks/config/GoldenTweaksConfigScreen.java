@@ -162,7 +162,7 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.evolved_mekanism_solar_multiplier",
                     EVOLVED_MEKANISM_SOLAR_MULTIPLIER,
-                    2700, 1, Integer.MAX_VALUE);
+                    1, 1, Integer.MAX_VALUE);
 
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.recycler_factory_stack_upgrades",

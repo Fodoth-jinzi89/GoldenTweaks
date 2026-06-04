@@ -1154,6 +1154,8 @@
     "matchItems": [
       "bakeries:salt",
       "better_mcdonalds_mod:salt",
+	  "mekanism:salt",
+	  "croptopia:salt",
       "braziliandelight:salt",
       "enhancedfarming:salt",
       "ltc2:salt",
@@ -1164,7 +1166,26 @@
       "unusual_delight:salt",
       "vintagedelight:salt_dust"
     ],
-    "resultItems": "croptopia:salt"
+    "resultItems": "alltheores:salt"
+  },
+  {
+    "matchItems": [
+      "bakeries:salt_ore",
+	  "croptopia:salt_ore"
+    ],
+    "resultItems": "alltheores:salt_ore"
+  },
+  {
+    "matchItems": [
+      "mekanism:salt_block"
+    ],
+    "resultItems": "alltheores:salt_block"
+  },
+  {
+    "matchItems": [
+      "bakeries:deepslate_salt_ore"
+    ],
+    "resultItems": "alltheores:deepslate_salt_ore"
   },
   {
     "matchItems": [
