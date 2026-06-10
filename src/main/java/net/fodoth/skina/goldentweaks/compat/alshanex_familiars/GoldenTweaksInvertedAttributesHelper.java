@@ -17,6 +17,7 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
 
 import java.util.*;
 
@@ -418,7 +419,7 @@ public final class GoldenTweaksInvertedAttributesHelper {
         List<AbstractSpellCastingPet> familiars =
                 new ArrayList<>();
 
-        if (!(player.level() instanceof ServerLevel serverLevel)) {
+        if (!(player.level() instanceof ServerLevel)) {
             return familiars;
         }
 
@@ -427,27 +428,24 @@ public final class GoldenTweaksInvertedAttributesHelper {
                         AttachmentRegistry.PLAYER_FAMILIAR_DATA
                 );
 
-        for (Entity entity : serverLevel.getAllEntities()) {
+        Set<UUID> summonedIds = data.getSummonedFamiliarIds();
 
-            if (!(entity instanceof AbstractSpellCastingPet familiar)) {
-                continue;
+
+        if (!summonedIds.isEmpty()) {
+            Level var3 = player.level();
+            if (var3 instanceof ServerLevel serverLevel) {
+
+                for (UUID id : summonedIds) {
+                    Entity entity = serverLevel.getEntity(id);
+                    if (entity instanceof AbstractSpellCastingPet familiar) {
+                        if (familiar.isAlive() && !familiar.getIsInHouse()) {
+                            familiars.add(familiar);
+                        }
+                    }
+                }
+
             }
-
-            if (!player.getUUID().equals(familiar.getOwnerUUID())) {
-                continue;
-            }
-
-            if (!data.hasFamiliar(familiar.getUUID())) {
-                continue;
-            }
-
-            if (familiar.getIsInHouse()) {
-                continue;
-            }
-
-            familiars.add(familiar);
         }
-
         return familiars;
     }
 

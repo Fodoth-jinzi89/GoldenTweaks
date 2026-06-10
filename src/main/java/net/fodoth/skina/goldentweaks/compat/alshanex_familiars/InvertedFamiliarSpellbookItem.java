@@ -15,6 +15,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+import static net.alshanex.familiarslib.registry.AttributeRegistry.FAMILIAR_DAMAGE;
+import static net.alshanex.familiarslib.registry.AttributeRegistry.FAMILIAR_RESIST;
+
 public class InvertedFamiliarSpellbookItem
         extends AbstractFamiliarSpellbookItem {
 
@@ -33,6 +36,7 @@ public class InvertedFamiliarSpellbookItem
                 ),
                 11
         );
+
     }
 
     @Override
@@ -65,6 +69,8 @@ public class InvertedFamiliarSpellbookItem
 
     @Override
     protected AttributeContainer[] getSpellbookAttributes() {
-        return new AttributeContainer[]{new AttributeContainer(AttributeRegistry.MAX_MANA, 1000.0F, AttributeModifier.Operation.ADD_VALUE), new AttributeContainer(AttributeRegistry.CAST_TIME_REDUCTION, 0.50, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.SPELL_POWER, 1.00, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.MANA_REGEN, 1.00, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.SPELL_RESIST, 0.50, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.SUMMON_DAMAGE, 1.00, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)};
+        return new AttributeContainer[]{new AttributeContainer(AttributeRegistry.MAX_MANA, 1000.0F, AttributeModifier.Operation.ADD_VALUE), new AttributeContainer(AttributeRegistry.CAST_TIME_REDUCTION, 0.50, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.SPELL_POWER, 1.00, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.MANA_REGEN, 1.00, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.SPELL_RESIST, 0.50, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(AttributeRegistry.SUMMON_DAMAGE, 1.00, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(FAMILIAR_DAMAGE, 1.0, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), new AttributeContainer(FAMILIAR_RESIST, 0.5, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)};
     }
+
+
 }

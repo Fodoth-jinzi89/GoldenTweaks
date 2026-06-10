@@ -15,6 +15,7 @@
     "feature.alshanex_familiars.FamiliarConsumableComponentMixin",
     "feature.alshanex_familiars.FamiliarConsumableIntegrationMixin",
     "feature.alshanex_familiars.FamiliarManagerMixin",
+    "feature.alshanex_familiars.FamiliarsStunHandlerMixin",
     "feature.alshanex_familiars.accessor.EntityAccessor",
     "feature.apotheosisthings.DisableSalvageCharmAnvilMixin",
     "feature.attributefix.RangeConfigMixin",

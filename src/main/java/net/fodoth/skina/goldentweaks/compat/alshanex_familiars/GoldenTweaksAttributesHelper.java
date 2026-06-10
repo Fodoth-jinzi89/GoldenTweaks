@@ -7,7 +7,6 @@ import net.alshanex.familiarslib.data.PlayerFamiliarData;
 import net.alshanex.familiarslib.entity.AbstractSpellCastingPet;
 import net.alshanex.familiarslib.mixin.SchoolTypeAccessor;
 import net.alshanex.familiarslib.registry.AttachmentRegistry;
-import net.alshanex.familiarslib.util.CurioUtils;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
@@ -20,12 +19,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.level.Level;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 public final class GoldenTweaksAttributesHelper {
 
@@ -52,15 +46,14 @@ public final class GoldenTweaksAttributesHelper {
         );
     }
 
-    private static List<AbstractSpellCastingPet>
-    getSummonedFamiliars(ServerPlayer player) {
+    private static List<AbstractSpellCastingPet> getSummonedFamiliars(
+            ServerPlayer player
+    ) {
 
         List<AbstractSpellCastingPet> familiars =
                 new ArrayList<>();
 
-        Level level = player.level();
-
-        if (!(level instanceof ServerLevel serverLevel)) {
+        if (!(player.level() instanceof ServerLevel)) {
             return familiars;
         }
 
@@ -69,34 +62,24 @@ public final class GoldenTweaksAttributesHelper {
                         AttachmentRegistry.PLAYER_FAMILIAR_DATA
                 );
 
-        for (Entity entity : serverLevel.getAllEntities()) {
+        Set<UUID> summonedIds = data.getSummonedFamiliarIds();
 
-            if (!(entity instanceof AbstractSpellCastingPet familiar)) {
-                continue;
+
+        if (!summonedIds.isEmpty()) {
+            Level var3 = player.level();
+            if (var3 instanceof ServerLevel serverLevel) {
+
+                for (UUID id : summonedIds) {
+                    Entity entity = serverLevel.getEntity(id);
+                    if (entity instanceof AbstractSpellCastingPet familiar) {
+                        if (familiar.isAlive() && !familiar.getIsInHouse()) {
+                            familiars.add(familiar);
+                        }
+                    }
+                }
+
             }
-
-            UUID ownerUUID =
-                    familiar.getOwnerUUID();
-
-            if (ownerUUID == null) {
-                continue;
-            }
-
-            if (!ownerUUID.equals(player.getUUID())) {
-                continue;
-            }
-
-            if (!data.hasFamiliar(familiar.getUUID())) {
-                continue;
-            }
-
-            if (familiar.getIsInHouse()) {
-                continue;
-            }
-
-            familiars.add(familiar);
         }
-
         return familiars;
     }
 
