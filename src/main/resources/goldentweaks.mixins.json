@@ -11,6 +11,7 @@
     "feature.PlayerMixin",
     "feature.alshanex_familiars.AbstractSpellCastingPetConsumableMixin",
     "feature.alshanex_familiars.ConsumableTypeMixin",
+    "feature.alshanex_familiars.FamiliarAttributesEventHandlerMixin",
     "feature.alshanex_familiars.FamiliarConsumableComponentMixin",
     "feature.alshanex_familiars.FamiliarConsumableIntegrationMixin",
     "feature.alshanex_familiars.FamiliarManagerMixin",

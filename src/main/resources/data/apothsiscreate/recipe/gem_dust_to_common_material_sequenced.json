@@ -25,7 +25,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:gem_dust"
+          "item": "goldentweaks:unprocessed_common_material"
         },
         {
           "item": "ae2cs:purified_nether_quartz_crystal"
@@ -33,7 +33,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:gem_dust"
+          "id": "goldentweaks:unprocessed_common_material"
         }
       ]
     },
@@ -41,7 +41,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "apotheosis:gem_dust"
+          "item": "goldentweaks:unprocessed_common_material"
         },
         {
           "type": "fluid_stack",
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:gem_dust"
+          "id": "goldentweaks:unprocessed_common_material"
         }
       ]
     },
@@ -59,12 +59,12 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "apotheosis:gem_dust"
+          "item": "goldentweaks:unprocessed_common_material"
         }
       ],
       "results": [
         {
-          "id": "apotheosis:gem_dust"
+          "id": "goldentweaks:unprocessed_common_material"
         }
       ]
     },
@@ -72,17 +72,17 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "apotheosis:gem_dust"
+          "item": "goldentweaks:unprocessed_common_material"
         }
       ],
       "results": [
         {
-          "id": "apotheosis:gem_dust"
+          "id": "goldentweaks:unprocessed_common_material"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "apotheosis:gem_dust"
+    "id": "goldentweaks:unprocessed_common_material"
   }
 }

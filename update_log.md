@@ -1,5 +1,17 @@
 # GoldenTweaks Update Log
 
+## 2026.06.10 — v2.2
+
+### Alshanex Familiars
+- 添加了一本新的法术书，可以共享魔宠属性给主人
+- 添加联动配方
+
+### Apothsiscreate
+- 添加了正确的序列组装中间物
+
+### Golden Tweaks
+- 添加联动配方
+
 ## 2026.06.04 — v2.1
 
 ### Evolved Mekanism

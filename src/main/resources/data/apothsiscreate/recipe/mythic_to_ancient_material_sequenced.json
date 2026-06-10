@@ -37,7 +37,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
           "item": "apotheosis:mythic_material"
@@ -45,7 +45,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     },
@@ -53,7 +53,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
           "item": "spectrum:bismuth_crystal"
@@ -61,7 +61,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     },
@@ -69,7 +69,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
           "item": "ae2cs:purified_irradiated_crystal"
@@ -77,7 +77,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     },
@@ -85,12 +85,12 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         }
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     },
@@ -98,7 +98,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
           "type": "fluid_stack",
@@ -108,7 +108,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     },
@@ -116,7 +116,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
           "type": "fluid_stack",
@@ -126,7 +126,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     },
@@ -134,17 +134,17 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "apotheosis:mythic_material"
+          "item": "goldentweaks:unprocessed_ancient_material"
         }
       ],
       "results": [
         {
-          "id": "apotheosis:mythic_material"
+          "id": "goldentweaks:unprocessed_ancient_material"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "apotheosis:mythic_material"
+    "id": "goldentweaks:unprocessed_ancient_material"
   }
 }

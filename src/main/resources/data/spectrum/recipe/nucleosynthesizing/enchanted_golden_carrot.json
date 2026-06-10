@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "mekanism:nucleosynthesizing",
+  "chemical_input": {
+    "amount": 2,
+    "chemical": "mekanism:antimatter"
+  },
+  "duration": 500,
+  "item_input": {
+    "count": 1,
+    "item": "minecraft:golden_carrot"
+  },
+  "output": {
+    "count": 1,
+    "id": "spectrum:enchanted_golden_carrot"
+  },
+  "per_tick_usage": false
+}

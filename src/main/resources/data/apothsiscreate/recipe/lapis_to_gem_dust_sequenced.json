@@ -33,7 +33,7 @@
       ],
       "results": [
         {
-          "id": "minecraft:lapis_lazuli"
+          "id": "goldentweaks:unprocessed_gem_dust"
         }
       ]
     },
@@ -46,7 +46,7 @@
       ],
       "results": [
         {
-          "id": "minecraft:lapis_lazuli"
+          "id": "goldentweaks:unprocessed_gem_dust"
         }
       ]
     },
@@ -59,12 +59,12 @@
       ],
       "results": [
         {
-          "id": "minecraft:lapis_lazuli"
+          "id": "goldentweaks:unprocessed_gem_dust"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "minecraft:lapis_lazuli"
+    "id": "goldentweaks:unprocessed_gem_dust"
   }
 }

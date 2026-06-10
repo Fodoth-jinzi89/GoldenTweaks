@@ -102,7 +102,7 @@ neoForge.ideSyncTask tasks.named("generateModMetadata")
 
 
 dependencies {
-    compileOnly "maven.modrinth:create:6.0.10+mc1.21.1"
+    implementation "maven.modrinth:create:6.0.10+mc1.21.1"
     compileOnlyApi "net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1"
     compileOnly "maven.modrinth:create-stuff-additions:2.1.0.e"
     compileOnly "maven.modrinth:create-dragons-plus:1.10.0b"

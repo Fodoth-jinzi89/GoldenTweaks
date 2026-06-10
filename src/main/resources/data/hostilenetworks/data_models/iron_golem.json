@@ -28,6 +28,11 @@
             "id": "silentgear:crimson_iron_ingot",
             "optional": true,
             "count": 8
+        },
+        {
+            "id": "create:zinc_ingot",
+            "optional": true,
+            "count": 16
         }
     ]
 }

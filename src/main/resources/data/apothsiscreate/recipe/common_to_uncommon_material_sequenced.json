@@ -33,7 +33,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:common_material"
+          "item": "goldentweaks:unprocessed_uncommon_material"
         },
         {
           "item": "apotheosis:common_material"
@@ -41,7 +41,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:common_material"
+          "id": "goldentweaks:unprocessed_uncommon_material"
         }
       ]
     },
@@ -49,7 +49,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:common_material"
+          "item": "goldentweaks:unprocessed_uncommon_material"
         },
         {
           "item": "spectrum:amethyst_powder"
@@ -57,7 +57,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:common_material"
+          "id": "goldentweaks:unprocessed_uncommon_material"
         }
       ]
     },
@@ -65,7 +65,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "apotheosis:common_material"
+          "item": "goldentweaks:unprocessed_uncommon_material"
         },
         {
           "item": "ae2cs:purified_fluix_crystal"
@@ -73,7 +73,7 @@
       ],
       "results": [
         {
-          "id": "apotheosis:common_material"
+          "id": "goldentweaks:unprocessed_uncommon_material"
         }
       ]
     },
@@ -81,12 +81,12 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "apotheosis:common_material"
+          "item": "goldentweaks:unprocessed_uncommon_material"
         }
       ],
       "results": [
         {
-          "id": "apotheosis:common_material"
+          "id": "goldentweaks:unprocessed_uncommon_material"
         }
       ]
     },
@@ -94,12 +94,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "apotheosis:common_material"
+          "item": "goldentweaks:unprocessed_uncommon_material"
         }
       ],
       "results": [
         {
-          "id": "apotheosis:common_material"
+          "id": "goldentweaks:unprocessed_uncommon_material"
         }
       ]
     },
@@ -107,7 +107,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "apotheosis:common_material"
+          "item": "goldentweaks:unprocessed_uncommon_material"
         },
         {
           "type": "fluid_stack",
@@ -117,12 +117,12 @@
       ],
       "results": [
         {
-          "id": "apotheosis:common_material"
+          "id": "goldentweaks:unprocessed_uncommon_material"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "apotheosis:common_material"
+    "id": "goldentweaks:unprocessed_uncommon_material"
   }
 }

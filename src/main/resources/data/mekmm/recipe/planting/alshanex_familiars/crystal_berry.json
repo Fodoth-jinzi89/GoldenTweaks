@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "alshanex_familiars:crystal_berry"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 2,
+    "id": "alshanex_familiars:crystal_berry"
+  },
+  "per_tick_usage": true
+}

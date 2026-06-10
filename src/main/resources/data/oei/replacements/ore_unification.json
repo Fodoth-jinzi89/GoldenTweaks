@@ -327,7 +327,7 @@
     "matchItems": [
       "#c:storage_blocks/lead"
     ],
-    "resultItems": "mekanism:block_lead"
+    "resultItems": "alltheores:lead_block"
   },
   {
     "matchItems": [
@@ -525,7 +525,7 @@
     "matchItems": [
       "#c:storage_blocks/tin"
     ],
-    "resultItems": "mekanism:block_tin"
+    "resultItems": "alltheores:tin_block"
   },
   {
     "matchItems": [
@@ -591,7 +591,7 @@
     "matchItems": [
       "#c:storage_blocks/uranium"
     ],
-    "resultItems": "mekanism:block_uranium"
+    "resultItems": "alltheores:uranium_block"
   },
   {
     "matchItems": [
@@ -657,7 +657,7 @@
     "matchItems": [
       "#c:storage_blocks/osmium"
     ],
-    "resultItems": "mekanism:block_osmium"
+    "resultItems": "alltheores:osmium_block"
   },
   {
     "matchItems": [
@@ -987,7 +987,7 @@
     "matchItems": [
       "#c:storage_blocks/steel"
     ],
-    "resultItems": "mekanism:block_steel"
+    "resultItems": "alltheores:steel_block"
   },
   {
     "matchItems": [

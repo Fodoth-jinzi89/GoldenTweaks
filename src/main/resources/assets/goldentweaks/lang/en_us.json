@@ -128,7 +128,17 @@
   "item.goldentweaks.life_fruit_tier_7": "Crimson Life Fruit",
   "item.goldentweaks.life_fruit_tier_8": "Azure Life Fruit",
   "item.goldentweaks.life_fruit_tier_9": "Phantom Purple Life Fruit",
-  "item.goldentweaks.life_fruit_tier_10": "Endless Life Fruit"
+  "item.goldentweaks.life_fruit_tier_10": "Endless Life Fruit",
+  "item.goldentweaks.unprocessed_gem_dust": "Unprocessed Gem Dust",
+  "item.goldentweaks.unprocessed_common_material": "Unprocessed Common Material",
+  "item.goldentweaks.unprocessed_uncommon_material": "Unprocessed Uncommon Material",
+  "item.goldentweaks.unprocessed_rare_material": "Unprocessed Rare Material",
+  "item.goldentweaks.unprocessed_epic_material": "Unprocessed Epic Material",
+  "item.goldentweaks.unprocessed_mythic_material": "Unprocessed Mythic Material",
+  "item.goldentweaks.unprocessed_ancient_material": "Unprocessed Ancient Material",
+
+  "item.goldentweaks.inverted_familiar_spellbook": "Inverted Familiar Spellbook",
+  "item.goldentweaks.inverted_familiar_spellbook.desc": "Share familiar attributes to owner"
 
 
 

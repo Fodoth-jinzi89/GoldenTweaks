@@ -117,5 +117,14 @@
   "item.goldentweaks.life_fruit_tier_7": "绯红生命果实",
   "item.goldentweaks.life_fruit_tier_8": "蔚蓝生命果实",
   "item.goldentweaks.life_fruit_tier_9": "幻紫生命果实",
-  "item.goldentweaks.life_fruit_tier_10": "无尽生命果实"
+  "item.goldentweaks.life_fruit_tier_10": "无尽生命果实",
+  "item.goldentweaks.unprocessed_gem_dust": "未完成的宝石粉",
+  "item.goldentweaks.unprocessed_common_material": "未完成的神秘废金属",
+  "item.goldentweaks.unprocessed_uncommon_material": "未完成的陈旧布匹",
+  "item.goldentweaks.unprocessed_rare_material": "未完成的发光水晶碎片",
+  "item.goldentweaks.unprocessed_epic_material": "未完成的玄奥沙",
+  "item.goldentweaks.unprocessed_mythic_material": "未完成的神铸珍珠",
+  "item.goldentweaks.unprocessed_ancient_material": "未完成的无限之象征",
+  "item.goldentweaks.inverted_familiar_spellbook": "万灵永恒之典",
+  "item.goldentweaks.inverted_familiar_spellbook.desc": "已召唤的魔宠将共享一部分属性给主人"
 }

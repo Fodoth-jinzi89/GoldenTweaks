@@ -1,0 +1,15 @@
+{
+	  "neoforge:conditions": [
+    {
+      "type": "neoforge:never"
+    }
+  ],
+  "type": "alshanex_familiars:shrinking_recipe",
+  "input": {
+    "item": "alshanex_familiars:rusty_helmet"
+  },
+  "result": {
+    "id": "alshanex_familiars:armor_plate_tier_3",
+    "count": 1
+  }
+}

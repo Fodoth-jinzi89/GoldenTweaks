@@ -37,8 +37,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
 
-import static net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER;
-
 @Mixin(FamiliarSelectionScreen.class)
 public abstract class FamiliarSelectionScreenMixin {
 

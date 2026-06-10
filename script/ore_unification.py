@@ -77,7 +77,7 @@ def resolve_result_item(material: str, category: str):
             return f"create:{material}_{singular}"
 
     # Mekanism 输出体系
-    if material in MEKANISM_METALS and category in {"ingots", "storage_blocks", "nuggets", "dusts"}:
+    if material in MEKANISM_METALS and category in {"ingots", "nuggets", "dusts"}:
         if category == "storage_blocks":
             return f"mekanism:block_{material}"
         return f"mekanism:{category[:-1]}_{material}"
