@@ -1,16 +1,13 @@
 package net.fodoth.skina.goldentweaks.event;
 
-import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksFamiliarCurioHelper;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksInvertedAttributesHelper;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import top.theillusivec4.curios.api.event.CurioChangeEvent;
 
-@EventBusSubscriber(modid = GoldenTweaks.MODID)
 public final class InvertedFamiliarSpellbookEvent {
 
     private InvertedFamiliarSpellbookEvent() {
