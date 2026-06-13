@@ -85,7 +85,7 @@ public abstract class FamiliarSelectionScreenMixin {
 
         Minecraft minecraft = Minecraft.getInstance();
 
-        ((List<Object>) familiarEntries).clear();
+        familiarEntries.clear();
 
         if (minecraft.player == null) {
             return;
@@ -128,6 +128,9 @@ public abstract class FamiliarSelectionScreenMixin {
             familiar.setUUID(id);
 
             GoldenTweaksConsumableHelper.loadDataIntoCache(familiar, nbt);
+            if (!minecraft.level.isClientSide){
+                GoldenTweaksConsumableHelper.sync(familiar);
+            }
 
             Component displayName;
 

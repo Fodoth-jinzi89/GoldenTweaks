@@ -1,5 +1,12 @@
 # GoldenTweaks Update Log
 
+## 2026.06.13 — v2.3
+
+### Alshanex Familiars
+- 修复强化丢失问题
+- 尝试修复召唤物攻击魔宠问题
+- 添加联动法术
+
 ## 2026.06.10 — v2.2
 
 ### Alshanex Familiars

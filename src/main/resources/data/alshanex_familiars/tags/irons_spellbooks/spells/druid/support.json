@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:oakskin",
+    "irons_spellbooks:blight",
+    "irons_spellbooks:slow",
+
+    { "id": "iss_magicfromtheeast:bagua_array_circle", "required": false }
+  ]
+}

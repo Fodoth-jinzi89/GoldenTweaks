@@ -108,11 +108,10 @@ public class SalvageCharmEvent {
             SALVAGING_CHARM_CONFIG_HOLDER =
                     componentField.get(null);
 
-        } catch (Exception exception) {
+        } catch (Exception ignored) {
 
             GoldenTweaks.LOGGER.warn(
-                    "Failed to initialize SalvageCharmEvent reflection cache.",
-                    exception
+                    "Failed to initialize SalvageCharmEvent reflection cache."
             );
         }
     }

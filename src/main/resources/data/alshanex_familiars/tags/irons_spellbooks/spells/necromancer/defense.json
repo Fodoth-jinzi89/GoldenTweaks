@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "traveloptics:reversal", "required": false },
+    "irons_spellbooks:abyssal_shroud"
+  ]
+}

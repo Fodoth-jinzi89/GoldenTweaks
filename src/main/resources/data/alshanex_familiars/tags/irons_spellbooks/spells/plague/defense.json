@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:heal",
+    "irons_spellbooks:oakskin",
+
+    { "id": "iss_magicfromtheeast:drapes_of_reflection", "required": false }
+  ]
+}

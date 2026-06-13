@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:frostbite",
+
+    { "id": "traveloptics:axe_of_the_doomed", "required": false },
+    { "id": "traveloptics:cursed_revenants", "required": false }
+  ]
+}

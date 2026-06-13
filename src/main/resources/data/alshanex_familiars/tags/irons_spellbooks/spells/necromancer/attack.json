@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:devour",
+    "irons_spellbooks:blood_needles",
+    "irons_spellbooks:blood_slash",
+    "irons_spellbooks:wither_skull",
+    "irons_spellbooks:ray_of_siphoning",
+
+    { "id": "traveloptics:psychic_bolt", "required": false },
+    { "id": "traveloptics:summon_desert_dwellers", "required": false },
+
+    { "id": "iss_magicfromtheeast:underworld_aid", "required": false },
+    { "id": "iss_magicfromtheeast:calamity_cut", "required": false },
+    { "id": "iss_magicfromtheeast:phantom_charge", "required": false },
+    { "id": "iss_magicfromtheeast:jiangshi_invoke", "required": false },
+
+    "irons_spellbooks:raise_dead"
+  ]
+}

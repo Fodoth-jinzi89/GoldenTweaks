@@ -5,7 +5,6 @@ import net.alshanex.familiarslib.util.familiars.FamiliarManager;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EntityType;
-import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableData;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableHelper;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -137,6 +136,8 @@ public class FamiliarManagerMixin {
         if (!data.hasFamiliar(id)) return;
 
         try {
+            CompoundTag nbt = GoldenTweaksConsumableHelper.createFamiliarNBT(familiar);
+            data.addTamedFamiliar(id, nbt);
             GoldenTweaksConsumableHelper.saveData(familiar);
         } catch (Exception e) {
             GoldenTweaks.LOGGER.error("GT sync failed {}", id, e);

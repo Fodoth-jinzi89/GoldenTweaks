@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "tunes_n_tomes:chord_clast", "required": false },
+    { "id": "tunes_n_tomes:clamor_note", "required": false },
+    { "id": "tunes_n_tomes:crescendo", "required": false },
+    { "id": "tunes_n_tomes:grand_finale", "required": false },
+    { "id": "tunes_n_tomes:harmonic_aria", "required": false },
+    { "id": "tunes_n_tomes:piercing_solo", "required": false },
+    { "id": "tunes_n_tomes:serenade", "required": false },
+    { "id": "tunes_n_tomes:slumber_note", "required": false },
+
+    { "id": "hazennstuff:trident_jetstream", "required": false },
+    { "id": "hazennstuff:razorblade_typhoon", "required": false },
+    { "id": "hazennstuff:horn_shell", "required": false }
+  ]
+}

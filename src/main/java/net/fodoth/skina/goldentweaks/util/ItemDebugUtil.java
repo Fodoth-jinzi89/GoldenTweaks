@@ -136,6 +136,9 @@ public class ItemDebugUtil {
             dumpAffixes(value, sb, indent);
         } else if (key.contains("properties")) {
             dumpSilentGearProperties(value, sb, indent);
+        } else if (key.contains("irons_spellbooks:spell_container")
+                || key.endsWith(":spell_container")) {
+            dumpSpellContainer(value, sb, indent);
         } else {
             sb.append(prefix).append(key).append(" => ");
             if (isComplex(value)) {
@@ -432,6 +435,97 @@ public class ItemDebugUtil {
             }
         } catch (Exception e) {
             sb.append("tags=error: ").append(e.getMessage()).append("\n");
+        }
+    }
+
+    // ================= SPELLS =================
+    private static void dumpSpellContainer(String value, StringBuilder sb, int indent) {
+        String prefix = "  ".repeat(indent);
+
+        sb.append(prefix).append("spell_container").append(" =>\n");
+
+        try {
+            // 粗暴去掉外层 {}
+            String raw = value.trim();
+            int s = raw.indexOf("{");
+            int e = raw.lastIndexOf("}");
+            if (s >= 0 && e > s) {
+                raw = raw.substring(s + 1, e);
+            }
+
+            List<String> parts = splitTopLevel(raw);
+
+            for (String part : parts) {
+                int idx = part.indexOf("=>");
+                if (idx < 0) {
+                    sb.append(prefix).append("  ").append(part).append("\n");
+                    continue;
+                }
+
+                String k = part.substring(0, idx).trim();
+                String v = part.substring(idx + 2).trim();
+
+                // 处理 data 数组（spell list）
+                if ("data".equals(k)) {
+                    sb.append(prefix).append("  data:\n");
+                    dumpSpellDataArray(v, sb, indent + 2);
+                } else {
+                    sb.append(prefix)
+                            .append("  ")
+                            .append(k)
+                            .append(" => ")
+                            .append(v)
+                            .append("\n");
+                }
+            }
+        } catch (Exception e) {
+            sb.append(prefix).append("  <error parsing spell_container: ")
+                    .append(e.getMessage()).append(">\n");
+        }
+    }
+
+    private static void dumpSpellDataArray(String value, StringBuilder sb, int indent) {
+        String prefix = "  ".repeat(indent);
+
+        String raw = value.trim();
+
+        // 去掉 []
+        int s = raw.indexOf("[");
+        int e = raw.lastIndexOf("]");
+        if (s >= 0 && e > s) {
+            raw = raw.substring(s + 1, e);
+        }
+
+        List<String> entries = splitTopLevel(raw);
+
+        for (String entry : entries) {
+            sb.append(prefix).append("- ").append("\n");
+
+            int braceS = entry.indexOf("{");
+            int braceE = entry.lastIndexOf("}");
+            if (braceS >= 0 && braceE > braceS) {
+                entry = entry.substring(braceS + 1, braceE);
+            }
+
+            List<String> fields = splitTopLevel(entry);
+
+            for (String f : fields) {
+                int idx = f.indexOf("=>");
+                if (idx < 0) {
+                    sb.append(prefix).append("  ").append(f).append("\n");
+                    continue;
+                }
+
+                String k = f.substring(0, idx).trim();
+                String v = f.substring(idx + 2).trim();
+
+                sb.append(prefix)
+                        .append("  ")
+                        .append(k)
+                        .append(" => ")
+                        .append(v)
+                        .append("\n");
+            }
         }
     }
 

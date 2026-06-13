@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:acid_orb",
+    "irons_spellbooks:firefly_swarm",
+    "irons_spellbooks:poison_splash",
+    "irons_spellbooks:poison_breath",
+
+    { "id": "traveloptics:aerial_collapse", "required": false },
+
+    { "id": "iss_magicfromtheeast:nephrite_slash", "required": false },
+    { "id": "iss_magicfromtheeast:jade_bullet", "required": false },
+
+    "irons_spellbooks:spider_aspect"
+  ]
+}

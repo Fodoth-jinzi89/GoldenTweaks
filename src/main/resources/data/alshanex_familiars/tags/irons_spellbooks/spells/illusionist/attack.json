@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:fang_strike",
+    "irons_spellbooks:gust",
+    "irons_spellbooks:lob_creeper",
+    "irons_spellbooks:firecracker",
+
+    "irons_spellbooks:starfall",
+    "irons_spellbooks:invisibility",
+
+    { "id": "hazennstuff:nights_edge_strike", "required": false },
+    { "id": "hazennstuff:umbrashift_barrage", "required": false },
+
+    { "id": "hazennstuff:arcane_cards", "required": false },
+    { "id": "hazennstuff:shooting_star", "required": false },
+    { "id": "hazennstuff:evercomet_barrage", "required": false }
+  ]
+}

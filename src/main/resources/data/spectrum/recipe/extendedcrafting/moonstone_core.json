@@ -1,0 +1,27 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    " AAA ",
+    " AAA ",
+    "BAAAB",
+    " CDC ",
+    "  B  "
+  ],
+  "key": {
+    "A": {
+      "item": "spectrum:moonstone_shard"
+    },
+    "B": {
+      "item": "spectrum:pure_malachite"
+    },
+    "C": {
+      "item": "create:sturdy_sheet"
+    },
+    "D": {
+      "item": "minecraft:sunflower"
+    }
+  },
+  "result": {
+    "id": "spectrum:moonstone_core"
+  }
+}

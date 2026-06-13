@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "spectrum:resonance_shard"
+    },
+    {
+      "item": "pipeorgans:tuning_wire"
+    },
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "results": [
+    {
+	  "count": 2,
+      "id": "spectrum:resonance_shard"
+    }
+  ]
+}

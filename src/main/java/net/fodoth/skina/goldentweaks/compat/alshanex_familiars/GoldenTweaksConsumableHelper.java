@@ -123,7 +123,7 @@ public class GoldenTweaksConsumableHelper {
             data = migrateFromVanilla(sourceTag);
         }
 
-        CACHE.put(familiar.getUUID(), data);
+        GoldenTweaksConsumableHelper.saveData(familiar, data);
     }
 
     public static void clearData(AbstractSpellCastingPet familiar) {

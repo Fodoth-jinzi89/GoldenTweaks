@@ -6,6 +6,7 @@ import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
+import net.fodoth.skina.goldentweaks.event.FamiliarProtectionEvent;
 import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
@@ -51,6 +52,7 @@ public class GoldenTweaks {
             AFAdditionalItems.register(modEventBus);
             AFAdditionalCreativeTabs.register(modEventBus);
             NeoForge.EVENT_BUS.register(InvertedFamiliarSpellbookEvent.class);
+            NeoForge.EVENT_BUS.register(FamiliarProtectionEvent.class);
         }
 
         modEventBus.addListener(this::onClientSetup);

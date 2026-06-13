@@ -234,6 +234,7 @@ public abstract class FamiliarConsumableIntegrationMixin {
                 newValue
         );
 
+
         PacketDistributor.sendToPlayersTrackingEntity(
                 familiar,
                 new S2CConsumableSyncPacket(
@@ -260,6 +261,7 @@ public abstract class FamiliarConsumableIntegrationMixin {
                 ),
                 ChatFormatting.GREEN
         );
+
 
         spawnConsumableEffects(familiar);
 
