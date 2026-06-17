@@ -5,7 +5,7 @@
   "entity.powerful_dummy.test_dummy_undead": "Test Dummy (Undead)",
   "entity.powerful_dummy.test_dummy_arthropod": "Test Dummy (Arthropod)",
   "entity.powerful_dummy.test_dummy_illager": "Test Dummy (Illager)",
-  "entity.powerful_dummy.test_dummy_illager": "Test Dummy (Water)",
+  "entity.powerful_dummy.test_dummy_water": "Test Dummy (Water)",
   "creativetab.powerful_dummy": "Powerful Dummy Tab",
 
   "button.powerful_dummy.undefined": "Default",

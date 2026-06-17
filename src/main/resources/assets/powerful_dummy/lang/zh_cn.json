@@ -5,7 +5,7 @@
   "entity.powerful_dummy.test_dummy_undead": "测试假人（不死）",
   "entity.powerful_dummy.test_dummy_arthropod": "测试假人（节肢）",
   "entity.powerful_dummy.test_dummy_illager": "测试假人（灾厄）",
-  "entity.powerful_dummy.test_dummy_illager": "测试假人（水生）",
+  "entity.powerful_dummy.test_dummy_water": "测试假人（水生）",
   "creativetab.powerful_dummy": "测试假人",
 
   "button.powerful_dummy.undefined": "默认",
