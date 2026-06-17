@@ -1,5 +1,33 @@
 # GoldenTweaks Update Log
 
+## 2026.06.17 — v2.4
+
+### Exspectriments
+- 使之可以在 Connector 环境下启动
+- 修复了与 Spectrum 的兼容性
+
+### AeBetterVillagers
+- 增加联动交易
+
+### Ae2peat
+- 现在样板编码访问终端可以上传子网络，也可以拼音搜索
+- 修复了 EMI 转移配方时的崩溃问题
+
+### Create
+- 修复了偶发的进度提前获取物品图标导致崩溃问题
+
+### Create Submarine
+- 移除了欢迎界面
+
+### Spectrum
+- 修复了合成模板刷物品问题
+
+### Tipsmod
+- 增加了tips
+
+### GoldenTweaks
+- 增加联动配方
+
 ## 2026.06.13 — v2.3
 
 ### Alshanex Familiars

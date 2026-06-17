@@ -20,8 +20,6 @@
     "irons_spellbooks:icicle",
     "irons_spellbooks:summon_polar_bear",
 
-    { "id": "alshanex_familiars:summon_shadows", "required": false },
-
     { "id": "hazennstuff:violent_regurgitation", "required": false },
     { "id": "hazennstuff:bone_bolt", "required": false },
     { "id": "hazennstuff:ice_arrow", "required": false },

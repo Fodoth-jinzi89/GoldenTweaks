@@ -1,0 +1,36 @@
+{
+  "name": "ME 封包供应器",
+  "category": "packagedauto:core",
+  "icon": "packagedauto:packaging_provider",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)ME 封包供应器/$ 结合了 $(l:core/packager)封包机/$ 与 $(l:core/unpackager)解包机/$ 的功能。$(p)该机器必须连接到 $(thing)ME 网络/$，并占用一个通道。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "packagedauto:packaging_provider",
+      "link_recipe": true,
+      "title": "使用方法",
+      "text": "要使用 $(item)ME 封包供应器/$，将已编码的 $(l:core/recipe_holder)封包配方储存器/$ 放入其中。机器将根据设置提供直接、封包或解包配方。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "设置",
+      "text": "$(thing)直接/$：将封包流程作为整体处理配方提供，跳过封包与解包步骤。$(p)$(thing)封包/$：以 $(l:core/packager)封包机/$ 的方式提供封包配方。$(p)$(thing)解包/$：以 $(l:core/unpackager)解包机/$ 的方式提供解包配方。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "设置复制",
+      "text": "使用 $(l:core/settings_cloner)封包设定复制器/$ 可以复制并粘贴提供设置与当前可用配方。$(p)粘贴配方时，目标 $(item)ME 封包供应器/$ 必须没有已配置配方，并且你物品栏中必须有一个 $(l:core/recipe_holder)封包配方储存器/$。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "packagedauto:packaging_provider",
+      "title": "合成"
+    }
+  ],
+  "flag": "mod:ae2",
+  "read_by_default": true,
+  "sortnum": 10
+}

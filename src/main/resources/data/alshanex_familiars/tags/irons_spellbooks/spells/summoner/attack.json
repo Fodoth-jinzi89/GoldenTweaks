@@ -16,6 +16,8 @@
     "irons_spellbooks:fang_strike",
     "irons_spellbooks:fang_ward",
     "irons_spellbooks:summon_vex",
+	
+	{ "id": "alshanex_familiars:summon_shadows", "required": false },
 
     { "id": "hazennstuff:death_sentence", "required": false },
     { "id": "hazennstuff:soul_seekers", "required": false }

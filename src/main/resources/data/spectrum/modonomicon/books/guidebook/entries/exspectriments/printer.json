@@ -1,0 +1,33 @@
+{
+  "name": "book.spectrum.guidebook.printer.name",
+  "icon": {
+    "item": "exspectriments:printer"
+  },
+  "category": "spectrum:exspectriments_category",
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectrum:lategame/collect_grayscale_pigments"
+  },
+  "hide_while_locked": true,
+  "parents": [],
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "x": 2,
+  "y": 1,
+  "pages": [
+    {
+      "type": "modonomicon:spotlight",
+      "item": {
+        "item": "exspectriments:printer"
+      },
+      "text": "book.spectrum.guidebook.printer.page0.text",
+	  "title": "book.spectrum.guidebook.printer.name"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "book.spectrum.guidebook.printer.page1.title",
+      "recipe_id": "exspectriments:pedestal/printer",
+      "text": "book.spectrum.guidebook.printer.page1.text"
+    }
+  ]
+}

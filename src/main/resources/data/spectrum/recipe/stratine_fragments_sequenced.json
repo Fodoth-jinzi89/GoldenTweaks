@@ -67,7 +67,7 @@
           "item": "minecraft:sweet_berries"
         },
         {
-          "tag": "c:dusts/obsidian"
+          "item": "create:cinder_flour"
         }
       ],
       "results": [

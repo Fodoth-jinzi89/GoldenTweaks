@@ -1,0 +1,30 @@
+{
+  "name": "流体封包填充机",
+  "category": "packagedauto:core",
+  "icon": "packagedauto:fluid_package_filler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)流体封包填充机/$ 用于创建填充流体的 $(l:core/volume_package)体积封包/$。$(p)该机器需要能量供给。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "packagedauto:fluid_package_filler",
+      "link_recipe": true,
+      "title": "使用方法",
+      "text": "要使用 $(item)流体封包填充机/$，将其放置在流体储罐旁，并在机器中放入一个作为模板的流体容器。$(p)随后可以指定所生成 $(l:core/volume_package)体积封包/$ 所含流体的数量。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "使用方法（续）",
+      "text": "最后，给予机器红石信号即可生成封包。$(p)生成的封包会被弹出至相邻的容器中。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "packagedauto:fluid_package_filler",
+      "title": "合成"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

@@ -1,0 +1,42 @@
+{
+  "name": "封包合成机代理",
+  "category": "packagedauto:recipe",
+  "icon": "packagedauto:crafting_proxy",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "该 $(item)封包合成机代理/$ 允许 $(l:core/unpackager)解包机/$ 将物品远程发送至指定的专用封包合成机器。"
+    },
+    {
+      "type": "packagedauto:spotlight2",
+      "item1": "packagedauto:proxy_marker",
+      "item2": "packagedauto:crafting_proxy",
+      "title": "使用方法",
+      "text": "要使用该功能，先将 $(item)代理标记/$ 绑定到一个封包合成机器，然后将该标记放入代理中。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "使用方法（续）",
+      "text": "你可以对已绑定的 $(item)代理标记/$ 按下 $(thing)$(k:sneak) + $(k:use)/$ 或将其放入合成栏来解除绑定。$(p)也可以在手持空手时对 $(item)封包合成机代理/$ 按下 $(thing)$(k:sneak) + $(k:use)/$ 来查看其当前范围与目标。$(p)在合成栏中，将已绑定的 $(item)代理标记/$ 与未绑定标记合成可复制其内容。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "设置复制",
+      "text": "使用 $(l:core/settings_cloner)封包设定复制器/$ 可以复制并粘贴 $(item)封包合成机代理/$ 的当前目标设置。$(p)粘贴目标设置时，你物品栏中必须有一个空的 $(item)代理标记/$。"
+    },
+    {
+      "type": "patchouli:text",
+      "flag": "mod:ae2",
+      "title": "AE2 集成",
+      "text": "$(item)封包合成机代理/$ 可连接至 $(thing)ME 网络/$。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "packagedauto:proxy_marker",
+      "recipe2": "packagedauto:crafting_proxy",
+      "title": "合成"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 100
+}

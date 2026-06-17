@@ -1,0 +1,30 @@
+{
+  "name": "book.spectrum.guidebook.syncbook.name",
+  "icon": {
+    "item": "spectral-sync:syncbook"
+  },
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectrum:craft_onyx_pedestal"
+  },
+  "category": "spectrum:equipment",
+  "hide_while_locked": true,
+  "parents": [],
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "x": -2,
+  "y": 0,
+  "pages": [
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "book.spectrum.guidebook.syncbook.name",
+      "recipe_id": "spectral-sync:pedestal/tier2/syncbook",
+      "text": "book.spectrum.guidebook.syncbook.page0.text"
+    },
+    {
+      "type": "modonomicon:text",
+      "title": "book.spectrum.guidebook.syncbook.page1.title",
+      "text": "book.spectrum.guidebook.syncbook.page1.text"
+    }
+  ]
+}
