@@ -8,7 +8,6 @@
     "irons_spellbooks:ray_of_siphoning",
 
     { "id": "traveloptics:psychic_bolt", "required": false },
-    { "id": "traveloptics:summon_desert_dwellers", "required": false },
 
     { "id": "iss_magicfromtheeast:underworld_aid", "required": false },
     { "id": "iss_magicfromtheeast:calamity_cut", "required": false },

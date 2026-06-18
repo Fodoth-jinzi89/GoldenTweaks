@@ -29,6 +29,10 @@ public final class GoldenTweaksCommonConfig {
     // =========================
     public static final ModConfigSpec.BooleanValue ALWAYS_EDIBLE_FOOD;
 
+    public static final ModConfigSpec.BooleanValue LOST_MAID_DROP;
+
+    public static final ModConfigSpec.DoubleValue LOST_MAID_DROP_CHANCE;
+
     // =========================
     // balance 系统
     // =========================
@@ -108,6 +112,16 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("feature.always_edible_food"))
                 .comment(comment("feature.always_edible_food"))
                 .define("alwaysEdibleFood", true);
+
+        LOST_MAID_DROP = builder
+                .translation(key("feature.lost_maid_drop"))
+                .comment(comment("feature.lost_maid_drop"))
+                .define("lostMaidDrop", true);
+
+        LOST_MAID_DROP_CHANCE = builder
+                .translation(key("feature.lost_maid_drop_chance"))
+                .comment(comment("feature.lost_maid_drop_chance"))
+                .defineInRange("lostMaidDropChance", 0.05D, 0.0D, 1.0D);
 
         builder.pop();
 

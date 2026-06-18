@@ -681,7 +681,7 @@ public abstract class FamiliarSelectionScreenMixin {
                 guiGraphics,
                 mu,
                 enragedStartX,
-                enragedY - 5
+                enragedY
         );
 
         guiGraphics.drawString(

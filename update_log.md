@@ -1,5 +1,19 @@
 # GoldenTweaks Update Log
 
+## 2026.06.19 - v2.5
+
+### Alshanex Familiars
+- 修复了潘多拉魔盒界面
+- 暂时移除了所有灾厄召唤物
+
+### Advanced Loot Info
+- 增加汉化
+
+### Touhou Lost Maid
+- 现在迷失女仆的掉率是可以配置的
+- 修复了被玩家驯服的实体击杀迷失女仆不掉落的问题
+- 现在迷失女仆被击杀不会在聊天栏报信息
+
 ## 2026.06.17 — v2.4
 
 ### Exspectriments

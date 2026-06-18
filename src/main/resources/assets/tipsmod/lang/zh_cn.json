@@ -102,7 +102,7 @@
 
 "tip.tipsmod.silentgear.tooltip.text": "将鼠标悬停在装备上时按住§9 Shift §r和§9 Ctrl §r，可以查看材料来源、§b特性说明§r以及更详细的装备信息。",
 
-  "tip.tipsmod.apotheosis.affix_item.text": "§a词缀装备§r是§b神化§r冒险系统的核心掉落。击败§a怪物§r或开启§a宝箱§r时，有概率获得带有§b词缀属性§r的装备，其强度与§d世界层级§r相关。",
+  "tip.tipsmod.apotheosis.affix_item.text": "§a词缀装备§r是§b神化§r冒险系统的核心掉落。击败怪物或开启宝箱时，有概率获得带有§b词缀属性§r的装备，其强度与§d世界层级§r相关。",
 
   "tip.tipsmod.apotheosis.world_tier.text": "§d世界层级§r决定§b词缀装备§r与§a宝石§r的品质上限。提升层级后，敌人会更强，但掉落也会更加稀有。",
 
@@ -180,7 +180,7 @@
   
   "tip.tipsmod.ae2.me_network_core.text": "§aME网络§r是应用能源系统的核心结构，由§a控制器§r、§a线缆§r与其它设备组成，用于统一管理物品与自动化流程。",
 
-  "tip.tipsmod.ae2.controller_role.text": "§aME控制器§r是网络核心节点，每个面提供§a 32 §r频道，能够转化§a FE §r能量为§a AE§r，是复杂网络运行的基础。",
+  "tip.tipsmod.ae2.controller_role.text": "§aME控制器§r是网络核心节点，每个面提供§a 32 §r频道，能够转化 FE 能量为 AE，是复杂网络运行的基础。",
 
   "tip.tipsmod.ae2.channels_system.text": "§b频道系统§r限制设备连接数量，合理规划§a线缆布局§r是避免网络崩溃的关键。",
 
@@ -208,7 +208,7 @@
 
   "tip.tipsmod.ae2.p2p_tunnel.text": "§aP2P通道§r允许在网络中远距离传输§b频道、物品或能量信号§r，大幅节省线缆资源。",
 
-  "tip.tipsmod.ae2.quantum_link.text": "§a量子桥接器§r可连接远距离ME网络，实现跨区域网络同步。",
+  "tip.tipsmod.ae2.quantum_link.text": "§a无线连接器§r可连接远距离ME网络，实现跨区域网络同步。",
   
   "tip.tipsmod.ae2.ender_broadcaster.text": "§a末影广播装置§r可实现频道的云上传和下载，这下再也不用绕线和接P2P了。",
 
@@ -242,7 +242,7 @@
 
   "tip.tipsmod.ae2.wireless_access.text": "§a无线终端§r允许玩家在一定范围内远程操作ME网络库存与合成系统。",
   
-  "tip.tipsmod.ae2.wireless_access_key.text": "§a无线终端§r可以一起合成为通用终端，并戴在饰品栏中，默认§d Shift+E §r打开。",
+  "tip.tipsmod.ae2.wireless_access_key.text": "§a无线终端§r可以一起合成为通用终端，并戴在饰品栏中，默认按下§d Shift+E §r打开。",
   
   "tip.tipsmod.mekanism.core_system.text": "§a通用机械§r由资源处理、能源网络、化学工业与原子能体系等共同构成，是高度模块化的工业模组。",
 

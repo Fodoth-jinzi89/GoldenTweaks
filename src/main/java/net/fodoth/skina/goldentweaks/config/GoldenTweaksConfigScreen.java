@@ -99,6 +99,15 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.feature.always_edible_food",
                     ALWAYS_EDIBLE_FOOD, true);
 
+
+            ConfigScreenHelper.addBool(feature, eb,
+                    "config.goldentweaks.feature.lost_maid_drop",
+                    LOST_MAID_DROP, true);
+
+            ConfigScreenHelper.addDouble(feature, eb,
+                    "config.goldentweaks.feature.lost_maid_drop_chance",
+                    LOST_MAID_DROP_CHANCE, 0.05D, 0.0D, 1.0D);
+
             // =========================================================
             // Building
             // =========================================================

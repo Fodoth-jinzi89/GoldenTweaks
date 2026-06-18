@@ -449,6 +449,13 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies."${mod_id}"]]
+modId = "ali"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
 modId = "create_aeronautics_automated_logistics"
 type = "optional"
 versionRange = "*"
@@ -562,6 +569,13 @@ side = "BOTH"
 
 [[dependencies."${mod_id}"]]
 modId = "ae2wtlib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "createmetalogistics"
 type = "optional"
 versionRange = "*"
 ordering = "AFTER"

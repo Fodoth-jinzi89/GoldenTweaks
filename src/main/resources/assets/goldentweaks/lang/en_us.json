@@ -78,6 +78,11 @@
   "config.goldentweaks.feature.always_edible_food": "Always Edible Food",
   "config.goldentweaks.feature.always_edible_food.comment": "Allows all food items to be eaten even when the player is fully saturated.",
 
+  "config.goldentweaks.feature.lost_maid_drop": "Lost Maid Drop",
+  "config.goldentweaks.feature.lost_maid_drop.comment": "Configurable lost maid drop",
+  "config.goldentweaks.feature.lost_maid_drop_chance": "Lost Maid Drop Chance",
+  "config.goldentweaks.feature.lost_maid_drop_chance.comment": "Lost maid drop chance",
+
   "config.goldentweaks.category.debug": "Debug",
 
   "config.goldentweaks.debug.debug_gui_inspector": "GUI Inspector",

@@ -284,11 +284,20 @@ public class GoldenTweaksConsumableHelper {
 
         addModifier(
                 familiar,
+                AttributeRegistry.SUMMON_DAMAGE,
+                "consumable_summon_damage",
+                sanitize(data.getSpellPower()) / 400D,
+                AttributeModifier.Operation.ADD_MULTIPLIED_BASE
+        );
+
+        addModifier(
+                familiar,
                 AttributeRegistry.SPELL_RESIST,
                 "consumable_spell_resist",
                 sanitize(data.getSpellResist()) / 100D,
                 AttributeModifier.Operation.ADD_MULTIPLIED_BASE
         );
+
 
         addModifier(
                 familiar,
@@ -440,6 +449,13 @@ public class GoldenTweaksConsumableHelper {
                 AttributeRegistry.SPELL_POWER,
                 "familiarslib:consumable_spell_power",
                 "goldentweaks:consumable_spell_power"
+        );
+
+        removeModifier(
+                familiar,
+                AttributeRegistry.SUMMON_DAMAGE,
+                "familiarslib:consumable_summon_damage",
+                "goldentweaks:consumable_summon_damage"
         );
 
         removeModifier(

@@ -5,6 +5,8 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.common.util.TriState;
+import net.neoforged.neoforge.event.EventHooks;
 
 public final class ItemPickupUtil {
 
@@ -21,36 +23,42 @@ public final class ItemPickupUtil {
         }
 
         ItemStack stack = item.getItem();
-        ItemStack original = stack.copy();
+        ItemStack originalCopy = stack.copy();
 
-        player.getInventory().add(stack);
+        TriState result =
+                EventHooks.fireItemPickupPre(item, player).canPickup();
 
-        int inserted =
-                original.getCount() - stack.getCount();
-
-        if (inserted <= 0) {
-
-            pullToPlayer(player, item);
-
+        if (result.isFalse()) {
             return;
         }
 
-        player.awardStat(
-                Stats.ITEM_PICKED_UP.get(original.getItem()),
-                inserted
+        if (!player.getInventory().add(stack)) {
+            pullToPlayer(player, item);
+            return;
+        }
+
+        EventHooks.fireItemPickupPost(
+                item,
+                player,
+                originalCopy
         );
+
+        int inserted =
+                originalCopy.getCount() - stack.getCount();
 
         player.take(item, inserted);
 
         if (stack.isEmpty()) {
             item.discard();
-            return;
+            stack.setCount(inserted);
         }
 
-        if (!player.getInventory().add(stack.copy())) {
-            pullToPlayer(player, item);
-        }
+        player.awardStat(
+                Stats.ITEM_PICKED_UP.get(originalCopy.getItem()),
+                inserted
+        );
 
+        player.onItemPickup(item);
     }
 
     public static void pullToPlayer(Player player, ItemEntity item) {
