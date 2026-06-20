@@ -36,7 +36,7 @@
           "item": "minecraft:sweet_berries"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "ratatouille:melon_juice_fluid",
           "amount": 50
         }

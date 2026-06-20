@@ -110,7 +110,7 @@
           "item": "goldentweaks:unprocessed_epic_material"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "evolvedmekanism:molten_diamond",
           "amount": 90
         }

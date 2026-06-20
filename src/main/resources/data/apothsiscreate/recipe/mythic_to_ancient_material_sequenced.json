@@ -101,7 +101,7 @@
           "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "evolvedmekanism:molten_crystaltine",
           "amount": 90
         }
@@ -119,7 +119,7 @@
           "item": "goldentweaks:unprocessed_ancient_material"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "evolvedmekanism:molten_enhanced_ender_ingot",
           "amount": 90
         }

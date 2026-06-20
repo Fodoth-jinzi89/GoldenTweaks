@@ -2,7 +2,6 @@ package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
-import net.neoforged.fml.ModList;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import org.objectweb.asm.tree.ClassNode;
@@ -85,8 +84,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return false;
         }
 
-        if (mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers.AeBetterVillagersTradesMixin")) {
-            return ModList.get().isLoaded("ae2cs") && ModList.get().isLoaded("neoecoae") && ModList.get().isLoaded("extendedae") && ModList.get().isLoaded("ae2helpers") && ModList.get().isLoaded("packagedauto");
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers")) {
+            return checkIfPresent("io.github.lounode.ae2cs.AE2CrystalScience") && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE") && checkIfPresent("com.glodblock.github.extendedae.ExtendedAE") && checkIfPresent("rearth.ae2helpers.ae2helpers") && checkIfPresent("thelm.packagedauto.PackagedAuto");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid")) {
+            return checkIfPresent("com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid") && checkIfPresent("com.github.qichensn.TouhouLostMaid");
         }
 
         // NONE：全部加载

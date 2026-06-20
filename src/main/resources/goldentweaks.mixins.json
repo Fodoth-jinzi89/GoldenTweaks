@@ -41,13 +41,12 @@
     "fix.create.CTSpriteShifterMixin",
     "fix.create.SymmetryHandlerMixin",
     "fix.createenchantmentindustry.FluidTankBlockEntityMixin",
+    "fix.emilink.AENetworkCacheMixin",
     "fix.evolvedmekanism.BasicChemixerRecipeMixin",
     "fix.evolvedmekanism.ChemixerRecipeMixin",
     "fix.evolvedmekanism.EMJEIMixin",
     "fix.exspectriments.ExspBlocksDummyMixin",
     "fix.exspectriments.ExspectrimentsMixin",
-    "fix.fluidlogistics.InfiniteFluidTankBlockEntityMixin",
-    "fix.fluidlogistics.InfiniteFluidTankItemMixin",
     "fix.flywheel.BakedModelBuffererMixin",
     "fix.irons_spellbooks.SpellUtilsMixin",
     "fix.jaopca.LocalizationRepoHandlerMixin",
@@ -110,7 +109,8 @@
     "shut.VanillaShaderCompilerMixin",
     "shut.VistaModClientMixin",
     "shut.XaeroPatreonMixin",
-    "shut.emilink.ModLoggerMixin"
+    "shut.emilink.ModLoggerMixin",
+    "shut.oei.OneenoughitemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -44,7 +44,7 @@
           "item": "goldentweaks:unprocessed_common_material"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "minecraft:lava",
           "amount": 100
         }

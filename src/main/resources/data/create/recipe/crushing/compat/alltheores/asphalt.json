@@ -33,6 +33,10 @@
     {
       "chance": 0.30,
       "id": "alltheores:raw_platinum"
+    },
+    {
+      "chance": 0.30,
+      "id": "alltheores:raw_iridium"
     }
   ]
 }

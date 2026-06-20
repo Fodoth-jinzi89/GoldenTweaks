@@ -1,0 +1,48 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:lightning_rod"
+    },
+    "B": {
+      "item": "create:sturdy_sheet"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "D": {
+      "item": "create:copper_sheet"
+    },
+    "E": {
+      "item": "create:andesite_alloy"
+    },
+    "F": {
+      "item": "protection_pixel:chestplatelining"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "I": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "J": {
+      "item": "create:precision_mechanism"
+    },
+    "G": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    "AB BA",
+    "BCBCB",
+    "DEFED",
+    "BGHGB",
+    " IJI "
+  ],
+  "result": {
+    "id": "protection_pixel:floatshield_chestplate",
+    "count": 1
+  }
+}

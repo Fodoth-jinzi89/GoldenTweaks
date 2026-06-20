@@ -1,18 +1,40 @@
 {
-"block.aerocali.thruster": "推进喷口",
-"block.aerocali.generator": "动力发电机",
-"block.aerocali.tracker": "航向追踪器",
-
-"item.aerocali.ion_upgrade": "离子推进升级组件",
-"item.aerocali.thermal_mechanism": "热力构件",
-"item.aerocali.ionized_thermal_mechanism": "电离热力构件",
-"item.aerocali.incomplete_thermal_mechanism": "未完成的热力构件",
-
-"item.aerocali.navigation_element": "导航罗盘",
-"item.aerocali.traverse_board": "坐标记录板",
-
-"itemGroup.aerocali_tab": "航空工程：校准",
-
+  "block.aerocali.thruster": "推进喷口",
+  "block.aerocali.generator": "动力发电机",
+  "block.aerocali.tracker": "航向追踪器",
+  "item.aerocali.ion_upgrade": "离子推进升级组件",
+  "item.aerocali.thermal_mechanism": "热力构件",
+  "item.aerocali.ionized_thermal_mechanism": "电离热力构件",
+  "item.aerocali.incomplete_thermal_mechanism": "未完成的热力构件",
+  "item.aerocali.navigation_element": "导航罗盘",
+  "item.aerocali.traverse_board": "坐标记录板",
+  "itemGroup.aerocali_tab": "航空工程：校准",
   "tooltip.aerocali.navigation_tracker.placement": "§6当接近设定坐标时输出红石信号的追踪器。下方需要放置导航台，上方需要连接传动轴",
-  "tooltip.aerocali.traverse_board.usage": "§6右键点击此物品，将当前位置坐标保存到记录板中以供后续使用"
+  "tooltip.aerocali.traverse_board.usage": "§6右键点击此物品，将当前位置坐标保存到记录板中以供后续使用",
+  "block.aerocali.industrial_generator": "工业发电机",
+  "block.aerocali.creative_generator": "创造发电机",
+
+  "aerocali.ponder.thruster_functionality.header": "推进喷口的工作原理",
+  "aerocali.ponder.generator_functionality.header": "动力发电机的工作原理",
+  "aerocali.ponder.tracker_functionality.header": "航向追踪器的工作原理",
+  "aerocali.ponder.thruster_upgrading.header": "如何升级推进喷口",
+
+  "aerocali.ponder.thruster_functionality.text_1": "这是推进喷口的主体。",
+  "aerocali.ponder.thruster_functionality.text_2": "通过动力发电机为其供能后，它将获得 FE 能量。",
+  "aerocali.ponder.thruster_functionality.text_3": "当接收到红石信号时……",
+  "aerocali.ponder.thruster_functionality.text_4": "推进喷口便会启动！",
+
+  "aerocali.ponder.thruster_upgrading.text_1": "默认情况下，推进喷口会喷射普通火焰粒子，并提供适中的推力与能耗。",
+  "aerocali.ponder.thruster_upgrading.text_2": "使用电离热力构件右键点击推进喷口后……",
+  "aerocali.ponder.thruster_upgrading.text_3": "喷射粒子将变为灵魂火焰，同时推进喷口的推力和能耗都会变为原来的两倍。",
+
+  "aerocali.ponder.generator_functionality.text_1": "这是动力发电机。",
+  "aerocali.ponder.generator_functionality.text_2": "输入转速后，它会产生 FE 能量。",
+  "aerocali.ponder.generator_functionality.text_3": "转速越高，发电机每刻产生的 FE 越多，上限为 15 FE/t。",
+
+  "aerocali.ponder.tracker_functionality.text_1": "这是航向追踪器。",
+  "aerocali.ponder.tracker_functionality.text_2": "其上方需要连接转速至少为 30 RPM 的传动轴。",
+  "aerocali.ponder.tracker_functionality.text_3": "下方则需要放置导航台才能正常工作。",
+  "aerocali.ponder.tracker_functionality.text_4": "当插入导航罗盘后，航向追踪器会根据当前位置与目标位置的距离输出不同强度的红石信号。",
+  "aerocali.ponder.tracker_functionality.text_5": "航向追踪器还会立即将该罗盘传递给下方的导航台。"
 }

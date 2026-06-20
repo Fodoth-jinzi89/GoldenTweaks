@@ -97,7 +97,7 @@
           "item": "goldentweaks:unprocessed_mythic_material"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "evolvedmekanism:molten_signalum",
           "amount": 90
         }
@@ -115,7 +115,7 @@
           "item": "goldentweaks:unprocessed_mythic_material"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "evolvedmekanism:molten_lumium",
           "amount": 90
         }

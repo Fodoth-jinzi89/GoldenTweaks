@@ -40,7 +40,7 @@
           "item": "minecraft:torchflower_seeds"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "fluid": "kaleidoscope_tavern:ice_grape_juice",
           "amount": 20
         }
