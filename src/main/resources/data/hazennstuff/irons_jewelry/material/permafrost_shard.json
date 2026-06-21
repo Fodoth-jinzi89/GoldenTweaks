@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "irons_spellbooks:permafrost_shard"
   },
-  "materialType": [
+    "materialType": [
     "gem"
   ],
   "paletteLocation": "hazennstuff:palettes/permafrost_shard",

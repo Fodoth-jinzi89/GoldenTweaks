@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "c:ingots/rose_gold"
   },
-  "materialType": [
+    "materialType": [
     "metal",
     "gold"
   ],

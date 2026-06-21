@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "c:ingots/dreadsteel"
   },
-  "materialType": [
+    "materialType": [
     "metal",
     "gold"
   ],

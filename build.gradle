@@ -130,7 +130,7 @@ dependencies {
     compileOnly "maven.modrinth:moonlight:1.21.1-3.0.7"
 
     compileOnly "maven.modrinth:advanced-loot-info:9jJT2Kmz"
-    compileOnly "maven.modrinth:emi:1.1.24+1.21.1+neoforge"
+    implementation "maven.modrinth:emi:1.1.24+1.21.1+neoforge"
     compileOnly "maven.modrinth:toadlib:1.4.3-1.21-1.21.1-fabric"
     compileOnly "maven.modrinth:gputape:1.2.1-1.21-1.21.1-fabric"
     compileOnly "maven.modrinth:cit-resewn:1.2.2+1.21"
@@ -162,14 +162,14 @@ dependencies {
     compileOnly "maven.modrinth:irons-spells-n-spellbooks:1.21.1-3.15.6"
     compileOnly "maven.modrinth:additional-attributes:ZQ340JcB"
 
-    compileOnly "maven.modrinth:cloth-config:15.0.140+neoforge"
+    implementation "maven.modrinth:cloth-config:15.0.140+neoforge"
 
     compileOnly "maven.modrinth:connector:1i8teo7m"
     compileOnly "maven.modrinth:connector-extras:dgLCqZyo"
     compileOnly "maven.modrinth:iceberg:IMssx9du"
     compileOnly "maven.modrinth:legendary-tooltips:BabRJO04"
     compileOnly "maven.modrinth:prism-lib:kMcz2lDj"
-    compileOnly "maven.modrinth:tmrv:0.7.3+mc.21.1"
+    implementation "maven.modrinth:tmrv:0.7.3+mc.21.1"
     compileOnly "maven.modrinth:touhou-little-maid-beacon:1.0.1-bugfix"
 
     compileOnly "maven.modrinth:advanced-loot-info:9jJT2Kmz"

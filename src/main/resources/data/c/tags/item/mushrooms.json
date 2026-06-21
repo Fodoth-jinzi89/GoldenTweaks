@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:whitemushroom",
+    "flavor_immersed_daily:enokimushroom",
+    "flavor_immersed_daily:fragrantmushroom",
+    "flavor_immersed_daily:pleurotuseryngii",
+    "flavor_immersed_daily:blackfungus",
+    "flavor_immersed_daily:tremella"
+  ]
+}

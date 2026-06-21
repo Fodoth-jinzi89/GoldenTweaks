@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "hazennstuff:solar_core"
   },
-  "materialType": [
+    "materialType": [
     "gem"
   ],
   "paletteLocation": "hazennstuff:palettes/solar_core",

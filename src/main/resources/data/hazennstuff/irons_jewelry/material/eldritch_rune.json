@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "hazennstuff:eldritch_rune"
   },
-  "materialType": [
+    "materialType": [
     "spellbooks_rune"
   ],
   "paletteLocation": "hazennstuff:palettes/rune_eldritch",

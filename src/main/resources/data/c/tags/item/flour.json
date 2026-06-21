@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:wheatflour",
+    "flavor_immersed_daily:modulatedwheatflour",
+    "flavor_immersed_daily:tapiocaflour"
+  ]
+}

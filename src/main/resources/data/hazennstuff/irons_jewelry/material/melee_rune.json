@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "hazennstuff:melee_rune"
   },
-  "materialType": [
+    "materialType": [
     "spellbooks_rune"
   ],
   "paletteLocation": "hazennstuff:palettes/rune_melee",

@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "c:ingots/zenalite"
   },
-  "materialType": [
+    "materialType": [
     "metal"
   ],
   "paletteLocation": "hazennstuff:palettes/zenalite",

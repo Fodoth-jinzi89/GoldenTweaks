@@ -72,6 +72,18 @@
   "config.goldentweaks.feature.lost_maid_drop_chance": "迷失女仆掉落概率",
   "config.goldentweaks.feature.lost_maid_drop_chance.comment": "迷失女仆掉落概率",
 
+  "config.goldentweaks.feature.flavor_auto_pulse": "烟火凡人心自动化（脉冲模式）",
+  "config.goldentweaks.feature.flavor_auto_pulse.comment": "当接收到红石脉冲时自动运行烟火凡人心厨具（需要物品输入）",
+
+  "config.goldentweaks.feature.flavor_auto_pulse_tick": "烟火凡人心自动化间隔（脉冲）",
+  "config.goldentweaks.feature.flavor_auto_pulse_tick.comment": "配方检测间隔（脉冲模式）",
+
+  "config.goldentweaks.feature.flavor_auto_continuous": "烟火凡人心自动化（持续模式）",
+  "config.goldentweaks.feature.flavor_auto_continuous.comment": "当持续接收到红石信号时自动运行烟火凡人心厨具（需要物品输入）",
+
+  "config.goldentweaks.feature.flavor_auto_continuous_tick": "烟火凡人心自动化间隔（持续）",
+  "config.goldentweaks.feature.flavor_auto_continuous_tick.comment": "配方检测间隔（持续模式）",
+
   "config.goldentweaks.category.debug": "调试",
 
   "config.goldentweaks.debug.debug_gui_inspector": "GUI 检查器",

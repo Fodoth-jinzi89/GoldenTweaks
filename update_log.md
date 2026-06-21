@@ -1,5 +1,15 @@
 # GoldenTweaks Update Log
 
+## 2026.06.21 - v2.6
+
+### 烟火凡人心
+- 修改部分厨具逻辑，添加了自动化支持
+- 添加联动配方
+- 现在食物统一会优先使用该模组的食物
+
+### All The Compatibility
+- 暂时移除了登入消息
+
 ## 2026.06.19 - v2.5
 
 ### Alshanex Familiars

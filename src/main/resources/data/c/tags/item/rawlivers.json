@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:rawchickenliver",
+    "flavor_immersed_daily:rawcattleliver",
+    "flavor_immersed_daily:rawpigliver",
+    "flavor_immersed_daily:rawsheepliver"
+  ]
+}

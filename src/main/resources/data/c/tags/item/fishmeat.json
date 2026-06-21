@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:dicedfish",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish"
+  ]
+}

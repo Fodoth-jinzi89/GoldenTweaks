@@ -83,6 +83,15 @@
   "config.goldentweaks.feature.lost_maid_drop_chance": "Lost Maid Drop Chance",
   "config.goldentweaks.feature.lost_maid_drop_chance.comment": "Lost maid drop chance",
 
+  "config.goldentweaks.feature.flavor_auto_pulse": "Flavor Automation (Pulse)",
+  "config.goldentweaks.feature.flavor_auto_pulse.comment": "Automates flavor immersed daily machines when receives redstone pulse",
+  "config.goldentweaks.feature.flavor_auto_pulse_tick": "Flavor Automation Interval (Pulse)",
+  "config.goldentweaks.feature.flavor_auto_pulse_tick.comment": "Recipe check interval (Pulse)",
+  "config.goldentweaks.feature.flavor_auto_continuous": "Flavor Automation (Continuous)",
+  "config.goldentweaks.feature.flavor_auto_continuous.comment": "Automates flavor immersed daily machines when receives continuous redstone signal",
+  "config.goldentweaks.feature.flavor_auto_continuous_tick": "Flavor Automation Interval (Continuous)",
+  "config.goldentweaks.feature.flavor_auto_continuous_tick.comment": "Recipe check interval (Continuous)",
+
   "config.goldentweaks.category.debug": "Debug",
 
   "config.goldentweaks.debug.debug_gui_inspector": "GUI Inspector",
