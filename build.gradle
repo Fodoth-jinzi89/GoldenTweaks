@@ -120,7 +120,7 @@ dependencies {
     compileOnly "maven.modrinth:vista_tv:1.21.1-4.3.1"
     compileOnly "maven.modrinth:raritycore:1211.13.1"
     compileOnly "maven.modrinth:maids-return:0.0.2"
-    compileOnly "maven.modrinth:touhou-little-maid:1.5.3-neoforge+mc1.21.1"
+    implementation "maven.modrinth:touhou-little-maid:1.5.3-neoforge+mc1.21.1"
     compileOnly "curse.maven:hostile-neural-networks-552574:6751495"
     compileOnly "curse.maven:placebo-283644:6926281"
     compileOnly "maven.modrinth:click2pick:IBBn27z1"

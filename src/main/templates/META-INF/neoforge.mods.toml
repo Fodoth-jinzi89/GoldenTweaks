@@ -678,3 +678,11 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "ccbr"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+

@@ -1,0 +1,145 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "avaritia:endless_cake",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ba_si_qie_zi",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:bai_qie_ji",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ban_si_xiao_liang_cai",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:bo_cai_chao_gan_jian",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:bo_luo_gu_lu_rou",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:chao_dou_jue_zi",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:chao_la_zi_ji",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:kai_shui_bai_cai",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:jiao_yan_chao_gu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:hui_guo_rou",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:gong_bao_ji_ding",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:gan_bian_si_ji_dou",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:di_san_xian",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:xian_dan_huang_chao_cai_hua",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cong_you_ji",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ke_le_ji_chi",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:kou_shui_ji",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:liang_ban_pi_dan",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:liang_ban_xi_hong_shi",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:lin_yi_chao_ji",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ma_la_juan_xin_cai",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ma_po_dou_fu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ma_zhi_dou_jiao",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:mu_er_huang_gua_ji_dan",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ri_ben_hong_shao_dou_fu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:shui_zhu_rou_pian",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:shui_zhu_yu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:zi_ran_yang_cong_chao_rou_pian",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:si_xi_wan_zi",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:suan_cai_yu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:wan_zi_tang",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:xi_hu_lu_chao_rou",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:you_cai_chao_xiang_gu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:yu_xiang_rou_si",
+      "required": false
+    }
+  ]
+}
