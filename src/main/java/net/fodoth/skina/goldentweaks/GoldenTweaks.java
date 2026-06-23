@@ -3,6 +3,8 @@ package net.fodoth.skina.goldentweaks;
 import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
+import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
+import net.fodoth.skina.goldentweaks.compat.kaleidoscope.VillageGarbageStationAddition;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
@@ -59,6 +61,13 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("exspectriments")) {
             LOGGER.info("Detected exspectriments, registering compatibility content");
             modEventBus.register(ExspectrimentsClientCompatEvent.class);
+        }
+
+        if (ModList.get().isLoaded("kaleidoscope_cookery")) {
+            LOGGER.info("Detected kaleidoscope_cookery, registering compatibility content");
+
+            KaleidoCompat.register(modEventBus);
+            NeoForge.EVENT_BUS.register(VillageGarbageStationAddition.class);
         }
 
         modEventBus.addListener(this::onClientSetup);

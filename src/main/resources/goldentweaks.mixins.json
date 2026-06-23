@@ -30,6 +30,7 @@
     "feature.flavorimmerseddaily.TeapotrecipeProcedureMixin",
     "feature.flavorimmerseddaily.TeapotrightProcedureMixin",
     "feature.flavorimmerseddaily.TeapotUpdateProcedureMixin",
+    "feature.kaleidoscope.StructureTemplatePoolAccessor",
     "feature.stop_mod_reposts.ATCEventsMixin",
     "feature.touhou_little_maid.MaidEdibleBlockManagerMixin",
     "feature.touhoulostmaid.EntityMaidDieMixin",

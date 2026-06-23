@@ -686,3 +686,10 @@ versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies."${mod_id}"]]
+modId = "kaleidoscope_tavern"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+

@@ -142,5 +142,7 @@
   "item.goldentweaks.unprocessed_mythic_material": "未完成的神铸珍珠",
   "item.goldentweaks.unprocessed_ancient_material": "未完成的无限之象征",
   "item.goldentweaks.inverted_familiar_spellbook": "万灵永恒之典",
-  "item.goldentweaks.inverted_familiar_spellbook.desc": "已召唤的魔宠将共享一部分属性给主人"
+  "item.goldentweaks.inverted_familiar_spellbook.desc": "已召唤的魔宠将共享一部分属性给主人",
+
+  "block.goldentweaks.garbage_station_floor": "垃圾站地板"
 }

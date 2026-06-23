@@ -1,0 +1,39 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekmm"
+    }
+  ],
+
+  "pattern": [
+    "AAAAA",
+    "ABCBA",
+    "ACDCA",
+    "ABCBA",
+    "AAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekmm:scrap_box"
+    },
+    "B": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "C": {
+      "item": "minecraft:stone_bricks"
+    },
+    "D": {
+      "item": "mekmm:empty_crystal"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:garbage_station_floor"
+  }
+}

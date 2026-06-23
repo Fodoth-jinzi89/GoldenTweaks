@@ -152,7 +152,9 @@
   "item.goldentweaks.unprocessed_ancient_material": "Unprocessed Ancient Material",
 
   "item.goldentweaks.inverted_familiar_spellbook": "Inverted Familiar Spellbook",
-  "item.goldentweaks.inverted_familiar_spellbook.desc": "Share familiar attributes to owner"
+  "item.goldentweaks.inverted_familiar_spellbook.desc": "Share familiar attributes to owner",
+
+  "block.goldentweaks.garbage_station_floor": "Garbage Station Floor"
 
 
 
