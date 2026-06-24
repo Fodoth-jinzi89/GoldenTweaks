@@ -14,14 +14,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-@EventBusSubscriber(modid = "goldentweaks")
 public class SalvageCharmEvent {
 
     private static final String COOLDOWN_TAG =

@@ -1,0 +1,208 @@
+{
+  "bountiful.mod.name": "赏金",
+  "block.bountiful.bountyboard": "悬赏板",
+  "itemGroup.bountiful": "悬赏",
+
+  "bountiful.entry.shepherd_objs.wool_wildcard": "任意羊毛",
+  "bountiful.entry.fletcher_objs.planks": "任意木板",
+  "bountiful.entry.fletcher_objs.logs": "任意原木",
+  "bountiful.entry.shepherd_objs.bed_wildcard": "任意床",
+  "bountiful.entry.fisherman_objs.any_boat": "任意船",
+  "bountiful.entry.mapper_objs.candles": "任意蜡烛",
+  "bountiful.entry.shepherd_objs.banner_wildcard": "任意旗帜",
+  "bountiful.entry.fisherman_obj_catch_ench_book": "钓到附魔书",
+  "bountiful.entry.cleric_objs.brew_swiftness": "酿造基础迅捷药水",
+  "bountiful.entry.cleric_objs.cure_zombie_villager": "治愈僵尸村民",
+
+  "bountiful.ui.shorthand.minutes": "分",
+  "bountiful.ui.shorthand.seconds": "秒",
+
+  "bountiful.decree": "悬赏令",
+  "bountiful.decrees": "悬赏令",
+  "bountiful.decree.invalid": "无效的悬赏令",
+  "bountiful.decree.notset": "请将其放入悬赏板",
+  "bountiful.bounty.expired": "悬赏已过期",
+  "bountiful.bounty.turnin": "右键悬赏板领取奖励",
+
+  "bountiful.advancement.bounty_taken.desc": "在悬赏板接取一次任务",
+  "bountiful.advancement.bounty_complete.title": "诚实劳动，踏实收获",
+  "bountiful.advancement.bounty_complete.desc": "完成一个悬赏任务",
+
+  "bountiful.advancement.rush_order.title": "紧急交付",
+  "bountiful.advancement.rush_order.desc": "在1分钟内完成悬赏",
+
+  "bountiful.advancement.procrastinator.title": "拖延症",
+  "bountiful.advancement.procrastinator.desc": "在最后10秒内完成悬赏",
+
+  "bountiful.advancement.town_crier.title": "城镇公告",
+  "bountiful.advancement.town_crier.desc": "获得一张悬赏令",
+
+  "bountiful.advancement.printing_press.title": "印刷机",
+  "bountiful.advancement.printing_press.desc": "在铁砧上合并两个悬赏令",
+
+  "bountiful.advancement.ninety_five_theses.title": "九十五条论纲",
+  "bountiful.advancement.ninety_five_theses.desc": "在一个悬赏板上同时放满所有类型的悬赏令",
+
+  "bountiful.advancement.fetch_quest.title": "只是个“跑腿任务”",
+  "bountiful.advancement.fetch_quest.desc": "让宠物完成一次击杀任务",
+
+  "bountiful.bounty": "悬赏",
+
+  "bountiful.decree.armorer.name": "盔甲匠悬赏令",
+  "bountiful.decree.butcher.name": "屠夫悬赏令",
+  "bountiful.decree.mapper.name": "制图师悬赏令",
+  "bountiful.decree.chef.name": "烹饪师悬赏令",
+  "bountiful.decree.priest.name": "牧师悬赏令",
+  "bountiful.decree.farmer.name": "农夫悬赏令",
+  "bountiful.decree.fisherman.name": "渔夫悬赏令",
+  "bountiful.decree.fletcher.name": "制箭师悬赏令",
+  "bountiful.decree.leatherer.name": "皮匠悬赏令",
+  "bountiful.decree.librarian.name": "图书管理员悬赏令",
+  "bountiful.decree.mason.name": "石匠悬赏令",
+  "bountiful.decree.pistrinamaster.name": "面包师悬赏令",
+  "bountiful.decree.shepherd.name": "牧羊人悬赏令",
+  "bountiful.decree.toolsmith.name": "工具匠悬赏令",
+  "bountiful.decree.weaponsmith.name": "武器匠悬赏令",
+  "bountiful.decree.mechanic.name": "机械师悬赏令",
+  "bountiful.decree.wizard.name": "巫师悬赏令",
+  "bountiful.decree.programmer.name": "程序员悬赏令",
+  "bountiful.decree.adventurer.name": "冒险家悬赏令",
+  "bountiful.decree.pilot.name": "飞行员悬赏令",
+  "bountiful.decree.admiral.name": "司令员悬赏令",
+  "bountiful.decree.astronaut.name": "宇航员悬赏令",
+  "bountiful.decree.photographer.name": "摄影师悬赏令",
+  "bountiful.decree.chemical_engineer.name": "化学工程师悬赏令",
+  "bountiful.decree.painter.name": "画家悬赏令",
+  "bountiful.decree.musician.name": "音乐家悬赏令",
+  "bountiful.decree.bartender.name": "调酒师悬赏令",
+  "bountiful.decree.carpenter.name": "木匠悬赏令",
+  "bountiful.decree.creator.name": "创世神悬赏令"
+  "bountiful.decree.invalid_decree.name": "无效悬赏令",
+  "bountiful.decree.chaos.name": "混沌模式",
+
+  "bountiful.bounty.type.entity.kills": "击杀",
+  "bountiful.bounty.type.entity.kill": "击杀",
+
+  "bountiful.rarity.Common": "普通",
+  "bountiful.rarity.Uncommon": "罕见",
+  "bountiful.rarity.Rare": "稀有",
+  "bountiful.rarity.Epic": "史诗",
+  
+  "item.bountiful.bounty.rarity.common": "普通悬赏",
+  "item.bountiful.bounty.rarity.uncommon": "罕见悬赏",
+  "item.bountiful.bounty.rarity.rare": "稀有悬赏",
+  "item.bountiful.bounty.rarity.epic": "史诗悬赏",
+  "item.bountiful.bounty.rarity.legendary": "传说悬赏",
+
+  "stat.bountiful.bounties_taken": "接取悬赏次数",
+  "stat.bountiful.bounties_done": "完成悬赏总数",
+  "stat.bountiful.bounty_completion_time": "悬赏完成时间（总计）",
+  "stat.bountiful.bounties_done_0": "完成悬赏（普通）",
+  "stat.bountiful.bounties_done_1": "完成悬赏（罕见）",
+  "stat.bountiful.bounties_done_2": "完成悬赏（稀有）",
+  "stat.bountiful.bounties_done_3": "完成悬赏（史诗）",
+
+  "bountiful.tooltip.time": "剩余时间",
+  "bountiful.tooltip.required": "需求",
+  "bountiful.tooltip.rewards": "奖励",
+  "bountiful.tooltip.expired": "已过期",
+  "bountiful.tooltip.requirements": "条件不满足",
+
+  "bountiful.toast.complete": "悬赏完成！",
+  "bountiful.toast.complete.desc": "请回到悬赏板领取奖励！",
+
+  "bountiful.nightly.warning": "这是 Bountiful 的夜间构建版本，请勿用于整合包发布，请在 Discord 报告问题",
+
+  "bountiful.compat.resource_pack": "%1$s - %2$s 兼容包",
+
+  "bountiful.ui.discount": "折扣",
+  "bountiful.ui.reputation": "声望",
+  "bountiful.ui.empty": "这里空空如也！稍后再来看看吧",
+
+  "tag.item.minecraft.banners": "任意旗帜",
+  "tag.item.minecraft.beds": "任意床",
+  "tag.item.minecraft.boats": "任意船",
+  "tag.item.minecraft.candles": "任意蜡烛",
+  "tag.item.minecraft.logs": "任意原木",
+  "tag.item.minecraft.planks": "任意木板",
+  "tag.item.minecraft.wool": "任意羊毛",
+
+  "bountiful.analyzer.title": "悬赏分析器",
+  "bountiful.analyzer.mode.tooltip": "点击切换模式（当前：%1$s）",
+  "bountiful.analyzer.sample_resolution": "采样精度",
+  "bountiful.analyzer.pool": "池：%1$s",
+  "bountiful.analyzer.entries_at_worth_range": "价值区间 %1$s-%2$s 的条目：%3$s",
+
+  "bountiful.command.none": "无",
+  "bountiful.command.settings_reloaded": "悬赏配置已重新加载！",
+  "bountiful.command.analyzer.title": "分析器",
+  "bountiful.command.packmode_enabled": "已启用开发模式",
+  "bountiful.command.export.success": "数据包导出成功，可在 config 文件夹中找到",
+  "bountiful.command.export.failed": "数据包导出失败！",
+
+  "bountiful.command.check_entry.found": "找到条目 '%1$s'！",
+  "bountiful.command.check_entry.pools": "* 存在于以下池：",
+  "bountiful.command.check_entry.decrees": "* 存在于以下悬赏令：",
+  "bountiful.command.check_entry.invalid": "* 错误：条目 %1$s 验证失败",
+  "bountiful.command.check_entry.not_found": "未找到该条目",
+
+  "bountiful.command.debug.found_villager": "找到村民：%1$s - %2$s",
+  "bountiful.command.debug.found_board": "找到悬赏板：%1$s - %2$s",
+  "bountiful.command.debug.current_activity": "当前行为：%1$s",
+  "bountiful.command.debug.villager_null": "村民为空",
+
+  "bountiful.command.add_to_pool.content_added": "已添加内容",
+  "bountiful.command.add_to_pool.edit_file": "编辑文件 '%1$s' 以修改详情",
+  "bountiful.command.add_to_pool.open_file": "点击打开文件 '%1$s'",
+  "bountiful.command.add_to_pool.invalid_pool_name": "无效的池名称",
+
+  "bountiful.command.dumped_to_log": "悬赏池与悬赏令已输出到日志",
+
+  "bountiful.config.category.general": "通用",
+  "bountiful.config.category.general_board": "通用 - 悬赏板",
+  "bountiful.config.category.general_bounty": "通用 - 悬赏",
+  "bountiful.config.category.client": "客户端",
+  "bountiful.config.category.debug": "调试",
+
+  "bountiful.config.general.excluded_data_paths": "排除数据路径",
+  "bountiful.config.general.excluded_data_paths.tooltip": "不会被加载的数据路径列表",
+  "bountiful.config.general.excluded_data_paths.add_tooltip": "添加排除规则",
+
+  "bountiful.config.board.breakable_boards": "悬赏板可破坏",
+  "bountiful.config.board.breakable_boards.tooltip": "是否允许破坏悬赏板",
+
+  "bountiful.config.board.update_frequency": "悬赏更新频率",
+  "bountiful.config.board.update_frequency.tooltip": "新悬赏生成/移除的时间间隔（秒）",
+
+  "bountiful.config.board.village_gen_frequency": "村庄悬赏板生成频率",
+  "bountiful.config.board.village_gen_frequency.tooltip": "村庄中替换房屋为悬赏板的频率",
+
+  "bountiful.config.bounty.expiry_timers": "悬赏过期机制",
+  "bountiful.config.bounty.expiry_timers.tooltip": "是否启用悬赏倒计时",
+
+  "bountiful.config.bounty.objective_requirement_multiplier": "目标需求倍率",
+  "bountiful.config.bounty.objective_requirement_multiplier.tooltip": "调整悬赏任务难度",
+  "bountiful.config.bounty.objective_requirement_multiplier.value": "%1$s%% 变化",
+
+  "bountiful.config.bounty.allow_decree_mixing": "允许悬赏混合",
+  "bountiful.config.bounty.allow_decree_mixing.tooltip": "是否允许混合不同悬赏令",
+
+  "bountiful.config.bounty.max_number_of_rewards": "最大奖励数量",
+  "bountiful.config.bounty.max_number_of_rewards.tooltip": "每个悬赏的最大奖励数量",
+  "bountiful.config.bounty.max_number_of_rewards.value": "%1$s 个奖励",
+
+  "bountiful.config.bounty.reverse_entry_matching_algorithm": "反向匹配算法",
+  "bountiful.config.bounty.reverse_entry_matching_algorithm.tooltip": "是否反转生成逻辑",
+
+  "bountiful.config.bounty.bonus_time": "额外时间",
+  "bountiful.config.bounty.bonus_time.tooltip": "额外给予的时间（秒）",
+
+  "bountiful.config.client.completion_toast_messages": "完成提示",
+  "bountiful.config.client.completion_toast_messages.tooltip": "是否显示完成提示",
+
+  "bountiful.config.debug.enable_chaos_mode": "启用混沌模式（实验性）",
+  "bountiful.config.debug.enable_chaos_mode.tooltip": "会覆盖所有基础逻辑",
+
+  "bountiful.config.debug.pack_mode": "开发者模式（不保存）",
+  "bountiful.config.debug.pack_mode.tooltip": "用于整合包开发调试"
+}

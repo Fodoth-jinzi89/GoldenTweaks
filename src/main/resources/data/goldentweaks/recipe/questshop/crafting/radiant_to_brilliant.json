@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" },
+    { "item": "goldentweaks:radiant_gold" }
+  ],
+  "result": {
+    "id": "goldentweaks:brilliant_gold",
+    "count": 1
+  }
+}

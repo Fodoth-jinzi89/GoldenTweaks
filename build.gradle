@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.141'
+    id 'org.jetbrains.kotlin.jvm'
 }
 
 version = mod_version
@@ -26,6 +27,7 @@ repositories {
     flatDir {
         dir("libs")
     }
+    mavenCentral()
 }
 
 neoForge {
@@ -180,4 +182,8 @@ dependencies {
     runtimeOnly fileTree(dir: 'libs/runtimeOnly', include: ['*.jar'])
 
     implementation fileTree(dir: 'libs/implementation', include: ['*.jar'])
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+kotlin {
+    jvmToolchain(21)
 }

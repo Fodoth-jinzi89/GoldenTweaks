@@ -1,0 +1,229 @@
+package net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily;
+
+import com.fidtest.block.TeapotBlock;
+import com.fidtest.block.entity.TeapotBlockEntity;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.Unique;
+
+@Mixin(TeapotBlock.class)
+public class TeapotBlockMixin {
+
+    @Unique
+    private static Item TEAPOT_COVER_ITEM = null;
+
+    /**
+     * @author Fodoth_jinzi89
+     * @reason No shift required - 任意物品右键开坛，盖子封坛
+     */
+    @Overwrite
+    protected ItemInteractionResult useItemOn(ItemStack heldItem,
+                                              BlockState state,
+                                              Level level,
+                                              BlockPos pos,
+                                              Player player,
+                                              InteractionHand hand,
+                                              BlockHitResult hit) {
+
+        if (!(level.getBlockEntity(pos) instanceof TeapotBlockEntity teapot)) {
+            return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        }
+
+        boolean sealed = state.getValue(TeapotBlock.SEALED);
+
+        // =====================================================
+        // 1. 已封坛 - 任意物品右键开坛
+        // =====================================================
+        if (sealed) {
+            if (!level.isClientSide) {
+                teapot.unseal(player);
+                level.setBlock(pos, state.setValue(TeapotBlock.SEALED, false), 3);
+                level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 0.5F, 1.0F);
+            }
+            return ItemInteractionResult.SUCCESS;
+        }
+
+        // =====================================================
+        // 2. 未封坛
+        // =====================================================
+
+        // 检查是否在工作（煮茶中）
+        if (teapot.isWorking()) {
+            return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        }
+
+        // ---- 茶壶盖封坛 ----
+        if (isTeapotCover(heldItem)) {
+
+            if (!level.isClientSide) {
+
+                if (!player.isCreative()) {
+                    heldItem.shrink(1);
+                }
+
+                if (teapot.checkRecipe()) {
+                    level.setBlock(pos, state.setValue(TeapotBlock.SEALED, true), 3);
+                    teapot.seal();
+
+                    player.displayClientMessage(
+                            Component.translatable("message.fidworkblock.teapot_recipe_correct"),
+                            true
+                    );
+
+                    level.playSound(null, pos,
+                            SoundEvents.ITEM_PICKUP,
+                            SoundSource.BLOCKS,
+                            1.0F, 0.6F);
+
+                } else {
+                    player.displayClientMessage(
+                            Component.translatable("message.fidworkblock.teapot_recipe_incorrect"),
+                            true
+                    );
+                }
+            }
+
+            return ItemInteractionResult.SUCCESS;
+        }
+
+        // ---- 普通放入 ----
+        if (!heldItem.isEmpty()) {
+
+            if (!level.isClientSide) {
+
+                ItemStack remainder = teapot.addItemToNextSlot(
+                        player.getAbilities().instabuild ? heldItem.copy() : heldItem
+                );
+
+                if (!player.isCreative()) {
+                    player.setItemInHand(hand, remainder);
+                }
+
+                level.playSound(null, pos,
+                        SoundEvents.ITEM_PICKUP,
+                        SoundSource.BLOCKS,
+                        1.0F, 0.8F);
+            }
+
+            return ItemInteractionResult.SUCCESS;
+        }
+
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+
+    /**
+     * @author Fodoth_jinzi89
+     * @reason No shift required - 空手取出产物/原料
+     */
+    @Overwrite
+    protected InteractionResult useWithoutItem(BlockState state,
+                                               Level level,
+                                               BlockPos pos,
+                                               Player player,
+                                               BlockHitResult hit) {
+
+        if (!(level.getBlockEntity(pos) instanceof TeapotBlockEntity teapot)) {
+            return InteractionResult.PASS;
+        }
+
+        boolean sealed = state.getValue(TeapotBlock.SEALED);
+
+        // =====================================================
+        // 已封坛 - 空手开坛
+        // =====================================================
+        if (sealed) {
+            if (!level.isClientSide) {
+                teapot.unseal(player);
+                level.setBlock(pos, state.setValue(TeapotBlock.SEALED, false), 3);
+                level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 0.5F, 1.0F);
+            }
+            return InteractionResult.SUCCESS;
+        }
+
+        // =====================================================
+        // 未封坛 - 检查是否在工作
+        // =====================================================
+        if (teapot.isWorking()) {
+            return InteractionResult.PASS;
+        }
+
+        // =====================================================
+        // 优先取产物
+        // =====================================================
+        if (teapot.hasOutput()) {
+
+            if (!level.isClientSide) {
+
+                ItemStack output = teapot.collectOutput();
+
+                if (!output.isEmpty() && !player.isCreative()) {
+                    player.getInventory().add(output);
+                }
+
+                level.playSound(null, pos,
+                        SoundEvents.ITEM_PICKUP,
+                        SoundSource.BLOCKS,
+                        0.5F, 1.0F);
+            }
+
+            return InteractionResult.SUCCESS;
+        }
+
+        // =====================================================
+        // 无产物时，取出已放入的原料（无需 Shift）
+        // =====================================================
+        if (teapot.hasAnyInput()) {
+
+            if (!level.isClientSide) {
+
+                ItemStack removed = teapot.removeLastInput();
+
+                if (!player.isCreative()) {
+                    player.getInventory().add(removed);
+                }
+
+                level.playSound(null, pos,
+                        SoundEvents.ITEM_PICKUP,
+                        SoundSource.BLOCKS,
+                        0.5F, 1.0F);
+            }
+
+            return InteractionResult.SUCCESS;
+        }
+
+        return InteractionResult.PASS;
+    }
+
+    // =========================================================
+    // 茶壶盖判定 - 使用缓存 Item 引用
+    // =========================================================
+    @Unique
+    private static boolean isTeapotCover(ItemStack stack) {
+        if (stack.isEmpty()) {
+            return false;
+        }
+
+        if (TEAPOT_COVER_ITEM == null) {
+            TEAPOT_COVER_ITEM = BuiltInRegistries.ITEM.get(
+                    ResourceLocation.parse("flavor_immersed_daily:teapotcover")
+            );
+        }
+
+        return stack.getItem() == TEAPOT_COVER_ITEM;
+    }
+}

@@ -1,5 +1,13 @@
 # GoldenTweaks Update Log
 
+## 2026.06.24 - v2.8
+
+### 烟火凡人心
+- 更新版本，修复各种机器
+
+### Bountiful
+- 增加联动内容
+
 ## 2026.06.23 - v2.7
 
 ### Kaleidoscope Cookery

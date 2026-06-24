@@ -154,7 +154,14 @@
   "item.goldentweaks.inverted_familiar_spellbook": "Inverted Familiar Spellbook",
   "item.goldentweaks.inverted_familiar_spellbook.desc": "Share familiar attributes to owner",
 
-  "block.goldentweaks.garbage_station_floor": "Garbage Station Floor"
+  "block.goldentweaks.garbage_station_floor": "Garbage Station Floor",
+
+  "itemGroup.goldentweaks.questshop": "Golden Tweaks: QuestShop",
+  "item.goldentweaks.radiant_gold": "Radiant Gold",
+  "item.goldentweaks.brilliant_gold": "Brilliant Gold",
+  "item.goldentweaks.glorious_gold": "Glorious Gold",
+  "item.goldentweaks.luminous_gold": "Luminous Gold",
+  "item.goldentweaks.immaculate_gold": "Immaculate Gold"
 
 
 

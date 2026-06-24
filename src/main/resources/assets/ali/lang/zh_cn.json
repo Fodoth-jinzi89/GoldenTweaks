@@ -541,6 +541,8 @@
   "entity.minecraft.villager.ae_engineer": "AE 工程师",
   "entity.minecraft.villager.ae_specialist": "AE 专家",
   "entity.minecraft.villager.ae_toolsmith": "AE 工具匠",
+  "entity.minecraft.villager.fluix_researcher": "福鲁伊克斯研究员",
+  "entity.minecraft.villager.pistrinamaster": "面包师",
   "entity.minecraft.villager.armorer": "盔甲匠",
   "ali/loot_table/entities/ignis_additions": "焰魔附加战利品",
   "ali/loot_table/wither": "凋灵",

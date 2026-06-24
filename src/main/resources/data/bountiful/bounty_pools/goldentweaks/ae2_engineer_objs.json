@@ -1,0 +1,139 @@
+{
+    "content": {
+        "ex_export_bus_part": {
+            "type": "item",
+            "content": "extendedae:ex_export_bus_part",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "ex_import_bus_part": {
+            "type": "item",
+            "content": "extendedae:ex_import_bus_part",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "mod_storage_bus": {
+            "type": "item",
+            "content": "extendedae:mod_storage_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "mod_export_bus": {
+            "type": "item",
+            "content": "extendedae:mod_export_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "active_formation_plane": {
+            "type": "item",
+            "content": "extendedae:active_formation_plane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "precise_export_bus": {
+            "type": "item",
+            "content": "extendedae:precise_export_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "precise_storage_bus": {
+            "type": "item",
+            "content": "extendedae:precise_storage_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "threshold_export_bus": {
+            "type": "item",
+            "content": "extendedae:threshold_export_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "smart_annihilation_plane": {
+            "type": "item",
+            "content": "extendedae:smart_annihilation_plane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.078125,
+            "effectiveValue": 300.0
+        },
+        "caner": {
+            "type": "item",
+            "content": "extendedae:caner",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 100,
+            "weightMult": 0.15625,
+            "effectiveValue": 600.0
+        },
+        "ingredient_buffer": {
+            "type": "item",
+            "content": "extendedae:ingredient_buffer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0625,
+            "effectiveValue": 240.0
+        }
+    },
+    "requires": [
+        "extendedae"
+    ]
+}

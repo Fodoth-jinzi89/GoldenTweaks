@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.VillageGarbageStationAddition;
+import net.fodoth.skina.goldentweaks.compat.questshop.QSCompat;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
@@ -13,6 +14,7 @@ import net.fodoth.skina.goldentweaks.event.FamiliarProtectionEvent;
 import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
+import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
@@ -49,6 +51,12 @@ public class GoldenTweaks {
             GTCreateItems.register();
         }
 
+        if (ModList.get().isLoaded("apotheosis_things")) {
+            LOGGER.info("Detected apotheosis_things, registering Registrate");
+
+            modEventBus.register(SalvageCharmEvent.class);
+        }
+
 
         if (ModList.get().isLoaded("alshanex_familiars")) {
             LOGGER.info("Detected alshanex_familiars, registering compatibility content");
@@ -68,6 +76,12 @@ public class GoldenTweaks {
 
             KaleidoCompat.register(modEventBus);
             NeoForge.EVENT_BUS.register(VillageGarbageStationAddition.class);
+        }
+
+        if (ModList.get().isLoaded("questshop")) {
+            LOGGER.info("Detected questshop, registering compatibility content");
+
+            QSCompat.register(modEventBus);
         }
 
         modEventBus.addListener(this::onClientSetup);

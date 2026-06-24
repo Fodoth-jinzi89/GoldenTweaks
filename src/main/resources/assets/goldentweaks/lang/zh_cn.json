@@ -1,5 +1,5 @@
 {
-  "config.goldentweaks.title": "金子修复",
+  "config.goldentweaks.title": "金子修改",
   "config.goldentweaks.pickup": "右键物品拾取",
   "config.goldentweaks.pickup.comment": "与物品拾取交互相关的配置项。",
   "config.goldentweaks.pickup.base_pickup_reach": "基础拾取距离",
@@ -92,7 +92,7 @@
   "config.goldentweaks.debug.debug_gui_copy_to_clipboard": "复制 GUI 调试信息到剪贴板",
   "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "自动将 GUI 调试信息复制到剪贴板",
 
-  "itemGroup.goldentweaks.familiars": "Golden Tweaks丨魔宠扩展",
+  "itemGroup.goldentweaks.familiars": "金子修改丨魔宠扩展",
 
   "item.goldentweaks.armor_plate_tier_1": "木护甲板",
   "item.goldentweaks.armor_plate_tier_2": "铜护甲板",
@@ -144,5 +144,12 @@
   "item.goldentweaks.inverted_familiar_spellbook": "万灵永恒之典",
   "item.goldentweaks.inverted_familiar_spellbook.desc": "已召唤的魔宠将共享一部分属性给主人",
 
-  "block.goldentweaks.garbage_station_floor": "垃圾站地板"
+  "block.goldentweaks.garbage_station_floor": "垃圾站地板",
+
+  "itemGroup.goldentweaks.questshop": "金子修改丨任务商店",
+  "item.goldentweaks.radiant_gold": "灿烂之金",
+  "item.goldentweaks.brilliant_gold": "辉煌之金",
+  "item.goldentweaks.glorious_gold": "荣耀之金",
+  "item.goldentweaks.luminous_gold": "璀璨之金",
+  "item.goldentweaks.immaculate_gold": "无暇之金"
 }

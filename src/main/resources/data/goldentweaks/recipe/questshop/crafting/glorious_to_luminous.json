@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" },
+    { "item": "goldentweaks:glorious_gold" }
+  ],
+  "result": {
+    "id": "goldentweaks:luminous_gold",
+    "count": 1
+  }
+}
