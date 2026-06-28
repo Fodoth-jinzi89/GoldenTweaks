@@ -44,5 +44,20 @@
 	"item.jaopca.oritech_gems": "%s石",
 
 	"item.jaopca.theurgy_alchemical_sulfurs": "%s奇迹硫",
-	"item.jaopca.theurgy_alchemical_sulfurs.tooltip": "由 %s %s %s 制作的奇迹硫。"
+	"item.jaopca.theurgy_alchemical_sulfurs.tooltip": "由 %s %s %s 制作的奇迹硫。",
+	
+	"jaopca.material.zenalite": "穹顶",
+	"jaopca.material.chlorophyte": "叶绿",
+	"jaopca.material.dreadsteel": "惧钢",
+	"jaopca.material.ender_quartz": "高纯末影石英",
+	"jaopca.material.hallowed": "神圣",
+	"jaopca.material.infused_entro": "恩特罗融注",
+	"jaopca.material.pyrium": "炽金",
+	"jaopca.material.quantum_alloy": "量子水晶",
+	"jaopca.material.radiance": "辐光",
+	"jaopca.material.redstone_crystal": "红石水晶",
+	"jaopca.material.refined_jade": "精炼玉",
+	"jaopca.material.sky_stone": "陨石粉",
+	"jaopca.material.sky_stone_crystal": "高纯陨石水晶",
+	"jaopca.material.volcanic_ash": "火山灰"
 }

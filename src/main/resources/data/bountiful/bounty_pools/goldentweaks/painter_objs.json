@@ -1,0 +1,6156 @@
+{
+    "content": {
+        "molten_rod": {
+            "type": "item",
+            "content": "spectrum:molten_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "lagoon_rod": {
+            "type": "item",
+            "content": "spectrum:lagoon_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "dragonrending_pickaxe": {
+            "type": "item",
+            "content": "spectrum:dragonrending_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0006600638281721843,
+            "effectiveValue": 2000
+        },
+        "resonant_pickaxe": {
+            "type": "item",
+            "content": "spectrum:resonant_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0006600638281721843,
+            "effectiveValue": 2000
+        },
+        "oblivion_pickaxe": {
+            "type": "item",
+            "content": "spectrum:oblivion_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0006600638281721843,
+            "effectiveValue": 2000
+        },
+        "razor_falchion": {
+            "type": "item",
+            "content": "spectrum:razor_falchion",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0006600638281721843,
+            "effectiveValue": 2000
+        },
+        "lucky_pickaxe": {
+            "type": "item",
+            "content": "spectrum:lucky_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "tender_pickaxe": {
+            "type": "item",
+            "content": "spectrum:tender_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "oread_boots": {
+            "type": "item",
+            "content": "spectrum:oread_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0006600638281721843,
+            "effectiveValue": 2000
+        },
+        "sylph_leggings": {
+            "type": "item",
+            "content": "spectrum:sylph_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.00033003191408609214,
+            "effectiveValue": 1000
+        },
+        "ferocious_chestplate": {
+            "type": "item",
+            "content": "spectrum:ferocious_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.00033003191408609214,
+            "effectiveValue": 1000
+        },
+        "fetchling_helmet": {
+            "type": "item",
+            "content": "spectrum:fetchling_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.00033003191408609214,
+            "effectiveValue": 1000
+        },
+        "multitool": {
+            "type": "item",
+            "content": "spectrum:multitool",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.00033003191408609214,
+            "effectiveValue": 1000
+        },
+        "bedrock_pickaxe": {
+            "type": "item",
+            "content": "spectrum:bedrock_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_axe": {
+            "type": "item",
+            "content": "spectrum:bedrock_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_shovel": {
+            "type": "item",
+            "content": "spectrum:bedrock_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_sword": {
+            "type": "item",
+            "content": "spectrum:bedrock_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_hoe": {
+            "type": "item",
+            "content": "spectrum:bedrock_hoe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_bow": {
+            "type": "item",
+            "content": "spectrum:bedrock_bow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_crossbow": {
+            "type": "item",
+            "content": "spectrum:bedrock_crossbow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_shears": {
+            "type": "item",
+            "content": "spectrum:bedrock_shears",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_fishing_rod": {
+            "type": "item",
+            "content": "spectrum:bedrock_fishing_rod",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_helmet": {
+            "type": "item",
+            "content": "spectrum:bedrock_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_chestplate": {
+            "type": "item",
+            "content": "spectrum:bedrock_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_leggings": {
+            "type": "item",
+            "content": "spectrum:bedrock_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "bedrock_boots": {
+            "type": "item",
+            "content": "spectrum:bedrock_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "dreamflayer": {
+            "type": "item",
+            "content": "spectrum:dreamflayer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "nightfalls_blade": {
+            "type": "item",
+            "content": "spectrum:nightfalls_blade",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "draconic_twinsword": {
+            "type": "item",
+            "content": "spectrum:draconic_twinsword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "dragon_talon": {
+            "type": "item",
+            "content": "spectrum:dragon_talon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "knotted_sword": {
+            "type": "item",
+            "content": "spectrum:knotted_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "nectar_lance": {
+            "type": "item",
+            "content": "spectrum:nectar_lance",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "omni_accelerator": {
+            "type": "item",
+            "content": "spectrum:omni_accelerator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.0013201276563443685,
+            "effectiveValue": 4000
+        },
+        "malachite_workstaff": {
+            "type": "item",
+            "content": "spectrum:malachite_workstaff",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "malachite_crossbow": {
+            "type": "item",
+            "content": "spectrum:malachite_crossbow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "malachite_bident": {
+            "type": "item",
+            "content": "spectrum:malachite_bident",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "glass_crest_workstaff": {
+            "type": "item",
+            "content": "spectrum:glass_crest_workstaff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "glass_crest_ultra_greatsword": {
+            "type": "item",
+            "content": "spectrum:glass_crest_ultra_greatsword",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "ferocious_glass_crest_bident": {
+            "type": "item",
+            "content": "spectrum:ferocious_glass_crest_bident",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "fractal_glass_crest_bident": {
+            "type": "item",
+            "content": "spectrum:fractal_glass_crest_bident",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "glass_crest_crossbow": {
+            "type": "item",
+            "content": "spectrum:glass_crest_crossbow",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "glow_vision_goggles": {
+            "type": "item",
+            "content": "spectrum:glow_vision_goggles",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "jeopardant": {
+            "type": "item",
+            "content": "spectrum:jeopardant",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "seven_league_boots": {
+            "type": "item",
+            "content": "spectrum:seven_league_boots",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "cotton_cloud_boots": {
+            "type": "item",
+            "content": "spectrum:cotton_cloud_boots",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "radiance_pin": {
+            "type": "item",
+            "content": "spectrum:radiance_pin",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "totem_pendant": {
+            "type": "item",
+            "content": "spectrum:totem_pendant",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "take_off_belt": {
+            "type": "item",
+            "content": "spectrum:take_off_belt",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "azure_dike_belt": {
+            "type": "item",
+            "content": "spectrum:azure_dike_belt",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "azure_dike_ring": {
+            "type": "item",
+            "content": "spectrum:azure_dike_ring",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "gleaming_pin": {
+            "type": "item",
+            "content": "spectrum:gleaming_pin",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "ashen_circlet": {
+            "type": "item",
+            "content": "spectrum:ashen_circlet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "puff_circlet": {
+            "type": "item",
+            "content": "spectrum:puff_circlet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "weeping_circlet": {
+            "type": "item",
+            "content": "spectrum:weeping_circlet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "whispy_circlet": {
+            "type": "item",
+            "content": "spectrum:whispy_circlet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "azuresque_dike_core": {
+            "type": "item",
+            "content": "spectrum:azuresque_dike_core",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.0033003191408609214,
+            "effectiveValue": 10000
+        },
+        "circlet_of_arrogance": {
+            "type": "item",
+            "content": "spectrum:circlet_of_arrogance",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "aether_graced_nectar_gloves": {
+            "type": "item",
+            "content": "spectrum:aether_graced_nectar_gloves",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "neat_ring": {
+            "type": "item",
+            "content": "spectrum:neat_ring",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "radiance_staff": {
+            "type": "item",
+            "content": "spectrum:radiance_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.006600638281721843,
+            "effectiveValue": 20000
+        },
+        "natures_staff": {
+            "type": "item",
+            "content": "spectrum:natures_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.006600638281721843,
+            "effectiveValue": 20000
+        },
+        "staff_of_remembrance": {
+            "type": "item",
+            "content": "spectrum:staff_of_remembrance",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.006600638281721843,
+            "effectiveValue": 20000
+        },
+        "constructors_staff": {
+            "type": "item",
+            "content": "spectrum:constructors_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.006600638281721843,
+            "effectiveValue": 20000
+        },
+        "exchanging_staff": {
+            "type": "item",
+            "content": "spectrum:exchanging_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.006600638281721843,
+            "effectiveValue": 20000
+        },
+        "upgrade_efficiency2": {
+            "type": "item",
+            "content": "spectrum:upgrade_efficiency2",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "upgrade_yield": {
+            "type": "item",
+            "content": "spectrum:upgrade_yield",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "upgrade_yield2": {
+            "type": "item",
+            "content": "spectrum:upgrade_yield2",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "upgrade_experience": {
+            "type": "item",
+            "content": "spectrum:upgrade_experience",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "upgrade_experience2": {
+            "type": "item",
+            "content": "spectrum:upgrade_experience2",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "connection_node": {
+            "type": "item",
+            "content": "spectrum:connection_node",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "provider_node": {
+            "type": "item",
+            "content": "spectrum:provider_node",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "sender_node": {
+            "type": "item",
+            "content": "spectrum:sender_node",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "storage_node": {
+            "type": "item",
+            "content": "spectrum:storage_node",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "gather_node": {
+            "type": "item",
+            "content": "spectrum:gather_node",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "light_level_detector": {
+            "type": "item",
+            "content": "spectrum:light_level_detector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "weather_detector": {
+            "type": "item",
+            "content": "spectrum:weather_detector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "item_detector": {
+            "type": "item",
+            "content": "spectrum:item_detector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "player_detector": {
+            "type": "item",
+            "content": "spectrum:player_detector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "creature_detector": {
+            "type": "item",
+            "content": "spectrum:creature_detector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "redstone_timer": {
+            "type": "item",
+            "content": "spectrum:redstone_timer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "redstone_calculator": {
+            "type": "item",
+            "content": "spectrum:redstone_calculator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "redstone_transceiver": {
+            "type": "item",
+            "content": "spectrum:redstone_transceiver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "item_bowl_basalt": {
+            "type": "item",
+            "content": "spectrum:item_bowl_basalt",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "item_bowl_calcite": {
+            "type": "item",
+            "content": "spectrum:item_bowl_calcite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "item_roundel": {
+            "type": "item",
+            "content": "spectrum:item_roundel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "crystal_apothecary": {
+            "type": "item",
+            "content": "spectrum:crystal_apothecary",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "color_picker": {
+            "type": "item",
+            "content": "spectrum:color_picker",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0012376196778228455,
+            "effectiveValue": 3750
+        },
+        "upgrade_speed": {
+            "type": "item",
+            "content": "spectrum:upgrade_speed",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "upgrade_speed2": {
+            "type": "item",
+            "content": "spectrum:upgrade_speed2",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "upgrade_speed3": {
+            "type": "item",
+            "content": "spectrum:upgrade_speed3",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "upgrade_efficiency": {
+            "type": "item",
+            "content": "spectrum:upgrade_efficiency",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0008250797852152303,
+            "effectiveValue": 2500
+        },
+        "ender_hopper": {
+            "type": "item",
+            "content": "spectrum:ender_hopper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "ender_dropper": {
+            "type": "item",
+            "content": "spectrum:ender_dropper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "particle_spawner": {
+            "type": "item",
+            "content": "spectrum:particle_spawner",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "glistering_melon": {
+            "type": "item",
+            "content": "spectrum:glistering_melon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "lava_sponge": {
+            "type": "item",
+            "content": "spectrum:lava_sponge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "wet_lava_sponge": {
+            "type": "item",
+            "content": "spectrum:wet_lava_sponge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "ethereal_platform": {
+            "type": "item",
+            "content": "spectrum:ethereal_platform",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "universe_spyhole": {
+            "type": "item",
+            "content": "spectrum:universe_spyhole",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "present": {
+            "type": "item",
+            "content": "spectrum:present",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "titration_barrel": {
+            "type": "item",
+            "content": "spectrum:titration_barrel",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 3600,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "incandescent_amalgam": {
+            "type": "item",
+            "content": "spectrum:incandescent_amalgam",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 3600,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "bedrock_anvil": {
+            "type": "item",
+            "content": "spectrum:bedrock_anvil",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 3600,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "redstone_sand": {
+            "type": "item",
+            "content": "spectrum:redstone_sand",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 3600,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "ender_glass": {
+            "type": "item",
+            "content": "spectrum:ender_glass",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 4300,
+            "weightMult": 0.0035478430764254902,
+            "effectiveValue": 10750
+        },
+        "block_detector": {
+            "type": "item",
+            "content": "spectrum:block_detector",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 4300,
+            "weightMult": 0.0035478430764254902,
+            "effectiveValue": 10750
+        },
+        "block_placer": {
+            "type": "item",
+            "content": "spectrum:block_placer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 4300,
+            "weightMult": 0.0035478430764254902,
+            "effectiveValue": 10750
+        },
+        "block_breaker": {
+            "type": "item",
+            "content": "spectrum:block_breaker",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 4300,
+            "weightMult": 0.0035478430764254902,
+            "effectiveValue": 10750
+        },
+        "heartbound_chest": {
+            "type": "item",
+            "content": "spectrum:heartbound_chest",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.004125398926076151,
+            "effectiveValue": 12500
+        },
+        "compacting_chest": {
+            "type": "item",
+            "content": "spectrum:compacting_chest",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.004125398926076151,
+            "effectiveValue": 12500
+        },
+        "fabrication_chest": {
+            "type": "item",
+            "content": "spectrum:fabrication_chest",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.004125398926076151,
+            "effectiveValue": 12500
+        },
+        "black_hole_chest": {
+            "type": "item",
+            "content": "spectrum:black_hole_chest",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.004125398926076151,
+            "effectiveValue": 12500
+        },
+        "semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "tinted_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:tinted_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "radiant_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:radiant_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "topaz_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:topaz_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "amethyst_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:amethyst_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "citrine_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:citrine_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "onyx_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:onyx_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "moonstone_semi_permeable_glass": {
+            "type": "item",
+            "content": "spectrum:moonstone_semi_permeable_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00016501595704304607,
+            "effectiveValue": 500
+        },
+        "guardian_idol": {
+            "type": "item",
+            "content": "spectrum:guardian_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "goat_idol": {
+            "type": "item",
+            "content": "spectrum:goat_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "glow_squid_idol": {
+            "type": "item",
+            "content": "spectrum:glow_squid_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "ghast_idol": {
+            "type": "item",
+            "content": "spectrum:ghast_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "fox_idol": {
+            "type": "item",
+            "content": "spectrum:fox_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "fish_idol": {
+            "type": "item",
+            "content": "spectrum:fish_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "evoker_idol": {
+            "type": "item",
+            "content": "spectrum:evoker_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "endermite_idol": {
+            "type": "item",
+            "content": "spectrum:endermite_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "enderman_idol": {
+            "type": "item",
+            "content": "spectrum:enderman_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "horse_idol": {
+            "type": "item",
+            "content": "spectrum:horse_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "illusioner_idol": {
+            "type": "item",
+            "content": "spectrum:illusioner_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "ocelot_idol": {
+            "type": "item",
+            "content": "spectrum:ocelot_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "parrot_idol": {
+            "type": "item",
+            "content": "spectrum:parrot_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "phantom_idol": {
+            "type": "item",
+            "content": "spectrum:phantom_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pig_idol": {
+            "type": "item",
+            "content": "spectrum:pig_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "piglin_idol": {
+            "type": "item",
+            "content": "spectrum:piglin_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "polar_bear_idol": {
+            "type": "item",
+            "content": "spectrum:polar_bear_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pufferfish_idol": {
+            "type": "item",
+            "content": "spectrum:pufferfish_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "squid_idol": {
+            "type": "item",
+            "content": "spectrum:squid_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "spider_idol": {
+            "type": "item",
+            "content": "spectrum:spider_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "snow_golem_idol": {
+            "type": "item",
+            "content": "spectrum:snow_golem_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "slime_idol": {
+            "type": "item",
+            "content": "spectrum:slime_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "skeleton_idol": {
+            "type": "item",
+            "content": "spectrum:skeleton_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "silverfish_idol": {
+            "type": "item",
+            "content": "spectrum:silverfish_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "shulker_idol": {
+            "type": "item",
+            "content": "spectrum:shulker_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "sheep_idol": {
+            "type": "item",
+            "content": "spectrum:sheep_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "rabbit_idol": {
+            "type": "item",
+            "content": "spectrum:rabbit_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "axolotl_idol": {
+            "type": "item",
+            "content": "spectrum:axolotl_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "bat_idol": {
+            "type": "item",
+            "content": "spectrum:bat_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "bee_idol": {
+            "type": "item",
+            "content": "spectrum:bee_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "blaze_idol": {
+            "type": "item",
+            "content": "spectrum:blaze_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "cat_idol": {
+            "type": "item",
+            "content": "spectrum:cat_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "chicken_idol": {
+            "type": "item",
+            "content": "spectrum:chicken_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "cow_idol": {
+            "type": "item",
+            "content": "spectrum:cow_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0009900957422582764,
+            "effectiveValue": 3000
+        },
+        "creeper_idol": {
+            "type": "item",
+            "content": "spectrum:creeper_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "ender_dragon_idol": {
+            "type": "item",
+            "content": "spectrum:ender_dragon_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "stray_idol": {
+            "type": "item",
+            "content": "spectrum:stray_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "strider_idol": {
+            "type": "item",
+            "content": "spectrum:strider_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "turtle_idol": {
+            "type": "item",
+            "content": "spectrum:turtle_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "witch_idol": {
+            "type": "item",
+            "content": "spectrum:witch_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "wither_idol": {
+            "type": "item",
+            "content": "spectrum:wither_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.001980191484516553,
+            "effectiveValue": 6000
+        },
+        "wither_skeleton_idol": {
+            "type": "item",
+            "content": "spectrum:wither_skeleton_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "zombie_idol": {
+            "type": "item",
+            "content": "spectrum:zombie_idol",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 650,
+            "weightMult": 0.0012871244649357593,
+            "effectiveValue": 3900
+        },
+        "sugar_stick": {
+            "type": "item",
+            "content": "spectrum:sugar_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "topaz_sugar_stick": {
+            "type": "item",
+            "content": "spectrum:topaz_sugar_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "amethyst_sugar_stick": {
+            "type": "item",
+            "content": "spectrum:amethyst_sugar_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "citrine_sugar_stick": {
+            "type": "item",
+            "content": "spectrum:citrine_sugar_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "onyx_sugar_stick": {
+            "type": "item",
+            "content": "spectrum:onyx_sugar_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "moonstone_sugar_stick": {
+            "type": "item",
+            "content": "spectrum:moonstone_sugar_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "rock_candy": {
+            "type": "item",
+            "content": "spectrum:rock_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "topaz_rock_candy": {
+            "type": "item",
+            "content": "spectrum:topaz_rock_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "citrine_rock_candy": {
+            "type": "item",
+            "content": "spectrum:citrine_rock_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "amethyst_rock_candy": {
+            "type": "item",
+            "content": "spectrum:amethyst_rock_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "onyx_rock_candy": {
+            "type": "item",
+            "content": "spectrum:onyx_rock_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "moonstone_rock_candy": {
+            "type": "item",
+            "content": "spectrum:moonstone_rock_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "triple_meat_pot_pie": {
+            "type": "item",
+            "content": "spectrum:triple_meat_pot_pie",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "kimchi": {
+            "type": "item",
+            "content": "spectrum:kimchi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "clotted_cream": {
+            "type": "item",
+            "content": "spectrum:clotted_cream",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "fresh_chocolate": {
+            "type": "item",
+            "content": "spectrum:fresh_chocolate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0011881148907099317,
+            "effectiveValue": 3600
+        },
+        "bodacious_berry_bar": {
+            "type": "item",
+            "content": "spectrum:bodacious_berry_bar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "enchanted_golden_carrot": {
+            "type": "item",
+            "content": "spectrum:enchanted_golden_carrot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006336612750452969,
+            "effectiveValue": 19200
+        },
+        "jade_jelly": {
+            "type": "item",
+            "content": "spectrum:jade_jelly",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "jaramel": {
+            "type": "item",
+            "content": "spectrum:jaramel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "moonstruck_nectar": {
+            "type": "item",
+            "content": "spectrum:moonstruck_nectar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "glass_peach": {
+            "type": "item",
+            "content": "spectrum:glass_peach",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "fissure_plum": {
+            "type": "item",
+            "content": "spectrum:fissure_plum",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "nightdew_sprout": {
+            "type": "item",
+            "content": "spectrum:nightdew_sprout",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "nectardew_burgeon": {
+            "type": "item",
+            "content": "spectrum:nectardew_burgeon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "mermaids_popcorn": {
+            "type": "item",
+            "content": "spectrum:mermaids_popcorn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "le_fishe_au_chocolat": {
+            "type": "item",
+            "content": "spectrum:le_fishe_au_chocolat",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006336612750452969,
+            "effectiveValue": 19200
+        },
+        "lucky_roll": {
+            "type": "item",
+            "content": "spectrum:lucky_roll",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006336612750452969,
+            "effectiveValue": 19200
+        },
+        "myceylon": {
+            "type": "item",
+            "content": "spectrum:myceylon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "milky_resin": {
+            "type": "item",
+            "content": "spectrum:milky_resin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "scone": {
+            "type": "item",
+            "content": "spectrum:scone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "sugary_star_candy": {
+            "type": "item",
+            "content": "spectrum:sugary_star_candy",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "mellow_star_candy": {
+            "type": "item",
+            "content": "spectrum:mellow_star_candy",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "gleaming_star_candy": {
+            "type": "item",
+            "content": "spectrum:gleaming_star_candy",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "enchanted_star_candy": {
+            "type": "item",
+            "content": "spectrum:enchanted_star_candy",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "magnificent_star_candy": {
+            "type": "item",
+            "content": "spectrum:magnificent_star_candy",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "cheong": {
+            "type": "item",
+            "content": "spectrum:cheong",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "mermaids_jam": {
+            "type": "item",
+            "content": "spectrum:mermaids_jam",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "aloe_leaf": {
+            "type": "item",
+            "content": "spectrum:aloe_leaf",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "sawblade_holly_berry": {
+            "type": "item",
+            "content": "spectrum:sawblade_holly_berry",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "prickly_bayleaf": {
+            "type": "item",
+            "content": "spectrum:prickly_bayleaf",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "triple_meat_pot_stew": {
+            "type": "item",
+            "content": "spectrum:triple_meat_pot_stew",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "dragonbone_broth": {
+            "type": "item",
+            "content": "spectrum:dragonbone_broth",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "bagnun": {
+            "type": "item",
+            "content": "spectrum:bagnun",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "banyash": {
+            "type": "item",
+            "content": "spectrum:banyash",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "surstromming": {
+            "type": "item",
+            "content": "spectrum:surstromming",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "chauve_souris_au_vin": {
+            "type": "item",
+            "content": "spectrum:chauve_souris_au_vin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "hare_roast": {
+            "type": "item",
+            "content": "spectrum:hare_roast",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "crawfish_cocktail": {
+            "type": "item",
+            "content": "spectrum:crawfish_cocktail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0023762297814198634,
+            "effectiveValue": 7200
+        },
+        "crawfish": {
+            "type": "item",
+            "content": "spectrum:crawfish",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "fishcake": {
+            "type": "item",
+            "content": "spectrum:fishcake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "cooked_lizard_meat": {
+            "type": "item",
+            "content": "spectrum:cooked_lizard_meat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "amethyst_shard": {
+            "type": "item",
+            "content": "minecraft:amethyst_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "topaz_shard": {
+            "type": "item",
+            "content": "spectrum:topaz_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "moonstone_shard": {
+            "type": "item",
+            "content": "spectrum:moonstone_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "onyx_shard": {
+            "type": "item",
+            "content": "spectrum:onyx_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "citrine_shard": {
+            "type": "item",
+            "content": "spectrum:citrine_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "frostbite_essence": {
+            "type": "item",
+            "content": "spectrum:frostbite_essence",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "incandescent_essence": {
+            "type": "item",
+            "content": "spectrum:incandescent_essence",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "clover": {
+            "type": "item",
+            "content": "spectrum:clover",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "four_leaf_clover": {
+            "type": "item",
+            "content": "spectrum:four_leaf_clover",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "blood_orchid_petal": {
+            "type": "item",
+            "content": "spectrum:blood_orchid_petal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "quitoxic_reeds": {
+            "type": "item",
+            "content": "spectrum:quitoxic_reeds",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "amaranth_grains": {
+            "type": "item",
+            "content": "spectrum:amaranth_grains",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "stardust": {
+            "type": "item",
+            "content": "spectrum:stardust",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "star_fragment": {
+            "type": "item",
+            "content": "spectrum:star_fragment",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "shimmerstone_gem": {
+            "type": "item",
+            "content": "spectrum:shimmerstone_gem",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "stratine_fragments": {
+            "type": "item",
+            "content": "spectrum:stratine_fragments",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "stratine_gem": {
+            "type": "item",
+            "content": "spectrum:stratine_gem",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0007392714875528464,
+            "effectiveValue": 2240
+        },
+        "paltaeria_fragments": {
+            "type": "item",
+            "content": "spectrum:paltaeria_fragments",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "paltaeria_gem": {
+            "type": "item",
+            "content": "spectrum:paltaeria_gem",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0007392714875528464,
+            "effectiveValue": 2240
+        },
+        "raw_azurite": {
+            "type": "item",
+            "content": "spectrum:raw_azurite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0007392714875528464,
+            "effectiveValue": 2240
+        },
+        "raw_malachite": {
+            "type": "item",
+            "content": "spectrum:raw_malachite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0007392714875528464,
+            "effectiveValue": 2240
+        },
+        "raw_bloodstone": {
+            "type": "item",
+            "content": "spectrum:raw_bloodstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0007392714875528464,
+            "effectiveValue": 2240
+        },
+        "bismuth_crystal": {
+            "type": "item",
+            "content": "spectrum:bismuth_crystal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "cyan_pigment": {
+            "type": "item",
+            "content": "spectrum:cyan_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "purple_pigment": {
+            "type": "item",
+            "content": "spectrum:purple_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "blue_pigment": {
+            "type": "item",
+            "content": "spectrum:blue_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "brown_pigment": {
+            "type": "item",
+            "content": "spectrum:brown_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "green_pigment": {
+            "type": "item",
+            "content": "spectrum:green_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "red_pigment": {
+            "type": "item",
+            "content": "spectrum:red_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "black_pigment": {
+            "type": "item",
+            "content": "spectrum:black_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "vegetal": {
+            "type": "item",
+            "content": "spectrum:vegetal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "neolith": {
+            "type": "item",
+            "content": "spectrum:neolith",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "bedrock_dust": {
+            "type": "item",
+            "content": "spectrum:bedrock_dust",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "midnight_aberration": {
+            "type": "item",
+            "content": "spectrum:midnight_aberration",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "jade_vine_petals": {
+            "type": "item",
+            "content": "spectrum:jade_vine_petals",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "nephrite_blossom_bulb": {
+            "type": "item",
+            "content": "spectrum:nephrite_blossom_bulb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "jadeite_lotus_bulb": {
+            "type": "item",
+            "content": "spectrum:jadeite_lotus_bulb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "jadeite_petals": {
+            "type": "item",
+            "content": "spectrum:jadeite_petals",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0005544536156646347,
+            "effectiveValue": 1680
+        },
+        "mermaids_gem": {
+            "type": "item",
+            "content": "spectrum:mermaids_gem",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "storm_stone": {
+            "type": "item",
+            "content": "spectrum:storm_stone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "doombloom_seed": {
+            "type": "item",
+            "content": "spectrum:doombloom_seed",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0014785429751056928,
+            "effectiveValue": 4480
+        },
+        "resplendent_feather": {
+            "type": "item",
+            "content": "spectrum:resplendent_feather",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0014785429751056928,
+            "effectiveValue": 4480
+        },
+        "dragonbone_chunk": {
+            "type": "item",
+            "content": "spectrum:dragonbone_chunk",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0014785429751056928,
+            "effectiveValue": 4480
+        },
+        "downstone_fragments": {
+            "type": "item",
+            "content": "spectrum:downstone_fragments",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "resonance_shard": {
+            "type": "item",
+            "content": "spectrum:resonance_shard",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0014785429751056928,
+            "effectiveValue": 4480
+        },
+        "white_pigment": {
+            "type": "item",
+            "content": "spectrum:white_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "orange_pigment": {
+            "type": "item",
+            "content": "spectrum:orange_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "magenta_pigment": {
+            "type": "item",
+            "content": "spectrum:magenta_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "light_blue_pigment": {
+            "type": "item",
+            "content": "spectrum:light_blue_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "yellow_pigment": {
+            "type": "item",
+            "content": "spectrum:yellow_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "lime_pigment": {
+            "type": "item",
+            "content": "spectrum:lime_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "pink_pigment": {
+            "type": "item",
+            "content": "spectrum:pink_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "gray_pigment": {
+            "type": "item",
+            "content": "spectrum:gray_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "light_gray_pigment": {
+            "type": "item",
+            "content": "spectrum:light_gray_pigment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0001848178718882116,
+            "effectiveValue": 560
+        },
+        "pure_quartz": {
+            "type": "item",
+            "content": "spectrum:pure_quartz",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_glowstone": {
+            "type": "item",
+            "content": "spectrum:pure_glowstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_netherite_scrap": {
+            "type": "item",
+            "content": "spectrum:pure_netherite_scrap",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_echo": {
+            "type": "item",
+            "content": "spectrum:pure_echo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "pure_malachite": {
+            "type": "item",
+            "content": "spectrum:pure_malachite",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "pure_bloodstone": {
+            "type": "item",
+            "content": "spectrum:pure_bloodstone",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "pure_azurite": {
+            "type": "item",
+            "content": "spectrum:pure_azurite",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "pure_certus_quartz": {
+            "type": "item",
+            "content": "spectrum:pure_certus_quartz",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_fluix": {
+            "type": "item",
+            "content": "spectrum:pure_fluix",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_zinc": {
+            "type": "item",
+            "content": "spectrum:pure_zinc",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "ash_flakes": {
+            "type": "item",
+            "content": "spectrum:ash_flakes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0003696357437764232,
+            "effectiveValue": 1120
+        },
+        "pyrite_ripper": {
+            "type": "item",
+            "content": "spectrum:pyrite_ripper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.000924089359441058,
+            "effectiveValue": 2800
+        },
+        "pure_coal": {
+            "type": "item",
+            "content": "spectrum:pure_coal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_copper": {
+            "type": "item",
+            "content": "spectrum:pure_copper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_iron": {
+            "type": "item",
+            "content": "spectrum:pure_iron",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_gold": {
+            "type": "item",
+            "content": "spectrum:pure_gold",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_lapis": {
+            "type": "item",
+            "content": "spectrum:pure_lapis",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_redstone": {
+            "type": "item",
+            "content": "spectrum:pure_redstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_diamond": {
+            "type": "item",
+            "content": "spectrum:pure_diamond",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_emerald": {
+            "type": "item",
+            "content": "spectrum:pure_emerald",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "pure_prismarine": {
+            "type": "item",
+            "content": "spectrum:pure_prismarine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0015841531876132423,
+            "effectiveValue": 4800
+        },
+        "longing_chimera": {
+            "type": "item",
+            "content": "spectrum:longing_chimera",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "weeping_gala_lantern": {
+            "type": "item",
+            "content": "spectrum:weeping_gala_lantern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "small_red_dragonjag": {
+            "type": "item",
+            "content": "spectrum:small_red_dragonjag",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "small_yellow_dragonjag": {
+            "type": "item",
+            "content": "spectrum:small_yellow_dragonjag",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "small_pink_dragonjag": {
+            "type": "item",
+            "content": "spectrum:small_pink_dragonjag",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "small_purple_dragonjag": {
+            "type": "item",
+            "content": "spectrum:small_purple_dragonjag",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "small_black_dragonjag": {
+            "type": "item",
+            "content": "spectrum:small_black_dragonjag",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "bristle_sprouts": {
+            "type": "item",
+            "content": "spectrum:bristle_sprouts",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "snapping_ivy": {
+            "type": "item",
+            "content": "spectrum:snapping_ivy",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "sweet_pea": {
+            "type": "item",
+            "content": "spectrum:sweet_pea",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "apricotti": {
+            "type": "item",
+            "content": "spectrum:apricotti",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "humming_bell": {
+            "type": "item",
+            "content": "spectrum:humming_bell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "moss_ball": {
+            "type": "item",
+            "content": "spectrum:moss_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "giant_moss_ball": {
+            "type": "item",
+            "content": "spectrum:giant_moss_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "amethyst_basalt_light": {
+            "type": "item",
+            "content": "spectrum:amethyst_basalt_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "citrine_basalt_light": {
+            "type": "item",
+            "content": "spectrum:citrine_basalt_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "onyx_basalt_light": {
+            "type": "item",
+            "content": "spectrum:onyx_basalt_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "moonstone_basalt_light": {
+            "type": "item",
+            "content": "spectrum:moonstone_basalt_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "basalt_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:basalt_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "calcite_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:calcite_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "stone_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:stone_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "granite_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:granite_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "diorite_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:diorite_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "andesite_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:andesite_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "deepslate_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:deepslate_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "blackslag_shimmerstone_light": {
+            "type": "item",
+            "content": "spectrum:blackslag_shimmerstone_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "topaz_basalt_light": {
+            "type": "item",
+            "content": "spectrum:topaz_basalt_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "topaz_chime": {
+            "type": "item",
+            "content": "spectrum:topaz_chime",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "amethyst_chime": {
+            "type": "item",
+            "content": "spectrum:amethyst_chime",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "citrine_chime": {
+            "type": "item",
+            "content": "spectrum:citrine_chime",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "onyx_chime": {
+            "type": "item",
+            "content": "spectrum:onyx_chime",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "moonstone_chime": {
+            "type": "item",
+            "content": "spectrum:moonstone_chime",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00031683063752264843,
+            "effectiveValue": 960
+        },
+        "amethyst_pylon": {
+            "type": "item",
+            "content": "spectrum:amethyst_pylon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "topaz_pylon": {
+            "type": "item",
+            "content": "spectrum:topaz_pylon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "citrine_pylon": {
+            "type": "item",
+            "content": "spectrum:citrine_pylon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "onyx_pylon": {
+            "type": "item",
+            "content": "spectrum:onyx_pylon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "moonstone_pylon": {
+            "type": "item",
+            "content": "spectrum:moonstone_pylon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "white_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:white_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "orange_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:orange_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "magenta_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:magenta_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "light_blue_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:light_blue_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "yellow_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:yellow_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "lime_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:lime_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "pink_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:pink_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "gray_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:gray_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "light_gray_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:light_gray_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "cyan_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:cyan_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "purple_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:purple_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "blue_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:blue_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "brown_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:brown_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "green_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:green_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "red_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:red_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "black_spore_blossom": {
+            "type": "item",
+            "content": "spectrum:black_spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00047524595628397264,
+            "effectiveValue": 1440
+        },
+        "white_log": {
+            "type": "item",
+            "content": "spectrum:white_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "orange_log": {
+            "type": "item",
+            "content": "spectrum:orange_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "magenta_log": {
+            "type": "item",
+            "content": "spectrum:magenta_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "light_blue_log": {
+            "type": "item",
+            "content": "spectrum:light_blue_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "yellow_log": {
+            "type": "item",
+            "content": "spectrum:yellow_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "lime_log": {
+            "type": "item",
+            "content": "spectrum:lime_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "pink_log": {
+            "type": "item",
+            "content": "spectrum:pink_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "gray_log": {
+            "type": "item",
+            "content": "spectrum:gray_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "light_gray_log": {
+            "type": "item",
+            "content": "spectrum:light_gray_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "cyan_log": {
+            "type": "item",
+            "content": "spectrum:cyan_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "purple_log": {
+            "type": "item",
+            "content": "spectrum:purple_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "blue_log": {
+            "type": "item",
+            "content": "spectrum:blue_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "brown_log": {
+            "type": "item",
+            "content": "spectrum:brown_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "green_log": {
+            "type": "item",
+            "content": "spectrum:green_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "red_log": {
+            "type": "item",
+            "content": "spectrum:red_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "black_log": {
+            "type": "item",
+            "content": "spectrum:black_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0006336612750452969,
+            "effectiveValue": 1920
+        },
+        "resonant_lily": {
+            "type": "item",
+            "content": "spectrum:resonant_lily",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007920765938066211,
+            "effectiveValue": 2400
+        },
+        "axolotl_gold_head": {
+            "type": "item",
+            "content": "spectrum:axolotl_gold_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "axolotl_leucistic_head": {
+            "type": "item",
+            "content": "spectrum:axolotl_leucistic_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "axolotl_wild_head": {
+            "type": "item",
+            "content": "spectrum:axolotl_wild_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "bat_head": {
+            "type": "item",
+            "content": "spectrum:bat_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "bee_head": {
+            "type": "item",
+            "content": "spectrum:bee_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "blaze_head": {
+            "type": "item",
+            "content": "spectrum:blaze_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "camel_head": {
+            "type": "item",
+            "content": "spectrum:camel_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "cat_head": {
+            "type": "item",
+            "content": "spectrum:cat_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "cave_spider_head": {
+            "type": "item",
+            "content": "spectrum:cave_spider_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "chicken_head": {
+            "type": "item",
+            "content": "spectrum:chicken_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "cod_head": {
+            "type": "item",
+            "content": "spectrum:cod_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "cow_head": {
+            "type": "item",
+            "content": "spectrum:cow_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "dolphin_head": {
+            "type": "item",
+            "content": "spectrum:dolphin_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "donkey_head": {
+            "type": "item",
+            "content": "spectrum:donkey_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "drowned_head": {
+            "type": "item",
+            "content": "spectrum:drowned_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "elder_guardian_head": {
+            "type": "item",
+            "content": "spectrum:elder_guardian_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12000,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "enderman_head": {
+            "type": "item",
+            "content": "supplementaries:enderman_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "endermite_head": {
+            "type": "item",
+            "content": "spectrum:endermite_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "evoker_head": {
+            "type": "item",
+            "content": "spectrum:evoker_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "fox_arctic_head": {
+            "type": "item",
+            "content": "spectrum:fox_arctic_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "frog_cold_head": {
+            "type": "item",
+            "content": "spectrum:frog_cold_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "frog_temperate_head": {
+            "type": "item",
+            "content": "spectrum:frog_temperate_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "frog_warm_head": {
+            "type": "item",
+            "content": "spectrum:frog_warm_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "ghast_head": {
+            "type": "item",
+            "content": "spectrum:ghast_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "glow_squid_head": {
+            "type": "item",
+            "content": "spectrum:glow_squid_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "player_head": {
+            "type": "item",
+            "content": "minecraft:player_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.006600638281721843,
+            "effectiveValue": 20000
+        },
+        "zombie_head": {
+            "type": "item",
+            "content": "minecraft:zombie_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "creeper_head": {
+            "type": "item",
+            "content": "minecraft:creeper_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "spider_head": {
+            "type": "item",
+            "content": "spectrum:spider_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "piglin_head": {
+            "type": "item",
+            "content": "minecraft:piglin_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "allay_head": {
+            "type": "item",
+            "content": "spectrum:allay_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "axolotl_blue_head": {
+            "type": "item",
+            "content": "spectrum:axolotl_blue_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "axolotl_cyan_head": {
+            "type": "item",
+            "content": "spectrum:axolotl_cyan_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "mooshroom_brown_head": {
+            "type": "item",
+            "content": "spectrum:mooshroom_brown_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "mooshroom_red_head": {
+            "type": "item",
+            "content": "spectrum:mooshroom_red_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "mule_head": {
+            "type": "item",
+            "content": "spectrum:mule_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "ocelot_head": {
+            "type": "item",
+            "content": "spectrum:ocelot_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "panda_head": {
+            "type": "item",
+            "content": "spectrum:panda_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "parrot_blue_head": {
+            "type": "item",
+            "content": "spectrum:parrot_blue_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "parrot_gray_head": {
+            "type": "item",
+            "content": "spectrum:parrot_gray_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "parrot_green_head": {
+            "type": "item",
+            "content": "spectrum:parrot_green_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "phantom_head": {
+            "type": "item",
+            "content": "spectrum:phantom_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "pig_head": {
+            "type": "item",
+            "content": "spectrum:pig_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "pillager_head": {
+            "type": "item",
+            "content": "spectrum:pillager_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "polar_bear_head": {
+            "type": "item",
+            "content": "spectrum:polar_bear_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "pufferfish_head": {
+            "type": "item",
+            "content": "spectrum:pufferfish_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "rabbit_head": {
+            "type": "item",
+            "content": "spectrum:rabbit_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "ravager_head": {
+            "type": "item",
+            "content": "spectrum:ravager_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "salmon_head": {
+            "type": "item",
+            "content": "spectrum:salmon_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "sheep_head": {
+            "type": "item",
+            "content": "spectrum:sheep_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "shulker_head": {
+            "type": "item",
+            "content": "spectrum:shulker_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "goat_head": {
+            "type": "item",
+            "content": "spectrum:goat_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "guardian_head": {
+            "type": "item",
+            "content": "spectrum:guardian_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "hoglin_head": {
+            "type": "item",
+            "content": "spectrum:hoglin_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "horse_head": {
+            "type": "item",
+            "content": "spectrum:horse_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "husk_head": {
+            "type": "item",
+            "content": "spectrum:husk_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "illusioner_head": {
+            "type": "item",
+            "content": "spectrum:illusioner_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "iron_golem_head": {
+            "type": "item",
+            "content": "spectrum:iron_golem_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "llama_head": {
+            "type": "item",
+            "content": "spectrum:llama_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "magma_cube_head": {
+            "type": "item",
+            "content": "spectrum:magma_cube_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "silverfish_head": {
+            "type": "item",
+            "content": "spectrum:silverfish_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "skeleton_horse_head": {
+            "type": "item",
+            "content": "spectrum:skeleton_horse_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12000,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "shulker_magenta_head": {
+            "type": "item",
+            "content": "spectrum:shulker_magenta_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_orange_head": {
+            "type": "item",
+            "content": "spectrum:shulker_orange_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_pink_head": {
+            "type": "item",
+            "content": "spectrum:shulker_pink_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_purple_head": {
+            "type": "item",
+            "content": "spectrum:shulker_purple_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_red_head": {
+            "type": "item",
+            "content": "spectrum:shulker_red_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_white_head": {
+            "type": "item",
+            "content": "spectrum:shulker_white_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_yellow_head": {
+            "type": "item",
+            "content": "spectrum:shulker_yellow_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_black_head": {
+            "type": "item",
+            "content": "spectrum:shulker_black_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_blue_head": {
+            "type": "item",
+            "content": "spectrum:shulker_blue_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_brown_head": {
+            "type": "item",
+            "content": "spectrum:shulker_brown_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_cyan_head": {
+            "type": "item",
+            "content": "spectrum:shulker_cyan_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_gray_head": {
+            "type": "item",
+            "content": "spectrum:shulker_gray_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_green_head": {
+            "type": "item",
+            "content": "spectrum:shulker_green_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_light_blue_head": {
+            "type": "item",
+            "content": "spectrum:shulker_light_blue_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_light_gray_head": {
+            "type": "item",
+            "content": "spectrum:shulker_light_gray_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "shulker_lime_head": {
+            "type": "item",
+            "content": "spectrum:shulker_lime_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "turtle_head": {
+            "type": "item",
+            "content": "spectrum:turtle_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "vex_head": {
+            "type": "item",
+            "content": "spectrum:vex_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "villager_head": {
+            "type": "item",
+            "content": "spectrum:villager_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "vindicator_head": {
+            "type": "item",
+            "content": "spectrum:vindicator_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "wandering_trader_head": {
+            "type": "item",
+            "content": "spectrum:wandering_trader_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "warden_head": {
+            "type": "item",
+            "content": "spectrum:warden_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "witch_head": {
+            "type": "item",
+            "content": "spectrum:witch_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "wither_head": {
+            "type": "item",
+            "content": "spectrum:wither_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "wolf_head": {
+            "type": "item",
+            "content": "spectrum:wolf_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "egg_laying_wooly_pig_head": {
+            "type": "item",
+            "content": "spectrum:egg_laying_wooly_pig_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "piglin_brute_head": {
+            "type": "item",
+            "content": "spectrum:piglin_brute_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12000,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "bogged_head": {
+            "type": "item",
+            "content": "spectrum:bogged_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "breeze_head": {
+            "type": "item",
+            "content": "spectrum:breeze_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "armadillo_head": {
+            "type": "item",
+            "content": "spectrum:armadillo_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "zombified_piglin_head": {
+            "type": "item",
+            "content": "spectrum:zombified_piglin_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12000,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "zombie_villager_head": {
+            "type": "item",
+            "content": "spectrum:zombie_villager_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "zombie_horse_head": {
+            "type": "item",
+            "content": "spectrum:zombie_horse_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12000,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "zoglin_head": {
+            "type": "item",
+            "content": "spectrum:zoglin_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "kindling_head": {
+            "type": "item",
+            "content": "spectrum:kindling_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "lizard_black_head": {
+            "type": "item",
+            "content": "spectrum:lizard_black_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_blue_head": {
+            "type": "item",
+            "content": "spectrum:lizard_blue_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_brown_head": {
+            "type": "item",
+            "content": "spectrum:lizard_brown_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_cyan_head": {
+            "type": "item",
+            "content": "spectrum:lizard_cyan_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_gray_head": {
+            "type": "item",
+            "content": "spectrum:lizard_gray_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_green_head": {
+            "type": "item",
+            "content": "spectrum:lizard_green_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_light_blue_head": {
+            "type": "item",
+            "content": "spectrum:lizard_light_blue_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_light_gray_head": {
+            "type": "item",
+            "content": "spectrum:lizard_light_gray_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "slime_head": {
+            "type": "item",
+            "content": "spectrum:slime_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "sniffer_head": {
+            "type": "item",
+            "content": "spectrum:sniffer_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "snow_golem_head": {
+            "type": "item",
+            "content": "spectrum:snow_golem_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "squid_head": {
+            "type": "item",
+            "content": "spectrum:squid_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "stray_head": {
+            "type": "item",
+            "content": "spectrum:stray_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "strider_head": {
+            "type": "item",
+            "content": "spectrum:strider_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7000,
+            "weightMult": 0.002310223398602645,
+            "effectiveValue": 7000
+        },
+        "tadpole_head": {
+            "type": "item",
+            "content": "spectrum:tadpole_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "tropical_fish_head": {
+            "type": "item",
+            "content": "spectrum:tropical_fish_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0016501595704304607,
+            "effectiveValue": 5000
+        },
+        "lizard_lime_head": {
+            "type": "item",
+            "content": "spectrum:lizard_lime_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_magenta_head": {
+            "type": "item",
+            "content": "spectrum:lizard_magenta_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_orange_head": {
+            "type": "item",
+            "content": "spectrum:lizard_orange_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_pink_head": {
+            "type": "item",
+            "content": "spectrum:lizard_pink_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_purple_head": {
+            "type": "item",
+            "content": "spectrum:lizard_purple_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_red_head": {
+            "type": "item",
+            "content": "spectrum:lizard_red_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_white_head": {
+            "type": "item",
+            "content": "spectrum:lizard_white_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "lizard_yellow_head": {
+            "type": "item",
+            "content": "spectrum:lizard_yellow_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 18000,
+            "weightMult": 0.0059405744535496584,
+            "effectiveValue": 18000
+        },
+        "splinterspawn_head": {
+            "type": "item",
+            "content": "spectrum:splinterspawn_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.004950478711291382,
+            "effectiveValue": 15000
+        },
+        "preservation_turret_head": {
+            "type": "item",
+            "content": "spectrum:preservation_turret_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12000,
+            "weightMult": 0.003960382969033106,
+            "effectiveValue": 12000
+        },
+        "marrow_head": {
+            "type": "item",
+            "content": "spectrum:marrow_head",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9000,
+            "weightMult": 0.0029702872267748292,
+            "effectiveValue": 9000
+        },
+        "azure_seastone_mural_harvest": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_harvest",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00039603829690331056,
+            "effectiveValue": 1200
+        },
+        "azure_seastone_mural_wisdom": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_wisdom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00039603829690331056,
+            "effectiveValue": 1200
+        },
+        "azure_seastone_mural_smithing": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_smithing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00039603829690331056,
+            "effectiveValue": 1200
+        },
+        "leftdoorpaper": {
+            "type": "item",
+            "content": "flavor_immersed_daily:leftdoorpaper",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 9.900957422582764e-05,
+            "effectiveValue": 300
+        },
+        "rightdoorpaper": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rightdoorpaper",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 9.900957422582764e-05,
+            "effectiveValue": 300
+        },
+        "canvas_screen_1": {
+            "type": "item",
+            "content": "flavor_immersed_daily:canvas_screen_1",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 9.900957422582764e-05,
+            "effectiveValue": 300
+        },
+        "ysbb_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:ysbb_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 80,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "tartaric_acid_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:tartaric_acid_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 80,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "cr019_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:cr019_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 80,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "unknown_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:unknown_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 80,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "master_marisa_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:master_marisa_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 80,
+            "weightMult": 0.00015841531876132421,
+            "effectiveValue": 480
+        },
+        "son_of_man_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:son_of_man_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "david_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:david_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "girl_with_pearl_earring_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:girl_with_pearl_earring_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "starry_night_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:starry_night_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "van_gogh_self_portrait_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:van_gogh_self_portrait_painting",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "father_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:father_painting",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "great_wave_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:great_wave_painting",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "mona_lisa_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:mona_lisa_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "mondrian_painting": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:mondrian_painting",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "azure_seastone_mural_empty": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_empty",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 120,
+            "weightMult": 0.00023762297814198632,
+            "effectiveValue": 720
+        },
+        "azure_seastone_mural_urchinkin": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_urchinkin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "azure_seastone_mural_cindaria": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_cindaria",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "azure_seastone_mural_hippocamtus": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_hippocamtus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "azure_seastone_mural_clawdian": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_clawdian",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0002970287226774829,
+            "effectiveValue": 900
+        },
+        "azure_seastone_mural_thunder": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_thunder",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00039603829690331056,
+            "effectiveValue": 1200
+        },
+        "azure_seastone_mural_sea": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_sea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00039603829690331056,
+            "effectiveValue": 1200
+        },
+        "azure_seastone_mural_underworld": {
+            "type": "item",
+            "content": "cataclysm:azure_seastone_mural_underworld",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.00039603829690331056,
+            "effectiveValue": 1200
+        }
+    },
+    "requires": [
+        "cataclysm",
+        "flavor_immersed_daily",
+        "kaleidoscope_tavern",
+        "minecraft",
+        "spectrum",
+        "supplementaries"
+    ]
+}

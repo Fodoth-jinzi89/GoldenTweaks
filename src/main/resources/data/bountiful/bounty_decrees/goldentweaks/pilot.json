@@ -1,0 +1,8 @@
+{
+    "objectives": [
+        "pilot_objs"
+    ],
+    "rewards": [
+        "golden_all_rews"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "musician_sell"
+    ],
+    "linkedProfessions": []
+}

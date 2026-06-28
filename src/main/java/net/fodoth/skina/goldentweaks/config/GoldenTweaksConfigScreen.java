@@ -108,21 +108,6 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.feature.lost_maid_drop_chance",
                     LOST_MAID_DROP_CHANCE, 0.05D, 0.0D, 1.0D);
 
-            ConfigScreenHelper.addBool(feature, eb,
-                    "config.goldentweaks.feature.flavor_auto_pulse",
-                    FLAVOR_AUTO_PULSE, true);
-
-            ConfigScreenHelper.addInt(feature, eb,
-                    "config.goldentweaks.feature.flavor_auto_pulse_tick",
-                    FLAVOR_AUTO_PULSE_TICK, 5, 1, Integer.MAX_VALUE);
-
-            ConfigScreenHelper.addBool(feature, eb,
-                    "config.goldentweaks.feature.flavor_auto_continuous",
-                    FLAVOR_AUTO_CONTINUOUS, true);
-
-            ConfigScreenHelper.addInt(feature, eb,
-                    "config.goldentweaks.feature.flavor_auto_continuous_tick",
-                    FLAVOR_AUTO_CONTINUOUS_TICK, 5, 1, Integer.MAX_VALUE);
 
             // =========================================================
             // Building

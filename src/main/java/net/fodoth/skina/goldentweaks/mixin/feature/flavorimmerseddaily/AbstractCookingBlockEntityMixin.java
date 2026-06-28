@@ -2,13 +2,21 @@ package net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily;
 
 import com.fidtest.block.entity.AbstractCookingBlockEntity;
 import com.fidtest.recipe.ApplianceType;
+import com.fidtest.recipe.CookingRecipe;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractCookingBlockEntity.class)
@@ -16,6 +24,56 @@ public abstract class AbstractCookingBlockEntityMixin {
 
     @Shadow
     public abstract ApplianceType getApplianceType();
+
+    @Shadow
+    private int cookingProgress;
+
+    @Shadow
+    private int cookingTotalTime;
+
+    @Shadow
+    protected abstract @Nullable RecipeHolder<CookingRecipe> findMatchingRecipe();
+
+    @Unique
+    private ResourceLocation goldenTweaks$lastRecipe;
+
+    @Inject(
+            method = "serverTick",
+            at = @At("HEAD")
+    )
+    private static void goldenTweaks$fixRecipeTime(
+            Level level, BlockPos pos, BlockState state, AbstractCookingBlockEntity be, CallbackInfo ci
+    ) {
+        AbstractCookingBlockEntityMixin self =
+                (AbstractCookingBlockEntityMixin)(Object)be;
+
+        if (self == null) {
+            return;
+        }
+
+        RecipeHolder<CookingRecipe> recipe = self.findMatchingRecipe();
+
+
+        if (recipe == null) {
+            self.goldenTweaks$lastRecipe = null;
+            return;
+        }
+
+
+
+        ResourceLocation recipeId = recipe.id();
+
+        if (!recipeId.equals(self.goldenTweaks$lastRecipe)) {
+            self.goldenTweaks$lastRecipe = recipeId;
+
+            self.cookingProgress = 0;
+            self.cookingTotalTime = recipe.value().getCookingTime();
+        }
+
+        if (self.cookingTotalTime <= 0) {
+            self.cookingTotalTime = recipe.value().getCookingTime();
+        }
+    }
 
     // =========================================================
     // DOWN：只允许输出 + 容器输出

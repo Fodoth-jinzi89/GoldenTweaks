@@ -52,9 +52,9 @@ public class GoldenTweaks {
         }
 
         if (ModList.get().isLoaded("apotheosis_things")) {
-            LOGGER.info("Detected apotheosis_things, registering Registrate");
+            LOGGER.info("Detected apotheosis_things, registering compatibility content");
 
-            modEventBus.register(SalvageCharmEvent.class);
+            NeoForge.EVENT_BUS.register(SalvageCharmEvent.class);
         }
 
 

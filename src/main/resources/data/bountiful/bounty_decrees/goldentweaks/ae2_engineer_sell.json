@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "ae2_engineer_sell"
+    ],
+    "linkedProfessions": [
+        "ae2_engineer"
+    ]
+}

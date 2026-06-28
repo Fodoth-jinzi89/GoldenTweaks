@@ -1,0 +1,36 @@
+{
+  "type": "extendedcrafting:combination",
+  "power_cost": 1000000,
+  "input": {
+    "item": "spectrum:spectral_shard"
+  },
+  "ingredients": [
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "traveloptics:void_spellweave_ingot"
+    },
+    {
+      "item": "mekanism_extras:alloy_spectrum"
+    },
+    {
+      "item": "traveloptics:abyssal_spellweave_ingot"
+    },
+    {
+      "item": "traveloptics:verdant_spellweave_ingot"
+    },
+    {
+      "item": "ancientreforging:ancient_material"
+    },
+    {
+      "item": "traveloptics:pyro_spellweave_ingot"
+    },
+    {
+      "item": "neoecoae:energized_superconductive_ingot"
+    }
+  ],
+  "result": {
+    "id": "extendedcrafting:the_ultimate_ingot"
+  }
+}

@@ -33,13 +33,6 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.DoubleValue LOST_MAID_DROP_CHANCE;
 
-    public static final ModConfigSpec.BooleanValue FLAVOR_AUTO_PULSE;
-
-    public static final ModConfigSpec.IntValue FLAVOR_AUTO_PULSE_TICK;
-
-    public static final ModConfigSpec.BooleanValue FLAVOR_AUTO_CONTINUOUS;
-
-    public static final ModConfigSpec.IntValue FLAVOR_AUTO_CONTINUOUS_TICK;
 
     // =========================
     // balance 系统
@@ -131,25 +124,6 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("feature.lost_maid_drop_chance"))
                 .defineInRange("lostMaidDropChance", 0.05D, 0.0D, 1.0D);
 
-        FLAVOR_AUTO_PULSE = builder
-                .translation(key("feature.flavor_auto_pulse"))
-                .comment(comment("feature.flavor_auto_pulse"))
-                .define("flavorAutoPulse", true);
-
-        FLAVOR_AUTO_PULSE_TICK = builder
-                .translation(key("feature.flavor_auto_pulse_tick"))
-                .comment(comment("feature.flavor_auto_pulse_tick"))
-                .defineInRange("flavorAutoPulseTick", 5, 1, Integer.MAX_VALUE);
-
-        FLAVOR_AUTO_CONTINUOUS = builder
-                .translation(key("feature.flavor_auto_continuous"))
-                .comment(comment("feature.flavor_auto_continuous"))
-                .define("flavorAutoContinuous", true);
-
-        FLAVOR_AUTO_CONTINUOUS_TICK = builder
-                .translation(key("feature.flavor_auto_continuous_tick"))
-                .comment(comment("feature.flavor_auto_continuous_tick"))
-                .defineInRange("flavorAutoContinuousTick", 5, 1, Integer.MAX_VALUE);
 
         builder.pop();
 

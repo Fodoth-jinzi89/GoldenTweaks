@@ -1,0 +1,721 @@
+{
+    "content": {
+        "bristle_mead": {
+            "type": "item",
+            "content": "spectrum:bristle_mead",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "hot_chocolate": {
+            "type": "item",
+            "content": "spectrum:hot_chocolate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "karak_chai": {
+            "type": "item",
+            "content": "spectrum:karak_chai",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "restoration_tea": {
+            "type": "item",
+            "content": "spectrum:restoration_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 0.004891570194032285,
+            "effectiveValue": 1500
+        },
+        "glistering_jelly_tea": {
+            "type": "item",
+            "content": "spectrum:glistering_jelly_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 0.004891570194032285,
+            "effectiveValue": 1500
+        },
+        "azalea_tea": {
+            "type": "item",
+            "content": "spectrum:azalea_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "cheong": {
+            "type": "item",
+            "content": "spectrum:cheong",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "mermaids_jam": {
+            "type": "item",
+            "content": "spectrum:mermaids_jam",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "demon_tea": {
+            "type": "item",
+            "content": "spectrum:demon_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "crawfish_cocktail": {
+            "type": "item",
+            "content": "spectrum:crawfish_cocktail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "faded_koi": {
+            "type": "item",
+            "content": "spectrum:faded_koi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 0.004891570194032285,
+            "effectiveValue": 1500
+        },
+        "golden_bristle_tea": {
+            "type": "item",
+            "content": "spectrum:golden_bristle_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "junket": {
+            "type": "item",
+            "content": "spectrum:junket",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "mellow_shallot_soup": {
+            "type": "item",
+            "content": "spectrum:mellow_shallot_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 0.004891570194032285,
+            "effectiveValue": 1500
+        },
+        "slushslide": {
+            "type": "item",
+            "content": "spectrum:slushslide",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 0.004891570194032285,
+            "effectiveValue": 1500
+        },
+        "morchella": {
+            "type": "item",
+            "content": "spectrum:morchella",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "nectered_viognier": {
+            "type": "item",
+            "content": "spectrum:nectered_viognier",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "freigeist": {
+            "type": "item",
+            "content": "spectrum:freigeist",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.00978314038806457,
+            "effectiveValue": 3000
+        },
+        "reprise": {
+            "type": "item",
+            "content": "spectrum:reprise",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.006522093592043046,
+            "effectiveValue": 2000
+        },
+        "suspicious_brew": {
+            "type": "item",
+            "content": "spectrum:suspicious_brew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "jade_wine": {
+            "type": "item",
+            "content": "spectrum:jade_wine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.00978314038806457,
+            "effectiveValue": 3000
+        },
+        "chrysocolla": {
+            "type": "item",
+            "content": "spectrum:chrysocolla",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.012228925485080712,
+            "effectiveValue": 3750
+        },
+        "aqua_regia": {
+            "type": "item",
+            "content": "spectrum:aqua_regia",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.008152616990053808,
+            "effectiveValue": 2500
+        },
+        "evernectar": {
+            "type": "item",
+            "content": "spectrum:evernectar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.016305233980107615,
+            "effectiveValue": 5000
+        },
+        "molotov": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:molotov",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "watermelon_juice": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:watermelon_juice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "vinegar": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:vinegar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.007826512310451655,
+            "effectiveValue": 2400
+        },
+        "wine": {
+            "type": "item",
+            "content": "croptopia:wine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.023479536931354964,
+            "effectiveValue": 7200
+        },
+        "sakura_wine": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:sakura_wine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "champagne": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:champagne",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "brandy": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:brandy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "carignan": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:carignan",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 300,
+            "weightMult": 0.011739768465677482,
+            "effectiveValue": 3600
+        },
+        "ice_wine": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:ice_wine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "polaris_sweet_white": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:polaris_sweet_white",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "sherry": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:sherry",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "mother_snow": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:mother_snow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.023479536931354964,
+            "effectiveValue": 7200
+        },
+        "miners_star": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:miners_star",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.058698842328387416,
+            "effectiveValue": 18000
+        },
+        "honey_wine": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:honey_wine",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.058698842328387416,
+            "effectiveValue": 18000
+        },
+        "madame_shexiang": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:madame_shexiang",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.058698842328387416,
+            "effectiveValue": 18000
+        },
+        "sunset_glow": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:sunset_glow",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.058698842328387416,
+            "effectiveValue": 18000
+        },
+        "sauvignon_blanc_dry_white": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:sauvignon_blanc_dry_white",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "riesling_dry_white": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:riesling_dry_white",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "luminous_bride": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:luminous_bride",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.023479536931354964,
+            "effectiveValue": 7200
+        },
+        "glowflower_brew": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:glowflower_brew",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.03130604924180662,
+            "effectiveValue": 9600
+        },
+        "plum_wine": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:plum_wine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 300,
+            "weightMult": 0.011739768465677482,
+            "effectiveValue": 3600
+        },
+        "sweet_berry_wine": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:sweet_berry_wine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 300,
+            "weightMult": 0.011739768465677482,
+            "effectiveValue": 3600
+        },
+        "red_queen": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:red_queen",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.023479536931354964,
+            "effectiveValue": 7200
+        },
+        "vodka": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:vodka",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "whiskey": {
+            "type": "item",
+            "content": "kaleidoscope_tavern:whiskey",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "rum": {
+            "type": "item",
+            "content": "croptopia:rum",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.023479536931354964,
+            "effectiveValue": 7200
+        },
+        "rice_wine_bottle": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:rice_wine_bottle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "grapewine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:grapewine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "tsingtao_beer": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tsingtao_beer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.01956628077612914,
+            "effectiveValue": 6000
+        },
+        "spicypeanut": {
+            "type": "item",
+            "content": "flavor_immersed_daily:spicypeanut",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "fire_ale": {
+            "type": "item",
+            "content": "irons_spellbooks:fire_ale",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.008152616990053808,
+            "effectiveValue": 2500
+        },
+        "apple_cider": {
+            "type": "item",
+            "content": "farmersdelight:apple_cider",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.00978314038806457,
+            "effectiveValue": 3000
+        },
+        "hops": {
+            "type": "item",
+            "content": "croptopia:hops",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.01565302462090331,
+            "effectiveValue": 4800
+        },
+        "beer": {
+            "type": "item",
+            "content": "croptopia:beer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 200,
+            "weightMult": 0.03130604924180662,
+            "effectiveValue": 9600
+        },
+        "mead": {
+            "type": "item",
+            "content": "croptopia:mead",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 300,
+            "weightMult": 0.023479536931354964,
+            "effectiveValue": 7200
+        }
+    },
+    "requires": [
+        "croptopia",
+        "farmersdelight",
+        "flavor_immersed_daily",
+        "irons_spellbooks",
+        "iss_magicfromtheeast",
+        "kaleidoscope_tavern",
+        "spectrum"
+    ]
+}

@@ -1,0 +1,1551 @@
+{
+    "content": {
+        "jungle_sail": {
+            "type": "item",
+            "content": "simulated_addition:jungle_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "acacia_sail": {
+            "type": "item",
+            "content": "simulated_addition:acacia_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "cherry_sail": {
+            "type": "item",
+            "content": "simulated_addition:cherry_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "dark_oak_sail": {
+            "type": "item",
+            "content": "simulated_addition:dark_oak_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "mangrove_sail": {
+            "type": "item",
+            "content": "simulated_addition:mangrove_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "bamboo_sail": {
+            "type": "item",
+            "content": "simulated_addition:bamboo_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "crimson_sail": {
+            "type": "item",
+            "content": "simulated_addition:crimson_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "warped_sail": {
+            "type": "item",
+            "content": "simulated_addition:warped_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "spruce_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:spruce_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "birch_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:birch_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "jungle_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:jungle_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "acacia_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:acacia_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "cherry_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:cherry_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "dark_oak_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:dark_oak_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "mangrove_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:mangrove_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "bamboo_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:bamboo_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "crimson_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:crimson_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "warped_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:warped_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "physics_assembler": {
+            "type": "item",
+            "content": "simulated:physics_assembler",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "swivel_bearing": {
+            "type": "item",
+            "content": "simulated:swivel_bearing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 12,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0072109193922225085,
+            "effectiveValue": 2800
+        },
+        "rope_winch": {
+            "type": "item",
+            "content": "simulated:rope_winch",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "rope_connector": {
+            "type": "item",
+            "content": "simulated:rope_connector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "iron_handle": {
+            "type": "item",
+            "content": "simulated:iron_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "directional_propeller_bearing": {
+            "type": "item",
+            "content": "simulated_addition:directional_propeller_bearing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 12,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0072109193922225085,
+            "effectiveValue": 2800
+        },
+        "directional_gyroscopic_propeller_bearing": {
+            "type": "item",
+            "content": "simulated_addition:directional_gyroscopic_propeller_bearing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 12,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0072109193922225085,
+            "effectiveValue": 2800
+        },
+        "floatite": {
+            "type": "item",
+            "content": "simulated_addition:floatite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "ballasite": {
+            "type": "item",
+            "content": "simulated_addition:ballasite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "oak_sail": {
+            "type": "item",
+            "content": "simulated_addition:oak_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "oak_symmetric_sail": {
+            "type": "item",
+            "content": "simulated_addition:oak_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "spruce_sail": {
+            "type": "item",
+            "content": "simulated_addition:spruce_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "birch_sail": {
+            "type": "item",
+            "content": "simulated_addition:birch_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "pink_handle": {
+            "type": "item",
+            "content": "simulated:pink_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "gray_handle": {
+            "type": "item",
+            "content": "simulated:gray_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "light_gray_handle": {
+            "type": "item",
+            "content": "simulated:light_gray_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "cyan_handle": {
+            "type": "item",
+            "content": "simulated:cyan_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "purple_handle": {
+            "type": "item",
+            "content": "simulated:purple_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "blue_handle": {
+            "type": "item",
+            "content": "simulated:blue_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "brown_handle": {
+            "type": "item",
+            "content": "simulated:brown_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "green_handle": {
+            "type": "item",
+            "content": "simulated:green_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "red_handle": {
+            "type": "item",
+            "content": "simulated:red_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "black_handle": {
+            "type": "item",
+            "content": "simulated:black_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "directional_gearshift": {
+            "type": "item",
+            "content": "simulated:directional_gearshift",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "torsion_spring": {
+            "type": "item",
+            "content": "simulated:torsion_spring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "auger_shaft": {
+            "type": "item",
+            "content": "simulated:auger_shaft",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "auger_cog": {
+            "type": "item",
+            "content": "simulated:auger_cog",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "white_portable_engine": {
+            "type": "item",
+            "content": "simulated:white_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "orange_portable_engine": {
+            "type": "item",
+            "content": "simulated:orange_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "magenta_portable_engine": {
+            "type": "item",
+            "content": "simulated:magenta_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "light_blue_portable_engine": {
+            "type": "item",
+            "content": "simulated:light_blue_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "yellow_portable_engine": {
+            "type": "item",
+            "content": "simulated:yellow_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "lime_portable_engine": {
+            "type": "item",
+            "content": "simulated:lime_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "pink_portable_engine": {
+            "type": "item",
+            "content": "simulated:pink_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "gray_portable_engine": {
+            "type": "item",
+            "content": "simulated:gray_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "light_gray_portable_engine": {
+            "type": "item",
+            "content": "simulated:light_gray_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "cyan_portable_engine": {
+            "type": "item",
+            "content": "simulated:cyan_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "purple_portable_engine": {
+            "type": "item",
+            "content": "simulated:purple_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "copper_handle": {
+            "type": "item",
+            "content": "simulated:copper_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "white_handle": {
+            "type": "item",
+            "content": "simulated:white_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "orange_handle": {
+            "type": "item",
+            "content": "simulated:orange_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "magenta_handle": {
+            "type": "item",
+            "content": "simulated:magenta_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "light_blue_handle": {
+            "type": "item",
+            "content": "simulated:light_blue_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "yellow_handle": {
+            "type": "item",
+            "content": "simulated:yellow_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "lime_handle": {
+            "type": "item",
+            "content": "simulated:lime_handle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "gimbal_sensor": {
+            "type": "item",
+            "content": "simulated:gimbal_sensor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "navigation_table": {
+            "type": "item",
+            "content": "simulated:navigation_table",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "optical_sensor": {
+            "type": "item",
+            "content": "simulated:optical_sensor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "docking_connector": {
+            "type": "item",
+            "content": "simulated:docking_connector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "analog_transmission": {
+            "type": "item",
+            "content": "simulated:analog_transmission",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "steering_wheel": {
+            "type": "item",
+            "content": "simulated:steering_wheel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "throttle_lever": {
+            "type": "item",
+            "content": "simulated:throttle_lever",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "linked_typewriter": {
+            "type": "item",
+            "content": "simulated:linked_typewriter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "directional_linked_receiver": {
+            "type": "item",
+            "content": "simulated:directional_linked_receiver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "blue_portable_engine": {
+            "type": "item",
+            "content": "simulated:blue_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "brown_portable_engine": {
+            "type": "item",
+            "content": "simulated:brown_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "green_portable_engine": {
+            "type": "item",
+            "content": "simulated:green_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "red_portable_engine": {
+            "type": "item",
+            "content": "simulated:red_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "black_portable_engine": {
+            "type": "item",
+            "content": "simulated:black_portable_engine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "laser_pointer": {
+            "type": "item",
+            "content": "simulated:laser_pointer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "laser_sensor": {
+            "type": "item",
+            "content": "simulated:laser_sensor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "pink_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:pink_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "light_gray_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:light_gray_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "gray_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:gray_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "black_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:black_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "brown_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:brown_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "red_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:red_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "orange_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:orange_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "yellow_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:yellow_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "pink_monstrous_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:pink_monstrous_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "white_large_tire": {
+            "type": "item",
+            "content": "aeronautics_dyeable_components:white_large_tire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "creative_hydraulic_rod": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:creative_hydraulic_rod",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "damping_stress_bearing": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:damping_stress_bearing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "airship_station": {
+            "type": "item",
+            "content": "create_aeronautics_automated_logistics:airship_station",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "ship_transponder": {
+            "type": "item",
+            "content": "create_aeronautics_automated_logistics:ship_transponder",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "redstone_levitite": {
+            "type": "item",
+            "content": "hotstuff:redstone_levitite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 12,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0072109193922225085,
+            "effectiveValue": 2800
+        },
+        "link_relay": {
+            "type": "item",
+            "content": "hotstuff:link_relay",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 12,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0072109193922225085,
+            "effectiveValue": 2800
+        },
+        "copycat_sail": {
+            "type": "item",
+            "content": "hotstuff:copycat_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "copycat_symmetric_sail": {
+            "type": "item",
+            "content": "hotstuff:copycat_symmetric_sail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 24
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0051506567087303634,
+            "effectiveValue": 2000
+        },
+        "analog_torsion_spring": {
+            "type": "item",
+            "content": "hotstuff:analog_torsion_spring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 12,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0072109193922225085,
+            "effectiveValue": 2800
+        },
+        "redstone_spring": {
+            "type": "item",
+            "content": "aero_reformation:redstone_spring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "directional_synchronizer_slave": {
+            "type": "item",
+            "content": "aero_reformation:directional_synchronizer_slave",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "directional_synchronizer_master": {
+            "type": "item",
+            "content": "aero_reformation:directional_synchronizer_master",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "sensor_agency": {
+            "type": "item",
+            "content": "aero_reformation:sensor_agency",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "electric_loadstone": {
+            "type": "item",
+            "content": "aero_reformation:electric_loadstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 12
+            },
+            "unitWorth": 350,
+            "weightMult": 0.009013649240278136,
+            "effectiveValue": 3500
+        },
+        "rcs_thruster": {
+            "type": "item",
+            "content": "aero_reformation:rcs_thruster",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "power": {
+            "type": "item",
+            "content": "aero_reformation:power",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "pilot_seat": {
+            "type": "item",
+            "content": "aero_reformation:pilot_seat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "create_seat": {
+            "type": "item",
+            "content": "aero_reformation:create_seat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "end_rod_seat": {
+            "type": "item",
+            "content": "aero_reformation:end_rod_seat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "physics_anchor": {
+            "type": "item",
+            "content": "aero_reformation:physics_anchor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 8
+            },
+            "unitWorth": 600,
+            "weightMult": 0.010816379088333763,
+            "effectiveValue": 4200
+        },
+        "gravity_crystal": {
+            "type": "item",
+            "content": "aero_reformation:gravity_crystal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "com_offset": {
+            "type": "item",
+            "content": "aero_reformation:com_offset",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "high_friction_block": {
+            "type": "item",
+            "content": "aero_reformation:high_friction_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "high_friction_slab": {
+            "type": "item",
+            "content": "aero_reformation:high_friction_slab",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "high_friction_stairs": {
+            "type": "item",
+            "content": "aero_reformation:high_friction_stairs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "high_friction_vertical_slab": {
+            "type": "item",
+            "content": "aero_reformation:high_friction_vertical_slab",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "throwable_rope_connector": {
+            "type": "item",
+            "content": "create_aeronautics_throwable_rope_connector:throwable_rope_connector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "mounted_rope_launcher": {
+            "type": "item",
+            "content": "create_aeronautics_throwable_rope_connector:mounted_rope_launcher",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 6
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.012876641771825908,
+            "effectiveValue": 5000
+        },
+        "brass_universal_joint": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:brass_universal_joint",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "hydraulic_connection_head": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:hydraulic_connection_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "hydraulic_hinge_head": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:hydraulic_hinge_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "hydraulic_regulator": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:hydraulic_regulator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "universal_joint_rod": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:universal_joint_rod",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "universal_joint_rod2": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:universal_joint_rod2",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "hydraulic_rod": {
+            "type": "item",
+            "content": "aeronautics_utility_objects:hydraulic_rod",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.011588977594643318,
+            "effectiveValue": 4500
+        },
+        "gyroscope": {
+            "type": "item",
+            "content": "aeroworks:gyroscope",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "joystick": {
+            "type": "item",
+            "content": "aeroworks:joystick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "mechanical_servo": {
+            "type": "item",
+            "content": "aeroworks:mechanical_servo",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        },
+        "stepper_servo": {
+            "type": "item",
+            "content": "aeroworks:stepper_servo",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.007725985063095545,
+            "effectiveValue": 3000
+        }
+    },
+    "requires": [
+        "aero_reformation",
+        "aeronautics_dyeable_components",
+        "aeronautics_utility_objects",
+        "aeroworks",
+        "create_aeronautics_automated_logistics",
+        "create_aeronautics_throwable_rope_connector",
+        "hotstuff",
+        "simulated",
+        "simulated_addition"
+    ]
+}

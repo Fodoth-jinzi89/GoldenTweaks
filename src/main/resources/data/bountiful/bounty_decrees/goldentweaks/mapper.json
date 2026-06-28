@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "mapper_objs"
+    ],
+    "rewards": [
+        "golden_all_rews"
+    ],
+    "linkedProfessions": [
+        "mapper"
+    ]
+}

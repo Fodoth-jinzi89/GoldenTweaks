@@ -712,5 +712,18 @@ modId = "fidworkblock"
 type = "optional"
 versionRange = "*"
 ordering = "AFTER"
+
+[[dependencies."${mod_id}"]]
+modId = "waystones"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "extendedcrafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
 side = "BOTH"
 

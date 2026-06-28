@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"AAA",
+		" B ",
+		"AAA"
+	],
+	"key": {
+		"A": {"item": "goldentweaks:brilliant_gold"},
+		"B": {"item": "minecraft:paper"}
+	},
+	"result": {
+		"count": 1,
+		"id": "bountiful:decree"
+	}
+}

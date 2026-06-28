@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "hazennstuff:stardust"
+    },
+    {
+      "item": "spectrum:stardust"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "evolvedmekanism:molten_amethyst"
+    }
+  ],
+  "results": [
+    {
+	  "count": 2,
+      "id": "hazennstuff:stardust"
+    }
+  ]
+}

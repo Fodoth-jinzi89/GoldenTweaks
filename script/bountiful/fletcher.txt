@@ -1,0 +1,11 @@
+item supplementaries:rope_arrow 48 64 5 0.1
+item minecraft:arrow 48 64 5 0.1
+item minecraft:spectral_arrow 48 64 13 0.1
+item createcardboardthings:cardboard_arrow 48 64 16 0.1
+item cataclysm:void_scatter_arrow 48 64 13 0.1
+item spectrum:malachite_glass_arrow 48 64 16 0.1
+item spectrum:topaz_glass_arrow 48 64 20 0.1
+item spectrum:amethyst_glass_arrow 48 64 20 0.1
+item spectrum:citrine_glass_arrow 48 64 20 0.1
+item spectrum:onyx_glass_arrow 48 64 20 0.1
+item spectrum:moonstone_glass_arrow 48 64 20 0.1

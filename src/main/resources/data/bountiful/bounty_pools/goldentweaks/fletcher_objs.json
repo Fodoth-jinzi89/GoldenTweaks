@@ -1,0 +1,143 @@
+{
+    "content": {
+        "rope_arrow": {
+            "type": "item",
+            "content": "supplementaries:rope_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.02976190476190476,
+            "effectiveValue": 280
+        },
+        "arrow": {
+            "type": "item",
+            "content": "minecraft:arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.02976190476190476,
+            "effectiveValue": 280
+        },
+        "spectral_arrow": {
+            "type": "item",
+            "content": "minecraft:spectral_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 13,
+            "weightMult": 0.07738095238095238,
+            "effectiveValue": 728
+        },
+        "cardboard_arrow": {
+            "type": "item",
+            "content": "createcardboardthings:cardboard_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.09523809523809523,
+            "effectiveValue": 896
+        },
+        "void_scatter_arrow": {
+            "type": "item",
+            "content": "cataclysm:void_scatter_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 13,
+            "weightMult": 0.07738095238095238,
+            "effectiveValue": 728
+        },
+        "malachite_glass_arrow": {
+            "type": "item",
+            "content": "spectrum:malachite_glass_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.09523809523809523,
+            "effectiveValue": 896
+        },
+        "topaz_glass_arrow": {
+            "type": "item",
+            "content": "spectrum:topaz_glass_arrow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.11904761904761904,
+            "effectiveValue": 1120
+        },
+        "amethyst_glass_arrow": {
+            "type": "item",
+            "content": "spectrum:amethyst_glass_arrow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.11904761904761904,
+            "effectiveValue": 1120
+        },
+        "citrine_glass_arrow": {
+            "type": "item",
+            "content": "spectrum:citrine_glass_arrow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.11904761904761904,
+            "effectiveValue": 1120
+        },
+        "onyx_glass_arrow": {
+            "type": "item",
+            "content": "spectrum:onyx_glass_arrow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.11904761904761904,
+            "effectiveValue": 1120
+        },
+        "moonstone_glass_arrow": {
+            "type": "item",
+            "content": "spectrum:moonstone_glass_arrow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.11904761904761904,
+            "effectiveValue": 1120
+        }
+    },
+    "requires": [
+        "cataclysm",
+        "createcardboardthings",
+        "minecraft",
+        "spectrum",
+        "supplementaries"
+    ]
+}

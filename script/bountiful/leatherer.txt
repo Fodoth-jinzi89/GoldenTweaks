@@ -1,0 +1,15 @@
+item minecraft:leather_helmet 1 1 100 0.1
+item minecraft:leather_chestplate 1 1 100 0.1
+item minecraft:leather_leggings 1 1 100 0.1
+item minecraft:leather_boots 1 1 100 0.1
+item minecraft:leather_horse_armor 1 1 100 0.1
+item minecraft:leather 48 64 5 0.1
+item minecraft:rabbit_hide 48 64 5 0.1
+item flavor_immersed_daily:rawpigskin 48 64 5 0.1
+item cataclysm:sturdy_boots 1 1 400 0.1
+item kaleidoscope_nether:hoglin_hide 48 64 25 0.1
+item irons_spellbooks:hogskin 48 64 25 0.1
+item irons_spellbooks:bloody_vellum 48 64 40 0.1
+item kaleidoscope_cookery:farmer_boots 1 1 100 0.1
+item silentgear:leather_scrap 48 64 5 0.1
+item spectrum:eraser_head 1 1 200 0.1

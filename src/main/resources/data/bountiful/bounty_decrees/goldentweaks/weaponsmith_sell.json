@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "weaponsmith_sell"
+    ],
+    "linkedProfessions": [
+        "weaponsmith"
+    ]
+}

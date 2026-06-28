@@ -1,0 +1,1330 @@
+{
+    "content": {
+        "dragon_charge": {
+            "type": "item",
+            "content": "amendments:dragon_charge",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00414770436085028,
+            "effectiveValue": 720
+        },
+        "quiver": {
+            "type": "item",
+            "content": "supplementaries:quiver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0005760700501180944,
+            "effectiveValue": 100
+        },
+        "crossbow": {
+            "type": "item",
+            "content": "minecraft:crossbow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0005760700501180944,
+            "effectiveValue": 100
+        },
+        "blowgun": {
+            "type": "item",
+            "content": "kaleidoscope_nether:blowgun",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0005760700501180944,
+            "effectiveValue": 100
+        },
+        "rope_arrow": {
+            "type": "item",
+            "content": "supplementaries:rope_arrow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 25,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "compressed_solidified_flux_experience": {
+            "type": "item",
+            "content": "apothicenchantingaddition:compressed_solidified_flux_experience",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.002765136240566853,
+            "effectiveValue": 480
+        },
+        "common_material": {
+            "type": "item",
+            "content": "apotheosis:common_material",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0013825681202834265,
+            "effectiveValue": 240
+        },
+        "uncommon_material": {
+            "type": "item",
+            "content": "apotheosis:uncommon_material",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "rare_material": {
+            "type": "item",
+            "content": "apotheosis:rare_material",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 50,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "epic_material": {
+            "type": "item",
+            "content": "apotheosis:epic_material",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "mythic_material": {
+            "type": "item",
+            "content": "apotheosis:mythic_material",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "ancient_material": {
+            "type": "item",
+            "content": "ancientreforging:ancient_material",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "sigil_of_socketing": {
+            "type": "item",
+            "content": "apotheosis:sigil_of_socketing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 50,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "sigil_of_withdrawal": {
+            "type": "item",
+            "content": "apotheosis:sigil_of_withdrawal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 50,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "sigil_of_rebirth": {
+            "type": "item",
+            "content": "apotheosis:sigil_of_rebirth",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 50,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "sigil_of_enhancement": {
+            "type": "item",
+            "content": "apotheosis:sigil_of_enhancement",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "sigil_of_unnaming": {
+            "type": "item",
+            "content": "apotheosis:sigil_of_unnaming",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "sigil_of_malice": {
+            "type": "item",
+            "content": "apotheosis:sigil_of_malice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 80,
+            "weightMult": 0.011060544962267412,
+            "effectiveValue": 1920
+        },
+        "container": {
+            "type": "item",
+            "content": "backpack_pixel:container",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0011521401002361888,
+            "effectiveValue": 200
+        },
+        "tank": {
+            "type": "item",
+            "content": "backpack_pixel:tank",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0011521401002361888,
+            "effectiveValue": 200
+        },
+        "excontainer": {
+            "type": "item",
+            "content": "backpack_pixel:excontainer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.001728210150354283,
+            "effectiveValue": 300
+        },
+        "extank": {
+            "type": "item",
+            "content": "backpack_pixel:extank",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.001728210150354283,
+            "effectiveValue": 300
+        },
+        "exmixedcontainer": {
+            "type": "item",
+            "content": "backpack_pixel:exmixedcontainer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.001728210150354283,
+            "effectiveValue": 300
+        },
+        "containeras": {
+            "type": "item",
+            "content": "backpack_pixel:containeras",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.0043205253758857075,
+            "effectiveValue": 750
+        },
+        "tankas": {
+            "type": "item",
+            "content": "backpack_pixel:tankas",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.0043205253758857075,
+            "effectiveValue": 750
+        },
+        "excontaineras": {
+            "type": "item",
+            "content": "backpack_pixel:excontaineras",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "extankas": {
+            "type": "item",
+            "content": "backpack_pixel:extankas",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "exmixedcontaineras": {
+            "type": "item",
+            "content": "backpack_pixel:exmixedcontaineras",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "functionpack": {
+            "type": "item",
+            "content": "backpack_pixel:functionpack",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0023042802004723775,
+            "effectiveValue": 400
+        },
+        "witherite_ingot": {
+            "type": "item",
+            "content": "cataclysm:witherite_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "ancient_metal_ingot": {
+            "type": "item",
+            "content": "cataclysm:ancient_metal_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.01440175125295236,
+            "effectiveValue": 2500
+        },
+        "black_steel_ingot": {
+            "type": "item",
+            "content": "cataclysm:black_steel_ingot",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "lacrima": {
+            "type": "item",
+            "content": "cataclysm:lacrima",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.01440175125295236,
+            "effectiveValue": 2500
+        },
+        "essence_of_the_storm": {
+            "type": "item",
+            "content": "cataclysm:essence_of_the_storm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "ignitium_ingot": {
+            "type": "item",
+            "content": "cataclysm:ignitium_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "cursium_ingot": {
+            "type": "item",
+            "content": "cataclysm:cursium_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "monstrous_horn": {
+            "type": "item",
+            "content": "cataclysm:monstrous_horn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.04320525375885708,
+            "effectiveValue": 7500
+        },
+        "lava_power_cell": {
+            "type": "item",
+            "content": "cataclysm:lava_power_cell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.04320525375885708,
+            "effectiveValue": 7500
+        },
+        "void_jaw": {
+            "type": "item",
+            "content": "cataclysm:void_jaw",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "crystallized_coral_fragments": {
+            "type": "item",
+            "content": "cataclysm:crystallized_coral_fragments",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "lionfish": {
+            "type": "item",
+            "content": "cataclysm:lionfish",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "coral_chunk": {
+            "type": "item",
+            "content": "cataclysm:coral_chunk",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 500,
+            "weightMult": 0.00720087562647618,
+            "effectiveValue": 1250
+        },
+        "abyssal_sacrifice": {
+            "type": "item",
+            "content": "cataclysm:abyssal_sacrifice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "necklace_of_the_desert": {
+            "type": "item",
+            "content": "cataclysm:necklace_of_the_desert",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "strange_key": {
+            "type": "item",
+            "content": "cataclysm:strange_key",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "sandstorm_in_a_bottle": {
+            "type": "item",
+            "content": "cataclysm:sandstorm_in_a_bottle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.02880350250590472,
+            "effectiveValue": 5000
+        },
+        "coral_spear": {
+            "type": "item",
+            "content": "cataclysm:coral_spear",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "coral_bardiche": {
+            "type": "item",
+            "content": "cataclysm:coral_bardiche",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "athame": {
+            "type": "item",
+            "content": "cataclysm:athame",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "khopesh": {
+            "type": "item",
+            "content": "cataclysm:khopesh",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "music_disc_netherite_monstrosity": {
+            "type": "item",
+            "content": "cataclysm:music_disc_netherite_monstrosity",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_ender_guardian": {
+            "type": "item",
+            "content": "cataclysm:music_disc_ender_guardian",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_ignis": {
+            "type": "item",
+            "content": "cataclysm:music_disc_ignis",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_the_harbinger": {
+            "type": "item",
+            "content": "cataclysm:music_disc_the_harbinger",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_the_leviathan": {
+            "type": "item",
+            "content": "cataclysm:music_disc_the_leviathan",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_ancient_remnant": {
+            "type": "item",
+            "content": "cataclysm:music_disc_ancient_remnant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_maledictus": {
+            "type": "item",
+            "content": "cataclysm:music_disc_maledictus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "music_disc_scylla": {
+            "type": "item",
+            "content": "cataclysm:music_disc_scylla",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.01728210150354283,
+            "effectiveValue": 3000
+        },
+        "aptrgangr_head": {
+            "type": "item",
+            "content": "cataclysm:aptrgangr_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "draugr_head": {
+            "type": "item",
+            "content": "cataclysm:draugr_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "kobolediator_skull": {
+            "type": "item",
+            "content": "cataclysm:kobolediator_skull",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "void_stone": {
+            "type": "item",
+            "content": "cataclysm:void_stone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 50,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "prismatic_web": {
+            "type": "item",
+            "content": "apothic_enchanting:prismatic_web",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "infused_breath": {
+            "type": "item",
+            "content": "apothic_enchanting:infused_breath",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "warden_tendril": {
+            "type": "item",
+            "content": "apothic_enchanting:warden_tendril",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "excalibur_fragment": {
+            "type": "item",
+            "content": "hazennstuff:excalibur_fragment",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "divine_soulshard": {
+            "type": "item",
+            "content": "irons_spellbooks:divine_soulshard",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "taiji_sword": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:taiji_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0011521401002361888,
+            "effectiveValue": 200
+        },
+        "jade_guandao": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:jade_guandao",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "soul_breaker": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:soul_breaker",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "spirit_crusher": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:spirit_crusher",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "soul_katana": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:soul_katana",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "soulpiercer": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:soulpiercer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "repeating_crossbow": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:repeating_crossbow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "bagua_mirror": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:bagua_mirror",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "coins_sword": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:coins_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "rusted_coins_sword": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:rusted_coins_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.00720087562647618,
+            "effectiveValue": 1250
+        },
+        "jiangshi_hat": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:jiangshi_hat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0005760700501180944,
+            "effectiveValue": 100
+        },
+        "scarlet_zhuhua": {
+            "type": "item",
+            "content": "touhou_little_maid_spell:scarlet_zhuhua",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "yue_linglan": {
+            "type": "item",
+            "content": "touhou_little_maid_spell:yue_linglan",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "jingxu_youlan": {
+            "type": "item",
+            "content": "touhou_little_maid_spell:jingxu_youlan",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "suppression_stone": {
+            "type": "item",
+            "content": "touhou_little_maid_spell:suppression_stone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.011521401002361887,
+            "effectiveValue": 2000
+        },
+        "eyebulb": {
+            "type": "item",
+            "content": "biomesoplenty:eyebulb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 40,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "brimstone_cluster": {
+            "type": "item",
+            "content": "biomesoplenty:brimstone_cluster",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 40,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "blackstone_bulb": {
+            "type": "item",
+            "content": "biomesoplenty:blackstone_bulb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 40,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "pink_hibiscus": {
+            "type": "item",
+            "content": "biomesoplenty:pink_hibiscus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 40,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "burning_blossom": {
+            "type": "item",
+            "content": "biomesoplenty:burning_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 40,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "bramble": {
+            "type": "item",
+            "content": "biomesoplenty:bramble",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "waystone": {
+            "type": "item",
+            "content": "waystones:waystone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "mossy_waystone": {
+            "type": "item",
+            "content": "waystones:mossy_waystone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "sandy_waystone": {
+            "type": "item",
+            "content": "waystones:sandy_waystone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "deepslate_waystone": {
+            "type": "item",
+            "content": "waystones:deepslate_waystone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "blackstone_waystone": {
+            "type": "item",
+            "content": "waystones:blackstone_waystone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "end_stone_waystone": {
+            "type": "item",
+            "content": "waystones:end_stone_waystone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.001440175125295236,
+            "effectiveValue": 250
+        },
+        "ender_pearl": {
+            "type": "item",
+            "content": "minecraft:ender_pearl",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.002765136240566853,
+            "effectiveValue": 480
+        },
+        "blaze_rod": {
+            "type": "item",
+            "content": "minecraft:blaze_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.002765136240566853,
+            "effectiveValue": 480
+        },
+        "ghast_tear": {
+            "type": "item",
+            "content": "minecraft:ghast_tear",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 25,
+            "weightMult": 0.006912840601417132,
+            "effectiveValue": 1200
+        },
+        "wind_charge": {
+            "type": "item",
+            "content": "minecraft:wind_charge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.005530272481133706,
+            "effectiveValue": 960
+        },
+        "armadillo_scute": {
+            "type": "item",
+            "content": "minecraft:armadillo_scute",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 50,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "turtle_scute": {
+            "type": "item",
+            "content": "minecraft:turtle_scute",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 50,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "heart_of_the_sea": {
+            "type": "item",
+            "content": "minecraft:heart_of_the_sea",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "nether_star": {
+            "type": "item",
+            "content": "minecraft:nether_star",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        },
+        "heavy_core": {
+            "type": "item",
+            "content": "minecraft:heavy_core",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.005760700501180944,
+            "effectiveValue": 1000
+        },
+        "enchanted_golden_apple": {
+            "type": "item",
+            "content": "minecraft:enchanted_golden_apple",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0023042802004723775,
+            "effectiveValue": 400
+        },
+        "wither_skeleton_skull": {
+            "type": "item",
+            "content": "minecraft:wither_skeleton_skull",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "skeleton_skull": {
+            "type": "item",
+            "content": "minecraft:skeleton_skull",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "creeper_head": {
+            "type": "item",
+            "content": "minecraft:creeper_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "zombie_head": {
+            "type": "item",
+            "content": "minecraft:zombie_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013825681202834264,
+            "effectiveValue": 2400
+        },
+        "dragon_head": {
+            "type": "item",
+            "content": "minecraft:dragon_head",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.002880350250590472,
+            "effectiveValue": 500
+        }
+    },
+    "requires": [
+        "amendments",
+        "ancientreforging",
+        "apotheosis",
+        "apothic_enchanting",
+        "apothicenchantingaddition",
+        "backpack_pixel",
+        "biomesoplenty",
+        "cataclysm",
+        "hazennstuff",
+        "irons_spellbooks",
+        "iss_magicfromtheeast",
+        "kaleidoscope_nether",
+        "minecraft",
+        "supplementaries",
+        "touhou_little_maid_spell",
+        "waystones"
+    ]
+}

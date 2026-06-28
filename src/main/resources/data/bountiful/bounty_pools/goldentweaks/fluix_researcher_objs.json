@@ -10,7 +10,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "orange_lumen_paint_ball": {
             "type": "item",
@@ -22,7 +22,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "magenta_lumen_paint_ball": {
             "type": "item",
@@ -34,7 +34,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "light_blue_lumen_paint_ball": {
             "type": "item",
@@ -46,7 +46,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "yellow_lumen_paint_ball": {
             "type": "item",
@@ -58,7 +58,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "lime_lumen_paint_ball": {
             "type": "item",
@@ -70,7 +70,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "pink_lumen_paint_ball": {
             "type": "item",
@@ -82,7 +82,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "gray_lumen_paint_ball": {
             "type": "item",
@@ -94,7 +94,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "light_gray_lumen_paint_ball": {
             "type": "item",
@@ -106,7 +106,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "cyan_lumen_paint_ball": {
             "type": "item",
@@ -118,7 +118,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "purple_lumen_paint_ball": {
             "type": "item",
@@ -130,7 +130,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "blue_lumen_paint_ball": {
             "type": "item",
@@ -142,7 +142,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "brown_lumen_paint_ball": {
             "type": "item",
@@ -154,7 +154,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "green_lumen_paint_ball": {
             "type": "item",
@@ -166,7 +166,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "red_lumen_paint_ball": {
             "type": "item",
@@ -178,7 +178,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "black_lumen_paint_ball": {
             "type": "item",
@@ -190,7 +190,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.024390243902439025,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "fluix_pearl": {
             "type": "item",
@@ -202,7 +202,7 @@
             },
             "unitWorth": 50,
             "weightMult": 0.038109756097560975,
-            "effectiveValue": 300.0
+            "effectiveValue": 300
         },
         "wireless_booster": {
             "type": "item",
@@ -214,7 +214,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.022865853658536585,
-            "effectiveValue": 180.0
+            "effectiveValue": 180
         },
         "spatial_cell_component_2": {
             "type": "item",
@@ -226,7 +226,7 @@
             },
             "unitWorth": 200,
             "weightMult": 0.02540650406504065,
-            "effectiveValue": 200.0
+            "effectiveValue": 200
         },
         "spatial_cell_component_16": {
             "type": "item",
@@ -238,7 +238,7 @@
             },
             "unitWorth": 800,
             "weightMult": 0.1016260162601626,
-            "effectiveValue": 800.0
+            "effectiveValue": 800
         },
         "spatial_cell_component_128": {
             "type": "item",
@@ -250,7 +250,7 @@
             },
             "unitWorth": 3200,
             "weightMult": 0.4065040650406504,
-            "effectiveValue": 3200.0
+            "effectiveValue": 3200
         },
         "toggle_bus": {
             "type": "item",
@@ -262,7 +262,7 @@
             },
             "unitWorth": 10,
             "weightMult": 0.007621951219512195,
-            "effectiveValue": 60.0
+            "effectiveValue": 60
         },
         "inverted_toggle_bus": {
             "type": "item",
@@ -274,7 +274,7 @@
             },
             "unitWorth": 10,
             "weightMult": 0.007621951219512195,
-            "effectiveValue": 60.0
+            "effectiveValue": 60
         }
     },
     "requires": [

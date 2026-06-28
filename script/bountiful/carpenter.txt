@@ -1,0 +1,552 @@
+item minecraft:oak_log 48 64 5 0.1
+item minecraft:stripped_oak_log 48 64 8 0.1
+item minecraft:oak_planks 48 64 2 0.1
+item minecraft:oak_sapling 48 64 4 0.1
+
+item minecraft:bamboo_block 48 64 5 0.1
+item minecraft:stripped_bamboo_block 48 64 8 0.1
+item minecraft:bamboo_planks 48 64 2 0.1
+
+item minecraft:crimson_stem 48 64 8 0.1
+item minecraft:nether_wart_block 48 64 8 0.1
+item minecraft:stripped_crimson_stem 48 64 15 0.1
+item minecraft:crimson_planks 48 64 3 0.1
+
+item minecraft:shroomlight 48 64 15 0.1
+
+item minecraft:warped_stem 48 64 8 0.1
+item minecraft:warped_wart_block 48 64 8 0.1
+item minecraft:stripped_warped_stem 48 64 15 0.1
+item minecraft:warped_planks 48 64 3 0.1
+
+
+item minecraft:birch_log 48 64 5 0.1
+item minecraft:stripped_birch_log 48 64 8 0.1
+item minecraft:birch_planks 48 64 2 0.1
+item minecraft:birch_sapling 48 64 4 0.1
+
+item minecraft:jungle_log 48 64 5 0.1
+item minecraft:stripped_jungle_log 48 64 8 0.1
+item minecraft:jungle_planks 48 64 2 0.1
+item minecraft:jungle_sapling 48 64 4 0.1
+
+item minecraft:acacia_log 48 64 5 0.1
+item minecraft:stripped_acacia_log 48 64 8 0.1
+item minecraft:acacia_planks 48 64 2 0.1
+item minecraft:acacia_sapling 48 64 4 0.1
+
+item minecraft:dark_oak_log 48 64 5 0.1
+item minecraft:stripped_dark_oak_log 48 64 8 0.1
+item minecraft:dark_oak_planks 48 64 2 0.1
+item minecraft:dark_oak_sapling 48 64 4 0.1
+
+item minecraft:mangrove_log 48 64 5 0.1
+item minecraft:stripped_mangrove_log 48 64 8 0.1
+item minecraft:mangrove_planks 48 64 2 0.1
+item minecraft:mangrove_propagule 48 64 4 0.1
+
+item minecraft:cherry_log 48 64 5 0.1
+item minecraft:stripped_cherry_log 48 64 8 0.1
+item minecraft:cherry_planks 48 64 2 0.1
+item minecraft:cherry_sapling 48 64 4 0.1
+
+item silentgear:netherwood_log 48 64 10 0.1
+item silentgear:stripped_netherwood_log 48 64 16 0.1
+item silentgear:netherwood_planks 48 64 4 0.1
+item silentgear:netherwood_sapling 48 64 8 0.1
+
+item northstar:wilter_log 48 64 20 0.1
+item northstar:stripped_wilter_log 48 64 32 0.1
+item northstar:wilter_planks 48 64 8 0.1
+item northstar:wilter_sapling 48 64 16 0.1
+
+item northstar:argyre_log 48 64 20 0.1
+item northstar:stripped_argyre_log 48 64 32 0.1
+item northstar:argyre_planks 48 64 8 0.1
+item northstar:argyre_sapling 48 64 16 0.1
+
+item northstar:coiler_log 48 64 20 0.1
+item northstar:stripped_coiler_log 48 64 32 0.1
+item northstar:coiler_planks 48 64 8 0.1
+item northstar:coiler_sapling 48 64 16 0.1
+
+item biomesoplenty:fir_log 48 64 10 0.1
+item biomesoplenty:stripped_fir_log 48 64 16 0.1
+item biomesoplenty:fir_planks 48 64 4 0.1
+item biomesoplenty:fir_sapling 48 64 8 0.1
+
+item biomesoplenty:pine_log 48 64 10 0.1
+item biomesoplenty:stripped_pine_log 48 64 16 0.1
+item biomesoplenty:pine_planks 48 64 4 0.1
+item biomesoplenty:pine_sapling 48 64 8 0.1
+
+item biomesoplenty:maple_log 48 64 10 0.1
+item biomesoplenty:stripped_maple_log 48 64 16 0.1
+item biomesoplenty:maple_planks 48 64 4 0.1
+item biomesoplenty:maple_sapling 48 64 8 0.1
+
+item biomesoplenty:redwood_log 48 64 10 0.1
+item biomesoplenty:stripped_redwood_log 48 64 16 0.1
+item biomesoplenty:redwood_planks 48 64 4 0.1
+item biomesoplenty:redwood_sapling 48 64 8 0.1
+
+item biomesoplenty:mahogany_log 48 64 10 0.1
+item biomesoplenty:stripped_mahogany_log 48 64 16 0.1
+item biomesoplenty:mahogany_planks 48 64 4 0.1
+item biomesoplenty:mahogany_sapling 48 64 8 0.1
+
+item biomesoplenty:jacaranda_log 48 64 10 0.1
+item biomesoplenty:stripped_jacaranda_log 48 64 16 0.1
+item biomesoplenty:jacaranda_planks 48 64 4 0.1
+item biomesoplenty:jacaranda_sapling 48 64 8 0.1
+
+item biomesoplenty:palm_log 48 64 10 0.1
+item biomesoplenty:stripped_palm_log 48 64 16 0.1
+item biomesoplenty:palm_planks 48 64 4 0.1
+item biomesoplenty:palm_sapling 48 64 8 0.1
+
+item biomesoplenty:willow_log 48 64 10 0.1
+item biomesoplenty:stripped_willow_log 48 64 16 0.1
+item biomesoplenty:willow_planks 48 64 4 0.1
+item biomesoplenty:willow_sapling 48 64 8 0.1
+
+item biomesoplenty:dead_log 48 64 10 0.1
+item biomesoplenty:stripped_dead_log 48 64 16 0.1
+item biomesoplenty:dead_planks 48 64 4 0.1
+
+item biomesoplenty:magic_log 48 64 10 0.1
+item biomesoplenty:stripped_magic_log 48 64 16 0.1
+item biomesoplenty:magic_planks 48 64 4 0.1
+item biomesoplenty:magic_sapling 48 64 8 0.1
+
+item biomesoplenty:umbran_log 48 64 10 0.1
+item biomesoplenty:stripped_umbran_log 48 64 16 0.1
+item biomesoplenty:umbran_planks 48 64 4 0.1
+item biomesoplenty:umbran_sapling 48 64 8 0.1
+
+item biomesoplenty:hellbark_log 48 64 10 0.1
+item biomesoplenty:stripped_hellbark_log 48 64 16 0.1
+item biomesoplenty:hellbark_planks 48 64 4 0.1
+item biomesoplenty:hellbark_sapling 48 64 8 0.1
+
+item biomesoplenty:empyreal_log 48 64 10 0.1
+item biomesoplenty:stripped_empyreal_log 48 64 16 0.1
+item biomesoplenty:empyreal_planks 48 64 4 0.1
+item biomesoplenty:empyreal_sapling 48 64 8 0.1
+
+item croptopia:cinnamon_log 48 64 5 0.1
+item croptopia:stripped_cinnamon_log 48 64 8 0.1
+item croptopia:cinnamon_planks 48 64 2 0.1
+item croptopia:cinnamon_sapling 48 64 4 0.1
+
+item hazennstuff:wisewood_log 48 64 10 0.1
+item hazennstuff:stripped_wisewood_log 48 64 16 0.1
+item hazennstuff:wisewood_planks 48 64 4 0.1
+item hazennstuff:wisewood_sapling 48 64 8 0.1
+
+item hazennstuff:frostbite_birch_log 48 64 10 0.1
+item hazennstuff:stripped_frostbite_birch_log 48 64 16 0.1
+item hazennstuff:frostbite_birch_planks 48 64 4 0.1
+item hazennstuff:frostbite_birch_sapling 48 64 8 0.1
+
+item spectrum:weeping_gala_log 48 64 10 0.1
+item spectrum:stripped_weeping_gala_log 48 64 16 0.1
+item spectrum:weeping_gala_planks 48 64 4 0.1
+item spectrum:weeping_gala_sapling 48 64 8 0.1
+
+item spectrum:white_log 48 64 10 0.1
+item spectrum:stripped_white_log 48 64 16 0.1
+item spectrum:white_planks 48 64 4 0.1
+item spectrum:white_sapling 48 64 8 0.1
+
+item spectrum:orange_log 48 64 10 0.1
+item spectrum:stripped_orange_log 48 64 16 0.1
+item spectrum:orange_planks 48 64 4 0.1
+item spectrum:orange_sapling 48 64 8 0.1
+
+item spectrum:magenta_log 48 64 10 0.1
+item spectrum:stripped_magenta_log 48 64 16 0.1
+item spectrum:magenta_planks 48 64 4 0.1
+item spectrum:magenta_sapling 48 64 8 0.1
+
+item spectrum:light_blue_log 48 64 10 0.1
+item spectrum:stripped_light_blue_log 48 64 16 0.1
+item spectrum:light_blue_planks 48 64 4 0.1
+item spectrum:light_blue_sapling 48 64 8 0.1
+
+item spectrum:yellow_log 48 64 10 0.1
+item spectrum:stripped_yellow_log 48 64 16 0.1
+item spectrum:yellow_planks 48 64 4 0.1
+item spectrum:yellow_sapling 48 64 8 0.1
+
+item spectrum:lime_log 48 64 10 0.1
+item spectrum:stripped_lime_log 48 64 16 0.1
+item spectrum:lime_planks 48 64 4 0.1
+item spectrum:lime_sapling 48 64 8 0.1
+
+item spectrum:pink_log 48 64 10 0.1
+item spectrum:stripped_pink_log 48 64 16 0.1
+item spectrum:pink_planks 48 64 4 0.1
+item spectrum:pink_sapling 48 64 8 0.1
+
+item spectrum:gray_log 48 64 10 0.1
+item spectrum:stripped_gray_log 48 64 16 0.1
+item spectrum:gray_planks 48 64 4 0.1
+item spectrum:gray_sapling 48 64 8 0.1
+
+item spectrum:light_gray_log 48 64 10 0.1
+item spectrum:stripped_light_gray_log 48 64 16 0.1
+item spectrum:light_gray_planks 48 64 4 0.1
+item spectrum:light_gray_sapling 48 64 8 0.1
+
+item spectrum:cyan_log 48 64 10 0.1
+item spectrum:stripped_cyan_log 48 64 16 0.1
+item spectrum:cyan_planks 48 64 4 0.1
+item spectrum:cyan_sapling 48 64 8 0.1
+
+item spectrum:purple_log 48 64 10 0.1
+item spectrum:stripped_purple_log 48 64 16 0.1
+item spectrum:purple_planks 48 64 4 0.1
+item spectrum:purple_sapling 48 64 8 0.1
+
+item spectrum:blue_log 48 64 10 0.1
+item spectrum:stripped_blue_log 48 64 16 0.1
+item spectrum:blue_planks 48 64 4 0.1
+item spectrum:blue_sapling 48 64 8 0.1
+
+item spectrum:brown_log 48 64 10 0.1
+item spectrum:stripped_brown_log 48 64 16 0.1
+item spectrum:brown_planks 48 64 4 0.1
+item spectrum:brown_sapling 48 64 8 0.1
+
+item spectrum:green_log 48 64 10 0.1
+item spectrum:stripped_green_log 48 64 16 0.1
+item spectrum:green_planks 48 64 4 0.1
+item spectrum:green_sapling 48 64 8 0.1
+
+item spectrum:red_log 48 64 10 0.1
+item spectrum:stripped_red_log 48 64 16 0.1
+item spectrum:red_planks 48 64 4 0.1
+item spectrum:red_sapling 48 64 8 0.1
+
+item spectrum:black_log 48 64 10 0.1
+item spectrum:stripped_black_log 48 64 16 0.1
+item spectrum:black_planks 48 64 4 0.1
+item spectrum:black_sapling 48 64 8 0.1
+
+item spectrum:ivory_noxcap_stem 48 64 10 0.1
+item spectrum:stripped_ivory_noxcap_stem 48 64 10 0.1
+item spectrum:ivory_noxcap_block 48 64 10 0.1
+item spectrum:ivory_noxcap_gills 48 64 10 0.1
+item spectrum:ivory_noxwood_planks 48 64 10 0.1
+item spectrum:ivory_noxwood_amphora 48 64 15 0.1
+item spectrum:ivory_noxwood_lantern 48 64 20 0.1
+item spectrum:ivory_noxwood_light 48 64 20 0.1
+item spectrum:ivory_noxwood_lamp 48 64 20 0.1
+
+item spectrum:ebony_noxcap_stem 48 64 10 0.1
+item spectrum:stripped_ebony_noxcap_stem 48 64 10 0.1
+item spectrum:ebony_noxcap_block 48 64 10 0.1
+item spectrum:ebony_noxcap_gills 48 64 10 0.1
+item spectrum:ebony_noxwood_planks 48 64 10 0.1
+item spectrum:ebony_noxwood_amphora 48 64 15 0.1
+item spectrum:ebony_noxwood_lantern 48 64 20 0.1
+item spectrum:ebony_noxwood_light 48 64 20 0.1
+item spectrum:ebony_noxwood_lamp 48 64 20 0.1
+
+item spectrum:slate_noxcap_stem 48 64 10 0.1
+item spectrum:stripped_slate_noxcap_stem 48 64 10 0.1
+item spectrum:slate_noxcap_block 48 64 10 0.1
+item spectrum:slate_noxcap_gills 48 64 10 0.1
+item spectrum:slate_noxwood_planks 48 64 10 0.1
+item spectrum:slate_noxwood_amphora 48 64 15 0.1
+item spectrum:slate_noxwood_lantern 48 64 20 0.1
+item spectrum:slate_noxwood_light 48 64 20 0.1
+item spectrum:slate_noxwood_lamp 48 64 20 0.1
+
+item spectrum:chestnut_noxcap_stem 48 64 10 0.1
+item spectrum:stripped_chestnut_noxcap_stem 48 64 10 0.1
+item spectrum:chestnut_noxcap_block 48 64 10 0.1
+item spectrum:chestnut_noxcap_gills 48 64 10 0.1
+item spectrum:chestnut_noxwood_planks 48 64 10 0.1
+item spectrum:chestnut_noxwood_amphora 48 64 15 0.1
+item spectrum:chestnut_noxwood_lantern 48 64 20 0.1
+item spectrum:chestnut_noxwood_light 48 64 20 0.1
+item spectrum:chestnut_noxwood_lamp 48 64 20 0.1
+
+item supplementaries:fine_wood 48 64 20 0.1
+item supplementaries:daub_frame 48 64 20 0.1
+item supplementaries:daub_brace 48 64 20 0.1
+item supplementaries:daub_cross_brace 48 64 20 0.1
+item supplementaries:wicker_fence 48 64 20 0.1
+
+item supplementaries:blackboard 48 64 15 0.1
+item supplementaries:notice_board 48 64 15 0.1
+item supplementaries:clock_block 48 64 15 0.1
+item supplementaries:pulley_block 48 64 15 0.1
+item supplementaries:speaker_block 1 4 100 0.1
+item minecraft:beehive 1 4 100 0.1
+item minecraft:honeycomb_block 8 16 200 0.1
+item minecraft:honey_block 8 16 200 0.1
+item minecraft:slime_block 16 32 50 0.1
+
+item minecraft:bookshelf 16 32 100 0.1
+item minecraft:lectern 16 32 120 0.1
+item minecraft:chest 16 32 20 0.1
+item minecraft:barrel 16 32 20 0.1
+
+item create:oak_window 48 64 12 0.1
+item create:spruce_window 48 64 12 0.1
+item create:birch_window 48 64 12 0.1
+item create:jungle_window 48 64 12 0.1
+item create:acacia_window 48 64 12 0.1
+item create:dark_oak_window 48 64 12 0.1
+item create:mangrove_window 48 64 12 0.1
+item create:cherry_window 48 64 12 0.1
+item create:bamboo_window 48 64 12 0.1
+item create:crimson_window 48 64 12 0.1
+item create:warped_window 48 64 12 0.1
+
+item create:oak_window_pane 48 64 8 0.1
+item create:spruce_window_pane 48 64 8 0.1
+item create:birch_window_pane 48 64 8 0.1
+item create:jungle_window_pane 48 64 8 0.1
+item create:acacia_window_pane 48 64 8 0.1
+item create:dark_oak_window_pane 48 64 8 0.1
+item create:mangrove_window_pane 48 64 8 0.1
+item create:cherry_window_pane 48 64 8 0.1
+item create:bamboo_window_pane 48 64 8 0.1
+item create:crimson_window_pane 48 64 8 0.1
+item create:warped_window_pane 48 64 8 0.1
+
+item supplementaries:bellows 1 4 100 0.1
+item vista:television 1 4 100 0.1
+item createdieselgenerators:chip_wood_beam 32 64 12 0.1
+
+item kaleidoscope_cookery:chair_oak 16 32 25 0.1
+item kaleidoscope_cookery:chair_spruce 16 32 25 0.1
+item kaleidoscope_cookery:chair_birch 16 32 25 0.1
+item kaleidoscope_cookery:chair_jungle 16 32 25 0.1
+item kaleidoscope_cookery:chair_acacia 16 32 25 0.1
+item kaleidoscope_cookery:chair_dark_oak 16 32 25 0.1
+item kaleidoscope_cookery:chair_mangrove 16 32 25 0.1
+item kaleidoscope_cookery:chair_cherry 16 32 25 0.1
+item kaleidoscope_cookery:chair_bamboo 16 32 25 0.1
+item kaleidoscope_cookery:chair_crimson 16 32 25 0.1
+item kaleidoscope_cookery:chair_warped 16 32 25 0.1
+
+item kaleidoscope_cookery:table_spruce 16 32 25 0.1
+item kaleidoscope_cookery:table_birch 16 32 25 0.1
+item kaleidoscope_cookery:table_jungle 16 32 25 0.1
+item kaleidoscope_cookery:table_acacia 16 32 25 0.1
+item kaleidoscope_cookery:table_dark_oak 16 32 25 0.1
+item kaleidoscope_cookery:table_mangrove 16 32 25 0.1
+item kaleidoscope_cookery:table_cherry 16 32 25 0.1
+item kaleidoscope_cookery:table_bamboo 16 32 25 0.1
+item kaleidoscope_cookery:table_crimson 16 32 25 0.1
+item kaleidoscope_cookery:table_warped 16 32 25 0.1
+
+item minecraft:spruce_door 16 32 12 0.1
+item minecraft:birch_door 16 32 12 0.1
+item minecraft:jungle_door 16 32 12 0.1
+item minecraft:acacia_door 16 32 12 0.1
+item minecraft:dark_oak_door 16 32 12 0.1
+item minecraft:mangrove_door 16 32 12 0.1
+item minecraft:cherry_door 16 32 12 0.1
+item minecraft:bamboo_door 16 32 12 0.1
+item minecraft:crimson_door 16 32 12 0.1
+item minecraft:warped_door 16 32 12 0.1
+
+item minecraft:spruce_trapdoor 16 32 15 0.1
+item minecraft:birch_trapdoor 16 32 15 0.1
+item minecraft:jungle_trapdoor 16 32 15 0.1
+item minecraft:acacia_trapdoor 16 32 15 0.1
+item minecraft:dark_oak_trapdoor 16 32 15 0.1
+item minecraft:mangrove_trapdoor 16 32 15 0.1
+item minecraft:cherry_trapdoor 16 32 15 0.1
+item minecraft:bamboo_trapdoor 16 32 15 0.1
+item minecraft:crimson_trapdoor 16 32 15 0.1
+item minecraft:warped_trapdoor 16 32 15 0.1
+
+item minecraft:spruce_fence 16 32 8 0.1
+item minecraft:birch_fence 16 32 8 0.1
+item minecraft:jungle_fence 16 32 8 0.1
+item minecraft:acacia_fence 16 32 8 0.1
+item minecraft:dark_oak_fence 16 32 8 0.1
+item minecraft:mangrove_fence 16 32 8 0.1
+item minecraft:cherry_fence 16 32 8 0.1
+item minecraft:bamboo_fence 16 32 8 0.1
+item minecraft:crimson_fence 16 32 8 0.1
+item minecraft:warped_fence 16 32 8 0.1
+
+item minecraft:spruce_fence_gate 16 32 10 0.1
+item minecraft:birch_fence_gate 16 32 10 0.1
+item minecraft:jungle_fence_gate 16 32 10 0.1
+item minecraft:acacia_fence_gate 16 32 10 0.1
+item minecraft:dark_oak_fence_gate 16 32 10 0.1
+item minecraft:mangrove_fence_gate 16 32 10 0.1
+item minecraft:cherry_fence_gate 16 32 10 0.1
+item minecraft:bamboo_fence_gate 16 32 10 0.1
+item minecraft:crimson_fence_gate 16 32 10 0.1
+item minecraft:warped_fence_gate 16 32 10 0.1
+
+item minecraft:spruce_sign 16 32 8 0.1
+item minecraft:birch_sign 16 32 8 0.1
+item minecraft:jungle_sign 16 32 8 0.1
+item minecraft:acacia_sign 16 32 8 0.1
+item minecraft:dark_oak_sign 16 32 8 0.1
+item minecraft:mangrove_sign 16 32 8 0.1
+item minecraft:cherry_sign 16 32 8 0.1
+item minecraft:bamboo_sign 16 32 8 0.1
+item minecraft:crimson_sign 16 32 8 0.1
+item minecraft:warped_sign 16 32 8 0.1
+
+item minecraft:spruce_hanging_sign 16 32 15 0.1
+item minecraft:birch_hanging_sign 16 32 15 0.1
+item minecraft:jungle_hanging_sign 16 32 15 0.1
+item minecraft:acacia_hanging_sign 16 32 15 0.1
+item minecraft:dark_oak_hanging_sign 16 32 15 0.1
+item minecraft:mangrove_hanging_sign 16 32 15 0.1
+item minecraft:cherry_hanging_sign 16 32 15 0.1
+item minecraft:bamboo_hanging_sign 16 32 15 0.1
+item minecraft:crimson_hanging_sign 16 32 15 0.1
+item minecraft:warped_hanging_sign 16 32 15 0.1
+
+item minecraft:spruce_boat 16 32 10 0.1
+item minecraft:birch_boat 16 32 10 0.1
+item minecraft:jungle_boat 16 32 10 0.1
+item minecraft:acacia_boat 16 32 10 0.1
+item minecraft:dark_oak_boat 16 32 10 0.1
+item minecraft:mangrove_boat 16 32 10 0.1
+item minecraft:cherry_boat 16 32 10 0.1
+item minecraft:bamboo_raft 16 32 10 0.1
+
+item flavor_immersed_daily:verdant_grace_log 32 64 10 0.1
+item flavor_immersed_daily:verdant_grace_planks 32 64 4 0.1
+item flavor_immersed_daily:solarwood_log 32 64 10 0.1
+item flavor_immersed_daily:solarwood_planks 32 64 4 0.1
+item flavor_immersed_daily:orchard_heartwood_log 32 64 10 0.1
+item flavor_immersed_daily:orchard_heartwood_planks 32 64 4 0.1
+item flavor_immersed_daily:stonebark_log 32 64 10 0.1
+item flavor_immersed_daily:stonebark_planks 32 64 4 0.1
+item flavor_immersed_daily:vineheart_timber_log 32 64 10 0.1
+item flavor_immersed_daily:vineheart_timber_planks 32 64 4 0.1
+
+item flavor_immersed_daily:verdant_grace_fence 16 32 12 0.1
+item flavor_immersed_daily:verdant_grace_fence_gate 16 32 12 0.1
+
+item flavor_immersed_daily:solarwood_fence 16 32 12 0.1
+item flavor_immersed_daily:solarwood_fence_gate 16 32 12 0.1
+
+item flavor_immersed_daily:orchard_heartwood_fence 16 32 12 0.1
+item flavor_immersed_daily:orchard_heartwood_fence_gate 16 32 12 0.1
+
+item flavor_immersed_daily:stonebark_fence 16 32 12 0.1
+item flavor_immersed_daily:stonebark_fence_gate 16 32 12 0.1
+
+item flavor_immersed_daily:vineheart_timber_fence 16 32 12 0.1
+item flavor_immersed_daily:vineheart_timber_fence_gate 16 32 12 0.1
+
+item biomesoplenty:fir_door 16 32 24 0.1
+item biomesoplenty:fir_trapdoor 16 32 30 0.1
+item biomesoplenty:fir_fence 16 32 16 0.1
+item biomesoplenty:fir_fence_gate 16 32 20 0.1
+item biomesoplenty:fir_sign 16 32 16 0.1
+item biomesoplenty:fir_hanging_sign 16 32 30 0.1
+item biomesoplenty:fir_boat 16 32 20 0.1
+
+item biomesoplenty:pine_door 16 32 24 0.1
+item biomesoplenty:pine_trapdoor 16 32 30 0.1
+item biomesoplenty:pine_fence 16 32 16 0.1
+item biomesoplenty:pine_fence_gate 16 32 20 0.1
+item biomesoplenty:pine_sign 16 32 16 0.1
+item biomesoplenty:pine_hanging_sign 16 32 30 0.1
+item biomesoplenty:pine_boat 16 32 20 0.1
+
+item biomesoplenty:maple_door 16 32 24 0.1
+item biomesoplenty:maple_trapdoor 16 32 30 0.1
+item biomesoplenty:maple_fence 16 32 16 0.1
+item biomesoplenty:maple_fence_gate 16 32 20 0.1
+item biomesoplenty:maple_sign 16 32 16 0.1
+item biomesoplenty:maple_hanging_sign 16 32 30 0.1
+item biomesoplenty:maple_boat 16 32 20 0.1
+
+item biomesoplenty:redwood_door 16 32 24 0.1
+item biomesoplenty:redwood_trapdoor 16 32 30 0.1
+item biomesoplenty:redwood_fence 16 32 16 0.1
+item biomesoplenty:redwood_fence_gate 16 32 20 0.1
+item biomesoplenty:redwood_sign 16 32 16 0.1
+item biomesoplenty:redwood_hanging_sign 16 32 30 0.1
+item biomesoplenty:redwood_boat 16 32 20 0.1
+
+item biomesoplenty:mahogany_door 16 32 24 0.1
+item biomesoplenty:mahogany_trapdoor 16 32 30 0.1
+item biomesoplenty:mahogany_fence 16 32 16 0.1
+item biomesoplenty:mahogany_fence_gate 16 32 20 0.1
+item biomesoplenty:mahogany_sign 16 32 16 0.1
+item biomesoplenty:mahogany_hanging_sign 16 32 30 0.1
+item biomesoplenty:mahogany_boat 16 32 20 0.1
+
+item biomesoplenty:jacaranda_door 16 32 24 0.1
+item biomesoplenty:jacaranda_trapdoor 16 32 30 0.1
+item biomesoplenty:jacaranda_fence 16 32 16 0.1
+item biomesoplenty:jacaranda_fence_gate 16 32 20 0.1
+item biomesoplenty:jacaranda_sign 16 32 16 0.1
+item biomesoplenty:jacaranda_hanging_sign 16 32 30 0.1
+item biomesoplenty:jacaranda_boat 16 32 20 0.1
+
+item biomesoplenty:palm_door 16 32 24 0.1
+item biomesoplenty:palm_trapdoor 16 32 30 0.1
+item biomesoplenty:palm_fence 16 32 16 0.1
+item biomesoplenty:palm_fence_gate 16 32 20 0.1
+item biomesoplenty:palm_sign 16 32 16 0.1
+item biomesoplenty:palm_hanging_sign 16 32 30 0.1
+item biomesoplenty:palm_boat 16 32 20 0.1
+
+item biomesoplenty:willow_door 16 32 24 0.1
+item biomesoplenty:willow_trapdoor 16 32 30 0.1
+item biomesoplenty:willow_fence 16 32 16 0.1
+item biomesoplenty:willow_fence_gate 16 32 20 0.1
+item biomesoplenty:willow_sign 16 32 16 0.1
+item biomesoplenty:willow_hanging_sign 16 32 30 0.1
+item biomesoplenty:willow_boat 16 32 20 0.1
+
+item biomesoplenty:dead_door 16 32 24 0.1
+item biomesoplenty:dead_trapdoor 16 32 30 0.1
+item biomesoplenty:dead_fence 16 32 16 0.1
+item biomesoplenty:dead_fence_gate 16 32 20 0.1
+item biomesoplenty:dead_sign 16 32 16 0.1
+item biomesoplenty:dead_hanging_sign 16 32 30 0.1
+item biomesoplenty:dead_boat 16 32 20 0.1
+
+item biomesoplenty:magic_door 16 32 24 0.1
+item biomesoplenty:magic_trapdoor 16 32 30 0.1
+item biomesoplenty:magic_fence 16 32 16 0.1
+item biomesoplenty:magic_fence_gate 16 32 20 0.1
+item biomesoplenty:magic_sign 16 32 16 0.1
+item biomesoplenty:magic_hanging_sign 16 32 30 0.1
+item biomesoplenty:magic_boat 16 32 20 0.1
+
+item biomesoplenty:umbran_door 16 32 24 0.1
+item biomesoplenty:umbran_trapdoor 16 32 30 0.1
+item biomesoplenty:umbran_fence 16 32 16 0.1
+item biomesoplenty:umbran_fence_gate 16 32 20 0.1
+item biomesoplenty:umbran_sign 16 32 16 0.1
+item biomesoplenty:umbran_hanging_sign 16 32 30 0.1
+item biomesoplenty:umbran_boat 16 32 20 0.1
+
+item biomesoplenty:hellbark_door 16 32 24 0.1
+item biomesoplenty:hellbark_trapdoor 16 32 30 0.1
+item biomesoplenty:hellbark_fence 16 32 16 0.1
+item biomesoplenty:hellbark_fence_gate 16 32 20 0.1
+item biomesoplenty:hellbark_sign 16 32 16 0.1
+item biomesoplenty:hellbark_hanging_sign 16 32 30 0.1
+item biomesoplenty:hellbark_boat 16 32 20 0.1
+
+item biomesoplenty:empyreal_door 16 32 24 0.1
+item biomesoplenty:empyreal_trapdoor 16 32 30 0.1
+item biomesoplenty:empyreal_fence 16 32 16 0.1
+item biomesoplenty:empyreal_fence_gate 16 32 20 0.1
+item biomesoplenty:empyreal_sign 16 32 16 0.1
+item biomesoplenty:empyreal_hanging_sign 16 32 30 0.1
+item biomesoplenty:empyreal_boat 16 32 20 0.1

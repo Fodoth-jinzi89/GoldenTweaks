@@ -1,0 +1,5599 @@
+{
+    "content": {
+        "oak_log": {
+            "type": "item",
+            "content": "minecraft:oak_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_oak_log": {
+            "type": "item",
+            "content": "minecraft:stripped_oak_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "oak_planks": {
+            "type": "item",
+            "content": "minecraft:oak_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "oak_sapling": {
+            "type": "item",
+            "content": "minecraft:oak_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "bamboo_block": {
+            "type": "item",
+            "content": "minecraft:bamboo_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_bamboo_block": {
+            "type": "item",
+            "content": "minecraft:stripped_bamboo_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "bamboo_planks": {
+            "type": "item",
+            "content": "minecraft:bamboo_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "crimson_stem": {
+            "type": "item",
+            "content": "minecraft:crimson_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "nether_wart_block": {
+            "type": "item",
+            "content": "minecraft:nether_wart_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "stripped_crimson_stem": {
+            "type": "item",
+            "content": "minecraft:stripped_crimson_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "crimson_planks": {
+            "type": "item",
+            "content": "minecraft:crimson_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 3,
+            "weightMult": 0.0006846188954815153,
+            "effectiveValue": 168
+        },
+        "shroomlight": {
+            "type": "item",
+            "content": "minecraft:shroomlight",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "warped_stem": {
+            "type": "item",
+            "content": "minecraft:warped_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "warped_wart_block": {
+            "type": "item",
+            "content": "minecraft:warped_wart_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "stripped_warped_stem": {
+            "type": "item",
+            "content": "minecraft:stripped_warped_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "warped_planks": {
+            "type": "item",
+            "content": "minecraft:warped_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 3,
+            "weightMult": 0.0006846188954815153,
+            "effectiveValue": 168
+        },
+        "birch_log": {
+            "type": "item",
+            "content": "minecraft:birch_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_birch_log": {
+            "type": "item",
+            "content": "minecraft:stripped_birch_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "birch_planks": {
+            "type": "item",
+            "content": "minecraft:birch_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "birch_sapling": {
+            "type": "item",
+            "content": "minecraft:birch_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "jungle_log": {
+            "type": "item",
+            "content": "minecraft:jungle_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_jungle_log": {
+            "type": "item",
+            "content": "minecraft:stripped_jungle_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "jungle_planks": {
+            "type": "item",
+            "content": "minecraft:jungle_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "jungle_sapling": {
+            "type": "item",
+            "content": "minecraft:jungle_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "acacia_log": {
+            "type": "item",
+            "content": "minecraft:acacia_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_acacia_log": {
+            "type": "item",
+            "content": "minecraft:stripped_acacia_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "acacia_planks": {
+            "type": "item",
+            "content": "minecraft:acacia_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "acacia_sapling": {
+            "type": "item",
+            "content": "minecraft:acacia_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "dark_oak_log": {
+            "type": "item",
+            "content": "minecraft:dark_oak_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_dark_oak_log": {
+            "type": "item",
+            "content": "minecraft:stripped_dark_oak_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "dark_oak_planks": {
+            "type": "item",
+            "content": "minecraft:dark_oak_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "dark_oak_sapling": {
+            "type": "item",
+            "content": "minecraft:dark_oak_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "mangrove_log": {
+            "type": "item",
+            "content": "minecraft:mangrove_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_mangrove_log": {
+            "type": "item",
+            "content": "minecraft:stripped_mangrove_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "mangrove_planks": {
+            "type": "item",
+            "content": "minecraft:mangrove_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "mangrove_propagule": {
+            "type": "item",
+            "content": "minecraft:mangrove_propagule",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "cherry_log": {
+            "type": "item",
+            "content": "minecraft:cherry_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_cherry_log": {
+            "type": "item",
+            "content": "minecraft:stripped_cherry_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "cherry_planks": {
+            "type": "item",
+            "content": "minecraft:cherry_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 2,
+            "weightMult": 0.00045641259698767686,
+            "effectiveValue": 112
+        },
+        "cherry_sapling": {
+            "type": "item",
+            "content": "minecraft:cherry_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "netherwood_log": {
+            "type": "item",
+            "content": "silentgear:netherwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_netherwood_log": {
+            "type": "item",
+            "content": "silentgear:stripped_netherwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "netherwood_planks": {
+            "type": "item",
+            "content": "silentgear:netherwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "netherwood_sapling": {
+            "type": "item",
+            "content": "silentgear:netherwood_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "wilter_log": {
+            "type": "item",
+            "content": "northstar:wilter_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "stripped_wilter_log": {
+            "type": "item",
+            "content": "northstar:stripped_wilter_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 32,
+            "weightMult": 0.00730260155180283,
+            "effectiveValue": 1792
+        },
+        "wilter_planks": {
+            "type": "item",
+            "content": "northstar:wilter_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "wilter_sapling": {
+            "type": "item",
+            "content": "northstar:wilter_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "argyre_log": {
+            "type": "item",
+            "content": "northstar:argyre_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "stripped_argyre_log": {
+            "type": "item",
+            "content": "northstar:stripped_argyre_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 32,
+            "weightMult": 0.00730260155180283,
+            "effectiveValue": 1792
+        },
+        "argyre_planks": {
+            "type": "item",
+            "content": "northstar:argyre_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "argyre_sapling": {
+            "type": "item",
+            "content": "northstar:argyre_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "coiler_log": {
+            "type": "item",
+            "content": "northstar:coiler_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "stripped_coiler_log": {
+            "type": "item",
+            "content": "northstar:stripped_coiler_log",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 32,
+            "weightMult": 0.00730260155180283,
+            "effectiveValue": 1792
+        },
+        "coiler_planks": {
+            "type": "item",
+            "content": "northstar:coiler_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "coiler_sapling": {
+            "type": "item",
+            "content": "northstar:coiler_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "fir_log": {
+            "type": "item",
+            "content": "biomesoplenty:fir_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_fir_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_fir_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "fir_planks": {
+            "type": "item",
+            "content": "biomesoplenty:fir_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "fir_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:fir_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "pine_log": {
+            "type": "item",
+            "content": "biomesoplenty:pine_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_pine_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_pine_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "pine_planks": {
+            "type": "item",
+            "content": "biomesoplenty:pine_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "pine_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:pine_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "maple_log": {
+            "type": "item",
+            "content": "biomesoplenty:maple_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_maple_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_maple_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "maple_planks": {
+            "type": "item",
+            "content": "biomesoplenty:maple_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "maple_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:red_maple_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "redwood_log": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_redwood_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_redwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "redwood_planks": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "redwood_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "mahogany_log": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_mahogany_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_mahogany_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "mahogany_planks": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "mahogany_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "jacaranda_log": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_jacaranda_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_jacaranda_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "jacaranda_planks": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "jacaranda_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "palm_log": {
+            "type": "item",
+            "content": "biomesoplenty:palm_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_palm_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_palm_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "palm_planks": {
+            "type": "item",
+            "content": "biomesoplenty:palm_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "palm_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:palm_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "willow_log": {
+            "type": "item",
+            "content": "biomesoplenty:willow_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_willow_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_willow_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "willow_planks": {
+            "type": "item",
+            "content": "biomesoplenty:willow_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "willow_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:willow_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "dead_log": {
+            "type": "item",
+            "content": "biomesoplenty:dead_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_dead_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_dead_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "dead_planks": {
+            "type": "item",
+            "content": "biomesoplenty:dead_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "magic_log": {
+            "type": "item",
+            "content": "biomesoplenty:magic_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_magic_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_magic_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "magic_planks": {
+            "type": "item",
+            "content": "biomesoplenty:magic_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "magic_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:magic_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "umbran_log": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_umbran_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_umbran_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "umbran_planks": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "umbran_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "hellbark_log": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_hellbark_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_hellbark_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "hellbark_planks": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "hellbark_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "empyreal_log": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_empyreal_log": {
+            "type": "item",
+            "content": "biomesoplenty:stripped_empyreal_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "empyreal_planks": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "empyreal_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "cinnamon_log": {
+            "type": "item",
+            "content": "croptopia:cinnamon_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.0011410314924691922,
+            "effectiveValue": 280
+        },
+        "stripped_cinnamon_log": {
+            "type": "item",
+            "content": "croptopia:stripped_cinnamon_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "cinnamon_sapling": {
+            "type": "item",
+            "content": "croptopia:cinnamon_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "wisewood_log": {
+            "type": "item",
+            "content": "hazennstuff:wisewood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_wisewood_log": {
+            "type": "item",
+            "content": "hazennstuff:stripped_wisewood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "wisewood_planks": {
+            "type": "item",
+            "content": "hazennstuff:wisewood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "wisewood_sapling": {
+            "type": "item",
+            "content": "hazennstuff:wisewood_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "frostbite_birch_log": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_birch_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_frostbite_birch_log": {
+            "type": "item",
+            "content": "hazennstuff:stripped_frostbite_birch_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "frostbite_birch_planks": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_birch_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "frostbite_birch_sapling": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_birch_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "weeping_gala_log": {
+            "type": "item",
+            "content": "spectrum:weeping_gala_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_weeping_gala_log": {
+            "type": "item",
+            "content": "spectrum:stripped_weeping_gala_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "weeping_gala_planks": {
+            "type": "item",
+            "content": "spectrum:weeping_gala_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "weeping_gala_sapling": {
+            "type": "item",
+            "content": "spectrum:ominous_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "white_log": {
+            "type": "item",
+            "content": "spectrum:white_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_white_log": {
+            "type": "item",
+            "content": "spectrum:stripped_white_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "white_planks": {
+            "type": "item",
+            "content": "spectrum:white_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "white_sapling": {
+            "type": "item",
+            "content": "spectrum:white_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "orange_log": {
+            "type": "item",
+            "content": "spectrum:orange_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_orange_log": {
+            "type": "item",
+            "content": "spectrum:stripped_orange_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "orange_planks": {
+            "type": "item",
+            "content": "spectrum:orange_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "orange_sapling": {
+            "type": "item",
+            "content": "spectrum:orange_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "magenta_log": {
+            "type": "item",
+            "content": "spectrum:magenta_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_magenta_log": {
+            "type": "item",
+            "content": "spectrum:stripped_magenta_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "magenta_planks": {
+            "type": "item",
+            "content": "spectrum:magenta_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "magenta_sapling": {
+            "type": "item",
+            "content": "spectrum:magenta_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "light_blue_log": {
+            "type": "item",
+            "content": "spectrum:light_blue_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_light_blue_log": {
+            "type": "item",
+            "content": "spectrum:stripped_light_blue_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "light_blue_planks": {
+            "type": "item",
+            "content": "spectrum:light_blue_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "light_blue_sapling": {
+            "type": "item",
+            "content": "spectrum:light_blue_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "yellow_log": {
+            "type": "item",
+            "content": "spectrum:yellow_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_yellow_log": {
+            "type": "item",
+            "content": "spectrum:stripped_yellow_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "yellow_planks": {
+            "type": "item",
+            "content": "spectrum:yellow_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "yellow_sapling": {
+            "type": "item",
+            "content": "spectrum:yellow_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "lime_log": {
+            "type": "item",
+            "content": "spectrum:lime_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_lime_log": {
+            "type": "item",
+            "content": "spectrum:stripped_lime_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "lime_planks": {
+            "type": "item",
+            "content": "spectrum:lime_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "lime_sapling": {
+            "type": "item",
+            "content": "spectrum:lime_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "pink_log": {
+            "type": "item",
+            "content": "spectrum:pink_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_pink_log": {
+            "type": "item",
+            "content": "spectrum:stripped_pink_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "pink_planks": {
+            "type": "item",
+            "content": "spectrum:pink_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "pink_sapling": {
+            "type": "item",
+            "content": "spectrum:pink_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "gray_log": {
+            "type": "item",
+            "content": "spectrum:gray_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_gray_log": {
+            "type": "item",
+            "content": "spectrum:stripped_gray_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "gray_planks": {
+            "type": "item",
+            "content": "spectrum:gray_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "gray_sapling": {
+            "type": "item",
+            "content": "spectrum:gray_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "light_gray_log": {
+            "type": "item",
+            "content": "spectrum:light_gray_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_light_gray_log": {
+            "type": "item",
+            "content": "spectrum:stripped_light_gray_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "light_gray_planks": {
+            "type": "item",
+            "content": "spectrum:light_gray_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "light_gray_sapling": {
+            "type": "item",
+            "content": "spectrum:light_gray_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "cyan_log": {
+            "type": "item",
+            "content": "spectrum:cyan_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_cyan_log": {
+            "type": "item",
+            "content": "spectrum:stripped_cyan_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "cyan_planks": {
+            "type": "item",
+            "content": "spectrum:cyan_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "cyan_sapling": {
+            "type": "item",
+            "content": "spectrum:cyan_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "purple_log": {
+            "type": "item",
+            "content": "spectrum:purple_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_purple_log": {
+            "type": "item",
+            "content": "spectrum:stripped_purple_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "purple_planks": {
+            "type": "item",
+            "content": "spectrum:purple_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "purple_sapling": {
+            "type": "item",
+            "content": "spectrum:purple_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "blue_log": {
+            "type": "item",
+            "content": "spectrum:blue_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_blue_log": {
+            "type": "item",
+            "content": "spectrum:stripped_blue_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "blue_planks": {
+            "type": "item",
+            "content": "spectrum:blue_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "blue_sapling": {
+            "type": "item",
+            "content": "spectrum:blue_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "brown_log": {
+            "type": "item",
+            "content": "spectrum:brown_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_brown_log": {
+            "type": "item",
+            "content": "spectrum:stripped_brown_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "brown_planks": {
+            "type": "item",
+            "content": "spectrum:brown_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "brown_sapling": {
+            "type": "item",
+            "content": "spectrum:brown_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "green_log": {
+            "type": "item",
+            "content": "spectrum:green_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_green_log": {
+            "type": "item",
+            "content": "spectrum:stripped_green_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "green_planks": {
+            "type": "item",
+            "content": "spectrum:green_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "green_sapling": {
+            "type": "item",
+            "content": "spectrum:green_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "red_log": {
+            "type": "item",
+            "content": "spectrum:red_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_red_log": {
+            "type": "item",
+            "content": "spectrum:stripped_red_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "red_planks": {
+            "type": "item",
+            "content": "spectrum:red_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "red_sapling": {
+            "type": "item",
+            "content": "spectrum:red_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "black_log": {
+            "type": "item",
+            "content": "spectrum:black_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_black_log": {
+            "type": "item",
+            "content": "spectrum:stripped_black_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.003651300775901415,
+            "effectiveValue": 896
+        },
+        "black_planks": {
+            "type": "item",
+            "content": "spectrum:black_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0009128251939753537,
+            "effectiveValue": 224
+        },
+        "black_sapling": {
+            "type": "item",
+            "content": "spectrum:black_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "ivory_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:ivory_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_ivory_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:stripped_ivory_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ivory_noxcap_block": {
+            "type": "item",
+            "content": "spectrum:ivory_noxcap_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ivory_noxcap_gills": {
+            "type": "item",
+            "content": "spectrum:ivory_noxcap_gills",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ivory_noxwood_planks": {
+            "type": "item",
+            "content": "spectrum:ivory_noxwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ivory_noxwood_amphora": {
+            "type": "item",
+            "content": "spectrum:ivory_noxwood_amphora",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "ivory_noxwood_lantern": {
+            "type": "item",
+            "content": "spectrum:ivory_noxwood_lantern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "ivory_noxwood_light": {
+            "type": "item",
+            "content": "spectrum:ivory_noxwood_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "ivory_noxwood_lamp": {
+            "type": "item",
+            "content": "spectrum:ivory_noxwood_lamp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "ebony_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:ebony_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_ebony_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:stripped_ebony_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ebony_noxcap_block": {
+            "type": "item",
+            "content": "spectrum:ebony_noxcap_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ebony_noxcap_gills": {
+            "type": "item",
+            "content": "spectrum:ebony_noxcap_gills",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ebony_noxwood_planks": {
+            "type": "item",
+            "content": "spectrum:ebony_noxwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "ebony_noxwood_amphora": {
+            "type": "item",
+            "content": "spectrum:ebony_noxwood_amphora",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "ebony_noxwood_lantern": {
+            "type": "item",
+            "content": "spectrum:ebony_noxwood_lantern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "ebony_noxwood_light": {
+            "type": "item",
+            "content": "spectrum:ebony_noxwood_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "ebony_noxwood_lamp": {
+            "type": "item",
+            "content": "spectrum:ebony_noxwood_lamp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "slate_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:slate_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_slate_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:stripped_slate_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "slate_noxcap_block": {
+            "type": "item",
+            "content": "spectrum:slate_noxcap_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "slate_noxcap_gills": {
+            "type": "item",
+            "content": "spectrum:slate_noxcap_gills",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "slate_noxwood_planks": {
+            "type": "item",
+            "content": "spectrum:slate_noxwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "slate_noxwood_amphora": {
+            "type": "item",
+            "content": "spectrum:slate_noxwood_amphora",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "slate_noxwood_lantern": {
+            "type": "item",
+            "content": "spectrum:slate_noxwood_lantern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "slate_noxwood_light": {
+            "type": "item",
+            "content": "spectrum:slate_noxwood_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "slate_noxwood_lamp": {
+            "type": "item",
+            "content": "spectrum:slate_noxwood_lamp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "chestnut_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "stripped_chestnut_noxcap_stem": {
+            "type": "item",
+            "content": "spectrum:stripped_chestnut_noxcap_stem",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "chestnut_noxcap_block": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxcap_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "chestnut_noxcap_gills": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxcap_gills",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "chestnut_noxwood_planks": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0022820629849383844,
+            "effectiveValue": 560
+        },
+        "chestnut_noxwood_amphora": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxwood_amphora",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "chestnut_noxwood_lantern": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxwood_lantern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "chestnut_noxwood_light": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxwood_light",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "chestnut_noxwood_lamp": {
+            "type": "item",
+            "content": "spectrum:chestnut_noxwood_lamp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "fine_wood": {
+            "type": "item",
+            "content": "supplementaries:fine_wood",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "daub_frame": {
+            "type": "item",
+            "content": "supplementaries:daub_frame",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "daub_brace": {
+            "type": "item",
+            "content": "supplementaries:daub_brace",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "daub_cross_brace": {
+            "type": "item",
+            "content": "supplementaries:daub_cross_brace",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "wicker_fence": {
+            "type": "item",
+            "content": "supplementaries:wicker_fence",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.004564125969876769,
+            "effectiveValue": 1120
+        },
+        "blackboard": {
+            "type": "item",
+            "content": "supplementaries:blackboard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "notice_board": {
+            "type": "item",
+            "content": "supplementaries:notice_board",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "clock_block": {
+            "type": "item",
+            "content": "supplementaries:clock_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "pulley_block": {
+            "type": "item",
+            "content": "supplementaries:pulley_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0034230944774075764,
+            "effectiveValue": 840
+        },
+        "speaker_block": {
+            "type": "item",
+            "content": "supplementaries:speaker_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0010187781182760644,
+            "effectiveValue": 250
+        },
+        "beehive": {
+            "type": "item",
+            "content": "minecraft:beehive",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0010187781182760644,
+            "effectiveValue": 250
+        },
+        "honeycomb_block": {
+            "type": "item",
+            "content": "minecraft:honeycomb_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.009780269935450218,
+            "effectiveValue": 2400
+        },
+        "honey_block": {
+            "type": "item",
+            "content": "minecraft:honey_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.009780269935450218,
+            "effectiveValue": 2400
+        },
+        "slime_block": {
+            "type": "item",
+            "content": "minecraft:slime_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 50,
+            "weightMult": 0.004890134967725109,
+            "effectiveValue": 1200
+        },
+        "bookshelf": {
+            "type": "item",
+            "content": "minecraft:bookshelf",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009780269935450218,
+            "effectiveValue": 2400
+        },
+        "lectern": {
+            "type": "item",
+            "content": "minecraft:lectern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 120,
+            "weightMult": 0.011736323922540263,
+            "effectiveValue": 2880
+        },
+        "chest": {
+            "type": "item",
+            "content": "minecraft:chest",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "barrel": {
+            "type": "item",
+            "content": "minecraft:barrel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "oak_window": {
+            "type": "item",
+            "content": "create:oak_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "spruce_window": {
+            "type": "item",
+            "content": "create:spruce_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "birch_window": {
+            "type": "item",
+            "content": "create:birch_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "jungle_window": {
+            "type": "item",
+            "content": "create:jungle_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "acacia_window": {
+            "type": "item",
+            "content": "create:acacia_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "dark_oak_window": {
+            "type": "item",
+            "content": "create:dark_oak_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "mangrove_window": {
+            "type": "item",
+            "content": "create:mangrove_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "cherry_window": {
+            "type": "item",
+            "content": "create:cherry_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "bamboo_window": {
+            "type": "item",
+            "content": "create:bamboo_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "crimson_window": {
+            "type": "item",
+            "content": "create:crimson_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "warped_window": {
+            "type": "item",
+            "content": "create:warped_window",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0027384755819260614,
+            "effectiveValue": 672
+        },
+        "oak_window_pane": {
+            "type": "item",
+            "content": "create:oak_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "spruce_window_pane": {
+            "type": "item",
+            "content": "create:spruce_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "birch_window_pane": {
+            "type": "item",
+            "content": "create:birch_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "jungle_window_pane": {
+            "type": "item",
+            "content": "create:jungle_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "acacia_window_pane": {
+            "type": "item",
+            "content": "create:acacia_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "dark_oak_window_pane": {
+            "type": "item",
+            "content": "create:dark_oak_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "mangrove_window_pane": {
+            "type": "item",
+            "content": "create:mangrove_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "cherry_window_pane": {
+            "type": "item",
+            "content": "create:cherry_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "bamboo_window_pane": {
+            "type": "item",
+            "content": "create:bamboo_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "crimson_window_pane": {
+            "type": "item",
+            "content": "create:crimson_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "warped_window_pane": {
+            "type": "item",
+            "content": "create:warped_window_pane",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 48,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0018256503879507074,
+            "effectiveValue": 448
+        },
+        "bellows": {
+            "type": "item",
+            "content": "supplementaries:bellows",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0010187781182760644,
+            "effectiveValue": 250
+        },
+        "television": {
+            "type": "item",
+            "content": "vista:television",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0010187781182760644,
+            "effectiveValue": 250
+        },
+        "chip_wood_beam": {
+            "type": "item",
+            "content": "createdieselgenerators:chip_wood_beam",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "chair_oak": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_oak",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_spruce": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_spruce",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_birch": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_birch",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_jungle": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_jungle",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_acacia": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_acacia",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_dark_oak": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_dark_oak",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_mangrove": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_mangrove",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_cherry": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_cherry",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_bamboo": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_bamboo",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_crimson": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_crimson",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "chair_warped": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chair_warped",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_spruce": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_spruce",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_birch": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_birch",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_jungle": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_jungle",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_acacia": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_acacia",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_dark_oak": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_dark_oak",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_mangrove": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_mangrove",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_cherry": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_cherry",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_bamboo": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_bamboo",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_crimson": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_crimson",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "table_warped": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:table_warped",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0024450674838625546,
+            "effectiveValue": 600
+        },
+        "spruce_door": {
+            "type": "item",
+            "content": "minecraft:spruce_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "birch_door": {
+            "type": "item",
+            "content": "minecraft:birch_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "jungle_door": {
+            "type": "item",
+            "content": "minecraft:jungle_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "acacia_door": {
+            "type": "item",
+            "content": "minecraft:acacia_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "dark_oak_door": {
+            "type": "item",
+            "content": "minecraft:dark_oak_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "mangrove_door": {
+            "type": "item",
+            "content": "minecraft:mangrove_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "cherry_door": {
+            "type": "item",
+            "content": "minecraft:cherry_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "bamboo_door": {
+            "type": "item",
+            "content": "minecraft:bamboo_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "crimson_door": {
+            "type": "item",
+            "content": "minecraft:crimson_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "warped_door": {
+            "type": "item",
+            "content": "minecraft:warped_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "spruce_trapdoor": {
+            "type": "item",
+            "content": "minecraft:spruce_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "birch_trapdoor": {
+            "type": "item",
+            "content": "minecraft:birch_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "jungle_trapdoor": {
+            "type": "item",
+            "content": "minecraft:jungle_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "acacia_trapdoor": {
+            "type": "item",
+            "content": "minecraft:acacia_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "dark_oak_trapdoor": {
+            "type": "item",
+            "content": "minecraft:dark_oak_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "mangrove_trapdoor": {
+            "type": "item",
+            "content": "minecraft:mangrove_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "cherry_trapdoor": {
+            "type": "item",
+            "content": "minecraft:cherry_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "bamboo_trapdoor": {
+            "type": "item",
+            "content": "minecraft:bamboo_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "crimson_trapdoor": {
+            "type": "item",
+            "content": "minecraft:crimson_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "warped_trapdoor": {
+            "type": "item",
+            "content": "minecraft:warped_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "spruce_fence": {
+            "type": "item",
+            "content": "minecraft:spruce_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "birch_fence": {
+            "type": "item",
+            "content": "minecraft:birch_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "jungle_fence": {
+            "type": "item",
+            "content": "minecraft:jungle_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "acacia_fence": {
+            "type": "item",
+            "content": "minecraft:acacia_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "dark_oak_fence": {
+            "type": "item",
+            "content": "minecraft:dark_oak_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "mangrove_fence": {
+            "type": "item",
+            "content": "minecraft:mangrove_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "cherry_fence": {
+            "type": "item",
+            "content": "minecraft:cherry_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "bamboo_fence": {
+            "type": "item",
+            "content": "minecraft:bamboo_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "crimson_fence": {
+            "type": "item",
+            "content": "minecraft:crimson_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "warped_fence": {
+            "type": "item",
+            "content": "minecraft:warped_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "spruce_fence_gate": {
+            "type": "item",
+            "content": "minecraft:spruce_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "birch_fence_gate": {
+            "type": "item",
+            "content": "minecraft:birch_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "jungle_fence_gate": {
+            "type": "item",
+            "content": "minecraft:jungle_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "acacia_fence_gate": {
+            "type": "item",
+            "content": "minecraft:acacia_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "dark_oak_fence_gate": {
+            "type": "item",
+            "content": "minecraft:dark_oak_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "mangrove_fence_gate": {
+            "type": "item",
+            "content": "minecraft:mangrove_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "cherry_fence_gate": {
+            "type": "item",
+            "content": "minecraft:cherry_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "bamboo_fence_gate": {
+            "type": "item",
+            "content": "minecraft:bamboo_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "crimson_fence_gate": {
+            "type": "item",
+            "content": "minecraft:crimson_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "warped_fence_gate": {
+            "type": "item",
+            "content": "minecraft:warped_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "spruce_sign": {
+            "type": "item",
+            "content": "minecraft:spruce_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "birch_sign": {
+            "type": "item",
+            "content": "minecraft:birch_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "jungle_sign": {
+            "type": "item",
+            "content": "minecraft:jungle_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "acacia_sign": {
+            "type": "item",
+            "content": "minecraft:acacia_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "dark_oak_sign": {
+            "type": "item",
+            "content": "minecraft:dark_oak_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "mangrove_sign": {
+            "type": "item",
+            "content": "minecraft:mangrove_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "cherry_sign": {
+            "type": "item",
+            "content": "minecraft:cherry_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "bamboo_sign": {
+            "type": "item",
+            "content": "minecraft:bamboo_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "crimson_sign": {
+            "type": "item",
+            "content": "minecraft:crimson_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "warped_sign": {
+            "type": "item",
+            "content": "minecraft:warped_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 8,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "spruce_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:spruce_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "birch_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:birch_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "jungle_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:jungle_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "acacia_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:acacia_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "dark_oak_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:dark_oak_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "mangrove_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:mangrove_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "cherry_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:cherry_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "bamboo_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:bamboo_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "crimson_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:crimson_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "warped_hanging_sign": {
+            "type": "item",
+            "content": "minecraft:warped_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 15,
+            "weightMult": 0.0014670404903175329,
+            "effectiveValue": 360
+        },
+        "spruce_boat": {
+            "type": "item",
+            "content": "minecraft:spruce_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "birch_boat": {
+            "type": "item",
+            "content": "minecraft:birch_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "jungle_boat": {
+            "type": "item",
+            "content": "minecraft:jungle_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "acacia_boat": {
+            "type": "item",
+            "content": "minecraft:acacia_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "dark_oak_boat": {
+            "type": "item",
+            "content": "minecraft:dark_oak_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "mangrove_boat": {
+            "type": "item",
+            "content": "minecraft:mangrove_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "cherry_boat": {
+            "type": "item",
+            "content": "minecraft:cherry_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "bamboo_raft": {
+            "type": "item",
+            "content": "minecraft:bamboo_raft",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009780269935450218,
+            "effectiveValue": 240
+        },
+        "verdant_grace_log": {
+            "type": "item",
+            "content": "flavor_immersed_daily:verdant_grace_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "verdant_grace_planks": {
+            "type": "item",
+            "content": "flavor_immersed_daily:verdant_grace_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "solarwood_log": {
+            "type": "item",
+            "content": "flavor_immersed_daily:solarwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "solarwood_planks": {
+            "type": "item",
+            "content": "flavor_immersed_daily:solarwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "orchard_heartwood_log": {
+            "type": "item",
+            "content": "flavor_immersed_daily:orchard_heartwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "orchard_heartwood_planks": {
+            "type": "item",
+            "content": "flavor_immersed_daily:orchard_heartwood_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "stonebark_log": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stonebark_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "stonebark_planks": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stonebark_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "vineheart_timber_log": {
+            "type": "item",
+            "content": "flavor_immersed_daily:vineheart_timber_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "vineheart_timber_planks": {
+            "type": "item",
+            "content": "flavor_immersed_daily:vineheart_timber_planks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.0007824215948360175,
+            "effectiveValue": 192
+        },
+        "verdant_grace_fence": {
+            "type": "item",
+            "content": "flavor_immersed_daily:verdant_grace_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "verdant_grace_fence_gate": {
+            "type": "item",
+            "content": "flavor_immersed_daily:verdant_grace_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "solarwood_fence": {
+            "type": "item",
+            "content": "flavor_immersed_daily:solarwood_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "solarwood_fence_gate": {
+            "type": "item",
+            "content": "flavor_immersed_daily:solarwood_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "orchard_heartwood_fence": {
+            "type": "item",
+            "content": "flavor_immersed_daily:orchard_heartwood_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "orchard_heartwood_fence_gate": {
+            "type": "item",
+            "content": "flavor_immersed_daily:orchard_heartwood_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "stonebark_fence": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stonebark_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "stonebark_fence_gate": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stonebark_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "vineheart_timber_fence": {
+            "type": "item",
+            "content": "flavor_immersed_daily:vineheart_timber_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "vineheart_timber_fence_gate": {
+            "type": "item",
+            "content": "flavor_immersed_daily:vineheart_timber_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 12,
+            "weightMult": 0.0011736323922540261,
+            "effectiveValue": 288
+        },
+        "fir_door": {
+            "type": "item",
+            "content": "biomesoplenty:fir_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "fir_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:fir_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "fir_fence": {
+            "type": "item",
+            "content": "biomesoplenty:fir_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "fir_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:fir_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "fir_sign": {
+            "type": "item",
+            "content": "biomesoplenty:fir_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "fir_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:fir_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "fir_boat": {
+            "type": "item",
+            "content": "biomesoplenty:fir_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "pine_door": {
+            "type": "item",
+            "content": "biomesoplenty:pine_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "pine_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:pine_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "pine_fence": {
+            "type": "item",
+            "content": "biomesoplenty:pine_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "pine_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:pine_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "pine_sign": {
+            "type": "item",
+            "content": "biomesoplenty:pine_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "pine_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:pine_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "pine_boat": {
+            "type": "item",
+            "content": "biomesoplenty:pine_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "maple_door": {
+            "type": "item",
+            "content": "biomesoplenty:maple_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "maple_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:maple_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "maple_fence": {
+            "type": "item",
+            "content": "biomesoplenty:maple_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "maple_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:maple_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "maple_sign": {
+            "type": "item",
+            "content": "biomesoplenty:maple_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "maple_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:maple_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "maple_boat": {
+            "type": "item",
+            "content": "biomesoplenty:maple_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "redwood_door": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "redwood_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "redwood_fence": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "redwood_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "redwood_sign": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "redwood_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "redwood_boat": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "mahogany_door": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "mahogany_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "mahogany_fence": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "mahogany_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "mahogany_sign": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "mahogany_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "mahogany_boat": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "jacaranda_door": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "jacaranda_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "jacaranda_fence": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "jacaranda_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "jacaranda_sign": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "jacaranda_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "jacaranda_boat": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "palm_door": {
+            "type": "item",
+            "content": "biomesoplenty:palm_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "palm_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:palm_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "palm_fence": {
+            "type": "item",
+            "content": "biomesoplenty:palm_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "palm_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:palm_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "palm_sign": {
+            "type": "item",
+            "content": "biomesoplenty:palm_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "palm_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:palm_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "palm_boat": {
+            "type": "item",
+            "content": "biomesoplenty:palm_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "willow_door": {
+            "type": "item",
+            "content": "biomesoplenty:willow_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "willow_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:willow_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "willow_fence": {
+            "type": "item",
+            "content": "biomesoplenty:willow_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "willow_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:willow_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "willow_sign": {
+            "type": "item",
+            "content": "biomesoplenty:willow_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "willow_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:willow_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "willow_boat": {
+            "type": "item",
+            "content": "biomesoplenty:willow_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "dead_door": {
+            "type": "item",
+            "content": "biomesoplenty:dead_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "dead_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:dead_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "dead_fence": {
+            "type": "item",
+            "content": "biomesoplenty:dead_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "dead_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:dead_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "dead_sign": {
+            "type": "item",
+            "content": "biomesoplenty:dead_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "dead_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:dead_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "dead_boat": {
+            "type": "item",
+            "content": "biomesoplenty:dead_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "magic_door": {
+            "type": "item",
+            "content": "biomesoplenty:magic_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "magic_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:magic_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "magic_fence": {
+            "type": "item",
+            "content": "biomesoplenty:magic_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "magic_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:magic_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "magic_sign": {
+            "type": "item",
+            "content": "biomesoplenty:magic_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "magic_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:magic_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "magic_boat": {
+            "type": "item",
+            "content": "biomesoplenty:magic_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "umbran_door": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "umbran_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "umbran_fence": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "umbran_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "umbran_sign": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "umbran_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "umbran_boat": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "hellbark_door": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "hellbark_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "hellbark_fence": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "hellbark_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "hellbark_sign": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "hellbark_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "hellbark_boat": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "empyreal_door": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_door",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 24,
+            "weightMult": 0.0023472647845080522,
+            "effectiveValue": 576
+        },
+        "empyreal_trapdoor": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_trapdoor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "empyreal_fence": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_fence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "empyreal_fence_gate": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_fence_gate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        },
+        "empyreal_sign": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 16,
+            "weightMult": 0.001564843189672035,
+            "effectiveValue": 384
+        },
+        "empyreal_hanging_sign": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_hanging_sign",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.0029340809806350657,
+            "effectiveValue": 720
+        },
+        "empyreal_boat": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_boat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0019560539870900435,
+            "effectiveValue": 480
+        }
+    },
+    "requires": [
+        "biomesoplenty",
+        "create",
+        "createdieselgenerators",
+        "croptopia",
+        "flavor_immersed_daily",
+        "hazennstuff",
+        "kaleidoscope_cookery",
+        "minecraft",
+        "northstar",
+        "silentgear",
+        "spectrum",
+        "supplementaries",
+        "vista"
+    ]
+}

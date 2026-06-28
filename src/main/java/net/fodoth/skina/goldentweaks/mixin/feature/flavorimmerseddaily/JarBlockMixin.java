@@ -69,11 +69,10 @@ public class JarBlockMixin {
 
             if (!level.isClientSide) {
 
-                if (!player.isCreative()) {
-                    heldItem.shrink(1);
-                }
-
                 if (jar.checkRecipe()) {
+                    if (!player.isCreative()) {
+                        heldItem.shrink(1);
+                    }
                     level.setBlock(pos, state.setValue(JarBlock.SEALED, true), 3);
                     jar.seal();
 

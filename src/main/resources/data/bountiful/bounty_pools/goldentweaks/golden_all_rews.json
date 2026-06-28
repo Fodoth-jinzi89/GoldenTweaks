@@ -3,7 +3,7 @@
         "coin": {
             "type": "item",
             "content": "questshop:coin",
-			"rarity": "COMMON",
+            "rarity": "COMMON",
             "amount": {
                 "min": 1,
                 "max": 64
@@ -14,7 +14,7 @@
         "radiant_gold": {
             "type": "item",
             "content": "goldentweaks:radiant_gold",
-			"rarity": "COMMON",
+            "rarity": "COMMON",
             "amount": {
                 "min": 1,
                 "max": 16
@@ -25,7 +25,7 @@
         "brilliant_gold": {
             "type": "item",
             "content": "goldentweaks:brilliant_gold",
-			"rarity": "UNCOMMON",
+            "rarity": "UNCOMMON",
             "amount": {
                 "min": 1,
                 "max": 4
@@ -36,7 +36,7 @@
         "glorious_gold": {
             "type": "item",
             "content": "goldentweaks:glorious_gold",
-			"rarity": "RARE",
+            "rarity": "RARE",
             "amount": {
                 "min": 1,
                 "max": 2
@@ -47,7 +47,7 @@
         "luminous_gold": {
             "type": "item",
             "content": "goldentweaks:luminous_gold",
-			"rarity": "EPIC",
+            "rarity": "EPIC",
             "amount": {
                 "min": 1,
                 "max": 1
@@ -58,7 +58,7 @@
         "immaculate_gold": {
             "type": "item",
             "content": "goldentweaks:immaculate_gold",
-			"rarity": "LEGENDARY",
+            "rarity": "LEGENDARY",
             "amount": {
                 "min": 1,
                 "max": 1

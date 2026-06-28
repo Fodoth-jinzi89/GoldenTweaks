@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	    {
+      "type": "neoforge:mod_loaded",
+      "modid": "croptopia"
+    },
+	    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },	    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "fidworkblock:cooking",
+  "appliance": "jar",
+  "ingredients": [
+    { "item": "spectrum:enchanted_star_candy" },
+    { "item": "flavor_immersed_daily:fivespicepowder" },
+    { "item": "evolvedmekanism:dust_better_gold" },
+    { "item": "apotheosis:mythic_material" }
+  ],
+  "result": {
+    "id": "spectrum:magnificent_star_candy",
+    "count": 1
+  },
+  "cookingTime": 640
+}

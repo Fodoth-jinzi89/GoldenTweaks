@@ -1,0 +1,992 @@
+{
+    "content": {
+        "powder_charge": {
+            "type": "item",
+            "content": "createbigcannons:powder_charge",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007695859627520394,
+            "effectiveValue": 600
+        },
+        "big_cartridge": {
+            "type": "item",
+            "content": "createbigcannons:big_cartridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 150,
+            "weightMult": 0.0023087578882561182,
+            "effectiveValue": 1800
+        },
+        "solid_shot": {
+            "type": "item",
+            "content": "createbigcannons:solid_shot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0015391719255040787,
+            "effectiveValue": 1200
+        },
+        "ap_shot": {
+            "type": "item",
+            "content": "createbigcannons:ap_shot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0015391719255040787,
+            "effectiveValue": 1200
+        },
+        "mortar_stone": {
+            "type": "item",
+            "content": "createbigcannons:mortar_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0007695859627520394,
+            "effectiveValue": 600
+        },
+        "bag_of_grapeshot": {
+            "type": "item",
+            "content": "createbigcannons:bag_of_grapeshot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 80,
+            "weightMult": 0.001231337540403263,
+            "effectiveValue": 960
+        },
+        "he_shell": {
+            "type": "item",
+            "content": "createbigcannons:he_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 120,
+            "weightMult": 0.0018470063106048947,
+            "effectiveValue": 1440
+        },
+        "ap_shell": {
+            "type": "item",
+            "content": "createbigcannons:ap_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 120,
+            "weightMult": 0.0018470063106048947,
+            "effectiveValue": 1440
+        },
+        "shrapnel_shell": {
+            "type": "item",
+            "content": "createbigcannons:shrapnel_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0015391719255040787,
+            "effectiveValue": 1200
+        },
+        "fluid_shell": {
+            "type": "item",
+            "content": "createbigcannons:fluid_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 80,
+            "weightMult": 0.001231337540403263,
+            "effectiveValue": 960
+        },
+        "smoke_shell": {
+            "type": "item",
+            "content": "createbigcannons:smoke_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 120,
+            "weightMult": 0.0018470063106048947,
+            "effectiveValue": 1440
+        },
+        "drop_mortar_shell": {
+            "type": "item",
+            "content": "createbigcannons:drop_mortar_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0015391719255040787,
+            "effectiveValue": 1200
+        },
+        "cast_iron_ingot": {
+            "type": "item",
+            "content": "createbigcannons:cast_iron_ingot",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 10,
+            "weightMult": 0.00015391719255040788,
+            "effectiveValue": 120
+        },
+        "nethersteel_ingot": {
+            "type": "item",
+            "content": "createbigcannons:nethersteel_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 120,
+            "weightMult": 0.0018470063106048947,
+            "effectiveValue": 1440
+        },
+        "inferior_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:inferior_he_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 25,
+            "weightMult": 0.0015391719255040787,
+            "effectiveValue": 1200
+        },
+        "sap_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:sap_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "hesh_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:hesh_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "shelless_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:shelless_he_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "shelless_ap_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:shelless_ap_shot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "aphe_cannon_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:aphe_cannon_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "shelless_sap_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:shelless_sap_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "he_cannon_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:he_cannon_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "cannon_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:cannon_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "medium_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:medium_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "medium_range_torpedo_typeb": {
+            "type": "item",
+            "content": "cbcmoreshells:medium_range_torpedo_typeb",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "medium_range_deepwater_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:medium_range_deepwater_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "medium_range_deepwater_torpedo_typeb": {
+            "type": "item",
+            "content": "cbcmoreshells:medium_range_deepwater_torpedo_typeb",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "highspeed_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:highspeed_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "airdropped_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:airdropped_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "apfsds_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:apfsds_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "baked_apfsds_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:baked_apfsds_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "baguette_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:baguette_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "long_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:long_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "antiair_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:antiair_he_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "sharpnel_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:sharpnel_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "airdropped_shrapnel_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:airdropped_shrapnel_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "apbc_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:apbc_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "ap_super_heavy_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:ap_super_heavy_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "incendiary_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:incendiary_he_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "shelless_incendiary_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:shelless_incendiary_he_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "deepwater_shrapnel_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:deepwater_shrapnel_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "he_bomb": {
+            "type": "item",
+            "content": "cbcmoreshells:he_bomb",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "aphe_bomb": {
+            "type": "item",
+            "content": "cbcmoreshells:aphe_bomb",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "he_bouncing_bomb": {
+            "type": "item",
+            "content": "cbcmoreshells:he_bouncing_bomb",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "aphe_bouncing_bomb": {
+            "type": "item",
+            "content": "cbcmoreshells:aphe_bouncing_bomb",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "racked_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:racked_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "he_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:he_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "aphe_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:aphe_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "dual_he_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:dual_he_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "dual_aphe_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:dual_aphe_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "antiair_machine_gun_round": {
+            "type": "item",
+            "content": "cbcmoreshells:antiair_machine_gun_round",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "depth_charge": {
+            "type": "item",
+            "content": "cbcmoreshells:depth_charge",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "antiair_shrapnel_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:antiair_shrapnel_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "long_range_shrapnel_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:long_range_shrapnel_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "normal_ap_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_ap_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "normal_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_he_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "normal_sap_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_sap_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "normal_ap_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_ap_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "extended_ap_shot": {
+            "type": "item",
+            "content": "cbcmoreshells:extended_ap_shot",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "normal_incendiary_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_incendiary_he_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "normal_antiair_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_antiair_he_shell",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "apbc_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:apbc_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "normal_apbc_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:normal_apbc_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "extended_antiair_he_shell": {
+            "type": "item",
+            "content": "cbcmoreshells:extended_antiair_he_shell",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reductive_medium_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reductive_medium_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "light_high_speed_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:light_high_speed_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reinforced_short_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reinforced_short_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "short_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:short_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reinforced_reductive_short_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reinforced_reductive_short_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reinforced_medium_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reinforced_medium_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "early_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:early_torpedo",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "primary_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:primary_torpedo",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.006156687702016315,
+            "effectiveValue": 4800
+        },
+        "reinforced_reductive_medium_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reinforced_reductive_medium_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reductive_long_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reductive_long_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reinforced_long_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reinforced_long_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "gambler_medium_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:gambler_medium_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "ultraspeed_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:ultraspeed_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "reductive_highspeed_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:reductive_highspeed_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 800,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "slow_long_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:slow_long_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "highspeed_long_range_torpedo": {
+            "type": "item",
+            "content": "cbcmoreshells:highspeed_long_range_torpedo",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "he_loitering_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:he_loitering_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        },
+        "aphe_loitering_rocket": {
+            "type": "item",
+            "content": "cbcmoreshells:aphe_loitering_rocket",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.01231337540403263,
+            "effectiveValue": 9600
+        }
+    },
+    "requires": [
+        "cbcmoreshells",
+        "createbigcannons"
+    ]
+}

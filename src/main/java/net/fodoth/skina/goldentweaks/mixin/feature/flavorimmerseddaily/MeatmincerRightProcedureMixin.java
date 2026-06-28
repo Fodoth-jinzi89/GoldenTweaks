@@ -342,4 +342,6 @@ public class MeatmincerRightProcedureMixin {
             level.playLocalSound(x, y, z, sound, SoundSource.BLOCKS, 1.0F, 1.0F, false);
         }
     }
+
+
 }

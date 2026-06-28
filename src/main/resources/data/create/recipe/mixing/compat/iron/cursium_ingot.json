@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "iss_magicfromtheeast:crystallized_soul"
+    },
+    {
+      "item": "extendedcrafting:enhanced_ender_ingot"
+    }
+  ],
+  "results": [
+    {
+	  "count": 1,
+      "id": "cataclysm:cursium_ingot"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "ae2_toolsmith_sell"
+    ],
+    "linkedProfessions": [
+        "ae2_toolsmith"
+    ]
+}

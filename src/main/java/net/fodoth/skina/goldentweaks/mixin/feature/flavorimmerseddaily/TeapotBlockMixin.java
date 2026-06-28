@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
@@ -17,9 +18,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.neoforged.neoforge.items.ItemStackHandler;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TeapotBlock.class)
 public class TeapotBlockMixin {
@@ -72,11 +77,11 @@ public class TeapotBlockMixin {
 
             if (!level.isClientSide) {
 
-                if (!player.isCreative()) {
-                    heldItem.shrink(1);
-                }
-
                 if (teapot.checkRecipe()) {
+
+                    if (!player.isCreative()) {
+                        heldItem.shrink(1);
+                    }
                     level.setBlock(pos, state.setValue(TeapotBlock.SEALED, true), 3);
                     teapot.seal();
 
@@ -225,5 +230,73 @@ public class TeapotBlockMixin {
         }
 
         return stack.getItem() == TEAPOT_COVER_ITEM;
+    }
+
+    @Inject(
+            method = "onRemove",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private void goldenTweaks$onRemove(BlockState state,
+                                       Level level,
+                                       BlockPos pos,
+                                       BlockState newState,
+                                       boolean moved,
+                                       CallbackInfo ci) {
+
+        // 同种方块状态变化，不处理
+        if (state.is(newState.getBlock())) {
+            return;
+        }
+
+        if (level.getBlockEntity(pos) instanceof TeapotBlockEntity be) {
+
+            // 已封坛时掉落茶壶盖
+            if (state.getValue(TeapotBlock.SEALED)) {
+                Containers.dropItemStack(
+                        level,
+                        pos.getX() + 0.5,
+                        pos.getY() + 0.5,
+                        pos.getZ() + 0.5,
+                        new ItemStack(getTeapotCoverItem())
+                );
+            }
+
+            // 掉落容器内容
+            ItemStackHandler inv = be.getInventory();
+
+            for (int i = 0; i < inv.getSlots(); i++) {
+                ItemStack stack = inv.getStackInSlot(i);
+
+                if (!stack.isEmpty()) {
+                    Containers.dropItemStack(
+                            level,
+                            pos.getX() + 0.5,
+                            pos.getY() + 0.5,
+                            pos.getZ() + 0.5,
+                            stack.copy()
+                    );
+                }
+            }
+
+            // 红石更新
+            level.updateNeighbourForOutputSignal(pos, state.getBlock());
+        }
+
+        if (state.hasBlockEntity()) {
+            level.removeBlockEntity(pos);
+        }
+
+        ci.cancel();
+    }
+
+    @Unique
+    private static Item getTeapotCoverItem() {
+        if (TEAPOT_COVER_ITEM == null) {
+            TEAPOT_COVER_ITEM = BuiltInRegistries.ITEM.get(
+                    ResourceLocation.parse("flavor_immersed_daily:teapotcover")
+            );
+        }
+        return TEAPOT_COVER_ITEM;
     }
 }

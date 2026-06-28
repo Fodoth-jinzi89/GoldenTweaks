@@ -10,7 +10,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "porkchop": {
             "type": "item",
@@ -22,7 +22,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "mutton": {
             "type": "item",
@@ -34,7 +34,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "chicken": {
             "type": "item",
@@ -46,7 +46,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "rabbit": {
             "type": "item",
@@ -58,7 +58,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "rotten_flesh": {
             "type": "item",
@@ -70,7 +70,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "bone": {
             "type": "item",
@@ -82,7 +82,7 @@
             },
             "unitWorth": 4,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "wither_rib": {
             "type": "item",
@@ -94,7 +94,7 @@
             },
             "unitWorth": 8,
             "weightMult": 0.011490125673249552,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "overgrown_bone": {
             "type": "item",
@@ -106,7 +106,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "frozen_bone": {
             "type": "item",
@@ -118,7 +118,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "koboleton_bone": {
             "type": "item",
@@ -130,7 +130,7 @@
             },
             "unitWorth": 32,
             "weightMult": 0.011490125673249552,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "rawchickenlean": {
             "type": "item",
@@ -142,7 +142,7 @@
             },
             "unitWorth": 28,
             "weightMult": 0.010053859964093357,
-            "effectiveValue": 336.0
+            "effectiveValue": 336
         },
         "rawchickenbreast": {
             "type": "item",
@@ -154,7 +154,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "rawchickenneck": {
             "type": "item",
@@ -166,7 +166,7 @@
             },
             "unitWorth": 18,
             "weightMult": 0.006463195691202872,
-            "effectiveValue": 216.0
+            "effectiveValue": 216
         },
         "rawchickenwing": {
             "type": "item",
@@ -178,7 +178,7 @@
             },
             "unitWorth": 34,
             "weightMult": 0.012208258527827648,
-            "effectiveValue": 408.0
+            "effectiveValue": 408
         },
         "rawchickenwingtip": {
             "type": "item",
@@ -190,7 +190,7 @@
             },
             "unitWorth": 15,
             "weightMult": 0.005385996409335727,
-            "effectiveValue": 180.0
+            "effectiveValue": 180
         },
         "rawchickenpiecepiece": {
             "type": "item",
@@ -202,7 +202,7 @@
             },
             "unitWorth": 22,
             "weightMult": 0.007899461400359067,
-            "effectiveValue": 264.0
+            "effectiveValue": 264
         },
         "rawchickenliver": {
             "type": "item",
@@ -214,7 +214,7 @@
             },
             "unitWorth": 14,
             "weightMult": 0.005026929982046679,
-            "effectiveValue": 168.0
+            "effectiveValue": 168
         },
         "rawhalfofchickenleg": {
             "type": "item",
@@ -226,7 +226,7 @@
             },
             "unitWorth": 26,
             "weightMult": 0.00933572710951526,
-            "effectiveValue": 312.0
+            "effectiveValue": 312
         },
         "rawchickenhead": {
             "type": "item",
@@ -238,7 +238,7 @@
             },
             "unitWorth": 13,
             "weightMult": 0.00466786355475763,
-            "effectiveValue": 156.0
+            "effectiveValue": 156
         },
         "rawchickenpiece": {
             "type": "item",
@@ -250,7 +250,7 @@
             },
             "unitWorth": 24,
             "weightMult": 0.008617594254937163,
-            "effectiveValue": 288.0
+            "effectiveValue": 288
         },
         "rawchickenleg": {
             "type": "item",
@@ -262,7 +262,7 @@
             },
             "unitWorth": 28,
             "weightMult": 0.010053859964093357,
-            "effectiveValue": 336.0
+            "effectiveValue": 336
         },
         "rawchickenass": {
             "type": "item",
@@ -274,7 +274,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "rawchickenheart": {
             "type": "item",
@@ -286,7 +286,7 @@
             },
             "unitWorth": 20,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "rawchickenfeet": {
             "type": "item",
@@ -298,7 +298,7 @@
             },
             "unitWorth": 26,
             "weightMult": 0.00933572710951526,
-            "effectiveValue": 312.0
+            "effectiveValue": 312
         },
         "animalskull": {
             "type": "item",
@@ -310,7 +310,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "bovinebone": {
             "type": "item",
@@ -322,7 +322,7 @@
             },
             "unitWorth": 20,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "bullhorn": {
             "type": "item",
@@ -334,7 +334,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "rawcattleintestine": {
             "type": "item",
@@ -346,7 +346,7 @@
             },
             "unitWorth": 38,
             "weightMult": 0.013644524236983842,
-            "effectiveValue": 456.0
+            "effectiveValue": 456
         },
         "rawcattleliver": {
             "type": "item",
@@ -358,7 +358,7 @@
             },
             "unitWorth": 22,
             "weightMult": 0.007899461400359067,
-            "effectiveValue": 264.0
+            "effectiveValue": 264
         },
         "rawcattlelung": {
             "type": "item",
@@ -370,7 +370,7 @@
             },
             "unitWorth": 18,
             "weightMult": 0.006463195691202872,
-            "effectiveValue": 216.0
+            "effectiveValue": 216
         },
         "rawcattlestomach": {
             "type": "item",
@@ -382,7 +382,7 @@
             },
             "unitWorth": 36,
             "weightMult": 0.012926391382405745,
-            "effectiveValue": 432.0
+            "effectiveValue": 432
         },
         "rawcattletendon": {
             "type": "item",
@@ -394,7 +394,7 @@
             },
             "unitWorth": 52,
             "weightMult": 0.01867145421903052,
-            "effectiveValue": 624.0
+            "effectiveValue": 624
         },
         "rawcattleface": {
             "type": "item",
@@ -406,7 +406,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "rawcattlefeet": {
             "type": "item",
@@ -418,7 +418,7 @@
             },
             "unitWorth": 28,
             "weightMult": 0.010053859964093357,
-            "effectiveValue": 336.0
+            "effectiveValue": 336
         },
         "rawcattleheart": {
             "type": "item",
@@ -430,7 +430,7 @@
             },
             "unitWorth": 32,
             "weightMult": 0.011490125673249552,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "rawcattlefat": {
             "type": "item",
@@ -442,7 +442,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "rawcattleleg": {
             "type": "item",
@@ -454,7 +454,7 @@
             },
             "unitWorth": 44,
             "weightMult": 0.015798922800718134,
-            "effectiveValue": 528.0
+            "effectiveValue": 528
         },
         "rawpigintestine": {
             "type": "item",
@@ -466,7 +466,7 @@
             },
             "unitWorth": 32,
             "weightMult": 0.011490125673249552,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "rawpigtenderloin": {
             "type": "item",
@@ -478,7 +478,7 @@
             },
             "unitWorth": 44,
             "weightMult": 0.015798922800718134,
-            "effectiveValue": 528.0
+            "effectiveValue": 528
         },
         "rawpigcerebrum": {
             "type": "item",
@@ -490,7 +490,7 @@
             },
             "unitWorth": 38,
             "weightMult": 0.013644524236983842,
-            "effectiveValue": 456.0
+            "effectiveValue": 456
         },
         "rawpigsparerib": {
             "type": "item",
@@ -502,7 +502,7 @@
             },
             "unitWorth": 46,
             "weightMult": 0.01651705565529623,
-            "effectiveValue": 552.0
+            "effectiveValue": 552
         },
         "rawpigstreakypork": {
             "type": "item",
@@ -514,7 +514,7 @@
             },
             "unitWorth": 36,
             "weightMult": 0.012926391382405745,
-            "effectiveValue": 432.0
+            "effectiveValue": 432
         },
         "rawpigfat": {
             "type": "item",
@@ -526,7 +526,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "rawpigstomach": {
             "type": "item",
@@ -538,7 +538,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "rawpigear": {
             "type": "item",
@@ -550,7 +550,7 @@
             },
             "unitWorth": 28,
             "weightMult": 0.010053859964093357,
-            "effectiveValue": 336.0
+            "effectiveValue": 336
         },
         "rawpiglung": {
             "type": "item",
@@ -562,7 +562,7 @@
             },
             "unitWorth": 18,
             "weightMult": 0.006463195691202872,
-            "effectiveValue": 216.0
+            "effectiveValue": 216
         },
         "rawpigliver": {
             "type": "item",
@@ -574,7 +574,7 @@
             },
             "unitWorth": 20,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "rawpignose": {
             "type": "item",
@@ -586,7 +586,7 @@
             },
             "unitWorth": 32,
             "weightMult": 0.011490125673249552,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "rawpigskin": {
             "type": "item",
@@ -598,7 +598,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "rawpigfeet": {
             "type": "item",
@@ -610,7 +610,7 @@
             },
             "unitWorth": 34,
             "weightMult": 0.012208258527827648,
-            "effectiveValue": 408.0
+            "effectiveValue": 408
         },
         "rawpighead": {
             "type": "item",
@@ -622,7 +622,7 @@
             },
             "unitWorth": 24,
             "weightMult": 0.008617594254937163,
-            "effectiveValue": 288.0
+            "effectiveValue": 288
         },
         "rawpigtail": {
             "type": "item",
@@ -634,7 +634,7 @@
             },
             "unitWorth": 36,
             "weightMult": 0.012926391382405745,
-            "effectiveValue": 432.0
+            "effectiveValue": 432
         },
         "rawpigheart": {
             "type": "item",
@@ -646,7 +646,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "rawpigleg": {
             "type": "item",
@@ -658,7 +658,7 @@
             },
             "unitWorth": 42,
             "weightMult": 0.015080789946140035,
-            "effectiveValue": 504.0
+            "effectiveValue": 504
         },
         "rawsheepintestine": {
             "type": "item",
@@ -670,7 +670,7 @@
             },
             "unitWorth": 44,
             "weightMult": 0.015798922800718134,
-            "effectiveValue": 528.0
+            "effectiveValue": 528
         },
         "rawsheepstomach": {
             "type": "item",
@@ -682,7 +682,7 @@
             },
             "unitWorth": 46,
             "weightMult": 0.01651705565529623,
-            "effectiveValue": 552.0
+            "effectiveValue": 552
         },
         "rawsheepliver": {
             "type": "item",
@@ -694,7 +694,7 @@
             },
             "unitWorth": 26,
             "weightMult": 0.00933572710951526,
-            "effectiveValue": 312.0
+            "effectiveValue": 312
         },
         "rawsheepface": {
             "type": "item",
@@ -706,7 +706,7 @@
             },
             "unitWorth": 34,
             "weightMult": 0.012208258527827648,
-            "effectiveValue": 408.0
+            "effectiveValue": 408
         },
         "rawsheepsparerib": {
             "type": "item",
@@ -718,7 +718,7 @@
             },
             "unitWorth": 52,
             "weightMult": 0.01867145421903052,
-            "effectiveValue": 624.0
+            "effectiveValue": 624
         },
         "rawsheepfeet": {
             "type": "item",
@@ -730,7 +730,7 @@
             },
             "unitWorth": 36,
             "weightMult": 0.012926391382405745,
-            "effectiveValue": 432.0
+            "effectiveValue": 432
         },
         "rawsheepleg": {
             "type": "item",
@@ -742,7 +742,7 @@
             },
             "unitWorth": 54,
             "weightMult": 0.01938958707360862,
-            "effectiveValue": 648.0
+            "effectiveValue": 648
         },
         "rawsheeptail": {
             "type": "item",
@@ -754,7 +754,7 @@
             },
             "unitWorth": 32,
             "weightMult": 0.011490125673249552,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "rawsheepheart": {
             "type": "item",
@@ -766,7 +766,7 @@
             },
             "unitWorth": 38,
             "weightMult": 0.013644524236983842,
-            "effectiveValue": 456.0
+            "effectiveValue": 456
         },
         "rawsheepeye": {
             "type": "item",
@@ -778,7 +778,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "rawsheepfat": {
             "type": "item",
@@ -790,7 +790,7 @@
             },
             "unitWorth": 20,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "sheepbread": {
             "type": "item",
@@ -802,7 +802,7 @@
             },
             "unitWorth": 15,
             "weightMult": 0.005385996409335727,
-            "effectiveValue": 180.0
+            "effectiveValue": 180
         },
         "rawchickenblood": {
             "type": "item",
@@ -814,7 +814,7 @@
             },
             "unitWorth": 14,
             "weightMult": 0.005026929982046679,
-            "effectiveValue": 168.0
+            "effectiveValue": 168
         },
         "rawcattleblood": {
             "type": "item",
@@ -826,7 +826,7 @@
             },
             "unitWorth": 16,
             "weightMult": 0.005745062836624776,
-            "effectiveValue": 192.0
+            "effectiveValue": 192
         },
         "rawpigblood": {
             "type": "item",
@@ -838,7 +838,7 @@
             },
             "unitWorth": 15,
             "weightMult": 0.005385996409335727,
-            "effectiveValue": 180.0
+            "effectiveValue": 180
         },
         "rawsheepblood": {
             "type": "item",
@@ -850,7 +850,7 @@
             },
             "unitWorth": 18,
             "weightMult": 0.006463195691202872,
-            "effectiveValue": 216.0
+            "effectiveValue": 216
         },
         "chickenwithoutblood": {
             "type": "item",
@@ -862,7 +862,7 @@
             },
             "unitWorth": 100,
             "weightMult": 0.03590664272890485,
-            "effectiveValue": 1200.0
+            "effectiveValue": 1200
         },
         "chickenwithoutfeather": {
             "type": "item",
@@ -874,7 +874,7 @@
             },
             "unitWorth": 80,
             "weightMult": 0.02872531418312388,
-            "effectiveValue": 960.0
+            "effectiveValue": 960
         },
         "rawchickenfork": {
             "type": "item",
@@ -886,7 +886,7 @@
             },
             "unitWorth": 24,
             "weightMult": 0.008617594254937163,
-            "effectiveValue": 288.0
+            "effectiveValue": 288
         },
         "rawchickengizzard": {
             "type": "item",
@@ -898,7 +898,7 @@
             },
             "unitWorth": 22,
             "weightMult": 0.007899461400359067,
-            "effectiveValue": 264.0
+            "effectiveValue": 264
         },
         "rawsnowflakebeef": {
             "type": "item",
@@ -910,7 +910,7 @@
             },
             "unitWorth": 68,
             "weightMult": 0.024416517055655295,
-            "effectiveValue": 816.0
+            "effectiveValue": 816
         },
         "rawcattlejoint": {
             "type": "item",
@@ -922,7 +922,7 @@
             },
             "unitWorth": 40,
             "weightMult": 0.01436265709156194,
-            "effectiveValue": 480.0
+            "effectiveValue": 480
         },
         "rawpigkidney": {
             "type": "item",
@@ -934,7 +934,7 @@
             },
             "unitWorth": 24,
             "weightMult": 0.008617594254937163,
-            "effectiveValue": 288.0
+            "effectiveValue": 288
         },
         "rawsheepkidney": {
             "type": "item",
@@ -946,7 +946,7 @@
             },
             "unitWorth": 34,
             "weightMult": 0.012208258527827648,
-            "effectiveValue": 408.0
+            "effectiveValue": 408
         },
         "rawsheepspine": {
             "type": "item",
@@ -958,7 +958,7 @@
             },
             "unitWorth": 48,
             "weightMult": 0.017235188509874325,
-            "effectiveValue": 576.0
+            "effectiveValue": 576
         },
         "meatandvegetablestuffing": {
             "type": "item",
@@ -970,7 +970,7 @@
             },
             "unitWorth": 26,
             "weightMult": 0.00933572710951526,
-            "effectiveValue": 312.0
+            "effectiveValue": 312
         },
         "meatandeggpaste": {
             "type": "item",
@@ -982,7 +982,7 @@
             },
             "unitWorth": 28,
             "weightMult": 0.010053859964093357,
-            "effectiveValue": 336.0
+            "effectiveValue": 336
         },
         "meatpaste": {
             "type": "item",
@@ -994,7 +994,7 @@
             },
             "unitWorth": 30,
             "weightMult": 0.010771992818671455,
-            "effectiveValue": 360.0
+            "effectiveValue": 360
         },
         "crispyporkbelly": {
             "type": "item",
@@ -1006,7 +1006,7 @@
             },
             "unitWorth": 56,
             "weightMult": 0.010053859964093357,
-            "effectiveValue": 336.0
+            "effectiveValue": 336
         },
         "lambroll": {
             "type": "item",
@@ -1018,7 +1018,7 @@
             },
             "unitWorth": 52,
             "weightMult": 0.00933572710951526,
-            "effectiveValue": 312.0
+            "effectiveValue": 312
         },
         "normalmeatroll": {
             "type": "item",
@@ -1030,7 +1030,7 @@
             },
             "unitWorth": 40,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "curedmeat": {
             "type": "item",
@@ -1042,7 +1042,7 @@
             },
             "unitWorth": 44,
             "weightMult": 0.007899461400359067,
-            "effectiveValue": 264.0
+            "effectiveValue": 264
         },
         "amethyst_crab_meat": {
             "type": "item",
@@ -1054,7 +1054,7 @@
             },
             "unitWorth": 50,
             "weightMult": 0.008976660682226212,
-            "effectiveValue": 300.0
+            "effectiveValue": 300
         },
         "blessed_amethyst_crab_meat": {
             "type": "item",
@@ -1066,7 +1066,7 @@
             },
             "unitWorth": 80,
             "weightMult": 0.01436265709156194,
-            "effectiveValue": 480.0
+            "effectiveValue": 480
         },
         "raw_piglin_meat": {
             "type": "item",
@@ -1078,7 +1078,7 @@
             },
             "unitWorth": 10,
             "weightMult": 0.003590664272890485,
-            "effectiveValue": 120.0
+            "effectiveValue": 120
         },
         "raw_strider_meat": {
             "type": "item",
@@ -1090,11 +1090,11 @@
             },
             "unitWorth": 10,
             "weightMult": 0.003590664272890485,
-            "effectiveValue": 120.0
+            "effectiveValue": 120
         },
-        "raw_pork_bellyt": {
+        "raw_pork_belly": {
             "type": "item",
-            "content": "kaleidoscope_cookery:raw_pork_bellyt",
+            "content": "kaleidoscope_cookery:raw_pork_belly",
             "rarity": "COMMON",
             "amount": {
                 "min": 32,
@@ -1102,7 +1102,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "raw_cut_small_meats": {
             "type": "item",
@@ -1114,7 +1114,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "minced_beef": {
             "type": "item",
@@ -1126,7 +1126,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "chicken_cuts": {
             "type": "item",
@@ -1138,7 +1138,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.00718132854578097,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "raw_ravager_meat": {
             "type": "item",
@@ -1150,7 +1150,7 @@
             },
             "unitWorth": 50,
             "weightMult": 0.008976660682226212,
-            "effectiveValue": 300.0
+            "effectiveValue": 300
         },
         "lizard_meat": {
             "type": "item",
@@ -1162,7 +1162,7 @@
             },
             "unitWorth": 50,
             "weightMult": 0.008976660682226212,
-            "effectiveValue": 300.0
+            "effectiveValue": 300
         }
     },
     "requires": [

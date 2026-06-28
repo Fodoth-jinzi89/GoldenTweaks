@@ -1,0 +1,84 @@
+item createbigcannons:powder_charge 8 16 50 0.1
+item createbigcannons:big_cartridge 8 16 150 0.1
+item createbigcannons:big_cartridge 8 16 150 0.1
+item createbigcannons:solid_shot 8 16 100 0.1
+item createbigcannons:ap_shot 8 16 100 0.1
+item createbigcannons:mortar_stone 8 16 50 0.1
+item createbigcannons:bag_of_grapeshot 8 16 80 0.1
+item createbigcannons:he_shell 8 16 120 0.1
+item createbigcannons:ap_shell 8 16 120 0.1
+item createbigcannons:shrapnel_shell 8 16 100 0.1
+item createbigcannons:fluid_shell 8 16 80 0.1
+item createbigcannons:smoke_shell 8 16 120 0.1
+item createbigcannons:drop_mortar_shell 8 16 100 0.1
+item createbigcannons:cast_iron_ingot 8 16 10 0.1
+item createbigcannons:nethersteel_ingot 8 16 120 0.1
+item createbigcannons:nethersteel_ingot 8 16 120 0.1
+item cbcmoreshells:inferior_he_shell 8 16 30
+item cbcmoreshells:sap_shell 8 16 80
+item cbcmoreshells:hesh_shell 8 16 100
+item cbcmoreshells:shelless_he_shell 8 16 40
+item cbcmoreshells:shelless_ap_shot 8 16 50
+item cbcmoreshells:aphe_cannon_rocket 8 16 150
+item cbcmoreshells:shelless_sap_shell 8 16 60
+item cbcmoreshells:he_cannon_rocket 8 16 120
+item cbcmoreshells:cannon_torpedo 8 16 140
+item cbcmoreshells:medium_range_torpedo 8 16 110
+item cbcmoreshells:medium_range_torpedo_typeb 8 16 300
+item cbcmoreshells:medium_range_deepwater_torpedo 8 16 130
+item cbcmoreshells:medium_range_deepwater_torpedo_typeb 8 16 320
+item cbcmoreshells:highspeed_torpedo 8 16 140
+item cbcmoreshells:airdropped_torpedo 8 16 160
+item cbcmoreshells:apfsds_shot 8 16 180
+item cbcmoreshells:baked_apfsds_shot 8 16 200
+item cbcmoreshells:baguette_shot 8 16 220
+item cbcmoreshells:long_range_torpedo 8 16 150
+item cbcmoreshells:antiair_he_shell 8 16 90
+item cbcmoreshells:sharpnel_torpedo 8 16 130
+item cbcmoreshells:airdropped_shrapnel_torpedo 8 16 170
+item cbcmoreshells:apbc_shot 8 16 160
+item cbcmoreshells:ap_super_heavy_shot 8 16 200
+item cbcmoreshells:incendiary_he_shell 8 16 120
+item cbcmoreshells:shelless_incendiary_he_shell 8 16 100
+item cbcmoreshells:deepwater_shrapnel_torpedo 8 16 150
+item cbcmoreshells:he_bomb 8 16 100
+item cbcmoreshells:aphe_bomb 8 16 140
+item cbcmoreshells:he_bouncing_bomb 8 16 180
+item cbcmoreshells:aphe_bouncing_bomb 8 16 220
+item cbcmoreshells:racked_torpedo 8 16 180
+item cbcmoreshells:he_rocket 8 16 70
+item cbcmoreshells:aphe_rocket 8 16 100
+item cbcmoreshells:dual_he_rocket 8 16 120
+item cbcmoreshells:dual_aphe_rocket 8 16 160
+item cbcmoreshells:antiair_machine_gun_round 8 16 10
+item cbcmoreshells:depth_charge 8 16 130
+item cbcmoreshells:antiair_shrapnel_shell 8 16 110
+item cbcmoreshells:long_range_shrapnel_torpedo 8 16 160
+item cbcmoreshells:normal_ap_shot 8 16 80
+item cbcmoreshells:normal_he_shell 8 16 60
+item cbcmoreshells:normal_sap_shell 8 16 90
+item cbcmoreshells:normal_ap_shell 8 16 120
+item cbcmoreshells:extended_ap_shot 8 16 150
+item cbcmoreshells:normal_incendiary_he_shell 8 16 100
+item cbcmoreshells:normal_antiair_he_shell 8 16 80
+item cbcmoreshells:apbc_shell 8 16 140
+item cbcmoreshells:normal_apbc_shell 8 16 130
+item cbcmoreshells:extended_antiair_he_shell 8 16 110
+item cbcmoreshells:reductive_medium_range_torpedo 8 16 160
+item cbcmoreshells:light_high_speed_torpedo 8 16 120
+item cbcmoreshells:reinforced_short_range_torpedo 8 16 140
+item cbcmoreshells:short_range_torpedo 8 16 80
+item cbcmoreshells:reinforced_reductive_short_range_torpedo 8 16 180
+item cbcmoreshells:reinforced_medium_range_torpedo 8 16 160
+item cbcmoreshells:early_torpedo 8 16 50
+item cbcmoreshells:primary_torpedo 8 16 70
+item cbcmoreshells:reinforced_reductive_medium_range_torpedo 8 16 200
+item cbcmoreshells:reductive_long_range_torpedo 8 16 200
+item cbcmoreshells:reinforced_long_range_torpedo 8 16 220
+item cbcmoreshells:gambler_medium_range_torpedo 8 16 180
+item cbcmoreshells:ultraspeed_torpedo 8 16 220
+item cbcmoreshells:reductive_highspeed_torpedo 8 16 180
+item cbcmoreshells:slow_long_range_torpedo 8 16 130
+item cbcmoreshells:highspeed_long_range_torpedo 8 16 190
+item cbcmoreshells:he_loitering_rocket 8 16 250
+item cbcmoreshells:aphe_loitering_rocket 8 16 300

@@ -1,0 +1,1576 @@
+{
+    "content": {
+        "certus_quartz_pickaxe": {
+            "type": "item",
+            "content": "ae2:certus_quartz_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "cardboard_pickaxe": {
+            "type": "item",
+            "content": "createcardboardthings:cardboard_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "diamond_pickaxe": {
+            "type": "item",
+            "content": "minecraft:diamond_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.009510223490252021,
+            "effectiveValue": 1500
+        },
+        "golden_pickaxe": {
+            "type": "item",
+            "content": "minecraft:golden_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "netherite_pickaxe": {
+            "type": "item",
+            "content": "minecraft:netherite_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "iron_pickaxe": {
+            "type": "item",
+            "content": "minecraft:iron_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "stone_pickaxe": {
+            "type": "item",
+            "content": "minecraft:stone_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "wooden_pickaxe": {
+            "type": "item",
+            "content": "minecraft:wooden_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "rose_quartz_pickaxe": {
+            "type": "item",
+            "content": "create_sa:rose_quartz_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "brass_pickaxe": {
+            "type": "item",
+            "content": "create_sa:brass_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "zinc_pickaxe": {
+            "type": "item",
+            "content": "create_sa:zinc_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "copper_pickaxe": {
+            "type": "item",
+            "content": "create_sa:copper_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "experience_pickaxe": {
+            "type": "item",
+            "content": "create_sa:experience_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "meteor_crystal_pickaxe": {
+            "type": "item",
+            "content": "ae2cs:meteor_crystal_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "ender_crystal_pickaxe": {
+            "type": "item",
+            "content": "ae2cs:ender_crystal_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "resonating_crystal_pickaxe": {
+            "type": "item",
+            "content": "ae2cs:resonating_crystal_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "blazing_pickaxe": {
+            "type": "item",
+            "content": "create_sa:blazing_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "steel_pickaxe": {
+            "type": "item",
+            "content": "mekanismtools:steel_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "refined_obsidian_pickaxe": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.009510223490252021,
+            "effectiveValue": 1500
+        },
+        "refined_glowstone_pickaxe": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "osmium_pickaxe": {
+            "type": "item",
+            "content": "mekanismtools:osmium_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "lapis_lazuli_pickaxe": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "bronze_pickaxe": {
+            "type": "item",
+            "content": "mekanismtools:bronze_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "martian_pickaxe": {
+            "type": "item",
+            "content": "northstar:martian_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "refined_redstone_pickaxe": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "fluix_pickaxe": {
+            "type": "item",
+            "content": "ae2:fluix_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "nether_quartz_pickaxe": {
+            "type": "item",
+            "content": "ae2:nether_quartz_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "aluminum_pickaxe": {
+            "type": "item",
+            "content": "neoecoae:aluminum_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "tungsten_pickaxe": {
+            "type": "item",
+            "content": "neoecoae:tungsten_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.009510223490252021,
+            "effectiveValue": 1500
+        },
+        "aluminum_alloy_pickaxe": {
+            "type": "item",
+            "content": "neoecoae:aluminum_alloy_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "black_tungsten_alloy_pickaxe": {
+            "type": "item",
+            "content": "neoecoae:black_tungsten_alloy_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "black_steel_pickaxe": {
+            "type": "item",
+            "content": "cataclysm:black_steel_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "better_gold_pickaxe": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.02536059597400539,
+            "effectiveValue": 4000
+        },
+        "plaslitherite_pickaxe": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_pickaxe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.02536059597400539,
+            "effectiveValue": 4000
+        },
+        "certus_quartz_axe": {
+            "type": "item",
+            "content": "ae2:certus_quartz_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "diamond_axe": {
+            "type": "item",
+            "content": "minecraft:diamond_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.009510223490252021,
+            "effectiveValue": 1500
+        },
+        "golden_axe": {
+            "type": "item",
+            "content": "minecraft:golden_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "netherite_axe": {
+            "type": "item",
+            "content": "minecraft:netherite_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "iron_axe": {
+            "type": "item",
+            "content": "minecraft:iron_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "stone_axe": {
+            "type": "item",
+            "content": "minecraft:stone_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "wooden_axe": {
+            "type": "item",
+            "content": "minecraft:wooden_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "rose_quartz_axe": {
+            "type": "item",
+            "content": "create_sa:rose_quartz_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "brass_axe": {
+            "type": "item",
+            "content": "create_sa:brass_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "zinc_axe": {
+            "type": "item",
+            "content": "create_sa:zinc_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "copper_axe": {
+            "type": "item",
+            "content": "create_sa:copper_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "experience_axe": {
+            "type": "item",
+            "content": "create_sa:experience_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "meteor_crystal_axe": {
+            "type": "item",
+            "content": "ae2cs:meteor_crystal_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "ender_crystal_axe": {
+            "type": "item",
+            "content": "ae2cs:ender_crystal_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "resonating_crystal_axe": {
+            "type": "item",
+            "content": "ae2cs:resonating_crystal_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "blazing_axe": {
+            "type": "item",
+            "content": "create_sa:blazing_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "steel_axe": {
+            "type": "item",
+            "content": "mekanismtools:steel_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "refined_obsidian_axe": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.009510223490252021,
+            "effectiveValue": 1500
+        },
+        "refined_glowstone_axe": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "osmium_axe": {
+            "type": "item",
+            "content": "mekanismtools:osmium_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "lapis_lazuli_axe": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "bronze_axe": {
+            "type": "item",
+            "content": "mekanismtools:bronze_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "martian_axe": {
+            "type": "item",
+            "content": "northstar:martian_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "refined_redstone_axe": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "fluix_axe": {
+            "type": "item",
+            "content": "ae2:fluix_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "nether_quartz_axe": {
+            "type": "item",
+            "content": "ae2:nether_quartz_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0063401489935013475,
+            "effectiveValue": 1000
+        },
+        "aluminum_axe": {
+            "type": "item",
+            "content": "neoecoae:aluminum_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "tungsten_axe": {
+            "type": "item",
+            "content": "neoecoae:tungsten_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.009510223490252021,
+            "effectiveValue": 1500
+        },
+        "aluminum_alloy_axe": {
+            "type": "item",
+            "content": "neoecoae:aluminum_alloy_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "black_tungsten_alloy_axe": {
+            "type": "item",
+            "content": "neoecoae:black_tungsten_alloy_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.01585037248375337,
+            "effectiveValue": 2500
+        },
+        "black_steel_axe": {
+            "type": "item",
+            "content": "cataclysm:black_steel_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "better_gold_axe": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.02536059597400539,
+            "effectiveValue": 4000
+        },
+        "plaslitherite_axe": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_axe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.02536059597400539,
+            "effectiveValue": 4000
+        },
+        "certus_quartz_hoe": {
+            "type": "item",
+            "content": "ae2:certus_quartz_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "diamond_hoe": {
+            "type": "item",
+            "content": "minecraft:diamond_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "golden_hoe": {
+            "type": "item",
+            "content": "minecraft:golden_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 650,
+            "weightMult": 0.004121096845775876,
+            "effectiveValue": 650
+        },
+        "netherite_hoe": {
+            "type": "item",
+            "content": "minecraft:netherite_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.012680297987002695,
+            "effectiveValue": 2000
+        },
+        "iron_hoe": {
+            "type": "item",
+            "content": "minecraft:iron_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 550,
+            "weightMult": 0.003487081946425741,
+            "effectiveValue": 550
+        },
+        "stone_hoe": {
+            "type": "item",
+            "content": "minecraft:stone_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "wooden_hoe": {
+            "type": "item",
+            "content": "minecraft:wooden_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "brass_hoe": {
+            "type": "item",
+            "content": "create_sa:brass_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 550,
+            "weightMult": 0.003487081946425741,
+            "effectiveValue": 550
+        },
+        "zinc_hoe": {
+            "type": "item",
+            "content": "create_sa:zinc_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 550,
+            "weightMult": 0.003487081946425741,
+            "effectiveValue": 550
+        },
+        "copper_hoe": {
+            "type": "item",
+            "content": "create_sa:copper_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 550,
+            "weightMult": 0.003487081946425741,
+            "effectiveValue": 550
+        },
+        "meteor_crystal_hoe": {
+            "type": "item",
+            "content": "ae2cs:meteor_crystal_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "ender_crystal_hoe": {
+            "type": "item",
+            "content": "ae2cs:ender_crystal_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1050,
+            "weightMult": 0.006657156443176415,
+            "effectiveValue": 1050
+        },
+        "resonating_crystal_hoe": {
+            "type": "item",
+            "content": "ae2cs:resonating_crystal_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.012680297987002695,
+            "effectiveValue": 2000
+        },
+        "steel_hoe": {
+            "type": "item",
+            "content": "mekanismtools:steel_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "refined_obsidian_hoe": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "refined_glowstone_hoe": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1050,
+            "weightMult": 0.006657156443176415,
+            "effectiveValue": 1050
+        },
+        "osmium_hoe": {
+            "type": "item",
+            "content": "mekanismtools:osmium_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "lapis_lazuli_hoe": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "bronze_hoe": {
+            "type": "item",
+            "content": "mekanismtools:bronze_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 550,
+            "weightMult": 0.003487081946425741,
+            "effectiveValue": 550
+        },
+        "martian_hoe": {
+            "type": "item",
+            "content": "northstar:martian_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "refined_redstone_hoe": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "fluix_hoe": {
+            "type": "item",
+            "content": "ae2:fluix_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "nether_quartz_hoe": {
+            "type": "item",
+            "content": "ae2:nether_quartz_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 850,
+            "weightMult": 0.005389126644476145,
+            "effectiveValue": 850
+        },
+        "aluminum_hoe": {
+            "type": "item",
+            "content": "neoecoae:aluminum_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 650,
+            "weightMult": 0.004121096845775876,
+            "effectiveValue": 650
+        },
+        "tungsten_hoe": {
+            "type": "item",
+            "content": "neoecoae:tungsten_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "weightMult": 0.007925186241876684,
+            "effectiveValue": 1250
+        },
+        "aluminum_alloy_hoe": {
+            "type": "item",
+            "content": "neoecoae:aluminum_alloy_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.012680297987002695,
+            "effectiveValue": 2000
+        },
+        "black_tungsten_alloy_hoe": {
+            "type": "item",
+            "content": "neoecoae:black_tungsten_alloy_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.012680297987002695,
+            "effectiveValue": 2000
+        },
+        "black_steel_hoe": {
+            "type": "item",
+            "content": "cataclysm:black_steel_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1050,
+            "weightMult": 0.006657156443176415,
+            "effectiveValue": 1050
+        },
+        "better_gold_hoe": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3250,
+            "weightMult": 0.020605484228879378,
+            "effectiveValue": 3250
+        },
+        "plaslitherite_hoe": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_hoe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3250,
+            "weightMult": 0.020605484228879378,
+            "effectiveValue": 3250
+        },
+        "certus_quartz_shovel": {
+            "type": "item",
+            "content": "ae2:certus_quartz_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "diamond_shovel": {
+            "type": "item",
+            "content": "minecraft:diamond_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1100,
+            "weightMult": 0.006974163892851482,
+            "effectiveValue": 1100
+        },
+        "golden_shovel": {
+            "type": "item",
+            "content": "minecraft:golden_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "netherite_shovel": {
+            "type": "item",
+            "content": "minecraft:netherite_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1750,
+            "weightMult": 0.011095260738627358,
+            "effectiveValue": 1750
+        },
+        "iron_shovel": {
+            "type": "item",
+            "content": "minecraft:iron_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 525,
+            "weightMult": 0.0033285782215882074,
+            "effectiveValue": 525
+        },
+        "stone_shovel": {
+            "type": "item",
+            "content": "minecraft:stone_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "wooden_shovel": {
+            "type": "item",
+            "content": "minecraft:wooden_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "rose_quartz_shovel": {
+            "type": "item",
+            "content": "create_sa:rose_quartz_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.005706134094151213,
+            "effectiveValue": 900
+        },
+        "brass_shovel": {
+            "type": "item",
+            "content": "create_sa:brass_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 525,
+            "weightMult": 0.0033285782215882074,
+            "effectiveValue": 525
+        },
+        "zinc_shovel": {
+            "type": "item",
+            "content": "create_sa:zinc_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 525,
+            "weightMult": 0.0033285782215882074,
+            "effectiveValue": 525
+        },
+        "copper_shovel": {
+            "type": "item",
+            "content": "create_sa:copper_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 525,
+            "weightMult": 0.0033285782215882074,
+            "effectiveValue": 525
+        },
+        "experience_shovel": {
+            "type": "item",
+            "content": "create_sa:experience_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "meteor_crystal_shovel": {
+            "type": "item",
+            "content": "ae2cs:meteor_crystal_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "ender_crystal_shovel": {
+            "type": "item",
+            "content": "ae2cs:ender_crystal_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.005706134094151213,
+            "effectiveValue": 900
+        },
+        "resonating_crystal_shovel": {
+            "type": "item",
+            "content": "ae2cs:resonating_crystal_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1750,
+            "weightMult": 0.011095260738627358,
+            "effectiveValue": 1750
+        },
+        "blazing_shovel": {
+            "type": "item",
+            "content": "create_sa:blazing_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "steel_shovel": {
+            "type": "item",
+            "content": "mekanismtools:steel_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "refined_obsidian_shovel": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1100,
+            "weightMult": 0.006974163892851482,
+            "effectiveValue": 1100
+        },
+        "refined_glowstone_shovel": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.005706134094151213,
+            "effectiveValue": 900
+        },
+        "osmium_shovel": {
+            "type": "item",
+            "content": "mekanismtools:osmium_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "lapis_lazuli_shovel": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0031700744967506737,
+            "effectiveValue": 500
+        },
+        "bronze_shovel": {
+            "type": "item",
+            "content": "mekanismtools:bronze_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 525,
+            "weightMult": 0.0033285782215882074,
+            "effectiveValue": 525
+        },
+        "martian_shovel": {
+            "type": "item",
+            "content": "northstar:martian_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "refined_redstone_shovel": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "fluix_shovel": {
+            "type": "item",
+            "content": "ae2:fluix_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "nether_quartz_shovel": {
+            "type": "item",
+            "content": "ae2:nether_quartz_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "weightMult": 0.004755111745126011,
+            "effectiveValue": 750
+        },
+        "aluminum_shovel": {
+            "type": "item",
+            "content": "neoecoae:aluminum_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "weightMult": 0.0038040893961008085,
+            "effectiveValue": 600
+        },
+        "tungsten_shovel": {
+            "type": "item",
+            "content": "neoecoae:tungsten_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1100,
+            "weightMult": 0.006974163892851482,
+            "effectiveValue": 1100
+        },
+        "aluminum_alloy_shovel": {
+            "type": "item",
+            "content": "neoecoae:aluminum_alloy_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1750,
+            "weightMult": 0.011095260738627358,
+            "effectiveValue": 1750
+        },
+        "black_tungsten_alloy_shovel": {
+            "type": "item",
+            "content": "neoecoae:black_tungsten_alloy_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1750,
+            "weightMult": 0.011095260738627358,
+            "effectiveValue": 1750
+        },
+        "black_steel_shovel": {
+            "type": "item",
+            "content": "cataclysm:black_steel_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.005706134094151213,
+            "effectiveValue": 900
+        },
+        "better_gold_shovel": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2750,
+            "weightMult": 0.017435409732128704,
+            "effectiveValue": 2750
+        },
+        "plaslitherite_shovel": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_shovel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2750,
+            "weightMult": 0.017435409732128704,
+            "effectiveValue": 2750
+        }
+    },
+    "requires": [
+        "ae2",
+        "ae2cs",
+        "cataclysm",
+        "create_sa",
+        "createcardboardthings",
+        "evolvedmekanism",
+        "mekanismtools",
+        "minecraft",
+        "neoecoae",
+        "northstar"
+    ]
+}

@@ -10,7 +10,7 @@
             },
             "unitWorth": 50,
             "weightMult": 0.059665871121718374,
-            "effectiveValue": 300.0
+            "effectiveValue": 300
         },
         "aluminum_alloy_upgrade_smithing_template": {
             "type": "item",
@@ -22,7 +22,7 @@
             },
             "unitWorth": 100,
             "weightMult": 0.11933174224343675,
-            "effectiveValue": 600.0
+            "effectiveValue": 600
         },
         "black_tungsten_alloy_upgrade_smithing_template": {
             "type": "item",
@@ -34,7 +34,7 @@
             },
             "unitWorth": 120,
             "weightMult": 0.1431980906921241,
-            "effectiveValue": 720.0
+            "effectiveValue": 720
         },
         "purified_certus_quartz_crystal": {
             "type": "item",
@@ -46,7 +46,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.0477326968973747,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "purified_nether_quartz_crystal": {
             "type": "item",
@@ -58,7 +58,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.0477326968973747,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "purified_rose_quartz": {
             "type": "item",
@@ -70,7 +70,7 @@
             },
             "unitWorth": 5,
             "weightMult": 0.0477326968973747,
-            "effectiveValue": 240.0
+            "effectiveValue": 240
         },
         "purified_fluix_crystal": {
             "type": "item",
@@ -82,7 +82,7 @@
             },
             "unitWorth": 8,
             "weightMult": 0.07637231503579953,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "purified_ender_quartz": {
             "type": "item",
@@ -94,7 +94,7 @@
             },
             "unitWorth": 8,
             "weightMult": 0.07637231503579953,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "purified_meteor_crystal": {
             "type": "item",
@@ -106,7 +106,7 @@
             },
             "unitWorth": 8,
             "weightMult": 0.07637231503579953,
-            "effectiveValue": 384.0
+            "effectiveValue": 384
         },
         "purified_entro_crystal": {
             "type": "item",
@@ -118,7 +118,7 @@
             },
             "unitWorth": 10,
             "weightMult": 0.0954653937947494,
-            "effectiveValue": 480.0
+            "effectiveValue": 480
         },
         "purified_resonating_crystal": {
             "type": "item",
@@ -130,7 +130,7 @@
             },
             "unitWorth": 10,
             "weightMult": 0.0954653937947494,
-            "effectiveValue": 480.0
+            "effectiveValue": 480
         },
         "purified_irradiated_crystal": {
             "type": "item",
@@ -142,7 +142,7 @@
             },
             "unitWorth": 12,
             "weightMult": 0.11455847255369929,
-            "effectiveValue": 576.0
+            "effectiveValue": 576
         }
     },
     "requires": [
