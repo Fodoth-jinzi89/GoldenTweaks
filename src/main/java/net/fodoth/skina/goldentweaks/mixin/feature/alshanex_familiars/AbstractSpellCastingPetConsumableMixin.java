@@ -129,4 +129,16 @@ public abstract class AbstractSpellCastingPetConsumableMixin {
     private void gt$redirectUpdateFamiliarData(AbstractSpellCastingPet familiar) {
         GoldenTweaksConsumableHelper.applyAttributes(familiar);
     }
+
+    @Redirect(
+            method = "tick",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/alshanex/familiarslib/entity/AbstractSpellCastingPet;heal(F)V"
+            )
+    )
+    private void goldenTweaks$changeBedHeal(AbstractSpellCastingPet instance, float v) {
+        float healAmount = Math.max(instance.getMaxHealth() * 0.025F, 5.0F);
+        instance.heal(healAmount);
+    }
 }

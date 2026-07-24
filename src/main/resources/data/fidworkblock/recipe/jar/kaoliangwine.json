@@ -2,7 +2,7 @@
   "type": "fidworkblock:cooking",
   "appliance": "jar",
   "ingredients": [
-    { "item": "flavor_immersed_daily:kaolianggarin" }
+    { "item": "flavor_immersed_daily:kaolianggarin" },
     { "item": "flavor_immersed_daily:tidywater" }
   ],
   "result": {

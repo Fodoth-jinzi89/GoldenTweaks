@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "c:doughs"
+      "tag": "c:foods/dough"
     },
     {
       "tag": "c:lettuce"

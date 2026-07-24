@@ -1,6 +1,5 @@
 package net.fodoth.skina.goldentweaks.compat.touhoulittlemaid;
 
-import com.github.qichensn.data.LostMaidType;
 import com.github.tartaricacid.touhoulittlemaid.api.ILittleMaid;
 import com.github.tartaricacid.touhoulittlemaid.api.LittleMaidExtension;
 import com.github.tartaricacid.touhoulittlemaid.api.entity.data.TaskDataKey;

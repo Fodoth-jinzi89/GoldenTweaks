@@ -84,8 +84,12 @@ public class GoldenTweaksConfigScreen {
                     ALLOW_CONTINUOUS_PICKUP, true);
 
             ConfigScreenHelper.addInt(pickup, eb,
-                    "config.goldentweaks.pickup.continuous_pickup_interval",
-                    CONTINUOUS_PICKUP_INTERVAL, 2, 1, 20);
+                    "config.goldentweaks.pickup.pickup_delay_threshold",
+                    PICKUP_DELAY_THRESHOLD, 32766, 0, 32766);
+
+            ConfigScreenHelper.addBool(pickup, eb,
+                    "config.goldentweaks.pickup.allow_infinite_delay",
+                    ALLOW_INFINITE_DELAY, false);
 
             // =========================================================
             // Feature
@@ -177,6 +181,10 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.recycler_factory_stack_upgrades",
                     RECYCLER_FACTORY_STACK_UPGRADES, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.cataclysm_balance",
+                    CATACLYSM_BALANCE, true);
 
             // =========================================================
             // Debug

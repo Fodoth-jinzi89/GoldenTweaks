@@ -4,7 +4,7 @@
   "ingredients": [
     { "item": "flavor_immersed_daily:greenplum" },
     { "item": "flavor_immersed_daily:tidywater" },
-    { "item": "flavor_immersed_daily:drygreentea" },
+    { "item": "flavor_immersed_daily:drygreentea" }
 
   ],
   "result": {

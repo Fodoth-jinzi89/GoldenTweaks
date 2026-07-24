@@ -1,0 +1,14 @@
+{
+  "type": "fidworkblock:cooking",
+  "appliance": "jar",
+  "ingredients": [
+    { "item": "minecraft:egg" },
+    { "item": "flavor_immersed_daily:salt" },
+    { "item": "flavor_immersed_daily:tidywater" }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily:rawsaltyegg",
+    "count": 1
+  },
+  "cookingTime": 40
+}

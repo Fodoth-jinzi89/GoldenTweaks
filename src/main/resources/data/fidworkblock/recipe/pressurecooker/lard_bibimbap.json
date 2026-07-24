@@ -1,0 +1,14 @@
+{
+  "type": "fidworkblock:cooking",
+  "appliance": "pressurecooker",
+  "ingredients": [
+    { "item": "flavor_immersed_daily:cookedpigfat" },
+    { "item": "flavor_immersed_daily:soy" },
+    { "item": "flavor_immersed_daily:rice" }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily_food:lard_bibimbap",
+    "count": 1
+  },
+  "cookingTime": 120
+}

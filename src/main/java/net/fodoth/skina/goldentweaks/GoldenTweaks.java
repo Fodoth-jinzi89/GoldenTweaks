@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks;
 
 import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
+import net.fodoth.skina.goldentweaks.compat.cataclysm.GTCataclysmCompat;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.VillageGarbageStationAddition;
@@ -76,6 +77,12 @@ public class GoldenTweaks {
 
             KaleidoCompat.register(modEventBus);
             NeoForge.EVENT_BUS.register(VillageGarbageStationAddition.class);
+        }
+
+        if (ModList.get().isLoaded("cataclysm")) {
+            LOGGER.info("Detected cataclysm, registering compatibility content");
+
+            GTCataclysmCompat.register(modEventBus);
         }
 
         if (ModList.get().isLoaded("questshop")) {

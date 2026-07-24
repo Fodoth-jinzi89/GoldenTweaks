@@ -34,6 +34,12 @@
   "config.goldentweaks.pickup.continuous_pickup_interval": "Continuous Pickup Interval",
   "config.goldentweaks.pickup.continuous_pickup_interval.comment": "Tick interval between continuous pickup scans while holding right click.",
 
+  "config.goldentweaks.pickup.pickup_delay_threshold": "Pickup Delay Threshold",
+  "config.goldentweaks.pickup.pickup_delay_threshold.comment": "Prevents pickup of item entities with a pickup delay higher than this value.",
+
+  "config.goldentweaks.pickup.allow_infinite_delay": "Allow Infinite Pickup Delay",
+  "config.goldentweaks.pickup.allow_infinite_delay.comment": "Allows picking up item entities with an infinite pickup delay.",
+
   "config.goldentweaks.category.building": "Building & Rendering",
   "config.goldentweaks.dsa": "DSA Mode",
   "config.goldentweaks.dsa.comment": "Direct State Access rendering mode.",
@@ -72,6 +78,9 @@
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output.",
   "config.goldentweaks.balance.recycler_factory_stack_upgrades": "Recycler Factory Stack Upgrades",
   "config.goldentweaks.balance.recycler_factory_stack_upgrades.comment": "Allow Mekanism Extras recycler factories to use Stack upgrades.",
+
+  "config.goldentweaks.balance.cataclysm_balance": "Cataclysm Balance",
+  "config.goldentweaks.balance.cataclysm_balance.comment": "Balanced Cataclysm Bosses.",
 
   "config.goldentweaks.category.feature": "Features",
 

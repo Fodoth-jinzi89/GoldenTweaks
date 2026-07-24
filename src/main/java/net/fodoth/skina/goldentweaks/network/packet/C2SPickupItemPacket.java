@@ -1,6 +1,8 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
+import net.fodoth.skina.goldentweaks.mixin.feature.vanilla.accessor.ItemEntityAccessor;
 import net.fodoth.skina.goldentweaks.util.ItemPickupUtil;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -30,7 +32,10 @@ public record C2SPickupItemPacket(int entityId) implements CustomPacketPayload {
                 var level = sp.level();
                 var e = level.getEntity(pkt.entityId());
                 if (e instanceof ItemEntity item) {
-                    if (sp.distanceTo(item) <= getMaxReach(player)) {
+                    int delay = ((ItemEntityAccessor) item).goldentweaks$getPickupDelay();
+                    boolean canPickup = GoldenTweaksCommonConfig.ALLOW_INFINITE_DELAY.get()
+                            || delay <= GoldenTweaksCommonConfig.PICKUP_DELAY_THRESHOLD.get();
+                    if (canPickup && sp.distanceTo(item) <= getMaxReach(player)) {
                         ItemPickupUtil.pickup(sp, item);
                     }
                 }

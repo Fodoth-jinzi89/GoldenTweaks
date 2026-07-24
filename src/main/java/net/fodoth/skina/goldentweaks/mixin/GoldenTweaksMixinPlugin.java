@@ -53,6 +53,29 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 
+        // 万法皆通 mixin 写错
+        if (mixinClassName.contains("com.github.yimeng261.maidspell.mixin.tlm.MaidFeedOwnerTaskMixin")) {
+            return false;
+        }
+
+        if (mixinClassName.contains("com.konrados.ramization.mixin.MixinTextureAtlas")) {
+            return false;
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers")) {
+            return checkIfPresent("io.github.lounode.ae2cs.AE2CrystalScience") && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE") && checkIfPresent("com.glodblock.github.extendedae.ExtendedAE") && checkIfPresent("rearth.ae2helpers.ae2helpers") && checkIfPresent("thelm.packagedauto.PackagedAuto");
+        }
+
+        // 对于原版类的 mixin 应启用模组检查
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid") || mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
+            return checkIfPresent("com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid") && checkIfPresent("com.github.qichensn.TouhouLostMaid");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily")) {
+            return checkIfPresent("com.fidtest.ExampleMod");
+
+        }
+
         Mode mode = detectMode();
 
         // VK 模式：直接屏蔽 GPUBooster 相关 mixin
@@ -73,23 +96,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                 return false;
             }
             return true;
-        }
-
-        // 万法皆通 mixin 写错
-        if (mixinClassName.contains("com.github.yimeng261.maidspell.mixin.tlm.MaidFeedOwnerTaskMixin")) {
-            return false;
-        }
-
-        if (mixinClassName.contains("com.konrados.ramization.mixin.MixinTextureAtlas")) {
-            return false;
-        }
-
-        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers")) {
-            return checkIfPresent("io.github.lounode.ae2cs.AE2CrystalScience") && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE") && checkIfPresent("com.glodblock.github.extendedae.ExtendedAE") && checkIfPresent("rearth.ae2helpers.ae2helpers") && checkIfPresent("thelm.packagedauto.PackagedAuto");
-        }
-
-        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid")) {
-            return checkIfPresent("com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid") && checkIfPresent("com.github.qichensn.TouhouLostMaid");
         }
 
         // NONE：全部加载

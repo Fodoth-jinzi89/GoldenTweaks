@@ -24,6 +24,10 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.BooleanValue BLOCK_USE;
     public static final ModConfigSpec.BooleanValue ALLOW_CONTINUOUS_PICKUP;
 
+    public static final ModConfigSpec.IntValue PICKUP_DELAY_THRESHOLD;
+    public static final ModConfigSpec.BooleanValue ALLOW_INFINITE_DELAY;
+
+
     // =========================
     // feature 系统
     // =========================
@@ -40,6 +44,8 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.IntValue EVOLVED_MEKANISM_SOLAR_MULTIPLIER;
 
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
+
+    public static final ModConfigSpec.BooleanValue CATACLYSM_BALANCE;
 
     static {
 
@@ -101,6 +107,16 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("pickup.continuous_pickup_interval"))
                 .defineInRange("continuousPickupInterval", 2, 1, 20);
 
+        PICKUP_DELAY_THRESHOLD = builder
+                .translation(key("pickup.pickup_delay_threshold"))
+                .comment(comment("pickup.pickup_delay_threshold"))
+                .defineInRange("pickupDelayThreshold", 32766, 0, 32766);
+
+        ALLOW_INFINITE_DELAY = builder
+                .translation(key("pickup.allow_infinite_delay"))
+                .comment(comment("pickup.allow_infinite_delay"))
+                .define("allowInfiniteDelay", false);
+
         builder.pop();
 
         // =========================
@@ -157,6 +173,15 @@ public final class GoldenTweaksCommonConfig {
 
         builder.pop();
 
+        builder.push("cataclysm");
+
+        CATACLYSM_BALANCE = builder
+                .translation(key("balance.cataclysm_balance"))
+                .comment(comment("balance.cataclysm_balance"))
+                .define("cataclysmBalance", true);
+
+        builder.pop();
+
         builder.pop();
 
         SPEC = builder.build();
@@ -178,6 +203,16 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return RECYCLER_FACTORY_STACK_UPGRADES.get();
+    }
+
+
+    public static boolean isCataclysmBalanced() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return CATACLYSM_BALANCE.get();
     }
 
     public static int getEmSolarMultiplier() {

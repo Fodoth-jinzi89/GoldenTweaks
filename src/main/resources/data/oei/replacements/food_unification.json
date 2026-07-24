@@ -617,6 +617,13 @@
   },
   {
     "matchItems": [
+      "croptopia:coconut",
+	  "flavor_immersed_daily:coconut"
+    ],
+    "resultItems": "flavor_immersed_daily:coconut"
+  },
+  {
+    "matchItems": [
       "chang_sheng_jue:brinjal",
       "crockpot:eggplant",
       "culturaldelights:eggplant",

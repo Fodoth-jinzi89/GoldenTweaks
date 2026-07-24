@@ -1,6 +1,5 @@
 package net.fodoth.skina.goldentweaks.compat.kaleidoscope;
 
-import com.mojang.datafixers.types.Type;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -15,6 +14,7 @@ public final class KaleidoAdditionalBlockEntities {
                     GoldenTweaks.MODID
             );
 
+    @SuppressWarnings("ConstantConditions")
     public static final DeferredHolder<
             BlockEntityType<?>,
             BlockEntityType<GarbageStationFloorBlockEntity>
@@ -24,7 +24,7 @@ public final class KaleidoAdditionalBlockEntities {
                     () -> BlockEntityType.Builder.of(
                             GarbageStationFloorBlockEntity::new,
                             KaleidoAdditionalBlocks.GARBAGE_STATION_FLOOR.get()
-                    ).build((Type<?>)null)
+                    ).build(null)
             );
 
     private KaleidoAdditionalBlockEntities() {

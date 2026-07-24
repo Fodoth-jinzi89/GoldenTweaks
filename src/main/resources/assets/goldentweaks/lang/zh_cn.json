@@ -24,6 +24,12 @@
   "config.goldentweaks.pickup.continuous_pickup_interval": "连续拾取间隔",
   "config.goldentweaks.pickup.continuous_pickup_interval.comment": "按住右键时，每次连续拾取扫描之间的 Tick 间隔。",
 
+  "config.goldentweaks.pickup.pickup_delay_threshold": "拾取延迟阈值",
+  "config.goldentweaks.pickup.pickup_delay_threshold.comment": "当物品实体的拾取延迟高于此值时，将禁止拾取。",
+
+  "config.goldentweaks.pickup.allow_infinite_delay": "允许无限拾取延迟",
+  "config.goldentweaks.pickup.allow_infinite_delay.comment": "允许拾取具有无限拾取延迟的物品实体。",
+
 
   "config.goldentweaks.category.building": "渲染",
   "config.goldentweaks.dsa": "DSA 模式",
@@ -63,6 +69,9 @@
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Evolved Mekanism 太阳能发电机的全局倍率，影响所有等级的发电量。",
   "config.goldentweaks.balance.recycler_factory_stack_upgrades": "回收工厂堆叠升级",
   "config.goldentweaks.balance.recycler_factory_stack_upgrades.comment": "允许 Mekanism Extras 回收工厂使用堆叠升级。",
+
+  "config.goldentweaks.balance.cataclysm_balance": "灾变平衡",
+  "config.goldentweaks.balance.cataclysm_balance.comment": "平衡灾变数值。",
 
   "config.goldentweaks.category.feature": "机制",
   "config.goldentweaks.feature.always_edible_food": "食物永远能吃",

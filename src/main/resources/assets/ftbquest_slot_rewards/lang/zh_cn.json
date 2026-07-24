@@ -10,6 +10,7 @@
   "ftbquest_slot_rewards.reward.necklace": "项链槽位 +%s",
   "ftbquest_slot_rewards.reward.feet": "脚部槽位 +%s",
   "ftbquest_slot_rewards.reward.familiar_trinket": "魔宠饰物槽位 +%s",
+  "ftbquest_slot_rewards.reward.crystal": "水晶槽位 +%s",
   "ftbquests.reward.ftbquest_slot_rewards.curios_slot": "Curios 槽位奖励",
   "ftbquests.reward.ftbquest_slot_rewards.curios_slot.slot_type": "Curios 槽位类型",
   "ftbquests.reward.ftbquest_slot_rewards.curios_slot.amount": "Curios 槽位数量"

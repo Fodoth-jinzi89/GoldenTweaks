@@ -1,0 +1,15 @@
+{
+  "block.linearbearing.linear_bearing": "线性轴承",
+  "block.linearbearing.linear_casing": "线性外壳",
+  "block.linearbearing.torsional_anchor": "扭力锚",
+  "block.linearbearing.magnetic_port": "磁力端口",
+  "block.linearbearing.andesite_lamp": "安山岩灯",
+  "block.linearbearing.redstone_converter": "红石转换器",
+  "block.linearbearing.gyroscopic_gearbox": "陀螺变速箱",
+  "block.linearbearing.slippery_copycat": "滑溜伪装块",
+  "block.linearbearing.bubble_gum_block": "泡泡糖块",
+  "advancement.linearbearing.gyro_gearbox.title": "小饰物",
+  "advancement.linearbearing.gyro_gearbox.description": "将陀螺机构锁入黄铜外壳中，以抵御结构的旋转",
+
+  "itemGroup.linearbearing.tab": "机械动力：线性轴承"
+}

@@ -66,5 +66,8 @@
   "death.attack.radiance_magic": "%1$s 被光芒吞没了……",
   "death.attack.shadow_magic": "%1$s 被黑暗吞噬了",
   "death.attack.cosmic_magic": "%1$s 化作了寰宇尘埃……",
-  "death.attack.corrupt_magic": "%1$s 碎裂成了碎片"
+  "death.attack.corrupt_magic": "%1$s 碎裂成了碎片",
+  
+  
+  "curios.identifier.cosmetic": "时装"
 }

@@ -2,7 +2,7 @@
   "type": "fidworkblock:cooking",
   "appliance": "choppingboard",
   "ingredients": [
-    { "item": "flavor_immersed_daily:carrot" }
+    { "item": "minecraft:carrot" }
   ],
   "result": {
     "id": "flavor_immersed_daily:dicedcarrots",

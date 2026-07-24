@@ -666,6 +666,13 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies."${mod_id}"]]
+modId = "touhou_lost_maid"
+type = "optional"
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
 modId = "flavor_immersed_daily"
 type = "optional"
 versionRange = "*"
@@ -722,6 +729,34 @@ side = "BOTH"
 
 [[dependencies."${mod_id}"]]
 modId = "extendedcrafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "packagedexcrafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "applied_extended_crafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "extremesoundmuffler"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "createvoidway"
 type = "optional"
 versionRange = "*"
 ordering = "AFTER"
