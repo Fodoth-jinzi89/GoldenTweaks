@@ -80,6 +80,7 @@
     "fix.pattern_schematics.PatternSchematicHandlerMixin",
     "fix.placebo.DynamicHolderMixin",
     "fix.questshop.QuestShopMixin",
+    "fix.registrate.BlockEntityBuilderMixin",
     "fix.rrls.RRLSConfigMixin",
     "fix.sable.VoxelNeighborhoodStateMixin",
     "fix.silentgear.MaterialBookItemMixin",

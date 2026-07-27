@@ -3,12 +3,17 @@
   "module.mek_x_star.oxygen_tank": "氧气储罐单元",
   "module.mek_x_star.space_suit_insulation": "宇航服保温单元",
   "module.mek_x_star.heat_resistive": "耐热单元",
-  "description.mek_x_star.space_suit": "让MekaSuit适用于太空旅行",
-  "description.mek_x_star.oxygen_tank": "为你的MekaSuit胸甲添加氧气储罐以供呼吸",
-  "description.mek_x_star.space_suit_insulation": "为你的MekaSuit添加保温系统来防止你被冻伤",
-  "description.mek_x_star.heat_resistive": "让你的MekaSuit能够抵御来自炽热行星的高温",
+  "description.mek_x_star.space_suit": "让 MekaSuit 适用于太空旅行",
+  "description.mek_x_star.oxygen_tank": "为你的 MekaSuit 胸甲添加氧气储罐以供呼吸",
+  "description.mek_x_star.space_suit_insulation": "为你的 MekaSuit 添加保温系统来防止你被冻伤",
+  "description.mek_x_star.heat_resistive": "让你的 MekaSuit 能够抵御来自炽热行星的高温",
   "creativetab.mek_x_star.name": "通用机械：北极星",
   "item.mek_x_star.insulation": "保温材料",
   "item.mek_x_star.heat_insulation": "隔热材料",
-  "item.mek_x_star.crushed_wool": "压缩羊毛"
+  "item.mek_x_star.crushed_wool": "压缩羊毛",
+  "module.mek_x_star.oxygen_tank_expansion": "氧气储罐扩展单元",
+  "description.mek_x_star.oxygen_tank_expansion": "扩展氧气储罐的容量",
+  "item.mek_x_star.durasteel": "硬钢",
+  "item.mek_x_star.pressurized_durasteel": "压缩硬钢",
+  "item.mek_x_star.incomplete_oxygen_tank_expansion": "氧气储罐扩展单元（半成品）"
 }
