@@ -30,7 +30,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         boolean vkLike =
-                checkIfPresent("org.lwjgl.vulkan.VK") ||
+                checkIfPresent("net.caffeinemc.mods.sodium.client.SodiumClientMod") ||
+        checkIfPresent("org.lwjgl.vulkan.VK") ||
                         checkIfPresent("io.homo.superresolution.common.SuperResolution") ||
                         checkIfPresent("foundry.veil.Veil");
 
@@ -62,6 +63,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return false;
         }
 
+        if (mixinClassName.contains("io.redspace.ironsjewelry.mixin.VillagerMixin")) {
+            return false;
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers")) {
             return checkIfPresent("io.github.lounode.ae2cs.AE2CrystalScience") && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE") && checkIfPresent("com.glodblock.github.extendedae.ExtendedAE") && checkIfPresent("rearth.ae2helpers.ae2helpers") && checkIfPresent("thelm.packagedauto.PackagedAuto");
         }
@@ -73,7 +78,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily")) {
             return checkIfPresent("com.fidtest.ExampleMod");
+        }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
+            return checkIfPresent("io.redspace.ironsjewelry.IronsJewelry");
         }
 
         Mode mode = detectMode();
@@ -110,6 +118,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
     @Override
     public void preApply(String targetClassName, ClassNode targetClass,
                          String mixinClassName, IMixinInfo mixinInfo) {
+
         ExspectrimentsASM.patch(targetClassName, targetClass);
 
     }

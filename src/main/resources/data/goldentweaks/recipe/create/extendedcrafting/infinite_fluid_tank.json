@@ -8,7 +8,11 @@
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "createutilities"
+      "modid": "createpropulsion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createvoidway"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -33,10 +37,10 @@
       "item": "create:railway_casing"
     },
     "D": {
-      "item": "createutilities:void_steel_ingot"
+      "item": "createvoidway:void_steel_ingot"
     },
     "E": {
-      "item": "create:fluid_tank"
+      "item": "createpropulsion:platinum_fluid_tank"
     }
   },
   "result": {

@@ -1,5 +1,6 @@
 {
   "constants.evolvedmekanism.mod_name": "通用机械丨进化",
+  "description.mekanism.naquadah_ore": "一种生成在基岩附近和末地外岛的矿物，用于供给硅岩反应堆。",
   "advancements.evolvedmekanism.apt.description": "这东西看起来一点也不安全",
   "advancements.evolvedmekanism.apt.title": "反物质分子嬗变？",
   "block.evolvedmekanism.alloyer": "合金炉",

@@ -8,8 +8,7 @@
   "advancement.createpropulsion.im_vectoring_it.description": "制作矢量推进器",
   "advancement.createpropulsion.im_vectoring_it.title": "我正在矢量它",
   "advancement.createpropulsion.mighty_wings.description": "制作强化机翼",
-  "advancement.createpropulsion.mighty_wings.title": " 强化机翼",
-
+  "advancement.createpropulsion.mighty_wings.title": "强化机翼",
   "block.createpropulsion.cable": "线缆",
   "block.createpropulsion.cable_hub": "线缆集线器",
   "block.createpropulsion.cable_relay": "线缆中继器",
@@ -40,7 +39,6 @@
   "block.createpropulsion.turpentine": "松节油",
   "block.createpropulsion.vector_thruster": "矢量推进器",
   "block.createpropulsion.wing": "机翼",
-
   "createpropulsion": "机械动力：推进",
   "createpropulsion.copycat_wing.tooltip.summary": "一种用于装置的轻型伪装风帆方块。放置后再对其使用其他方块，即可复制其材质。",
   "createpropulsion.copycat_wing_12.tooltip.summary": "最宽的伪装风帆方块，用于装置。放置后再对其使用其他方块，即可复制其材质。",
@@ -202,13 +200,11 @@
   "createpropulsion.tooltip.thrust1": "推力: ",
   "createpropulsion.turpentine_bucket.tooltip.summary": "推进器燃料。按住 Shift 查看推力与燃烧速率概览。",
   "createpropulsion.vector_thruster.tooltip.summary": "定向推进器，也可偏航和俯仰以实现矢量推力控制。",
-
   "fluid.createpropulsion.coral": "珊瑚",
   "fluid.createpropulsion.oxidizer": "氧化剂",
   "fluid.createpropulsion.turpentine": "松节油",
   "fluid_type.createpropulsion.coral": "珊瑚",
   "fluid_type.createpropulsion.oxidizer": "氧化剂",
-
   "item.createpropulsion.assembler_stick": "自动装配棒",
   "item.createpropulsion.assembler_stick.tooltip.behaviour1": "右键单击以 _装配_ 连接的结构。",
   "item.createpropulsion.assembler_stick.tooltip.behaviour2": "右键单击以立即 _拆卸_。",
@@ -217,10 +213,10 @@
   "item.createpropulsion.assembler_stick.tooltip.summary": "通过右键单击方块快速 _装配_ 或 _拆卸_ 装置。",
   "item.createpropulsion.auto_glue": "自动胶粘棒",
   "item.createpropulsion.auto_glue.tooltip.behaviour1": "右键单击以 _自动粘合_ 连接的装置。",
-  "item.createpropulsion.auto_glue.tooltip.behaviour2": "左键单击以 _移除_ 接触方块的蜜糖胶。",
+  "item.createpropulsion.auto_glue.tooltip.behaviour2": "左键单击以 _移除_ 接触方块的蜂蜜胶。",
   "item.createpropulsion.auto_glue.tooltip.condition1": "任何固体方块",
-  "item.createpropulsion.auto_glue.tooltip.condition2": "现有蜜糖胶",
-  "item.createpropulsion.auto_glue.tooltip.summary": "在连接的结构上自动创建一个 _蜜糖胶框_。",
+  "item.createpropulsion.auto_glue.tooltip.condition2": "现有蜂蜜胶",
+  "item.createpropulsion.auto_glue.tooltip.summary": "在连接的结构上自动创建一个 _蜂蜜胶框_。",
   "item.createpropulsion.cable_spool": "线轴",
   "item.createpropulsion.cable_spool.first_set": "线缆起点已设置",
   "item.createpropulsion.contraption_remover": "装置移除器",
@@ -248,10 +244,8 @@
   "item.createpropulsion.raw_platinum": "粗铂",
   "item.createpropulsion.tab_icon": "工具标签页图标",
   "item.createpropulsion.turpentine_bucket": "松节油桶",
-
   "itemGroup.createpropulsion.base": "机械动力：推进",
   "itemGroup.createpropulsion.tools": "机械动力：航空工具",
-
   "message.assemblystick.assemble_failed": "装配失败。",
   "message.assemblystick.auto_glue_too_large": "自动胶粘停止：连接的方块超过 %s 个。",
   "message.assemblystick.cloner_finalize_success": "装置克隆成功。",
@@ -263,7 +257,22 @@
   "message.assemblystick.mover_prepare_failed": "无法准备装置移动。",
   "message.assemblystick.mover_prepared": "装置移动已准备。使用机械动力蓝图放置模式进行放置。",
   "message.assemblystick.mover_too_large": "移动失败：连接的方块超过 %s 个。",
-
   "simulated.simulated_section.propulsion_main": "推进",
-  "simulated.simulated_section.propulsion_tools": "推进工具"
+  "simulated.simulated_section.propulsion_tools": "推进工具",
+  "block.createpropulsion.solid_fuel_thruster": "固体燃料推进器",
+  "createpropulsion.solid_fuel_thruster.tooltip.summary": "紧凑型推进器，从后方燃烧固体物品。红石信号仅控制开关。使用扳手打开舱门，从后方容器中抽取燃料。",
+  "createpropulsion.gui.goggles.solid_fuel_thruster.fuel_label": "固体燃料",
+  "createpropulsion.gui.goggles.solid_fuel_thruster.burn_time": "燃烧时间",
+  "createpropulsion.gui.goggles.solid_fuel_thruster.infinite": "无限",
+  "createpropulsion.gui.goggles.solid_fuel_thruster.superheated": "过热",
+  "block.createpropulsion.advanced_tilt_adapter": "高级倾角适配器",
+  "createpropulsion.advanced_tilt_adapter.left_angle": "左侧角度限制",
+  "createpropulsion.advanced_tilt_adapter.right_angle": "右侧角度限制",
+  "createpropulsion.advanced_tilt_adapter.tooltip.summary": "每侧最大角度可配置的倾角适配器。按住 Ctrl 设置数值时切换共用限制。",
+  "createpropulsion.advanced_tilt_adapter.tooltip.shared": "两侧使用相同的角度限制。",
+  "createpropulsion.advanced_tilt_adapter.tooltip.independent": "每侧拥有各自的角度限制。",
+  "createpropulsion.gui.goggles.thruster.thrust_bonus": "推力加成",
+  "block.createpropulsion.platinum_fluid_vessel": "铂流体容器",
+  "createpropulsion.platinum_fluid_vessel.tooltip.summary": "存储流体，与铜流体容器类似，但每块容量翻倍。",
+  "death.attack.createpropulsion.coral": "%1$s 在与珊瑚融为一体的过程中死去"
 }

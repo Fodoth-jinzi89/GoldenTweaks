@@ -72,9 +72,9 @@
             "weightMult": 0.002765136240566853,
             "effectiveValue": 960
         },
-        "common_material": {
+        "mysterious_scrap_metal": {
             "type": "item",
-            "content": "apotheosis:common_material",
+            "content": "apotheosis:mysterious_scrap_metal",
             "rarity": "COMMON",
             "amount": {
                 "min": 32,
@@ -84,9 +84,9 @@
             "weightMult": 0.0013825681202834265,
             "effectiveValue": 480
         },
-        "uncommon_material": {
+        "timeworn_fabric": {
             "type": "item",
-            "content": "apotheosis:uncommon_material",
+            "content": "apotheosis:timeworn_fabric",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 32,
@@ -96,9 +96,9 @@
             "weightMult": 0.005530272481133706,
             "effectiveValue": 1920
         },
-        "rare_material": {
+        "luminous_crystal_shard": {
             "type": "item",
-            "content": "apotheosis:rare_material",
+            "content": "apotheosis:luminous_crystal_shard",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 32,
@@ -108,9 +108,9 @@
             "weightMult": 0.013825681202834264,
             "effectiveValue": 4800
         },
-        "epic_material": {
+        "arcane_sands": {
             "type": "item",
-            "content": "apotheosis:epic_material",
+            "content": "apotheosis:arcane_sands",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 16,
@@ -120,9 +120,9 @@
             "weightMult": 0.013825681202834264,
             "effectiveValue": 4800
         },
-        "mythic_material": {
+        "godforged_pearl": {
             "type": "item",
-            "content": "apotheosis:mythic_material",
+            "content": "apotheosis:godforged_pearl",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 8,

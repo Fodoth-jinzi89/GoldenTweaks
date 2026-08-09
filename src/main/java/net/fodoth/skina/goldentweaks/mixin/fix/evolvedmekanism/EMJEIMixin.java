@@ -15,10 +15,11 @@ public abstract class EMJEIMixin {
      */
     @Overwrite
     public void registerIngredients(IModIngredientRegistration registry) {
-
-        // 强制初始化 Mekanism JEI chemical ingredient system
-        MekanismJEI jei = new MekanismJEI();
-
-        jei.registerIngredients(registry);
+        try {
+            MekanismJEI jei = new MekanismJEI();
+            jei.registerIngredients(registry);
+        } catch (Exception e) {
+            // Ignore incompatible ingredient registration
+        }
     }
 }

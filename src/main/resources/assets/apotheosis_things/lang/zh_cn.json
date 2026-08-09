@@ -5,7 +5,7 @@
   "item.apotheosis_things.salvaging_charm.desc.3": "主手拿护符，副手拿珍宝材料右键设置自动分解最高稀有度",
   "item.apotheosis_things.salvaging_charm.desc.4": "当前：可分解%s及以下稀有度的装备",
   "item.apotheosis_things.transfer_charm": "转移护符",
-  "item.apotheosis_things.transfer_charm.desc.1": "将捡到的宝石自动转移至宝石箱内",
-  "item.apotheosis_things.transfer_charm.desc.2": "手持此物品右键宝石箱来绑定",
+  "item.apotheosis_things.transfer_charm.desc.1": "将捡到的宝石/附魔书自动转移至宝石箱/图书馆内",
+  "item.apotheosis_things.transfer_charm.desc.2": "手持此物品右键宝石箱/图书馆来绑定",
   "itemGroup.apotheosis_things": "神化小玩意"
 }

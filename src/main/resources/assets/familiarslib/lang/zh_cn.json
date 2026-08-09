@@ -90,5 +90,7 @@
   "curios.modifiers.familiar_trinket": "装备于魔宠饰品栏位时：",
 
   "attribute.familiarslib.familiar_damage": "魔宠强度",
-  "attribute.familiarslib.familiar_resist": "魔宠抗性"
+  "attribute.familiarslib.familiar_damage.desc": "提高魔宠造成的伤害",
+  "attribute.familiarslib.familiar_resist": "魔宠抗性",
+  "attribute.familiarslib.familiar_resist.desc": "降低魔宠受到的伤害"
 }

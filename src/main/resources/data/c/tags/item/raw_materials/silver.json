@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "silentgems:raw_silver",
+      "required": false
+    }
+  ]
+}

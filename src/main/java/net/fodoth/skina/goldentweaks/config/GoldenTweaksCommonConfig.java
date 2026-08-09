@@ -47,6 +47,10 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.BooleanValue CATACLYSM_BALANCE;
 
+    public static final ModConfigSpec.IntValue HAGGLER_MAX_DISCOUNT;
+
+    public static final ModConfigSpec.DoubleValue HAGGLER_MAX_DISCOUNT_PERCENTAGE;
+
     static {
 
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -182,6 +186,20 @@ public final class GoldenTweaksCommonConfig {
 
         builder.pop();
 
+        builder.push("irons_jewelry");
+
+        HAGGLER_MAX_DISCOUNT = builder
+                .translation(key("balance.haggler_max_discount"))
+                .comment(comment("balance.haggler_max_discount"))
+                .defineInRange("hagglerMaxDiscount", 10, 0, 64);
+
+        HAGGLER_MAX_DISCOUNT_PERCENTAGE = builder
+                .translation(key("balance.haggler_max_discount_percentage"))
+                .comment(comment("balance.haggler_max_discount_percentage"))
+                .defineInRange("hagglerMaxDiscountPercentage", 0.5D, 0.0D, 1.0D);
+
+        builder.pop();
+
         builder.pop();
 
         SPEC = builder.build();
@@ -206,6 +224,7 @@ public final class GoldenTweaksCommonConfig {
     }
 
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public static boolean isCataclysmBalanced() {
 
         if (!GTState.isReady()) {
@@ -222,6 +241,24 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return EVOLVED_MEKANISM_SOLAR_MULTIPLIER.get();
+    }
+
+    public static int getIJHagglerMaxDiscount() {
+
+        if (!GTState.isReady()) {
+            return 10;
+        }
+
+        return HAGGLER_MAX_DISCOUNT.get();
+    }
+
+    public static double getIJHagglerMaxDiscountPercentage() {
+
+        if (!GTState.isReady()) {
+            return 0.5D;
+        }
+
+        return HAGGLER_MAX_DISCOUNT_PERCENTAGE.get();
     }
 
     private static String key(String path) {

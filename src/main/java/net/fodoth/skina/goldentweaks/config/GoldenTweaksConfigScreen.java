@@ -186,6 +186,16 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.cataclysm_balance",
                     CATACLYSM_BALANCE, true);
 
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.haggler_max_discount",
+                    HAGGLER_MAX_DISCOUNT,
+                    10, 0, 64);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.haggler_max_discount_percentage",
+                    HAGGLER_MAX_DISCOUNT_PERCENTAGE,
+                    0.5D, 0.0D, 1.0D);
+
             // =========================================================
             // Debug
             // =========================================================

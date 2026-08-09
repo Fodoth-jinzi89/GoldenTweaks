@@ -47,8 +47,8 @@
   "tooltip.fidworkblock.steambox_stage1_hint": "§8放置在地上后，往里放入材料即可打包",
   "message.fidworkblock.steambox_can_pack": "可以空手右键打包收回背包",
   "message.fidworkblock.steambox_cant_steam": "这个好像蒸不了啊...",
-  "message.fidworkblock.steambox_need_water": "需要 %d 瓶纯净水",
-  "message.fidworkblock.steambox_use_water": "放入纯净水可以开始工作",
+  "message.fidworkblock.steambox_need_water": "需要 %d 个纯净水",
+  "message.fidworkblock.steambox_use_water": "请使用纯净水启动",
   "message.fidworkblock.mortar_cant_add": "这个好像不能放进去啊...",
   "message.fidworkblock.squeezingmachine_cant_add": "这个好像榨不了啊...",
   "message.fidworkblock.fryingpan_cant_fry": "这玩意可不能下油锅啊...",
@@ -65,10 +65,14 @@
   "message.fidworkblock.teapot_recipe_incorrect": "§c配方不正确，再检查检查吧",
   "tooltip.fidworkblock.teapot_desc1": "§8用壶盖右键密封后开始冲泡",
   "tooltip.fidworkblock.teapot_desc2": "§8密封后右键可解封并取回所有物品和壶盖",
-  "message.fidworkblock.steambox_use_water": "请使用纯净水启动",
-  "message.fidworkblock.steambox_need_water": "需要 %d 个纯净水",
   "message.fidworkblock.steambox_need_pack_first": "请先空手右键底层打包所有层！",
   "message.fidworkblock.steambox_max_layers": "已达到最大层数（%d层）！",
   "message.fidworkblock.steambox_placed_layer": "已放置蒸笼，当前 %d/%d 层",
-  "message.fidworkblock.steambox_placed_layers": "已放置 %d 个蒸笼，当前 %d/%d 层"
+  "message.fidworkblock.steambox_placed_layers": "已放置 %d 个蒸笼，当前 %d/%d 层",
+  "block.fidworkblock.meatmincer": "绞肉机",
+  "jei.fidworkblock.category.meatmincer": "绞肉机加工",
+  "message.fidworkblock.meatmincer_recipe_correct": "§a配方正确！绞肉机已加盖",
+  "message.fidworkblock.meatmincer_recipe_incorrect": "§c配方不正确，再检查检查吧",
+  "tooltip.fidworkblock.meatmincer_desc1": "§8用绞肉机盖右键密封后开始绞肉",
+  "tooltip.fidworkblock.meatmincer_desc2": "§8完成后右键可解封并取回所有物品和盖子"
 }

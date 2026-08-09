@@ -54,14 +54,20 @@
   "material.hazentouvelib.rune_shadow": "暗影符文",
   "material.hazentouvelib.rune_cosmic": "寰宇符文",
 
-  "attribute.hazentouvelib.radiance_spell_power": "光辉法术强度",
-  "attribute.hazentouvelib.radiance_magic_resist": "光辉魔法抗性",
+  "attribute.hazentouvelib.radiance_spell_power": "法术强度：光辉",
+  "attribute.hazentouvelib.radiance_spell_power.desc": "提高光辉学派法术造成的伤害和治疗效果",
+  "attribute.hazentouvelib.radiance_magic_resist": "法术抗性：光辉",
+  "attribute.hazentouvelib.radiance_magic_resist.desc": "降低受到的光辉学派法术伤害",
 
-  "attribute.hazentouvelib.shadow_spell_power": "暗影法术强度",
-  "attribute.hazentouvelib.shadow_magic_resist": "暗影魔法抗性",
+  "attribute.hazentouvelib.shadow_spell_power": "法术强度：暗影",
+  "attribute.hazentouvelib.shadow_spell_power.desc": "提高暗影学派法术造成的伤害和治疗效果",
+  "attribute.hazentouvelib.shadow_magic_resist": "法术抗性：暗影",
+  "attribute.hazentouvelib.shadow_magic_resist.desc": "降低受到的暗影学派法术伤害",
 
-  "attribute.hazentouvelib.cosmic_spell_power": "寰宇法术强度",
-  "attribute.hazentouvelib.cosmic_magic_resist": "寰宇魔法抗性",
+  "attribute.hazentouvelib.cosmic_spell_power": "法术强度：寰宇",
+  "attribute.hazentouvelib.cosmic_spell_power.desc": "提高寰宇学派法术造成的伤害和治疗效果",
+  "attribute.hazentouvelib.cosmic_magic_resist": "法术抗性：寰宇",
+  "attribute.hazentouvelib.cosmic_magic_resist.desc": "降低受到的寰宇学派法术伤害",
 
   "death.attack.radiance_magic": "%1$s 被光芒吞没了……",
   "death.attack.shadow_magic": "%1$s 被黑暗吞噬了",

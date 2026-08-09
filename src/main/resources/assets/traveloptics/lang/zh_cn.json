@@ -1,6 +1,8 @@
 {
-  "attribute.traveloptics.aqua_magic_resist": "流水法术抗性",
-  "attribute.traveloptics.aqua_spell_power": "流水法术强度",
+  "attribute.traveloptics.aqua_magic_resist": "法术抗性：海洋",
+  "attribute.traveloptics.aqua_magic_resist.desc": "降低受到的海洋学派法术伤害",
+  "attribute.traveloptics.aqua_spell_power": "法术强度：海洋",
+  "attribute.traveloptics.aqua_spell_power.desc": "提高海洋学派法术造成的伤害和治疗效果",
   "curios.identifier.augment_slot": "增强",
   "curios.identifier.talent": "天赋",
   "curios.modifiers.augment_slot": "增强时：",

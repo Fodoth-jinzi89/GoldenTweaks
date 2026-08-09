@@ -73,6 +73,12 @@
   "config.goldentweaks.balance.cataclysm_balance": "灾变平衡",
   "config.goldentweaks.balance.cataclysm_balance.comment": "平衡灾变数值。",
 
+  "config.goldentweaks.balance.haggler_max_discount": "议价戒指最大折扣数",
+  "config.goldentweaks.balance.haggler_max_discount.comment": "Iron's Jewelry 的议价戒指最多减免多少个物品消耗。",
+
+  "config.goldentweaks.balance.haggler_max_discount_percentage": "议价戒指最大百分比",
+  "config.goldentweaks.balance.haggler_max_discount_percentage.comment": "Iron's Jewelry 的议价戒指最多能降价到原价的百分比。",
+
   "config.goldentweaks.category.feature": "机制",
   "config.goldentweaks.feature.always_edible_food": "食物永远能吃",
   "config.goldentweaks.feature.always_edible_food.comment": "满饱食度下食物也可以吃。",

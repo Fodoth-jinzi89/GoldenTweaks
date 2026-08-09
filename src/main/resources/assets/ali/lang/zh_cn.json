@@ -1307,5 +1307,8 @@
   "ali/loot_table/entities/dead_king_ominous": "死者之王不祥形态",
   "ali/loot_table/entities/dead_king_per_player_ominous": "死者之王不祥形态（每个玩家）",
   "ali/loot_table/entities/fire_boss_ominous": "原初受火者不祥形态",
-  "ali/loot_table/entities/fire_boss_per_player_ominous": "原初受火者不祥形态（每个玩家）"
+  "ali/loot_table/entities/fire_boss_per_player_ominous": "原初受火者不祥形态（每个玩家）",
+  "ali/loot_table/inject/elder_guardian_crystalline": "远古守卫者晶珠",
+  "ali/loot_table/inject/treasure_tapes": "宝藏磁带",
+  "ali/loot_table/gameplay/unstable_spawner": "刷怪笼爆炸掉落"
 }

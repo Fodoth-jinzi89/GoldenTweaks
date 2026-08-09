@@ -1,0 +1,5 @@
+{
+  "commands.terrablender.biomeparams.success": "坐标 (%s, %s, %s) 的生物群系参数：%s",
+  "commands.terrablender.biomeparams.failed": "未能获取生物群系参数",
+  "biome.terrablender.deferred_placeholder": "占位符"
+}

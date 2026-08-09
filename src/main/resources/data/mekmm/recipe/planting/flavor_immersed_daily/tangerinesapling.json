@@ -18,5 +18,10 @@
     "count": 4,
     "id": "flavor_immersed_daily:tangerine"
   },
+    "secondary_output": {
+    "count": 1,
+    "id": "flavor_immersed_daily:tangerine_1"
+  },
+    "secondary_chance": 0.05,
   "per_tick_usage": true
 }

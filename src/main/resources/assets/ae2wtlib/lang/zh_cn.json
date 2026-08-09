@@ -44,5 +44,6 @@
   "ae2wtlib.configuration.magnet_card_range": "磁卡作用范围",
   "gui.ae2wtlib.current_terminal": "当前终端：%s",
   "gui.ae2wtlib.terminal_empty": "该终端不包含其它终端",
-  "ae2wtlib.configuration.always_show_terminal_selector": "总是显示全局终端选择器"
+  "ae2wtlib.configuration.always_show_terminal_selector": "总是显示全局终端选择器",
+  "key.ae2.wireless_ae2cs_resonant_pattern_encoding_terminal": "打开无线谐振合成编码终端"
 }

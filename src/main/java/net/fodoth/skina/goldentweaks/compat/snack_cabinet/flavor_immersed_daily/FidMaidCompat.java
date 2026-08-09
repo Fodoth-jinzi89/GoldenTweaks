@@ -1,10 +1,11 @@
 package net.fodoth.skina.goldentweaks.compat.snack_cabinet.flavor_immersed_daily;
 
+import com.flavor_immersed_daily.SpecialItems;
 import com.github.tartaricacid.touhoulittlemaid.api.block.IMaidEdibleBlock;
 import com.github.tartaricacid.touhoulittlemaid.entity.passive.EntityMaid;
-import net.fodoth.skina.goldentweaks.util.FidFoodMappingUtil;
-import net.mcreator.flavorimmerseddaily.procedures.吃菜Procedure;
+import net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily.accessor.MultiStageInteractiveBlockAccessor;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -18,8 +19,8 @@ public class FidMaidCompat implements IMaidEdibleBlock {
 
     @Override
     public boolean shouldMoveTo(EntityMaid maid, BlockPos pos, BlockState state) {
-        // 使用工具类判断是否为 FID 食物方块
-        return FidFoodMappingUtil.isFidFoodBlock(state.getBlock())
+        // 判断是否为 FID 食物方块
+        return state.getBlock() instanceof SpecialItems.MultiStageInteractiveBlock
                 && IMaidEdibleBlock.belowIsSnackStand(maid, pos);
     }
 
@@ -33,39 +34,47 @@ public class FidMaidCompat implements IMaidEdibleBlock {
     public boolean consume(EntityMaid maid, BlockPos pos, BlockState state) {
         Block block = state.getBlock();
 
-        // 使用工具类判断是否为 FID 食物方块
-        if (!FidFoodMappingUtil.isFidFoodBlock(block)) {
+        // 判断是否为 FID 食物方块
+        if (!(block instanceof SpecialItems.MultiStageInteractiveBlock fidBlock)) {
             return false;
         }
 
         Level level = maid.level();
 
-        // 使用工具类获取对应的食物物品
-        ItemStack foodStack = FidFoodMappingUtil.getItemStackByBlock(block)
-                .orElse(ItemStack.EMPTY);
+        // 获取当前阶段
+        int currentStage = state.getValue(SpecialItems.MultiStageInteractiveBlock.STAGE);
 
-        if (foodStack.isEmpty()) {
-            return false;
+        // 模拟原模组的交互逻辑
+        if (currentStage < 2) {
+            // 阶段 0 或 1：增加阶段并喂食女仆
+            BlockState newState = state.setValue(SpecialItems.MultiStageInteractiveBlock.STAGE, currentStage + 1);
+            level.setBlock(pos, newState, 3);
+
+            // 使用 Accessor 获取对应的食物物品并喂给女仆
+            MultiStageInteractiveBlockAccessor accessor = (MultiStageInteractiveBlockAccessor) fidBlock;
+            Item foodItem = accessor.invokeGetCorrespondingItem(accessor.getName());
+            ItemStack foodStack = new ItemStack(foodItem);
+
+            if (!foodStack.isEmpty()) {
+                // 让女仆食用食物
+                maid.eat(level, foodStack.copyWithCount(1));
+            }
+
+        } else {
+            // 阶段 2：移除方块（完全消耗）
+            level.destroyBlock(pos, true);
         }
-
-        // 调用原模组的吃菜逻辑（处理方块状态变化）
-        吃菜Procedure.execute(level, pos.getX(), pos.getY(), pos.getZ(), maid);
-
         return true;
     }
 
     @Override
     public boolean canPlaceAsFood(EntityMaid maid, ItemStack stack, int slotIndex) {
         // 使用工具类判断是否为 FID 食物物品
-        return FidFoodMappingUtil.isFidFoodItemStack(stack);
+        return stack.getItem() instanceof SpecialItems.PlaceableFoodItem;
     }
 
     @Override
     public boolean placeAsFood(EntityMaid maid, BlockPos pos, ItemStack stack, int slotIndex) {
-        // 使用工具类判断是否为 FID 食物物品
-        if (!FidFoodMappingUtil.isFidFoodItemStack(stack)) {
-            return false;
-        }
 
         var availableInv = maid.getAvailableInv(true);
         ItemStack extracted = availableInv.extractItem(slotIndex, 1, false);
@@ -74,11 +83,14 @@ public class FidMaidCompat implements IMaidEdibleBlock {
             return false;
         }
 
-        // 使用工具类获取对应的方块
-        Block block = FidFoodMappingUtil.getBlockByItemStack(extracted)
-                .orElse(Blocks.AIR);
+        if (!(extracted.getItem() instanceof SpecialItems.PlaceableFoodItem extractedItem)) {
+            return false;
+        }
 
-        if (block == Blocks.AIR) {
+        // 使用工具类获取对应的方块
+        Block block = extractedItem.getBlockToPlace();
+
+        if (block == null || block == Blocks.AIR) {
             return false;
         }
 

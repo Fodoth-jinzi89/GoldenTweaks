@@ -216,9 +216,9 @@
             "weightMult": 0.0001509768200255654,
             "effectiveValue": 150
         },
-        "pyrium_block": {
+        "chlorophyte_block": {
             "type": "item",
-            "content": "hazennstuff:pyrium_block",
+            "content": "jaopca:storage_blocks.chlorophyte",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 1,
@@ -228,9 +228,9 @@
             "weightMult": 0.006039072801022617,
             "effectiveValue": 6000
         },
-        "pyrium_ingot": {
+        "chlorophyte_ingot": {
             "type": "item",
-            "content": "irons_spellbooks:pyrium_ingot",
+            "content": "hazennstuff:chlorophyte_ingot",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 2,
@@ -2503,6 +2503,7 @@
         "irons_spellbooks",
         "iss_magicfromtheeast",
         "minecraft",
-        "tunes_n_tomes"
+        "tunes_n_tomes",
+        "jaopca"
     ]
 }

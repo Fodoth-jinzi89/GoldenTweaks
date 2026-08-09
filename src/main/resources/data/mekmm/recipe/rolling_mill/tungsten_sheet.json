@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "type": "mekmm:rolling_mill",
+  "input": {
+    "count": 1,
+    "item": "northstar:tungsten_ingot"
+  },
+  "output": {
+    "count": 1,
+    "id": "northstar:tungsten_sheet"
+  }
+}

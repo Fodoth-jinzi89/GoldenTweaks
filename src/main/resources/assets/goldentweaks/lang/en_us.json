@@ -82,6 +82,12 @@
   "config.goldentweaks.balance.cataclysm_balance": "Cataclysm Balance",
   "config.goldentweaks.balance.cataclysm_balance.comment": "Balanced Cataclysm Bosses.",
 
+  "config.goldentweaks.balance.haggler_max_discount": "Haggler Ring Max Discount Count",
+  "config.goldentweaks.balance.haggler_max_discount.comment": "Maximum number of item costs that the Haggler Ring from Iron's Jewelry can reduce",
+
+  "config.goldentweaks.balance.haggler_max_discount_percentage": "Haggler Ring Max Discount Percentage",
+  "config.goldentweaks.balance.haggler_max_discount_percentage.comment": "Maximum percentage of the original price that the Haggler Ring from Iron's Jewelry can reduce the price to",
+
   "config.goldentweaks.category.feature": "Features",
 
   "config.goldentweaks.feature.always_edible_food": "Always Edible Food",

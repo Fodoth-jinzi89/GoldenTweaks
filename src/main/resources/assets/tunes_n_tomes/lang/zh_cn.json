@@ -43,8 +43,8 @@
   "material.tunes_n_tomes.rune_melody": "旋律符文",
 
   "school.tunes_n_tomes.melody": "旋律",
-  "attribute.tunes_n_tomes.melody_spell_power": "旋律法术强度",
-  "attribute.tunes_n_tomes.melody_magic_resist": "旋律法术抗性",
+  "attribute.tunes_n_tomes.melody_spell_power": "法术强度：旋律",
+  "attribute.tunes_n_tomes.melody_magic_resist": "法术抗性：旋律",
 
   "spell.tunes_n_tomes.chord_blast": "和弦爆鸣",
   "spell.tunes_n_tomes.chord_blast.guide": "演奏一段简单旋律伤害敌人，其旋律洗脑到让人无法逃离。",

@@ -1194,6 +1194,8 @@
   "trait.silentgear.wind_blast.desc": "攻击时产生风爆",
   "trait.silentgear.yummy": "美味",
   "trait.silentgear.yummy.desc": "工具能够食用，但是⋯⋯",
+  "trait.silentgear.flutter": "振翅",
+  "trait.silentgear.flutter.desc": "增加安全摔落高度",
   "material.silentgems.reinforced_gold": "强化金",
   "material.silentgems.reinforced_silver": "强化银"
 }

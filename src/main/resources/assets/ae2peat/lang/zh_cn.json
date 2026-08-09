@@ -11,5 +11,6 @@
   "gui.ae2peat.PatternEncodingAccessTerminalShort": "样板编码访问终端",
   "item.ae2peat.pattern_encoding_access_terminal": "ME 样板编码访问终端",
   "item.ae2peat.wireless_pattern_encoding_access_terminal": "无线样板编码访问终端",
-  "key.ae2peat.category": "AE2 样板编码访问终端"
+  "key.ae2peat.category": "AE2 样板编码访问终端",
+  "key.ae2.wireless_pattern_encoding_access_terminal": "打开无线样板编码访问终端"
 }

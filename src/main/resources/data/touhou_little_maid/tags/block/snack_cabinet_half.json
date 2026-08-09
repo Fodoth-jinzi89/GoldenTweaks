@@ -2,143 +2,143 @@
   "replace": false,
   "values": [
     {
-      "id": "avaritia:endless_cake",
+      "id": "flavor_immersed_daily:drawneggplant",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ba_si_qie_zi",
+      "id": "flavor_immersed_daily:linyifriedchicken",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:bai_qie_ji",
+      "id": "flavor_immersed_daily:meatballsoup",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ban_si_xiao_liang_cai",
+      "id": "flavor_immersed_daily:preservedeggsalad",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:bo_cai_chao_gan_jian",
+      "id": "flavor_immersed_daily:tomatosalad",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:bo_luo_gu_lu_rou",
+      "id": "flavor_immersed_daily:steamed_chickenwith_chili_sauce",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:chao_dou_jue_zi",
+      "id": "flavor_immersed_daily:colachickenwings",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:chao_la_zi_ji",
+      "id": "flavor_immersed_daily:fourjoymeatballs",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:kai_shui_bai_cai",
+      "id": "flavor_immersed_daily:stirfriedboiledporkslicesinhotsauce",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:jiao_yan_chao_gu",
+      "id": "flavor_immersed_daily:sauteed_potato_green_pepper_eggplant",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:hui_guo_rou",
+      "id": "flavor_immersed_daily:friedmeatwithcuminonion",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:gong_bao_ji_ding",
+      "id": "flavor_immersed_daily:kungpaochicken",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:gan_bian_si_ji_dou",
+      "id": "flavor_immersed_daily:stirfriedstringbeans",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:di_san_xian",
+      "id": "flavor_immersed_daily:mixedcolddishes",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:xian_dan_huang_chao_cai_hua",
+      "id": "flavor_immersed_daily:japanesebraisedtofu",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:cong_you_ji",
+      "id": "flavor_immersed_daily:scrambledeggswithfungusandcucumber",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ke_le_ji_chi",
+      "id": "flavor_immersed_daily:pleurotuseryngiiwithsaltandpepper",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:kou_shui_ji",
+      "id": "flavor_immersed_daily:poached_spicy_slicesof_pork",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:liang_ban_pi_dan",
+      "id": "flavor_immersed_daily:sliced_fishin_hot_chili_oil",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:liang_ban_xi_hong_shi",
+      "id": "flavor_immersed_daily:sauteedmushroomswithrapeseed",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:lin_yi_chao_ji",
+      "id": "flavor_immersed_daily:steamedfish",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ma_la_juan_xin_cai",
+      "id": "flavor_immersed_daily:friedcowpea",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ma_po_dou_fu",
+      "id": "flavor_immersed_daily:friedspicychicken",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ma_zhi_dou_jiao",
+      "id": "flavor_immersed_daily:boiled_chickenwith_sauce",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:mu_er_huang_gua_ji_dan",
+      "id": "flavor_immersed_daily:stewedporkwithbrownsauce",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:ri_ben_hong_shao_dou_fu",
+      "id": "flavor_immersed_daily:friedlivertipwithspinach",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:shui_zhu_rou_pian",
+      "id": "flavor_immersed_daily:pineapple_sweetand_sour_pork",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:shui_zhu_yu",
+      "id": "flavor_immersed_daily:chickenwith_scallion_oil",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:zi_ran_yang_cong_chao_rou_pian",
+      "id": "flavor_immersed_daily:saltedeggyolkfriedcauliflower",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:si_xi_wan_zi",
+      "id": "flavor_immersed_daily:zucchinisnackmeat",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:suan_cai_yu",
+      "id": "flavor_immersed_daily:boiled_fishwith_pickled_cabbageand_chili",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:wan_zi_tang",
+      "id": "flavor_immersed_daily:friedshreddedporkwithsweetandsoursauce",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:xi_hu_lu_chao_rou",
+      "id": "flavor_immersed_daily:spicytofu",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:you_cai_chao_xiang_gu",
+      "id": "flavor_immersed_daily:beanwithsesamesauce",
       "required": false
     },
     {
-      "id": "flavor_immersed_daily:yu_xiang_rou_si",
+      "id": "flavor_immersed_daily:spicycabbage",
       "required": false
     }
   ]

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "northstar:coiler_sapling"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 6,
+    "id": "northstar:coiler_log"
+  },
+    "secondary_output": {
+    "count": 4,
+    "id": "northstar:coiler_leaves"
+  },
+    "secondary_chance": 0.80,
+  "per_tick_usage": true
+}
