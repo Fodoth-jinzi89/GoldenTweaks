@@ -1,4 +1,10 @@
 {
+	  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_fantasizing"
+    }
+  ],
   "type": "create:sequenced_assembly",
   "ingredient": {
     "item": "minecraft:heart_of_the_sea"

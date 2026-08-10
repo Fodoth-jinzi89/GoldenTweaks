@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
@@ -195,5 +196,20 @@ public class MeatmincerBlockMixin {
     @Unique
     private static boolean isMincerCover(ItemStack stack) {
         return !stack.isEmpty() && stack.is(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("flavor_immersed_daily", "mincer_cover")));
+    }
+
+    /**
+     * @author Fodoth_jinzi89
+     * @reason Sable compat
+     */
+    @Overwrite
+    protected void onRemove(BlockState state, Level level, BlockPos pos,
+                            BlockState newState, boolean movedByPiston) {
+
+        Containers.dropContentsOnDestroy(state, newState, level, pos);
+
+        if (state.hasBlockEntity() && !state.is(newState.getBlock())) {
+            level.removeBlockEntity(pos);
+        }
     }
 }

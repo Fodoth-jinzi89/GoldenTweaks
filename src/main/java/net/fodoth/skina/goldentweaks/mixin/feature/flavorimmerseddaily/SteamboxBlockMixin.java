@@ -24,6 +24,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.common.util.FakePlayer;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -706,6 +707,21 @@ public class SteamboxBlockMixin {
     private void goldenTweaks$give(Player player, ItemStack stack) {
         if (!player.getInventory().add(stack)) {
             player.drop(stack, false);
+        }
+    }
+
+    /**
+     * @author Fodoth_jinzi89
+     * @reason Sable compat
+     */
+    @Overwrite
+    public void onRemove(BlockState state, Level level, BlockPos pos,
+                         BlockState newState, boolean movedByPiston) {
+
+        Containers.dropContentsOnDestroy(state, newState, level, pos);
+
+        if (state.hasBlockEntity() && !state.is(newState.getBlock())) {
+            level.removeBlockEntity(pos);
         }
     }
 }

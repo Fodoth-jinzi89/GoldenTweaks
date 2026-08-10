@@ -299,4 +299,19 @@ public class TeapotBlockMixin {
         }
         return TEAPOT_COVER_ITEM;
     }
+
+    /**
+     * @author Fodoth_jinzi89
+     * @reason Sable compat
+     */
+    @Overwrite
+    protected void onRemove(BlockState state, Level level, BlockPos pos,
+                            BlockState newState, boolean movedByPiston) {
+
+        Containers.dropContentsOnDestroy(state, newState, level, pos);
+
+        if (state.hasBlockEntity() && !state.is(newState.getBlock())) {
+            level.removeBlockEntity(pos);
+        }
+    }
 }

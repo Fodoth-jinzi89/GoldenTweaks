@@ -71,6 +71,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("io.github.lounode.ae2cs.AE2CrystalScience") && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE") && checkIfPresent("com.glodblock.github.extendedae.ExtendedAE") && checkIfPresent("rearth.ae2helpers.ae2helpers") && checkIfPresent("thelm.packagedauto.PackagedAuto");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2peat")) {
+            return checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
+        }
+
         // 对于原版类的 mixin 应启用模组检查
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid") || mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
             return checkIfPresent("com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid") && checkIfPresent("com.github.qichensn.TouhouLostMaid");
