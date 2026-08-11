@@ -1,6 +1,47 @@
 # GoldenTweaks Update Log
 
-## 2026.08.10 - v3.1
+## 2026.08.11 - v3.2
+
+### Thaumcraft
+- 新增模组联动内容，支持通过 JSON 数据包注册神秘时代的奥术合成、坩埚和注魔合成配方
+- 新增物品要素注册系统，支持通过 JSON 数据包为物品/标签添加要素
+- 添加坩埚合成配方：六种源质碎片（风、地、水、火、秩序、混沌）及平衡碎片
+  - [配方文件](src/main/resources/data/goldentweaks/recipe/thaumcraft/crucible/)
+- 添加坩埚合成配方：七宗罪碎片（Forbidden Magic）：嫉妒、暴食、贪婪、色欲、骄傲、懒惰、暴怒，以及腐化碎片
+  - [配方文件](src/main/resources/data/goldentweaks/recipe/thaumcraft/crucible/)
+- 添加坩埚复制配方：琥珀、水银
+- 添加坩埚合成配方：纯净水桶
+- 添加奥术合成配方：炼金炉
+- 添加注魔合成配方：元始珍珠（来自 Tainted Magic）
+  - [primordial_pearl.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/infusion_matrix/primordial_pearl.json)
+- 添加物品要素：世界盐
+- 添加神秘时代、神秘工匠、禁忌魔法的完整汉化
+- 修复神秘工匠 JEI 客户端初始化问题
+  - [TTUtilityItemClientSetupMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/TTUtilityItemClientSetupMixin.java)
+- 限制 JEI 要素来源显示页数，可在配置中调节
+  - [ThaumcraftJeiPluginMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftJeiPluginMixin.java)
+- 添加朱砂转化配方（from/to）
+- 添加黑曜石图腾合成配方
+
+### Mekanism More Machines
+- 添加神秘时代植物种植配方：火焰草、宏伟之树树苗、纤毛菇、水银花、银树树苗
+- 添加禁忌魔法树苗种植配方：腐化树苗、扭曲树苗
+- 添加烟火凡人间野生芦苇叶种植配方
+
+### Hostile Networks
+- 添加基础敌对生物数据模型掉落：僵尸、末影人、僵尸猪灵
+
+### Silent Gear
+- 添加下界之星碎片合成配方
+
+### Apothic Enchanting
+- 扩展附魔等级汉化覆盖范围
+
+### Ore Excavation Integration
+- 添加矿物统一化补充配置
+
+### GoldenTweaks
+- 清理无用 import 及注解，提升代码整洁度
 
 ### 烟火凡人心
 - 更新适配版本
