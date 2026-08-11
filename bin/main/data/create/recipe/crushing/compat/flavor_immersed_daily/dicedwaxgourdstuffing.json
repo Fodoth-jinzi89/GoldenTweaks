@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "flavor_immersed_daily:dicedwaxgourd"
+        }
+      ]
+    }
+  ],
+  "processing_time": 40,
+  "results": [
+    {
+      "id": "flavor_immersed_daily:waxgroudpaste",
+      "count": 2
+    }
+  ]
+}

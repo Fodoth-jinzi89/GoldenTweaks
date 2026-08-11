@@ -1,0 +1,14 @@
+{
+  "name": "封包合成扩展",
+  "category": "packagedauto:recipe",
+  "icon": "packagedexcrafting:ultimate_crafter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(#822)封包合成扩展/$ 为 $(#822)封包合成/$ 添加对 $(#822)合成扩展/$ 配方类型的支持。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5000,
+  "entry_color": "882222"
+}

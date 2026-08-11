@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbiddenmagic"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "forbiddenmagic:tainted_sapling"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 6,
+    "id": "forbiddenmagic:tainted_log"
+  },
+  "secondary_output": {
+    "count": 4,
+    "id": "forbiddenmagic:tainted_fruit"
+  },
+    "secondary_chance": 0.80,
+  "per_tick_usage": true
+}

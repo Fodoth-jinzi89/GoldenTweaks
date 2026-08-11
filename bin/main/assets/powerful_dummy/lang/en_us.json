@@ -1,0 +1,51 @@
+{
+  "item.powerful_dummy.dummy_stand": "Dummy Stand",
+
+  "entity.powerful_dummy.test_dummy": "Test Dummy",
+  "entity.powerful_dummy.test_dummy_undead": "Test Dummy (Undead)",
+  "entity.powerful_dummy.test_dummy_arthropod": "Test Dummy (Arthropod)",
+  "entity.powerful_dummy.test_dummy_illager": "Test Dummy (Illager)",
+  "entity.powerful_dummy.test_dummy_water": "Test Dummy (Water)",
+  "creativetab.powerful_dummy": "Powerful Dummy Tab",
+
+  "button.powerful_dummy.undefined": "Default",
+  "button.powerful_dummy.undead": "Undead",
+  "button.powerful_dummy.arthropod": "Arthropod",
+  "button.powerful_dummy.illager": "Illager",
+  "button.powerful_dummy.water": "Water",
+
+  "button.powerful_dummy.attribute": "Attribute",
+  "button.powerful_dummy.value": "Value",
+  "button.powerful_dummy.apply": "Apply",
+  "button.powerful_dummy.mobType": "MobType",
+  "button.powerful_dummy.change_mod_tip": "ModeChange",
+  "button.powerful_dummy.change_mode": "CHANGE",
+
+  "chat.powerful_dummy.damage": "Last Damage: ",
+  "chat.powerful_dummy.dps": " DPS: ",
+  "chat.powerful_dummy.total_damage": " Total: ",
+
+  "chat.powerful_dummy.damagelog.display": "Showing recent %s records",
+  "chat.powerful_dummy.damagelog.display2": "(Total: %s)",
+  "chat.powerful_dummy.damagelog.title": "===== Dummy Damage Log =====",
+  "chat.powerful_dummy.damagelog.nodata": "No records available",
+  "chat.powerful_dummy.damagelog.return": "Type /damagelog get %s to view all records",
+
+  "chat.powerful_dummy.damagelog.time.set": "Set display time to: %s second",
+  "chat.powerful_dummy.damagelog.time.current": "Current DpsData display time: %s second",
+  "chat.powerful_dummy.damagelog.time.secondsago": " %s  seconds ago",
+  "chat.powerful_dummy.damagelog.time.justnow": "just now",
+
+  "key.categories.powerful_dummy": "Powerful Dummy",
+  "key.powerful_dummy.cleardps": "Clear Dps",
+  "powerful_dummy.dps.cleared": "DpsData has cleared",
+
+  "gui.powerful_dummy.stats.dps": "DPS",
+  "gui.powerful_dummy.stats.total_damage": "Total Damage",
+  "gui.powerful_dummy.stats.damage_per_hit": "Damage",
+
+  "heal_mode.powerful_dummy.after_hurt": "After Hurt",
+  "heal_mode.powerful_dummy.interval": "Interval",
+  "heal_mode.powerful_dummy.low_hp": "Low HP",
+  "heal_mode.powerful_dummy.none": "None"
+}

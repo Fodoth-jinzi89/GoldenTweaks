@@ -1,0 +1,58 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createoreexcavation"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "pattern": [
+    "ABCBA",
+    "BDEDB",
+    "FGHGF",
+    "BIIIB",
+    "ABBBA"
+  ],
+  "key": {
+    "A": {
+      "item": "create:brass_block"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "C": {
+      "item": "create:copper_casing"
+    },
+    "D": {
+      "item": "create:nixie_tube"
+    },
+    "E": {
+      "item": "create:spout"
+    },
+    "F": {
+      "item": "create:brass_tunnel"
+    },
+    "G": {
+      "item": "create:precision_mechanism"
+    },
+    "H": {
+      "item": "create:mechanical_drill"
+    },
+    "I": {
+      "item": "northstar:titanium_ingot"
+    }
+  },
+  "result": {
+    "id": "createoreexcavation:drilling_machine",
+	"count": 1
+  }
+}

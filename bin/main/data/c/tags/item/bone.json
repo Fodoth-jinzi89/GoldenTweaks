@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:bovinebone",
+    "minecraft:bone",
+    "flavor_immersed_daily:animalskull",
+    "flavor_immersed_daily:bullhorn"
+  ]
+}

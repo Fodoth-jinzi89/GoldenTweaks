@@ -1,0 +1,19 @@
+{
+    "type":  "create:sandpaper_polishing",
+	  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+    "ingredients":  [
+                        {
+                            "item":  "northstar:polished_amethyst"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "createvoidway:polished_amethyst"
+                    }
+                ]
+}

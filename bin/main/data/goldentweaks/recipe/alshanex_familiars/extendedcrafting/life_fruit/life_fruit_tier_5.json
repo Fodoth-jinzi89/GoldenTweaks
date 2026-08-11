@@ -1,0 +1,46 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    }
+  ],
+
+  "pattern": [
+    "  AAA  ",
+    " ABBBA ",
+    "ABDDDBA",
+    "ABDCDBA",
+    "ABDDDBA",
+    " ABBBA ",
+    "  AAA  "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:gems/diamond"
+    },
+    "B": {
+      "tag": "c:storage_blocks/diamond"
+    },
+    "C": {
+      "item": "minecraft:golden_apple"
+    },
+    "D": {
+      "item": "apotheosis:gem_dust"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:life_fruit_tier_5",
+	"count": 4
+  }
+}

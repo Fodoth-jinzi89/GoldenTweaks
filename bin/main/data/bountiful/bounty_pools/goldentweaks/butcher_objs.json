@@ -1,0 +1,1180 @@
+{
+    "content": {
+        "beef": {
+            "type": "item",
+            "content": "minecraft:beef",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "porkchop": {
+            "type": "item",
+            "content": "minecraft:porkchop",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "mutton": {
+            "type": "item",
+            "content": "minecraft:mutton",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "chicken": {
+            "type": "item",
+            "content": "minecraft:chicken",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "rabbit": {
+            "type": "item",
+            "content": "minecraft:rabbit",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "rotten_flesh": {
+            "type": "item",
+            "content": "minecraft:rotten_flesh",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "bone": {
+            "type": "item",
+            "content": "minecraft:bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "wither_rib": {
+            "type": "item",
+            "content": "kaleidoscope_nether:wither_rib",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 8,
+            "weightMult": 0.011490125673249552,
+            "effectiveValue": 384
+        },
+        "overgrown_bone": {
+            "type": "item",
+            "content": "hazennstuff:overgrown_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "frozen_bone": {
+            "type": "item",
+            "content": "irons_spellbooks:frozen_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "koboleton_bone": {
+            "type": "item",
+            "content": "cataclysm:koboleton_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 32,
+            "weightMult": 0.011490125673249552,
+            "effectiveValue": 384
+        },
+        "rawchickenlean": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenlean",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 28,
+            "weightMult": 0.010053859964093357,
+            "effectiveValue": 336
+        },
+        "rawchickenbreast": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenbreast",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "rawchickenneck": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenneck",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 18,
+            "weightMult": 0.006463195691202872,
+            "effectiveValue": 216
+        },
+        "rawchickenwing": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenwing",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 34,
+            "weightMult": 0.012208258527827648,
+            "effectiveValue": 408
+        },
+        "rawchickenwingtip": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenwingtip",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 15,
+            "weightMult": 0.005385996409335727,
+            "effectiveValue": 180
+        },
+        "rawchickenpiecepiece": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenpiecepiece",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 22,
+            "weightMult": 0.007899461400359067,
+            "effectiveValue": 264
+        },
+        "rawchickenliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenliver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 14,
+            "weightMult": 0.005026929982046679,
+            "effectiveValue": 168
+        },
+        "rawhalfofchickenleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawhalfofchickenleg",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 26,
+            "weightMult": 0.00933572710951526,
+            "effectiveValue": 312
+        },
+        "rawchickenhead": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenhead",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 13,
+            "weightMult": 0.00466786355475763,
+            "effectiveValue": 156
+        },
+        "rawchickenpiece": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenpiece",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 24,
+            "weightMult": 0.008617594254937163,
+            "effectiveValue": 288
+        },
+        "rawchickenleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenleg",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 28,
+            "weightMult": 0.010053859964093357,
+            "effectiveValue": 336
+        },
+        "rawchickenass": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "rawchickenheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenheart",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "rawchickenfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenfeet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 26,
+            "weightMult": 0.00933572710951526,
+            "effectiveValue": 312
+        },
+        "animalskull": {
+            "type": "item",
+            "content": "flavor_immersed_daily:animalskull",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "bovinebone": {
+            "type": "item",
+            "content": "flavor_immersed_daily:bovinebone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "bullhorn": {
+            "type": "item",
+            "content": "flavor_immersed_daily:bullhorn",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "rawcattleintestine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattleintestine",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 38,
+            "weightMult": 0.013644524236983842,
+            "effectiveValue": 456
+        },
+        "rawcattleliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattleliver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 22,
+            "weightMult": 0.007899461400359067,
+            "effectiveValue": 264
+        },
+        "rawcattlelung": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattlelung",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 18,
+            "weightMult": 0.006463195691202872,
+            "effectiveValue": 216
+        },
+        "rawcattlestomach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattlestomach",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 36,
+            "weightMult": 0.012926391382405745,
+            "effectiveValue": 432
+        },
+        "rawcattletendon": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattletendon",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 52,
+            "weightMult": 0.01867145421903052,
+            "effectiveValue": 624
+        },
+        "rawcattleface": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattleface",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "rawcattlefeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattlefeet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 28,
+            "weightMult": 0.010053859964093357,
+            "effectiveValue": 336
+        },
+        "rawcattleheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattleheart",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 32,
+            "weightMult": 0.011490125673249552,
+            "effectiveValue": 384
+        },
+        "rawcattlefat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattlefat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "rawcattleleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattleleg",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 44,
+            "weightMult": 0.015798922800718134,
+            "effectiveValue": 528
+        },
+        "rawpigintestine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigintestine",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 32,
+            "weightMult": 0.011490125673249552,
+            "effectiveValue": 384
+        },
+        "rawpigtenderloin": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigtenderloin",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 44,
+            "weightMult": 0.015798922800718134,
+            "effectiveValue": 528
+        },
+        "rawpigcerebrum": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigcerebrum",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 38,
+            "weightMult": 0.013644524236983842,
+            "effectiveValue": 456
+        },
+        "rawpigsparerib": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigsparerib",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 46,
+            "weightMult": 0.01651705565529623,
+            "effectiveValue": 552
+        },
+        "rawpigstreakypork": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigstreakypork",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 36,
+            "weightMult": 0.012926391382405745,
+            "effectiveValue": 432
+        },
+        "rawpigfat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigfat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "rawpigstomach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigstomach",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "rawpigear": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigear",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 28,
+            "weightMult": 0.010053859964093357,
+            "effectiveValue": 336
+        },
+        "rawpiglung": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpiglung",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 18,
+            "weightMult": 0.006463195691202872,
+            "effectiveValue": 216
+        },
+        "rawpigliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigliver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "rawpignose": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpignose",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 32,
+            "weightMult": 0.011490125673249552,
+            "effectiveValue": 384
+        },
+        "rawpigskin": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigskin",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "rawpigfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigfeet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 34,
+            "weightMult": 0.012208258527827648,
+            "effectiveValue": 408
+        },
+        "rawpighead": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpighead",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 24,
+            "weightMult": 0.008617594254937163,
+            "effectiveValue": 288
+        },
+        "rawpigtail": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigtail",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 36,
+            "weightMult": 0.012926391382405745,
+            "effectiveValue": 432
+        },
+        "rawpigheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigheart",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "rawpigleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigleg",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 42,
+            "weightMult": 0.015080789946140035,
+            "effectiveValue": 504
+        },
+        "rawsheepintestine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepintestine",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 44,
+            "weightMult": 0.015798922800718134,
+            "effectiveValue": 528
+        },
+        "rawsheepstomach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepstomach",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 46,
+            "weightMult": 0.01651705565529623,
+            "effectiveValue": 552
+        },
+        "rawsheepliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepliver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 26,
+            "weightMult": 0.00933572710951526,
+            "effectiveValue": 312
+        },
+        "rawsheepface": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepface",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 34,
+            "weightMult": 0.012208258527827648,
+            "effectiveValue": 408
+        },
+        "rawsheepsparerib": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepsparerib",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 52,
+            "weightMult": 0.01867145421903052,
+            "effectiveValue": 624
+        },
+        "rawsheepfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepfeet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 36,
+            "weightMult": 0.012926391382405745,
+            "effectiveValue": 432
+        },
+        "rawsheepleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepleg",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 54,
+            "weightMult": 0.01938958707360862,
+            "effectiveValue": 648
+        },
+        "rawsheeptail": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheeptail",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 32,
+            "weightMult": 0.011490125673249552,
+            "effectiveValue": 384
+        },
+        "rawsheepheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepheart",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 38,
+            "weightMult": 0.013644524236983842,
+            "effectiveValue": 456
+        },
+        "rawsheepeye": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepeye",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "rawsheepfat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepfat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 20,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "sheepbread": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sheepbread",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 15,
+            "weightMult": 0.005385996409335727,
+            "effectiveValue": 180
+        },
+        "rawchickenblood": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenblood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 14,
+            "weightMult": 0.005026929982046679,
+            "effectiveValue": 168
+        },
+        "rawcattleblood": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattleblood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 16,
+            "weightMult": 0.005745062836624776,
+            "effectiveValue": 192
+        },
+        "rawpigblood": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigblood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 15,
+            "weightMult": 0.005385996409335727,
+            "effectiveValue": 180
+        },
+        "rawsheepblood": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepblood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 18,
+            "weightMult": 0.006463195691202872,
+            "effectiveValue": 216
+        },
+        "chickenwithoutblood": {
+            "type": "item",
+            "content": "flavor_immersed_daily:chickenwithoutblood",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 100,
+            "weightMult": 0.03590664272890485,
+            "effectiveValue": 1200
+        },
+        "chickenwithoutfeather": {
+            "type": "item",
+            "content": "flavor_immersed_daily:chickenwithoutfeather",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 80,
+            "weightMult": 0.02872531418312388,
+            "effectiveValue": 960
+        },
+        "rawchickenfork": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickenfork",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 24,
+            "weightMult": 0.008617594254937163,
+            "effectiveValue": 288
+        },
+        "rawchickengizzard": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawchickengizzard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 22,
+            "weightMult": 0.007899461400359067,
+            "effectiveValue": 264
+        },
+        "rawsnowflakebeef": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsnowflakebeef",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 68,
+            "weightMult": 0.024416517055655295,
+            "effectiveValue": 816
+        },
+        "rawcattlejoint": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawcattlejoint",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 40,
+            "weightMult": 0.01436265709156194,
+            "effectiveValue": 480
+        },
+        "rawpigkidney": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawpigkidney",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 24,
+            "weightMult": 0.008617594254937163,
+            "effectiveValue": 288
+        },
+        "rawsheepkidney": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepkidney",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 34,
+            "weightMult": 0.012208258527827648,
+            "effectiveValue": 408
+        },
+        "rawsheepspine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rawsheepspine",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 48,
+            "weightMult": 0.017235188509874325,
+            "effectiveValue": 576
+        },
+        "meatandvegetablestuffing": {
+            "type": "item",
+            "content": "flavor_immersed_daily:meatandvegetablestuffing",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 26,
+            "weightMult": 0.00933572710951526,
+            "effectiveValue": 312
+        },
+        "meatandeggpaste": {
+            "type": "item",
+            "content": "flavor_immersed_daily:meatandeggpaste",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 28,
+            "weightMult": 0.010053859964093357,
+            "effectiveValue": 336
+        },
+        "meatpaste": {
+            "type": "item",
+            "content": "flavor_immersed_daily:meatpaste",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 30,
+            "weightMult": 0.010771992818671455,
+            "effectiveValue": 360
+        },
+        "crispyporkbelly": {
+            "type": "item",
+            "content": "flavor_immersed_daily:crispyporkbelly",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 56,
+            "weightMult": 0.010053859964093357,
+            "effectiveValue": 336
+        },
+        "lambroll": {
+            "type": "item",
+            "content": "flavor_immersed_daily:lambroll",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 52,
+            "weightMult": 0.00933572710951526,
+            "effectiveValue": 312
+        },
+        "normalmeatroll": {
+            "type": "item",
+            "content": "flavor_immersed_daily:normalmeatroll",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "curedmeat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:curedmeat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 44,
+            "weightMult": 0.007899461400359067,
+            "effectiveValue": 264
+        },
+        "amethyst_crab_meat": {
+            "type": "item",
+            "content": "cataclysm:amethyst_crab_meat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.008976660682226212,
+            "effectiveValue": 300
+        },
+        "blessed_amethyst_crab_meat": {
+            "type": "item",
+            "content": "cataclysm:blessed_amethyst_crab_meat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 80,
+            "weightMult": 0.01436265709156194,
+            "effectiveValue": 480
+        },
+        "raw_piglin_meat": {
+            "type": "item",
+            "content": "kaleidoscope_nether:raw_piglin_meat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 10,
+            "weightMult": 0.003590664272890485,
+            "effectiveValue": 120
+        },
+        "raw_strider_meat": {
+            "type": "item",
+            "content": "kaleidoscope_nether:raw_strider_meat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 10,
+            "weightMult": 0.003590664272890485,
+            "effectiveValue": 120
+        },
+        "raw_pork_belly": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:raw_pork_belly",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "raw_cut_small_meats": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:raw_cut_small_meats",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "minced_beef": {
+            "type": "item",
+            "content": "farmersdelight:minced_beef",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "chicken_cuts": {
+            "type": "item",
+            "content": "farmersdelight:chicken_cuts",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 5,
+            "weightMult": 0.00718132854578097,
+            "effectiveValue": 240
+        },
+        "raw_ravager_meat": {
+            "type": "item",
+            "content": "croptopia:raw_ravager_meat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.008976660682226212,
+            "effectiveValue": 300
+        },
+        "lizard_meat": {
+            "type": "item",
+            "content": "spectrum:lizard_meat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.008976660682226212,
+            "effectiveValue": 300
+        }
+    },
+    "requires": [
+        "cataclysm",
+        "croptopia",
+        "farmersdelight",
+        "flavor_immersed_daily",
+        "hazennstuff",
+        "irons_spellbooks",
+        "kaleidoscope_cookery",
+        "kaleidoscope_nether",
+        "minecraft",
+        "spectrum"
+    ]
+}

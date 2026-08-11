@@ -1,0 +1,88 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    }
+  ],
+  "ingredient": {
+    "item": "apotheosis:gem_dust"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "apotheosis:common_material"
+    },
+    {
+      "chance": 5.0,
+      "id": "ae2cs:nether_quartz_dust"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_common_material"
+        },
+        {
+          "item": "ae2cs:purified_nether_quartz_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_common_material"
+        },
+        {
+          "type": "neoforge:single",
+          "fluid": "minecraft:lava",
+          "amount": 100
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_common_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_common_material"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_common_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_common_material"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "goldentweaks:unprocessed_common_material"
+  }
+}

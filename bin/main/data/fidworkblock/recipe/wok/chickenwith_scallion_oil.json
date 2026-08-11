@@ -1,0 +1,17 @@
+{
+  "type": "fidworkblock:cooking",
+  "appliance": "wok",
+  "ingredients": [
+    { "item": "flavor_immersed_daily:rawchickenpiece" },
+    { "item": "flavor_immersed_daily:scallion_2" },
+    { "item": "flavor_immersed_daily:cookingoil" },
+    { "item": "flavor_immersed_daily:soy" },
+	{ "item": "flavor_immersed_daily:scallion_2" },
+	{ "item": "flavor_immersed_daily:dryaniseed" }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily:chickenwith_scallion_oil",
+    "count": 1
+  },
+  "cookingTime": 0
+}

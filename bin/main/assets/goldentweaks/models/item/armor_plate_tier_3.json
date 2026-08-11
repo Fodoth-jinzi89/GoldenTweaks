@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "goldentweaks:item/armor_plate_tier_3"
+  }
+}

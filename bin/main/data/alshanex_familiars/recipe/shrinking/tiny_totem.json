@@ -1,0 +1,10 @@
+{
+  "type": "alshanex_familiars:shrinking_recipe",
+  "input": {
+    "item": "minecraft:totem_of_undying"
+  },
+  "result": {
+    "id": "alshanex_familiars:tiny_totem",
+    "count": 1
+  }
+}

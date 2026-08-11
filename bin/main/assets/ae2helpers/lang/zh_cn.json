@@ -1,0 +1,35 @@
+{
+  "item.ae2helpers.result_import_card": "合成结果导入卡",
+
+  "ae2helpers.configuration.title": "AE2Helpers 配置",
+  "ae2helpers.configuration.section.ae2helpers.common.toml": "AE2Helpers 配置",
+  "ae2helpers.configuration.section.ae2helpers.common.toml.title": "AE2Helpers 配置",
+  "ae2helpers.configuration.items": "物品列表",
+  "ae2helpers.configuration.logDirtBlock": "记录泥土方块",
+  "ae2helpers.configuration.magicNumberIntroduction": "魔法数字文本",
+  "ae2helpers.configuration.magicNumber": "魔法数字",
+  "ae2helpers.configuration.enableAutoImport": "启用合成终端自动导入",
+
+  "ae2helpers.crafthelper.title": "自动导入待处理合成",
+  "ae2helpers.crafthelper.enabled": "已启用",
+  "ae2helpers.crafthelper.disabled": "已禁用",
+  "ae2helpers.crafthelper.tooltip": "自动将通过物品管理器发起合成的物品移入合成网格",
+
+  "ae2helpers.importcard.pattern": "ME 样板供应器（仅侧面）",
+  "ae2helpers.importcard.screen.title": "导入卡配置",
+  "ae2helpers.importcard.resultsonly": "仅导入合成结果",
+  "ae2helpers.importcard.resultsonly.tooltip": "启用后，仅导入当前合成样板预期产出的物品。\n禁用后，将导入目标机器中的所有物品。",
+  "ae2helpers.importcard.sync": "与合成 CPU 同步",
+  "ae2helpers.importcard.sync.tooltip": "启用后，会持续检查合成 CPU 是否仍然需要这些物品。\n如果任务被取消或通过其他方式完成，则停止导入。\n仅在启用“仅导入合成结果”时生效。",
+  "ae2helpers.importcard.direction": "导入方向",
+  "ae2helpers.importcard.direction.tooltip": "从相邻机器的哪个面拉取物品。\n“自动”将使用面向样板供应器的一侧。",
+  "ae2helpers.importcard.direction.auto": "自动（面向机器）",
+  "ae2helpers.importcard.tooltip.mode": "模式：",
+  "ae2helpers.importcard.tooltip.crafting_results": "仅合成结果",
+  "ae2helpers.importcard.tooltip.everything": "全部物品",
+  "ae2helpers.importcard.tooltip.sync": "CPU 同步：",
+  "ae2helpers.importcard.tooltip.enabled": "已启用",
+  "ae2helpers.importcard.tooltip.disabled": "已禁用",
+  "ae2helpers.importcard.tooltip.side": "方向：",
+  "ae2helpers.importcard.tooltip.hint": "右键点击进行配置"
+}

@@ -1,0 +1,23 @@
+{
+  "item.createcardboardthings.cardboard_pickaxe": "纸板镐",
+  "item.createcardboardthings.cardboard_shears": "纸板剪刀",
+  "item.createcardboardthings.cardboard_arrow": "纸板箭",
+  "item.createcardboardthings.cardboard_elytra": "纸板鞘翅",
+  "item.createcardboardthings.cardboard_ball": "纸板球",
+  "item.createcardboardthings.cardboard_ingot": "纸板锭",
+  "item.createcardboardthings.cardboard_rocket": "纸板火箭",
+  "item.createcardboardthings.cardboard_saddle": "纸板鞍",
+  "item.createcardboardthings.cardboard_totem": "纸板图腾",
+
+  "entity.createcardboardthings.cardboard_arrow": "纸板箭",
+
+  "tooltip.createcardboardthings.cardboard_pickaxe": "脆弱却坚不可摧",
+  "tooltip.createcardboardthings.cardboard_shears": "至今无人知晓原因……",
+  "tooltip.createcardboardthings.cardboard_arrow": "不造成伤害，但击退极强",
+  "tooltip.createcardboardthings.cardboard_elytra": "永远飞翔……一次",
+  "tooltip.createcardboardthings.cardboard_ball": "威力十足，但不会击退目标",
+  "tooltip.createcardboardthings.cardboard_ingot": "增强机械动力纸板的击退效果",
+  "tooltip.createcardboardthings.cardboard_rocket": "仅适用于纸板鞘翅",
+  "tooltip.createcardboardthings.cardboard_saddle": "未来各种鞍具的基础材料",
+  "tooltip.createcardboardthings.cardboard_totem": "救你一命，然后助你逃跑"
+}

@@ -1,0 +1,706 @@
+{
+    "content": {
+        "camera": {
+            "type": "item",
+            "content": "exposure:camera",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1750,
+            "weightMult": 0.0035714285714285713,
+            "effectiveValue": 1750
+        },
+        "brown_ink": {
+            "type": "item",
+            "content": "exposuredetective:brown_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "light_blue_ink": {
+            "type": "item",
+            "content": "exposuredetective:light_blue_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "blue_ink": {
+            "type": "item",
+            "content": "exposuredetective:blue_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "pink_ink": {
+            "type": "item",
+            "content": "exposuredetective:pink_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "magenta_ink": {
+            "type": "item",
+            "content": "exposuredetective:magenta_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "purple_ink": {
+            "type": "item",
+            "content": "exposuredetective:purple_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "black_ink": {
+            "type": "item",
+            "content": "exposuredetective:black_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "gray_ink": {
+            "type": "item",
+            "content": "exposuredetective:gray_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "light_gray_ink": {
+            "type": "item",
+            "content": "exposuredetective:light_gray_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "white_ink": {
+            "type": "item",
+            "content": "exposuredetective:white_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "red_ink": {
+            "type": "item",
+            "content": "exposuredetective:red_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "orange_ink": {
+            "type": "item",
+            "content": "exposuredetective:orange_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "yellow_ink": {
+            "type": "item",
+            "content": "exposuredetective:yellow_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "lime_ink": {
+            "type": "item",
+            "content": "exposuredetective:lime_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "green_ink": {
+            "type": "item",
+            "content": "exposuredetective:green_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0010204081632653062,
+            "effectiveValue": 500
+        },
+        "invisible_ink": {
+            "type": "item",
+            "content": "exposuredetective:invisible_ink",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0020408163265306124,
+            "effectiveValue": 1000
+        },
+        "album": {
+            "type": "item",
+            "content": "exposure:album",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1750,
+            "weightMult": 0.0035714285714285713,
+            "effectiveValue": 1750
+        },
+        "instant_camera": {
+            "type": "item",
+            "content": "exposure_polaroid:instant_camera",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000,
+            "weightMult": 0.006122448979591836,
+            "effectiveValue": 3000
+        },
+        "telescopic_lens": {
+            "type": "item",
+            "content": "exposure_expanded:telescopic_lens",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.01020408163265306,
+            "effectiveValue": 5000
+        },
+        "panoramic_lens": {
+            "type": "item",
+            "content": "exposure_expanded:panoramic_lens",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.01020408163265306,
+            "effectiveValue": 5000
+        },
+        "board": {
+            "type": "item",
+            "content": "exposuredetective:board",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.012244897959183673,
+            "effectiveValue": 2400
+        },
+        "red_string": {
+            "type": "item",
+            "content": "exposuredetective:red_string",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.012244897959183673,
+            "effectiveValue": 2400
+        },
+        "camera_stand": {
+            "type": "item",
+            "content": "exposure:camera_stand",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.012244897959183673,
+            "effectiveValue": 2400
+        },
+        "black_and_white_film": {
+            "type": "item",
+            "content": "exposure:black_and_white_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 240,
+            "weightMult": 0.014693877551020407,
+            "effectiveValue": 2880
+        },
+        "color_film": {
+            "type": "item",
+            "content": "exposure:color_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 240,
+            "weightMult": 0.014693877551020407,
+            "effectiveValue": 2880
+        },
+        "high_sensitivity_black_and_white_film": {
+            "type": "item",
+            "content": "exposure:high_sensitivity_black_and_white_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 300,
+            "weightMult": 0.018367346938775512,
+            "effectiveValue": 3600
+        },
+        "high_sensitivity_color_film": {
+            "type": "item",
+            "content": "exposure:high_sensitivity_color_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 300,
+            "weightMult": 0.018367346938775512,
+            "effectiveValue": 3600
+        },
+        "photograph_frame": {
+            "type": "item",
+            "content": "exposure:photograph_frame",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 240,
+            "weightMult": 0.014693877551020407,
+            "effectiveValue": 2880
+        },
+        "glass_photograph_frame": {
+            "type": "item",
+            "content": "exposure:glass_photograph_frame",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 300,
+            "weightMult": 0.018367346938775512,
+            "effectiveValue": 3600
+        },
+        "instant_black_and_white_slide": {
+            "type": "item",
+            "content": "exposure_polaroid:instant_black_and_white_slide",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 360,
+            "weightMult": 0.022040816326530613,
+            "effectiveValue": 4320
+        },
+        "instant_color_slide": {
+            "type": "item",
+            "content": "exposure_polaroid:instant_color_slide",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 360,
+            "weightMult": 0.022040816326530613,
+            "effectiveValue": 4320
+        },
+        "high_sensitivity_instant_black_and_white_slide": {
+            "type": "item",
+            "content": "exposure_polaroid:high_sensitivity_instant_black_and_white_slide",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 360,
+            "weightMult": 0.022040816326530613,
+            "effectiveValue": 4320
+        },
+        "high_sensitivity_instant_color_slide": {
+            "type": "item",
+            "content": "exposure_polaroid:high_sensitivity_instant_color_slide",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 360,
+            "weightMult": 0.022040816326530613,
+            "effectiveValue": 4320
+        },
+        "art_filter": {
+            "type": "item",
+            "content": "exposure_expanded:art_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "bits_filter": {
+            "type": "item",
+            "content": "exposure_expanded:bits_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "blobs_filter": {
+            "type": "item",
+            "content": "exposure_expanded:blobs_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "blur_filter": {
+            "type": "item",
+            "content": "exposure_expanded:blur_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "bumpy_filter": {
+            "type": "item",
+            "content": "exposure_expanded:bumpy_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "color_convolve_filter": {
+            "type": "item",
+            "content": "exposure_expanded:color_convolve_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "deconverge_filter": {
+            "type": "item",
+            "content": "exposure_expanded:deconverge_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "desaturate_filter": {
+            "type": "item",
+            "content": "exposure_expanded:desaturate_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "flip_filter": {
+            "type": "item",
+            "content": "exposure_expanded:flip_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "sobel_filter": {
+            "type": "item",
+            "content": "exposure_expanded:sobel_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "scan_pincushion_filter": {
+            "type": "item",
+            "content": "exposure_expanded:scan_pincushion_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "spider_filter": {
+            "type": "item",
+            "content": "exposure_expanded:spider_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "wobble_filter": {
+            "type": "item",
+            "content": "exposure_expanded:wobble_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "ntsc_filter": {
+            "type": "item",
+            "content": "exposure_expanded:ntsc_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "pencil_filter": {
+            "type": "item",
+            "content": "exposure_expanded:pencil_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "antialias_filter": {
+            "type": "item",
+            "content": "exposure_expanded:antialias_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 440,
+            "weightMult": 0.026938775510204082,
+            "effectiveValue": 5280
+        },
+        "hires_color_film": {
+            "type": "item",
+            "content": "exposure_expanded:hires_color_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "hires_black_and_white_film": {
+            "type": "item",
+            "content": "exposure_expanded:hires_black_and_white_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "hicap_color_film": {
+            "type": "item",
+            "content": "exposure_expanded:hicap_color_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "hicap_black_and_white_film": {
+            "type": "item",
+            "content": "exposure_expanded:hicap_black_and_white_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "cga_film": {
+            "type": "item",
+            "content": "exposure_expanded:cga_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "c64_film": {
+            "type": "item",
+            "content": "exposure_expanded:c64_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "nes_film": {
+            "type": "item",
+            "content": "exposure_expanded:nes_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        },
+        "gameboy_film": {
+            "type": "item",
+            "content": "exposure_expanded:gameboy_film",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 600,
+            "weightMult": 0.036734693877551024,
+            "effectiveValue": 7200
+        }
+    },
+    "requires": [
+        "exposure",
+        "exposure_expanded",
+        "exposure_polaroid",
+        "exposuredetective"
+    ]
+}

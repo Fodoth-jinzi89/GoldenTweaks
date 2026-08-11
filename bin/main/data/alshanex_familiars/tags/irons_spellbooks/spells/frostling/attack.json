@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:ice_block",
+    "irons_spellbooks:ice_spikes",
+    "irons_spellbooks:icicle",
+    { "id": "alshanex_familiars:ice_chamber", "required": false },
+    "irons_spellbooks:snowball",
+    "irons_spellbooks:cone_of_cold",
+
+    { "id": "traveloptics:nullflare", "required": false },
+    { "id": "traveloptics:despair", "required": false },
+
+    "irons_spellbooks:ray_of_frost",
+    "irons_spellbooks:frostwave",
+    "irons_spellbooks:frostbite",
+
+    { "id": "alshanex_familiars:ice_age", "required": false },
+
+    { "id": "hazennstuff:hailstorm", "required": false }
+  ]
+}

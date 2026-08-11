@@ -1,0 +1,8 @@
+{
+    "objectives": [
+        "painter_objs"
+    ],
+    "rewards": [
+        "golden_all_rews"
+    ]
+}

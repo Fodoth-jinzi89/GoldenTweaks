@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "mekmm:rolling_mill",
+  "input": {
+    "count": 1,
+    "tag": "c:ingots/brass"
+  },
+  "output": {
+    "count": 1,
+    "id": "create:brass_sheet"
+  }
+}

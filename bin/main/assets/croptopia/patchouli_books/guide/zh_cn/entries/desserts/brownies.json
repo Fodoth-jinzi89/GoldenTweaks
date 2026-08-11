@@ -1,0 +1,12 @@
+{
+  "name": "核仁巧克力饼",
+  "icon": "croptopia:brownies",
+  "category": "croptopia:desserts",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:brownies",
+      "text": "布朗尼蛋糕的食谱。"
+    }
+  ]
+}

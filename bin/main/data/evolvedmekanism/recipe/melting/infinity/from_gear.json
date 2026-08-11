@@ -1,0 +1,16 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "avaritia_integration:infinity_gear"
+  },
+  "output": {
+    "id": "evolvedmekanism:molten_infinity",
+    "amount": 360
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_integration"
+    }
+  ]
+}

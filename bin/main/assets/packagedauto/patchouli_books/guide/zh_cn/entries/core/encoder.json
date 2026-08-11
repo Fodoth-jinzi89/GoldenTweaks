@@ -1,0 +1,42 @@
+{
+  "name": "封包配方编码器",
+  "category": "packagedauto:core",
+  "icon": "packagedauto:encoder",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)封包配方编码器/$ 将配方编码进 $(l:core/recipe_holder)封包配方储存器/$，并为机器提供配方数据。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "packagedauto:encoder",
+      "link_recipe": true,
+      "title": "使用方法",
+      "text": "要编码配方，请选择一个 $(l:recipe)配方类型/$。$(p)根据不同配方类型，你可以设置输入与输出及其数量。$(p)最后，将 $(l:core/recipe_holder)封包配方储存器/$ 放入其中，并按下 $(thing)保存按钮/$ 完成编码。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "使用方法（续）",
+      "text": "你可以通过按下 $(thing)读取按钮/$ 从已编码的 $(l:core/recipe_holder)封包配方储存器/$ 中加载配方。$(p)最多可在 $(l:core/recipe_holder)封包配方储存器/$ 中通过选择顶部的配方槽位编码 20 个配方。$(p)右侧可以预览这些 $(l:core/package)配方封包/$ 的产出内容。"
+    },
+    {
+      "type": "patchouli:text",
+      "flag": "&mod:jei,!mod:emi",
+      "title": "JEI 集成",
+      "text": "你可以通过点击箭头显示当前配方类型可用的所有配方，并可点击 $(thing)移动物品/$ 快速编码配方。"
+    },
+    {
+      "type": "patchouli:text",
+      "flag": "mod:emi",
+      "title": "EMI 集成",
+      "text": "在查看当前配方类型可用配方时，你可以点击 $(thing)填充配方/$ 按钮快速编码配方。$(p)对于允许多种物品作为材料的配方，可以通过配方树指定使用的具体物品。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "packagedauto:encoder",
+      "title": "合成"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

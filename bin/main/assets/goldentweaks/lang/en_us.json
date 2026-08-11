@@ -1,0 +1,188 @@
+{
+  "config.goldentweaks.title": "Golden Tweaks",
+
+  "config.goldentweaks.pickup": "Pickup Interaction",
+  "config.goldentweaks.pickup.comment": "Settings related to item pickup interaction.",
+
+  "config.goldentweaks.pickup.base_pickup_reach": "Base Pickup Reach",
+  "config.goldentweaks.pickup.base_pickup_reach.comment": "Base item pickup reach distance.",
+
+  "config.goldentweaks.pickup.extended_reach_bonus": "Extended Reach Bonus",
+  "config.goldentweaks.pickup.extended_reach_bonus.comment": "Additional pickup reach for creative and spectator players.",
+
+  "config.goldentweaks.pickup.search_box_inflate": "Search Box Inflate",
+  "config.goldentweaks.pickup.search_box_inflate.comment": "Additional expansion size for the pickup search box.",
+
+  "config.goldentweaks.pickup.trace_bias": "Trace Bias",
+  "config.goldentweaks.pickup.trace_bias.comment": "Entity tracing bias used during pickup detection.",
+
+  "config.goldentweaks.pickup.max_targets": "Maximum Targets",
+  "config.goldentweaks.pickup.max_targets.comment": "Maximum number of item entities processed per click.",
+
+  "config.goldentweaks.pickup.allow_through_walls": "Allow Through Walls",
+  "config.goldentweaks.pickup.allow_through_walls.comment": "Allows item pickup through solid blocks.",
+
+  "config.goldentweaks.pickup.allow_sneak_pickup": "Allow Sneak Pickup",
+  "config.goldentweaks.pickup.allow_sneak_pickup.comment": "Allows item pickup while sneaking.",
+
+  "config.goldentweaks.pickup.block_use": "Block Use",
+  "config.goldentweaks.pickup.block_use.comment": "Prevents original right click behavior when using pickup interaction.",
+
+  "config.goldentweaks.pickup.allow_continuous_pickup": "Allow Continuous Pickup",
+  "config.goldentweaks.pickup.allow_continuous_pickup.comment": "Allows holding right click to continuously pick up nearby items.",
+
+  "config.goldentweaks.pickup.continuous_pickup_interval": "Continuous Pickup Interval",
+  "config.goldentweaks.pickup.continuous_pickup_interval.comment": "Tick interval between continuous pickup scans while holding right click.",
+
+  "config.goldentweaks.pickup.pickup_delay_threshold": "Pickup Delay Threshold",
+  "config.goldentweaks.pickup.pickup_delay_threshold.comment": "Prevents pickup of item entities with a pickup delay higher than this value.",
+
+  "config.goldentweaks.pickup.allow_infinite_delay": "Allow Infinite Pickup Delay",
+  "config.goldentweaks.pickup.allow_infinite_delay.comment": "Allows picking up item entities with an infinite pickup delay.",
+
+  "config.goldentweaks.category.building": "Building & Rendering",
+  "config.goldentweaks.dsa": "DSA Mode",
+  "config.goldentweaks.dsa.comment": "Direct State Access rendering mode.",
+  "config.goldentweaks.dsa.all": "All",
+  "config.goldentweaks.dsa.vbo": "VBO",
+  "config.goldentweaks.dsa.fbo": "FBO",
+  "config.goldentweaks.dsa.off": "Off",
+  "config.goldentweaks.dsa_variant": "DSA Variant",
+  "config.goldentweaks.dsa_variant.comment": "Which DSA extension to use.",
+  "config.goldentweaks.dsa_variant.core": "Core",
+  "config.goldentweaks.dsa_variant.arb": "ARB",
+  "config.goldentweaks.vertex_format_cache": "Vertex Format Cache",
+  "config.goldentweaks.vertex_format_cache.comment": "Cache vertex formats to reduce recompilation.",
+  "config.goldentweaks.render_cycle_pool_size": "Render Cycle Pool Size",
+  "config.goldentweaks.render_cycle_pool_size.comment": "Size of the buffer pool for render cycles.",
+
+  "config.goldentweaks.category.misc": "Miscellaneous",
+  "config.goldentweaks.renderbuffer_depth": "Renderbuffer Depth",
+  "config.goldentweaks.renderbuffer_depth.comment": "Enable depth attachment for render buffers.",
+  "config.goldentweaks.fast_math": "Fast Math",
+  "config.goldentweaks.fast_math.comment": "Use faster but less accurate math functions.",
+  "config.goldentweaks.tex_barrier": "Texture Barrier",
+  "config.goldentweaks.tex_barrier.comment": "Insert texture barriers when needed.",
+  "config.goldentweaks.batch_text_rendering": "Batch Text Rendering",
+  "config.goldentweaks.batch_text_rendering.comment": "Batch text draw calls for performance.",
+  "config.goldentweaks.smart_culling": "Smart Culling",
+  "config.goldentweaks.smart_culling.comment": "Culling strategy for invisible geometry.",
+  "config.goldentweaks.smart_culling.off": "Off",
+  "config.goldentweaks.smart_culling.base": "Base",
+  "config.goldentweaks.smart_culling.simd": "SIMD",
+
+  "config.goldentweaks.category.balance": "Balance",
+  "config.goldentweaks.balance": "Balance",
+
+  "config.goldentweaks.balance.evolved_mekanism_solar_multiplier": "Evolved Mekanism Solar Multiplier",
+  "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output.",
+  "config.goldentweaks.balance.recycler_factory_stack_upgrades": "Recycler Factory Stack Upgrades",
+  "config.goldentweaks.balance.recycler_factory_stack_upgrades.comment": "Allow Mekanism Extras recycler factories to use Stack upgrades.",
+
+  "config.goldentweaks.balance.cataclysm_balance": "Cataclysm Balance",
+  "config.goldentweaks.balance.cataclysm_balance.comment": "Balanced Cataclysm Bosses.",
+
+  "config.goldentweaks.balance.haggler_max_discount": "Haggler Ring Max Discount Count",
+  "config.goldentweaks.balance.haggler_max_discount.comment": "Maximum number of item costs that the Haggler Ring from Iron's Jewelry can reduce",
+
+  "config.goldentweaks.balance.haggler_max_discount_percentage": "Haggler Ring Max Discount Percentage",
+  "config.goldentweaks.balance.haggler_max_discount_percentage.comment": "Maximum percentage of the original price that the Haggler Ring from Iron's Jewelry can reduce the price to",
+
+  "config.goldentweaks.balance.tc_jei_aspect_max_page": "Thaumcraft JEI Aspect Source Maximum Pages",
+  "config.goldentweaks.balance.tc_jei_aspect_max_page.comment": "Limits the maximum number of pages generated for Thaumcraft aspect source recipes to prevent excessive JEI/EMI loading",
+
+  "config.goldentweaks.category.feature": "Features",
+
+  "config.goldentweaks.feature.always_edible_food": "Always Edible Food",
+  "config.goldentweaks.feature.always_edible_food.comment": "Allows all food items to be eaten even when the player is fully saturated.",
+
+  "config.goldentweaks.feature.lost_maid_drop": "Lost Maid Drop",
+  "config.goldentweaks.feature.lost_maid_drop.comment": "Configurable lost maid drop",
+  "config.goldentweaks.feature.lost_maid_drop_chance": "Lost Maid Drop Chance",
+  "config.goldentweaks.feature.lost_maid_drop_chance.comment": "Lost maid drop chance",
+
+  "config.goldentweaks.feature.flavor_auto_pulse": "Flavor Automation (Pulse)",
+  "config.goldentweaks.feature.flavor_auto_pulse.comment": "Automates flavor immersed daily machines when receives redstone pulse",
+  "config.goldentweaks.feature.flavor_auto_pulse_tick": "Flavor Automation Interval (Pulse)",
+  "config.goldentweaks.feature.flavor_auto_pulse_tick.comment": "Recipe check interval (Pulse)",
+  "config.goldentweaks.feature.flavor_auto_continuous": "Flavor Automation (Continuous)",
+  "config.goldentweaks.feature.flavor_auto_continuous.comment": "Automates flavor immersed daily machines when receives continuous redstone signal",
+  "config.goldentweaks.feature.flavor_auto_continuous_tick": "Flavor Automation Interval (Continuous)",
+  "config.goldentweaks.feature.flavor_auto_continuous_tick.comment": "Recipe check interval (Continuous)",
+
+  "config.goldentweaks.category.debug": "Debug",
+
+  "config.goldentweaks.debug.debug_gui_inspector": "GUI Inspector",
+  "config.goldentweaks.debug.debug_gui_inspector.comment": "Shift + Middle Click widgets to inspect GUI class information",
+
+  "config.goldentweaks.debug.debug_gui_copy_to_clipboard": "Copy GUI Debug To Clipboard",
+  "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "Automatically copy GUI debug information to clipboard",
+
+  "itemGroup.goldentweaks.familiars": "Golden Tweaks: Familiars",
+
+
+  "item.goldentweaks.armor_plate_tier_1": "Wooden Armor Plate",
+  "item.goldentweaks.armor_plate_tier_2": "Copper Armor Plate",
+  "item.goldentweaks.armor_plate_tier_3": "Iron Armor Plate",
+  "item.goldentweaks.armor_plate_tier_4": "Golden Armor Plate",
+  "item.goldentweaks.armor_plate_tier_5": "Diamond Armor Plate",
+  "item.goldentweaks.armor_plate_tier_6": "Netherite Armor Plate",
+  "item.goldentweaks.armor_plate_tier_7": "Crimson Armor Plate",
+  "item.goldentweaks.armor_plate_tier_8": "Azure Armor Plate",
+  "item.goldentweaks.armor_plate_tier_9": "Phantom Purple Armor Plate",
+  "item.goldentweaks.armor_plate_tier_10": "Endless Armor Plate",
+  "item.goldentweaks.magic_power_tier_1": "Wooden Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_2": "Copper Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_3": "Iron Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_4": "Golden Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_5": "Diamond Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_6": "Netherite Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_7": "Crimson Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_8": "Azure Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_9": "Phantom Purple Magic Power Essence",
+  "item.goldentweaks.magic_power_tier_10": "Endless Magic Power Essence",
+  "item.goldentweaks.magic_resist_tier_1": "Wooden Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_2": "Copper Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_3": "Iron Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_4": "Golden Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_5": "Diamond Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_6": "Netherite Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_7": "Crimson Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_8": "Azure Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_9": "Phantom Purple Magic Resist Essence",
+  "item.goldentweaks.magic_resist_tier_10": "Endless Magic Resist Essence",
+  "item.goldentweaks.life_fruit_tier_1": "Wooden Life Fruit",
+  "item.goldentweaks.life_fruit_tier_2": "Copper Life Fruit",
+  "item.goldentweaks.life_fruit_tier_3": "Iron Life Fruit",
+  "item.goldentweaks.life_fruit_tier_4": "Golden Life Fruit",
+  "item.goldentweaks.life_fruit_tier_5": "Diamond Life Fruit",
+  "item.goldentweaks.life_fruit_tier_6": "Netherite Life Fruit",
+  "item.goldentweaks.life_fruit_tier_7": "Crimson Life Fruit",
+  "item.goldentweaks.life_fruit_tier_8": "Azure Life Fruit",
+  "item.goldentweaks.life_fruit_tier_9": "Phantom Purple Life Fruit",
+  "item.goldentweaks.life_fruit_tier_10": "Endless Life Fruit",
+  "item.goldentweaks.unprocessed_gem_dust": "Unprocessed Gem Dust",
+  "item.goldentweaks.unprocessed_common_material": "Unprocessed Common Material",
+  "item.goldentweaks.unprocessed_uncommon_material": "Unprocessed Uncommon Material",
+  "item.goldentweaks.unprocessed_rare_material": "Unprocessed Rare Material",
+  "item.goldentweaks.unprocessed_epic_material": "Unprocessed Epic Material",
+  "item.goldentweaks.unprocessed_mythic_material": "Unprocessed Mythic Material",
+  "item.goldentweaks.unprocessed_ancient_material": "Unprocessed Ancient Material",
+
+  "item.goldentweaks.inverted_familiar_spellbook": "Inverted Familiar Spellbook",
+  "item.goldentweaks.inverted_familiar_spellbook.desc": "Share familiar attributes to owner",
+
+  "block.goldentweaks.garbage_station_floor": "Garbage Station Floor",
+
+  "itemGroup.goldentweaks.questshop": "Golden Tweaks: QuestShop",
+  "item.goldentweaks.radiant_gold": "Radiant Gold",
+  "item.goldentweaks.brilliant_gold": "Brilliant Gold",
+  "item.goldentweaks.glorious_gold": "Glorious Gold",
+  "item.goldentweaks.luminous_gold": "Luminous Gold",
+  "item.goldentweaks.immaculate_gold": "Immaculate Gold"
+
+
+
+
+
+}

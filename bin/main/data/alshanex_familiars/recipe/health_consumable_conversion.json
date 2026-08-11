@@ -1,0 +1,17 @@
+{
+	  "neoforge:conditions": [
+    {
+      "type": "neoforge:never"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "alshanex_familiars:life_gem"
+    }
+  ],
+  "result": {
+    "id": "alshanex_familiars:life_fruit_tier_2"
+  }
+}

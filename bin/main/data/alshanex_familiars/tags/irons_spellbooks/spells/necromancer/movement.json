@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "traveloptics:spectral_blink", "required": false }
+  ]
+}

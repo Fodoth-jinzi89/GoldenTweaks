@@ -1,0 +1,32 @@
+{
+  "type": "evolvedmekanism:alloying",
+
+  "conditions": [
+    {
+      "type": "neoforge:tag_non_empty",
+      "tag": "c:ingots/nickel"
+    },
+    {
+      "type": "neoforge:tag_non_empty",
+      "tag": "c:ingots/copper"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+
+  "extra_input": {
+    "tag": "c:ingots/nickel"
+  },
+  "second_extra_input": {
+    "tag": "c:gems/coal"
+  },
+  "main_input": {
+    "tag": "c:ingots/copper"
+  },
+  "output": {
+    "id": "alltheores:constantan_ingot",
+    "count": 2
+  }
+}

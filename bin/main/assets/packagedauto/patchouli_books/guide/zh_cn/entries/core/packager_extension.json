@@ -1,0 +1,48 @@
+{
+  "name": "封包机拓展",
+  "category": "packagedauto:core",
+  "icon": "packagedauto:packager_extension",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)封包机拓展/$ 会复制附近 $(l:core/packager)封包机/$ 的功能，从而在并行封包时减少对 $(l:core/recipe_holder)封包配方储存器/$ 的需求。$(p)该机器需要能量供给。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "packagedauto:packager_extension",
+      "link_recipe": true,
+      "title": "使用方法",
+      "text": "将 $(item)封包机拓展/$ 放置在 $(l:core/packager)封包机/$ 周围 3×3×3 范围内即可复制其功能。$(p)如果范围内存在多个 $(l:core/packager)封包机/$，机器会复制它能找到的最北西下方的那个。$(p)输入物品可从上方提取。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "模式",
+      "text": "$(thing)完全匹配/$：生成与容器内容完全一致的第一个封包。$(p)$(thing)物品互斥/$：检查封包是否与当前内容无冲突，并生成可由当前物品构成的封包；否则回退至$(thing)完全匹配/$。$(p)$(thing)第一匹配/$：生成第一个可由当前物品构成的封包。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "设置复制",
+      "text": "使用 $(l:core/settings_cloner)封包设定复制器/$ 可以复制与粘贴模式设置。"
+    },
+    {
+      "type": "patchouli:text",
+      "flag": "mod:ae2",
+      "title": "AE2 集成",
+      "text": "$(item)封包机拓展/$ 可连接至 $(thing)ME 网络/$。$(p)它会从网络中抽取能量并用于封包操作，同时将生成的 $(l:core/package)配方封包/$ 直接输出到网络中，实现自动化合成。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "flag": "!mod:ae2",
+      "recipe": "packagedauto:packager_extension",
+      "title": "合成"
+    },
+    {
+      "type": "patchouli:crafting",
+      "flag": "mod:ae2",
+      "recipe": "packagedauto:packager_extension_ae",
+      "title": "合成"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

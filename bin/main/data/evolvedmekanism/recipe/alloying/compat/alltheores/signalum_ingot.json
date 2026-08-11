@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:alloying",
+  "extra_input": {
+    "tag": "c:ingots/silver"
+  },
+  "second_extra_input": {
+    "tag": "c:dusts/redstone",
+	"count": 4
+  },
+  "main_input": {
+    "tag": "c:ingots/copper",
+	"count": 3
+  },
+  "output": {
+    "id": "alltheores:signalum_ingot",
+	"count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

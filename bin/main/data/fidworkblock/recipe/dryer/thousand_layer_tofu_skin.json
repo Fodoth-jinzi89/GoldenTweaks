@@ -1,0 +1,12 @@
+{
+  "type": "fidworkblock:cooking",
+  "appliance": "dryer",
+  "ingredients": [
+    { "item": "flavor_immersed_daily:soyamilk" }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily:thousand_layer_tofu_skin",
+    "count": 2
+  },
+  "cookingTime": 120
+}

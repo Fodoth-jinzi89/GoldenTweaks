@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "duration": 540,
+  "item_input": {
+    "item": "evolvedmekanism:mold_storage_block"
+  },
+  "fluid_input": {
+    "fluid": "evolvedmekanism:molten_neutronium",
+    "amount": 810
+  },
+  "extra_input": {
+    "fluid": "neoecoae:cryotheum_solution",
+    "amount": 810
+  },
+  "output": {
+    "item": "avaritia:neutron"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    }
+  ]
+}

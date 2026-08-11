@@ -1,0 +1,48 @@
+{
+  "type": "spectrum:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "createbigcannons:molten_cast_iron"
+  },
+  "ingredients": [
+    {
+      "item": "hazennstuff:cosmic_gold_ingot",
+      "count": 4
+    },
+    {
+      "item": "hazennstuff:dreadsteel_ingot",
+      "count": 4
+    },
+    {
+      "item": "cataclysm:ignitium_ingot",
+      "count": 4
+    },
+    {
+      "item": "silentgear:tyrian_steel_ingot",
+      "count": 4
+    },
+    {
+      "item": "extendedcrafting:enhanced_redstone_ingot",
+      "count": 4
+    },
+    {
+      "item": "spectrum:neolith_block",
+      "count": 4
+    },
+    {
+      "item": "spectrum:pure_redstone",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "traveloptics:pyro_spellweave_ingot"
+  },
+  "start_crafting_effect": "single_visual_explosion_on_shrine",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine",
+    "nothing"
+  ],
+  "finish_crafting_effect": "legendary_tool_craft"
+}

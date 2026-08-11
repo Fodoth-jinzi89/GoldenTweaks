@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "northstar:martian_strawberry"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 4,
+    "id": "northstar:martian_strawberry"
+  },
+  "per_tick_usage": true
+}

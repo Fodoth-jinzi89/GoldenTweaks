@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "spectrum:ivory_noxcap_gills"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 6,
+    "id": "spectrum:ivory_noxcap_block"
+  },
+  "secondary_output": {
+    "count": 2,
+    "id": "spectrum:ivory_noxcap_gills"
+  },
+    "secondary_chance": 0.80,
+  "per_tick_usage": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "key": {
+    "A": {
+      "item": "create:iron_sheet"
+    },
+    "B": {
+      "item": "protection_pixel:ironarmorplate"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    "ABBA",
+    "CAAC",
+    " AA "
+  ],
+  "result": {
+    "id": "protection_pixel:linkplate_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "kaleidoscope_cookery"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "kaleidoscope_nether"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    }
+  ],
+
+  "pattern": [
+    "   AAA   ",
+    " AABBBAA ",
+    " ABJCJBA ",
+    "ABJDEDJBA",
+    "ABFEGEHBA",
+    "ABJDEDJBA",
+    " ABJIJBA ",
+    " AABBBAA ",
+    "   AAA   "
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism_extras:alloy_shining"
+    },
+    "B": {
+      "item": "silentgear:tyrian_steel_block"
+    },
+    "C": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "D": {
+      "item": "spectrum:hover_block"
+    },
+    "E": {
+      "item": "spectrum:pure_fluix"
+    },
+    "F": {
+      "item": "kaleidoscope_cookery:golden_salad"
+    },
+    "G": {
+      "item": "silentgear:golden_nether_banana"
+    },
+    "H": {
+      "item": "kaleidoscope_nether:golden_roast"
+    },
+    "I": {
+      "item": "spectrum:enchanted_golden_carrot"
+    },
+    "J": {
+      "item": "apotheosis:epic_material"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:life_fruit_tier_9",
+	"count": 4
+  }
+}

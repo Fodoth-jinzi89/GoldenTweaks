@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:devour",
+    "irons_spellbooks:sonic_boom",
+    "irons_spellbooks:sculk_tentacles",
+    "irons_spellbooks:eldritch_blast",
+
+    { "id": "iss_magicfromtheeast:spirit_challenging", "required": false },
+    { "id": "iss_magicfromtheeast:soul_burst", "required": false },
+    { "id": "iss_magicfromtheeast:bone_hands", "required": false },
+    { "id": "iss_magicfromtheeast:kitsune_pack", "required": false },
+    { "id": "iss_magicfromtheeast:revenant_of_honor", "required": false },
+    { "id": "iss_magicfromtheeast:ashigaru_squad", "required": false },
+
+    "irons_spellbooks:fang_strike",
+    "irons_spellbooks:fang_ward",
+    "irons_spellbooks:summon_vex",
+	
+	{ "id": "alshanex_familiars:summon_shadows", "required": false },
+
+    { "id": "hazennstuff:death_sentence", "required": false },
+    { "id": "hazennstuff:soul_seekers", "required": false }
+  ]
+}

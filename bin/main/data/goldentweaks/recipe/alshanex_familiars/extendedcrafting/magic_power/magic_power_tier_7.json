@@ -1,0 +1,81 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    }
+  ],
+
+  "pattern": [
+    "    A    ",
+    "   ABA   ",
+    "  ABCBA  ",
+    " ABGDGBA ",
+    "ABGDEDGBA",
+    "ABCEFECBA",
+    "ABGDDDGBA",
+    " ABBBBBA ",
+    "  AAAAA  "
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism_extras:alloy_thermonuclear"
+    },
+    "B": {
+      "item": "silentgear:blaze_gold_block"
+    },
+    "C": {
+      "item": "spectrum:stratine_floatblock"
+    },
+    "D": {
+      "item": "spectrum:stratine_gem"
+    },
+    "E": {
+      "item": "hazennstuff:arcane_steel_block"
+    },
+    "F": {
+      "item": "cataclysm:flame_eye"
+    },
+    "G": {
+      "item": "apotheosis:uncommon_material"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:magic_power_tier_7",
+	"count": 4
+  }
+}

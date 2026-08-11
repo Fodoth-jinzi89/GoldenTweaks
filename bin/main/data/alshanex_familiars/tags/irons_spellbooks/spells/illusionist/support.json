@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:invisibility",
+    "irons_spellbooks:slow",
+
+    { "id": "hazennstuff:moonkissed", "required": false }
+  ]
+}

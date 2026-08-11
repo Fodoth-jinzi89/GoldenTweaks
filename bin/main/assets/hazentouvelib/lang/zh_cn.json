@@ -1,0 +1,79 @@
+{
+  "key.hazentouvelib.group": "HazentouveLib 技能",
+  "key.hazentouvelib.ability_1": "技能 1",
+  "key.hazentouvelib.ability_2": "技能 2",
+  "key.hazentouvelib.ability_3": "技能 3",
+  "key.hazentouvelib.ability_4": "技能 4",
+  "key.hazentouvelib.ability_5": "技能 5",
+
+  "ui.hazentouvelib.staff_resonation": "此法术需要制作特定的法杖……",
+  "ui.hazentouvelib.armor_resonation": "此法术需要制作特定的盔甲套装……",
+  "ui.hazentouvelib.weapon_resonation": "此法术需要制作特定的武器……",
+  "ui.hazentouvelib.spellbook_resonation": "此法术需要制作特定的法术书……",
+  "ui.hazentouvelib.item_resonation": "此法术需要制作特定的物品……",
+  "ui.hazentouvelib.material_resonation": "此法术需要制作特定的材料……",
+
+  "rarity.hazentouvelib_rarity_fire.name": "炽焰",
+  "rarity.hazentouvelib_rarity_ice.name": "冰霜",
+  "rarity.hazentouvelib_rarity_nature.name": "自然",
+  "rarity.hazentouvelib_rarity_lightning.name": "雷霆",
+  "rarity.hazentouvelib_rarity_blood.name": "猩红",
+  "rarity.hazentouvelib_rarity_ender.name": "末影",
+  "rarity.hazentouvelib_rarity_holy.name": "神圣",
+  "rarity.hazentouvelib_rarity_evocation.name": "唤魔",
+  "rarity.hazentouvelib_rarity_shadow.name": "暗影",
+  "rarity.hazentouvelib_rarity_radiance.name": "光辉",
+  "rarity.hazentouvelib_rarity_eldritch.name": "邪术",
+  "rarity.hazentouvelib_rarity_cosmic.name": "寰宇",
+  "rarity.hazentouvelib_rarity_deus.name": "启迪",
+  "rarity.hazentouvelib_rarity_hydro.name": "流水",
+  "rarity.hazentouvelib_rarity_fireblossom.name": "焰花",
+
+  "item.hazentouvelib.radiance_upgrade_orb": "光辉升级宝珠",
+  "item.hazentouvelib.shadow_upgrade_orb": "暗影升级宝珠",
+  "item.hazentouvelib.cosmic_upgrade_orb": "寰宇升级宝珠",
+
+  "item.hazentouvelib.radiance_rune": "光辉符文",
+  "item.hazentouvelib.shadow_rune": "暗影符文",
+  "item.hazentouvelib.cosmic_rune": "寰宇符文",
+
+  "curios.modifiers.wing": "当佩戴此翅膀时：",
+
+  "curios.identifier.wing": "翅膀",
+
+  "effect.hazentouvelib.hexed": "诅咒",
+  "effect.hazentouvelib.hexed.description": "每次施法时，你都会逐渐凋零……",
+
+  "creativetab.hazentouvelib.hazentouvelib_materials": "HazentouveLib 材料",
+
+  "school.hazentouvelib.radiance": "光辉",
+  "school.hazentouvelib.shadow": "暗影",
+  "school.hazentouvelib.cosmic": "寰宇",
+
+  "material.hazentouvelib.rune_radiance": "光辉符文",
+  "material.hazentouvelib.rune_shadow": "暗影符文",
+  "material.hazentouvelib.rune_cosmic": "寰宇符文",
+
+  "attribute.hazentouvelib.radiance_spell_power": "法术强度：光辉",
+  "attribute.hazentouvelib.radiance_spell_power.desc": "提高光辉学派法术造成的伤害和治疗效果",
+  "attribute.hazentouvelib.radiance_magic_resist": "法术抗性：光辉",
+  "attribute.hazentouvelib.radiance_magic_resist.desc": "降低受到的光辉学派法术伤害",
+
+  "attribute.hazentouvelib.shadow_spell_power": "法术强度：暗影",
+  "attribute.hazentouvelib.shadow_spell_power.desc": "提高暗影学派法术造成的伤害和治疗效果",
+  "attribute.hazentouvelib.shadow_magic_resist": "法术抗性：暗影",
+  "attribute.hazentouvelib.shadow_magic_resist.desc": "降低受到的暗影学派法术伤害",
+
+  "attribute.hazentouvelib.cosmic_spell_power": "法术强度：寰宇",
+  "attribute.hazentouvelib.cosmic_spell_power.desc": "提高寰宇学派法术造成的伤害和治疗效果",
+  "attribute.hazentouvelib.cosmic_magic_resist": "法术抗性：寰宇",
+  "attribute.hazentouvelib.cosmic_magic_resist.desc": "降低受到的寰宇学派法术伤害",
+
+  "death.attack.radiance_magic": "%1$s 被光芒吞没了……",
+  "death.attack.shadow_magic": "%1$s 被黑暗吞噬了",
+  "death.attack.cosmic_magic": "%1$s 化作了寰宇尘埃……",
+  "death.attack.corrupt_magic": "%1$s 碎裂成了碎片",
+  
+  
+  "curios.identifier.cosmetic": "时装"
+}

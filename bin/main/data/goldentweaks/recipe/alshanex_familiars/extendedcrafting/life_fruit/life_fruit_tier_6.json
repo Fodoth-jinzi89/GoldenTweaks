@@ -1,0 +1,46 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    }
+  ],
+
+  "pattern": [
+    "  AAA  ",
+    " ABBBA ",
+    "ABDDDBA",
+    "ABDCDBA",
+    "ABDDDBA",
+    " ABBBA ",
+    "  AAA  "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/netherite"
+    },
+    "B": {
+      "tag": "c:storage_blocks/netherite"
+    },
+    "C": {
+      "item": "minecraft:golden_apple"
+    },
+    "D": {
+      "item": "apotheosis:common_material"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:life_fruit_tier_6",
+	"count": 4
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "type": "spectrum:crystallarieum_growing",
+  "fluid_medium": {
+    "fluid": "spectrum:liquid_crystal"
+  },
+  "ingredient": {
+    "item": "ae2:fluix_dust"
+  },
+  "ink_color": "spectrum:brown",
+  "ink_cost_tier": 2,
+  "seconds_per_growth_stage": 6,
+  "additional_recipe_manager_results": [
+    {
+      "count": 1,
+      "id": "spectrum:pure_fluix"
+    }
+  ],
+  "catalysts": [
+    {
+      "ingredient": [
+        {
+          "item": "spectrum:rock_crystal"
+        }
+      ],
+      "growth_acceleration_mod": 12.0,
+      "ink_consumption_mod": 0.5,
+      "consume_chance_per_second": 0.5
+    },
+    {
+      "ingredient": [
+        {
+          "item": "spectrum:storm_stone"
+        }
+      ],
+      "growth_acceleration_mod": 4.0,
+      "ink_consumption_mod": 0.125,
+      "consume_chance_per_second": 0.05
+    },
+    {
+      "ingredient": [
+        {
+          "tag": "minecraft:sand"
+        }
+      ],
+      "growth_acceleration_mod": 2.0,
+      "ink_consumption_mod": 1.0,
+      "consume_chance_per_second": 0.2
+    }
+  ],
+  "growth_stage_states": [
+    {
+      "Name": "spectrum:small_fluix_bud",
+      "Properties": {
+        "facing": "up",
+        "waterlogged": "false"
+      }
+    },
+    {
+      "Name": "spectrum:large_fluix_bud",
+      "Properties": {
+        "facing": "up",
+        "waterlogged": "false"
+      }
+    },
+    {
+      "Name": "spectrum:fluix_cluster",
+      "Properties": {
+        "facing": "up",
+        "waterlogged": "false"
+      }
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "spectrum:integration_pack_active",
+      "integration_pack": "ae2"
+    }
+  ]
+}

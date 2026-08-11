@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "flavor_immersed_daily:chinesechivesseed"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 4,
+    "id": "flavor_immersed_daily:chinesechives"
+  },
+  "per_tick_usage": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "有序处理",
+  "category": "packagedauto:recipe",
+  "icon": "minecraft:brewing_stand",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)有序处理/$ 是一种会保留材料顺序的处理类配方类型。$(p)在编码时，输出物品会被整理并堆叠。$(p)在解包时，物品将按照编码顺序插入相邻容器，并且仅会填入空槽位。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 102
+}

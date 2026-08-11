@@ -1,0 +1,39 @@
+{
+  "type": "kaleidoscope_cookery:pot",
+  "carrier": {
+    "item": "evolvedmekanism:mold_ingot"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:wither_rose"
+    },
+	{
+      "item": "minecraft:wither_skeleton_skull"
+    },
+	{
+      "item": "kaleidoscope_nether:wither_rib"
+    },
+	{
+      "item": "neoecoae:aluminum_alloy_dust"
+    },
+	{
+      "item": "neoecoae:black_tungsten_alloy_dust"
+    },
+	{
+      "item": "mekanism:dust_netherite"
+    },
+	{
+      "item": "alltheores:ruby_dust"
+    },
+	{
+      "item": "createbigcannons:nitropowder"
+    },
+	{
+      "item": "silentgear:glittery_dust"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "cataclysm:witherite_ingot"
+  }
+}

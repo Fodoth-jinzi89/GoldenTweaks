@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "librarian_sell"
+    ],
+    "linkedProfessions": [
+        "librarian"
+    ]
+}

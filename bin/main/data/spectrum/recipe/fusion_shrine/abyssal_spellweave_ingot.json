@@ -1,0 +1,48 @@
+{
+  "type": "spectrum:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "evolvedmekanism:molten_refined_obsidian"
+  },
+  "ingredients": [
+    {
+      "item": "hazennstuff:cosmic_gold_ingot",
+      "count": 4
+    },
+    {
+      "item": "hazennstuff:demonite_ingot",
+      "count": 4
+    },
+    {
+      "item": "cataclysm:black_steel_ingot",
+      "count": 4
+    },
+    {
+      "item": "silentgear:tyrian_steel_ingot",
+      "count": 4
+    },
+    {
+      "item": "igleelib:derium_ingot",
+      "count": 4
+    },
+    {
+      "item": "spectrum:downstone_fragments",
+      "count": 4
+    },
+    {
+      "item": "spectrum:pure_fluix",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "traveloptics:abyssal_spellweave_ingot"
+  },
+  "start_crafting_effect": "single_visual_explosion_on_shrine",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine",
+    "nothing"
+  ],
+  "finish_crafting_effect": "legendary_tool_craft"
+}

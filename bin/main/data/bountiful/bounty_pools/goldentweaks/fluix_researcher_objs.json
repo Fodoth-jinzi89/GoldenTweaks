@@ -1,0 +1,283 @@
+{
+    "content": {
+        "white_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:white_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "orange_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:orange_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "magenta_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:magenta_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "light_blue_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:light_blue_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "yellow_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:yellow_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "lime_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:lime_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "pink_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:pink_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "gray_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:gray_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "light_gray_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:light_gray_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "cyan_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:cyan_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "purple_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:purple_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "blue_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:blue_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "brown_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:brown_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "green_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:green_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "red_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:red_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "black_lumen_paint_ball": {
+            "type": "item",
+            "content": "ae2:black_lumen_paint_ball",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 4,
+            "weightMult": 0.024390243902439025,
+            "effectiveValue": 192
+        },
+        "fluix_pearl": {
+            "type": "item",
+            "content": "ae2:fluix_pearl",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.038109756097560975,
+            "effectiveValue": 300
+        },
+        "wireless_booster": {
+            "type": "item",
+            "content": "ae2:wireless_booster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 30,
+            "weightMult": 0.022865853658536585,
+            "effectiveValue": 180
+        },
+        "spatial_cell_component_2": {
+            "type": "item",
+            "content": "ae2:spatial_cell_component_2",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200,
+            "weightMult": 0.02540650406504065,
+            "effectiveValue": 200
+        },
+        "spatial_cell_component_16": {
+            "type": "item",
+            "content": "ae2:spatial_cell_component_16",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.1016260162601626,
+            "effectiveValue": 800
+        },
+        "spatial_cell_component_128": {
+            "type": "item",
+            "content": "ae2:spatial_cell_component_128",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.4065040650406504,
+            "effectiveValue": 3200
+        },
+        "toggle_bus": {
+            "type": "item",
+            "content": "ae2:toggle_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 10,
+            "weightMult": 0.007621951219512195,
+            "effectiveValue": 60
+        },
+        "inverted_toggle_bus": {
+            "type": "item",
+            "content": "ae2:inverted_toggle_bus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 10,
+            "weightMult": 0.007621951219512195,
+            "effectiveValue": 60
+        }
+    },
+    "requires": [
+        "ae2"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "flavor_immersed_daily:drycoffeebean"
+        }
+      ]
+    }
+  ],
+  "processing_time": 40,
+  "results": [
+    {
+      "id": "flavor_immersed_daily:coffeepowder",
+      "count": 1
+    }
+  ]
+}

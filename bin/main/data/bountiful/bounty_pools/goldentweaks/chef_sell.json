@@ -1,0 +1,5676 @@
+{
+    "content": {
+        "scallionoilpancake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:scallionoilpancake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "crispyeggcake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:crispyeggcake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "drycookednoodles": {
+            "type": "item",
+            "content": "flavor_immersed_daily:drycookednoodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "noodles": {
+            "type": "item",
+            "content": "flavor_immersed_daily:noodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "steamedtwistedroll": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedtwistedroll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "eggbiscuit": {
+            "type": "item",
+            "content": "flavor_immersed_daily:eggbiscuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "eggvermicelli": {
+            "type": "item",
+            "content": "flavor_immersed_daily:eggvermicelli",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedvermicelli": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedvermicelli",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "eggpuffs": {
+            "type": "item",
+            "content": "flavor_immersed_daily:eggpuffs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "eggpancake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:eggpancake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "handgrabbedpancake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:handgrabbedpancake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "panadapancake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:panadapancake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "dicedsteamedbread": {
+            "type": "item",
+            "content": "flavor_immersed_daily:dicedsteamedbread",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "steamedglutinousricecake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedglutinousricecake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "meatflourrool": {
+            "type": "item",
+            "content": "flavor_immersed_daily:meatflourrool",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "sachima": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sachima",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "yimengpancakes": {
+            "type": "item",
+            "content": "flavor_immersed_daily:yimengpancakes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "spaghetti": {
+            "type": "item",
+            "content": "flavor_immersed_daily:spaghetti",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "grainspancake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:grainspancake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "fanhuaroll": {
+            "type": "item",
+            "content": "flavor_immersed_daily:fanhuaroll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "aikui": {
+            "type": "item",
+            "content": "flavor_immersed_daily:aikui",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "eighttreasurecongee": {
+            "type": "item",
+            "content": "flavor_immersed_daily:eighttreasurecongee",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedglutinousricepoundedintopaste": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedglutinousricepoundedintopaste",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "rice_porridge": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rice_porridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "kaoliangrice": {
+            "type": "item",
+            "content": "flavor_immersed_daily:kaoliangrice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "kaoliangporridge": {
+            "type": "item",
+            "content": "flavor_immersed_daily:kaoliangporridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "meatfloss": {
+            "type": "item",
+            "content": "flavor_immersed_daily:meatfloss",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "crispypistolleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:crispypistolleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "colonelchickennuggets": {
+            "type": "item",
+            "content": "flavor_immersed_daily:colonelchickennuggets",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "friedchickenwing": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedchickenwing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "friedchickencorn": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedchickencorn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "friedchickenchop": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedchickenchop",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "orleanwing": {
+            "type": "item",
+            "content": "flavor_immersed_daily:orleanwing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "orleanleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:orleanleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "roasteddicedfish": {
+            "type": "item",
+            "content": "flavor_immersed_daily:roasteddicedfish",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "rice": {
+            "type": "item",
+            "content": "flavor_immersed_daily:rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "boiledriceflournoodles": {
+            "type": "item",
+            "content": "flavor_immersed_daily:boiledriceflournoodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "saucingbeef": {
+            "type": "item",
+            "content": "flavor_immersed_daily:saucingbeef",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "stewedhalfchickenleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedhalfchickenleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "stewedchickenlivers": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedchickenlivers",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stewedchickenleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedchickenleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "stewedchickenheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedchickenheart",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stewedpigleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedpigleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "bonesoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:bonesoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "chickenfeetwithpeppers": {
+            "type": "item",
+            "content": "flavor_immersed_daily:chickenfeetwithpeppers",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0017345623946872831,
+            "effectiveValue": 8400
+        },
+        "bonelesslemonchickenfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:bonelesslemonchickenfeet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0017345623946872831,
+            "effectiveValue": 8400
+        },
+        "cookedvermicelli_0": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedvermicelli_0",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedglutinousrice": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedglutinousrice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedchickenneck": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenneck",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedchickenwing": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenwing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedchickenwingtip": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenwingtip",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedchickenpiecepiece": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenpiecepiece",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedchickenliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenliver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedhalfofchcikenleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedhalfofchcikenleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedchickenlean": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenlean",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedchickenhead": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenhead",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedchickenpiece": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenpiece",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedchickenleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedchickenass": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenass",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedchickenheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenheart",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedchickenfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenfeet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0017345623946872831,
+            "effectiveValue": 8400
+        },
+        "cookedchickenbreast": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickenbreast",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "noiledricenoodle": {
+            "type": "item",
+            "content": "flavor_immersed_daily:noiledricenoodle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "steamedvermicelliroll_0": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedvermicelliroll_0",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 960,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedcornbatter": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcornbatter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "oakporridge": {
+            "type": "item",
+            "content": "flavor_immersed_daily:oakporridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "oakrice": {
+            "type": "item",
+            "content": "flavor_immersed_daily:oakrice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "millietporridge": {
+            "type": "item",
+            "content": "flavor_immersed_daily:millietporridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "millietrice": {
+            "type": "item",
+            "content": "flavor_immersed_daily:millietrice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "buckwheatrice": {
+            "type": "item",
+            "content": "flavor_immersed_daily:buckwheatrice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "ricepastesoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:ricepastesoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedcattleintestine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattleintestine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedcattlestomach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattlestomach",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedcattlelung": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattlelung",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedcattleliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattleliver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedcattlefeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattlefeet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0017345623946872831,
+            "effectiveValue": 8400
+        },
+        "cookedcattleheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattleheart",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedcattleleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattleleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedcattletendon": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattletendon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0017345623946872831,
+            "effectiveValue": 8400
+        },
+        "cookedcattleface": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattleface",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0017345623946872831,
+            "effectiveValue": 8400
+        },
+        "cookedpigskin": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigskin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.001982357022499752,
+            "effectiveValue": 9600
+        },
+        "cookedpigstreakmeat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigstreakmeat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedpigtenderloin": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigtenderloin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedpigintestine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigintestine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedpigface": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigface",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "cookedpigear": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigear",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "cookedpigfat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigfat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedsheepsparerlip": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepsparerlip",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedsheepintestine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepintestine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepstomach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepstomach",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepface": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepface",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "cookedsheepfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepfeet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "cookedsheeptail": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheeptail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepheart",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepeye": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepeye",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepleg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepleg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedsheepfat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepfat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedsheepliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepliver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "roastchickenfork": {
+            "type": "item",
+            "content": "flavor_immersed_daily:roastchickenfork",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedchickengizzard": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedchickengizzard",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedflakebeef": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedflakebeef",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedcattlejoint": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedcattlejoint",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookedpigkidney": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigkidney",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepkidney": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepkidney",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedsheepspine": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedsheepspine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cookeddumpling": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookeddumpling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cooked_baozi": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cooked_baozi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cookedpigtail": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigtail",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigcerebrum": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigcerebrum",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigfeet": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigfeet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "cookedpignose": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpignose",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigstomach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigstomach",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpiglung": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpiglung",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigliver": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigliver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigheart": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigheart",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cookedpigsparerib": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedpigsparerib",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "wonton": {
+            "type": "item",
+            "content": "flavor_immersed_daily:wonton",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "pie": {
+            "type": "item",
+            "content": "flavor_immersed_daily:pie",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "mooncake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:mooncake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "shumai": {
+            "type": "item",
+            "content": "flavor_immersed_daily:shumai",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "tangyuan": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tangyuan",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "friedsausage": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedsausage",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "star_stew": {
+            "type": "item",
+            "content": "kaleidoscope_nether:star_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "blaze_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:blaze_soup",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "magma_cream_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:magma_cream_soup",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "soul_return_rice": {
+            "type": "item",
+            "content": "kaleidoscope_nether:soul_return_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "star_ghast_pasta": {
+            "type": "item",
+            "content": "kaleidoscope_nether:star_ghast_pasta",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "magma_cream_pudding": {
+            "type": "item",
+            "content": "kaleidoscope_nether:magma_cream_pudding",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "star_stew_meat": {
+            "type": "item",
+            "content": "kaleidoscope_nether:star_stew_meat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "bone_broth": {
+            "type": "item",
+            "content": "farmersdelight:bone_broth",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "beef_stew": {
+            "type": "item",
+            "content": "croptopia:beef_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "chicken_soup": {
+            "type": "item",
+            "content": "farmersdelight:chicken_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "vegetable_soup": {
+            "type": "item",
+            "content": "farmersdelight:vegetable_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "fish_stew": {
+            "type": "item",
+            "content": "farmersdelight:fish_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fried_rice": {
+            "type": "item",
+            "content": "farmersdelight:fried_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "pumpkin_soup": {
+            "type": "item",
+            "content": "croptopia:pumpkin_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "baked_cod_stew": {
+            "type": "item",
+            "content": "farmersdelight:baked_cod_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "noodle_soup": {
+            "type": "item",
+            "content": "farmersdelight:noodle_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "onion_soup": {
+            "type": "item",
+            "content": "farmersdelight:onion_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "bacon_and_eggs": {
+            "type": "item",
+            "content": "farmersdelight:bacon_and_eggs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pasta_with_meatballs": {
+            "type": "item",
+            "content": "farmersdelight:pasta_with_meatballs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "pasta_with_mutton_chop": {
+            "type": "item",
+            "content": "farmersdelight:pasta_with_mutton_chop",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "mushroom_rice": {
+            "type": "item",
+            "content": "farmersdelight:mushroom_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "roasted_mutton_chops": {
+            "type": "item",
+            "content": "farmersdelight:roasted_mutton_chops",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "vegetable_noodles": {
+            "type": "item",
+            "content": "farmersdelight:vegetable_noodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "steak_and_potatoes": {
+            "type": "item",
+            "content": "farmersdelight:steak_and_potatoes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "ratatouille": {
+            "type": "item",
+            "content": "croptopia:ratatouille",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "squid_ink_pasta": {
+            "type": "item",
+            "content": "farmersdelight:squid_ink_pasta",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "grilled_salmon": {
+            "type": "item",
+            "content": "farmersdelight:grilled_salmon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "shepherds_pie": {
+            "type": "item",
+            "content": "farmersdelight:shepherds_pie",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "gleaming_salad": {
+            "type": "item",
+            "content": "farmersdelight:gleaming_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stuffed_pumpkin_block": {
+            "type": "item",
+            "content": "farmersdelight:stuffed_pumpkin_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stuffed_pumpkin": {
+            "type": "item",
+            "content": "farmersdelight:stuffed_pumpkin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "dog_food": {
+            "type": "item",
+            "content": "farmersdelight:dog_food",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "honey_glazed_ham": {
+            "type": "item",
+            "content": "farmersdelight:honey_glazed_ham",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "dumplings": {
+            "type": "item",
+            "content": "farmersdelight:dumplings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fruit_salad": {
+            "type": "item",
+            "content": "croptopia:fruit_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "mixed_salad": {
+            "type": "item",
+            "content": "farmersdelight:mixed_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "nether_salad": {
+            "type": "item",
+            "content": "farmersdelight:nether_salad",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "barbecue_stick": {
+            "type": "item",
+            "content": "farmersdelight:barbecue_stick",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "salmon_roll": {
+            "type": "item",
+            "content": "farmersdelight:salmon_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cooked_rice": {
+            "type": "item",
+            "content": "farmersdelight:cooked_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "kelp_roll": {
+            "type": "item",
+            "content": "farmersdelight:kelp_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "kelp_roll_slice": {
+            "type": "item",
+            "content": "farmersdelight:kelp_roll_slice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cabbage_rolls": {
+            "type": "item",
+            "content": "farmersdelight:cabbage_rolls",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stuffed_potato": {
+            "type": "item",
+            "content": "farmersdelight:stuffed_potato",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "mutton_wrap": {
+            "type": "item",
+            "content": "farmersdelight:mutton_wrap",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cucumber_salad": {
+            "type": "item",
+            "content": "croptopia:cucumber_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "caesar_salad": {
+            "type": "item",
+            "content": "croptopia:caesar_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "leafy_salad": {
+            "type": "item",
+            "content": "croptopia:leafy_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "veggie_salad": {
+            "type": "item",
+            "content": "croptopia:veggie_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "beef_jerky": {
+            "type": "item",
+            "content": "croptopia:beef_jerky",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pork_jerky": {
+            "type": "item",
+            "content": "croptopia:pork_jerky",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "kale_chips": {
+            "type": "item",
+            "content": "croptopia:kale_chips",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "potato_chips": {
+            "type": "item",
+            "content": "croptopia:potato_chips",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "french_fries": {
+            "type": "item",
+            "content": "croptopia:french_fries",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "sweet_potato_fries": {
+            "type": "item",
+            "content": "croptopia:sweet_potato_fries",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "onion_rings": {
+            "type": "item",
+            "content": "croptopia:onion_rings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "pork_and_beans": {
+            "type": "item",
+            "content": "croptopia:pork_and_beans",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "leek_soup": {
+            "type": "item",
+            "content": "croptopia:leek_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "yoghurt": {
+            "type": "item",
+            "content": "croptopia:yoghurt",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "saucy_chips": {
+            "type": "item",
+            "content": "croptopia:saucy_chips",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "roasted_nuts": {
+            "type": "item",
+            "content": "croptopia:roasted_nuts",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "trail_mix": {
+            "type": "item",
+            "content": "croptopia:trail_mix",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "protein_bar": {
+            "type": "item",
+            "content": "croptopia:protein_bar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "nougat": {
+            "type": "item",
+            "content": "croptopia:nougat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "scrambled_eggs": {
+            "type": "item",
+            "content": "croptopia:scrambled_eggs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "spaghetti_squash": {
+            "type": "item",
+            "content": "croptopia:spaghetti_squash",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "chicken_and_rice": {
+            "type": "item",
+            "content": "croptopia:chicken_and_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "taco": {
+            "type": "item",
+            "content": "croptopia:taco",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sushi": {
+            "type": "item",
+            "content": "croptopia:sushi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "egg_roll": {
+            "type": "item",
+            "content": "croptopia:egg_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cashew_chicken": {
+            "type": "item",
+            "content": "croptopia:cashew_chicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "carnitas": {
+            "type": "item",
+            "content": "croptopia:carnitas",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "fajitas": {
+            "type": "item",
+            "content": "croptopia:fajitas",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "enchilada": {
+            "type": "item",
+            "content": "croptopia:enchilada",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "churros": {
+            "type": "item",
+            "content": "croptopia:churros",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "tamales": {
+            "type": "item",
+            "content": "croptopia:tamales",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stuffed_poblanos": {
+            "type": "item",
+            "content": "croptopia:stuffed_poblanos",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "chili_relleno": {
+            "type": "item",
+            "content": "croptopia:chili_relleno",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "crema": {
+            "type": "item",
+            "content": "croptopia:crema",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "pizza": {
+            "type": "item",
+            "content": "croptopia:pizza",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "supreme_pizza": {
+            "type": "item",
+            "content": "croptopia:supreme_pizza",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "cheese_pizza": {
+            "type": "item",
+            "content": "croptopia:cheese_pizza",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pineapple_pepperoni_pizza": {
+            "type": "item",
+            "content": "croptopia:pineapple_pepperoni_pizza",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "lemon_chicken": {
+            "type": "item",
+            "content": "croptopia:lemon_chicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "fried_chicken": {
+            "type": "item",
+            "content": "croptopia:fried_chicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "chicken_and_noodles": {
+            "type": "item",
+            "content": "croptopia:chicken_and_noodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "chicken_and_dumplings": {
+            "type": "item",
+            "content": "croptopia:chicken_and_dumplings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "tofu_and_dumplings": {
+            "type": "item",
+            "content": "croptopia:tofu_and_dumplings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "refried_beans": {
+            "type": "item",
+            "content": "croptopia:refried_beans",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "chimichanga": {
+            "type": "item",
+            "content": "croptopia:chimichanga",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "quesadilla": {
+            "type": "item",
+            "content": "croptopia:quesadilla",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "beef_wellington": {
+            "type": "item",
+            "content": "croptopia:beef_wellington",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "fish_and_chips": {
+            "type": "item",
+            "content": "croptopia:fish_and_chips",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "eton_mess": {
+            "type": "item",
+            "content": "croptopia:eton_mess",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "rhubarb_crisp": {
+            "type": "item",
+            "content": "croptopia:rhubarb_crisp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "roasted_asparagus": {
+            "type": "item",
+            "content": "croptopia:roasted_asparagus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "roasted_radishes": {
+            "type": "item",
+            "content": "croptopia:roasted_radishes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "roasted_squash": {
+            "type": "item",
+            "content": "croptopia:roasted_squash",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "roasted_turnips": {
+            "type": "item",
+            "content": "croptopia:roasted_turnips",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "steamed_broccoli": {
+            "type": "item",
+            "content": "croptopia:steamed_broccoli",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "steamed_green_beans": {
+            "type": "item",
+            "content": "croptopia:steamed_green_beans",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stir_fry": {
+            "type": "item",
+            "content": "croptopia:stir_fry",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stuffed_artichoke": {
+            "type": "item",
+            "content": "croptopia:stuffed_artichoke",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "roasted_pumpkin_seeds": {
+            "type": "item",
+            "content": "croptopia:roasted_pumpkin_seeds",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "roasted_sunflower_seeds": {
+            "type": "item",
+            "content": "croptopia:roasted_sunflower_seeds",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "pumpkin_bars": {
+            "type": "item",
+            "content": "croptopia:pumpkin_bars",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "meringue": {
+            "type": "item",
+            "content": "croptopia:meringue",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cabbage_roll": {
+            "type": "item",
+            "content": "croptopia:cabbage_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "borscht": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:borscht",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "goulash": {
+            "type": "item",
+            "content": "croptopia:goulash",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "beetroot_salad": {
+            "type": "item",
+            "content": "croptopia:beetroot_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "steamed_crab": {
+            "type": "item",
+            "content": "croptopia:steamed_crab",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "deep_fried_shrimp": {
+            "type": "item",
+            "content": "croptopia:deep_fried_shrimp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "tuna_roll": {
+            "type": "item",
+            "content": "croptopia:tuna_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "fried_calamari": {
+            "type": "item",
+            "content": "croptopia:fried_calamari",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "crab_legs": {
+            "type": "item",
+            "content": "croptopia:crab_legs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "steamed_clams": {
+            "type": "item",
+            "content": "croptopia:steamed_clams",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "grilled_eggplant": {
+            "type": "item",
+            "content": "croptopia:grilled_eggplant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "nether_wart_stew": {
+            "type": "item",
+            "content": "croptopia:nether_wart_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "peanut_butter_with_celery": {
+            "type": "item",
+            "content": "croptopia:peanut_butter_with_celery",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "potato_soup": {
+            "type": "item",
+            "content": "croptopia:potato_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cheesy_asparagus": {
+            "type": "item",
+            "content": "croptopia:cheesy_asparagus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "buttered_green_beans": {
+            "type": "item",
+            "content": "croptopia:buttered_green_beans",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "beef_stir_fry": {
+            "type": "item",
+            "content": "croptopia:beef_stir_fry",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "grilled_oysters": {
+            "type": "item",
+            "content": "croptopia:grilled_oysters",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "mashed_potatoes": {
+            "type": "item",
+            "content": "croptopia:mashed_potatoes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "dauphine_potatoes": {
+            "type": "item",
+            "content": "croptopia:dauphine_potatoes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fried_frog_legs": {
+            "type": "item",
+            "content": "croptopia:fried_frog_legs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "hashed_brown": {
+            "type": "item",
+            "content": "croptopia:hashed_brown",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "sausage": {
+            "type": "item",
+            "content": "croptopia:sausage",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "the_big_breakfast": {
+            "type": "item",
+            "content": "croptopia:the_big_breakfast",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "sweet_roll": {
+            "type": "item",
+            "content": "create:sweet_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "chocolate_glazed_berries": {
+            "type": "item",
+            "content": "create:chocolate_glazed_berries",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "honeyed_apple": {
+            "type": "item",
+            "content": "create:honeyed_apple",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "strider_nether_wart_stew": {
+            "type": "item",
+            "content": "kaleidoscope_nether:strider_nether_wart_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "warped_salad": {
+            "type": "item",
+            "content": "kaleidoscope_nether:warped_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "crimson_salad": {
+            "type": "item",
+            "content": "kaleidoscope_nether:crimson_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "braised_strider": {
+            "type": "item",
+            "content": "kaleidoscope_nether:braised_strider",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "warped_hoglin_tenderloin_stew": {
+            "type": "item",
+            "content": "kaleidoscope_nether:warped_hoglin_tenderloin_stew",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "warped_cake": {
+            "type": "item",
+            "content": "kaleidoscope_nether:warped_cake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "crimson_magma_stew": {
+            "type": "item",
+            "content": "kaleidoscope_nether:crimson_magma_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "gilded_barbaric_roast": {
+            "type": "item",
+            "content": "kaleidoscope_nether:gilded_barbaric_roast",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "ghast_pudding": {
+            "type": "item",
+            "content": "kaleidoscope_nether:ghast_pudding",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "soul_glazed_roast": {
+            "type": "item",
+            "content": "kaleidoscope_nether:soul_glazed_roast",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "ghast_pasta": {
+            "type": "item",
+            "content": "kaleidoscope_nether:ghast_pasta",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "golden_roast": {
+            "type": "item",
+            "content": "kaleidoscope_nether:golden_roast",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "glowing_pudding": {
+            "type": "item",
+            "content": "kaleidoscope_nether:glowing_pudding",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "lava_jelly": {
+            "type": "item",
+            "content": "kaleidoscope_nether:lava_jelly",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "nether_caterpillar_sashimi": {
+            "type": "item",
+            "content": "kaleidoscope_nether:nether_caterpillar_sashimi",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "nether_fries_platter": {
+            "type": "item",
+            "content": "kaleidoscope_nether:nether_fries_platter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "hoglin_tusk_braised_meat": {
+            "type": "item",
+            "content": "kaleidoscope_nether:hoglin_tusk_braised_meat",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "poisonous_ghast_roast": {
+            "type": "item",
+            "content": "kaleidoscope_nether:poisonous_ghast_roast",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "soul_pepper_stir_fry": {
+            "type": "item",
+            "content": "kaleidoscope_nether:soul_pepper_stir_fry",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "strider_shell_stir_fry": {
+            "type": "item",
+            "content": "kaleidoscope_nether:strider_shell_stir_fry",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "wither_bone_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:wither_bone_soup",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "poisonous_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:poisonous_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "glowing_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:glowing_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "chongqing_noodles": {
+            "type": "item",
+            "content": "kaleidoscope_nether:chongqing_noodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "luosifen": {
+            "type": "item",
+            "content": "kaleidoscope_nether:luosifen",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "spicy_hoglin_ramen": {
+            "type": "item",
+            "content": "kaleidoscope_nether:spicy_hoglin_ramen",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "sauerkraut_fish": {
+            "type": "item",
+            "content": "kaleidoscope_nether:sauerkraut_fish",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "nether_reed_stew": {
+            "type": "item",
+            "content": "kaleidoscope_nether:nether_reed_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "ghast_kabob": {
+            "type": "item",
+            "content": "kaleidoscope_nether:ghast_kabob",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "soul_strider_kabob": {
+            "type": "item",
+            "content": "kaleidoscope_nether:soul_strider_kabob",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "golden_kabob": {
+            "type": "item",
+            "content": "kaleidoscope_nether:golden_kabob",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "blazing_kabob": {
+            "type": "item",
+            "content": "kaleidoscope_nether:blazing_kabob",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "warped_kabob": {
+            "type": "item",
+            "content": "kaleidoscope_nether:warped_kabob",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "glowing_kabob": {
+            "type": "item",
+            "content": "kaleidoscope_nether:glowing_kabob",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "glowing_salad": {
+            "type": "item",
+            "content": "kaleidoscope_nether:glowing_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "ruby_steak": {
+            "type": "item",
+            "content": "kaleidoscope_nether:ruby_steak",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "forgetfulness_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:forgetfulness_soup",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "garlic_oysters": {
+            "type": "item",
+            "content": "kaleidoscope_nether:garlic_oysters",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "couples_lung_slice": {
+            "type": "item",
+            "content": "kaleidoscope_nether:couples_lung_slice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "pepper_pork_belly_chicken_soup": {
+            "type": "item",
+            "content": "kaleidoscope_nether:pepper_pork_belly_chicken_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "shengjian_mantou": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:shengjian_mantou",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "baozi": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:baozi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "mantou": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:mantou",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "donkey_burger": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:donkey_burger",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cooked_meatball": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cooked_meatball",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "cooked_cut_small_meats": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cooked_cut_small_meats",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cooked_pork_belly": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cooked_pork_belly",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cooked_cow_offal": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cooked_cow_offal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cooked_lamb_chops": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cooked_lamb_chops",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "samsa": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:samsa",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "meat_pie": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:meat_pie",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "dumpling": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:dumpling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sticky_candy": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sticky_candy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sticky_rice_cake": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sticky_rice_cake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "bamboo_tube_rice": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:bamboo_tube_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "zongzi": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:zongzi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "qingtuan": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:qingtuan",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "egg_fried_rice": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:egg_fried_rice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "scramble_egg_with_tomatoes": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:scramble_egg_with_tomatoes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "scramble_egg_with_tomatoes_rice_bowl": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:scramble_egg_with_tomatoes_rice_bowl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "braised_beef": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:braised_beef",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "braised_beef_rice_bowl": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:braised_beef_rice_bowl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stir_fried_pork_with_peppers": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:stir_fried_pork_with_peppers",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stir_fried_pork_with_peppers_rice_bowl": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:stir_fried_pork_with_peppers_rice_bowl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sweet_and_sour_pork": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sweet_and_sour_pork",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "sweet_and_sour_pork_rice_bowl": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sweet_and_sour_pork_rice_bowl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fish_flavored_shredded_pork": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fish_flavored_shredded_pork",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fish_flavored_shredded_pork_rice_bowl": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fish_flavored_shredded_pork_rice_bowl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "pork_bone_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:pork_bone_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "laba_congee": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:laba_congee",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "beef_noodle": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:beef_noodle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "hui_noodle": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:hui_noodle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "chorus_fried_egg": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chorus_fried_egg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "fondant_spider_eye": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fondant_spider_eye",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "dongpo_pork": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:dongpo_pork",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "fondant_pie": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fondant_pie",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "slime_ball_meal": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:slime_ball_meal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "hot_dry_noodles": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:hot_dry_noodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "udon_noodle": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:udon_noodle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "spicy_chicken": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:spicy_chicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pan_seared_knight_steak": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:pan_seared_knight_steak",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "stargazy_pie": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:stargazy_pie",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "sweet_and_sour_ender_pearls": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sweet_and_sour_ender_pearls",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "crystal_lamb_chop": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:crystal_lamb_chop",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "blaze_lamb_chop": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:blaze_lamb_chop",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "frost_lamb_chop": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:frost_lamb_chop",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "chicken_and_mushroom_stew": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chicken_and_mushroom_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "seafood_miso_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:seafood_miso_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "fearsome_thick_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fearsome_thick_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "lamb_and_radish_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:lamb_and_radish_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "braised_beef_with_potatoes": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:braised_beef_with_potatoes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "wild_mushroom_rabbit_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:wild_mushroom_rabbit_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pufferfish_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:pufferfish_soup",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "beef_meatball_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:beef_meatball_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "end_style_sashimi": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:end_style_sashimi",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "desert_style_sashimi": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:desert_style_sashimi",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "tundra_style_sashimi": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:tundra_style_sashimi",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "cold_style_sashimi": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cold_style_sashimi",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "candied_potato": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:candied_potato",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stuffed_tiger_skin_pepper": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:stuffed_tiger_skin_pepper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "spicy_rabbit_head": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:spicy_rabbit_head",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "fried_caterpillar": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fried_caterpillar",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "fried_spring_roll": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:fried_spring_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "braised_pork_ribs": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:braised_pork_ribs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "red_mushroom_pot_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:red_mushroom_pot_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "brown_mushroom_pot_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:brown_mushroom_pot_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "spicy_blood_stew": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:spicy_blood_stew",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "numbing_spicy_chicken": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:numbing_spicy_chicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "four_joy_meatball_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:four_joy_meatball_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "dough_drop_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:dough_drop_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cold_cut_ham_slices": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cold_cut_ham_slices",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "oil_splashed_fish": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:oil_splashed_fish",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cold_roasted_meat": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:cold_roasted_meat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "warped_fungus_pot_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:warped_fungus_pot_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "crimson_fungus_pot_soup": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:crimson_fungus_pot_soup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "buddha_jumps_over_the_wall": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:buddha_jumps_over_the_wall",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 9600,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "golden_salad": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:golden_salad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "shengjian_mantou_plate": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:shengjian_mantou_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "baozi_plate": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:baozi_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "qingtuan_plate": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:qingtuan_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sticky_candy_plate": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sticky_candy_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sticky_rice_cake_plate": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sticky_rice_cake_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "zongzi_plate": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:zongzi_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "apple_platter": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:apple_platter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "berry_platter": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:berry_platter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "tomato_platter": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:tomato_platter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "watermelon_platter": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:watermelon_platter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "chorus_fruit_platter": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:chorus_fruit_platter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "barley_tea": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:barley_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "tieguanyin": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:tieguanyin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "biluochun": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:biluochun",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "flower_tea": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:flower_tea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "sakura_fubuki": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:sakura_fubuki",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "oolong": {
+            "type": "item",
+            "content": "kaleidoscope_cookery:oolong",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "dried_tofu_skin": {
+            "type": "item",
+            "content": "flavor_immersed_daily:dried_tofu_skin",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "tofu_puffs": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tofu_puffs",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "fried_tofu_skin_rolls": {
+            "type": "item",
+            "content": "flavor_immersed_daily:fried_tofu_skin_rolls",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "friedspicychicken": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedspicychicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "chickenwith_scallion_oil": {
+            "type": "item",
+            "content": "flavor_immersed_daily:chickenwith_scallion_oil",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "saltedeggyolkfriedcauliflower": {
+            "type": "item",
+            "content": "flavor_immersed_daily:saltedeggyolkfriedcauliflower",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sauteed_potato_green_pepper_eggplant": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sauteed_potato_green_pepper_eggplant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "preservedeggsalad": {
+            "type": "item",
+            "content": "flavor_immersed_daily:preservedeggsalad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "steamed_chickenwith_chili_sauce": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamed_chickenwith_chili_sauce",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "colachickenwings": {
+            "type": "item",
+            "content": "flavor_immersed_daily:colachickenwings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "chinesecabbageinsoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:chinesecabbageinsoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "pleurotuseryngiiwithsaltandpepper": {
+            "type": "item",
+            "content": "flavor_immersed_daily:pleurotuseryngiiwithsaltandpepper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stirfriedboiledporkslicesinhotsauce": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stirfriedboiledporkslicesinhotsauce",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "stewedporkwithbrownsauce": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedporkwithbrownsauce",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "kungpaochicken": {
+            "type": "item",
+            "content": "flavor_immersed_daily:kungpaochicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "stirfriedstringbeans": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stirfriedstringbeans",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "tomatosalad": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tomatosalad",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "linyifriedchicken": {
+            "type": "item",
+            "content": "flavor_immersed_daily:linyifriedchicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "spicycabbage": {
+            "type": "item",
+            "content": "flavor_immersed_daily:spicycabbage",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "spicytofu": {
+            "type": "item",
+            "content": "flavor_immersed_daily:spicytofu",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "beanwithsesamesauce": {
+            "type": "item",
+            "content": "flavor_immersed_daily:beanwithsesamesauce",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "scrambledeggswithfungusandcucumber": {
+            "type": "item",
+            "content": "flavor_immersed_daily:scrambledeggswithfungusandcucumber",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "japanesebraisedtofu": {
+            "type": "item",
+            "content": "flavor_immersed_daily:japanesebraisedtofu",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "poached_spicy_slicesof_pork": {
+            "type": "item",
+            "content": "flavor_immersed_daily:poached_spicy_slicesof_pork",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "sliced_fishin_hot_chili_oil": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sliced_fishin_hot_chili_oil",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "boiled_fishwith_pickled_cabbageand_chili": {
+            "type": "item",
+            "content": "flavor_immersed_daily:boiled_fishwith_pickled_cabbageand_chili",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "meatballsoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:meatballsoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fishsashimi": {
+            "type": "item",
+            "content": "flavor_immersed_daily:fishsashimi",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "steamedblood": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedblood",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "drawneggplant": {
+            "type": "item",
+            "content": "flavor_immersed_daily:drawneggplant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "boiled_chickenwith_sauce": {
+            "type": "item",
+            "content": "flavor_immersed_daily:boiled_chickenwith_sauce",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "mixedcolddishes": {
+            "type": "item",
+            "content": "flavor_immersed_daily:mixedcolddishes",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "friedlivertipwithspinach": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedlivertipwithspinach",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pineapple_sweetand_sour_pork": {
+            "type": "item",
+            "content": "flavor_immersed_daily:pineapple_sweetand_sour_pork",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "friedcowpea": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedcowpea",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "braisedbeansproutswithvermicelli": {
+            "type": "item",
+            "content": "flavor_immersed_daily:braisedbeansproutswithvermicelli",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "friedmeatwithcuminonion": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedmeatwithcuminonion",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "zucchinisnackmeat": {
+            "type": "item",
+            "content": "flavor_immersed_daily:zucchinisnackmeat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "sauteedmushroomswithrapeseed": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sauteedmushroomswithrapeseed",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "friedshreddedporkwithsweetandsoursauce": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedshreddedporkwithsweetandsoursauce",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "bakedwhitemushroomswithcream": {
+            "type": "item",
+            "content": "flavor_immersed_daily:bakedwhitemushroomswithcream",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "stewedchickensoupwithmushrooms": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedchickensoupwithmushrooms",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "greenbeanporridge": {
+            "type": "item",
+            "content": "flavor_immersed_daily:greenbeanporridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "stewedporkoffal": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedporkoffal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "currystewedchicken": {
+            "type": "item",
+            "content": "flavor_immersed_daily:currystewedchicken",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "steamedeggcustard": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedeggcustard",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "reddatesandtremellaporridge": {
+            "type": "item",
+            "content": "flavor_immersed_daily:reddatesandtremellaporridge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "sa": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sa",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "steamedfish": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedfish",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.0029735355337496285,
+            "effectiveValue": 14400
+        },
+        "stewedeggswithloofah": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedeggswithloofah",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fourjoymeatballs": {
+            "type": "item",
+            "content": "flavor_immersed_daily:fourjoymeatballs",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 5600,
+            "weightMult": 0.0034691247893745662,
+            "effectiveValue": 16800
+        },
+        "peaflourcake": {
+            "type": "item",
+            "content": "flavor_immersed_daily:peaflourcake",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "scrambledeggwithtomato": {
+            "type": "item",
+            "content": "flavor_immersed_daily:scrambledeggwithtomato",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "hotandsourricenoodles": {
+            "type": "item",
+            "content": "flavor_immersed_daily:hotandsourricenoodles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sugarcoatedwalnut": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sugarcoatedwalnut",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "tang_zi_xiao_zao": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tang_zi_xiao_zao",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sweettoufucurd": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sweettoufucurd",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "somkedchickenbreast": {
+            "type": "item",
+            "content": "flavor_immersed_daily:somkedchickenbreast",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "steamedsaltorange": {
+            "type": "item",
+            "content": "flavor_immersed_daily:steamedsaltorange",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "salttofucurd": {
+            "type": "item",
+            "content": "flavor_immersed_daily:salttofucurd",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "caramelpopcorn": {
+            "type": "item",
+            "content": "flavor_immersed_daily:caramelpopcorn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "sheepgibletssoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sheepgibletssoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "stewedchickenwithwaxgourd": {
+            "type": "item",
+            "content": "flavor_immersed_daily:stewedchickenwithwaxgourd",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "winterjujubeandwaxgourdsoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:winterjujubeandwaxgourdsoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "friedhempball": {
+            "type": "item",
+            "content": "flavor_immersed_daily:friedhempball",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "fivepointedcaramboladelight": {
+            "type": "item",
+            "content": "flavor_immersed_daily:fivepointedcaramboladelight",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "m_secretdelight": {
+            "type": "item",
+            "content": "flavor_immersed_daily:m_secretdelight",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "cantonesericerolls": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cantonesericerolls",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "gumbosoup": {
+            "type": "item",
+            "content": "flavor_immersed_daily:gumbosoup",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "congeewith_minced_porkand_preserved_egg": {
+            "type": "item",
+            "content": "flavor_immersed_daily:congeewith_minced_porkand_preserved_egg",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "sugarcoatedhaws": {
+            "type": "item",
+            "content": "flavor_immersed_daily:sugarcoatedhaws",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "ripepearwithrocksugar": {
+            "type": "item",
+            "content": "flavor_immersed_daily:ripepearwithrocksugar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "omelette": {
+            "type": "item",
+            "content": "flavor_immersed_daily:omelette",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "tofucurd": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tofucurd",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "soyamilk": {
+            "type": "item",
+            "content": "flavor_immersed_daily:soyamilk",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "popcorn": {
+            "type": "item",
+            "content": "flavor_immersed_daily:popcorn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "cookedhawthorn": {
+            "type": "item",
+            "content": "flavor_immersed_daily:cookedhawthorn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 480,
+            "weightMult": 0.0011894142134998512,
+            "effectiveValue": 5760
+        },
+        "tigergreenpepper": {
+            "type": "item",
+            "content": "flavor_immersed_daily:tigergreenpepper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "hamburgerbread": {
+            "type": "item",
+            "content": "flavor_immersed_daily:hamburgerbread",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        },
+        "yunyiselfsdelight": {
+            "type": "item",
+            "content": "flavor_immersed_daily:yunyiselfsdelight",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.0023788284269997025,
+            "effectiveValue": 11520
+        },
+        "pancake_roll": {
+            "type": "item",
+            "content": "flavor_immersed_daily:pancake_roll",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 6,
+                "max": 12
+            },
+            "unitWorth": 960,
+            "weightMult": 0.001784121320249777,
+            "effectiveValue": 8640
+        }
+    },
+    "requires": [
+        "create",
+        "croptopia",
+        "farmersdelight",
+        "flavor_immersed_daily",
+        "kaleidoscope_cookery",
+        "kaleidoscope_nether"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "protection_pixel:heatresistantceramicsheet"
+    },
+    "B": {
+      "item": "protection_pixel:smallnetheritesheet"
+    },
+    "C": {
+      "item": "minecraft:tinted_glass"
+    },
+    "D": {
+      "item": "create:precision_mechanism"
+    },
+    "E": {
+      "item": "minecraft:iron_helmet"
+    }
+  },
+  "pattern": [
+    "AABAA",
+    "ACEDA",
+    "AA AA"
+  ],
+  "result": {
+    "id": "protection_pixel:tosaki_helmet",
+    "count": 1
+  }
+}

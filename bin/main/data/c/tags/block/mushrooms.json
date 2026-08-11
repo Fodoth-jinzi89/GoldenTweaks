@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:white_mushroom_seed",
+    "flavor_immersed_daily:enokimushroomseed",
+    "flavor_immersed_daily:fragrantseed",
+    "flavor_immersed_daily:pleurotusseed",
+    "flavor_immersed_daily:blackfungsseed",
+    "flavor_immersed_daily:tremellaseed"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "封包设定复制器",
+  "category": "packagedauto:core",
+  "icon": "packagedauto:settings_cloner",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "该 $(item)封包设定复制器/$ 可以复制并粘贴部分封包处理机器的设置。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "packagedauto:settings_cloner",
+      "link_recipe": true,
+      "title": "使用方法",
+      "text": "使用 $(item)封包设定复制器/$ 时，对支持的机器按下 $(thing)$(k:sneak) + $(k:use)/$ 以复制其设置。$(p)随后在同类型机器上按下 $(thing)$(k:use)/$ 即可粘贴设置。$(p)如需清除设置，可对空气或非支持机器按下 $(thing)$(k:sneak) + $(k:use)/$。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "packagedauto:settings_cloner",
+      "title": "合成"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

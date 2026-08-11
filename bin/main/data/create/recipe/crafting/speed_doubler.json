@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_compact_transmission"
+    }
+  ],
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "create:large_cogwheel"
+    },
+    {
+      "item": "create:andesite_casing"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create_compact_transmission:speed_doubler"
+  }
+}

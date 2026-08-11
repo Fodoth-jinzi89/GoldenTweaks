@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "duration": 240,
+  "item_input": {
+    "item": "evolvedmekanism:mold_gear"
+  },
+  "fluid_input": {
+    "fluid": "avaritia_integration:molten_blaze",
+    "amount": 360
+  },
+  "extra_input": {
+    "fluid": "neoecoae:cryotheum_solution",
+    "amount": 360
+  },
+  "output": {
+    "item": "avaritia_integration:blaze_cube_gear"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_integration"
+    }
+  ]
+}

@@ -1,0 +1,3858 @@
+{
+    "content": {
+        "chainmail_helmet": {
+            "type": "item",
+            "content": "minecraft:chainmail_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "chainmail_chestplate": {
+            "type": "item",
+            "content": "minecraft:chainmail_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "chainmail_leggings": {
+            "type": "item",
+            "content": "minecraft:chainmail_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "chainmail_boots": {
+            "type": "item",
+            "content": "minecraft:chainmail_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "netherite_helmet": {
+            "type": "item",
+            "content": "minecraft:netherite_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "netherite_chestplate": {
+            "type": "item",
+            "content": "minecraft:netherite_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "netherite_leggings": {
+            "type": "item",
+            "content": "minecraft:netherite_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "netherite_boots": {
+            "type": "item",
+            "content": "minecraft:netherite_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "jade_pagoda_helmet": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:jade_pagoda_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "jade_pagoda_chestplate": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:jade_pagoda_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "jade_pagoda_leggings": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:jade_pagoda_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "jade_pagoda_boots": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:jade_pagoda_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "bone_reptile_helmet": {
+            "type": "item",
+            "content": "cataclysm:bone_reptile_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "bone_reptile_chestplate": {
+            "type": "item",
+            "content": "cataclysm:bone_reptile_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "ignitium_helmet": {
+            "type": "item",
+            "content": "cataclysm:ignitium_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "ignitium_chestplate": {
+            "type": "item",
+            "content": "cataclysm:ignitium_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "ignitium_leggings": {
+            "type": "item",
+            "content": "cataclysm:ignitium_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "ignitium_boots": {
+            "type": "item",
+            "content": "cataclysm:ignitium_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "cursium_helmet": {
+            "type": "item",
+            "content": "cataclysm:cursium_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "cursium_chestplate": {
+            "type": "item",
+            "content": "cataclysm:cursium_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "cursium_leggings": {
+            "type": "item",
+            "content": "cataclysm:cursium_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "cursium_boots": {
+            "type": "item",
+            "content": "cataclysm:cursium_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "shadowwalker_helmet": {
+            "type": "item",
+            "content": "irons_spellbooks:shadowwalker_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0005087375677256887,
+            "effectiveValue": 200
+        },
+        "shadowwalker_chestplate": {
+            "type": "item",
+            "content": "irons_spellbooks:shadowwalker_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 320,
+            "weightMult": 0.000813980108361102,
+            "effectiveValue": 320
+        },
+        "shadowwalker_leggings": {
+            "type": "item",
+            "content": "irons_spellbooks:shadowwalker_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 280,
+            "weightMult": 0.0007122325948159642,
+            "effectiveValue": 280
+        },
+        "shadowwalker_boots": {
+            "type": "item",
+            "content": "irons_spellbooks:shadowwalker_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 160,
+            "weightMult": 0.000406990054180551,
+            "effectiveValue": 160
+        },
+        "familiar_helmet": {
+            "type": "item",
+            "content": "alshanex_familiars:familiar_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0007631063515885331,
+            "effectiveValue": 300
+        },
+        "familiar_chestplate": {
+            "type": "item",
+            "content": "alshanex_familiars:familiar_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 480,
+            "weightMult": 0.001220970162541653,
+            "effectiveValue": 480
+        },
+        "familiar_leggings": {
+            "type": "item",
+            "content": "alshanex_familiars:familiar_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 420,
+            "weightMult": 0.0010683488922239462,
+            "effectiveValue": 420
+        },
+        "familiar_boots": {
+            "type": "item",
+            "content": "alshanex_familiars:familiar_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 240,
+            "weightMult": 0.0006104850812708265,
+            "effectiveValue": 240
+        },
+        "better_gold_helmet": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "better_gold_chestplate": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1280,
+            "weightMult": 0.003255920433444408,
+            "effectiveValue": 1280
+        },
+        "better_gold_leggings": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1120,
+            "weightMult": 0.002848930379263857,
+            "effectiveValue": 1120
+        },
+        "better_gold_boots": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 640,
+            "weightMult": 0.001627960216722204,
+            "effectiveValue": 640
+        },
+        "plaslitherite_helmet": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "plaslitherite_chestplate": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "plaslitherite_leggings": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1400,
+            "weightMult": 0.003561162974079821,
+            "effectiveValue": 1400
+        },
+        "plaslitherite_boots": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "refined_redstone_helmet": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0007631063515885331,
+            "effectiveValue": 300
+        },
+        "refined_redstone_chestplate": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 480,
+            "weightMult": 0.001220970162541653,
+            "effectiveValue": 480
+        },
+        "refined_redstone_leggings": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 420,
+            "weightMult": 0.0010683488922239462,
+            "effectiveValue": 420
+        },
+        "refined_redstone_boots": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 240,
+            "weightMult": 0.0006104850812708265,
+            "effectiveValue": 240
+        },
+        "martian_steel_helmet": {
+            "type": "item",
+            "content": "northstar:martian_steel_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "martian_steel_chestplate": {
+            "type": "item",
+            "content": "northstar:martian_steel_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "martian_steel_leggings": {
+            "type": "item",
+            "content": "northstar:martian_steel_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "martian_steel_boots": {
+            "type": "item",
+            "content": "northstar:martian_steel_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "plague_helmet": {
+            "type": "item",
+            "content": "protection_pixel:plague_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "lancer_helmet": {
+            "type": "item",
+            "content": "protection_pixel:lancer_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "hammer_helmet": {
+            "type": "item",
+            "content": "protection_pixel:hammer_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "bloodprisoneras_helmet": {
+            "type": "item",
+            "content": "protection_pixel:bloodprisoneras_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "nightdemonas_helmet": {
+            "type": "item",
+            "content": "protection_pixel:nightdemonas_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "linkplate_helmet": {
+            "type": "item",
+            "content": "protection_pixel:linkplate_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.00025436878386284436,
+            "effectiveValue": 100
+        },
+        "tosaki_helmet": {
+            "type": "item",
+            "content": "protection_pixel:tosaki_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0007631063515885331,
+            "effectiveValue": 300
+        },
+        "tacticaloxygensupplydevice": {
+            "type": "item",
+            "content": "protection_pixel:tacticaloxygensupplydevice",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "bronze_helmet": {
+            "type": "item",
+            "content": "mekanismtools:bronze_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "bronze_chestplate": {
+            "type": "item",
+            "content": "mekanismtools:bronze_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "bronze_leggings": {
+            "type": "item",
+            "content": "mekanismtools:bronze_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "bronze_boots": {
+            "type": "item",
+            "content": "mekanismtools:bronze_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "lapis_lazuli_helmet": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "lapis_lazuli_chestplate": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "lapis_lazuli_leggings": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "lapis_lazuli_boots": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "osmium_helmet": {
+            "type": "item",
+            "content": "mekanismtools:osmium_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.00025436878386284436,
+            "effectiveValue": 100
+        },
+        "osmium_chestplate": {
+            "type": "item",
+            "content": "mekanismtools:osmium_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 160,
+            "weightMult": 0.000406990054180551,
+            "effectiveValue": 160
+        },
+        "osmium_leggings": {
+            "type": "item",
+            "content": "mekanismtools:osmium_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 140,
+            "weightMult": 0.0003561162974079821,
+            "effectiveValue": 140
+        },
+        "osmium_boots": {
+            "type": "item",
+            "content": "mekanismtools:osmium_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "refined_glowstone_helmet": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0005087375677256887,
+            "effectiveValue": 200
+        },
+        "refined_glowstone_chestplate": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 320,
+            "weightMult": 0.000813980108361102,
+            "effectiveValue": 320
+        },
+        "refined_glowstone_leggings": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 280,
+            "weightMult": 0.0007122325948159642,
+            "effectiveValue": 280
+        },
+        "refined_glowstone_boots": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 160,
+            "weightMult": 0.000406990054180551,
+            "effectiveValue": 160
+        },
+        "refined_obsidian_helmet": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0007631063515885331,
+            "effectiveValue": 300
+        },
+        "refined_obsidian_chestplate": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 480,
+            "weightMult": 0.001220970162541653,
+            "effectiveValue": 480
+        },
+        "refined_obsidian_leggings": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 420,
+            "weightMult": 0.0010683488922239462,
+            "effectiveValue": 420
+        },
+        "refined_obsidian_boots": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 240,
+            "weightMult": 0.0006104850812708265,
+            "effectiveValue": 240
+        },
+        "steel_helmet": {
+            "type": "item",
+            "content": "mekanismtools:steel_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "steel_chestplate": {
+            "type": "item",
+            "content": "mekanismtools:steel_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "steel_leggings": {
+            "type": "item",
+            "content": "mekanismtools:steel_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "steel_boots": {
+            "type": "item",
+            "content": "mekanismtools:steel_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "blazeborne_helmet": {
+            "type": "item",
+            "content": "hazennstuff:blazeborne_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "blazeborne_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:blazeborne_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "blazeborne_leggings": {
+            "type": "item",
+            "content": "hazennstuff:blazeborne_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "blazeborne_boots": {
+            "type": "item",
+            "content": "hazennstuff:blazeborne_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "crystal_arachnid_helmet": {
+            "type": "item",
+            "content": "hazennstuff:crystal_arachnid_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "crystal_arachnid_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:crystal_arachnid_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "crystal_arachnid_leggings": {
+            "type": "item",
+            "content": "hazennstuff:crystal_arachnid_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "crystal_arachnid_boots": {
+            "type": "item",
+            "content": "hazennstuff:crystal_arachnid_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "chlorophyte_helmet": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "chlorophyte_headgear": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_headgear",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "chlorophyte_mask": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_mask",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "chlorophyte_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "chlorophyte_leggings": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "chlorophyte_boots": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "flesh_mass_helmet": {
+            "type": "item",
+            "content": "hazennstuff:flesh_mass_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "flesh_mass_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:flesh_mass_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "flesh_mass_leggings": {
+            "type": "item",
+            "content": "hazennstuff:flesh_mass_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "flesh_mass_boots": {
+            "type": "item",
+            "content": "hazennstuff:flesh_mass_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "shadow_scale_helmet": {
+            "type": "item",
+            "content": "hazennstuff:shadow_scale_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "shadow_scale_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:shadow_scale_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "shadow_scale_leggings": {
+            "type": "item",
+            "content": "hazennstuff:shadow_scale_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "shadow_scale_boots": {
+            "type": "item",
+            "content": "hazennstuff:shadow_scale_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "elder_guardian_helmet": {
+            "type": "item",
+            "content": "hazennstuff:elder_guardian_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "elder_guardian_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:elder_guardian_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "elder_guardian_leggings": {
+            "type": "item",
+            "content": "hazennstuff:elder_guardian_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "elder_guardian_boots": {
+            "type": "item",
+            "content": "hazennstuff:elder_guardian_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "pyrium_helmet": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "pyrium_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1280,
+            "weightMult": 0.003255920433444408,
+            "effectiveValue": 1280
+        },
+        "pyrium_leggings": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1120,
+            "weightMult": 0.002848930379263857,
+            "effectiveValue": 1120
+        },
+        "pyrium_boots": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 640,
+            "weightMult": 0.001627960216722204,
+            "effectiveValue": 640
+        },
+        "pyrium_battlemage_helmet": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_battlemage_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "pyrium_battlemage_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_battlemage_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "pyrium_battlemage_leggings": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_battlemage_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "pyrium_battlemage_boots": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_battlemage_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "soul_legionnaire_ruler_helmet": {
+            "type": "item",
+            "content": "hazennstuff:soul_legionnaire_ruler_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "soul_legionnaire_ruler_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:soul_legionnaire_ruler_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "soul_legionnaire_ruler_leggings": {
+            "type": "item",
+            "content": "hazennstuff:soul_legionnaire_ruler_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "soul_legionnaire_ruler_boots": {
+            "type": "item",
+            "content": "hazennstuff:soul_legionnaire_ruler_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "legionnaire_commander_helmet": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_commander_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "legionnaire_commander_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_commander_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "legionnaire_commander_leggings": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_commander_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "legionnaire_commander_boots": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_commander_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "miner_helmet": {
+            "type": "item",
+            "content": "hazennstuff:miner_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "miner_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:miner_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "miner_leggings": {
+            "type": "item",
+            "content": "hazennstuff:miner_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "miner_boots": {
+            "type": "item",
+            "content": "hazennstuff:miner_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "spectral_spelunker_helmet": {
+            "type": "item",
+            "content": "hazennstuff:spectral_spelunker_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "spectral_spelunker_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:spectral_spelunker_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1280,
+            "weightMult": 0.003255920433444408,
+            "effectiveValue": 1280
+        },
+        "spectral_spelunker_leggings": {
+            "type": "item",
+            "content": "hazennstuff:spectral_spelunker_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1120,
+            "weightMult": 0.002848930379263857,
+            "effectiveValue": 1120
+        },
+        "spectral_spelunker_boots": {
+            "type": "item",
+            "content": "hazennstuff:spectral_spelunker_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 640,
+            "weightMult": 0.001627960216722204,
+            "effectiveValue": 640
+        },
+        "fireblossom_battlemage_helmet": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_battlemage_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "fireblossom_battlemage_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_battlemage_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "fireblossom_battlemage_leggings": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_battlemage_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "fireblossom_battlemage_boots": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_battlemage_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "fireblossom_knight_helmet": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_knight_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "fireblossom_knight_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_knight_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "fireblossom_knight_leggings": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_knight_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "fireblossom_knight_boots": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_knight_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "legacy_fireblossom_crown": {
+            "type": "item",
+            "content": "hazennstuff:legacy_fireblossom_crown",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "legacy_fireblossom_helmet": {
+            "type": "item",
+            "content": "hazennstuff:legacy_fireblossom_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "legacy_fireblossom_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:legacy_fireblossom_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "legacy_fireblossom_leggings": {
+            "type": "item",
+            "content": "hazennstuff:legacy_fireblossom_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "legacy_fireblossom_boots": {
+            "type": "item",
+            "content": "hazennstuff:legacy_fireblossom_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "atlas_helmet": {
+            "type": "item",
+            "content": "hazennstuff:atlas_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "atlas_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:atlas_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1280,
+            "weightMult": 0.003255920433444408,
+            "effectiveValue": 1280
+        },
+        "atlas_leggings": {
+            "type": "item",
+            "content": "hazennstuff:atlas_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1120,
+            "weightMult": 0.002848930379263857,
+            "effectiveValue": 1120
+        },
+        "atlas_boots": {
+            "type": "item",
+            "content": "hazennstuff:atlas_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 640,
+            "weightMult": 0.001627960216722204,
+            "effectiveValue": 640
+        },
+        "brass_helmet": {
+            "type": "item",
+            "content": "create_sa:brass_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.00025436878386284436,
+            "effectiveValue": 100
+        },
+        "brass_chestplate": {
+            "type": "item",
+            "content": "create_sa:brass_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 160,
+            "weightMult": 0.000406990054180551,
+            "effectiveValue": 160
+        },
+        "brass_leggings": {
+            "type": "item",
+            "content": "create_sa:brass_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 140,
+            "weightMult": 0.0003561162974079821,
+            "effectiveValue": 140
+        },
+        "brass_boots": {
+            "type": "item",
+            "content": "create_sa:brass_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "zinc_helmet": {
+            "type": "item",
+            "content": "create_sa:zinc_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "zinc_chestplate": {
+            "type": "item",
+            "content": "create_sa:zinc_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "zinc_leggings": {
+            "type": "item",
+            "content": "create_sa:zinc_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "zinc_boots": {
+            "type": "item",
+            "content": "create_sa:zinc_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "copper_helmet": {
+            "type": "item",
+            "content": "create_sa:copper_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "copper_chestplate": {
+            "type": "item",
+            "content": "create_sa:copper_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "copper_leggings": {
+            "type": "item",
+            "content": "create_sa:copper_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "copper_boots": {
+            "type": "item",
+            "content": "create_sa:copper_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "slime_helmet": {
+            "type": "item",
+            "content": "create_sa:slime_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "slime_boots": {
+            "type": "item",
+            "content": "create_sa:slime_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "copper_diving_helmet": {
+            "type": "item",
+            "content": "create:copper_diving_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.00025436878386284436,
+            "effectiveValue": 100
+        },
+        "copper_diving_boots": {
+            "type": "item",
+            "content": "create:copper_diving_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "netherite_diving_helmet": {
+            "type": "item",
+            "content": "create:netherite_diving_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "netherite_diving_boots": {
+            "type": "item",
+            "content": "create:netherite_diving_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "cardboard_helmet": {
+            "type": "item",
+            "content": "create:cardboard_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50,
+            "weightMult": 0.00012718439193142218,
+            "effectiveValue": 50
+        },
+        "cardboard_chestplate": {
+            "type": "item",
+            "content": "create:cardboard_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 80,
+            "weightMult": 0.0002034950270902755,
+            "effectiveValue": 80
+        },
+        "cardboard_leggings": {
+            "type": "item",
+            "content": "create:cardboard_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00017805814870399105,
+            "effectiveValue": 70
+        },
+        "cardboard_boots": {
+            "type": "item",
+            "content": "create:cardboard_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40,
+            "weightMult": 0.00010174751354513774,
+            "effectiveValue": 40
+        },
+        "herta_puppet_helmet": {
+            "type": "item",
+            "content": "hazennstuff:herta_puppet_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "herta_puppet_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:herta_puppet_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "herta_puppet_leggings": {
+            "type": "item",
+            "content": "hazennstuff:herta_puppet_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "herta_puppet_boots": {
+            "type": "item",
+            "content": "hazennstuff:herta_puppet_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "charged_scourge_helmet": {
+            "type": "item",
+            "content": "hazennstuff:charged_scourge_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "charged_scourge_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:charged_scourge_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "charged_scourge_leggings": {
+            "type": "item",
+            "content": "hazennstuff:charged_scourge_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "charged_scourge_boots": {
+            "type": "item",
+            "content": "hazennstuff:charged_scourge_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "thunder_prowler_helmet": {
+            "type": "item",
+            "content": "hazennstuff:thunder_prowler_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "thunder_prowler_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:thunder_prowler_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "thunder_prowler_leggings": {
+            "type": "item",
+            "content": "hazennstuff:thunder_prowler_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "thunder_prowler_boots": {
+            "type": "item",
+            "content": "hazennstuff:thunder_prowler_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "creaking_helmet": {
+            "type": "item",
+            "content": "hazennstuff:creaking_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "creaking_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:creaking_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "creaking_leggings": {
+            "type": "item",
+            "content": "hazennstuff:creaking_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "creaking_boots": {
+            "type": "item",
+            "content": "hazennstuff:creaking_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "the_wither_helmet": {
+            "type": "item",
+            "content": "hazennstuff:the_wither_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "the_wither_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:the_wither_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "the_wither_leggings": {
+            "type": "item",
+            "content": "hazennstuff:the_wither_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "the_wither_boots": {
+            "type": "item",
+            "content": "hazennstuff:the_wither_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "ender_dragon_helmet": {
+            "type": "item",
+            "content": "hazennstuff:ender_dragon_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "ender_dragon_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:ender_dragon_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "ender_dragon_leggings": {
+            "type": "item",
+            "content": "hazennstuff:ender_dragon_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "ender_dragon_boots": {
+            "type": "item",
+            "content": "hazennstuff:ender_dragon_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "seraph_helmet": {
+            "type": "item",
+            "content": "hazennstuff:seraph_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "seraph_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:seraph_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "seraph_leggings": {
+            "type": "item",
+            "content": "hazennstuff:seraph_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "seraph_boots": {
+            "type": "item",
+            "content": "hazennstuff:seraph_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "mothic_witch_helmet": {
+            "type": "item",
+            "content": "hazennstuff:mothic_witch_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "mothic_witch_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:mothic_witch_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "mothic_witch_leggings": {
+            "type": "item",
+            "content": "hazennstuff:mothic_witch_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "mothic_witch_boots": {
+            "type": "item",
+            "content": "hazennstuff:mothic_witch_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "gabriel_ultrakill_helmet": {
+            "type": "item",
+            "content": "hazennstuff:gabriel_ultrakill_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "gabriel_ultrakill_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:gabriel_ultrakill_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "gabriel_ultrakill_leggings": {
+            "type": "item",
+            "content": "hazennstuff:gabriel_ultrakill_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "gabriel_ultrakill_boots": {
+            "type": "item",
+            "content": "hazennstuff:gabriel_ultrakill_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "supreme_witch_helmet": {
+            "type": "item",
+            "content": "hazennstuff:supreme_witch_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "supreme_witch_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:supreme_witch_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "supreme_witch_leggings": {
+            "type": "item",
+            "content": "hazennstuff:supreme_witch_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "supreme_witch_boots": {
+            "type": "item",
+            "content": "hazennstuff:supreme_witch_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "alchemist_supreme_helmet": {
+            "type": "item",
+            "content": "hazennstuff:alchemist_supreme_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "alchemist_supreme_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:alchemist_supreme_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "alchemist_supreme_leggings": {
+            "type": "item",
+            "content": "hazennstuff:alchemist_supreme_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "alchemist_supreme_boots": {
+            "type": "item",
+            "content": "hazennstuff:alchemist_supreme_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "mycelium_guardian_helmet": {
+            "type": "item",
+            "content": "hazennstuff:mycelium_guardian_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "mycelium_guardian_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:mycelium_guardian_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "mycelium_guardian_leggings": {
+            "type": "item",
+            "content": "hazennstuff:mycelium_guardian_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1400,
+            "weightMult": 0.003561162974079821,
+            "effectiveValue": 1400
+        },
+        "mycelium_guardian_boots": {
+            "type": "item",
+            "content": "hazennstuff:mycelium_guardian_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "radiant_crystal_helmet": {
+            "type": "item",
+            "content": "hazennstuff:radiant_crystal_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "radiant_crystal_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:radiant_crystal_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "radiant_crystal_leggings": {
+            "type": "item",
+            "content": "hazennstuff:radiant_crystal_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "radiant_crystal_boots": {
+            "type": "item",
+            "content": "hazennstuff:radiant_crystal_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "glassweaver_helmet": {
+            "type": "item",
+            "content": "hazennstuff:glassweaver_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "glassweaver_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:glassweaver_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "glassweaver_leggings": {
+            "type": "item",
+            "content": "hazennstuff:glassweaver_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "glassweaver_boots": {
+            "type": "item",
+            "content": "hazennstuff:glassweaver_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "masked_fool_helmet": {
+            "type": "item",
+            "content": "hazennstuff:masked_fool_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "masked_fool_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:masked_fool_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "masked_fool_leggings": {
+            "type": "item",
+            "content": "hazennstuff:masked_fool_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "masked_fool_boots": {
+            "type": "item",
+            "content": "hazennstuff:masked_fool_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "shadow_jester_helmet": {
+            "type": "item",
+            "content": "hazennstuff:shadow_jester_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "shadow_jester_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:shadow_jester_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "shadow_jester_leggings": {
+            "type": "item",
+            "content": "hazennstuff:shadow_jester_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "shadow_jester_boots": {
+            "type": "item",
+            "content": "hazennstuff:shadow_jester_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "cosmic_scholar_helmet": {
+            "type": "item",
+            "content": "hazennstuff:cosmic_scholar_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "cosmic_scholar_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:cosmic_scholar_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "cosmic_scholar_leggings": {
+            "type": "item",
+            "content": "hazennstuff:cosmic_scholar_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "cosmic_scholar_boots": {
+            "type": "item",
+            "content": "hazennstuff:cosmic_scholar_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "astraconic_weaver_helmet": {
+            "type": "item",
+            "content": "hazennstuff:astraconic_weaver_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "astraconic_weaver_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:astraconic_weaver_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "astraconic_weaver_leggings": {
+            "type": "item",
+            "content": "hazennstuff:astraconic_weaver_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "astraconic_weaver_boots": {
+            "type": "item",
+            "content": "hazennstuff:astraconic_weaver_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "dark_ritual_templar_helmet": {
+            "type": "item",
+            "content": "hazennstuff:dark_ritual_templar_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "dark_ritual_templar_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:dark_ritual_templar_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "dark_ritual_templar_leggings": {
+            "type": "item",
+            "content": "hazennstuff:dark_ritual_templar_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "dark_ritual_templar_boots": {
+            "type": "item",
+            "content": "hazennstuff:dark_ritual_templar_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "infestation_helmet": {
+            "type": "item",
+            "content": "hazennstuff:infestation_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "infestation_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:infestation_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "infestation_leggings": {
+            "type": "item",
+            "content": "hazennstuff:infestation_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "infestation_boots": {
+            "type": "item",
+            "content": "hazennstuff:infestation_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "legionnaire_helmet": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "legionnaire_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "legionnaire_leggings": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1400,
+            "weightMult": 0.003561162974079821,
+            "effectiveValue": 1400
+        },
+        "legionnaire_boots": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "garments_of_the_first_flamebearer_helmet": {
+            "type": "item",
+            "content": "hazennstuff:garments_of_the_first_flamebearer_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.006359219596571109,
+            "effectiveValue": 2500
+        },
+        "garments_of_the_first_flamebearer_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:garments_of_the_first_flamebearer_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.010174751354513773,
+            "effectiveValue": 4000
+        },
+        "garments_of_the_first_flamebearer_leggings": {
+            "type": "item",
+            "content": "hazennstuff:garments_of_the_first_flamebearer_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3500,
+            "weightMult": 0.008902907435199552,
+            "effectiveValue": 3500
+        },
+        "garments_of_the_first_flamebearer_boots": {
+            "type": "item",
+            "content": "hazennstuff:garments_of_the_first_flamebearer_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "frieren_helmet": {
+            "type": "item",
+            "content": "hazennstuff:frieren_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "frieren_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:frieren_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "frieren_leggings": {
+            "type": "item",
+            "content": "hazennstuff:frieren_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "frieren_boots": {
+            "type": "item",
+            "content": "hazennstuff:frieren_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "giorno_giovanna_helmet": {
+            "type": "item",
+            "content": "hazennstuff:giorno_giovanna_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "giorno_giovanna_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:giorno_giovanna_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "giorno_giovanna_leggings": {
+            "type": "item",
+            "content": "hazennstuff:giorno_giovanna_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "giorno_giovanna_boots": {
+            "type": "item",
+            "content": "hazennstuff:giorno_giovanna_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "frostbite_knight_helmet": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_knight_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "frostbite_knight_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_knight_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "frostbite_knight_leggings": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_knight_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "frostbite_knight_boots": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_knight_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "dreadsteel_knight_helmet": {
+            "type": "item",
+            "content": "hazennstuff:dreadsteel_knight_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "dreadsteel_knight_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:dreadsteel_knight_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1280,
+            "weightMult": 0.003255920433444408,
+            "effectiveValue": 1280
+        },
+        "dreadsteel_knight_leggings": {
+            "type": "item",
+            "content": "hazennstuff:dreadsteel_knight_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1120,
+            "weightMult": 0.002848930379263857,
+            "effectiveValue": 1120
+        },
+        "dreadsteel_knight_boots": {
+            "type": "item",
+            "content": "hazennstuff:dreadsteel_knight_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 640,
+            "weightMult": 0.001627960216722204,
+            "effectiveValue": 640
+        },
+        "bounty_hunter_helmet": {
+            "type": "item",
+            "content": "hazennstuff:bounty_hunter_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0012718439193142217,
+            "effectiveValue": 500
+        },
+        "bounty_hunter_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:bounty_hunter_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "bounty_hunter_leggings": {
+            "type": "item",
+            "content": "hazennstuff:bounty_hunter_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0017805814870399104,
+            "effectiveValue": 700
+        },
+        "bounty_hunter_boots": {
+            "type": "item",
+            "content": "hazennstuff:bounty_hunter_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0010174751354513774,
+            "effectiveValue": 400
+        },
+        "frostbite_hunter_helmet": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_hunter_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "frostbite_hunter_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_hunter_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "frostbite_hunter_leggings": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_hunter_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "frostbite_hunter_boots": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_hunter_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "permafrost_prince_helmet": {
+            "type": "item",
+            "content": "hazennstuff:permafrost_prince_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "permafrost_prince_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:permafrost_prince_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "permafrost_prince_leggings": {
+            "type": "item",
+            "content": "hazennstuff:permafrost_prince_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "permafrost_prince_boots": {
+            "type": "item",
+            "content": "hazennstuff:permafrost_prince_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "magehunter_helmet": {
+            "type": "item",
+            "content": "hazennstuff:magehunter_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "magehunter_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:magehunter_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "magehunter_leggings": {
+            "type": "item",
+            "content": "hazennstuff:magehunter_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1400,
+            "weightMult": 0.003561162974079821,
+            "effectiveValue": 1400
+        },
+        "magehunter_boots": {
+            "type": "item",
+            "content": "hazennstuff:magehunter_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "mithril_battlemage_helmet": {
+            "type": "item",
+            "content": "hazennstuff:mithril_battlemage_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.0025436878386284434,
+            "effectiveValue": 1000
+        },
+        "mithril_battlemage_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:mithril_battlemage_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "mithril_battlemage_leggings": {
+            "type": "item",
+            "content": "hazennstuff:mithril_battlemage_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1400,
+            "weightMult": 0.003561162974079821,
+            "effectiveValue": 1400
+        },
+        "mithril_battlemage_boots": {
+            "type": "item",
+            "content": "hazennstuff:mithril_battlemage_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.002034950270902755,
+            "effectiveValue": 800
+        },
+        "arbitrium_robes_helmet": {
+            "type": "item",
+            "content": "hazennstuff:arbitrium_robes_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "arbitrium_robes_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:arbitrium_robes_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "arbitrium_robes_leggings": {
+            "type": "item",
+            "content": "hazennstuff:arbitrium_robes_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "arbitrium_robes_boots": {
+            "type": "item",
+            "content": "hazennstuff:arbitrium_robes_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "maverick_helmet": {
+            "type": "item",
+            "content": "hazennstuff:maverick_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "maverick_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:maverick_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "maverick_leggings": {
+            "type": "item",
+            "content": "hazennstuff:maverick_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "maverick_boots": {
+            "type": "item",
+            "content": "hazennstuff:maverick_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "slc_cat_helmet": {
+            "type": "item",
+            "content": "hazennstuff:slc_cat_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "slc_cat_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:slc_cat_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "slc_cat_leggings": {
+            "type": "item",
+            "content": "hazennstuff:slc_cat_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "slc_cat_boots": {
+            "type": "item",
+            "content": "hazennstuff:slc_cat_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "abberant_predator_helmet": {
+            "type": "item",
+            "content": "hazennstuff:abberant_predator_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        },
+        "abberant_predator_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:abberant_predator_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2400,
+            "weightMult": 0.006104850812708265,
+            "effectiveValue": 2400
+        },
+        "abberant_predator_leggings": {
+            "type": "item",
+            "content": "hazennstuff:abberant_predator_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2100,
+            "weightMult": 0.005341744461119732,
+            "effectiveValue": 2100
+        },
+        "abberant_predator_boots": {
+            "type": "item",
+            "content": "hazennstuff:abberant_predator_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "iron431_helmet": {
+            "type": "item",
+            "content": "hazennstuff:iron431_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "iron431_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:iron431_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "iron431_leggings": {
+            "type": "item",
+            "content": "hazennstuff:iron431_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "iron431_boots": {
+            "type": "item",
+            "content": "hazennstuff:iron431_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "sacred_robes_helmet": {
+            "type": "item",
+            "content": "hazennstuff:sacred_robes_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.0030524254063541323,
+            "effectiveValue": 1200
+        },
+        "sacred_robes_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:sacred_robes_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1920,
+            "weightMult": 0.004883880650166612,
+            "effectiveValue": 1920
+        },
+        "sacred_robes_leggings": {
+            "type": "item",
+            "content": "hazennstuff:sacred_robes_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1680,
+            "weightMult": 0.004273395568895785,
+            "effectiveValue": 1680
+        },
+        "sacred_robes_boots": {
+            "type": "item",
+            "content": "hazennstuff:sacred_robes_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 960,
+            "weightMult": 0.002441940325083306,
+            "effectiveValue": 960
+        },
+        "lemon_god_helmet": {
+            "type": "item",
+            "content": "hazennstuff:lemon_god_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.005087375677256887,
+            "effectiveValue": 2000
+        },
+        "lemon_god_chestplate": {
+            "type": "item",
+            "content": "hazennstuff:lemon_god_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00813980108361102,
+            "effectiveValue": 3200
+        },
+        "lemon_god_leggings": {
+            "type": "item",
+            "content": "hazennstuff:lemon_god_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2800,
+            "weightMult": 0.007122325948159642,
+            "effectiveValue": 2800
+        },
+        "lemon_god_boots": {
+            "type": "item",
+            "content": "hazennstuff:lemon_god_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.00406990054180551,
+            "effectiveValue": 1600
+        },
+        "monstrous_helm": {
+            "type": "item",
+            "content": "cataclysm:monstrous_helm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.0038155317579426653,
+            "effectiveValue": 1500
+        }
+    },
+    "requires": [
+        "alshanex_familiars",
+        "cataclysm",
+        "create",
+        "create_sa",
+        "evolvedmekanism",
+        "hazennstuff",
+        "irons_spellbooks",
+        "iss_magicfromtheeast",
+        "mekanismtools",
+        "minecraft",
+        "northstar",
+        "protection_pixel"
+    ]
+}

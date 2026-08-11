@@ -1,0 +1,32 @@
+{
+  "type": "evolvedmekanism:alloying",
+
+  "conditions": [
+    {
+      "type": "neoforge:tag_non_empty",
+      "tag": "c:ingots/zinc"
+    },
+    {
+      "type": "neoforge:tag_non_empty",
+      "tag": "c:ingots/copper"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+
+  "extra_input": {
+    "tag": "c:ingots/zinc"
+  },
+  "second_extra_input": {
+    "tag": "c:gems/coal"
+  },
+  "main_input": {
+    "tag": "c:ingots/copper"
+  },
+  "output": {
+    "id": "create:brass_ingot",
+    "count": 2
+  }
+}

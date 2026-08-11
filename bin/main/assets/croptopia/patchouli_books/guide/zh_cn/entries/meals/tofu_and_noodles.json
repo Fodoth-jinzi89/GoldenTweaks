@@ -1,0 +1,12 @@
+{
+  "name": "豆腐和饺子",
+  "icon": "croptopia:tofu_and_dumplings",
+  "category": "croptopia:meals",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:tofu_and_dumplings",
+      "text": "豆腐和饺子的食谱。"
+    }
+  ]
+}

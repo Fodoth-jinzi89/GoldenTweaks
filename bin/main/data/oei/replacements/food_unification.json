@@ -1,0 +1,2417 @@
+[
+  {
+    "matchItems": [
+      "chang_sheng_jue:apple_juice",
+      "enhancedfarming:apple_juice",
+      "flavor_immersed_daily:applejuice",
+      "legendarysurvivaloverhaul:apple_juice",
+      "manors_bounty:apple_juice",
+      "manors_bounty:apple_juice_block",
+      "pamhc2foodcore:applejuiceitem",
+      "pasterdream:apple_juice",
+      "unusual_delight:apple_juice",
+      "vanillacookbook:apple_juice",
+      "vinery:apple_juice",
+      "croptopia:apple_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:applejuice"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:apple_sapling",
+      "flavor_immersed_daily:applesapling",
+      "fruitsdelight:apple_sapling",
+      "pamhc2trees:apple_sapling",
+      "simplefarming:apple_sapling",
+      "vinery:apple_tree_sapling",
+      "croptopia:apple_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:applesapling"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:peanut_0",
+      "croptopia:peanut_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:peanut_0"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:apricot",
+      "pamhc2trees:apricotitem",
+      "productivetrees:apricot",
+      "simplefarming:apricot",
+      "tofucraft:apricot",
+      "croptopia:apricot"
+    ],
+    "resultItems": "flavor_immersed_daily:apricot"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:apricotjam",
+      "pamhc2foodextended:apricotjellyitem",
+      "tofucraft:apricotjerry_bottle",
+      "croptopia:apricot_jam"
+    ],
+    "resultItems": "flavor_immersed_daily:apricotjam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:apricotsapling",
+      "pamhc2trees:apricot_sapling",
+      "productivetrees:apricot_sapling",
+      "simplefarming:apricot_sapling",
+      "tofucraft:apricotseed",
+      "tofucraft:sapling_apricot",
+      "croptopia:apricot_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:apricotsapling"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:artichokeitem",
+      "croptopia:artichoke"
+    ],
+    "resultItems": "croptopia:artichoke"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:artichokeseeditem",
+      "croptopia:artichoke_seed"
+    ],
+    "resultItems": "croptopia:artichoke_seed"
+  },
+  {
+    "matchItems": [
+      "crockpot:asparagus",
+      "pamhc2crops:asparagusitem",
+      "croptopia:asparagus"
+    ],
+    "resultItems": "croptopia:asparagus"
+  },
+  {
+    "matchItems": [
+      "crockpot:asparagus_seeds",
+      "pamhc2crops:asparagusseeditem",
+      "croptopia:asparagus_seed"
+    ],
+    "resultItems": "croptopia:asparagus_seed"
+  },
+  {
+    "matchItems": [
+      "culturaldelights:avocado",
+      "enhancedfarming:avocado",
+      "manors_bounty:avocado",
+      "pamhc2trees:avocadoitem",
+      "croptopia:avocado"
+    ],
+    "resultItems": "croptopia:avocado"
+  },
+  {
+    "matchItems": [
+      "culturaldelights:avocado_sapling",
+      "enhancedfarming:avocado_sapling",
+      "pamhc2trees:avocado_sapling",
+      "croptopia:avocado_sapling"
+    ],
+    "resultItems": "croptopia:avocado_sapling"
+  },
+  {
+    "matchItems": [
+      "alexsmobs:banana",
+      "chang_sheng_jue:banana",
+      "enhancedfarming:banana",
+      "manors_bounty:banana",
+      "neapolitan:banana",
+      "productivetrees:banana",
+      "simplefarming:banana",
+      "croptopia:banana",
+	  "flavor_immersed_daily:banana"
+    ],
+    "resultItems": "flavor_immersed_daily:banana"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:banana_sapling",
+      "enhancedfarming:banana_sapling",
+      "flavor_immersed_daily:bananasapling",
+      "pamhc2trees:banana_sapling",
+      "productivetrees:banana_sapling",
+      "simplefarming:banana_sapling",
+      "croptopia:banana_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:bananasapling"
+  },
+    {
+    "matchItems": [
+      "flavor_immersed_daily:nutmegseed",
+      "croptopia:nutmeg_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:nutmegseed"
+  },
+      {
+    "matchItems": [
+      "flavor_immersed_daily:nutmeg",
+      "croptopia:nutmeg"
+    ],
+    "resultItems": "flavor_immersed_daily:nutmeg"
+  },
+  {
+    "matchItems": [
+      "biomesoplenty:barley",
+      "chang_sheng_jue:hordeum",
+      "farm_and_charm:barley",
+      "pamhc2crops:barleyitem",
+      "simplefarming:barley",
+      "thermal:barley",
+      "croptopia:barley"
+    ],
+    "resultItems": "croptopia:barley"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:hordeum_seeds",
+      "farm_and_charm:barley_seeds",
+      "pamhc2crops:barleyseeditem",
+      "simplefarming:barley_seeds",
+      "thermal:barley_seeds",
+      "croptopia:barley_seed"
+    ],
+    "resultItems": "croptopia:barley_seed"
+  },
+  {
+    "matchItems": [
+      "ltc2:pepper_sweet",
+      "minecolonies:bell_pepper",
+      "pamhc2crops:bellpepperitem",
+      "croptopia:bellpepper"
+    ],
+    "resultItems": "croptopia:bellpepper"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:blackberryitem",
+      "simplefarming:blackberries",
+      "croptopia:blackberry"
+    ],
+    "resultItems": "croptopia:blackberry"
+  },
+  {
+    "matchItems": [
+      "pamhc2foodextended:blackberryjellyitem",
+      "croptopia:blackberry_jam"
+    ],
+    "resultItems": "croptopia:blackberry_jam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:blueberry",
+      "fruitsdelight:blueberry",
+      "manors_bounty:blueberry",
+      "simplefarming:blueberries",
+      "croptopia:blueberry"
+    ],
+    "resultItems": "flavor_immersed_daily:blueberry"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:blueberryjam",
+      "fruitsdelight:blueberry_jelly",
+      "pamhc2foodextended:blueberryjellyitem",
+      "croptopia:blueberry_jam"
+    ],
+    "resultItems": "flavor_immersed_daily:blueberryjam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:blueberryseed",
+      "pamhc2crops:blueberryseeditem",
+      "croptopia:blueberry_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:blueberryseed"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:broccoliitem",
+      "pizzacraft:broccoli",
+      "croptopia:broccoli",
+	  "flavor_immersed_daily:broccoil"
+    ],
+    "resultItems": "flavor_immersed_daily:broccoil"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:broccoliseeditem",
+      "pizzacraft:broccoli_seeds",
+      "croptopia:broccoli_seed",
+	  "flavor_immersed_daily:broccoilseed"
+    ],
+    "resultItems": "flavor_immersed_daily:broccoilseed"
+  },
+  {
+    "matchItems": [
+      "bakeries:butter_cube",
+      "braziliandelight:butter",
+      "craziness_awakened:butter",
+      "extradelight:butter",
+      "farm_and_charm:butter",
+      "flavor_immersed_daily:butter",
+      "manors_bounty:butter",
+      "minecolonies:butter",
+      "pamhc2foodcore:butteritem",
+      "youkaishomecoming:butter",
+      "croptopia:butter",
+	  "createbuttercat:butter"
+    ],
+    "resultItems": "flavor_immersed_daily:butter"
+  },
+  {
+    "matchItems": [
+      "extradelight:buttered_toast",
+      "croptopia:buttered_toast"
+    ],
+    "resultItems": "croptopia:buttered_toast"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:cantaloupe",
+      "pamhc2crops:cantaloupeitem",
+      "simplefarming:cantaloupe",
+      "croptopia:cantaloupe"
+    ],
+    "resultItems": "flavor_immersed_daily:hamimelon"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:cantaloupe_seeds",
+      "flavor_immersed_daily:hamimelonseed",
+      "manors_bounty:hamimelon_seed",
+      "pamhc2crops:cantaloupeseeditem",
+      "simplefarming:cantaloupe_seeds",
+      "croptopia:cantaloupe_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:hamimelonseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:cauliflower",
+      "pamhc2crops:caulifloweritem",
+      "croptopia:cauliflower"
+    ],
+    "resultItems": "flavor_immersed_daily:cauliflower"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:cauliflower_seed",
+      "pamhc2crops:cauliflowerseeditem",
+      "croptopia:cauliflower_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:cauliflower_seed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:celery",
+      "pamhc2crops:celeryitem",
+      "croptopia:celery"
+    ],
+    "resultItems": "flavor_immersed_daily:celery"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:celeryseed",
+      "pamhc2crops:celeryseeditem",
+      "croptopia:celery_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:celeryseed"
+  },
+  {
+    "matchItems": [
+      "argentinas_delight:queso",
+      "better_mcdonalds_mod:cheese",
+      "ce_foodstuffs:cheese",
+      "cozy:cheese",
+      "craziness_awakened:cheese",
+      "divinerpg:cheese",
+      "enhancedfarming:cheese",
+      "extradelight:cheese",
+      "meadow:piece_of_cheese",
+      "pamhc2foodcore:cheeseitem",
+      "pizzacraft:cheese",
+      "refurbished_furniture:cheese",
+      "sakura:cheese",
+      "simplefarming:cheese_slice",
+      "tconstruct:cheese_ingot",
+      "trailandtales_delight:cheese_slice",
+      "vanillacookbook:cheese",
+      "vintagedelight:cheese_slice",
+      "croptopia:cheese"
+    ],
+    "resultItems": "croptopia:cheese"
+  },
+  {
+    "matchItems": [
+      "delightful:cheeseburger",
+      "enhancedfarming:cheeseburger",
+      "extradelight:cheeseburger",
+      "vintagedelight:cheese_burger",
+      "croptopia:cheeseburger"
+    ],
+    "resultItems": "croptopia:cheeseburger"
+  },
+  {
+    "matchItems": [
+      "craziness_awakened:cherry",
+      "enhancedfarming:cherry",
+      "flavor_immersed_daily:cherry",
+      "seeddelight:cherry",
+      "simplefarming:cherries",
+      "vinery:cherry",
+      "croptopia:cherry"
+    ],
+    "resultItems": "flavor_immersed_daily:cherry"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:cherryjam",
+      "croptopia:cherry_jam"
+    ],
+    "resultItems": "flavor_immersed_daily:cherryjam"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:cherry_sapling",
+      "flavor_immersed_daily:cherrysapling",
+      "pamhc2trees:cherry_sapling",
+      "simplefarming:cherry_sapling",
+      "croptopia:cherry_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:cherrysapling"
+  },
+  {
+    "matchItems": [
+      "crockpot:pepper",
+      "kaleidoscope_cookery:red_chili",
+      "ltc2:pepper_red",
+      "muffins_thaidelight:pepper",
+      "pamhc2crops:chilipepperitem",
+      "pizzacraft:pepper",
+      "simplefarming:pepper",
+      "teastory:chili",
+      "tofucraft:chili",
+      "croptopia:chile_pepper"
+    ],
+    "resultItems": "kaleidoscope_cookery:red_chili"
+  },
+  {
+    "matchItems": [
+      "crockpot:pepper_seeds",
+      "kaleidoscope_cookery:chili_seed",
+      "muffins_thaidelight:pepper_seeds",
+      "pamhc2crops:chilipepperseeditem",
+      "pizzacraft:pepper_seeds",
+      "simplefarming:pepper_seeds",
+      "teastory:chili_seeds",
+      "tofucraft:seeds_chili",
+      "croptopia:chile_pepper_seed"
+    ],
+    "resultItems": "kaleidoscope_cookery:chili_seed"
+  },
+  {
+    "matchItems": [
+      "ce_foodstuffs:chocolate",
+      "cozy:chocolate",
+      "enhancedfarming:chocolate_bar",
+      "flavor_immersed_daily:chocolate",
+      "manors_bounty:chocolate",
+      "pasterdream:chocolate",
+      "vanillacookbook:chocolate",
+      "croptopia:chocolate",
+	  "create:bar_of_chocolate"
+    ],
+    "resultItems": "flavor_immersed_daily:chocolate"
+  },
+  {
+    "matchItems": [
+      "extradelight:cinnamon_stick",
+      "festive_delight:cinnamon_sticks",
+      "pamhc2trees:cinnamonitem",
+      "productivetrees:cinnamon",
+      "croptopia:cinnamon",
+	  "flavor_immersed_daily:cinnamon"
+    ],
+    "resultItems": "flavor_immersed_daily:cinnamon"
+  },
+  {
+    "matchItems": [
+      "extradelight:cinnamon_sapling",
+      "pamhc2trees:cinnamon_sapling",
+      "productivetrees:cinnamon_sapling",
+      "croptopia:cinnamon_sapling",
+	  "flavor_immersed_daily:cinnamon_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:cinnamon_sapling"
+  },
+  {
+    "matchItems": [
+      "farmersrespite:coffee",
+      "farmersrespite:long_coffee",
+      "farmersrespite:strong_coffee",
+      "manors_bounty:coffee",
+      "rusticdelight:coffee",
+      "croptopia:coffee"
+    ],
+    "resultItems": "croptopia:coffee"
+  },
+  {
+    "matchItems": [
+      "bakeries:coffee_bean",
+      "braziliandelight:coffee_beans",
+      "farmersrespite:coffee_beans",
+      "flavor_immersed_daily:coffeebean",
+      "herbalbrews:coffee_beans",
+      "kawaiidishes:roasted_coffee_beans",
+      "pamhc2crops:coffeebeanitem",
+      "productivetrees:coffee_bean",
+      "youkaishomecoming:coffee_beans",
+      "croptopia:coffee_beans"
+    ],
+    "resultItems": "flavor_immersed_daily:coffeebean"
+  },
+  {
+    "matchItems": [
+      "braziliandelight:coffee_seeds",
+      "pamhc2crops:coffeebeanseeditem",
+      "croptopia:coffee_seed",
+	  "flavor_immersed_daily:coffeebeanseed"
+    ],
+    "resultItems": "flavor_immersed_daily:coffeebeanseed"
+  },
+  {
+    "matchItems": [
+      "argentinas_delight:choclo",
+      "bountifulfares:maize",
+      "braziliandelight:corn",
+      "chang_sheng_jue:corn",
+      "corn_delight:corn",
+      "craziness_awakened:corn",
+      "crockpot:corn",
+      "culturaldelights:corn_cob",
+      "enhancedfarming:corn",
+      "extradelight:corn_on_cob",
+      "farm_and_charm:corn",
+      "flavor_immersed_daily:corn",
+      "manors_bounty:corn",
+      "minecolonies:corn",
+      "pamhc2crops:cornitem",
+      "pizzacraft:corn",
+      "simplefarming:corn",
+      "thermal:corn",
+      "croptopia:corn"
+    ],
+    "resultItems": "flavor_immersed_daily:corn"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:maize_bread",
+      "corn_delight:cornbread",
+      "pamhc2foodextended:cornbreaditem",
+      "simplefarming:cornbread",
+      "croptopia:corn_bread"
+    ],
+    "resultItems": "croptopia:corn_bread"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:maize_seeds",
+      "braziliandelight:kernels",
+      "chang_sheng_jue:corn_seeds",
+      "corn_delight:corn_seeds",
+      "crockpot:corn_seeds",
+      "culturaldelights:corn_kernels",
+      "enhancedfarming:corn_seeds",
+      "extradelight:corn_seeds",
+      "farm_and_charm:kernels",
+      "flavor_immersed_daily:corn_0",
+      "manors_bounty:corn_seed",
+      "pamhc2crops:cornseeditem",
+      "simplefarming:corn_seeds",
+      "croptopia:corn_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:corn_0"
+  },
+  {
+    "matchItems": [
+      "fruitsdelight:cranberry",
+      "manors_bounty:cranberry",
+      "pamhc2crops:cranberryitem",
+      "croptopia:cranberry"
+    ],
+    "resultItems": "croptopia:cranberry"
+  },
+  {
+    "matchItems": [
+      "pamhc2foodextended:cranberryjuiceitem",
+      "croptopia:cranberry_juice"
+    ],
+    "resultItems": "croptopia:cranberry_juice"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:cranberryseeditem",
+      "croptopia:cranberry_seed"
+    ],
+    "resultItems": "croptopia:cranberry_seed"
+  },
+  {
+    "matchItems": [
+      "culturaldelights:cucumber",
+      "enhancedfarming:cucumber",
+      "flavor_immersed_daily:cucumber",
+      "pamhc2crops:cucumberitem",
+      "pizzacraft:cucumber",
+      "simplefarming:cucumber",
+      "teastory:cucumber",
+      "vintagedelight:cucumber",
+      "youkaisfeasts:cucumber",
+      "youkaishomecoming:cucumber",
+      "croptopia:cucumber"
+    ],
+    "resultItems": "flavor_immersed_daily:cucumber"
+  },
+  {
+    "matchItems": [
+      "culturaldelights:cucumber_seeds",
+      "enhancedfarming:cucumber_seeds",
+      "flavor_immersed_daily:cucumber_seed",
+      "pamhc2crops:cucumberseeditem",
+      "pizzacraft:cucumber_seeds",
+      "simplefarming:cucumber_seeds",
+      "sushigocrafting:cucumber_seeds",
+      "vintagedelight:cucumber_seeds",
+      "youkaishomecoming:cucumber_seeds",
+      "croptopia:cucumber_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:cucumber_seed"
+  },
+  {
+    "matchItems": [
+      "manors_bounty:dragon_fruit",
+      "croptopia:dragonfruit",
+	  "flavor_immersed_daily:dragonfruit"
+    ],
+    "resultItems": "flavor_immersed_daily:dragonfruit"
+  },
+  {
+    "matchItems": [
+      "croptopia:dragonfruit_sapling",
+	  "flavor_immersed_daily:dragonfruitseed"
+    ],
+    "resultItems": "flavor_immersed_daily:dragonfruitseed"
+  },
+  {
+    "matchItems": [
+      "croptopia:coconut_sapling",
+	  "flavor_immersed_daily:coconutsapling"
+    ],
+    "resultItems": "flavor_immersed_daily:coconutsapling"
+  },
+  {
+    "matchItems": [
+      "croptopia:coconut",
+	  "flavor_immersed_daily:coconut"
+    ],
+    "resultItems": "flavor_immersed_daily:coconut"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:brinjal",
+      "crockpot:eggplant",
+      "culturaldelights:eggplant",
+      "dumplings_delight:eggplant",
+      "enhancedfarming:aubergine",
+      "minecolonies:eggplant",
+      "pamhc2crops:eggplantitem",
+      "sakura:eggplant",
+      "simplefarming:eggplant",
+      "thermal:eggplant",
+      "croptopia:eggplant",
+	  "flavor_immersed_daily:aubergine"
+    ],
+    "resultItems": "flavor_immersed_daily:aubergine"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:brinjal_seeds",
+      "crockpot:eggplant_seeds",
+      "culturaldelights:eggplant_seeds",
+      "dumplings_delight:eggplant_seeds",
+      "enhancedfarming:aubergine_seeds",
+      "flavor_immersed_daily:aubergineseed",
+      "flavor_immersed_daily:aubergineseedblock",
+      "pamhc2crops:eggplantseeditem",
+      "sakura:eggplant_seeds",
+      "simplefarming:eggplant_seeds",
+      "croptopia:eggplant_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:aubergineseed"
+  },
+  {
+    "matchItems": [
+      "pamhc2foodextended:elderberryjellyitem",
+      "croptopia:elderberry_jam"
+    ],
+    "resultItems": "croptopia:elderberry_jam"
+  },
+  {
+    "matchItems": [
+      "fruitsdelight:fig",
+      "manors_bounty:fig",
+      "pamhc2trees:figitem",
+      "pasterdream:fig",
+      "productivetrees:fig",
+      "croptopia:fig"
+    ],
+    "resultItems": "croptopia:fig"
+  },
+  {
+    "matchItems": [
+      "fruitsdelight:fig_sapling",
+      "pamhc2trees:fig_sapling",
+      "productivetrees:sycamore_fig_sapling",
+      "croptopia:fig_sapling"
+    ],
+    "resultItems": "croptopia:fig_sapling"
+  },
+  {
+    "matchItems": [
+      "argentinas_delight:harinadetrigo",
+      "bakeries:flour",
+      "bountifulfares:flour",
+      "enhancedfarming:flour",
+      "farm_and_charm:flour",
+      "flavor_immersed_daily:wheatflour",
+      "ltc2:wheat_powder",
+      "pamhc2foodcore:flouritem",
+      "pasterdream:flour",
+      "refurbished_furniture:wheat_flour",
+      "sakura:flour",
+      "croptopia:flour",
+	  "kaleidoscope_cookery:flour"
+    ],
+    "resultItems": "flavor_immersed_daily:wheatflour"
+  },
+  {
+    "matchItems": [
+      "create:wheat_flour",
+      "bakeries:whole_wheat_flour",
+      "ae2cs:flour"
+    ],
+    "resultItems": "create:wheat_flour"
+  },
+  {
+    "matchItems": [
+      "crabbersdelight:cooked_frog_leg",
+      "crockpot:cooked_frog_legs",
+      "extrameat:cooked_frog_leg",
+      "croptopia:fried_frog_legs"
+    ],
+    "resultItems": "croptopia:fried_frog_legs"
+  },
+  {
+    "matchItems": [
+      "crabbersdelight:raw_frog_leg",
+      "crockpot:frog_legs",
+      "extrameat:raw_frog_leg",
+      "croptopia:frog_legs"
+    ],
+    "resultItems": "croptopia:frog_legs"
+  },
+  {
+    "matchItems": [
+      "braziliandelight:garlic",
+      "crockpot:garlic",
+      "dumplings_delight:garlic",
+      "enhancedfarming:garlic",
+      "manors_bounty:garlic",
+      "minecolonies:garlic",
+      "ubesdelight:garlic",
+      "croptopia:garlic",
+	  "flavor_immersed_daily:garlic"
+    ],
+    "resultItems": "flavor_immersed_daily:garlic"
+  },
+  {
+    "matchItems": [
+      "crockpot:garlic_seeds",
+      "enhancedfarming:garlic_seeds",
+      "pamhc2crops:garlicseeditem",
+      "croptopia:garlic_seed",
+	  "flavor_immersed_daily:garlicseed"
+    ],
+    "resultItems": "flavor_immersed_daily:garlicseed"
+  },
+  {
+    "matchItems": [
+      "extradelight:ginger",
+      "flavor_immersed_daily:ginger",
+      "pamhc2crops:gingeritem",
+      "simplefarming:ginger",
+      "ubesdelight:ginger",
+      "croptopia:ginger"
+    ],
+    "resultItems": "flavor_immersed_daily:ginger"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:ginger_seed",
+      "pamhc2crops:gingerseeditem",
+      "simplefarming:ginger_seeds",
+      "croptopia:ginger_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:ginger_seed"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:grape",
+      "enhancedfarming:grapes",
+      "flavor_immersed_daily:grape",
+      "manors_bounty:grape",
+      "pamhc2crops:grapeitem",
+      "simplefarming:grapes",
+      "teastory:grapes",
+      "vinery:red_grape",
+      "youkaisfeasts:red_grape",
+      "youkaishomecoming:red_grape",
+      "croptopia:grape",
+	  "kaleidoscope_tavern:grape"
+    ],
+    "resultItems": "flavor_immersed_daily:grape"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:goldengrape",
+	  "kaleidoscope_tavern:gold_grape"
+    ],
+    "resultItems": "flavor_immersed_daily:goldengrape"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:grapejam",
+      "pamhc2foodextended:grapejellyitem",
+      "croptopia:grape_jam"
+    ],
+    "resultItems": "flavor_immersed_daily:grapejam"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:grape_juice",
+      "flavor_immersed_daily:grapejuice",
+      "manors_bounty:grape_juice",
+      "manors_bounty:grape_juice_block",
+      "pamhc2foodextended:grapejuiceitem",
+      "croptopia:grape_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:grapejuice"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:grape_seeds",
+      "flavor_immersed_daily:grapeseed",
+      "manors_bounty:grape_seed",
+      "pamhc2crops:grapeseeditem",
+      "simplefarming:grape_seeds",
+      "croptopia:grape_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:grapeseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:mungbean_0",
+      "gan_delight_reborn:mung_bean",
+      "croptopia:greenbean_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:mungbean_0"
+  },
+  {
+    "matchItems": [
+      "dumplings_delight:greenonion",
+      "pamhc2crops:scallionitem",
+      "croptopia:greenonion"
+    ],
+    "resultItems": "croptopia:greenonion"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:scallionseeditem",
+      "croptopia:greenonion_seed"
+    ],
+    "resultItems": "croptopia:greenonion_seed"
+  },
+  {
+    "matchItems": [
+      "extradelight:cheese_sandwich",
+      "meadow:cheese_sandwich",
+      "pamhc2foodcore:grilledcheeseitem",
+      "pamhc2foodextended:groiledcheesesandwichitem",
+      "refurbished_furniture:cheese_sandwich",
+      "refurbished_furniture:cheese_toastie",
+      "croptopia:grilled_cheese"
+    ],
+    "resultItems": "croptopia:grilled_cheese"
+  },
+  {
+    "matchItems": [
+      "braziliandelight:collard_greens",
+      "croptopia:kale"
+    ],
+    "resultItems": "croptopia:kale"
+  },
+  {
+    "matchItems": [
+      "braziliandelight:collard_greens_seeds",
+      "croptopia:kale_seed"
+    ],
+    "resultItems": "croptopia:kale_seed"
+  },
+  {
+    "matchItems": [
+      "croptopia:kiwi_seed",
+	  "flavor_immersed_daily:kiwifruitsleavesapling"
+    ],
+    "resultItems": "flavor_immersed_daily:kiwifruitsleavesapling"
+  },
+  {
+    "matchItems": [
+      "fruitsdelight:kiwi",
+      "croptopia:kiwi",
+	  "flavor_immersed_daily:kiwifruit"
+    ],
+    "resultItems": "flavor_immersed_daily:kiwifruit"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:leek",
+      "pamhc2crops:leekitem",
+      "tofucraft:leek",
+      "croptopia:leek"
+    ],
+    "resultItems": "croptopia:leek"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:leek_seeds",
+      "croptopia:leek_seed"
+    ],
+    "resultItems": "croptopia:leek_seed"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:lemon",
+      "braziliandelight:lemon",
+      "enhancedfarming:lemon",
+      "fruitsdelight:lemon",
+      "manors_bounty:lemon",
+      "croptopia:lemon",
+	  "hazennstuff:lemon"
+    ],
+    "resultItems": "flavor_immersed_daily:lemon"
+  },
+  {
+    "matchItems": [
+      "braziliandelight:lemon_sapling",
+      "enhancedfarming:lemon_sapling",
+      "flavor_immersed_daily:lemonsapling",
+      "pamhc2trees:lemon_sapling",
+      "productivetrees:lemon_sapling",
+      "croptopia:lemon_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:lemonsapling"
+  },
+  {
+    "matchItems": [
+      "croptopia:lemonade",
+      "flavor_immersed_daily:lemonjuice"
+    ],
+    "resultItems": "flavor_immersed_daily:lemonjuice"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:lettuce",
+      "ce_foodstuffs:lettuce",
+      "craziness_awakened:leuce",
+      "enhancedfarming:lettuce",
+      "farm_and_charm:lettuce",
+      "gan_delight_reborn:vegetable",
+      "kaleidoscope_cookery:lettuce",
+      "pamhc2crops:lettuceitem",
+      "simplefarming:lettuce",
+      "croptopia:lettuce"
+    ],
+    "resultItems": "kaleidoscope_cookery:lettuce"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:lettuce_seeds",
+      "ce_foodstuffs:lettuce_seeds",
+      "enhancedfarming:lettuce_seeds",
+      "farm_and_charm:lettuce_seeds",
+      "kaleidoscope_cookery:lettuce_seed",
+      "pamhc2crops:lettuceseeditem",
+      "simplefarming:lettuce_seeds",
+      "croptopia:lettuce_seed"
+    ],
+    "resultItems": "kaleidoscope_cookery:lettuce_seed"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:mango",
+      "enhancedfarming:mango",
+      "flavor_immersed_daily:mango",
+      "fruitsdelight:mango",
+      "manors_bounty:mango",
+      "simplefarming:mango",
+      "pamhc2trees:mangoitem",
+      "productivetrees:mango",
+      "croptopia:mango"
+    ],
+    "resultItems": "flavor_immersed_daily:mango"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:mangoicecream",
+      "croptopia:mango_ice_cream"
+    ],
+    "resultItems": "flavor_immersed_daily:mangoicecream"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:mango_sapling",
+      "enhancedfarming:mango_sapling",
+      "flavor_immersed_daily:mangosapling",
+      "fruitsdelight:mango_sapling",
+      "pamhc2trees:mango_sapling",
+      "productivetrees:mango_sapling",
+      "simplefarming:mango_sapling",
+      "croptopia:mango_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:mangosapling"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:capsule",
+      "croptopia:mustard"
+    ],
+    "resultItems": "croptopia:mustard"
+  },
+  {
+    "matchItems": [
+      "farm_and_charm:oat",
+      "flavor_immersed_daily:oat",
+      "pamhc2crops:oatsitem",
+      "simplefarming:oat",
+      "vintagedelight:oat",
+      "croptopia:oat"
+    ],
+    "resultItems": "flavor_immersed_daily:oat"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:oakporridge",
+      "croptopia:oatmeal"
+    ],
+    "resultItems": "flavor_immersed_daily:oakporridge"
+  },
+  {
+    "matchItems": [
+      "farm_and_charm:oat_seeds",
+      "flavor_immersed_daily:oatseed",
+      "pamhc2crops:oatsseeditem",
+      "simplefarming:oat_seeds",
+      "vintagedelight:oat_seeds",
+      "croptopia:oat_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:oatseed"
+  },
+  {
+    "matchItems": [
+      "bakeries:olive",
+      "enhancedfarming:olive",
+      "manors_bounty:olive_fruit",
+      "pamhc2trees:oliveitem",
+      "pizzacraft:olive",
+      "productivetrees:olive",
+      "simplefarming:olives",
+      "croptopia:olive"
+    ],
+    "resultItems": "croptopia:olive"
+  },
+  {
+    "matchItems": [
+      "bakeries:olive_oil",
+      "enhancedfarming:olive_oil",
+      "pizzacraft:olive_oil",
+      "simplefarming:olive_oil",
+      "croptopia:olive_oil"
+    ],
+    "resultItems": "croptopia:olive_oil"
+  },
+  {
+    "matchItems": [
+      "manors_bounty:olive_fruit_seed",
+      "croptopia:olive_seed"
+    ],
+    "resultItems": "croptopia:olive_seed"
+  },
+  {
+    "matchItems": [
+      "crockpot:onion_seeds",
+      "enhancedfarming:onion_seeds",
+      "flavor_immersed_daily:onionseed",
+      "pamhc2crops:onionseeditem",
+      "sakura:onion_seeds",
+      "simplefarming:onion_seeds",
+      "croptopia:onion_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:onionseed"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:orange",
+      "enhancedfarming:orange",
+      "flavor_immersed_daily:orange",
+      "pamhc2trees:orangeitem",
+      "productivetrees:orange",
+      "simplefarming:orange",
+      "croptopia:orange"
+    ],
+    "resultItems": "flavor_immersed_daily:orange"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:orangesapling",
+      "croptopia:orange_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:orangesapling"
+  },
+    {
+    "matchItems": [
+      "flavor_immersed_daily:walnutsapling",
+      "croptopia:walnut_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:walnutsapling"
+  },
+    {
+    "matchItems": [
+      "flavor_immersed_daily:walnut",
+      "croptopia:walnut"
+    ],
+    "resultItems": "flavor_immersed_daily:walnut"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:nectarinesapling",
+      "croptopia:nectarine_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:nectarinesapling"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:nectarine",
+      "croptopia:nectarine"
+    ],
+    "resultItems": "flavor_immersed_daily:nectarine"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:honeypeachsapling",
+      "croptopia:peach_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:honeypeachsapling"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:honeypeach",
+      "croptopia:peach"
+    ],
+    "resultItems": "flavor_immersed_daily:honeypeach"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:honeypeachjam",
+      "croptopia:peach_jam"
+    ],
+    "resultItems": "flavor_immersed_daily:honeypeachjam"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:orange_juice",
+      "flavor_immersed_daily:orangejuice",
+      "croptopia:orange_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:orangejuice"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:peanut",
+      "flavor_immersed_daily:peanut",
+      "jellyfishing:seanut",
+      "pamhc2crops:peanutitem",
+      "simplefarming:peanut",
+      "thermal:peanut",
+      "vintagedelight:peanut",
+      "croptopia:peanut"
+    ],
+    "resultItems": "flavor_immersed_daily:peanut"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:peanut_0",
+      "croptopia:peanut_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:peanut_0"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:broccoliseed",
+      "croptopia:broccoli_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:broccoliseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:broccoli",
+      "croptopia:broccoli"
+    ],
+    "resultItems": "flavor_immersed_daily:broccoli"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:peanutjam",
+      "jellyfishing:seanut_butter",
+      "pamhc2foodextended:peanutbutteritem",
+      "thermal:peanut_butter",
+      "croptopia:peanut_butter"
+    ],
+    "resultItems": "flavor_immersed_daily:peanutjam"
+  },
+  {
+    "matchItems": [
+      "thermal:pbj_sandwich",
+      "vintagedelight:pb_j",
+      "croptopia:peanut_butter_and_jam"
+    ],
+    "resultItems": "croptopia:peanut_butter_and_jam"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:peanutseeditem",
+      "simplefarming:peanut_seeds",
+      "thermal:peanut_seeds",
+      "croptopia:peanut_seed"
+    ],
+    "resultItems": "croptopia:peanut_seed"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:pear",
+      "enhancedfarming:pear",
+      "flavor_immersed_daily:pear",
+      "fruitsdelight:pear",
+      "pamhc2trees:pearitem",
+      "productivetrees:pear",
+      "simplefarming:pear",
+      "croptopia:pear"
+    ],
+    "resultItems": "flavor_immersed_daily:pear"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:pear_sapling",
+      "enhancedfarming:pear_sapling",
+      "flavor_immersed_daily:pearsapling",
+      "pamhc2trees:pear_sapling",
+      "productivetrees:cultivated_pear_sapling",
+      "simplefarming:pear_sapling",
+      "croptopia:pear_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:pearsapling"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:jalapenos",
+      "ltc2:pepper_black",
+      "croptopia:pepper"
+    ],
+    "resultItems": "croptopia:pepper"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:jalapenos_seeds",
+      "croptopia:pepper_seed"
+    ],
+    "resultItems": "croptopia:pepper_seed"
+  },
+  {
+    "matchItems": [
+      "fruitsdelight:persimmon",
+      "productivetrees:persimmon",
+      "croptopia:persimmon"
+    ],
+    "resultItems": "croptopia:persimmon"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:pineapple",
+      "craziness_awakened:pineapple",
+      "enhancedfarming:pineapple",
+      "flavor_immersed_daily:pineapple",
+      "fruitsdelight:pineapple",
+      "jellyfishing:pineapple",
+      "manors_bounty:pineapple",
+      "pizzacraft:pineapple",
+      "croptopia:pineapple"
+    ],
+    "resultItems": "flavor_immersed_daily:pineapple"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:pineapple_juice",
+      "flavor_immersed_daily:pineapplejuice",
+      "manors_bounty:pineapple_juice",
+      "manors_bounty:pineapple_juice_block",
+      "pamhc2foodextended:pineapplejuiceitem",
+      "toughasnails:apple_juice",
+      "croptopia:pineapple_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:pineapplejuice"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:pineapple_seeds",
+      "enhancedfarming:pineapple_seeds",
+      "jellyfishing:pineapple_seeds",
+      "pamhc2crops:pineappleseeditem",
+      "pizzacraft:pineapple_seeds",
+      "croptopia:pineapple_seed",
+	  "flavor_immersed_daily:pineappleseed"
+    ],
+    "resultItems": "flavor_immersed_daily:pineappleseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:plum",
+      "pamhc2trees:plumitem",
+      "productivetrees:plum",
+      "simplefarming:plum",
+      "croptopia:plum"
+    ],
+    "resultItems": "flavor_immersed_daily:plum"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:plumsapling",
+      "croptopia:plum_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:plumsapling"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:popped_maize",
+      "corn_delight:popcorn",
+      "craziness_awakened:pop_corn",
+      "crockpot:popcorn",
+      "culturaldelights:popcorn",
+      "extradelight:popcorn",
+      "flavor_immersed_daily:popcorn",
+      "manors_bounty:popcorn",
+      "pamhc2foodextended:popcornitem",
+      "simplefarming:popcorn",
+      "croptopia:popcorn"
+    ],
+    "resultItems": "flavor_immersed_daily:popcorn"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:radishitem",
+      "simplefarming:radish",
+      "croptopia:radish",
+	  "flavor_immersed_daily:radish"
+    ],
+    "resultItems": "flavor_immersed_daily:radish"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:radishseeditem",
+      "thermal:radish_seeds",
+      "croptopia:radish_seed",
+	  "flavor_immersed_daily:radishseed"
+    ],
+    "resultItems": "flavor_immersed_daily:radishseed"
+  },
+  {
+    "matchItems": [
+      "manors_bounty:raisins",
+      "pamhc2foodextended:raisinsitem",
+      "simplefarming:raisins",
+      "teastory:raisins",
+      "youkaishomecoming:raisin",
+      "croptopia:raisins"
+    ],
+    "resultItems": "croptopia:raisins"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:raspberryitem",
+      "simplefarming:raspberries",
+      "croptopia:raspberry"
+    ],
+    "resultItems": "croptopia:raspberry"
+  },
+  {
+    "matchItems": [
+      "pamhc2foodextended:raspberryjellyitem",
+      "croptopia:raspberry_jam"
+    ],
+    "resultItems": "croptopia:raspberry_jam"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:raspberryseeditem",
+      "croptopia:raspberry_seed"
+    ],
+    "resultItems": "croptopia:raspberry_seed"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:rhubarbitem",
+      "croptopia:rhubarb"
+    ],
+    "resultItems": "croptopia:rhubarb"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:rhubarbseeditem",
+      "croptopia:rhubarb_seed"
+    ],
+    "resultItems": "croptopia:rhubarb_seed"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:riceseeditem",
+      "sakura:rice_seeds",
+      "simplefarming:rice_seeds",
+      "tofucraft:seeds_rice",
+      "croptopia:rice_seed",
+	  "kaleidoscope_cookery:wild_rice",
+	  "farmersdelight:rice",
+	  "flavor_immersed_daily:paddygrain"
+    ],
+    "resultItems": "flavor_immersed_daily:paddygrain"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:rice",
+      "kaleidoscope_cookery:cooked_rice",
+      "croptopia:steamed_rice"
+    ],
+    "resultItems": "flavor_immersed_daily:rice"
+  },
+  {
+    "matchItems": [
+      "kaleidoscope_cookery:rice_panicle",
+      "farmersdelight:rice_panicle",
+	  "flavor_immersed_daily:paddyseeds",
+	  "kaleidoscope_cookery:rice",
+	  "croptopia:rice"
+    ],
+    "resultItems": "flavor_immersed_daily:paddyseeds"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:rutabagaitem",
+      "croptopia:rutabaga"
+    ],
+    "resultItems": "croptopia:rutabaga"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:rutabagaseeditem",
+      "croptopia:rutabaga_seed"
+    ],
+    "resultItems": "croptopia:rutabaga_seed"
+  },
+  {
+    "matchItems": [
+      "bakeries:salt",
+      "better_mcdonalds_mod:salt",
+      "mekanism:salt",
+      "croptopia:salt",
+      "braziliandelight:salt",
+      "enhancedfarming:salt",
+      "ltc2:salt",
+      "pamhc2foodcore:saltitem",
+      "pasterdream:salt",
+      "sakura:salt",
+      "tofucraft:salt",
+      "unusual_delight:salt",
+      "vintagedelight:salt_dust",
+	  "flavor_immersed_daily:saltpiece",
+	  "northstar:salt",
+	  "ratatouille:salt"
+    ],
+    "resultItems": "alltheores:salt"
+  },
+  {
+    "matchItems": [
+      "bakeries:salt_ore",
+      "croptopia:salt_ore"
+    ],
+    "resultItems": "alltheores:salt_ore"
+  },
+  {
+    "matchItems": [
+      "mekanism:salt_block"
+    ],
+    "resultItems": "alltheores:salt_block"
+  },
+  {
+    "matchItems": [
+      "bakeries:deepslate_salt_ore"
+    ],
+    "resultItems": "alltheores:deepslate_salt_ore"
+  },
+  {
+    "matchItems": [
+      "tofucraft:soymilk",
+      "croptopia:soy_milk",
+	  "flavor_immersed_daily:soyamilk"
+    ],
+    "resultItems": "flavor_immersed_daily:soyamilk"
+  },
+  {
+    "matchItems": [
+      "minecolonies:soysauce",
+      "pamhc2foodextended:soysauceitem",
+      "sakura:soysauce",
+      "tofucraft:bottle_soysause",
+      "croptopia:soy_sauce",
+	  "flavor_immersed_daily:soy"
+    ],
+    "resultItems": "flavor_immersed_daily:soy"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:soybean",
+      "gan_delight_reborn:soya_bean",
+      "minecolonies:soybean",
+      "sakura:soybean",
+      "simplefarming:soybean",
+      "sushigocrafting:soy_bean",
+      "tofucraft:soybean",
+      "youkaisfeasts:soybean",
+      "youkaishomecoming:soybean",
+      "croptopia:soybean",
+	  "croptopia:soybean_seed",
+	  "flavor_immersed_daily:soybean_0"
+    ],
+    "resultItems": "flavor_immersed_daily:soybean_0"
+  },
+  {
+    "matchItems": [
+      "argentinas_delight:espinacaitem",
+      "flavor_immersed_daily:spinach",
+      "pamhc2crops:spinachitem",
+      "simplefarming:spinach",
+      "croptopia:spinach"
+    ],
+    "resultItems": "flavor_immersed_daily:spinach"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:spinach_seed",
+      "pamhc2crops:spinachseeditem",
+      "simplefarming:spinach_seeds",
+      "croptopia:spinach_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:spinach_seed"
+  },
+  {
+    "matchItems": [
+      "manors_bounty:starfruit",
+      "croptopia:starfruit",
+	  "flavor_immersed_daily:carambola"
+    ],
+    "resultItems": "flavor_immersed_daily:carambola"
+  },
+  {
+    "matchItems": [
+      "croptopia:starfruit_sapling",
+	  "flavor_immersed_daily:carambolasapling"
+    ],
+    "resultItems": "flavor_immersed_daily:carambolasapling"
+  },
+  {
+    "matchItems": [
+      "craziness_awakened:strawberries",
+      "farm_and_charm:strawberry",
+      "flavor_immersed_daily:strawberry",
+      "manors_bounty:strawberry",
+      "neapolitan:strawberries",
+      "pamhc2crops:strawberryitem",
+      "simplefarming:strawberries",
+      "thermal:strawberry",
+      "croptopia:strawberry"
+    ],
+    "resultItems": "flavor_immersed_daily:strawberry"
+  },
+  {
+    "matchItems": [
+      "bakery:strawberry_jam",
+      "flavor_immersed_daily:strawberryjam",
+      "pamhc2foodextended:strawberryjellyitem",
+      "croptopia:strawberry_jam"
+    ],
+    "resultItems": "flavor_immersed_daily:strawberryjam"
+  },
+  {
+    "matchItems": [
+      "farm_and_charm:strawberry_seeds",
+      "thermal:strawberry_seeds",
+      "croptopia:strawberry_seed",
+	  "flavor_immersed_daily:strawberryseed"
+    ],
+    "resultItems": "flavor_immersed_daily:strawberryseed"
+  },
+  {
+    "matchItems": [
+      "argentinas_delight:batata",
+      "flavor_immersed_daily:sweetpotato",
+      "pamhc2crops:sweetpotatoitem",
+      "simplefarming:sweet_potato",
+      "croptopia:sweetpotato"
+    ],
+    "resultItems": "flavor_immersed_daily:sweetpotato"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:sweetpotatoseeditem",
+      "croptopia:sweetpotato_seed",
+	  "flavor_immersed_daily:sweet_potato_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:sweet_potato_seed"
+  },
+  {
+    "matchItems": [
+      "bountifulfares:tea_leaves",
+      "delightful:green_tea_leaf",
+      "farmersrespite:green_tea_leaves",
+      "herbalbrews:green_tea_leaf",
+      "pamhc2crops:tealeafitem",
+      "youkaishomecoming:green_tea_leaves",
+      "youkaishomecoming:tea_leaves",
+      "croptopia:tea_leaves",
+	  "flavor_immersed_daily:greentealeaves"
+    ],
+    "resultItems": "flavor_immersed_daily:greentealeaves"
+  },
+  {
+    "matchItems": [
+      "croptopia:tea_seed",
+	  "flavor_immersed_daily:greentealeavesseed"
+    ],
+    "resultItems": "flavor_immersed_daily:greentealeavesseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:picedtoufu",
+      "flavor_immersed_daily:toufu",
+      "minecolonies:tofu",
+      "sakura:tofu",
+      "simplefarming:tofu",
+      "tofucraft:tofumomen",
+      "youkaishomecoming:tofu",
+      "croptopia:tofu"
+    ],
+    "resultItems": "flavor_immersed_daily:picedtoufu"
+  },
+  {
+    "matchItems": [
+      "extradelight:tomato_juice",
+      "farmersplus:tomato_juice",
+      "croptopia:tomato_juice"
+    ],
+    "resultItems": "croptopia:tomato_juice"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:turnipitem",
+      "simplefarming:turnip",
+      "croptopia:turnip"
+    ],
+    "resultItems": "croptopia:turnip"
+  },
+  {
+    "matchItems": [
+      "pamhc2crops:turnipseeditem",
+      "simplefarming:turnip_seeds",
+      "croptopia:turnip_seed"
+    ],
+    "resultItems": "croptopia:turnip_seed"
+  },
+  {
+    "matchItems": [
+      "kitchenkarrot:water",
+      "croptopia:water_bottle",
+	  "flavor_immersed_daily:tidywater"
+    ],
+    "resultItems": "flavor_immersed_daily:tidywater"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:chineseyam",
+      "croptopia:yam"
+    ],
+    "resultItems": "flavor_immersed_daily:chineseyam"
+  },
+  {
+    "matchItems": [
+      "simplefarming:yam_seeds",
+      "croptopia:yam_seed",
+	  "flavor_immersed_daily:chineseyamseed"
+    ],
+    "resultItems": "flavor_immersed_daily:chineseyamseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:zucchini",
+      "pamhc2crops:zucchiniitem",
+      "simplefarming:squash",
+      "simplefarming:zucchini",
+      "croptopia:zucchini"
+    ],
+    "resultItems": "flavor_immersed_daily:zucchini"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:zucchiniseed",
+      "pamhc2crops:zucchiniseeditem",
+      "simplefarming:zucchini_seeds",
+      "croptopia:zucchini_seed"
+    ],
+    "resultItems": "flavor_immersed_daily:zucchiniseed"
+  },
+  {
+    "matchItems": [
+      "pamhc2foodextended:cherryjellyitem",
+      "seeddelight:cherry_jam_jar"
+    ],
+    "resultItems": "extradelight:rabbit_ragu"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:raw_bacon",
+      "cozy:raw_bacon",
+      "craziness_awakened:bacon",
+      "croptopia:bacon",
+      "farm_and_charm:bacon",
+      "simplefarming:raw_bacon",
+      "tconstruct:bacon"
+    ],
+    "resultItems": "farmersdelight:bacon"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:cooked_beef_patty"
+    ],
+    "resultItems": "farmersdelight:beef_patty"
+  },
+  {
+    "matchItems": [
+      "croptopia:cabbage",
+      "flavor_immersed_daily:cabbage",
+      "minecolonies:cabbage",
+      "pamhc2crops:cabbageitem",
+      "ravageandcabbage:cabbage",
+      "sakura:cabbage",
+	  "farmersdelight:cabbage"
+    ],
+    "resultItems": "flavor_immersed_daily:cabbage"
+  },
+  {
+    "matchItems": [
+      "croptopia:cabbage_seed",
+      "flavor_immersed_daily:cabbageseed",
+      "pamhc2crops:cabbageseeditem",
+      "ravageandcabbage:cabbage_seeds",
+      "sakura:cabbage_seeds",
+	  "farmersdelight:cabbage_seeds"
+    ],
+    "resultItems": "flavor_immersed_daily:cabbageseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:cutcabbage",
+	  "farmersdelight:cabbage_leaf"
+    ],
+    "resultItems": "flavor_immersed_daily:cutcabbage"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:cooked_bacon",
+      "cozy:cooked_bacon",
+      "craziness_awakened:cooked_bacon",
+      "croptopia:cooked_bacon",
+      "simplefarming:cooked_bacon"
+    ],
+    "resultItems": "farmersdelight:cooked_bacon"
+  },
+  {
+    "matchItems": [
+      "additionaladditions:fried_egg",
+      "bakeries:whole_egg",
+      "cozy:cooked_egg",
+      "crockpot:cooked_egg",
+      "croptopia:sunny_side_eggs",
+      "divinerpg:boiled_egg",
+      "enhancedfarming:baked_egg",
+      "extradelight:boiled_egg",
+      "farmersplus:boiled_egg",
+      "flavor_immersed_daily:boilegg",
+      "flavor_immersed_daily:omelette",
+      "flavor_immersed_daily:shelledboiledegg",
+      "kaleidoscope_cookery:fried_egg",
+      "mynethersdelight:boiled_egg",
+      "pamhc2foodcore:boiledeggitem",
+      "pamhc2foodcore:friedeggitem",
+      "pasterdream:fried_egg",
+      "simplefarming:cooked_egg",
+      "vanillacookbook:cooked_egg",
+	  "farmersdelight:fried_egg"
+    ],
+    "resultItems": "flavor_immersed_daily:omelette"
+  },
+  {
+    "matchItems": [
+      "argentinas_delight:hamburguesasanguche",
+      "better_mcdonalds_mod:hamburger",
+      "croptopia:hamburger",
+      "sakura:hamburger",
+      "simplefarming:hamburger",
+	  "farmersdelight:hamburger",
+	  "flavor_immersed_daily:hamburgerbread"
+    ],
+    "resultItems": "flavor_immersed_daily:hamburgerbread"
+  },
+  {
+    "matchItems": [
+      "croptopia:melon_juice",
+      "farmersrespite:strong_melon_juice",
+      "legendarysurvivaloverhaul:melon_juice",
+      "manors_bounty:watermelon_juice",
+      "pamhc2foodcore:melonjuiceitem",
+      "pasterdream:watermelon_juice",
+      "toughasnails:melon_juice",
+      "unusual_delight:melon_juice",
+      "vanillacookbook:melon_juice",
+	  "flavor_immersed_daily:watermelonjuice",
+	  "farmersdelight:melon_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:watermelonjuice"
+  },
+  {
+    "matchItems": [
+      "farmersdelight:melon_popsicle",
+      "flavor_immersed_daily:watermelonpopsicle"
+    ],
+    "resultItems": "flavor_immersed_daily:watermelonpopsicle"
+  },
+  {
+    "matchItems": [
+      "bakeries:bottle_milk",
+      "ce_foodstuffs:milk_bottle",
+      "cozy:milk_bottle",
+      "crockpot:milk_bottle",
+      "croptopia:milk_bottle",
+      "enhancedfarming:milk_bottle",
+      "kitchenkarrot:milk",
+      "neapolitan:milk_bottle",
+      "pamhc2foodcore:freshmilkitem",
+      "vanillacookbook:milk_bottle",
+	  "flavor_immersed_daily:milkbottle",
+	  "farmersdelight:milk_bottle"
+    ],
+    "resultItems": "flavor_immersed_daily:milkbottle"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:beef_patty"
+    ],
+    "resultItems": "farmersdelight:minced_beef"
+  },
+  {
+    "matchItems": [
+      "crockpot:onion",
+      "croptopia:onion",
+      "enhancedfarming:onion",
+      "farm_and_charm:onion",
+      "flavor_immersed_daily:onion",
+      "minecolonies:onion",
+      "pamhc2crops:onionitem",
+      "pizzacraft:onion",
+      "sakura:onion",
+      "simplefarming:onion",
+      "thermal:onion",
+	  "flavor_immersed_daily:onion",
+      "farmersdelight:onion"
+    ],
+    "resultItems": "flavor_immersed_daily:onion"
+  },
+  {
+    "matchItems": [
+      "bakeries:tomato",
+      "better_mcdonalds_mod:tomato",
+      "ce_foodstuffs:tomato",
+      "chang_sheng_jue:tomato",
+      "cozy:tomato",
+      "craziness_awakened:tomato",
+      "crockpot:tomato",
+      "croptopia:tomato",
+      "divinerpg:tomato",
+      "enhancedfarming:tomato",
+      "farm_and_charm:tomato",
+      "flavor_immersed_daily:tomato",
+      "journey:tomato",
+      "kaleidoscope_cookery:tomato",
+      "minecolonies:tomato",
+      "pamhc2crops:tomatoitem",
+      "pizzacraft:tomato",
+      "sakura:tomato",
+      "simplefarming:tomato",
+      "thermal:tomato",
+	  "farmersdelight:tomato"
+    ],
+    "resultItems": "flavor_immersed_daily:tomato"
+  },
+  {
+    "matchItems": [
+      "extradelight:ketchup_jar_item",
+      "pamhc2foodextended:ketchupitem",
+      "pizzacraft:tomato_sauce",
+      "sakura:tomato_sauce",
+	  "farmersdelight:tomato_sauce"
+    ],
+    "resultItems": "farmersdelight:tomato_sauce"
+  },
+  {
+    "matchItems": [
+      "better_mcdonalds_mod:tomato_seeds",
+      "chang_sheng_jue:tomato_seeds",
+      "cozy:tomato_seeds",
+      "crockpot:tomato_seeds",
+      "croptopia:tomato_seed",
+      "enhancedfarming:tomato_seeds",
+      "farm_and_charm:tomato_seeds",
+      "flavor_immersed_daily:tomatoseed",
+      "journey:tomatoseeds",
+      "kaleidoscope_cookery:tomato_seed",
+      "pizzacraft:tomato_seeds",
+      "sakura:tomato_seeds",
+      "simplefarming:tomato_seeds",
+      "thermal:tomato_seeds",
+	  "farmersdelight:tomato_seeds"
+    ],
+    "resultItems": "flavor_immersed_daily:tomatoseed"
+  },
+  {
+    "matchItems": [
+      "cozy:dough",
+      "create:dough",
+      "croptopia:dough",
+      "enhancedfarming:dough",
+      "farm_and_charm:dough",
+      "flavor_immersed_daily:dough",
+      "pamhc2foodcore:doughitem",
+      "pasterdream:dough",
+      "pizzacraft:dough",
+      "refurbished_furniture:dough",
+      "sakura:dough",
+	  "farmersdelight:wheat_dough"
+    ],
+    "resultItems": "flavor_immersed_daily:dough"
+  },
+  {
+    "matchItems": [
+      "bakeries:salted_dough",
+      "ratatouille:salty_dough"
+    ],
+    "resultItems": "bakeries:salted_dough"
+  },
+  {
+    "matchItems": [
+      "dumplings_delight:chinese_cabbage",
+      "flavor_immersed_daily:chineseleaves",
+      "teastory:chinese_cabbage"
+    ],
+    "resultItems": "flavor_immersed_daily:chineseleaves"
+  },
+  {
+    "matchItems": [
+      "dumplings_delight:chinese_cabbage_seeds",
+      "flavor_immersed_daily:chineseleavesseed",
+      "teastory:chinese_cabbage_seeds"
+    ],
+    "resultItems": "flavor_immersed_daily:chineseleavesseed"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:cassava_2",
+      "simplefarming:cassava"
+    ],
+    "resultItems": "flavor_immersed_daily:cassava_2"
+  },
+  {
+    "matchItems": [
+      "simplefarming:cassava_seeds"
+    ],
+    "resultItems": "pamhc2crops:cassavaseeditem"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:cotton",
+      "pasterdream:cotton",
+      "rusticdelight:cotton_boll",
+      "simplefarming:cotton"
+    ],
+    "resultItems": "pamhc2crops:cottonitem"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:cotton_seeds",
+      "rusticdelight:cotton_seeds",
+      "simplefarming:cotton_seeds"
+    ],
+    "resultItems": "pamhc2crops:cottonseeditem"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:lotus_root",
+      "flavor_immersed_daily:lotusroot",
+      "gan_delight_reborn:lotus_root"
+    ],
+    "resultItems": "flavor_immersed_daily:lotusroot"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:lotus_seeds"
+    ],
+    "resultItems": "pamhc2crops:lotusseeditem"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:gu_sui",
+      "flavor_immersed_daily:milletgrain"
+    ],
+    "resultItems": "flavor_immersed_daily:milletgrain"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:gu_seeds",
+      "flavor_immersed_daily:millet"
+    ],
+    "resultItems": "flavor_immersed_daily:millet"
+  },
+  {
+    "matchItems": [
+      "simplefarming:quinoa_seeds"
+    ],
+    "resultItems": "pamhc2crops:quinoaseeditem"
+  },
+  {
+    "matchItems": [
+      "simplefarming:rye"
+    ],
+    "resultItems": "pamhc2crops:ryeitem"
+  },
+  {
+    "matchItems": [
+      "simplefarming:rye_seeds"
+    ],
+    "resultItems": "pamhc2crops:ryeseeditem"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:sorghum",
+      "simplefarming:sorghum"
+    ],
+    "resultItems": "pamhc2crops:sorghumitem"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:sorghum_seeds",
+      "simplefarming:sorghum_seeds"
+    ],
+    "resultItems": "pamhc2crops:sorghumseeditem"
+  },
+  {
+    "matchItems": [
+      "sakura:taro"
+    ],
+    "resultItems": "pamhc2crops:taroitem"
+  },
+  {
+    "matchItems": [
+      "bakery:apple_jam",
+      "brewinandchewin:apple_jelly",
+      "extradelight:apple_jam",
+      "flavor_immersed_daily:applejam",
+      "fruitsdelight:apple_jelly",
+      "vanillacookbook:apple_sauce",
+      "vintagedelight:apple_sauce_bottle",
+      "vintagedelight:apple_sauce_mason_jar"
+    ],
+    "resultItems": "flavor_immersed_daily:applejam"
+  },
+  {
+    "matchItems": [
+      "legendarysurvivaloverhaul:chorus_fruit_juice"
+    ],
+    "resultItems": "pamhc2foodcore:chorusjuiceitem"
+  },
+  {
+    "matchItems": [
+      "endersdelight:chorus_juice",
+      "manors_bounty:chorus_fruit_juice",
+      "toughasnails:chorus_fruit_juice",
+      "vanillacookbook:chorus_juice"
+    ],
+    "resultItems": "pamhc2foodcore:chorusjuiceitem"
+  },
+  {
+    "matchItems": [
+      "extradelight:mayo_jar_item"
+    ],
+    "resultItems": "pamhc2foodcore:mayonaiseitem"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:watermelonjam",
+      "fruitsdelight:melon_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:watermelonjam"
+  },
+  {
+    "matchItems": [
+      "bakery:sweetberry_jam",
+      "brewinandchewin:sweet_berry_jam",
+      "extradelight:sweet_berry_jam",
+      "flavor_immersed_daily:sweetberryjam",
+      "refurbished_furniture:sweet_berry_jam",
+      "vintagedelight:sweet_berry_jam_bottle"
+    ],
+    "resultItems": "flavor_immersed_daily:sweetberryjam"
+  },
+  {
+    "matchItems": [
+      "extradelight:sweet_berry_juice",
+      "flavor_immersed_daily:sweetberryjuice",
+      "toughasnails:sweet_berry_juice",
+      "vanillacookbook:berry_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:sweetberryjuice"
+  },
+  {
+    "matchItems": [
+      "dumplings_delight:vinegar",
+      "extradelight:vinegar",
+      "flavor_immersed_daily:vinegar",
+      "simplefarming:vinegar"
+    ],
+    "resultItems": "flavor_immersed_daily:vinegar"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:apricotjuice"
+    ],
+    "resultItems": "flavor_immersed_daily:apricotjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:bananajam"
+    ],
+    "resultItems": "flavor_immersed_daily:bananajam"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:banana_juice",
+      "flavor_immersed_daily:bananajuice"
+    ],
+    "resultItems": "flavor_immersed_daily:bananajuice"
+  },
+  {
+    "matchItems": [
+      "extradelight:bbq_jar_item"
+    ],
+    "resultItems": "pamhc2foodextended:bbqsauceitem"
+  },
+  {
+    "matchItems": [
+      "youkaishomecoming:black_grape_juice"
+    ],
+    "resultItems": "pamhc2foodextended:blackberryjuiceitem"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:blueberryjuice"
+    ],
+    "resultItems": "flavor_immersed_daily:blueberryjuice"
+  },
+  {
+    "matchItems": [
+      "delightful:prickly_pear_juice",
+      "extradelight:cactus_juice",
+      "vanillacookbook:cactus_juice"
+    ],
+    "resultItems": "pamhc2foodextended:cactusfruitjuiceitem"
+  },
+  {
+    "matchItems": [
+      "delightful:prickly_pear_juice",
+      "extradelight:cactus_juice",
+      "legendarysurvivaloverhaul:cactus_juice",
+      "simplefarming:cactus_fruit",
+      "toughasnails:cactus_juice",
+      "unusual_delight:cactus_ale",
+      "vanillacookbook:cactus_juice"
+    ],
+    "resultItems": "pamhc2foodextended:cactusfruitjuiceitem"
+  },
+  {
+    "matchItems": [
+      "legendarysurvivaloverhaul:carrot_juice",
+      "pamhc2foodcore:carrotjuiceitem"
+    ],
+    "resultItems": "pamhc2foodextended:carrotjuiceitem"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:cherry_juice",
+      "flavor_immersed_daily:cherryjuice"
+    ],
+    "resultItems": "flavor_immersed_daily:cherryjuice"
+  },
+  {
+    "matchItems": [
+      "minecolonies:cornmeal"
+    ],
+    "resultItems": "pamhc2foodextended:cornmealitem"
+  },
+  {
+    "matchItems": [
+      "fruitsdelight:cranberry_jelly"
+    ],
+    "resultItems": "pamhc2foodextended:cranberryjellyitem"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:dragonfruitjam"
+    ],
+    "resultItems": "flavor_immersed_daily:dragonfruitjam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:dragonfruiejuice"
+    ],
+    "resultItems": "flavor_immersed_daily:dragonfruiejuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:durianjam",
+      "fruitsdelight:durian_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:durianjam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:durianjuice"
+    ],
+    "resultItems": "flavor_immersed_daily:durianjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:kiwifruitjam",
+      "fruitsdelight:kiwi_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:kiwifruitjam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:kiwifruitjuice",
+      "fruitsdelight:kiwi_juice",
+      "manors_bounty:kiwifruit_juice",
+      "manors_bounty:kiwifruit_juice_block"
+    ],
+    "resultItems": "flavor_immersed_daily:kiwifruitjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:lemonjuice",
+      "fruitsdelight:lemon_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:lemonjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:lycheejam",
+      "fruitsdelight:lychee_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:lycheejam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:lycheejuice"
+    ],
+    "resultItems": "flavor_immersed_daily:lycheejuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:mangojam",
+      "fruitsdelight:mango_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:mangojam"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:mango_juice",
+      "flavor_immersed_daily:mangojuice",
+      "manors_bounty:mango_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:mangojuice"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:mulberry",
+      "chang_sheng_jue:mulberry_juice",
+      "flavor_immersed_daily:mulberry"
+    ],
+    "resultItems": "flavor_immersed_daily:mulberry"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:mi_fan",
+      "collectorsreap:big_rice_ball",
+      "culturaldelights:rice_ball",
+      "extradelight:riceball",
+      "manors_bounty:onigiri",
+      "minecolonies:rice_ball",
+      "sakura:onigiri",
+      "teastory:rice_ball",
+      "tofucraft:onigiri",
+      "youkaishomecoming:onigili"
+    ],
+    "resultItems": "pamhc2foodextended:onigiriitem"
+  },
+  {
+    "matchItems": [
+      "manors_bounty:orange_juice",
+      "manors_bounty:orange_juice_block"
+    ],
+    "resultItems": "pamhc2foodextended:orangejuiceitem"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pawpawjam"
+    ],
+    "resultItems": "flavor_immersed_daily:pawpawjam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pawpawjuice",
+      "muffins_thaidelight:papaya_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:pawpawjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pearjam",
+      "fruitsdelight:pear_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:pearjam"
+  },
+  {
+    "matchItems": [
+      "enhancedfarming:pear_juice",
+      "flavor_immersed_daily:pearjuice",
+      "fruitsdelight:pear_juice"
+    ],
+    "resultItems": "flavor_immersed_daily:pearjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pineapplejam",
+      "fruitsdelight:pineapple_jelly"
+    ],
+    "resultItems": "flavor_immersed_daily:pineapplejam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pkumjuice"
+    ],
+    "resultItems": "flavor_immersed_daily:pkumjuice"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pomegranatejam"
+    ],
+    "resultItems": "flavor_immersed_daily:pomegranatejam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:pomegranatejuice",
+      "manors_bounty:pomegranate_juice",
+      "manors_bounty:pomegranate_juice_block"
+    ],
+    "resultItems": "flavor_immersed_daily:pomegranatejuice"
+  },
+  {
+    "matchItems": [
+      "vintagedelight:relish_bottle"
+    ],
+    "resultItems": "pamhc2foodextended:relishitem"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:carambolajam"
+    ],
+    "resultItems": "flavor_immersed_daily:carambolajam"
+  },
+  {
+    "matchItems": [
+      "flavor_immersed_daily:carambolajuice"
+    ],
+    "resultItems": "flavor_immersed_daily:carambolajuice"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:lichee_sapling",
+      "flavor_immersed_daily:lycheesapling",
+      "fruitsdelight:lychee_sapling"
+    ],
+    "resultItems": "flavor_immersed_daily:lycheesapling"
+  },
+  {
+    "matchItems": [
+      "chang_sheng_jue:lichee",
+      "flavor_immersed_daily:lychee",
+      "fruitsdelight:lychee"
+    ],
+    "resultItems": "flavor_immersed_daily:lychee"
+  },
+  {
+    "matchItems": [
+      "collectorsreap:pomegranate",
+      "manors_bounty:pomegranate",
+      "productivetrees:pomegranate"
+    ],
+    "resultItems": "pamhc2trees:pomegranateitem"
+  }
+]

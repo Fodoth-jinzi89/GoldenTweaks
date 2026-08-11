@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "iss_magicfromtheeast"
+    }
+  ],
+  "type": "alshanex_familiars:ritual_recipe",
+  "central_item": {
+    "item": "alshanex_familiars:pet_soul"
+  },
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "iss_magicfromtheeast:bottle_of_souls"
+      },
+      "count": 1,
+      "consume": true
+    },
+    {
+      "ingredient": {
+        "item": "irons_spellbooks:arcane_essence"
+      },
+      "count": 1,
+      "consume": true
+    },
+    {
+      "ingredient": {
+        "item": "iss_magicfromtheeast:spirit_rune"
+      },
+      "count": 1,
+      "consume": true
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:soul_lantern"
+      },
+      "count": 1,
+      "consume": true
+    }
+  ],
+  "result": {
+    "id": "alshanex_familiars:necromancer_shard"
+  },
+  "particle_type": "minecraft:soul"
+}

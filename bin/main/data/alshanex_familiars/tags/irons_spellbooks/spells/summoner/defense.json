@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "traveloptics:lingering_strain", "required": false },
+    "irons_spellbooks:abyssal_shroud"
+  ]
+}

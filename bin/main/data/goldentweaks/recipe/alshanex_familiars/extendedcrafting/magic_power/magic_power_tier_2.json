@@ -1,0 +1,37 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    }
+  ],
+
+  "pattern": [
+    "  A  ",
+    " ABA ",
+    "ABCBA",
+    "ABBBA",
+    " AAA "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/copper"
+    },
+    "B": {
+      "tag": "c:storage_blocks/copper"
+    },
+    "C": {
+      "item": "irons_spellbooks:arcane_essence"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:magic_power_tier_2",
+	"count": 4
+  }
+}

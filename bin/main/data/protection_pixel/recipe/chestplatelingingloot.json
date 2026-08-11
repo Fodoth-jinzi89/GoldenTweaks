@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "create:precision_mechanism"
+       },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "d": {
+      "item": "minecraft:iron_nugget"
+    },
+    "e": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "id": "protection_pixel:chestplatelining",
+    "count": 1
+  }
+}

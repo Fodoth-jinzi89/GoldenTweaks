@@ -1,0 +1,630 @@
+{
+    "content": {
+        "music_disc_sojourn": {
+            "type": "item",
+            "content": "vista:music_disc_sojourn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_heave_ho": {
+            "type": "item",
+            "content": "supplementaries:music_disc_heave_ho",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_pigstep": {
+            "type": "item",
+            "content": "minecraft:music_disc_pigstep",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_5": {
+            "type": "item",
+            "content": "minecraft:music_disc_5",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_relic": {
+            "type": "item",
+            "content": "minecraft:music_disc_relic",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_stal": {
+            "type": "item",
+            "content": "minecraft:music_disc_stal",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_strad": {
+            "type": "item",
+            "content": "minecraft:music_disc_strad",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_ward": {
+            "type": "item",
+            "content": "minecraft:music_disc_ward",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_11": {
+            "type": "item",
+            "content": "minecraft:music_disc_11",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_creator_music_box": {
+            "type": "item",
+            "content": "minecraft:music_disc_creator_music_box",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_wait": {
+            "type": "item",
+            "content": "minecraft:music_disc_wait",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_creator": {
+            "type": "item",
+            "content": "minecraft:music_disc_creator",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_precipice": {
+            "type": "item",
+            "content": "minecraft:music_disc_precipice",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_otherside": {
+            "type": "item",
+            "content": "minecraft:music_disc_otherside",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 700,
+            "weightMult": 0.014373716632443531,
+            "effectiveValue": 700
+        },
+        "music_disc_mellohi": {
+            "type": "item",
+            "content": "minecraft:music_disc_mellohi",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_mall": {
+            "type": "item",
+            "content": "minecraft:music_disc_mall",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_far": {
+            "type": "item",
+            "content": "minecraft:music_disc_far",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_chirp": {
+            "type": "item",
+            "content": "minecraft:music_disc_chirp",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_blocks": {
+            "type": "item",
+            "content": "minecraft:music_disc_blocks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_cat": {
+            "type": "item",
+            "content": "minecraft:music_disc_cat",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_13": {
+            "type": "item",
+            "content": "minecraft:music_disc_13",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.01026694045174538,
+            "effectiveValue": 500
+        },
+        "music_disc_maledictus": {
+            "type": "item",
+            "content": "cataclysm:music_disc_maledictus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_ancient_remnant": {
+            "type": "item",
+            "content": "cataclysm:music_disc_ancient_remnant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_the_leviathan": {
+            "type": "item",
+            "content": "cataclysm:music_disc_the_leviathan",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_the_harbinger": {
+            "type": "item",
+            "content": "cataclysm:music_disc_the_harbinger",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_ignis": {
+            "type": "item",
+            "content": "cataclysm:music_disc_ignis",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_netherite_monstrosity": {
+            "type": "item",
+            "content": "cataclysm:music_disc_netherite_monstrosity",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_ender_guardian": {
+            "type": "item",
+            "content": "cataclysm:music_disc_ender_guardian",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_divinity": {
+            "type": "item",
+            "content": "spectrum:music_disc_divinity",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.03285420944558522,
+            "effectiveValue": 1600
+        },
+        "music_disc_credits": {
+            "type": "item",
+            "content": "spectrum:music_disc_credits",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.03285420944558522,
+            "effectiveValue": 1600
+        },
+        "music_disc_discovery": {
+            "type": "item",
+            "content": "spectrum:music_disc_discovery",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_wanderer": {
+            "type": "item",
+            "content": "biomesoplenty:music_disc_wanderer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_shimmer": {
+            "type": "item",
+            "content": "apotheosis:music_disc_shimmer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_glimmer": {
+            "type": "item",
+            "content": "apotheosis:music_disc_glimmer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_scylla": {
+            "type": "item",
+            "content": "cataclysm:music_disc_scylla",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_the_cataclysmfarer": {
+            "type": "item",
+            "content": "cataclysm:music_disc_the_cataclysmfarer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.03285420944558522,
+            "effectiveValue": 1600
+        },
+        "music_disc_dead_king_lullaby": {
+            "type": "item",
+            "content": "irons_spellbooks:music_disc_dead_king_lullaby",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_flame_still_burns": {
+            "type": "item",
+            "content": "irons_spellbooks:music_disc_flame_still_burns",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_whispers_of_ice": {
+            "type": "item",
+            "content": "irons_spellbooks:music_disc_whispers_of_ice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_eterna": {
+            "type": "item",
+            "content": "apothic_enchanting:music_disc_eterna",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_quanta": {
+            "type": "item",
+            "content": "apothic_enchanting:music_disc_quanta",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_flash": {
+            "type": "item",
+            "content": "apotheosis:music_disc_flash",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "music_disc_arcana": {
+            "type": "item",
+            "content": "apothic_enchanting:music_disc_arcana",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.024640657084188913,
+            "effectiveValue": 1200
+        },
+        "music_disc_cloud_skipper": {
+            "type": "item",
+            "content": "aeronautics:music_disc_cloud_skipper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 900,
+            "weightMult": 0.018480492813141684,
+            "effectiveValue": 900
+        },
+        "melody_spell_book": {
+            "type": "item",
+            "content": "tunes_n_tomes:melody_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.04106776180698152,
+            "effectiveValue": 2000
+        },
+        "bard_harp": {
+            "type": "item",
+            "content": "tunes_n_tomes:bard_harp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.04106776180698152,
+            "effectiveValue": 2000
+        },
+        "bard_boots": {
+            "type": "item",
+            "content": "tunes_n_tomes:bard_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.006160164271047228,
+            "effectiveValue": 300
+        },
+        "bard_leggings": {
+            "type": "item",
+            "content": "tunes_n_tomes:bard_leggings",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.006160164271047228,
+            "effectiveValue": 300
+        },
+        "bard_chestplate": {
+            "type": "item",
+            "content": "tunes_n_tomes:bard_chestplate",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.008213552361396304,
+            "effectiveValue": 400
+        },
+        "bard_helmet": {
+            "type": "item",
+            "content": "tunes_n_tomes:bard_helmet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 300,
+            "weightMult": 0.006160164271047228,
+            "effectiveValue": 300
+        },
+        "bard_shard": {
+            "type": "item",
+            "content": "alshanex_familiars:bard_shard",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.1026694045174538,
+            "effectiveValue": 5000
+        }
+    },
+    "requires": [
+        "aeronautics",
+        "alshanex_familiars",
+        "apotheosis",
+        "apothic_enchanting",
+        "biomesoplenty",
+        "cataclysm",
+        "irons_spellbooks",
+        "minecraft",
+        "spectrum",
+        "supplementaries",
+        "tunes_n_tomes",
+        "vista"
+    ]
+}

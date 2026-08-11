@@ -1,0 +1,238 @@
+{
+    "content": {
+        "map": {
+            "type": "item",
+            "content": "minecraft:map",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "slice_map": {
+            "type": "item",
+            "content": "supplementaries:slice_map",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "artisans_atlas": {
+            "type": "item",
+            "content": "spectrum:artisans_atlas",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "mojang_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:mojang_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.026455026455026454,
+            "effectiveValue": 500
+        },
+        "skull_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:skull_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.026455026455026454,
+            "effectiveValue": 500
+        },
+        "creeper_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:creeper_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.026455026455026454,
+            "effectiveValue": 500
+        },
+        "deep_light_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:deep_light_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "guster_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:guster_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.042328042328042326,
+            "effectiveValue": 800
+        },
+        "dragon_banner_pattern": {
+            "type": "item",
+            "content": "supplementaries:dragon_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.042328042328042326,
+            "effectiveValue": 800
+        },
+        "balance_pattern": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:balance_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.042328042328042326,
+            "effectiveValue": 800
+        },
+        "logo_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:logo_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1800,
+            "weightMult": 0.09523809523809523,
+            "effectiveValue": 1800
+        },
+        "amethyst_shard_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:amethyst_shard_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "amethyst_cluster_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:amethyst_cluster_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "astrologer_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:astrologer_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "velvet_astrologer_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:velvet_astrologer_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1800,
+            "weightMult": 0.09523809523809523,
+            "effectiveValue": 1800
+        },
+        "poisonbloom_banner_pattern": {
+            "type": "item",
+            "content": "spectrum:poisonbloom_banner_pattern",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.06349206349206349,
+            "effectiveValue": 1200
+        },
+        "flow_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:flow_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800,
+            "weightMult": 0.042328042328042326,
+            "effectiveValue": 800
+        },
+        "piglin_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:piglin_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.026455026455026454,
+            "effectiveValue": 500
+        },
+        "globe_banner_pattern": {
+            "type": "item",
+            "content": "minecraft:globe_banner_pattern",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 0.026455026455026454,
+            "effectiveValue": 500
+        }
+    },
+    "requires": [
+        "iss_magicfromtheeast",
+        "minecraft",
+        "spectrum",
+        "supplementaries"
+    ]
+}

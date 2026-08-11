@@ -1,0 +1,24 @@
+{
+  "type": "evolvedmekanism:solidifying",
+  "duration": 60,
+  "item_input": {
+    "item": "evolvedmekanism:mold_storage_block"
+  },
+  "fluid_input": {
+    "fluid": "avaritia_integration:molten_star",
+    "amount": 90
+  },
+  "extra_input": {
+    "fluid": "neoecoae:cryotheum_solution",
+    "amount": 90
+  },
+  "output": {
+    "item": "avaritia:star_fuel"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_integration"
+    }
+  ]
+}

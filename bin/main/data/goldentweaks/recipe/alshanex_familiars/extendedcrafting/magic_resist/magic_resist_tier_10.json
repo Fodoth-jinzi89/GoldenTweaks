@@ -1,0 +1,81 @@
+{
+  "type": "avaritia:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ancientreforging"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+
+  "pattern": [
+    "   AAA   ",
+    "  ABBBA  ",
+    " ABIBIBA ",
+    "ABGHDHGBA",
+    "ABCEFECBA",
+    "ABGHEHGBA",
+    " ABIDIBA ",
+    "  ABCBA  ",
+    "    A    "
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism_extras:alloy_spectrum"
+    },
+    "B": {
+      "item": "avaritia:diamond_lattice_block"
+    },
+    "C": {
+      "item": "avaritia:blaze_cube_block"
+    },
+    "D": {
+      "item": "avaritia:crystal_matrix"
+    },
+    "E": {
+      "item": "avaritia:neutron"
+    },
+    "F": {
+      "item": "avaritia:infinity_catalyst"
+    },
+    "G": {
+      "item": "apotheosis:mythic_material"
+    },
+    "H": {
+      "item": "ancientreforging:ancient_material"
+    },
+    "I": {
+      "item": "spectrum:mixed_refined_crystal_bricks"
+    }
+  },
+
+
+  "result": {
+    "id": "goldentweaks:magic_resist_tier_10",
+    "count": 4
+  }
+}

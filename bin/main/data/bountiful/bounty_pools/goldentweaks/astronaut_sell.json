@@ -1,0 +1,464 @@
+{
+    "content": {
+        "insulation": {
+            "type": "item",
+            "content": "mek_x_star:insulation",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "heat_insulation": {
+            "type": "item",
+            "content": "mek_x_star:heat_insulation",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0463768115942029,
+            "effectiveValue": 9600
+        },
+        "titanium_ingot": {
+            "type": "item",
+            "content": "northstar:titanium_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "hardened_precision_mechanism": {
+            "type": "item",
+            "content": "northstar:hardened_precision_mechanism",
+            "rarity": "RARE",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0927536231884058,
+            "effectiveValue": 19200
+        },
+        "mars_iron_ore": {
+            "type": "item",
+            "content": "northstar:mars_iron_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "mars_deep_iron_ore": {
+            "type": "item",
+            "content": "northstar:mars_deep_iron_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 100,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "mars_titanium_ore": {
+            "type": "item",
+            "content": "northstar:mars_titanium_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 150,
+            "weightMult": 0.034782608695652174,
+            "effectiveValue": 7200
+        },
+        "moon_titanium_ore": {
+            "type": "item",
+            "content": "northstar:moon_titanium_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 150,
+            "weightMult": 0.034782608695652174,
+            "effectiveValue": 7200
+        },
+        "mars_deep_titanium_ore": {
+            "type": "item",
+            "content": "northstar:mars_deep_titanium_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 150,
+            "weightMult": 0.034782608695652174,
+            "effectiveValue": 7200
+        },
+        "moon_deep_titanium_ore": {
+            "type": "item",
+            "content": "northstar:moon_deep_titanium_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 150,
+            "weightMult": 0.034782608695652174,
+            "effectiveValue": 7200
+        },
+        "moon_glowstone_ore": {
+            "type": "item",
+            "content": "northstar:moon_glowstone_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 120,
+            "weightMult": 0.02782608695652174,
+            "effectiveValue": 5760
+        },
+        "moon_deep_glowstone_ore": {
+            "type": "item",
+            "content": "northstar:moon_deep_glowstone_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 120,
+            "weightMult": 0.02782608695652174,
+            "effectiveValue": 5760
+        },
+        "mercury_tungsten_ore": {
+            "type": "item",
+            "content": "northstar:mercury_tungsten_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0463768115942029,
+            "effectiveValue": 9600
+        },
+        "mercury_deep_tungsten_ore": {
+            "type": "item",
+            "content": "northstar:mercury_deep_tungsten_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0463768115942029,
+            "effectiveValue": 9600
+        },
+        "enriched_glowstone_ore": {
+            "type": "item",
+            "content": "northstar:enriched_glowstone_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 160,
+            "weightMult": 0.03710144927536232,
+            "effectiveValue": 7680
+        },
+        "martian_steel": {
+            "type": "item",
+            "content": "northstar:martian_steel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0463768115942029,
+            "effectiveValue": 9600
+        },
+        "coiler_sapling": {
+            "type": "item",
+            "content": "northstar:coiler_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "wilter_sapling": {
+            "type": "item",
+            "content": "northstar:wilter_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "argyre_sapling": {
+            "type": "item",
+            "content": "northstar:argyre_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "spike_fungus": {
+            "type": "item",
+            "content": "northstar:spike_fungus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "bloom_fungus": {
+            "type": "item",
+            "content": "northstar:bloom_fungus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "plate_fungus": {
+            "type": "item",
+            "content": "northstar:plate_fungus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "tower_fungus": {
+            "type": "item",
+            "content": "northstar:tower_fungus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "mercury_cactus": {
+            "type": "item",
+            "content": "northstar:mercury_cactus",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "mars_sprout_seeds": {
+            "type": "item",
+            "content": "northstar:mars_sprout_seeds",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.014492753623188406,
+            "effectiveValue": 3000
+        },
+        "mars_tulip_seeds": {
+            "type": "item",
+            "content": "northstar:mars_tulip_seeds",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.014492753623188406,
+            "effectiveValue": 3000
+        },
+        "mars_palm_seeds": {
+            "type": "item",
+            "content": "northstar:mars_palm_seeds",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.014492753623188406,
+            "effectiveValue": 3000
+        },
+        "mars_sprout_flower": {
+            "type": "item",
+            "content": "northstar:mars_sprout_flower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "mars_palm_flower": {
+            "type": "item",
+            "content": "northstar:mars_palm_flower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "mars_tulip_flower": {
+            "type": "item",
+            "content": "northstar:mars_tulip_flower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "martian_strawberry": {
+            "type": "item",
+            "content": "northstar:martian_strawberry",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.005797101449275362,
+            "effectiveValue": 1200
+        },
+        "polished_lunar_sapphire": {
+            "type": "item",
+            "content": "northstar:polished_lunar_sapphire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "polished_diamond": {
+            "type": "item",
+            "content": "northstar:polished_diamond",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 400,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "polished_amethyst": {
+            "type": "item",
+            "content": "northstar:polished_amethyst",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.011594202898550725,
+            "effectiveValue": 2400
+        },
+        "methane_ice": {
+            "type": "item",
+            "content": "northstar:methane_ice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 200,
+            "weightMult": 0.02318840579710145,
+            "effectiveValue": 4800
+        },
+        "targeting_computer": {
+            "type": "item",
+            "content": "northstar:targeting_computer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.057971014492753624,
+            "effectiveValue": 12000
+        },
+        "circuit": {
+            "type": "item",
+            "content": "northstar:circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.028985507246376812,
+            "effectiveValue": 6000
+        },
+        "advanced_circuit": {
+            "type": "item",
+            "content": "northstar:advanced_circuit",
+            "rarity": "RARE",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 4000,
+            "weightMult": 0.11594202898550725,
+            "effectiveValue": 24000
+        }
+    },
+    "requires": [
+        "mek_x_star",
+        "northstar"
+    ]
+}

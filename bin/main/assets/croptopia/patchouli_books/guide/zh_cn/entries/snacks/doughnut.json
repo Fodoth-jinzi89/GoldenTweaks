@@ -1,0 +1,12 @@
+{
+  "name": "油炸圈饼",
+  "icon": "croptopia:doughnut",
+  "category": "croptopia:snacks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:doughnut",
+      "text": "您将在 Blender 中制作的第一个 3D 模型。"
+    }
+  ]
+}

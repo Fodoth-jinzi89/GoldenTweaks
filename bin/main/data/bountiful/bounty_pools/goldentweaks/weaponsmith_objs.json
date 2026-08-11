@@ -1,0 +1,412 @@
+{
+    "content": {
+        "certus_quartz_sword": {
+            "type": "item",
+            "content": "ae2:certus_quartz_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "diamond_sword": {
+            "type": "item",
+            "content": "minecraft:diamond_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.033783783783783786,
+            "effectiveValue": 250
+        },
+        "golden_sword": {
+            "type": "item",
+            "content": "minecraft:golden_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 130,
+            "weightMult": 0.01756756756756757,
+            "effectiveValue": 130
+        },
+        "netherite_sword": {
+            "type": "item",
+            "content": "minecraft:netherite_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.05405405405405406,
+            "effectiveValue": 400
+        },
+        "iron_sword": {
+            "type": "item",
+            "content": "minecraft:iron_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 110,
+            "weightMult": 0.014864864864864866,
+            "effectiveValue": 110
+        },
+        "stone_sword": {
+            "type": "item",
+            "content": "minecraft:stone_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013513513513513514,
+            "effectiveValue": 100
+        },
+        "wooden_sword": {
+            "type": "item",
+            "content": "minecraft:wooden_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013513513513513514,
+            "effectiveValue": 100
+        },
+        "rose_quartz_sword": {
+            "type": "item",
+            "content": "create_sa:rose_quartz_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 210,
+            "weightMult": 0.02837837837837838,
+            "effectiveValue": 210
+        },
+        "brass_sword": {
+            "type": "item",
+            "content": "create_sa:brass_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 110,
+            "weightMult": 0.014864864864864866,
+            "effectiveValue": 110
+        },
+        "zinc_sword": {
+            "type": "item",
+            "content": "create_sa:zinc_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 110,
+            "weightMult": 0.014864864864864866,
+            "effectiveValue": 110
+        },
+        "copper_sword": {
+            "type": "item",
+            "content": "create_sa:copper_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 110,
+            "weightMult": 0.014864864864864866,
+            "effectiveValue": 110
+        },
+        "experience_sword": {
+            "type": "item",
+            "content": "create_sa:experience_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "meteor_crystal_sword": {
+            "type": "item",
+            "content": "ae2cs:meteor_crystal_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "ender_crystal_sword": {
+            "type": "item",
+            "content": "ae2cs:ender_crystal_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 210,
+            "weightMult": 0.02837837837837838,
+            "effectiveValue": 210
+        },
+        "resonating_crystal_sword": {
+            "type": "item",
+            "content": "ae2cs:resonating_crystal_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.05405405405405406,
+            "effectiveValue": 400
+        },
+        "blazing_cleaver": {
+            "type": "item",
+            "content": "create_sa:blazing_cleaver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "steel_sword": {
+            "type": "item",
+            "content": "mekanismtools:steel_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "refined_obsidian_sword": {
+            "type": "item",
+            "content": "mekanismtools:refined_obsidian_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.033783783783783786,
+            "effectiveValue": 250
+        },
+        "refined_glowstone_sword": {
+            "type": "item",
+            "content": "mekanismtools:refined_glowstone_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 210,
+            "weightMult": 0.02837837837837838,
+            "effectiveValue": 210
+        },
+        "osmium_sword": {
+            "type": "item",
+            "content": "mekanismtools:osmium_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "lapis_lazuli_sword": {
+            "type": "item",
+            "content": "mekanismtools:lapis_lazuli_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100,
+            "weightMult": 0.013513513513513514,
+            "effectiveValue": 100
+        },
+        "bronze_sword": {
+            "type": "item",
+            "content": "mekanismtools:bronze_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 110,
+            "weightMult": 0.014864864864864866,
+            "effectiveValue": 110
+        },
+        "martian_sword": {
+            "type": "item",
+            "content": "northstar:martian_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "refined_redstone_sword": {
+            "type": "item",
+            "content": "evolvedmekanism:refined_redstone_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "fluix_sword": {
+            "type": "item",
+            "content": "ae2:fluix_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "nether_quartz_sword": {
+            "type": "item",
+            "content": "ae2:nether_quartz_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 170,
+            "weightMult": 0.022972972972972974,
+            "effectiveValue": 170
+        },
+        "aluminum_sword": {
+            "type": "item",
+            "content": "neoecoae:aluminum_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 130,
+            "weightMult": 0.01756756756756757,
+            "effectiveValue": 130
+        },
+        "tungsten_sword": {
+            "type": "item",
+            "content": "neoecoae:tungsten_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 250,
+            "weightMult": 0.033783783783783786,
+            "effectiveValue": 250
+        },
+        "aluminum_alloy_sword": {
+            "type": "item",
+            "content": "neoecoae:aluminum_alloy_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.05405405405405406,
+            "effectiveValue": 400
+        },
+        "black_tungsten_alloy_sword": {
+            "type": "item",
+            "content": "neoecoae:black_tungsten_alloy_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 400,
+            "weightMult": 0.05405405405405406,
+            "effectiveValue": 400
+        },
+        "black_steel_sword": {
+            "type": "item",
+            "content": "cataclysm:black_steel_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 210,
+            "weightMult": 0.02837837837837838,
+            "effectiveValue": 210
+        },
+        "better_gold_sword": {
+            "type": "item",
+            "content": "evolvedmekanism:better_gold_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 650,
+            "weightMult": 0.08783783783783784,
+            "effectiveValue": 650
+        },
+        "plaslitherite_sword": {
+            "type": "item",
+            "content": "evolvedmekanism:plaslitherite_sword",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 650,
+            "weightMult": 0.08783783783783784,
+            "effectiveValue": 650
+        }
+    },
+    "requires": [
+        "ae2",
+        "ae2cs",
+        "cataclysm",
+        "create_sa",
+        "createcardboardthings",
+        "evolvedmekanism",
+        "mekanismtools",
+        "minecraft",
+        "neoecoae",
+        "northstar"
+    ]
+}

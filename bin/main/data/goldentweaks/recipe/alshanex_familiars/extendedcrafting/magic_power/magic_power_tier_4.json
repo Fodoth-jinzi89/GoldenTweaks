@@ -1,0 +1,39 @@
+{
+  "type": "extendedcrafting:shaped_table",
+
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alshanex_familiars"
+    }
+  ],
+
+  "pattern": [
+    "   A   ",
+    "  ABA  ",
+    " ABBBA ",
+    "ABBCBBA",
+    "ABBBBBA",
+    " ABBBA ",
+    "  AAA  "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/gold"
+    },
+    "B": {
+      "tag": "c:storage_blocks/gold"
+    },
+    "C": {
+      "item": "irons_spellbooks:arcane_ingot"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:magic_power_tier_4",
+	"count": 4
+  }
+}

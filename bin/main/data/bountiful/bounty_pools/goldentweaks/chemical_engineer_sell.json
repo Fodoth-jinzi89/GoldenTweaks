@@ -1,0 +1,2473 @@
+{
+    "content": {
+        "overclocked_control_circuit": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_control_circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_control_circuit": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_control_circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_control_circuit": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_control_circuit",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_control_circuit": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_control_circuit",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "overclocked_tier_installer": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_tier_installer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_tier_installer": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_tier_installer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_tier_installer": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_tier_installer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_tier_installer": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_tier_installer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "max_tier_installer": {
+            "type": "item",
+            "content": "evolvedmekanism:max_tier_installer",
+            "rarity": "LEGENDARY",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4096000,
+            "weightMult": 0.08171734099433405,
+            "effectiveValue": 4096000
+        },
+        "upgrade_radioactive": {
+            "type": "item",
+            "content": "evolvedmekanism:upgrade_radioactive",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "upgrade_solar": {
+            "type": "item",
+            "content": "evolvedmekanism:upgrade_solar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "overclocked_pressurized_tube": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_pressurized_tube",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "ingot_better_gold": {
+            "type": "item",
+            "content": "evolvedmekanism:ingot_better_gold",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "ingot_plaslitherite": {
+            "type": "item",
+            "content": "evolvedmekanism:ingot_plaslitherite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "ingot_refined_redstone": {
+            "type": "item",
+            "content": "evolvedmekanism:ingot_refined_redstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_pressurized_tube": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_pressurized_tube",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_pressurized_tube": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_pressurized_tube",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_pressurized_tube": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_pressurized_tube",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "overclocked_logistical_transporter": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_logistical_transporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_logistical_transporter": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_logistical_transporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_logistical_transporter": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_logistical_transporter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_logistical_transporter": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_logistical_transporter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "overclocked_thermodynamic_conductor": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_thermodynamic_conductor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_thermodynamic_conductor": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_thermodynamic_conductor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_thermodynamic_conductor": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_thermodynamic_conductor",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_thermodynamic_conductor": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_thermodynamic_conductor",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "overclocked_universal_cable": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_universal_cable",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_universal_cable": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_universal_cable",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_universal_cable": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_universal_cable",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_universal_cable": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_universal_cable",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "overclocked_mechanical_pipe": {
+            "type": "item",
+            "content": "evolvedmekanism:overclocked_mechanical_pipe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.00011970313622216902,
+            "effectiveValue": 2400
+        },
+        "quantum_mechanical_pipe": {
+            "type": "item",
+            "content": "evolvedmekanism:quantum_mechanical_pipe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "dense_mechanical_pipe": {
+            "type": "item",
+            "content": "evolvedmekanism:dense_mechanical_pipe",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "multiversal_mechanical_pipe": {
+            "type": "item",
+            "content": "evolvedmekanism:multiversal_mechanical_pipe",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "advanced_electrolysis_core": {
+            "type": "item",
+            "content": "mekmm:advanced_electrolysis_core",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "absolute_control_circuit": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_control_circuit",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "infinite_tier_installer": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_tier_installer",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "supreme_control_circuit": {
+            "type": "item",
+            "content": "mekanism_extras:supreme_control_circuit",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "cosmic_control_circuit": {
+            "type": "item",
+            "content": "mekanism_extras:cosmic_control_circuit",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "upgrade_stack": {
+            "type": "item",
+            "content": "mekanism_extras:upgrade_stack",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "upgrade_ionic_membrane": {
+            "type": "item",
+            "content": "mekanism_extras:upgrade_ionic_membrane",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "absolute_tier_installer": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_tier_installer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "supreme_tier_installer": {
+            "type": "item",
+            "content": "mekanism_extras:supreme_tier_installer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "cosmic_tier_installer": {
+            "type": "item",
+            "content": "mekanism_extras:cosmic_tier_installer",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "infinite_control_circuit": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_control_circuit",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "alloy_radiance": {
+            "type": "item",
+            "content": "mekanism_extras:alloy_radiance",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0003591094086665071,
+            "effectiveValue": 7200
+        },
+        "alloy_thermonuclear": {
+            "type": "item",
+            "content": "mekanism_extras:alloy_thermonuclear",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "alloy_shining": {
+            "type": "item",
+            "content": "mekanism_extras:alloy_shining",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "alloy_spectrum": {
+            "type": "item",
+            "content": "mekanism_extras:alloy_spectrum",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "ingot_naquadah": {
+            "type": "item",
+            "content": "mekanism_extras:ingot_naquadah",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "supreme_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism_extras:supreme_pressurized_tube",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "cosmic_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism_extras:cosmic_pressurized_tube",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "infinite_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_pressurized_tube",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "absolute_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_logistical_transporter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "supreme_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism_extras:supreme_logistical_transporter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "cosmic_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism_extras:cosmic_logistical_transporter",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "infinite_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_logistical_transporter",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "absolute_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_thermodynamic_conductor",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "supreme_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism_extras:supreme_thermodynamic_conductor",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "cosmic_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism_extras:cosmic_thermodynamic_conductor",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "infinite_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_thermodynamic_conductor",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "absolute_universal_cable": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_universal_cable",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "supreme_universal_cable": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:supreme_universal_cable",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 51200,
+            "weightMult": 0.0038305003591094086,
+            "effectiveValue": 76800
+        },
+        "cosmic_universal_cable": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:cosmic_universal_cable",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "infinite_universal_cable": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_universal_cable",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "absolute_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_mechanical_pipe",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "supreme_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism_extras:supreme_mechanical_pipe",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25600,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 51200
+        },
+        "cosmic_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism_extras:cosmic_mechanical_pipe",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 102400,
+            "weightMult": 0.007661000718218817,
+            "effectiveValue": 153600
+        },
+        "infinite_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism_extras:infinite_mechanical_pipe",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1024000,
+            "weightMult": 0.02042933524858351,
+            "effectiveValue": 1024000
+        },
+        "absolute_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism_extras:absolute_pressurized_tube",
+            "rarity": "RARE",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 6400,
+            "weightMult": 0.0009576250897773521,
+            "effectiveValue": 19200
+        },
+        "plasma_circuit": {
+            "type": "item",
+            "content": "mekanism_weaponry:plasma_circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "magnetic_circuit": {
+            "type": "item",
+            "content": "mekanism_weaponry:magnetic_circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "energy_tablet": {
+            "type": "item",
+            "content": "mekanism:energy_tablet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "crafting_formula": {
+            "type": "item",
+            "content": "mekanism:crafting_formula",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "upgrade_stone_generator": {
+            "type": "item",
+            "content": "mekanism:upgrade_stone_generator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "upgrade_anchor": {
+            "type": "item",
+            "content": "mekanism:upgrade_anchor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "upgrade_chemical": {
+            "type": "item",
+            "content": "mekanism:upgrade_chemical",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "upgrade_muffling": {
+            "type": "item",
+            "content": "mekanism:upgrade_muffling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "upgrade_filter": {
+            "type": "item",
+            "content": "mekanism:upgrade_filter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "upgrade_energy": {
+            "type": "item",
+            "content": "mekanism:upgrade_energy",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "upgrade_speed": {
+            "type": "item",
+            "content": "mekanism:upgrade_speed",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "ultimate_tier_installer": {
+            "type": "item",
+            "content": "mekanism:ultimate_tier_installer",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "elite_tier_installer": {
+            "type": "item",
+            "content": "mekanism:elite_tier_installer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "advanced_tier_installer": {
+            "type": "item",
+            "content": "mekanism:advanced_tier_installer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "basic_tier_installer": {
+            "type": "item",
+            "content": "mekanism:basic_tier_installer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "alloy_atomic": {
+            "type": "item",
+            "content": "mekanism:alloy_atomic",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "alloy_reinforced": {
+            "type": "item",
+            "content": "mekanism:alloy_reinforced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "alloy_infused": {
+            "type": "item",
+            "content": "mekanism:alloy_infused",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "ultimate_control_circuit": {
+            "type": "item",
+            "content": "mekanism:ultimate_control_circuit",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "elite_control_circuit": {
+            "type": "item",
+            "content": "mekanism:elite_control_circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "advanced_control_circuit": {
+            "type": "item",
+            "content": "mekanism:advanced_control_circuit",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "basic_control_circuit": {
+            "type": "item",
+            "content": "mekanism:basic_control_circuit",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "hdpe_sheet": {
+            "type": "item",
+            "content": "mekanism:hdpe_sheet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "reprocessed_fissile_fragment": {
+            "type": "item",
+            "content": "mekanism:reprocessed_fissile_fragment",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "pellet_polonium": {
+            "type": "item",
+            "content": "mekanism:pellet_polonium",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "pellet_plutonium": {
+            "type": "item",
+            "content": "mekanism:pellet_plutonium",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "pellet_antimatter": {
+            "type": "item",
+            "content": "mekanism:pellet_antimatter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "teleportation_core": {
+            "type": "item",
+            "content": "mekanism:teleportation_core",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "electrolytic_core": {
+            "type": "item",
+            "content": "mekanism:electrolytic_core",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "ingot_refined_glowstone": {
+            "type": "item",
+            "content": "mekanism:ingot_refined_glowstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "ingot_refined_obsidian": {
+            "type": "item",
+            "content": "mekanism:ingot_refined_obsidian",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "advanced_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism:advanced_pressurized_tube",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "elite_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism:elite_pressurized_tube",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "ultimate_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism:ultimate_pressurized_tube",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "basic_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism:basic_logistical_transporter",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "advanced_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism:advanced_logistical_transporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "elite_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism:elite_logistical_transporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "ultimate_logistical_transporter": {
+            "type": "item",
+            "content": "mekanism:ultimate_logistical_transporter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "restrictive_transporter": {
+            "type": "item",
+            "content": "mekanism:restrictive_transporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "diversion_transporter": {
+            "type": "item",
+            "content": "mekanism:diversion_transporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "basic_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism:basic_thermodynamic_conductor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "advanced_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism:advanced_thermodynamic_conductor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "elite_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism:elite_thermodynamic_conductor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "ultimate_thermodynamic_conductor": {
+            "type": "item",
+            "content": "mekanism:ultimate_thermodynamic_conductor",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "basic_universal_cable": {
+            "type": "item",
+            "content": "mekanism:basic_universal_cable",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "advanced_universal_cable": {
+            "type": "item",
+            "content": "mekanism:advanced_universal_cable",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "elite_universal_cable": {
+            "type": "item",
+            "content": "mekanism:elite_universal_cable",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "ultimate_universal_cable": {
+            "type": "item",
+            "content": "mekanism:ultimate_universal_cable",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "basic_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism:basic_mechanical_pipe",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "advanced_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism:advanced_mechanical_pipe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "elite_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism:elite_mechanical_pipe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "ultimate_mechanical_pipe": {
+            "type": "item",
+            "content": "mekanism:ultimate_mechanical_pipe",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "basic_pressurized_tube": {
+            "type": "item",
+            "content": "mekanism:basic_pressurized_tube",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 5.985156811108451e-05,
+            "effectiveValue": 1200
+        },
+        "solar_panel": {
+            "type": "item",
+            "content": "mekanismgenerators:solar_panel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "turbine_blade": {
+            "type": "item",
+            "content": "mekanismgenerators:turbine_blade",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 3,
+                "max": 6
+            },
+            "unitWorth": 800,
+            "weightMult": 0.00017955470433325354,
+            "effectiveValue": 3600
+        },
+        "carbone_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:carbone_solar_element",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 3200,
+            "weightMult": 0.00047881254488867607,
+            "effectiveValue": 9600
+        },
+        "hybrid_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:hybrid_solar_element",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "improved_hybrid_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:improved_hybrid_solar_element",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 51200,
+            "weightMult": 0.0038305003591094086,
+            "effectiveValue": 76800
+        },
+        "quantum_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:quantum_solar_element",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "spectral_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:spectral_solar_element",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "singular_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:singular_solar_element",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "light_absorbing_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:light_absorbing_solar_element",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "photonic_solar_element": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:photonic_solar_element",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "improved_energy_tablet": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:improved_energy_tablet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 51200,
+            "weightMult": 0.0038305003591094086,
+            "effectiveValue": 76800
+        },
+        "quantum_energy_tablet": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:quantum_energy_tablet",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "spectral_energy_tablet": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:spectral_energy_tablet",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "singular_energy_tablet": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:singular_energy_tablet",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "light_absorbing_energy_tablet": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:light_absorbing_energy_tablet",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "photonic_energy_tablet": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:photonic_energy_tablet",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "infinity_universal_cable": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:infinity_universal_cable",
+            "rarity": "LEGENDARY",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8192000,
+            "weightMult": 0.1634346819886681,
+            "effectiveValue": 8192000
+        },
+        "galactic_universal_cable": {
+            "type": "item",
+            "content": "mekanismadvancedgenerators:galactic_universal_cable",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "alloy_hypercharged": {
+            "type": "item",
+            "content": "evolvedmekanism:alloy_hypercharged",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 12800,
+            "weightMult": 0.0012768334530364695,
+            "effectiveValue": 25600
+        },
+        "alloy_subatomic": {
+            "type": "item",
+            "content": "evolvedmekanism:alloy_subatomic",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 51200,
+            "weightMult": 0.0038305003591094086,
+            "effectiveValue": 76800
+        },
+        "alloy_singular": {
+            "type": "item",
+            "content": "evolvedmekanism:alloy_singular",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "alloy_exoversal": {
+            "type": "item",
+            "content": "evolvedmekanism:alloy_exoversal",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2048000,
+            "weightMult": 0.04085867049716702,
+            "effectiveValue": 2048000
+        },
+        "robit": {
+            "type": "item",
+            "content": "mekanism:robit",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "network_reader": {
+            "type": "item",
+            "content": "mekanism:network_reader",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "portable_teleporter": {
+            "type": "item",
+            "content": "mekanism:portable_teleporter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "seismic_reader": {
+            "type": "item",
+            "content": "mekanism:seismic_reader",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "geiger_counter": {
+            "type": "item",
+            "content": "mekanism:geiger_counter",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "dosimeter": {
+            "type": "item",
+            "content": "mekanism:dosimeter",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "canteen": {
+            "type": "item",
+            "content": "mekanism:canteen",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "configuration_card": {
+            "type": "item",
+            "content": "mekanism:configuration_card",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "gauge_dropper": {
+            "type": "item",
+            "content": "mekanism:gauge_dropper",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "qio_drive_base": {
+            "type": "item",
+            "content": "mekanism:qio_drive_base",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "qio_drive_hyper_dense": {
+            "type": "item",
+            "content": "mekanism:qio_drive_hyper_dense",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "qio_drive_time_dilating": {
+            "type": "item",
+            "content": "mekanism:qio_drive_time_dilating",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "qio_drive_supermassive": {
+            "type": "item",
+            "content": "mekanism:qio_drive_supermassive",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "jetpack_armored": {
+            "type": "item",
+            "content": "mekanism:jetpack_armored",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "atomic_disassembler": {
+            "type": "item",
+            "content": "mekanism:atomic_disassembler",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "electric_bow": {
+            "type": "item",
+            "content": "mekanism:electric_bow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "flamethrower": {
+            "type": "item",
+            "content": "mekanism:flamethrower",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "meka_tool": {
+            "type": "item",
+            "content": "mekanism:meka_tool",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "free_runners": {
+            "type": "item",
+            "content": "mekanism:free_runners",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "free_runners_armored": {
+            "type": "item",
+            "content": "mekanism:free_runners_armored",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "scuba_mask": {
+            "type": "item",
+            "content": "mekanism:scuba_mask",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "scuba_tank": {
+            "type": "item",
+            "content": "mekanism:scuba_tank",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "jetpack": {
+            "type": "item",
+            "content": "mekanism:jetpack",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "hdpe_elytra": {
+            "type": "item",
+            "content": "mekanism:hdpe_elytra",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 32000,
+            "weightMult": 0.0006384167265182347,
+            "effectiveValue": 32000
+        },
+        "hazmat_mask": {
+            "type": "item",
+            "content": "mekanism:hazmat_mask",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "hazmat_gown": {
+            "type": "item",
+            "content": "mekanism:hazmat_gown",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "hazmat_pants": {
+            "type": "item",
+            "content": "mekanism:hazmat_pants",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "hazmat_boots": {
+            "type": "item",
+            "content": "mekanism:hazmat_boots",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "mekasuit_boots": {
+            "type": "item",
+            "content": "mekanism:mekasuit_boots",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "mekasuit_pants": {
+            "type": "item",
+            "content": "mekanism:mekasuit_pants",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "mekasuit_bodyarmor": {
+            "type": "item",
+            "content": "mekanism:mekasuit_bodyarmor",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "mekasuit_helmet": {
+            "type": "item",
+            "content": "mekanism:mekasuit_helmet",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "uranium_hexafluoride_bucket": {
+            "type": "item",
+            "content": "mekanism:uranium_hexafluoride_bucket",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "ethene_bucket": {
+            "type": "item",
+            "content": "mekanism:ethene_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "sodium_bucket": {
+            "type": "item",
+            "content": "mekanism:sodium_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "superheated_sodium_bucket": {
+            "type": "item",
+            "content": "mekanism:superheated_sodium_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "brine_bucket": {
+            "type": "item",
+            "content": "mekanism:brine_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "lithium_bucket": {
+            "type": "item",
+            "content": "mekanism:lithium_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "steam_bucket": {
+            "type": "item",
+            "content": "mekanism:steam_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "heavy_water_bucket": {
+            "type": "item",
+            "content": "mekanism:heavy_water_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "nutritional_paste_bucket": {
+            "type": "item",
+            "content": "mekanism:nutritional_paste_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "hydrofluoric_acid_bucket": {
+            "type": "item",
+            "content": "mekanism:hydrofluoric_acid_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "hydrogen_chloride_bucket": {
+            "type": "item",
+            "content": "mekanism:hydrogen_chloride_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "sulfuric_acid_bucket": {
+            "type": "item",
+            "content": "mekanism:sulfuric_acid_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "sulfur_trioxide_bucket": {
+            "type": "item",
+            "content": "mekanism:sulfur_trioxide_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "sulfur_dioxide_bucket": {
+            "type": "item",
+            "content": "mekanism:sulfur_dioxide_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "chlorine_bucket": {
+            "type": "item",
+            "content": "mekanism:chlorine_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "oxygen_bucket": {
+            "type": "item",
+            "content": "mekanism:oxygen_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "hydrogen_bucket": {
+            "type": "item",
+            "content": "mekanism:hydrogen_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "uranium_oxide_bucket": {
+            "type": "item",
+            "content": "mekanism:uranium_oxide_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "bioethanol_bucket": {
+            "type": "item",
+            "content": "mekanismgenerators:bioethanol_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "weightMult": 9.975261351847418e-06,
+            "effectiveValue": 500
+        },
+        "deuterium_bucket": {
+            "type": "item",
+            "content": "mekanismgenerators:deuterium_bucket",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 3.990104540738967e-05,
+            "effectiveValue": 2000
+        },
+        "fusion_fuel_bucket": {
+            "type": "item",
+            "content": "mekanismgenerators:fusion_fuel_bucket",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "tritium_bucket": {
+            "type": "item",
+            "content": "mekanismgenerators:tritium_bucket",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.00015960418162955868,
+            "effectiveValue": 8000
+        },
+        "qio_drive_boosted": {
+            "type": "item",
+            "content": "evolvedmekanism:qio_drive_boosted",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "qio_drive_singularity": {
+            "type": "item",
+            "content": "mekanism_extras:qio_drive_singularity",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "qio_drive_hypra_solidified": {
+            "type": "item",
+            "content": "evolvedmekanism:qio_drive_hypra_solidified",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 128000,
+            "weightMult": 0.002553666906072939,
+            "effectiveValue": 128000
+        },
+        "qio_drive_black_hole": {
+            "type": "item",
+            "content": "mekanism_extras:qio_drive_black_hole",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "qio_drive_gamma": {
+            "type": "item",
+            "content": "mekanism_extras:qio_drive_gamma",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        },
+        "qio_drive_collapse": {
+            "type": "item",
+            "content": "mekanism_extras:qio_drive_collapse",
+            "rarity": "EPIC",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 512000,
+            "weightMult": 0.010214667624291756,
+            "effectiveValue": 512000
+        }
+    },
+    "requires": [
+        "evolvedmekanism",
+        "mekanism",
+        "mekanism_extras",
+        "mekanism_weaponry",
+        "mekanismadvancedgenerators",
+        "mekanismgenerators",
+        "mekmm"
+    ]
+}

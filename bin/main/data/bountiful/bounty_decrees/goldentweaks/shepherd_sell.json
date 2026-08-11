@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "shepherd_sell"
+    ],
+    "linkedProfessions": [
+        "shepherd"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "objectives": [
+        "golden_all_rews"
+    ],
+    "rewards": [
+        "fletcher_sell"
+    ],
+    "linkedProfessions": [
+        "fletcher"
+    ]
+}

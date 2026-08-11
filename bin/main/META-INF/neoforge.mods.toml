@@ -1,0 +1,876 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "goldentweaks"
+version = "3.1"
+displayName = "GoldenTweaks"
+logoFile = "icon.png"
+displayURL = "https://space.bilibili.com/38982471"
+authors = "Fodoth_jinzi89"
+description = '''Mod for Yuanli'''
+
+[[mixins]]
+config = "goldentweaks.mixins.json"
+
+[[dependencies."goldentweaks"]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "mekanism"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "avartia"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "eccentric_tome"
+type = "optional"
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "kaleidoscope_compat"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_ore_excavation_plus"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ancientreforging"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "evolvedmekanism"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "mekanismadvancedgenerators"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "super_resolution"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "threatengl"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "modernui"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "veil"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "supplementaries"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "allthecompressed"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "allthecompatibility"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "mekmm"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "mekanism_extras"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createnuclear"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "dndesires"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "traveloptics"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "igleelib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "jaopca"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_sa"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createsa_tank_fix"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "irons_spellbooks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "irons_apothic"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "silentgear"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "apotheosisdeschelper"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "apotheosis"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "hazennstuff"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "hazentouvelib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "steampowered"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "compactflap"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "aeronautics_dyeable_components"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "aeroworks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "moonlight"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "extra_apoth_compat"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "aces_spell_utils"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "tunes_n_tomes"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "alshanex_familiars"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "familiarslib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "toomanyrecipeviewers"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ftbquests"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "questshop"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ccterminals"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "fluxnetworks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "densemekanism"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "attributefix"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "prickle"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "alltheores"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "compactmachines"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "croptopia"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "hostilenetworks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "spectrum"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "neoecoae"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_submarine"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "apotheosis_things"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "apothsiscreate"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "aerocali"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ali"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_aeronautics_automated_logistics"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_apothic_enchanting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "mekanism_weaponry"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "mek_x_star"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "vista_plus"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ae2peat"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "modernfix"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "fluidlogistics"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "exspectriments"
+type = "optional"
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "tipsmod"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ae2helpers"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "packagedauto"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "packagedavaritia"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "packagedexcrafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "packagedmekemicals"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "powerful_dummy"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ae2wtlib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ae2"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createmetalogistics"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "hazennstuff"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createmechanicalcompanion"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createmechanicalcompanion"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "protection_pixel"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_fantasizing"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "customrecipe"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createcardboardthings"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "create_optical"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "irons_jewelry"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "maid_storage_manager"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "touhou_little_maid"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "touhou_little_maid_spell"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "touhou_lost_maid"
+type = "optional"
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "flavor_immersed_daily"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "kaleidoscope_cookery"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ccbr"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "kaleidoscope_tavern"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "integrated_villages"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "bountiful"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "fidworkblock"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+
+[[dependencies."goldentweaks"]]
+modId = "waystones"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "extendedcrafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "packagedexcrafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "applied_extended_crafting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "extremesoundmuffler"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "createvoidway"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "northstar"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "apothic_enchanting"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "neoguanniao"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "sophisticatedcore"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "sophisticatedstorage"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "trashslot"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "apothic_attributes"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "additional_attributes"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "additionalentityattributes"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "irons_lib"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "bits_n_bobs"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "terrablender"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "thaumic_tinkerer"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "thaumcraft"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "forbiddenmagic"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+

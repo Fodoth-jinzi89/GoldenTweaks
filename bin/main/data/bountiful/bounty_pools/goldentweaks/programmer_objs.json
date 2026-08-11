@@ -1,0 +1,273 @@
+{
+    "content": {
+        "disk_drive": {
+            "type": "item",
+            "content": "computercraft:disk_drive",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0078125,
+            "effectiveValue": 250
+        },
+        "printer": {
+            "type": "item",
+            "content": "computercraft:printer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0078125,
+            "effectiveValue": 250
+        },
+        "speaker": {
+            "type": "item",
+            "content": "computercraft:speaker",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0078125,
+            "effectiveValue": 250
+        },
+        "monitor_advanced": {
+            "type": "item",
+            "content": "computercraft:monitor_advanced",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 350,
+            "weightMult": 0.02734375,
+            "effectiveValue": 875
+        },
+        "monitor_normal": {
+            "type": "item",
+            "content": "computercraft:monitor_normal",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.015625,
+            "effectiveValue": 500
+        },
+        "computer_advanced": {
+            "type": "item",
+            "content": "computercraft:computer_advanced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 850,
+            "weightMult": 0.06640625,
+            "effectiveValue": 2125
+        },
+        "terminal_advanced": {
+            "type": "item",
+            "content": "ccterminals:terminal_advanced",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 350,
+            "weightMult": 0.02734375,
+            "effectiveValue": 875
+        },
+        "terminal_normal": {
+            "type": "item",
+            "content": "ccterminals:terminal_normal",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200,
+            "weightMult": 0.015625,
+            "effectiveValue": 500
+        },
+        "wireless_modem_normal": {
+            "type": "item",
+            "content": "computercraft:wireless_modem_normal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0390625,
+            "effectiveValue": 1250
+        },
+        "wireless_modem_advanced": {
+            "type": "item",
+            "content": "computercraft:wireless_modem_advanced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0546875,
+            "effectiveValue": 1750
+        },
+        "cable": {
+            "type": "item",
+            "content": "computercraft:cable",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0078125,
+            "effectiveValue": 250
+        },
+        "redstone_relay": {
+            "type": "item",
+            "content": "computercraft:redstone_relay",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0390625,
+            "effectiveValue": 1250
+        },
+        "wired_modem_full": {
+            "type": "item",
+            "content": "computercraft:wired_modem_full",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0546875,
+            "effectiveValue": 1750
+        },
+        "wired_modem": {
+            "type": "item",
+            "content": "computercraft:wired_modem",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0390625,
+            "effectiveValue": 1250
+        },
+        "computer_normal": {
+            "type": "item",
+            "content": "computercraft:computer_normal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 700,
+            "weightMult": 0.0546875,
+            "effectiveValue": 1750
+        },
+        "turtle_advanced": {
+            "type": "item",
+            "content": "computercraft:turtle_advanced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.078125,
+            "effectiveValue": 2500
+        },
+        "turtle_normal": {
+            "type": "item",
+            "content": "computercraft:turtle_normal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 850,
+            "weightMult": 0.06640625,
+            "effectiveValue": 2125
+        },
+        "animatronic_block": {
+            "type": "item",
+            "content": "cccbridge:animatronic_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.078125,
+            "effectiveValue": 2500
+        },
+        "scroller_block": {
+            "type": "item",
+            "content": "cccbridge:scroller_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.078125,
+            "effectiveValue": 2500
+        },
+        "redrouter_block": {
+            "type": "item",
+            "content": "cccbridge:redrouter_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.078125,
+            "effectiveValue": 2500
+        },
+        "target_block": {
+            "type": "item",
+            "content": "cccbridge:target_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.078125,
+            "effectiveValue": 2500
+        },
+        "source_block": {
+            "type": "item",
+            "content": "cccbridge:source_block",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1000,
+            "weightMult": 0.078125,
+            "effectiveValue": 2500
+        }
+    },
+    "requires": [
+        "cccbridge",
+        "ccterminals",
+        "computercraft"
+    ]
+}

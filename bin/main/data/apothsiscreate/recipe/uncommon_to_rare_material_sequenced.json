@@ -1,0 +1,128 @@
+{
+  "type": "create:sequenced_assembly",
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "ingredient": {
+    "item": "apotheosis:uncommon_material"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "chance": 95.0,
+      "id": "apotheosis:rare_material"
+    },
+    {
+      "chance": 5.0,
+      "id": "ae2:ender_dust"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_rare_material"
+        },
+        {
+          "item": "apotheosis:uncommon_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_rare_material"
+        },
+        {
+          "item": "spectrum:topaz_powder"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_rare_material"
+        },
+        {
+          "item": "ae2cs:purified_ender_quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_rare_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_rare_material"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_rare_material"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "goldentweaks:unprocessed_rare_material"
+        },
+        {
+          "type": "neoforge:single",
+          "fluid": "evolvedmekanism:molten_gold",
+          "amount": 90
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:unprocessed_rare_material"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "goldentweaks:unprocessed_rare_material"
+  }
+}

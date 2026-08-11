@@ -1,0 +1,2509 @@
+{
+    "content": {
+        "charred_bones": {
+            "type": "item",
+            "content": "hazennstuff:charred_bones",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00021136754803579156,
+            "effectiveValue": 420
+        },
+        "overgrown_bone": {
+            "type": "item",
+            "content": "hazennstuff:overgrown_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00021136754803579156,
+            "effectiveValue": 420
+        },
+        "nightmare_fuel": {
+            "type": "item",
+            "content": "hazennstuff:nightmare_fuel",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0003019536400511308,
+            "effectiveValue": 600
+        },
+        "blood_vial": {
+            "type": "item",
+            "content": "irons_spellbooks:blood_vial",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0003019536400511308,
+            "effectiveValue": 600
+        },
+        "ender_pearl": {
+            "type": "item",
+            "content": "minecraft:ender_pearl",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0001509768200255654,
+            "effectiveValue": 300
+        },
+        "emerald": {
+            "type": "item",
+            "content": "minecraft:emerald",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00021136754803579156,
+            "effectiveValue": 420
+        },
+        "poisonous_potato": {
+            "type": "item",
+            "content": "minecraft:poisonous_potato",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0001509768200255654,
+            "effectiveValue": 300
+        },
+        "echo_shard": {
+            "type": "item",
+            "content": "minecraft:echo_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 70,
+            "weightMult": 0.00021136754803579156,
+            "effectiveValue": 420
+        },
+        "arcane_sea_shell": {
+            "type": "item",
+            "content": "hazennstuff:arcane_sea_shell",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 130,
+            "weightMult": 0.00039253973206647007,
+            "effectiveValue": 780
+        },
+        "glowing_mushroom": {
+            "type": "item",
+            "content": "hazennstuff:glowing_mushroom",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 130,
+            "weightMult": 0.00039253973206647007,
+            "effectiveValue": 780
+        },
+        "shadow_scale": {
+            "type": "item",
+            "content": "hazennstuff:shadow_scale",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 130,
+            "weightMult": 0.00039253973206647007,
+            "effectiveValue": 780
+        },
+        "yin_yang_core": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:yin_yang_core",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 160,
+            "weightMult": 0.0004831258240818093,
+            "effectiveValue": 960
+        },
+        "bottle_of_souls": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:bottle_of_souls",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 160,
+            "weightMult": 0.0004831258240818093,
+            "effectiveValue": 960
+        },
+        "frozen_bone": {
+            "type": "item",
+            "content": "irons_spellbooks:frozen_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0003019536400511308,
+            "effectiveValue": 600
+        },
+        "lightning_bottle": {
+            "type": "item",
+            "content": "irons_spellbooks:lightning_bottle",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0003019536400511308,
+            "effectiveValue": 600
+        },
+        "divine_pearl": {
+            "type": "item",
+            "content": "irons_spellbooks:divine_pearl",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 130,
+            "weightMult": 0.00039253973206647007,
+            "effectiveValue": 780
+        },
+        "blaze_rod": {
+            "type": "item",
+            "content": "minecraft:blaze_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 160,
+            "weightMult": 0.0004831258240818093,
+            "effectiveValue": 960
+        },
+        "note_block": {
+            "type": "item",
+            "content": "minecraft:note_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 50,
+            "weightMult": 0.0001509768200255654,
+            "effectiveValue": 300
+        },
+        "chlorophyte_block": {
+            "type": "item",
+            "content": "jaopca:storage_blocks.chlorophyte",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 8000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 12000
+        },
+        "chlorophyte_ingot": {
+            "type": "item",
+            "content": "hazennstuff:chlorophyte_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 0.0012078145602045232,
+            "effectiveValue": 2400
+        },
+        "pyrium_nugget": {
+            "type": "item",
+            "content": "hazennstuff:pyrium_nugget",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 80,
+            "weightMult": 0.00040260485340150776,
+            "effectiveValue": 800
+        },
+        "silver_scraps": {
+            "type": "item",
+            "content": "hazennstuff:silver_scraps",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 40,
+            "weightMult": 0.0004831258240818093,
+            "effectiveValue": 960
+        },
+        "mithril_weave": {
+            "type": "item",
+            "content": "irons_spellbooks:mithril_weave",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 1600,
+            "weightMult": 0.0024156291204090463,
+            "effectiveValue": 4800
+        },
+        "mithril_scrap": {
+            "type": "item",
+            "content": "irons_spellbooks:mithril_scrap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0006039072801022616,
+            "effectiveValue": 1200
+        },
+        "arcane_ingot": {
+            "type": "item",
+            "content": "irons_spellbooks:arcane_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 200,
+            "weightMult": 0.0012078145602045232,
+            "effectiveValue": 2400
+        },
+        "magic_cloth": {
+            "type": "item",
+            "content": "irons_spellbooks:magic_cloth",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.0012078145602045232,
+            "effectiveValue": 2400
+        },
+        "arcane_essence": {
+            "type": "item",
+            "content": "irons_spellbooks:arcane_essence",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 20,
+            "weightMult": 0.0004831258240818093,
+            "effectiveValue": 960
+        },
+        "mithril_ingot": {
+            "type": "item",
+            "content": "irons_spellbooks:mithril_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 400,
+            "weightMult": 0.0012078145602045232,
+            "effectiveValue": 2400
+        },
+        "fire_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:fire_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0009058609201533925,
+            "effectiveValue": 1800
+        },
+        "ice_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:ice_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0009058609201533925,
+            "effectiveValue": 1800
+        },
+        "lightning_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:lightning_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0009058609201533925,
+            "effectiveValue": 1800
+        },
+        "eldritch_rune": {
+            "type": "item",
+            "content": "hazennstuff:eldritch_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 440,
+            "weightMult": 0.0013285960162249756,
+            "effectiveValue": 2640
+        },
+        "hydro_rune": {
+            "type": "item",
+            "content": "hazennstuff:hydro_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 440,
+            "weightMult": 0.0013285960162249756,
+            "effectiveValue": 2640
+        },
+        "health_rune": {
+            "type": "item",
+            "content": "hazennstuff:health_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 440,
+            "weightMult": 0.0013285960162249756,
+            "effectiveValue": 2640
+        },
+        "archery_rune": {
+            "type": "item",
+            "content": "hazennstuff:archery_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 380,
+            "weightMult": 0.001147423832194297,
+            "effectiveValue": 2280
+        },
+        "melee_rune": {
+            "type": "item",
+            "content": "hazennstuff:melee_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 380,
+            "weightMult": 0.001147423832194297,
+            "effectiveValue": 2280
+        },
+        "cosmic_rune": {
+            "type": "item",
+            "content": "hazentouvelib:cosmic_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 3000
+        },
+        "ender_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:ender_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 340,
+            "weightMult": 0.0010266423761738448,
+            "effectiveValue": 2040
+        },
+        "holy_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:holy_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 340,
+            "weightMult": 0.0010266423761738448,
+            "effectiveValue": 2040
+        },
+        "blood_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:blood_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 340,
+            "weightMult": 0.0010266423761738448,
+            "effectiveValue": 2040
+        },
+        "evocation_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:evocation_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 340,
+            "weightMult": 0.0010266423761738448,
+            "effectiveValue": 2040
+        },
+        "arcane_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:arcane_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 380,
+            "weightMult": 0.001147423832194297,
+            "effectiveValue": 2280
+        },
+        "cooldown_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:cooldown_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 380,
+            "weightMult": 0.001147423832194297,
+            "effectiveValue": 2280
+        },
+        "protection_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:protection_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 380,
+            "weightMult": 0.001147423832194297,
+            "effectiveValue": 2280
+        },
+        "nature_rune": {
+            "type": "item",
+            "content": "irons_spellbooks:nature_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 300,
+            "weightMult": 0.0009058609201533925,
+            "effectiveValue": 1800
+        },
+        "shadow_rune": {
+            "type": "item",
+            "content": "hazentouvelib:shadow_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 440,
+            "weightMult": 0.0013285960162249756,
+            "effectiveValue": 2640
+        },
+        "radiance_rune": {
+            "type": "item",
+            "content": "hazentouvelib:radiance_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 440,
+            "weightMult": 0.0013285960162249756,
+            "effectiveValue": 2640
+        },
+        "dune_rune": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:dune_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 3000
+        },
+        "spirit_rune": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:spirit_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 3000
+        },
+        "symmetry_rune": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:symmetry_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 3000
+        },
+        "melody_rune": {
+            "type": "item",
+            "content": "tunes_n_tomes:melody_rune",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 3000
+        },
+        "fire_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:fire_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "eldritch_upgrade_orb": {
+            "type": "item",
+            "content": "hazennstuff:eldritch_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 11000,
+            "weightMult": 0.0022143266937082926,
+            "effectiveValue": 11000
+        },
+        "symmetry_upgrade_orb": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:symmetry_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12500,
+            "weightMult": 0.0025162803337594234,
+            "effectiveValue": 12500
+        },
+        "spirit_upgrade_orb": {
+            "type": "item",
+            "content": "iss_magicfromtheeast:spirit_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12500,
+            "weightMult": 0.0025162803337594234,
+            "effectiveValue": 12500
+        },
+        "upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "nature_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:nature_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "mana_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:mana_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "cooldown_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:cooldown_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9500,
+            "weightMult": 0.0019123730536571618,
+            "effectiveValue": 9500
+        },
+        "protection_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:protection_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9500,
+            "weightMult": 0.0019123730536571618,
+            "effectiveValue": 9500
+        },
+        "hydro_upgrade_orb": {
+            "type": "item",
+            "content": "hazennstuff:hydro_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 11000,
+            "weightMult": 0.0022143266937082926,
+            "effectiveValue": 11000
+        },
+        "archery_upgrade_orb": {
+            "type": "item",
+            "content": "hazennstuff:archery_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9500,
+            "weightMult": 0.0019123730536571618,
+            "effectiveValue": 9500
+        },
+        "melody_upgrade_orb": {
+            "type": "item",
+            "content": "tunes_n_tomes:melody_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12500,
+            "weightMult": 0.0025162803337594234,
+            "effectiveValue": 12500
+        },
+        "melee_upgrade_orb": {
+            "type": "item",
+            "content": "hazennstuff:melee_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 9500,
+            "weightMult": 0.0019123730536571618,
+            "effectiveValue": 9500
+        },
+        "health_upgrade_orb": {
+            "type": "item",
+            "content": "hazennstuff:health_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 11000,
+            "weightMult": 0.0022143266937082926,
+            "effectiveValue": 11000
+        },
+        "blood_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:blood_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8500,
+            "weightMult": 0.0017110706269564079,
+            "effectiveValue": 8500
+        },
+        "ender_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:ender_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8500,
+            "weightMult": 0.0017110706269564079,
+            "effectiveValue": 8500
+        },
+        "evocation_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:evocation_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8500,
+            "weightMult": 0.0017110706269564079,
+            "effectiveValue": 8500
+        },
+        "ice_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:ice_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "lightning_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:lightning_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "holy_upgrade_orb": {
+            "type": "item",
+            "content": "irons_spellbooks:holy_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8500,
+            "weightMult": 0.0017110706269564079,
+            "effectiveValue": 8500
+        },
+        "shadow_upgrade_orb": {
+            "type": "item",
+            "content": "hazentouvelib:shadow_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 11000,
+            "weightMult": 0.0022143266937082926,
+            "effectiveValue": 11000
+        },
+        "cosmic_upgrade_orb": {
+            "type": "item",
+            "content": "hazentouvelib:cosmic_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12500,
+            "weightMult": 0.0025162803337594234,
+            "effectiveValue": 12500
+        },
+        "radiance_upgrade_orb": {
+            "type": "item",
+            "content": "hazentouvelib:radiance_upgrade_orb",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 11000,
+            "weightMult": 0.0022143266937082926,
+            "effectiveValue": 11000
+        },
+        "autoloader_crossbow": {
+            "type": "item",
+            "content": "irons_spellbooks:autoloader_crossbow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "hellrazor": {
+            "type": "item",
+            "content": "irons_spellbooks:hellrazor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "decrepit_scythe": {
+            "type": "item",
+            "content": "irons_spellbooks:decrepit_scythe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "legionnaire_flamberge": {
+            "type": "item",
+            "content": "irons_spellbooks:legionnaire_flamberge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "keeper_flamberge": {
+            "type": "item",
+            "content": "irons_spellbooks:keeper_flamberge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "twilight_gale": {
+            "type": "item",
+            "content": "irons_spellbooks:twilight_gale",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "amethyst_rapier": {
+            "type": "item",
+            "content": "irons_spellbooks:amethyst_rapier",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "boreal_blade": {
+            "type": "item",
+            "content": "irons_spellbooks:boreal_blade",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "spellbreaker": {
+            "type": "item",
+            "content": "irons_spellbooks:spellbreaker",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "magehunter": {
+            "type": "item",
+            "content": "irons_spellbooks:magehunter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "pyrium_staff": {
+            "type": "item",
+            "content": "irons_spellbooks:pyrium_staff",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "lightning_rod": {
+            "type": "item",
+            "content": "irons_spellbooks:lightning_rod",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "artificer_cane": {
+            "type": "item",
+            "content": "irons_spellbooks:artificer_cane",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "ice_staff": {
+            "type": "item",
+            "content": "irons_spellbooks:ice_staff",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "graybeard_staff": {
+            "type": "item",
+            "content": "irons_spellbooks:graybeard_staff",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "blood_staff": {
+            "type": "item",
+            "content": "irons_spellbooks:blood_staff",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "cursed_doll_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:cursed_doll_spell_book",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50000,
+            "weightMult": 0.010065121335037694,
+            "effectiveValue": 50000
+        },
+        "iron_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:iron_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0010065121335037694,
+            "effectiveValue": 5000
+        },
+        "ice_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:ice_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "copper_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:copper_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0010065121335037694,
+            "effectiveValue": 5000
+        },
+        "evoker_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:evoker_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "necronomicon_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:necronomicon_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "rotten_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:rotten_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "blaze_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:blaze_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "dragonskin_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:dragonskin_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "villager_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:villager_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "druidic_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:druidic_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "gold_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:gold_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "diamond_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:diamond_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "netherite_spell_book": {
+            "type": "item",
+            "content": "irons_spellbooks:netherite_spell_book",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "invisibility_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:invisibility_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "wicked_bone_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:wicked_bone_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "betrayer_signet": {
+            "type": "item",
+            "content": "irons_spellbooks:betrayer_signet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "poisonward_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:poisonward_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "conjurers_talisman": {
+            "type": "item",
+            "content": "irons_spellbooks:conjurers_talisman",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "frostward_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:frostward_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "teleportation_amulet": {
+            "type": "item",
+            "content": "irons_spellbooks:teleportation_amulet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "visibility_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:visibility_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "expulsion_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:expulsion_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "amethyst_resonance_charm": {
+            "type": "item",
+            "content": "irons_spellbooks:amethyst_resonance_charm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "concentration_amulet": {
+            "type": "item",
+            "content": "irons_spellbooks:concentration_amulet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "affinity_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:affinity_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "greater_conjurers_talisman": {
+            "type": "item",
+            "content": "irons_spellbooks:greater_conjurers_talisman",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "fireward_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:fireward_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "hither_thither_wand": {
+            "type": "item",
+            "content": "irons_spellbooks:hither_thither_wand",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 50000,
+            "weightMult": 0.010065121335037694,
+            "effectiveValue": 50000
+        },
+        "mana_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:mana_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "silver_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:silver_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0010065121335037694,
+            "effectiveValue": 5000
+        },
+        "cooldown_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:cooldown_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "cast_time_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:cast_time_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "heavy_chain_necklace": {
+            "type": "item",
+            "content": "irons_spellbooks:heavy_chain_necklace",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 7500,
+            "weightMult": 0.0015097682002556542,
+            "effectiveValue": 7500
+        },
+        "emerald_stoneplate_ring": {
+            "type": "item",
+            "content": "irons_spellbooks:emerald_stoneplate_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5000,
+            "weightMult": 0.0010065121335037694,
+            "effectiveValue": 5000
+        },
+        "beongae": {
+            "type": "item",
+            "content": "hazennstuff:beongae",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "skyscorcher": {
+            "type": "item",
+            "content": "hazennstuff:skyscorcher",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "ionic_splitter_dormant": {
+            "type": "item",
+            "content": "hazennstuff:ionic_splitter_dormant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "ionic_splitter_t1": {
+            "type": "item",
+            "content": "hazennstuff:ionic_splitter_t1",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "ionic_splitter_t2": {
+            "type": "item",
+            "content": "hazennstuff:ionic_splitter_t2",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "ionic_splitter_t3": {
+            "type": "item",
+            "content": "hazennstuff:ionic_splitter_t3",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "bountiful_harvest": {
+            "type": "item",
+            "content": "hazennstuff:bountiful_harvest",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "thorn_chakram": {
+            "type": "item",
+            "content": "hazennstuff:thorn_chakram",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "blade_of_grass": {
+            "type": "item",
+            "content": "hazennstuff:blade_of_grass",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "o_fortuna_dormant": {
+            "type": "item",
+            "content": "hazennstuff:o_fortuna_dormant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "vampire_knives": {
+            "type": "item",
+            "content": "hazennstuff:vampire_knives",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "devastator_dormant": {
+            "type": "item",
+            "content": "hazennstuff:devastator_dormant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "obsidian_claymore": {
+            "type": "item",
+            "content": "hazennstuff:obsidian_claymore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "pickaxe_axe_divine_gold": {
+            "type": "item",
+            "content": "hazennstuff:pickaxe_axe_divine_gold",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "umbranova_dormant": {
+            "type": "item",
+            "content": "hazennstuff:umbranova_dormant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "hammer_of_justice": {
+            "type": "item",
+            "content": "hazennstuff:hammer_of_justice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "excalibur": {
+            "type": "item",
+            "content": "hazennstuff:excalibur",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "excalibur_divine_gold": {
+            "type": "item",
+            "content": "hazennstuff:excalibur_divine_gold",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "hazens_excalibur": {
+            "type": "item",
+            "content": "hazennstuff:hazens_excalibur",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "divine_greatsword": {
+            "type": "item",
+            "content": "hazennstuff:divine_greatsword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "hammush": {
+            "type": "item",
+            "content": "hazennstuff:hammush",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "meowmere": {
+            "type": "item",
+            "content": "hazennstuff:meowmere",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "spectrum": {
+            "type": "item",
+            "content": "hazennstuff:spectrum",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "terraprisma": {
+            "type": "item",
+            "content": "hazennstuff:terraprisma",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "ancient_warriors_axe": {
+            "type": "item",
+            "content": "hazennstuff:ancient_warriors_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "malice": {
+            "type": "item",
+            "content": "hazennstuff:malice",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "provocation_dormant": {
+            "type": "item",
+            "content": "hazennstuff:provocation_dormant",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "soul_reaper": {
+            "type": "item",
+            "content": "hazennstuff:soul_reaper",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "lights_bane": {
+            "type": "item",
+            "content": "hazennstuff:lights_bane",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "nights_edge": {
+            "type": "item",
+            "content": "hazennstuff:nights_edge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "true_nights_edge": {
+            "type": "item",
+            "content": "hazennstuff:true_nights_edge",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "astralite_cleaver": {
+            "type": "item",
+            "content": "hazennstuff:astralite_cleaver",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "tidal_wave": {
+            "type": "item",
+            "content": "hazennstuff:tidal_wave",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "the_devourer": {
+            "type": "item",
+            "content": "hazennstuff:the_devourer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "mage_bane": {
+            "type": "item",
+            "content": "hazennstuff:mage_bane",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "legionnaire_warlock_axe": {
+            "type": "item",
+            "content": "hazennstuff:legionnaire_warlock_axe",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "dawnmaker": {
+            "type": "item",
+            "content": "hazennstuff:dawnmaker",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "muramasa": {
+            "type": "item",
+            "content": "hazennstuff:muramasa",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "wisewood_cane": {
+            "type": "item",
+            "content": "hazennstuff:wisewood_cane",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "frieren_staff": {
+            "type": "item",
+            "content": "hazennstuff:frieren_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "white_lily_staff": {
+            "type": "item",
+            "content": "hazennstuff:white_lily_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "soulcalling_scepter": {
+            "type": "item",
+            "content": "hazennstuff:soulcalling_scepter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "enderconic_scepter": {
+            "type": "item",
+            "content": "hazennstuff:enderconic_scepter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "blossom_of_the_enchantress": {
+            "type": "item",
+            "content": "hazennstuff:blossom_of_the_enchantress",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "grimoire_staff": {
+            "type": "item",
+            "content": "hazennstuff:grimoire_staff",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "divine_scepter": {
+            "type": "item",
+            "content": "hazennstuff:divine_scepter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "ceaseless_void": {
+            "type": "item",
+            "content": "hazennstuff:ceaseless_void",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "glassweaver_scepter": {
+            "type": "item",
+            "content": "hazennstuff:glassweaver_scepter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "nexus": {
+            "type": "item",
+            "content": "hazennstuff:nexus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "pickaxe_axe": {
+            "type": "item",
+            "content": "hazennstuff:pickaxe_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "spectral_pickaxe": {
+            "type": "item",
+            "content": "hazennstuff:spectral_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 0.004026048534015078,
+            "effectiveValue": 20000
+        },
+        "insania_aeternus": {
+            "type": "item",
+            "content": "hazennstuff:insania_aeternus",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "coralite_cane": {
+            "type": "item",
+            "content": "hazennstuff:coralite_cane",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "frostburn_dagger": {
+            "type": "item",
+            "content": "hazennstuff:frostburn_dagger",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "ice_pike": {
+            "type": "item",
+            "content": "hazennstuff:ice_pike",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 15000,
+            "weightMult": 0.0030195364005113083,
+            "effectiveValue": 15000
+        },
+        "volcano": {
+            "type": "item",
+            "content": "hazennstuff:volcano",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "war_flaming_lance": {
+            "type": "item",
+            "content": "hazennstuff:war_flaming_lance",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "ravens_bane": {
+            "type": "item",
+            "content": "hazennstuff:ravens_bane",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "draconic_splitter": {
+            "type": "item",
+            "content": "hazennstuff:draconic_splitter",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "firebrand": {
+            "type": "item",
+            "content": "hazennstuff:firebrand",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "fireblossom_rapier": {
+            "type": "item",
+            "content": "hazennstuff:fireblossom_rapier",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 30000,
+            "weightMult": 0.006039072801022617,
+            "effectiveValue": 30000
+        },
+        "energized_core_spellbook": {
+            "type": "item",
+            "content": "hazennstuff:energized_core_spellbook",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "pendant_of_harmony": {
+            "type": "item",
+            "content": "hazennstuff:pendant_of_harmony",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "ring_of_efficiency": {
+            "type": "item",
+            "content": "hazennstuff:ring_of_efficiency",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "the_tribunes_medallion": {
+            "type": "item",
+            "content": "hazennstuff:the_tribunes_medallion",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "the_prefects_ring": {
+            "type": "item",
+            "content": "hazennstuff:the_prefects_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "advanced": {
+            "type": "item",
+            "content": "hazennstuff:advanced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "abstract": {
+            "type": "item",
+            "content": "hazennstuff:abstract",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "abomination": {
+            "type": "item",
+            "content": "hazennstuff:abomination",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "absolute": {
+            "type": "item",
+            "content": "hazennstuff:absolute",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "golden_shower_spellbook": {
+            "type": "item",
+            "content": "hazennstuff:golden_shower_spellbook",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75000,
+            "weightMult": 0.015097682002556541,
+            "effectiveValue": 75000
+        },
+        "galvanized_sheath": {
+            "type": "item",
+            "content": "hazennstuff:galvanized_sheath",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "scroll_sheath": {
+            "type": "item",
+            "content": "hazennstuff:scroll_sheath",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 40000,
+            "weightMult": 0.008052097068030156,
+            "effectiveValue": 40000
+        },
+        "arbitrium_wings": {
+            "type": "item",
+            "content": "hazennstuff:arbitrium_wings",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "blade_of_the_legate": {
+            "type": "item",
+            "content": "hazennstuff:blade_of_the_legate",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 60000,
+            "weightMult": 0.012078145602045233,
+            "effectiveValue": 60000
+        },
+        "singularity": {
+            "type": "item",
+            "content": "hazennstuff:singularity",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "strengthened": {
+            "type": "item",
+            "content": "hazennstuff:strengthened",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "sacred": {
+            "type": "item",
+            "content": "hazennstuff:sacred",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "shattered": {
+            "type": "item",
+            "content": "hazennstuff:shattered",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "radiance": {
+            "type": "item",
+            "content": "hazennstuff:radiance",
+            "rarity": "RARE",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100000,
+            "weightMult": 0.020130242670075387,
+            "effectiveValue": 100000
+        },
+        "reinforced": {
+            "type": "item",
+            "content": "hazennstuff:reinforced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "refined": {
+            "type": "item",
+            "content": "hazennstuff:refined",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        },
+        "ruptured": {
+            "type": "item",
+            "content": "hazennstuff:ruptured",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 10000,
+            "weightMult": 0.002013024267007539,
+            "effectiveValue": 10000
+        }
+    },
+    "requires": [
+        "hazennstuff",
+        "hazentouvelib",
+        "irons_spellbooks",
+        "iss_magicfromtheeast",
+        "minecraft",
+        "tunes_n_tomes",
+        "jaopca"
+    ]
+}

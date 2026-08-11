@@ -1,0 +1,12 @@
+{
+  "name": "俏皮薯条",
+  "icon": "croptopia:saucy_chips",
+  "category": "croptopia:snacks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "croptopia:saucy_chips",
+      "text": "用蘸酱或酱汁制作薯片的食谱。"
+    }
+  ]
+}

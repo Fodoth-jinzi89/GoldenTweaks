@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:kitchenknife",
+    "flavor_immersed_daily:wideedgedknife",
+    "flavor_immersed_daily:sharpknife",
+    "flavor_immersed_daily:bonecutterknife"
+  ]
+}

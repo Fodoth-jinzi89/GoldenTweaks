@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "neoecoae:energized_crystal"
+        }
+      ]
+    }
+  ],
+  "processing_time": 25,
+  "results": [
+    {
+      "count": 1,
+      "id": "neoecoae:energized_crystal_dust"
+    }
+  ]
+}

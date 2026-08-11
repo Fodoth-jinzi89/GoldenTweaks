@@ -1,0 +1,1357 @@
+{
+    "content": {
+        "sapphire": {
+            "type": "item",
+            "content": "silentgems:sapphire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "topaz": {
+            "type": "item",
+            "content": "silentgems:topaz",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "moonstone": {
+            "type": "item",
+            "content": "irons_jewelry:moonstone",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "peridot": {
+            "type": "item",
+            "content": "silentgems:peridot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "onyx": {
+            "type": "item",
+            "content": "irons_jewelry:onyx",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "garnet": {
+            "type": "item",
+            "content": "silentgems:garnet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 60,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "ruby": {
+            "type": "item",
+            "content": "irons_jewelry:ruby",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 60,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "carnelian": {
+            "type": "item",
+            "content": "silentgems:carnelian",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 60,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "citrine": {
+            "type": "item",
+            "content": "silentgems:citrine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "heliodor": {
+            "type": "item",
+            "content": "silentgems:heliodor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "moldavite": {
+            "type": "item",
+            "content": "silentgems:moldavite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "turquoise": {
+            "type": "item",
+            "content": "silentgems:turquoise",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "kyanite": {
+            "type": "item",
+            "content": "silentgems:kyanite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "iolite": {
+            "type": "item",
+            "content": "silentgems:iolite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "alexandrite": {
+            "type": "item",
+            "content": "silentgems:alexandrite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 360,
+            "weightMult": 0.03316138540899042,
+            "effectiveValue": 8640
+        },
+        "ammolite": {
+            "type": "item",
+            "content": "silentgems:ammolite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 360,
+            "weightMult": 0.03316138540899042,
+            "effectiveValue": 8640
+        },
+        "rose_quartz": {
+            "type": "item",
+            "content": "hazennstuff:rose_quartz",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 360,
+            "weightMult": 0.03316138540899042,
+            "effectiveValue": 8640
+        },
+        "black_diamond": {
+            "type": "item",
+            "content": "silentgems:black_diamond",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 240,
+            "weightMult": 0.02210759027266028,
+            "effectiveValue": 5760
+        },
+        "white_diamond": {
+            "type": "item",
+            "content": "silentgems:white_diamond",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 240,
+            "weightMult": 0.02210759027266028,
+            "effectiveValue": 5760
+        },
+        "aquamarine": {
+            "type": "item",
+            "content": "silentgems:aquamarine",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "tanzanite": {
+            "type": "item",
+            "content": "silentgems:tanzanite",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "opal": {
+            "type": "item",
+            "content": "silentgems:opal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 160,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "pearl": {
+            "type": "item",
+            "content": "silentgems:pearl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 100,
+            "weightMult": 0.009211495946941784,
+            "effectiveValue": 2400
+        },
+        "coal": {
+            "type": "item",
+            "content": "minecraft:coal",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "redstone": {
+            "type": "item",
+            "content": "minecraft:redstone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "emerald": {
+            "type": "item",
+            "content": "minecraft:emerald",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 240,
+            "weightMult": 0.02210759027266028,
+            "effectiveValue": 5760
+        },
+        "lapis_lazuli": {
+            "type": "item",
+            "content": "minecraft:lapis_lazuli",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.002763448784082535,
+            "effectiveValue": 720
+        },
+        "diamond": {
+            "type": "item",
+            "content": "minecraft:diamond",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 240,
+            "weightMult": 0.02210759027266028,
+            "effectiveValue": 5760
+        },
+        "quartz": {
+            "type": "item",
+            "content": "minecraft:quartz",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0009211495946941784,
+            "effectiveValue": 240
+        },
+        "amethyst_shard": {
+            "type": "item",
+            "content": "minecraft:amethyst_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.002763448784082535,
+            "effectiveValue": 720
+        },
+        "prismarine_crystals": {
+            "type": "item",
+            "content": "minecraft:prismarine_crystals",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 30,
+            "weightMult": 0.002763448784082535,
+            "effectiveValue": 720
+        },
+        "solar_core": {
+            "type": "item",
+            "content": "hazennstuff:solar_core",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 500,
+            "weightMult": 0.04605747973470892,
+            "effectiveValue": 12000
+        },
+        "pink_tulip": {
+            "type": "item",
+            "content": "minecraft:pink_tulip",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "oxeye_daisy": {
+            "type": "item",
+            "content": "minecraft:oxeye_daisy",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "cornflower": {
+            "type": "item",
+            "content": "minecraft:cornflower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "lily_of_the_valley": {
+            "type": "item",
+            "content": "minecraft:lily_of_the_valley",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "torchflower": {
+            "type": "item",
+            "content": "minecraft:torchflower",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "wither_rose": {
+            "type": "item",
+            "content": "minecraft:wither_rose",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 56,
+            "weightMult": 0.010316875460574797,
+            "effectiveValue": 2688
+        },
+        "pink_petals": {
+            "type": "item",
+            "content": "minecraft:pink_petals",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "spore_blossom": {
+            "type": "item",
+            "content": "minecraft:spore_blossom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 56,
+            "weightMult": 0.010316875460574797,
+            "effectiveValue": 2688
+        },
+        "sunflower": {
+            "type": "item",
+            "content": "minecraft:sunflower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "lilac": {
+            "type": "item",
+            "content": "minecraft:lilac",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "rose_bush": {
+            "type": "item",
+            "content": "minecraft:rose_bush",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "peony": {
+            "type": "item",
+            "content": "minecraft:peony",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "pitcher_plant": {
+            "type": "item",
+            "content": "minecraft:pitcher_plant",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "big_dripleaf": {
+            "type": "item",
+            "content": "minecraft:big_dripleaf",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "small_dripleaf": {
+            "type": "item",
+            "content": "minecraft:small_dripleaf",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "wild_flax": {
+            "type": "item",
+            "content": "supplementaries:wild_flax",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "poppy": {
+            "type": "item",
+            "content": "minecraft:poppy",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "blue_orchid": {
+            "type": "item",
+            "content": "minecraft:blue_orchid",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "allium": {
+            "type": "item",
+            "content": "minecraft:allium",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "azure_bluet": {
+            "type": "item",
+            "content": "minecraft:azure_bluet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "red_tulip": {
+            "type": "item",
+            "content": "minecraft:red_tulip",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "orange_tulip": {
+            "type": "item",
+            "content": "minecraft:orange_tulip",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "white_tulip": {
+            "type": "item",
+            "content": "minecraft:white_tulip",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "dandelion": {
+            "type": "item",
+            "content": "minecraft:dandelion",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "watergrass": {
+            "type": "item",
+            "content": "biomesoplenty:watergrass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "reed": {
+            "type": "item",
+            "content": "biomesoplenty:reed",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "cattail": {
+            "type": "item",
+            "content": "biomesoplenty:cattail",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "dead_grass": {
+            "type": "item",
+            "content": "biomesoplenty:dead_grass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "desert_grass": {
+            "type": "item",
+            "content": "biomesoplenty:desert_grass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "dune_grass": {
+            "type": "item",
+            "content": "biomesoplenty:dune_grass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "bush": {
+            "type": "item",
+            "content": "biomesoplenty:bush",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "pink_daffodil": {
+            "type": "item",
+            "content": "biomesoplenty:pink_daffodil",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "orange_cosmos": {
+            "type": "item",
+            "content": "biomesoplenty:orange_cosmos",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "sprout": {
+            "type": "item",
+            "content": "biomesoplenty:sprout",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 10,
+            "weightMult": 0.0018422991893883567,
+            "effectiveValue": 480
+        },
+        "endbloom": {
+            "type": "item",
+            "content": "biomesoplenty:endbloom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 56,
+            "weightMult": 0.010316875460574797,
+            "effectiveValue": 2688
+        },
+        "wilted_lily": {
+            "type": "item",
+            "content": "biomesoplenty:wilted_lily",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "glowflower": {
+            "type": "item",
+            "content": "biomesoplenty:glowflower",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 56,
+            "weightMult": 0.010316875460574797,
+            "effectiveValue": 2688
+        },
+        "icy_iris": {
+            "type": "item",
+            "content": "biomesoplenty:icy_iris",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "wildflower": {
+            "type": "item",
+            "content": "biomesoplenty:wildflower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "white_petals": {
+            "type": "item",
+            "content": "biomesoplenty:white_petals",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "clover": {
+            "type": "item",
+            "content": "biomesoplenty:clover",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "rose": {
+            "type": "item",
+            "content": "biomesoplenty:rose",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "violet": {
+            "type": "item",
+            "content": "biomesoplenty:violet",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 16,
+            "weightMult": 0.0029476787030213707,
+            "effectiveValue": 768
+        },
+        "lavender": {
+            "type": "item",
+            "content": "biomesoplenty:lavender",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "tall_lavender": {
+            "type": "item",
+            "content": "biomesoplenty:tall_lavender",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "white_lavender": {
+            "type": "item",
+            "content": "biomesoplenty:white_lavender",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "tall_white_lavender": {
+            "type": "item",
+            "content": "biomesoplenty:tall_white_lavender",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "blue_hydrangea": {
+            "type": "item",
+            "content": "biomesoplenty:blue_hydrangea",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "goldenrod": {
+            "type": "item",
+            "content": "biomesoplenty:goldenrod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 24,
+            "weightMult": 0.004421518054532056,
+            "effectiveValue": 1152
+        },
+        "origin_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:origin_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "flowering_oak_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:flowering_oak_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "netherwood_sapling": {
+            "type": "item",
+            "content": "silentgear:netherwood_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 70,
+            "weightMult": 0.012896094325718496,
+            "effectiveValue": 3360
+        },
+        "rainbow_birch_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:rainbow_birch_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "fir_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:fir_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "pine_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:pine_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "glowshroom": {
+            "type": "item",
+            "content": "biomesoplenty:glowshroom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 56,
+            "weightMult": 0.010316875460574797,
+            "effectiveValue": 2688
+        },
+        "toadstool": {
+            "type": "item",
+            "content": "biomesoplenty:toadstool",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "red_maple_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:red_maple_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "orange_maple_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:orange_maple_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "yellow_maple_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:yellow_maple_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "redwood_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:redwood_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "mahogany_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:mahogany_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "jacaranda_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:jacaranda_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "palm_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:palm_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "willow_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:willow_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        },
+        "dead_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:dead_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 70,
+            "weightMult": 0.012896094325718496,
+            "effectiveValue": 3360
+        },
+        "magic_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:magic_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 70,
+            "weightMult": 0.012896094325718496,
+            "effectiveValue": 3360
+        },
+        "umbran_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:umbran_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 70,
+            "weightMult": 0.012896094325718496,
+            "effectiveValue": 3360
+        },
+        "hellbark_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:hellbark_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 70,
+            "weightMult": 0.012896094325718496,
+            "effectiveValue": 3360
+        },
+        "empyreal_sapling": {
+            "type": "item",
+            "content": "biomesoplenty:empyreal_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 70,
+            "weightMult": 0.012896094325718496,
+            "effectiveValue": 3360
+        },
+        "wisewood_sapling": {
+            "type": "item",
+            "content": "hazennstuff:wisewood_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "frostbite_birch_sapling": {
+            "type": "item",
+            "content": "hazennstuff:frostbite_birch_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 80,
+            "weightMult": 0.014738393515106854,
+            "effectiveValue": 3840
+        },
+        "oak_sapling": {
+            "type": "item",
+            "content": "minecraft:oak_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "spruce_sapling": {
+            "type": "item",
+            "content": "minecraft:spruce_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "birch_sapling": {
+            "type": "item",
+            "content": "minecraft:birch_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "jungle_sapling": {
+            "type": "item",
+            "content": "minecraft:jungle_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "acacia_sapling": {
+            "type": "item",
+            "content": "minecraft:acacia_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "dark_oak_sapling": {
+            "type": "item",
+            "content": "minecraft:dark_oak_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "mangrove_propagule": {
+            "type": "item",
+            "content": "minecraft:mangrove_propagule",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 30,
+            "weightMult": 0.00552689756816507,
+            "effectiveValue": 1440
+        },
+        "cherry_sapling": {
+            "type": "item",
+            "content": "minecraft:cherry_sapling",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 32,
+                "max": 64
+            },
+            "unitWorth": 44,
+            "weightMult": 0.008106116433308769,
+            "effectiveValue": 2112
+        }
+    },
+    "requires": [
+        "biomesoplenty",
+        "hazennstuff",
+        "irons_jewelry",
+        "minecraft",
+        "silentgear",
+        "silentgems",
+        "supplementaries"
+    ]
+}

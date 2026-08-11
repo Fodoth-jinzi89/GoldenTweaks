@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "ae2cs:purified_rose_quartz"
+  },
+  "output": {
+    "count": 1,
+    "id": "biomesoplenty:rose_quartz_chunk"
+  }
+}
