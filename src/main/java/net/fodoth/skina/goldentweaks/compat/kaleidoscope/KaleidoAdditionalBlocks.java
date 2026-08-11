@@ -3,7 +3,6 @@ package net.fodoth.skina.goldentweaks.compat.kaleidoscope;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;

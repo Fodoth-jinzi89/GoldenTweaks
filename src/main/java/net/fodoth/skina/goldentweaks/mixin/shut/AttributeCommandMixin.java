@@ -1,6 +1,5 @@
 package net.fodoth.skina.goldentweaks.mixin.shut;
 
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.core.Holder;
 import net.minecraft.server.commands.AttributeCommand;
 import net.minecraft.world.entity.Entity;

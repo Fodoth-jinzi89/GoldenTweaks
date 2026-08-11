@@ -1,6 +1,5 @@
 package net.fodoth.skina.goldentweaks.mixin.gpubooster.rendering;
 
-import com.mojang.blaze3d.pipeline.RenderTarget;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.util.SIMDAABBTest;
 import net.fodoth.skina.goldentweaks.util.SmartCullingType;

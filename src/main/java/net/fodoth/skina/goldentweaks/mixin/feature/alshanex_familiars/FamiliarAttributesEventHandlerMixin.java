@@ -1,7 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.alshanex_familiars;
 
 import net.alshanex.familiarslib.event.FamiliarAttributesEventHandler;
-import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksAttributesHelper;
 import net.minecraft.server.level.ServerPlayer;
 import org.spongepowered.asm.mixin.Mixin;

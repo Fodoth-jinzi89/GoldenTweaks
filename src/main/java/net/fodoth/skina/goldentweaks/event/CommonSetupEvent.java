@@ -1,12 +1,9 @@
 package net.fodoth.skina.goldentweaks.event;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.client.event.TextureAtlasStitchedEvent;
-
 import java.lang.reflect.Method;
 
 @EventBusSubscriber(modid = GoldenTweaks.MODID)

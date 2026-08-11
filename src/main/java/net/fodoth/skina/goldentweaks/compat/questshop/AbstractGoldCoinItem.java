@@ -69,7 +69,7 @@ public abstract class AbstractGoldCoinItem extends CoinItem {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag)  {
+    public void appendHoverText(@NotNull ItemStack stack, Item.TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag)  {
         tooltipComponents.add(Component.literal("￥" + multiplier()).withStyle(ChatFormatting.YELLOW));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

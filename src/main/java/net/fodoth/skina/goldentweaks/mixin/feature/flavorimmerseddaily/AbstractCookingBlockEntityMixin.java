@@ -109,7 +109,6 @@ public abstract class AbstractCookingBlockEntityMixin {
     private void gt$getSlots(Direction side, CallbackInfoReturnable<int[]> cir) {
 
         ApplianceType type = this.getApplianceType();
-        int inputCount = type.getInputSlots();
 
         if (side == Direction.UP) {
             // UP：全部输入槽

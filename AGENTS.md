@@ -1,0 +1,66 @@
+# Repository Guidelines
+
+## Project Structure & Module Organization
+
+```
+src/main/java/net/fodoth/skina/goldentweaks/
+├── compat/       # Third-party mod compatibility patches
+├── config/       # Mod configuration classes
+├── debug/        # Debug utilities & logger suppression
+├── event/        # NeoForge event handlers
+├── gpubooster/   # GPU-side rendering optimizations (DSA, SIMD, OpenGL)
+├── mixin/        # Mixin injections into vanilla & modded code
+├── network/      # Custom network packets (C2S / S2C)
+└── util/         # Shared helpers & enums
+```
+
+- **Libs**: JAR dependencies live in `libs/compileOnly/`, `libs/runtimeOnly/`, and `libs/implementation/`.
+- **Assets**: Resources and `mods.toml` template live in `src/main/resources/` and `src/main/templates/`.
+
+## Build, Test, and Development Commands
+
+| Command | Purpose |
+|---|---|
+| `./gradlew build` | Compile and package the mod JAR into `build/libs/` |
+| `./gradlew genIntellijRuns` | Generate IDE run configurations for debugging |
+| `./gradlew runClient` | Launch a test Minecraft client with the mod loaded |
+| `./gradlew runServer` | Launch a test server (no GUI) |
+
+- Requires **JDK 21** and **NeoForge 1.21.1**.
+- CI builds are triggered via GitHub Actions (`.github/workflows/`).
+
+## Coding Style & Naming Conventions
+
+- **Java 21** with Kotlin support in `build.gradle`.
+- Indentation: follow existing file style (Tabs/Spaces as-is); do not reformat unrelated code.
+- Class names: `PascalCase`; methods/variables: `camelCase`; constants: `UPPER_SNAKE_CASE`.
+- Mixins: place in `mixin/` sub-packages matching the target class path (e.g., `mixin/fix/bountiful/`).
+- Compat patches: one package per mod under `compat/<mod_name>/`.
+- Use `@NotNull` / `@Nullable` from `org.jetbrains.annotations`.
+
+## Testing Guidelines
+
+- No formal test suite is currently configured.
+- Manual testing: launch `runClient` and verify changes in-game.
+- When fixing a mod compatibility issue, test with that mod present and absent.
+
+## Commit & Pull Request Guidelines
+
+- Commit messages are short and descriptive (e.g., `v 3.1`, `Thaumcraft compat`).
+- Prepend version tags for releases (`v 3.1`).
+- PRs should describe what was changed and why, with screenshots for visual changes.
+- Link related issues when applicable.
+
+## Agent-Specific Instructions
+
+- **Only target NeoForge 1.21.1** — do not introduce Fabric or multi-loader abstractions.
+- **Never modify `build.gradle` or `settings.gradle`** without explicit request.
+- Edit files surgically: do not reformat, rearrange imports, or "fix" unrelated code.
+- When writing mixins, prefer `@Inject` with `cancellable = true` over `@Overwrite` unless necessary.
+- Configuration options go through `config/` package, not scattered constants.
+- Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configuration, and indirection.
+- Grow the system in layers. Start from the smallest version that works end to end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
+- Keep components modular and concerns clearly separated.
+- Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
+- Lean on the dependencies already in the project before writing your own implementation or adding packages. Do not assume a library lacks a capability without checking its documentation and types.
+- Make architectural decisions for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
