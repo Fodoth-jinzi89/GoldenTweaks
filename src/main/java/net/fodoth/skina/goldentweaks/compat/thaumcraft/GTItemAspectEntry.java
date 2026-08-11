@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * JSON-driven item aspect registration for Thaumcraft.
  * <p>
- * JSON files go in {@code data/<namespace>/goldentweaks/thaumcraft/aspects/}.
+ * JSON files go in {@code data/<namespace>/recipe/thaumcraft/aspects/}.
  * <p>
  * Supports individual items and item tags. Aspects can be freely redefined —
  * last-registered wins.
@@ -44,7 +44,7 @@ public final class GTItemAspectEntry {
 
     private static final String TYPE = "goldentweaks:item_aspect";
     private static final String ENTRY_NAME = "item aspect";
-    private static final String ENTRY_PATH = "goldentweaks/thaumcraft/aspects";
+    private static final String ENTRY_PATH = "recipe/thaumcraft/aspects";
 
     private final Object target;
     private final AspectList aspects = new AspectList();

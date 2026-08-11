@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
+import net.neoforged.neoforge.event.server.ServerStartedEvent;
 
 public class GTThaumcraftRecipeLoader {
 
@@ -14,6 +15,10 @@ public class GTThaumcraftRecipeLoader {
         GTInfusionRecipe.load(resourceManager);
         GTCrucibleRecipe.load(resourceManager);
         GTArcaneRecipe.load(resourceManager);
-        GTItemAspectEntry.load(resourceManager);
+    }
+
+    @SubscribeEvent
+    public static void onServerStarted(ServerStartedEvent event) {
+        GTItemAspectEntry.load(event.getServer().getResourceManager());
     }
 }

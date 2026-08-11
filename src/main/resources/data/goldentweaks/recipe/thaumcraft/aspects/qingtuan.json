@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": { "id": "kaleidoscope_cookery:qingtuan" },
-  "aspects": {
-    "vitreus": 10,
-    "lucrum": 15,
-    "terra": 5
-  }
-}
