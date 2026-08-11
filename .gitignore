@@ -98,3 +98,9 @@ desktop.ini
 # =========================
 .env
 .env.*
+
+# =========================
+# Deep Code (contains API keys)
+# =========================
+.deepcode/*
+!.deepcode/settings.json.example

@@ -14,5 +14,6 @@ public class GTThaumcraftRecipeLoader {
         GTInfusionRecipe.load(resourceManager);
         GTCrucibleRecipe.load(resourceManager);
         GTArcaneRecipe.load(resourceManager);
+        GTItemAspectEntry.load(resourceManager);
     }
 }
