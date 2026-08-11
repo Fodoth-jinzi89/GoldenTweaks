@@ -3,7 +3,7 @@ package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 
-public final class GTThaumcraftRecipeLoader {
+public class GTThaumcraftRecipeLoader {
 
     private GTThaumcraftRecipeLoader() {
     }

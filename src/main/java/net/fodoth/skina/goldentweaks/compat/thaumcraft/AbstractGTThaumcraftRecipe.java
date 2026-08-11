@@ -4,7 +4,7 @@ import net.minecraft.world.item.ItemStack;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
-abstract class AbstractGTThaumcraftRecipe<T extends AbstractGTThaumcraftRecipe<T>> {
+public abstract class AbstractGTThaumcraftRecipe<T extends AbstractGTThaumcraftRecipe<T>> {
 
     protected final String research;
     protected final ItemStack output;

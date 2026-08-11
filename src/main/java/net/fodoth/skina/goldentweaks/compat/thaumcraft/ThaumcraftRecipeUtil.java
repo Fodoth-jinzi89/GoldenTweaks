@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.BiFunction;
 
-final class ThaumcraftRecipeUtil {
+public class ThaumcraftRecipeUtil {
 
     private static final String CONDITIONS = "neoforge:conditions";
 
@@ -85,6 +85,7 @@ final class ThaumcraftRecipeUtil {
         GoldenTweaks.LOGGER.info("Thaumcraft {} recipes: {} loaded, {} skipped.", recipeName, loaded, skipped);
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     static boolean isType(JsonObject json, String type) {
         JsonElement element = json.get("type");
         return element != null
@@ -385,10 +386,12 @@ final class ThaumcraftRecipeUtil {
         }
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     private static boolean isString(JsonElement element) {
         return element != null && element.isJsonPrimitive() && element.getAsJsonPrimitive().isString();
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     private static boolean isNumber(JsonElement element) {
         return element != null && element.isJsonPrimitive() && element.getAsJsonPrimitive().isNumber();
     }

@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public final class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
+public class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
 
     private static final String TYPE = "thaumcraft:arcane_crafting";
     private static final String RECIPE_NAME = "arcane";

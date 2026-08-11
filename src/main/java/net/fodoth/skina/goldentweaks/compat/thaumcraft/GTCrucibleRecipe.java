@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import thaumcraft.api.ThaumcraftApi;
 
-public final class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecipe> {
+public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecipe> {
 
     private static final String TYPE = "thaumcraft:crucible";
     private static final String RECIPE_NAME = "crucible";

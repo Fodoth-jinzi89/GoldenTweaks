@@ -12,7 +12,7 @@ import thaumcraft.api.ThaumcraftApi;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecipe> {
+public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecipe> {
 
     private static final String TYPE = "thaumcraft:infusion_matrix";
     private static final String RECIPE_NAME = "infusion";
