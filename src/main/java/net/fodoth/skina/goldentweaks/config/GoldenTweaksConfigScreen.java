@@ -196,6 +196,11 @@ public class GoldenTweaksConfigScreen {
                     HAGGLER_MAX_DISCOUNT_PERCENTAGE,
                     0.5D, 0.0D, 1.0D);
 
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.tc_jei_aspect_max_page",
+                    TC_JEI_ASPECT_MAX_PAGE,
+                    10, 0, Integer.MAX_VALUE);
+
             // =========================================================
             // Debug
             // =========================================================

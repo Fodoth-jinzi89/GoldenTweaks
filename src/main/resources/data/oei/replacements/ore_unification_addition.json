@@ -1,10 +1,24 @@
 [
   {
     "matchItems": [
-      "hazennstuff:mithril_block",
-      "jaopca:storage_blocks.mithril"
+      "silentgear:emerald_shard",
+      "forbiddenmagic:emerald_nugget"
     ],
-    "resultItems": "hazennstuff:mithril_block"
+    "resultItems": "silentgear:emerald_shard"
+  },
+  {
+    "matchItems": [
+      "extendedcrafting:nether_star_block",
+      "forbiddenmagic:nether_star_block"
+    ],
+    "resultItems": "extendedcrafting:nether_star_block"
+  },
+  {
+    "matchItems": [
+      "thaumcraft:thaumium_block",
+      "jaopca:storage_blocks.thaumium"
+    ],
+    "resultItems": "thaumcraft:thaumium_block"
   },
   {
     "matchItems": [

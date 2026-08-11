@@ -58,6 +58,11 @@
             "id": "spectrum:radiating_ender",
             "optional": true,
             "count": 1
+        },
+        {
+            "id": "thaumic_tinkerer:ender_shard",
+            "optional": true,
+            "count": 1
         }
     ]
 }

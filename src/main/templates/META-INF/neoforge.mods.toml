@@ -853,4 +853,24 @@ versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies."${mod_id}"]]
+modId = "thaumic_tinkerer"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "thaumcraft"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "forbiddenmagic"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
 

@@ -1,0 +1,15 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "ALCHEMICALMANUFACTURE",
+  "result": {
+    "id": "forbiddenmagic:taint_shard",
+    "count": 1
+  },
+  "catalyst": {
+    "type": "item",
+    "id": "ae2cs:fluix_crystalseed"
+  },
+  "aspects": {
+    "vitium": 3
+  }
+}

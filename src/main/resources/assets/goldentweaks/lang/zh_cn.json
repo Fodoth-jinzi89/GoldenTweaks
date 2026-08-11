@@ -79,6 +79,10 @@
   "config.goldentweaks.balance.haggler_max_discount_percentage": "议价戒指最大百分比",
   "config.goldentweaks.balance.haggler_max_discount_percentage.comment": "Iron's Jewelry 的议价戒指最多能降价到原价的百分比。",
 
+  "config.goldentweaks.balance.tc_jei_aspect_max_page": "神秘时代 JEI 元素来源最大页数",
+  "config.goldentweaks.balance.tc_jei_aspect_max_page.comment": "限制最大页数，避免加载过多内容导致性能问题。",
+
+
   "config.goldentweaks.category.feature": "机制",
   "config.goldentweaks.feature.always_edible_food": "食物永远能吃",
   "config.goldentweaks.feature.always_edible_food.comment": "满饱食度下食物也可以吃。",

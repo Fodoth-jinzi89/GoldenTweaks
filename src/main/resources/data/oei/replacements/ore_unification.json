@@ -19,6 +19,24 @@
   },
   {
     "matchItems": [
+      "#c:ores/cinnabar"
+    ],
+    "resultItems": "alltheores:cinnabar_ore"
+  },
+  {
+    "matchItems": [
+      "#c:ores/deepslate_cinnabar"
+    ],
+    "resultItems": "alltheores:deepslate_cinnabar_ore"
+  },
+  {
+    "matchItems": [
+      "#c:raw_materials/cinnabar"
+    ],
+    "resultItems": "alltheores:raw_cinnabar"
+  },
+  {
+    "matchItems": [
       "#c:storage_blocks/raw_aluminum"
     ],
     "resultItems": "alltheores:raw_aluminum_block"
@@ -1330,5 +1348,11 @@
       "#c:storage_blocks/fluorite"
     ],
     "resultItems": "alltheores:fluorite_block"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/iron"
+    ],
+    "resultItems": "minecraft:iron_nugget"
   }
 ]

@@ -51,6 +51,8 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.DoubleValue HAGGLER_MAX_DISCOUNT_PERCENTAGE;
 
+    public static final ModConfigSpec.IntValue TC_JEI_ASPECT_MAX_PAGE;
+
     static {
 
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -200,6 +202,15 @@ public final class GoldenTweaksCommonConfig {
 
         builder.pop();
 
+        builder.push("thaumcraft");
+
+        TC_JEI_ASPECT_MAX_PAGE = builder
+                .translation(key("balance.tc_jei_aspect_max_page"))
+                .comment(comment("balance.tc_jei_aspect_max_page"))
+                .defineInRange("TCJEIAspectMaxPage", 10, 0, Integer.MAX_VALUE);
+
+        builder.pop();
+
         builder.pop();
 
         SPEC = builder.build();
@@ -259,6 +270,15 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return HAGGLER_MAX_DISCOUNT_PERCENTAGE.get();
+    }
+
+    public static int getTCJEIAspectMaxPage() {
+
+        if (!GTState.isReady()) {
+            return 10;
+        }
+
+        return TC_JEI_ASPECT_MAX_PAGE.get();
     }
 
     private static String key(String path) {

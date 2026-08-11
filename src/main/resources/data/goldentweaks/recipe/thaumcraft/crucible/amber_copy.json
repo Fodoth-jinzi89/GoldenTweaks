@@ -1,0 +1,16 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "ALCHEMICALDUPLICATION",
+  "result": {
+    "id": "thaumcraft:amber",
+    "count": 2
+  },
+  "catalyst": {
+    "type": "item",
+    "id": "thaumcraft:amber"
+  },
+  "aspects": {
+    "vinculum": 2,
+    "vitreus": 2
+  }
+}

@@ -107,6 +107,8 @@
     "fix.silentgear.MaterialBookItemMixin",
     "fix.spectrum.CraftingTabletScreenHandlerMixin",
     "fix.spectrum.EnderGlassBlockMixin",
+    "fix.thaumcraft.ThaumcraftJeiPluginMixin",
+    "fix.thaumcraft.TTUtilityItemClientSetupMixin",
     "fix.tmrv.StackHelperMixin",
     "fix.touhoulittlemaid.MaidAIChatManagerMixin",
     "fix.travelerstitles.NeoForgeWaystonesCompatHelperMixin",
