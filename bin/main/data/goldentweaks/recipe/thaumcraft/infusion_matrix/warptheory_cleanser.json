@@ -25,7 +25,7 @@
     { "id": "thaumcraft:primordial_pearl" },
     { "id": "avaritia:crystal_matrix_ingot" },
     { "id": "ae2cs:crystal_grid_block" },
-    { "id": "ae2cs:entro_crystal_block" },
+    { "id": "extendedae:entro_block" },
     { "id": "ae2cs:meteor_crystal_block" }
   ]
 }
