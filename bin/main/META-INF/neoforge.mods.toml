@@ -4,7 +4,7 @@ license = "GPL-3.0-only"
 
 [[mods]]
 modId = "goldentweaks"
-version = "3.2"
+version = "3.3"
 displayName = "GoldenTweaks"
 logoFile = "icon.png"
 displayURL = "https://space.bilibili.com/38982471"
