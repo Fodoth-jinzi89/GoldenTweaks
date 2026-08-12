@@ -1,6 +1,13 @@
 [
   {
     "matchItems": [
+      "supplementaries:flax_seeds",
+      "silentgear:flax_seeds"
+    ],
+    "resultItems": "supplementaries:flax_seeds"
+  },
+  {
+    "matchItems": [
       "chang_sheng_jue:apple_juice",
       "enhancedfarming:apple_juice",
       "flavor_immersed_daily:applejuice",
