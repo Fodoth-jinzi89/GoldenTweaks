@@ -1,0 +1,31 @@
+{
+  "type": "thaumcraft:infusion_matrix",
+  "research": "GT_INFUSION_INTERCEPTER",
+  "instability": 10,
+  "result": {
+    "id": "goldentweaks:infusion_intercepter",
+    "count": 1
+  },
+  "aspects": {
+    "praecantatio": 64,
+    "fames": 64,
+    "instrumentum": 64,
+    "vinculum": 64,
+    "machina": 64,
+    "permutatio": 64
+  },
+  "catalyst": {
+    "id": "thaumcraft:alchemical_construct",
+    "count": 1
+  },
+  "ingredients": [
+    { "id": "thaumcraft:alchemical_construct" },
+    { "id": "thaumcraft:arcane_alembic" },
+    { "id": "thaumcraft:alchemical_construct" },
+    { "id": "thaumcraft:arcane_alembic" },
+    { "id": "thaumcraft:alchemical_construct" },
+    { "id": "thaumcraft:arcane_alembic" },
+    { "id": "thaumcraft:alchemical_construct" },
+    { "id": "thaumcraft:arcane_alembic" }
+  ]
+}

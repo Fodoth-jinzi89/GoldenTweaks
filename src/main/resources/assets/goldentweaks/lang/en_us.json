@@ -176,11 +176,17 @@
   "block.goldentweaks.infusion_intercepter": "Infusion Intercepter",
 
   "itemGroup.goldentweaks.questshop": "Golden Tweaks: QuestShop",
+  "itemGroup.goldentweaks.thaumcraft": "Golden Tweaks: Thaumcraft",
   "item.goldentweaks.radiant_gold": "Radiant Gold",
   "item.goldentweaks.brilliant_gold": "Brilliant Gold",
   "item.goldentweaks.glorious_gold": "Glorious Gold",
   "item.goldentweaks.luminous_gold": "Luminous Gold",
-  "item.goldentweaks.immaculate_gold": "Immaculate Gold"
+  "item.goldentweaks.immaculate_gold": "Immaculate Gold",
+
+  "tc.research_name.GT_INFUSION_INTERCEPTER": "Infusion Intercepter",
+  "tc.research_text.GT_INFUSION_INTERCEPTER": "§oAutomating Infusion: Everything Automated§r",
+  "tc.research_page.GT_INFUSION_INTERCEPTER.1": "You have discovered a mystical device capable of automating the infusion process—the Infusion Intercepter.<BR>Place it 3-10 blocks directly below a Runic Matrix, and it will automatically bind to the matrix and pedestal, drawing required essentia from nearby containers to feed the matrix directly.<BR>Once a catalyst is placed on the bound pedestal, the Intercepter will automatically start the infusion without the need for a wand.",
+  "tc.research_page.GT_INFUSION_INTERCEPTER.2": "The Intercepter also significantly reduces infusion instability, making dangerous recipes far safer. When all essentia requirements are met, it consumes all pedestal items simultaneously, finishing the craft instantly.<BR>Even when the owner is offline, the Intercepter can continue operating using cached arcane knowledge."
 
 
 
