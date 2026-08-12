@@ -167,9 +167,15 @@
   "block.goldentweaks.infusion_intercepter": "注魔截流者",
 
   "itemGroup.goldentweaks.questshop": "金子修改丨任务商店",
+  "itemGroup.goldentweaks.thaumcraft": "金子修改丨神秘扩展",
   "item.goldentweaks.radiant_gold": "灿烂之金",
   "item.goldentweaks.brilliant_gold": "辉煌之金",
   "item.goldentweaks.glorious_gold": "荣耀之金",
   "item.goldentweaks.luminous_gold": "璀璨之金",
-  "item.goldentweaks.immaculate_gold": "无暇之金"
+  "item.goldentweaks.immaculate_gold": "无暇之金",
+
+  "tc.research_name.GT_INFUSION_INTERCEPTER": "注魔截流者",
+  "tc.research_text.GT_INFUSION_INTERCEPTER": "§o自动注魔：自动化一切§r",
+  "tc.research_page.GT_INFUSION_INTERCEPTER.1": "你发现了一种可以自动化注魔过程的神秘设备——注魔截流者。<BR>将它放置在符文矩阵正下方 3-10 格处，它会自动绑定矩阵和基座，并从下方 13x13x3 空间内的源质容器中抽取所需源质直接供给矩阵。<BR>在基座上放置中心物品后，截流者会自动启动注魔，无需法杖右键。",
+  "tc.research_page.GT_INFUSION_INTERCEPTER.2": "截流者还会大幅降低注魔的不稳定性，使危险配方更为安全。当源质需求全部满足后，它会一次性消耗所有基座上的物品，瞬间完成注魔。<BR>即便主人离线，截流者也能利用缓存的奥术知识继续运作。"
 }
