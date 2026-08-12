@@ -179,6 +179,7 @@
     "fix.geckolib.accessor.SimpleTextureAccessor",
     "fix.modernui.ModernUITextRenderTypeMixin",
     "fix.questshop.ShopMenuScreenLocalizationMixin",
+    "fix.thaumcraft.LegacyThaumcraftMobRendererMixin",
     "gpubooster.SetGLVersionMixin",
     "gpubooster.access.MainTargetDimensionAccessor",
     "gpubooster.dsa.BufferBuilderMixin",

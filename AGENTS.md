@@ -34,7 +34,7 @@ src/main/java/net/fodoth/skina/goldentweaks/
 - **Java 21** with Kotlin support in `build.gradle`.
 - Indentation: follow existing file style (Tabs/Spaces as-is); do not reformat unrelated code.
 - Class names: `PascalCase`; methods/variables: `camelCase`; constants: `UPPER_SNAKE_CASE`.
-- Mixins: place in `mixin/` sub-packages matching the target class path (e.g., `mixin/fix/bountiful/`).
+- Mixins: Should have `@Mixin`. Place in `mixin/` sub-packages matching the target class path (e.g., `mixin/fix/bountiful/`). Don't put classes without `@Mixin` in `mixin/` sub-packages. Should also update `src\main\resources\goldentweaks.mixins.json` accordingly.
 - Compat patches: one package per mod under `compat/<mod_name>/`.
 - Use `@NotNull` / `@Nullable` from `org.jetbrains.annotations`.
 

@@ -1,5 +1,7 @@
 # GoldenTweaks Update Log
 
+## 2026.08.12 - v3.3
+
 ## 2026.08.11 - v3.2
 
 ### Thaumcraft
