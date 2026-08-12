@@ -1,0 +1,31 @@
+{
+  "type": "thaumcraft:infusion_matrix",
+  "research": "GT_WARPTHEORY_CLEANSER",
+  "instability": 16,
+  "result": {
+    "id": "goldentweaks:warptheory_cleanser",
+    "count": 1
+  },
+  "aspects": {
+    "praecantatio": 256,
+    "auram": 256,
+    "potentia": 256,
+    "sano": 256
+  },
+  "catalyst": {
+    "id": "minecraft:ghast_tear",
+    "count": 1
+  },
+  "ingredients": [
+    { "id": "thaumic_tinkerer:ichorium_ingot" },
+    { "id": "ae2cs:meteor_crystal_block" },
+    { "id": "ae2cs:entro_crystal_block" },
+    { "id": "ae2cs:crystal_grid_block" },
+    { "id": "avaritia:crystal_matrix_ingot" },
+    { "id": "thaumcraft:primordial_pearl" },
+    { "id": "avaritia:crystal_matrix_ingot" },
+    { "id": "ae2cs:crystal_grid_block" },
+    { "id": "ae2cs:entro_crystal_block" },
+    { "id": "ae2cs:meteor_crystal_block" }
+  ]
+}

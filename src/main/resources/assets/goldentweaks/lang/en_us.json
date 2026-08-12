@@ -1,45 +1,31 @@
 {
   "config.goldentweaks.title": "Golden Tweaks",
-
   "config.goldentweaks.pickup": "Pickup Interaction",
   "config.goldentweaks.pickup.comment": "Settings related to item pickup interaction.",
-
   "config.goldentweaks.pickup.base_pickup_reach": "Base Pickup Reach",
   "config.goldentweaks.pickup.base_pickup_reach.comment": "Base item pickup reach distance.",
-
   "config.goldentweaks.pickup.extended_reach_bonus": "Extended Reach Bonus",
   "config.goldentweaks.pickup.extended_reach_bonus.comment": "Additional pickup reach for creative and spectator players.",
-
   "config.goldentweaks.pickup.search_box_inflate": "Search Box Inflate",
   "config.goldentweaks.pickup.search_box_inflate.comment": "Additional expansion size for the pickup search box.",
-
   "config.goldentweaks.pickup.trace_bias": "Trace Bias",
   "config.goldentweaks.pickup.trace_bias.comment": "Entity tracing bias used during pickup detection.",
-
   "config.goldentweaks.pickup.max_targets": "Maximum Targets",
   "config.goldentweaks.pickup.max_targets.comment": "Maximum number of item entities processed per click.",
-
   "config.goldentweaks.pickup.allow_through_walls": "Allow Through Walls",
   "config.goldentweaks.pickup.allow_through_walls.comment": "Allows item pickup through solid blocks.",
-
   "config.goldentweaks.pickup.allow_sneak_pickup": "Allow Sneak Pickup",
   "config.goldentweaks.pickup.allow_sneak_pickup.comment": "Allows item pickup while sneaking.",
-
   "config.goldentweaks.pickup.block_use": "Block Use",
   "config.goldentweaks.pickup.block_use.comment": "Prevents original right click behavior when using pickup interaction.",
-
   "config.goldentweaks.pickup.allow_continuous_pickup": "Allow Continuous Pickup",
   "config.goldentweaks.pickup.allow_continuous_pickup.comment": "Allows holding right click to continuously pick up nearby items.",
-
   "config.goldentweaks.pickup.continuous_pickup_interval": "Continuous Pickup Interval",
   "config.goldentweaks.pickup.continuous_pickup_interval.comment": "Tick interval between continuous pickup scans while holding right click.",
-
   "config.goldentweaks.pickup.pickup_delay_threshold": "Pickup Delay Threshold",
   "config.goldentweaks.pickup.pickup_delay_threshold.comment": "Prevents pickup of item entities with a pickup delay higher than this value.",
-
   "config.goldentweaks.pickup.allow_infinite_delay": "Allow Infinite Pickup Delay",
   "config.goldentweaks.pickup.allow_infinite_delay.comment": "Allows picking up item entities with an infinite pickup delay.",
-
   "config.goldentweaks.category.building": "Building & Rendering",
   "config.goldentweaks.dsa": "DSA Mode",
   "config.goldentweaks.dsa.comment": "Direct State Access rendering mode.",
@@ -55,7 +41,6 @@
   "config.goldentweaks.vertex_format_cache.comment": "Cache vertex formats to reduce recompilation.",
   "config.goldentweaks.render_cycle_pool_size": "Render Cycle Pool Size",
   "config.goldentweaks.render_cycle_pool_size.comment": "Size of the buffer pool for render cycles.",
-
   "config.goldentweaks.category.misc": "Miscellaneous",
   "config.goldentweaks.renderbuffer_depth": "Renderbuffer Depth",
   "config.goldentweaks.renderbuffer_depth.comment": "Enable depth attachment for render buffers.",
@@ -70,37 +55,27 @@
   "config.goldentweaks.smart_culling.off": "Off",
   "config.goldentweaks.smart_culling.base": "Base",
   "config.goldentweaks.smart_culling.simd": "SIMD",
-
   "config.goldentweaks.category.balance": "Balance",
   "config.goldentweaks.balance": "Balance",
-
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier": "Evolved Mekanism Solar Multiplier",
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output.",
   "config.goldentweaks.balance.recycler_factory_stack_upgrades": "Recycler Factory Stack Upgrades",
   "config.goldentweaks.balance.recycler_factory_stack_upgrades.comment": "Allow Mekanism Extras recycler factories to use Stack upgrades.",
-
   "config.goldentweaks.balance.cataclysm_balance": "Cataclysm Balance",
   "config.goldentweaks.balance.cataclysm_balance.comment": "Balanced Cataclysm Bosses.",
-
   "config.goldentweaks.balance.haggler_max_discount": "Haggler Ring Max Discount Count",
   "config.goldentweaks.balance.haggler_max_discount.comment": "Maximum number of item costs that the Haggler Ring from Iron's Jewelry can reduce",
-
   "config.goldentweaks.balance.haggler_max_discount_percentage": "Haggler Ring Max Discount Percentage",
   "config.goldentweaks.balance.haggler_max_discount_percentage.comment": "Maximum percentage of the original price that the Haggler Ring from Iron's Jewelry can reduce the price to",
-
   "config.goldentweaks.balance.tc_jei_aspect_max_page": "Thaumcraft JEI Aspect Source Maximum Pages",
   "config.goldentweaks.balance.tc_jei_aspect_max_page.comment": "Limits the maximum number of pages generated for Thaumcraft aspect source recipes to prevent excessive JEI/EMI loading",
-
   "config.goldentweaks.category.feature": "Features",
-
   "config.goldentweaks.feature.always_edible_food": "Always Edible Food",
   "config.goldentweaks.feature.always_edible_food.comment": "Allows all food items to be eaten even when the player is fully saturated.",
-
   "config.goldentweaks.feature.lost_maid_drop": "Lost Maid Drop",
   "config.goldentweaks.feature.lost_maid_drop.comment": "Configurable lost maid drop",
   "config.goldentweaks.feature.lost_maid_drop_chance": "Lost Maid Drop Chance",
   "config.goldentweaks.feature.lost_maid_drop_chance.comment": "Lost maid drop chance",
-
   "config.goldentweaks.feature.flavor_auto_pulse": "Flavor Automation (Pulse)",
   "config.goldentweaks.feature.flavor_auto_pulse.comment": "Automates flavor immersed daily machines when receives redstone pulse",
   "config.goldentweaks.feature.flavor_auto_pulse_tick": "Flavor Automation Interval (Pulse)",
@@ -109,18 +84,12 @@
   "config.goldentweaks.feature.flavor_auto_continuous.comment": "Automates flavor immersed daily machines when receives continuous redstone signal",
   "config.goldentweaks.feature.flavor_auto_continuous_tick": "Flavor Automation Interval (Continuous)",
   "config.goldentweaks.feature.flavor_auto_continuous_tick.comment": "Recipe check interval (Continuous)",
-
   "config.goldentweaks.category.debug": "Debug",
-
   "config.goldentweaks.debug.debug_gui_inspector": "GUI Inspector",
   "config.goldentweaks.debug.debug_gui_inspector.comment": "Shift + Middle Click widgets to inspect GUI class information",
-
   "config.goldentweaks.debug.debug_gui_copy_to_clipboard": "Copy GUI Debug To Clipboard",
   "config.goldentweaks.debug.debug_gui_copy_to_clipboard.comment": "Automatically copy GUI debug information to clipboard",
-
   "itemGroup.goldentweaks.familiars": "Golden Tweaks: Familiars",
-
-
   "item.goldentweaks.armor_plate_tier_1": "Wooden Armor Plate",
   "item.goldentweaks.armor_plate_tier_2": "Copper Armor Plate",
   "item.goldentweaks.armor_plate_tier_3": "Iron Armor Plate",
@@ -168,13 +137,10 @@
   "item.goldentweaks.unprocessed_epic_material": "Unprocessed Epic Material",
   "item.goldentweaks.unprocessed_mythic_material": "Unprocessed Mythic Material",
   "item.goldentweaks.unprocessed_ancient_material": "Unprocessed Ancient Material",
-
   "item.goldentweaks.inverted_familiar_spellbook": "Inverted Familiar Spellbook",
   "item.goldentweaks.inverted_familiar_spellbook.desc": "Share familiar attributes to owner",
-
   "block.goldentweaks.garbage_station_floor": "Garbage Station Floor",
   "block.goldentweaks.infusion_intercepter": "Infusion Intercepter",
-
   "itemGroup.goldentweaks.questshop": "Golden Tweaks: QuestShop",
   "itemGroup.goldentweaks.thaumcraft": "Golden Tweaks: Thaumcraft",
   "item.goldentweaks.radiant_gold": "Radiant Gold",
@@ -182,14 +148,13 @@
   "item.goldentweaks.glorious_gold": "Glorious Gold",
   "item.goldentweaks.luminous_gold": "Luminous Gold",
   "item.goldentweaks.immaculate_gold": "Immaculate Gold",
-
   "tc.research_name.GT_INFUSION_INTERCEPTER": "Infusion Intercepter",
   "tc.research_text.GT_INFUSION_INTERCEPTER": "§oAutomating Infusion: Everything Automated§r",
-  "tc.research_page.GT_INFUSION_INTERCEPTER.1": "You have discovered a mystical device capable of automating the infusion process—the Infusion Intercepter.<BR>Place it 3-10 blocks directly below a Runic Matrix, and it will automatically bind to the matrix and pedestal, drawing required essentia from nearby containers to feed the matrix directly.<BR>Once a catalyst is placed on the bound pedestal, the Intercepter will automatically start the infusion without the need for a wand.",
-  "tc.research_page.GT_INFUSION_INTERCEPTER.2": "The Intercepter also significantly reduces infusion instability, making dangerous recipes far safer. When all essentia requirements are met, it consumes all pedestal items simultaneously, finishing the craft instantly.<BR>Even when the owner is offline, the Intercepter can continue operating using cached arcane knowledge."
-
-
-
-
-
+  "tc.research_page.GT_INFUSION_INTERCEPTER.1": "Between the moments of an Infusion ritual, you discovered an apparatus that does not belong to any conventional school of Arcane study — the Infusion Interceptor. It does not cast spells. Instead, it intercepts the ritual itself, binding the flow of arcane power that once required a wizard's constant attention within a cold and silent vessel.<BR>Place it 3 to 10 blocks beneath the Runic Matrix, and the Interceptor will recognize the Matrix and its pedestals on its own. It will search the 13×13×3 space below for containers of Essentia, drawing forth whatever is required as quietly as though the Matrix had never asked anyone for it.<BR>Once the offering is placed upon the central pedestal, the ritual will begin by itself. No wand. No incantation. No need to touch those dangerous runes ever again.",
+  "tc.research_page.GT_INFUSION_INTERCEPTER.2": "More unsettling still, the Interceptor appears capable of taking upon itself a portion of the 'uncertainty' inherent to an Infusion ritual. Recipes that would once have given even seasoned thaumaturges pause become strangely quiet in its presence.<BR>Once all required Essentia has been gathered, the Interceptor will claim every offering upon the pedestals at once, completing the Infusion in a single instant. There is no lengthy incantation, no gradual build-up of the ritual, and no discernible moment between beginning and completion.<BR>Some believe that what lies within the Interceptor is not merely arcane data, but a kind of 'memory of the ritual' itself. Thus, even when its master has departed this world, it continues its work — like a tireless scribe, completing unfinished rites in the hours when no one is watching.",
+  "item.goldentweaks.warptheory_cleanser": "Pure Tears",
+  "item.goldentweaks.warptheory_cleanser.desc": "Clears all warp when consumed",
+  "tc.research_name.GT_WARPTHEORY_CLEANSER": "Pure Tears",
+  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§oPurge all warp completely§r",
+  "tc.research_page.GT_WARPTHEORY_CLEANSER.1": "During your studies of the Arcane Bath, you caught a glimpse of a truth that was never meant to be seen. From that revelation came a peculiar elixir known as Pure Tears — a liquid said to be untouched even by the Warp itself.<BR>Drink it, and every distortion clinging to your being will fade as though it had never existed. Permanent Warp, temporary Warp, even the tenacious stains that cling like an obsession—all shall be washed away.<BR>The ancient formula demanded a price from those who dared to drink it. The modern recipe has removed that price from the cup. All that remains is the draught, and the quiet moment in which your soul remembers how to be still.<BR>Yet purity should not be accepted lightly. There are secrets that reveal themselves only to the distorted, and when the Warp is gone, something besides madness may vanish with it."
 }
