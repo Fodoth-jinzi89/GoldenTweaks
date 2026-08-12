@@ -1,5 +1,31 @@
 # GoldenTweaks Update Log
 
+## 2026.08.12 - v3.4
+
+### Thaumcraft
+- 从 Thaumic Insurgence (1.7.10) 移植注魔截流者（Infusion Intercepter）至 1.21.1
+  - [GTInfusionIntercepterBlock.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTInfusionIntercepterBlock.java)
+  - [GTInfusionIntercepterBlockEntity.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTInfusionIntercepterBlockEntity.java)
+- 注魔截流者功能：
+  - 放置于符文矩阵正下方 3-10 格处，自动绑定最近的矩阵和基座
+  - 每 10 秒扫描正下方方块为顶面的 13×13×3 区域，缓存所有源质容器
+  - 检测基座物品变化，1 秒后自动催动注魔（无需法杖右键）
+  - 源质阶段直接从缓存容器抽取要素并削减矩阵需求量
+  - 物品阶段一次性消耗所有基座物品，瞬间完成注魔
+  - 降低矩阵不稳定性 20 点，破坏时恢复
+  - 记录放置者，玩家离线时利用 FakePlayer + 缓存的研究进度继续运作
+  - 绑定矩阵/基座/源质源时播放各自不同的粒子提示
+- 新增创造模式标签页「金子修改丨神秘扩展」
+  - [GTThaumcraftAdditionalTabs.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftAdditionalTabs.java)
+- 新增注魔合成配方：注魔截流者
+  - 催化剂：炼金构材
+  - 基座物品：炼金构材 ×4、奥术蒸馏器 ×4
+  - 源质：魔力 64、饥饿 64、工具 64、陷阱 64、机械 64、贸易 64
+  - 不稳定度：10
+  - [infusion_intercepter.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/infusion_matrix/infusion_intercepter.json)
+- 新增魔导手册研究页面「注魔截流者」，前置研究：注魔
+  - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
+
 ## 2026.08.12 - v3.3
 
 ### Thaumcraft
