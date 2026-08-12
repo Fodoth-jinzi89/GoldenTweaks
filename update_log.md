@@ -2,6 +2,18 @@
 
 ## 2026.08.12 - v3.3
 
+### Thaumcraft
+- 尝试修复腐化羊（TaintSheep）的纹理问题
+  - 新增 `SafeSheepModel`，使用与 `SheepModel` 相同的骨骼层级，泛型参数为 `LivingEntity`，避免桥接方法强转
+  - 新增 `LegacyThaumcraftMobRendererMixin`，使 TAINT_SHEEP 使用 SafeSheepModel，支持 OptiFine CEM / ETF / FreshAnimations 等资源包正确替换模型纹理
+  - [SafeSheepModel.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/SafeSheepModel.java)
+  - [LegacyThaumcraftMobRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/LegacyThaumcraftMobRendererMixin.java)
+- 添加 ETF（Entity Texture Features）和 EMF（Entity Model Features）依赖库
+- 制作 FreshAnimations 兼容的腐化实体纹理资源包（`ThaumcraftTaintFix_FA`）
+
+### GoldenTweaks
+- 更新 README
+
 ## 2026.08.11 - v3.2
 
 ### Thaumcraft
