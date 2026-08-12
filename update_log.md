@@ -1,5 +1,16 @@
 # GoldenTweaks Update Log
 
+## 2026.08.12 - v3.5
+
+### Thaumcraft
+- 新增物品：纯净泪水（Warp Theory Cleanser）
+  - 食用后清除所有扭曲（永久扭曲、临时扭曲、粘性扭曲）
+  - [GTCleanserItem.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTCleanserItem.java)
+- 新增注魔合成配方：纯净泪水
+  - [warptheory_cleanser.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/infusion_matrix/warptheory_cleanser.json)
+- 新增魔导手册研究页面「纯净泪水」，前置研究：奥术浴场
+  - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
+
 ## 2026.08.12 - v3.4
 
 ### Thaumcraft
