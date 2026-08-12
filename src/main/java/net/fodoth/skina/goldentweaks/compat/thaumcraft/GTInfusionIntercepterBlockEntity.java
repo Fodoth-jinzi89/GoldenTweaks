@@ -192,13 +192,11 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         return h;
     }
 
-    @SuppressWarnings("unchecked")
     private static ArrayList<ItemStack> getMatrixRecipeIngredients(InfusionMatrixBlockEntity matrix) {
         VarHandle h = matrixRecipeIngredientsHandle();
         return h != null ? (ArrayList<ItemStack>) h.get(matrix) : null;
     }
 
-    @SuppressWarnings("unchecked")
     private static ArrayList<BlockPos> getMatrixPedestals(InfusionMatrixBlockEntity matrix) {
         VarHandle h = matrixPedestalsHandle();
         return h != null ? (ArrayList<BlockPos>) h.get(matrix) : null;
