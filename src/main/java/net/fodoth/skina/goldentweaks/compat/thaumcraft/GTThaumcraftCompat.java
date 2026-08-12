@@ -11,6 +11,7 @@ public final class GTThaumcraftCompat {
     public static void register(IEventBus modEventBus) {
         GTThaumcraftAdditionalBlocks.BLOCKS.register(modEventBus);
         GTThaumcraftAdditionalBlocks.ITEMS.register(modEventBus);
+        GTThaumcraftAdditionalItems.ITEMS.register(modEventBus);
         GTThaumcraftAdditionalBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         GTThaumcraftAdditionalTabs.register(modEventBus);
 

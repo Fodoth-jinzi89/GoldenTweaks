@@ -20,6 +20,7 @@ public final class GTThaumcraftAdditionalTabs {
                     .icon(() -> new ItemStack(GTThaumcraftAdditionalBlocks.INFUSION_INTERCEPTER_ITEM.get()))
                     .displayItems((parameters, output) -> {
                         output.accept(GTThaumcraftAdditionalBlocks.INFUSION_INTERCEPTER_ITEM.get());
+                        output.accept(GTThaumcraftAdditionalItems.WARPTHEORY_CLEANSER.get());
                     })
                     .build()
             );
