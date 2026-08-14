@@ -89,6 +89,8 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
     private static final int PALETTE_Y = 12;
     private static final int PALETTE_COLS = 4;
     private static final int PALETTE_CELL = 16;
+    /** Visible rows per palette before the list scrolls. */
+    private static final int PALETTE_ROWS = 12;
 
     private static final int COPY_X = 207;
     private static final int COPY_Y = 6;
@@ -100,6 +102,10 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
     private static final int BATCH_LIMIT = 10;
 
     private Aspect draggedAspect;
+
+    /** Rows scrolled off the top of the left/right aspect palettes. */
+    private int leftScroll;
+    private int rightScroll;
 
     public GTResearchTableScreen(ResearchTableMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
@@ -167,23 +173,37 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
     private void drawPalettes(GuiGraphics graphics) {
         List<Aspect> all = this.palette();
         int half = (all.size() + 1) / 2;
-        this.drawPalette(graphics, all.subList(0, half), PALETTE_LEFT_X);
-        this.drawPalette(graphics, all.subList(half, all.size()), PALETTE_RIGHT_X);
+        this.leftScroll = clampScroll(this.leftScroll, all.subList(0, half).size());
+        this.rightScroll = clampScroll(this.rightScroll, all.subList(half, all.size()).size());
+        this.drawPalette(graphics, all.subList(0, half), PALETTE_LEFT_X, this.leftScroll);
+        this.drawPalette(graphics, all.subList(half, all.size()), PALETTE_RIGHT_X, this.rightScroll);
     }
 
-    private void drawPalette(GuiGraphics graphics, List<Aspect> aspects, int originX) {
-        for (int i = 0; i < aspects.size(); ++i) {
-            Aspect aspect = aspects.get(i);
-            int col = i % PALETTE_COLS;
-            int row = i / PALETTE_COLS;
-            int x = this.leftPos + originX + col * PALETTE_CELL;
-            int y = this.topPos + PALETTE_Y + row * PALETTE_CELL;
-            int available = this.menu.pool(aspect) + this.menu.bonus(aspect);
-            blitTinted(graphics, ASPECT_BG, x - 2, y - 2, 20, 20,
-                    0.0f, 0.0f, 32, 32, 32, 32, 1.0f, 1.0f, 1.0f, 1.0f, false);
-            AspectGuiRenderer.draw(graphics, aspect, x, y, 16, available > 0 ? 1.0f : 0.33f);
-            AspectGuiRenderer.drawCount(graphics, this.font, available, x, y, available > 0 ? -1 : 0x66FFFFFF);
-            this.drawBonusSparkle(graphics, x, y, this.menu.bonus(aspect));
+    private static int clampScroll(int scroll, int size) {
+        int maxScroll = Math.max(0, (size + PALETTE_COLS - 1) / PALETTE_COLS - PALETTE_ROWS);
+        return Math.max(0, Math.min(scroll, maxScroll));
+    }
+
+    private void drawPalette(GuiGraphics graphics, List<Aspect> aspects, int originX, int scroll) {
+        int rows = (aspects.size() + PALETTE_COLS - 1) / PALETTE_COLS;
+        int firstRow = Math.min(scroll, Math.max(0, rows - PALETTE_ROWS));
+        int lastRow = Math.min(rows, firstRow + PALETTE_ROWS);
+        for (int row = firstRow; row < lastRow; ++row) {
+            for (int col = 0; col < PALETTE_COLS; ++col) {
+                int index = row * PALETTE_COLS + col;
+                if (index >= aspects.size()) {
+                    break;
+                }
+                Aspect aspect = aspects.get(index);
+                int x = this.leftPos + originX + col * PALETTE_CELL;
+                int y = this.topPos + PALETTE_Y + (row - firstRow) * PALETTE_CELL;
+                int available = this.menu.pool(aspect) + this.menu.bonus(aspect);
+                blitTinted(graphics, ASPECT_BG, x - 2, y - 2, 20, 20,
+                        0.0f, 0.0f, 32, 32, 32, 32, 1.0f, 1.0f, 1.0f, 1.0f, false);
+                AspectGuiRenderer.draw(graphics, aspect, x, y, 16, available > 0 ? 1.0f : 0.33f);
+                AspectGuiRenderer.drawCount(graphics, this.font, available, x, y, available > 0 ? -1 : 0x66FFFFFF);
+                this.drawBonusSparkle(graphics, x, y, this.menu.bonus(aspect));
+            }
         }
     }
 
@@ -450,6 +470,31 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
         return super.mouseReleased(mouseX, mouseY, button);
     }
 
+    @Override
+    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
+        int localX = (int) mouseX - this.leftPos;
+        int localY = (int) mouseY - this.topPos;
+        int paletteWidth = PALETTE_COLS * PALETTE_CELL;
+        int paletteHeight = PALETTE_ROWS * PALETTE_CELL;
+        boolean overLeft = inside(localX, localY, PALETTE_LEFT_X, PALETTE_Y, paletteWidth, paletteHeight);
+        boolean overRight = inside(localX, localY, PALETTE_RIGHT_X, PALETTE_Y, paletteWidth, paletteHeight);
+        if (!overLeft && !overRight) {
+            return super.mouseScrolled(mouseX, mouseY, horizontalAmount, verticalAmount);
+        }
+        List<Aspect> all = this.palette();
+        int half = (all.size() + 1) / 2;
+        int step = (int) Math.signum(verticalAmount);
+        int previous;
+        if (overLeft) {
+            previous = this.leftScroll;
+            this.leftScroll = clampScroll(this.leftScroll - step, all.subList(0, half).size());
+        } else {
+            previous = this.rightScroll;
+            this.rightScroll = clampScroll(this.rightScroll - step, all.subList(half, all.size()).size());
+        }
+        return previous != (overLeft ? this.leftScroll : this.rightScroll);
+    }
+
     /**
      * Sends one (or, when {@code batch} is set, up to {@link #BATCH_LIMIT})
      * combination clicks for {@code first + second}, bounded by the synced pool.
@@ -486,17 +531,17 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
     private Aspect paletteAt(int localX, int localY) {
         List<Aspect> all = this.palette();
         int half = (all.size() + 1) / 2;
-        Aspect left = this.paletteAt(localX, localY, all.subList(0, half), PALETTE_LEFT_X);
-        return left != null ? left : this.paletteAt(localX, localY, all.subList(half, all.size()), PALETTE_RIGHT_X);
+        Aspect left = this.paletteAt(localX, localY, all.subList(0, half), PALETTE_LEFT_X, this.leftScroll);
+        return left != null ? left : this.paletteAt(localX, localY, all.subList(half, all.size()), PALETTE_RIGHT_X, this.rightScroll);
     }
 
     @Nullable
-    private Aspect paletteAt(int localX, int localY, List<Aspect> aspects, int originX) {
+    private Aspect paletteAt(int localX, int localY, List<Aspect> aspects, int originX, int scroll) {
         if (localX < originX || localY < PALETTE_Y) {
             return null;
         }
         int col = (localX - originX) / PALETTE_CELL;
-        int row = (localY - PALETTE_Y) / PALETTE_CELL;
+        int row = (localY - PALETTE_Y) / PALETTE_CELL + scroll;
         if (col < 0 || col >= PALETTE_COLS || row < 0) {
             return null;
         }
