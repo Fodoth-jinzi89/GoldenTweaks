@@ -24,7 +24,12 @@ public final class GTAspectPhials {
     }
 
     public static void bind() {
-        for (Map.Entry<String, DeferredItem<Item>> entry : GTThaumcraftAdditionalItems.phials().entrySet()) {
+        bindAll(GTThaumcraftAdditionalItems.phials());
+        bindAll(GTThaumcraftAdditionalItems.wisps());
+    }
+
+    private static void bindAll(Map<String, DeferredItem<Item>> variants) {
+        for (Map.Entry<String, DeferredItem<Item>> entry : variants.entrySet()) {
             bindFixedAspect(entry.getValue(), entry.getKey());
         }
     }

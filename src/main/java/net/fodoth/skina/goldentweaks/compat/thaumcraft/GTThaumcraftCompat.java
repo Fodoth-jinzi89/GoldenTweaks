@@ -33,6 +33,7 @@ public final class GTThaumcraftCompat {
         GTAspectPhialColors.register(modEventBus);
         modEventBus.addListener(RegisterClientTooltipComponentFactoriesEvent.class, e ->
                 e.register(GTAspectRecipeTooltip.class, GTAspectRecipeClientTooltip::new));
+        GTThaumcraftDataGen.register(modEventBus);
 
         registerPhialsFromJson(container);
 
@@ -42,16 +43,16 @@ public final class GTThaumcraftCompat {
     }
 
     /**
-     * Registers one phial variant per aspect defined in JSON, so adding a new
-     * aspect only requires a new JSON file — no Java changes.
+     * Registers a phial and a wisp essence variant per aspect defined in JSON,
+     * so adding a new aspect only requires a new JSON file — no Java changes.
      */
     private static void registerPhialsFromJson(ModContainer container) {
         List<String> tags = discoverAspectTags(container);
         for (String tag : tags) {
-            GTThaumcraftAdditionalItems.registerPhial(tag);
+            GTThaumcraftAdditionalItems.registerAspect(tag);
         }
         if (!tags.isEmpty()) {
-            GoldenTweaks.LOGGER.info("Registered {} phial variants from aspect JSON: {}.", tags.size(), tags);
+            GoldenTweaks.LOGGER.info("Registered phial + wisp variants from aspect JSON: {}.", tags);
         }
     }
 

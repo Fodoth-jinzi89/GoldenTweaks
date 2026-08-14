@@ -23,6 +23,8 @@ public final class GTThaumcraftAdditionalTabs {
                         output.accept(GTThaumcraftAdditionalItems.WARPTHEORY_CLEANSER.get());
                         GTThaumcraftAdditionalItems.phials().values()
                                 .forEach(phial -> output.accept(phial.get()));
+                        GTThaumcraftAdditionalItems.wisps().values()
+                                .forEach(wisp -> output.accept(wisp.get()));
                     })
                     .build()
             );

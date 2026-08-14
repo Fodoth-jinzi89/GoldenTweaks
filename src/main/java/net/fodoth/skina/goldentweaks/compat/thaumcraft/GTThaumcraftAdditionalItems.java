@@ -19,27 +19,41 @@ public final class GTThaumcraftAdditionalItems {
             ITEMS.register("warptheory_cleanser", GTCleanserItem::new);
 
     private static final Map<String, DeferredItem<Item>> PHIALS = new LinkedHashMap<>();
+    private static final Map<String, DeferredItem<Item>> WISPS = new LinkedHashMap<>();
 
     private GTThaumcraftAdditionalItems() {
     }
 
     /**
-     * Registers a fixed phial variant {@code phial_of_essentia_<tag>}. The aspect
-     * itself is resolved later from JSON, so the item is created with a null
-     * fixed aspect and bound reflectively once the aspects are loaded.
+     * Registers both a phial ({@code phial_of_essentia_<tag>}) and a wisp essence
+     * ({@code wisp_essence_<tag>}) variant for the given aspect tag. The aspect is
+     * resolved later from JSON, so items are created with a null fixed aspect and
+     * bound reflectively once the aspects are loaded.
      */
-    public static DeferredItem<Item> registerPhial(String tag) {
-        return PHIALS.computeIfAbsent(tag, GTThaumcraftAdditionalItems::createPhial);
+    public static void registerAspect(String tag) {
+        PHIALS.computeIfAbsent(tag, GTThaumcraftAdditionalItems::createPhial);
+        WISPS.computeIfAbsent(tag, GTThaumcraftAdditionalItems::createWisp);
     }
 
     public static Map<String, DeferredItem<Item>> phials() {
         return Collections.unmodifiableMap(PHIALS);
     }
 
+    public static Map<String, DeferredItem<Item>> wisps() {
+        return Collections.unmodifiableMap(WISPS);
+    }
+
     private static DeferredItem<Item> createPhial(String tag) {
         return ITEMS.register(
                 "phial_of_essentia_" + tag,
                 () -> new AspectEssenceItem(AspectEssenceItem.Kind.PHIAL, null, new Item.Properties())
+        );
+    }
+
+    private static DeferredItem<Item> createWisp(String tag) {
+        return ITEMS.register(
+                "wisp_essence_" + tag,
+                () -> new AspectEssenceItem(AspectEssenceItem.Kind.WISP, null, new Item.Properties())
         );
     }
 }

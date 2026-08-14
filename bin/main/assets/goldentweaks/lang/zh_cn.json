@@ -162,7 +162,9 @@
   "tc.aspect.ascension": "飞升",
   "tc.aspect.help.ascension": "飞升，无限，成神",
   "item.goldentweaks.phial_of_essentia_terminus": "要素安瓿: 终结",
-  "item.goldentweaks.phial_of_essentia_ascension": "要素安瓿: 飞升",
+  "item.goldentweaks.phial_of_essentia_ascension": "要素安瓿: 飞升",
+  "item.goldentweaks.wisp_essence_terminus": "天域之华: 终结",
+  "item.goldentweaks.wisp_essence_ascension": "天域之华: 飞升",
   "goldentweaks.researchtable.usagehint.header": "使用方法",
   "goldentweaks.researchtable.usagehint.description": "拖拽要素到六边形上以书写，拖拽到另一要素上以合成",
   "goldentweaks.researchtable.usagehint.research_expertise": "合成时按住 Ctrl 可一次合成最多 10 个要素（需研究专精）。"

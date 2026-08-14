@@ -162,7 +162,9 @@
   "tc.aspect.ascension": "Ascension",
   "tc.aspect.help.ascension": "Ascension, Infinity, God.",
   "item.goldentweaks.phial_of_essentia_terminus": "Phial of Essentia: Terminus",
-  "item.goldentweaks.phial_of_essentia_ascension": "Phial of Essentia: Ascension",
+  "item.goldentweaks.phial_of_essentia_ascension": "Phial of Essentia: Ascension",
+  "item.goldentweaks.wisp_essence_terminus": "Wisp Essence: Terminus",
+  "item.goldentweaks.wisp_essence_ascension": "Wisp Essence: Ascension",
   "goldentweaks.researchtable.usagehint.header": "How to use",
   "goldentweaks.researchtable.usagehint.description": "Drag & drop or drag & right-click aspects to draw and combine",
   "goldentweaks.researchtable.usagehint.research_expertise": "Hold ctrl while combining to make up to 10 aspects. Works with research mastery."
