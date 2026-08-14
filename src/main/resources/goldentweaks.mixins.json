@@ -182,6 +182,7 @@
     "fix.geckolib.accessor.SimpleTextureAccessor",
     "fix.modernui.ModernUITextRenderTypeMixin",
     "fix.questshop.ShopMenuScreenLocalizationMixin",
+    "fix.thaumcraft.AspectGuiRendererMixin",
     "fix.thaumcraft.LegacyThaumcraftMobRendererMixin",
     "feature.thaumcraft.TCClientSetupMixin",
     "gpubooster.SetGLVersionMixin",

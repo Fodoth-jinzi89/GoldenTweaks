@@ -9,8 +9,10 @@ import net.minecraft.server.packs.resources.ResourceManager;
 import thaumcraft.api.aspects.Aspect;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 /**
  * JSON-driven Thaumcraft aspect registration.
@@ -40,6 +42,8 @@ import java.util.List;
  *
  * <p>Color may be a decimal integer or a hex string ({@code "0xffaa00"}, {@code "#ffaa00"} or {@code "ffaa00"}).
  * If omitted, {@code image} defaults to {@code thaumcraft:textures/aspects/<tag>.png} and {@code blend} to {@code 1}.
+ * <p>Set {@code "tint": false} when the icon texture is already colored and must be drawn
+ * without the aspect-color tint (defaults to {@code true}).
  * Aspect display names are localized through {@code tc.aspect.<tag>} in language files.
  */
 public final class GTAspectEntry {
@@ -48,17 +52,30 @@ public final class GTAspectEntry {
     private static final String ENTRY_NAME = "aspect";
     private static final String ENTRY_PATH = "thaumcraft/aspects";
 
+    /** Tags whose icons are drawn without the aspect-color tint (see {@code "tint": false}). */
+    private static final Set<String> UNTINTED_TAGS = new HashSet<>();
+
     private final String tag;
     private final int color;
     private final int blend;
+    private final boolean tint;
     private final ResourceLocation image;
     private final List<String> components = new ArrayList<>();
 
-    private GTAspectEntry(String tag, int color, int blend, ResourceLocation image) {
+    private GTAspectEntry(String tag, int color, int blend, boolean tint, ResourceLocation image) {
         this.tag = tag;
         this.color = color;
         this.blend = blend;
+        this.tint = tint;
         this.image = image;
+    }
+
+    /**
+     * @return {@code true} if the given aspect tag was declared with {@code "tint": false}
+     *         in its aspect JSON, so its icon must be rendered without the aspect color.
+     */
+    public static boolean isUntinted(String tag) {
+        return UNTINTED_TAGS.contains(tag);
     }
 
     /**
@@ -68,6 +85,9 @@ public final class GTAspectEntry {
      * @return {@code true} if the aspect is registered (or was already registered).
      */
     boolean register() {
+        if (!tint) {
+            UNTINTED_TAGS.add(tag);
+        }
         if (Aspect.get(tag) != null) {
             GoldenTweaks.LOGGER.debug("Thaumcraft aspect '{}' already registered, skipping.", tag);
             return true;
@@ -115,6 +135,16 @@ public final class GTAspectEntry {
             blend = 1;
         }
 
+        boolean tint = true;
+        JsonElement tintElement = json.get("tint");
+        if (tintElement != null) {
+            if (!tintElement.isJsonPrimitive() || !tintElement.getAsJsonPrimitive().isBoolean()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft aspect entry '{}': 'tint' must be a boolean.", tag);
+                return null;
+            }
+            tint = tintElement.getAsBoolean();
+        }
+
         ResourceLocation image = null;
         JsonElement imageElement = json.get("image");
         if (imageElement != null) {
@@ -130,7 +160,7 @@ public final class GTAspectEntry {
             }
         }
 
-        GTAspectEntry entry = new GTAspectEntry(tag, color, blend, image);
+        GTAspectEntry entry = new GTAspectEntry(tag, color, blend, tint, image);
 
         JsonElement componentsElement = json.get("components");
         if (componentsElement != null) {

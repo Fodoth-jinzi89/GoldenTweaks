@@ -293,6 +293,10 @@
   "item.goldentweaks.wisp_essence_accessories": "天域之华: 饰品",
   "item.goldentweaks.phial_of_essentia_childish": "要素安瓿: 童趣",
   "item.goldentweaks.wisp_essence_childish": "天域之华: 童趣",
+  "tc.aspect.singularity": "奇点",
+  "tc.aspect.help.singularity": "奇点，重力与致密凝聚于一点。",
+  "item.goldentweaks.phial_of_essentia_singularity": "要素安瓿: 奇点",
+  "item.goldentweaks.wisp_essence_singularity": "天域之华: 奇点",
   "goldentweaks.researchtable.usagehint.header": "使用方法",
   "goldentweaks.researchtable.usagehint.description": "拖拽要素到六边形上以书写，拖拽到另一要素上以合成",
   "goldentweaks.researchtable.usagehint.research_expertise": "合成时按住 Ctrl 可一次合成最多 10 个要素（需研究专精）。"

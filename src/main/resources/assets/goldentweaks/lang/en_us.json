@@ -293,6 +293,10 @@
   "item.goldentweaks.wisp_essence_accessories": "Wisp Essence: Accessory",
   "item.goldentweaks.phial_of_essentia_childish": "Phial of Essentia: Childlike",
   "item.goldentweaks.wisp_essence_childish": "Wisp Essence: Childlike",
+  "tc.aspect.singularity": "Singularity",
+  "tc.aspect.help.singularity": "Singularity, where gravity and dense matter collapse into a single point.",
+  "item.goldentweaks.phial_of_essentia_singularity": "Phial of Essentia: Singularity",
+  "item.goldentweaks.wisp_essence_singularity": "Wisp Essence: Singularity",
   "goldentweaks.researchtable.usagehint.header": "How to use",
   "goldentweaks.researchtable.usagehint.description": "Drag & drop or drag & right-click aspects to draw and combine",
   "goldentweaks.researchtable.usagehint.research_expertise": "Hold ctrl while combining to make up to 10 aspects. Works with research mastery."
