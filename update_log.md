@@ -12,7 +12,7 @@
   - [GTAspectPhials.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectPhials.java)
   - [GTAspectPhialColors.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectPhialColors.java)
   - [GTThaumcraftAdditionalItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftAdditionalItems.java)
-- 自定义要素安瓿现可与守护之罐交互（倒入/抽取源质）
+- 自定义要素安瓿现可与源质罐子交互（倒入/抽取源质）
   - [JarBlockMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/JarBlockMixin.java)
 - 重做研究台界面，调整槽位布局并新增交互提示
   - [GTResearchTableScreen.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTResearchTableScreen.java)
