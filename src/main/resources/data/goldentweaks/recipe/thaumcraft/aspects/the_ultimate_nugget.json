@@ -1,0 +1,8 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": { "id": "extendedcrafting:the_ultimate_nugget" },
+  "aspects": {
+    "perfictus": 1,
+    "metallum": 1
+  }
+}

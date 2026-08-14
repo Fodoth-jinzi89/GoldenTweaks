@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": { "id": "supplementaries:wind_vane" },
+  "aspects": {
+    "tempestas": 6,
+    "metallum": 4,
+    "machina": 2
+  }
+}
