@@ -8,13 +8,17 @@ import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.MeshData;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.datafixers.util.Either;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.FormattedText;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix4f;
 import thaumcraft.api.aspects.Aspect;
@@ -86,10 +90,10 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
     private static final int PALETTE_COLS = 4;
     private static final int PALETTE_CELL = 16;
 
-    private static final int COPY_X = 204;
-    private static final int COPY_Y = 3;
-    private static final int HINT_X = 108;
-    private static final int HINT_Y = 3;
+    private static final int COPY_X = 207;
+    private static final int COPY_Y = 6;
+    private static final int HINT_X = 111;
+    private static final int HINT_Y = 6;
     private static final int BUTTON_SIZE = 24;
 
     /** Maximum aspects combined per ctrl-batch interaction. */
@@ -138,13 +142,26 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
         RenderSystem.disableBlend();
     }
 
-    /** Discovered aspects, sorted by tag (stable, predictable order). */
+    /** Discovered aspects, sorted by tier (ascending) then tag (alphabetical). */
     private List<Aspect> palette() {
         List<Aspect> aspects = new ArrayList<>(Aspect.ordered().stream()
                 .filter(this.menu::discovered)
                 .toList());
-        aspects.sort(Comparator.comparing(Aspect::tag));
+        aspects.sort(Comparator.comparingInt(GTResearchTableScreen::tier)
+                .thenComparing(Aspect::tag));
         return aspects;
+    }
+
+    /** Derivation depth: primals are tier 0, a compound is one above its deepest component. */
+    private static int tier(Aspect aspect) {
+        if (aspect.isPrimal()) {
+            return 0;
+        }
+        int max = 0;
+        for (Aspect component : aspect.components()) {
+            max = Math.max(max, tier(component));
+        }
+        return max + 1;
     }
 
     private void drawPalettes(GuiGraphics graphics) {
@@ -492,16 +509,14 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
         if (aspect == null) {
             return;
         }
-        List<Component> lines = new ArrayList<>();
-        lines.add(aspect.displayName());
-        lines.add(Component.literal(Integer.toString(this.menu.pool(aspect) + this.menu.bonus(aspect))));
+        List<Either<FormattedText, TooltipComponent>> elements = new ArrayList<>();
+        elements.add(Either.left(aspect.displayName()));
+        elements.add(Either.left(Component.literal(Integer.toString(this.menu.pool(aspect) + this.menu.bonus(aspect)))));
         if (this.menu.researcherOne() && !aspect.isPrimal() && aspect.components().size() == 2) {
             List<Aspect> components = aspect.components();
-            lines.add(components.get(0).displayName().copy()
-                    .append(Component.literal(" + "))
-                    .append(components.get(1).displayName()));
+            elements.add(Either.right(new GTAspectRecipeTooltip(components.get(0), components.get(1))));
         }
-        graphics.renderTooltip(this.font, lines, Optional.empty(), mouseX, mouseY);
+        graphics.renderComponentTooltipFromElements(this.font, elements, mouseX, mouseY, ItemStack.EMPTY);
     }
 
     private void renderDuplicateTooltip(GuiGraphics graphics, int mouseX, int mouseY) {

@@ -5,9 +5,12 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import cpw.mods.jarhandling.SecureJar;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAspectRecipeClientTooltip;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAspectRecipeTooltip;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 
 import java.io.Reader;
 import java.nio.file.Files;
@@ -28,6 +31,8 @@ public final class GTThaumcraftCompat {
         GTThaumcraftAdditionalBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         GTThaumcraftAdditionalTabs.register(modEventBus);
         GTAspectPhialColors.register(modEventBus);
+        modEventBus.addListener(RegisterClientTooltipComponentFactoriesEvent.class, e ->
+                e.register(GTAspectRecipeTooltip.class, GTAspectRecipeClientTooltip::new));
 
         registerPhialsFromJson(container);
 
