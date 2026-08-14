@@ -1,5 +1,49 @@
 # GoldenTweaks Update Log
 
+## 2026.08.14 - v3.6
+
+### Thaumcraft
+- 新增基于 JSON 数据包的自定义要素（源质）注册系统，支持原初/复合要素及链式依赖
+  - [GTAspectEntry.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectEntry.java)
+- 新增两个自定义要素：终结（terminus）、飞升（ascension），带独立纹理
+  - [terminus.json](src/main/resources/data/goldentweaks/thaumcraft/aspects/terminus.json)
+  - [ascension.json](src/main/resources/data/goldentweaks/thaumcraft/aspects/ascension.json)
+- 为自定义要素动态注册要素安瓿与天域之华物品，并按要素颜色自动染色
+  - [GTAspectPhials.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectPhials.java)
+  - [GTAspectPhialColors.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectPhialColors.java)
+  - [GTThaumcraftAdditionalItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftAdditionalItems.java)
+- 自定义要素安瓿现可与守护之罐交互（倒入/抽取源质）
+  - [JarBlockMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/JarBlockMixin.java)
+- 重做研究台界面，调整槽位布局并新增交互提示
+  - [GTResearchTableScreen.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTResearchTableScreen.java)
+  - [ResearchTableMenuMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ResearchTableMenuMixin.java)
+  - [TCClientSetupMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/TCClientSetupMixin.java)
+- 新增复合要素配方 tooltip，显示两个组成部分图标
+  - [GTAspectRecipeTooltip.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTAspectRecipeTooltip.java)
+  - [GTAspectRecipeClientTooltip.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTAspectRecipeClientTooltip.java)
+- 新增数据生成支持，自动生成要素物品模型与本地化
+  - [GTThaumcraftDataGen.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftDataGen.java)
+
+### Avaritia
+- 为水晶矩阵锭、无限催化剂添加要素
+  - [crystal_matrix_ingot.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/aspects/crystal_matrix_ingot.json)
+  - [infinity_catalyst.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/aspects/infinity_catalyst.json)
+
+### Thaumcraft Celestial
+- 新增完整中文汉化
+
+### Farmer's Delight
+- 新增亚麻切割配方（联动 Supplementaries / Silent Gear）
+  - [flax.json](src/main/resources/data/farmersdelight/recipe/cutting/flax.json)
+
+### 食物统一化
+- 补充食物统一化条目
+
+### 修复
+- 调整纯净泪水注魔配方
+- 调整腐化碎片坩埚配方
+- 移除 Silent Gear 亚麻种子种植配方
+
 ## 2026.08.12 - v3.5
 
 ### Thaumcraft
