@@ -9,6 +9,7 @@ import net.fodoth.skina.goldentweaks.compat.kaleidoscope.VillageGarbageStationAd
 import net.fodoth.skina.goldentweaks.compat.questshop.QSCompat;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftCompat;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftRecipeLoader;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAspectTextureAnimator;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
@@ -108,6 +109,9 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("createdieselgenerators")) {
             LOGGER.info("Detected createdieselgenerators, delayed init");
             event.enqueueWork(CDGSpriteShifts::init);
+        }
+        if (ModList.get().isLoaded("thaumcraft")) {
+            NeoForge.EVENT_BUS.register(GTAspectTextureAnimator.class);
         }
     }
 }

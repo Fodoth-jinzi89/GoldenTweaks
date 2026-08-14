@@ -1,0 +1,7 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "dense",
+  "color": "0x281b2c",
+  "components": ["gravitas", "potentia"],
+  "image": "goldentweaks:textures/aspects/dense.png"
+}
