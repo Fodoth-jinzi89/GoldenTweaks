@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:oak_trapdoor"
+  },
+  "aspects": {
+    "herba": 6,
+    "vinculum": 5,
+    "motus": 5,
+    "arbor": 6
+  }
+}

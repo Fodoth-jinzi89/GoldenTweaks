@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:stone"
+  },
+  "aspects": {
+    "terra": 5
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:spruce_log"
+  },
+  "aspects": {
+    "herba": 4,
+    "arbor": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:mangrove_wood"
+  },
+  "aspects": {
+    "herba": 2,
+    "waters": 2,
+    "arbor": 2
+  }
+}

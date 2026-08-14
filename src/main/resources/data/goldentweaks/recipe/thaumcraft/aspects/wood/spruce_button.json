@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:spruce_button"
+  },
+  "aspects": {
+    "machina": 5,
+    "herba": 2,
+    "arbor": 2
+  }
+}
