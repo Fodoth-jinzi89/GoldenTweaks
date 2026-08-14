@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "history",
+  "color": "#a1a1a1",
+  "components": [
+    "humanus",
+    "tempus"
+  ],
+  "image": "goldentweaks:textures/aspects/history.png"
+}

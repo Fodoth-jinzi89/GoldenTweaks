@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "destroy",
+  "color": "#2a100d",
+  "components": [
+    "aqua",
+    "ignis"
+  ],
+  "image": "goldentweaks:textures/aspects/destroy.png"
+}

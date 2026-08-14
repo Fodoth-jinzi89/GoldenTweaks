@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "anteanus",
+  "color": "#72b15b",
+  "components": [
+    "humanus",
+    "tempus"
+  ],
+  "image": "goldentweaks:textures/aspects/anteanus.png"
+}

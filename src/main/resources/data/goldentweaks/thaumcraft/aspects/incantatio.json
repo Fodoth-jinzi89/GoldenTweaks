@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "incantatio",
+  "color": "#678db9",
+  "components": [
+    "praecantatio",
+    "telum"
+  ],
+  "image": "goldentweaks:textures/aspects/incantatio.png"
+}

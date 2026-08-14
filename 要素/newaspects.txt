@@ -1,0 +1,30 @@
+en_uk				|zh_cn	|recipe							|colour
+anteanus			|往古	|humanus		+	时间			|
+priscus				|遗蜕	|bestia			+	时间			|
+mornogol			|乌鲁克	|relics			+	anteanus	|#C9B037
+alfirin				|不朽	|chronos		+	victus		|
+arche				|率启	|vacuos			+	lux			|
+dragon				|龙		|praecantatic	+	bestia		|
+substance			|物质	|aqua			+	ordu		|
+space				|空间	|substance		+	vacuos		|
+universes			|宇宙	|substance		+	ordu		|
+destroy				|毁灭	|aqua			+	ignis		|
+dream				|梦想	|cognitio		+	ordu		|
+evil				|邪恶	|vitium			+	lucrum		|
+treasure			|财富	|lucrum			+	telum		|
+atrpraecantatic		|黑魔法	|praecantatic	+	vitium		|
+fossil				|化石	|dragon			+	chronos		|
+praecantaticherba	|魔法植物|praecantatic	+	herba		|
+atrpotentia			|暗能量	|perditio		+	potentia	|
+spelunca			|邃窟	|terra			+	vacuos		|
+atrsubstance		|反物质	|perditio		+	substance	|
+incantatio			|附魔	|praecantatic	+	telum		|
+mixtura				|合金	|ignis			+	metallum	|
+lava				|熔岩	|terra			+	ignis		|
+saxum				|岩石	|terra			+	perditio	|
+vegetatio			|植被	|aer			+	terra		|
+history				|历史	|humanus		+	时间			|
+charta				|纸张	|herba			+	fabrico		|
+laputa				|飞岛	|terra			+	volatus		|
+accessories			|饰品	|tutamen		+	telum		|
+childish			|童趣	|humanus		+	cognitio	|

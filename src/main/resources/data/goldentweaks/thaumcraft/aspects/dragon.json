@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "dragon",
+  "color": "#9a2600",
+  "components": [
+    "praecantatio",
+    "bestia"
+  ],
+  "image": "goldentweaks:textures/aspects/dragon.png"
+}

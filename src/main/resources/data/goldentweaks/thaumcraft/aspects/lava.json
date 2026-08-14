@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "lava",
+  "color": "#a43900",
+  "components": [
+    "terra",
+    "ignis"
+  ],
+  "image": "goldentweaks:textures/aspects/lava.png"
+}

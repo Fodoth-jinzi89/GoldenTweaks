@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "praecantaticherba",
+  "color": "#2850c8",
+  "components": [
+    "praecantatio",
+    "herba"
+  ],
+  "image": "goldentweaks:textures/aspects/praecantaticherba.png"
+}
