@@ -1,0 +1,7 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "waters",
+  "color": "0xde0005",
+  "components": ["aqua", "victus"],
+  "image": "goldentweaks:textures/aspects/waters.png"
+}

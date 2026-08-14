@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "atrpotentia",
+  "color": "#49005c",
+  "components": [
+    "perditio",
+    "potentia"
+  ],
+  "image": "goldentweaks:textures/aspects/atrpotentia.png"
+}

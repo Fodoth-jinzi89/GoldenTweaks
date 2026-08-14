@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "space",
+  "color": "#000037",
+  "components": [
+    "substance",
+    "vacuos"
+  ],
+  "image": "goldentweaks:textures/aspects/space.png"
+}

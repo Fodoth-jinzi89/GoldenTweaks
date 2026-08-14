@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "fossil",
+  "color": "#b1b386",
+  "components": [
+    "dragon",
+    "tempus"
+  ],
+  "image": "goldentweaks:textures/aspects/fossil.png"
+}

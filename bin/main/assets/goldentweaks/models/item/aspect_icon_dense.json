@@ -1,0 +1,49 @@
+{
+  "loader": "renderblender:cosmic",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "goldentweaks:item/aspect_dense",
+    "particle": "goldentweaks:item/aspect_dense"
+  },
+  "cosmic": {
+    "pulse": true,
+    "masks": {
+      "layer0": "goldentweaks:mask/item/aspect_dense"
+    },
+    "bgColorRandom": false
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        7.5
+      ],
+      "to": [
+        16,
+        16,
+        8.5
+      ],
+      "faces": {
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#layer0"
+        },
+        "north": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#layer0"
+        }
+      }
+    }
+  ]
+}

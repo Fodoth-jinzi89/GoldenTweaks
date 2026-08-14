@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "priscus",
+  "color": "#ebb088",
+  "components": [
+    "bestia",
+    "tempus"
+  ],
+  "image": "goldentweaks:textures/aspects/priscus.png"
+}

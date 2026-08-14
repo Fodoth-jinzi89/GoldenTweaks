@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "expand",
+  "color": "#52a95e",
+  "components": [
+    "singularity",
+    "explosion"
+  ],
+  "image": "goldentweaks:textures/aspects/expand.png"
+}

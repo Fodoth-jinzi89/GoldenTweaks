@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:bamboo_mosaic"
+  },
+  "aspects": {
+    "herba": 3,
+    "arbor": 3
+  }
+}

@@ -9,6 +9,8 @@ import com.mojang.blaze3d.vertex.MeshData;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.datafixers.util.Either;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftAdditionalItems;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -121,7 +123,7 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
         super.render(graphics, mouseX, mouseY, partialTick);
         if (this.draggedAspect != null) {
             RenderSystem.enableBlend();
-            AspectGuiRenderer.draw(graphics, this.draggedAspect, mouseX - 8, mouseY - 8);
+            drawAspectIcon(graphics, this.draggedAspect, mouseX - 8, mouseY - 8, 1.0f);
             graphics.flush();
             RenderSystem.disableBlend();
         }
@@ -179,6 +181,23 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
         this.drawPalette(graphics, all.subList(half, all.size()), PALETTE_RIGHT_X, this.rightScroll);
     }
 
+    private static boolean isCosmicIcon(Aspect aspect) {
+        return GTAspectEntry.isCosmic(aspect.tag());
+    }
+
+    /**
+     * Draws an aspect icon at 16x16. The {@code dense} aspect is rendered through
+     * its cosmic proxy item (renderblender {@code halo_cosmic} model) instead of
+     * the flat aspect texture.
+     */
+    private static void drawAspectIcon(GuiGraphics graphics, Aspect aspect, int x, int y, float alpha) {
+        if (isCosmicIcon(aspect)) {
+            graphics.renderItem(GTThaumcraftAdditionalItems.denseIconStack(), x, y);
+        } else {
+            AspectGuiRenderer.draw(graphics, aspect, x, y, 16, alpha);
+        }
+    }
+
     private static int clampScroll(int scroll, int size) {
         int maxScroll = Math.max(0, (size + PALETTE_COLS - 1) / PALETTE_COLS - PALETTE_ROWS);
         return Math.max(0, Math.min(scroll, maxScroll));
@@ -200,7 +219,7 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
                 int available = this.menu.pool(aspect) + this.menu.bonus(aspect);
                 blitTinted(graphics, ASPECT_BG, x - 2, y - 2, 20, 20,
                         0.0f, 0.0f, 32, 32, 32, 32, 1.0f, 1.0f, 1.0f, 1.0f, false);
-                AspectGuiRenderer.draw(graphics, aspect, x, y, 16, available > 0 ? 1.0f : 0.33f);
+                drawAspectIcon(graphics, aspect, x, y, available > 0 ? 1.0f : 0.33f);
                 AspectGuiRenderer.drawCount(graphics, this.font, available, x, y, available > 0 ? -1 : 0x66FFFFFF);
                 this.drawBonusSparkle(graphics, x, y, this.menu.bonus(aspect));
             }
@@ -276,10 +295,14 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
                 continue;
             }
             if (entry.type() == 2 && !linked.contains(entry.hex())) {
-                AspectGuiRenderer.drawTinted(graphics, entry.aspect(), x, y, 16, 0x888888, 0.72f);
+                if (isCosmicIcon(entry.aspect())) {
+                    drawAspectIcon(graphics, entry.aspect(), x, y, 1.0f);
+                } else {
+                    AspectGuiRenderer.drawTinted(graphics, entry.aspect(), x, y, 16, 0x888888, 0.72f);
+                }
                 continue;
             }
-            AspectGuiRenderer.draw(graphics, entry.aspect(), x, y, 16, 1.0f);
+            drawAspectIcon(graphics, entry.aspect(), x, y, 1.0f);
         }
         if (note.complete()) {
             Component complete = Component.translatable("message.thaumcraft.research_note_complete");

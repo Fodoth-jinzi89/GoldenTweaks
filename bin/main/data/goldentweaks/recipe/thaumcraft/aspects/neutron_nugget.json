@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:neutron_nugget"
+  },
+  "aspects": {
+    "dense": 4
+  }
+}

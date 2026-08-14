@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "vegetatio",
+  "color": "#009600",
+  "components": [
+    "aer",
+    "terra"
+  ],
+  "image": "goldentweaks:textures/aspects/vegetatio.png"
+}

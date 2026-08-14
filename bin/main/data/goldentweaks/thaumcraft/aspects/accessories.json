@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "accessories",
+  "color": "#7b3d68",
+  "components": [
+    "tutamen",
+    "telum"
+  ],
+  "image": "goldentweaks:textures/aspects/accessories.png"
+}

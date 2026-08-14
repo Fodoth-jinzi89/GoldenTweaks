@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "evil",
+  "color": "#68005f",
+  "components": [
+    "vitium",
+    "lucrum"
+  ],
+  "image": "goldentweaks:textures/aspects/evil.png"
+}

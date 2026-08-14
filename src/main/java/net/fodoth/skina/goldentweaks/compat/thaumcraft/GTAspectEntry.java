@@ -44,6 +44,8 @@ import java.util.Set;
  * If omitted, {@code image} defaults to {@code thaumcraft:textures/aspects/<tag>.png} and {@code blend} to {@code 1}.
  * <p>Set {@code "tint": false} when the icon texture is already colored and must be drawn
  * without the aspect-color tint (defaults to {@code true}).
+ * <p>Set {@code "cosmic": true} to render the aspect icon in GUIs through the cosmic
+ * proxy item model (renderblender cosmic shader) instead of the plain texture (defaults to {@code false}).
  * Aspect display names are localized through {@code tc.aspect.<tag>} in language files.
  */
 public final class GTAspectEntry {
@@ -55,18 +57,23 @@ public final class GTAspectEntry {
     /** Tags whose icons are drawn without the aspect-color tint (see {@code "tint": false}). */
     private static final Set<String> UNTINTED_TAGS = new HashSet<>();
 
+    /** Tags whose icons are drawn with the cosmic proxy item model (see {@code "cosmic": true}). */
+    private static final Set<String> COSMIC_TAGS = new HashSet<>();
+
     private final String tag;
     private final int color;
     private final int blend;
     private final boolean tint;
+    private final boolean cosmic;
     private final ResourceLocation image;
     private final List<String> components = new ArrayList<>();
 
-    private GTAspectEntry(String tag, int color, int blend, boolean tint, ResourceLocation image) {
+    private GTAspectEntry(String tag, int color, int blend, boolean tint, boolean cosmic, ResourceLocation image) {
         this.tag = tag;
         this.color = color;
         this.blend = blend;
         this.tint = tint;
+        this.cosmic = cosmic;
         this.image = image;
     }
 
@@ -79,6 +86,14 @@ public final class GTAspectEntry {
     }
 
     /**
+     * @return {@code true} if the given aspect tag was declared with {@code "cosmic": true}
+     *         in its aspect JSON, so its GUI icon must be rendered via the cosmic proxy item.
+     */
+    public static boolean isCosmic(String tag) {
+        return COSMIC_TAGS.contains(tag);
+    }
+
+    /**
      * Registers the aspect if not already present. Compound aspects only succeed once
      * every referenced component exists, so callers may retry.
      *
@@ -87,6 +102,9 @@ public final class GTAspectEntry {
     boolean register() {
         if (!tint) {
             UNTINTED_TAGS.add(tag);
+        }
+        if (cosmic) {
+            COSMIC_TAGS.add(tag);
         }
         if (Aspect.get(tag) != null) {
             GoldenTweaks.LOGGER.debug("Thaumcraft aspect '{}' already registered, skipping.", tag);
@@ -145,6 +163,16 @@ public final class GTAspectEntry {
             tint = tintElement.getAsBoolean();
         }
 
+        boolean cosmic = false;
+        JsonElement cosmicElement = json.get("cosmic");
+        if (cosmicElement != null) {
+            if (!cosmicElement.isJsonPrimitive() || !cosmicElement.getAsJsonPrimitive().isBoolean()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft aspect entry '{}': 'cosmic' must be a boolean.", tag);
+                return null;
+            }
+            cosmic = cosmicElement.getAsBoolean();
+        }
+
         ResourceLocation image = null;
         JsonElement imageElement = json.get("image");
         if (imageElement != null) {
@@ -160,7 +188,7 @@ public final class GTAspectEntry {
             }
         }
 
-        GTAspectEntry entry = new GTAspectEntry(tag, color, blend, tint, image);
+        GTAspectEntry entry = new GTAspectEntry(tag, color, blend, tint, cosmic, image);
 
         JsonElement componentsElement = json.get("components");
         if (componentsElement != null) {

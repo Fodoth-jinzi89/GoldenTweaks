@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "charta",
+  "color": "#cccccc",
+  "components": [
+    "herba",
+    "fabrico"
+  ],
+  "image": "goldentweaks:textures/aspects/charta.png"
+}

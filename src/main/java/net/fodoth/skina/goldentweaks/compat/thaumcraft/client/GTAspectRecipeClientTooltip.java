@@ -1,8 +1,10 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft.client;
 
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftAdditionalItems;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
+import thaumcraft.api.aspects.Aspect;
 import thaumcraft.client.gui.AspectGuiRenderer;
 
 /**
@@ -32,7 +34,16 @@ public final class GTAspectRecipeClientTooltip implements ClientTooltipComponent
 
     @Override
     public void renderImage(Font font, int x, int y, GuiGraphics graphics) {
-        AspectGuiRenderer.draw(graphics, data.first(), x, y, ICON_SIZE, 1.0f);
-        AspectGuiRenderer.draw(graphics, data.second(), x + ICON_SIZE + GAP, y, ICON_SIZE, 1.0f);
+        drawIcon(graphics, data.first(), x, y);
+        drawIcon(graphics, data.second(), x + ICON_SIZE + GAP, y);
+    }
+
+    /** The {@code dense} aspect icon is drawn with its cosmic proxy item model. */
+    private static void drawIcon(GuiGraphics graphics, Aspect aspect, int x, int y) {
+        if (net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry.isCosmic(aspect.tag())) {
+            graphics.renderItem(GTThaumcraftAdditionalItems.denseIconStack(), x, y);
+        } else {
+            AspectGuiRenderer.draw(graphics, aspect, x, y, ICON_SIZE, 1.0f);
+        }
     }
 }

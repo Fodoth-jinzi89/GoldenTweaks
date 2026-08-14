@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "saxum",
+  "color": "#7b4f14",
+  "components": [
+    "terra",
+    "perditio"
+  ],
+  "image": "goldentweaks:textures/aspects/saxum.png"
+}

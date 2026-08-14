@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "childish",
+  "color": "#f8c8dc",
+  "components": [
+    "humanus",
+    "cognitio"
+  ],
+  "image": "goldentweaks:textures/aspects/childish.png"
+}

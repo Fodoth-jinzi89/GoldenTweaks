@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "mornogol",
+  "color": "#c9b037",
+  "components": [
+    "reliquiae",
+    "anteanus"
+  ],
+  "image": "goldentweaks:textures/aspects/mornogol.png"
+}

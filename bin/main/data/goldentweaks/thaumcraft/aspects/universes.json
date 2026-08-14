@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "universes",
+  "color": "#6a006a",
+  "components": [
+    "substance",
+    "ordo"
+  ],
+  "image": "goldentweaks:textures/aspects/universes.png"
+}

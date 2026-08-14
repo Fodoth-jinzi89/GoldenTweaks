@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "explosion",
+  "color": "#ac3232",
+  "components": [
+    "ardor",
+    "favilla"
+  ],
+  "image": "goldentweaks:textures/aspects/explosion.png"
+}

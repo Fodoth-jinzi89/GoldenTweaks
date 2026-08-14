@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "substance",
+  "color": "#004cc0",
+  "components": [
+    "aqua",
+    "ordo"
+  ],
+  "image": "goldentweaks:textures/aspects/substance.png"
+}
