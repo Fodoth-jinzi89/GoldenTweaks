@@ -1,5 +1,15 @@
 # Repository Guidelines
 
+## Active Skills
+
+This project enables the following user-level skills (installed at `~/.agents/skills/`):
+
+- **caveman** — ultra-compressed communication mode. Drops filler/hedging, keeps all technical substance exact. Levels: lite / full (default) / ultra / wenyan-lite / wenyan-full / wenyan-ultra. Off via `stop caveman`.
+- **memory** — persistent global memory across conversations (file: `C:\Users\peiranyu\.codex\MEMORY.md`). Read at conversation start; append preferences, project changes, and decisions during the session.
+- **token-saver** — lean responses + prompt-cache-friendly output. One sentence per response unless detail requested, no preambles, no re-reading files, patch directly.
+- **ponytail** (https://github.com/DietrichGebert/ponytail) — lazy senior dev mode: forces the laziest solution that actually works (YAGNI, stdlib/native first, shortest diff). Levels: lite / full (default) / ultra; off via `stop ponytail`. Companions: ponytail-review (diff over-engineering review), ponytail-audit (repo audit), ponytail-debt (deferred shortcuts ledger), ponytail-gain (impact scoreboard), ponytail-help. Applies to any coding task.
+- **headroom** (https://github.com/headroomlabs-ai/headroom) — context compression proxy. Installed via pip (`headroom-ai[proxy]`), CLI at `C:\Users\peiranyu\AppData\Local\Programs\Python\Python314\Scripts\headroom`. DeepCode routes through it: `.deepcode/settings.json` sets `BASE_URL=http://127.0.0.1:8787`; proxy forwards to DeepSeek. Start with `script\headroom-proxy.bat`; health check `curl http://127.0.0.1:8787/health`; savings dashboard at `http://127.0.0.1:8787/dashboard`.
+
 ## Project Structure & Module Organization
 
 ```
