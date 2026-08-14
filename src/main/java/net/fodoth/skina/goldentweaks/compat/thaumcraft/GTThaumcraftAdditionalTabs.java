@@ -21,6 +21,8 @@ public final class GTThaumcraftAdditionalTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(GTThaumcraftAdditionalBlocks.INFUSION_INTERCEPTER_ITEM.get());
                         output.accept(GTThaumcraftAdditionalItems.WARPTHEORY_CLEANSER.get());
+                        GTThaumcraftAdditionalItems.phials().values()
+                                .forEach(phial -> output.accept(phial.get()));
                     })
                     .build()
             );

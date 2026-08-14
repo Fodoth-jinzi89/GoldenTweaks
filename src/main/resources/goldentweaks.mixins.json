@@ -107,6 +107,7 @@
     "fix.silentgear.MaterialBookItemMixin",
     "fix.spectrum.CraftingTabletScreenHandlerMixin",
     "fix.spectrum.EnderGlassBlockMixin",
+    "fix.thaumcraft.JarBlockMixin",
     "fix.thaumcraft.ThaumcraftJeiPluginMixin",
     "fix.thaumcraft.ThaumcraftSurfaceStructureFeatureMixin",
     "fix.thaumcraft.TTUtilityItemClientSetupMixin",

@@ -96,7 +96,7 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("thaumcraft")) {
             LOGGER.info("Detected thaumcraft, registering compatibility content");
 
-            GTThaumcraftCompat.register(modEventBus);
+            GTThaumcraftCompat.register(modEventBus, container);
             NeoForge.EVENT_BUS.register(GTThaumcraftRecipeLoader.class);
         }
 

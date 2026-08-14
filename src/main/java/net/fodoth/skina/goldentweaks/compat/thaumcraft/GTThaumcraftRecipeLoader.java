@@ -12,6 +12,10 @@ public class GTThaumcraftRecipeLoader {
     @SubscribeEvent
     public static void onServerAboutToStart(ServerAboutToStartEvent event) {
         var resourceManager = event.getServer().getResourceManager();
+        // Aspects must be registered before recipes reference them.
+        GTAspectEntry.load(resourceManager);
+        // Bind the freshly registered aspects onto the vanilla phial items.
+        GTAspectPhials.bind();
         GTInfusionRecipe.load(resourceManager);
         GTCrucibleRecipe.load(resourceManager);
         GTArcaneRecipe.load(resourceManager);

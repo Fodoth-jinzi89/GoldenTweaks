@@ -156,5 +156,11 @@
   "item.goldentweaks.warptheory_cleanser.desc": "食用后清除所有扭曲",
   "tc.research_name.GT_WARPTHEORY_CLEANSER": "纯净泪水",
   "tc.research_text.GT_WARPTHEORY_CLEANSER": "§o彻底净化扭曲§r",
-  "tc.research_page.GT_WARPTHEORY_CLEANSER.1": "在奥术浴场的研究中，你偶然窥见了某种不应被窥见的真理。由此诞生的秘药，被称为「纯净泪水」——据说，那是连扭曲本身都无法玷污的液体。<BR>饮下它，缠绕于身的扭曲将如同从未存在过一般消退。无论是永久扭曲、暂时扭曲，还是那些如执念般附着不去的粘性扭曲，都将被彻底清除。<BR>古老的配方曾要求饮用者付出代价，而如今的配方已将那份代价从杯中剔除。你只需饮下，然后等待自己的灵魂重新归于寂静。<BR>不过，请谨慎对待这份纯净。毕竟，有些知识只会向被扭曲之人显现；当扭曲消失时，与它一同消失的，也许不只是疯狂。"
+  "tc.research_page.GT_WARPTHEORY_CLEANSER.1": "在奥术浴场的研究中，你偶然窥见了某种不应被窥见的真理。由此诞生的秘药，被称为「纯净泪水」——据说，那是连扭曲本身都无法玷污的液体。<BR>饮下它，缠绕于身的扭曲将如同从未存在过一般消退。无论是永久扭曲、暂时扭曲，还是那些如执念般附着不去的粘性扭曲，都将被彻底清除。<BR>古老的配方曾要求饮用者付出代价，而如今的配方已将那份代价从杯中剔除。你只需饮下，然后等待自己的灵魂重新归于寂静。<BR>不过，请谨慎对待这份纯净。毕竟，有些知识只会向被扭曲之人显现；当扭曲消失时，与它一同消失的，也许不只是疯狂。",
+  "tc.aspect.terminus": "终结",
+  "tc.aspect.help.terminus": "游戏之终结，天启，默示录",
+  "tc.aspect.ascension": "飞升",
+  "tc.aspect.help.ascension": "飞升，无限，成神",
+  "item.goldentweaks.phial_of_essentia_terminus": "要素安瓿: 终结",
+  "item.goldentweaks.phial_of_essentia_ascension": "要素安瓿: 飞升"
 }

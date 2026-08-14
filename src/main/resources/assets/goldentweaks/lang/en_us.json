@@ -156,5 +156,11 @@
   "item.goldentweaks.warptheory_cleanser.desc": "Clears all warp when consumed",
   "tc.research_name.GT_WARPTHEORY_CLEANSER": "Pure Tears",
   "tc.research_text.GT_WARPTHEORY_CLEANSER": "§oPurge all warp completely§r",
-  "tc.research_page.GT_WARPTHEORY_CLEANSER.1": "During your studies of the Arcane Bath, you caught a glimpse of a truth that was never meant to be seen. From that revelation came a peculiar elixir known as Pure Tears — a liquid said to be untouched even by the Warp itself.<BR>Drink it, and every distortion clinging to your being will fade as though it had never existed. Permanent Warp, temporary Warp, even the tenacious stains that cling like an obsession—all shall be washed away.<BR>The ancient formula demanded a price from those who dared to drink it. The modern recipe has removed that price from the cup. All that remains is the draught, and the quiet moment in which your soul remembers how to be still.<BR>Yet purity should not be accepted lightly. There are secrets that reveal themselves only to the distorted, and when the Warp is gone, something besides madness may vanish with it."
+  "tc.research_page.GT_WARPTHEORY_CLEANSER.1": "During your studies of the Arcane Bath, you caught a glimpse of a truth that was never meant to be seen. From that revelation came a peculiar elixir known as Pure Tears — a liquid said to be untouched even by the Warp itself.<BR>Drink it, and every distortion clinging to your being will fade as though it had never existed. Permanent Warp, temporary Warp, even the tenacious stains that cling like an obsession—all shall be washed away.<BR>The ancient formula demanded a price from those who dared to drink it. The modern recipe has removed that price from the cup. All that remains is the draught, and the quiet moment in which your soul remembers how to be still.<BR>Yet purity should not be accepted lightly. There are secrets that reveal themselves only to the distorted, and when the Warp is gone, something besides madness may vanish with it.",
+  "tc.aspect.terminus": "Terminus",
+  "tc.aspect.help.terminus": "End of the game, Apocalypse, Revelation.",
+  "tc.aspect.ascension": "Ascension",
+  "tc.aspect.help.ascension": "Ascension, Infinity, God.",
+  "item.goldentweaks.phial_of_essentia_terminus": "Phial of Essentia: Terminus",
+  "item.goldentweaks.phial_of_essentia_ascension": "Phial of Essentia: Ascension"
 }
