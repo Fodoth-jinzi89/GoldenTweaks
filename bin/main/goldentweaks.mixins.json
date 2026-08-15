@@ -110,6 +110,8 @@
     "fix.thaumcraft.JarBlockMixin",
     "fix.thaumcraft.ThaumcraftJeiPluginMixin",
     "fix.thaumcraft.ThaumcraftSurfaceStructureFeatureMixin",
+    "fix.thaumcraft.ArcaneWorkbenchMenuMixin",
+    "fix.thaumcraft.ThaumcraftCraftingManagerMixin",
     "fix.thaumcraft.TTUtilityItemClientSetupMixin",
     "feature.thaumcraft.ResearchTableMenuMixin",
     "fix.tmrv.StackHelperMixin",

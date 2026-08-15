@@ -53,6 +53,10 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.IntValue TC_JEI_ASPECT_MAX_PAGE;
 
+    public static final ModConfigSpec.IntValue ARCANE_CRAFTING_CACHE_SIZE;
+
+    public static final ModConfigSpec.BooleanValue ARCANE_WORKBENCH_VANILLA_CRAFTING;
+
     static {
 
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -209,6 +213,16 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.tc_jei_aspect_max_page"))
                 .defineInRange("TCJEIAspectMaxPage", 10, 0, Integer.MAX_VALUE);
 
+        ARCANE_CRAFTING_CACHE_SIZE = builder
+                .translation(key("balance.thaumcraft.arcane_crafting_cache_size"))
+                .comment(comment("balance.thaumcraft.arcane_crafting_cache_size"))
+                .defineInRange("arcaneCraftingCacheSize", 64, 0, 256);
+
+        ARCANE_WORKBENCH_VANILLA_CRAFTING = builder
+                .translation(key("balance.thaumcraft.arcane_workbench_vanilla_crafting"))
+                .comment(comment("balance.thaumcraft.arcane_workbench_vanilla_crafting"))
+                .define("arcaneWorkbenchVanillaCrafting", true);
+
         builder.pop();
 
         builder.pop();
@@ -279,6 +293,24 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return TC_JEI_ASPECT_MAX_PAGE.get();
+    }
+
+    public static int getArcaneCraftingCacheSize() {
+
+        if (!GTState.isReady()) {
+            return 64;
+        }
+
+        return ARCANE_CRAFTING_CACHE_SIZE.get();
+    }
+
+    public static boolean isArcaneWorkbenchVanillaCrafting() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return ARCANE_WORKBENCH_VANILLA_CRAFTING.get();
     }
 
     private static String key(String path) {

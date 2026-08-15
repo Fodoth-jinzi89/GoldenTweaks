@@ -201,6 +201,15 @@ public class GoldenTweaksConfigScreen {
                     TC_JEI_ASPECT_MAX_PAGE,
                     10, 0, Integer.MAX_VALUE);
 
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.arcane_crafting_cache_size",
+                    ARCANE_CRAFTING_CACHE_SIZE,
+                    64, 0, 256);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.arcane_workbench_vanilla_crafting",
+                    ARCANE_WORKBENCH_VANILLA_CRAFTING, true);
+
             // =========================================================
             // Debug
             // =========================================================
