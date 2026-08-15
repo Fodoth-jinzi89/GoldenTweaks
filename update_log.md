@@ -1,5 +1,64 @@
 # GoldenTweaks Update Log
 
+## 2026.08.15 - v3.8
+
+### Thaumcraft（TC4Tweaks 移植）
+- 奥术合成缓存：以「最近命中的配方」为粒度的 LRU 缓存，避免配方数量庞大时每次合成都全量遍历，shift 批量合成收益最大，可配置缓存大小（默认 64，0 关闭）
+  - [ArcaneCraftingCache.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ArcaneCraftingCache.java)
+  - [ThaumcraftCraftingManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftCraftingManagerMixin.java)
+- 新增坩埚配方缓存、物品要素（object tags）缓存、研究查找缓存，降低高频查询的重复计算开销，均可独立开关
+  - [CrucibleRecipeCache.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/CrucibleRecipeCache.java)
+  - [ObjectTagsCache.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ObjectTagsCache.java)
+  - [ResearchCache.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ResearchCache.java)
+- 震荡波（Earth Shock）伤害模式配置：只伤害生物 / 除掉落物和经验球外全部 / 全部实体
+  - [EarthShockHarmMode.java](src/main/java/net/fodoth/skina/goldentweaks/util/EarthShockHarmMode.java)
+  - [ShockOrbEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ShockOrbEntityMixin.java)
+- 魔导手册研究标签分页：分类超过 18 个时分页显示，标签列下方提供 `«` `»` 翻页箭头
+  - [ThaumonomiconScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumonomiconScreenMixin.java)
+- 奥术工作台可禁用原版合成
+  - [ArcaneWorkbenchMenuMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ArcaneWorkbenchMenuMixin.java)
+
+### EMI
+- 奥术工作台支持 EMI 配方转移（「+」按钮自动填充配方）
+  - [GTArcaneWorkbenchEmiPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/emi/GTArcaneWorkbenchEmiPlugin.java)
+  - [ArcaneWorkbenchEmiRecipeHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/emi/ArcaneWorkbenchEmiRecipeHandler.java)
+- 修复「要素来源」页面要素安瓿槽位框与物品错位（槽位框不动，仅物品位移）
+  - [SlotWidgetMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/SlotWidgetMixin.java)
+
+### JEI/EMI 配方页面
+- 坩埚炼金页要素排布重做：整块水平垂直居中，每页最多 8 个要素，超过一页每 2 秒轮播切换
+  - [CrucibleRecipeCategoryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/CrucibleRecipeCategoryMixin.java)
+- 注魔页调整：结果槽微调、不稳定度文字上移、要素按每行 7 个排布，超过 14 个时定时向下滚动轮播
+  - [InfusionRecipeCategoryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/InfusionRecipeCategoryMixin.java)
+- 「要素来源」页要素源质图标左移对齐
+  - [AspectSourceRecipeCategoryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/AspectSourceRecipeCategoryMixin.java)
+
+### 研究系统
+- 研究条目改为 JSON 数据包注册（`data/<namespace>/thaumcraft/research/`）
+  - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
+- 新增研究分类 JSON 注册系统（`data/<namespace>/thaumcraft/categories/`），新增「金子修改」研究分类
+  - [GTThaumcraftCategory.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftCategory.java)
+  - [gt_modifications.json](src/main/resources/data/goldentweaks/thaumcraft/categories/gt_modifications.json)
+- 注魔截流者、纯净泪水研究迁移至「金子修改」分类
+  - [infusion_intercepter.json](src/main/resources/data/goldentweaks/thaumcraft/research/infusion_intercepter.json)
+  - [warptheory_cleanser.json](src/main/resources/data/goldentweaks/thaumcraft/research/warptheory_cleanser.json)
+
+### 动画图标
+- `GTAspectTextureAnimator` 重命名为 `GTAnimatedIconAnimator`，动画支持扩展至魔导手册分类图标
+  - [GTAnimatedIconAnimator.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTAnimatedIconAnimator.java)
+
+### 汉化
+- Ali 模组完整中文汉化
+  - [zh_cn.json](src/main/resources/assets/ali/lang/zh_cn.json)
+- 新增配置项与研究分类汉化
+
+### 脚本
+- 新增标签翻译脚本
+  - [tag_translation.py](script/translation/tag/tag_translation.py)
+- 新增要素列表更新脚本
+  - [update_aspect_list.py](script/thaumcraft/update_aspect_list.py)
+- `update_plan.md` 移至 `script/tc4tweaks/`
+
 ## 2026.08.15 - v3.7
 
 ### Thaumcraft
