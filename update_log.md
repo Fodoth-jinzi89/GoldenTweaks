@@ -1,5 +1,27 @@
 # GoldenTweaks Update Log
 
+## 2026.08.15 - v3.7
+
+### Thaumcraft
+- 要素注册系统扩展：新增 `tint` 与 `cosmic` 选项
+  - `tint: false`：图标本身已着色，绘制时跳过要素色二次染色
+  - `cosmic: true`：图标经 renderblender cosmic 着色器渲染，通过隐藏代理物品绘制，覆盖魔导手册 / JEI / 研究台等所有界面
+  - [GTAspectEntry.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectEntry.java)
+  - 源质罐子内的 cosmic 要素以 renderblender cosmic RenderType 渲染，呈现星云效果
+  - [JarBlockEntityRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/JarBlockEntityRendererMixin.java)
+- 新增 35 个自定义要素：dense、singularity、destroy、dragon、dream、evil、expand、explosion、fossil、history、incantatio、laputa、lava、mixtura、mornogol、praecantaticherba、priscus、saxum、space、spelunca、substance、treasure、universes、vegetatio、waters、accessories、alfirin、anteanus、arche、atrpotentia、atrpraecantatic、atrsubstance、charta、childish、perfictus
+  - [要素数据](src/main/resources/data/goldentweaks/thaumcraft/aspects/)
+- 新增 171 条物品要素配方：全部原版木材系列（144）、石质方块系列（13）、中子锭系列（7）、终极系列（3）、旋风棒/风弹/风向标、附魔书
+  - [配方数据](src/main/resources/data/goldentweaks/recipe/thaumcraft/aspects/)
+- 新增要素图标动画支持（竖排精灵表 .mcmeta 动画），魔导手册 / 研究台 / tooltip 通用
+  - [GTAnimatedAspectTexture.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTAnimatedAspectTexture.java)
+  - [GTAspectTextureAnimator.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTAspectTextureAnimator.java)
+- 重做研究台界面：左右要素栏支持滚动（每侧 12 行可见）、cosmic 图标渲染、复合要素配方 tooltip 适配
+  - [GTResearchTableScreen.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTResearchTableScreen.java)
+- 新增 mask 纹理图集源
+  - [blocks.json](src/main/resources/assets/minecraft/atlases/blocks.json)
+- 汉化：神秘时代 zh_cn 整理、禁忌魔法七宗罪要素名与帮助文本补充、Tipsmod 修正
+
 ## 2026.08.14 - v3.6
 
 ### Thaumcraft
