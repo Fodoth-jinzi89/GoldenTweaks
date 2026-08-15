@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.config;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.util.EarthShockHarmMode;
 import net.fodoth.skina.goldentweaks.util.GTState;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
@@ -62,6 +63,8 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.BooleanValue TC_CRUCIBLE_RECIPE_CACHE;
 
     public static final ModConfigSpec.BooleanValue TC_RESEARCH_CACHE;
+
+    public static final ModConfigSpec.EnumValue<EarthShockHarmMode> EARTH_SHOCK_HARM_MODE;
 
     static {
 
@@ -244,6 +247,11 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.thaumcraft.tc_research_cache"))
                 .define("tcResearchCache", true);
 
+        EARTH_SHOCK_HARM_MODE = builder
+                .translation(key("balance.thaumcraft.earth_shock_harm_mode"))
+                .comment(comment("balance.thaumcraft.earth_shock_harm_mode"))
+                .defineEnum("earthShockHarmMode", EarthShockHarmMode.OnlyLiving);
+
         builder.pop();
 
         builder.pop();
@@ -359,6 +367,15 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return TC_RESEARCH_CACHE.get();
+    }
+
+    public static EarthShockHarmMode getEarthShockHarmMode() {
+
+        if (!GTState.isReady()) {
+            return EarthShockHarmMode.OnlyLiving;
+        }
+
+        return EARTH_SHOCK_HARM_MODE.get();
     }
 
     private static String key(String path) {

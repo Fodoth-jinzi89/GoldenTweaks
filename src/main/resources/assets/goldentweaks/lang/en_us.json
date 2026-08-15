@@ -79,6 +79,8 @@
   "config.goldentweaks.balance.thaumcraft.tc_crucible_recipe_cache.comment": "Caches crucible recipes looked up by hash to avoid scanning the full recipe list on every use.",
   "config.goldentweaks.balance.thaumcraft.tc_research_cache": "Thaumcraft Research Cache",
   "config.goldentweaks.balance.thaumcraft.tc_research_cache.comment": "Caches research item lookups by key to avoid iterating every research category on each call.",
+  "config.goldentweaks.balance.thaumcraft.earth_shock_harm_mode": "Earth Shock Target Mode",
+  "config.goldentweaks.balance.thaumcraft.earth_shock_harm_mode.comment": "Which entities the Earth Shock spell damages. OnlyLiving: living entities only. ExceptItemXp: everything except item entities and experience orbs. AllEntity: everything, the port's default behavior.",
   "config.goldentweaks.category.feature": "Features",
   "config.goldentweaks.feature.always_edible_food": "Always Edible Food",
   "config.goldentweaks.feature.always_edible_food.comment": "Allows all food items to be eaten even when the player is fully saturated.",

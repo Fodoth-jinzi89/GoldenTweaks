@@ -3,6 +3,7 @@ package net.fodoth.skina.goldentweaks.config;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.util.DSAMode;
 import net.fodoth.skina.goldentweaks.util.DSAVariant;
+import net.fodoth.skina.goldentweaks.util.EarthShockHarmMode;
 import net.fodoth.skina.goldentweaks.util.SmartCullingType;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -221,6 +222,11 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.thaumcraft.tc_research_cache",
                     TC_RESEARCH_CACHE, true);
+
+            ConfigScreenHelper.addEnum(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.earth_shock_harm_mode",
+                    EARTH_SHOCK_HARM_MODE,
+                    EarthShockHarmMode.OnlyLiving, EarthShockHarmMode.values());
 
             // =========================================================
             // Debug
