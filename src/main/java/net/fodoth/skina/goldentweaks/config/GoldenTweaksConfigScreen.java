@@ -210,6 +210,18 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.thaumcraft.arcane_workbench_vanilla_crafting",
                     ARCANE_WORKBENCH_VANILLA_CRAFTING, true);
 
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.tc_object_tags_cache",
+                    TC_OBJECT_TAGS_CACHE, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.tc_crucible_recipe_cache",
+                    TC_CRUCIBLE_RECIPE_CACHE, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.tc_research_cache",
+                    TC_RESEARCH_CACHE, true);
+
             // =========================================================
             // Debug
             // =========================================================

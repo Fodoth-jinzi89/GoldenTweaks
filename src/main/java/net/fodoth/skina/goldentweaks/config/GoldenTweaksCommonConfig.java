@@ -57,6 +57,12 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.BooleanValue ARCANE_WORKBENCH_VANILLA_CRAFTING;
 
+    public static final ModConfigSpec.BooleanValue TC_OBJECT_TAGS_CACHE;
+
+    public static final ModConfigSpec.BooleanValue TC_CRUCIBLE_RECIPE_CACHE;
+
+    public static final ModConfigSpec.BooleanValue TC_RESEARCH_CACHE;
+
     static {
 
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -223,6 +229,21 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.thaumcraft.arcane_workbench_vanilla_crafting"))
                 .define("arcaneWorkbenchVanillaCrafting", true);
 
+        TC_OBJECT_TAGS_CACHE = builder
+                .translation(key("balance.thaumcraft.tc_object_tags_cache"))
+                .comment(comment("balance.thaumcraft.tc_object_tags_cache"))
+                .define("tcObjectTagsCache", true);
+
+        TC_CRUCIBLE_RECIPE_CACHE = builder
+                .translation(key("balance.thaumcraft.tc_crucible_recipe_cache"))
+                .comment(comment("balance.thaumcraft.tc_crucible_recipe_cache"))
+                .define("tcCrucibleRecipeCache", true);
+
+        TC_RESEARCH_CACHE = builder
+                .translation(key("balance.thaumcraft.tc_research_cache"))
+                .comment(comment("balance.thaumcraft.tc_research_cache"))
+                .define("tcResearchCache", true);
+
         builder.pop();
 
         builder.pop();
@@ -311,6 +332,33 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return ARCANE_WORKBENCH_VANILLA_CRAFTING.get();
+    }
+
+    public static boolean isTcObjectTagsCache() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return TC_OBJECT_TAGS_CACHE.get();
+    }
+
+    public static boolean isTcCrucibleRecipeCache() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return TC_CRUCIBLE_RECIPE_CACHE.get();
+    }
+
+    public static boolean isTcResearchCache() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return TC_RESEARCH_CACHE.get();
     }
 
     private static String key(String path) {
