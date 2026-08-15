@@ -15,7 +15,7 @@ import thaumcraft.client.gui.AspectGuiRenderer;
 
 /**
  * 1) 跳过已着色图标（如奇点 singularity）的要素色二次染色。
- * 2) 声明了 {@code "cosmic": true} 的要素（如 dense）图标改由 cosmic 渲染：
+ * 2) 声明了 {@code "cosmic": true} 的要素（如 cosmic）图标改由 cosmic 渲染：
  *    在 GUI 中通过隐藏代理物品绘制，覆盖魔导手册、JEI 要素配方等所有
  *    经由 {@link AspectGuiRenderer#draw} 绘制的界面。
  * <p>
@@ -59,7 +59,7 @@ public class AspectGuiRendererMixin {
      */
     @Unique
     private static void renderCosmicIcon(GuiGraphics graphics, int x, int y, int size) {
-        ItemStack stack = GTThaumcraftAdditionalItems.denseIconStack();
+        ItemStack stack = GTThaumcraftAdditionalItems.cosmicIconStack();
         graphics.pose().pushPose();
         graphics.pose().translate(x + size / 2.0F, y + size / 2.0F, 0.0F);
         graphics.pose().scale(size / 16.0F, size / 16.0F, 1.0F);

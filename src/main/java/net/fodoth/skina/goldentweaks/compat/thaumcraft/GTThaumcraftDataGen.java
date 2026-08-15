@@ -56,12 +56,12 @@ public final class GTThaumcraftDataGen {
 
     /**
      * Registers the two flat item models for a single aspect tag.
-     * <p>The {@code dense} aspect is skipped: its phial/wisp models are
+     * <p>The {@code cosmic} aspect is skipped: its phial/wisp models are
      * hand-written cosmic models (renderblender {@code halo_cosmic} loader) and
      * must not be overwritten by datagen.
      */
     public static void registerAspectModels(String tag, ItemModelProvider models) {
-        if ("dense".equals(tag)) {
+        if ("cosmic".equals(tag)) {
             return;
         }
         models.withExistingParent("phial_of_essentia_" + tag, GENERATED)

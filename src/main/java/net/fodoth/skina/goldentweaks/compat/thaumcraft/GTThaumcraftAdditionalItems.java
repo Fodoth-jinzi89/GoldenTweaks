@@ -21,27 +21,27 @@ public final class GTThaumcraftAdditionalItems {
 
     /**
      * Invisible rendering proxy whose item model carries the cosmic icon of the
-     * {@code dense} aspect. Only used to draw the aspect icon with the
+     * {@code cosmic} aspect. Only used to draw the aspect icon with the
      * renderblender cosmic renderer in GUIs; it is not added to any creative tab
      * and has no recipes.
      */
-    public static final DeferredItem<Item> ASPECT_ICON_DENSE =
-            ITEMS.register("aspect_icon_dense", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ASPECT_ICON_COSMIC =
+            ITEMS.register("aspect_icon_cosmic", () -> new Item(new Item.Properties()));
 
     private static final Map<String, DeferredItem<Item>> PHIALS = new LinkedHashMap<>();
     private static final Map<String, DeferredItem<Item>> WISPS = new LinkedHashMap<>();
 
-    private static ItemStack denseIconStack;
+    private static ItemStack cosmicIconStack;
 
     private GTThaumcraftAdditionalItems() {
     }
 
-    /** Lazy {@link ItemStack} of the cosmic {@code dense} aspect icon proxy item. */
-    public static ItemStack denseIconStack() {
-        if (denseIconStack == null) {
-            denseIconStack = new ItemStack(ASPECT_ICON_DENSE.get());
+    /** Lazy {@link ItemStack} of the cosmic {@code cosmic} aspect icon proxy item. */
+    public static ItemStack cosmicIconStack() {
+        if (cosmicIconStack == null) {
+            cosmicIconStack = new ItemStack(ASPECT_ICON_COSMIC.get());
         }
-        return denseIconStack;
+        return cosmicIconStack;
     }
 
     /**

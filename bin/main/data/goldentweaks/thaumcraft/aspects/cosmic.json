@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:aspect",
+  "tag": "cosmic",
+  "color": "#002fa7",
+  "components": [
+    "perfictus",
+    "expand"
+  ],
+  "image": "goldentweaks:textures/aspects/cosmic.png",
+  "tint": false,
+  "cosmic": true
+}

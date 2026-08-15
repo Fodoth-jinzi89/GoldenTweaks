@@ -186,13 +186,13 @@ public final class GTResearchTableScreen extends AbstractContainerScreen<Researc
     }
 
     /**
-     * Draws an aspect icon at 16x16. The {@code dense} aspect is rendered through
+     * Draws an aspect icon at 16x16. The {@code cosmic} aspect is rendered through
      * its cosmic proxy item (renderblender {@code halo_cosmic} model) instead of
      * the flat aspect texture.
      */
     private static void drawAspectIcon(GuiGraphics graphics, Aspect aspect, int x, int y, float alpha) {
         if (isCosmicIcon(aspect)) {
-            graphics.renderItem(GTThaumcraftAdditionalItems.denseIconStack(), x, y);
+            graphics.renderItem(GTThaumcraftAdditionalItems.cosmicIconStack(), x, y);
         } else {
             AspectGuiRenderer.draw(graphics, aspect, x, y, 16, alpha);
         }

@@ -38,10 +38,10 @@ public final class GTAspectRecipeClientTooltip implements ClientTooltipComponent
         drawIcon(graphics, data.second(), x + ICON_SIZE + GAP, y);
     }
 
-    /** The {@code dense} aspect icon is drawn with its cosmic proxy item model. */
+    /** The {@code cosmic} aspect icon is drawn with its cosmic proxy item model. */
     private static void drawIcon(GuiGraphics graphics, Aspect aspect, int x, int y) {
         if (net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry.isCosmic(aspect.tag())) {
-            graphics.renderItem(GTThaumcraftAdditionalItems.denseIconStack(), x, y);
+            graphics.renderItem(GTThaumcraftAdditionalItems.cosmicIconStack(), x, y);
         } else {
             AspectGuiRenderer.draw(graphics, aspect, x, y, ICON_SIZE, 1.0f);
         }

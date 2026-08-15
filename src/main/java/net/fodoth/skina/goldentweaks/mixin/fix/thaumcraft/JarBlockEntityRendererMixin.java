@@ -23,7 +23,7 @@ import thaumcraft.common.blockentities.JarBlockEntity;
 
 /**
  * 源质罐子内部的源质块（立方体）对声明了 {@code "cosmic": true} 的要素
- * （如 dense）改用 renderblender 的 cosmic RenderType 渲染，使罐内源质表面
+ * （如 cosmic）改用 renderblender 的 cosmic RenderType 渲染，使罐内源质表面
  * 呈现 cosmic 星云效果；非 cosmic 要素保持原样。
  * <p>
  * {@link JarBlockEntityRenderer#render} 中源质立方体是唯一一次

@@ -1,49 +1,6 @@
 {
-  "loader": "renderblender:cosmic",
-  "gui_light": "front",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thaumcraft:item/wispessence",
-    "particle": "thaumcraft:item/wispessence"
-  },
-  "cosmic": {
-    "pulse": true,
-    "masks": {
-      "layer0": "goldentweaks:mask/item/wisp_essence_dense"
-    },
-    "bgColorRandom": false
-  },
-  "elements": [
-    {
-      "from": [
-        0,
-        0,
-        7.5
-      ],
-      "to": [
-        16,
-        16,
-        8.5
-      ],
-      "faces": {
-        "south": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#layer0"
-        },
-        "north": {
-          "uv": [
-            16,
-            0,
-            0,
-            16
-          ],
-          "texture": "#layer0"
-        }
-      }
-    }
-  ]
+    "layer0": "thaumcraft:item/wispessence"
+  }
 }
