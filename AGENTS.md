@@ -1,77 +1,102 @@
 # Repository Guidelines
 
-## Active Skills
+## Project
 
-This project enables the following user-level skills (installed at `~/.agents/skills/`):
+NeoForge 1.21.1 Minecraft mod.
 
-- **caveman** — ultra-compressed communication mode. Drops filler/hedging, keeps all technical substance exact. Levels: lite / full (default) / ultra / wenyan-lite / wenyan-full / wenyan-ultra. Off via `stop caveman`.
-- **memory** — persistent global memory across conversations (file: `C:\Users\peiranyu\.codex\MEMORY.md`). Read at conversation start; append preferences, project changes, and decisions during the session.
-- **token-saver** — lean responses + prompt-cache-friendly output. One sentence per response unless detail requested, no preambles, no re-reading files, patch directly.
-- **ponytail** (https://github.com/DietrichGebert/ponytail) — lazy senior dev mode: forces the laziest solution that actually works (YAGNI, stdlib/native first, shortest diff). Levels: lite / full (default) / ultra; off via `stop ponytail`. Companions: ponytail-review (diff over-engineering review), ponytail-audit (repo audit), ponytail-debt (deferred shortcuts ledger), ponytail-gain (impact scoreboard), ponytail-help. Applies to any coding task.
-- **headroom** (https://github.com/headroomlabs-ai/headroom) — context compression proxy. Installed via pip (`headroom-ai[proxy]`), CLI at `C:\Users\peiranyu\AppData\Local\Programs\Python\Python314\Scripts\headroom`. DeepCode routes through it: `.deepcode/settings.json` sets `BASE_URL=http://127.0.0.1:8787`; proxy forwards to DeepSeek. Start with `script\headroom-proxy.bat`; health check `curl http://127.0.0.1:8787/health`; savings dashboard at `http://127.0.0.1:8787/dashboard`.
-
-## Project Structure & Module Organization
-
-```
+```text
 src/main/java/net/fodoth/skina/goldentweaks/
-├── compat/       # Third-party mod compatibility patches
-├── config/       # Mod configuration classes
-├── debug/        # Debug utilities & logger suppression
-├── event/        # NeoForge event handlers
-├── gpubooster/   # GPU-side rendering optimizations (DSA, SIMD, OpenGL)
-├── mixin/        # Mixin injections into vanilla & modded code
-├── network/      # Custom network packets (C2S / S2C)
-└── util/         # Shared helpers & enums
+├── compat/       # Mod compatibility
+├── config/       # Configuration
+├── debug/        # Debug utilities
+├── event/        # NeoForge events
+├── gpubooster/   # GPU/rendering optimizations
+├── mixin/        # Mixin injections
+├── network/      # Network packets
+└── util/         # Shared utilities
 ```
 
-- **Libs**: JAR dependencies live in `libs/compileOnly/`, `libs/runtimeOnly/`, and `libs/implementation/`.
-- **Assets**: Resources and `mods.toml` template live in `src/main/resources/` and `src/main/templates/`.
+Resources: `src/main/resources/`
+Dependencies: `libs/compileOnly/`, `libs/runtimeOnly/`, `libs/implementation/`
+References: `libs/reference/`
 
-## Build, Test, and Development Commands
+## Build
 
-| Command | Purpose |
-|---|---|
-| `./gradlew build` | Compile and package the mod JAR into `build/libs/` |
-| `./gradlew genIntellijRuns` | Generate IDE run configurations for debugging |
-| `./gradlew runClient` | Launch a test Minecraft client with the mod loaded |
-| `./gradlew runServer` | Launch a test server (no GUI) |
+Requires JDK 21.
 
-- Requires **JDK 21** and **NeoForge 1.21.1**.
-- CI builds are triggered via GitHub Actions (`.github/workflows/`).
+    ./gradlew build
+    ./gradlew genIntellijRuns
+    ./gradlew runClient
+    ./gradlew runServer
 
-## Coding Style & Naming Conventions
+CI: `.github/workflows/`
 
-- **Java 21** with Kotlin support in `build.gradle`.
-- Indentation: follow existing file style (Tabs/Spaces as-is); do not reformat unrelated code.
-- Class names: `PascalCase`; methods/variables: `camelCase`; constants: `UPPER_SNAKE_CASE`.
-- Mixins: Should have `@Mixin`. Place in `mixin/` sub-packages matching the target class path (e.g., `mixin/fix/bountiful/`). Don't put classes without `@Mixin` in `mixin/` sub-packages. Should also update `src\main\resources\goldentweaks.mixins.json` accordingly.
-- Compat patches: one package per mod under `compat/<mod_name>/`.
-- Use `@NotNull` / `@Nullable` from `org.jetbrains.annotations`.
+## Code Style
 
-## Testing Guidelines
+- Java 21.
+- Preserve existing formatting; do not reformat unrelated code.
+- `PascalCase` classes, `camelCase` methods/fields, `UPPER_SNAKE_CASE` constants.
+- Use `@NotNull` / `@Nullable` where appropriate.
+- Prefer existing project dependencies over new implementations.
 
-- No formal test suite is currently configured.
-- Manual testing: launch `runClient` and verify changes in-game.
-- When fixing a mod compatibility issue, test with that mod present and absent.
+### Mixins
 
-## Commit & Pull Request Guidelines
+- All mixins belong under `mixin/` and must use `@Mixin`.
+- Match package layout to the target class.
+- Update `goldentweaks.mixins.json` when adding/removing mixins.
+- Use `@Unique` members with `gt$` prefix.
+- Prefer `@Inject(cancellable = true)` over `@Overwrite`.
+- `@Overwrite` requires `@author` and `@reason`.
+- Non-mixin helper classes do not belong in `mixin/`.
+- Prefer Mixin for code modification. If Mixin is insufficient, use reflection or `VarHandle`; use ASM only as a last resort.
+- Mixins may target any class from dependency libraries, including Minecraft, NeoForge, other mods, and their dependencies, when necessary to implement new features.
 
-- Commit messages are short and descriptive (e.g., `v 3.1`, `Thaumcraft compat`).
-- Prepend version tags for releases (`v 3.1`).
-- PRs should describe what was changed and why, with screenshots for visual changes.
-- Link related issues when applicable.
+### Compatibility
 
-## Agent-Specific Instructions
+Use one package per supported mod:
 
-- **Only target NeoForge 1.21.1** — do not introduce Fabric or multi-loader abstractions.
-- **Never modify `build.gradle` or `settings.gradle`** without explicit request.
-- Edit files surgically: do not reformat, rearrange imports, or "fix" unrelated code.
-- When writing mixins, prefer `@Inject` with `cancellable = true` over `@Overwrite` unless necessary.
-- Configuration options go through `config/` package, not scattered constants.
-- Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configuration, and indirection.
-- Grow the system in layers. Start from the smallest version that works end to end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
-- Keep components modular and concerns clearly separated.
-- Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
-- Lean on the dependencies already in the project before writing your own implementation or adding packages. Do not assume a library lacks a capability without checking its documentation and types.
-- Make architectural decisions for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
+    compat/<mod_name>/
+
+## Agent Rules
+
+- Target NeoForge 1.21.1 only. No Fabric or multi-loader abstractions.
+- Do not modify `build.gradle` or `settings.gradle` unless explicitly requested.
+- Make surgical edits. Do not reorder imports, reformat files, or fix unrelated code.
+- Put configuration in `config/`, not scattered constants.
+- Prefer the smallest working implementation. Avoid speculative abstractions and unnecessary indirection.
+- Build incrementally; do not replace working code with unfinished architecture.
+- Keep components modular and concerns separated.
+- Check existing APIs/dependencies before adding new code or libraries.
+- Prefer maintainable solutions over temporary hacks.
 - Bash corruption may be caused by the working directory no longer existing. You can create a new one.
+
+## Testing
+
+No formal test suite.
+
+For changes:
+
+- Run `./gradlew build` when practical.
+- Use `./gradlew runClient` for in-game verification.
+- See `run/logs/latest.log` for log, `run/logs/debug.log` for debug log, and `run/crash-reports` for crash reports.
+- Compatibility fixes should be tested with the target mod both present and absent when practical.
+
+## Git
+
+Commit messages should be short and descriptive.
+
+Release commits use version prefixes, e.g. `v 3.1`.
+
+PRs should explain what changed and why; include screenshots for visual changes.
+
+Before a major version update, update the root-level `update_log.md`. Only do this when the user explicitly triggers a major version update.
+
+## Installed Agent Skills
+
+Optional user-level skills may exist under `~/.agents/skills/`:
+
+- `caveman` — compressed communication.
+- `memory` — persistent project memory.
+- `token-saver` — minimal responses and direct patches.
+- `ponytail` — YAGNI / shortest-working-solution development.
+- `headroom` — context compression proxy.
