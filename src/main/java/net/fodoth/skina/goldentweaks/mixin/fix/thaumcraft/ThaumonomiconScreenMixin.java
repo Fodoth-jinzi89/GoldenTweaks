@@ -1,10 +1,9 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
-import net.minecraft.client.gui.Font;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.util.Mth;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -28,18 +27,19 @@ import java.util.List;
 @Mixin(value = ThaumonomiconScreen.class, remap = false)
 public abstract class ThaumonomiconScreenMixin {
 
+    @Unique
     private static final int TABS_PER_PAGE = 18;
 
     /** 左/右翻页箭头的位置（与标签列同一坐标体系，标签列底部 y≈216）。 */
+    @Unique
     private static final int PREV_X = -20;
+    @Unique
     private static final int NEXT_X = 262;
+    @Unique
     private static final int BUTTON_Y = 220;
 
     @Unique
     private static int gt$tabPage;
-
-    @Shadow
-    private Font font;
 
     @Redirect(
             method = "drawCategoryTabs",
@@ -58,13 +58,13 @@ public abstract class ThaumonomiconScreenMixin {
     }
 
     @Inject(method = "drawCategoryTabs", at = @At("RETURN"))
-    private void gt$drawTabPaging(GuiGraphics guiGraphics, int x, int y, CallbackInfo ci) {
+    private void gt$drawTabPaging(GuiGraphics guiGraphics, int mouseX, int mouseY, CallbackInfo ci) {
         if (gt$pageCount() <= 1) {
             return;
         }
 
-        guiGraphics.drawString(this.font, "«", PREV_X, BUTTON_Y, 0xFF404040);
-        guiGraphics.drawString(this.font, "»", NEXT_X, BUTTON_Y, 0xFF404040);
+        guiGraphics.drawString(Minecraft.getInstance().font, "«", PREV_X, BUTTON_Y, 0xFF404040);
+        guiGraphics.drawString(Minecraft.getInstance().font, "»", NEXT_X, BUTTON_Y, 0xFF404040);
     }
 
     @Inject(method = "handleMapCategoryClick", at = @At("HEAD"), cancellable = true)

@@ -1,9 +1,9 @@
 {
   "type": "goldentweaks:research",
   "key": "GT_WARPTHEORY_CLEANSER",
-  "category": "ALCHEMY",
+  "category": "GT_MODIFICATIONS",
   "column": -4,
-  "row": -5,
+  "row": 5,
   "complexity": 2,
   "icon": {
     "id": "goldentweaks:warptheory_cleanser",

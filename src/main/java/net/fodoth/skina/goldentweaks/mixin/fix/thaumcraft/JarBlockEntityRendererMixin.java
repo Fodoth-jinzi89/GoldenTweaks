@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.InventoryMenu;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import thaumcraft.api.aspects.Aspect;
@@ -36,12 +37,17 @@ import thaumcraft.common.blockentities.JarBlockEntity;
 @Mixin(value = JarBlockEntityRenderer.class, remap = false)
 public class JarBlockEntityRendererMixin {
 
+    @Unique
     private static final double PI_OVER_360 = Math.PI / 360.0;
 
+    @Unique
     private static final String RENDER_TYPES_CLASS = "net.weibai.renderblender.client.shader.AvaritiaRenderTypes";
+    @Unique
     private static final String SHADERS_CLASS = "net.weibai.renderblender.client.shader.AvaritiaShaders";
 
+    @Unique
     private static RenderType cosmicRenderType;
+    @Unique
     private static boolean cosmicResolved;
 
     @Redirect(
@@ -82,6 +88,7 @@ public class JarBlockEntityRendererMixin {
     }
 
     /** 与 renderblender {@code renderCosmicLayer} 相同的 uniform 设置（jar 无物品栈）。 */
+    @Unique
     private static void setupCosmicUniforms() {
         try {
             Class<?> shaders = Class.forName(SHADERS_CLASS);
@@ -103,12 +110,14 @@ public class JarBlockEntityRendererMixin {
         }
     }
 
+    @Unique
     private static void setUniform(Class<?> shaders, String field, float value) throws Exception {
         AbstractUniform uniform = (AbstractUniform) shaders.getField(field).get(null);
         uniform.set(value);
     }
 
     /** 标签图标使用的 cosmic mask（方块图集内，与 aspect_icon 模型同一张）。 */
+    @Unique
     private static TextureAtlasSprite maskSprite(String tag) {
         try {
             return Minecraft.getInstance().getModelManager()
@@ -120,6 +129,7 @@ public class JarBlockEntityRendererMixin {
         }
     }
 
+    @Unique
     private static RenderType cosmicRenderType() {
         if (!cosmicResolved) {
             cosmicResolved = true;

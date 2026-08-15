@@ -1,7 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
-import net.fodoth.skina.goldentweaks.util.EarthShockHarmMode;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,7 +13,7 @@ import thaumcraft.common.entities.ShockOrbEntity;
 import java.util.function.Predicate;
 
 /**
- * 地之冲击伤害模式（移植自 TC4Tweaks 的 earthShockHarmMode）。
+ * 震荡波伤害模式（移植自 TC4Tweaks 的 earthShockHarmMode）。
  *
  * <p>移植版 {@code onHit} 使用恒真的 Predicate（除施法者外一切实体都受伤）。
  * 这里把 {@code ServerLevel.getEntities} 的目标过滤替换为按配置选择的模式：

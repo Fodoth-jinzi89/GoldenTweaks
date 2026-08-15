@@ -160,6 +160,7 @@
   "item.goldentweaks.glorious_gold": "Glorious Gold",
   "item.goldentweaks.luminous_gold": "Luminous Gold",
   "item.goldentweaks.immaculate_gold": "Immaculate Gold",
+  "tc.research_category.GT_MODIFICATIONS": "Golden Tweaks",
   "tc.research_name.GT_INFUSION_INTERCEPTER": "Infusion Intercepter",
   "tc.research_text.GT_INFUSION_INTERCEPTER": "§oAutomating Infusion: Everything Automated§r",
   "tc.research_page.GT_INFUSION_INTERCEPTER.1": "Between the moments of an Infusion ritual, you discovered an apparatus that does not belong to any conventional school of Arcane study — the Infusion Interceptor. It does not cast spells. Instead, it intercepts the ritual itself, binding the flow of arcane power that once required a wizard's constant attention within a cold and silent vessel.<BR>Place it 3 to 10 blocks beneath the Runic Matrix, and the Interceptor will recognize the Matrix and its pedestals on its own. It will search the 13×13×3 space below for containers of Essentia, drawing forth whatever is required as quietly as though the Matrix had never asked anyone for it.<BR>Once the offering is placed upon the central pedestal, the ritual will begin by itself. No wand. No incantation. No need to touch those dangerous runes ever again.",

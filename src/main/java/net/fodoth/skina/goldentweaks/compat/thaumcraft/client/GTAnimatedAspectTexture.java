@@ -29,11 +29,15 @@ public final class GTAnimatedAspectTexture extends AbstractTexture {
     private final NativeImage[] frames;
     private final int frameWidth;
     private final int frameCount;
+    private final int frameDelay;
     private int currentFrame;
+    private int frameTicks;
 
-    public GTAnimatedAspectTexture(NativeImage source) {
+    public GTAnimatedAspectTexture(NativeImage source, int frameDelay) {
         this.frameWidth = source.getWidth();
         this.frameCount = source.getHeight() / this.frameWidth;
+        this.frameDelay = Math.max(1, frameDelay);
+        this.frameTicks = this.frameDelay;
         this.frames = new NativeImage[this.frameCount];
         for (int i = 0; i < this.frameCount; i++) {
             this.frames[i] = new NativeImage(this.frameWidth, this.frameWidth, false);
@@ -74,8 +78,12 @@ public final class GTAnimatedAspectTexture extends AbstractTexture {
         RenderSystem.texParameter(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_WRAP_T, GL14.GL_CLAMP_TO_EDGE);
     }
 
-    /** Advances to the next frame and re-uploads it on the render thread. */
+    /** Advances to the next frame after the configured {@code frametime} ticks, re-uploading on the render thread. */
     public void tick() {
+        if (--this.frameTicks > 0) {
+            return;
+        }
+        this.frameTicks = this.frameDelay;
         this.currentFrame = (this.currentFrame + 1) % this.frameCount;
         RenderSystem.recordRenderCall(() -> uploadFrame(this.currentFrame));
     }

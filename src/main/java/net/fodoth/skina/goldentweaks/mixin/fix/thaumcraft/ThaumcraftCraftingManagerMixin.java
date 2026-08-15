@@ -23,15 +23,15 @@ import thaumcraft.common.lib.crafting.ThaumcraftCraftingManager;
 public abstract class ThaumcraftCraftingManagerMixin {
 
     @Inject(method = "findMatchingArcaneRecipeEntry", at = @At("HEAD"), cancellable = true)
-    private static void gt$arcaneRecipeCacheHit(Container container, Player player, CallbackInfoReturnable<IArcaneRecipe> cir) {
-        IArcaneRecipe cached = ArcaneCraftingCache.find(container, player);
+    private static void gt$arcaneRecipeCacheHit(Container workbench, Player player, CallbackInfoReturnable<IArcaneRecipe> cir) {
+        IArcaneRecipe cached = ArcaneCraftingCache.find(workbench, player);
         if (cached != null) {
             cir.setReturnValue(cached);
         }
     }
 
     @Inject(method = "findMatchingArcaneRecipeEntry", at = @At("RETURN"))
-    private static void gt$arcaneRecipeCacheStore(Container container, Player player, CallbackInfoReturnable<IArcaneRecipe> cir) {
+    private static void gt$arcaneRecipeCacheStore(Container workbench, Player player, CallbackInfoReturnable<IArcaneRecipe> cir) {
         IArcaneRecipe recipe = cir.getReturnValue();
         if (recipe != null) {
             ArcaneCraftingCache.add(recipe);

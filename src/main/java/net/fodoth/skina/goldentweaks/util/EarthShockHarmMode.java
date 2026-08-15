@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.util;
 
 /**
- * 地之冲击（Earth Shock）可伤害实体的模式（移植自 TC4Tweaks 的 EarthShockHarmMode）。
+ * 震荡波（Earth Shock）可伤害实体的模式（移植自 TC4Tweaks 的 EarthShockHarmMode）。
  */
 public enum EarthShockHarmMode {
 

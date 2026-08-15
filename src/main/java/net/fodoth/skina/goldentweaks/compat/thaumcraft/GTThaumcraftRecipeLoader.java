@@ -16,6 +16,8 @@ public class GTThaumcraftRecipeLoader {
         GTAspectEntry.load(resourceManager);
         // Bind the freshly registered aspects onto the vanilla phial items.
         GTAspectPhials.bind();
+        // Categories must be registered before research entries reference them.
+        GTThaumcraftCategory.load(resourceManager);
         GTThaumcraftResearch.load(resourceManager);
         GTInfusionRecipe.load(resourceManager);
         GTCrucibleRecipe.load(resourceManager);

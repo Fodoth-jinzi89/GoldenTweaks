@@ -5,6 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -20,14 +21,12 @@ import thaumcraft.common.blocks.JarBlock;
 @Mixin(value = JarBlock.class, remap = false)
 public abstract class JarBlockMixin {
 
+    @Unique
     private static final String PHIAL_PREFIX = "phial_of_essentia_";
 
     @Inject(method = "filledPhialAspect", at = @At("HEAD"), cancellable = true)
     private static void goldenTweaks$resolveCustomPhial(ItemStack stack, CallbackInfoReturnable<Aspect> cir) {
         ResourceLocation id = BuiltInRegistries.ITEM.getKey(stack.getItem());
-        if (id == null) {
-            return;
-        }
         String path = id.getPath();
         if (path.startsWith(PHIAL_PREFIX)) {
             Aspect aspect = Aspect.get(path.substring(PHIAL_PREFIX.length()));
@@ -40,9 +39,6 @@ public abstract class JarBlockMixin {
     @Inject(method = "filledPhialStack", at = @At("HEAD"), cancellable = true)
     private static void goldenTweaks$createCustomPhial(Aspect aspect, CallbackInfoReturnable<ItemStack> cir) {
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath("goldentweaks", PHIAL_PREFIX + aspect.tag());
-        Item item = BuiltInRegistries.ITEM.getOptional(id).orElse(null);
-        if (item != null) {
-            cir.setReturnValue(new ItemStack(item));
-        }
+        BuiltInRegistries.ITEM.getOptional(id).ifPresent(item -> cir.setReturnValue(new ItemStack(item)));
     }
 }

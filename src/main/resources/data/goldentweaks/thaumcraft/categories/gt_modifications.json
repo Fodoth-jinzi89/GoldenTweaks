@@ -1,0 +1,6 @@
+{
+  "type": "goldentweaks:category",
+  "key": "GT_MODIFICATIONS",
+  "icon": "goldentweaks:textures/item/thaumcraft/warptheory_cleanser.png",
+  "background": "thaumcraft:textures/gui/gui_researchback.png"
+}

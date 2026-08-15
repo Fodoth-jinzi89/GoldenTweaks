@@ -5,6 +5,7 @@ import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftAdditionalIte
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -56,6 +57,7 @@ public class AspectGuiRendererMixin {
      * <p>注意：NeoForge 1.21.1 的 {@link GuiGraphics#renderItem(ItemStack, int, int, int, int)}
      * 是 {@code (stack, x, y, seed, z)}，并没有宽高重载，必须手动缩放 pose。
      */
+    @Unique
     private static void renderCosmicIcon(GuiGraphics graphics, int x, int y, int size) {
         ItemStack stack = GTThaumcraftAdditionalItems.denseIconStack();
         graphics.pose().pushPose();
