@@ -1,0 +1,25 @@
+{
+  "type": "goldentweaks:research",
+  "key": "GT_WARPTHEORY_CLEANSER",
+  "category": "ALCHEMY",
+  "column": -4,
+  "row": -5,
+  "complexity": 2,
+  "icon": {
+    "id": "goldentweaks:warptheory_cleanser",
+    "count": 1
+  },
+  "aspects": {
+    "praecantatio": 5,
+    "sano": 5,
+    "auram": 3,
+    "ordo": 3
+  },
+  "parents": [
+    "ARCANESPA"
+  ],
+  "concealed": true,
+  "pages": [
+    "tc.research_page.GT_WARPTHEORY_CLEANSER.1"
+  ]
+}

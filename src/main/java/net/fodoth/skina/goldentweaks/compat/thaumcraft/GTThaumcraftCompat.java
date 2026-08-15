@@ -9,7 +9,6 @@ import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAspectRecipeClie
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAspectRecipeTooltip;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 
 import java.io.Reader;
@@ -36,10 +35,6 @@ public final class GTThaumcraftCompat {
         GTThaumcraftDataGen.register(modEventBus);
 
         registerPhialsFromJson(container);
-
-        // Defer research registration until items are available
-        modEventBus.addListener(FMLCommonSetupEvent.class, e ->
-                e.enqueueWork(GTThaumcraftResearch::register));
     }
 
     /**

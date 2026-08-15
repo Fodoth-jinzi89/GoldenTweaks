@@ -1,0 +1,25 @@
+{
+  "type": "goldentweaks:research",
+  "key": "GT_INFUSION_INTERCEPTER",
+  "category": "ARTIFICE",
+  "column": -4,
+  "row": 6,
+  "complexity": 3,
+  "icon": {
+    "id": "goldentweaks:infusion_intercepter",
+    "count": 1
+  },
+  "aspects": {
+    "praecantatio": 8,
+    "instrumentum": 4,
+    "machina": 4
+  },
+  "parents": [
+    "INFUSION"
+  ],
+  "concealed": true,
+  "pages": [
+    "tc.research_page.GT_INFUSION_INTERCEPTER.1",
+    "tc.research_page.GT_INFUSION_INTERCEPTER.2"
+  ]
+}

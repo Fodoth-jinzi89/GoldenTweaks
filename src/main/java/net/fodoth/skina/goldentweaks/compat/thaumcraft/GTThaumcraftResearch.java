@@ -1,70 +1,237 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.world.item.ItemStack;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.research.ResearchItem;
 import thaumcraft.api.research.ResearchPage;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * JSON-driven Thaumcraft research registration.
+ * <p>
+ * JSON files go in {@code data/<namespace>/thaumcraft/research/}.
+ * <pre>{@code
+ * {
+ *   "type": "goldentweaks:research",
+ *   "key": "GT_INFUSION_INTERCEPTER",
+ *   "category": "ARTIFICE",
+ *   "column": -4,
+ *   "row": 6,
+ *   "complexity": 3,
+ *   "icon": { "id": "goldentweaks:infusion_intercepter" },
+ *   "aspects": { "praecantatio": 8, "instrumentum": 4, "machina": 4 },
+ *   "parents": ["INFUSION"],
+ *   "concealed": true,
+ *   "pages": [
+ *     "tc.research_page.GT_INFUSION_INTERCEPTER.1",
+ *     "tc.research_page.GT_INFUSION_INTERCEPTER.2"
+ *   ]
+ * }
+ * }</pre>
+ * <p>{@code pages} entries are plain text page translation keys.
+ */
 public final class GTThaumcraftResearch {
 
-    private static boolean registered;
+    private static final String TYPE = "goldentweaks:research";
+    private static final String ENTRY_NAME = "research";
+    private static final String ENTRY_PATH = "thaumcraft/research";
 
-    private GTThaumcraftResearch() {
+    private final String key;
+    private final String category;
+    private final int column;
+    private final int row;
+    private final int complexity;
+    private final ItemStack icon;
+    private final AspectList tags = new AspectList();
+    private final List<String> parents = new ArrayList<>();
+    private final List<String> pages = new ArrayList<>();
+    private boolean concealed;
+
+    private GTThaumcraftResearch(
+            String key,
+            String category,
+            int column,
+            int row,
+            int complexity,
+            ItemStack icon
+    ) {
+        this.key = key;
+        this.category = category;
+        this.column = column;
+        this.row = row;
+        this.complexity = complexity;
+        this.icon = icon;
     }
 
-    public static void register() {
-        if (registered) return;
-        registered = true;
+    boolean register() {
+        if (key == null || key.isBlank() || category == null || category.isBlank()) {
+            GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft research: missing key or category.");
+            return false;
+        }
+        if (icon.isEmpty() || tags.isEmpty()) {
+            GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft research '{}': empty icon or aspects.", key);
+            return false;
+        }
 
-        AspectList tags = new AspectList()
-                .add(Aspect.MAGIC, 8)
-                .add(Aspect.TOOL, 4)
-                .add(Aspect.MECHANISM, 4);
+        try {
+            ResearchItem research = new ResearchItem(key, category, tags, column, row, complexity, icon);
+            if (!parents.isEmpty()) {
+                research.setParents(parents.toArray(String[]::new));
+            }
+            if (concealed) {
+                research.setConcealed();
+            }
+            if (!pages.isEmpty()) {
+                ResearchPage[] researchPages = new ResearchPage[pages.size()];
+                for (int i = 0; i < pages.size(); i++) {
+                    researchPages[i] = new ResearchPage(pages.get(i));
+                }
+                research.setPages(researchPages);
+            }
+            research.registerResearchItem();
+            GoldenTweaks.LOGGER.debug("Registered Thaumcraft research '{}'.", key);
+            return true;
+        } catch (Exception e) {
+            GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft research '{}': {}", key, e.getMessage());
+            return false;
+        }
+    }
 
-        ResearchItem research = new ResearchItem(
-                "GT_INFUSION_INTERCEPTER",
-                "ARTIFICE",
-                tags,
-                -4,  // column (same as INFUSION)
-                6,   // row (below INFUSION)
-                3,   // complexity
-                new ItemStack(GTThaumcraftAdditionalBlocks.INFUSION_INTERCEPTER_ITEM.get())
-        )
-                .setParents("INFUSION")
-                .setConcealed()
-                .setPages(
-                        new ResearchPage("tc.research_page.GT_INFUSION_INTERCEPTER.1"),
-                        new ResearchPage("tc.research_page.GT_INFUSION_INTERCEPTER.2")
-                )
-                .registerResearchItem();
+    // ---- JSON parsing ----------------------------------------------------
 
-        GoldenTweaks.LOGGER.info("Registered Thaumcraft research: {}", research.key);
+    static GTThaumcraftResearch fromJson(JsonObject json) {
+        if (json == null || !ThaumcraftRecipeUtil.isType(json, TYPE)) {
+            return null;
+        }
 
-        // Warp Theory Cleanser
-        AspectList cleanserTags = new AspectList()
-                .add(Aspect.MAGIC, 5)
-                .add(Aspect.HEAL, 5)
-                .add(Aspect.AURA, 3)
-                .add(Aspect.ORDER, 3);
+        String key = ThaumcraftRecipeUtil.getRequiredString(json, "key");
+        if (key == null || key.isBlank()) {
+            return null;
+        }
 
-        ResearchItem cleanserResearch = new ResearchItem(
-                "GT_WARPTHEORY_CLEANSER",
-                "ALCHEMY",
-                cleanserTags,
-                -4,  // column (right of ARCANESPA)
-                -5,  // row (same row as ARCANESPA)
-                2,   // complexity
-                new ItemStack(GTThaumcraftAdditionalItems.WARPTHEORY_CLEANSER.get())
-        )
-                .setParents("ARCANESPA")
-                .setConcealed()
-                .setPages(
-                        new ResearchPage("tc.research_page.GT_WARPTHEORY_CLEANSER.1")
-                )
-                .registerResearchItem();
+        String category = ThaumcraftRecipeUtil.getRequiredString(json, "category");
+        if (category == null || category.isBlank()) {
+            return null;
+        }
 
-        GoldenTweaks.LOGGER.info("Registered Thaumcraft research: {}", cleanserResearch.key);
+        if (!json.has("column") || !json.has("row") || !json.has("complexity")) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': missing column/row/complexity.", key);
+            return null;
+        }
+        int column = ThaumcraftRecipeUtil.getRequiredInt(json, "column");
+        int row = ThaumcraftRecipeUtil.getRequiredInt(json, "row");
+        int complexity = ThaumcraftRecipeUtil.getRequiredInt(json, "complexity");
+        if (column == -1 || row == -1 || complexity < 0) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': invalid column/row/complexity.", key);
+            return null;
+        }
+
+        JsonObject iconObject = ThaumcraftRecipeUtil.getRequiredObject(json, "icon");
+        if (iconObject == null) {
+            return null;
+        }
+        ItemStack icon = ThaumcraftRecipeUtil.parseStack(iconObject, "icon");
+        if (icon.isEmpty()) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': icon is empty.", key);
+            return null;
+        }
+
+        GTThaumcraftResearch research = new GTThaumcraftResearch(key, category, column, row, complexity, icon);
+
+        if (!readAspects(json, key, research.tags)) {
+            return null;
+        }
+
+        if (!readStringList(json, "parents", key, research.parents)) {
+            return null;
+        }
+
+        if (!readStringList(json, "pages", key, research.pages)) {
+            return null;
+        }
+
+        JsonElement concealedElement = json.get("concealed");
+        if (concealedElement != null) {
+            if (!concealedElement.isJsonPrimitive() || !concealedElement.getAsJsonPrimitive().isBoolean()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': 'concealed' must be a boolean.", key);
+                return null;
+            }
+            research.concealed = concealedElement.getAsBoolean();
+        }
+
+        return research;
+    }
+
+    private static boolean readAspects(JsonObject json, String key, AspectList tags) {
+        JsonObject aspectObject = ThaumcraftRecipeUtil.getRequiredObject(json, "aspects");
+        if (aspectObject == null || aspectObject.isEmpty()) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': aspects must not be empty.", key);
+            return false;
+        }
+
+        for (Map.Entry<String, JsonElement> entry : aspectObject.entrySet()) {
+            JsonElement value = entry.getValue();
+            if (!value.isJsonPrimitive() || !value.getAsJsonPrimitive().isNumber()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': aspect '{}' amount must be a number.", key, entry.getKey());
+                return false;
+            }
+
+            int amount = value.getAsInt();
+            if (amount <= 0) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': aspect '{}' amount must be positive.", key, entry.getKey());
+                return false;
+            }
+
+            Aspect aspect = Aspect.get(entry.getKey());
+            if (aspect == null) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': unknown aspect '{}'.", key, entry.getKey());
+                return false;
+            }
+
+            tags.add(aspect, amount);
+        }
+
+        return true;
+    }
+
+    private static boolean readStringList(JsonObject json, String field, String key, List<String> out) {
+        JsonElement element = json.get(field);
+        if (element == null) {
+            return true;
+        }
+        if (!element.isJsonArray()) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': '{}' must be an array.", key, field);
+            return false;
+        }
+
+        JsonArray array = element.getAsJsonArray();
+        for (int i = 0; i < array.size(); i++) {
+            JsonElement child = array.get(i);
+            if (!child.isJsonPrimitive() || !child.getAsJsonPrimitive().isString()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': '{}'[{}] must be a string.", key, field, i);
+                return false;
+            }
+            out.add(child.getAsString());
+        }
+
+        return true;
+    }
+
+    // ---- Resource loading -------------------------------------------------
+
+    public static void load(ResourceManager resourceManager) {
+        ThaumcraftRecipeUtil.load(resourceManager, ENTRY_PATH, ENTRY_NAME, (json, location) -> {
+            GTThaumcraftResearch research = fromJson(json);
+            return research != null && research.register();
+        });
     }
 }
