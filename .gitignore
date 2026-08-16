@@ -104,3 +104,4 @@ desktop.ini
 # =========================
 .deepcode/*
 !.deepcode/settings.json.example
+/RenderBlender改进建议.txt
