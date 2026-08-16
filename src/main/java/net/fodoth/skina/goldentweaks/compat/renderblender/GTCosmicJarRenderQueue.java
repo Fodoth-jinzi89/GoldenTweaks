@@ -315,53 +315,44 @@ public final class GTCosmicJarRenderQueue {
         if (!jarCosmicResolved) {
             jarCosmicResolved = true;
             try {
-                Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
-                RenderStateShard.EmptyTextureStateShard texture =
-                        (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);
-                RenderStateShard.LayeringStateShard layering =
-                        (RenderStateShard.LayeringStateShard) renderUtils.getField("POLYGON_OFFSET_LAYERING").get(null);
-                RenderStateShard.ShaderStateShard shaderState = new RenderStateShard.ShaderStateShard(() -> {
-                    try {
-                        return (net.minecraft.client.renderer.ShaderInstance)
-                                Class.forName(SHADERS_CLASS).getField("COSMIC_SHADER").get(null);
-                    } catch (Throwable t) {
-                        return null;
-                    }
-                });
-                RenderType.CompositeState essentiaState = RenderType.CompositeState.builder()
-                        .setShaderState(shaderState)
-                        .setDepthTestState(RenderStateShard.LEQUAL_DEPTH_TEST)
-                        .setCullState(RenderStateShard.NO_CULL)
-                        .setLightmapState(RenderStateShard.LIGHTMAP)
-                        .setWriteMaskState(RenderStateShard.COLOR_WRITE)
-                        .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
-                        .setTextureState(texture)
-                        .setLayeringState(layering)
-                        .createCompositeState(true);
-                RenderType.CompositeState labelState = RenderType.CompositeState.builder()
-                        .setShaderState(shaderState)
-                        .setDepthTestState(RenderStateShard.LEQUAL_DEPTH_TEST)
-                        .setCullState(RenderStateShard.NO_CULL)
-                        .setLightmapState(RenderStateShard.LIGHTMAP)
-                        .setWriteMaskState(RenderStateShard.COLOR_WRITE)
-                        .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
-                        .setTextureState(texture)
-                        .setLayeringState(layering)
-                        .createCompositeState(true);
-                jarEssentiaCosmicRenderType = RenderType.create(
-                        "goldentweaks:jar_essentia_cosmic",
-                        DefaultVertexFormat.NEW_ENTITY,
-                        VertexFormat.Mode.QUADS,
-                        2097152, true, false, essentiaState);
-                jarLabelCosmicRenderType = RenderType.create(
-                        "goldentweaks:jar_label_cosmic",
-                        DefaultVertexFormat.NEW_ENTITY,
-                        VertexFormat.Mode.QUADS,
-                        2097152, true, false, labelState);
+                RenderType.CompositeState state = cosmicState(RenderStateShard.LEQUAL_DEPTH_TEST);
+                jarEssentiaCosmicRenderType = createCosmicType("goldentweaks:jar_essentia_cosmic", state);
+                jarLabelCosmicRenderType = createCosmicType("goldentweaks:jar_label_cosmic", state);
             } catch (Throwable t) {
                 GoldenTweaks.LOGGER.warn("[GT] jar cosmic render type unavailable: {}", t.toString());
             }
         }
+    }
+
+    private static RenderType createCosmicType(String name, RenderType.CompositeState state) {
+        return RenderType.create(name, DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS,
+                2097152, true, false, state);
+    }
+
+    private static RenderType.CompositeState cosmicState(RenderStateShard.DepthTestStateShard depthTest) throws Exception {
+        Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
+        RenderStateShard.EmptyTextureStateShard texture =
+                (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);
+        RenderStateShard.LayeringStateShard layering =
+                (RenderStateShard.LayeringStateShard) renderUtils.getField("POLYGON_OFFSET_LAYERING").get(null);
+        RenderStateShard.ShaderStateShard shaderState = new RenderStateShard.ShaderStateShard(() -> {
+            try {
+                return (net.minecraft.client.renderer.ShaderInstance)
+                        Class.forName(SHADERS_CLASS).getField("COSMIC_SHADER").get(null);
+            } catch (Throwable t) {
+                return null;
+            }
+        });
+        return RenderType.CompositeState.builder()
+                .setShaderState(shaderState)
+                .setDepthTestState(depthTest)
+                .setCullState(RenderStateShard.NO_CULL)
+                .setLightmapState(RenderStateShard.LIGHTMAP)
+                .setWriteMaskState(RenderStateShard.COLOR_WRITE)
+                .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
+                .setTextureState(texture)
+                .setLayeringState(layering)
+                .createCompositeState(true);
     }
 
     /**
@@ -374,37 +365,8 @@ public final class GTCosmicJarRenderQueue {
         if (!cosmicNoDepthResolved) {
             cosmicNoDepthResolved = true;
             try {
-                Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
-                RenderStateShard.EmptyTextureStateShard texture =
-                        (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);
-                RenderStateShard.LayeringStateShard layering =
-                        (RenderStateShard.LayeringStateShard) renderUtils.getField("POLYGON_OFFSET_LAYERING").get(null);
-                // 每次绘制时重新读取 COSMIC_SHADER 字段：光影包切换/资源重载会重新注册
-                // shader（新 ShaderInstance），不能捕获首次构建时的旧实例（已解绑、绘制无效）。
-                RenderStateShard.ShaderStateShard shaderState =
-                        new RenderStateShard.ShaderStateShard(() -> {
-                            try {
-                                return (net.minecraft.client.renderer.ShaderInstance)
-                                        Class.forName(SHADERS_CLASS).getField("COSMIC_SHADER").get(null);
-                            } catch (Throwable t) {
-                                return null;
-                            }
-                        });
-                cosmicNoDepthRenderType = RenderType.create(
-                        "goldentweaks:cosmic_no_depth",
-                        DefaultVertexFormat.NEW_ENTITY,
-                        VertexFormat.Mode.QUADS,
-                        2097152, true, false,
-                        RenderType.CompositeState.builder()
-                                .setShaderState(shaderState)
-                                .setDepthTestState(RenderStateShard.NO_DEPTH_TEST)
-                                .setCullState(RenderStateShard.NO_CULL)
-                                .setLightmapState(RenderStateShard.LIGHTMAP)
-                                .setWriteMaskState(RenderStateShard.COLOR_WRITE)
-                                .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
-                                .setTextureState(texture)
-                                .setLayeringState(layering)
-                                .createCompositeState(true));
+                cosmicNoDepthRenderType = createCosmicType("goldentweaks:cosmic_no_depth",
+                        cosmicState(RenderStateShard.NO_DEPTH_TEST));
             } catch (Throwable t) {
                 GoldenTweaks.LOGGER.warn("[GT] renderblender cosmic no-depth render type unavailable: {}", t.toString());
             }

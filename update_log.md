@@ -1,5 +1,44 @@
 # GoldenTweaks Update Log
 
+## 2026.08.16 - v3.9
+
+### Thaumcraft
+- 新增宇宙（cosmic）要素及其要素图标、源质安瓿和灵气精华资源，并调整稠密（dense）与奇点（singularity）要素纹理
+  - [cosmic.json](src/main/resources/data/goldentweaks/thaumcraft/aspects/cosmic.json)
+  - [GTThaumcraftAdditionalItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftAdditionalItems.java)
+  - [dense.json](src/main/resources/data/goldentweaks/thaumcraft/aspects/dense.json)
+  - [singularity.json](src/main/resources/data/goldentweaks/thaumcraft/aspects/singularity.json)
+- 新增基于 JSON 数据包的实体要素注册，支持按实体 NBT 条件匹配
+  - [GTEntityAspectEntry.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTEntityAspectEntry.java)
+- JSON 注魔配方新增转换配方与注魔附魔配方支持
+  - [GTInfusionRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTInfusionRecipe.java)
+- 修复揭示之护目镜与魔导手册中的宇宙要素渲染和文字层级问题
+  - [AlchemyGogglesOverlayMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/AlchemyGogglesOverlayMixin.java)
+  - [ThaumonomiconScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumonomiconScreenMixin.java)
+
+### RenderBlender / Iris
+- 修复宇宙着色物品、源质罐子及标签在 Iris 光影下的渲染顺序、深度遮挡和第一人称手部晃动问题
+  - [GTCosmicJarRenderQueue.java](src/main/java/net/fodoth/skina/goldentweaks/compat/renderblender/GTCosmicJarRenderQueue.java)
+  - [CosmicRenderCallMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/renderblender/CosmicRenderCallMixin.java)
+  - [IrisCompatMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/renderblender/IrisCompatMixin.java)
+  - [JarBlockEntityRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/JarBlockEntityRendererMixin.java)
+- 修复 RenderBlender 烘焙模型及 Avaritia 着色器兼容问题
+  - [CosmicBakeModelMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/renderblender/CosmicBakeModelMixin.java)
+  - [AvaritiaShadersMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/renderblender/AvaritiaShadersMixin.java)
+
+### Flavor Immersed Daily
+- 更新至 2026.8.16，并适配新版包结构与女仆食物联动接口
+  - [FidMaidCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/snack_cabinet/flavor_immersed_daily/FidMaidCompat.java)
+  - [MultiStageInteractiveBlockAccessor.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/flavorimmerseddaily/accessor/MultiStageInteractiveBlockAccessor.java)
+
+### Registrate
+- 修复注册回调因未使用检查而无法执行的问题
+  - [AbstractRegistrateMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/registrate/AbstractRegistrateMixin.java)
+
+### 依赖
+- Jade 更新至 15.10.6
+  - [Jade-1.21.1-NeoForge-15.10.6.jar](libs/implementation/Jade-1.21.1-NeoForge-15.10.6.jar)
+
 ## 2026.08.15 - v3.8
 
 ### Thaumcraft（TC4Tweaks 移植）

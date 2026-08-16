@@ -133,7 +133,7 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
         try {
             switch (kind) {
                 case CRAFTING -> {
-                    if (output.isEmpty() || catalyst == null || catalyst.isEmpty() || components.isEmpty()) {
+                    if (output.isEmpty() || !hasCatalystAndComponents()) {
                         GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion recipe '{}': incomplete recipe.", research);
                         return false;
                     }
@@ -147,7 +147,7 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
                     );
                 }
                 case TRANSFORM -> {
-                    if (transform == null || catalyst == null || catalyst.isEmpty() || components.isEmpty()) {
+                    if (transform == null || !hasCatalystAndComponents()) {
                         GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion transform recipe '{}': incomplete recipe.", research);
                         return false;
                     }
@@ -182,6 +182,10 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion recipe '{}': {}", research, e.getMessage());
             return false;
         }
+    }
+
+    private boolean hasCatalystAndComponents() {
+        return catalyst != null && !catalyst.isEmpty() && !components.isEmpty();
     }
 
     public static GTInfusionRecipe fromJson(JsonObject json) {
@@ -230,17 +234,9 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
             return null;
         }
 
-        JsonObject catalystObject = ThaumcraftRecipeUtil.getRequiredObject(json, "catalyst");
-        if (catalystObject == null) {
+        if (!readCatalyst(json, research, recipe)) {
             return null;
         }
-
-        ItemStack catalyst = ThaumcraftRecipeUtil.parseStack(catalystObject, "catalyst");
-        if (catalyst.isEmpty()) {
-            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft infusion recipe '{}': catalyst is empty.", research);
-            return null;
-        }
-        recipe.catalyst(catalyst);
 
         if (!readIngredients(json, research, recipe)) {
             return null;
@@ -284,17 +280,9 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
             return null;
         }
 
-        JsonObject catalystObject = ThaumcraftRecipeUtil.getRequiredObject(json, "catalyst");
-        if (catalystObject == null) {
+        if (!readCatalyst(json, research, recipe)) {
             return null;
         }
-
-        ItemStack catalyst = ThaumcraftRecipeUtil.parseStack(catalystObject, "catalyst");
-        if (catalyst.isEmpty()) {
-            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft infusion transform recipe '{}': catalyst is empty.", research);
-            return null;
-        }
-        recipe.catalyst(catalyst);
 
         if (!readIngredients(json, research, recipe)) {
             return null;
@@ -376,6 +364,20 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
             recipe.component(ingredient);
         }
 
+        return true;
+    }
+
+    private static boolean readCatalyst(JsonObject json, String research, GTInfusionRecipe recipe) {
+        JsonObject catalystObject = ThaumcraftRecipeUtil.getRequiredObject(json, "catalyst");
+        if (catalystObject == null) {
+            return false;
+        }
+        ItemStack catalyst = ThaumcraftRecipeUtil.parseStack(catalystObject, "catalyst");
+        if (catalyst.isEmpty()) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft infusion recipe '{}': catalyst is empty.", research);
+            return false;
+        }
+        recipe.catalyst(catalyst);
         return true;
     }
 
