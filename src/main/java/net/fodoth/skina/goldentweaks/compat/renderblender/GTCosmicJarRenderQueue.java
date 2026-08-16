@@ -2,14 +2,18 @@ package net.fodoth.skina.goldentweaks.compat.renderblender;
 
 import com.mojang.blaze3d.shaders.AbstractUniform;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.VertexFormat;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderStateShard;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
@@ -52,7 +56,8 @@ public final class GTCosmicJarRenderQueue {
 
     private static final List<JarRenderCall> QUEUE = new ArrayList<>();
 
-    private static Method cubeMethod;
+    private static boolean cubeDiagLogged;
+
     private static Method orientedQuadMethod;
     private static Method atLeastLegacyLightMethod;
 
@@ -60,9 +65,13 @@ public final class GTCosmicJarRenderQueue {
 
     private static final String RENDER_TYPES_CLASS = "net.weibai.renderblender.client.shader.AvaritiaRenderTypes";
     private static final String SHADERS_CLASS = "net.weibai.renderblender.client.shader.AvaritiaShaders";
+    private static final String RENDER_UTILS_CLASS = "net.weibai.renderblender.api.utils.RenderUtils";
 
     private static RenderType cosmicRenderType;
     private static boolean cosmicResolved;
+
+    private static RenderType cosmicNoDepthRenderType;
+    private static boolean cosmicNoDepthResolved;
 
     private GTCosmicJarRenderQueue() {
     }
@@ -119,10 +128,17 @@ public final class GTCosmicJarRenderQueue {
     private static void renderCosmicJar(JarRenderCall call, MultiBufferSource.BufferSource buffers) {
         JarBlockEntity jar = call.jar();
         Aspect aspect = jar.getAspect();
+        Aspect filter = jar.getFilter();
+        // [GT-DBG] temporary diagnosis
+        GoldenTweaks.LOGGER.info("[GT-DBG] jar aspect={} filter={} amount={}/{} cubeCond={} labelCond={}",
+                aspect != null ? aspect.getTag() : "null",
+                filter != null ? filter.getTag() : "null",
+                jar.getAmount(), jar.getMaxAmount(),
+                aspect != null && GTAspectEntry.isCosmic(aspect.getTag()) && jar.getAmount() > 0,
+                filter != null && GTAspectEntry.isCosmic(filter.getTag()));
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag()) && jar.getAmount() > 0) {
             renderEssentiaCube(aspect, jar, call, buffers);
         }
-        Aspect filter = jar.getFilter();
         if (filter != null && GTAspectEntry.isCosmic(filter.getTag())) {
             renderLabelIcon(filter, jar, call, buffers);
         }
@@ -131,27 +147,78 @@ public final class GTCosmicJarRenderQueue {
     /** 与 Thaumcraft {@code JarBlockEntityRenderer.render} 中立方体一致：高度随源质量变化。 */
     private static void renderEssentiaCube(Aspect aspect, JarBlockEntity jar, JarRenderCall call,
                                            MultiBufferSource.BufferSource buffers) {
-        RenderType cosmic = cosmicRenderType();
-        TextureAtlasSprite glow = glowSprite();
-        if (cosmic == null || glow == null) {
+        RenderType cosmic = cosmicNoDepthRenderType();
+        TextureAtlasSprite mask = solidMaskSprite();
+        if (cosmic == null || mask == null) {
             return;
         }
         setupCosmicUniforms();
-        VertexConsumer consumer = glow.wrap(buffers.getBuffer(cosmic));
+        // cosmic shader 以 texCoord0 采样方块图集、按 mask.r < 0.01 丢弃并乘 mask.r 控制透明度。
+        // 立方体使用纯白 mask（r=1），保证整个立方体表面都渲染星空。
+        VertexConsumer consumer = mask.wrap(buffers.getBuffer(cosmic));
         float amount = (float) jar.getAmount() / jar.getMaxAmount();
         int color = aspect.color();
         float base = 0.0625f;
         float height = base + 0.625f * amount;
         int light = atLeastLegacyLight(call.light(), 200);
-        invokeCube(consumer, call.pose().last(),
+        PoseStack.Pose pose = call.pose().last();
+        drawCubeGeometry(consumer, pose,
                 0.25f, base, 0.25f, 0.75f, height, 0.75f,
                 (color >> 16) & 255, (color >> 8) & 255, color & 255, 255, light);
+        // [GT-DBG] temporary diagnosis: log transformed corners (once) + draw a probe cube
+        // at the label's known-good position with my geometry
+        if (!cubeDiagLogged) {
+            cubeDiagLogged = true;
+            for (int c = 0; c < 8; c++) {
+                org.joml.Vector3f p = pose.pose().transformPosition(
+                        new org.joml.Vector3f((c & 1) == 0 ? 0.25f : 0.75f,
+                                (c & 2) == 0 ? base : height,
+                                (c & 4) == 0 ? 0.25f : 0.75f));
+                GoldenTweaks.LOGGER.info("[GT-DBG] cube corner {}: ({},{},{})", c, p.x, p.y, p.z);
+            }
+        }
+        // probe: my geometry at the label's front-face position (should be visible if geometry is OK)
+        VertexConsumer probe = mask.wrap(buffers.getBuffer(cosmic));
+        drawCubeGeometry(probe, pose, 0.3f, 0.1f, 0.3f, 0.7f, 0.5f, 0.7f,
+                (color >> 16) & 255, (color >> 8) & 255, color & 255, 255, 15728880);
+    }
+
+    /**
+     * 自绘源质立方体几何（6 面 × 4 顶点，NEW_ENTITY 格式），与 Thaumcraft
+     * {@code JarBlockEntityRenderer.cube} 的尺寸一致。不依赖反射，避免
+     * 反射方法解析/调用异常导致顶点静默丢失。
+     */
+    private static void drawCubeGeometry(VertexConsumer consumer, PoseStack.Pose pose,
+                                         float x0, float y0, float z0, float x1, float y1, float z1,
+                                         int r, int g, int b, int a, int light) {
+        // {nx, ny, nz, corner0, corner1, corner2, corner3}
+        float[][] faces = {
+                {1, 0, 0, x1, y0, z0, x1, y0, z1, x1, y1, z1, x1, y1, z0},
+                {-1, 0, 0, x0, y0, z1, x0, y0, z0, x0, y1, z0, x0, y1, z1},
+                {0, 1, 0, x0, y1, z0, x0, y1, z1, x1, y1, z1, x1, y1, z0},
+                {0, -1, 0, x0, y0, z1, x0, y0, z0, x1, y0, z0, x1, y0, z1},
+                {0, 0, 1, x0, y0, z1, x1, y0, z1, x1, y1, z1, x0, y1, z1},
+                {0, 0, -1, x1, y0, z0, x0, y0, z0, x0, y1, z0, x1, y1, z0},
+        };
+        float[][] uvs = {{0, 0}, {1, 0}, {1, 1}, {0, 1}};
+        for (float[] f : faces) {
+            float nx = f[0], ny = f[1], nz = f[2];
+            for (int i = 0; i < 4; i++) {
+                consumer.addVertex(pose, f[3 + i * 3], f[4 + i * 3], f[5 + i * 3])
+                        .setColor(r, g, b, a)
+                        .setUv(uvs[i][0], uvs[i][1])
+                        .setOverlay(OverlayTexture.NO_OVERLAY)
+                        .setLight(light)
+                        .setNormal(pose, nx, ny, nz);
+            }
+        }
     }
 
     /** 与 Thaumcraft {@code renderLabel} 中第二个 orientedQuad（要素图标）一致。 */
     private static void renderLabelIcon(Aspect filter, JarBlockEntity jar, JarRenderCall call,
                                         MultiBufferSource.BufferSource buffers) {
-        RenderType cosmic = cosmicRenderType();
+        // [GT-DBG] temporary diagnosis: label also on the no-depth variant to validate it
+        RenderType cosmic = cosmicNoDepthRenderType();
         TextureAtlasSprite mask = maskSprite(filter.getTag());
         if (cosmic == null || mask == null) {
             return;
@@ -168,31 +235,6 @@ public final class GTCosmicJarRenderQueue {
         VertexConsumer consumer = mask.wrap(buffers.getBuffer(cosmic));
         invokeOrientedQuad(consumer, call.pose().last(), dir,
                 0.41f, 0.168f, 0.3185f, rotation, filter.color(), 255, 15728880);
-    }
-
-    private static TextureAtlasSprite glowSprite() {
-        return Minecraft.getInstance().getModelManager()
-                .getAtlas(InventoryMenu.BLOCK_ATLAS)
-                .getSprite(ResourceLocation.fromNamespaceAndPath("thaumcraft", "block/animatedglow"));
-    }
-
-    private static void invokeCube(VertexConsumer consumer, PoseStack.Pose pose,
-                                   float x0, float y0, float z0, float x1, float y1, float z1,
-                                   int r, int g, int b, int a, int light) {
-        try {
-            if (cubeMethod == null) {
-                cubeMethod = JarBlockEntityRenderer.class.getDeclaredMethod(
-                        "cube",
-                        VertexConsumer.class, PoseStack.Pose.class,
-                        float.class, float.class, float.class,
-                        float.class, float.class, float.class,
-                        int.class, int.class, int.class, int.class, int.class);
-                cubeMethod.setAccessible(true);
-            }
-            cubeMethod.invoke(null, consumer, pose, x0, y0, z0, x1, y1, z1, r, g, b, a, light);
-        } catch (Throwable t) {
-            GoldenTweaks.LOGGER.debug("[GT] cosmic jar cube render failed: {}", t.toString());
-        }
     }
 
     private static void invokeOrientedQuad(VertexConsumer consumer, PoseStack.Pose pose, Direction dir,
@@ -265,6 +307,18 @@ public final class GTCosmicJarRenderQueue {
         }
     }
 
+    /** 源质立方体使用的纯白 mask（r=1），保证整个立方体表面都渲染星空。 */
+    public static TextureAtlasSprite solidMaskSprite() {
+        try {
+            return Minecraft.getInstance().getModelManager()
+                    .getAtlas(InventoryMenu.BLOCK_ATLAS)
+                    .getSprite(ResourceLocation.fromNamespaceAndPath("goldentweaks", "mask/item/aspect_cosmic_solid"));
+        } catch (Throwable t) {
+            GoldenTweaks.LOGGER.warn("[GT] cosmic solid mask lookup failed: {}", t.toString());
+            return null;
+        }
+    }
+
     public static RenderType cosmicRenderType() {
         if (!cosmicResolved) {
             cosmicResolved = true;
@@ -276,5 +330,56 @@ public final class GTCosmicJarRenderQueue {
             }
         }
         return cosmicRenderType;
+    }
+
+    /**
+     * 与 {@link #cosmicRenderType()} 相同的 cosmic RenderType，但深度测试关闭。
+     * <p>延迟到 AFTER_LEVEL 重绘时，深度缓冲里已有罐体前表面的深度，源质立方体
+     * 在罐内（深度更大）会被 LEQUAL 剔除而不可见；关掉深度测试即可直接覆盖绘制。
+     * 构建失败时回退到普通 cosmic RenderType。
+     */
+    public static RenderType cosmicNoDepthRenderType() {
+        if (!cosmicNoDepthResolved) {
+            cosmicNoDepthResolved = true;
+            try {
+                Class<?> shaders = Class.forName(SHADERS_CLASS);
+                net.minecraft.client.renderer.ShaderInstance shader =
+                        (net.minecraft.client.renderer.ShaderInstance) shaders.getField("COSMIC_SHADER").get(null);
+                Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
+                RenderStateShard.EmptyTextureStateShard texture =
+                        (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);
+                RenderStateShard.LayeringStateShard layering =
+                        (RenderStateShard.LayeringStateShard) renderUtils.getField("POLYGON_OFFSET_LAYERING").get(null);
+                // 每次绘制时重新读取 COSMIC_SHADER 字段：光影包切换/资源重载会重新注册
+                // shader（新 ShaderInstance），不能捕获首次构建时的旧实例（已解绑、绘制无效）。
+                RenderStateShard.ShaderStateShard shaderState =
+                        new RenderStateShard.ShaderStateShard(() -> {
+                            try {
+                                return (net.minecraft.client.renderer.ShaderInstance)
+                                        Class.forName(SHADERS_CLASS).getField("COSMIC_SHADER").get(null);
+                            } catch (Throwable t) {
+                                return null;
+                            }
+                        });
+                cosmicNoDepthRenderType = RenderType.create(
+                        "goldentweaks:cosmic_no_depth",
+                        DefaultVertexFormat.NEW_ENTITY,
+                        VertexFormat.Mode.QUADS,
+                        2097152, true, false,
+                        RenderType.CompositeState.builder()
+                                .setShaderState(shaderState)
+                                .setDepthTestState(RenderStateShard.NO_DEPTH_TEST)
+                                .setCullState(RenderStateShard.NO_CULL)
+                                .setLightmapState(RenderStateShard.LIGHTMAP)
+                                .setWriteMaskState(RenderStateShard.COLOR_WRITE)
+                                .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
+                                .setTextureState(texture)
+                                .setLayeringState(layering)
+                                .createCompositeState(true));
+            } catch (Throwable t) {
+                GoldenTweaks.LOGGER.warn("[GT] renderblender cosmic no-depth render type unavailable: {}", t.toString());
+            }
+        }
+        return cosmicNoDepthRenderType != null ? cosmicNoDepthRenderType : cosmicRenderType();
     }
 }

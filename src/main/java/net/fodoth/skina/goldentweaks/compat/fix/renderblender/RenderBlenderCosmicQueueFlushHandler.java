@@ -43,6 +43,22 @@ public class RenderBlenderCosmicQueueFlushHandler {
                 net.minecraft.client.Minecraft.getInstance().gameRenderer.getMainCamera().getPosition());
         GTCosmicJarRenderQueue.renderAll();
         try {
+            // [GT-DBG] temporary diagnosis: inspect renderblender queue's captured matrices
+            Class<?> queueClass = Class.forName(COSMIC_RENDER_QUEUE);
+            java.lang.reflect.Field queueField = queueClass.getDeclaredField("QUEUE");
+            queueField.setAccessible(true);
+            java.util.List<?> queue = (java.util.List<?>) queueField.get(null);
+            if (!queue.isEmpty()) {
+                Object call = queue.get(0);
+                java.lang.reflect.Field contextField = call.getClass().getDeclaredField("context");
+                contextField.setAccessible(true);
+                java.lang.reflect.Field mvField = call.getClass().getDeclaredField("modelView");
+                mvField.setAccessible(true);
+                java.lang.reflect.Field poseField = call.getClass().getDeclaredField("pose");
+                poseField.setAccessible(true);
+                GoldenTweaks.LOGGER.info("[GT-DBG] RB queue n={} ctx={} mv={} pose={}",
+                        queue.size(), contextField.get(call), mvField.get(call), poseField.get(call));
+            }
             Class.forName(COSMIC_RENDER_QUEUE).getMethod("renderAll").invoke(null);
         } catch (Throwable t) {
             GoldenTweaks.LOGGER.debug("[GT] renderblender cosmic queue flush skipped: {}", t.toString());

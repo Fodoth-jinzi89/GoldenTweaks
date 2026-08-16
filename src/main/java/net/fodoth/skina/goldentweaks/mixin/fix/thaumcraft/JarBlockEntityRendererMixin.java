@@ -76,6 +76,10 @@ public class JarBlockEntityRendererMixin {
                                                         JarBlockEntity jar, float partialTicks, PoseStack pose,
                                                         MultiBufferSource renderBuffers, int light, int overlay) {
         Aspect aspect = jar.getAspect();
+        // [GT-DBG] temporary diagnosis
+        net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER.info("[GT-DBG] cube redirect fired cosmic={} shaderpack={}",
+                aspect != null && GTAspectEntry.isCosmic(aspect.getTag()),
+                IrisCompat.isShaderPackEnabled());
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
             if (IrisCompat.isShaderPackEnabled()) {
                 GTCosmicJarRenderQueue.enqueue(jar, pose, light, overlay);
@@ -101,6 +105,10 @@ public class JarBlockEntityRendererMixin {
                                                      JarBlockEntity jar, PoseStack pose,
                                                      MultiBufferSource renderBuffers, int light) {
         Aspect aspect = jar.getFilter();
+        // [GT-DBG] temporary diagnosis
+        net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER.info("[GT-DBG] label redirect fired cosmic={} shaderpack={}",
+                aspect != null && GTAspectEntry.isCosmic(aspect.getTag()),
+                IrisCompat.isShaderPackEnabled());
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
             if (IrisCompat.isShaderPackEnabled()) {
                 GTCosmicJarRenderQueue.enqueue(jar, pose, light, 0);
