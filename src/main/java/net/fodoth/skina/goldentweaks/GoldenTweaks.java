@@ -7,6 +7,7 @@ import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.VillageGarbageStationAddition;
 import net.fodoth.skina.goldentweaks.compat.questshop.QSCompat;
+import net.fodoth.skina.goldentweaks.compat.fix.renderblender.RenderBlenderCosmicQueueFlushHandler;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftCompat;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftRecipeLoader;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAnimatedIconAnimator;
@@ -101,7 +102,6 @@ public class GoldenTweaks {
             NeoForge.EVENT_BUS.register(GTThaumcraftRecipeLoader.class);
         }
 
-
         modEventBus.addListener(this::onClientSetup);
     }
 
@@ -113,5 +113,10 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("thaumcraft")) {
             NeoForge.EVENT_BUS.register(GTAnimatedIconAnimator.class);
         }
+        if (ModList.get().isLoaded("renderblender")) {
+            LOGGER.info("Detected renderblender, registering compatibility content");
+            NeoForge.EVENT_BUS.register(RenderBlenderCosmicQueueFlushHandler.class);
+        }
+
     }
 }

@@ -145,7 +145,7 @@
     "fix.tritium.TritiumRandomManagerMixin",
     "fix.veil.VanillaShaderProcessorMixin",
     "optimization.EccentricTomeMixin",
-    "renderblender.RenderBlenderClientMixin",
+    "fix.renderblender.RenderBlenderClientMixin",
     "shut.AnimationCodecsMixin",
     "shut.AttributeCommandMixin",
     "shut.CITResewnLoggerMixin",
@@ -217,6 +217,7 @@
     "shut.SpriteContentsMixin",
     "shut.SpriteLoaderMixin",
     "shut.TooManyRecipeViewersModMixin",
-    "fix.thaumcraft.JarBlockEntityRendererMixin"
+    "fix.thaumcraft.JarBlockEntityRendererMixin",
+    "fix.renderblender.CosmicBakeModelMixin"
   ]
 }
