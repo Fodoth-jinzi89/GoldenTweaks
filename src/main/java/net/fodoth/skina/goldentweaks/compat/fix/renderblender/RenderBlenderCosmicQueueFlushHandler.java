@@ -7,7 +7,6 @@ import net.irisshaders.iris.vertices.ImmediateState;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 
 /**
@@ -15,8 +14,7 @@ import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
  * <p>
  * 光影（Iris shaderpack）启用时，renderblender 会把 cosmic 物品的
  * cosmic 层延迟入队（{@code IrisCompat.shouldDefer} 对第一/第三人称
- * 上下文返回 true）。世界中的罐子星空层在
- * {@code RenderLevelStageEvent#AFTER_BLOCK_ENTITIES}
+ * 上下文返回 true）。世界物品在 {@code RenderLevelStageEvent#AFTER_LEVEL}
  * 阶段调用 {@code CosmicRenderQueue.renderAll()} 统一渲染，以避开
  * Iris 光影管线对自定义 core shader 的接管。原版 Re-Avaritia 在
  * {@code AvaritiaModClient.onRenderLevel} 中完成此调用，renderblender
@@ -37,10 +35,8 @@ public class RenderBlenderCosmicQueueFlushHandler {
 
     @SubscribeEvent
     public static void onRenderLevel(RenderLevelStageEvent event) {
-        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_PARTICLES) {
-            return;
-        }
-        try {
+        if (event.getStage() == RenderLevelStageEvent.Stage.AFTER_LEVEL) {
+            Minecraft.getInstance().getMainRenderTarget().bindWrite(false);
             boolean bypass = ImmediateState.bypass;
             ImmediateState.bypass = true;
             try {
@@ -48,14 +44,11 @@ public class RenderBlenderCosmicQueueFlushHandler {
             } finally {
                 ImmediateState.bypass = bypass;
             }
-        } catch (Throwable t) {
-            GoldenTweaks.LOGGER.debug("[GT] cosmic jar queue flush skipped: {}", t.toString());
+            flushRenderBlenderQueue();
         }
     }
 
-    @SubscribeEvent
-    public static void onRenderGui(RenderGuiEvent.Pre event) {
-        Minecraft.getInstance().getMainRenderTarget().bindWrite(false);
+    public static void flushRenderBlenderQueue() {
         try {
             Class.forName(COSMIC_RENDER_QUEUE).getMethod("renderAll").invoke(null);
         } catch (Throwable t) {

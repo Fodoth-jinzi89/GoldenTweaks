@@ -34,8 +34,8 @@ import java.util.List;
  * <p>光影（Iris shaderpack）启用时，罐子内部的源质立方体与盖上的要素图标走
  * renderblender 的自定义 core shader（cosmic RenderType），该渲染发生在
  * Iris/sodium 的世界渲染管线内，会被直接丢弃（罐内星云与标签图标消失）。
- * 世界中的罐子星空层延迟到 {@code RenderLevelStageEvent$Stage.AFTER_BLOCK_ENTITIES}
- * 阶段统一渲染（此时世界管线已结束，自定义 shader 走 vanilla 路径正常生效）。
+ * 无光影时在单个罐子普通几何提交后立即叠加；光影启用时延迟到 AFTER_LEVEL，
+ * 由光影包保留的不含罐壳的场景深度负责正常遮挡。
  *
  * <p>队列为空时 {@code renderAll()} 直接返回，无渲染开销。
  * 几何通过反射调用 Thaumcraft 私有的 {@code JarBlockEntityRenderer.cube} /
@@ -71,7 +71,8 @@ public final class GTCosmicJarRenderQueue {
     private static RenderType cosmicNoDepthRenderType;
     private static boolean cosmicNoDepthResolved;
 
-    private static RenderType jarCosmicRenderType;
+    private static RenderType jarEssentiaCosmicRenderType;
+    private static RenderType jarLabelCosmicRenderType;
     private static boolean jarCosmicResolved;
 
     private GTCosmicJarRenderQueue() {
@@ -110,9 +111,9 @@ public final class GTCosmicJarRenderQueue {
             RenderSystem.applyModelViewMatrix();
             renderEssentiaCube(call, buffers);
         }
-        RenderType cosmic = jarCosmicRenderType();
-        if (cosmic != null) {
-            buffers.endBatch(cosmic);
+        RenderType essentiaCosmic = jarEssentiaCosmicRenderType();
+        if (essentiaCosmic != null) {
+            buffers.endBatch(essentiaCosmic);
         }
         for (JarRenderCall call : QUEUE) {
             RenderSystem.setProjectionMatrix(call.projection(), RenderSystem.getVertexSorting());
@@ -120,8 +121,9 @@ public final class GTCosmicJarRenderQueue {
             RenderSystem.applyModelViewMatrix();
             renderLabelIcon(call, buffers);
         }
-        if (cosmic != null) {
-            buffers.endBatch(cosmic);
+        RenderType labelCosmic = jarLabelCosmicRenderType();
+        if (labelCosmic != null) {
+            buffers.endBatch(labelCosmic);
         }
         RenderSystem.setProjectionMatrix(savedProj, RenderSystem.getVertexSorting());
         RenderSystem.getModelViewStack().set(savedMv);
@@ -140,7 +142,7 @@ public final class GTCosmicJarRenderQueue {
     /** 与 Thaumcraft {@code JarBlockEntityRenderer.render} 中立方体一致：高度随源质量变化。 */
     private static void renderEssentiaCube(Aspect aspect, JarBlockEntity jar, JarRenderCall call,
                                            MultiBufferSource.BufferSource buffers) {
-        RenderType cosmic = jarCosmicRenderType();
+        RenderType cosmic = jarEssentiaCosmicRenderType();
         TextureAtlasSprite mask = solidMaskSprite();
         if (cosmic == null || mask == null) {
             return;
@@ -184,7 +186,7 @@ public final class GTCosmicJarRenderQueue {
         if (filter == null || !GTAspectEntry.isCosmic(filter.getTag())) {
             return;
         }
-        RenderType cosmic = jarCosmicRenderType();
+        RenderType cosmic = jarLabelCosmicRenderType();
         TextureAtlasSprite mask = maskSprite(filter.getTag());
         if (cosmic == null || mask == null) {
             return;
@@ -299,13 +301,25 @@ public final class GTCosmicJarRenderQueue {
         return cosmicRenderType;
     }
 
-    public static RenderType jarCosmicRenderType() {
+    public static RenderType jarEssentiaCosmicRenderType() {
+        resolveJarCosmicRenderTypes();
+        return jarEssentiaCosmicRenderType != null ? jarEssentiaCosmicRenderType : cosmicRenderType();
+    }
+
+    public static RenderType jarLabelCosmicRenderType() {
+        resolveJarCosmicRenderTypes();
+        return jarLabelCosmicRenderType != null ? jarLabelCosmicRenderType : cosmicRenderType();
+    }
+
+    private static void resolveJarCosmicRenderTypes() {
         if (!jarCosmicResolved) {
             jarCosmicResolved = true;
             try {
                 Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
                 RenderStateShard.EmptyTextureStateShard texture =
                         (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);
+                RenderStateShard.LayeringStateShard layering =
+                        (RenderStateShard.LayeringStateShard) renderUtils.getField("POLYGON_OFFSET_LAYERING").get(null);
                 RenderStateShard.ShaderStateShard shaderState = new RenderStateShard.ShaderStateShard(() -> {
                     try {
                         return (net.minecraft.client.renderer.ShaderInstance)
@@ -314,25 +328,40 @@ public final class GTCosmicJarRenderQueue {
                         return null;
                     }
                 });
-                jarCosmicRenderType = RenderType.create(
-                        "goldentweaks:jar_cosmic",
+                RenderType.CompositeState essentiaState = RenderType.CompositeState.builder()
+                        .setShaderState(shaderState)
+                        .setDepthTestState(RenderStateShard.LEQUAL_DEPTH_TEST)
+                        .setCullState(RenderStateShard.NO_CULL)
+                        .setLightmapState(RenderStateShard.LIGHTMAP)
+                        .setWriteMaskState(RenderStateShard.COLOR_WRITE)
+                        .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
+                        .setTextureState(texture)
+                        .setLayeringState(layering)
+                        .createCompositeState(true);
+                RenderType.CompositeState labelState = RenderType.CompositeState.builder()
+                        .setShaderState(shaderState)
+                        .setDepthTestState(RenderStateShard.LEQUAL_DEPTH_TEST)
+                        .setCullState(RenderStateShard.NO_CULL)
+                        .setLightmapState(RenderStateShard.LIGHTMAP)
+                        .setWriteMaskState(RenderStateShard.COLOR_WRITE)
+                        .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
+                        .setTextureState(texture)
+                        .setLayeringState(layering)
+                        .createCompositeState(true);
+                jarEssentiaCosmicRenderType = RenderType.create(
+                        "goldentweaks:jar_essentia_cosmic",
                         DefaultVertexFormat.NEW_ENTITY,
                         VertexFormat.Mode.QUADS,
-                        2097152, true, false,
-                        RenderType.CompositeState.builder()
-                                .setShaderState(shaderState)
-                                .setDepthTestState(RenderStateShard.NO_DEPTH_TEST)
-                                .setCullState(RenderStateShard.NO_CULL)
-                                .setLightmapState(RenderStateShard.LIGHTMAP)
-                                .setWriteMaskState(RenderStateShard.COLOR_WRITE)
-                                .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
-                                .setTextureState(texture)
-                                .createCompositeState(true));
+                        2097152, true, false, essentiaState);
+                jarLabelCosmicRenderType = RenderType.create(
+                        "goldentweaks:jar_label_cosmic",
+                        DefaultVertexFormat.NEW_ENTITY,
+                        VertexFormat.Mode.QUADS,
+                        2097152, true, false, labelState);
             } catch (Throwable t) {
                 GoldenTweaks.LOGGER.warn("[GT] jar cosmic render type unavailable: {}", t.toString());
             }
         }
-        return jarCosmicRenderType != null ? jarCosmicRenderType : cosmicRenderType();
     }
 
     /**

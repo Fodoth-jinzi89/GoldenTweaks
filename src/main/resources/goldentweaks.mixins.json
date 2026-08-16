@@ -221,6 +221,7 @@
     "fix.thaumcraft.JarBlockEntityRendererMixin",
     "fix.renderblender.CosmicBakeModelMixin",
     "fix.renderblender.CosmicRenderLayerDepthMixin",
+    "fix.renderblender.GameRendererMixin",
     "fix.renderblender.IrisCompatMixin"
   ]
 }

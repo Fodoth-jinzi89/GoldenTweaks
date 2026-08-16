@@ -1,16 +1,16 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.fodoth.skina.goldentweaks.compat.renderblender.GTCosmicJarRenderQueue;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import net.minecraft.client.renderer.texture.TextureAtlas;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import net.weibai.renderblender.client.compat.IrisCompat;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.client.renderers.blockentity.JarBlockEntityRenderer;
@@ -32,53 +32,29 @@ import thaumcraft.common.blockentities.JarBlockEntity;
 @Mixin(value = JarBlockEntityRenderer.class, remap = false)
 public class JarBlockEntityRendererMixin {
 
-    @Redirect(
+    @Inject(
             method = "render(Lthaumcraft/common/blockentities/JarBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
-            at = @At(value = "INVOKE",
-                    target = "Lnet/minecraft/client/renderer/MultiBufferSource;getBuffer(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;")
+            at = @At("RETURN")
     )
-    private static VertexConsumer gt$cosmicEssentiaCube(MultiBufferSource buffers, RenderType type,
-                                                        JarBlockEntity jar, float partialTicks, PoseStack pose,
-                                                        MultiBufferSource renderBuffers, int light, int overlay) {
+    private void gt$renderCosmicLayers(JarBlockEntity jar, float partialTicks, PoseStack pose,
+                                       MultiBufferSource buffers, int light, int overlay, CallbackInfo ci) {
         Aspect aspect = jar.getAspect();
-        if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
-            if (IrisCompat.isShaderPackEnabled()) {
-                GTCosmicJarRenderQueue.enqueue(jar, pose, light, overlay);
-                return buffers.getBuffer(type);
+        Aspect filter = jar.getFilter();
+        if ((aspect == null || !GTAspectEntry.isCosmic(aspect.getTag()))
+                && (filter == null || !GTAspectEntry.isCosmic(filter.getTag()))) {
+            return;
+        }
+        if (buffers instanceof MultiBufferSource.BufferSource bufferSource) {
+            if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
+                bufferSource.endBatch(RenderType.entityCutoutNoCull(TextureAtlas.LOCATION_BLOCKS));
             }
-            RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();
-            if (cosmic != null) {
-                GTCosmicJarRenderQueue.setupCosmicUniforms();
-                return buffers.getBuffer(cosmic);
+            if (filter != null && GTAspectEntry.isCosmic(filter.getTag())) {
+                bufferSource.endBatch(RenderType.entityTranslucent(filter.image()));
             }
         }
-        return buffers.getBuffer(type);
-    }
-
-    /** 标签上的要素图标（renderLabel 中第二处 getBuffer：entityTranslucent(aspect.image())）也改用 cosmic。 */
-    @Redirect(
-            method = "renderLabel(Lthaumcraft/common/blockentities/JarBlockEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V",
-            at = @At(value = "INVOKE",
-                    target = "Lnet/minecraft/client/renderer/MultiBufferSource;getBuffer(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;",
-                    ordinal = 1)
-    )
-    private static VertexConsumer gt$cosmicLabelIcon(MultiBufferSource buffers, RenderType type,
-                                                     JarBlockEntity jar, PoseStack pose,
-                                                     MultiBufferSource renderBuffers, int light) {
-        Aspect aspect = jar.getFilter();
-        if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
-            if (IrisCompat.isShaderPackEnabled()) {
-                GTCosmicJarRenderQueue.enqueue(jar, pose, light, 0);
-                // 保留标签原始图标；星空层由 AFTER_BLOCK_ENTITIES 队列叠加绘制。
-                return buffers.getBuffer(type);
-            }
-            RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();
-            TextureAtlasSprite mask = GTCosmicJarRenderQueue.maskSprite(aspect.getTag());
-            if (cosmic != null && mask != null) {
-                GTCosmicJarRenderQueue.setupCosmicUniforms();
-                return mask.wrap(buffers.getBuffer(cosmic));
-            }
+        GTCosmicJarRenderQueue.enqueue(jar, pose, light, overlay);
+        if (!IrisCompat.isShaderPackEnabled()) {
+            GTCosmicJarRenderQueue.renderAll();
         }
-        return buffers.getBuffer(type);
     }
 }
