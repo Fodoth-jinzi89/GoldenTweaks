@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily;
 
-import com.flavor_immersed_daily.FlavorImmersedDailyClient;
+import com.flavor_immersed_daily.client.FlavorImmersedDailyClient;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;

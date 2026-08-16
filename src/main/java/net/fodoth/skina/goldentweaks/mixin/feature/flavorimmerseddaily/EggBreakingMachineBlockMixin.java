@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily;
 
-import com.flavor_immersed_daily.block.EggBreakingMachineBlock;
+import com.flavor_immersed_daily.block.block.machine.EggBreakingMachineBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.Containers;
 import net.minecraft.world.level.Level;

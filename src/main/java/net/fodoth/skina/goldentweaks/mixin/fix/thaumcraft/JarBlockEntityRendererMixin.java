@@ -69,7 +69,7 @@ public class JarBlockEntityRendererMixin {
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
             if (IrisCompat.isShaderPackEnabled()) {
                 GTCosmicJarRenderQueue.enqueue(jar, pose, light, 0);
-                // 保留标签原始图标；星空层由 AFTER_LEVEL 队列叠加绘制。
+                // 保留标签原始图标；星空层由 AFTER_BLOCK_ENTITIES 队列叠加绘制。
                 return buffers.getBuffer(type);
             }
             RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();

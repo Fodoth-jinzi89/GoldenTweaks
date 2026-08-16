@@ -34,7 +34,7 @@ import java.util.List;
  * <p>光影（Iris shaderpack）启用时，罐子内部的源质立方体与盖上的要素图标走
  * renderblender 的自定义 core shader（cosmic RenderType），该渲染发生在
  * Iris/sodium 的世界渲染管线内，会被直接丢弃（罐内星云与标签图标消失）。
- * 与手持物品相同，绕开方式是延迟到 {@code RenderLevelStageEvent$Stage.AFTER_LEVEL}
+ * 世界中的罐子星空层延迟到 {@code RenderLevelStageEvent$Stage.AFTER_BLOCK_ENTITIES}
  * 阶段统一渲染（此时世界管线已结束，自定义 shader 走 vanilla 路径正常生效）。
  *
  * <p>队列为空时 {@code renderAll()} 直接返回，无渲染开销。
@@ -70,6 +70,9 @@ public final class GTCosmicJarRenderQueue {
 
     private static RenderType cosmicNoDepthRenderType;
     private static boolean cosmicNoDepthResolved;
+
+    private static RenderType jarCosmicRenderType;
+    private static boolean jarCosmicResolved;
 
     private GTCosmicJarRenderQueue() {
     }
@@ -297,7 +300,39 @@ public final class GTCosmicJarRenderQueue {
     }
 
     public static RenderType jarCosmicRenderType() {
-        return cosmicRenderType();
+        if (!jarCosmicResolved) {
+            jarCosmicResolved = true;
+            try {
+                Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
+                RenderStateShard.EmptyTextureStateShard texture =
+                        (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);
+                RenderStateShard.ShaderStateShard shaderState = new RenderStateShard.ShaderStateShard(() -> {
+                    try {
+                        return (net.minecraft.client.renderer.ShaderInstance)
+                                Class.forName(SHADERS_CLASS).getField("COSMIC_SHADER").get(null);
+                    } catch (Throwable t) {
+                        return null;
+                    }
+                });
+                jarCosmicRenderType = RenderType.create(
+                        "goldentweaks:jar_cosmic",
+                        DefaultVertexFormat.NEW_ENTITY,
+                        VertexFormat.Mode.QUADS,
+                        2097152, true, false,
+                        RenderType.CompositeState.builder()
+                                .setShaderState(shaderState)
+                                .setDepthTestState(RenderStateShard.NO_DEPTH_TEST)
+                                .setCullState(RenderStateShard.NO_CULL)
+                                .setLightmapState(RenderStateShard.LIGHTMAP)
+                                .setWriteMaskState(RenderStateShard.COLOR_WRITE)
+                                .setTransparencyState(RenderStateShard.TRANSLUCENT_TRANSPARENCY)
+                                .setTextureState(texture)
+                                .createCompositeState(true));
+            } catch (Throwable t) {
+                GoldenTweaks.LOGGER.warn("[GT] jar cosmic render type unavailable: {}", t.toString());
+            }
+        }
+        return jarCosmicRenderType != null ? jarCosmicRenderType : cosmicRenderType();
     }
 
     /**
@@ -310,9 +345,6 @@ public final class GTCosmicJarRenderQueue {
         if (!cosmicNoDepthResolved) {
             cosmicNoDepthResolved = true;
             try {
-                Class<?> shaders = Class.forName(SHADERS_CLASS);
-                net.minecraft.client.renderer.ShaderInstance shader =
-                        (net.minecraft.client.renderer.ShaderInstance) shaders.getField("COSMIC_SHADER").get(null);
                 Class<?> renderUtils = Class.forName(RENDER_UTILS_CLASS);
                 RenderStateShard.EmptyTextureStateShard texture =
                         (RenderStateShard.EmptyTextureStateShard) renderUtils.getField("COSMIC_TEXTURE_ISOLATED").get(null);

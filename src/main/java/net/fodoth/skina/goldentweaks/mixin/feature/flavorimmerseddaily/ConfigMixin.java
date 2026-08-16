@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily;
 
-import com.flavor_immersed_daily.Config;
+import com.flavor_immersed_daily.config.Config;
 import net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily.accessor.ConfigAccessor;
 import net.neoforged.fml.event.config.ModConfigEvent;
 import org.spongepowered.asm.mixin.Mixin;
