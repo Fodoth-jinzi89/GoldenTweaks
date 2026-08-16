@@ -101,6 +101,7 @@
     "fix.pattern_schematics.PatternSchematicHandlerMixin",
     "fix.placebo.DynamicHolderMixin",
     "fix.questshop.QuestShopMixin",
+    "fix.registrate.AbstractRegistrateMixin",
     "fix.registrate.BlockEntityBuilderMixin",
     "fix.rrls.RRLSConfigMixin",
     "fix.sable.VoxelNeighborhoodStateMixin",

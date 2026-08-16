@@ -2,9 +2,12 @@ package net.fodoth.skina.goldentweaks.compat.fix.renderblender;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.renderblender.GTCosmicJarRenderQueue;
+import net.minecraft.client.Minecraft;
+import net.irisshaders.iris.vertices.ImmediateState;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 
 /**
@@ -33,32 +36,22 @@ public class RenderBlenderCosmicQueueFlushHandler {
 
     @SubscribeEvent
     public static void onRenderLevel(RenderLevelStageEvent event) {
-        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_LEVEL) {
+        if (event.getStage() == RenderLevelStageEvent.Stage.AFTER_LEVEL) {
+            boolean bypass = ImmediateState.bypass;
+            ImmediateState.bypass = true;
+            try {
+                GTCosmicJarRenderQueue.renderAll();
+            } finally {
+                ImmediateState.bypass = bypass;
+            }
             return;
         }
-        // [GT-DBG] temporary diagnosis
-        GoldenTweaks.LOGGER.info("[GT-DBG] AFTER_LEVEL flush mv={} proj={} camPos={}",
-                com.mojang.blaze3d.systems.RenderSystem.getModelViewMatrix(),
-                com.mojang.blaze3d.systems.RenderSystem.getProjectionMatrix(),
-                net.minecraft.client.Minecraft.getInstance().gameRenderer.getMainCamera().getPosition());
-        GTCosmicJarRenderQueue.renderAll();
+    }
+
+    @SubscribeEvent
+    public static void onRenderGui(RenderGuiEvent.Pre event) {
+        Minecraft.getInstance().getMainRenderTarget().bindWrite(false);
         try {
-            // [GT-DBG] temporary diagnosis: inspect renderblender queue's captured matrices
-            Class<?> queueClass = Class.forName(COSMIC_RENDER_QUEUE);
-            java.lang.reflect.Field queueField = queueClass.getDeclaredField("QUEUE");
-            queueField.setAccessible(true);
-            java.util.List<?> queue = (java.util.List<?>) queueField.get(null);
-            if (!queue.isEmpty()) {
-                Object call = queue.get(0);
-                java.lang.reflect.Field contextField = call.getClass().getDeclaredField("context");
-                contextField.setAccessible(true);
-                java.lang.reflect.Field mvField = call.getClass().getDeclaredField("modelView");
-                mvField.setAccessible(true);
-                java.lang.reflect.Field poseField = call.getClass().getDeclaredField("pose");
-                poseField.setAccessible(true);
-                GoldenTweaks.LOGGER.info("[GT-DBG] RB queue n={} ctx={} mv={} pose={}",
-                        queue.size(), contextField.get(call), mvField.get(call), poseField.get(call));
-            }
             Class.forName(COSMIC_RENDER_QUEUE).getMethod("renderAll").invoke(null);
         } catch (Throwable t) {
             GoldenTweaks.LOGGER.debug("[GT] renderblender cosmic queue flush skipped: {}", t.toString());

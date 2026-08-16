@@ -9,7 +9,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import net.weibai.renderblender.client.compat.IrisCompat;
@@ -33,40 +32,6 @@ import thaumcraft.common.blockentities.JarBlockEntity;
 @Mixin(value = JarBlockEntityRenderer.class, remap = false)
 public class JarBlockEntityRendererMixin {
 
-    /** 光影下用于"跳过"罐内 cosmic 渲染的 no-op 顶点写入器（几何由 AFTER_LEVEL 队列重画）。 */
-    @Unique
-    private static final VertexConsumer EMPTY_VERTEX_CONSUMER = new VertexConsumer() {
-        @Override
-        public VertexConsumer addVertex(float x, float y, float z) {
-            return this;
-        }
-
-        @Override
-        public VertexConsumer setColor(int r, int g, int b, int a) {
-            return this;
-        }
-
-        @Override
-        public VertexConsumer setUv(float u, float v) {
-            return this;
-        }
-
-        @Override
-        public VertexConsumer setUv1(int u, int v) {
-            return this;
-        }
-
-        @Override
-        public VertexConsumer setUv2(int u, int v) {
-            return this;
-        }
-
-        @Override
-        public VertexConsumer setNormal(float x, float y, float z) {
-            return this;
-        }
-    };
-
     @Redirect(
             method = "render(Lthaumcraft/common/blockentities/JarBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
             at = @At(value = "INVOKE",
@@ -76,14 +41,10 @@ public class JarBlockEntityRendererMixin {
                                                         JarBlockEntity jar, float partialTicks, PoseStack pose,
                                                         MultiBufferSource renderBuffers, int light, int overlay) {
         Aspect aspect = jar.getAspect();
-        // [GT-DBG] temporary diagnosis
-        net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER.info("[GT-DBG] cube redirect fired cosmic={} shaderpack={}",
-                aspect != null && GTAspectEntry.isCosmic(aspect.getTag()),
-                IrisCompat.isShaderPackEnabled());
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
             if (IrisCompat.isShaderPackEnabled()) {
                 GTCosmicJarRenderQueue.enqueue(jar, pose, light, overlay);
-                return EMPTY_VERTEX_CONSUMER;
+                return buffers.getBuffer(type);
             }
             RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();
             if (cosmic != null) {
@@ -105,14 +66,11 @@ public class JarBlockEntityRendererMixin {
                                                      JarBlockEntity jar, PoseStack pose,
                                                      MultiBufferSource renderBuffers, int light) {
         Aspect aspect = jar.getFilter();
-        // [GT-DBG] temporary diagnosis
-        net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER.info("[GT-DBG] label redirect fired cosmic={} shaderpack={}",
-                aspect != null && GTAspectEntry.isCosmic(aspect.getTag()),
-                IrisCompat.isShaderPackEnabled());
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
             if (IrisCompat.isShaderPackEnabled()) {
                 GTCosmicJarRenderQueue.enqueue(jar, pose, light, 0);
-                return EMPTY_VERTEX_CONSUMER;
+                // 保留标签原始图标；星空层由 AFTER_LEVEL 队列叠加绘制。
+                return buffers.getBuffer(type);
             }
             RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();
             TextureAtlasSprite mask = GTCosmicJarRenderQueue.maskSprite(aspect.getTag());
