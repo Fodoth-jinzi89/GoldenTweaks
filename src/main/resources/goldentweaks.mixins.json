@@ -188,6 +188,7 @@
     "fix.cmpackagecouriers.CardboardPlaneItemRendererMixin",
     "fix.createsubmarine.DeepSeasWelcomeScreenMixin",
     "fix.emi.SlotWidgetMixin",
+    "fix.iris.IrisExclusiveUniformsMixin",
     "fix.exspectriments.ExspModelLayersMixin",
     "fix.geckolib.AnimatableTextureMixin",
     "fix.geckolib.accessor.SimpleTextureAccessor",
