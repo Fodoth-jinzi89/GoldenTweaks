@@ -10,22 +10,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 
 /**
- * 恢复 Re-Avaritia 迁移时丢失的 cosmic 渲染队列刷新。
- * <p>
- * 光影（Iris shaderpack）启用时，renderblender 会把 cosmic 物品的
- * cosmic 层延迟入队（{@code IrisCompat.shouldDefer} 对第一/第三人称
- * 上下文返回 true）。世界物品在 {@code RenderLevelStageEvent#AFTER_LEVEL}
- * 阶段调用 {@code CosmicRenderQueue.renderAll()} 统一渲染，以避开
- * Iris 光影管线对自定义 core shader 的接管。原版 Re-Avaritia 在
- * {@code AvaritiaModClient.onRenderLevel} 中完成此调用，renderblender
- * 1.0.0 迁移时丢失，导致光影下 cosmic 效果（物品展示框安瓿/天域之华、
- * 罐内源质块等）不渲染。此处通过事件订阅补回该调用。
- * <p>
- * 队列为空时 {@code renderAll()} 直接返回，无渲染开销；renderblender
- * 未安装时反射调用失败，仅记录 debug 日志，不影响其它功能。
- * <p>
- * 由 {@code GoldenTweaks} 在游戏事件总线上显式注册
- * （{@code NeoForge.EVENT_BUS.register}），遵循本模组对兼容事件处理器的注册约定。
+ * Flushes GoldenTweaks' custom cosmic jar queue after world rendering.
+ * RenderBlender owns and flushes its item queue at the same stage.
  */
 @OnlyIn(Dist.CLIENT)
 public class RenderBlenderCosmicQueueFlushHandler {
@@ -44,7 +30,6 @@ public class RenderBlenderCosmicQueueFlushHandler {
             } finally {
                 ImmediateState.bypass = bypass;
             }
-            flushRenderBlenderQueue();
         }
     }
 

@@ -6,11 +6,7 @@
     "particle": "thaumcraft:item/wispessence"
   },
   "cosmic": {
-    "pulse": true,
-    "masks": {
-      "layer0": "goldentweaks:mask/item/wisp_essence_cosmic"
-    },
-    "bgColorRandom": false
+    "mask": "goldentweaks:mask/item/wisp_essence_cosmic"
   },
   "elements": [
     {

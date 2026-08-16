@@ -220,7 +220,6 @@
     "shut.SpriteLoaderMixin",
     "shut.TooManyRecipeViewersModMixin",
     "fix.thaumcraft.JarBlockEntityRendererMixin",
-    "fix.renderblender.CosmicBakeModelMixin",
     "fix.renderblender.CosmicRenderCallMixin",
     "fix.renderblender.CosmicRenderLayerDepthMixin",
     "fix.renderblender.GameRendererMixin",

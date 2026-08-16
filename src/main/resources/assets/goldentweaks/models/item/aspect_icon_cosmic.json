@@ -6,11 +6,7 @@
     "particle": "goldentweaks:item/aspect_cosmic"
   },
   "cosmic": {
-    "pulse": true,
-    "masks": {
-      "layer0": "goldentweaks:mask/item/aspect_cosmic"
-    },
-    "bgColorRandom": false
+    "mask": "goldentweaks:mask/item/aspect_cosmic"
   },
   "elements": [
     {

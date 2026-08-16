@@ -101,6 +101,10 @@ public final class GTCosmicJarRenderQueue {
         if (QUEUE.isEmpty()) {
             return;
         }
+        if (!isCosmicShaderReady()) {
+            QUEUE.clear();
+            return;
+        }
         // 保存并恢复矩阵，避免遗留状态污染同帧后续渲染（renderblender 队列同款约定）。
         Matrix4f savedProj = new Matrix4f(RenderSystem.getProjectionMatrix());
         Matrix4f savedMv = new Matrix4f(RenderSystem.getModelViewMatrix());
@@ -247,7 +251,12 @@ public final class GTCosmicJarRenderQueue {
             float yaw = player != null ? (float) (player.getYRot() * PI_OVER_360) : 0.0F;
             float pitch = player != null ? (float) (-player.getXRot() * PI_OVER_360) : 0.0F;
             setUniform(shaders, "cosmicTime", time);
-            setUniform(shaders, "cosmicBgColor", 0.0F);
+            setUniform(shaders, "cosmicId", 4);
+            setUniform(shaders, "cosmicRandomBgColorEnable", 0.0F);
+            setUniform(shaders, "cosmicBgColor", -1);
+            setUniform(shaders, "cosmicBgColorsCount", 0);
+            AbstractUniform bgColors = (AbstractUniform) shaders.getField("cosmicBgColors").get(null);
+            bgColors.set(new float[16]);
             setUniform(shaders, "cosmicYaw", yaw);
             setUniform(shaders, "cosmicPitch", pitch);
             setUniform(shaders, "cosmicExternalScale", 1.0F);
@@ -259,7 +268,22 @@ public final class GTCosmicJarRenderQueue {
         }
     }
 
+    private static boolean isCosmicShaderReady() {
+        try {
+            Class<?> shaders = Class.forName(SHADERS_CLASS);
+            return shaders.getField("COSMIC_SHADER").get(null) != null
+                    && shaders.getField("cosmicTime").get(null) != null;
+        } catch (ReflectiveOperationException e) {
+            return false;
+        }
+    }
+
     private static void setUniform(Class<?> shaders, String field, float value) throws Exception {
+        AbstractUniform uniform = (AbstractUniform) shaders.getField(field).get(null);
+        uniform.set(value);
+    }
+
+    private static void setUniform(Class<?> shaders, String field, int value) throws Exception {
         AbstractUniform uniform = (AbstractUniform) shaders.getField(field).get(null);
         uniform.set(value);
     }

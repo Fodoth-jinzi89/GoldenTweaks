@@ -8,9 +8,15 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.weibai.renderblender.client.model.loader.CosmicBakeModel;
+import net.weibai.renderblender.client.shader.AvaritiaShaders;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import java.util.Arrays;
 
 /**
  * 第一人称手持物品的 cosmic 层延迟重绘时改用无深度测试的渲染类型。
@@ -25,6 +31,29 @@ import org.spongepowered.asm.mixin.injection.Redirect;
  */
 @Mixin(value = CosmicBakeModel.class, remap = false)
 public class CosmicRenderLayerDepthMixin {
+
+    @Inject(
+            method = "renderCosmicLayer(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private void gt$skipUninitializedShader(ItemStack stack, ItemDisplayContext context, PoseStack poseStack,
+                                            MultiBufferSource buffers, int light, int overlay, CallbackInfo ci) {
+        if (AvaritiaShaders.cosmicTime == null) {
+            ci.cancel();
+        }
+    }
+
+    @ModifyArg(
+            method = "renderCosmicLayer(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
+            at = @At(value = "INVOKE",
+                    target = "Lcom/mojang/blaze3d/shaders/AbstractUniform;set([F)V",
+                    ordinal = 0),
+            index = 0
+    )
+    private float[] gt$padCosmicBackgroundColors(float[] colors) {
+        return colors.length < 16 ? Arrays.copyOf(colors, 16) : colors;
+    }
 
     @Redirect(
             method = "renderCosmicLayer(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
@@ -41,5 +70,23 @@ public class CosmicRenderLayerDepthMixin {
             return buffers.getBuffer(GTCosmicJarRenderQueue.cosmicNoDepthRenderType());
         }
         return buffers.getBuffer(type);
+    }
+
+    @Redirect(
+            method = "renderCosmicLayer(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
+            at = @At(value = "INVOKE",
+                    target = "Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;endBatch(Lnet/minecraft/client/renderer/RenderType;)V",
+                    ordinal = 0)
+    )
+    private void gt$flushFirstPersonLayer(MultiBufferSource.BufferSource buffers, RenderType type,
+                                          ItemStack stack, ItemDisplayContext context, PoseStack poseStack,
+                                          MultiBufferSource renderBuffers, int light, int overlay) {
+        if ((context == ItemDisplayContext.FIRST_PERSON_LEFT_HAND
+                || context == ItemDisplayContext.FIRST_PERSON_RIGHT_HAND)
+                && GTCosmicJarRenderQueue.cosmicNoDepthRenderType() != null) {
+            buffers.endBatch(GTCosmicJarRenderQueue.cosmicNoDepthRenderType());
+            return;
+        }
+        buffers.endBatch(type);
     }
 }

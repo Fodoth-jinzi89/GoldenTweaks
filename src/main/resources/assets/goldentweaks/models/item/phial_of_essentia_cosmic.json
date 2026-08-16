@@ -7,11 +7,7 @@
     "particle": "thaumcraft:item/phial"
   },
   "cosmic": {
-    "pulse": true,
-    "masks": {
-      "layer1": "goldentweaks:mask/item/essence_cosmic"
-    },
-    "bgColorRandom": false
+    "mask": "goldentweaks:mask/item/essence_cosmic"
   },
   "elements": [
     {
