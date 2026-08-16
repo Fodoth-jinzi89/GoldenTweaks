@@ -1,22 +1,18 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
-import com.mojang.blaze3d.shaders.AbstractUniform;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.renderblender.GTCosmicJarRenderQueue;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.InventoryMenu;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import net.weibai.renderblender.client.compat.IrisCompat;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.client.renderers.blockentity.JarBlockEntityRenderer;
 import thaumcraft.common.blockentities.JarBlockEntity;
@@ -37,30 +33,57 @@ import thaumcraft.common.blockentities.JarBlockEntity;
 @Mixin(value = JarBlockEntityRenderer.class, remap = false)
 public class JarBlockEntityRendererMixin {
 
+    /** 光影下用于"跳过"罐内 cosmic 渲染的 no-op 顶点写入器（几何由 AFTER_LEVEL 队列重画）。 */
     @Unique
-    private static final double PI_OVER_360 = Math.PI / 360.0;
+    private static final VertexConsumer EMPTY_VERTEX_CONSUMER = new VertexConsumer() {
+        @Override
+        public VertexConsumer addVertex(float x, float y, float z) {
+            return this;
+        }
 
-    @Unique
-    private static final String RENDER_TYPES_CLASS = "net.weibai.renderblender.client.shader.AvaritiaRenderTypes";
-    @Unique
-    private static final String SHADERS_CLASS = "net.weibai.renderblender.client.shader.AvaritiaShaders";
+        @Override
+        public VertexConsumer setColor(int r, int g, int b, int a) {
+            return this;
+        }
 
-    @Unique
-    private static RenderType cosmicRenderType;
-    @Unique
-    private static boolean cosmicResolved;
+        @Override
+        public VertexConsumer setUv(float u, float v) {
+            return this;
+        }
+
+        @Override
+        public VertexConsumer setUv1(int u, int v) {
+            return this;
+        }
+
+        @Override
+        public VertexConsumer setUv2(int u, int v) {
+            return this;
+        }
+
+        @Override
+        public VertexConsumer setNormal(float x, float y, float z) {
+            return this;
+        }
+    };
 
     @Redirect(
             method = "render(Lthaumcraft/common/blockentities/JarBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
             at = @At(value = "INVOKE",
                     target = "Lnet/minecraft/client/renderer/MultiBufferSource;getBuffer(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;")
     )
-    private static VertexConsumer gt$cosmicEssentiaCube(MultiBufferSource buffers, RenderType type, JarBlockEntity jar) {
+    private static VertexConsumer gt$cosmicEssentiaCube(MultiBufferSource buffers, RenderType type,
+                                                        JarBlockEntity jar, float partialTicks, PoseStack pose,
+                                                        MultiBufferSource renderBuffers, int light, int overlay) {
         Aspect aspect = jar.getAspect();
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
-            RenderType cosmic = cosmicRenderType();
+            if (IrisCompat.isShaderPackEnabled()) {
+                GTCosmicJarRenderQueue.enqueue(jar, pose, light, overlay);
+                return EMPTY_VERTEX_CONSUMER;
+            }
+            RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();
             if (cosmic != null) {
-                setupCosmicUniforms();
+                GTCosmicJarRenderQueue.setupCosmicUniforms();
                 return buffers.getBuffer(cosmic);
             }
         }
@@ -74,72 +97,22 @@ public class JarBlockEntityRendererMixin {
                     target = "Lnet/minecraft/client/renderer/MultiBufferSource;getBuffer(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;",
                     ordinal = 1)
     )
-    private static VertexConsumer gt$cosmicLabelIcon(MultiBufferSource buffers, RenderType type, JarBlockEntity jar) {
+    private static VertexConsumer gt$cosmicLabelIcon(MultiBufferSource buffers, RenderType type,
+                                                     JarBlockEntity jar, PoseStack pose,
+                                                     MultiBufferSource renderBuffers, int light) {
         Aspect aspect = jar.getFilter();
         if (aspect != null && GTAspectEntry.isCosmic(aspect.getTag())) {
-            RenderType cosmic = cosmicRenderType();
-            TextureAtlasSprite mask = maskSprite(aspect.getTag());
+            if (IrisCompat.isShaderPackEnabled()) {
+                GTCosmicJarRenderQueue.enqueue(jar, pose, light, 0);
+                return EMPTY_VERTEX_CONSUMER;
+            }
+            RenderType cosmic = GTCosmicJarRenderQueue.cosmicRenderType();
+            TextureAtlasSprite mask = GTCosmicJarRenderQueue.maskSprite(aspect.getTag());
             if (cosmic != null && mask != null) {
-                setupCosmicUniforms();
+                GTCosmicJarRenderQueue.setupCosmicUniforms();
                 return mask.wrap(buffers.getBuffer(cosmic));
             }
         }
         return buffers.getBuffer(type);
-    }
-
-    /** 与 renderblender {@code renderCosmicLayer} 相同的 uniform 设置（jar 无物品栈）。 */
-    @Unique
-    private static void setupCosmicUniforms() {
-        try {
-            Class<?> shaders = Class.forName(SHADERS_CLASS);
-            ClientLevel level = Minecraft.getInstance().level;
-            Player player = Minecraft.getInstance().player;
-            float time = (float) (level != null ? level.getGameTime() % 2147483647L : 0L);
-            float yaw = player != null ? (float) (player.getYRot() * PI_OVER_360) : 0.0F;
-            float pitch = player != null ? (float) (-player.getXRot() * PI_OVER_360) : 0.0F;
-            setUniform(shaders, "cosmicTime", time);
-            setUniform(shaders, "cosmicBgColor", 0.0F);
-            setUniform(shaders, "cosmicYaw", yaw);
-            setUniform(shaders, "cosmicPitch", pitch);
-            setUniform(shaders, "cosmicExternalScale", 1.0F);
-            setUniform(shaders, "cosmicOpacity", 2.0F);
-            AbstractUniform uvs = (AbstractUniform) shaders.getField("cosmicUVs").get(null);
-            uvs.set((float[]) shaders.getField("COSMIC_UVS").get(null));
-        } catch (Throwable t) {
-            GoldenTweaks.LOGGER.warn("[GT] renderblender cosmic uniform setup failed: {}", t.toString());
-        }
-    }
-
-    @Unique
-    private static void setUniform(Class<?> shaders, String field, float value) throws Exception {
-        AbstractUniform uniform = (AbstractUniform) shaders.getField(field).get(null);
-        uniform.set(value);
-    }
-
-    /** 标签图标使用的 cosmic mask（方块图集内，与 aspect_icon 模型同一张）。 */
-    @Unique
-    private static TextureAtlasSprite maskSprite(String tag) {
-        try {
-            return Minecraft.getInstance().getModelManager()
-                    .getAtlas(InventoryMenu.BLOCK_ATLAS)
-                    .getSprite(ResourceLocation.fromNamespaceAndPath("goldentweaks", "mask/item/aspect_" + tag));
-        } catch (Throwable t) {
-            GoldenTweaks.LOGGER.warn("[GT] cosmic label mask lookup failed: {}", t.toString());
-            return null;
-        }
-    }
-
-    @Unique
-    private static RenderType cosmicRenderType() {
-        if (!cosmicResolved) {
-            cosmicResolved = true;
-            try {
-                Class<?> renderTypes = Class.forName(RENDER_TYPES_CLASS);
-                cosmicRenderType = (RenderType) renderTypes.getField("COSMIC").get(null);
-            } catch (Throwable t) {
-                GoldenTweaks.LOGGER.warn("[GT] renderblender cosmic render type unavailable: {}", t.toString());
-            }
-        }
-        return cosmicRenderType;
     }
 }

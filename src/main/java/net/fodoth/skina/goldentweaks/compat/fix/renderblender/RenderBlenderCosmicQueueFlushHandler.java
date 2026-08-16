@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.fix.renderblender;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.renderblender.GTCosmicJarRenderQueue;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -35,6 +36,12 @@ public class RenderBlenderCosmicQueueFlushHandler {
         if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_LEVEL) {
             return;
         }
+        // [GT-DBG] temporary diagnosis
+        GoldenTweaks.LOGGER.info("[GT-DBG] AFTER_LEVEL flush mv={} proj={} camPos={}",
+                com.mojang.blaze3d.systems.RenderSystem.getModelViewMatrix(),
+                com.mojang.blaze3d.systems.RenderSystem.getProjectionMatrix(),
+                net.minecraft.client.Minecraft.getInstance().gameRenderer.getMainCamera().getPosition());
+        GTCosmicJarRenderQueue.renderAll();
         try {
             Class.forName(COSMIC_RENDER_QUEUE).getMethod("renderAll").invoke(null);
         } catch (Throwable t) {
