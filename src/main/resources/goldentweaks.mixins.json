@@ -193,6 +193,7 @@
     "fix.geckolib.accessor.SimpleTextureAccessor",
     "fix.modernui.ModernUITextRenderTypeMixin",
     "fix.questshop.ShopMenuScreenLocalizationMixin",
+    "fix.thaumcraft.AlchemyGogglesOverlayMixin",
     "fix.thaumcraft.AspectGuiRendererMixin",
     "fix.thaumcraft.LegacyThaumcraftMobRendererMixin",
     "fix.thaumcraft.ThaumonomiconScreenMixin",
@@ -220,6 +221,7 @@
     "shut.TooManyRecipeViewersModMixin",
     "fix.thaumcraft.JarBlockEntityRendererMixin",
     "fix.renderblender.CosmicBakeModelMixin",
+    "fix.renderblender.CosmicRenderCallMixin",
     "fix.renderblender.CosmicRenderLayerDepthMixin",
     "fix.renderblender.GameRendererMixin",
     "fix.renderblender.IrisCompatMixin"

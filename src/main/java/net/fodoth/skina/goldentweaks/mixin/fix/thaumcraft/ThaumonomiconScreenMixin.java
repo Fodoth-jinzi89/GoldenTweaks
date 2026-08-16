@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.util.Mth;
 import org.spongepowered.asm.mixin.Mixin;
@@ -65,6 +66,19 @@ public abstract class ThaumonomiconScreenMixin {
 
         guiGraphics.drawString(Minecraft.getInstance().font, "«", PREV_X, BUTTON_Y, 0xFF404040);
         guiGraphics.drawString(Minecraft.getInstance().font, "»", NEXT_X, BUTTON_Y, 0xFF404040);
+    }
+
+    @Redirect(
+            method = "drawLargeAspectTag",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;drawString(Lnet/minecraft/client/gui/Font;Ljava/lang/String;IIIZ)I")
+    )
+    private int gt$drawAspectAmountAboveIcon(GuiGraphics graphics, Font font, String amount,
+                                              int x, int y, int color, boolean shadow) {
+        graphics.pose().pushPose();
+        graphics.pose().translate(0.0F, 0.0F, 200.0F);
+        int width = graphics.drawString(font, amount, x, y, color, true);
+        graphics.pose().popPose();
+        return width;
     }
 
     @Inject(method = "handleMapCategoryClick", at = @At("HEAD"), cancellable = true)
