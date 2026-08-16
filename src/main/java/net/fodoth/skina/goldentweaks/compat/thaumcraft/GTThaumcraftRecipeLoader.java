@@ -27,5 +27,6 @@ public class GTThaumcraftRecipeLoader {
     @SubscribeEvent
     public static void onServerStarted(ServerStartedEvent event) {
         GTItemAspectEntry.load(event.getServer().getResourceManager());
+        GTEntityAspectEntry.load(event.getServer().getResourceManager());
     }
 }
