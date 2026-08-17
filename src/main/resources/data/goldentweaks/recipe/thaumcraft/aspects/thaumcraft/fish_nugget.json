@@ -4,7 +4,6 @@
     "id": "thaumcraft:fish_nugget"
   },
   "aspects": {
-    "victus": 3,
-    "fames": 2
+    "fames": 1
   }
 }

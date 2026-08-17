@@ -4,6 +4,9 @@
     "id": "thaumcraft:native_tin_cluster"
   },
   "aspects": {
-    "metallum": 3
+    "ordo": 1,
+    "metallum": 5,
+    "terra": 1,
+    "vitreus": 2
   }
 }

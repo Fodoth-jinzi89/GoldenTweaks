@@ -5,6 +5,7 @@
   },
   "aspects": {
     "arbor": 3,
-    "metallum": 3
+    "praecantatio": 1,
+    "ordo": 1
   }
 }

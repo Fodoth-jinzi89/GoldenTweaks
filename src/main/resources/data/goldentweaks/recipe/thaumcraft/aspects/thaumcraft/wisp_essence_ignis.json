@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_ignis"
   },
   "aspects": {
-    "alienis": 3,
-    "ignis": 3
+    "ignis": 2
   }
 }

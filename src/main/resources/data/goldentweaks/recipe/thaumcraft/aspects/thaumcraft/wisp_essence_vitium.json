@@ -4,8 +4,6 @@
     "id": "thaumcraft:wisp_essence_vitium"
   },
   "aspects": {
-    "alienis": 3,
-    "vitium": 3,
-    "tenebrae": 2
+    "vitium": 2
   }
 }

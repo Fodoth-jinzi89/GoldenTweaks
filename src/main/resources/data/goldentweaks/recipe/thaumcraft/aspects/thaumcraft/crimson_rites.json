@@ -4,6 +4,9 @@
     "id": "thaumcraft:crimson_rites"
   },
   "aspects": {
-    "arbor": 3
+    "cognitio": 5,
+    "praecantatio": 3,
+    "alienis": 3,
+    "spiritus": 3
   }
 }

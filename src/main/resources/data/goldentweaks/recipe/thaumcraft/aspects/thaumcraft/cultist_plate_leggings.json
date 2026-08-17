@@ -4,9 +4,7 @@
     "id": "thaumcraft:cultist_plate_leggings"
   },
   "aspects": {
-    "tutamen": 4,
-    "arbor": 3,
-    "victus": 3,
-    "fames": 2
+    "metallum": 5,
+    "alienis": 1
   }
 }

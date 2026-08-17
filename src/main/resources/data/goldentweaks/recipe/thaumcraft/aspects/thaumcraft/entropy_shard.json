@@ -4,6 +4,8 @@
     "id": "thaumcraft:entropy_shard"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 1,
+    "perditio": 2,
+    "vitreus": 1
   }
 }

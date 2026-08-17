@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_sensus"
   },
   "aspects": {
-    "praecantatio": 4
+    "sensus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

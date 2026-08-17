@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_vacuos"
   },
   "aspects": {
-    "praecantatio": 4
+    "vacuos": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

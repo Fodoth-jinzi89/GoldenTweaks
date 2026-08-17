@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_profundum"
   },
   "aspects": {
-    "praecantatio": 4
+    "profundum": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

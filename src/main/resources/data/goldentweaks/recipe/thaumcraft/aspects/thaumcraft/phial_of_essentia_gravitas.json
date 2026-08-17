@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_gravitas"
   },
   "aspects": {
-    "gravitas": 4,
-    "praecantatio": 4
+    "gravitas": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

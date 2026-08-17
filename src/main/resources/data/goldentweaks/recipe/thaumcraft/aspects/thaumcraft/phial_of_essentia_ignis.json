@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_ignis"
   },
   "aspects": {
-    "praecantatio": 4,
-    "ignis": 3
+    "ignis": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

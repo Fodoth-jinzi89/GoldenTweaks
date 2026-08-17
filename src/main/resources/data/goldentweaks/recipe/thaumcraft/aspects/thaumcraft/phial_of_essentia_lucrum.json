@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_lucrum"
   },
   "aspects": {
-    "praecantatio": 4
+    "lucrum": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

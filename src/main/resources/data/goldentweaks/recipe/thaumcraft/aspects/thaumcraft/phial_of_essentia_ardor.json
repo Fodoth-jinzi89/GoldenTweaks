@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_ardor"
   },
   "aspects": {
-    "praecantatio": 4
+    "ardor": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

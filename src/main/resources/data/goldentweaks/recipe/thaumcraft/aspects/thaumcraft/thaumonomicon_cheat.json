@@ -4,6 +4,8 @@
     "id": "thaumcraft:thaumonomicon_cheat"
   },
   "aspects": {
-    "praecantatio": 4
+    "cognitio": 8,
+    "arbor": 2,
+    "praecantatio": 2
   }
 }

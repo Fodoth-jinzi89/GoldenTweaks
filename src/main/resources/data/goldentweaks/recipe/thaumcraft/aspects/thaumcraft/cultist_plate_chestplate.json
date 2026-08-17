@@ -4,9 +4,7 @@
     "id": "thaumcraft:cultist_plate_chestplate"
   },
   "aspects": {
-    "tutamen": 4,
-    "vacuos": 4,
-    "arbor": 3,
-    "vas": 3
+    "metallum": 5,
+    "alienis": 1
   }
 }

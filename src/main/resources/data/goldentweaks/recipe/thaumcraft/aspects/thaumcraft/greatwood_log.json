@@ -4,6 +4,7 @@
     "id": "thaumcraft:greatwood_log"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "praecantatio": 1
   }
 }

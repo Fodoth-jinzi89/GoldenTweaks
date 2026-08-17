@@ -4,8 +4,6 @@
     "id": "thaumcraft:wisp_essence_potentia"
   },
   "aspects": {
-    "potentia": 4,
-    "alienis": 3,
-    "machina": 3
+    "potentia": 2
   }
 }

@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_herba"
   },
   "aspects": {
-    "praecantatio": 4
+    "herba": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

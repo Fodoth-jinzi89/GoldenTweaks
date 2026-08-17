@@ -4,6 +4,8 @@
     "id": "thaumcraft:shimmerleaf"
   },
   "aspects": {
-    "herba": 3
+    "herba": 2,
+    "permutatio": 2,
+    "praecantatio": 2
   }
 }

@@ -4,6 +4,10 @@
     "id": "thaumcraft:eldritch_eye"
   },
   "aspects": {
-    "praecantatio": 4
+    "alienis": 5,
+    "auram": 3,
+    "praecantatio": 3,
+    "sensus": 3,
+    "spiritus": 3
   }
 }

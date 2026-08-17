@@ -4,6 +4,8 @@
     "id": "thaumcraft:zombie_brain"
   },
   "aspects": {
-    "praecantatio": 4
+    "corpus": 2,
+    "cognitio": 4,
+    "exanimis": 2
   }
 }

@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_alienis"
   },
   "aspects": {
-    "praecantatio": 4
+    "alienis": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

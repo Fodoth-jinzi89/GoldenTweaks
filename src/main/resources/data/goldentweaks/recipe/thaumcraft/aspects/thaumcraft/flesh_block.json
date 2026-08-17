@@ -4,6 +4,7 @@
     "id": "thaumcraft:flesh_block"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 9,
+    "exanimis": 9
   }
 }

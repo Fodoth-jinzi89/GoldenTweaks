@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_sano"
   },
   "aspects": {
-    "praecantatio": 4
+    "sano": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

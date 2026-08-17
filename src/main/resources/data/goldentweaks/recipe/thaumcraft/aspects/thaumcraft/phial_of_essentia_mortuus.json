@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_mortuus"
   },
   "aspects": {
-    "praecantatio": 4,
-    "mortuus": 3
+    "mortuus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

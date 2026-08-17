@@ -4,6 +4,8 @@
     "id": "thaumcraft:earth_shard"
   },
   "aspects": {
-    "terra": 3
+    "praecantatio": 1,
+    "terra": 2,
+    "vitreus": 1
   }
 }

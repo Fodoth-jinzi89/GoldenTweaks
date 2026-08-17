@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_gelum"
   },
   "aspects": {
-    "praecantatio": 4,
-    "gelum": 3
+    "gelum": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

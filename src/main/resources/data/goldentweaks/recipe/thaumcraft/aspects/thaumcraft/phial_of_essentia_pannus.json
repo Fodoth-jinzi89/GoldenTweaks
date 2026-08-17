@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_pannus"
   },
   "aspects": {
-    "praecantatio": 4,
-    "pannus": 2
+    "pannus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

@@ -4,8 +4,8 @@
     "id": "thaumcraft:taint_tendril"
   },
   "aspects": {
-    "herba": 3,
-    "vitium": 3,
-    "tenebrae": 2
+    "vitium": 2,
+    "lucrum": 1,
+    "fames": 1
   }
 }

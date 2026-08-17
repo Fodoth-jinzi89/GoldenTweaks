@@ -4,7 +4,6 @@
     "id": "goldentweaks:wisp_essence_atrpotentia"
   },
   "aspects": {
-    "potentia": 4,
-    "machina": 3
+    "atrpotentia": 2
   }
 }

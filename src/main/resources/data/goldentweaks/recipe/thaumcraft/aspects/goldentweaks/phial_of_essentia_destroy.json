@@ -4,7 +4,7 @@
     "id": "goldentweaks:phial_of_essentia_destroy"
   },
   "aspects": {
-    "destroy": 4,
+    "destroy": 8,
     "vas": 2,
     "vitreus": 1
   }

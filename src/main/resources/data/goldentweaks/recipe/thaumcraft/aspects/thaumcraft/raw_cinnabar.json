@@ -4,6 +4,9 @@
     "id": "thaumcraft:raw_cinnabar"
   },
   "aspects": {
-    "praecantatio": 4
+    "terra": 1,
+    "metallum": 2,
+    "permutatio": 2,
+    "venenum": 1
   }
 }

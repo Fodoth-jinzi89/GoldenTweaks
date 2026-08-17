@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_praecantatio"
   },
   "aspects": {
-    "praecantatio": 4,
-    "alienis": 3
+    "praecantatio": 2
   }
 }

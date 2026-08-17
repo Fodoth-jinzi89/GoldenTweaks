@@ -4,6 +4,10 @@
     "id": "thaumcraft:native_cinnabar_cluster"
   },
   "aspects": {
-    "praecantatio": 4
+    "ordo": 1,
+    "metallum": 4,
+    "terra": 1,
+    "permutatio": 4,
+    "venenum": 2
   }
 }

@@ -4,9 +4,7 @@
     "id": "thaumcraft:tainted_soil"
   },
   "aspects": {
-    "potentia": 3,
-    "vitium": 3,
-    "ignis": 2,
-    "tenebrae": 2
+    "terra": 1,
+    "vitium": 3
   }
 }

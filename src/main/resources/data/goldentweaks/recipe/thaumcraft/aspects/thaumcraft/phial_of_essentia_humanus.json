@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_humanus"
   },
   "aspects": {
-    "praecantatio": 4
+    "humanus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

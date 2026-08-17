@@ -4,6 +4,6 @@
     "id": "goldentweaks:wisp_essence_destroy"
   },
   "aspects": {
-    "perditio": 3
+    "destroy": 2
   }
 }

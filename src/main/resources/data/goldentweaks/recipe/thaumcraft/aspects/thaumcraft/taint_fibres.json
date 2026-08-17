@@ -4,7 +4,7 @@
     "id": "thaumcraft:taint_fibres"
   },
   "aspects": {
-    "vitium": 3,
-    "tenebrae": 2
+    "victus": 1,
+    "vitium": 2
   }
 }

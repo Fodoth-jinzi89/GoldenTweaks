@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_victus"
   },
   "aspects": {
-    "praecantatio": 4
+    "victus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

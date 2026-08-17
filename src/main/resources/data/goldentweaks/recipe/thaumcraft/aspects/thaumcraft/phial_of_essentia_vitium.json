@@ -4,8 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_vitium"
   },
   "aspects": {
-    "praecantatio": 4,
-    "vitium": 3,
-    "tenebrae": 2
+    "vitium": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

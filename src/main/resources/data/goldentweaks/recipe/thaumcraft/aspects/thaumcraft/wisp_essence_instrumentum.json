@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_instrumentum"
   },
   "aspects": {
-    "alienis": 3,
-    "instrumentum": 3
+    "instrumentum": 2
   }
 }

@@ -4,8 +4,8 @@
     "id": "thaumcraft:runed_tablet"
   },
   "aspects": {
-    "praecantatio": 4,
-    "fabrico": 3,
-    "machina": 3
+    "vinculum": 4,
+    "cognitio": 4,
+    "machina": 4
   }
 }

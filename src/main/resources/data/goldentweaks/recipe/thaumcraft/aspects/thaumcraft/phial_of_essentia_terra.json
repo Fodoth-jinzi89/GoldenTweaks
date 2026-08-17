@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_terra"
   },
   "aspects": {
-    "praecantatio": 4,
-    "terra": 3
+    "terra": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

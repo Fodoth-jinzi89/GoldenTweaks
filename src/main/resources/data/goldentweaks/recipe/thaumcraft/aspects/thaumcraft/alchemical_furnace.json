@@ -4,7 +4,8 @@
     "id": "thaumcraft:alchemical_furnace"
   },
   "aspects": {
-    "praecantatio": 4,
-    "ignis": 3
+    "praecantatio": 8,
+    "aqua": 8,
+    "fabrico": 8
   }
 }

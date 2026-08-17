@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_machina"
   },
   "aspects": {
-    "alienis": 3,
-    "machina": 3
+    "machina": 2
   }
 }

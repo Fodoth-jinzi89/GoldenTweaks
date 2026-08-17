@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_metallum"
   },
   "aspects": {
-    "praecantatio": 4
+    "metallum": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

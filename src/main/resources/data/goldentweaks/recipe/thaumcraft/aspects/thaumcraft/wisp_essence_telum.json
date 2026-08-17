@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_telum"
   },
   "aspects": {
-    "telum": 4,
-    "alienis": 3
+    "telum": 2
   }
 }

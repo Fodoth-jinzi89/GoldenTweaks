@@ -14,6 +14,80 @@ COLORS = {
     "black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray",
     "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow",
 }
+THAUMCRAFT_EXACT_ASPECTS = {
+    "cinnabar_ore": {"terra": 1, "metallum": 2, "permutatio": 2, "venenum": 1},
+    "raw_cinnabar": {"terra": 1, "metallum": 2, "permutatio": 2, "venenum": 1},
+    "amber_bearing_stone": {"terra": 1, "vinculum": 3, "vitreus": 2},
+    "taint_block": {"arbor": 1, "vitium": 3},
+    "tainted_soil": {"terra": 1, "vitium": 3},
+    "flesh_block": {"corpus": 9, "exanimis": 9},
+    "taint_fibres": {"victus": 1, "vitium": 2},
+    "greatwood_log": {"arbor": 3, "praecantatio": 1},
+    "silverwood_log": {"arbor": 3, "praecantatio": 1, "ordo": 1},
+    "greatwood_leaves": {"herba": 1},
+    "silverwood_leaves": {"herba": 1},
+    "greatwood_sapling": {"herba": 2, "arbor": 1, "praecantatio": 1},
+    "silverwood_sapling": {"herba": 2, "arbor": 1, "praecantatio": 1},
+    "shimmerleaf": {"herba": 2, "permutatio": 2, "praecantatio": 2},
+    "cinderpearl": {"herba": 2, "ignis": 2, "praecantatio": 2},
+    "ethereal_bloom": {"herba": 2, "venenum": 1, "praecantatio": 2, "auram": 2},
+    "arcane_stone": {"terra": 1, "praecantatio": 1},
+    "arcane_stone_bricks": {"terra": 1, "praecantatio": 1},
+    "quicksilver": {"metallum": 3, "venenum": 1, "permutatio": 2},
+    "zombie_brain": {"corpus": 2, "cognitio": 4, "exanimis": 2},
+    "amber": {"vinculum": 2, "vitreus": 2},
+    "knowledge_fragment": {"cognitio": 8},
+    "tainted_goo": {"vitium": 3, "limus": 1},
+    "taint_tendril": {"vitium": 2, "lucrum": 1, "fames": 1},
+    "gold_coin": {"lucrum": 1},
+    "loot_bag_common": {"lucrum": 8},
+    "loot_bag_uncommon": {"lucrum": 16},
+    "loot_bag_rare": {"lucrum": 32},
+    "beef_nugget": {"fames": 1},
+    "chicken_nugget": {"fames": 1},
+    "pork_nugget": {"fames": 1},
+    "fish_nugget": {"fames": 1},
+    "iron_nugget": {"metallum": 1},
+    "copper_nugget": {"metallum": 1},
+    "tin_nugget": {"metallum": 1},
+    "silver_nugget": {"metallum": 1},
+    "lead_nugget": {"metallum": 1},
+    "quicksilver_drop": {"metallum": 1},
+    "thaumium_nugget": {"metallum": 1},
+    "native_iron_cluster": {"ordo": 1, "metallum": 6, "terra": 1},
+    "native_copper_cluster": {"ordo": 1, "metallum": 5, "terra": 1, "permutatio": 2},
+    "native_tin_cluster": {"ordo": 1, "metallum": 5, "terra": 1, "vitreus": 2},
+    "native_silver_cluster": {"ordo": 1, "metallum": 5, "terra": 1, "lucrum": 2},
+    "native_lead_cluster": {"ordo": 3, "metallum": 5, "terra": 1},
+    "native_cinnabar_cluster": {"ordo": 1, "metallum": 4, "terra": 1, "permutatio": 4, "venenum": 2},
+    "native_gold_cluster": {"ordo": 1, "metallum": 4, "terra": 1, "lucrum": 2},
+    "thaumonomicon": {"cognitio": 8, "arbor": 2, "praecantatio": 2},
+    "thaumonomicon_cheat": {"cognitio": 8, "arbor": 2, "praecantatio": 2},
+    "alchemical_furnace": {"praecantatio": 8, "aqua": 8, "fabrico": 8},
+    "focus_pech": {"praecantatio": 5, "venenum": 5, "perditio": 5, "alienis": 5, "telum": 5},
+    "cultist_plate_chestplate": {"metallum": 5, "alienis": 1},
+    "cultist_plate_helm": {"metallum": 5, "alienis": 1},
+    "cultist_plate_leggings": {"metallum": 5, "alienis": 1},
+    "cultist_leader_plate_chestplate": {"metallum": 5, "alienis": 2},
+    "cultist_leader_plate_helm": {"metallum": 5, "alienis": 2},
+    "cultist_leader_plate_leggings": {"metallum": 5, "alienis": 2},
+    "cultist_robe_chestplate": {"metallum": 3, "pannus": 2, "alienis": 1},
+    "cultist_robe_hood": {"metallum": 3, "pannus": 2, "alienis": 1},
+    "cultist_robe_leggings": {"metallum": 3, "pannus": 2, "alienis": 1},
+    "cultist_boots": {"metallum": 4, "alienis": 1},
+    "hatred_wand": {"alienis": 1, "arbor": 2, "pannus": 3},
+    "eldritch_eye": {"alienis": 5, "auram": 3, "praecantatio": 3, "sensus": 3, "spiritus": 3},
+    "crimson_rites": {"cognitio": 5, "praecantatio": 3, "alienis": 3, "spiritus": 3},
+    "runed_tablet": {"vinculum": 4, "cognitio": 4, "machina": 4},
+    "primordial_pearl": {"aer": 16, "terra": 16, "ignis": 16, "aqua": 16, "ordo": 16, "perditio": 16},
+    "ancient_stone": {"terra": 1, "alienis": 1},
+    "ancient_rock": {"terra": 1, "alienis": 1},
+    "crusted_stone": {"lux": 1, "terra": 1, "alienis": 1},
+}
+THAUMCRAFT_PRIMALS = {
+    "air": "aer", "earth": "terra", "fire": "ignis",
+    "water": "aqua", "order": "ordo", "entropy": "perditio",
+}
 
 
 def add(aspects, aspect, amount):
@@ -115,8 +189,23 @@ def semantic_aspects(namespace, path, display, kind):
         return compressed_aspects(path) or {"dense": 2, "substance": 2}
     if namespace == "alltheores":
         return ore_aspects(path)
-    if namespace == "goldentweaks" and path.startswith("phial_of_essentia_"):
-        return {path.removeprefix("phial_of_essentia_"): 4, "vas": 2, "vitreus": 1}
+    if path.startswith("phial_of_essentia_"):
+        phial_aspects = {path.removeprefix("phial_of_essentia_"): 8}
+        add(phial_aspects, "vas", 2)
+        add(phial_aspects, "vitreus", 1)
+        return phial_aspects
+    if path.startswith("wisp_essence_"):
+        return {path.removeprefix("wisp_essence_"): 2}
+    if namespace == "thaumcraft":
+        if path in THAUMCRAFT_EXACT_ASPECTS:
+            return THAUMCRAFT_EXACT_ASPECTS[path]
+        primal = next((aspect for prefix, aspect in THAUMCRAFT_PRIMALS.items() if path.startswith(prefix + "_")), None)
+        if primal and path.endswith("_infused_stone"):
+            return {"terra": 1, primal: 3, "vitreus": 2}
+        if primal and path.endswith("_shard"):
+            return {"praecantatio": 1, primal: 2, "vitreus": 1}
+        if path.startswith("candle_"):
+            return {"lux": 2, "corpus": 1, "praecantatio": 1}
 
     aspects = material_aspects(name)
 

@@ -4,8 +4,6 @@
     "id": "thaumcraft:loot_bag_common"
   },
   "aspects": {
-    "vacuos": 4,
-    "lucrum": 3,
-    "vas": 2
+    "lucrum": 8
   }
 }

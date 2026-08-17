@@ -4,6 +4,6 @@
     "id": "goldentweaks:wisp_essence_explosion"
   },
   "aspects": {
-    "praecantatio": 3
+    "explosion": 2
   }
 }

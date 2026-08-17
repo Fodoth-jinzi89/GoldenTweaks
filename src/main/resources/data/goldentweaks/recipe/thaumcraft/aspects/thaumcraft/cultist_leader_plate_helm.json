@@ -4,8 +4,7 @@
     "id": "thaumcraft:cultist_leader_plate_helm"
   },
   "aspects": {
-    "arbor": 3,
-    "iter": 3,
-    "metallum": 3
+    "metallum": 5,
+    "alienis": 2
   }
 }

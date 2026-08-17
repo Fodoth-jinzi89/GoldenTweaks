@@ -4,9 +4,6 @@
     "id": "thaumcraft:wisp_essence_messis"
   },
   "aspects": {
-    "alienis": 3,
-    "herba": 3,
-    "messis": 3,
-    "machina": 2
+    "messis": 2
   }
 }

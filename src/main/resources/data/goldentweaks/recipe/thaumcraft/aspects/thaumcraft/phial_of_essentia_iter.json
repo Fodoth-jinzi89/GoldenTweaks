@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_iter"
   },
   "aspects": {
-    "praecantatio": 4,
-    "iter": 3
+    "iter": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

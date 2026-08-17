@@ -4,6 +4,8 @@
     "id": "thaumcraft:cinderpearl"
   },
   "aspects": {
-    "praecantatio": 4
+    "herba": 2,
+    "ignis": 2,
+    "praecantatio": 2
   }
 }

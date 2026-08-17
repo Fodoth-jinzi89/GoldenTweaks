@@ -4,6 +4,8 @@
     "id": "thaumcraft:native_iron_cluster"
   },
   "aspects": {
-    "metallum": 3
+    "ordo": 1,
+    "metallum": 6,
+    "terra": 1
   }
 }

@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_aqua"
   },
   "aspects": {
-    "praecantatio": 4
+    "aqua": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

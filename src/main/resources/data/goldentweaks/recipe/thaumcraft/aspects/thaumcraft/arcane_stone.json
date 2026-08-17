@@ -4,7 +4,7 @@
     "id": "thaumcraft:arcane_stone"
   },
   "aspects": {
-    "praecantatio": 4,
-    "saxum": 3
+    "terra": 1,
+    "praecantatio": 1
   }
 }

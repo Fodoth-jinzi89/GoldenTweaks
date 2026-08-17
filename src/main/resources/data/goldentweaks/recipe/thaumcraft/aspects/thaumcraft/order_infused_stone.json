@@ -4,7 +4,8 @@
     "id": "thaumcraft:order_infused_stone"
   },
   "aspects": {
-    "praecantatio": 4,
-    "saxum": 3
+    "terra": 1,
+    "ordo": 3,
+    "vitreus": 2
   }
 }

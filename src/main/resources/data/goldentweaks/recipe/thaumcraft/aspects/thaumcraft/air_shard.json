@@ -4,6 +4,8 @@
     "id": "thaumcraft:air_shard"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 1,
+    "aer": 2,
+    "vitreus": 1
   }
 }

@@ -4,6 +4,9 @@
     "id": "thaumcraft:native_gold_cluster"
   },
   "aspects": {
-    "metallum": 3
+    "ordo": 1,
+    "metallum": 4,
+    "terra": 1,
+    "lucrum": 2
   }
 }

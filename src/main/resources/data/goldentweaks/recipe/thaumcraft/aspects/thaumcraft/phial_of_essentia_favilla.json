@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_favilla"
   },
   "aspects": {
-    "praecantatio": 4
+    "favilla": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

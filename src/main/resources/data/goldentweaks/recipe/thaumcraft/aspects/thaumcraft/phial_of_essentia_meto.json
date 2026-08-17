@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_meto"
   },
   "aspects": {
-    "praecantatio": 4
+    "meto": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

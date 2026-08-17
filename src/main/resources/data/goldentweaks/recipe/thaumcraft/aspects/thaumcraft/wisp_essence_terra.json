@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_terra"
   },
   "aspects": {
-    "alienis": 3,
-    "terra": 3
+    "terra": 2
   }
 }

@@ -4,7 +4,7 @@
     "id": "thaumcraft:taint_block"
   },
   "aspects": {
-    "vitium": 3,
-    "tenebrae": 2
+    "arbor": 1,
+    "vitium": 3
   }
 }

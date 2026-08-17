@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_perfodio"
   },
   "aspects": {
-    "praecantatio": 4
+    "perfodio": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

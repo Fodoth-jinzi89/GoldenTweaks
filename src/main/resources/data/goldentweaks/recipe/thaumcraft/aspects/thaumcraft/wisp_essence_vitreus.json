@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_vitreus"
   },
   "aspects": {
-    "alienis": 3,
-    "vitreus": 3
+    "vitreus": 2
   }
 }

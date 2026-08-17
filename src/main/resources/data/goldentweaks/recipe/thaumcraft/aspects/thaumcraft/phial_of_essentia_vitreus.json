@@ -4,7 +4,7 @@
     "id": "thaumcraft:phial_of_essentia_vitreus"
   },
   "aspects": {
-    "praecantatio": 4,
-    "vitreus": 3
+    "vitreus": 8,
+    "vas": 2
   }
 }

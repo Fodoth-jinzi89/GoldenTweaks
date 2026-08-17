@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_motus"
   },
   "aspects": {
-    "praecantatio": 4
+    "motus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

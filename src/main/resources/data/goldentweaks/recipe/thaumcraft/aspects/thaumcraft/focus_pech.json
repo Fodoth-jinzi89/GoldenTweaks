@@ -4,6 +4,10 @@
     "id": "thaumcraft:focus_pech"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 5,
+    "venenum": 5,
+    "perditio": 5,
+    "alienis": 5,
+    "telum": 5
   }
 }

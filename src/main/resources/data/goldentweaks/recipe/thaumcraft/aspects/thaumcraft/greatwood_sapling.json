@@ -4,8 +4,8 @@
     "id": "thaumcraft:greatwood_sapling"
   },
   "aspects": {
-    "arbor": 3,
-    "herba": 3,
-    "messis": 2
+    "herba": 2,
+    "arbor": 1,
+    "praecantatio": 1
   }
 }

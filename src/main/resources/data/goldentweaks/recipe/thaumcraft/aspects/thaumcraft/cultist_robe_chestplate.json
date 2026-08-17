@@ -4,9 +4,8 @@
     "id": "thaumcraft:cultist_robe_chestplate"
   },
   "aspects": {
-    "tutamen": 4,
-    "vacuos": 4,
-    "arbor": 3,
-    "vas": 3
+    "metallum": 3,
+    "pannus": 2,
+    "alienis": 1
   }
 }

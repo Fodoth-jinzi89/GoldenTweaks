@@ -4,6 +4,7 @@
     "id": "thaumcraft:amber"
   },
   "aspects": {
-    "praecantatio": 4
+    "vinculum": 2,
+    "vitreus": 2
   }
 }

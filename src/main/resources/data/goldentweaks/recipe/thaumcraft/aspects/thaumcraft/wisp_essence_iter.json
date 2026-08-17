@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_iter"
   },
   "aspects": {
-    "alienis": 3,
-    "iter": 3
+    "iter": 2
   }
 }

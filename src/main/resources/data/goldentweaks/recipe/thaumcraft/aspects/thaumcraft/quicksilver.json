@@ -4,6 +4,8 @@
     "id": "thaumcraft:quicksilver"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "venenum": 1,
+    "permutatio": 2
   }
 }

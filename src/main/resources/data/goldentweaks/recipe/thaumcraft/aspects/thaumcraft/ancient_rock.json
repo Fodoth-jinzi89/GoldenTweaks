@@ -4,6 +4,7 @@
     "id": "thaumcraft:ancient_rock"
   },
   "aspects": {
-    "praecantatio": 4
+    "terra": 1,
+    "alienis": 1
   }
 }

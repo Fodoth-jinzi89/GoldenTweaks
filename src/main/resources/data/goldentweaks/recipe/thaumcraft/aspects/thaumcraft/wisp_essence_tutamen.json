@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_tutamen"
   },
   "aspects": {
-    "tutamen": 4,
-    "alienis": 3
+    "tutamen": 2
   }
 }

@@ -4,6 +4,8 @@
     "id": "thaumcraft:hatred_wand"
   },
   "aspects": {
-    "praecantatio": 4
+    "alienis": 1,
+    "arbor": 2,
+    "pannus": 3
   }
 }

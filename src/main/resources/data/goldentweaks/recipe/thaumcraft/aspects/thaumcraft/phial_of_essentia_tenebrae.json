@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_tenebrae"
   },
   "aspects": {
-    "praecantatio": 4
+    "tenebrae": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

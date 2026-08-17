@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_gravitas"
   },
   "aspects": {
-    "gravitas": 4,
-    "alienis": 3
+    "gravitas": 2
   }
 }

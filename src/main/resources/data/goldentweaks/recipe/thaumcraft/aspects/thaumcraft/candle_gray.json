@@ -4,6 +4,8 @@
     "id": "thaumcraft:candle_gray"
   },
   "aspects": {
-    "praecantatio": 4
+    "lux": 2,
+    "corpus": 1,
+    "praecantatio": 1
   }
 }

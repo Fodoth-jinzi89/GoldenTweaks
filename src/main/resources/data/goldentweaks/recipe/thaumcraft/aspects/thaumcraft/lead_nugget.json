@@ -4,7 +4,6 @@
     "id": "thaumcraft:lead_nugget"
   },
   "aspects": {
-    "iter": 3,
-    "metallum": 3
+    "metallum": 1
   }
 }

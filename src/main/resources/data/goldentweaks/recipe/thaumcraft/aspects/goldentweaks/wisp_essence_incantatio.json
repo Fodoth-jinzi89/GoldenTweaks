@@ -4,7 +4,6 @@
     "id": "goldentweaks:wisp_essence_incantatio"
   },
   "aspects": {
-    "incantatio": 4,
-    "praecantatio": 4
+    "incantatio": 2
   }
 }

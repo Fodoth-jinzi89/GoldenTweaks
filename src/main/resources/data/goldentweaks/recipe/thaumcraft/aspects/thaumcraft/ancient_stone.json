@@ -4,6 +4,7 @@
     "id": "thaumcraft:ancient_stone"
   },
   "aspects": {
-    "saxum": 3
+    "terra": 1,
+    "alienis": 1
   }
 }

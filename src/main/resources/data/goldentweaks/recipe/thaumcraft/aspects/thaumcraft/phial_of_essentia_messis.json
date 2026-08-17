@@ -4,9 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_messis"
   },
   "aspects": {
-    "praecantatio": 4,
-    "herba": 3,
-    "messis": 3,
-    "machina": 2
+    "messis": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

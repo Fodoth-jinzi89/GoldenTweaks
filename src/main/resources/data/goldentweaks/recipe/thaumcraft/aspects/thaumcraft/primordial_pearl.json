@@ -4,6 +4,11 @@
     "id": "thaumcraft:primordial_pearl"
   },
   "aspects": {
-    "praecantatio": 4
+    "aer": 16,
+    "terra": 16,
+    "ignis": 16,
+    "aqua": 16,
+    "ordo": 16,
+    "perditio": 16
   }
 }

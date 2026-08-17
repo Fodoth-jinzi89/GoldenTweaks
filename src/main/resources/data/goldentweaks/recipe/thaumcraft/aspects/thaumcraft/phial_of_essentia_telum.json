@@ -4,7 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_telum"
   },
   "aspects": {
-    "praecantatio": 4,
-    "telum": 4
+    "telum": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

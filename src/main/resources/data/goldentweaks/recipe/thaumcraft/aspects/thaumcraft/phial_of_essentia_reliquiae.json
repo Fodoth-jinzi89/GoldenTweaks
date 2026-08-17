@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_reliquiae"
   },
   "aspects": {
-    "praecantatio": 4
+    "reliquiae": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

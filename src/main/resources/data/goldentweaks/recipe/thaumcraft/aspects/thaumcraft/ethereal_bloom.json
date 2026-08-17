@@ -4,6 +4,9 @@
     "id": "thaumcraft:ethereal_bloom"
   },
   "aspects": {
-    "alienis": 3
+    "herba": 2,
+    "venenum": 1,
+    "praecantatio": 2,
+    "auram": 2
   }
 }

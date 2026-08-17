@@ -4,6 +4,8 @@
     "id": "thaumcraft:phial_of_essentia_limus"
   },
   "aspects": {
-    "praecantatio": 4
+    "limus": 8,
+    "vas": 2,
+    "vitreus": 1
   }
 }

@@ -4,7 +4,6 @@
     "id": "thaumcraft:wisp_essence_mortuus"
   },
   "aspects": {
-    "alienis": 3,
-    "mortuus": 3
+    "mortuus": 2
   }
 }
