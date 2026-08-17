@@ -17,7 +17,7 @@
     "color": "#FF626262",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Mossy Black Sand"
+      "translate": "material.goldentweaks.compat.biomesoplenty.mossy_black_sand"
     },
     "name_prefix": ""
   },

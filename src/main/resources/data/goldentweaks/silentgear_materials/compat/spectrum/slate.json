@@ -17,7 +17,7 @@
     "color": "#FF3D4369",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Slate Noxcap Block"
+      "translate": "material.goldentweaks.compat.spectrum.slate"
     },
     "name_prefix": ""
   },

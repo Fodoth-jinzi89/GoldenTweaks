@@ -17,7 +17,7 @@
     "color": "#FF999CAE",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Bottle Yeast"
+      "translate": "material.goldentweaks.compat.bakeries.yeast"
     },
     "name_prefix": ""
   },

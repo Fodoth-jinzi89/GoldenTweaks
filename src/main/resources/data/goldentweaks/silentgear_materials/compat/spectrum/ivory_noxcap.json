@@ -17,7 +17,7 @@
     "color": "#FFCFCECA",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Ivory Noxcap Stem"
+      "translate": "material.goldentweaks.compat.spectrum.ivory_noxcap"
     },
     "name_prefix": ""
   },

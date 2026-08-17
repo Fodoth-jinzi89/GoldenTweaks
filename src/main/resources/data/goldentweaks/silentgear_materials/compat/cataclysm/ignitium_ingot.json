@@ -17,7 +17,7 @@
     "color": "#FFB08130",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Ignitium Ingot"
+      "translate": "material.goldentweaks.compat.cataclysm.ignitium_ingot"
     },
     "name_prefix": ""
   },

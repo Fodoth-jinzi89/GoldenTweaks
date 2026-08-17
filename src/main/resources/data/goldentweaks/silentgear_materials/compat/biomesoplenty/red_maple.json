@@ -17,7 +17,7 @@
     "color": "#FF762E2D",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Red Maple Leaves"
+      "translate": "material.goldentweaks.compat.biomesoplenty.red_maple"
     },
     "name_prefix": ""
   },

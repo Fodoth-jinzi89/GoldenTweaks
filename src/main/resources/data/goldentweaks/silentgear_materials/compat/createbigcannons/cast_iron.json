@@ -17,7 +17,7 @@
     "color": "#FF343537",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Cast Iron Ingot"
+      "translate": "material.goldentweaks.compat.createbigcannons.cast_iron"
     },
     "name_prefix": ""
   },

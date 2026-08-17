@@ -17,7 +17,7 @@
     "color": "#FFDC7C82",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Polished Rose Quartz"
+      "translate": "material.goldentweaks.compat.create.polished_rose_quartz"
     },
     "name_prefix": ""
   },

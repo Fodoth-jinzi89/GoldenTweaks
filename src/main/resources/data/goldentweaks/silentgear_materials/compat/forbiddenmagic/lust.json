@@ -17,7 +17,7 @@
     "color": "#FFA2587E",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Lust Shard"
+      "translate": "material.goldentweaks.compat.forbiddenmagic.lust"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFB48F68",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Cardboard Ingot"
+      "translate": "material.goldentweaks.compat.createcardboardthings.cardboard_ingot"
     },
     "name_prefix": ""
   },

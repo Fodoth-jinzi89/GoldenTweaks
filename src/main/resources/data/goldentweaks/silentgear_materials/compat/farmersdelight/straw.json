@@ -17,7 +17,7 @@
     "color": "#FF754E22",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Straw"
+      "translate": "material.goldentweaks.compat.farmersdelight.straw"
     },
     "name_prefix": ""
   },

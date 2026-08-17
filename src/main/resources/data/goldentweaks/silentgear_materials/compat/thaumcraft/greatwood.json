@@ -17,7 +17,7 @@
     "color": "#FF776143",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Greatwood Log"
+      "translate": "material.goldentweaks.compat.thaumcraft.greatwood"
     },
     "name_prefix": ""
   },

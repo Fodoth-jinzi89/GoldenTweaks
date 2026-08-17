@@ -17,7 +17,7 @@
     "color": "#FF1E201F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Sky Stone"
+      "translate": "material.goldentweaks.compat.ae2.sky_stone"
     },
     "name_prefix": ""
   },

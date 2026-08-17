@@ -17,7 +17,7 @@
     "color": "#FFBD3909",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Blaze Shard"
+      "translate": "material.goldentweaks.compat.igleelib.blaze"
     },
     "name_prefix": ""
   },

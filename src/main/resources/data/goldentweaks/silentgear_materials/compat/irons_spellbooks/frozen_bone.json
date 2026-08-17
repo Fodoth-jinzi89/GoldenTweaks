@@ -17,7 +17,7 @@
     "color": "#FFAEC3C4",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Frozen Bone"
+      "translate": "material.goldentweaks.compat.irons_spellbooks.frozen_bone"
     },
     "name_prefix": ""
   },

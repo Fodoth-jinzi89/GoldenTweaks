@@ -17,7 +17,7 @@
     "color": "#FF818180",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Layered Stone"
+      "translate": "material.goldentweaks.compat.dndecor.layered_stone"
     },
     "name_prefix": ""
   },

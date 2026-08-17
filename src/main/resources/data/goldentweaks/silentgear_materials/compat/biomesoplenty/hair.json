@@ -17,7 +17,7 @@
     "color": "#FFCD9680",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Hair"
+      "translate": "material.goldentweaks.compat.biomesoplenty.hair"
     },
     "name_prefix": ""
   },

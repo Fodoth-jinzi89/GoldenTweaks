@@ -17,7 +17,7 @@
     "color": "#FF413F77",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Demonite Ingot"
+      "translate": "material.goldentweaks.compat.hazennstuff.demonite_ingot"
     },
     "name_prefix": ""
   },

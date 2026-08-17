@@ -17,7 +17,7 @@
     "color": "#FF685239",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Orchard Heartwood Log"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.orchard_heartwood"
     },
     "name_prefix": ""
   },

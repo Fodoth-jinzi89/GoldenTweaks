@@ -17,7 +17,7 @@
     "color": "#FF382026",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Weeping Gala Log"
+      "translate": "material.goldentweaks.compat.spectrum.weeping_gala"
     },
     "name_prefix": ""
   },

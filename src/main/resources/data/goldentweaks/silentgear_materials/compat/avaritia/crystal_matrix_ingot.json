@@ -17,7 +17,7 @@
     "color": "#FF83B8A8",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Crystal Matrix Ingot"
+      "translate": "material.goldentweaks.compat.avaritia.crystal_matrix_ingot"
     },
     "name_prefix": ""
   },

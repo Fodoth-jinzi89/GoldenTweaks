@@ -17,7 +17,7 @@
     "color": "#FFEA7A3C",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Blazing Crystal"
+      "translate": "material.goldentweaks.compat.spectrum.blazing"
     },
     "name_prefix": ""
   },

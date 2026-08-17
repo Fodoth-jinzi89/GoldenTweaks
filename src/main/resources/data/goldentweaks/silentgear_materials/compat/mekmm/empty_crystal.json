@@ -17,7 +17,7 @@
     "color": "#FF869CB8",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Empty Crystal"
+      "translate": "material.goldentweaks.compat.mekmm.empty_crystal"
     },
     "name_prefix": ""
   },

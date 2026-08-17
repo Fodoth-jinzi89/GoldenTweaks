@@ -17,7 +17,7 @@
     "color": "#FF506C7D",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Resonating Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_resonating"
     },
     "name_prefix": ""
   },

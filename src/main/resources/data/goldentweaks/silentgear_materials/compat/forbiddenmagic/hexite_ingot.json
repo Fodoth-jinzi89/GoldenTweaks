@@ -17,7 +17,7 @@
     "color": "#FF1B0076",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Hexite Ingot"
+      "translate": "material.goldentweaks.compat.forbiddenmagic.hexite_ingot"
     },
     "name_prefix": ""
   },

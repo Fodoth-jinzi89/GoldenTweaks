@@ -17,7 +17,7 @@
     "color": "#FFA2CEA9",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Quark Ingot"
+      "translate": "material.goldentweaks.compat.avaritia_more_items.quark_ingot"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF979779",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Substrate"
+      "translate": "material.goldentweaks.compat.mekanism.substrate"
     },
     "name_prefix": ""
   },

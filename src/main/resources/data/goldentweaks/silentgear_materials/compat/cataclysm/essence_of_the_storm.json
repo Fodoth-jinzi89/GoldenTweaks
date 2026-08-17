@@ -17,7 +17,7 @@
     "color": "#FF5DABBF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Essence Of The Storm"
+      "translate": "material.goldentweaks.compat.cataclysm.essence_of_the_storm"
     },
     "name_prefix": ""
   },

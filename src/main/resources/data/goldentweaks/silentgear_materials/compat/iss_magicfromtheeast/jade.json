@@ -17,7 +17,7 @@
     "color": "#FF1FB268",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Polished Jadestone"
+      "translate": "material.goldentweaks.compat.iss_magicfromtheeast.jade"
     },
     "name_prefix": ""
   },

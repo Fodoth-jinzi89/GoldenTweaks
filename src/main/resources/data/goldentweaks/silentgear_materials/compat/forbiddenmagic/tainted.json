@@ -17,7 +17,7 @@
     "color": "#FF433A4E",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Tainted Log"
+      "translate": "material.goldentweaks.compat.forbiddenmagic.tainted"
     },
     "name_prefix": ""
   },

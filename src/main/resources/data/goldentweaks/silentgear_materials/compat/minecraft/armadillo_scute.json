@@ -17,7 +17,7 @@
     "color": "#FF7FAC53",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Armadillo Scute"
+      "translate": "material.goldentweaks.compat.minecraft.armadillo_scute"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF60B18C",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Pellet Polonium"
+      "translate": "material.goldentweaks.compat.mekanism.pellet_polonium"
     },
     "name_prefix": ""
   },

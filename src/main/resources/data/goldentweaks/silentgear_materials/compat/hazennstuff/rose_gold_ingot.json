@@ -17,7 +17,7 @@
     "color": "#FFDE9D8D",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Rose Gold Ingot"
+      "translate": "material.goldentweaks.compat.hazennstuff.rose_gold_ingot"
     },
     "name_prefix": ""
   },

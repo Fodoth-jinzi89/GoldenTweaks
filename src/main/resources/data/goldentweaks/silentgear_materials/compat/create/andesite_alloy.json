@@ -17,7 +17,7 @@
     "color": "#FF848B81",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Andesite Alloy"
+      "translate": "material.goldentweaks.compat.create.andesite_alloy"
     },
     "name_prefix": ""
   },

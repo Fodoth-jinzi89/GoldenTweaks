@@ -17,7 +17,7 @@
     "color": "#FF6C6969",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Null End Stone"
+      "translate": "material.goldentweaks.compat.biomesoplenty.null_end_stone"
     },
     "name_prefix": ""
   },

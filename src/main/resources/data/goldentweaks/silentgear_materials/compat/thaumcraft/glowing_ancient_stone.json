@@ -17,7 +17,7 @@
     "color": "#FF675A35",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Glowing Ancient Stone"
+      "translate": "material.goldentweaks.compat.thaumcraft.glowing_ancient_stone"
     },
     "name_prefix": ""
   },

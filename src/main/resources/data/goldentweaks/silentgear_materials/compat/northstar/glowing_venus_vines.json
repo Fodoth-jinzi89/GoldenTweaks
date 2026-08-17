@@ -17,7 +17,7 @@
     "color": "#FF8C845C",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Glowing Venus Vines"
+      "translate": "material.goldentweaks.compat.northstar.glowing_venus_vines"
     },
     "name_prefix": ""
   },

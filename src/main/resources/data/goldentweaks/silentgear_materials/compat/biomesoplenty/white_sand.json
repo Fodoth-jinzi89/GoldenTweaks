@@ -17,7 +17,7 @@
     "color": "#FFEDEADE",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "White Sand"
+      "translate": "material.goldentweaks.compat.biomesoplenty.white_sand"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF56D6BF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Nether Star"
+      "translate": "material.goldentweaks.compat.minecraft.nether_star"
     },
     "name_prefix": ""
   },

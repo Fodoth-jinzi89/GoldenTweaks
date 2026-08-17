@@ -17,7 +17,7 @@
     "color": "#FF77C5CD",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Cryotheum Crystal"
+      "translate": "material.goldentweaks.compat.neoecoae.cryotheum"
     },
     "name_prefix": ""
   },

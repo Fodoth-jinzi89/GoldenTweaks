@@ -17,7 +17,7 @@
     "color": "#FFA8A4A1",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Flowering Oak Leaves"
+      "translate": "material.goldentweaks.compat.biomesoplenty.flowering_oak"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFA8A241",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Scrap Box"
+      "translate": "material.goldentweaks.compat.mekmm.scrap_box"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFC69825",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Shimmerstone Gem"
+      "translate": "material.goldentweaks.compat.spectrum.shimmerstone"
     },
     "name_prefix": ""
   },

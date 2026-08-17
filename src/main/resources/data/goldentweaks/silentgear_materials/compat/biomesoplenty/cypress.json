@@ -17,7 +17,7 @@
     "color": "#FF37562C",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Cypress Leaves"
+      "translate": "material.goldentweaks.compat.biomesoplenty.cypress"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF776C7A",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Shale Clay"
+      "translate": "material.goldentweaks.compat.spectrum.shale"
     },
     "name_prefix": ""
   },

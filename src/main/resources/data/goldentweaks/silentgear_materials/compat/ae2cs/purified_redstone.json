@@ -17,7 +17,7 @@
     "color": "#FF9A393B",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Redstone Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_redstone"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF494437",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Ancient Stone"
+      "translate": "material.goldentweaks.compat.thaumcraft.ancient_stone"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF75717B",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Basal Marble"
+      "translate": "material.goldentweaks.compat.spectrum.marble"
     },
     "name_prefix": ""
   },

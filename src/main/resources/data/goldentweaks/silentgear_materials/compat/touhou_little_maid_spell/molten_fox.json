@@ -17,7 +17,7 @@
     "color": "#FFB37467",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Molten Fox Leaf"
+      "translate": "material.goldentweaks.compat.touhou_little_maid_spell.molten_fox"
     },
     "name_prefix": ""
   },

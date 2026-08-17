@@ -17,7 +17,7 @@
     "color": "#FF6D37A3",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Energized Fluix Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_energized_fluix"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFD0D0C5",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Hdpe Stick"
+      "translate": "material.goldentweaks.compat.mekanism.hdpe_stick"
     },
     "name_prefix": ""
   },

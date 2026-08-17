@@ -17,7 +17,7 @@
     "color": "#FF749889",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Pure Prismarine"
+      "translate": "material.goldentweaks.compat.spectrum.pure_prismarine"
     },
     "name_prefix": ""
   },

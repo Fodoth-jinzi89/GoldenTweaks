@@ -17,7 +17,7 @@
     "color": "#FF968C90",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Empyreal Log"
+      "translate": "material.goldentweaks.compat.biomesoplenty.empyreal"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF747181",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Zenalite Ingot"
+      "translate": "material.goldentweaks.compat.hazennstuff.zenalite_ingot"
     },
     "name_prefix": ""
   },

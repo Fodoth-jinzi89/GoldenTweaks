@@ -17,7 +17,7 @@
     "color": "#FF57106A",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Derium Ingot"
+      "translate": "material.goldentweaks.compat.igleelib.derium_ingot"
     },
     "name_prefix": ""
   },

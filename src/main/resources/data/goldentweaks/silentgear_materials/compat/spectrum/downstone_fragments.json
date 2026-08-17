@@ -17,7 +17,7 @@
     "color": "#FF816967",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Downstone Fragments"
+      "translate": "material.goldentweaks.compat.spectrum.downstone_fragments"
     },
     "name_prefix": ""
   },

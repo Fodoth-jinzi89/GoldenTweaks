@@ -17,7 +17,7 @@
     "color": "#FFB5B3BB",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Moon Sand Paper"
+      "translate": "material.goldentweaks.compat.northstar.moon_sand_paper"
     },
     "name_prefix": ""
   },

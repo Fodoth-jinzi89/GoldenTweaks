@@ -17,7 +17,7 @@
     "color": "#FFCAC8C6",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Ivory Noxwood Planks"
+      "translate": "material.goldentweaks.compat.spectrum.ivory_noxwood"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF2A4788",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Onyx Shard"
+      "translate": "material.goldentweaks.compat.spectrum.onyx"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFB44242",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Pure Redstone"
+      "translate": "material.goldentweaks.compat.spectrum.pure_redstone"
     },
     "name_prefix": ""
   },

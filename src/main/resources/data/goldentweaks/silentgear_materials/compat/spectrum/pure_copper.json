@@ -17,7 +17,7 @@
     "color": "#FFD8864F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Pure Copper"
+      "translate": "material.goldentweaks.compat.spectrum.pure_copper"
     },
     "name_prefix": ""
   },

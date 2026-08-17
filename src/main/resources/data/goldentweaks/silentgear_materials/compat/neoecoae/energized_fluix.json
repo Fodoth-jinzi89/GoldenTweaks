@@ -17,7 +17,7 @@
     "color": "#FF8D4AA0",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Energized Fluix Crystal"
+      "translate": "material.goldentweaks.compat.neoecoae.energized_fluix"
     },
     "name_prefix": ""
   },

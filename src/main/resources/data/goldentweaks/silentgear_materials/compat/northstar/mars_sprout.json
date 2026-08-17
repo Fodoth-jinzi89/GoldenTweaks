@@ -17,7 +17,7 @@
     "color": "#FF707B6B",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Mars Sprout"
+      "translate": "material.goldentweaks.compat.northstar.mars_sprout"
     },
     "name_prefix": ""
   },

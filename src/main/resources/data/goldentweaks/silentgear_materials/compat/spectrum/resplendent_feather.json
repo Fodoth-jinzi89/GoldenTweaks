@@ -17,7 +17,7 @@
     "color": "#FFC86F6B",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Resplendent Feather"
+      "translate": "material.goldentweaks.compat.spectrum.resplendent_feather"
     },
     "name_prefix": ""
   },

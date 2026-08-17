@@ -17,7 +17,7 @@
     "color": "#FFC1B89B",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "The Ultimate Ingot"
+      "translate": "material.goldentweaks.compat.extendedcrafting.the_ultimate_ingot"
     },
     "name_prefix": ""
   },

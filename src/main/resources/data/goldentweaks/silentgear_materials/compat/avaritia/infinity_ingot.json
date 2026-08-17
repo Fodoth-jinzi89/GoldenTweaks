@@ -17,7 +17,7 @@
     "color": "#FFBBB1B1",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Infinity Ingot"
+      "translate": "material.goldentweaks.compat.avaritia.infinity_ingot"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF68BA8B",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Entro Ingot"
+      "translate": "material.goldentweaks.compat.extendedae.entro_ingot"
     },
     "name_prefix": ""
   },

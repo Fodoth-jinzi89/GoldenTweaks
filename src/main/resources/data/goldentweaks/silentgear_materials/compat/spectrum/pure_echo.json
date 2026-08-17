@@ -17,7 +17,7 @@
     "color": "#FF0F5E67",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Pure Echo"
+      "translate": "material.goldentweaks.compat.spectrum.pure_echo"
     },
     "name_prefix": ""
   },

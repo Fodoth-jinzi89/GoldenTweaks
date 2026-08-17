@@ -17,7 +17,7 @@
     "color": "#FFC1C230",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Alloy Radiance"
+      "translate": "material.goldentweaks.compat.mekanism_extras.alloy_radiance"
     },
     "name_prefix": ""
   },

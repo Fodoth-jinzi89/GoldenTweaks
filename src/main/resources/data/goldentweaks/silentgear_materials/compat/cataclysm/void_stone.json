@@ -17,7 +17,7 @@
     "color": "#FF7041C4",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Void Stone"
+      "translate": "material.goldentweaks.compat.cataclysm.void_stone"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFD08D35",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Ember Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_ember"
     },
     "name_prefix": ""
   },

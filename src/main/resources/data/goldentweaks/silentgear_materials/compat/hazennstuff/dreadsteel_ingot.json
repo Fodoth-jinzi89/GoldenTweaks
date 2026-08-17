@@ -17,7 +17,7 @@
     "color": "#FF691822",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Dreadsteel Ingot"
+      "translate": "material.goldentweaks.compat.hazennstuff.dreadsteel_ingot"
     },
     "name_prefix": ""
   },

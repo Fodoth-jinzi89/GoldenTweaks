@@ -17,7 +17,7 @@
     "color": "#FF7B7D7A",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Ingot Plaslitherite"
+      "translate": "material.goldentweaks.compat.evolvedmekanism.ingot_plaslitherite"
     },
     "name_prefix": ""
   },

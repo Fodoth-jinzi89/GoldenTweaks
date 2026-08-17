@@ -17,7 +17,7 @@
     "color": "#FF30894F",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Moss Ball"
+      "translate": "material.goldentweaks.compat.spectrum.moss"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFB39D9E",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Divine Soulshard"
+      "translate": "material.goldentweaks.compat.irons_spellbooks.divine_soulshard"
     },
     "name_prefix": ""
   },

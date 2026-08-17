@@ -17,7 +17,7 @@
     "color": "#FF571C14",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Cloth Of The Flamebearer"
+      "translate": "material.goldentweaks.compat.hazennstuff.cloth_of_the_flamebearer"
     },
     "name_prefix": ""
   },

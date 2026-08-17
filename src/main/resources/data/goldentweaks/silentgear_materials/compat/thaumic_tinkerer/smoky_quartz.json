@@ -17,7 +17,7 @@
     "color": "#FF181716",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Smoky Quartz"
+      "translate": "material.goldentweaks.compat.thaumic_tinkerer.smoky_quartz"
     },
     "name_prefix": ""
   },

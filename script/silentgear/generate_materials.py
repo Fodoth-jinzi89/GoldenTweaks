@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "script" / "materials" / "output" / "materials.json"
 EXTRA_INPUT = ROOT / "游戏内的新材料.txt"
 OUTPUT = ROOT / "src" / "main" / "resources" / "data" / "goldentweaks" / "silentgear_materials" / "compat"
+LANG_DIR = ROOT / "src" / "main" / "resources" / "assets" / "goldentweaks" / "lang"
 PRODUCTION_MODS = Path(r"E:\机械动力魔法大冒险\.minecraft\versions\hkx\mods")
 JAR_GLOB = "silent-gear-*.jar"
 
@@ -291,6 +292,7 @@ class AssetResolver:
             except zipfile.BadZipFile:
                 pass
         self.cache = {}
+        self.lang_cache = {}
 
     def close(self):
         for archive in self.archives:
@@ -358,6 +360,25 @@ class AssetResolver:
             if raw is not None:
                 resolved.append(raw)
         return resolved
+
+    def lang(self, namespace, locale):
+        key = (namespace, locale)
+        if key not in self.lang_cache:
+            raw = self.read(f"assets/{namespace}/lang/{locale}.json")
+            try:
+                self.lang_cache[key] = json.loads(raw) if raw is not None else {}
+            except (UnicodeDecodeError, json.JSONDecodeError):
+                self.lang_cache[key] = {}
+        return self.lang_cache[key]
+
+    def item_name(self, resource_id, locale):
+        namespace, path = resource_id.split(":", 1)
+        language = self.lang(namespace, locale)
+        for key in (f"item.{namespace}.{path}", f"block.{namespace}.{path}"):
+            value = language.get(key)
+            if isinstance(value, str) and value:
+                return re.sub(r"§.", "", value)
+        return None
 
 
 def find_jar():
@@ -563,6 +584,66 @@ def color_for(category, material, resource_id, resolver):
     return f"#FF{channels[0]:02X}{channels[1]:02X}{channels[2]:02X}"
 
 
+ZH_TERMS = {
+    "alloy": "合金", "ancient": "远古", "arcane": "奥术", "armadillo": "犰狳", "astral": "星界", "atomic": "原子",
+    "azure": "蔚蓝", "black": "黑色", "blaze": "烈焰", "bloodstone": "血石", "bone": "骨",
+    "ball": "球", "block": "块", "bramble": "荆棘", "cactus": "仙人掌", "celestial": "天界", "charged": "充能", "cloth": "布料", "coal": "煤",
+    "compressed": "压缩", "copper": "铜", "coral": "珊瑚", "cosmic": "宇宙", "creative": "创造",
+    "crimson": "绯红", "crystal": "水晶", "crystalline": "晶化物", "cypress": "柏树", "dark": "暗色", "diamond": "钻石",
+    "divine": "神圣", "dragon": "龙", "dust": "粉末", "echo": "回响", "elder": "远古", "empyreal": "天穹",
+    "emerald": "绿宝石", "ender": "末影", "energized": "充能", "essence": "精华", "exoversal": "超界",
+    "fabric": "织物", "feather": "羽毛", "fire": "火焰", "flamebearer": "炎之承载者", "fluix": "福鲁伊克斯",
+    "frosted": "霜冻", "glowstone": "荧石", "gold": "金", "hallowed": "神圣", "hide": "皮革",
+    "hypercharged": "超频", "ichor": "灵液", "ichorium": "灵液金属", "ignitium": "炽炎铁",
+    "infused": "灌注", "ingot": "锭", "iron": "铁", "jadeite": "硬玉", "lapis": "青金石",
+    "leaves": "树叶", "lunar": "月球", "magic": "魔法", "malachite": "孔雀石", "maple": "枫木", "matrix": "矩阵", "meteorite": "陨石",
+    "midnight": "午夜", "mossy": "覆苔", "nether": "下界", "neutron": "中子", "null": "虚无", "orange": "橙色", "overgrown": "繁茂", "pearl": "珍珠", "pine": "松木",
+    "pellet": "颗粒", "permafrost": "永冻", "plutonium": "钚", "polonium": "钋", "prismarine": "海晶",
+    "pure": "纯净", "pyrium": "炽焰金属", "quark": "夸克", "quartz": "石英", "rabbit": "兔子", "red": "红色", "redstone": "红石",
+    "reinforced": "强化", "resonance": "共振", "sapphire": "蓝宝石", "scale": "鳞片", "shadow": "暗影",
+    "sand": "沙", "scute": "鳞甲", "shard": "碎片", "shell": "外壳", "shining": "闪耀", "shulker": "潜影贝", "silver": "银", "singular": "奇点", "slime": "史莱姆", "snowblossom": "雪花木",
+    "solar": "太阳", "soul": "灵魂", "spectrum": "光谱", "spellweave": "法术织物", "star": "星辰", "steel": "钢",
+    "stone": "石", "storm": "风暴", "string": "线", "subatomic": "亚原子", "superconductive": "超导",
+    "tendril": "触须", "thermonuclear": "热核", "titanium": "钛", "tungsten": "钨", "ultimate": "终极",
+    "vegetal": "植物质", "verdant": "翠绿", "void": "虚空", "warden": "监守者", "weave": "织物", "wither": "凋灵", "yellow": "黄色",
+    "witherite": "凋灵合金", "zinc": "锌",
+}
+ZH_OVERRIDES = {
+    "biomesoplenty:null_end_stone": "虚无末地石",
+    "minecraft:brick": "红砖",
+    "minecraft:nether_brick": "下界砖",
+    "minecraft:nether_star": "下界之星",
+    "mekmm:uu_matter": "UU物质",
+}
+
+
+def generated_translation_key(entry):
+    namespace, _ = entry["id"].split(":", 1)
+    return f"material.goldentweaks.compat.{namespace}.{entry['material']}"
+
+
+def fallback_zh(name):
+    words = name.lower().replace("-", "_").split("_")
+    translated = [ZH_TERMS.get(word, word.title()) for word in words]
+    return "".join(translated)
+
+
+def write_generated_lang(entries, resolver):
+    generated = {"en_us": {}, "zh_cn": {}}
+    for entry in entries:
+        key = generated_translation_key(entry)
+        generated["en_us"][key] = resolver.item_name(entry["id"], "en_us") or entry["name"]
+        generated["zh_cn"][key] = ZH_OVERRIDES.get(entry["id"]) or resolver.item_name(entry["id"], "zh_cn") or fallback_zh(entry["material"])
+    LANG_DIR.mkdir(parents=True, exist_ok=True)
+    for locale, values in generated.items():
+        path = LANG_DIR / f"{locale}.json"
+        current = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+        current = {key: value for key, value in current.items() if not key.startswith("material.goldentweaks.compat.")}
+        current.update(values)
+        path.write_text(json.dumps(dict(sorted(current.items())), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return generated
+
+
 def main_properties(bounds, tier, traits):
     tier_name, level, incorrect = harvest_tier(tier)
     armor = scale(bounds, "armor", tier)
@@ -689,7 +770,7 @@ def make_material(category, entry, bounds, profiles, resolver):
         "display": {
             "color": color_for(category, material, entry["id"], resolver),
             "main_texture_type": texture,
-            "name": {"text": entry["name"]},
+            "name": {"translate": generated_translation_key(entry)},
             "name_prefix": "",
         },
         "properties": {},
@@ -792,11 +873,13 @@ def main():
 
     assert len(expected) == len(chosen)
     assert all(json.loads(path.read_text(encoding="utf-8"))["type"] == "silentgear:simple" for path in expected)
+    generated_lang = write_generated_lang([entry for _, entry in chosen], resolver)
     resolver.close()
     print(f"Silent Gear JAR: {jar.name}")
     print(f"Built-in material names skipped: {len(builtins)}")
     print(f"Generated materials: {len(chosen)}")
     print(f"Texture-derived colors: {resolver.color_hits}; fallback colors: {resolver.color_fallbacks}")
+    print(f"Generated language keys: {len(generated_lang['zh_cn'])}")
     for tier, category, material, resource_id in sorted(tiers)[:3]:
         print(f"Weak: {tier:.3f} {category} {material} <- {resource_id}")
     for tier, category, material, resource_id in sorted(tiers)[-3:]:

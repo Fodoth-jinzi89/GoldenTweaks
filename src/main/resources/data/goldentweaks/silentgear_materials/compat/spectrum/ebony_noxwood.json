@@ -17,7 +17,7 @@
     "color": "#FF4A494F",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Ebony Noxwood Planks"
+      "translate": "material.goldentweaks.compat.spectrum.ebony_noxwood"
     },
     "name_prefix": ""
   },

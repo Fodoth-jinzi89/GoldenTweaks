@@ -17,7 +17,7 @@
     "color": "#FF847CA2",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Aloe Leaf"
+      "translate": "material.goldentweaks.compat.spectrum.aloe"
     },
     "name_prefix": ""
   },

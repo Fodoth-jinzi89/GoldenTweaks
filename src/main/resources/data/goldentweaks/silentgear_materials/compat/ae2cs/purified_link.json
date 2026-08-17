@@ -17,7 +17,7 @@
     "color": "#FFAECEC4",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Link Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_link"
     },
     "name_prefix": ""
   },

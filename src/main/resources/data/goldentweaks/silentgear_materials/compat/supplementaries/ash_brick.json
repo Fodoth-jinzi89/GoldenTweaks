@@ -17,7 +17,7 @@
     "color": "#FF665F5A",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Ash Brick"
+      "translate": "material.goldentweaks.compat.supplementaries.ash_brick"
     },
     "name_prefix": ""
   },

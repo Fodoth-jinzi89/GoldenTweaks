@@ -17,7 +17,7 @@
     "color": "#FF83797B",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Nether Brick"
+      "translate": "material.goldentweaks.compat.minecraft.nether_brick"
     },
     "name_prefix": ""
   },

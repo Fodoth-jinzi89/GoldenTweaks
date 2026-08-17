@@ -17,7 +17,7 @@
     "color": "#FF49CC33",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Origin Leaves"
+      "translate": "material.goldentweaks.compat.biomesoplenty.origin"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFA66534",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Solar Core"
+      "translate": "material.goldentweaks.compat.hazennstuff.solar_core"
     },
     "name_prefix": ""
   },

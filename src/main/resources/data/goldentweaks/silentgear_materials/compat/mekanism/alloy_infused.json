@@ -17,7 +17,7 @@
     "color": "#FFD6745E",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Alloy Infused"
+      "translate": "material.goldentweaks.compat.mekanism.alloy_infused"
     },
     "name_prefix": ""
   },

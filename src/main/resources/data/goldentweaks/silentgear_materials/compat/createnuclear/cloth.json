@@ -17,7 +17,7 @@
     "color": "#FF861E1D",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Red Cloth"
+      "translate": "material.goldentweaks.compat.createnuclear.cloth"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFDDDCD6",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Dolomite"
+      "translate": "material.goldentweaks.compat.dndecor.dolomite"
     },
     "name_prefix": ""
   },

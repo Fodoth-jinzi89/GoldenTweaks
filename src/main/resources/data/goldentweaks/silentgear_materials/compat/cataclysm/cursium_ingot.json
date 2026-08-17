@@ -17,7 +17,7 @@
     "color": "#FF38A78F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Cursium Ingot"
+      "translate": "material.goldentweaks.compat.cataclysm.cursium_ingot"
     },
     "name_prefix": ""
   },

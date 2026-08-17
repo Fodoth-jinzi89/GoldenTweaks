@@ -17,7 +17,7 @@
     "color": "#FF908E57",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Rainbow Birch Leaves"
+      "translate": "material.goldentweaks.compat.biomesoplenty.rainbow_birch"
     },
     "name_prefix": ""
   },

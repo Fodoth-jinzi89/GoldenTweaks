@@ -17,7 +17,7 @@
     "color": "#FF605268",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Tainted Grass"
+      "translate": "material.goldentweaks.compat.thaumcraft.grass"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF8A7032",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Cinnamon Wood"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.cinnamonwood"
     },
     "name_prefix": ""
   },

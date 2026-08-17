@@ -17,7 +17,7 @@
     "color": "#FF78A4B3",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Storm Stone"
+      "translate": "material.goldentweaks.compat.spectrum.storm_stone"
     },
     "name_prefix": ""
   },

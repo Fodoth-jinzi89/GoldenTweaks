@@ -17,7 +17,7 @@
     "color": "#FF607E1B",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Coconut Leaves"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.coconutleave_fruiting"
     },
     "name_prefix": ""
   },

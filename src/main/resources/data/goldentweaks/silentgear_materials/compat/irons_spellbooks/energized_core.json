@@ -17,7 +17,7 @@
     "color": "#FFAA8588",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Energized Core"
+      "translate": "material.goldentweaks.compat.irons_spellbooks.energized_core"
     },
     "name_prefix": ""
   },

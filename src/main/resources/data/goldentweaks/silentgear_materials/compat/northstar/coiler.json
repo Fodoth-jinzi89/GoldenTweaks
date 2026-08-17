@@ -17,7 +17,7 @@
     "color": "#FF3D7D62",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Coiler Log"
+      "translate": "material.goldentweaks.compat.northstar.coiler"
     },
     "name_prefix": ""
   },

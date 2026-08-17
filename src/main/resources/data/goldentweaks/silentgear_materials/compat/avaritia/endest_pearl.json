@@ -17,7 +17,7 @@
     "color": "#FF75AF92",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Endest Pearl"
+      "translate": "material.goldentweaks.compat.avaritia.endest_pearl"
     },
     "name_prefix": ""
   },

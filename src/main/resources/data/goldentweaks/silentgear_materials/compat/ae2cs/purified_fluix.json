@@ -17,7 +17,7 @@
     "color": "#FF573B76",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Fluix Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_fluix"
     },
     "name_prefix": ""
   },

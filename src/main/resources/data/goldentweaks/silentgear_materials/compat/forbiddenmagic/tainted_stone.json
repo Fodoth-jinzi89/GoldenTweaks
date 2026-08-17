@@ -17,7 +17,7 @@
     "color": "#FF482153",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Tainted Stone"
+      "translate": "material.goldentweaks.compat.forbiddenmagic.tainted_stone"
     },
     "name_prefix": ""
   },

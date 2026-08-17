@@ -17,7 +17,7 @@
     "color": "#FF3C3B55",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Umbran Log"
+      "translate": "material.goldentweaks.compat.biomesoplenty.umbran"
     },
     "name_prefix": ""
   },

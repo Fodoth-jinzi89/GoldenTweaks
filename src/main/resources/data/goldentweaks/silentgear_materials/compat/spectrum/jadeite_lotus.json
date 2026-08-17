@@ -17,7 +17,7 @@
     "color": "#FF6671AA",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Jadeite Lotus Stem"
+      "translate": "material.goldentweaks.compat.spectrum.jadeite_lotus"
     },
     "name_prefix": ""
   },

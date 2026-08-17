@@ -17,7 +17,7 @@
     "color": "#FFE2CB60",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Ingot Better Gold"
+      "translate": "material.goldentweaks.compat.evolvedmekanism.ingot_better_gold"
     },
     "name_prefix": ""
   },

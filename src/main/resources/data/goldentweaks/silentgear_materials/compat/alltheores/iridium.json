@@ -17,7 +17,7 @@
     "color": "#FFA09C99",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Iridium Ingot"
+      "translate": "material.goldentweaks.compat.alltheores.iridium"
     },
     "name_prefix": ""
   },

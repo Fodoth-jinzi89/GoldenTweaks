@@ -17,7 +17,7 @@
     "color": "#FF69C6B6",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Purified Data Crystal"
+      "translate": "material.goldentweaks.compat.ae2cs.purified_data"
     },
     "name_prefix": ""
   },

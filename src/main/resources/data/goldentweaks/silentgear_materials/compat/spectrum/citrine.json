@@ -17,7 +17,7 @@
     "color": "#FFA8821F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Citrine Shard"
+      "translate": "material.goldentweaks.compat.spectrum.citrine"
     },
     "name_prefix": ""
   },

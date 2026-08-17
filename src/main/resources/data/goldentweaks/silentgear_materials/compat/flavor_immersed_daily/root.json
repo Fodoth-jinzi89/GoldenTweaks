@@ -17,7 +17,7 @@
     "color": "#FFAF8770",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Lotus Root"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.root"
     },
     "name_prefix": ""
   },

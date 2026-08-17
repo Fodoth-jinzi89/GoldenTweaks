@@ -17,7 +17,7 @@
     "color": "#FFAA845A",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Canvas"
+      "translate": "material.goldentweaks.compat.farmersdelight.canvas"
     },
     "name_prefix": ""
   },

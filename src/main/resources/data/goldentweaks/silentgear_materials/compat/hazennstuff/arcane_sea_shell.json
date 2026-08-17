@@ -17,7 +17,7 @@
     "color": "#FF99A1CF",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Arcane Sea Shell"
+      "translate": "material.goldentweaks.compat.hazennstuff.arcane_sea_shell"
     },
     "name_prefix": ""
   },

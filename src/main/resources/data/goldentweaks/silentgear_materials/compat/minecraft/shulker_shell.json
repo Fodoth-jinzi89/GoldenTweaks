@@ -17,7 +17,7 @@
     "color": "#FF61BA5A",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Shulker Shell"
+      "translate": "material.goldentweaks.compat.minecraft.shulker_shell"
     },
     "name_prefix": ""
   },

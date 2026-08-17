@@ -17,7 +17,7 @@
     "color": "#FF8591D5",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Jadeite Petals"
+      "translate": "material.goldentweaks.compat.spectrum.jadeite_petals"
     },
     "name_prefix": ""
   },

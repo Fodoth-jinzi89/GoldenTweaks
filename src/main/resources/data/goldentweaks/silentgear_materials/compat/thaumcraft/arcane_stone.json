@@ -17,7 +17,7 @@
     "color": "#FF4F4F4F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Arcane Stone Block"
+      "translate": "material.goldentweaks.compat.thaumcraft.arcane_stone"
     },
     "name_prefix": ""
   },

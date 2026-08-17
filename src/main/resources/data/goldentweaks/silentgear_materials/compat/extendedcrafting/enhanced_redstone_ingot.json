@@ -17,7 +17,7 @@
     "color": "#FF8F3601",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Enhanced Redstone Ingot"
+      "translate": "material.goldentweaks.compat.extendedcrafting.enhanced_redstone_ingot"
     },
     "name_prefix": ""
   },

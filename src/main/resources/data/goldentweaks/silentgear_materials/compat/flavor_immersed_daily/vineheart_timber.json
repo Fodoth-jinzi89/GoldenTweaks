@@ -17,7 +17,7 @@
     "color": "#FF7E5328",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Vineheart Timber Log"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.vineheart_timber"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF9B877E",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Cosmic Gold Ingot"
+      "translate": "material.goldentweaks.compat.hazennstuff.cosmic_gold_ingot"
     },
     "name_prefix": ""
   },

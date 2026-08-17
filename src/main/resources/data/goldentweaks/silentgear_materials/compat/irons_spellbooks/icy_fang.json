@@ -17,7 +17,7 @@
     "color": "#FF99B9D6",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Icy Fang"
+      "translate": "material.goldentweaks.compat.irons_spellbooks.icy_fang"
     },
     "name_prefix": ""
   },

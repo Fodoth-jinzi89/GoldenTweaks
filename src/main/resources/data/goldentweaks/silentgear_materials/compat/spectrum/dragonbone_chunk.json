@@ -17,7 +17,7 @@
     "color": "#FFA0949C",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Dragonbone Chunk"
+      "translate": "material.goldentweaks.compat.spectrum.dragonbone_chunk"
     },
     "name_prefix": ""
   },

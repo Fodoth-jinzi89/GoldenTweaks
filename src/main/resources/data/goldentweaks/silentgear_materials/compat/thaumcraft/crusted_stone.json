@@ -17,7 +17,7 @@
     "color": "#FF685D44",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Crusted Stone"
+      "translate": "material.goldentweaks.compat.thaumcraft.crusted_stone"
     },
     "name_prefix": ""
   },

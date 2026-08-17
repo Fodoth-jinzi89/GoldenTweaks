@@ -17,7 +17,7 @@
     "color": "#FF90A959",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Mung Bean Seeds"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.mungbeanplant"
     },
     "name_prefix": ""
   },

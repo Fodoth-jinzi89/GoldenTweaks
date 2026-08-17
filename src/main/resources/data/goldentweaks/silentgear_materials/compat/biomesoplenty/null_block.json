@@ -17,7 +17,7 @@
     "color": "#FFF800F8",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Null Block"
+      "translate": "material.goldentweaks.compat.biomesoplenty.null_block"
     },
     "name_prefix": ""
   },

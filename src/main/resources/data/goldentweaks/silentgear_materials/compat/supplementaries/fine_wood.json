@@ -17,7 +17,7 @@
     "color": "#FF855434",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Fine Wood Slab"
+      "translate": "material.goldentweaks.compat.supplementaries.fine_wood"
     },
     "name_prefix": ""
   },

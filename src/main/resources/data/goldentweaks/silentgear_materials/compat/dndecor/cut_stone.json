@@ -17,7 +17,7 @@
     "color": "#FF818180",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Polished Cut Stone"
+      "translate": "material.goldentweaks.compat.dndecor.cut_stone"
     },
     "name_prefix": ""
   },

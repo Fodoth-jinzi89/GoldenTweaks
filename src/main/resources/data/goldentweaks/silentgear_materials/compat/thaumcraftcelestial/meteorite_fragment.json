@@ -17,7 +17,7 @@
     "color": "#FF6D72B4",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Meteorite Fragment"
+      "translate": "material.goldentweaks.compat.thaumcraftcelestial.meteorite_fragment"
     },
     "name_prefix": ""
   },

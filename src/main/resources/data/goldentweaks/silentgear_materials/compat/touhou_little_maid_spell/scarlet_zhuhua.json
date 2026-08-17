@@ -17,7 +17,7 @@
     "color": "#FFBE1A38",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Scarlet Zhuhua"
+      "translate": "material.goldentweaks.compat.touhou_little_maid_spell.scarlet_zhuhua"
     },
     "name_prefix": ""
   },

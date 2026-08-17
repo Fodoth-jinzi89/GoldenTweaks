@@ -17,7 +17,7 @@
     "color": "#FF3085BD",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Stardust"
+      "translate": "material.goldentweaks.compat.hazennstuff.stardust"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF262528",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Black Sand"
+      "translate": "material.goldentweaks.compat.biomesoplenty.black_sand"
     },
     "name_prefix": ""
   },

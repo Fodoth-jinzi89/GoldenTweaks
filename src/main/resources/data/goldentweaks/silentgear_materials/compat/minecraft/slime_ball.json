@@ -17,7 +17,7 @@
     "color": "#FF75B13C",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Slime Ball"
+      "translate": "material.goldentweaks.compat.minecraft.slime_ball"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF82A9CD",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Lacrima"
+      "translate": "material.goldentweaks.compat.cataclysm.lacrima"
     },
     "name_prefix": ""
   },

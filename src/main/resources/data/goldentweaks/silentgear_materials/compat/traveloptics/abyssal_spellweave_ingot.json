@@ -17,7 +17,7 @@
     "color": "#FF6A39B2",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Abyssal Spellweave Ingot"
+      "translate": "material.goldentweaks.compat.traveloptics.abyssal_spellweave_ingot"
     },
     "name_prefix": ""
   },

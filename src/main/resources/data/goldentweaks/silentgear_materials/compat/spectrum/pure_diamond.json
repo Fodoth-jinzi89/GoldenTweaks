@@ -17,7 +17,7 @@
     "color": "#FF43B3A6",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Pure Diamond"
+      "translate": "material.goldentweaks.compat.spectrum.pure_diamond"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF0D091D",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Shadow Imbued Cloth"
+      "translate": "material.goldentweaks.compat.taintedmagic.shadow_imbued_cloth"
     },
     "name_prefix": ""
   },

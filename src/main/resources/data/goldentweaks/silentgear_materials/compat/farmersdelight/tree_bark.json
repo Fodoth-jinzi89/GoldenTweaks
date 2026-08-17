@@ -17,7 +17,7 @@
     "color": "#FF634B2B",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Tree Bark"
+      "translate": "material.goldentweaks.compat.farmersdelight.tree_bark"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFAE725F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Gabbro"
+      "translate": "material.goldentweaks.compat.dndecor.gabbro"
     },
     "name_prefix": ""
   },

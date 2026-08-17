@@ -17,7 +17,7 @@
     "color": "#FF453731",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Deep Mars Stone"
+      "translate": "material.goldentweaks.compat.northstar.mars_deep_stone"
     },
     "name_prefix": ""
   },

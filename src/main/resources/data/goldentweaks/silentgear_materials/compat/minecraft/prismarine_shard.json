@@ -17,7 +17,7 @@
     "color": "#FF716876",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Prismarine Shard"
+      "translate": "material.goldentweaks.compat.minecraft.prismarine_shard"
     },
     "name_prefix": ""
   },

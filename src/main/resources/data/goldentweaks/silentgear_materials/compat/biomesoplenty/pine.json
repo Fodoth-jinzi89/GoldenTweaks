@@ -17,7 +17,7 @@
     "color": "#FF6F603C",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Pine Log"
+      "translate": "material.goldentweaks.compat.biomesoplenty.pine"
     },
     "name_prefix": ""
   },

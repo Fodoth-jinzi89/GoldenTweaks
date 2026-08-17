@@ -17,7 +17,7 @@
     "color": "#FF394454",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Spirit Sallow Log"
+      "translate": "material.goldentweaks.compat.spectrum.spirit_sallow"
     },
     "name_prefix": ""
   },

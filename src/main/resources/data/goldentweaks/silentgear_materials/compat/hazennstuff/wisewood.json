@@ -17,7 +17,7 @@
     "color": "#FF4B3E3A",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Wisewood Log"
+      "translate": "material.goldentweaks.compat.hazennstuff.wisewood"
     },
     "name_prefix": ""
   },

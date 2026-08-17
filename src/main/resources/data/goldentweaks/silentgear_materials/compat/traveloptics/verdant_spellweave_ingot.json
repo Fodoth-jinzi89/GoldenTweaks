@@ -17,7 +17,7 @@
     "color": "#FF479B64",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Verdant Spellweave Ingot"
+      "translate": "material.goldentweaks.compat.traveloptics.verdant_spellweave_ingot"
     },
     "name_prefix": ""
   },

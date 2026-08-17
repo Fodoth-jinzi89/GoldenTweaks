@@ -17,7 +17,7 @@
     "color": "#FF7D3CE5",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Void Crystal"
+      "translate": "material.goldentweaks.compat.cataclysm.void"
     },
     "name_prefix": ""
   },

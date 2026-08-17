@@ -17,7 +17,7 @@
     "color": "#FF418541",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Washed reed leaves"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.tidyreed"
     },
     "name_prefix": ""
   },

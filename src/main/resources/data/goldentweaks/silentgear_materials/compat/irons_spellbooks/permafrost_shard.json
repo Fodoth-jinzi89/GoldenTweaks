@@ -17,7 +17,7 @@
     "color": "#FF60AEF8",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Permafrost Shard"
+      "translate": "material.goldentweaks.compat.irons_spellbooks.permafrost_shard"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FF97A796",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Wheat Milk"
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.wheat"
     },
     "name_prefix": ""
   },

@@ -17,7 +17,7 @@
     "color": "#FFCD9B62",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Orange Sand"
+      "translate": "material.goldentweaks.compat.biomesoplenty.orange_sand"
     },
     "name_prefix": ""
   },

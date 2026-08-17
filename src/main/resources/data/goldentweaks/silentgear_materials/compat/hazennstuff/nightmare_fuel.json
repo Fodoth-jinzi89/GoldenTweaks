@@ -17,7 +17,7 @@
     "color": "#FF0D031C",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Nightmare Fuel"
+      "translate": "material.goldentweaks.compat.hazennstuff.nightmare_fuel"
     },
     "name_prefix": ""
   },

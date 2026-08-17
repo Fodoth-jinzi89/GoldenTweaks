@@ -17,7 +17,7 @@
     "color": "#FF750920",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Nether Shard"
+      "translate": "material.goldentweaks.compat.thaumic_tinkerer.shard"
     },
     "name_prefix": ""
   },

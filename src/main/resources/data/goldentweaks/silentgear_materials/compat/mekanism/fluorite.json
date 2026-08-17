@@ -17,7 +17,7 @@
     "color": "#FFC5D6DB",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Fluorite"
+      "translate": "material.goldentweaks.compat.mekanism.fluorite"
     },
     "name_prefix": ""
   },

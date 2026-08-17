@@ -17,7 +17,7 @@
     "color": "#FFA98495",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Alloy Spectrum"
+      "translate": "material.goldentweaks.compat.mekanism_extras.alloy_spectrum"
     },
     "name_prefix": ""
   },

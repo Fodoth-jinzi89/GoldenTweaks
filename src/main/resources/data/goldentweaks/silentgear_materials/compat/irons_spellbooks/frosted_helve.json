@@ -17,7 +17,7 @@
     "color": "#FF9BB0B7",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Frosted Helve"
+      "translate": "material.goldentweaks.compat.irons_spellbooks.frosted_helve"
     },
     "name_prefix": ""
   },
