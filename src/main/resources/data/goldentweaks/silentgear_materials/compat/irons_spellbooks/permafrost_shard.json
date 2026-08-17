@@ -4,93 +4,89 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "gem",
       "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "northstar:titanium_ingot"
+      "item": "irons_spellbooks:permafrost_shard"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF5B5B5B",
+    "color": "#FF60AEF8",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "text": "Titanium Ingot"
+      "text": "Permafrost Shard"
     },
     "name_prefix": ""
   },
   "properties": {
     "silentgear:main": {
-      "armor": 35.382,
-      "armor/boots": 5.307,
-      "armor/chestplate": 14.154,
-      "armor/helmet": 5.307,
-      "armor/leggings": 10.614,
-      "armor_durability": 56.31,
-      "armor_toughness": 11.937,
-      "attack_damage": 8.979,
-      "charging_value": 3.069,
-      "durability": 1651.647,
-      "enchantment_value": 27.333,
-      "harvest_speed": 22.491,
+      "armor": 11.11,
+      "armor/boots": 1.666,
+      "armor/chestplate": 4.444,
+      "armor/helmet": 1.666,
+      "armor/leggings": 3.333,
+      "armor_durability": 17.239,
+      "armor_toughness": 3.672,
+      "attack_damage": 2.785,
+      "charging_value": 1.006,
+      "durability": 496.843,
+      "enchantment_value": 8.376,
+      "harvest_speed": 6.931,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
         "level_hint": "2",
         "name": "iron"
       },
-      "magic_armor": 17.406,
-      "magic_damage": 9.513,
-      "projectile_accuracy": 3.477,
-      "projectile_speed": 4.227,
-      "ranged_damage": 2.733,
-      "rarity": 50.751,
+      "magic_armor": 5.404,
+      "magic_damage": 2.945,
+      "projectile_accuracy": 1.147,
+      "projectile_speed": 1.389,
+      "ranged_damage": 0.838,
+      "rarity": 15.275,
       "traits": [
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:chilled"
         },
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
         }
       ]
     },
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 3.144
+        "value": 0.975
       },
       "durability": {
         "operation": "ADD",
-        "value": 330.33
+        "value": 99.369
       },
       "harvest_speed": {
         "operation": "ADD",
-        "value": 4.497
+        "value": 1.386
       },
       "traits": [
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:chilled"
         },
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:rod": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:brittle"
         }
       ]
     }

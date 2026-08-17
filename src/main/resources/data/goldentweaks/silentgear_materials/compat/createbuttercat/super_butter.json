@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "organic",
+      "coating",
       "basic"
     ],
     "gear_type_blacklist": [],
@@ -22,67 +22,34 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.038
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.06
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.06
-      },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.033
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:lining": {
+    "silentgear:coating": {
       "armor_durability": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.036
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.048
       },
-      "magic_armor": {
+      "armor_toughness": {
         "operation": "ADD",
-        "value": 0.057
+        "value": 0.654
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.06
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.089
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.035
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.06
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.06
       },
       "traits": [
         {

@@ -63,32 +63,6 @@
       "attack_speed/hoe": 0.0,
       "draw_speed": 0.11
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 0.946
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 95.231
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.342
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
     "silentgear:rod": {
       "traits": [
         {

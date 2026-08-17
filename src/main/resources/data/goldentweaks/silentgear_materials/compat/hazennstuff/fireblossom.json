@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "organic",
+      "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,67 +15,17 @@
   },
   "display": {
     "color": "#FFC17F57",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "text": "Fireblossom"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 11.426,
-      "armor/boots": 1.714,
-      "armor/chestplate": 4.57,
-      "armor/helmet": 1.714,
-      "armor/leggings": 3.428,
-      "armor_durability": 17.943,
-      "armor_toughness": 3.814,
-      "attack_damage": 2.88,
-      "charging_value": 1.014,
-      "durability": 521.407,
-      "enchantment_value": 8.714,
-      "harvest_speed": 7.192,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
-      },
-      "magic_armor": 5.587,
-      "magic_damage": 3.049,
-      "projectile_accuracy": 1.153,
-      "projectile_speed": 1.398,
-      "ranged_damage": 0.871,
-      "rarity": 16.026,
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:fiery"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.008
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 104.281
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.438
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.043
       },
       "traits": [
         {
@@ -85,17 +35,70 @@
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.063
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.063
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.035
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.039
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.059
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
         }
       ]
     }

@@ -25,7 +25,7 @@
     "silentgear:binding": {
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.082
+        "value": 0.82
       },
       "traits": [
         {
@@ -48,7 +48,7 @@
     "silentgear:cord": {
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.092
+        "value": 0.92
       },
       "traits": [
         {
@@ -61,11 +61,11 @@
     "silentgear:fletching": {
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.092
+        "value": 0.92
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.058
+        "value": 0.58
       },
       "traits": [
         {
@@ -83,11 +83,11 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.07
+        "value": 0.7
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.086
+        "value": 0.86
       },
       "traits": [
         {

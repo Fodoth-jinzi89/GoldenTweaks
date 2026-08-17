@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "organic",
+      "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,82 +15,85 @@
   },
   "display": {
     "color": "#FF707B6B",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "text": "Mars Sprout"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 12.001,
-      "armor/boots": 1.8,
-      "armor/chestplate": 4.8,
-      "armor/helmet": 1.8,
-      "armor/leggings": 3.6,
-      "armor_durability": 19.24,
-      "armor_toughness": 4.073,
-      "attack_damage": 3.056,
-      "charging_value": 1.028,
-      "durability": 567.227,
-      "enchantment_value": 9.337,
-      "harvest_speed": 7.671,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.049
       },
-      "magic_armor": 5.923,
-      "magic_damage": 3.239,
-      "projectile_accuracy": 1.163,
-      "projectile_speed": 1.415,
-      "ranged_damage": 0.934,
-      "rarity": 17.427,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.07
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 113.445
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.534
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.068
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.068
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.039
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.044
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.063
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     }

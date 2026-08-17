@@ -23,29 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 20.015,
-      "armor/boots": 3.002,
-      "armor/chestplate": 8.006,
-      "armor/helmet": 3.002,
-      "armor/leggings": 6.005,
-      "armor_durability": 46.283,
-      "armor_toughness": 9.141,
-      "attack_damage": 6.083,
-      "charging_value": 0.888,
-      "durability": 1761.11,
-      "enchantment_value": 22.183,
-      "harvest_speed": 16.787,
+      "armor": 14.296,
+      "armor/boots": 2.144,
+      "armor/chestplate": 5.718,
+      "armor/helmet": 2.144,
+      "armor/leggings": 4.289,
+      "armor_durability": 33.059,
+      "armor_toughness": 6.529,
+      "attack_damage": 4.345,
+      "charging_value": 0.634,
+      "durability": 1257.936,
+      "enchantment_value": 15.845,
+      "harvest_speed": 11.991,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
         "level_hint": "3",
         "name": "diamond"
       },
-      "magic_armor": 11.637,
-      "magic_damage": 6.607,
-      "projectile_accuracy": 0.934,
-      "projectile_speed": 1.2,
-      "ranged_damage": 2.218,
-      "rarity": 53.726,
+      "magic_armor": 8.312,
+      "magic_damage": 4.719,
+      "projectile_accuracy": 0.667,
+      "projectile_speed": 0.857,
+      "ranged_damage": 1.585,
+      "rarity": 38.376,
       "traits": [
         {
           "conditions": [],
@@ -61,32 +61,6 @@
           "conditions": [],
           "level": 4,
           "trait": "silentgear:heavy"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 2.129
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 352.222
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 3.357
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:void_ward"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:hard"
         }
       ]
     }

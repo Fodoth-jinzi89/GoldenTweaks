@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "stone",
+      "gem",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -50,12 +50,12 @@
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:heavy"
+          "trait": "silentgear:lustrous"
         }
       ]
     },
@@ -76,12 +76,12 @@
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:heavy"
+          "trait": "silentgear:lustrous"
         }
       ]
     }

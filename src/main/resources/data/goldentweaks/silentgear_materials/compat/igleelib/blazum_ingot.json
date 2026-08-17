@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "coating",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -22,55 +22,34 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 22.312,
-      "armor/boots": 3.346,
-      "armor/chestplate": 8.924,
-      "armor/helmet": 3.346,
-      "armor/leggings": 6.694,
-      "armor_durability": 34.684,
-      "armor_toughness": 7.386,
-      "attack_damage": 5.598,
-      "charging_value": 2.014,
-      "durability": 1000.806,
-      "enchantment_value": 16.85,
-      "harvest_speed": 13.938,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:coating": {
+      "armor_durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.378
       },
-      "magic_armor": 10.86,
-      "magic_damage": 5.92,
-      "projectile_accuracy": 2.296,
-      "projectile_speed": 2.78,
-      "ranged_damage": 1.684,
-      "rarity": 30.768,
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
+      "armor_toughness": {
         "operation": "ADD",
-        "value": 1.96
+        "value": 6.84
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.472
       },
       "durability": {
-        "operation": "ADD",
-        "value": 200.162
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.5
       },
       "harvest_speed": {
-        "operation": "ADD",
-        "value": 2.788
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.24
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.472
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.472
       },
       "traits": [
         {
@@ -82,15 +61,6 @@
           "conditions": [],
           "level": 3,
           "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:rod": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
         }
       ]
     }

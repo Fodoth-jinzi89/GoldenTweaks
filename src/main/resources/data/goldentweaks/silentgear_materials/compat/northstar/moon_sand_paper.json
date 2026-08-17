@@ -63,32 +63,6 @@
           "trait": "silentgear:heavy"
         }
       ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 0.349
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 23.027
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 0.453
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:moonwalker"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:hard"
-        }
-      ]
     }
   }
 }

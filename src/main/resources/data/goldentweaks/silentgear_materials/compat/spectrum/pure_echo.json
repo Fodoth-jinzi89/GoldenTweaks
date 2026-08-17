@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "gem",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -23,74 +23,65 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 32.463,
-      "armor/boots": 4.869,
-      "armor/chestplate": 12.984,
-      "armor/helmet": 4.869,
-      "armor/leggings": 9.738,
-      "armor_durability": 49.821,
-      "armor_toughness": 10.635,
-      "attack_damage": 8.094,
-      "charging_value": 2.997,
-      "durability": 1424.778,
-      "enchantment_value": 24.213,
-      "harvest_speed": 20.088,
+      "armor": 28.983,
+      "armor/boots": 4.347,
+      "armor/chestplate": 11.592,
+      "armor/helmet": 4.347,
+      "armor/leggings": 8.694,
+      "armor_durability": 42.402,
+      "armor_toughness": 9.135,
+      "attack_damage": 7.062,
+      "charging_value": 2.904,
+      "durability": 1172.907,
+      "enchantment_value": 20.643,
+      "harvest_speed": 17.31,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
         "level_hint": "2",
         "name": "iron"
       },
-      "magic_armor": 15.711,
-      "magic_damage": 8.553,
-      "projectile_accuracy": 3.426,
-      "projectile_speed": 4.14,
-      "ranged_damage": 2.421,
-      "rarity": 43.812,
+      "magic_armor": 13.731,
+      "magic_damage": 7.44,
+      "projectile_accuracy": 3.36,
+      "projectile_speed": 4.023,
+      "ranged_damage": 2.064,
+      "rarity": 36.099,
       "traits": [
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:lustrous"
         }
       ]
     },
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 2.832
+        "value": 2.472
       },
       "durability": {
         "operation": "ADD",
-        "value": 284.955
+        "value": 234.582
       },
       "harvest_speed": {
         "operation": "ADD",
-        "value": 4.017
+        "value": 3.462
       },
       "traits": [
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:rod": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:lustrous"
         }
       ]
     }

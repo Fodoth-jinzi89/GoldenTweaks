@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:ivory_noxwood_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFCAC8C6",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Ivory Noxwood Planks"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.09,
+      "armor/boots": 0.463,
+      "armor/chestplate": 1.236,
+      "armor/helmet": 0.463,
+      "armor/leggings": 0.927,
+      "armor_durability": 2.795,
+      "armor_toughness": 0.659,
+      "attack_damage": 0.597,
+      "charging_value": 0.651,
+      "durability": 55.294,
+      "enchantment_value": 1.383,
+      "harvest_speed": 1.292,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.181,
+      "magic_damage": 0.609,
+      "projectile_accuracy": 0.893,
+      "projectile_speed": 0.949,
+      "ranged_damage": 0.138,
+      "rarity": 1.718,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

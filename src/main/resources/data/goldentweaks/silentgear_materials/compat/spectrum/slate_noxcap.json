@@ -23,29 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 3.712,
-      "armor/boots": 0.557,
-      "armor/chestplate": 1.485,
-      "armor/helmet": 0.557,
-      "armor/leggings": 1.114,
-      "armor_durability": 3.627,
-      "armor_toughness": 0.843,
-      "attack_damage": 0.744,
-      "charging_value": 0.702,
-      "durability": 75.732,
-      "enchantment_value": 1.79,
-      "harvest_speed": 1.643,
+      "armor": 3.519,
+      "armor/boots": 0.528,
+      "armor/chestplate": 1.408,
+      "armor/helmet": 0.528,
+      "armor/leggings": 1.056,
+      "armor_durability": 3.361,
+      "armor_toughness": 0.785,
+      "attack_damage": 0.698,
+      "charging_value": 0.687,
+      "durability": 69.094,
+      "enchantment_value": 1.66,
+      "harvest_speed": 1.532,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
         "level_hint": "1",
         "name": "stone"
       },
-      "magic_armor": 1.468,
-      "magic_damage": 0.763,
-      "projectile_accuracy": 0.93,
-      "projectile_speed": 1.012,
-      "ranged_damage": 0.179,
-      "rarity": 2.349,
+      "magic_armor": 1.378,
+      "magic_damage": 0.715,
+      "projectile_accuracy": 0.919,
+      "projectile_speed": 0.993,
+      "ranged_damage": 0.166,
+      "rarity": 2.144,
       "traits": [
         {
           "conditions": [],
@@ -61,32 +61,6 @@
           "conditions": [],
           "level": 2,
           "trait": "silentgear:flammable"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 0.26
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 15.146
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 0.329
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
         }
       ]
     },

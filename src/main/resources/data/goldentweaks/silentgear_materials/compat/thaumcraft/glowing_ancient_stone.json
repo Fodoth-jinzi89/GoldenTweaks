@@ -63,32 +63,6 @@
           "trait": "silentgear:heavy"
         }
       ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.12
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 90.226
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.516
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:brilliant"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
     }
   }
 }

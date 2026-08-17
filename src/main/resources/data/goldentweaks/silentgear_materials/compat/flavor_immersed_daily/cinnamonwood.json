@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "flavor_immersed_daily:cinnamonwood"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF8A7032",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Cinnamon Wood"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.407,
+      "armor/boots": 0.511,
+      "armor/chestplate": 1.363,
+      "armor/helmet": 0.511,
+      "armor/leggings": 1.022,
+      "armor_durability": 3.211,
+      "armor_toughness": 0.752,
+      "attack_damage": 0.671,
+      "charging_value": 0.678,
+      "durability": 65.393,
+      "enchantment_value": 1.587,
+      "harvest_speed": 1.468,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.326,
+      "magic_damage": 0.687,
+      "projectile_accuracy": 0.913,
+      "projectile_speed": 0.982,
+      "ranged_damage": 0.159,
+      "rarity": 2.03,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

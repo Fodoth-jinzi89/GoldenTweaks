@@ -4,20 +4,20 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
+      "organic",
       "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "create:rope"
+      "item": "hazennstuff:permafrost_leaves"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FFD1E2A4",
+    "color": "#FF5C9BCE",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "text": "Rope"
+      "text": "Frostbite Birch Leaves"
     },
     "name_prefix": ""
   },
@@ -25,13 +25,18 @@
     "silentgear:binding": {
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.077
+        "value": 0.168
       },
       "traits": [
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:flexible"
+          "trait": "silentgear:chilled"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
@@ -43,7 +48,7 @@
     "silentgear:cord": {
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.088
+        "value": 0.219
       },
       "traits": [
         {
@@ -56,44 +61,44 @@
     "silentgear:fletching": {
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.088
+        "value": 0.219
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.055
+        "value": 0.129
       },
       "traits": [
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:flexible"
+          "trait": "silentgear:chilled"
         },
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:soft"
+          "trait": "silentgear:organic"
         }
       ]
     },
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.066
+        "value": 0.147
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.082
+        "value": 0.201
       },
       "traits": [
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:flexible"
+          "trait": "silentgear:chilled"
         },
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:soft"
+          "trait": "silentgear:organic"
         }
       ]
     }

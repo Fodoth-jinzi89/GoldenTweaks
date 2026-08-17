@@ -76,6 +76,7 @@ ATTRIBUTE_MULTIPLIERS = {
     "air": 0.75,
     "balanced": 1.25,
     "blaze": 1.25,
+    "blaze_cube": 10.0,
     "constantan": 1.25,
     "creation": 0.85,
     "aluminum_alloy_ingot": 3.0,
@@ -87,16 +88,18 @@ ATTRIBUTE_MULTIPLIERS = {
     "compressed_solidified_flux_experience": 2.0,
     "cryotheum": 1.5,
     "crystal_ingot": 4.0,
+    "crystal_matrix_ingot": 10.0,
     "crystaltine_ingot": 4.0,
     "cursium_ingot": 6.0,
     "demonite_ingot": 2.0,
     "derium_ingot": 2.0,
     "deus_essence": 0.5,
-    "downstone_fragments": 4.0,
+    "downstone_fragments": 1.5,
     "dreadsteel_ingot": 2.0,
     "echo_shard": 3.0,
     "ender_ingot": 0.35,
     "ender_pearl": 0.35,
+    "endest_pearl": 5.0,
     "energized_fluix": 1.25,
     "energized_superconductive_ingot": 2.0,
     "entro": 1.25,
@@ -108,9 +111,12 @@ ATTRIBUTE_MULTIPLIERS = {
     "ingot_better_gold": 4.0,
     "ingot_naquadah": 2.0,
     "ingot_plaslitherite": 8.0,
-    "ingot_refined_redstone": 3.0,
+    "ichor": 10.0,
+    "ichorcloth": 10.0,
+    "ichorium_ingot": 10.0,
+    "ingot_refined_redstone": 0.5,
     "lavium_ingot": 2.0,
-    "meteorite_fragment": 0.5,
+    "meteorite_fragment": 1.0,
     "midnight_chip": 2.0,
     "modium_ingot": 2.0,
     "moonstone": 2.0,
@@ -149,7 +155,7 @@ ATTRIBUTE_MULTIPLIERS = {
     "purified_resonating": 3.0,
     "shard": 1.5,
     "shimmerstone": 1.5,
-    "red_shaft": 0.5,
+    "red_shaft": 1.0,
     "red_string": 0.5,
     "shadow_metal_ingot": 0.75,
     "spectral": 2.0,
@@ -158,15 +164,24 @@ ATTRIBUTE_MULTIPLIERS = {
     "taint": 0.5,
     "tainted_unbalanced": 0.5,
     "the_ultimate_ingot": 2.5,
-    "titanium_ingot": 3.0,
-    "tungsten": 2.0,
+    "solar_core": 0.7,
+    "star_fuel": 10.0,
+    "substrate": 0.25,
+    "tungsten": 0.7,
     "uu_matter": 5.0,
+    "empty_crystal": 0.7,
+    "scrap_box": 1.5,
     "vegetal": 0.8,
     "void": 0.7,
-    "void_stone": 0.7,
-    "warden_tendril": 3.0,
+    "void_stone": 0.5,
     "warped_unbalanced": 0.35,
+    "cosmic_gold_ingot": 6.0,
+    "witherite_ingot": 10.0,
     "zenalite_ingot": 4.5,
+    "canvas": 0.25,
+    "bedrock_dust": 1.5,
+    "bismuth_crystal": 2.0,
+    "lacrima": 2.0,
 }
 PROFILE_OVERRIDES = {
     "cast_iron": ("iron", 1.1),
@@ -174,17 +189,7 @@ PROFILE_OVERRIDES = {
     "fluix": ("iron", 1.1),
     "weeping_gala": ("crimson_steel", 1.0),
 }
-MATERIAL_ALIASES = {
-    "chestnut_noxcap": "chestnut_nox",
-    "chestnut_noxwood": "chestnut_nox",
-    "cinnamonwood": "cinnamon",
-    "ebony_noxcap": "ebony_nox",
-    "ebony_noxwood": "ebony_nox",
-    "ivory_noxcap": "ivory_nox",
-    "ivory_noxwood": "ivory_nox",
-    "slate_noxcap": "slate_nox",
-    "slate_noxwood": "slate_nox",
-}
+MATERIAL_ALIASES = {}
 ANNOTATION_EXCLUDES = {
     "air_infused_stone", "amber_bearing_stone", "attuned", "boil_stone", "butter_flour_sand",
     "casting_sand", "celestial", "clay", "crumbling_attuned", "dead_king_phylactery", "dormant",
@@ -194,10 +199,11 @@ ANNOTATION_EXCLUDES = {
     "shriving_stone", "sky", "stone_lion", "stone_shimmerstone_light", "stone_shingles",
     "stuck_storm_stone", "suppression_stone", "suspicious_sand", "tuff", "unprocessed_echo",
     "venus_stone_bull_spawn_egg", "warded_stone", "warp_stone", "zenalite_stone",
-    "bean", "carrot", "chip_wood", "lapis", "polished_amethyst",
+    "bean", "carrot", "chip_wood", "coral", "honey", "lapis", "malachite", "polished_amethyst",
+    "rope", "sag", "titanium_ingot",
 }
 EXTRA_CATEGORY_OVERRIDES = {
-    "aether_vestiges": "岩石",
+    "aether_vestiges": "宝石",
     "alternative_chromatic_compound": "岩石",
     "bedrock_dust": "岩石",
     "bismuth_crystal": "宝石",
@@ -211,7 +217,45 @@ EXTRA_CATEGORY_OVERRIDES = {
     "midnight_chip": "宝石",
     "nether_star": "宝石",
     "uu_matter": "宝石",
+    "compressed_solidified_flux_experience": "宝石",
+    "lacrima": "宝石",
+    "null_block": "岩石",
+    "null_end_stone": "岩石",
+    "null_leaves": "有机物",
+    "pellet_antimatter": "宝石",
+    "solar_core": "宝石",
+    "sodium_catalyst": "宝石",
+    "warden_tendril": "有机物",
+    "bramble": "有机物",
+    "cattail": "有机物",
+    "fireblossom": "有机物",
+    "mars_palm": "有机物",
+    "mars_sprout": "有机物",
+    "mars_tulip": "有机物",
+    "resonance": "有机物",
+    "vegetal": "有机物",
+    "jingxu_youlan": "有机物",
+    "scarlet_zhuhua": "有机物",
+    "yue_linglan": "有机物",
 }
+COATING_MATERIALS = {
+    "honey_butter", "super_butter", "blazum_ingot", "derium_ingot", "lavium_ingot",
+    "modium_ingot", "pure_netherite_scrap", "ichor",
+}
+ROD_MATERIALS = {"red_shaft", "wither_rib", "hdpe_stick"}
+CORD_MATERIALS = {"red_string"}
+GEM_OVERRIDES = {
+    "blaze_cube", "star_fuel", "paltaeria", "pure_azurite", "pure_bloodstone", "pure_certus_quartz", "pure_coal",
+    "pure_diamond", "pure_echo", "pure_emerald", "pure_fluix", "pure_glowstone", "pure_lapis",
+    "pure_malachite", "pure_prismarine", "pure_quartz", "pure_redstone", "shimmerstone",
+    "stratine", "air", "earth", "entropy", "fire", "order", "water", "meteorite_fragment",
+    "smoky_quartz", "crystalline",
+}
+MEKANISM_ALLOY_ORDER = [
+    "alloy_infused", "alloy_reinforced", "alloy_atomic", "alloy_hypercharged", "alloy_radiance",
+    "alloy_subatomic", "alloy_thermonuclear", "alloy_singular", "alloy_shining", "alloy_exoversal",
+    "alloy_spectrum",
+]
 FOOD_WORDS = {"apple", "banana", "barley", "bean", "beef", "berry", "cabbage", "carrot", "chicken", "corn", "egg", "fish", "fruit", "melon", "mutton", "onion", "pork", "potato", "pumpkin", "rice", "tomato", "wheat"}
 EXTRA_FIBER_WORDS = {"cloth", "cobweb", "hair", "hide", "reed", "straw", "tendons", "vellum", "vine", "weave", "webbing"}
 EXTRA_ORGANIC_WORDS = {"bark", "bone", "bones", "butter", "coral", "fang", "feather", "flower", "mushroom", "petals", "scute", "shell", "skin", "slime", "spine"}
@@ -365,7 +409,9 @@ def extra_entries():
     for resource_id in resource_ids:
         path = resource_id.split(":", 1)[1]
         word_set = tokens(path)
-        if path in EXTRA_CATEGORY_OVERRIDES:
+        if path in GEM_OVERRIDES:
+            category = "宝石"
+        elif path in EXTRA_CATEGORY_OVERRIDES:
             category = EXTRA_CATEGORY_OVERRIDES[path]
         elif word_set & EXTRA_FIBER_WORDS or any(word in path for word in EXTRA_FIBER_WORDS):
             category = "纤维"
@@ -558,9 +604,7 @@ def multiply_numbers(value, factor):
 
 def apply_annotation_overrides(data, material, profiles):
     main = data["properties"].get("silentgear:main")
-    if not main:
-        return
-    if material in PROFILE_OVERRIDES:
+    if main and material in PROFILE_OVERRIDES:
         profile_name, factor = PROFILE_OVERRIDES[material]
         profile = profiles[profile_name]
         for key, value in profile.items():
@@ -574,6 +618,55 @@ def apply_annotation_overrides(data, material, profiles):
             for key, value in list(properties.items()):
                 if key not in {"traits", "harvest_tier"}:
                     properties[key] = multiply_numbers(value, factor)
+
+
+def coating_properties(tier, traits):
+    return {
+        "armor_durability": {"operation": "MULTIPLY_TOTAL", "value": round(0.04 + tier * 0.28, 3)},
+        "armor_toughness": {"operation": "ADD", "value": round(0.5 + tier * 5.5, 3)},
+        "attack_damage": {"operation": "MULTIPLY_TOTAL", "value": round(0.05 + tier * 0.35, 3)},
+        "durability": {"operation": "MULTIPLY_TOTAL", "value": round(0.08 + tier * 0.32, 3)},
+        "harvest_speed": {"operation": "MULTIPLY_TOTAL", "value": round(0.03 + tier * 0.17, 3)},
+        "magic_damage": {"operation": "MULTIPLY_TOTAL", "value": round(0.05 + tier * 0.35, 3)},
+        "ranged_damage": {"operation": "MULTIPLY_TOTAL", "value": round(0.05 + tier * 0.35, 3)},
+        "traits": traits,
+    }
+
+
+def apply_part_override(data, material, tier, traits):
+    if material in COATING_MATERIALS:
+        data["crafting"]["categories"] = ["coating", data["crafting"]["categories"][-1]]
+        data["properties"] = {"silentgear:coating": coating_properties(tier, traits)}
+    elif material in ROD_MATERIALS:
+        data["crafting"]["categories"] = ["rod", data["crafting"]["categories"][-1]]
+        data["properties"] = {
+            "silentgear:rod": {
+                "durability": {"operation": "MULTIPLY_TOTAL", "value": round(0.05 + tier * 0.25, 3)},
+                "harvest_speed": {"operation": "MULTIPLY_TOTAL", "value": round(0.03 + tier * 0.17, 3)},
+                "traits": [trait("flexible", max(1, min(5, 1 + round(tier * 4))))],
+            }
+        }
+    elif material in CORD_MATERIALS:
+        data["crafting"]["categories"] = ["fiber", data["crafting"]["categories"][-1]]
+        data["properties"] = {
+            "silentgear:cord": {
+                "draw_speed": {"operation": "MULTIPLY_BASE", "value": round(0.05 + tier * 0.35, 3)},
+                "traits": [trait("flexible", max(1, min(5, 1 + round(tier * 4))))],
+            }
+        }
+
+
+def apply_mekanism_alloy_profile(data, material, profiles):
+    if material not in MEKANISM_ALLOY_ORDER:
+        return
+    index = MEKANISM_ALLOY_ORDER.index(material)
+    target_armor = 15.0 + (200.0 - 15.0) * index / (len(MEKANISM_ALLOY_ORDER) - 1)
+    factor = target_armor / profiles["iron"]["armor"]
+    main = data["properties"].get("silentgear:main")
+    if main:
+        for key, value in profiles["iron"].items():
+            if key != "traits":
+                main[key] = multiply_numbers(value, factor)
 
 
 def make_material(category, entry, bounds, profiles, resolver):
@@ -603,12 +696,13 @@ def make_material(category, entry, bounds, profiles, resolver):
     }
     if category in {"木头", "岩石", "宝石", "金属"}:
         data["properties"]["silentgear:main"] = main_properties(bounds, tier, traits)
-        data["properties"]["silentgear:tip"] = {
-            "attack_damage": {"operation": "ADD", "value": round(scale(bounds, "attack_damage", tier) * 0.35, 3)},
-            "durability": {"operation": "ADD", "value": round(scale(bounds, "durability", tier) * 0.2, 3)},
-            "harvest_speed": {"operation": "ADD", "value": round(scale(bounds, "harvest_speed", tier) * 0.2, 3)},
-            "traits": traits[:2],
-        }
+        if category == "宝石":
+            data["properties"]["silentgear:tip"] = {
+                "attack_damage": {"operation": "ADD", "value": round(scale(bounds, "attack_damage", tier) * 0.35, 3)},
+                "durability": {"operation": "ADD", "value": round(scale(bounds, "durability", tier) * 0.2, 3)},
+                "harvest_speed": {"operation": "ADD", "value": round(scale(bounds, "harvest_speed", tier) * 0.2, 3)},
+                "traits": traits[:2],
+            }
         if category in {"木头", "金属"}:
             data["properties"]["silentgear:rod"] = {"traits": [trait("flexible" if category == "木头" else "malleable", max(1, min(5, 1 + round(tier * 4))))]}
     else:
@@ -631,7 +725,15 @@ def make_material(category, entry, bounds, profiles, resolver):
             "magic_armor": {"operation": "ADD", "value": round(scale(bounds, "magic_armor", tier) * 0.1, 3)},
             "traits": traits[:2],
         }
+    apply_mekanism_alloy_profile(data, material, profiles)
+    apply_part_override(data, material, tier, traits)
     apply_annotation_overrides(data, material, profiles)
+    if material == "quark_ingot":
+        factor = 1000.0 / data["properties"]["silentgear:main"]["armor"]
+        for properties in data["properties"].values():
+            for key, value in list(properties.items()):
+                if key not in {"traits", "harvest_tier"}:
+                    properties[key] = multiply_numbers(value, factor)
     return data, tier
 
 
@@ -649,11 +751,11 @@ def main():
         for entry in entries:
             entry = dict(entry)
             material = MATERIAL_ALIASES.get(entry["material"], entry["material"])
-            if category == "木头" and material.endswith("_wood") and material.removesuffix("_wood") in wood_materials:
-                material = material.removesuffix("_wood")
-            elif category == "木头" and material.endswith("wood") and material.removesuffix("wood") in wood_materials:
-                material = material.removesuffix("wood")
             entry["material"] = material
+            if material in GEM_OVERRIDES:
+                category = "宝石"
+            elif material in EXTRA_CATEGORY_OVERRIDES:
+                category = EXTRA_CATEGORY_OVERRIDES[material]
             if entry["material"] in builtins or entry["material"] in existing or not valid(category, entry):
                 continue
             candidates.append((category, entry))
@@ -661,7 +763,7 @@ def main():
         if entry["material"] not in builtins and entry["material"] not in existing and valid(category, entry):
             candidates.append((category, entry))
 
-    candidates.sort(key=lambda item: (CATEGORY_ORDER[item[0]], item[1]["material"], item[1]["id"]))
+    candidates.sort(key=lambda item: (not item[1].get("extra", False), CATEGORY_ORDER[item[0]], item[1]["material"], item[1]["id"]))
     chosen = []
     seen_materials = set()
     seen_ingredients = set()

@@ -64,32 +64,6 @@
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.104
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 118.691
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.588
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:chilled"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        }
-      ]
-    },
     "silentgear:rod": {
       "traits": [
         {

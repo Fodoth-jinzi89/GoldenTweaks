@@ -23,29 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 10.724,
-      "armor/boots": 1.609,
-      "armor/chestplate": 4.29,
-      "armor/helmet": 1.609,
-      "armor/leggings": 3.217,
-      "armor_durability": 16.395,
+      "armor": 33.5,
+      "armor/boots": 4.467,
+      "armor/chestplate": 13.4,
+      "armor/helmet": 4.467,
+      "armor/leggings": 11.167,
+      "armor_durability": 33.5,
       "armor_toughness": 3.502,
-      "attack_damage": 2.669,
-      "charging_value": 0.997,
-      "durability": 467.615,
-      "enchantment_value": 7.969,
-      "harvest_speed": 6.617,
+      "attack_damage": 4.467,
+      "charging_value": 1.563,
+      "durability": 558.333,
+      "enchantment_value": 31.267,
+      "harvest_speed": 13.4,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
         "level_hint": "2",
         "name": "iron"
       },
-      "magic_armor": 5.181,
-      "magic_damage": 2.82,
-      "projectile_accuracy": 1.14,
-      "projectile_speed": 1.377,
-      "ranged_damage": 0.797,
-      "rarity": 14.38,
+      "magic_armor": 13.4,
+      "magic_damage": 2.233,
+      "projectile_accuracy": 2.457,
+      "projectile_speed": 2.233,
+      "ranged_damage": 2.233,
+      "rarity": 44.667,
       "traits": [
         {
           "conditions": [],
@@ -57,33 +57,11 @@
           "level": 3,
           "trait": "silentgear:hard"
         }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 0.934
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 93.523
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.323
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
+      ],
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.223,
+      "attack_speed/hoe": 0.0,
+      "draw_speed": 0.223
     },
     "silentgear:rod": {
       "traits": [

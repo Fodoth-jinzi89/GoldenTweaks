@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:ebony_noxwood_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF4A494F",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Ebony Noxwood Planks"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.699,
+      "armor/boots": 0.555,
+      "armor/chestplate": 1.48,
+      "armor/helmet": 0.555,
+      "armor/leggings": 1.11,
+      "armor_durability": 3.609,
+      "armor_toughness": 0.839,
+      "attack_damage": 0.741,
+      "charging_value": 0.701,
+      "durability": 75.277,
+      "enchantment_value": 1.781,
+      "harvest_speed": 1.635,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.462,
+      "magic_damage": 0.76,
+      "projectile_accuracy": 0.929,
+      "projectile_speed": 1.01,
+      "ranged_damage": 0.178,
+      "rarity": 2.335,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

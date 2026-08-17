@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "gem",
-      "advanced"
+      "organic",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,73 +15,85 @@
   },
   "display": {
     "color": "#FF567BBA",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "text": "Resonance Shard"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 22.913,
-      "armor/boots": 3.437,
-      "armor/chestplate": 9.165,
-      "armor/helmet": 3.437,
-      "armor/leggings": 6.874,
-      "armor_durability": 48.255,
-      "armor_toughness": 9.701,
-      "attack_damage": 6.656,
-      "charging_value": 1.207,
-      "durability": 1720.449,
-      "enchantment_value": 23.202,
-      "harvest_speed": 17.93,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.144
       },
-      "magic_armor": 12.776,
-      "magic_damage": 7.184,
-      "projectile_accuracy": 1.291,
-      "projectile_speed": 1.638,
-      "ranged_damage": 2.32,
-      "rarity": 52.581,
       "traits": [
         {
           "conditions": [],
-          "level": 4,
-          "trait": "silentgear:brittle"
+          "level": 2,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 4,
-          "trait": "silentgear:lustrous"
+          "level": 2,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 2.33
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 344.09
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 3.586
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.138
       },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
-          "trait": "silentgear:brittle"
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.138
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.094
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 4,
-          "trait": "silentgear:lustrous"
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.119
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.155
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
         }
       ]
     }

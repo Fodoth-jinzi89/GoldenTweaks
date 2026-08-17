@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "organic",
+      "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,82 +15,85 @@
   },
   "display": {
     "color": "#FF494E29",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "text": "Cattail"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 11.61,
-      "armor/boots": 1.741,
-      "armor/chestplate": 4.644,
-      "armor/helmet": 1.741,
-      "armor/leggings": 3.483,
-      "armor_durability": 18.354,
-      "armor_toughness": 3.896,
-      "attack_damage": 2.936,
-      "charging_value": 1.019,
-      "durability": 535.874,
-      "enchantment_value": 8.912,
-      "harvest_speed": 7.344,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.045
       },
-      "magic_armor": 5.694,
-      "magic_damage": 3.11,
-      "projectile_accuracy": 1.156,
-      "projectile_speed": 1.404,
-      "ranged_damage": 0.891,
-      "rarity": 16.469,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.028
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 107.175
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.469
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.065
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.065
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.036
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.041
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.06
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     }

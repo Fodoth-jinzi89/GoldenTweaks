@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "rod",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -22,75 +22,20 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 13.133,
-      "armor/boots": 1.97,
-      "armor/chestplate": 5.253,
-      "armor/helmet": 1.97,
-      "armor/leggings": 3.94,
-      "armor_durability": 21.87,
-      "armor_toughness": 4.597,
-      "attack_damage": 3.406,
-      "charging_value": 1.053,
-      "durability": 662.069,
-      "enchantment_value": 10.6,
-      "harvest_speed": 8.634,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
-      },
-      "magic_armor": 6.593,
-      "magic_damage": 3.619,
-      "projectile_accuracy": 1.181,
-      "projectile_speed": 1.446,
-      "ranged_damage": 1.06,
-      "rarity": 20.326,
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.192
-      },
+    "silentgear:rod": {
       "durability": {
-        "operation": "ADD",
-        "value": 132.414
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.194
       },
       "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.727
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.128
       },
       "traits": [
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:rod": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:flexible"
         }
       ]
     }

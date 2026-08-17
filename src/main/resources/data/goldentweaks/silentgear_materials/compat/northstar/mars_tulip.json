@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "organic",
+      "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,82 +15,85 @@
   },
   "display": {
     "color": "#FFC47055",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "text": "Mars Tulip"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 12.693,
-      "armor/boots": 1.904,
-      "armor/chestplate": 5.077,
-      "armor/helmet": 1.904,
-      "armor/leggings": 3.808,
-      "armor_durability": 20.836,
-      "armor_toughness": 4.391,
-      "attack_damage": 3.269,
-      "charging_value": 1.043,
-      "durability": 624.504,
-      "enchantment_value": 10.104,
-      "harvest_speed": 8.256,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.056
       },
-      "magic_armor": 6.331,
-      "magic_damage": 3.471,
-      "projectile_accuracy": 1.174,
-      "projectile_speed": 1.435,
-      "ranged_damage": 1.01,
-      "rarity": 19.178,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.144
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 124.901
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.651
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.073
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.073
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.043
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.049
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.067
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     }

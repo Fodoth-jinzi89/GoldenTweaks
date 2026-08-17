@@ -23,55 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 36.363,
-      "armor/boots": 5.454,
-      "armor/chestplate": 14.544,
-      "armor/helmet": 5.454,
-      "armor/leggings": 10.908,
-      "armor_durability": 58.539,
-      "armor_toughness": 12.384,
-      "attack_damage": 9.276,
-      "charging_value": 3.093,
-      "durability": 1730.832,
-      "enchantment_value": 28.404,
-      "harvest_speed": 23.313,
+      "armor": 6.061,
+      "armor/boots": 0.909,
+      "armor/chestplate": 2.424,
+      "armor/helmet": 0.909,
+      "armor/leggings": 1.818,
+      "armor_durability": 9.757,
+      "armor_toughness": 2.064,
+      "attack_damage": 1.546,
+      "charging_value": 0.515,
+      "durability": 288.472,
+      "enchantment_value": 4.734,
+      "harvest_speed": 3.885,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
         "level_hint": "2",
         "name": "iron"
       },
-      "magic_armor": 17.979,
-      "magic_damage": 9.837,
-      "projectile_accuracy": 3.495,
-      "projectile_speed": 4.257,
-      "ranged_damage": 2.841,
-      "rarity": 53.175,
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 3.246
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 346.167
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 4.662
-      },
+      "magic_armor": 2.997,
+      "magic_damage": 1.639,
+      "projectile_accuracy": 0.583,
+      "projectile_speed": 0.71,
+      "ranged_damage": 0.473,
+      "rarity": 8.863,
       "traits": [
         {
           "conditions": [],

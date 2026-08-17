@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "organic",
+      "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,82 +15,85 @@
   },
   "display": {
     "color": "#FFBE1A38",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "text": "Scarlet Zhuhua"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 13.125,
-      "armor/boots": 1.969,
-      "armor/chestplate": 5.25,
-      "armor/helmet": 1.969,
-      "armor/leggings": 3.938,
-      "armor_durability": 21.852,
-      "armor_toughness": 4.593,
-      "attack_damage": 3.404,
-      "charging_value": 1.053,
-      "durability": 661.412,
-      "enchantment_value": 10.591,
-      "harvest_speed": 8.627,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.06
       },
-      "magic_armor": 6.588,
-      "magic_damage": 3.617,
-      "projectile_accuracy": 1.18,
-      "projectile_speed": 1.446,
-      "ranged_damage": 1.059,
-      "rarity": 20.306,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.191
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 132.282
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 1.725
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.076
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.076
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.045
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.053
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.07
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     }

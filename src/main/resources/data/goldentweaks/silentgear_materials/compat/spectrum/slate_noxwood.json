@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:slate_noxwood_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF424866",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Slate Noxwood Planks"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.323,
+      "armor/boots": 0.498,
+      "armor/chestplate": 1.329,
+      "armor/helmet": 0.498,
+      "armor/leggings": 0.997,
+      "armor_durability": 3.099,
+      "armor_toughness": 0.727,
+      "attack_damage": 0.651,
+      "charging_value": 0.671,
+      "durability": 62.647,
+      "enchantment_value": 1.532,
+      "harvest_speed": 1.421,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.287,
+      "magic_damage": 0.666,
+      "projectile_accuracy": 0.908,
+      "projectile_speed": 0.974,
+      "ranged_damage": 0.153,
+      "rarity": 1.945,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

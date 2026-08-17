@@ -23,55 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 300.0,
-      "armor/boots": 45.0,
-      "armor/chestplate": 120.0,
-      "armor/helmet": 45.0,
-      "armor/leggings": 90.0,
-      "armor_durability": 840.0,
-      "armor_toughness": 160.0,
-      "attack_damage": 100.0,
-      "charging_value": 1.5,
-      "durability": 36520.0,
-      "enchantment_value": 400.0,
-      "harvest_speed": 290.0,
+      "armor": 1000.0,
+      "armor/boots": 150.0,
+      "armor/chestplate": 400.0,
+      "armor/helmet": 150.0,
+      "armor/leggings": 300.0,
+      "armor_durability": 2800.0,
+      "armor_toughness": 533.333,
+      "attack_damage": 333.333,
+      "charging_value": 5.0,
+      "durability": 121733.333,
+      "enchantment_value": 1333.333,
+      "harvest_speed": 966.667,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
         "level_hint": "4",
         "name": "netherite"
       },
-      "magic_armor": 190.0,
-      "magic_damage": 110.0,
-      "projectile_accuracy": 1.5,
-      "projectile_speed": 2.0,
-      "ranged_damage": 40.0,
-      "rarity": 1110.0,
-      "traits": [
-        {
-          "conditions": [],
-          "level": 5,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 5,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 35.0
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 7304.0
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 58.0
-      },
+      "magic_armor": 633.333,
+      "magic_damage": 366.667,
+      "projectile_accuracy": 5.0,
+      "projectile_speed": 6.667,
+      "ranged_damage": 133.333,
+      "rarity": 3700.0,
       "traits": [
         {
           "conditions": [],

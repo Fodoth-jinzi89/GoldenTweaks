@@ -23,29 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 3.333,
-      "armor/boots": 0.5,
-      "armor/chestplate": 1.333,
-      "armor/helmet": 0.5,
-      "armor/leggings": 1.0,
-      "armor_durability": 3.112,
-      "armor_toughness": 0.73,
-      "attack_damage": 0.654,
-      "charging_value": 0.672,
-      "durability": 62.948,
-      "enchantment_value": 1.538,
-      "harvest_speed": 1.426,
+      "armor": 3.733,
+      "armor/boots": 0.56,
+      "armor/chestplate": 1.493,
+      "armor/helmet": 0.56,
+      "armor/leggings": 1.12,
+      "armor_durability": 3.656,
+      "armor_toughness": 0.85,
+      "attack_damage": 0.749,
+      "charging_value": 0.703,
+      "durability": 76.463,
+      "enchantment_value": 1.804,
+      "harvest_speed": 1.655,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
         "level_hint": "1",
         "name": "stone"
       },
-      "magic_armor": 1.291,
-      "magic_damage": 0.668,
-      "projectile_accuracy": 0.908,
-      "projectile_speed": 0.975,
-      "ranged_damage": 0.154,
-      "rarity": 1.954,
+      "magic_armor": 1.478,
+      "magic_damage": 0.768,
+      "projectile_accuracy": 0.931,
+      "projectile_speed": 1.014,
+      "ranged_damage": 0.18,
+      "rarity": 2.372,
       "traits": [
         {
           "conditions": [],
@@ -61,32 +61,6 @@
           "conditions": [],
           "level": 2,
           "trait": "silentgear:flammable"
-        }
-      ]
-    },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 0.229
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 12.59
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 0.285
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
         }
       ]
     },
