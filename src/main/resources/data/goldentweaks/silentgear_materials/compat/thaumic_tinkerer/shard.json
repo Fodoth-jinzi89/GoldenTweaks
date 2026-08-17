@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumic_tinkerer:nether_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF750920",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Nether Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 17.54,
+      "armor/boots": 2.631,
+      "armor/chestplate": 7.015,
+      "armor/helmet": 2.631,
+      "armor/leggings": 5.262,
+      "armor_durability": 27.812,
+      "armor_toughness": 5.899,
+      "attack_damage": 4.443,
+      "charging_value": 1.531,
+      "durability": 813.699,
+      "enchantment_value": 13.502,
+      "harvest_speed": 11.12,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 8.614,
+      "magic_damage": 4.705,
+      "projectile_accuracy": 1.737,
+      "projectile_speed": 2.109,
+      "ranged_damage": 1.35,
+      "rarity": 25.005,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.555
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 162.739
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.224
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

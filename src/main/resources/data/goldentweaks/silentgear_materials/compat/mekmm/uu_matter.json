@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekmm:uu_matter"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA276C1",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Uu Matter"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 48.615,
+      "armor/boots": 7.29,
+      "armor/chestplate": 19.445,
+      "armor/helmet": 7.29,
+      "armor/leggings": 14.585,
+      "armor_durability": 71.315,
+      "armor_toughness": 15.355,
+      "attack_damage": 11.86,
+      "charging_value": 4.845,
+      "durability": 1976.42,
+      "enchantment_value": 34.715,
+      "harvest_speed": 29.09,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 23.06,
+      "magic_damage": 12.495,
+      "projectile_accuracy": 5.605,
+      "projectile_speed": 6.715,
+      "ranged_damage": 3.47,
+      "rarity": 60.83,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 4.15
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 395.285
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 5.82
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

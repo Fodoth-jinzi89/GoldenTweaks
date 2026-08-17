@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism:fluorite_gem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC5D6DB",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Fluorite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.833,
+      "armor/boots": 1.625,
+      "armor/chestplate": 4.333,
+      "armor/helmet": 1.625,
+      "armor/leggings": 3.25,
+      "armor_durability": 16.633,
+      "armor_toughness": 3.55,
+      "attack_damage": 2.701,
+      "charging_value": 0.999,
+      "durability": 475.825,
+      "enchantment_value": 8.084,
+      "harvest_speed": 6.705,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 5.244,
+      "magic_damage": 2.855,
+      "projectile_accuracy": 1.142,
+      "projectile_speed": 1.38,
+      "ranged_damage": 0.808,
+      "rarity": 14.631,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.945
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 95.165
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.341
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

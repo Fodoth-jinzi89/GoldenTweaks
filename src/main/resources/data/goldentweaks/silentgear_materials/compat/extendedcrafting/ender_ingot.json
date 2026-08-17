@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "extendedcrafting:ender_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF146356",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Ender Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.854,
+      "armor/boots": 1.478,
+      "armor/chestplate": 3.942,
+      "armor/helmet": 1.478,
+      "armor/leggings": 2.956,
+      "armor_durability": 22.637,
+      "armor_toughness": 4.476,
+      "attack_damage": 2.985,
+      "charging_value": 0.443,
+      "durability": 857.47,
+      "enchantment_value": 10.852,
+      "harvest_speed": 8.225,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 5.712,
+      "magic_damage": 3.241,
+      "projectile_accuracy": 0.466,
+      "projectile_speed": 0.598,
+      "ranged_damage": 1.085,
+      "rarity": 26.162,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:terminus"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.045
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 171.494
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.645
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:terminus"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

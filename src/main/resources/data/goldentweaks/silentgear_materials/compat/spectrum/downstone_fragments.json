@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:downstone_fragments"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF816967",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Downstone Fragments"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 44.164,
+      "armor/boots": 6.624,
+      "armor/chestplate": 17.664,
+      "armor/helmet": 6.624,
+      "armor/leggings": 13.248,
+      "armor_durability": 68.352,
+      "armor_toughness": 14.568,
+      "attack_damage": 11.056,
+      "charging_value": 4.02,
+      "durability": 1966.388,
+      "enchantment_value": 33.212,
+      "harvest_speed": 27.5,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 21.456,
+      "magic_damage": 11.692,
+      "projectile_accuracy": 4.584,
+      "projectile_speed": 5.548,
+      "ranged_damage": 3.32,
+      "rarity": 60.456,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3.868
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 393.276
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 5.5
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

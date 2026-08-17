@@ -1,0 +1,98 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFB08130",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Ignitium Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 124.65,
+      "armor/boots": 18.7,
+      "armor/chestplate": 49.86,
+      "armor/helmet": 18.7,
+      "armor/leggings": 37.39,
+      "armor_durability": 203.05,
+      "armor_toughness": 42.86,
+      "attack_damage": 31.98,
+      "charging_value": 10.38,
+      "durability": 6053.4,
+      "enchantment_value": 98.49,
+      "harvest_speed": 80.62,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 61.96,
+      "magic_damage": 33.94,
+      "projectile_accuracy": 11.7,
+      "projectile_speed": 14.28,
+      "ranged_damage": 9.85,
+      "rarity": 185.93,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 11.19
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 1210.68
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 16.12
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "fiber",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "irons_spellbooks:mithril_weave"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9EC6CB",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Mithril Weave"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.167
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.155
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.155
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.107
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.137
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.192
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

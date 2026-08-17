@@ -20,6 +20,10 @@
   ],
   "concealed": true,
   "pages": [
-    "tc.research_page.GT_WARPTHEORY_CLEANSER.1"
+    "tc.research_page.GT_WARPTHEORY_CLEANSER.1",
+    {
+      "type": "goldentweaks:infusion",
+      "recipe_id": "goldentweaks:warptheory_cleanser"
+    }
   ]
 }

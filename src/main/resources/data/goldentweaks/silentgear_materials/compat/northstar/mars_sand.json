@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "northstar:mars_sand"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA16E4B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Mars Sand"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.998,
+      "armor/boots": 0.75,
+      "armor/chestplate": 1.999,
+      "armor/helmet": 0.75,
+      "armor/leggings": 1.499,
+      "armor_durability": 5.537,
+      "armor_toughness": 1.257,
+      "attack_damage": 1.065,
+      "charging_value": 0.784,
+      "durability": 126.19,
+      "enchantment_value": 2.721,
+      "harvest_speed": 2.428,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.091,
+      "magic_damage": 1.101,
+      "projectile_accuracy": 0.989,
+      "projectile_speed": 1.114,
+      "ranged_damage": 0.272,
+      "rarity": 3.905,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.373
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 25.238
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.486
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

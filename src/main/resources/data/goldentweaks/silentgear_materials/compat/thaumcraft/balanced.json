@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:balanced_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA7AAA9",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Balanced Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.404,
+      "armor/boots": 1.86,
+      "armor/chestplate": 4.961,
+      "armor/helmet": 1.86,
+      "armor/leggings": 3.721,
+      "armor_durability": 18.351,
+      "armor_toughness": 3.945,
+      "attack_damage": 3.039,
+      "charging_value": 1.219,
+      "durability": 511.606,
+      "enchantment_value": 8.93,
+      "harvest_speed": 7.469,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 5.905,
+      "magic_damage": 3.204,
+      "projectile_accuracy": 1.406,
+      "projectile_speed": 1.688,
+      "ranged_damage": 0.892,
+      "rarity": 15.742,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.064
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 102.321
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.494
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

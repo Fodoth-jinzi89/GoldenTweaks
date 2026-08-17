@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "neoecoae:cryotheum_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF77C5CD",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Cryotheum Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 16.604,
+      "armor/boots": 2.49,
+      "armor/chestplate": 6.642,
+      "armor/helmet": 2.49,
+      "armor/leggings": 4.982,
+      "armor_durability": 25.724,
+      "armor_toughness": 5.481,
+      "attack_damage": 4.158,
+      "charging_value": 1.507,
+      "durability": 740.572,
+      "enchantment_value": 12.498,
+      "harvest_speed": 10.347,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 8.07,
+      "magic_damage": 4.398,
+      "projectile_accuracy": 1.72,
+      "projectile_speed": 2.082,
+      "ranged_damage": 1.249,
+      "rarity": 22.768,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.455
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 148.114
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.07
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

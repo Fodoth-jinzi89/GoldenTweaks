@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:onyx_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF2A4788",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Onyx Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 46.368,
+      "armor/boots": 6.956,
+      "armor/chestplate": 18.548,
+      "armor/helmet": 6.956,
+      "armor/leggings": 13.912,
+      "armor_durability": 73.252,
+      "armor_toughness": 15.552,
+      "attack_damage": 11.724,
+      "charging_value": 4.072,
+      "durability": 2137.732,
+      "enchantment_value": 35.568,
+      "harvest_speed": 29.316,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 22.736,
+      "magic_damage": 12.416,
+      "projectile_accuracy": 4.624,
+      "projectile_speed": 5.612,
+      "ranged_damage": 3.556,
+      "rarity": 65.7,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 4.104
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 427.548
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 5.864
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

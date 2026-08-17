@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "biomesoplenty:willow_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF737D5C",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Willow Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.418,
+      "armor/boots": 0.513,
+      "armor/chestplate": 1.367,
+      "armor/helmet": 0.513,
+      "armor/leggings": 1.025,
+      "armor_durability": 3.225,
+      "armor_toughness": 0.755,
+      "attack_damage": 0.674,
+      "charging_value": 0.679,
+      "durability": 65.727,
+      "enchantment_value": 1.594,
+      "harvest_speed": 1.474,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.331,
+      "magic_damage": 0.689,
+      "projectile_accuracy": 0.913,
+      "projectile_speed": 0.983,
+      "ranged_damage": 0.159,
+      "rarity": 2.04,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.236
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 13.145
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.295
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

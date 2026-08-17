@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "biomesoplenty:hellbark_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF645E5D",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Hellbark Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.093,
+      "armor/boots": 0.464,
+      "armor/chestplate": 1.237,
+      "armor/helmet": 0.464,
+      "armor/leggings": 0.928,
+      "armor_durability": 2.799,
+      "armor_toughness": 0.66,
+      "attack_damage": 0.597,
+      "charging_value": 0.651,
+      "durability": 55.395,
+      "enchantment_value": 1.385,
+      "harvest_speed": 1.293,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.182,
+      "magic_damage": 0.61,
+      "projectile_accuracy": 0.894,
+      "projectile_speed": 0.949,
+      "ranged_damage": 0.138,
+      "rarity": 1.721,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.209
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 11.079
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.259
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

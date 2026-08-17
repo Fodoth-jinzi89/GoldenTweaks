@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekmm:empty_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF869CB8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Empty Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 11.135,
+      "armor/boots": 1.67,
+      "armor/chestplate": 4.454,
+      "armor/helmet": 1.67,
+      "armor/leggings": 3.341,
+      "armor_durability": 17.296,
+      "armor_toughness": 3.684,
+      "attack_damage": 2.792,
+      "charging_value": 1.007,
+      "durability": 498.814,
+      "enchantment_value": 8.403,
+      "harvest_speed": 6.952,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 5.418,
+      "magic_damage": 2.954,
+      "projectile_accuracy": 1.148,
+      "projectile_speed": 1.39,
+      "ranged_damage": 0.84,
+      "rarity": 15.335,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.977
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 99.763
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.39
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:tainted_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF433A4E",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Tainted Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.115,
+      "armor/boots": 1.517,
+      "armor/chestplate": 4.046,
+      "armor/helmet": 1.517,
+      "armor/leggings": 3.034,
+      "armor_durability": 15.087,
+      "armor_toughness": 3.238,
+      "attack_damage": 2.487,
+      "charging_value": 0.98,
+      "durability": 423.0,
+      "enchantment_value": 7.34,
+      "harvest_speed": 6.128,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.834,
+      "magic_damage": 2.624,
+      "projectile_accuracy": 1.129,
+      "projectile_speed": 1.357,
+      "ranged_damage": 0.734,
+      "rarity": 13.014,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.87
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 84.6
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.226
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

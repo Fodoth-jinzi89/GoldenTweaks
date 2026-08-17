@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF83B8A8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Crystal Matrix Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 25.529,
+      "armor/boots": 3.829,
+      "armor/chestplate": 10.212,
+      "armor/helmet": 3.829,
+      "armor/leggings": 7.659,
+      "armor_durability": 56.274,
+      "armor_toughness": 11.216,
+      "attack_damage": 7.581,
+      "charging_value": 1.238,
+      "durability": 2071.119,
+      "enchantment_value": 27.016,
+      "harvest_speed": 20.665,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 14.528,
+      "magic_damage": 8.208,
+      "projectile_accuracy": 1.312,
+      "projectile_speed": 1.675,
+      "ranged_damage": 2.702,
+      "rarity": 63.242,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.653
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 414.224
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 4.133
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:pure_quartz"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9E948D",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Pure Quartz"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 30.549,
+      "armor/boots": 4.581,
+      "armor/chestplate": 12.219,
+      "armor/helmet": 4.581,
+      "armor/leggings": 9.165,
+      "armor_durability": 45.696,
+      "armor_toughness": 9.801,
+      "attack_damage": 7.524,
+      "charging_value": 2.946,
+      "durability": 1283.724,
+      "enchantment_value": 22.23,
+      "harvest_speed": 18.546,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 14.616,
+      "magic_damage": 7.938,
+      "projectile_accuracy": 3.39,
+      "projectile_speed": 4.077,
+      "ranged_damage": 2.223,
+      "rarity": 39.495,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:refractive"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.634
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 256.746
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.708
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:refractive"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

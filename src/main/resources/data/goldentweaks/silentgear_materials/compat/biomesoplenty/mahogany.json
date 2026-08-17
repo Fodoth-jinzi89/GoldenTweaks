@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "biomesoplenty:mahogany_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF8D5E66",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Mahogany Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.64,
+      "armor/boots": 0.546,
+      "armor/chestplate": 1.456,
+      "armor/helmet": 0.546,
+      "armor/leggings": 1.092,
+      "armor_durability": 3.527,
+      "armor_toughness": 0.821,
+      "attack_damage": 0.727,
+      "charging_value": 0.696,
+      "durability": 73.229,
+      "enchantment_value": 1.741,
+      "harvest_speed": 1.601,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.434,
+      "magic_damage": 0.745,
+      "projectile_accuracy": 0.926,
+      "projectile_speed": 1.005,
+      "ranged_damage": 0.174,
+      "rarity": 2.272,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.254
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 14.646
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.32
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

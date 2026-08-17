@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:shimmerstone_gem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC69825",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Shimmerstone Gem"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 16.371,
+      "armor/boots": 2.455,
+      "armor/chestplate": 6.549,
+      "armor/helmet": 2.455,
+      "armor/leggings": 4.911,
+      "armor_durability": 25.215,
+      "armor_toughness": 5.379,
+      "attack_damage": 4.089,
+      "charging_value": 1.501,
+      "durability": 722.906,
+      "enchantment_value": 12.254,
+      "harvest_speed": 10.156,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 7.937,
+      "magic_damage": 4.323,
+      "projectile_accuracy": 1.716,
+      "projectile_speed": 2.075,
+      "ranged_damage": 1.225,
+      "rarity": 22.229,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.431
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 144.581
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.031
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

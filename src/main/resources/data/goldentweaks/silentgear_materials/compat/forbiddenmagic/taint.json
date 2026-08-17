@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:taint_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF4A00C1",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Taint Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 14.545,
+      "armor/boots": 2.182,
+      "armor/chestplate": 5.818,
+      "armor/helmet": 2.182,
+      "armor/leggings": 4.364,
+      "armor_durability": 33.879,
+      "armor_toughness": 6.682,
+      "attack_damage": 4.436,
+      "charging_value": 0.637,
+      "durability": 1295.655,
+      "enchantment_value": 16.234,
+      "harvest_speed": 12.265,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 8.483,
+      "magic_damage": 4.82,
+      "projectile_accuracy": 0.669,
+      "projectile_speed": 0.86,
+      "ranged_damage": 1.623,
+      "rarity": 39.521,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.552
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 259.131
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.453
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:venom"
+        }
+      ]
+    }
+  }
+}

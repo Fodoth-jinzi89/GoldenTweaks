@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "iss_magicfromtheeast:red_shaft"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7B2E2B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Red Shaft"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.032,
+      "armor/boots": 1.505,
+      "armor/chestplate": 4.013,
+      "armor/helmet": 1.505,
+      "armor/leggings": 3.01,
+      "armor_durability": 19.977,
+      "armor_toughness": 4.059,
+      "attack_damage": 2.837,
+      "charging_value": 0.586,
+      "durability": 685.011,
+      "enchantment_value": 9.624,
+      "harvest_speed": 7.531,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 5.455,
+      "magic_damage": 3.05,
+      "projectile_accuracy": 0.632,
+      "projectile_speed": 0.796,
+      "ranged_damage": 0.963,
+      "rarity": 20.958,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.993
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 137.002
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.506
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

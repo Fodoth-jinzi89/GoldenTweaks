@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:basal_marble"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF75717B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Basal Marble"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.613,
+      "armor/boots": 0.692,
+      "armor/chestplate": 1.845,
+      "armor/helmet": 0.692,
+      "armor/leggings": 1.384,
+      "armor_durability": 4.941,
+      "armor_toughness": 1.129,
+      "attack_damage": 0.967,
+      "charging_value": 0.762,
+      "durability": 109.987,
+      "enchantment_value": 2.431,
+      "harvest_speed": 2.186,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.901,
+      "magic_damage": 0.998,
+      "projectile_accuracy": 0.973,
+      "projectile_speed": 1.086,
+      "ranged_damage": 0.243,
+      "rarity": 3.406,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.338
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 21.997
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.437
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

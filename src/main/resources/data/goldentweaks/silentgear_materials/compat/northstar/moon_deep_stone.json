@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "northstar:moon_deep_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF37353E",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Moon Deep Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.699,
+      "armor/boots": 0.705,
+      "armor/chestplate": 1.88,
+      "armor/helmet": 0.705,
+      "armor/leggings": 1.41,
+      "armor_durability": 5.072,
+      "armor_toughness": 1.157,
+      "attack_damage": 0.988,
+      "charging_value": 0.767,
+      "durability": 113.527,
+      "enchantment_value": 2.495,
+      "harvest_speed": 2.24,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.943,
+      "magic_damage": 1.021,
+      "projectile_accuracy": 0.977,
+      "projectile_speed": 1.093,
+      "ranged_damage": 0.25,
+      "rarity": 3.515,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.346
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 22.705
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.448
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        }
+      ]
+    }
+  }
+}

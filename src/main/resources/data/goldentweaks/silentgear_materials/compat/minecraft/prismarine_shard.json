@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF716876",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Prismarine Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.89,
+      "armor/boots": 1.484,
+      "armor/chestplate": 3.956,
+      "armor/helmet": 1.484,
+      "armor/leggings": 2.968,
+      "armor_durability": 10.908,
+      "armor_toughness": 2.478,
+      "attack_damage": 2.102,
+      "charging_value": 1.562,
+      "durability": 247.83,
+      "enchantment_value": 5.362,
+      "harvest_speed": 4.79,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 4.13,
+      "magic_damage": 2.174,
+      "projectile_accuracy": 1.974,
+      "projectile_speed": 2.22,
+      "ranged_damage": 0.536,
+      "rarity": 7.67,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.736
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 49.566
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.958
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

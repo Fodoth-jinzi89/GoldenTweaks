@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "biomesoplenty:dead_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF655E55",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Dead Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 2.257,
+      "armor/boots": 0.339,
+      "armor/chestplate": 0.903,
+      "armor/helmet": 0.339,
+      "armor/leggings": 0.677,
+      "armor_durability": 1.788,
+      "armor_toughness": 0.433,
+      "attack_damage": 0.409,
+      "charging_value": 0.564,
+      "durability": 32.265,
+      "enchantment_value": 0.889,
+      "harvest_speed": 0.855,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_wooden_tool",
+        "level_hint": "0",
+        "name": "wood"
+      },
+      "magic_armor": 0.813,
+      "magic_damage": 0.414,
+      "projectile_accuracy": 0.831,
+      "projectile_speed": 0.841,
+      "ranged_damage": 0.089,
+      "rarity": 1.005,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.143
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 6.453
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.171
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

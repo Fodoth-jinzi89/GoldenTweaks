@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:envy_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF0F9400",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Envy Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 29.973,
+      "armor/boots": 4.495,
+      "armor/chestplate": 11.99,
+      "armor/helmet": 4.495,
+      "armor/leggings": 8.992,
+      "armor_durability": 48.027,
+      "armor_toughness": 10.17,
+      "attack_damage": 7.63,
+      "charging_value": 2.57,
+      "durability": 1415.54,
+      "enchantment_value": 23.31,
+      "harvest_speed": 19.15,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 14.79,
+      "magic_damage": 8.088,
+      "projectile_accuracy": 2.908,
+      "projectile_speed": 3.538,
+      "ranged_damage": 2.33,
+      "rarity": 43.492,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.67
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 283.107
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.83
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

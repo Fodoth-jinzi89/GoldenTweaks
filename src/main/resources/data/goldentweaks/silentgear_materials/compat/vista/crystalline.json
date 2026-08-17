@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "vista:crystalline"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF769394",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Crystalline"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.474,
+      "armor/boots": 1.571,
+      "armor/chestplate": 4.19,
+      "armor/helmet": 1.571,
+      "armor/leggings": 3.142,
+      "armor_durability": 15.855,
+      "armor_toughness": 3.393,
+      "attack_damage": 2.594,
+      "charging_value": 0.99,
+      "durability": 449.11,
+      "enchantment_value": 7.71,
+      "harvest_speed": 6.415,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 5.038,
+      "magic_damage": 2.739,
+      "projectile_accuracy": 1.136,
+      "projectile_speed": 1.369,
+      "ranged_damage": 0.771,
+      "rarity": 13.814,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.908
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 89.822
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.283
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:chestnut_noxcap_stem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFB35338",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Chestnut Noxcap Stem"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.598,
+      "armor/boots": 0.54,
+      "armor/chestplate": 1.439,
+      "armor/helmet": 0.54,
+      "armor/leggings": 1.079,
+      "armor_durability": 3.47,
+      "armor_toughness": 0.809,
+      "attack_damage": 0.717,
+      "charging_value": 0.693,
+      "durability": 71.806,
+      "enchantment_value": 1.713,
+      "harvest_speed": 1.577,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.415,
+      "magic_damage": 0.735,
+      "projectile_accuracy": 0.924,
+      "projectile_speed": 1.001,
+      "ranged_damage": 0.171,
+      "rarity": 2.228,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.251
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 14.361
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.315
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

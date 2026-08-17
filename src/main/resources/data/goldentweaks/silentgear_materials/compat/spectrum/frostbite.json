@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:frostbite_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA9B6F5",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Frostbite Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.006,
+      "armor/boots": 1.501,
+      "armor/chestplate": 4.002,
+      "armor/helmet": 1.501,
+      "armor/leggings": 3.002,
+      "armor_durability": 14.858,
+      "armor_toughness": 3.191,
+      "attack_damage": 2.455,
+      "charging_value": 0.977,
+      "durability": 415.24,
+      "enchantment_value": 7.229,
+      "harvest_speed": 6.042,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.772,
+      "magic_damage": 2.589,
+      "projectile_accuracy": 1.127,
+      "projectile_speed": 1.353,
+      "ranged_damage": 0.723,
+      "rarity": 12.777,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:chilled"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.859
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 83.048
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.208
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:chilled"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

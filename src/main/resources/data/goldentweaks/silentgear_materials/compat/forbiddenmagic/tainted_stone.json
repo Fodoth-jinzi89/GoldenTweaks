@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:tainted_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF482153",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Tainted Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.289,
+      "armor/boots": 1.993,
+      "armor/chestplate": 5.316,
+      "armor/helmet": 1.993,
+      "armor/leggings": 3.987,
+      "armor_durability": 22.241,
+      "armor_toughness": 4.67,
+      "attack_damage": 3.455,
+      "charging_value": 1.056,
+      "durability": 675.65,
+      "enchantment_value": 10.778,
+      "harvest_speed": 8.769,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.686,
+      "magic_damage": 3.673,
+      "projectile_accuracy": 1.183,
+      "projectile_speed": 1.45,
+      "ranged_damage": 1.078,
+      "rarity": 20.741,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.209
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 135.13
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.754
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:silverwood_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFB6AE9A",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Silverwood Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 6.28,
+      "armor/boots": 0.942,
+      "armor/chestplate": 2.512,
+      "armor/helmet": 0.942,
+      "armor/leggings": 1.884,
+      "armor_durability": 7.66,
+      "armor_toughness": 1.708,
+      "attack_damage": 1.401,
+      "charging_value": 0.848,
+      "durability": 186.676,
+      "enchantment_value": 3.752,
+      "harvest_speed": 3.277,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.743,
+      "magic_damage": 1.459,
+      "projectile_accuracy": 1.034,
+      "projectile_speed": 1.193,
+      "ranged_damage": 0.375,
+      "rarity": 5.766,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:renew"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.49
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 37.335
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.655
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:renew"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

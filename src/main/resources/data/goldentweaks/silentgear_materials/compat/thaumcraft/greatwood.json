@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:greatwood_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF776143",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Greatwood Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.586,
+      "armor/boots": 0.538,
+      "armor/chestplate": 1.434,
+      "armor/helmet": 0.538,
+      "armor/leggings": 1.076,
+      "armor_durability": 3.453,
+      "armor_toughness": 0.805,
+      "attack_damage": 0.714,
+      "charging_value": 0.692,
+      "durability": 71.368,
+      "enchantment_value": 1.705,
+      "harvest_speed": 1.57,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.409,
+      "magic_damage": 0.731,
+      "projectile_accuracy": 0.923,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.17,
+      "rarity": 2.214,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.25
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 14.274
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.314
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

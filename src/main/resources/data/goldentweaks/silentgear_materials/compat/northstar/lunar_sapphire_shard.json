@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "northstar:lunar_sapphire_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF5A59A1",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Lunar Sapphire Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 11.62,
+      "armor/boots": 1.743,
+      "armor/chestplate": 4.648,
+      "armor/helmet": 1.743,
+      "armor/leggings": 3.486,
+      "armor_durability": 18.377,
+      "armor_toughness": 3.901,
+      "attack_damage": 2.939,
+      "charging_value": 1.019,
+      "durability": 536.671,
+      "enchantment_value": 8.923,
+      "harvest_speed": 7.352,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 5.7,
+      "magic_damage": 3.113,
+      "projectile_accuracy": 1.156,
+      "projectile_speed": 1.404,
+      "ranged_damage": 0.892,
+      "rarity": 16.493,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.029
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 107.334
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.47
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

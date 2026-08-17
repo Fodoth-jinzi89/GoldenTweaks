@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:air_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF959595",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Air Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 8.992,
+      "armor/boots": 1.349,
+      "armor/chestplate": 3.597,
+      "armor/helmet": 1.349,
+      "armor/leggings": 2.698,
+      "armor_durability": 14.408,
+      "armor_toughness": 3.051,
+      "attack_damage": 2.289,
+      "charging_value": 0.771,
+      "durability": 424.662,
+      "enchantment_value": 6.993,
+      "harvest_speed": 5.745,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.437,
+      "magic_damage": 2.426,
+      "projectile_accuracy": 0.872,
+      "projectile_speed": 1.061,
+      "ranged_damage": 0.699,
+      "rarity": 13.048,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.801
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 84.932
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.149
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "taintedmagic:warped_unbalanced_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF3C353A",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Warped Unbalanced Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.555,
+      "armor/boots": 1.883,
+      "armor/chestplate": 5.022,
+      "armor/helmet": 1.883,
+      "armor/leggings": 3.766,
+      "armor_durability": 31.946,
+      "armor_toughness": 6.196,
+      "attack_damage": 3.996,
+      "charging_value": 0.466,
+      "durability": 1299.341,
+      "enchantment_value": 15.262,
+      "harvest_speed": 11.305,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 7.618,
+      "magic_damage": 4.368,
+      "projectile_accuracy": 0.483,
+      "projectile_speed": 0.627,
+      "ranged_damage": 1.526,
+      "rarity": 39.566,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:cursed"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.399
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 259.868
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.261
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:venom"
+        }
+      ]
+    }
+  }
+}

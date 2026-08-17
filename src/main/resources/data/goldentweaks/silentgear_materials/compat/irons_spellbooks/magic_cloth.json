@@ -1,0 +1,106 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "fiber",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7B96BD",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Magic Cloth"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.162
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.151
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.151
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.104
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.133
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.182
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

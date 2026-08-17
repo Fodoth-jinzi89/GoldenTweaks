@@ -129,15 +129,16 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
         return this;
     }
 
-    public boolean register() {
+    public Object register() {
         try {
+            Object registered = null;
             switch (kind) {
                 case CRAFTING -> {
                     if (output.isEmpty() || !hasCatalystAndComponents()) {
                         GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion recipe '{}': incomplete recipe.", research);
-                        return false;
+                        return null;
                     }
-                    ThaumcraftApi.addInfusionCraftingRecipe(
+                    registered = ThaumcraftApi.addInfusionCraftingRecipe(
                             research,
                             output,
                             instability,
@@ -149,9 +150,9 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
                 case TRANSFORM -> {
                     if (transform == null || !hasCatalystAndComponents()) {
                         GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion transform recipe '{}': incomplete recipe.", research);
-                        return false;
+                        return null;
                     }
-                    ThaumcraftApi.addInfusionTransformRecipe(
+                    registered = ThaumcraftApi.addInfusionTransformRecipe(
                             research,
                             transform,
                             instability,
@@ -164,9 +165,9 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
                 case ENCHANTMENT -> {
                     if (enchantment == null || components.isEmpty()) {
                         GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion enchantment recipe '{}': incomplete recipe.", research);
-                        return false;
+                        return null;
                     }
-                    ThaumcraftApi.addInfusionEnchantmentRecipe(
+                    registered = ThaumcraftApi.addInfusionEnchantmentRecipe(
                             research,
                             enchantment,
                             instability,
@@ -177,10 +178,10 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
                 }
             }
             GoldenTweaks.LOGGER.debug("Registered Thaumcraft {} recipe '{}'.", kind.name().toLowerCase(), research);
-            return true;
+            return registered;
         } catch (Exception e) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft infusion recipe '{}': {}", research, e.getMessage());
-            return false;
+            return null;
         }
     }
 
@@ -384,7 +385,9 @@ public class GTInfusionRecipe extends AbstractGTThaumcraftRecipe<GTInfusionRecip
     public static void load(ResourceManager resourceManager) {
         ThaumcraftRecipeUtil.load(resourceManager, RECIPE_PATH, RECIPE_NAME, (json, location) -> {
             GTInfusionRecipe recipe = fromJson(json);
-            return recipe != null && recipe.register();
+            Object registered = recipe == null ? null : recipe.register();
+            GTResearchRecipePages.put(location, registered);
+            return registered != null;
         });
     }
 }

@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:pure_prismarine"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF749889",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Pure Prismarine"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.419,
+      "armor/boots": 2.013,
+      "armor/chestplate": 5.367,
+      "armor/helmet": 2.013,
+      "armor/leggings": 4.026,
+      "armor_durability": 14.184,
+      "armor_toughness": 3.249,
+      "attack_damage": 2.793,
+      "charging_value": 2.262,
+      "durability": 312.879,
+      "enchantment_value": 6.981,
+      "harvest_speed": 6.297,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 5.496,
+      "magic_damage": 2.88,
+      "projectile_accuracy": 2.901,
+      "projectile_speed": 3.228,
+      "ranged_damage": 0.699,
+      "rarity": 9.69,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.978
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 62.577
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.26
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

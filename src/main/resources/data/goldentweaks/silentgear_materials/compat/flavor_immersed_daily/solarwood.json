@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "flavor_immersed_daily:solarwood_log"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9C752B",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Solarwood Log"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 6.744,
+      "armor/boots": 1.012,
+      "armor/chestplate": 2.698,
+      "armor/helmet": 1.012,
+      "armor/leggings": 2.023,
+      "armor_durability": 8.477,
+      "armor_toughness": 1.879,
+      "attack_damage": 1.527,
+      "charging_value": 0.868,
+      "durability": 210.979,
+      "enchantment_value": 4.148,
+      "harvest_speed": 3.599,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 2.985,
+      "magic_damage": 1.593,
+      "projectile_accuracy": 1.048,
+      "projectile_speed": 1.217,
+      "ranged_damage": 0.415,
+      "rarity": 6.513,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.534
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 42.196
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.72
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

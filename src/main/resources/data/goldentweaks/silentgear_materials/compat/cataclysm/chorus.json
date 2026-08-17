@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wood",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "cataclysm:chorus_stem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7C557C",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Chorus Stem"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 3.225,
+      "armor/boots": 0.484,
+      "armor/chestplate": 1.29,
+      "armor/helmet": 0.484,
+      "armor/leggings": 0.968,
+      "armor_durability": 2.97,
+      "armor_toughness": 0.698,
+      "attack_damage": 0.628,
+      "charging_value": 0.663,
+      "durability": 59.512,
+      "enchantment_value": 1.469,
+      "harvest_speed": 1.366,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.242,
+      "magic_damage": 0.642,
+      "projectile_accuracy": 0.902,
+      "projectile_speed": 0.963,
+      "ranged_damage": 0.147,
+      "rarity": 1.848,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flammable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.22
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 11.902
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.273
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism:alloy_infused"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD6745E",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Alloy Infused"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.647,
+      "armor/boots": 1.897,
+      "armor/chestplate": 5.059,
+      "armor/helmet": 1.897,
+      "armor/leggings": 3.794,
+      "armor_durability": 20.728,
+      "armor_toughness": 4.37,
+      "attack_damage": 3.255,
+      "charging_value": 1.042,
+      "durability": 620.576,
+      "enchantment_value": 10.052,
+      "harvest_speed": 8.217,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.304,
+      "magic_damage": 3.455,
+      "projectile_accuracy": 1.173,
+      "projectile_speed": 1.433,
+      "ranged_damage": 1.005,
+      "rarity": 19.058,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.139
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 124.115
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.643
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

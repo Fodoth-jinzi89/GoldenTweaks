@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraftcelestial:astral_alloy"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF47353E",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Astral Alloy"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 80.189,
+      "armor/boots": 12.028,
+      "armor/chestplate": 32.076,
+      "armor/helmet": 12.028,
+      "armor/leggings": 24.057,
+      "armor_durability": 224.529,
+      "armor_toughness": 42.768,
+      "attack_damage": 26.73,
+      "charging_value": 1.427,
+      "durability": 9761.685,
+      "enchantment_value": 106.919,
+      "harvest_speed": 77.516,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 50.786,
+      "magic_damage": 29.403,
+      "projectile_accuracy": 1.448,
+      "projectile_speed": 1.91,
+      "ranged_damage": 10.692,
+      "rarity": 296.7,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 9.355
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 1952.337
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 15.503
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

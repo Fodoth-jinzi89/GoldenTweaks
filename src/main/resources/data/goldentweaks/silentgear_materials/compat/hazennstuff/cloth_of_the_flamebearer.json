@@ -1,0 +1,106 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "fiber",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "hazennstuff:cloth_of_the_flamebearer"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF571C14",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Cloth Of The Flamebearer"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.089
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.097
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.097
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.062
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.075
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.092
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

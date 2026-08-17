@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:blazing_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFEA7A3C",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Blazing Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.357,
+      "armor/boots": 1.554,
+      "armor/chestplate": 4.143,
+      "armor/helmet": 1.554,
+      "armor/leggings": 3.107,
+      "armor_durability": 15.602,
+      "armor_toughness": 3.342,
+      "attack_damage": 2.559,
+      "charging_value": 0.987,
+      "durability": 440.475,
+      "enchantment_value": 7.588,
+      "harvest_speed": 6.321,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.971,
+      "magic_damage": 2.701,
+      "projectile_accuracy": 1.133,
+      "projectile_speed": 1.365,
+      "ranged_damage": 0.759,
+      "rarity": 13.549,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.896
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 88.095
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.264
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "hazennstuff:solar_core"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA66534",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Solar Core"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 25.186,
+      "armor/boots": 3.778,
+      "armor/chestplate": 10.074,
+      "armor/helmet": 3.778,
+      "armor/leggings": 7.556,
+      "armor_durability": 55.205,
+      "armor_toughness": 11.015,
+      "attack_damage": 7.459,
+      "charging_value": 1.234,
+      "durability": 2023.711,
+      "enchantment_value": 26.508,
+      "harvest_speed": 20.302,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 14.297,
+      "magic_damage": 8.072,
+      "projectile_accuracy": 1.31,
+      "projectile_speed": 1.67,
+      "ranged_damage": 2.651,
+      "rarity": 61.801,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.611
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 404.742
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 4.06
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:ancient_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF494437",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Ancient Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 7.597,
+      "armor/boots": 1.14,
+      "armor/chestplate": 3.039,
+      "armor/helmet": 1.14,
+      "armor/leggings": 2.279,
+      "armor_durability": 10.042,
+      "armor_toughness": 2.205,
+      "attack_damage": 1.762,
+      "charging_value": 0.901,
+      "durability": 258.838,
+      "enchantment_value": 4.906,
+      "harvest_speed": 4.208,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 3.439,
+      "magic_damage": 1.844,
+      "projectile_accuracy": 1.072,
+      "projectile_speed": 1.258,
+      "ranged_damage": 0.491,
+      "rarity": 7.982,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.617
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 51.768
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.842
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

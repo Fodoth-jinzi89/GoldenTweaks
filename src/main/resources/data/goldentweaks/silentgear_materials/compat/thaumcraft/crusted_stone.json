@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:crusted_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF685D44",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Crusted Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.825,
+      "armor/boots": 0.724,
+      "armor/chestplate": 1.93,
+      "armor/helmet": 0.724,
+      "armor/leggings": 1.448,
+      "armor_durability": 5.266,
+      "armor_toughness": 1.199,
+      "attack_damage": 1.02,
+      "charging_value": 0.775,
+      "durability": 118.777,
+      "enchantment_value": 2.589,
+      "harvest_speed": 2.318,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.005,
+      "magic_damage": 1.054,
+      "projectile_accuracy": 0.982,
+      "projectile_speed": 1.102,
+      "ranged_damage": 0.259,
+      "rarity": 3.677,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.357
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 23.755
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.464
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

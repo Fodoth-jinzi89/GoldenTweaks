@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "extendedae:entro_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF519E81",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Entro Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 14.188,
+      "armor/boots": 2.127,
+      "armor/chestplate": 5.675,
+      "armor/helmet": 2.127,
+      "armor/leggings": 4.256,
+      "armor_durability": 22.215,
+      "armor_toughness": 4.724,
+      "attack_damage": 3.571,
+      "charging_value": 1.265,
+      "durability": 644.301,
+      "enchantment_value": 10.79,
+      "harvest_speed": 8.911,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.929,
+      "magic_damage": 3.78,
+      "projectile_accuracy": 1.44,
+      "projectile_speed": 1.745,
+      "ranged_damage": 1.079,
+      "rarity": 19.805,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.25
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 128.86
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.782
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

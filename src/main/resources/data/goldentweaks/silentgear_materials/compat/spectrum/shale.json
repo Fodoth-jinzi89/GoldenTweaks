@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:shale_clay"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF776C7A",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Shale Clay"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 5.154,
+      "armor/boots": 0.773,
+      "armor/chestplate": 2.062,
+      "armor/helmet": 0.773,
+      "armor/leggings": 1.546,
+      "armor_durability": 5.785,
+      "armor_toughness": 1.31,
+      "attack_damage": 1.105,
+      "charging_value": 0.793,
+      "durability": 133.029,
+      "enchantment_value": 2.842,
+      "harvest_speed": 2.529,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.169,
+      "magic_damage": 1.144,
+      "projectile_accuracy": 0.995,
+      "projectile_speed": 1.125,
+      "ranged_damage": 0.284,
+      "rarity": 4.115,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.387
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 26.606
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.506
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

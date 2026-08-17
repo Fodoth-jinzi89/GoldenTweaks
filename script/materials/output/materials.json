@@ -1,0 +1,4672 @@
+{
+  "meta": {
+    "source_json_count": 250,
+    "scanned_entries": 24305,
+    "木头_count": 76,
+    "岩石_count": 140,
+    "纤维_count": 9,
+    "宝石_count": 104,
+    "金属_count": 28,
+    "有机物_count": 307
+  },
+  "木头": [
+    {
+      "id": "northstar:argyre_log",
+      "name": "Argyre Log",
+      "source_type": "blocks",
+      "material": "argyre",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:bananawood",
+      "name": "Banana Wood",
+      "source_type": "blocks",
+      "material": "bananawood",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:black_log",
+      "name": "Black Log",
+      "source_type": "blocks",
+      "material": "black",
+      "merged_count": 5
+    },
+    {
+      "id": "northstar:bloom_fungus_stem_block",
+      "name": "Bloom Fungus Stem Block",
+      "source_type": "blocks",
+      "material": "bloom_fungus_stem_block",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:blue_log",
+      "name": "Blue Log",
+      "source_type": "blocks",
+      "material": "blue",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:brown_log",
+      "name": "Brown Log",
+      "source_type": "blocks",
+      "material": "brown",
+      "merged_count": 5
+    },
+    {
+      "id": "northstar:calorian_log",
+      "name": "Calorian Log",
+      "source_type": "blocks",
+      "material": "calorian",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:chestnut_noxcap_stem",
+      "name": "Chestnut Noxcap Stem",
+      "source_type": "blocks",
+      "material": "chestnut_noxcap",
+      "merged_count": 4
+    },
+    {
+      "id": "spectrum:chestnut_noxwood_planks",
+      "name": "Chestnut Noxwood Planks",
+      "source_type": "blocks",
+      "material": "chestnut_noxwood",
+      "merged_count": 1
+    },
+    {
+      "id": "createdieselgenerators:chip_wood_slab",
+      "name": "Chip Wood Slab",
+      "source_type": "blocks",
+      "material": "chip_wood",
+      "merged_count": 2
+    },
+    {
+      "id": "createdieselgenerators:chip_wood_beam",
+      "name": "Chip Wood Beam",
+      "source_type": "blocks",
+      "material": "chip_wood_beam",
+      "merged_count": 1
+    },
+    {
+      "id": "createdieselgenerators:chip_wood_block",
+      "name": "Chip Wood Block",
+      "source_type": "blocks",
+      "material": "chip_wood_block",
+      "merged_count": 1
+    },
+    {
+      "id": "cataclysm:chorus_stem",
+      "name": "Chorus Stem",
+      "source_type": "blocks",
+      "material": "chorus",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:cinnamon_log",
+      "name": "Cinnamon Log",
+      "source_type": "blocks",
+      "material": "cinnamon",
+      "merged_count": 4
+    },
+    {
+      "id": "flavor_immersed_daily:cinnamonwood",
+      "name": "Cinnamon Wood",
+      "source_type": "blocks",
+      "material": "cinnamonwood",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:coiler_log",
+      "name": "Coiler Log",
+      "source_type": "blocks",
+      "material": "coiler",
+      "merged_count": 3
+    },
+    {
+      "id": "spectrum:cyan_log",
+      "name": "Cyan Log",
+      "source_type": "blocks",
+      "material": "cyan",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:dead_log",
+      "name": "Dead Log",
+      "source_type": "blocks",
+      "material": "dead",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:ebony_noxcap_stem",
+      "name": "Ebony Noxcap Stem",
+      "source_type": "blocks",
+      "material": "ebony_noxcap",
+      "merged_count": 4
+    },
+    {
+      "id": "spectrum:ebony_noxwood_planks",
+      "name": "Ebony Noxwood Planks",
+      "source_type": "blocks",
+      "material": "ebony_noxwood",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:empyreal_log",
+      "name": "Empyreal Log",
+      "source_type": "blocks",
+      "material": "empyreal",
+      "merged_count": 5
+    },
+    {
+      "id": "supplementaries:fine_wood",
+      "name": "Fine Wood",
+      "source_type": "blocks",
+      "material": "fine",
+      "merged_count": 1
+    },
+    {
+      "id": "supplementaries:fine_wood_slab",
+      "name": "Fine Wood Slab",
+      "source_type": "blocks",
+      "material": "fine_wood",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:fir_log",
+      "name": "Fir Log",
+      "source_type": "blocks",
+      "material": "fir",
+      "merged_count": 5
+    },
+    {
+      "id": "hazennstuff:frostbite_birch_log",
+      "name": "Frostbite Birch Log",
+      "source_type": "blocks",
+      "material": "frostbite_birch",
+      "merged_count": 5
+    },
+    {
+      "id": "hazennstuff:frostbite_birch_nailed_planks",
+      "name": "Frostbite Birch Planks",
+      "source_type": "blocks",
+      "material": "frostbite_birch_nailed",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:gray_log",
+      "name": "Gray Log",
+      "source_type": "blocks",
+      "material": "gray",
+      "merged_count": 5
+    },
+    {
+      "id": "thaumcraft:greatwood_log",
+      "name": "Greatwood Log",
+      "source_type": "blocks",
+      "material": "greatwood",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:green_log",
+      "name": "Green Log",
+      "source_type": "blocks",
+      "material": "green",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:hellbark_log",
+      "name": "Hellbark Log",
+      "source_type": "blocks",
+      "material": "hellbark",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:ivory_noxcap_stem",
+      "name": "Ivory Noxcap Stem",
+      "source_type": "blocks",
+      "material": "ivory_noxcap",
+      "merged_count": 4
+    },
+    {
+      "id": "spectrum:ivory_noxwood_planks",
+      "name": "Ivory Noxwood Planks",
+      "source_type": "blocks",
+      "material": "ivory_noxwood",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:jacaranda_log",
+      "name": "Jacaranda Log",
+      "source_type": "blocks",
+      "material": "jacaranda",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:jadeite_lotus_stem",
+      "name": "Jadeite Lotus Stem",
+      "source_type": "blocks",
+      "material": "jadeite_lotus",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:light_blue_log",
+      "name": "Light Blue Log",
+      "source_type": "blocks",
+      "material": "light_blue",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:light_gray_log",
+      "name": "Light Gray Log",
+      "source_type": "blocks",
+      "material": "light_gray",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:lime_log",
+      "name": "Lime Log",
+      "source_type": "blocks",
+      "material": "lime",
+      "merged_count": 5
+    },
+    {
+      "id": "createbigcannons:log_cannon_chamber",
+      "name": "Log Cannon Chamber",
+      "source_type": "blocks",
+      "material": "log_cannon_chamber",
+      "merged_count": 1
+    },
+    {
+      "id": "createbigcannons:log_cannon_end",
+      "name": "Log Cannon End",
+      "source_type": "blocks",
+      "material": "log_cannon_end",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:magenta_log",
+      "name": "Magenta Log",
+      "source_type": "blocks",
+      "material": "magenta",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:magic_log",
+      "name": "Magic Log",
+      "source_type": "blocks",
+      "material": "magic",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:mahogany_log",
+      "name": "Mahogany Log",
+      "source_type": "blocks",
+      "material": "mahogany",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:maple_log",
+      "name": "Maple Log",
+      "source_type": "blocks",
+      "material": "maple",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:nephrite_blossom_stem",
+      "name": "Nephrite Blossom Stem",
+      "source_type": "blocks",
+      "material": "nephrite_blossom",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:orange_log",
+      "name": "Orange Log",
+      "source_type": "blocks",
+      "material": "orange",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:orchard_heartwood_log",
+      "name": "Orchard Heartwood Log",
+      "source_type": "blocks",
+      "material": "orchard_heartwood",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:palm_log",
+      "name": "Palm Log",
+      "source_type": "blocks",
+      "material": "palm",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:pine_log",
+      "name": "Pine Log",
+      "source_type": "blocks",
+      "material": "pine",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:pink_log",
+      "name": "Pink Log",
+      "source_type": "blocks",
+      "material": "pink",
+      "merged_count": 5
+    },
+    {
+      "id": "northstar:plate_fungus_stem_block",
+      "name": "Plate Fungus Stem Block",
+      "source_type": "blocks",
+      "material": "plate_fungus_stem_block",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:purple_log",
+      "name": "Purple Log",
+      "source_type": "blocks",
+      "material": "purple",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:red_log",
+      "name": "Red Log",
+      "source_type": "blocks",
+      "material": "red",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:redwood_log",
+      "name": "Redwood Log",
+      "source_type": "blocks",
+      "material": "redwood",
+      "merged_count": 5
+    },
+    {
+      "id": "interiors:seatwood_planks",
+      "name": "Seatwood Planks",
+      "source_type": "blocks",
+      "material": "seatwood",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:silverwood_log",
+      "name": "Silverwood Log",
+      "source_type": "blocks",
+      "material": "silverwood",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:slate_noxcap_stem",
+      "name": "Slate Noxcap Stem",
+      "source_type": "blocks",
+      "material": "slate_noxcap",
+      "merged_count": 4
+    },
+    {
+      "id": "spectrum:slate_noxwood_planks",
+      "name": "Slate Noxwood Planks",
+      "source_type": "blocks",
+      "material": "slate_noxwood",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:solarwood_log",
+      "name": "Solarwood Log",
+      "source_type": "blocks",
+      "material": "solarwood",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:spirit_sallow_log",
+      "name": "Spirit Sallow Log",
+      "source_type": "blocks",
+      "material": "spirit_sallow",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:stonebark_log",
+      "name": "Stonebark Log",
+      "source_type": "blocks",
+      "material": "stonebark",
+      "merged_count": 2
+    },
+    {
+      "id": "forbiddenmagic:tainted_log",
+      "name": "Tainted Log",
+      "source_type": "blocks",
+      "material": "tainted",
+      "merged_count": 2
+    },
+    {
+      "id": "northstar:tower_fungus_stem_block",
+      "name": "Tower Fungus Stem Block",
+      "source_type": "blocks",
+      "material": "tower_fungus_stem_block",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:umbran_log",
+      "name": "Umbran Log",
+      "source_type": "blocks",
+      "material": "umbran",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_log",
+      "name": "Verdant Grace Log",
+      "source_type": "blocks",
+      "material": "verdant_grace",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:vineheart_timber_log",
+      "name": "Vineheart Timber Log",
+      "source_type": "blocks",
+      "material": "vineheart_timber",
+      "merged_count": 2
+    },
+    {
+      "id": "taintedmagic:warpwood_log",
+      "name": "Warpwood Log",
+      "source_type": "blocks",
+      "material": "warpwood",
+      "merged_count": 2
+    },
+    {
+      "id": "taintedmagic:warpwood_knot_log",
+      "name": "Warpwood Knot",
+      "source_type": "blocks",
+      "material": "warpwood_knot",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:weeping_gala_log",
+      "name": "Weeping Gala Log",
+      "source_type": "blocks",
+      "material": "weeping_gala",
+      "merged_count": 5
+    },
+    {
+      "id": "spectrum:white_log",
+      "name": "White Log",
+      "source_type": "blocks",
+      "material": "white",
+      "merged_count": 5
+    },
+    {
+      "id": "biomesoplenty:willow_log",
+      "name": "Willow Log",
+      "source_type": "blocks",
+      "material": "willow",
+      "merged_count": 5
+    },
+    {
+      "id": "northstar:wilter_log",
+      "name": "Wilter Log",
+      "source_type": "blocks",
+      "material": "wilter",
+      "merged_count": 3
+    },
+    {
+      "id": "hazennstuff:wisewood_log",
+      "name": "Wisewood Log",
+      "source_type": "blocks",
+      "material": "wisewood",
+      "merged_count": 5
+    },
+    {
+      "id": "bakeries:wood_counter",
+      "name": "Wood Counter",
+      "source_type": "blocks",
+      "material": "wood_counter",
+      "merged_count": 1
+    },
+    {
+      "id": "bakeries:wood_tray",
+      "name": "Wood Tray",
+      "source_type": "blocks",
+      "material": "wood_tray",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:woodbasin",
+      "name": "Wood Basin",
+      "source_type": "blocks",
+      "material": "woodbasin",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:yellow_log",
+      "name": "Yellow Log",
+      "source_type": "blocks",
+      "material": "yellow",
+      "merged_count": 5
+    }
+  ],
+  "岩石": [
+    {
+      "id": "thaumcraft:air_infused_stone",
+      "name": "Air Infused Stone",
+      "source_type": "items",
+      "material": "air_infused_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:amber_bearing_stone",
+      "name": "Amber Bearing Stone",
+      "source_type": "items",
+      "material": "amber_bearing_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:ancient_stone",
+      "name": "Ancient Stone",
+      "source_type": "items",
+      "material": "ancient_stone",
+      "merged_count": 4
+    },
+    {
+      "id": "create:andesite_alloy_block",
+      "name": "Block of Andesite Alloy",
+      "source_type": "blocks",
+      "material": "andesite",
+      "merged_count": 126
+    },
+    {
+      "id": "thaumcraft:arcane_stone",
+      "name": "Arcane Stone Block",
+      "source_type": "items",
+      "material": "arcane_stone",
+      "merged_count": 6
+    },
+    {
+      "id": "minecraft:polished_basalt",
+      "name": "Basalt Pillar",
+      "source_type": "blocks",
+      "material": "basalt",
+      "merged_count": 82
+    },
+    {
+      "id": "spectrum:black_chiseled_preservation_stone",
+      "name": "Black Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "black_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:black_sand",
+      "name": "Black Sand",
+      "source_type": "blocks",
+      "material": "black_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:blackstone_bulb",
+      "name": "Blackstone Bulb",
+      "source_type": "blocks",
+      "material": "blackstone",
+      "merged_count": 60
+    },
+    {
+      "id": "spectrum:blue_chiseled_preservation_stone",
+      "name": "Blue Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "blue_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "ratatouille:boil_stone",
+      "name": "Boil Stone",
+      "source_type": "items",
+      "material": "boil_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:brimstone",
+      "name": "Brimstone",
+      "source_type": "blocks",
+      "material": "brimstone",
+      "merged_count": 9
+    },
+    {
+      "id": "spectrum:brown_chiseled_preservation_stone",
+      "name": "Brown Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "brown_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "bakeries:butter_flour_sand",
+      "name": "Butter Flour Sand",
+      "source_type": "items",
+      "material": "butter_flour_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "stoneworks:calcite_pavers",
+      "name": "Calcite Pavers",
+      "source_type": "blocks",
+      "material": "calcite",
+      "merged_count": 91
+    },
+    {
+      "id": "createbigcannons:casting_sand",
+      "name": "Casting Sand",
+      "source_type": "blocks",
+      "material": "casting_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:golem_clay",
+      "name": "Clay Golem",
+      "source_type": "items",
+      "material": "clay",
+      "merged_count": 3
+    },
+    {
+      "id": "thaumcraft:crusted_stone",
+      "name": "Crusted Stone",
+      "source_type": "items",
+      "material": "crusted_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "dndecor:polished_cut_stone",
+      "name": "Polished Cut Stone",
+      "source_type": "blocks",
+      "material": "cut_stone",
+      "merged_count": 4
+    },
+    {
+      "id": "spectrum:cyan_chiseled_preservation_stone",
+      "name": "Cyan Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "cyan_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:deep_light_chiseled_preservation_stone",
+      "name": "Deep Light Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "deep_light_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "stoneworks:deepslate_pavers",
+      "name": "Deepslate Pavers",
+      "source_type": "blocks",
+      "material": "deepslate",
+      "merged_count": 87
+    },
+    {
+      "id": "spectrum:dike_chiseled_preservation_stone",
+      "name": "Dike Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "dike_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "stoneworks:diorite_pavers",
+      "name": "Diorite Pavers",
+      "source_type": "blocks",
+      "material": "diorite",
+      "merged_count": 61
+    },
+    {
+      "id": "dndecor:dolomite",
+      "name": "Dolomite",
+      "source_type": "blocks",
+      "material": "dolomite",
+      "merged_count": 21
+    },
+    {
+      "id": "spectrum:dream_chiseled_preservation_stone",
+      "name": "Dream Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "dream_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "create:dripstone_pillar",
+      "name": "Dripstone Pillar",
+      "source_type": "blocks",
+      "material": "dripstone",
+      "merged_count": 24
+    },
+    {
+      "id": "thaumcraft:earth_infused_stone",
+      "name": "Earth Infused Stone",
+      "source_type": "items",
+      "material": "earth_infused_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:null_end_stone",
+      "name": "En�d��St�o�ne",
+      "source_type": "blocks",
+      "material": "end_stone",
+      "merged_count": 48
+    },
+    {
+      "id": "thaumcraft:entropy_infused_stone",
+      "name": "Entropy Infused Stone",
+      "source_type": "items",
+      "material": "entropy_infused_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:fire_infused_stone",
+      "name": "Fire Infused Stone",
+      "source_type": "items",
+      "material": "fire_infused_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "supplementaries:flint_block",
+      "name": "Block of Flint",
+      "source_type": "blocks",
+      "material": "flint",
+      "merged_count": 1
+    },
+    {
+      "id": "cataclysm:frosted_stone_bricks",
+      "name": "Frosted Stone Bricks",
+      "source_type": "blocks",
+      "material": "frosted_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "cataclysm:frosted_stone_brick_slab",
+      "name": "Frosted Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "frosted_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "dndecor:gabbro",
+      "name": "Gabbro",
+      "source_type": "blocks",
+      "material": "gabbro",
+      "merged_count": 21
+    },
+    {
+      "id": "thaumcraft:glowing_ancient_stone",
+      "name": "Glowing Ancient Stone",
+      "source_type": "blocks",
+      "material": "glowing_ancient_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:glyph_stone",
+      "name": "Glyph Stone",
+      "source_type": "blocks",
+      "material": "glyph_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:golem_stone",
+      "name": "Stone Golem",
+      "source_type": "items",
+      "material": "golem_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "touhou_little_maid:scarecrow",
+      "name": "Granite Inari Fox",
+      "source_type": "blocks",
+      "material": "granite",
+      "merged_count": 62
+    },
+    {
+      "id": "spectrum:gray_chiseled_preservation_stone",
+      "name": "Gray Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "gray_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:green_chiseled_preservation_stone",
+      "name": "Green Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "green_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "dndecor:layered_stone",
+      "name": "Layered Stone",
+      "source_type": "blocks",
+      "material": "layered_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:light_blue_chiseled_preservation_stone",
+      "name": "Light Blue Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "light_blue_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:light_gray_chiseled_preservation_stone",
+      "name": "Light Gray Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "light_gray_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:lime_chiseled_preservation_stone",
+      "name": "Lime Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "lime_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "create:limestone",
+      "name": "Limestone",
+      "source_type": "blocks",
+      "material": "limestone",
+      "merged_count": 46
+    },
+    {
+      "id": "create_connected:linked_stone_button",
+      "name": "Linked Stone Button",
+      "source_type": "blocks",
+      "material": "linked_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:magenta_chiseled_preservation_stone",
+      "name": "Magenta Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "magenta_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:basal_marble",
+      "name": "Basal Marble",
+      "source_type": "blocks",
+      "material": "marble",
+      "merged_count": 17
+    },
+    {
+      "id": "northstar:mars_deep_stone",
+      "name": "Deep Mars Stone",
+      "source_type": "blocks",
+      "material": "mars_deep_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mars_sand",
+      "name": "Mars Sand",
+      "source_type": "blocks",
+      "material": "mars_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mars_stone",
+      "name": "Mars Stone",
+      "source_type": "blocks",
+      "material": "mars_stone",
+      "merged_count": 4
+    },
+    {
+      "id": "northstar:mars_stone_brick_slab",
+      "name": "Mars Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "mars_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "northstar:mars_stone_brick_slab_vertical",
+      "name": "Mars Stone Brick Vertical Slab",
+      "source_type": "blocks",
+      "material": "mars_stone_brick_slab_vertical",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mars_stone_pillar",
+      "name": "Mars Stone Pillar",
+      "source_type": "blocks",
+      "material": "mars_stone_pillar",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mercury_deep_stone",
+      "name": "Deep Mercury Stone",
+      "source_type": "blocks",
+      "material": "mercury_deep_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mercury_stone",
+      "name": "Mercury Stone",
+      "source_type": "blocks",
+      "material": "mercury_stone",
+      "merged_count": 4
+    },
+    {
+      "id": "northstar:mercury_stone_brick_slab",
+      "name": "Mercury Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "mercury_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "northstar:mercury_stone_brick_slab_vertical",
+      "name": "Mercury Stone Brick Slab Vertical",
+      "source_type": "blocks",
+      "material": "mercury_stone_brick_slab_vertical",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mercury_stone_pillar",
+      "name": "Mercury Stone Pillar",
+      "source_type": "blocks",
+      "material": "mercury_stone_pillar",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:moon_deep_stone",
+      "name": "Moon Deep Stone",
+      "source_type": "blocks",
+      "material": "moon_deep_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:moon_sand",
+      "name": "Moon Sand",
+      "source_type": "blocks",
+      "material": "moon_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:moon_sand_paper",
+      "name": "Moon Sand Paper",
+      "source_type": "items",
+      "material": "moon_sand_paper",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:moon_stone",
+      "name": "Moon Stone",
+      "source_type": "blocks",
+      "material": "moon_stone",
+      "merged_count": 4
+    },
+    {
+      "id": "northstar:moon_stone_brick_slab",
+      "name": "Moon Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "moon_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "northstar:moon_stone_brick_slab_vertical",
+      "name": "Moon Stone Brick Vertical Slab",
+      "source_type": "blocks",
+      "material": "moon_stone_brick_slab_vertical",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:moon_stone_pillar",
+      "name": "Moon Stone Pillar",
+      "source_type": "blocks",
+      "material": "moon_stone_pillar",
+      "merged_count": 1
+    },
+    {
+      "id": "createbigcannons:mortar_stone",
+      "name": "Mortar Stone",
+      "source_type": "blocks",
+      "material": "mortar_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "createbigcannons:mortar_stone_projectile",
+      "name": "Mortar Stone Projectile",
+      "source_type": "blocks",
+      "material": "mortar_stone_projectile",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:mossy_black_sand",
+      "name": "Mossy Black Sand",
+      "source_type": "blocks",
+      "material": "mossy_black_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "dndecor:packed_mud_pillar",
+      "name": "Packed Mud Pillar",
+      "source_type": "blocks",
+      "material": "mud",
+      "merged_count": 25
+    },
+    {
+      "id": "dndecor:netherrack_pillar",
+      "name": "Netherrack Pillar",
+      "source_type": "blocks",
+      "material": "netherrack",
+      "merged_count": 42
+    },
+    {
+      "id": "mekanism:block_refined_obsidian",
+      "name": "Refined Obsidian",
+      "source_type": "blocks",
+      "material": "obsidian",
+      "merged_count": 34
+    },
+    {
+      "id": "spectrum:orange_chiseled_preservation_stone",
+      "name": "Orange Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "orange_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:orange_sand",
+      "name": "Orange Sand",
+      "source_type": "blocks",
+      "material": "orange_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:order_infused_stone",
+      "name": "Order Infused Stone",
+      "source_type": "items",
+      "material": "order_infused_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:paving_stone_travel",
+      "name": "Paving Stone of Travel",
+      "source_type": "items",
+      "material": "paving_stone_travel",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:paving_stone_warding",
+      "name": "Paving Stone of Warding",
+      "source_type": "items",
+      "material": "paving_stone_warding",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:pink_chiseled_preservation_stone",
+      "name": "Pink Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "pink_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:powder_chiseled_preservation_stone",
+      "name": "Powder Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "powder_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:preservation_stone",
+      "name": "Preservation Stone",
+      "source_type": "blocks",
+      "material": "preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:purple_chiseled_preservation_stone",
+      "name": "Purple Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "purple_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:red_chiseled_preservation_stone",
+      "name": "Red Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "red_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "create:red_sand_paper",
+      "name": "Red Sand Paper",
+      "source_type": "items",
+      "material": "red_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:redstone_sand",
+      "name": "Redstone Sand",
+      "source_type": "blocks",
+      "material": "redstone_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "create:sand_paper",
+      "name": "Sand Paper",
+      "source_type": "items",
+      "material": "sand_paper",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:black_sandstone",
+      "name": "Black Sandstone",
+      "source_type": "blocks",
+      "material": "sandstone",
+      "merged_count": 104
+    },
+    {
+      "id": "create:scoria",
+      "name": "Scoria",
+      "source_type": "blocks",
+      "material": "scoria",
+      "merged_count": 25
+    },
+    {
+      "id": "spectrum:shale_clay",
+      "name": "Shale Clay",
+      "source_type": "blocks",
+      "material": "shale",
+      "merged_count": 32
+    },
+    {
+      "id": "irons_spellbooks:shriving_stone",
+      "name": "Shriving Stone",
+      "source_type": "items",
+      "material": "shriving_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "irons_spellbooks:shriving_stone_desc",
+      "name": "Use in Anvil to remove Imbuement or Upgrades",
+      "source_type": "items",
+      "material": "shriving_stone_desc",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2:sky_dust",
+      "name": "Sky Stone Dust",
+      "source_type": "items",
+      "material": "sky",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2:sky_stone_block",
+      "name": "Sky Stone",
+      "source_type": "blocks",
+      "material": "sky_stone",
+      "merged_count": 9
+    },
+    {
+      "id": "ae2:sky_stone_brick_slab",
+      "name": "Sky Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "sky_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "ae2:sky_stone_chest",
+      "name": "Sky Stone Chest",
+      "source_type": "blocks",
+      "material": "sky_stone_chest",
+      "merged_count": 2
+    },
+    {
+      "id": "ae2:sky_stone_small_brick",
+      "name": "Sky Stone Small Brick",
+      "source_type": "blocks",
+      "material": "sky_stone_small",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2:sky_stone_small_brick_slab",
+      "name": "Sky Stone Small Brick Slab",
+      "source_type": "blocks",
+      "material": "sky_stone_small_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "ae2:sky_stone_tank",
+      "name": "Sky Stone Tank",
+      "source_type": "blocks",
+      "material": "sky_stone_tank",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:slate_noxcap_block",
+      "name": "Slate Noxcap Block",
+      "source_type": "blocks",
+      "material": "slate",
+      "merged_count": 73
+    },
+    {
+      "id": "dndecor:small_stone_bricks",
+      "name": "Small Stone Bricks",
+      "source_type": "blocks",
+      "material": "small_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "dndecor:small_stone_brick_slab",
+      "name": "Small Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "small_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "dndecor:cut_stone",
+      "name": "Cut Stone",
+      "source_type": "blocks",
+      "material": "stone",
+      "merged_count": 8
+    },
+    {
+      "id": "neoguanniao:stone_bird_bath",
+      "name": "Stone Bird Bath I",
+      "source_type": "items",
+      "material": "stone_bird_bath",
+      "merged_count": 2
+    },
+    {
+      "id": "neoguanniao:stone_bird_bath_2",
+      "name": "Stone Bird Bath II",
+      "source_type": "items",
+      "material": "stone_bird_bath_2",
+      "merged_count": 2
+    },
+    {
+      "id": "dndecor:cut_stone_brick_slab",
+      "name": "Cut Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "cataclysm:chiseled_stone_brick_pillar",
+      "name": "Chiseled Stone Brick Pillar",
+      "source_type": "blocks",
+      "material": "stone_brick_pillar",
+      "merged_count": 1
+    },
+    {
+      "id": "dndecor:stone_crushing_wheel",
+      "name": "Stone Crushing Wheel",
+      "source_type": "blocks",
+      "material": "stone_crushing_wheel",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:stone_lion",
+      "name": "Stone Lion",
+      "source_type": "items",
+      "material": "stone_lion",
+      "merged_count": 2
+    },
+    {
+      "id": "dndecor:stone_millstone",
+      "name": "Stone Millstone",
+      "source_type": "blocks",
+      "material": "stone_millstone",
+      "merged_count": 1
+    },
+    {
+      "id": "stoneworks:stone_paver_slab",
+      "name": "Stone Paver Slab",
+      "source_type": "blocks",
+      "material": "stone_paver",
+      "merged_count": 3
+    },
+    {
+      "id": "stoneworks:stone_pavers",
+      "name": "Stone Pavers",
+      "source_type": "blocks",
+      "material": "stone_pavers",
+      "merged_count": 1
+    },
+    {
+      "id": "mekanismtools:stone_paxel",
+      "name": "Stone Paxel",
+      "source_type": "items",
+      "material": "stone_paxel",
+      "merged_count": 1
+    },
+    {
+      "id": "cataclysm:stone_pillar",
+      "name": "Stone Pillar",
+      "source_type": "blocks",
+      "material": "stone_pillar",
+      "merged_count": 3
+    },
+    {
+      "id": "stoneworks:stone_plate_slab",
+      "name": "Stone Plate Slab",
+      "source_type": "blocks",
+      "material": "stone_plate",
+      "merged_count": 3
+    },
+    {
+      "id": "stoneworks:stone_plates",
+      "name": "Stone Plates",
+      "source_type": "blocks",
+      "material": "stone_plates",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:stone_shimmerstone_light",
+      "name": "Stone Shimmerstone Light",
+      "source_type": "blocks",
+      "material": "stone_shimmerstone_light",
+      "merged_count": 1
+    },
+    {
+      "id": "stoneworks:stone_shingle_slab",
+      "name": "Stone Shingle Slab",
+      "source_type": "blocks",
+      "material": "stone_shingle",
+      "merged_count": 3
+    },
+    {
+      "id": "stoneworks:stone_shingles",
+      "name": "Stone Shingles",
+      "source_type": "blocks",
+      "material": "stone_shingles",
+      "merged_count": 1
+    },
+    {
+      "id": "supplementaries:stone_tile",
+      "name": "Stone Tiles",
+      "source_type": "blocks",
+      "material": "stone_tile",
+      "merged_count": 10
+    },
+    {
+      "id": "spectrum:storm_stone",
+      "name": "Storm Stone",
+      "source_type": "items",
+      "material": "storm_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:stuck_storm_stone",
+      "name": "Storm Stone",
+      "source_type": "blocks",
+      "material": "stuck_storm_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "touhou_little_maid_spell:suppression_stone",
+      "name": "Suppression Stone",
+      "source_type": "blocks",
+      "material": "suppression_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "lootr:suspicious_sand",
+      "name": "Sand",
+      "source_type": "blocks",
+      "material": "suspicious_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:tainted_stone",
+      "name": "Tainted Stone",
+      "source_type": "blocks",
+      "material": "tainted_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:fanciful_tuff_ring",
+      "name": "Fanciful Tuff Ring",
+      "source_type": "items",
+      "material": "tuff",
+      "merged_count": 56
+    },
+    {
+      "id": "northstar:venus_deep_stone",
+      "name": "Deep Venus Stone",
+      "source_type": "blocks",
+      "material": "venus_deep_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:venus_stone",
+      "name": "Venus Stone",
+      "source_type": "blocks",
+      "material": "venus_stone",
+      "merged_count": 4
+    },
+    {
+      "id": "northstar:venus_stone_brick_slab",
+      "name": "Venus Stone Brick Slab",
+      "source_type": "blocks",
+      "material": "venus_stone_brick",
+      "merged_count": 3
+    },
+    {
+      "id": "northstar:venus_stone_brick_slab_vertical",
+      "name": "Venus Stone Brick Vertical Slab",
+      "source_type": "blocks",
+      "material": "venus_stone_brick_slab_vertical",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:venus_stone_bull_spawn_egg",
+      "name": "Venus Stone Bull Spawn Egg",
+      "source_type": "items",
+      "material": "venus_stone_bull_spawn_egg",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:venus_stone_pillar",
+      "name": "Venus Stone Pillar",
+      "source_type": "blocks",
+      "material": "venus_stone_pillar",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:vis_amulet_lesser",
+      "name": "Vis Stone",
+      "source_type": "items",
+      "material": "vis_amulet_lesser",
+      "merged_count": 1
+    },
+    {
+      "id": "cataclysm:void_stone",
+      "name": "Void Stone",
+      "source_type": "blocks",
+      "material": "void_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:warded_stone",
+      "name": "Warded Stone Block",
+      "source_type": "items",
+      "material": "warded_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "waystones:warp_stone",
+      "name": "Warp Stone",
+      "source_type": "items",
+      "material": "warp_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:water_infused_stone",
+      "name": "Water Infused Stone",
+      "source_type": "items",
+      "material": "water_infused_stone",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:white_chiseled_preservation_stone",
+      "name": "White Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "white_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:white_sand",
+      "name": "White Sand",
+      "source_type": "blocks",
+      "material": "white_sand",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:yellow_chiseled_preservation_stone",
+      "name": "Yellow Chiseled Preservation Stone",
+      "source_type": "blocks",
+      "material": "yellow_chiseled_preservation_stone",
+      "merged_count": 1
+    },
+    {
+      "id": "hazennstuff:zenalite_stone_ore",
+      "name": "Stone Zenalite Ore",
+      "source_type": "blocks",
+      "material": "zenalite_stone",
+      "merged_count": 1
+    }
+  ],
+  "纤维": [
+    {
+      "id": "farmersdelight:canvas",
+      "name": "Canvas",
+      "source_type": "items",
+      "material": "canvas",
+      "merged_count": 75
+    },
+    {
+      "id": "createnuclear:red_cloth",
+      "name": "Red Cloth",
+      "source_type": "items",
+      "material": "cloth",
+      "merged_count": 58
+    },
+    {
+      "id": "northstar:dry_plant_fiber",
+      "name": "Dry Plant Fiber",
+      "source_type": "items",
+      "material": "dry_plant",
+      "merged_count": 1
+    },
+    {
+      "id": "touhou_little_maid:nimble_fabric",
+      "name": "§6Nimble Fabric",
+      "source_type": "items",
+      "material": "fabric",
+      "merged_count": 4
+    },
+    {
+      "id": "supplementaries:flax",
+      "name": "Flax",
+      "source_type": "items",
+      "material": "flax",
+      "merged_count": 6
+    },
+    {
+      "id": "create:rope",
+      "name": "Rope",
+      "source_type": "blocks",
+      "material": "rope",
+      "merged_count": 14
+    },
+    {
+      "id": "biomesoplenty:glowworm_silk",
+      "name": "Glowworm Silk",
+      "source_type": "blocks",
+      "material": "silk",
+      "merged_count": 2
+    },
+    {
+      "id": "exposuredetective:red_string",
+      "name": "Red String",
+      "source_type": "items",
+      "material": "string",
+      "merged_count": 21
+    },
+    {
+      "id": "mek_x_star:crushed_wool",
+      "name": "Crushed Wool",
+      "source_type": "items",
+      "material": "wool",
+      "merged_count": 2
+    }
+  ],
+  "宝石": [
+    {
+      "id": "thaumcraft:air_shard",
+      "name": "Air Shard",
+      "source_type": "items",
+      "material": "air",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:amethyst_crystal",
+      "name": "Amethyst Crystal",
+      "source_type": "blocks",
+      "material": "amethyst",
+      "merged_count": 58
+    },
+    {
+      "id": "create_dragons_plus:dyenamics_aquamarine_dye_bucket",
+      "name": "Dyenamics Aquamarine Dye Bucket",
+      "source_type": "items",
+      "material": "aquamarine",
+      "merged_count": 2
+    },
+    {
+      "id": "alshanex_familiars:archmage_shard",
+      "name": "Archmage Shard",
+      "source_type": "items",
+      "material": "archmage",
+      "merged_count": 1
+    },
+    {
+      "id": "waystones:attuned_shard",
+      "name": "Attuned Shard",
+      "source_type": "items",
+      "material": "attuned",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:balanced_shard",
+      "name": "Balanced Shard",
+      "source_type": "items",
+      "material": "balanced",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:bard_shard",
+      "name": "Bard Shard",
+      "source_type": "items",
+      "material": "bard",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:bismuth_crystal",
+      "name": "Bismuth Crystal",
+      "source_type": "items",
+      "material": "bismuth",
+      "merged_count": 1
+    },
+    {
+      "id": "igleelib:blaze_shard",
+      "name": "Blaze Shard",
+      "source_type": "items",
+      "material": "blaze",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:blazing_crystal",
+      "name": "Blazing Crystal",
+      "source_type": "blocks",
+      "material": "blazing",
+      "merged_count": 1
+    },
+    {
+      "id": "traveloptics:celestial_shard",
+      "name": "Celestial Shard",
+      "source_type": "items",
+      "material": "celestial",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:chipped_budding_energized_crystal",
+      "name": "Chipped Budding Energized Crystal",
+      "source_type": "blocks",
+      "material": "chipped_budding_energized",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:citrine_shard",
+      "name": "Citrine Shard",
+      "source_type": "items",
+      "material": "citrine",
+      "merged_count": 29
+    },
+    {
+      "id": "alshanex_familiars:cleric_shard",
+      "name": "Cleric Shard",
+      "source_type": "items",
+      "material": "cleric",
+      "merged_count": 1
+    },
+    {
+      "id": "taintedmagic:creation_shard",
+      "name": "Shard of Creation",
+      "source_type": "items",
+      "material": "creation",
+      "merged_count": 1
+    },
+    {
+      "id": "waystones:crumbling_attuned_shard",
+      "name": "Crumbling Attuned Shard",
+      "source_type": "items",
+      "material": "crumbling_attuned",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:cryotheum_crystal",
+      "name": "Cryotheum Crystal",
+      "source_type": "items",
+      "material": "cryotheum",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:damaged_budding_energized_crystal",
+      "name": "Damaged Budding Energized Crystal",
+      "source_type": "blocks",
+      "material": "damaged_budding_energized",
+      "merged_count": 1
+    },
+    {
+      "id": "irons_spellbooks:dead_king_phylactery_shard",
+      "name": "Dead King Phylactery Shard",
+      "source_type": "items",
+      "material": "dead_king_phylactery",
+      "merged_count": 1
+    },
+    {
+      "id": "dndesires:diamond_shard",
+      "name": "Diamond Shard",
+      "source_type": "items",
+      "material": "diamond",
+      "merged_count": 45
+    },
+    {
+      "id": "waystones:dormant_shard",
+      "name": "Dormant Shard",
+      "source_type": "items",
+      "material": "dormant",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:dragon_warrior_shard",
+      "name": "Dragoon Shard",
+      "source_type": "items",
+      "material": "dragon_warrior",
+      "merged_count": 1
+    },
+    {
+      "id": "touhou_little_maid_spell:dream_cat_crystal",
+      "name": "Dreamcloud Crystal",
+      "source_type": "items",
+      "material": "dream_cat",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:druid_shard",
+      "name": "Druid Shard",
+      "source_type": "items",
+      "material": "druid",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:earth_shard",
+      "name": "Earth Shard",
+      "source_type": "items",
+      "material": "earth",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:eldritch_crystal",
+      "name": "Eldritch Crystal",
+      "source_type": "items",
+      "material": "eldritch",
+      "merged_count": 2
+    },
+    {
+      "id": "kaleidoscope_tavern:emerald",
+      "name": "Emerald",
+      "source_type": "blocks",
+      "material": "emerald",
+      "merged_count": 18
+    },
+    {
+      "id": "mekmm:empty_crystal",
+      "name": "Empty Crystal",
+      "source_type": "items",
+      "material": "empty",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:empty_mob_crystal",
+      "name": "Empty Mob Crystal",
+      "source_type": "items",
+      "material": "empty_mob",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumic_tinkerer:ender_shard",
+      "name": "Ender Shard",
+      "source_type": "items",
+      "material": "ender",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:energized_crystal",
+      "name": "Energized Crystal",
+      "source_type": "items",
+      "material": "energized",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:energized_fluix_crystal",
+      "name": "Energized Fluix Crystal",
+      "source_type": "items",
+      "material": "energized_fluix",
+      "merged_count": 1
+    },
+    {
+      "id": "extendedae:entro_crystal",
+      "name": "Entro Crystal",
+      "source_type": "items",
+      "material": "entro",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:entropy_shard",
+      "name": "Entropy Shard",
+      "source_type": "items",
+      "material": "entropy",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:envy_shard",
+      "name": "Envy Shard",
+      "source_type": "items",
+      "material": "envy",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:fire_shard",
+      "name": "Fire Shard",
+      "source_type": "items",
+      "material": "fire",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:flawed_budding_energized_crystal",
+      "name": "Flawed Budding Energized Crystal",
+      "source_type": "blocks",
+      "material": "flawed_budding_energized",
+      "merged_count": 1
+    },
+    {
+      "id": "neoecoae:flawless_budding_energized_crystal",
+      "name": "Flawless Budding Energized Crystal",
+      "source_type": "blocks",
+      "material": "flawless_budding_energized",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:flowing_liquid_crystal",
+      "name": "Liquid Crystal",
+      "source_type": "blocks",
+      "material": "flowing_liquid",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2:fluix_crystal",
+      "name": "Fluix Crystal",
+      "source_type": "items",
+      "material": "fluix",
+      "merged_count": 1
+    },
+    {
+      "id": "mekanism:fluorite_gem",
+      "name": "Fluorite",
+      "source_type": "items",
+      "material": "fluorite",
+      "merged_count": 20
+    },
+    {
+      "id": "taintedmagic:focus_vis_shard",
+      "name": "Wand Focus: Vis Shard",
+      "source_type": "items",
+      "material": "focus_vis",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:frostbite_crystal",
+      "name": "Frostbite Crystal",
+      "source_type": "blocks",
+      "material": "frostbite",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:frostling_shard",
+      "name": "Frostling Shard",
+      "source_type": "items",
+      "material": "frostling",
+      "merged_count": 1
+    },
+    {
+      "id": "irons_jewelry:garnet",
+      "name": "Garnet",
+      "source_type": "items",
+      "material": "garnet",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:gluttony_shard",
+      "name": "Gluttony Shard",
+      "source_type": "items",
+      "material": "gluttony",
+      "merged_count": 1
+    },
+    {
+      "id": "aero_reformation:gravity_crystal",
+      "name": "Gravity Crystal",
+      "source_type": "blocks",
+      "material": "gravity",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:greed_shard",
+      "name": "Greed Shard",
+      "source_type": "items",
+      "material": "greed",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:hunter_shard",
+      "name": "Hunter Shard",
+      "source_type": "items",
+      "material": "hunter",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:illusionist_shard",
+      "name": "Illusionist Shard",
+      "source_type": "items",
+      "material": "illusionist",
+      "merged_count": 1
+    },
+    {
+      "id": "iss_magicfromtheeast:jade_block",
+      "name": "Polished Jadestone",
+      "source_type": "blocks",
+      "material": "jade",
+      "merged_count": 23
+    },
+    {
+      "id": "spectrum:knowledge_gem",
+      "name": "Knowledge Gem",
+      "source_type": "items",
+      "material": "knowledge",
+      "merged_count": 1
+    },
+    {
+      "id": "dndesires:lapis_lazuli_shard",
+      "name": "Lapis Lazuli Shard",
+      "source_type": "items",
+      "material": "lapis",
+      "merged_count": 26
+    },
+    {
+      "id": "alshanex_familiars:life_gem",
+      "name": "Life Gem",
+      "source_type": "items",
+      "material": "life",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:lightning_mage_shard",
+      "name": "Lightning Mage Shard",
+      "source_type": "items",
+      "material": "lightning_mage",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:liquid_crystal",
+      "name": "Liquid Crystal",
+      "source_type": "blocks",
+      "material": "liquid",
+      "merged_count": 1
+    },
+    {
+      "id": "apotheosis:luminous_crystal_shard",
+      "name": "Luminous Crystal Shard",
+      "source_type": "items",
+      "material": "luminous_crystal",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:lust_shard",
+      "name": "Lust Shard",
+      "source_type": "items",
+      "material": "lust",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:malachite_block",
+      "name": "Block of Malachite",
+      "source_type": "blocks",
+      "material": "malachite",
+      "merged_count": 17
+    },
+    {
+      "id": "spectrum:mermaids_gem",
+      "name": "Mermaid's Gem",
+      "source_type": "items",
+      "material": "mermaids",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:mob_crystal",
+      "name": "Mob Crystal",
+      "source_type": "items",
+      "material": "mob",
+      "merged_count": 1
+    },
+    {
+      "id": "evolvedmekanism:mold_gem",
+      "name": "Gem Mold",
+      "source_type": "items",
+      "material": "mold",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:moonstone_shard",
+      "name": "Moonstone Shard",
+      "source_type": "items",
+      "material": "moonstone",
+      "merged_count": 31
+    },
+    {
+      "id": "alshanex_familiars:necromancer_shard",
+      "name": "Necromancer Shard",
+      "source_type": "items",
+      "material": "necromancer",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:onyx_shard",
+      "name": "Onyx Shard",
+      "source_type": "items",
+      "material": "onyx",
+      "merged_count": 31
+    },
+    {
+      "id": "thaumcraft:order_shard",
+      "name": "Order Shard",
+      "source_type": "items",
+      "material": "order",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:paltaeria_gem",
+      "name": "Paltaeria Gem",
+      "source_type": "items",
+      "material": "paltaeria",
+      "merged_count": 1
+    },
+    {
+      "id": "alltheores:peridot_dust",
+      "name": "Peridot Dust",
+      "source_type": "items",
+      "material": "peridot",
+      "merged_count": 9
+    },
+    {
+      "id": "irons_spellbooks:permafrost_shard",
+      "name": "Permafrost Shard",
+      "source_type": "items",
+      "material": "permafrost",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:plague_shard",
+      "name": "Plague Doctor Shard",
+      "source_type": "items",
+      "material": "plague",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:pride_shard",
+      "name": "Pride Shard",
+      "source_type": "items",
+      "material": "pride",
+      "merged_count": 1
+    },
+    {
+      "id": "hazennstuff:prismatic_shard",
+      "name": "Prismatic Shard",
+      "source_type": "items",
+      "material": "prismatic",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_data_crystal",
+      "name": "Purified Data Crystal",
+      "source_type": "items",
+      "material": "purified_data",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_ember_crystal",
+      "name": "Purified Ember Crystal",
+      "source_type": "items",
+      "material": "purified_ember",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_energized_fluix_crystal",
+      "name": "Purified Energized Fluix Crystal",
+      "source_type": "items",
+      "material": "purified_energized_fluix",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_entro_crystal",
+      "name": "Purified Entro Crystal",
+      "source_type": "items",
+      "material": "purified_entro",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_fluix_crystal",
+      "name": "Purified Fluix Crystal",
+      "source_type": "items",
+      "material": "purified_fluix",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_irradiated_crystal",
+      "name": "Purified Irradiated Crystal",
+      "source_type": "items",
+      "material": "purified_irradiated",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_link_crystal",
+      "name": "Purified Link Crystal",
+      "source_type": "items",
+      "material": "purified_link",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_meteor_crystal",
+      "name": "Purified Meteor Crystal",
+      "source_type": "items",
+      "material": "purified_meteor",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_overload_crystal",
+      "name": "Purified Overload Crystal",
+      "source_type": "items",
+      "material": "purified_overload",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_quantum_crystal",
+      "name": "Purified Quantum Crystal",
+      "source_type": "items",
+      "material": "purified_quantum",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_redstone_crystal",
+      "name": "Purified Redstone Crystal",
+      "source_type": "items",
+      "material": "purified_redstone",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2cs:purified_resonating_crystal",
+      "name": "Purified Resonating Crystal",
+      "source_type": "items",
+      "material": "purified_resonating",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2:quartz_block",
+      "name": "Certus Quartz Block",
+      "source_type": "blocks",
+      "material": "quartz",
+      "merged_count": 143
+    },
+    {
+      "id": "spectrum:resonance_shard",
+      "name": "Resonance Shard",
+      "source_type": "items",
+      "material": "resonance",
+      "merged_count": 1
+    },
+    {
+      "id": "touhou_little_maid_spell:rock_crystal",
+      "name": "Rock Crystal",
+      "source_type": "items",
+      "material": "rock",
+      "merged_count": 2
+    },
+    {
+      "id": "alltheores:ruby_dust",
+      "name": "Ruby Dust",
+      "source_type": "items",
+      "material": "ruby",
+      "merged_count": 10
+    },
+    {
+      "id": "alltheores:sapphire_dust",
+      "name": "Sapphire Dust",
+      "source_type": "items",
+      "material": "sapphire",
+      "merged_count": 18
+    },
+    {
+      "id": "alshanex_familiars:scorcher_shard",
+      "name": "Scorcher Shard",
+      "source_type": "items",
+      "material": "scorcher",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumic_tinkerer:nether_shard",
+      "name": "Nether Shard",
+      "source_type": "items",
+      "material": "shard",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:shimmerstone_gem",
+      "name": "Shimmerstone Gem",
+      "source_type": "items",
+      "material": "shimmerstone",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:sloth_shard",
+      "name": "Sloth Shard",
+      "source_type": "items",
+      "material": "sloth",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:spectral_shard",
+      "name": "Spectral Shard",
+      "source_type": "items",
+      "material": "spectral",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:stratine_gem",
+      "name": "Stratine Gem",
+      "source_type": "items",
+      "material": "stratine",
+      "merged_count": 1
+    },
+    {
+      "id": "alshanex_familiars:summoner_shard",
+      "name": "Summoner Shard",
+      "source_type": "items",
+      "material": "summoner",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:taint_shard",
+      "name": "Taint Shard",
+      "source_type": "items",
+      "material": "taint",
+      "merged_count": 1
+    },
+    {
+      "id": "taintedmagic:tainted_unbalanced_shard",
+      "name": "Tainted Unbalanced Shard",
+      "source_type": "items",
+      "material": "tainted_unbalanced",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:topaz_shard",
+      "name": "Topaz Shard",
+      "source_type": "items",
+      "material": "topaz",
+      "merged_count": 30
+    },
+    {
+      "id": "create_fantasizing:unprocessed_echo_shard",
+      "name": "Unprocessed Echo Shard",
+      "source_type": "items",
+      "material": "unprocessed_echo",
+      "merged_count": 1
+    },
+    {
+      "id": "cataclysm:void_crystal",
+      "name": "Void Crystal",
+      "source_type": "blocks",
+      "material": "void",
+      "merged_count": 2
+    },
+    {
+      "id": "taintedmagic:warped_unbalanced_shard",
+      "name": "Warped Unbalanced Shard",
+      "source_type": "items",
+      "material": "warped_unbalanced",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:water_shard",
+      "name": "Water Shard",
+      "source_type": "items",
+      "material": "water",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:wrath_shard",
+      "name": "Wrath Shard",
+      "source_type": "items",
+      "material": "wrath",
+      "merged_count": 1
+    }
+  ],
+  "金属": [
+    {
+      "id": "alltheores:aluminum_ingot",
+      "name": "Aluminum Ingot",
+      "source_type": "items",
+      "material": "aluminum",
+      "merged_count": 23
+    },
+    {
+      "id": "alltheores:brass_ingot",
+      "name": "Brass Ingot",
+      "source_type": "items",
+      "material": "brass",
+      "merged_count": 12
+    },
+    {
+      "id": "alltheores:bronze_ingot",
+      "name": "Bronze Ingot",
+      "source_type": "items",
+      "material": "bronze",
+      "merged_count": 11
+    },
+    {
+      "id": "createbigcannons:cast_iron_ingot",
+      "name": "Cast Iron Ingot",
+      "source_type": "items",
+      "material": "cast_iron",
+      "merged_count": 5
+    },
+    {
+      "id": "alltheores:constantan_ingot",
+      "name": "Constantan Ingot",
+      "source_type": "items",
+      "material": "constantan",
+      "merged_count": 7
+    },
+    {
+      "id": "alltheores:copper_nugget",
+      "name": "Copper Nugget",
+      "source_type": "items",
+      "material": "copper",
+      "merged_count": 23
+    },
+    {
+      "id": "alltheores:electrum_ingot",
+      "name": "Electrum Ingot",
+      "source_type": "items",
+      "material": "electrum",
+      "merged_count": 12
+    },
+    {
+      "id": "alltheores:enderium_ingot",
+      "name": "Enderium Ingot",
+      "source_type": "items",
+      "material": "enderium",
+      "merged_count": 7
+    },
+    {
+      "id": "alltheores:gold_dust",
+      "name": "Gold Dust",
+      "source_type": "items",
+      "material": "gold",
+      "merged_count": 20
+    },
+    {
+      "id": "alltheores:invar_ingot",
+      "name": "Invar Ingot",
+      "source_type": "items",
+      "material": "invar",
+      "merged_count": 7
+    },
+    {
+      "id": "alltheores:iridium_ingot",
+      "name": "Iridium Ingot",
+      "source_type": "items",
+      "material": "iridium",
+      "merged_count": 17
+    },
+    {
+      "id": "thaumcraft:iron_nugget",
+      "name": "Iron Nugget",
+      "source_type": "items",
+      "material": "iron",
+      "merged_count": 28
+    },
+    {
+      "id": "alltheores:lead_ingot",
+      "name": "Lead Ingot",
+      "source_type": "items",
+      "material": "lead",
+      "merged_count": 33
+    },
+    {
+      "id": "alltheores:lumium_ingot",
+      "name": "Lumium Ingot",
+      "source_type": "items",
+      "material": "lumium",
+      "merged_count": 7
+    },
+    {
+      "id": "irons_spellbooks:mithril_ingot",
+      "name": "Mithril Ingot",
+      "source_type": "items",
+      "material": "mithril",
+      "merged_count": 4
+    },
+    {
+      "id": "alltheores:netherite_dust",
+      "name": "Netherite Dust",
+      "source_type": "items",
+      "material": "netherite",
+      "merged_count": 4
+    },
+    {
+      "id": "alltheores:nickel_ingot",
+      "name": "Nickel Ingot",
+      "source_type": "items",
+      "material": "nickel",
+      "merged_count": 17
+    },
+    {
+      "id": "alltheores:osmium_ingot",
+      "name": "Osmium Ingot",
+      "source_type": "items",
+      "material": "osmium",
+      "merged_count": 26
+    },
+    {
+      "id": "alltheores:platinum_ingot",
+      "name": "Platinum Ingot",
+      "source_type": "items",
+      "material": "platinum",
+      "merged_count": 24
+    },
+    {
+      "id": "hazennstuff:rose_gold_ingot",
+      "name": "Rose Gold Ingot",
+      "source_type": "items",
+      "material": "rose_gold",
+      "merged_count": 1
+    },
+    {
+      "id": "alltheores:signalum_ingot",
+      "name": "Signalum Ingot",
+      "source_type": "items",
+      "material": "signalum",
+      "merged_count": 7
+    },
+    {
+      "id": "alltheores:silver_ingot",
+      "name": "Silver Ingot",
+      "source_type": "items",
+      "material": "silver",
+      "merged_count": 18
+    },
+    {
+      "id": "alltheores:steel_ingot",
+      "name": "Steel Ingot",
+      "source_type": "items",
+      "material": "steel",
+      "merged_count": 27
+    },
+    {
+      "id": "alltheores:tin_ingot",
+      "name": "Tin Ingot",
+      "source_type": "items",
+      "material": "tin",
+      "merged_count": 27
+    },
+    {
+      "id": "northstar:titanium_ingot",
+      "name": "Titanium Ingot",
+      "source_type": "items",
+      "material": "titanium",
+      "merged_count": 14
+    },
+    {
+      "id": "neoecoae:tungsten_ingot",
+      "name": "Tungsten Ingot",
+      "source_type": "items",
+      "material": "tungsten",
+      "merged_count": 13
+    },
+    {
+      "id": "alltheores:uranium_ingot",
+      "name": "Uranium Ingot",
+      "source_type": "items",
+      "material": "uranium",
+      "merged_count": 30
+    },
+    {
+      "id": "alltheores:zinc_ingot",
+      "name": "Zinc Ingot",
+      "source_type": "items",
+      "material": "zinc",
+      "merged_count": 34
+    }
+  ],
+  "有机物": [
+    {
+      "id": "croptopia:almond_crop",
+      "name": "Almond Crop",
+      "source_type": "blocks",
+      "material": "almond",
+      "merged_count": 3
+    },
+    {
+      "id": "spectrum:aloe_leaf",
+      "name": "Aloe Leaf",
+      "source_type": "items",
+      "material": "aloe",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:aniseed_0_seeds",
+      "name": "Aniseed Seeds",
+      "source_type": "items",
+      "material": "aniseed_0",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:apple_crop",
+      "name": "Apple Crop",
+      "source_type": "blocks",
+      "material": "apple",
+      "merged_count": 21
+    },
+    {
+      "id": "flavor_immersed_daily:appleleave_fruiting_leaves",
+      "name": "Apple Leaves",
+      "source_type": "items",
+      "material": "appleleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:apricot_crop",
+      "name": "Apricot Crop",
+      "source_type": "blocks",
+      "material": "apricot",
+      "merged_count": 5
+    },
+    {
+      "id": "northstar:argyre_leaves",
+      "name": "Argyre Leaves",
+      "source_type": "blocks",
+      "material": "argyre",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:artichoke_crop",
+      "name": "Artichoke Crop",
+      "source_type": "blocks",
+      "material": "artichoke",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:asparagus_crop",
+      "name": "Asparagus Crop",
+      "source_type": "blocks",
+      "material": "asparagus",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:aubergineseedblock",
+      "name": "Eggplant Seeds",
+      "source_type": "items",
+      "material": "aubergineseedblock",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:avocado_crop",
+      "name": "Avocado Crop",
+      "source_type": "blocks",
+      "material": "avocado",
+      "merged_count": 3
+    },
+    {
+      "id": "kaleidoscope_cookery:raw_bamboo_tube_rice",
+      "name": "Raw Bamboo Tube Rice",
+      "source_type": "items",
+      "material": "bamboo",
+      "merged_count": 13
+    },
+    {
+      "id": "croptopia:banana_crop",
+      "name": "Banana Crop",
+      "source_type": "blocks",
+      "material": "banana",
+      "merged_count": 5
+    },
+    {
+      "id": "croptopia:barley_crop",
+      "name": "Barley Crop",
+      "source_type": "blocks",
+      "material": "barley",
+      "merged_count": 5
+    },
+    {
+      "id": "croptopia:basil_crop",
+      "name": "Basil Crop",
+      "source_type": "blocks",
+      "material": "basil",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:soybean",
+      "name": "Soy Bean",
+      "source_type": "items",
+      "material": "bean",
+      "merged_count": 24
+    },
+    {
+      "id": "croptopia:beef_stew",
+      "name": "Beef Stew",
+      "source_type": "items",
+      "material": "beef",
+      "merged_count": 21
+    },
+    {
+      "id": "croptopia:beetroot_salad",
+      "name": "Beetroot Salad",
+      "source_type": "items",
+      "material": "beetroot",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:bellpepper_crop",
+      "name": "Bellpepper Crop",
+      "source_type": "blocks",
+      "material": "bellpepper",
+      "merged_count": 2
+    },
+    {
+      "id": "alshanex_familiars:crystal_berry",
+      "name": "Crystal Berry",
+      "source_type": "items",
+      "material": "berry",
+      "merged_count": 16
+    },
+    {
+      "id": "spectrum:black_leaves",
+      "name": "Black Leaves",
+      "source_type": "blocks",
+      "material": "black",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:blackbean_crop",
+      "name": "Blackbean Crop",
+      "source_type": "blocks",
+      "material": "blackbean",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:blackberry_crop",
+      "name": "Blackberry Crop",
+      "source_type": "blocks",
+      "material": "blackberry",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:nephrite_blossom_leaves",
+      "name": "Nephrite Blossom Leaves",
+      "source_type": "blocks",
+      "material": "blossom",
+      "merged_count": 21
+    },
+    {
+      "id": "spectrum:blue_leaves",
+      "name": "Blue Leaves",
+      "source_type": "blocks",
+      "material": "blue",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:blueberry_crop",
+      "name": "Blueberry Crop",
+      "source_type": "blocks",
+      "material": "blueberry",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:bone_ash",
+      "name": "Bone Ash",
+      "source_type": "items",
+      "material": "bone",
+      "merged_count": 34
+    },
+    {
+      "id": "biomesoplenty:bramble_leaves",
+      "name": "Bramble Leaves",
+      "source_type": "blocks",
+      "material": "bramble",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:broccoilseed",
+      "name": "Broccoli Seeds",
+      "source_type": "items",
+      "material": "broccoil",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:broccoli_crop",
+      "name": "Broccoli Crop",
+      "source_type": "blocks",
+      "material": "broccoli",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:brown_leaves",
+      "name": "Brown Leaves",
+      "source_type": "blocks",
+      "material": "brown",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:buckwheatseed",
+      "name": "Buckwheat Seeds",
+      "source_type": "items",
+      "material": "buckwheat",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:cabbage_crop",
+      "name": "Cabbage Crop",
+      "source_type": "blocks",
+      "material": "cabbage",
+      "merged_count": 21
+    },
+    {
+      "id": "biomesoplenty:tiny_cactus",
+      "name": "Tiny Cactus",
+      "source_type": "blocks",
+      "material": "cactus",
+      "merged_count": 3
+    },
+    {
+      "id": "croptopia:cantaloupe_crop",
+      "name": "Cantaloupe Crop",
+      "source_type": "blocks",
+      "material": "cantaloupe",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:carambolasapling",
+      "name": "Carambola Sapling",
+      "source_type": "items",
+      "material": "carambola",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:carambolaleave_fruiting_leaves",
+      "name": "Carambola Leaves",
+      "source_type": "items",
+      "material": "carambolaleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:carrotchunks",
+      "name": "Carrot Chunks",
+      "source_type": "items",
+      "material": "carrot",
+      "merged_count": 4
+    },
+    {
+      "id": "croptopia:cashew_crop",
+      "name": "Cashew Crop",
+      "source_type": "blocks",
+      "material": "cashew",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:cassavaseeds",
+      "name": "Cassava Seeds",
+      "source_type": "items",
+      "material": "cassava",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:cauliflower_crop",
+      "name": "Cauliflower Crop",
+      "source_type": "blocks",
+      "material": "cauliflower",
+      "merged_count": 3
+    },
+    {
+      "id": "croptopia:celery_crop",
+      "name": "Celery Crop",
+      "source_type": "blocks",
+      "material": "celery",
+      "merged_count": 3
+    },
+    {
+      "id": "croptopia:cherry_crop",
+      "name": "Cherry Crop",
+      "source_type": "blocks",
+      "material": "cherry",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:orleanleg",
+      "name": "Orlean-Style Grilled Chicken Leg",
+      "source_type": "items",
+      "material": "chicken",
+      "merged_count": 100
+    },
+    {
+      "id": "croptopia:chile_pepper_crop",
+      "name": "Chile Pepper Crop",
+      "source_type": "blocks",
+      "material": "chile_pepper",
+      "merged_count": 2
+    },
+    {
+      "id": "kaleidoscope_cookery:chili_crop",
+      "name": "Chili",
+      "source_type": "blocks",
+      "material": "chili",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:chineseleaves",
+      "name": "Chinese Leaves",
+      "source_type": "items",
+      "material": "chinese",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:chinesechivesseed",
+      "name": "Chinese Chives Seeds",
+      "source_type": "items",
+      "material": "chinesechives",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:chineseleavesseed",
+      "name": "Chinese Leaves Seed",
+      "source_type": "items",
+      "material": "chineseleaves",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:chineseyamseed",
+      "name": "Chinese Yam Seeds",
+      "source_type": "items",
+      "material": "chineseyam",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:cinnamon_leaves",
+      "name": "Cinnamon Leaves",
+      "source_type": "blocks",
+      "material": "cinnamon",
+      "merged_count": 6
+    },
+    {
+      "id": "flavor_immersed_daily:cocoamass",
+      "name": "Cocoa Mass",
+      "source_type": "items",
+      "material": "cocoa",
+      "merged_count": 17
+    },
+    {
+      "id": "croptopia:coconut_crop",
+      "name": "Coconut Crop",
+      "source_type": "blocks",
+      "material": "coconut",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:coconutleave_fruiting_leaves",
+      "name": "Coconut Leaves",
+      "source_type": "items",
+      "material": "coconutleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:coffee_crop",
+      "name": "Coffee Crop",
+      "source_type": "blocks",
+      "material": "coffee",
+      "merged_count": 18
+    },
+    {
+      "id": "northstar:coiler_leaves",
+      "name": "Coiler Leaves",
+      "source_type": "blocks",
+      "material": "coiler",
+      "merged_count": 2
+    },
+    {
+      "id": "createpropulsion:coral",
+      "name": "Coral",
+      "source_type": "blocks",
+      "material": "coral",
+      "merged_count": 44
+    },
+    {
+      "id": "croptopia:corn_crop",
+      "name": "Corn Crop",
+      "source_type": "blocks",
+      "material": "corn",
+      "merged_count": 14
+    },
+    {
+      "id": "flavor_immersed_daily:cowpeabeanseed",
+      "name": "Cowpea Seeds",
+      "source_type": "items",
+      "material": "cowpeabean",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:cranberry_crop",
+      "name": "Cranberry Crop",
+      "source_type": "blocks",
+      "material": "cranberry",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:cucumber_crop",
+      "name": "Cucumber Crop",
+      "source_type": "blocks",
+      "material": "cucumber",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:cuminseed",
+      "name": "Cumin Seeds",
+      "source_type": "items",
+      "material": "cumin",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:currant_crop",
+      "name": "Currant Crop",
+      "source_type": "blocks",
+      "material": "currant",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:cyan_leaves",
+      "name": "Cyan Leaves",
+      "source_type": "blocks",
+      "material": "cyan",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:cypress_leaves",
+      "name": "Cypress Leaves",
+      "source_type": "blocks",
+      "material": "cypress",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:date_crop",
+      "name": "Date Crop",
+      "source_type": "blocks",
+      "material": "date",
+      "merged_count": 3
+    },
+    {
+      "id": "biomesoplenty:dead_leaves",
+      "name": "Dead Leaves",
+      "source_type": "blocks",
+      "material": "dead",
+      "merged_count": 2
+    },
+    {
+      "id": "northstar:dormant_martian_sapling",
+      "name": "Dormant Martian Sapling",
+      "source_type": "items",
+      "material": "dormant_martian",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:dormant_martian_sapling_sequenced",
+      "name": "Dormant Martian Sapling",
+      "source_type": "items",
+      "material": "dormant_martian_sapling_sequenced",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:dragonfruit_crop",
+      "name": "Dragonfruit Crop",
+      "source_type": "blocks",
+      "material": "dragonfruit",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:duriansapling",
+      "name": "Durian Sapling",
+      "source_type": "items",
+      "material": "durian",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:durianleave_fruiting_leaves",
+      "name": "Durian Leaves",
+      "source_type": "items",
+      "material": "durianleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "bakeries:raw_egg_tart",
+      "name": "Raw Egg Tart",
+      "source_type": "items",
+      "material": "egg",
+      "merged_count": 188
+    },
+    {
+      "id": "croptopia:eggplant_crop",
+      "name": "Eggplant Crop",
+      "source_type": "blocks",
+      "material": "eggplant",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:elderberry_crop",
+      "name": "Elderberry Crop",
+      "source_type": "blocks",
+      "material": "elderberry",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:empyreal_leaves",
+      "name": "Empyreal Leaves",
+      "source_type": "blocks",
+      "material": "empyreal",
+      "merged_count": 2
+    },
+    {
+      "id": "neoguanniao:bird_feather",
+      "name": "Bird Feather",
+      "source_type": "items",
+      "material": "feather",
+      "merged_count": 25
+    },
+    {
+      "id": "flavor_immersed_daily:fennelseedstates",
+      "name": "Fennel Seeds",
+      "source_type": "items",
+      "material": "fennelseedstates",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:fig_crop",
+      "name": "Fig Crop",
+      "source_type": "blocks",
+      "material": "fig",
+      "merged_count": 3
+    },
+    {
+      "id": "biomesoplenty:fir_leaves",
+      "name": "Fir Leaves",
+      "source_type": "blocks",
+      "material": "fir",
+      "merged_count": 2
+    },
+    {
+      "id": "farmersdelight:fish_stew",
+      "name": "Fish Stew",
+      "source_type": "items",
+      "material": "fish",
+      "merged_count": 17
+    },
+    {
+      "id": "touhou_little_maid_spell:floating_fox_leaf",
+      "name": "Floating Fox Leaf",
+      "source_type": "items",
+      "material": "floating_fox",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:fanhuaroll",
+      "name": "Flower Roll",
+      "source_type": "items",
+      "material": "flower",
+      "merged_count": 11
+    },
+    {
+      "id": "biomesoplenty:flowering_oak_leaves",
+      "name": "Flowering Oak Leaves",
+      "source_type": "blocks",
+      "material": "flowering_oak",
+      "merged_count": 2
+    },
+    {
+      "id": "hazennstuff:frostbite_birch_sapling",
+      "name": "Frostbite Birch Sapling",
+      "source_type": "blocks",
+      "material": "frostbite_birch",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:blackfungus",
+      "name": "Black Fungus",
+      "source_type": "items",
+      "material": "fungus",
+      "merged_count": 20
+    },
+    {
+      "id": "croptopia:garlic_crop",
+      "name": "Garlic Crop",
+      "source_type": "blocks",
+      "material": "garlic",
+      "merged_count": 9
+    },
+    {
+      "id": "croptopia:ginger_crop",
+      "name": "Ginger Crop",
+      "source_type": "blocks",
+      "material": "ginger",
+      "merged_count": 3
+    },
+    {
+      "id": "kaleidoscope_tavern:glow_berries_bucket",
+      "name": "Glow Berries Bucket",
+      "source_type": "items",
+      "material": "glow_berries",
+      "merged_count": 2
+    },
+    {
+      "id": "kaleidoscope_tavern:gold_grape_crop",
+      "name": "Gold Grape",
+      "source_type": "blocks",
+      "material": "gold_grape",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:grape_crop",
+      "name": "Grape Crop",
+      "source_type": "blocks",
+      "material": "grape",
+      "merged_count": 4
+    },
+    {
+      "id": "croptopia:grapefruit_crop",
+      "name": "Grapefruit Crop",
+      "source_type": "blocks",
+      "material": "grapefruit",
+      "merged_count": 3
+    },
+    {
+      "id": "thaumcraft:taint_grass",
+      "name": "Tainted Grass",
+      "source_type": "items",
+      "material": "grass",
+      "merged_count": 11
+    },
+    {
+      "id": "spectrum:gray_leaves",
+      "name": "Gray Leaves",
+      "source_type": "blocks",
+      "material": "gray",
+      "merged_count": 2
+    },
+    {
+      "id": "thaumcraft:greatwood_leaves",
+      "name": "Greatwood Leaves",
+      "source_type": "items",
+      "material": "greatwood",
+      "merged_count": 3
+    },
+    {
+      "id": "spectrum:green_leaves",
+      "name": "Green Leaves",
+      "source_type": "blocks",
+      "material": "green",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:greenbean_crop",
+      "name": "Greenbean Crop",
+      "source_type": "blocks",
+      "material": "greenbean",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:greengrapeseed",
+      "name": "Green Grape Seeds",
+      "source_type": "items",
+      "material": "greengrape",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:greenonion_crop",
+      "name": "Greenonion Crop",
+      "source_type": "blocks",
+      "material": "greenonion",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:greenpepperseeds",
+      "name": "Green Pepper Seeds",
+      "source_type": "items",
+      "material": "greenpepper",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:greenplumsapling",
+      "name": "Green Plum Sapling",
+      "source_type": "items",
+      "material": "greenplum",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:greentealeaves",
+      "name": "Green Tea Leaves",
+      "source_type": "items",
+      "material": "greentea",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:gumboseed",
+      "name": "Okra Seeds",
+      "source_type": "items",
+      "material": "gumbo",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:hawthornsapling",
+      "name": "Hawthorn Sapling",
+      "source_type": "items",
+      "material": "hawthorn",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:hellbark_leaves",
+      "name": "Hellbark Leaves",
+      "source_type": "blocks",
+      "material": "hellbark",
+      "merged_count": 2
+    },
+    {
+      "id": "kaleidoscope_nether:ghast_hide",
+      "name": "Ghast Hide",
+      "source_type": "items",
+      "material": "hide",
+      "merged_count": 6
+    },
+    {
+      "id": "create:honey",
+      "name": "Honey",
+      "source_type": "blocks",
+      "material": "honey",
+      "merged_count": 24
+    },
+    {
+      "id": "croptopia:honeydew_crop",
+      "name": "Honeydew Crop",
+      "source_type": "blocks",
+      "material": "honeydew",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:honeypeachsapling",
+      "name": "Honey Peach Sapling",
+      "source_type": "items",
+      "material": "honeypeach",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:honeypeachleave_fruiting_leaves",
+      "name": "Honey Peach Leaves",
+      "source_type": "items",
+      "material": "honeypeachleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:hops_crop",
+      "name": "Hops Crop",
+      "source_type": "blocks",
+      "material": "hops",
+      "merged_count": 2
+    },
+    {
+      "id": "kaleidoscope_tavern:ice_grape_crop",
+      "name": "Ice Grape",
+      "source_type": "blocks",
+      "material": "ice_grape",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumic_tinkerer:infused_seeds",
+      "name": "Infused Seeds",
+      "source_type": "items",
+      "material": "infused",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:jacaranda_leaves",
+      "name": "Jacaranda Leaves",
+      "source_type": "blocks",
+      "material": "jacaranda",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:kale_crop",
+      "name": "Kale Crop",
+      "source_type": "blocks",
+      "material": "kale",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:kao_liang_seed",
+      "name": "Sorghum Seeds",
+      "source_type": "items",
+      "material": "kao_liang",
+      "merged_count": 1
+    },
+    {
+      "id": "farmersdelight:kelp_roll",
+      "name": "Kelp Roll",
+      "source_type": "items",
+      "material": "kelp",
+      "merged_count": 4
+    },
+    {
+      "id": "flavor_immersed_daily:kidneybeanseed",
+      "name": "Kidney Bean Seeds",
+      "source_type": "items",
+      "material": "kidneybean",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:kiwi_crop",
+      "name": "Kiwi Crop",
+      "source_type": "blocks",
+      "material": "kiwi",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:kiwifruitsleavesapling",
+      "name": "Kiwifruit Sapling",
+      "source_type": "items",
+      "material": "kiwifruitsleave",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:kiwifruitsleave_fruiting_leaves",
+      "name": "Kiwifruit Leaves",
+      "source_type": "items",
+      "material": "kiwifruitsleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:kumquat_crop",
+      "name": "Kumquat Crop",
+      "source_type": "blocks",
+      "material": "kumquat",
+      "merged_count": 3
+    },
+    {
+      "id": "croptopia:leek_crop",
+      "name": "Leek Crop",
+      "source_type": "blocks",
+      "material": "leek",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:lemon_crop",
+      "name": "Lemon Crop",
+      "source_type": "blocks",
+      "material": "lemon",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:lemonleave_fruiting_leaves",
+      "name": "Lemon Leaves",
+      "source_type": "items",
+      "material": "lemonleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:lettuce_crop",
+      "name": "Lettuce Crop",
+      "source_type": "blocks",
+      "material": "lettuce",
+      "merged_count": 3
+    },
+    {
+      "id": "spectrum:light_blue_leaves",
+      "name": "Light Blue Leaves",
+      "source_type": "blocks",
+      "material": "light_blue",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:light_gray_leaves",
+      "name": "Light Gray Leaves",
+      "source_type": "blocks",
+      "material": "light_gray",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:lilac_seed",
+      "name": "Lilac Seeds",
+      "source_type": "items",
+      "material": "lilac",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:lime_crop",
+      "name": "Lime Crop",
+      "source_type": "blocks",
+      "material": "lime",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:loofahseed",
+      "name": "Loofah Seeds",
+      "source_type": "items",
+      "material": "loofah",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:loquatleavesapling",
+      "name": "Loquat Sapling",
+      "source_type": "items",
+      "material": "loquatleave",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:lycheesapling",
+      "name": "Lychee Sapling",
+      "source_type": "items",
+      "material": "lychee",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:lycheeleave_fruiting_leaves",
+      "name": "Lychee Leaves",
+      "source_type": "items",
+      "material": "lycheeleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:magenta_leaves",
+      "name": "Magenta Leaves",
+      "source_type": "blocks",
+      "material": "magenta",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:magic_leaves",
+      "name": "Magic Leaves",
+      "source_type": "blocks",
+      "material": "magic",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:mahogany_leaves",
+      "name": "Mahogany Leaves",
+      "source_type": "blocks",
+      "material": "mahogany",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:mango_crop",
+      "name": "Mango Crop",
+      "source_type": "blocks",
+      "material": "mango",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:mangoleave_fruiting_leaves",
+      "name": "Mango Leaves",
+      "source_type": "items",
+      "material": "mangoleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:mangosteensapling",
+      "name": "Mangosteen Sapling",
+      "source_type": "items",
+      "material": "mangosteen",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:mangosteenleave_fruiting_leaves",
+      "name": "Mangosteen Leaves",
+      "source_type": "items",
+      "material": "mangosteenleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "northstar:mars_palm_seeds",
+      "name": "Mars Palm Seeds",
+      "source_type": "items",
+      "material": "mars_palm",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mars_sprout_seeds",
+      "name": "Mars Sprout Seeds",
+      "source_type": "items",
+      "material": "mars_sprout",
+      "merged_count": 1
+    },
+    {
+      "id": "northstar:mars_tulip_seeds",
+      "name": "Mars Tulip Seeds",
+      "source_type": "items",
+      "material": "mars_tulip",
+      "merged_count": 1
+    },
+    {
+      "id": "kaleidoscope_nether:raw_piglin_meat",
+      "name": "Raw Piglin Meat",
+      "source_type": "items",
+      "material": "meat",
+      "merged_count": 46
+    },
+    {
+      "id": "spectrum:glistering_melon_seeds",
+      "name": "Glistering Melon Seeds",
+      "source_type": "items",
+      "material": "melon",
+      "merged_count": 32
+    },
+    {
+      "id": "flavor_immersed_daily:millet",
+      "name": "Millet Seeds",
+      "source_type": "items",
+      "material": "millet",
+      "merged_count": 1
+    },
+    {
+      "id": "touhou_little_maid_spell:molten_fox_leaf",
+      "name": "Molten Fox Leaf",
+      "source_type": "items",
+      "material": "molten_fox",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:moss_ball",
+      "name": "Moss Ball",
+      "source_type": "blocks",
+      "material": "moss",
+      "merged_count": 6
+    },
+    {
+      "id": "flavor_immersed_daily:mulberrysapling",
+      "name": "Mulberry Sapling",
+      "source_type": "items",
+      "material": "mulberry",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:mulberryleaves_fruiting_leaves",
+      "name": "Mulberry Leaves",
+      "source_type": "items",
+      "material": "mulberryleaves_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:mungbeanplant",
+      "name": "Mung Bean Seeds",
+      "source_type": "items",
+      "material": "mungbeanplant",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:fragrantseed",
+      "name": "Fragrant Mushroom Seed",
+      "source_type": "items",
+      "material": "mushroom",
+      "merged_count": 24
+    },
+    {
+      "id": "croptopia:mustard_crop",
+      "name": "Mustard Crop",
+      "source_type": "blocks",
+      "material": "mustard",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:mustrad_seed",
+      "name": "Mustard Seeds",
+      "source_type": "items",
+      "material": "mustrad",
+      "merged_count": 1
+    },
+    {
+      "id": "farmersdelight:mutton_wrap",
+      "name": "Mutton Wrap",
+      "source_type": "items",
+      "material": "mutton",
+      "merged_count": 8
+    },
+    {
+      "id": "croptopia:nectarine_crop",
+      "name": "Nectarine Crop",
+      "source_type": "blocks",
+      "material": "nectarine",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:nectarineleave_fruiting_leaves",
+      "name": "Nectarine Leaves",
+      "source_type": "items",
+      "material": "nectarineleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:null_leaves",
+      "name": "� �� � �",
+      "source_type": "blocks",
+      "material": "null",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:nutmeg_crop",
+      "name": "Nutmeg Crop",
+      "source_type": "blocks",
+      "material": "nutmeg",
+      "merged_count": 4
+    },
+    {
+      "id": "croptopia:oat_crop",
+      "name": "Oat Crop",
+      "source_type": "blocks",
+      "material": "oat",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:oilrapeseed",
+      "name": "Oil Rape Seeds",
+      "source_type": "items",
+      "material": "oilrape",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:olive_crop",
+      "name": "Olive Crop",
+      "source_type": "blocks",
+      "material": "olive",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:ominous_sapling",
+      "name": "Ominous Sapling",
+      "source_type": "blocks",
+      "material": "ominous",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:onion_crop",
+      "name": "Onion Crop",
+      "source_type": "blocks",
+      "material": "onion",
+      "merged_count": 15
+    },
+    {
+      "id": "croptopia:orange_crop",
+      "name": "Orange Crop",
+      "source_type": "blocks",
+      "material": "orange",
+      "merged_count": 7
+    },
+    {
+      "id": "biomesoplenty:orange_maple_leaves",
+      "name": "Orange Maple Leaves",
+      "source_type": "blocks",
+      "material": "orange_maple",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:orangeleave",
+      "name": "Orange Leaves",
+      "source_type": "items",
+      "material": "orangeleave",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:orangeleave_fruiting_leaves",
+      "name": "Orange Leaves",
+      "source_type": "items",
+      "material": "orangeleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:orchard_heartwood_leaves",
+      "name": "Orchard Heartwood Leaves",
+      "source_type": "items",
+      "material": "orchard_heartwood",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:origin_leaves",
+      "name": "Origin Leaves",
+      "source_type": "blocks",
+      "material": "origin",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:palm_leaves",
+      "name": "Palm Leaves",
+      "source_type": "blocks",
+      "material": "palm",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:pawpawsapling",
+      "name": "Papaya Sapling",
+      "source_type": "items",
+      "material": "pawpaw",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:pawpawleave_fruiting_leaves",
+      "name": "Papaya Leaves",
+      "source_type": "items",
+      "material": "pawpawleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:peaseed",
+      "name": "Pea Seeds",
+      "source_type": "items",
+      "material": "pea",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:pea_nut_seed",
+      "name": "Peanut Seeds",
+      "source_type": "items",
+      "material": "pea_nut",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:peach_crop",
+      "name": "Peach Crop",
+      "source_type": "blocks",
+      "material": "peach",
+      "merged_count": 3
+    },
+    {
+      "id": "croptopia:peanut_crop",
+      "name": "Peanut Crop",
+      "source_type": "blocks",
+      "material": "peanut",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:pear_crop",
+      "name": "Pear Crop",
+      "source_type": "blocks",
+      "material": "pear",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:pearleaves_fruiting_leaves",
+      "name": "Pear Leaves",
+      "source_type": "items",
+      "material": "pearleaves_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:pecan_crop",
+      "name": "Pecan Crop",
+      "source_type": "blocks",
+      "material": "pecan",
+      "merged_count": 3
+    },
+    {
+      "id": "croptopia:pepper_crop",
+      "name": "Pepper Crop",
+      "source_type": "blocks",
+      "material": "pepper",
+      "merged_count": 2
+    },
+    {
+      "id": "hazennstuff:permafrost_leaves",
+      "name": "Frostbite Birch Leaves",
+      "source_type": "blocks",
+      "material": "permafrost",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:persimmon_crop",
+      "name": "Persimmon Crop",
+      "source_type": "blocks",
+      "material": "persimmon",
+      "merged_count": 3
+    },
+    {
+      "id": "biomesoplenty:pine_leaves",
+      "name": "Pine Leaves",
+      "source_type": "blocks",
+      "material": "pine",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:pineapple_crop",
+      "name": "Pineapple Crop",
+      "source_type": "blocks",
+      "material": "pineapple",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:pink_leaves",
+      "name": "Pink Leaves",
+      "source_type": "blocks",
+      "material": "pink",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:pistachionutsapling",
+      "name": "Pistachio Sapling",
+      "source_type": "items",
+      "material": "pistachionut",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:pistachionutleave_fruiting_leaves",
+      "name": "Pistachio Leaves",
+      "source_type": "items",
+      "material": "pistachionutleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:plum_crop",
+      "name": "Plum Crop",
+      "source_type": "blocks",
+      "material": "plum",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:pomegranate_seed",
+      "name": "Pomegranate Seeds",
+      "source_type": "items",
+      "material": "pomegranate",
+      "merged_count": 3
+    },
+    {
+      "id": "kaleidoscope_cookery:raw_pork_belly",
+      "name": "Raw Pork Belly",
+      "source_type": "items",
+      "material": "pork",
+      "merged_count": 42
+    },
+    {
+      "id": "flavor_immersed_daily:dicedpotato",
+      "name": "potato chunks",
+      "source_type": "items",
+      "material": "potato",
+      "merged_count": 32
+    },
+    {
+      "id": "spectrum:potted_black_sapling",
+      "name": "Potted Black Sapling",
+      "source_type": "blocks",
+      "material": "potted_black",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_blue_sapling",
+      "name": "Potted Blue Sapling",
+      "source_type": "blocks",
+      "material": "potted_blue",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_brown_sapling",
+      "name": "Potted Brown Sapling",
+      "source_type": "blocks",
+      "material": "potted_brown",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_cyan_sapling",
+      "name": "Potted Cyan Sapling",
+      "source_type": "blocks",
+      "material": "potted_cyan",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_cypress_sapling",
+      "name": "Potted Cypress Sapling",
+      "source_type": "blocks",
+      "material": "potted_cypress",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_dead_sapling",
+      "name": "Potted Dead Sapling",
+      "source_type": "blocks",
+      "material": "potted_dead",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_empyreal_sapling",
+      "name": "Potted Empyreal Sapling",
+      "source_type": "blocks",
+      "material": "potted_empyreal",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_fir_sapling",
+      "name": "Potted Fir Sapling",
+      "source_type": "blocks",
+      "material": "potted_fir",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_flowering_oak_sapling",
+      "name": "Potted Flowering Oak Sapling",
+      "source_type": "blocks",
+      "material": "potted_flowering_oak",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_gray_sapling",
+      "name": "Potted Gray Sapling",
+      "source_type": "blocks",
+      "material": "potted_gray",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_green_sapling",
+      "name": "Potted Green Sapling",
+      "source_type": "blocks",
+      "material": "potted_green",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_hellbark_sapling",
+      "name": "Potted Hellbark Sapling",
+      "source_type": "blocks",
+      "material": "potted_hellbark",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_jacaranda_sapling",
+      "name": "Potted Jacaranda Sapling",
+      "source_type": "blocks",
+      "material": "potted_jacaranda",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_light_blue_sapling",
+      "name": "Potted Light Blue Sapling",
+      "source_type": "blocks",
+      "material": "potted_light_blue",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_light_gray_sapling",
+      "name": "Potted Light Gray Sapling",
+      "source_type": "blocks",
+      "material": "potted_light_gray",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_lime_sapling",
+      "name": "Potted Lime Sapling",
+      "source_type": "blocks",
+      "material": "potted_lime",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_magenta_sapling",
+      "name": "Potted Magenta Sapling",
+      "source_type": "blocks",
+      "material": "potted_magenta",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_magic_sapling",
+      "name": "Potted Magic Sapling",
+      "source_type": "blocks",
+      "material": "potted_magic",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_mahogany_sapling",
+      "name": "Potted Mahogany Sapling",
+      "source_type": "blocks",
+      "material": "potted_mahogany",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_orange_sapling",
+      "name": "Potted Orange Sapling",
+      "source_type": "blocks",
+      "material": "potted_orange",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_orange_maple_sapling",
+      "name": "Potted Orange Maple Sapling",
+      "source_type": "blocks",
+      "material": "potted_orange_maple",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_origin_sapling",
+      "name": "Potted Origin Sapling",
+      "source_type": "blocks",
+      "material": "potted_origin",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_palm_sapling",
+      "name": "Potted Palm Sapling",
+      "source_type": "blocks",
+      "material": "potted_palm",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_pine_sapling",
+      "name": "Potted Pine Sapling",
+      "source_type": "blocks",
+      "material": "potted_pine",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_pink_sapling",
+      "name": "Potted Pink Sapling",
+      "source_type": "blocks",
+      "material": "potted_pink",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_purple_sapling",
+      "name": "Potted Purple Sapling",
+      "source_type": "blocks",
+      "material": "potted_purple",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_rainbow_birch_sapling",
+      "name": "Potted Rainbow Birch Sapling",
+      "source_type": "blocks",
+      "material": "potted_rainbow_birch",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_red_sapling",
+      "name": "Potted Red Sapling",
+      "source_type": "blocks",
+      "material": "potted_red",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_red_maple_sapling",
+      "name": "Potted Red Maple Sapling",
+      "source_type": "blocks",
+      "material": "potted_red_maple",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_redwood_sapling",
+      "name": "Potted Redwood Sapling",
+      "source_type": "blocks",
+      "material": "potted_redwood",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_snowblossom_sapling",
+      "name": "Potted Snowblossom Sapling",
+      "source_type": "blocks",
+      "material": "potted_snowblossom",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_umbran_sapling",
+      "name": "Potted Umbran Sapling",
+      "source_type": "blocks",
+      "material": "potted_umbran",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_white_sapling",
+      "name": "Potted White Sapling",
+      "source_type": "blocks",
+      "material": "potted_white",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_willow_sapling",
+      "name": "Potted Willow Sapling",
+      "source_type": "blocks",
+      "material": "potted_willow",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:potted_yellow_sapling",
+      "name": "Potted Yellow Sapling",
+      "source_type": "blocks",
+      "material": "potted_yellow",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:potted_yellow_maple_sapling",
+      "name": "Potted Yellow Maple Sapling",
+      "source_type": "blocks",
+      "material": "potted_yellow_maple",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:roasted_pumpkin_seeds",
+      "name": "Roasted Pumpkin Seeds",
+      "source_type": "items",
+      "material": "pumpkin",
+      "merged_count": 18
+    },
+    {
+      "id": "spectrum:purple_leaves",
+      "name": "Purple Leaves",
+      "source_type": "blocks",
+      "material": "purple",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:radish_crop",
+      "name": "Radish Crop",
+      "source_type": "blocks",
+      "material": "radish",
+      "merged_count": 3
+    },
+    {
+      "id": "biomesoplenty:rainbow_birch_leaves",
+      "name": "Rainbow Birch Leaves",
+      "source_type": "blocks",
+      "material": "rainbow_birch",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:raspberry_crop",
+      "name": "Raspberry Crop",
+      "source_type": "blocks",
+      "material": "raspberry",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:red_leaves",
+      "name": "Red Leaves",
+      "source_type": "blocks",
+      "material": "red",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:red_maple_leaves",
+      "name": "Red Maple Leaves",
+      "source_type": "blocks",
+      "material": "red_maple",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:red_pepper_seed",
+      "name": "Red Pepper Seeds",
+      "source_type": "items",
+      "material": "red_pepper",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:reddatesapling",
+      "name": "Red Date Sapling",
+      "source_type": "items",
+      "material": "reddate",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:reddateleave_fruiting_leaves",
+      "name": "Red Date Leaves",
+      "source_type": "items",
+      "material": "reddateleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:redtealeaves",
+      "name": "Red Tea Leaves",
+      "source_type": "items",
+      "material": "redtea",
+      "merged_count": 1
+    },
+    {
+      "id": "biomesoplenty:redwood_leaves",
+      "name": "Redwood Leaves",
+      "source_type": "blocks",
+      "material": "redwood",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:rhubarb_crop",
+      "name": "Rhubarb Crop",
+      "source_type": "blocks",
+      "material": "rhubarb",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:rice_crop",
+      "name": "Rice Crop",
+      "source_type": "blocks",
+      "material": "rice",
+      "merged_count": 79
+    },
+    {
+      "id": "forbiddenmagic:riding_crop",
+      "name": "Riding Crop",
+      "source_type": "items",
+      "material": "riding",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:roasted_sunflower_seeds",
+      "name": "Roasted Sunflower Seeds",
+      "source_type": "items",
+      "material": "roasted_sunflower",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:lotusroot",
+      "name": "Lotus Root",
+      "source_type": "items",
+      "material": "root",
+      "merged_count": 8
+    },
+    {
+      "id": "croptopia:rutabaga_crop",
+      "name": "Rutabaga Crop",
+      "source_type": "blocks",
+      "material": "rutabaga",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:sag_leaf",
+      "name": "Sag Leaf",
+      "source_type": "blocks",
+      "material": "sag",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:saguaro_crop",
+      "name": "Saguaro Crop",
+      "source_type": "blocks",
+      "material": "saguaro",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:scallion_seed",
+      "name": "Scallion Seeds",
+      "source_type": "items",
+      "material": "scallion",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:sesameseed",
+      "name": "Sesame Seeds",
+      "source_type": "items",
+      "material": "sesame",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:si_chuan_pepper_seed",
+      "name": "Sichuan Pepper Seeds",
+      "source_type": "items",
+      "material": "si_chuan_pepper",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumcraft:silverwood_leaves",
+      "name": "Silverwood Leaves",
+      "source_type": "items",
+      "material": "silverwood",
+      "merged_count": 3
+    },
+    {
+      "id": "create_sa:slime_boots",
+      "name": "Slime Boots",
+      "source_type": "items",
+      "material": "slime",
+      "merged_count": 14
+    },
+    {
+      "id": "biomesoplenty:snowblossom_leaves",
+      "name": "Snowblossom Leaves",
+      "source_type": "blocks",
+      "material": "snowblossom",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:solarwood_leaves",
+      "name": "Solarwood Leaves",
+      "source_type": "items",
+      "material": "solarwood",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:soy_bean_seed",
+      "name": "Soy Bean Seeds",
+      "source_type": "items",
+      "material": "soy_bean",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:soybean_crop",
+      "name": "Soybean Crop",
+      "source_type": "blocks",
+      "material": "soybean",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:spinach_crop",
+      "name": "Spinach Crop",
+      "source_type": "blocks",
+      "material": "spinach",
+      "merged_count": 3
+    },
+    {
+      "id": "spectrum:spirit_sallow_leaves",
+      "name": "Spirit Sallow Leaves",
+      "source_type": "blocks",
+      "material": "spirit_sallow",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:squash_crop",
+      "name": "Squash Crop",
+      "source_type": "blocks",
+      "material": "squash",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:starfruit_crop",
+      "name": "Starfruit Crop",
+      "source_type": "blocks",
+      "material": "starfruit",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:stonebark_leaves",
+      "name": "Stonebark Leaves",
+      "source_type": "items",
+      "material": "stonebark",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:strawberry_crop",
+      "name": "Strawberry Crop",
+      "source_type": "blocks",
+      "material": "strawberry",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:sweetgreenpepperseed",
+      "name": "Sweet Green Pepper Seeds",
+      "source_type": "items",
+      "material": "sweetgreenpepper",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:sweetmelonsapling",
+      "name": "Sweet Melon Sapling",
+      "source_type": "items",
+      "material": "sweetmelon",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:sweetmelonleave_fruiting_leaves",
+      "name": "Sweet Melon Leaves",
+      "source_type": "items",
+      "material": "sweetmelonleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:sweetpotato_crop",
+      "name": "Sweetpotato Crop",
+      "source_type": "blocks",
+      "material": "sweetpotato",
+      "merged_count": 1
+    },
+    {
+      "id": "forbiddenmagic:tainted_leaves",
+      "name": "Tainted Leaves",
+      "source_type": "blocks",
+      "material": "tainted",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:tangerinesapling",
+      "name": "Tangerine Sapling",
+      "source_type": "items",
+      "material": "tangerine",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:tangerineleave_fruiting_leaves",
+      "name": "Tangerine Leaves",
+      "source_type": "items",
+      "material": "tangerineleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:tea_crop",
+      "name": "Tea Crop",
+      "source_type": "blocks",
+      "material": "tea",
+      "merged_count": 3
+    },
+    {
+      "id": "flavor_immersed_daily:tidyreedleaf",
+      "name": "Washed reed leaves",
+      "source_type": "items",
+      "material": "tidyreed",
+      "merged_count": 1
+    },
+    {
+      "id": "croptopia:tomatillo_crop",
+      "name": "Tomatillo Crop",
+      "source_type": "blocks",
+      "material": "tomatillo",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:tomato_crop",
+      "name": "Tomato Crop",
+      "source_type": "blocks",
+      "material": "tomato",
+      "merged_count": 27
+    },
+    {
+      "id": "croptopia:turmeric_crop",
+      "name": "Turmeric Crop",
+      "source_type": "blocks",
+      "material": "turmeric",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:turnip_crop",
+      "name": "Turnip Crop",
+      "source_type": "blocks",
+      "material": "turnip",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:umbran_leaves",
+      "name": "Umbran Leaves",
+      "source_type": "blocks",
+      "material": "umbran",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:vanilla_crop",
+      "name": "Vanilla Crop",
+      "source_type": "blocks",
+      "material": "vanilla",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_leaves",
+      "name": "Verdant Grace Leaves",
+      "source_type": "items",
+      "material": "verdant_grace",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves",
+      "name": "Plum Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_apricot",
+      "name": "Apricot Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting_leaves_apricot",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_cherry",
+      "name": "Cherry Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting_leaves_cherry",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_greenplum",
+      "name": "Green Plum Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting_leaves_greenplum",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_hawthorn",
+      "name": "Hawthorn Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting_leaves_hawthorn",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_loquat",
+      "name": "Loquat Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting_leaves_loquat",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_pomegranate",
+      "name": "Pomegranate Leaves",
+      "source_type": "items",
+      "material": "verdant_grace_fruiting_leaves_pomegranate",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:grapeblock",
+      "name": "Grape Vine",
+      "source_type": "blocks",
+      "material": "vine",
+      "merged_count": 8
+    },
+    {
+      "id": "flavor_immersed_daily:vineheart_timber_leaves",
+      "name": "Vineheart Timber Leaves",
+      "source_type": "items",
+      "material": "vineheart_timber",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:walnut_crop",
+      "name": "Walnut Crop",
+      "source_type": "blocks",
+      "material": "walnut",
+      "merged_count": 5
+    },
+    {
+      "id": "flavor_immersed_daily:walnutleaves_fruiting_leaves",
+      "name": "Walnut Leaves",
+      "source_type": "items",
+      "material": "walnutleaves_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "taintedmagic:warpwood_leaves",
+      "name": "Warped Leaves",
+      "source_type": "blocks",
+      "material": "warpwood",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:wax_gourd_seed_block",
+      "name": "Wax Gourd Seeds",
+      "source_type": "items",
+      "material": "wax_gourd",
+      "merged_count": 1
+    },
+    {
+      "id": "spectrum:weeping_gala_leaves",
+      "name": "Weeping Gala Leaves",
+      "source_type": "blocks",
+      "material": "weeping_gala",
+      "merged_count": 1
+    },
+    {
+      "id": "flavor_immersed_daily:wheatmilk",
+      "name": "Wheat Milk",
+      "source_type": "items",
+      "material": "wheat",
+      "merged_count": 11
+    },
+    {
+      "id": "spectrum:white_leaves",
+      "name": "White Leaves",
+      "source_type": "blocks",
+      "material": "white",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:willow_leaves",
+      "name": "Willow Leaves",
+      "source_type": "blocks",
+      "material": "willow",
+      "merged_count": 2
+    },
+    {
+      "id": "northstar:wilter_leaves",
+      "name": "Wilter Leaves",
+      "source_type": "blocks",
+      "material": "wilter",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:winterjujubesapling",
+      "name": "Winter Jujube Sapling",
+      "source_type": "items",
+      "material": "winterjujube",
+      "merged_count": 2
+    },
+    {
+      "id": "flavor_immersed_daily:winterjujubeleave_fruiting_leaves",
+      "name": "Winter Jujube Leaves",
+      "source_type": "items",
+      "material": "winterjujubeleave_fruiting",
+      "merged_count": 2
+    },
+    {
+      "id": "hazennstuff:wisewood_leaves",
+      "name": "Wisewood Leaves",
+      "source_type": "blocks",
+      "material": "wisewood",
+      "merged_count": 2
+    },
+    {
+      "id": "createdieselgenerators:wood_chip",
+      "name": "Wood Chip",
+      "source_type": "items",
+      "material": "wood",
+      "merged_count": 8
+    },
+    {
+      "id": "croptopia:yam_crop",
+      "name": "Yam Crop",
+      "source_type": "blocks",
+      "material": "yam",
+      "merged_count": 2
+    },
+    {
+      "id": "bakeries:bottle_yeast",
+      "name": "Bottle Yeast",
+      "source_type": "items",
+      "material": "yeast",
+      "merged_count": 2
+    },
+    {
+      "id": "spectrum:yellow_leaves",
+      "name": "Yellow Leaves",
+      "source_type": "blocks",
+      "material": "yellow",
+      "merged_count": 2
+    },
+    {
+      "id": "biomesoplenty:yellow_maple_leaves",
+      "name": "Yellow Maple Leaves",
+      "source_type": "blocks",
+      "material": "yellow_maple",
+      "merged_count": 2
+    },
+    {
+      "id": "croptopia:zucchini_crop",
+      "name": "Zucchini Crop",
+      "source_type": "blocks",
+      "material": "zucchini",
+      "merged_count": 3
+    }
+  ]
+}

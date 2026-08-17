@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "dndecor:layered_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF818180",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Layered Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.612,
+      "armor/boots": 0.692,
+      "armor/chestplate": 1.845,
+      "armor/helmet": 0.692,
+      "armor/leggings": 1.384,
+      "armor_durability": 4.938,
+      "armor_toughness": 1.129,
+      "attack_damage": 0.966,
+      "charging_value": 0.762,
+      "durability": 109.915,
+      "enchantment_value": 2.43,
+      "harvest_speed": 2.185,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.9,
+      "magic_damage": 0.997,
+      "projectile_accuracy": 0.973,
+      "projectile_speed": 1.086,
+      "ranged_damage": 0.243,
+      "rarity": 3.404,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.338
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 21.983
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.437
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

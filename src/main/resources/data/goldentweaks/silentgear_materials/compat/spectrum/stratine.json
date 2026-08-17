@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:stratine_gem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFAF4733",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Stratine Gem"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 25.707,
+      "armor/boots": 3.857,
+      "armor/chestplate": 10.283,
+      "armor/helmet": 3.857,
+      "armor/leggings": 7.712,
+      "armor_durability": 39.992,
+      "armor_toughness": 8.515,
+      "attack_damage": 6.452,
+      "charging_value": 2.318,
+      "durability": 1154.68,
+      "enchantment_value": 19.428,
+      "harvest_speed": 16.068,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 12.519,
+      "magic_damage": 6.824,
+      "projectile_accuracy": 2.643,
+      "projectile_speed": 3.199,
+      "ranged_damage": 1.943,
+      "rarity": 35.496,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.259
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 230.936
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.213
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

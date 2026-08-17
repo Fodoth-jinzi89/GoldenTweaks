@@ -37,10 +37,10 @@ public class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
         return this;
     }
 
-    public void registerShaped(boolean mirrored, Object... recipe) {
+    public Object registerShaped(boolean mirrored, Object... recipe) {
         if (output.isEmpty() || recipe.length == 0) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft arcane shaped recipe '{}': invalid recipe.", research);
-            return;
+            return null;
         }
 
         try {
@@ -48,24 +48,28 @@ public class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
             args[0] = mirrored;
             System.arraycopy(recipe, 0, args, 1, recipe.length);
 
-            ThaumcraftApi.addArcaneCraftingRecipe(research, output, aspects, args);
+            Object registered = ThaumcraftApi.addArcaneCraftingRecipe(research, output, aspects, args);
             GoldenTweaks.LOGGER.debug("Registered Thaumcraft arcane shaped recipe '{}'.", research);
+            return registered;
         } catch (Exception e) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft arcane shaped recipe '{}': {}", research, e.getMessage());
+            return null;
         }
     }
 
-    public void registerShapeless(Object... recipe) {
+    public Object registerShapeless(Object... recipe) {
         if (output.isEmpty() || recipe.length == 0) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft arcane shapeless recipe '{}': invalid recipe.", research);
-            return;
+            return null;
         }
 
         try {
-            ThaumcraftApi.addShapelessArcaneCraftingRecipe(research, output, aspects, recipe);
+            Object registered = ThaumcraftApi.addShapelessArcaneCraftingRecipe(research, output, aspects, recipe);
             GoldenTweaks.LOGGER.debug("Registered Thaumcraft arcane shapeless recipe '{}'.", research);
+            return registered;
         } catch (Exception e) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft arcane shapeless recipe '{}': {}", research, e.getMessage());
+            return null;
         }
     }
 
@@ -151,8 +155,9 @@ public class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
             mirrored = mirroredElement.getAsBoolean();
         }
 
-        registerShaped(mirrored, recipe);
-        return true;
+        Object registered = registerShaped(mirrored, recipe);
+        GTResearchRecipePages.put(location, registered);
+        return registered != null;
     }
 
     private boolean loadShapeless(JsonObject json, ResourceLocation location) {
@@ -176,8 +181,9 @@ public class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
             recipe[i] = ingredient;
         }
 
-        registerShapeless(recipe);
-        return true;
+        Object registered = registerShapeless(recipe);
+        GTResearchRecipePages.put(location, registered);
+        return registered != null;
     }
 
     private static String[] parsePattern(JsonArray patternArray, ResourceLocation location) {

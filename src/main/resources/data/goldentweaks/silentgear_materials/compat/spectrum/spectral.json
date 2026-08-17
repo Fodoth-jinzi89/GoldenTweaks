@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:spectral_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF8C7388",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Spectral Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 216.512,
+      "armor/boots": 32.476,
+      "armor/chestplate": 86.604,
+      "armor/helmet": 32.476,
+      "armor/leggings": 64.954,
+      "armor_durability": 606.232,
+      "armor_toughness": 115.472,
+      "attack_damage": 72.17,
+      "charging_value": 2.888,
+      "durability": 26356.66,
+      "enchantment_value": 288.682,
+      "harvest_speed": 209.294,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 137.124,
+      "magic_damage": 79.388,
+      "projectile_accuracy": 2.92,
+      "projectile_speed": 3.86,
+      "ranged_damage": 28.868,
+      "rarity": 801.092,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 25.26
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 5271.332
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 41.858
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

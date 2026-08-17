@@ -34,24 +34,24 @@ public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecip
         return this;
     }
 
-    public boolean register() {
+    public Object register() {
         if (output.isEmpty()) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft crucible recipe '{}': empty output.", research);
-            return false;
+            return null;
         }
 
         if (catalyst == null) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft crucible recipe '{}': missing catalyst.", research);
-            return false;
+            return null;
         }
 
         try {
-            ThaumcraftApi.addCrucibleRecipe(research, output, catalyst, aspects);
+            Object registered = ThaumcraftApi.addCrucibleRecipe(research, output, catalyst, aspects);
             GoldenTweaks.LOGGER.debug("Registered Thaumcraft crucible recipe '{}'.", research);
-            return true;
+            return registered;
         } catch (Exception e) {
             GoldenTweaks.LOGGER.warn("Failed to register Thaumcraft crucible recipe '{}': {}", research, e.getMessage());
-            return false;
+            return null;
         }
     }
 
@@ -94,7 +94,9 @@ public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecip
     public static void load(ResourceManager resourceManager) {
         ThaumcraftRecipeUtil.load(resourceManager, RECIPE_PATH, RECIPE_NAME, (json, location) -> {
             GTCrucibleRecipe recipe = fromJson(json);
-            return recipe != null && recipe.register();
+            Object registered = recipe == null ? null : recipe.register();
+            GTResearchRecipePages.put(location, registered);
+            return registered != null;
         });
     }
 }

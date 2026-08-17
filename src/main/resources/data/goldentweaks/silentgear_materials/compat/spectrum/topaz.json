@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:topaz_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF5091AA",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Topaz Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.711,
+      "armor/boots": 1.457,
+      "armor/chestplate": 3.884,
+      "armor/helmet": 1.457,
+      "armor/leggings": 2.913,
+      "armor_durability": 14.237,
+      "armor_toughness": 3.065,
+      "attack_damage": 2.368,
+      "charging_value": 0.969,
+      "durability": 394.393,
+      "enchantment_value": 6.93,
+      "harvest_speed": 5.808,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.605,
+      "magic_damage": 2.495,
+      "projectile_accuracy": 1.121,
+      "projectile_speed": 1.342,
+      "ranged_damage": 0.693,
+      "rarity": 12.138,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.829
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 78.879
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.162
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

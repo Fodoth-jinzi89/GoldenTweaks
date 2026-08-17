@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "cataclysm:void_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7D3CE5",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Void Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 21.587,
+      "armor/boots": 3.238,
+      "armor/chestplate": 8.634,
+      "armor/helmet": 3.238,
+      "armor/leggings": 6.476,
+      "armor_durability": 51.534,
+      "armor_toughness": 10.117,
+      "attack_damage": 6.662,
+      "charging_value": 0.903,
+      "durability": 2004.974,
+      "enchantment_value": 24.674,
+      "harvest_speed": 18.539,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 12.73,
+      "magic_damage": 7.251,
+      "projectile_accuracy": 0.945,
+      "projectile_speed": 1.218,
+      "ranged_damage": 2.467,
+      "rarity": 61.128,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:void_ward"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.332
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 400.995
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.708
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:void_ward"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "taintedmagic:shadow_metal_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF2D2A3D",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Shadow Metal Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 27.188,
+      "armor/boots": 4.079,
+      "armor/chestplate": 10.875,
+      "armor/helmet": 4.079,
+      "armor/leggings": 8.156,
+      "armor_durability": 69.49,
+      "armor_toughness": 13.467,
+      "attack_damage": 8.672,
+      "charging_value": 1.001,
+      "durability": 2835.177,
+      "enchantment_value": 33.194,
+      "harvest_speed": 24.562,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 16.531,
+      "magic_damage": 9.482,
+      "projectile_accuracy": 1.036,
+      "projectile_speed": 1.347,
+      "ranged_damage": 3.32,
+      "rarity": 86.326,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3.035
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 567.035
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 4.912
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:venom"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

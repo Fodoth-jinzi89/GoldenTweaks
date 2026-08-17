@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:nether_brick"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF83797B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Nether Brick"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.585,
+      "armor/boots": 0.688,
+      "armor/chestplate": 1.834,
+      "armor/helmet": 0.688,
+      "armor/leggings": 1.375,
+      "armor_durability": 4.898,
+      "armor_toughness": 1.12,
+      "attack_damage": 0.96,
+      "charging_value": 0.76,
+      "durability": 108.834,
+      "enchantment_value": 2.41,
+      "harvest_speed": 2.168,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.887,
+      "magic_damage": 0.99,
+      "projectile_accuracy": 0.972,
+      "projectile_speed": 1.084,
+      "ranged_damage": 0.241,
+      "rarity": 3.37,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.336
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 21.767
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.434
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "dndecor:polished_cut_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF818180",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Polished Cut Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 5.058,
+      "armor/boots": 0.759,
+      "armor/chestplate": 2.023,
+      "armor/helmet": 0.759,
+      "armor/leggings": 1.517,
+      "armor_durability": 5.631,
+      "armor_toughness": 1.277,
+      "attack_damage": 1.08,
+      "charging_value": 0.788,
+      "durability": 128.773,
+      "enchantment_value": 2.767,
+      "harvest_speed": 2.466,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.12,
+      "magic_damage": 1.117,
+      "projectile_accuracy": 0.991,
+      "projectile_speed": 1.118,
+      "ranged_damage": 0.277,
+      "rarity": 3.984,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.378
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 25.755
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.493
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

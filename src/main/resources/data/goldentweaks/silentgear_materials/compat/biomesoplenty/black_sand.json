@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "biomesoplenty:black_sand"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF262528",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Black Sand"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.929,
+      "armor/boots": 0.739,
+      "armor/chestplate": 1.972,
+      "armor/helmet": 0.739,
+      "armor/leggings": 1.479,
+      "armor_durability": 5.429,
+      "armor_toughness": 1.234,
+      "attack_damage": 1.047,
+      "charging_value": 0.781,
+      "durability": 123.225,
+      "enchantment_value": 2.669,
+      "harvest_speed": 2.385,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.057,
+      "magic_damage": 1.082,
+      "projectile_accuracy": 0.986,
+      "projectile_speed": 1.109,
+      "ranged_damage": 0.267,
+      "rarity": 3.814,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.366
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 24.645
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.477
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

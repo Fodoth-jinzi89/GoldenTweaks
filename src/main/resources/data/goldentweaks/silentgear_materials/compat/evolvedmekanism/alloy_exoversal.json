@@ -1,0 +1,98 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "evolvedmekanism:alloy_exoversal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF878682",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Alloy Exoversal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 97.766,
+      "armor/boots": 14.665,
+      "armor/chestplate": 39.106,
+      "armor/helmet": 14.665,
+      "armor/leggings": 29.33,
+      "armor_durability": 273.744,
+      "armor_toughness": 52.142,
+      "attack_damage": 32.589,
+      "charging_value": 1.438,
+      "durability": 11901.364,
+      "enchantment_value": 130.354,
+      "harvest_speed": 94.507,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 61.918,
+      "magic_damage": 35.847,
+      "projectile_accuracy": 1.456,
+      "projectile_speed": 1.923,
+      "ranged_damage": 13.035,
+      "rarity": 361.734,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 11.406
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 2380.273
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 18.901
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

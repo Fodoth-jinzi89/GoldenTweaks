@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2cs:purified_energized_fluix_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF6D37A3",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Purified Energized Fluix Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 33.258,
+      "armor/boots": 4.989,
+      "armor/chestplate": 13.303,
+      "armor/helmet": 4.989,
+      "armor/leggings": 9.977,
+      "armor_durability": 81.969,
+      "armor_toughness": 15.995,
+      "attack_damage": 10.424,
+      "charging_value": 1.311,
+      "durability": 3260.663,
+      "enchantment_value": 39.202,
+      "harvest_speed": 29.246,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 19.895,
+      "magic_damage": 11.369,
+      "projectile_accuracy": 1.365,
+      "projectile_speed": 1.766,
+      "ranged_damage": 3.92,
+      "rarity": 99.35,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3.648
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 652.133
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 5.849
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

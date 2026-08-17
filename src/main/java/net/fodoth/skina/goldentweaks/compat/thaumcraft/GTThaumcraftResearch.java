@@ -4,6 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.world.item.ItemStack;
 import thaumcraft.api.aspects.Aspect;
@@ -32,12 +33,12 @@ import java.util.Map;
  *   "parents": ["INFUSION"],
  *   "concealed": true,
  *   "pages": [
- *     "tc.research_page.GT_INFUSION_INTERCEPTER.1",
- *     "tc.research_page.GT_INFUSION_INTERCEPTER.2"
+ *     { "type": "goldentweaks:text", "text": "tc.research_page.GT_INFUSION_INTERCEPTER.1" },
+ *     { "type": "goldentweaks:infusion", "recipe_id": "goldentweaks:infusion_intercepter" }
  *   ]
  * }
  * }</pre>
- * <p>{@code pages} entries are plain text page translation keys.
+ * <p>For compatibility, a string page entry is treated as a text translation key.
  */
 public final class GTThaumcraftResearch {
 
@@ -53,7 +54,7 @@ public final class GTThaumcraftResearch {
     private final ItemStack icon;
     private final AspectList tags = new AspectList();
     private final List<String> parents = new ArrayList<>();
-    private final List<String> pages = new ArrayList<>();
+    private final List<ResearchPage> pages = new ArrayList<>();
     private boolean concealed;
 
     private GTThaumcraftResearch(
@@ -91,11 +92,7 @@ public final class GTThaumcraftResearch {
                 research.setConcealed();
             }
             if (!pages.isEmpty()) {
-                ResearchPage[] researchPages = new ResearchPage[pages.size()];
-                for (int i = 0; i < pages.size(); i++) {
-                    researchPages[i] = new ResearchPage(pages.get(i));
-                }
-                research.setPages(researchPages);
+                research.setPages(pages.toArray(ResearchPage[]::new));
             }
             research.registerResearchItem();
             GoldenTweaks.LOGGER.debug("Registered Thaumcraft research '{}'.", key);
@@ -155,7 +152,7 @@ public final class GTThaumcraftResearch {
             return null;
         }
 
-        if (!readStringList(json, "pages", key, research.pages)) {
+        if (!readPages(json, key, research.pages)) {
             return null;
         }
 
@@ -223,6 +220,72 @@ public final class GTThaumcraftResearch {
             out.add(child.getAsString());
         }
 
+        return true;
+    }
+
+    private static boolean readPages(JsonObject json, String key, List<ResearchPage> out) {
+        JsonElement element = json.get("pages");
+        if (element == null) {
+            return true;
+        }
+        if (!element.isJsonArray()) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': 'pages' must be an array.", key);
+            return false;
+        }
+
+        JsonArray array = element.getAsJsonArray();
+        for (int i = 0; i < array.size(); i++) {
+            JsonElement child = array.get(i);
+            if (child.isJsonPrimitive() && child.getAsJsonPrimitive().isString()) {
+                out.add(new ResearchPage(child.getAsString()));
+                continue;
+            }
+            if (!child.isJsonObject()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': pages[{}] must be a string or object.", key, i);
+                return false;
+            }
+
+            JsonObject pageJson = child.getAsJsonObject();
+            String type = ThaumcraftRecipeUtil.getRequiredString(pageJson, "type");
+            if (type == null) {
+                return false;
+            }
+            if ("goldentweaks:text".equals(type)) {
+                String text = ThaumcraftRecipeUtil.getRequiredString(pageJson, "text");
+                if (text == null || text.isBlank()) {
+                    return false;
+                }
+                out.add(new ResearchPage(text));
+                continue;
+            }
+
+            if (!type.equals("goldentweaks:arcane_crafting")
+                    && !type.equals("goldentweaks:crucible")
+                    && !type.equals("goldentweaks:infusion")
+                    && !type.equals("goldentweaks:infusion_enchantment")) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': unsupported pages[{}] type '{}'.", key, i, type);
+                return false;
+            }
+
+            JsonElement recipeElement = pageJson.has("recipe_id") ? pageJson.get("recipe_id") : pageJson.get("recipe");
+            if (recipeElement == null || !recipeElement.isJsonPrimitive() || !recipeElement.getAsJsonPrimitive().isString()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': pages[{}] is missing string field 'recipe_id'.", key, i);
+                return false;
+            }
+            String recipeId = recipeElement.getAsString();
+            try {
+                ResourceLocation id = ResourceLocation.parse(recipeId);
+                ResearchPage page = GTResearchRecipePages.page(id, type);
+                if (page == null) {
+                    GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': pages[{}] cannot resolve {} recipe '{}'.", key, i, type, id);
+                    return false;
+                }
+                out.add(page);
+            } catch (Exception e) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': pages[{}] has invalid recipe '{}'.", key, i, recipeId);
+                return false;
+            }
+        }
         return true;
     }
 

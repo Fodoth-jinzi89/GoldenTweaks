@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:arcane_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF4F4F4F",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Arcane Stone Block"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.081,
+      "armor/boots": 1.362,
+      "armor/chestplate": 3.632,
+      "armor/helmet": 1.362,
+      "armor/leggings": 2.724,
+      "armor_durability": 12.941,
+      "armor_toughness": 2.802,
+      "attack_damage": 2.184,
+      "charging_value": 0.95,
+      "durability": 351.512,
+      "enchantment_value": 6.306,
+      "harvest_speed": 5.319,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.252,
+      "magic_damage": 2.297,
+      "projectile_accuracy": 1.107,
+      "projectile_speed": 1.319,
+      "ranged_damage": 0.631,
+      "rarity": 10.824,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.764
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 70.302
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.064
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

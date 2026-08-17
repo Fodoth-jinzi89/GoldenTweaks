@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:mermaids_gem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF49AFBF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Mermaid's Gem"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.975,
+      "armor/boots": 1.496,
+      "armor/chestplate": 3.99,
+      "armor/helmet": 1.496,
+      "armor/leggings": 2.992,
+      "armor_durability": 14.792,
+      "armor_toughness": 3.178,
+      "attack_damage": 2.446,
+      "charging_value": 0.976,
+      "durability": 413.029,
+      "enchantment_value": 7.198,
+      "harvest_speed": 6.017,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.754,
+      "magic_damage": 2.579,
+      "projectile_accuracy": 1.126,
+      "projectile_speed": 1.352,
+      "ranged_damage": 0.72,
+      "rarity": 12.709,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.856
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 82.606
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.203
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

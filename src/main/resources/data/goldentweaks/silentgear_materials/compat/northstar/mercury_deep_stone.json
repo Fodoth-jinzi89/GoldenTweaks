@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "northstar:mercury_deep_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF3C3435",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Deep Mercury Stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 5.114,
+      "armor/boots": 0.767,
+      "armor/chestplate": 2.046,
+      "armor/helmet": 0.767,
+      "armor/leggings": 1.534,
+      "armor_durability": 5.721,
+      "armor_toughness": 1.297,
+      "attack_damage": 1.094,
+      "charging_value": 0.791,
+      "durability": 131.256,
+      "enchantment_value": 2.81,
+      "harvest_speed": 2.503,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.149,
+      "magic_damage": 1.133,
+      "projectile_accuracy": 0.993,
+      "projectile_speed": 1.122,
+      "ranged_damage": 0.281,
+      "rarity": 4.061,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.383
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 26.251
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.501
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

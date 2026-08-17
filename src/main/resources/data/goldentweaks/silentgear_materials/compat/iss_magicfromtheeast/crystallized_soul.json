@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "iss_magicfromtheeast:crystallized_soul"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF5A9BAF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Crystallized Soul"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 19.305,
+      "armor/boots": 2.896,
+      "armor/chestplate": 7.722,
+      "armor/helmet": 2.896,
+      "armor/leggings": 5.792,
+      "armor_durability": 37.823,
+      "armor_toughness": 7.709,
+      "attack_damage": 5.416,
+      "charging_value": 1.16,
+      "durability": 1282.291,
+      "enchantment_value": 18.231,
+      "harvest_speed": 14.319,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 10.422,
+      "magic_damage": 5.818,
+      "projectile_accuracy": 1.257,
+      "projectile_speed": 1.579,
+      "ranged_damage": 1.823,
+      "rarity": 39.245,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.896
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 256.458
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.864
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

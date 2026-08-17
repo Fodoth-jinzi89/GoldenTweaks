@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:hexite_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF1B0076",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Hexite Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 19.928,
+      "armor/boots": 2.989,
+      "armor/chestplate": 7.971,
+      "armor/helmet": 2.989,
+      "armor/leggings": 5.978,
+      "armor_durability": 39.57,
+      "armor_toughness": 8.044,
+      "attack_damage": 5.627,
+      "charging_value": 1.169,
+      "durability": 1354.078,
+      "enchantment_value": 19.064,
+      "harvest_speed": 14.928,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 10.823,
+      "magic_damage": 6.05,
+      "projectile_accuracy": 1.263,
+      "projectile_speed": 1.59,
+      "ranged_damage": 1.906,
+      "rarity": 41.431,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.969
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 270.816
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.986
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

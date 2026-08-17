@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2cs:purified_resonating_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF506C7D",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Purified Resonating Crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 45.579,
+      "armor/boots": 6.837,
+      "armor/chestplate": 18.231,
+      "armor/helmet": 6.837,
+      "armor/leggings": 13.674,
+      "armor_durability": 80.715,
+      "armor_toughness": 16.77,
+      "attack_damage": 12.177,
+      "charging_value": 3.279,
+      "durability": 2550.405,
+      "enchantment_value": 39.039,
+      "harvest_speed": 31.362,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 23.517,
+      "magic_damage": 12.993,
+      "projectile_accuracy": 3.63,
+      "projectile_speed": 4.488,
+      "ranged_damage": 3.903,
+      "rarity": 78.207,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 4.263
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 510.081
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 6.273
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

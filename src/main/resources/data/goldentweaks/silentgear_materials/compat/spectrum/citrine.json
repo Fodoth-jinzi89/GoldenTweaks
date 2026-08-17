@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:citrine_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA8821F",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Citrine Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.798,
+      "armor/boots": 1.47,
+      "armor/chestplate": 3.919,
+      "armor/helmet": 1.47,
+      "armor/leggings": 2.939,
+      "armor_durability": 14.418,
+      "armor_toughness": 3.102,
+      "attack_damage": 2.394,
+      "charging_value": 0.971,
+      "durability": 400.471,
+      "enchantment_value": 7.018,
+      "harvest_speed": 5.877,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.654,
+      "magic_damage": 2.523,
+      "projectile_accuracy": 1.122,
+      "projectile_speed": 1.346,
+      "ranged_damage": 0.702,
+      "rarity": 12.324,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.838
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 80.094
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.175
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "organic",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "flavor_immersed_daily:mungbeanplant"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF90A959",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "text": "Mung Bean Seeds"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.051
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.069
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.069
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.04
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.045
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.064
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

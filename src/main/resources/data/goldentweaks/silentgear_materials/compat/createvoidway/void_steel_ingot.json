@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "createvoidway:void_steel_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF196255",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Void Steel Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 45.0,
+      "armor/boots": 6.75,
+      "armor/chestplate": 18.0,
+      "armor/helmet": 6.75,
+      "armor/leggings": 13.5,
+      "armor_durability": 126.0,
+      "armor_toughness": 24.0,
+      "attack_damage": 15.0,
+      "charging_value": 1.395,
+      "durability": 5478.0,
+      "enchantment_value": 60.0,
+      "harvest_speed": 43.5,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 28.5,
+      "magic_damage": 16.5,
+      "projectile_accuracy": 1.425,
+      "projectile_speed": 1.87,
+      "ranged_damage": 6.0,
+      "rarity": 166.5,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:void_ward"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 5.25
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 1095.6
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 8.7
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:void_ward"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

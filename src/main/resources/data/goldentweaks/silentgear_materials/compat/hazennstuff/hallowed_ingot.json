@@ -1,0 +1,98 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "hazennstuff:hallowed_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFBDA662",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Hallowed Ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 26.402,
+      "armor/boots": 3.96,
+      "armor/chestplate": 10.561,
+      "armor/helmet": 3.96,
+      "armor/leggings": 7.921,
+      "armor_durability": 59.032,
+      "armor_toughness": 11.734,
+      "attack_damage": 7.894,
+      "charging_value": 1.247,
+      "durability": 2194.206,
+      "enchantment_value": 28.326,
+      "harvest_speed": 21.598,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 15.121,
+      "magic_damage": 8.555,
+      "projectile_accuracy": 1.319,
+      "projectile_speed": 1.687,
+      "ranged_damage": 2.833,
+      "rarity": 66.982,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.763
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 438.841
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 4.32
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "taintedmagic:creation_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC877BF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Shard of Creation"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 255.0,
+      "armor/boots": 38.25,
+      "armor/chestplate": 102.0,
+      "armor/helmet": 38.25,
+      "armor/leggings": 76.5,
+      "armor_durability": 714.0,
+      "armor_toughness": 136.0,
+      "attack_damage": 85.0,
+      "charging_value": 1.275,
+      "durability": 31042.0,
+      "enchantment_value": 340.0,
+      "harvest_speed": 246.5,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 161.5,
+      "magic_damage": 93.5,
+      "projectile_accuracy": 1.275,
+      "projectile_speed": 1.7,
+      "ranged_damage": 34.0,
+      "rarity": 943.5,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 29.75
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 6208.4
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 49.3
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:venom"
+        }
+      ]
+    }
+  }
+}

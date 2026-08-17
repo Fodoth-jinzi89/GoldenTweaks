@@ -1,0 +1,103 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:pure_netherite_scrap"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF75564F",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Pure Netherite Scrap"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 87.039,
+      "armor/boots": 13.056,
+      "armor/chestplate": 34.815,
+      "armor/helmet": 13.056,
+      "armor/leggings": 26.112,
+      "armor_durability": 202.512,
+      "armor_toughness": 39.951,
+      "attack_damage": 26.532,
+      "charging_value": 3.819,
+      "durability": 7738.953,
+      "enchantment_value": 97.044,
+      "harvest_speed": 73.338,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 50.745,
+      "magic_damage": 28.827,
+      "projectile_accuracy": 4.014,
+      "projectile_speed": 5.157,
+      "ranged_damage": 9.705,
+      "rarity": 236.064,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 9.285
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 1547.79
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 14.667
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

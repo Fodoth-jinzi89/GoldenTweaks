@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:moonstone_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF636D88",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "text": "Moonstone Shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20.162,
+      "armor/boots": 3.024,
+      "armor/chestplate": 8.064,
+      "armor/helmet": 3.024,
+      "armor/leggings": 6.048,
+      "armor_durability": 30.03,
+      "armor_toughness": 6.446,
+      "attack_damage": 4.954,
+      "charging_value": 1.958,
+      "durability": 841.108,
+      "enchantment_value": 14.61,
+      "harvest_speed": 12.202,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 9.628,
+      "magic_damage": 5.226,
+      "projectile_accuracy": 2.256,
+      "projectile_speed": 2.71,
+      "ranged_damage": 1.462,
+      "rarity": 25.878,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.734
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 168.222
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 2.44
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}
