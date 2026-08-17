@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:flux_star"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "items": {
+    "apotheosis_create:incomplete_common_material": "Incomplete Common Material",
+    "apotheosis_create:incomplete_epic_material": "Incomplete Epic Material",
+    "apotheosis_create:incomplete_gem_dust": "Incomplete Gem Dust",
+    "apotheosis_create:incomplete_mythic_material": "Incomplete Mythic Material",
+    "apotheosis_create:incomplete_rare_material": "Incomplete Rare Material",
+    "apotheosis_create:incomplete_uncommon_material": "Incomplete Uncommon Material"
+  },
+  "blocks": {},
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:fiery_dagger_magic_projectile"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

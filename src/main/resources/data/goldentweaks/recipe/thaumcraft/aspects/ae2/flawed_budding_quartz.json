@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:flawed_budding_quartz"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

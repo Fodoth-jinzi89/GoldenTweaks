@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:elite_induction_provider"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

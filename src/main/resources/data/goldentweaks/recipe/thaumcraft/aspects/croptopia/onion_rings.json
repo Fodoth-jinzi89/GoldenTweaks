@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:onion_rings"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

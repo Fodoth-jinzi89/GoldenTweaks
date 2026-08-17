@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:umbranova_t3"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

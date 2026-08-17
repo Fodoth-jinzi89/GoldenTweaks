@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:multiversal_crystallizing_factory"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

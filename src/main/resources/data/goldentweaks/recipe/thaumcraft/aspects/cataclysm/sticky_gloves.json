@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:sticky_gloves"
+  },
+  "aspects": {
+    "reliquiae": 3
+  }
+}

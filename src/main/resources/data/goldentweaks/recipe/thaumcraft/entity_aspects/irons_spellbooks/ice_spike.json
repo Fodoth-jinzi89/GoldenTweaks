@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:ice_spike"
+  },
+  "aspects": {
+    "bestia": 4,
+    "gelum": 3,
+    "victus": 3
+  }
+}

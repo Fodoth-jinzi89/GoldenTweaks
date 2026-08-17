@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:star_fuel"
+  },
+  "aspects": {
+    "terminus": 3
+  }
+}

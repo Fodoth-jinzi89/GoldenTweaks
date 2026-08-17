@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:glass_4x"
+  },
+  "aspects": {
+    "vitreus": 7,
+    "dense": 8
+  }
+}

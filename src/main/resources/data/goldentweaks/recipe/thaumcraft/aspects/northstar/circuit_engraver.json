@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:circuit_engraver"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

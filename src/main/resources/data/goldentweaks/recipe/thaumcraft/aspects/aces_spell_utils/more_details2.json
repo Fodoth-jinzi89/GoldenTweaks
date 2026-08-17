@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:more_details2"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

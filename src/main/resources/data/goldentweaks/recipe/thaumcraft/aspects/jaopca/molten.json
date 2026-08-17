@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:molten"
+  },
+  "aspects": {
+    "aqua": 3,
+    "metallum": 2
+  }
+}

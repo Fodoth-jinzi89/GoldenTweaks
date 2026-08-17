@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:andesite_paver_stairs"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

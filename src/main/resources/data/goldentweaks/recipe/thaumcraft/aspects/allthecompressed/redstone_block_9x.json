@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:redstone_block_9x"
+  },
+  "aspects": {
+    "saxum": 10,
+    "dense": 18
+  }
+}

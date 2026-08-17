@@ -1,0 +1,13 @@
+{
+  "items": {
+    "powerful_dummy:dummy_stand": "Dummy Stand"
+  },
+  "blocks": {},
+  "entities": {
+    "powerful_dummy:test_dummy": "Test Dummy",
+    "powerful_dummy:test_dummy_arthropod": "Test Dummy (Arthropod)",
+    "powerful_dummy:test_dummy_illager": "Test Dummy (Illager)",
+    "powerful_dummy:test_dummy_undead": "Test Dummy (Undead)",
+    "powerful_dummy:test_dummy_water": "Test Dummy (Water)"
+  }
+}

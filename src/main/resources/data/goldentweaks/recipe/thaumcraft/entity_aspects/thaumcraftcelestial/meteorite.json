@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraftcelestial:meteorite"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

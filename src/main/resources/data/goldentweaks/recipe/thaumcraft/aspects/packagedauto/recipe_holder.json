@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedauto:recipe_holder"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

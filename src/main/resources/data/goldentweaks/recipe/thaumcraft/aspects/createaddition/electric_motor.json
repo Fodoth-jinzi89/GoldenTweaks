@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createaddition:electric_motor"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

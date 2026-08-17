@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:bishop_of_deceit_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

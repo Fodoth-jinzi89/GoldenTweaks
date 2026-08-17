@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:soul_stir_fry_meat_rice"
+  },
+  "aspects": {
+    "corpus": 3,
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

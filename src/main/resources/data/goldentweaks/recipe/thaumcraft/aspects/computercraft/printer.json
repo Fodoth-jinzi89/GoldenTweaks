@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:printer"
+  },
+  "aspects": {
+    "charta": 3,
+    "cognitio": 2
+  }
+}

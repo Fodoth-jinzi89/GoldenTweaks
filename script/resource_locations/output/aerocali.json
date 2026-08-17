@@ -1,0 +1,22 @@
+{
+  "items": {
+    "aerocali:incomplete_thermal_mechanism": "Incomplete Thermal Mechanism",
+    "aerocali:ion_upgrade": "Ion Thruster Upgrade",
+    "aerocali:ionized_thermal_mechanism": "Ionized Thermal Mechanism",
+    "aerocali:navigation_element": "Navigation Compass",
+    "aerocali:nozzle_cover": "Nozzle Cover",
+    "aerocali:survival_physics_staff": "Physics Staff",
+    "aerocali:thermal_mechanism": "Thermal Mechanism",
+    "aerocali:traverse_board": "Traverse Board"
+  },
+  "blocks": {
+    "aerocali:cable": "Electron Cable",
+    "aerocali:creative_generator": "Creative Generator",
+    "aerocali:generator": "Generator",
+    "aerocali:industrial_generator": "Industrial Generator",
+    "aerocali:mechanical_anvil_0": "Mechanical Anvil",
+    "aerocali:thruster": "Thruster",
+    "aerocali:tracker": "Navigation Tracker"
+  },
+  "entities": {}
+}

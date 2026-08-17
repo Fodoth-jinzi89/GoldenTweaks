@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "protection_pixel:armorentity"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

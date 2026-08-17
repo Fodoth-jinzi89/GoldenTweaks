@@ -1,0 +1,28 @@
+{
+  "items": {
+    "create_mobile_packages:bee_port": "Robo Bee Port",
+    "create_mobile_packages:mobile_packager": "Mobile Packager",
+    "create_mobile_packages:mobile_packager.tooltip.behaviour1": "Opens a menu to create Packages",
+    "create_mobile_packages:mobile_packager.tooltip.behaviour2": "Opens a menu to modify Packages",
+    "create_mobile_packages:mobile_packager.tooltip.condition1": "When used",
+    "create_mobile_packages:mobile_packager.tooltip.condition2": "When sneak used",
+    "create_mobile_packages:mobile_packager.tooltip.summary": "Package items on the go",
+    "create_mobile_packages:portable_stock_ticker": "Portable Stock Ticker",
+    "create_mobile_packages:portable_stock_ticker.not_linked": "Not linked to Network",
+    "create_mobile_packages:portable_stock_ticker.screen_title": "Portable Stock Ticker",
+    "create_mobile_packages:portable_stock_ticker.tooltip.behaviour1": "Portable Stock Ticker will bind to the Network",
+    "create_mobile_packages:portable_stock_ticker.tooltip.behaviour2": "Portable Stock Ticker will open a mobile Stock Keeper menu",
+    "create_mobile_packages:portable_stock_ticker.tooltip.condition1": "When sneak clicked on a Stock Link or Stock Ticker",
+    "create_mobile_packages:portable_stock_ticker.tooltip.condition2": "When used",
+    "create_mobile_packages:portable_stock_ticker.tooltip.summary": "A Mobile Stock Keeper",
+    "create_mobile_packages:portable_stock_ticker.trash_menu": "Trash Menu",
+    "create_mobile_packages:robo_bee": "Robo Bee"
+  },
+  "blocks": {
+    "create_mobile_packages:bee_port": "Robo Bee Port"
+  },
+  "entities": {
+    "create_mobile_packages:robo_bee": "Robo Bee",
+    "create_mobile_packages:robo_bee.no_valid_target": "No valid target"
+  }
+}

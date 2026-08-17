@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:he_rocket"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:storage_system_l6"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "machina": 3,
+    "vas": 2
+  }
+}

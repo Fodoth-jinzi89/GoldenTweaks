@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:experience_bucket"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "cognitio": 3,
+    "metallum": 3,
+    "potentia": 2
+  }
+}

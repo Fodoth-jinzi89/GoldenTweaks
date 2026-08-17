@@ -1,0 +1,41 @@
+{
+  "items": {
+    "aero_reformation:ender_compass": "Ender Compass",
+    "aero_reformation:ethereal_key": "kcits sublevel's key",
+    "aero_reformation:ethereal_key.bind": "§aBound to this sublevel",
+    "aero_reformation:ethereal_key.bound_name": "§akcits sublevel's key §7(Bound)",
+    "aero_reformation:ethereal_key.bound_to": "Bound: %s",
+    "aero_reformation:ethereal_key.desc": "Right-click a physics anchor to bind. Right-click in air to phase the bound sublevel.",
+    "aero_reformation:ethereal_key.hide": "§5Sublevel hidden",
+    "aero_reformation:ethereal_key.not_bound": "§cNot bound to any sublevel",
+    "aero_reformation:ethereal_key.show": "§bSublevel shown",
+    "aero_reformation:ethereal_key.unbind": "§7Binding cleared",
+    "aero_reformation:incomplete_guidance_warhead": "Incomplete Guidance Warhead",
+    "aero_reformation:mushroom_shell": "Mushroom Shell",
+    "aero_reformation:warhead_configurator": "Warhead Configurator"
+  },
+  "blocks": {
+    "aero_reformation:com_offset": "COM Offset Controller",
+    "aero_reformation:create_seat": "White Seat (Create)",
+    "aero_reformation:directional_synchronizer_master": "Directional Synchronizer (Master)",
+    "aero_reformation:directional_synchronizer_slave": "Directional Synchronizer (Slave)",
+    "aero_reformation:electric_loadstone": "Electric Loadstone",
+    "aero_reformation:end_rod_seat": "End Rod Seat",
+    "aero_reformation:filter_patch": "Filter Patch",
+    "aero_reformation:filter_patch.invalid_target": "The patch doesn't seem to like this block",
+    "aero_reformation:gravity_crystal": "Gravity Crystal",
+    "aero_reformation:guidance_warhead": "Guidance Warhead",
+    "aero_reformation:high_friction_block": "High Friction Block",
+    "aero_reformation:high_friction_slab": "High Friction Slab",
+    "aero_reformation:high_friction_stairs": "High Friction Stairs",
+    "aero_reformation:high_friction_vertical_slab": "High Friction Vertical Slab",
+    "aero_reformation:mushroom_shell": "Mushroom Shell",
+    "aero_reformation:physics_anchor": "Physics Anchor",
+    "aero_reformation:pilot_seat": "Pilot Seat",
+    "aero_reformation:power": "power",
+    "aero_reformation:rcs_thruster": "RCS Thruster",
+    "aero_reformation:redstone_spring": "Redstone Spring",
+    "aero_reformation:sensor_agency": "Sensor Agency"
+  },
+  "entities": {}
+}

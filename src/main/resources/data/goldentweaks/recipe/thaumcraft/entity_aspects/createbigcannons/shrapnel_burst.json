@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createbigcannons:shrapnel_burst"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

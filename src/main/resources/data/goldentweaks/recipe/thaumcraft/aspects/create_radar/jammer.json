@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_radar:jammer"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2
+  }
+}

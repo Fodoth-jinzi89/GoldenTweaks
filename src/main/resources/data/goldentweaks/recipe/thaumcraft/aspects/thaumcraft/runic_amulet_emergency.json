@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:runic_amulet_emergency"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "accessories": 3,
+    "lucrum": 2
+  }
+}

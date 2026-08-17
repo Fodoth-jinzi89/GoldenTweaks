@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:owner_conversion_tool"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createbigcannons:mortar_stone"
+  },
+  "aspects": {
+    "bestia": 4,
+    "saxum": 3,
+    "victus": 3
+  }
+}

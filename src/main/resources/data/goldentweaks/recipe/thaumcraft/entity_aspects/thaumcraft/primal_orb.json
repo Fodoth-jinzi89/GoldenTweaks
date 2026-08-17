@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:primal_orb"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

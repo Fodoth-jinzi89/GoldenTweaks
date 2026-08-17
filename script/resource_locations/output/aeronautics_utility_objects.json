@@ -1,0 +1,17 @@
+{
+  "items": {
+    "aeronautics_utility_objects:creative_hydraulic_rod": "Creative Pneumatic Rod",
+    "aeronautics_utility_objects:hydraulic_rod": "Pneumatic Rod",
+    "aeronautics_utility_objects:universal_joint_rod": "Brass Universal Joint Rod",
+    "aeronautics_utility_objects:universal_joint_rod2": "Andesite Universal Joint Rod"
+  },
+  "blocks": {
+    "aeronautics_utility_objects:brass_universal_joint": "Universal Joint Head",
+    "aeronautics_utility_objects:damping_stress_bearing": "Kinetic Conversion Bearing",
+    "aeronautics_utility_objects:hydraulic_connection_head": "Pneumatic Connection Head",
+    "aeronautics_utility_objects:hydraulic_hinge_head": "Pneumatic Hinge Head",
+    "aeronautics_utility_objects:hydraulic_regulator": "Pneumatic Regulator",
+    "aeronautics_utility_objects:universal_joint": "Legacy Universal Joint Head"
+  },
+  "entities": {}
+}

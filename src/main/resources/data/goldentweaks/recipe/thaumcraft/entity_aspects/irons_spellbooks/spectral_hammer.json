@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:spectral_hammer"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

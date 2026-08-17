@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bedrock_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "fabrico": 3,
+    "victus": 3,
+    "fames": 2,
+    "pannus": 2
+  }
+}

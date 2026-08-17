@@ -1,0 +1,10 @@
+{
+  "items": {},
+  "blocks": {
+    "createendertransmission:chunk_loader": "Chunk Loader",
+    "createendertransmission:energy_transmitter": "Energy Transmitter",
+    "createendertransmission:fluid_transmitter": "Fluid Transmitter",
+    "createendertransmission:item_transmitter": "Item Transmitter"
+  },
+  "entities": {}
+}

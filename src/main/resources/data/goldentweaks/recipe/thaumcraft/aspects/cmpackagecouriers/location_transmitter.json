@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cmpackagecouriers:location_transmitter"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

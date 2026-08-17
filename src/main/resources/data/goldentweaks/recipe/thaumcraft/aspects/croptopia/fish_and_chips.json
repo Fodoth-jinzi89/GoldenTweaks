@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:fish_and_chips"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:precasian_soil_8x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 16
+  }
+}

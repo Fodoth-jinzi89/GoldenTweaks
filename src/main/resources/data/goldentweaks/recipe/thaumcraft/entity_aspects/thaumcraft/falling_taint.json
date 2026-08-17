@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:falling_taint"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

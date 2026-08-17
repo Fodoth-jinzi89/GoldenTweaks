@@ -1,0 +1,9 @@
+{
+  "items": {
+    "baguettelib:example_item": "Example Item"
+  },
+  "blocks": {
+    "baguettelib:example_block": "Example Block"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:industrial_flat_bolt"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

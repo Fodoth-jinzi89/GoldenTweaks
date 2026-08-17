@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_aeronautics_automated_logistics:ship_transponder"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "steampowered:furnace_engine"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 3
+  }
+}

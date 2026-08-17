@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:chauve_souris_au_vin"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

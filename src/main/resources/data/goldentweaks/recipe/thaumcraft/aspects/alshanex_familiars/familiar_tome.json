@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:familiar_tome"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "praecantatio": 2
+  }
+}

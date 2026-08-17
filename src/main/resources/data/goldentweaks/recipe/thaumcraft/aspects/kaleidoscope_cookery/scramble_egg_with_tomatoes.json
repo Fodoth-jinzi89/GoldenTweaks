@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:scramble_egg_with_tomatoes"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 2,
+    "messis": 2
+  }
+}

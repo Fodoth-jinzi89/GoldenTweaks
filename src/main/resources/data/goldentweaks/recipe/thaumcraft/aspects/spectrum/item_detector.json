@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:item_detector"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:permafrost_leaves"
+  },
+  "aspects": {
+    "arbor": 3,
+    "gelum": 3,
+    "herba": 3
+  }
+}

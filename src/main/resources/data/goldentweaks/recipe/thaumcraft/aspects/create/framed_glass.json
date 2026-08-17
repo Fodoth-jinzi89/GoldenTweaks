@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:framed_glass"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

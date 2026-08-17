@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:magma_ball"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

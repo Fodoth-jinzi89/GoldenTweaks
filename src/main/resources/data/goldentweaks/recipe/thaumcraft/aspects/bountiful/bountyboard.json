@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bountiful:bountyboard"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "cognitio": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:sconce_nether_brass_wall"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

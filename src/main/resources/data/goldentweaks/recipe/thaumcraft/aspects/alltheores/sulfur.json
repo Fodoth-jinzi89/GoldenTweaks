@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:sulfur"
+  },
+  "aspects": {
+    "ignis": 3,
+    "perditio": 2
+  }
+}

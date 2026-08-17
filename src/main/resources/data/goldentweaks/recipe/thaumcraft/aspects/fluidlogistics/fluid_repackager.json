@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluidlogistics:fluid_repackager"
+  },
+  "aspects": {
+    "aqua": 3,
+    "vas": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createframed:vertical_light_gray_stained_framed_glass"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:very_crude_repair_kit"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

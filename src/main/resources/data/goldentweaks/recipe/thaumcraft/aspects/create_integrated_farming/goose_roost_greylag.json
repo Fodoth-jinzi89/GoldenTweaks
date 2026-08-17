@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_integrated_farming:goose_roost_greylag"
+  },
+  "aspects": {
+    "messis": 3,
+    "machina": 2
+  }
+}

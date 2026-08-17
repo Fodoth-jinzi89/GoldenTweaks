@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_neutronium_bucket"
+  },
+  "aspects": {
+    "dense": 6,
+    "gravitas": 4,
+    "metallum": 3
+  }
+}

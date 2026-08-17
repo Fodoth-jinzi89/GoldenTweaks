@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:amethyst_glass_arrow"
+  },
+  "aspects": {
+    "telum": 4,
+    "vitreus": 3
+  }
+}

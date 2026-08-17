@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createpropulsion:assembler_stick"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

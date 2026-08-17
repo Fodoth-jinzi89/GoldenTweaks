@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_jewelry:jewelcrafting_station"
+  },
+  "aspects": {
+    "accessories": 3,
+    "lucrum": 3,
+    "metallum": 3
+  }
+}

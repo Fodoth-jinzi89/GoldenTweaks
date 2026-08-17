@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:fluid_gauge"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

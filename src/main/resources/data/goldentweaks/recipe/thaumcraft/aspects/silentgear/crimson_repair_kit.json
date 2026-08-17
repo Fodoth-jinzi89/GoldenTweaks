@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:crimson_repair_kit"
+  },
+  "aspects": {
+    "arbor": 3,
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:malachite_block"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:electrodynamics_dirtyminerals"
+  },
+  "aspects": {
+    "perfodio": 4,
+    "instrumentum": 3,
+    "terra": 3
+  }
+}

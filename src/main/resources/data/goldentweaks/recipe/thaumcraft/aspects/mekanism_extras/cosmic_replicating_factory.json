@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_replicating_factory"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "metallum": 3
+  }
+}

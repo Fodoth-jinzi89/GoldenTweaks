@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:ritual_orihon"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

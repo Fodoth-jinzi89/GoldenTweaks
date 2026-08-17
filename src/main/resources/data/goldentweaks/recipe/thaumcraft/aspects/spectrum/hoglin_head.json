@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:hoglin_head"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

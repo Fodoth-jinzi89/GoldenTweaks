@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:endshelf"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3
+  }
+}

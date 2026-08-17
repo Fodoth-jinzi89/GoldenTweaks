@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:wireless_transmission_station"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3,
+    "aer": 2,
+    "iter": 2
+  }
+}

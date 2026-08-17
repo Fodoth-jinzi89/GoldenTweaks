@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:end_stone_teleport_trap_bricks"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

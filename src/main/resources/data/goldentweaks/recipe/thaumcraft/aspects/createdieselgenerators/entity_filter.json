@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:entity_filter"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

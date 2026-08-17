@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:deepslate_gem_ore"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "profundum": 3,
+    "saxum": 3,
+    "vitreus": 3
+  }
+}

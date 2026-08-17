@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "spectrum:glass_arrow"
+  },
+  "aspects": {
+    "telum": 4,
+    "vitreus": 3
+  }
+}

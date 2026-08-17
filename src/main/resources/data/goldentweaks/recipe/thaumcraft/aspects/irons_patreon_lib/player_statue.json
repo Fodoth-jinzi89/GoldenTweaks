@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_patreon_lib:player_statue"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

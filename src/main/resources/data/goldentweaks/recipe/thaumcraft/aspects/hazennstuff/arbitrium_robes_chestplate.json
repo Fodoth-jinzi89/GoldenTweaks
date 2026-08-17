@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:arbitrium_robes_chestplate"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vacuos": 4,
+    "vas": 2
+  }
+}

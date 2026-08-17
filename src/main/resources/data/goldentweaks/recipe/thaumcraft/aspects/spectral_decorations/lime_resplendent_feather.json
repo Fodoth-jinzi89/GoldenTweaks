@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:lime_resplendent_feather"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

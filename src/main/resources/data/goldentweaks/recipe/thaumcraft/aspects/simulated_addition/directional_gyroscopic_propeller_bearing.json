@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "simulated_addition:directional_gyroscopic_propeller_bearing"
+  },
+  "aspects": {
+    "machina": 4,
+    "accessories": 3,
+    "motus": 3,
+    "volatus": 3
+  }
+}

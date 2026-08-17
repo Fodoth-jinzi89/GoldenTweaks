@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedexcrafting:flux_crafter"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "permutatio": 3,
+    "vas": 3,
+    "machina": 2,
+    "potentia": 2
+  }
+}

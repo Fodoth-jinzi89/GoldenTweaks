@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:wild_flax"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

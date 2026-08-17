@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothicenchantingaddition:flux_stats_bookshelf_tier_1"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3
+  }
+}

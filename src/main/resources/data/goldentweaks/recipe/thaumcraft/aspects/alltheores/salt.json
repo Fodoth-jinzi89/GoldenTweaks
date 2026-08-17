@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:salt"
+  },
+  "aspects": {
+    "aqua": 2,
+    "terra": 2
+  }
+}

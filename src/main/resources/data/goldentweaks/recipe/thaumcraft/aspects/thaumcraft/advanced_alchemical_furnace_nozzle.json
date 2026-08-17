@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:advanced_alchemical_furnace_nozzle"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "aer": 3,
+    "ignis": 3,
+    "motus": 3,
+    "machina": 2
+  }
+}

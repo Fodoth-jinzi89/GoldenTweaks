@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:crystal_leggings"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "tutamen": 4,
+    "terminus": 3
+  }
+}

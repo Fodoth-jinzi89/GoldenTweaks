@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:electrodynamics_crudeminerals"
+  },
+  "aspects": {
+    "perfodio": 4,
+    "instrumentum": 3
+  }
+}

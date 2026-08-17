@@ -1,0 +1,8 @@
+{
+  "items": {},
+  "blocks": {},
+  "entities": {
+    "corpse:corpse": "Corpse",
+    "corpse:corpse_of": "Corpse of %s"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ponderer:miniature_projector"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

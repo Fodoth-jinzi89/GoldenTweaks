@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:native_silver_cluster"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

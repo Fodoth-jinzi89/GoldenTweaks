@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:chlorophyte_mask"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

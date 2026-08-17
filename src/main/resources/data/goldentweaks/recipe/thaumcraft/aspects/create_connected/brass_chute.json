@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:brass_chute"
+  },
+  "aspects": {
+    "metallum": 3,
+    "permutatio": 3,
+    "machina": 2
+  }
+}

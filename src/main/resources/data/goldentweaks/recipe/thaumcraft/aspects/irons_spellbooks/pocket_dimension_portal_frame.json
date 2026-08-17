@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:pocket_dimension_portal_frame"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

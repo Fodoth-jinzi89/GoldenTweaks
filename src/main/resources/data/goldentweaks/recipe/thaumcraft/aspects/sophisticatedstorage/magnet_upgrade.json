@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:magnet_upgrade"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

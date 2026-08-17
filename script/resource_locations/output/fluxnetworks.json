@@ -1,0 +1,18 @@
+{
+  "items": {
+    "fluxnetworks:admin_configurator": "Admin Configurator",
+    "fluxnetworks:flux_configurator": "Flux Configurator",
+    "fluxnetworks:flux_core": "Flux Core",
+    "fluxnetworks:flux_dust": "Flux Dust"
+  },
+  "blocks": {
+    "fluxnetworks:basic_flux_storage": "Basic Flux Storage",
+    "fluxnetworks:flux_block": "Flux Block",
+    "fluxnetworks:flux_controller": "Flux Controller",
+    "fluxnetworks:flux_plug": "Flux Plug",
+    "fluxnetworks:flux_point": "Flux Point",
+    "fluxnetworks:gargantuan_flux_storage": "Gargantuan Flux Storage",
+    "fluxnetworks:herculean_flux_storage": "Herculean Flux Storage"
+  },
+  "entities": {}
+}

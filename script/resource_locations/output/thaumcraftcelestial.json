@@ -1,0 +1,29 @@
+{
+  "items": {
+    "thaumcraftcelestial:astral_alloy": "Astral Alloy",
+    "thaumcraftcelestial:astral_blade": "Firmament Blade",
+    "thaumcraftcelestial:astral_boots": "Astral Boots",
+    "thaumcraftcelestial:astral_chestplate": "Astral Chestplate",
+    "thaumcraftcelestial:astral_helmet": "Astral Helmet",
+    "thaumcraftcelestial:astral_leggings": "Astral Leggings",
+    "thaumcraftcelestial:astrolabe": "Astrolabe",
+    "thaumcraftcelestial:celestial_lens": "Celestial Lens",
+    "thaumcraftcelestial:celestial_record": "Celestial Record",
+    "thaumcraftcelestial:lunar_essence": "Lunar Essence",
+    "thaumcraftcelestial:lunar_phase_instrument": "Lunar Phase Instrument",
+    "thaumcraftcelestial:meteorite_fragment": "Meteorite Fragment",
+    "thaumcraftcelestial:solar_essence": "Solar Essence",
+    "thaumcraftcelestial:stargazing_instrument": "Stargazing Instrument",
+    "thaumcraftcelestial:stellar_essence": "Stellar Essence"
+  },
+  "blocks": {
+    "thaumcraftcelestial:astrolabe": "Astrolabe",
+    "thaumcraftcelestial:celestial_lens": "Celestial Lens",
+    "thaumcraftcelestial:lunar_phase_instrument": "Lunar Phase Instrument",
+    "thaumcraftcelestial:meteorite_block": "Fallen Meteorite",
+    "thaumcraftcelestial:stargazing_instrument": "Stargazing Instrument"
+  },
+  "entities": {
+    "thaumcraftcelestial:meteorite": "Falling Meteorite"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:end_style_sashimi"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

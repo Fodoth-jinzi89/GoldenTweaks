@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoguanniao:green_food_bag_growth"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "victus": 3,
+    "fames": 2,
+    "vas": 2
+  }
+}

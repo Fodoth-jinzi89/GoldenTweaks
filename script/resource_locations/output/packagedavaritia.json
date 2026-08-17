@@ -1,0 +1,10 @@
+{
+  "items": {},
+  "blocks": {
+    "packagedavaritia:end_crafter": "End Package Crafter",
+    "packagedavaritia:extreme_crafter": "Extreme Package Crafter",
+    "packagedavaritia:nether_crafter": "Nether Package Crafter",
+    "packagedavaritia:sculk_crafter": "Sculk Package Crafter"
+  },
+  "entities": {}
+}

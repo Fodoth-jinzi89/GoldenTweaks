@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:book_pile_horizontal"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

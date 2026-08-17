@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "held:two_handed"
+  },
+  "aspects": {
+    "humanus": 2,
+    "instrumentum": 2
+  }
+}

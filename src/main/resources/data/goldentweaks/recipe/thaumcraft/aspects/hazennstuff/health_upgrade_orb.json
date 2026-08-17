@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:health_upgrade_orb"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

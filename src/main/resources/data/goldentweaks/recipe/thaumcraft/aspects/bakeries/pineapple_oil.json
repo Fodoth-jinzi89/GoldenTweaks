@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:pineapple_oil"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

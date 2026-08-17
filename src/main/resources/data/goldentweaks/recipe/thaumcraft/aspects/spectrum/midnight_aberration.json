@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:midnight_aberration"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

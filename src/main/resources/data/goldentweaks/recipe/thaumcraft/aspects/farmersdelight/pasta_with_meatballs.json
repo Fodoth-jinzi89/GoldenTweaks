@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:pasta_with_meatballs"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

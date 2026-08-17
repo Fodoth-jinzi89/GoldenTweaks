@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:candle_holder_orange"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

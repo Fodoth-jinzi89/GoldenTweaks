@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:redstone_timer"
+  },
+  "aspects": {
+    "saxum": 3,
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

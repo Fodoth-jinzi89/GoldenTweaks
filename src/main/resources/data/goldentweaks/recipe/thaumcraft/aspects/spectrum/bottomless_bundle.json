@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bottomless_bundle"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

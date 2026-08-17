@@ -1,0 +1,12 @@
+{
+  "items": {},
+  "blocks": {
+    "createsensors:impact_fuze": "Impact Fuze",
+    "createsensors:impact_fuze.tooltip.summary": "_Detonates_ when rapid deceleration is detected. Requires a _redstone signal_ to be armed.",
+    "createsensors:impact_sensor": "Impact Sensor",
+    "createsensors:impact_sensor.tooltip.summary": "Fires a _redstone signal_ when rapid deceleration is detected.",
+    "createsensors:proximity_sensor": "Proximity Sensor",
+    "createsensors:proximity_sensor.tooltip.summary": "Fires a _redstone signal_ when a contraption enters within the sensor's range."
+  },
+  "entities": {}
+}

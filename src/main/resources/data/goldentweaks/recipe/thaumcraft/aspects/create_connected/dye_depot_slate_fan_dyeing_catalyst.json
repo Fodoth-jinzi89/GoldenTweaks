@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:dye_depot_slate_fan_dyeing_catalyst"
+  },
+  "aspects": {
+    "aer": 3,
+    "motus": 3,
+    "permutatio": 3,
+    "saxum": 3,
+    "machina": 2,
+    "sensus": 2
+  }
+}

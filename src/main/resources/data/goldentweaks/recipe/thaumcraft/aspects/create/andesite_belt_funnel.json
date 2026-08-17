@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:andesite_belt_funnel"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3,
+    "permutatio": 3,
+    "saxum": 3
+  }
+}

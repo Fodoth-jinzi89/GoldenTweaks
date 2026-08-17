@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:raw_uranium_block"
+  },
+  "aspects": {
+    "metallum": 12
+  }
+}

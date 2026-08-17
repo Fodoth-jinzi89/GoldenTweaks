@@ -1,0 +1,19 @@
+{
+  "items": {
+    "vista:cassette": "Cassette",
+    "vista:crystalline": "Crystalline",
+    "vista:hollow_cassette": "Hollow Cassette",
+    "vista:music_disc_sojourn": "Music Disc",
+    "vista:picture_tape": "Picture Tape",
+    "vista:picture_tape.maps_count": "Maps: %s",
+    "vista:picture_tape.pictures_count": "Pictures: %s",
+    "vista:picture_tape.speed": "Speed: %st"
+  },
+  "blocks": {
+    "vista:mirror": "Mirror Block",
+    "vista:television": "Television",
+    "vista:viewfinder": "Viewfinder",
+    "vista:wave_gate": "Wave Gate"
+  },
+  "entities": {}
+}

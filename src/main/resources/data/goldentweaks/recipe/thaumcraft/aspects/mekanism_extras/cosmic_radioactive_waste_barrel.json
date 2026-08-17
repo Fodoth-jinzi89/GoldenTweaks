@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_radioactive_waste_barrel"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "potentia": 4,
+    "machina": 3,
+    "sonus": 3,
+    "vitium": 3
+  }
+}

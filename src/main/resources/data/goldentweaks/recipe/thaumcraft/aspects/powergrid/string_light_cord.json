@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:string_light_cord"
+  },
+  "aspects": {
+    "accessories": 3,
+    "machina": 3,
+    "potentia": 3
+  }
+}

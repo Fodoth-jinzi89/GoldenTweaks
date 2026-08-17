@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:wilter_log"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

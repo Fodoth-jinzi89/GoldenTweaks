@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:frostbite_hunter_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "gelum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:creative_ink_assortment"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

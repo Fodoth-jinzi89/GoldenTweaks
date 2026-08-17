@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluxnetworks:admin_configurator"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

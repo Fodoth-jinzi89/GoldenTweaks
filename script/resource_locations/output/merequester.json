@@ -1,0 +1,10 @@
+{
+  "items": {
+    "merequester:requester_terminal": "ME Requester Terminal",
+    "merequester:wireless_requester_terminal": "Wireless Requester Terminal"
+  },
+  "blocks": {
+    "merequester:requester": "ME Requester"
+  },
+  "entities": {}
+}

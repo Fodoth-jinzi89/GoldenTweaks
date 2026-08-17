@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:kappa_compass"
+  },
+  "aspects": {
+    "iter": 3
+  }
+}

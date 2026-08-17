@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:small_diorite_brick_stairs"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

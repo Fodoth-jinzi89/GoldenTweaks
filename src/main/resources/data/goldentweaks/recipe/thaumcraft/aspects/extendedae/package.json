@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:package"
+  },
+  "aspects": {
+    "gelum": 3,
+    "vas": 3
+  }
+}

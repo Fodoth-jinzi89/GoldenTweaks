@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:blaze_helmet"
+  },
+  "aspects": {
+    "ardor": 4,
+    "tutamen": 4,
+    "ignis": 3
+  }
+}

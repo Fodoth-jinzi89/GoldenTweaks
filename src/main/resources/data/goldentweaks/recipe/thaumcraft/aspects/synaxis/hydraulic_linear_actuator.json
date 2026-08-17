@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "synaxis:hydraulic_linear_actuator"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

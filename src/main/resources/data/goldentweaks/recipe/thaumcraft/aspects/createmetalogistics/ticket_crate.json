@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmetalogistics:ticket_crate"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

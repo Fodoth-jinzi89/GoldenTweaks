@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedauto:settings_cloner"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

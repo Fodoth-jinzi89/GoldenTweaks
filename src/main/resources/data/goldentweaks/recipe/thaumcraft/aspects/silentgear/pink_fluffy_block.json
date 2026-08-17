@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:pink_fluffy_block"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

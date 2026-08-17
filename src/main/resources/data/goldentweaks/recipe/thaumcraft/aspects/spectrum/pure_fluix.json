@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pure_fluix"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

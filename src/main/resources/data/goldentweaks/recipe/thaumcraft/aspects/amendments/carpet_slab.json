@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "amendments:carpet_slab"
+  },
+  "aspects": {
+    "pannus": 2
+  }
+}

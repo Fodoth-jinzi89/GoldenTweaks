@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "waystones:warp_plate"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 2
+  }
+}

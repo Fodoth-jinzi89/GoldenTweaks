@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:birch_window"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

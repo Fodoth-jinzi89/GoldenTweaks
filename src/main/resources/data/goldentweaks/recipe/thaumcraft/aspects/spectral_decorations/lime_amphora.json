@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:lime_amphora"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

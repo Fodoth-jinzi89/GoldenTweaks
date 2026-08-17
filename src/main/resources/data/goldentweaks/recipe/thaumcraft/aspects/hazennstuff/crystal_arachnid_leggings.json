@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:crystal_arachnid_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "gelum": 3,
+    "victus": 3,
+    "vitreus": 3,
+    "fames": 2
+  }
+}

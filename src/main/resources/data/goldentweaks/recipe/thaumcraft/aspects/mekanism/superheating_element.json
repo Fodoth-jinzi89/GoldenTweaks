@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:superheating_element"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

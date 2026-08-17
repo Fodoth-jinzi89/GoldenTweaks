@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:necromancer_shard"
+  },
+  "aspects": {
+    "mortuus": 3,
+    "praecantatio": 2
+  }
+}

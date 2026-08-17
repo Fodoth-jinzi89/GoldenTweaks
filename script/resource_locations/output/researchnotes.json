@@ -1,0 +1,9 @@
+{
+  "items": {
+    "researchnotes:name": "Research Notes",
+    "researchnotes:unknown.1": "Unknown Knowledge",
+    "researchnotes:unknown.2": "<Right click to reveal> "
+  },
+  "blocks": {},
+  "entities": {}
+}

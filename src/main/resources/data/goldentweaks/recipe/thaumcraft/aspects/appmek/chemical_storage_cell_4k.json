@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appmek:chemical_storage_cell_4k"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

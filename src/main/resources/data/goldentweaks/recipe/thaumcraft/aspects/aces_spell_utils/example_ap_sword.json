@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_ap_sword"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

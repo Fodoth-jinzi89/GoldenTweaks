@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:sulfuric_acid_bucket"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2
+  }
+}

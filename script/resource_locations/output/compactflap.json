@@ -1,0 +1,22 @@
+{
+  "items": {},
+  "blocks": {
+    "compactflap:analog_compact_flap_bearing": "Analog Compact Flap Bearing",
+    "compactflap:analog_compact_flap_bearing.tooltip.behaviour1": "Turns to the configured angle _depending on signal strength_ and returns to neutral as the signal drops.",
+    "compactflap:analog_compact_flap_bearing.tooltip.condition1": "When Powered from Either Side",
+    "compactflap:analog_compact_flap_bearing.tooltip.summary": "A _signal-sensitive compact bearing_ that scales its angle with redstone strength.",
+    "compactflap:analog_swivel_bearing": "Analog Compact Physical Bearing",
+    "compactflap:analog_swivel_bearing.tooltip.behaviour1": "Rotates the physical construction to the configured angle _depending on signal strength_ and returns as the signal drops.",
+    "compactflap:analog_swivel_bearing.tooltip.condition1": "When Powered from Either Side",
+    "compactflap:analog_swivel_bearing.tooltip.summary": "An _analog compact physical bearing_ that scales physical rotation with redstone strength.",
+    "compactflap:compact_flap_bearing": "Compact Flap Bearing",
+    "compactflap:compact_flap_bearing.tooltip.behaviour1": "Turns the attached contraption _left or right_ by the configured angle, then returns it when the signal drops.",
+    "compactflap:compact_flap_bearing.tooltip.condition1": "When Powered from Either Side",
+    "compactflap:compact_flap_bearing.tooltip.summary": "A _compact mechanical bearing_ that returns attached contraptions to neutral when side redstone is released.",
+    "compactflap:compact_swivel_flap": "Compact Physical Bearing",
+    "compactflap:compact_swivel_flap.tooltip.behaviour1": "Rotates the attached _physical construction_ left or right by the configured angle.",
+    "compactflap:compact_swivel_flap.tooltip.condition1": "When Powered from Either Side",
+    "compactflap:compact_swivel_flap.tooltip.summary": "A _compact physical bearing_ that moves attached blocks as a physical construction."
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:awakened_ichorium_axe"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:stratine_floatblock"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

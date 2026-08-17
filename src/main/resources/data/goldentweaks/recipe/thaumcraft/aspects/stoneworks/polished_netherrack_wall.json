@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:polished_netherrack_wall"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

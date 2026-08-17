@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:absolute_control_circuit"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

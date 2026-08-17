@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createaddition:electrum_sheet"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

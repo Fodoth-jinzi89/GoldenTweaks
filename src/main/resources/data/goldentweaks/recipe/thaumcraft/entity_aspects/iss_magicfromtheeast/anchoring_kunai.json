@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "iss_magicfromtheeast:anchoring_kunai"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

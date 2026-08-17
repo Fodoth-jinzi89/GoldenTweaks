@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedexcrafting:basic_crafter"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "vas": 3,
+    "machina": 2
+  }
+}

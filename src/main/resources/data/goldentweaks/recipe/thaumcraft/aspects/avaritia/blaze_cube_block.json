@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:blaze_cube_block"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

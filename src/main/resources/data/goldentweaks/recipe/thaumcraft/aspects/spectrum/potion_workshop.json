@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:potion_workshop"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:overgrown_slush"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

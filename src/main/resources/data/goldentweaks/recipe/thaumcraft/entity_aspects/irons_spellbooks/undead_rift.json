@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:undead_rift"
+  },
+  "aspects": {
+    "alienis": 4,
+    "iter": 3,
+    "vacuos": 2
+  }
+}

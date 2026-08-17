@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:star_dessert"
+  },
+  "aspects": {
+    "terminus": 3
+  }
+}

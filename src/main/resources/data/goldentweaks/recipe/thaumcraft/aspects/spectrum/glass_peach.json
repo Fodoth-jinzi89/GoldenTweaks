@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:glass_peach"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

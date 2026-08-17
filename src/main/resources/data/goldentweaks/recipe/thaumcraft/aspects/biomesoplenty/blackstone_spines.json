@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:blackstone_spines"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

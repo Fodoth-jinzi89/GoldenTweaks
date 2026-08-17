@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:glassware_holder"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

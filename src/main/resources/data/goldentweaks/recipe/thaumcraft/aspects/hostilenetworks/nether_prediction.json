@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hostilenetworks:nether_prediction"
+  },
+  "aspects": {
+    "cognitio": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:hoglin_tusk_braised_meat"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

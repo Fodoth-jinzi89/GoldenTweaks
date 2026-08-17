@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:raw_storage_blocks"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

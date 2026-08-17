@@ -1,0 +1,38 @@
+{
+  "items": {
+    "createvoidway:graviton_tube": "Graviton Tube",
+    "createvoidway:polished_amethyst": "Polished Amethyst",
+    "createvoidway:portable_void_terminal": "Portable Void Terminal",
+    "createvoidway:void_steel_ingot": "Void Steel Ingot",
+    "createvoidway:void_steel_sheet": "Void Steel Sheet",
+    "createvoidway:void_transfer_fluid_bucket": "Void Transfer Fluid Bucket"
+  },
+  "blocks": {
+    "createvoidway:amethyst_tiles": "Amethyst Tiles",
+    "createvoidway:lshaped_gearbox": "L-Shaped Gearbox",
+    "createvoidway:small_amethyst_tiles": "Small Amethyst Tiles",
+    "createvoidway:void_battery_input": "Void Battery Input",
+    "createvoidway:void_battery_output": "Void Battery Output",
+    "createvoidway:void_casing": "Void Casing",
+    "createvoidway:void_chest_input": "Void Chest Input",
+    "createvoidway:void_chest_output": "Void Chest Output",
+    "createvoidway:void_motor_input": "Void Motor Input",
+    "createvoidway:void_motor_output": "Void Motor Output",
+    "createvoidway:void_node_terminal": "Void Node Terminal",
+    "createvoidway:void_node_terminal_top": "Void Node Terminal",
+    "createvoidway:void_portal_connector": "Void Portal Connector",
+    "createvoidway:void_portal_fluid": "Void Portal Fluid Port",
+    "createvoidway:void_portal_frame": "Void Portal Frame",
+    "createvoidway:void_portal_stress": "Void Portal Stress Port",
+    "createvoidway:void_steel_bars": "Void Steel Bars",
+    "createvoidway:void_steel_block": "Block of Void Steel",
+    "createvoidway:void_steel_ladder": "Void Steel Ladder",
+    "createvoidway:void_steel_scaffolding": "Void Steel Scaffolding",
+    "createvoidway:void_tank_input": "Void Tank Input",
+    "createvoidway:void_tank_output": "Void Tank Output",
+    "createvoidway:void_teleport_link": "Void Teleport Link",
+    "createvoidway:void_teleport_pad": "Void Teleport Pad",
+    "createvoidway:void_transfer_fluid": "Void Transfer Fluid"
+  },
+  "entities": {}
+}

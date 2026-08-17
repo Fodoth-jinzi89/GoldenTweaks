@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:levitational_relay"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3,
+    "cognitio": 2
+  }
+}

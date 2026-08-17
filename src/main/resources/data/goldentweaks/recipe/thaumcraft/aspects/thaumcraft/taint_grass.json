@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:taint_grass"
+  },
+  "aspects": {
+    "herba": 3,
+    "vitium": 3,
+    "tenebrae": 2
+  }
+}

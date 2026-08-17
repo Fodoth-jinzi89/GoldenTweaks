@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createbigcannons:cannon_carriage"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

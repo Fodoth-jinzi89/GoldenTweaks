@@ -1,0 +1,22 @@
+{
+  "items": {
+    "maid_storage_manager:allow_access": "Allow Access",
+    "maid_storage_manager:change_flag": "Change Flag",
+    "maid_storage_manager:configurable_communicate_terminal": " Configurable Communicate Terminal",
+    "maid_storage_manager:craft_guide": "Craft Guide",
+    "maid_storage_manager:filter_list": "Filter List",
+    "maid_storage_manager:inventory_list": "Empty Inventory List",
+    "maid_storage_manager:logistics_guide": "Logistics Guide",
+    "maid_storage_manager:no_access": "No Access",
+    "maid_storage_manager:portable_craft_calculator_bauble": "Portable Craft Calculator",
+    "maid_storage_manager:progress_pad": "Progress Sheet",
+    "maid_storage_manager:request_list": "Request List",
+    "maid_storage_manager:storage_define_bauble": "Storage Define",
+    "maid_storage_manager:work_card": "Work Card",
+    "maid_storage_manager:written_inventory_list": "Inventory List"
+  },
+  "blocks": {},
+  "entities": {
+    "maid_storage_manager:virtual_display": "Item Frame"
+  }
+}

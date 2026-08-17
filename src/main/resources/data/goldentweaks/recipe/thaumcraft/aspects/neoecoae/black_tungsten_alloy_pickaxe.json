@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:black_tungsten_alloy_pickaxe"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

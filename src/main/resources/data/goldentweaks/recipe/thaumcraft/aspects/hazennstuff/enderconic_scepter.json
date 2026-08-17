@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:enderconic_scepter"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

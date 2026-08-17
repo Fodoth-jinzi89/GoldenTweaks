@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:wide_slate_alloy_single_cannon_chamber_shielded"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "machina": 3,
+    "saxum": 3
+  }
+}

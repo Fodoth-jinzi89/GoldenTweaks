@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:hungry_aura_node"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

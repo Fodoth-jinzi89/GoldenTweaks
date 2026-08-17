@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "northstar:venus_stone_bull"
+  },
+  "aspects": {
+    "bestia": 4,
+    "saxum": 3,
+    "victus": 3
+  }
+}

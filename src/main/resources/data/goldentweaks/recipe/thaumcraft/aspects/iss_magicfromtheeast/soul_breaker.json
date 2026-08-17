@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:soul_breaker"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

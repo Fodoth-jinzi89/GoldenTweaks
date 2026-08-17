@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "steampowered:steel_sheet"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

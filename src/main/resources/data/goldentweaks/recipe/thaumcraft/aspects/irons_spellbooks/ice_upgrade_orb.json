@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:ice_upgrade_orb"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 2
+  }
+}

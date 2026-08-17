@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:mould_cheese_cocoa_toast"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

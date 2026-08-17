@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:wand_cap_thaumium"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "potentia": 3
+  }
+}

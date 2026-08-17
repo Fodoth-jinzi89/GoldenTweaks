@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:fire_echo"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

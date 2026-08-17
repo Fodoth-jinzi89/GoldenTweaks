@@ -1,0 +1,12 @@
+{
+  "items": {
+    "mek_x_star:crushed_wool": "Crushed Wool",
+    "mek_x_star:durasteel": "Durasteel",
+    "mek_x_star:heat_insulation": "Heat Insulation",
+    "mek_x_star:incomplete_oxygen_tank_expansion": "Incomplete Oxygen Tank Expansion Unit",
+    "mek_x_star:insulation": "Insulation",
+    "mek_x_star:pressurized_durasteel": "Pressurized Durasteel"
+  },
+  "blocks": {},
+  "entities": {}
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:preservation_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 3
+  }
+}

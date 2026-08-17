@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:ancient_stone_pedestal"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:deepslate_shimmerstone_light"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3
+  }
+}

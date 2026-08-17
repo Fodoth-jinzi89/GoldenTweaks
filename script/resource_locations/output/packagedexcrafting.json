@@ -1,0 +1,16 @@
+{
+  "items": {},
+  "blocks": {
+    "packagedexcrafting:advanced_crafter": "Advanced Package Crafter",
+    "packagedexcrafting:basic_crafter": "Basic Package Crafter",
+    "packagedexcrafting:combination_crafter": "Combination Package Crafter",
+    "packagedexcrafting:combination_crafter.pedestals.required": "Minimum Required Marked Pedestals: %s",
+    "packagedexcrafting:combination_crafter.pedestals.usable": "Currently Usable Marked Pedestals: %s",
+    "packagedexcrafting:elite_crafter": "Elite Package Crafter",
+    "packagedexcrafting:ender_crafter": "Ender Package Crafter",
+    "packagedexcrafting:flux_crafter": "Flux Package Crafter",
+    "packagedexcrafting:marked_pedestal": "Marked Pedestal",
+    "packagedexcrafting:ultimate_crafter": "Ultimate Package Crafter"
+  },
+  "entities": {}
+}

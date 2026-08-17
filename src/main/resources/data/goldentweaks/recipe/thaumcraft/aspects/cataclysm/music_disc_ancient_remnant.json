@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:music_disc_ancient_remnant"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

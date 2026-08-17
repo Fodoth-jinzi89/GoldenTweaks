@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_iron"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

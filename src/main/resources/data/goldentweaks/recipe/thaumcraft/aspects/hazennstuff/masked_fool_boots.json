@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:masked_fool_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

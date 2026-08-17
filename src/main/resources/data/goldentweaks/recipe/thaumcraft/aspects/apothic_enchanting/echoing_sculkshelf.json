@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:echoing_sculkshelf"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3,
+    "profundum": 3
+  }
+}

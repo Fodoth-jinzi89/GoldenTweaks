@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:dust_netherite"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

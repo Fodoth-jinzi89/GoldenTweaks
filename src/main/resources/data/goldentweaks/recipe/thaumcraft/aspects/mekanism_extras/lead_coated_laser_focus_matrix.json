@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:lead_coated_laser_focus_matrix"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3
+  }
+}

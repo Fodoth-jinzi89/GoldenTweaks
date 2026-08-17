@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:threshold_export_bus"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbuttercat:honey_butter"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

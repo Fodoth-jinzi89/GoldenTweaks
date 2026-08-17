@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:daub_brace"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

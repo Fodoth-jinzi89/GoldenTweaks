@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:energized_crystal"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

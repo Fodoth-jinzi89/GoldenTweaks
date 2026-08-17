@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:raw_ice_cream_cone"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

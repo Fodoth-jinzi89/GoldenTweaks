@@ -1,0 +1,9 @@
+{
+  "items": {
+    "createstockbridge:request_pattern": "Request Pattern"
+  },
+  "blocks": {
+    "createstockbridge:ae_bridge": "AE Stock Bridge"
+  },
+  "entities": {}
+}

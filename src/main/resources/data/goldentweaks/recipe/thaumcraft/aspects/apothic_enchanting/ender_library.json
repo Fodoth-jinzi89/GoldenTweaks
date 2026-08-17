@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:ender_library"
+  },
+  "aspects": {
+    "alienis": 3,
+    "arbor": 3,
+    "cognitio": 3
+  }
+}

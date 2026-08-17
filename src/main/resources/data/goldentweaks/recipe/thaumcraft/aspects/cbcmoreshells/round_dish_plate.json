@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:round_dish_plate"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

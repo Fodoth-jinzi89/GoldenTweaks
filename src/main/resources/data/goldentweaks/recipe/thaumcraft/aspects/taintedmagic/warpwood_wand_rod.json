@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:warpwood_wand_rod"
+  },
+  "aspects": {
+    "iter": 4,
+    "praecantatio": 4,
+    "arbor": 3,
+    "alienis": 2
+  }
+}

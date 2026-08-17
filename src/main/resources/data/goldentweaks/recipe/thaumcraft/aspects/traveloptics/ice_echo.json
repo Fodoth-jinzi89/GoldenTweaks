@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:ice_echo"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "items": {},
+  "blocks": {
+    "extra_copycats:copycat_cabinet_door": "Copycat Cabinet Door",
+    "extra_copycats:copycat_collapsible": "Copycat Collapsible",
+    "extra_copycats:copycat_collapsible.tooltip.behaviour1": "Push face back",
+    "extra_copycats:copycat_collapsible.tooltip.behaviour2": "Pull face forward",
+    "extra_copycats:copycat_collapsible.tooltip.behaviour3": "Rotate along face axis",
+    "extra_copycats:copycat_collapsible.tooltip.behaviour4": "Scale along face axis",
+    "extra_copycats:copycat_collapsible.tooltip.condition1": "Left click",
+    "extra_copycats:copycat_collapsible.tooltip.condition2": "Sneak left click",
+    "extra_copycats:copycat_collapsible.tooltip.condition3": "Right click",
+    "extra_copycats:copycat_collapsible.tooltip.condition4": "Ctrl Right click",
+    "extra_copycats:copycat_collapsible.tooltip.summary": "A collapsible copycat block that can be shaped with a Wrench.",
+    "extra_copycats:copycat_collapsible_grid": "Copycat Collapsible Grid",
+    "extra_copycats:copycat_collapsible_grid.tooltip.behaviour1": "Push face back (quadrant)",
+    "extra_copycats:copycat_collapsible_grid.tooltip.behaviour2": "Pull face forward (quadrant)",
+    "extra_copycats:copycat_collapsible_grid.tooltip.condition1": "Left click",
+    "extra_copycats:copycat_collapsible_grid.tooltip.condition2": "Sneak left click",
+    "extra_copycats:copycat_collapsible_grid.tooltip.summary": "A 2x2 grid of collapsible copycat blocks. Each quadrant can have its own material."
+  },
+  "entities": {}
+}

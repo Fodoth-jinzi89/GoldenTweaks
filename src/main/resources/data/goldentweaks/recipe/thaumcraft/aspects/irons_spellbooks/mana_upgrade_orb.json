@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:mana_upgrade_orb"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

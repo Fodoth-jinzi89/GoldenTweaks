@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:refined_redstone_chestplate"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vacuos": 4,
+    "saxum": 3,
+    "cognitio": 2,
+    "potentia": 2,
+    "vas": 2
+  }
+}

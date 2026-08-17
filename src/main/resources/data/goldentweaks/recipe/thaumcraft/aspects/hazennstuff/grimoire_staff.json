@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:grimoire_staff"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bottle_of_decay_away"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

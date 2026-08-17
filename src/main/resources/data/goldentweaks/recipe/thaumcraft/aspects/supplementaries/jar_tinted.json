@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:jar_tinted"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

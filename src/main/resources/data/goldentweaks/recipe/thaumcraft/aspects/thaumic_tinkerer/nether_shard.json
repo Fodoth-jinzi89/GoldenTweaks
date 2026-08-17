@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:nether_shard"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

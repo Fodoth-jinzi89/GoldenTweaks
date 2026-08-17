@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:neolith_block"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:tin_plate"
+  },
+  "aspects": {
+    "metallum": 2
+  }
+}

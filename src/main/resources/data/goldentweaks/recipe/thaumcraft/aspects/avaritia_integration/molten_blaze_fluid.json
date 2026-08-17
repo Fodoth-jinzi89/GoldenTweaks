@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:molten_blaze_fluid"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

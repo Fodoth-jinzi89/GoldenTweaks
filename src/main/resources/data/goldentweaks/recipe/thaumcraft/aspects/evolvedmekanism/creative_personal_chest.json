@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:creative_personal_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

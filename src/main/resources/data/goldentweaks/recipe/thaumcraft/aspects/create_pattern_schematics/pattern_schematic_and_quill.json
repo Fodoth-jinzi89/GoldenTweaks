@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_pattern_schematics:pattern_schematic_and_quill"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

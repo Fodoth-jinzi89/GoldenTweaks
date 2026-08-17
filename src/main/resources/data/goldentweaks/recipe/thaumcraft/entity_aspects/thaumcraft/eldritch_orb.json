@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:eldritch_orb"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

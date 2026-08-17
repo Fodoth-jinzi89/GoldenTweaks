@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:wandering_magician_leggings"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tutamen": 4,
+    "accessories": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

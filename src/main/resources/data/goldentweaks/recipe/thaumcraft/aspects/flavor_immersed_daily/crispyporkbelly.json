@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:crispyporkbelly"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

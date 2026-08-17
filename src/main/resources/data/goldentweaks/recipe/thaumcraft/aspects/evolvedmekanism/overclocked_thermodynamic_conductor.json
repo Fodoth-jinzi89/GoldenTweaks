@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:overclocked_thermodynamic_conductor"
+  },
+  "aspects": {
+    "tempus": 3
+  }
+}

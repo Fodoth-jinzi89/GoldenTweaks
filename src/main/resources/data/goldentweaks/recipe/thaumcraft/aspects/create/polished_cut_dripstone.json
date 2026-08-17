@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:polished_cut_dripstone"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:large_pigment_mixer"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_refined_glowstone_bucket"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

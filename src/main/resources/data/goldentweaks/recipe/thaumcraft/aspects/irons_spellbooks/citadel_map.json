@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:citadel_map"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

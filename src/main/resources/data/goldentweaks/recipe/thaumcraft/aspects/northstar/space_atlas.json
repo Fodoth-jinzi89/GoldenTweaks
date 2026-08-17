@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:space_atlas"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "space": 3
+  }
+}

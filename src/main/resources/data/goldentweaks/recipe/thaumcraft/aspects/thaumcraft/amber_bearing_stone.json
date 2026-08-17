@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:amber_bearing_stone"
+  },
+  "aspects": {
+    "machina": 4,
+    "accessories": 3,
+    "motus": 3,
+    "saxum": 3
+  }
+}

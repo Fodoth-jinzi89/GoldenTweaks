@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:cold_style_sashimi"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

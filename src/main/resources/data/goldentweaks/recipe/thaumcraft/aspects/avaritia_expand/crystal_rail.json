@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:crystal_rail"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

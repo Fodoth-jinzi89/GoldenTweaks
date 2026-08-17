@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:unprocessed_ancient_material"
+  },
+  "aspects": {
+    "terminus": 6
+  }
+}

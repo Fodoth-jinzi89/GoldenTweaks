@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:infinity_book"
+  },
+  "aspects": {
+    "terminus": 6,
+    "cognitio": 3
+  }
+}

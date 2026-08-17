@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazentouvelib:shadow_rune"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

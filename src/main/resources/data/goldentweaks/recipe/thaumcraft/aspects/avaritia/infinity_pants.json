@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_pants"
+  },
+  "aspects": {
+    "terminus": 6
+  }
+}

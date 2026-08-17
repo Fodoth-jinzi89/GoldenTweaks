@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ring_of_pursuit"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

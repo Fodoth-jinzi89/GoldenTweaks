@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:treasure_disk"
+  },
+  "aspects": {
+    "lucrum": 3
+  }
+}

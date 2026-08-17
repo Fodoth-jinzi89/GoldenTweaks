@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:umbran_trapdoor"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

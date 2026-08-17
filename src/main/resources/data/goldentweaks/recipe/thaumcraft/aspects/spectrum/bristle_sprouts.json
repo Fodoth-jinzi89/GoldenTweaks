@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bristle_sprouts"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

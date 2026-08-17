@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:dough_crafting_table"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

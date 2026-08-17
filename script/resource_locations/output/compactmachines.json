@@ -1,0 +1,13 @@
+{
+  "items": {
+    "compactmachines:enlarging_module": "Atom Enlarging Module",
+    "compactmachines:personal_shrinking_device": "Personal Shrinking Device",
+    "compactmachines:shrinking_module": "Atom Shrinking Module"
+  },
+  "blocks": {
+    "compactmachines:bound_machine_fallback": "Compact Machine",
+    "compactmachines:solid_wall": "Solid Compact Machine Wall",
+    "compactmachines:wall": "Compact Machine Wall"
+  },
+  "entities": {}
+}

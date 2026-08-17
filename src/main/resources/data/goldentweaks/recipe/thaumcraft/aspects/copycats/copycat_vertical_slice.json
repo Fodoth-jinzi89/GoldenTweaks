@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "copycats:copycat_vertical_slice"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "gelum": 3
+  }
+}

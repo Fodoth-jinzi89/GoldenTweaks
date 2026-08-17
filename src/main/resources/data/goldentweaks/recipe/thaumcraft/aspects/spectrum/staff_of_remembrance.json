@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:staff_of_remembrance"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

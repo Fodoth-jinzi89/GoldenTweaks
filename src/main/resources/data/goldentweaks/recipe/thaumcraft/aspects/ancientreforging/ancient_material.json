@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ancientreforging:ancient_material"
+  },
+  "aspects": {
+    "terminus": 4,
+    "praecantatio": 2
+  }
+}

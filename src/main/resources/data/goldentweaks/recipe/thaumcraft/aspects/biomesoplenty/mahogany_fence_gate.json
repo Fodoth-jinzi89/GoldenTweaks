@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:mahogany_fence_gate"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

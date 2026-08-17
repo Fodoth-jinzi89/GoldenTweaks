@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:rod_of_discord"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

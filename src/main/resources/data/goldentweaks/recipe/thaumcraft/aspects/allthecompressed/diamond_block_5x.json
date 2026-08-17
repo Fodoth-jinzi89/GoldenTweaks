@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:diamond_block_5x"
+  },
+  "aspects": {
+    "vitreus": 10,
+    "dense": 10
+  }
+}

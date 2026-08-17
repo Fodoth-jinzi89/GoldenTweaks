@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:moka_pot_fill"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

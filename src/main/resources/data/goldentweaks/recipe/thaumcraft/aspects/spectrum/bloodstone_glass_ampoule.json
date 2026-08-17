@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bloodstone_glass_ampoule"
+  },
+  "aspects": {
+    "corpus": 3,
+    "saxum": 3,
+    "vitreus": 3
+  }
+}

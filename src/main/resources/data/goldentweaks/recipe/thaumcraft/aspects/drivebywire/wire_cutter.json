@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "drivebywire:wire_cutter"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

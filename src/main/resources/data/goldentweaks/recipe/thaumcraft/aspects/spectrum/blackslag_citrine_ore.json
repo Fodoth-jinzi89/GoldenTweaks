@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blackslag_citrine_ore"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

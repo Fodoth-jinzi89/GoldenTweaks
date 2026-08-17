@@ -1,0 +1,9 @@
+{
+  "items": {
+    "vista_plus:url_cassette": "URL Cassette"
+  },
+  "blocks": {
+    "vista_plus:url_cassette_maker": "URL Cassette Maker"
+  },
+  "entities": {}
+}

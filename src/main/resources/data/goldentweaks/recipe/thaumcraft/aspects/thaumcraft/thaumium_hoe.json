@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:thaumium_hoe"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "instrumentum": 3
+  }
+}

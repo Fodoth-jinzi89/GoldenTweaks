@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:improved_scrap_tome"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "cognitio": 3
+  }
+}

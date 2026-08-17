@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:black_hole"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vacuos": 4,
+    "gravitas": 3
+  }
+}

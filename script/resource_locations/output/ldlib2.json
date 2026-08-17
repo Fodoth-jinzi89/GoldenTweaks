@@ -1,0 +1,11 @@
+{
+  "items": {
+    "ldlib2:test": "Test Block",
+    "ldlib2:test_2": "Test Block 2"
+  },
+  "blocks": {
+    "ldlib2:test": "Test Block",
+    "ldlib2:test_2": "Test Block 2"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createsensors:impact_sensor"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:azure_dike_ring"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

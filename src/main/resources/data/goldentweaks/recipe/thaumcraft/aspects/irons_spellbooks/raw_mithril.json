@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:raw_mithril"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

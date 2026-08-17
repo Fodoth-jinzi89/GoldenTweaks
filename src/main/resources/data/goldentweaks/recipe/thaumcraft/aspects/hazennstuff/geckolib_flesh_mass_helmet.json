@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_flesh_mass_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "corpus": 3
+  }
+}

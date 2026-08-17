@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:flowing_midnight_solution"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "items": {
+    "computercraft:disk": "Floppy Disk",
+    "computercraft:pocket_computer_advanced": "Advanced Pocket Computer",
+    "computercraft:pocket_computer_advanced.upgraded": "Advanced %s Pocket Computer",
+    "computercraft:pocket_computer_normal": "Pocket Computer",
+    "computercraft:pocket_computer_normal.upgraded": "%s Pocket Computer",
+    "computercraft:printed_book": "Printed Book",
+    "computercraft:printed_page": "Printed Page",
+    "computercraft:printed_pages": "Printed Pages",
+    "computercraft:treasure_disk": "Floppy Disk"
+  },
+  "blocks": {
+    "computercraft:cable": "Networking Cable",
+    "computercraft:computer_advanced": "Advanced Computer",
+    "computercraft:computer_command": "Command Computer",
+    "computercraft:computer_normal": "Computer",
+    "computercraft:disk_drive": "Disk Drive",
+    "computercraft:monitor_advanced": "Advanced Monitor",
+    "computercraft:monitor_normal": "Monitor",
+    "computercraft:printer": "Printer",
+    "computercraft:redstone_relay": "Redstone Relay",
+    "computercraft:speaker": "Speaker",
+    "computercraft:turtle_advanced": "Advanced Turtle",
+    "computercraft:turtle_advanced.upgraded": "Advanced %s Turtle",
+    "computercraft:turtle_advanced.upgraded_twice": "Advanced %s %s Turtle",
+    "computercraft:turtle_normal": "Turtle",
+    "computercraft:turtle_normal.upgraded": "%s Turtle",
+    "computercraft:turtle_normal.upgraded_twice": "%s %s Turtle",
+    "computercraft:wired_modem": "Wired Modem",
+    "computercraft:wired_modem_full": "Wired Modem",
+    "computercraft:wireless_modem_advanced": "Ender Modem",
+    "computercraft:wireless_modem_normal": "Wireless Modem"
+  },
+  "entities": {}
+}

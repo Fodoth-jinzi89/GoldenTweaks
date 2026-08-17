@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:piglin_pyromancer"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

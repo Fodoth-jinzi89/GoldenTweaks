@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:bronze_autocannon_breech_extractor"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3,
+    "metallum": 3
+  }
+}

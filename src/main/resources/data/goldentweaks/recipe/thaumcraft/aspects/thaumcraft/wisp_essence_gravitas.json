@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:wisp_essence_gravitas"
+  },
+  "aspects": {
+    "gravitas": 4,
+    "alienis": 3
+  }
+}

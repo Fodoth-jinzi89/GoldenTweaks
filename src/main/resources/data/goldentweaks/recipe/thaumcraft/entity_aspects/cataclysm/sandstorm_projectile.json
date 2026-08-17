@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:sandstorm_projectile"
+  },
+  "aspects": {
+    "terra": 3,
+    "telum": 4
+  }
+}

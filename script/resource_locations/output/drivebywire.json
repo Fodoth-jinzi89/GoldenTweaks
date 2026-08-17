@@ -1,0 +1,16 @@
+{
+  "items": {
+    "drivebywire:wire": "Cable",
+    "drivebywire:wire_cutter": "Cable Cutter",
+    "drivebywire:wire_cutter.tooltip.summary": "Bad connection? Too many cables? Just cut them all!"
+  },
+  "blocks": {
+    "drivebywire:backup_block": "Network Backup Block",
+    "drivebywire:backup_block.tooltip.summary": "Saves same-sublevel cable links into schematics and restores them when the sublevel comes back",
+    "drivebywire:controller_hub": "Linked Controller Hub",
+    "drivebywire:controller_hub.tooltip.summary": "Bind your controller to this block, and control this network from far away!",
+    "drivebywire:tweaked_controller_hub": "Tweaked Controller Hub",
+    "drivebywire:tweaked_controller_hub.tooltip.summary": "Bind your controller to this block, and control this network from far away!"
+  },
+  "entities": {}
+}

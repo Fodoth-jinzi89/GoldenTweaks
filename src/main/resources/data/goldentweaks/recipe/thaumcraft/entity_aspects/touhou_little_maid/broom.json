@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "touhou_little_maid:broom"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

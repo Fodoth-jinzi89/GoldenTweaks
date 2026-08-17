@@ -1,0 +1,11 @@
+{
+  "items": {},
+  "blocks": {
+    "hypertube:hyper_accelerator.accelerate_mode": "Accelerate Mode",
+    "hypertube:hyper_accelerator.brake_mode": "Brake Mode",
+    "hypertube:hyper_entrance.automatic_lock": "Automatic Lock Mode",
+    "hypertube:hyper_entrance.manual_lock": "Manual Lock Mode",
+    "hypertube:hyper_entrance.sneak_to_enter": "Sneak to Enter"
+  },
+  "entities": {}
+}

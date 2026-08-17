@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pure_globette_nether_block"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

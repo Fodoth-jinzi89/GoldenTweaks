@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:karak_chai"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

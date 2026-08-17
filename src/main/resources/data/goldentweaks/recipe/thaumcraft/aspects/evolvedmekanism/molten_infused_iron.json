@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_infused_iron"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "metallum": 3
+  }
+}

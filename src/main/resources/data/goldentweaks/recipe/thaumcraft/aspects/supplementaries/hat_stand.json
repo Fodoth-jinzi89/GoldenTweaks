@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:hat_stand"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

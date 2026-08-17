@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:oil_scanner"
+  },
+  "aspects": {
+    "potentia": 3,
+    "sensus": 3,
+    "ignis": 2
+  }
+}

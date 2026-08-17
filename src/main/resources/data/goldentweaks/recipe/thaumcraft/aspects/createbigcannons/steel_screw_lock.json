@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:steel_screw_lock"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

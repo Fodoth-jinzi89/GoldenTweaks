@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cc_better_recipes:integrated_circuit"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

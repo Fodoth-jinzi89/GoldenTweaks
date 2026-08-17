@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:cowl_abyssal_depths"
+  },
+  "aspects": {
+    "profundum": 3
+  }
+}

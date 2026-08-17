@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "iss_magicfromtheeast:spirit_arrow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

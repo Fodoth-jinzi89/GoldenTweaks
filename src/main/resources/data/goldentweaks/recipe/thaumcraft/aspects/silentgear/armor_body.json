@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:armor_body"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

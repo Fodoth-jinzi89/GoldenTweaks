@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "researchnotes:name"
+  },
+  "aspects": {
+    "cognitio": 4
+  }
+}

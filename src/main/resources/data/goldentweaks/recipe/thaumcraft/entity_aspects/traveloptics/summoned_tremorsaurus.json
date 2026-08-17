@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "traveloptics:summoned_tremorsaurus"
+  },
+  "aspects": {
+    "bestia": 4,
+    "praecantatio": 4,
+    "victus": 3
+  }
+}

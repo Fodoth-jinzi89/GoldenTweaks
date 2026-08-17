@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_clay_bucket"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

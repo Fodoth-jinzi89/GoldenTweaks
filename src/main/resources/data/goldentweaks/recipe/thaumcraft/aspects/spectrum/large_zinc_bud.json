@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:large_zinc_bud"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

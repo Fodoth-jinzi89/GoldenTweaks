@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:boiled_fishwith_pickled_cabbageand_chili"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "herba": 3,
+    "potentia": 3,
+    "victus": 3,
+    "fames": 2,
+    "ignis": 2
+  }
+}

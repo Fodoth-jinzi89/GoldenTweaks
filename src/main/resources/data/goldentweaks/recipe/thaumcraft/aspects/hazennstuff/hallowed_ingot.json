@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:hallowed_ingot"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

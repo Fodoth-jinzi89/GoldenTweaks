@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:straw_hat_flower"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:absolute_pigment_extracting_factory"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

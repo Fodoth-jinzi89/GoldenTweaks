@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:gravity_crystal"
+  },
+  "aspects": {
+    "gravitas": 4,
+    "vitreus": 3
+  }
+}

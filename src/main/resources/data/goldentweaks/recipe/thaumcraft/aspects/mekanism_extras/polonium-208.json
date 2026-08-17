@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:polonium-208"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vitium": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:big_cannon_combo"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

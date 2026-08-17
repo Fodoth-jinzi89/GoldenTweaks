@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:coral_golem"
+  },
+  "aspects": {
+    "bestia": 4,
+    "aqua": 3,
+    "machina": 3,
+    "victus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_jewelry:onyx"
+  },
+  "aspects": {
+    "accessories": 3,
+    "lucrum": 2
+  }
+}

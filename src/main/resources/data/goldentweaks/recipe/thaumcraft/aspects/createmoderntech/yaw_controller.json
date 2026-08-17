@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmoderntech:yaw_controller"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

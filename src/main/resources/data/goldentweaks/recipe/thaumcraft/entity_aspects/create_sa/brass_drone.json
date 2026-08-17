@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create_sa:brass_drone"
+  },
+  "aspects": {
+    "bestia": 4,
+    "machina": 4,
+    "metallum": 3,
+    "victus": 3,
+    "cognitio": 2
+  }
+}

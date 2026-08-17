@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoguanniao:nikon_d750"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

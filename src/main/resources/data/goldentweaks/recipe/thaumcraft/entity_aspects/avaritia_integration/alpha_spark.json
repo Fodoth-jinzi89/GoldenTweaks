@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "avaritia_integration:alpha_spark"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

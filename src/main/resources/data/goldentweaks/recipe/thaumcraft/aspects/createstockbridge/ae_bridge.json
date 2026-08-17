@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createstockbridge:ae_bridge"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

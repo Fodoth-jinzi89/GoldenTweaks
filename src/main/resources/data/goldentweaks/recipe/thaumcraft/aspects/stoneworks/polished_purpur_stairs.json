@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:polished_purpur_stairs"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

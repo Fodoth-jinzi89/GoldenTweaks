@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:catacombs_zombie"
+  },
+  "aspects": {
+    "bestia": 4,
+    "exanimis": 4,
+    "victus": 3
+  }
+}

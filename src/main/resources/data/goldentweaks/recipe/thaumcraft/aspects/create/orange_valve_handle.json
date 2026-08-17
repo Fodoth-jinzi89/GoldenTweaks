@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:orange_valve_handle"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

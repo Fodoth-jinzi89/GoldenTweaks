@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:small_echo_bud"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

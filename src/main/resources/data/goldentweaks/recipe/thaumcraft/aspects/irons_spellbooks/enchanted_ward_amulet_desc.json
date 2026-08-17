@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:enchanted_ward_amulet_desc"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "accessories": 3,
+    "lucrum": 2
+  }
+}

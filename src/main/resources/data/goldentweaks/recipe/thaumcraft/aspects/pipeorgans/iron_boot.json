@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipeorgans:iron_boot"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

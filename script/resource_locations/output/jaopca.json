@@ -1,0 +1,35 @@
+{
+  "items": {
+    "jaopca:create_crushed": "Crushed Raw %s",
+    "jaopca:crossroads_clumps": "%s Clumps",
+    "jaopca:crossroads_grits": "Raw %s Grit",
+    "jaopca:dusts": "%s Dust",
+    "jaopca:electrodynamics_crudeminerals": "Crude %s Solution Bucket",
+    "jaopca:electrodynamics_crystals": "%s Crystal",
+    "jaopca:electrodynamics_dirtyminerals": "Dirty %s Solution Bucket",
+    "jaopca:electrodynamics_impuredusts": "Impure %s Dust",
+    "jaopca:electrodynamics_impureminerals": "Impure %s Solution Bucket",
+    "jaopca:electrodynamics_pureminerals": "Pure %s Solution Bucket",
+    "jaopca:electrodynamics_royalminerals": "Royal %s Solution Bucket",
+    "jaopca:electrodynamics_sulfates": "%s Sulfate Solution Bucket",
+    "jaopca:mekanism_clumps": "%s Clump",
+    "jaopca:mekanism_crystals": "%s Crystal",
+    "jaopca:mekanism_dirty_dusts": "Dirty %s Dust",
+    "jaopca:mekanism_shards": "%s Shard",
+    "jaopca:modern_industrialization_crushed_dusts": "%s Crushed Dust",
+    "jaopca:molten": "Molten %s Bucket",
+    "jaopca:nuggets": "%s Nugget",
+    "jaopca:oritech_clumps": "%s Clump",
+    "jaopca:oritech_gems": "%s Gem",
+    "jaopca:oritech_small_clumps": "Small %s Clump",
+    "jaopca:small_dusts": "Small Pile of %s Dust",
+    "jaopca:theurgy_alchemical_sulfurs": "Alchemical Sulfur %s",
+    "jaopca:theurgy_alchemical_sulfurs.tooltip": "Alchemical Sulfur crafted from %s %s %s.",
+    "jaopca:tiny_dusts": "Tiny Pile of %s Dust"
+  },
+  "blocks": {
+    "jaopca:raw_storage_blocks": "Block of Raw %s",
+    "jaopca:storage_blocks": "Block of %s"
+  },
+  "entities": {}
+}

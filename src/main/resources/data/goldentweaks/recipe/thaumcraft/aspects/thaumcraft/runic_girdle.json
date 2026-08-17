@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:runic_girdle"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

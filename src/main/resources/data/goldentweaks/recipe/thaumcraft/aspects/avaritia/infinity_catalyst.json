@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_catalyst"
+  },
+  "aspects": {
+    "terminus": 6
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {
+    "examplemod:example_item": "Example Item"
+  },
+  "blocks": {
+    "examplemod:example_block": "Example Block"
+  },
+  "entities": {}
+}

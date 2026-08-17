@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismgenerators:fission_reactor_port"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3,
+    "vitium": 3
+  }
+}

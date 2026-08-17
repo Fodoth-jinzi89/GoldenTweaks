@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:infinity_wire"
+  },
+  "aspects": {
+    "terminus": 6,
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:mechanical_anvil_0"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

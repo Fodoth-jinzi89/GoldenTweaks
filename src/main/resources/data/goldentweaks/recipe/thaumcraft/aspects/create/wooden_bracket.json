@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:wooden_bracket"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:ultimate_pressurized_tube"
+  },
+  "aspects": {
+    "terminus": 5,
+    "fabrico": 3,
+    "machina": 2
+  }
+}

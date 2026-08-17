@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:evocation_rune"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

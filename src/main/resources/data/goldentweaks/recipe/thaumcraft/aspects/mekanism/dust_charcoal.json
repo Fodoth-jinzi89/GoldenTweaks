@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:dust_charcoal"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

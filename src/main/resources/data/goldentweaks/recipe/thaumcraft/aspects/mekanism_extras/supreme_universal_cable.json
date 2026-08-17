@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:supreme_universal_cable"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

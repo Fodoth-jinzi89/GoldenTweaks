@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_radiant_crystal_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vitreus": 3
+  }
+}

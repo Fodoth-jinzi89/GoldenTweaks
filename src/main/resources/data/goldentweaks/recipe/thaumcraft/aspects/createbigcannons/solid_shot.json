@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:solid_shot"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:echoing_strike"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

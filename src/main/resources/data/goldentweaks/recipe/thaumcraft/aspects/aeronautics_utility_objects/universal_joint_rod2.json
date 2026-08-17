@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics_utility_objects:universal_joint_rod2"
+  },
+  "aspects": {
+    "machina": 3,
+    "saxum": 3
+  }
+}

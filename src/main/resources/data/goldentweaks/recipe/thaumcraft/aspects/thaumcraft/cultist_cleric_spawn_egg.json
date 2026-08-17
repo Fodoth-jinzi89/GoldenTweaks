@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_cleric_spawn_egg"
+  },
+  "aspects": {
+    "arbor": 3,
+    "bestia": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 2
+  }
+}

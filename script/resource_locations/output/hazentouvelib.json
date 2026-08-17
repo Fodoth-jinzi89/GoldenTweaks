@@ -1,0 +1,12 @@
+{
+  "items": {
+    "hazentouvelib:cosmic_rune": "Cosmic Rune",
+    "hazentouvelib:cosmic_upgrade_orb": "Cosmic Upgrade Orb",
+    "hazentouvelib:radiance_rune": "Radiance Rune",
+    "hazentouvelib:radiance_upgrade_orb": "Radiance Upgrade Orb",
+    "hazentouvelib:shadow_rune": "Shadow Rune",
+    "hazentouvelib:shadow_upgrade_orb": "Shadow Upgrade Orb"
+  },
+  "blocks": {},
+  "entities": {}
+}

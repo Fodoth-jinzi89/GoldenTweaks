@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:wrapped_copycat_fence"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

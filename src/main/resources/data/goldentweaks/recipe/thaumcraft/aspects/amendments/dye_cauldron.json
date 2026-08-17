@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "amendments:dye_cauldron"
+  },
+  "aspects": {
+    "sensus": 2
+  }
+}

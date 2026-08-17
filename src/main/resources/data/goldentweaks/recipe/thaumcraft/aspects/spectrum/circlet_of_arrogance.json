@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:circlet_of_arrogance"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

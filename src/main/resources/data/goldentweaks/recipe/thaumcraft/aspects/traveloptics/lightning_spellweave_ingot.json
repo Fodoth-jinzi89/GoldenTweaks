@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:lightning_spellweave_ingot"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics_dyeable_components:lime_levitite"
+  },
+  "aspects": {
+    "gravitas": 4
+  }
+}

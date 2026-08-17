@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:sigil_of_the_spider_sorcerer"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "lucrum": 3
+  }
+}

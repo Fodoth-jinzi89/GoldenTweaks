@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:large_chemical_infuser"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

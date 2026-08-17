@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_optical:absorption_polarizing_filter"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

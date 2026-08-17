@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:spirit_sallow_leaves"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

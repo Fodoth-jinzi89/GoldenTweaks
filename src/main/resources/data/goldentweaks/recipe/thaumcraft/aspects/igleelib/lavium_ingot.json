@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "igleelib:lavium_ingot"
+  },
+  "aspects": {
+    "lava": 3,
+    "metallum": 3
+  }
+}

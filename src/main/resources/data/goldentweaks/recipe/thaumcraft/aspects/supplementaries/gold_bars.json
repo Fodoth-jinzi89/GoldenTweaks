@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:gold_bars"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

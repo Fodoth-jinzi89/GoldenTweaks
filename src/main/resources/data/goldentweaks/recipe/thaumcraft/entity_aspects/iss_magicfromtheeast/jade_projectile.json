@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "iss_magicfromtheeast:jade_projectile"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

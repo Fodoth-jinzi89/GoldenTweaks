@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:hydrobullet"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

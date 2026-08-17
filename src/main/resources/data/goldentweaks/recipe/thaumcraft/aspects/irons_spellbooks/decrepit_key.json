@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:decrepit_key"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

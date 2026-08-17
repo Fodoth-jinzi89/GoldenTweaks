@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weathered_shale_clay_brick_slab"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

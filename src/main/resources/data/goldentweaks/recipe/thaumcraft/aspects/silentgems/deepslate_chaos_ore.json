@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:deepslate_chaos_ore"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3
+  }
+}

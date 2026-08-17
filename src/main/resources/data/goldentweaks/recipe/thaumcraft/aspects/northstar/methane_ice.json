@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:methane_ice"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

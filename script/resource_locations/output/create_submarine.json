@@ -1,0 +1,39 @@
+{
+  "items": {
+    "create_submarine:arresting_hook.tooltip.wip": "WIP don't use",
+    "create_submarine:ballast_tank.tooltip.goggles": "Capacity can be seen with\nCreate's engineer goggles.",
+    "create_submarine:ballast_tank.tooltip.summary_part1": "Allows a submarine to float,\nit can be filled with water with a ",
+    "create_submarine:ballast_tank.tooltip.summary_part2": ".",
+    "create_submarine:creative_oxygenator.tooltip.behaviour1": "Automatically manages oxygen\nand water drainage.",
+    "create_submarine:creative_oxygenator.tooltip.summary": "Removes water when\nthe submarine is airtight.",
+    "create_submarine:decompression_chamber.tooltip.wip": "WIP don't use",
+    "create_submarine:floater.tooltip.summary": "Allows a boat to float\non the water surface.",
+    "create_submarine:phycological_membrane": "Phycological Membrane",
+    "create_submarine:phycological_membrane.tooltip.summary": "Can be filled with air.",
+    "create_submarine:pressurizer.tooltip.summary": "Allows submarines to have\npressure-resistant windows.",
+    "create_submarine:steel_cable": "Steel Cable",
+    "create_submarine:submarine_propeller.tooltip.summary": "Excellent in water, but useless outside",
+    "create_submarine:underwater_mine.tooltip.summary": "When attached to a Create Aeronautics contraption,\nthis mine will detonate if entities or\nboats get too close."
+  },
+  "blocks": {
+    "create_submarine:arresting_hook": "Arresting Hook",
+    "create_submarine:ballast_tank": "Submarine Ballast Tank",
+    "create_submarine:ballast_vent": "Ballast Vent",
+    "create_submarine:barometer": "Pressure Barometer",
+    "create_submarine:copper_pressurizer": "Copper Pressurized Glass",
+    "create_submarine:creative_oxygenator": "Creative Oxygenator",
+    "create_submarine:decompression_chamber": "Decompression Chamber",
+    "create_submarine:electrolyzer": "Electrolyzer",
+    "create_submarine:floater": "Floater",
+    "create_submarine:glass_pressurizer": "Pressurized Glass",
+    "create_submarine:industrial_alarm": "Industrial Alarm",
+    "create_submarine:iron_pressurizer": "Iron Pressurized Glass",
+    "create_submarine:oxygene_diffuser": "Oxygen Diffuser",
+    "create_submarine:pulley": "Pulley",
+    "create_submarine:rudder": "Rudder",
+    "create_submarine:submarine_propeller": "Submarine Propeller",
+    "create_submarine:underwater_mine": "Underwater Mine",
+    "create_submarine:water_thruster": "Water Thruster"
+  },
+  "entities": {}
+}

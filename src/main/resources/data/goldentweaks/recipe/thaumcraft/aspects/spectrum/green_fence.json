@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:green_fence"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

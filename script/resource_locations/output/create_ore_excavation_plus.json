@@ -1,0 +1,26 @@
+{
+  "items": {
+    "create_ore_excavation_plus:burned_netherite_scrap": "Burned Netherite Scrap",
+    "create_ore_excavation_plus:crushed_lapis_lazuli": "Crushed Lapis Lazuli",
+    "create_ore_excavation_plus:crushed_redstone": "Crushed Redstone",
+    "create_ore_excavation_plus:cut_raw_diamond": "Raw Cut Diamond",
+    "create_ore_excavation_plus:cut_raw_emerald": "Raw Cut Emerald",
+    "create_ore_excavation_plus:enchanted_lapis_lazuli": "Enchanted Lapis Lazuli",
+    "create_ore_excavation_plus:fired_netherite_scrap": "Fired Netherite Scrap",
+    "create_ore_excavation_plus:haunted_raw_netherite_scrap": "Haunted Raw Netherite Scrap",
+    "create_ore_excavation_plus:heated_raw_diamond": "Heated Raw Diamond",
+    "create_ore_excavation_plus:heated_raw_emerald": "Heated Raw Emerald",
+    "create_ore_excavation_plus:lavad_netherite_scrap": "Lavad Netherite Scrap",
+    "create_ore_excavation_plus:pressed_raw_diamond": "Pressed Raw Diamond",
+    "create_ore_excavation_plus:pressed_raw_emerald": "Pressed Raw Emerald",
+    "create_ore_excavation_plus:raw_diamond_dust": "Diamond Dust",
+    "create_ore_excavation_plus:raw_emerald_dust": "Emerald Dust",
+    "create_ore_excavation_plus:raw_lapis_lazuli": "Raw Lapis Lazuli",
+    "create_ore_excavation_plus:raw_netherite_scrap": "Raw Netherite Scrap",
+    "create_ore_excavation_plus:ultimate_drill": "Ultimate Drill",
+    "create_ore_excavation_plus:washed_raw_diamond": "Washed Raw Diamond",
+    "create_ore_excavation_plus:washed_raw_emerald": "Washed Raw Emerald"
+  },
+  "blocks": {},
+  "entities": {}
+}

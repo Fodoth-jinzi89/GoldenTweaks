@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:autocannon_recoil_spring_cast_mould"
+  },
+  "aspects": {
+    "telum": 4,
+    "accessories": 3,
+    "machina": 3,
+    "potentia": 3,
+    "ignis": 2
+  }
+}

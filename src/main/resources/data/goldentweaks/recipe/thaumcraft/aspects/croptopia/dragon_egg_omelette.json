@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:dragon_egg_omelette"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

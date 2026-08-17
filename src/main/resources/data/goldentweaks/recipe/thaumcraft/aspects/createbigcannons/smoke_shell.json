@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:smoke_shell"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

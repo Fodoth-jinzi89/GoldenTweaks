@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:onyx"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

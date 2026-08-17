@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:casters_tea"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

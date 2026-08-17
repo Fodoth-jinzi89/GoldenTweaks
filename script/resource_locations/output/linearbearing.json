@@ -1,0 +1,15 @@
+{
+  "items": {},
+  "blocks": {
+    "linearbearing:andesite_lamp": "Andesite Lamp",
+    "linearbearing:bubble_gum_block": "Bubble Gum Block",
+    "linearbearing:gyroscopic_gearbox": "Gyroscopic Gearbox",
+    "linearbearing:linear_bearing": "Linear Bearing",
+    "linearbearing:linear_casing": "Linear Casing",
+    "linearbearing:magnetic_port": "Magnetic Port",
+    "linearbearing:redstone_converter": "Redstone Converter",
+    "linearbearing:slippery_copycat": "Slippery Copycat",
+    "linearbearing:torsional_anchor": "Torsional Anchor"
+  },
+  "entities": {}
+}

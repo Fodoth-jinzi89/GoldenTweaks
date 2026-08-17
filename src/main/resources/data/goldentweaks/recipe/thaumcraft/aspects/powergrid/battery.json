@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:battery"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

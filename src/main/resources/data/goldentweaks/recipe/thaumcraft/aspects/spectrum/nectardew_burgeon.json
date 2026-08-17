@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:nectardew_burgeon"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

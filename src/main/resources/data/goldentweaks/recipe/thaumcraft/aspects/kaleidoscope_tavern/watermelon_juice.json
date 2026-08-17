@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:watermelon_juice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

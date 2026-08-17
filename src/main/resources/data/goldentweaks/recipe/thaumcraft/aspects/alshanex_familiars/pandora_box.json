@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:pandora_box"
+  },
+  "aspects": {
+    "praecantatio": 2
+  }
+}

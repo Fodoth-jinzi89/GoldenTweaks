@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:shadow_imbued_cloth"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vitium": 3,
+    "pannus": 2,
+    "tenebrae": 2
+  }
+}

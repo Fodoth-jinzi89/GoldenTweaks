@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:bone_vault"
+  },
+  "aspects": {
+    "mortuus": 3
+  }
+}

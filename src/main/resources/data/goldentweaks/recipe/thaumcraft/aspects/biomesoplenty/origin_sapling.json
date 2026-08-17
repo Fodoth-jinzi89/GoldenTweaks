@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:origin_sapling"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

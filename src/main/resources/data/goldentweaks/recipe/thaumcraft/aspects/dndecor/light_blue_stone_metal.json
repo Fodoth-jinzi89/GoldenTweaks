@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:light_blue_stone_metal"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

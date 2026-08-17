@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:blt"
+  },
+  "aspects": {
+    "herba": 3,
+    "terra": 3,
+    "victus": 3,
+    "fames": 2,
+    "messis": 2
+  }
+}

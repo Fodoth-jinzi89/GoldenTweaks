@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:magic_level_tier_1"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

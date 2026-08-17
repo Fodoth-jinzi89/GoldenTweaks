@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cmpackagecouriers:cardboard_plane"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:nether_star_cake"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

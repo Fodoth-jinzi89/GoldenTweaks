@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbc_ballistics:cannon_control"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

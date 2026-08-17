@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:large_diesel_engine"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3,
+    "ignis": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:neutron_long_rod"
+  },
+  "aspects": {
+    "dense": 6,
+    "gravitas": 4,
+    "metallum": 3
+  }
+}

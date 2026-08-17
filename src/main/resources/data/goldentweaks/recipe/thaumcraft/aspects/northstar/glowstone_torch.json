@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:glowstone_torch"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

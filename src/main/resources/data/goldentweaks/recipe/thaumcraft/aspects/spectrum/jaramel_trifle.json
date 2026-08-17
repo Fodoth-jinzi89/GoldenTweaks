@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:jaramel_trifle"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

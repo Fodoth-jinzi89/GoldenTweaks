@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:military_slate_alloy_dual_cannon_quickfiring_breech"
+  },
+  "aspects": {
+    "accessories": 3,
+    "machina": 3,
+    "saxum": 3
+  }
+}

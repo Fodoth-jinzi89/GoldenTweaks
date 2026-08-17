@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:provocation_t1"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

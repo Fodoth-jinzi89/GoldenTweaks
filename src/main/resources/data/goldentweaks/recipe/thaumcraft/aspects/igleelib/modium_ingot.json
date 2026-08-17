@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "igleelib:modium_ingot"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

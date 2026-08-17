@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:mangrove_amphora"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

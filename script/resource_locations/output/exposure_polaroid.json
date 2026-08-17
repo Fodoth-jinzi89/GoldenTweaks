@@ -1,0 +1,16 @@
+{
+  "items": {
+    "exposure_polaroid:high_sensitivity_instant_black_and_white_slide": "High-Sensitivity Instant Black and White Slide",
+    "exposure_polaroid:high_sensitivity_instant_color_slide": "High-Sensitivity Instant Color Slide",
+    "exposure_polaroid:instant_black_and_white_slide": "Instant Black and White Slide",
+    "exposure_polaroid:instant_camera": "Instant Camera",
+    "exposure_polaroid:instant_camera.tooltip.details_insert": "§8[§7Right Click§8] with item to insert slides",
+    "exposure_polaroid:instant_camera.tooltip.details_insert_on_stand": "§8[§7Sneak + Use§8] with item to insert slides",
+    "exposure_polaroid:instant_camera.tooltip.details_remove": "§8[§7Right Click§8] to remove slides",
+    "exposure_polaroid:instant_camera.tooltip.details_remove_on_stand": "§8[§7Sneak + Use§8] to remove slides",
+    "exposure_polaroid:instant_camera.tooltip.slides": "§7Slides: §f%s/%s",
+    "exposure_polaroid:instant_color_slide": "Instant Color Slide"
+  },
+  "blocks": {},
+  "entities": {}
+}

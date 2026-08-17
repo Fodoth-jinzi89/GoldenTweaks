@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createaddition:copper_goblet"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

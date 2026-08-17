@@ -1,0 +1,9 @@
+{
+  "items": {
+    "createlazytick:clock": "Lazytick Clock",
+    "createlazytick:clock.tooltip.line1": "While wearing goggles, use this item to adjust the operating state of Create components",
+    "createlazytick:clock.tooltip.line2": "You can also aim at the lower half of a component and hold to perform fine adjustments"
+  },
+  "blocks": {},
+  "entities": {}
+}

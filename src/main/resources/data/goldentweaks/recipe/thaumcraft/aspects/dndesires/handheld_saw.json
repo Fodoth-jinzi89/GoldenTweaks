@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:handheld_saw"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "perditio": 3,
+    "machina": 2
+  }
+}

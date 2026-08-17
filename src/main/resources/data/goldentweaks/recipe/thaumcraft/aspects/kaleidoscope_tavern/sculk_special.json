@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:sculk_special"
+  },
+  "aspects": {
+    "profundum": 3
+  }
+}

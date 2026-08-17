@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:crimson_blade"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

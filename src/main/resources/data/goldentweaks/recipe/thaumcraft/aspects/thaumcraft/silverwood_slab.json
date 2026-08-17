@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:silverwood_slab"
+  },
+  "aspects": {
+    "arbor": 3,
+    "metallum": 3
+  }
+}

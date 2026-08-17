@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:astral_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

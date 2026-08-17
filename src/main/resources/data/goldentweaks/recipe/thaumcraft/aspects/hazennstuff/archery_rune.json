@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:archery_rune"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

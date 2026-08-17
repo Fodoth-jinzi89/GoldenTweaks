@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:astralite_cleaver"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

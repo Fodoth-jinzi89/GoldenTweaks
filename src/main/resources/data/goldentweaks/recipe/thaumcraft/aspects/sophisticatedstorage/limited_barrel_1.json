@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:limited_barrel_1"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "machina": 3,
+    "vas": 3
+  }
+}

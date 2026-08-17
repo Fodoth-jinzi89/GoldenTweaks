@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "copycats:copycat_slope_layer"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

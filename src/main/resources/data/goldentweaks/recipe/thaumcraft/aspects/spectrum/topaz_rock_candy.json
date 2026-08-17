@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:topaz_rock_candy"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

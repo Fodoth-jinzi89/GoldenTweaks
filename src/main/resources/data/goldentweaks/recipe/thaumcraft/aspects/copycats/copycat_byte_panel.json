@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "copycats:copycat_byte_panel"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

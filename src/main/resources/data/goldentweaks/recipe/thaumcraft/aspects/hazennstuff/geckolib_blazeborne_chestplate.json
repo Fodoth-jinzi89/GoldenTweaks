@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_blazeborne_chestplate"
+  },
+  "aspects": {
+    "ardor": 4,
+    "tutamen": 4,
+    "vacuos": 4,
+    "ignis": 3,
+    "vas": 2
+  }
+}

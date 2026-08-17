@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:elite_fluid_tank"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "aqua": 3,
+    "machina": 2,
+    "vas": 2
+  }
+}

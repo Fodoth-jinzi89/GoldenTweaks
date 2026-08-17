@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_doll:computer"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:curved_azure_seastone_scylla_5"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

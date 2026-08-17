@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:empyreal_pressure_plate"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

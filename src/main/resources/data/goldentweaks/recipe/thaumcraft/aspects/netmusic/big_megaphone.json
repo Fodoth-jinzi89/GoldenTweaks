@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "netmusic:big_megaphone"
+  },
+  "aspects": {
+    "sonus": 4,
+    "machina": 2
+  }
+}

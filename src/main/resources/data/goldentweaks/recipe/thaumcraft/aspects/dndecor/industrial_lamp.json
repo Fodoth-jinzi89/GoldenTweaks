@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:industrial_lamp"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:jiangshi_hat"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

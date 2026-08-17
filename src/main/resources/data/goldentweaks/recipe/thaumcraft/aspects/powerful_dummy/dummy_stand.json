@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powerful_dummy:dummy_stand"
+  },
+  "aspects": {
+    "humanus": 3,
+    "fabrico": 2
+  }
+}

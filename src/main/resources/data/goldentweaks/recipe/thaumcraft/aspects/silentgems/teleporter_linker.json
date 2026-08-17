@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:teleporter_linker"
+  },
+  "aspects": {
+    "iter": 3,
+    "sensus": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:wisp_essence_volatus"
+  },
+  "aspects": {
+    "alienis": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

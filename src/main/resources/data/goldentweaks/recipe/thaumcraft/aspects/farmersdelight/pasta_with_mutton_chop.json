@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:pasta_with_mutton_chop"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:laurels_of_serenity"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

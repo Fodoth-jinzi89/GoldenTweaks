@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:cake_batter"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

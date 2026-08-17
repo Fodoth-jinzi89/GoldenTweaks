@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:voidwalker_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:primary_torpedo_mold"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

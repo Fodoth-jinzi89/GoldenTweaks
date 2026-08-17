@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:dune_grass"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

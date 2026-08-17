@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:solarwood_leaves"
+  },
+  "aspects": {
+    "arbor": 3,
+    "herba": 3
+  }
+}

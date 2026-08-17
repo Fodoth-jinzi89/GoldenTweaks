@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:splinterspawn_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 2
+  }
+}

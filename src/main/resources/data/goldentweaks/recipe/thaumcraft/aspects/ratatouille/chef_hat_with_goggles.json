@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:chef_hat_with_goggles"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

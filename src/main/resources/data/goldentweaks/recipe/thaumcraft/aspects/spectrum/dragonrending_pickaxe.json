@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:dragonrending_pickaxe"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

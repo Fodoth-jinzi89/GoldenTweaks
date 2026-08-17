@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:electrolysis_machine"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "solcarrot:food_book"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "victus": 3,
+    "fames": 2
+  }
+}

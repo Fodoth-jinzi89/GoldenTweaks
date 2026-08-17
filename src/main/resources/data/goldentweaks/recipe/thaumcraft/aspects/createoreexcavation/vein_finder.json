@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createoreexcavation:vein_finder"
+  },
+  "aspects": {
+    "perfodio": 4,
+    "instrumentum": 3
+  }
+}

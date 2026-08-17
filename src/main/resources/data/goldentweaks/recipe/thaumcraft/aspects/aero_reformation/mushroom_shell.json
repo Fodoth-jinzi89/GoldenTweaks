@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:mushroom_shell"
+  },
+  "aspects": {
+    "fungus": 3
+  }
+}

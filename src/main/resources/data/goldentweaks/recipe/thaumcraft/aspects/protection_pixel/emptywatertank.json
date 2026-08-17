@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:emptywatertank"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

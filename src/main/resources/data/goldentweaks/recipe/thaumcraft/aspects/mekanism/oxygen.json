@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:oxygen"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 2
+  }
+}

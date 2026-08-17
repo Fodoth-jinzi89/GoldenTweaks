@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:spellbinding_cloth"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "pannus": 2
+  }
+}

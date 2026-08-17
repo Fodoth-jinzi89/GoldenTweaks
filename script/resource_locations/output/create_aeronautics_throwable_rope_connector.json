@@ -1,0 +1,10 @@
+{
+  "items": {
+    "create_aeronautics_throwable_rope_connector:rope_connector_launcher": "Rope Connector Launcher",
+    "create_aeronautics_throwable_rope_connector:throwable_rope_connector": "Throwable Rope Connector"
+  },
+  "blocks": {
+    "create_aeronautics_throwable_rope_connector:mounted_rope_launcher": "Mounted Rope Launcher"
+  },
+  "entities": {}
+}

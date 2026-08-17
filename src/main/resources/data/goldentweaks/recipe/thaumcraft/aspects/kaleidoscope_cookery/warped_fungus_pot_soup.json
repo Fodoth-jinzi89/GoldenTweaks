@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:warped_fungus_pot_soup"
+  },
+  "aspects": {
+    "arbor": 3,
+    "fungus": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bits_n_bobs:deepslate_tile_wall"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3
+  }
+}

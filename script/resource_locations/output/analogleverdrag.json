@@ -1,0 +1,11 @@
+{
+  "items": {},
+  "blocks": {
+    "analogleverdrag:create_analog_lever": "Analog Lever",
+    "analogleverdrag:dndecor_breaker_switch": "DnDecor breaker switch",
+    "analogleverdrag:dndecor_stepped_lever": "DnDecor stepped lever",
+    "analogleverdrag:simulated_throttle_lever": "Throttle Lever",
+    "analogleverdrag:supplementaries_crank": "Crank"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "supplementaries:slimeball_projectile"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

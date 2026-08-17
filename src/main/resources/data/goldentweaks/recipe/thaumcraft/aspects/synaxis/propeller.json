@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "synaxis:propeller"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 3,
+    "machina": 2
+  }
+}

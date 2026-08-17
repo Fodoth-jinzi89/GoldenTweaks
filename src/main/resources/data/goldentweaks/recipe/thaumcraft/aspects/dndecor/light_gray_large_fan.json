@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:light_gray_large_fan"
+  },
+  "aspects": {
+    "aer": 3,
+    "motus": 3,
+    "machina": 2
+  }
+}

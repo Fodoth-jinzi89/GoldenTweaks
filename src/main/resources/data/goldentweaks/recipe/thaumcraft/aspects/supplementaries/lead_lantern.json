@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:lead_lantern"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "iter": 3,
+    "metallum": 3
+  }
+}

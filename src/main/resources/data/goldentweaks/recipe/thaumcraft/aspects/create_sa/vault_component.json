@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:vault_component"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

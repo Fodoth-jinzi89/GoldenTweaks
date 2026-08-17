@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:infinity_grinding_ball"
+  },
+  "aspects": {
+    "terminus": 6
+  }
+}

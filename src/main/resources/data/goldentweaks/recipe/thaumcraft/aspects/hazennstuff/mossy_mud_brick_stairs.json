@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:mossy_mud_brick_stairs"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

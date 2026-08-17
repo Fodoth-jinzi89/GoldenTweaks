@@ -1,0 +1,26 @@
+{
+  "items": {
+    "cmpackagecouriers:cardboard_plane": "Cardboard Plane",
+    "cmpackagecouriers:cardboard_plane_parts": "Cardboard Plane Parts",
+    "cmpackagecouriers:location_transmitter": "Location Transmitter",
+    "cmpackagecouriers:location_transmitter.activated": "Location Transmitter Activated",
+    "cmpackagecouriers:location_transmitter.deactivated": "Location Transmitter Deactivated",
+    "cmpackagecouriers:location_transmitter.disabled": "Disabled",
+    "cmpackagecouriers:location_transmitter.enabled": "Enabled",
+    "cmpackagecouriers:location_transmitter.server_config": "Transmitter needed for Player Targeting",
+    "cmpackagecouriers:location_transmitter.status": "Status",
+    "cmpackagecouriers:location_transmitter.tooltip": "Right-click to toggle",
+    "cmpackagecouriers:portable_stock_ticker": "Portable Stock Ticker",
+    "cmpackagecouriers:portable_stock_ticker.not_linked": "Not linked to Network",
+    "cmpackagecouriers:portable_stock_ticker.screen_title": "Portable Stock Ticker",
+    "cmpackagecouriers:portable_stock_ticker.tooltip.behaviour1": "Portable Stock Ticker will bind to the Network",
+    "cmpackagecouriers:portable_stock_ticker.tooltip.behaviour2": "Portable Stock Ticker will open a mobile Stock Keeper menu",
+    "cmpackagecouriers:portable_stock_ticker.tooltip.condition1": "When sneak clicked on a Stock Link or Stock Ticker",
+    "cmpackagecouriers:portable_stock_ticker.tooltip.condition2": "When used",
+    "cmpackagecouriers:portable_stock_ticker.tooltip.summary": "A Mobile Stock Keeper"
+  },
+  "blocks": {},
+  "entities": {
+    "cmpackagecouriers:cardboard_plane": "Cardboard Plane"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:native_cinnabar_cluster"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

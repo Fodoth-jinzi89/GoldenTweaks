@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createframed:andesite_alloy_window_pane"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

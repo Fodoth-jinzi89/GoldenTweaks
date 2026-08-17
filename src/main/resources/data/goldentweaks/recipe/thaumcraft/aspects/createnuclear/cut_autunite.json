@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:cut_autunite"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vitium": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:fanciful_bismuth_ring"
+  },
+  "aspects": {
+    "accessories": 3,
+    "aer": 3,
+    "motus": 3,
+    "machina": 2
+  }
+}

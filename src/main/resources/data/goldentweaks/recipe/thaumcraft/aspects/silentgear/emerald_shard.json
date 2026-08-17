@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:emerald_shard"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

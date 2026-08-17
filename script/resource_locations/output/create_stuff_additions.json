@@ -1,0 +1,18 @@
+{
+  "items": {
+    "create_stuff_additions:andesite_propeler_boots": "Brass Encased Propeler Boots",
+    "create_stuff_additions:andesite_propeler_chestplate": "Andesite Propeler",
+    "create_stuff_additions:andesite_propeler_helmet": "Brass Encased Propeler Helmet",
+    "create_stuff_additions:andesite_propeler_leggings": "Brass Encased Propeler Leggings",
+    "create_stuff_additions:brass_propeler_boots": "Brass Encased Propeler Boots",
+    "create_stuff_additions:brass_propeler_chestplate": "Brass Propeler",
+    "create_stuff_additions:brass_propeler_helmet": "Brass Encased Propeler Helmet",
+    "create_stuff_additions:brass_propeler_leggings": "Brass Encased Propeler Leggings",
+    "create_stuff_additions:copper_propeler_boots": "Brass Encased Propeler Boots",
+    "create_stuff_additions:copper_propeler_chestplate": "Copper Propeler",
+    "create_stuff_additions:copper_propeler_helmet": "Brass Encased Propeler Helmet",
+    "create_stuff_additions:copper_propeler_leggings": "Brass Encased Propeler Leggings"
+  },
+  "blocks": {},
+  "entities": {}
+}

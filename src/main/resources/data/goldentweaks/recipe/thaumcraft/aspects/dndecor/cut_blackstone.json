@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:cut_blackstone"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

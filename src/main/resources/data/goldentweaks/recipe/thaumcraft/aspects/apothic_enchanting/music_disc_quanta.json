@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:music_disc_quanta"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

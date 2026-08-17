@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazentouvelib:shadow_upgrade_orb"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

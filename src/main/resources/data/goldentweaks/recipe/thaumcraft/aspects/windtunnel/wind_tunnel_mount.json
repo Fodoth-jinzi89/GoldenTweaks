@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "windtunnel:wind_tunnel_mount"
+  },
+  "aspects": {
+    "aer": 4,
+    "permutatio": 3,
+    "volatus": 3,
+    "machina": 2
+  }
+}

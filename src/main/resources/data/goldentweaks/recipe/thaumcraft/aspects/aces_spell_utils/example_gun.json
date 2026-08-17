@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_gun"
+  },
+  "aspects": {
+    "telum": 4,
+    "potentia": 3
+  }
+}

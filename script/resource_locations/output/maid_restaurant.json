@@ -1,0 +1,8 @@
+{
+  "items": {
+    "maid_restaurant:order_item": "Order",
+    "maid_restaurant:order_menu": "Order Menu"
+  },
+  "blocks": {},
+  "entities": {}
+}

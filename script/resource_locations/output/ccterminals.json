@@ -1,0 +1,8 @@
+{
+  "items": {},
+  "blocks": {
+    "ccterminals:terminal_advanced": "Advanced Terminal",
+    "ccterminals:terminal_normal": "Terminal"
+  },
+  "entities": {}
+}

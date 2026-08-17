@@ -1,0 +1,13 @@
+{
+  "items": {
+    "flavor_immersed_daily_food:changsha_tofu_nuggets": "Changsha Tofu Nuggets",
+    "flavor_immersed_daily_food:fidaitem": "Fidaitem",
+    "flavor_immersed_daily_food:garlic_and_chili_stinky_tofu": "Garlic and Chili stinky tofu",
+    "flavor_immersed_daily_food:korean_kimchi_stinky_tofu": "Korean Kimchi Stinky Tofu",
+    "flavor_immersed_daily_food:lard_bibimbap": "Lard Bibimbap",
+    "flavor_immersed_daily_food:pork_tripe_soup": "Lard Bibimbap",
+    "flavor_immersed_daily_food:shaoxing_tofu_nuggets": "Shaoxing Tofu Nuggets"
+  },
+  "blocks": {},
+  "entities": {}
+}

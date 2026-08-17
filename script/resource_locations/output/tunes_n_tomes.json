@@ -1,0 +1,42 @@
+{
+  "items": {
+    "tunes_n_tomes:bard_boots": "Bard Boots",
+    "tunes_n_tomes:bard_chestplate": "Bard Robe",
+    "tunes_n_tomes:bard_harp": "Harp",
+    "tunes_n_tomes:bard_helmet": "Bard Hat",
+    "tunes_n_tomes:bard_leggings": "Bard Leggings",
+    "tunes_n_tomes:melodic_mastery_boots": "Melodic Mastery Boots",
+    "tunes_n_tomes:melodic_mastery_chestplate": "Melodic Mastery Robe",
+    "tunes_n_tomes:melodic_mastery_helmet": "Melodic Mastery Hood",
+    "tunes_n_tomes:melodic_mastery_leggings": "Melodic Mastery Leggings",
+    "tunes_n_tomes:melody_rune": "Melodic Rune",
+    "tunes_n_tomes:melody_spell_book": "Symphonic Grimoire",
+    "tunes_n_tomes:melody_upgrade_orb": "Melodic Upgrade Orb"
+  },
+  "blocks": {},
+  "entities": {
+    "tunes_n_tomes:angel": "Summoned Angel",
+    "tunes_n_tomes:aria_beam": "Aria",
+    "tunes_n_tomes:black_note": "Musical Note",
+    "tunes_n_tomes:blue_ball": "Slumber Note",
+    "tunes_n_tomes:blue_ball_effect": "Slumber Note",
+    "tunes_n_tomes:blue_ball_hit": "Slumber Note",
+    "tunes_n_tomes:blue_bird": "Summoned Bird",
+    "tunes_n_tomes:blue_circle": "Aura",
+    "tunes_n_tomes:default_note": "Musical Note",
+    "tunes_n_tomes:harp_explosion": "Grand Finale",
+    "tunes_n_tomes:healing_circle": "Healing Aura",
+    "tunes_n_tomes:hope_shield": "Hope Shield",
+    "tunes_n_tomes:music_bolt": "Music Bolt",
+    "tunes_n_tomes:red_arrow": "Clamor",
+    "tunes_n_tomes:red_ball": "Clamor Note",
+    "tunes_n_tomes:red_ball_effect": "Clamor Note",
+    "tunes_n_tomes:red_ball_hit": "Clamor Note",
+    "tunes_n_tomes:red_circle": "Aura",
+    "tunes_n_tomes:segno_marker": "Segno",
+    "tunes_n_tomes:ult_strings_1": "Musical Note",
+    "tunes_n_tomes:ult_strings_2": "Musical Note",
+    "tunes_n_tomes:ult_strings_3": "Musical Note",
+    "tunes_n_tomes:ult_strings_4": "Musical Note"
+  }
+}

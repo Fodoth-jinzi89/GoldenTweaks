@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:diamond_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 3,
+    "vitreus": 3
+  }
+}

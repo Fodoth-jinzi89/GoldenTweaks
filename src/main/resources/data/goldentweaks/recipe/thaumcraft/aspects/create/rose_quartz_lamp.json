@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:rose_quartz_lamp"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

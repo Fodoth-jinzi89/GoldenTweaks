@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "densemekanism:dense_deepslate_osmium_ore"
+  },
+  "aspects": {
+    "metallum": 3,
+    "profundum": 3,
+    "saxum": 3
+  }
+}

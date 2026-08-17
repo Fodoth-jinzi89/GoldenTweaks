@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "synaxis:cimulink_real_constant"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

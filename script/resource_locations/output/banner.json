@@ -1,0 +1,22 @@
+{
+  "items": {},
+  "blocks": {
+    "banner:iss_magicfromtheeast.balance.Magenta": "Magenta Balance",
+    "banner:iss_magicfromtheeast.balance.black": "Black Balance",
+    "banner:iss_magicfromtheeast.balance.blue": "Blue Balance",
+    "banner:iss_magicfromtheeast.balance.brown": "Brown Balance",
+    "banner:iss_magicfromtheeast.balance.cyan": "Cyan Balance",
+    "banner:iss_magicfromtheeast.balance.gray": "Gray Balance",
+    "banner:iss_magicfromtheeast.balance.green": "Green Balance",
+    "banner:iss_magicfromtheeast.balance.light_blue": "Light Blue Balance",
+    "banner:iss_magicfromtheeast.balance.light_gray": "Light Gray Balance",
+    "banner:iss_magicfromtheeast.balance.lime": "Lime Balance",
+    "banner:iss_magicfromtheeast.balance.orange": "Orange Balance",
+    "banner:iss_magicfromtheeast.balance.pink": "Pink Balance",
+    "banner:iss_magicfromtheeast.balance.purple": "Purple Balance",
+    "banner:iss_magicfromtheeast.balance.red": "Red Balance",
+    "banner:iss_magicfromtheeast.balance.white": "White Balance",
+    "banner:iss_magicfromtheeast.balance.yellow": "Yellow Balance"
+  },
+  "entities": {}
+}

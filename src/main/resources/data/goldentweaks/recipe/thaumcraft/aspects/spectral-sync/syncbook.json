@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral-sync:syncbook"
+  },
+  "aspects": {
+    "cognitio": 4
+  }
+}

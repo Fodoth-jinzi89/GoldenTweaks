@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:stack_upgrade_tier_4"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

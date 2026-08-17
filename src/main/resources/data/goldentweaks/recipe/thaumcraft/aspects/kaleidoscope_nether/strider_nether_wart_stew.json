@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:strider_nether_wart_stew"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {},
+  "blocks": {},
+  "entities": {
+    "trunk:guiname": "'s Trunk",
+    "trunk:move": "The trunk will now follow you",
+    "trunk:stay": "The trunk will stay where it is"
+  }
+}

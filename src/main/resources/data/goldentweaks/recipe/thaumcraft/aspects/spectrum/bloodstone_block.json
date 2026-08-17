@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bloodstone_block"
+  },
+  "aspects": {
+    "corpus": 3,
+    "saxum": 3
+  }
+}

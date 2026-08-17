@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:soul_legionnaire_ruler_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

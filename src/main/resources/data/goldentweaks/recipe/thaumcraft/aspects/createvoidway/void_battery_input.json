@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createvoidway:void_battery_input"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

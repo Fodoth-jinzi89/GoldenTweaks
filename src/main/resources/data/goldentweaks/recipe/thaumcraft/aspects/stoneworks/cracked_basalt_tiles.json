@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cracked_basalt_tiles"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:bunting_brown"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

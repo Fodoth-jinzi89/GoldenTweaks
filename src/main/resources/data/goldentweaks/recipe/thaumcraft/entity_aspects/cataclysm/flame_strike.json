@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:flame_strike"
+  },
+  "aspects": {
+    "telum": 4,
+    "ignis": 3
+  }
+}

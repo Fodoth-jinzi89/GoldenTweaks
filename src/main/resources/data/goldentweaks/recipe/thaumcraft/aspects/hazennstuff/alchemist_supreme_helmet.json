@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:alchemist_supreme_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

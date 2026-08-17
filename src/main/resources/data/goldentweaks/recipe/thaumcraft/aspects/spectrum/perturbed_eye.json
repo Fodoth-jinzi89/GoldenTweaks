@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:perturbed_eye"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "pannus": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:zenalite_end_stone_ore"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

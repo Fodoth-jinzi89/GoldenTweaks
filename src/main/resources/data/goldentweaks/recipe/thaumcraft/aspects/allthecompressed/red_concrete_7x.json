@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:red_concrete_7x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 14
+  }
+}

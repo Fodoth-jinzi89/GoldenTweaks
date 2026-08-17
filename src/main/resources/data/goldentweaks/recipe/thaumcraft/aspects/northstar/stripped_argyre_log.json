@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:stripped_argyre_log"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

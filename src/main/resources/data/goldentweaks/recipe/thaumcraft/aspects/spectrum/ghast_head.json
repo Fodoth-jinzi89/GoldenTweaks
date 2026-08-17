@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ghast_head"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

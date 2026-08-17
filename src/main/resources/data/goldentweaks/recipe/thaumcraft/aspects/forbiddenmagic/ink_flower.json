@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:ink_flower"
+  },
+  "aspects": {
+    "herba": 3,
+    "sensus": 3
+  }
+}

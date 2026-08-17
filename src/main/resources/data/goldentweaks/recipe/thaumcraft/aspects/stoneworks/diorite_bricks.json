@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:diorite_bricks"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weeping_gala_fronds_plant"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:sandstone_bricks"
+  },
+  "aspects": {
+    "saxum": 3,
+    "terra": 3
+  }
+}

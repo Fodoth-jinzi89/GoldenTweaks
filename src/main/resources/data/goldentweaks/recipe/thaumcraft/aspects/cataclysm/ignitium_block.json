@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:ignitium_block"
+  },
+  "aspects": {
+    "reliquiae": 3
+  }
+}

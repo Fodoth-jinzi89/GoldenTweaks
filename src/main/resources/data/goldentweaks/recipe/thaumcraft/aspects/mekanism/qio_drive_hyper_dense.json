@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:qio_drive_hyper_dense"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

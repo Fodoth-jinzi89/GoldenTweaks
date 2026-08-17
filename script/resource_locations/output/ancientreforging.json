@@ -1,0 +1,10 @@
+{
+  "items": {
+    "ancientreforging:ancient_material": "Manifestation of Infinity"
+  },
+  "blocks": {
+    "ancientreforging:ancient_reforging_table": "Ancient Reforging Table",
+    "ancientreforging:ancient_reforging_table.desc": "Uses Sigils of Rebirth and Rarity Materials to reforge items"
+  },
+  "entities": {}
+}

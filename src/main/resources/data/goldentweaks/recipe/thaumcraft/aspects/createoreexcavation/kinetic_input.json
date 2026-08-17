@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createoreexcavation:kinetic_input"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

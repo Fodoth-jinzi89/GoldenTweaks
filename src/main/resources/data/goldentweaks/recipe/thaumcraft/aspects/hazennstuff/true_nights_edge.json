@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:true_nights_edge"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

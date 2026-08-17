@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:polished_basal_marble"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

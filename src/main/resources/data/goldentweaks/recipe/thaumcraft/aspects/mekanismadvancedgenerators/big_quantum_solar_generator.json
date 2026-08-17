@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismadvancedgenerators:big_quantum_solar_generator"
+  },
+  "aspects": {
+    "potentia": 4,
+    "alienis": 3,
+    "lux": 3,
+    "machina": 3
+  }
+}

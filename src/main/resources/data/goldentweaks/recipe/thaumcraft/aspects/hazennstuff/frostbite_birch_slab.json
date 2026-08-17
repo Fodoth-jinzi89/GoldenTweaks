@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:frostbite_birch_slab"
+  },
+  "aspects": {
+    "arbor": 3,
+    "gelum": 3
+  }
+}

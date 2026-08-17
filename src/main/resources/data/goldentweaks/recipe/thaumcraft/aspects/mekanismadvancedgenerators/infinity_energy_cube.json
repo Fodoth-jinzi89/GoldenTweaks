@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismadvancedgenerators:infinity_energy_cube"
+  },
+  "aspects": {
+    "terminus": 6,
+    "potentia": 4,
+    "machina": 3
+  }
+}

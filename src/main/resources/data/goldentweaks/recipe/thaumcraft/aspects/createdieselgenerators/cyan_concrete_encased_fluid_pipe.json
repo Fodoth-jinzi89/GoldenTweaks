@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:cyan_concrete_encased_fluid_pipe"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "permutatio": 3,
+    "machina": 2,
+    "vas": 2
+  }
+}

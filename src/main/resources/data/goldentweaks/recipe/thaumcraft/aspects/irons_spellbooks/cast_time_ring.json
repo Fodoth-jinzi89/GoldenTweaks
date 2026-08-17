@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:cast_time_ring"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

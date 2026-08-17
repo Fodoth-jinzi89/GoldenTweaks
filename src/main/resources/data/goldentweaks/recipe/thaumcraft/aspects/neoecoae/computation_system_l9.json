@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:computation_system_l9"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

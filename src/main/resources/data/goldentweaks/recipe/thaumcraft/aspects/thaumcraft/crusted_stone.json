@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:crusted_stone"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

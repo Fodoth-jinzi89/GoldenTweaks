@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:golden_sheet"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

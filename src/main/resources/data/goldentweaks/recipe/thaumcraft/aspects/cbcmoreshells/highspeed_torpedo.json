@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:highspeed_torpedo"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:strawberry_ice_cream_bucket"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

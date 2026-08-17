@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:blaze_cube_long_rod"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:crystal_chestplate"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "tutamen": 4,
+    "vacuos": 4,
+    "terminus": 3
+  }
+}

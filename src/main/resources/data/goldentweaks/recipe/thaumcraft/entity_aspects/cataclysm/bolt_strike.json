@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:bolt_strike"
+  },
+  "aspects": {
+    "telum": 4,
+    "fulmen": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {
+    "ccbr:basic_integrated_circuit": "Basic Integrated Circuit",
+    "ccbr:integrated_circuit": "Integrated Circuit",
+    "ccbr:lapis_sheet": "Lapis Sheet"
+  },
+  "blocks": {},
+  "entities": {}
+}

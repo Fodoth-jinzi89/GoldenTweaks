@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:display_link"
+  },
+  "aspects": {
+    "sensus": 2
+  }
+}

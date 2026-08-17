@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:neutron_minecart"
+  },
+  "aspects": {
+    "dense": 6,
+    "gravitas": 4,
+    "iter": 3,
+    "metallum": 3
+  }
+}

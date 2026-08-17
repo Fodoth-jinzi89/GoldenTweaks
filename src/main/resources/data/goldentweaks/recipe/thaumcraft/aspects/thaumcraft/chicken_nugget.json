@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:chicken_nugget"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

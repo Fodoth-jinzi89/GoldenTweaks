@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:spruce_window_pane"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

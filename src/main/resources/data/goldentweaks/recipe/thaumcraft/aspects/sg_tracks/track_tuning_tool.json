@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sg_tracks:track_tuning_tool"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

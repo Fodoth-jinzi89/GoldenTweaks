@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:ignited_berserker_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "vinculum": 3
+  }
+}

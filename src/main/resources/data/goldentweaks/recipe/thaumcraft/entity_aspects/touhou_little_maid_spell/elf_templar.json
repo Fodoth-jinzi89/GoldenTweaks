@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "touhou_little_maid_spell:elf_templar"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

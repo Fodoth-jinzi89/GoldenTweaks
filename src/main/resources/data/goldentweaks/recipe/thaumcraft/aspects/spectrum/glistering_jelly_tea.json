@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:glistering_jelly_tea"
+  },
+  "aspects": {
+    "accessories": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

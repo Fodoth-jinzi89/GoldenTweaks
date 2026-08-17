@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:shimmer_t2"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

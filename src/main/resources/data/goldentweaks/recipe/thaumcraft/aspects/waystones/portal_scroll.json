@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "waystones:portal_scroll"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

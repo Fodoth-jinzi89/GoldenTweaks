@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:hullbreaker_steel"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "items": {
+    "createoreexcavation:diamond_drill": "Diamond Drill",
+    "createoreexcavation:drill": "Iron Drill",
+    "createoreexcavation:netherite_drill": "Netherite Drill",
+    "createoreexcavation:raw_diamond": "Raw Diamond",
+    "createoreexcavation:raw_emerald": "Raw Emerald",
+    "createoreexcavation:raw_redstone": "Raw Redstone",
+    "createoreexcavation:vein_atlas": "Ore Vein Atlas",
+    "createoreexcavation:vein_finder": "Ore Vein Finder"
+  },
+  "blocks": {
+    "createoreexcavation:drilling_machine": "Drilling Machine",
+    "createoreexcavation:extractor": "Fluid Well Extractor",
+    "createoreexcavation:io_block": "Multiblock IO",
+    "createoreexcavation:kinetic_input": "Multiblock Rotational Input",
+    "createoreexcavation:multiblock": "Multiblock",
+    "createoreexcavation:sample_drill": "Sample Drill"
+  },
+  "entities": {}
+}

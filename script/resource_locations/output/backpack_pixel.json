@@ -1,0 +1,39 @@
+{
+  "items": {
+    "backpack_pixel:collector": "Collector",
+    "backpack_pixel:container": "Container",
+    "backpack_pixel:containeras": "Container-AS",
+    "backpack_pixel:crushingclaw": "Crushing Claw",
+    "backpack_pixel:decorativetemplate1": "Decorative Template: Safety Alert",
+    "backpack_pixel:decorativetemplate10": "Decorative Template: Chisel Copper",
+    "backpack_pixel:decorativetemplate2": "Decorative Template: Redstone Energy",
+    "backpack_pixel:decorativetemplate3": "Decorative Template: Polar Phantom",
+    "backpack_pixel:decorativetemplate4": "Decorative Template: Desert Spine",
+    "backpack_pixel:decorativetemplate5": "Decorative Template: Crimson",
+    "backpack_pixel:decorativetemplate6": "Decorative Template: Strong Shield",
+    "backpack_pixel:decorativetemplate7": "Decorative Template: Belt",
+    "backpack_pixel:decorativetemplate8": "Decorative Template: Hell Runner",
+    "backpack_pixel:decorativetemplate9": "Decorative Template: Security",
+    "backpack_pixel:excontainer": "External Container",
+    "backpack_pixel:excontaineras": "External Container-AS",
+    "backpack_pixel:exmixedcontainer": "External Mixed Container",
+    "backpack_pixel:exmixedcontaineras": "External Mixed Container-AS",
+    "backpack_pixel:extank": "External Portable Tank",
+    "backpack_pixel:extankas": "External Portable Tank-AS",
+    "backpack_pixel:functionpack": "Function Pack",
+    "backpack_pixel:grillebaffle": "Grille Baffle",
+    "backpack_pixel:magneticarm": "Magnetic Arm",
+    "backpack_pixel:scanner": "Scanner",
+    "backpack_pixel:sleepingbag": "Sleeping Bag",
+    "backpack_pixel:tank": "Portable Tank",
+    "backpack_pixel:tankas": "Portable Tank-AS",
+    "backpack_pixel:unitbox": "Unit Box",
+    "backpack_pixel:unitboxas": "Unit Box-AS",
+    "backpack_pixel:xpstorage": "Xp Storage"
+  },
+  "blocks": {
+    "backpack_pixel:backpackmaintenancerack": "Backpack Maintenance Rack",
+    "backpack_pixel:deliveryplateform": "Delivery Plateform"
+  },
+  "entities": {}
+}

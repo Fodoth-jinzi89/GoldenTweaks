@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:shadowwalker_enderman_hood"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

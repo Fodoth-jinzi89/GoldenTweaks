@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_linear_motion_simulated:pneumatic_cylinder"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

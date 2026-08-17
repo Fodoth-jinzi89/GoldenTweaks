@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:compost_residue_fluid"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 2
+  }
+}

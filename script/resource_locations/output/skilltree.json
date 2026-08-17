@@ -1,0 +1,30 @@
+{
+  "items": {
+    "skilltree:gem.skilltree.etherea_0": "Crumbled Etherea",
+    "skilltree:gem.skilltree.etherea_1": "Broken Etherea",
+    "skilltree:gem.skilltree.etherea_2": "Low-Quality Etherea",
+    "skilltree:gem.skilltree.etherea_3": "Big Etherea",
+    "skilltree:gem.skilltree.etherea_4": "Rare Etherea",
+    "skilltree:gem.skilltree.etherea_5": "Exceptional Etherea",
+    "skilltree:gem.skilltree.moonshade_0": "Crumbled Moonshade",
+    "skilltree:gem.skilltree.moonshade_1": "Broken Moonshade",
+    "skilltree:gem.skilltree.moonshade_2": "Low-Quality Moonshade",
+    "skilltree:gem.skilltree.moonshade_3": "Big Moonshade",
+    "skilltree:gem.skilltree.moonshade_4": "Rare Moonshade",
+    "skilltree:gem.skilltree.moonshade_5": "Exceptional Moonshade",
+    "skilltree:gem.skilltree.mystara_0": "Crumbled Mystara",
+    "skilltree:gem.skilltree.mystara_1": "Broken Mystara",
+    "skilltree:gem.skilltree.mystara_2": "Low-Quality Mystara",
+    "skilltree:gem.skilltree.mystara_3": "Big Mystara",
+    "skilltree:gem.skilltree.mystara_4": "Rare Mystara",
+    "skilltree:gem.skilltree.mystara_5": "Exceptional Mystara",
+    "skilltree:gem.skilltree.spellweave_0": "Crumbled Spellweave",
+    "skilltree:gem.skilltree.spellweave_1": "Broken Spellweave",
+    "skilltree:gem.skilltree.spellweave_2": "Low-Quality Spellweave",
+    "skilltree:gem.skilltree.spellweave_3": "Big Spellweave",
+    "skilltree:gem.skilltree.spellweave_4": "Rare Spellweave",
+    "skilltree:gem.skilltree.spellweave_5": "Exceptional Spellweave"
+  },
+  "blocks": {},
+  "entities": {}
+}

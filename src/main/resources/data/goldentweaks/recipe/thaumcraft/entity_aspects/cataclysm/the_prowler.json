@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:the_prowler"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

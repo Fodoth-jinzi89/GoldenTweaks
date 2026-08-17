@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cccbridge:redrouter_block"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

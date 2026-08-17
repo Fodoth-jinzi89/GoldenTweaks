@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:shift"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

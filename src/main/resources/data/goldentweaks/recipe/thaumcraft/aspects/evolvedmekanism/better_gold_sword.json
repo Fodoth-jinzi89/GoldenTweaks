@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:better_gold_sword"
+  },
+  "aspects": {
+    "telum": 4,
+    "metallum": 3
+  }
+}

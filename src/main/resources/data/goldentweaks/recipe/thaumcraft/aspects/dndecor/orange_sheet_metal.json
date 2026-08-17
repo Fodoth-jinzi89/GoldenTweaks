@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:orange_sheet_metal"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

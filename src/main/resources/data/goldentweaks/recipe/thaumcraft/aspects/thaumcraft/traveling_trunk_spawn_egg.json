@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:traveling_trunk_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "iter": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 2
+  }
+}

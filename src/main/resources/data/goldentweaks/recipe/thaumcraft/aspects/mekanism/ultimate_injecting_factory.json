@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:ultimate_injecting_factory"
+  },
+  "aspects": {
+    "terminus": 5,
+    "metallum": 3
+  }
+}

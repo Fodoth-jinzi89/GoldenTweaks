@@ -1,0 +1,21 @@
+{
+  "items": {},
+  "blocks": {
+    "create_linear_motion_simulated:google_tooltip.extension": "Extension Length: %2f",
+    "create_linear_motion_simulated:google_tooltip.free_axis": "The piston head can slide freely on its axis",
+    "create_linear_motion_simulated:google_tooltip.max_extension": "Max Extension: %2f",
+    "create_linear_motion_simulated:google_tooltip.mode": "Mode: %s",
+    "create_linear_motion_simulated:google_tooltip.mode.free": "Free sliding",
+    "create_linear_motion_simulated:google_tooltip.mode.locked": "Shaft driven",
+    "create_linear_motion_simulated:google_tooltip.powered": "Is Powered: %s",
+    "create_linear_motion_simulated:google_tooltip.powered.no": "No",
+    "create_linear_motion_simulated:google_tooltip.powered.yes": "Yes",
+    "create_linear_motion_simulated:google_tooltip.redstone_ignored": "Redstone signals are ignored without a shaft",
+    "create_linear_motion_simulated:google_tooltip.title": "Pneumatic Cylinder Info:",
+    "create_linear_motion_simulated:pneumatic_cylinder": "Pneumatic Cylinder",
+    "create_linear_motion_simulated:pneumatic_cylinder.shaft_installed": "Shaft installed",
+    "create_linear_motion_simulated:pneumatic_cylinder.shaft_removed": "Shaft removed",
+    "create_linear_motion_simulated:pneumatic_cylinder.shaft_toggle_assembled": "Cannot change shaft mode while the cylinder is assembled"
+  },
+  "entities": {}
+}

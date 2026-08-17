@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_the_wither_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

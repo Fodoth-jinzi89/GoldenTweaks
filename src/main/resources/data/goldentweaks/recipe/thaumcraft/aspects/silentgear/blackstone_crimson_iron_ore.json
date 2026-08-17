@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:blackstone_crimson_iron_ore"
+  },
+  "aspects": {
+    "arbor": 3,
+    "metallum": 3,
+    "saxum": 3
+  }
+}

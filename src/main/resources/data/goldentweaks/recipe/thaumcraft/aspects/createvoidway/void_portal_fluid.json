@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createvoidway:void_portal_fluid"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

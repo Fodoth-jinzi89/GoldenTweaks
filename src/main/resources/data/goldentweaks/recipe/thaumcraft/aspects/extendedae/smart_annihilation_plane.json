@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:smart_annihilation_plane"
+  },
+  "aspects": {
+    "perditio": 3,
+    "machina": 2
+  }
+}

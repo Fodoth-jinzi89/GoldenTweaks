@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:nugget_uranium"
+  },
+  "aspects": {
+    "potentia": 4,
+    "metallum": 3,
+    "vitium": 3
+  }
+}

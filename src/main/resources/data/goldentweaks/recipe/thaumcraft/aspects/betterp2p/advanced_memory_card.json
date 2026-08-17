@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "betterp2p:advanced_memory_card"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 2
+  }
+}

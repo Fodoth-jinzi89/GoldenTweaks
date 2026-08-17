@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:focus_mage_mace"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

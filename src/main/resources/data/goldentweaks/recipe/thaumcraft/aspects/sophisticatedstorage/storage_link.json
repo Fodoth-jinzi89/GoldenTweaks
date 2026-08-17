@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:storage_link"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "sensus": 3,
+    "vas": 3
+  }
+}

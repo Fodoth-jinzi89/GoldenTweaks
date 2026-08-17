@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:emerald_nugget"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createadditionallogistics:andesite_encased_orange_flexible_shaft"
+  },
+  "aspects": {
+    "machina": 4,
+    "vacuos": 4,
+    "motus": 3,
+    "saxum": 3,
+    "vas": 2
+  }
+}

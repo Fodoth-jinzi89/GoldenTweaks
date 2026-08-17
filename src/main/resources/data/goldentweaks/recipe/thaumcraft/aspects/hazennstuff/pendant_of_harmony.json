@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:pendant_of_harmony"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": {
+    "torchmaster:frozen_pearl": "Frozen Pearl",
+    "torchmaster:frozen_pearl.tooltip": "Clears residual lights from a Feral Flare Lantern"
+  },
+  "blocks": {
+    "torchmaster:dreadlamp": "Dread Lamp",
+    "torchmaster:dreadlamp.tooltip": "Prevents natural spawning of passive animals like squids, bats or ocelots in a big radius around the lamp",
+    "torchmaster:feral_flare_lantern": "Feral Flare Lantern",
+    "torchmaster:feral_flare_lantern.tooltip": "Places invisible lights",
+    "torchmaster:invisible_light": "Invisible Light",
+    "torchmaster:megatorch": "Mega Torch",
+    "torchmaster:megatorch.tooltip": "Prevents natural spawning of hostile monsters in a big radius around the torch"
+  },
+  "entities": {}
+}

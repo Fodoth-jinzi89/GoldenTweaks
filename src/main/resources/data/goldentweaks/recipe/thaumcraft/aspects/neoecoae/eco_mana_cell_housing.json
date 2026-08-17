@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:eco_mana_cell_housing"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

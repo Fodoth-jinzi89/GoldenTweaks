@@ -1,0 +1,13 @@
+{
+  "items": {
+    "gravitation:physics_staff": "Physics Staff"
+  },
+  "blocks": {
+    "gravitation:fan_concentrator": "Fan Concentrator",
+    "gravitation:fan_concentrator.goggles.length": "Duct Length: %s",
+    "gravitation:fan_concentrator.goggles.speed": "Wind Speed: %s",
+    "gravitation:fan_concentrator.goggles.title": "Duct Diagnostics",
+    "gravitation:redstone_mass_energy_converter": "Redstone Mass Energy Converter"
+  },
+  "entities": {}
+}

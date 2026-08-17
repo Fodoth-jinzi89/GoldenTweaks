@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposure:glass_photograph_frame"
+  },
+  "aspects": {
+    "sensus": 4,
+    "vitreus": 3,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

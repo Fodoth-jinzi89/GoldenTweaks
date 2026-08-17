@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:enderman_head"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

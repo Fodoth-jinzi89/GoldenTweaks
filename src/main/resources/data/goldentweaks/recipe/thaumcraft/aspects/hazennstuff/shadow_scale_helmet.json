@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:shadow_scale_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

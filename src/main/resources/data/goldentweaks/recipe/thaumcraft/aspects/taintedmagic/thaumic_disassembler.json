@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:thaumic_disassembler"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:pyrium_block"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:tower_fungus_cap_block"
+  },
+  "aspects": {
+    "fungus": 3
+  }
+}

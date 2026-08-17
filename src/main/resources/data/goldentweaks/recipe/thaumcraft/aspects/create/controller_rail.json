@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:controller_rail"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

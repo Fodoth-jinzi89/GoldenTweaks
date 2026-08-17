@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:sigil_of_malice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "lucrum": 3,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:brass_single_cannon_chamber"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3
+  }
+}

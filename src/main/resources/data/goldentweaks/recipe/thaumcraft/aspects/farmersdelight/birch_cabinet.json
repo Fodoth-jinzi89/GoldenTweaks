@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:birch_cabinet"
+  },
+  "aspects": {
+    "arbor": 3,
+    "fabrico": 3
+  }
+}

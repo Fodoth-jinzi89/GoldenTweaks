@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:bottled_raincloud"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

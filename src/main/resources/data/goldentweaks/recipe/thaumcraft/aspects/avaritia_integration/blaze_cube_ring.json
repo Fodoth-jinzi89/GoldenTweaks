@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:blaze_cube_ring"
+  },
+  "aspects": {
+    "ardor": 4,
+    "accessories": 3,
+    "ignis": 3
+  }
+}

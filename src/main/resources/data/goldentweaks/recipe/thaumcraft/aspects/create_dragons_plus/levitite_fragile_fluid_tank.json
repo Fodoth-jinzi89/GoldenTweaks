@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:levitite_fragile_fluid_tank"
+  },
+  "aspects": {
+    "gravitas": 4,
+    "vacuos": 4,
+    "vas": 2
+  }
+}

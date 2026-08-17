@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:amethyst_chime"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

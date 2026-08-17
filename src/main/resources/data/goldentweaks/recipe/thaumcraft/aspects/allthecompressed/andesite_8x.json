@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:andesite_8x"
+  },
+  "aspects": {
+    "saxum": 8,
+    "dense": 16
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:phial_of_essentia_tutamen"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tutamen": 4
+  }
+}

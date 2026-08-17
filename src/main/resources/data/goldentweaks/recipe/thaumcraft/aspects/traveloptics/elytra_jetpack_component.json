@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:elytra_jetpack_component"
+  },
+  "aspects": {
+    "volatus": 3,
+    "machina": 2
+  }
+}

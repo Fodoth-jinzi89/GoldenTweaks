@@ -1,0 +1,22 @@
+{
+  "items": {
+    "create_compact_transmission:fuel_injector": "Fuel Injector",
+    "create_compact_transmission:fuel_injector.already_installed": "This pipe already has a fuel injector",
+    "create_compact_transmission:fuel_injector.installed": "Fuel injector installed",
+    "create_compact_transmission:fuel_injector.tooltip": "Install on a Create Fluid Pipe to give it automatic TFMG engine refueling",
+    "create_compact_transmission:gearbox_setting": "Gearbox Setting",
+    "create_compact_transmission:modern_injector": "Injector",
+    "create_compact_transmission:modern_injector.already_installed": "Injector is already installed on this engine",
+    "create_compact_transmission:modern_injector.tooltip": "Reduces TFMG engine fuel consumption by 25%"
+  },
+  "blocks": {
+    "create_compact_transmission:co2_scrubber": "CO2 Scrubber",
+    "create_compact_transmission:compact_speed_regulator": "Compact Speed Regulator",
+    "create_compact_transmission:four_speed_transmission": "Sequential Gearbox",
+    "create_compact_transmission:rotator": "Rotator",
+    "create_compact_transmission:smart_speed_doubler": "Smart Speed Doubler",
+    "create_compact_transmission:speed_compact_changer": "Compact Speed Changer with Clutch",
+    "create_compact_transmission:speed_doubler": "Compact Speed Changer"
+  },
+  "entities": {}
+}

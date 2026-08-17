@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:magic_resist_tier_8"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

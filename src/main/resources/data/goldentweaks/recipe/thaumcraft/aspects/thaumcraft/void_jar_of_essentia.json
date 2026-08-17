@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:void_jar_of_essentia"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

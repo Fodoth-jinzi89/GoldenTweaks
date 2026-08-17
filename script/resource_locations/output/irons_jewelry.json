@@ -1,0 +1,21 @@
+{
+  "items": {
+    "irons_jewelry:garnet": "Garnet",
+    "irons_jewelry:invalid_jewelry": "Invalid Jewelry",
+    "irons_jewelry:jewelcrafting_guide": "Jewelcrafting and You",
+    "irons_jewelry:jewelcrafting_guide.description": "Guide to Gems 'n Jewelry",
+    "irons_jewelry:moonstone": "Moonstone",
+    "irons_jewelry:necklace": "Necklace",
+    "irons_jewelry:onyx": "Onyx",
+    "irons_jewelry:peridot": "Peridot",
+    "irons_jewelry:recipe": "Artisan Scroll",
+    "irons_jewelry:ring": "Ring",
+    "irons_jewelry:ruby": "Ruby",
+    "irons_jewelry:sapphire": "Sapphire",
+    "irons_jewelry:topaz": "Topaz"
+  },
+  "blocks": {
+    "irons_jewelry:jewelcrafting_station": "Jewelcrafting Station"
+  },
+  "entities": {}
+}

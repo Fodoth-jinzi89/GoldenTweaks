@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:gem_lamp_inverted"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "lucrum": 3,
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:augment_lifedrain_legendary"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

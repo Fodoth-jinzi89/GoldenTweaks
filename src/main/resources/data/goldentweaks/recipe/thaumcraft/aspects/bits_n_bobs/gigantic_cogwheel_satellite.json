@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bits_n_bobs:gigantic_cogwheel_satellite"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

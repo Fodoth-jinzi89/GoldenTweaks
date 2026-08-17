@@ -1,0 +1,9 @@
+{
+  "items": {
+    "create_cc:basic_integrated_circuit": "Basic Integrated Circuit",
+    "create_cc:integrated_circuit": "Integrated Circuit",
+    "create_cc:lapis_sheet": "Lapis Sheet"
+  },
+  "blocks": {},
+  "entities": {}
+}

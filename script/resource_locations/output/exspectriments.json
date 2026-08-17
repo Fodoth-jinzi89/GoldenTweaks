@@ -1,0 +1,26 @@
+{
+  "items": {
+    "exspectriments:hostile_approximator": "Hostile Approximator",
+    "exspectriments:lab_coat": "Lab Coat",
+    "exspectriments:lab_coat_cmy": "Chromatologist's Lab Coat",
+    "exspectriments:lab_coat_cmy_tail": "Chromatologist's Lab Coat (Tailed)",
+    "exspectriments:lab_coat_rose": "Thornatologist's Blackcoat",
+    "exspectriments:lab_coat_rose_tail": "Thornatologist's Blackcoat (Tailed)",
+    "exspectriments:lab_coat_tail": "Lab Coat (Tailed)",
+    "exspectriments:liquid_amethyst_bucket": "Liquid Amethyst Bucket",
+    "exspectriments:liquid_citrine_bucket": "Liquid Citrine Bucket",
+    "exspectriments:liquid_moonstone_bucket": "Liquid Moonstone Bucket",
+    "exspectriments:liquid_onyx_bucket": "Liquid Onyx Bucket",
+    "exspectriments:liquid_topaz_bucket": "Liquid Topaz Bucket"
+  },
+  "blocks": {
+    "exspectriments:liquid_amethyst": "Liquid Amethyst",
+    "exspectriments:liquid_citrine": "Liquid Citrine",
+    "exspectriments:liquid_moonstone": "Liquid Moonstone",
+    "exspectriments:liquid_onyx": "Liquid Onyx",
+    "exspectriments:liquid_topaz": "Liquid Topaz",
+    "exspectriments:pigment_extractor": "Pigment Extractor",
+    "exspectriments:printer": "Printer"
+  },
+  "entities": {}
+}

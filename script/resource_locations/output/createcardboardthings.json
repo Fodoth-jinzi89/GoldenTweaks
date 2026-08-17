@@ -1,0 +1,17 @@
+{
+  "items": {
+    "createcardboardthings:cardboard_arrow": "Cardboard Arrow",
+    "createcardboardthings:cardboard_ball": "Cardboard Ball",
+    "createcardboardthings:cardboard_elytra": "Cardboard Elytra",
+    "createcardboardthings:cardboard_ingot": "Cardboard Ingot",
+    "createcardboardthings:cardboard_pickaxe": "Cardboard Pickaxe",
+    "createcardboardthings:cardboard_rocket": "Cardboard Rocket",
+    "createcardboardthings:cardboard_saddle": "Cardboard Saddle",
+    "createcardboardthings:cardboard_shears": "Cardboard Shears",
+    "createcardboardthings:cardboard_totem": "Cardboard Totem"
+  },
+  "blocks": {},
+  "entities": {
+    "createcardboardthings:cardboard_arrow": "Cardboard Arrow"
+  }
+}

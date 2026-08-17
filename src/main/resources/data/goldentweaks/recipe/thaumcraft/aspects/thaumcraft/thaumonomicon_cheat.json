@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:thaumonomicon_cheat"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

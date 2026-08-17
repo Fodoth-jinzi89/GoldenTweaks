@@ -1,0 +1,8 @@
+{
+  "items": {
+    "silentlib:lootContainer.itemReceived": "Received: %dx %s",
+    "silentlib:lootContainer.table": "Loot Table: %s"
+  },
+  "blocks": {},
+  "entities": {}
+}

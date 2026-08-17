@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:shadow_jester_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

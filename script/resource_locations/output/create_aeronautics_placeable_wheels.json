@@ -1,0 +1,10 @@
+{
+  "items": {},
+  "blocks": {
+    "create_aeronautics_placeable_wheels:large_tire": "Large Tire",
+    "create_aeronautics_placeable_wheels:monstrous_tire": "Monstrous Tire",
+    "create_aeronautics_placeable_wheels:small_tire": "Small Tire",
+    "create_aeronautics_placeable_wheels:tire": "Tire"
+  },
+  "entities": {}
+}

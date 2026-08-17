@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:dye_depot_olive_dye"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "machina": 2,
+    "sensus": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "examplemod:example_item"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

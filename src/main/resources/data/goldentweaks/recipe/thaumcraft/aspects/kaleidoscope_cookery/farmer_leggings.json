@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:farmer_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "messis": 3,
+    "victus": 3,
+    "fames": 2,
+    "machina": 2
+  }
+}

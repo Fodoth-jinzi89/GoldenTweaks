@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:muramasa"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

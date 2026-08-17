@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cuisinedelight:vegetable_platter"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

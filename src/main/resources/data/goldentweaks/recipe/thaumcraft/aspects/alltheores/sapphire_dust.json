@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:sapphire_dust"
+  },
+  "aspects": {
+    "vitreus": 2
+  }
+}

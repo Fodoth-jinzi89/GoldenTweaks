@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:mossy_black_sand"
+  },
+  "aspects": {
+    "herba": 3,
+    "terra": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "kaleidoscope_cookery:scarecrow"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

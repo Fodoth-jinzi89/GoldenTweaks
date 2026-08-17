@@ -1,0 +1,32 @@
+{
+  "items": {
+    "sg_tracks:track_block_tuning_tool": "Block Track Tuning Tool",
+    "sg_tracks:track_size_tool": "Large Tool",
+    "sg_tracks:track_stiffness_tool": "Point Tool",
+    "sg_tracks:track_tuning_tool": "Track Tuning Tool",
+    "sg_tracks:track_tuning_tool.mode": "Mode: %s",
+    "sg_tracks:track_tuning_tool.mode.position": "Track Position",
+    "sg_tracks:track_tuning_tool.mode.reset": "Reset",
+    "sg_tracks:track_tuning_tool.mode.size": "Wheel Size",
+    "sg_tracks:track_tuning_tool.mode.stiffness": "Suspension Stiffness",
+    "sg_tracks:track_tuning_tool.mode.track_width": "Track Width",
+    "sg_tracks:track_tuning_tool.mode.wheel_width": "Wheel Width",
+    "sg_tracks:track_tuning_tool.mode.width": "Track Width",
+    "sg_tracks:track_tuning_tool.reset.done": "Reset",
+    "sg_tracks:track_tuning_tool.size.huge": "Huge",
+    "sg_tracks:track_tuning_tool.size.large": "Large",
+    "sg_tracks:track_tuning_tool.size.medium": "Medium",
+    "sg_tracks:track_tuning_tool.size.small": "Small",
+    "sg_tracks:track_tuning_tool.tuned": "%s: %s",
+    "sg_tracks:track_tuning_tool.width.huge": "Huge",
+    "sg_tracks:track_tuning_tool.width.medium": "Medium",
+    "sg_tracks:track_tuning_tool.width.narrow": "Narrow",
+    "sg_tracks:track_tuning_tool.width.normal": "Normal",
+    "sg_tracks:track_tuning_tool.width.wide": "Wide"
+  },
+  "blocks": {
+    "sg_tracks:suspension_track": "Idler Track",
+    "sg_tracks:track_drive_wheel": "Drive Track"
+  },
+  "entities": {}
+}

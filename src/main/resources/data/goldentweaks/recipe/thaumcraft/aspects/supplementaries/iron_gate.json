@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:iron_gate"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

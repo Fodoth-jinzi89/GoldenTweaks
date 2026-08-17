@@ -1,0 +1,9 @@
+{
+  "items": {
+    "touhou_lost_maid:example_item": "Example Item"
+  },
+  "blocks": {
+    "touhou_lost_maid:example_block": "Example Block"
+  },
+  "entities": {}
+}

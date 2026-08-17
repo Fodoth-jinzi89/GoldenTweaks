@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_end_steel_bucket"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

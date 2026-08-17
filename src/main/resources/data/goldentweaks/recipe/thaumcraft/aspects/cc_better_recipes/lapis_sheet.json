@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cc_better_recipes:lapis_sheet"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

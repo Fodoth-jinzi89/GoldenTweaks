@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:raw_tin_block_9x"
+  },
+  "aspects": {
+    "metallum": 10,
+    "dense": 18
+  }
+}

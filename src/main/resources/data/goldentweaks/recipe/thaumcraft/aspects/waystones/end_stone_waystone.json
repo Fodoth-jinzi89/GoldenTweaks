@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "waystones:end_stone_waystone"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 3,
+    "saxum": 3
+  }
+}

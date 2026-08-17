@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:singularity_stew"
+  },
+  "aspects": {
+    "singularity": 6,
+    "alienis": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

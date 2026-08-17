@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:necromancer_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "mortuus": 3
+  }
+}

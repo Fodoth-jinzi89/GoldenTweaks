@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:wired_modem"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

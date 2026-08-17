@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:lunar_phase_instrument"
+  },
+  "aspects": {
+    "space": 3
+  }
+}

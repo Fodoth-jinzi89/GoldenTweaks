@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:blood_orb_of_armok"
+  },
+  "aspects": {
+    "corpus": 3
+  }
+}

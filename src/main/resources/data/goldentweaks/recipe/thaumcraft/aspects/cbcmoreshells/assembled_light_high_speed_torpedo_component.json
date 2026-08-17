@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:assembled_light_high_speed_torpedo_component"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "machina": 2
+  }
+}

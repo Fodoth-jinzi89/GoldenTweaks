@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:diamond_shard"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:crystaltine_block"
+  },
+  "aspects": {
+    "metallum": 3,
+    "vitreus": 3
+  }
+}

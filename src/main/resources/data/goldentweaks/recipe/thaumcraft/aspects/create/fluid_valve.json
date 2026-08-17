@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:fluid_valve"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:crimson_blood_phial"
+  },
+  "aspects": {
+    "arbor": 3,
+    "corpus": 3
+  }
+}

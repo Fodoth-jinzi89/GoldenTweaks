@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "tunes_n_tomes:red_ball"
+  },
+  "aspects": {
+    "sonus": 4,
+    "praecantatio": 3,
+    "aer": 2
+  }
+}

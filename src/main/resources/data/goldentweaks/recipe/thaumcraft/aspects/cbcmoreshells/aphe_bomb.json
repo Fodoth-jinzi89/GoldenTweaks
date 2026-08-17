@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:aphe_bomb"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

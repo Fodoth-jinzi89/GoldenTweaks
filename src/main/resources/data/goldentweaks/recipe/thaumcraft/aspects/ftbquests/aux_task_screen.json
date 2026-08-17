@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ftbquests:aux_task_screen"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

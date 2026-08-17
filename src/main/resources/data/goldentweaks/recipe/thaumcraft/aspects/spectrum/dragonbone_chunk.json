@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:dragonbone_chunk"
+  },
+  "aspects": {
+    "mortuus": 3
+  }
+}

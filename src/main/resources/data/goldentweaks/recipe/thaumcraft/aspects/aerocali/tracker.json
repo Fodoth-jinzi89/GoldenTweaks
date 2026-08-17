@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:tracker"
+  },
+  "aspects": {
+    "iter": 3,
+    "machina": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_blaze_bucket"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

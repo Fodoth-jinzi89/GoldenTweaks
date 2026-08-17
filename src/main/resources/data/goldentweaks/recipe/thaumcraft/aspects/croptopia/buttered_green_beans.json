@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:buttered_green_beans"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

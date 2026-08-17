@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:azuresque_dike_core"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

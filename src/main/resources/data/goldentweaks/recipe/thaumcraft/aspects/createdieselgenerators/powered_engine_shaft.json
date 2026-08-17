@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:powered_engine_shaft"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

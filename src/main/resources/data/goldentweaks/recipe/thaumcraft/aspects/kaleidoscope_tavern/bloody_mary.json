@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:bloody_mary"
+  },
+  "aspects": {
+    "corpus": 3
+  }
+}

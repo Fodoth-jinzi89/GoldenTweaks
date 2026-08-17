@@ -1,0 +1,32 @@
+{
+  "items": {
+    "cuisinedelight:fried_egg": "Fried Egg",
+    "cuisinedelight:fried_meat_and_melon": "Fried Meat and Melon",
+    "cuisinedelight:fried_mushroom": "Fried Mushroom",
+    "cuisinedelight:fried_pasta": "Fried Pasta",
+    "cuisinedelight:fried_rice": "Fried Rice",
+    "cuisinedelight:ham_fried_rice": "Ham Fried Rice",
+    "cuisinedelight:meat_fried_rice": "Meat Fried Rice",
+    "cuisinedelight:meat_pasta": "Meat Pasta",
+    "cuisinedelight:meat_platter": "Meat Platter",
+    "cuisinedelight:meat_with_seafood": "Meat with Seafood",
+    "cuisinedelight:meat_with_vegetables": "Meat with Vegetables",
+    "cuisinedelight:mixed_fried_rice": "Mixed Fried Rice",
+    "cuisinedelight:mixed_pasta": "Mixed Pasta",
+    "cuisinedelight:plate": "Plate",
+    "cuisinedelight:scrambled_egg_and_tomato": "Scrambled Egg and Tomato",
+    "cuisinedelight:seafood_fried_rice": "Seafood Fried Rice",
+    "cuisinedelight:seafood_pasta": "Seafood Pasta",
+    "cuisinedelight:seafood_platter": "Seafood Platter",
+    "cuisinedelight:seafood_with_vegetables": "Seafood with Vegetables",
+    "cuisinedelight:spatula": "Spatula",
+    "cuisinedelight:suspicious_mix": "Suspicious Mix",
+    "cuisinedelight:vegetable_fried_rice": "Vegetable Fried Rice",
+    "cuisinedelight:vegetable_pasta": "Vegetable Pasta",
+    "cuisinedelight:vegetable_platter": "Vegetable Platter"
+  },
+  "blocks": {
+    "cuisinedelight:cuisine_skillet": "Cuisine Skillet"
+  },
+  "entities": {}
+}

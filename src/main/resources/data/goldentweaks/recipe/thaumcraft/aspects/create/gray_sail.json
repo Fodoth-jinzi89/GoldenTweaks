@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:gray_sail"
+  },
+  "aspects": {
+    "aer": 3,
+    "motus": 3,
+    "machina": 2
+  }
+}

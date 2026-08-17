@@ -1,0 +1,32 @@
+{
+  "items": {
+    "createmoderntech:ai_core": "AI Core - Material",
+    "createmoderntech:beacon_compass": "Beacon Compass"
+  },
+  "blocks": {
+    "createmoderntech:ai_core_block": "AI Core",
+    "createmoderntech:audio_trigger": "Audio Trigger",
+    "createmoderntech:beacon_controller": "Beacon Controller",
+    "createmoderntech:lens_10x": "Lens - 10X",
+    "createmoderntech:lens_16x": "Lens - 16X",
+    "createmoderntech:lens_1x": "Lens - 1X",
+    "createmoderntech:lens_2x": "Lens - 2X",
+    "createmoderntech:lens_4x": "Lens - 4X",
+    "createmoderntech:lens_extension": "Lens Extension",
+    "createmoderntech:light_boost_filter": "Light Boost Filter",
+    "createmoderntech:lime_color_filter": "Lime Color Filter",
+    "createmoderntech:pan_x_controller": "Volume Pan X Controller",
+    "createmoderntech:pan_z_controller": "Volume Pan Z Controller",
+    "createmoderntech:pitch_controller": "Volume Pitch Controller",
+    "createmoderntech:purple_color_filter": "Purple Color Filter",
+    "createmoderntech:red_color_filter": "Red Color Filter",
+    "createmoderntech:regional_stress_gauge": "Regional Stress Gauge",
+    "createmoderntech:speaker": "Speaker",
+    "createmoderntech:telephoto_extension": "Telephoto Extension",
+    "createmoderntech:volumetric_display": "Volumetric Display",
+    "createmoderntech:volumetric_shaft": "Volumetric Shaft",
+    "createmoderntech:white_color_filter": "White Color Filter",
+    "createmoderntech:yaw_controller": "Volume Yaw Controller"
+  },
+  "entities": {}
+}

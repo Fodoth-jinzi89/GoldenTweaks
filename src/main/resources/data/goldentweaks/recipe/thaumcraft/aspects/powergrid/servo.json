@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:servo"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

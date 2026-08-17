@@ -1,0 +1,8 @@
+{
+  "items": {},
+  "blocks": {
+    "packagedmekemicals:chemical_package_filler": "Chemical Package Filler",
+    "packagedmekemicals:chemical_package_filler.redstone": "Activate with redstone to start"
+  },
+  "entities": {}
+}

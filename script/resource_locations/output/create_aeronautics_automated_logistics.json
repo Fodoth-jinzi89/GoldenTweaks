@@ -1,0 +1,21 @@
+{
+  "items": {
+    "create_aeronautics_automated_logistics:airship_station": "Airship Station",
+    "create_aeronautics_automated_logistics:ship_transponder": "Ship Transponder"
+  },
+  "blocks": {
+    "create_aeronautics_automated_logistics:airship_station": "Airship Station",
+    "create_aeronautics_automated_logistics:airship_station.tooltip.behaviour1": "Outputs redstone while dock automation is active for this station.",
+    "create_aeronautics_automated_logistics:airship_station.tooltip.behaviour2": "Link a station dock if this station should support docking waits and dock automation.",
+    "create_aeronautics_automated_logistics:airship_station.tooltip.condition1": "Redstone Output",
+    "create_aeronautics_automated_logistics:airship_station.tooltip.condition2": "Docking",
+    "create_aeronautics_automated_logistics:airship_station.tooltip.summary": "Select a nearby ship, preview its recorded routes, and run or stop that ship from the station.",
+    "create_aeronautics_automated_logistics:ship_transponder": "Ship Transponder",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.behaviour1": "Outputs redstone while dock automation is active for this ship.",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.behaviour2": "Link a ship dock to support docking waits and docked automation.",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.condition1": "Redstone Output",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.condition2": "Docking",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.summary": "Owns this ship's stops, records new route segments, and runs the ship's route plan."
+  },
+  "entities": {}
+}

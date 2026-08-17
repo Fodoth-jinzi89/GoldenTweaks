@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "traveloptics:summoned_ender_golem"
+  },
+  "aspects": {
+    "bestia": 4,
+    "praecantatio": 4,
+    "alienis": 3,
+    "machina": 3,
+    "victus": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:polonium_containing_solution_bucket"
+  },
+  "aspects": {
+    "potentia": 4,
+    "aqua": 3,
+    "machina": 2,
+    "vitium": 2
+  }
+}

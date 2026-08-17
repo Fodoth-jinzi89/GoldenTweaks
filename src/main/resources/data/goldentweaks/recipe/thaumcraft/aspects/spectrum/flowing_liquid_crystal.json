@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:flowing_liquid_crystal"
+  },
+  "aspects": {
+    "aqua": 3,
+    "motus": 3,
+    "vitreus": 3,
+    "machina": 2,
+    "volatus": 2
+  }
+}

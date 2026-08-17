@@ -1,0 +1,16 @@
+{
+  "items": {},
+  "blocks": {
+    "cccbridge:animatronic_block": "Animatronic",
+    "cccbridge:animatronic_block.description": "§6Its facial expression as well as the whole body can be changed and positioned using a §eComputer§6.\n\n§7When pushing\n §6Applies the buffered §orotations§r§6 to the §eAnimatronic§6.",
+    "cccbridge:redrouter_block": "RedRouter Block",
+    "cccbridge:redrouter_block.description": "§6Can control §eRedstone§6 signals via the §oRedstone API§r§6.",
+    "cccbridge:scroller_block": "Scroller Pane",
+    "cccbridge:scroller_block.description": "§6Provides an interface to select a number. Can be read, controlled and manipulated with a §eComputer§6.",
+    "cccbridge:source_block": "Source Block",
+    "cccbridge:source_block.description": "§6Can mirror text to other §otargets§r§6 via a §eDisplay Link§6.\n\n§7When lamp flashes\n §6Transmits the currently buffered text to the §otarget§r§6.\n§7When resolution changes\n §6Queues an §oevent§r§6 to all connected §eComputers§6.",
+    "cccbridge:target_block": "Target Block",
+    "cccbridge:target_block.description": "§6Acts as an §otarget§r§6 to other §osources§r§6. §eComputer§6's can access all kinds of information from §eCreate§6 this way."
+  },
+  "entities": {}
+}

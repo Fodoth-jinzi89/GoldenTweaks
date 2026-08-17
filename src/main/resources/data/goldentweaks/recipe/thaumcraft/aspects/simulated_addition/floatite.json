@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "simulated_addition:floatite"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

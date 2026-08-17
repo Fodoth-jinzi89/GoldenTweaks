@@ -1,0 +1,9 @@
+{
+  "items": {
+    "aerocopycats:example_item": "Example Item"
+  },
+  "blocks": {
+    "aerocopycats:example_block": "Example Block"
+  },
+  "entities": {}
+}

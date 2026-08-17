@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "amendments:ceiling_banner"
+  },
+  "aspects": {
+    "pannus": 2
+  }
+}

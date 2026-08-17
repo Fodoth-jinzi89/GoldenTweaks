@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:frostbite_essence"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

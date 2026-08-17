@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:energy_burst"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

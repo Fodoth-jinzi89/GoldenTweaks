@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:bagel_filled_sauce"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "victus": 3,
+    "fames": 2,
+    "vas": 2
+  }
+}

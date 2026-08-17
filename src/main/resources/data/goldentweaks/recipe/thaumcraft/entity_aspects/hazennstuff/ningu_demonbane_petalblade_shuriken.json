@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:ningu_demonbane_petalblade_shuriken"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

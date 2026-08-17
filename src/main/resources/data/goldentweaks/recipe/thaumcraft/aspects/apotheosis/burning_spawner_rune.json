@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:burning_spawner_rune"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "ignis": 3
+  }
+}

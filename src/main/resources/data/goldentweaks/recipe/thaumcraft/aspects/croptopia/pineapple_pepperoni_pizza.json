@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:pineapple_pepperoni_pizza"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 2,
+    "messis": 2
+  }
+}

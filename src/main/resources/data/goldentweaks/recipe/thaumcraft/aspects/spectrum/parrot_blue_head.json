@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:parrot_blue_head"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

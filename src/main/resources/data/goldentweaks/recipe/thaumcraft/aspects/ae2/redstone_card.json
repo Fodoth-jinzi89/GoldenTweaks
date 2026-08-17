@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:redstone_card"
+  },
+  "aspects": {
+    "saxum": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:tofu_and_dumplings"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:warping_fertilizer"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {
+    "cc_better_recipes:basic_integrated_circuit": "Basic Integrated Circuit",
+    "cc_better_recipes:integrated_circuit": "Integrated Circuit",
+    "cc_better_recipes:lapis_sheet": "Lapis Sheet"
+  },
+  "blocks": {},
+  "entities": {}
+}

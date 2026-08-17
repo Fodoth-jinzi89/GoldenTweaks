@@ -1,0 +1,12 @@
+{
+  "items": {},
+  "blocks": {
+    "create_vehiclework:creative_axle": "Creative Axle",
+    "create_vehiclework:differential": "Differential",
+    "create_vehiclework:electric_axle": "Electric Axle",
+    "create_vehiclework:fuel_motor": "Speed Fuel Motor",
+    "create_vehiclework:soft_start_transmission": "Soft Start Transmission",
+    "create_vehiclework:toggle_clutch": "Toggle Clutch"
+  },
+  "entities": {}
+}

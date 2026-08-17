@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmoderntech:pan_x_controller"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

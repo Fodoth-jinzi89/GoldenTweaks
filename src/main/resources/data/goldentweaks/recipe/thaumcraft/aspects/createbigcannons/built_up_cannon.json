@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:built_up_cannon"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

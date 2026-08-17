@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:polished_cut_diorite_wall"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

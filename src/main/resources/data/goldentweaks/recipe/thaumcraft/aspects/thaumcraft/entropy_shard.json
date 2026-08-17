@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:entropy_shard"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

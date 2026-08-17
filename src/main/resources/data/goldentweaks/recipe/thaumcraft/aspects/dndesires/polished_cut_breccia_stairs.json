@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:polished_cut_breccia_stairs"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

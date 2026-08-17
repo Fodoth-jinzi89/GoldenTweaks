@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:harbingers_wrath_level_three"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

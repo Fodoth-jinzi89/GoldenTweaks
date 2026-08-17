@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:legionnaire_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

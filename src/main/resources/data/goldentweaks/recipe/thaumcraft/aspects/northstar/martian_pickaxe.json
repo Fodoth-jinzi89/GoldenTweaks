@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:martian_pickaxe"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3,
+    "space": 3
+  }
+}

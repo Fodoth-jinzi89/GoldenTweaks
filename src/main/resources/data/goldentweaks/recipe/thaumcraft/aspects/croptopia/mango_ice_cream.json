@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:mango_ice_cream"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

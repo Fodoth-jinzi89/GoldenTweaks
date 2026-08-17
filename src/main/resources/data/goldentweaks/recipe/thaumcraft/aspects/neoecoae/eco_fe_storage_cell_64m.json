@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:eco_fe_storage_cell_64m"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

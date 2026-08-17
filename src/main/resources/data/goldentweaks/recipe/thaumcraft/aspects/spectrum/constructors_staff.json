@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:constructors_staff"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

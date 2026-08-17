@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sampleintegration:pattern_expander"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:memory_fragment"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "praecantatio": 2
+  }
+}

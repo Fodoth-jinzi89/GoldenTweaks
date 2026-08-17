@@ -1,0 +1,9 @@
+{
+  "items": {
+    "kubejs_kaleidoscope:example_item": "Example Item"
+  },
+  "blocks": {
+    "kubejs_kaleidoscope:example_block": "Example Block"
+  },
+  "entities": {}
+}

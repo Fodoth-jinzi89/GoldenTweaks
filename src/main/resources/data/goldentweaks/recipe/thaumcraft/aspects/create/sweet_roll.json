@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:sweet_roll"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

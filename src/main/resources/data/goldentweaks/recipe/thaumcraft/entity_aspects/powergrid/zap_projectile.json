@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "powergrid:zap_projectile"
+  },
+  "aspects": {
+    "telum": 4,
+    "fulmen": 3,
+    "potentia": 2
+  }
+}

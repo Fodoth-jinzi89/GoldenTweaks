@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:suspicious_stir_fry"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

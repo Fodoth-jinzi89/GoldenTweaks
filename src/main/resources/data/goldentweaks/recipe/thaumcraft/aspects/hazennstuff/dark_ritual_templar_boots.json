@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:dark_ritual_templar_boots"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tutamen": 4
+  }
+}

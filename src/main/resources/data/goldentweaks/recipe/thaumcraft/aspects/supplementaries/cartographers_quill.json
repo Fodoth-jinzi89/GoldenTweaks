@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:cartographers_quill"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

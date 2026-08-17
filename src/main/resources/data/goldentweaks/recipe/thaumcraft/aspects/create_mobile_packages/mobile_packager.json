@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_mobile_packages:mobile_packager"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

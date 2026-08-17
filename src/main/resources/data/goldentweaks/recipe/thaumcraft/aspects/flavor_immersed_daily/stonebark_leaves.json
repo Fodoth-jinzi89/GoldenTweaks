@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:stonebark_leaves"
+  },
+  "aspects": {
+    "herba": 3,
+    "saxum": 3
+  }
+}

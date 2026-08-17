@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createframed:bound_white_cardboard_block"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

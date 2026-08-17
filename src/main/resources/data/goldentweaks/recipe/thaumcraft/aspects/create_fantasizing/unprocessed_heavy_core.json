@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:unprocessed_heavy_core"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:advanced_alchemical_furnace"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "ignis": 3
+  }
+}

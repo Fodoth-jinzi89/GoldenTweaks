@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:axolotl_gold_head"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

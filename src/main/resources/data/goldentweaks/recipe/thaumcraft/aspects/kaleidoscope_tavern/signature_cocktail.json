@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:signature_cocktail"
+  },
+  "aspects": {
+    "aqua": 2,
+    "fames": 2
+  }
+}

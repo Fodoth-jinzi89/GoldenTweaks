@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:waxed_exposed_copper_tiles"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3
+  }
+}

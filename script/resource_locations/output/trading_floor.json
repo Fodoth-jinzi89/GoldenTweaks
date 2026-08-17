@@ -1,0 +1,8 @@
+{
+  "items": {},
+  "blocks": {
+    "trading_floor:trading_depot": "Trading Depot",
+    "trading_floor:trading_depot.tooltip.summary": "Trade with Villagers, note that villagers will _only trade during normal working times of day_."
+  },
+  "entities": {}
+}

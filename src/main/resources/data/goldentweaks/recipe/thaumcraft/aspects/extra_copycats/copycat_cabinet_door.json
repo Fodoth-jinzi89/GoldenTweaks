@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extra_copycats:copycat_cabinet_door"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

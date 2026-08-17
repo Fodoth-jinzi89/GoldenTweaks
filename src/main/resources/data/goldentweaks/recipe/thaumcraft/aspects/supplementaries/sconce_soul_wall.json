@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:sconce_soul_wall"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

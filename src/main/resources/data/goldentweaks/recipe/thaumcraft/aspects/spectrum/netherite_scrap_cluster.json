@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:netherite_scrap_cluster"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

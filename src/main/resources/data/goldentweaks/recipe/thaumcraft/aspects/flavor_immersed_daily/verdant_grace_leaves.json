@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:verdant_grace_leaves"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

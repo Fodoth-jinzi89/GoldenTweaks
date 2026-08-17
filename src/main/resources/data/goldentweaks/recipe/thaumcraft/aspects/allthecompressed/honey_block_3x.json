@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:honey_block_3x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 6
+  }
+}

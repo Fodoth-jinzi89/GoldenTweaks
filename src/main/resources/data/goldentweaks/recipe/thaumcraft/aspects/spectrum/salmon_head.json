@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:salmon_head"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

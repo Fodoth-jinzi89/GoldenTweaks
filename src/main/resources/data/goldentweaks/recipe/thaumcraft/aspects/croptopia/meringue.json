@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:meringue"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

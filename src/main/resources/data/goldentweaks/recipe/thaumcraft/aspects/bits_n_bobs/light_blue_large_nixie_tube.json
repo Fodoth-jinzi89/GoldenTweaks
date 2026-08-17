@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bits_n_bobs:light_blue_large_nixie_tube"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

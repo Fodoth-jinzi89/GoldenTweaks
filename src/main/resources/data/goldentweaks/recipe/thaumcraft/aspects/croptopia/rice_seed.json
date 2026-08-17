@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:rice_seed"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "victus": 3,
+    "fames": 2,
+    "messis": 2
+  }
+}

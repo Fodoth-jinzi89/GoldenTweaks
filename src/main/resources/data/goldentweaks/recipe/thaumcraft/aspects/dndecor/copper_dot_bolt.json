@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:copper_dot_bolt"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

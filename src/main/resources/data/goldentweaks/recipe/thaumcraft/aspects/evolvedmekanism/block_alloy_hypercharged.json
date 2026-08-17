@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:block_alloy_hypercharged"
+  },
+  "aspects": {
+    "potentia": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:vanilla_ice_cream_bucket"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

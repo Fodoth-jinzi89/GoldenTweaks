@@ -1,0 +1,18 @@
+{
+  "items": {
+    "kaleidoscope_doll:doll_entity_item": "Doll",
+    "kaleidoscope_doll:doll_icon": "Kaleidoscope Doll",
+    "kaleidoscope_doll:tweaks_tool": "Tweaks Tool"
+  },
+  "blocks": {
+    "kaleidoscope_doll:computer": "Computer",
+    "kaleidoscope_doll:doll": "Doll",
+    "kaleidoscope_doll:doll_machine": "Doll Machine",
+    "kaleidoscope_doll:green_doll_gift_box": "Green Doll Gift Box",
+    "kaleidoscope_doll:purple_doll_gift_box": "Purple Doll Gift Box",
+    "kaleidoscope_doll:yellow_doll_gift_box": "Yellow Doll Gift Box"
+  },
+  "entities": {
+    "kaleidoscope_doll:doll": "Doll"
+  }
+}

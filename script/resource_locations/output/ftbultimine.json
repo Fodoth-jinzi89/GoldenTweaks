@@ -1,0 +1,8 @@
+{
+  "items": {
+    "ftbultimine:ultiminer": "Ultiminer",
+    "ftbultimine:ultiminer.tooltip": "Enables the use of %s when active"
+  },
+  "blocks": {},
+  "entities": {}
+}

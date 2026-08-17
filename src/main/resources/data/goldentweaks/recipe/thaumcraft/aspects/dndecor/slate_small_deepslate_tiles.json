@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:slate_small_deepslate_tiles"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3
+  }
+}

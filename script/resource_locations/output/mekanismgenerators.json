@@ -1,0 +1,42 @@
+{
+  "items": {
+    "mekanismgenerators:bioethanol_bucket": "Bioethanol Bucket",
+    "mekanismgenerators:deuterium_bucket": "Liquid Deuterium Bucket",
+    "mekanismgenerators:fusion_fuel_bucket": "Liquid D-T Fuel Bucket",
+    "mekanismgenerators:hohlraum": "Hohlraum",
+    "mekanismgenerators:solar_panel": "Solar Panel",
+    "mekanismgenerators:tritium_bucket": "Liquid Tritium Bucket",
+    "mekanismgenerators:turbine_blade": "Turbine Blade"
+  },
+  "blocks": {
+    "mekanismgenerators:advanced_solar_generator": "Advanced Solar Generator",
+    "mekanismgenerators:bio_generator": "Bio-Generator",
+    "mekanismgenerators:bioethanol": "Bioethanol",
+    "mekanismgenerators:control_rod_assembly": "Control Rod Assembly",
+    "mekanismgenerators:deuterium": "Liquid Deuterium",
+    "mekanismgenerators:electromagnetic_coil": "Electromagnetic Coil",
+    "mekanismgenerators:fission_fuel_assembly": "Fission Fuel Assembly",
+    "mekanismgenerators:fission_reactor_casing": "Fission Reactor Casing",
+    "mekanismgenerators:fission_reactor_logic_adapter": "Fission Reactor Logic Adapter",
+    "mekanismgenerators:fission_reactor_port": "Fission Reactor Port",
+    "mekanismgenerators:fusion_fuel": "Liquid D-T Fuel",
+    "mekanismgenerators:fusion_reactor_controller": "Fusion Reactor Controller",
+    "mekanismgenerators:fusion_reactor_frame": "Fusion Reactor Frame",
+    "mekanismgenerators:fusion_reactor_logic_adapter": "Fusion Reactor Logic Adapter",
+    "mekanismgenerators:fusion_reactor_port": "Fusion Reactor Port",
+    "mekanismgenerators:gas_burning_generator": "Gas-Burning Generator",
+    "mekanismgenerators:heat_generator": "Heat Generator",
+    "mekanismgenerators:laser_focus_matrix": "Laser Focus Matrix",
+    "mekanismgenerators:reactor_glass": "Reactor Glass",
+    "mekanismgenerators:rotational_complex": "Rotational Complex",
+    "mekanismgenerators:saturating_condenser": "Saturating Condenser",
+    "mekanismgenerators:solar_generator": "Solar Generator",
+    "mekanismgenerators:tritium": "Liquid Tritium",
+    "mekanismgenerators:turbine_casing": "Turbine Casing",
+    "mekanismgenerators:turbine_rotor": "Turbine Rotor",
+    "mekanismgenerators:turbine_valve": "Turbine Valve",
+    "mekanismgenerators:turbine_vent": "Turbine Vent",
+    "mekanismgenerators:wind_generator": "Wind Generator"
+  },
+  "entities": {}
+}

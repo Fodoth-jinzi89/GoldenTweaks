@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposure_expanded:flip_filter"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

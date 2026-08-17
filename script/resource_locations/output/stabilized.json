@@ -1,0 +1,12 @@
+{
+  "items": {},
+  "blocks": {
+    "stabilized:stabilizer_bearing": "Stabilizer Bearing",
+    "stabilized:stabilizer_bearing.tooltip.behaviour1": "Increase or Decrease the _Attached Contraption_'s offset angle.",
+    "stabilized:stabilizer_bearing.tooltip.behaviour2": "Reset the _Attached Contraption_'s offset angle to 0°.",
+    "stabilized:stabilizer_bearing.tooltip.condition1": "When Powered by Kinetics",
+    "stabilized:stabilizer_bearing.tooltip.condition2": "When Powered by Redstone",
+    "stabilized:stabilizer_bearing.tooltip.summary": "Automatically stabilizes a _Simulated Contraption_ along _one Axis_."
+  },
+  "entities": {}
+}

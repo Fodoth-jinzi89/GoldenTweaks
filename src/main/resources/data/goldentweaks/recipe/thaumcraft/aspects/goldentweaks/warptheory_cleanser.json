@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:warptheory_cleanser"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

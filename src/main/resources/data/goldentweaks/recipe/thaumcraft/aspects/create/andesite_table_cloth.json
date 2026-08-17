@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:andesite_table_cloth"
+  },
+  "aspects": {
+    "machina": 3,
+    "saxum": 3,
+    "pannus": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:dried_salt"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

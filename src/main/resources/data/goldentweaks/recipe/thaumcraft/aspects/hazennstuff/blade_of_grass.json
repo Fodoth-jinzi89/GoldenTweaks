@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:blade_of_grass"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

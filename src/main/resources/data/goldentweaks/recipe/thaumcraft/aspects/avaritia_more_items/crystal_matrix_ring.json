@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:crystal_matrix_ring"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "accessories": 3,
+    "terminus": 3
+  }
+}

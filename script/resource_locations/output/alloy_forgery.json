@@ -1,0 +1,12 @@
+{
+  "items": {},
+  "blocks": {
+    "alloy_forgery:polished_basalt_forge_controller": "Basalt Forge Controller",
+    "alloy_forgery:polished_blackslag_forge_controller": "Blackslag Forge Controller",
+    "alloy_forgery:polished_bone_ash_forge_controller": "Bone Ash Forge Controller",
+    "alloy_forgery:polished_calcite_forge_controller": "Calcite Forge Controller",
+    "alloy_forgery:polished_shale_clay_forge_controller": "Shale-Clay Forge Controller",
+    "alloy_forgery:pyrite_forge_controller": "Pyrite Forge Controller"
+  },
+  "entities": {}
+}

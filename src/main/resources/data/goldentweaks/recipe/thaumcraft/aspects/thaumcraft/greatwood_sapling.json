@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:greatwood_sapling"
+  },
+  "aspects": {
+    "arbor": 3,
+    "herba": 3,
+    "messis": 2
+  }
+}

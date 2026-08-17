@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:hammer_of_justice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:infinity_me_storage_cell_big"
+  },
+  "aspects": {
+    "terminus": 6,
+    "vacuos": 4,
+    "vas": 2
+  }
+}

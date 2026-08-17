@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:ice_wine"
+  },
+  "aspects": {
+    "gelum": 3,
+    "aqua": 2,
+    "fames": 2
+  }
+}

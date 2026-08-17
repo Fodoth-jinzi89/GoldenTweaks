@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "lzxnonefate:key"
+  },
+  "aspects": {
+    "iter": 2,
+    "vinculum": 2
+  }
+}

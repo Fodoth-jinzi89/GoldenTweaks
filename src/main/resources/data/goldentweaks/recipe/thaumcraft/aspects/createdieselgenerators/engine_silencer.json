@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:engine_silencer"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

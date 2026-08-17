@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:abyssal_tidecaller_level_three"
+  },
+  "aspects": {
+    "profundum": 3
+  }
+}

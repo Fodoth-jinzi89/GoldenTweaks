@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:light_gray_chiseled_preservation_stone"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

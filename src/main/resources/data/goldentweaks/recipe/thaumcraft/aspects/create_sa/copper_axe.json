@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:copper_axe"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3
+  }
+}

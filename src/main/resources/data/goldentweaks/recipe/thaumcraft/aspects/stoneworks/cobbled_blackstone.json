@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cobbled_blackstone"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

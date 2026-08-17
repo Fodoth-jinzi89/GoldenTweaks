@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:fire_crystal_cluster"
+  },
+  "aspects": {
+    "ignis": 3,
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:rich_soil"
+  },
+  "aspects": {
+    "potentia": 3,
+    "ignis": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {
+    "oelib:example_item": "Example Item"
+  },
+  "blocks": {
+    "oelib:example_block": "Example Block"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:computation_cooling_controller_l6"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

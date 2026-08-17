@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:dragon_breath_cauldron"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

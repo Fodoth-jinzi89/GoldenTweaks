@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:torpedo_detection_device"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "gelum": 3
+  }
+}

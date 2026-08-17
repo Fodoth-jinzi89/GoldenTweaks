@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:white_fox_scroll"
+  },
+  "aspects": {
+    "humanus": 3
+  }
+}

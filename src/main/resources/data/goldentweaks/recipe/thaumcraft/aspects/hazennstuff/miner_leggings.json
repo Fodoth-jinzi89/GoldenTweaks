@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:miner_leggings"
+  },
+  "aspects": {
+    "perfodio": 4,
+    "tutamen": 4,
+    "instrumentum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

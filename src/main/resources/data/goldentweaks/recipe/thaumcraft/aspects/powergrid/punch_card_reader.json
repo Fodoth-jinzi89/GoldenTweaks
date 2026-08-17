@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:punch_card_reader"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

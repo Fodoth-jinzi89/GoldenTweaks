@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:illager_workshop_map"
+  },
+  "aspects": {
+    "potentia": 3,
+    "ignis": 2
+  }
+}

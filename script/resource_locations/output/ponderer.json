@@ -1,0 +1,17 @@
+{
+  "items": {
+    "ponderer:blueprint": "Blueprint and Quill",
+    "ponderer:blueprint.abort": "Selection cleared",
+    "ponderer:blueprint.dimensions": "Dimensions: %sx%sx%s",
+    "ponderer:blueprint.end_set": "Second position set",
+    "ponderer:blueprint.no_target": "No target block",
+    "ponderer:blueprint.save_failed": "Blueprint: Save failed",
+    "ponderer:blueprint.saved": "Blueprint saved: %s",
+    "ponderer:blueprint.start_set": "First position set"
+  },
+  "blocks": {
+    "ponderer:life_size_projector": "Life-Size Projector",
+    "ponderer:miniature_projector": "Miniature Projector"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:azure_electrum_block"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

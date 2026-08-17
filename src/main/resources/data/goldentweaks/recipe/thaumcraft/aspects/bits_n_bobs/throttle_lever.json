@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bits_n_bobs:throttle_lever"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

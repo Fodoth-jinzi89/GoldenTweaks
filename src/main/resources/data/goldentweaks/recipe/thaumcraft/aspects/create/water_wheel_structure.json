@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:water_wheel_structure"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

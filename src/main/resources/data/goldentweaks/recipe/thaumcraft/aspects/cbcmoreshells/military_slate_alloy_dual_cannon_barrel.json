@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:military_slate_alloy_dual_cannon_barrel"
+  },
+  "aspects": {
+    "machina": 3,
+    "saxum": 3
+  }
+}

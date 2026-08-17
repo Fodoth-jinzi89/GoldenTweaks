@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:experience"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "potentia": 2
+  }
+}

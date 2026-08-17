@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:whipping_cream"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

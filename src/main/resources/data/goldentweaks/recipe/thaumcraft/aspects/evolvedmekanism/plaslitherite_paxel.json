@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:plaslitherite_paxel"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

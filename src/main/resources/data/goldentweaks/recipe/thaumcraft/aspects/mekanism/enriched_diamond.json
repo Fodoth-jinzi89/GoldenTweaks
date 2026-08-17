@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:enriched_diamond"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:heartsingers_reward"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

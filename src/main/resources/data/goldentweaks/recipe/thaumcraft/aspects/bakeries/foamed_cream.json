@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:foamed_cream"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

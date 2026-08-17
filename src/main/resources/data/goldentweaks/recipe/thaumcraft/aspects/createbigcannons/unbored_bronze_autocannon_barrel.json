@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:unbored_bronze_autocannon_barrel"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3,
+    "metallum": 3
+  }
+}

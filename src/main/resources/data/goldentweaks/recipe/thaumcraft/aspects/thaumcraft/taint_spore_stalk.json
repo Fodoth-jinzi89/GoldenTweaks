@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:taint_spore_stalk"
+  },
+  "aspects": {
+    "vitium": 3,
+    "tenebrae": 2
+  }
+}

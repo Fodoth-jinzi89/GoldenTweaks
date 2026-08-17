@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:lunar_sapphire_crystal"
+  },
+  "aspects": {
+    "space": 3,
+    "vitreus": 3
+  }
+}

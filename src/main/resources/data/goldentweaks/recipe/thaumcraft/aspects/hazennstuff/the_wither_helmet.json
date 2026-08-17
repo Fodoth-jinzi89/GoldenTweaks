@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:the_wither_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

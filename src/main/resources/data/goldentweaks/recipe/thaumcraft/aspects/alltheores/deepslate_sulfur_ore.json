@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:deepslate_sulfur_ore"
+  },
+  "aspects": {
+    "terra": 4,
+    "ignis": 3,
+    "saxum": 3,
+    "perditio": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:dyenamics_aquamarine_dye_bucket"
+  },
+  "aspects": {
+    "sensus": 2
+  }
+}

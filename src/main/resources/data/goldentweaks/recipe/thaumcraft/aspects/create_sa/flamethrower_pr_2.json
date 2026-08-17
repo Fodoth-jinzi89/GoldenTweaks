@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:flamethrower_pr_2"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

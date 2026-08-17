@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:moss_ball"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:dyenamics_ultramarine_dye"
+  },
+  "aspects": {
+    "sensus": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:large_andesite_chain"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

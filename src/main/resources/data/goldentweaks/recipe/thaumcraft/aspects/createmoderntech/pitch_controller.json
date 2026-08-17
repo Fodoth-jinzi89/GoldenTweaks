@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmoderntech:pitch_controller"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:arcane_relics"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

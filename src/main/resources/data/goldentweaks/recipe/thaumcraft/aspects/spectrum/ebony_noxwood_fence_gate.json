@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ebony_noxwood_fence_gate"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

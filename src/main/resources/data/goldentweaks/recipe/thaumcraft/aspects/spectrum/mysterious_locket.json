@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:mysterious_locket"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

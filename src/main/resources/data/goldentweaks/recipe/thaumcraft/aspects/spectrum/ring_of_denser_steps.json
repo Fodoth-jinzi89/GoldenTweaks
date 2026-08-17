@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ring_of_denser_steps"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

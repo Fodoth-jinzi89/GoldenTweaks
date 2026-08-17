@@ -1,0 +1,7 @@
+{
+  "items": {},
+  "blocks": {
+    "aeronautics:gyroscopic_propeller_bearing.tooltip.summary": "Attempts to align the sub-level to the negation of the gravity vector, _-g_."
+  },
+  "entities": {}
+}

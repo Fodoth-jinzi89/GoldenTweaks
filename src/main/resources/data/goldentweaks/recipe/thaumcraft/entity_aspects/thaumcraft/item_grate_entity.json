@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:item_grate_entity"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

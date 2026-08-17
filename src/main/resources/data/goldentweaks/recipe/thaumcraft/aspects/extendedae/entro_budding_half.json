@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:entro_budding_half"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

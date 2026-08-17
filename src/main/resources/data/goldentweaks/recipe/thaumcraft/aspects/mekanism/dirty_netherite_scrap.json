@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:dirty_netherite_scrap"
+  },
+  "aspects": {
+    "metallum": 3,
+    "terra": 3
+  }
+}

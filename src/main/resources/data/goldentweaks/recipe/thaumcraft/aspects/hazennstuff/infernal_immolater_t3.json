@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:infernal_immolater_t3"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {},
+  "blocks": {
+    "compactgearbox:compact_gearbox": "Manual Gearbox",
+    "compactgearbox:gearbox_controller": "Manual Gear Selector",
+    "compactgearbox:sequential_gearbox": "Sequential Gearbox"
+  },
+  "entities": {}
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:meatandvegetablefilling"
+  },
+  "aspects": {
+    "corpus": 3,
+    "fabrico": 3,
+    "machina": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

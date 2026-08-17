@@ -1,0 +1,12 @@
+{
+  "items": {
+    "sable_schematic_api:blueprint_tool": "Sable Blueprint Tool",
+    "sable_schematic_api:survival_blueprint": "Survival Blueprint"
+  },
+  "blocks": {
+    "sable_schematic_api:blueprint_budget": "Blueprint Budget",
+    "sable_schematic_api:blueprint_cannon": "Blueprint Cannon",
+    "sable_schematic_api:blueprint_table": "Blueprint Table"
+  },
+  "entities": {}
+}

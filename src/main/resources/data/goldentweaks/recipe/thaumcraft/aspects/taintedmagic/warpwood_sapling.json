@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:warpwood_sapling"
+  },
+  "aspects": {
+    "iter": 4,
+    "arbor": 3,
+    "herba": 3,
+    "alienis": 2,
+    "messis": 2
+  }
+}

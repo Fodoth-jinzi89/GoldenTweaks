@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:gold_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "metallum": 3,
+    "vas": 3
+  }
+}

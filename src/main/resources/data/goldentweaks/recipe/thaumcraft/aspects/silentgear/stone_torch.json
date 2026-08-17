@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:stone_torch"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

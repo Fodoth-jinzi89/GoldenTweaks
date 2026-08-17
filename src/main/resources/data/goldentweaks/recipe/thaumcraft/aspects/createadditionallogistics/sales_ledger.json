@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createadditionallogistics:sales_ledger"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

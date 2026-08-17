@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:lucky_foot"
+  },
+  "aspects": {
+    "praecantatio": 2
+  }
+}

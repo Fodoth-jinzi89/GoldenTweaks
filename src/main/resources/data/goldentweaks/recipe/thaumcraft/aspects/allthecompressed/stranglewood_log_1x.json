@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:stranglewood_log_1x"
+  },
+  "aspects": {
+    "arbor": 4,
+    "dense": 2
+  }
+}

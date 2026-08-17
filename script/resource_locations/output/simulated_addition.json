@@ -1,0 +1,32 @@
+{
+  "items": {},
+  "blocks": {
+    "simulated_addition:acacia_sail": "Acacia Sail",
+    "simulated_addition:acacia_symmetric_sail": "Acacia Symmetric Sail",
+    "simulated_addition:ballasite": "Ballasite",
+    "simulated_addition:bamboo_sail": "Bamboo Sail",
+    "simulated_addition:bamboo_symmetric_sail": "Bamboo Symmetric Sail",
+    "simulated_addition:birch_sail": "Birch Sail",
+    "simulated_addition:birch_symmetric_sail": "Birch Symmetric Sail",
+    "simulated_addition:cherry_sail": "Cherry Sail",
+    "simulated_addition:cherry_symmetric_sail": "Cherry Symmetric Sail",
+    "simulated_addition:crimson_sail": "Crimson Sail",
+    "simulated_addition:crimson_symmetric_sail": "Crimson Symmetric Sail",
+    "simulated_addition:dark_oak_sail": "Dark Oak Sail",
+    "simulated_addition:dark_oak_symmetric_sail": "Dark Oak Symmetric Sail",
+    "simulated_addition:directional_gyroscopic_propeller_bearing": "Directional Gyroscopic Propeller Bearing",
+    "simulated_addition:directional_propeller_bearing": "Directional Propeller Bearing",
+    "simulated_addition:floatite": "Floatite",
+    "simulated_addition:jungle_sail": "Jungle Sail",
+    "simulated_addition:jungle_symmetric_sail": "Jungle Symmetric Sail",
+    "simulated_addition:mangrove_sail": "Mangrove Sail",
+    "simulated_addition:mangrove_symmetric_sail": "Mangrove Symmetric Sail",
+    "simulated_addition:oak_sail": "Oak Sail",
+    "simulated_addition:oak_symmetric_sail": "Oak Symmetric Sail",
+    "simulated_addition:spruce_sail": "Spruce Sail",
+    "simulated_addition:spruce_symmetric_sail": "Spruce Symmetric Sail",
+    "simulated_addition:warped_sail": "Warped Sail",
+    "simulated_addition:warped_symmetric_sail": "Warped Symmetric Sail"
+  },
+  "entities": {}
+}

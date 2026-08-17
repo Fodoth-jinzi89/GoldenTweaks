@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:rocket_station"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "iter": 3,
+    "space": 3
+  }
+}

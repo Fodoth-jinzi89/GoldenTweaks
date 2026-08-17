@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:mermaids_brush"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "lootr:lootr_shulker"
+  },
+  "aspects": {
+    "lucrum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:end_stone_tiles"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

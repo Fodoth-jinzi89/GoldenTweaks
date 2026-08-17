@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:berry_bread"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

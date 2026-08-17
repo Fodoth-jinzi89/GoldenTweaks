@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:blaze_totem"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:void_shovel"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

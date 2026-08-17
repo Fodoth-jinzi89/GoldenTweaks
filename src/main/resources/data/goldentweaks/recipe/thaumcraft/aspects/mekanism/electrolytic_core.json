@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:electrolytic_core"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

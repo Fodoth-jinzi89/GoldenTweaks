@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:vial_of_extraction"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

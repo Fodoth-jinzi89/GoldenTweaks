@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:dyenamics_spring_green_dye"
+  },
+  "aspects": {
+    "accessories": 3,
+    "sensus": 2
+  }
+}

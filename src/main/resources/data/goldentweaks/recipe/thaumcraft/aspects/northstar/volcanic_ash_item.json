@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:volcanic_ash_item"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2
+  }
+}

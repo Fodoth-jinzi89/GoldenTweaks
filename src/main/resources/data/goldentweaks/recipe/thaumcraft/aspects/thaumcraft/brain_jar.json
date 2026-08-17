@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:brain_jar"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

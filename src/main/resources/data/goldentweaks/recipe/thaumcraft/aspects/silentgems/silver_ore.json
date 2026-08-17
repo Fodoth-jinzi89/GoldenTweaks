@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:silver_ore"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

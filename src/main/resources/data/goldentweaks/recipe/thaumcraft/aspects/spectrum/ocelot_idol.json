@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ocelot_idol"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

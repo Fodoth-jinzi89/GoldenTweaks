@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:bountiful_harvest"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

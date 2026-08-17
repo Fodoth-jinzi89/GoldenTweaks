@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:crystal_matrix_wire_cutter"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "terminus": 3,
+    "machina": 2
+  }
+}

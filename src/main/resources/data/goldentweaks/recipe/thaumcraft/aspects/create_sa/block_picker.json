@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:block_picker"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

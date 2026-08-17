@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:firefly_swarm"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "ignis": 3
+  }
+}

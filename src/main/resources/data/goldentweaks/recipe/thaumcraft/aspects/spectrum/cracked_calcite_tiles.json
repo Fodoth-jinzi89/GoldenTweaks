@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:cracked_calcite_tiles"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

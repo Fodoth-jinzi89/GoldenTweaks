@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:thermal_evaporation_block"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

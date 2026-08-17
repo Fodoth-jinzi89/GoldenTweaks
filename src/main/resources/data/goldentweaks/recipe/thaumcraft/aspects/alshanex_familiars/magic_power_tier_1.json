@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:magic_power_tier_1"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "potentia": 3
+  }
+}

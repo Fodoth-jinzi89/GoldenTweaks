@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createoreexcavation:raw_diamond"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

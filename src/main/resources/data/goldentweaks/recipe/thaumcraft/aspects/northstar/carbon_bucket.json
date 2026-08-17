@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:carbon_bucket"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

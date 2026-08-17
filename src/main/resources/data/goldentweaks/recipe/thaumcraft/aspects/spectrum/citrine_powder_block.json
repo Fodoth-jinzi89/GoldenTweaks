@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:citrine_powder_block"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

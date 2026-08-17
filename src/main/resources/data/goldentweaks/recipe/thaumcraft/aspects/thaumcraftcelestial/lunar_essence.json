@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:lunar_essence"
+  },
+  "aspects": {
+    "space": 3
+  }
+}

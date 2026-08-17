@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_tournament:six_way_spinner"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

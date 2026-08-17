@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:martian_steel_space_suit_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "metallum": 3,
+    "space": 3
+  }
+}

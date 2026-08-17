@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedbackpacks:battery_upgrade"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

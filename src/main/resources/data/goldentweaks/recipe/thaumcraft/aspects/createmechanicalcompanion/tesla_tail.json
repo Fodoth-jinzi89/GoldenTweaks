@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:tesla_tail"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

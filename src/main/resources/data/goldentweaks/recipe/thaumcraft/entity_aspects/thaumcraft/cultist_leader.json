@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:cultist_leader"
+  },
+  "aspects": {
+    "bestia": 4,
+    "arbor": 3,
+    "metallum": 3,
+    "victus": 3
+  }
+}

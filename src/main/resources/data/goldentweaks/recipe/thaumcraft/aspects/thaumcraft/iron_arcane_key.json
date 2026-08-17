@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:iron_arcane_key"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "metallum": 3
+  }
+}

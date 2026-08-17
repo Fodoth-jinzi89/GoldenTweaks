@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:maroon_postbox"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

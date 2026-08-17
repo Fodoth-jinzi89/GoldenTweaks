@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeroworks:control_desk"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

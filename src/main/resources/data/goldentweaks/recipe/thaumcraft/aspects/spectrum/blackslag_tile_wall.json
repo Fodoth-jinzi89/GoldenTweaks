@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blackslag_tile_wall"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

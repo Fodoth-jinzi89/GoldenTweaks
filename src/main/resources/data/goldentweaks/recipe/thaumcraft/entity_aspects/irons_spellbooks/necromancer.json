@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:necromancer"
+  },
+  "aspects": {
+    "bestia": 4,
+    "mortuus": 3,
+    "victus": 3
+  }
+}

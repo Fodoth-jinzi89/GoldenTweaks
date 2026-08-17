@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "lootr:trophy"
+  },
+  "aspects": {
+    "treasure": 3,
+    "lucrum": 2
+  }
+}

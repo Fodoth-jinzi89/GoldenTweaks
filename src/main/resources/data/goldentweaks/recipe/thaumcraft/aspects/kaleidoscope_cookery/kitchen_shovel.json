@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:kitchen_shovel"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

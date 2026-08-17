@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:demon_tea"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

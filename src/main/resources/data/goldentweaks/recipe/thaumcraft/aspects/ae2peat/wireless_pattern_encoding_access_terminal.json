@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2peat:wireless_pattern_encoding_access_terminal"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "aer": 2,
+    "iter": 2,
+    "machina": 2
+  }
+}

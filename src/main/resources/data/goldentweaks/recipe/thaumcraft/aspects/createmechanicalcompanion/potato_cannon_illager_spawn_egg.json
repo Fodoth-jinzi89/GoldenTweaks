@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:potato_cannon_illager_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "machina": 3,
+    "vinculum": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:light_gray_concrete_2x"
+  },
+  "aspects": {
+    "substance": 5,
+    "dense": 4
+  }
+}

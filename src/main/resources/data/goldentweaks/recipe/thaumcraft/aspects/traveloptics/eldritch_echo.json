@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:eldritch_echo"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

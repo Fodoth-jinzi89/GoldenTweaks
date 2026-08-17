@@ -1,0 +1,33 @@
+{
+  "items": {
+    "aces_spell_utils:example_ap_magic_sword": "Darkpulse",
+    "aces_spell_utils:example_ap_magic_sword.desc": "Passive Darkpulse",
+    "aces_spell_utils:example_ap_magic_sword.desc2": "Active Darkpulse",
+    "aces_spell_utils:example_ap_sword": "Night Edge",
+    "aces_spell_utils:example_ap_sword.desc": "Passive Night Edge",
+    "aces_spell_utils:example_ap_sword.desc2": "Active Night Edge",
+    "aces_spell_utils:example_curio": "Skull Pendant",
+    "aces_spell_utils:example_curio.desc": "A pendant that radiates with death",
+    "aces_spell_utils:example_gun": "Boltripper Plasma-Rifle",
+    "aces_spell_utils:example_gun.desc": "Passive Boltripper",
+    "aces_spell_utils:example_gun.desc2": "Active Boltripper",
+    "aces_spell_utils:example_imbue_curio": "Burning Core",
+    "aces_spell_utils:example_imbue_curio.desc": "A strange object, hot to the touch",
+    "aces_spell_utils:example_imbue_staff": "Forsaken Staff",
+    "aces_spell_utils:example_loot_bag": "Echo of Tyros Loot Bag",
+    "aces_spell_utils:example_loot_bag.desc": "Contains loot from Echo of Tyros, First Flamebearer",
+    "aces_spell_utils:example_passive_ability_spellbook": "Cosmonomicon",
+    "aces_spell_utils:example_passive_ability_spellbook.desc": "On hit, summon a comet from above the entity's head",
+    "aces_spell_utils:example_sheath": "Silver Sheath",
+    "aces_spell_utils:example_sheath.desc": "On hit, summon a comet from above the entity's head",
+    "aces_spell_utils:example_staff": "Silver Staff",
+    "aces_spell_utils:heavy_gun_info": "This is a heavy gun; can only right-click cast when in mainhand",
+    "aces_spell_utils:light_gun_info": "This is a light gun; can also right-click cast in offhand",
+    "aces_spell_utils:more_details1": "Press [SHIFT] for passive ability",
+    "aces_spell_utils:more_details2": "Press [ALT] for active ability"
+  },
+  "blocks": {},
+  "entities": {
+    "aces_spell_utils:test_boss": "Test Boss"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createprism:train_illumination_casing"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

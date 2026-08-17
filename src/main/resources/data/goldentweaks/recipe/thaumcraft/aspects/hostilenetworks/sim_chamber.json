@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hostilenetworks:sim_chamber"
+  },
+  "aspects": {
+    "cognitio": 4
+  }
+}

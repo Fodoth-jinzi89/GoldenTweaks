@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:artichoke_dip"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

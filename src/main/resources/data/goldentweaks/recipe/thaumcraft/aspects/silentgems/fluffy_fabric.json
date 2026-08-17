@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:fluffy_fabric"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

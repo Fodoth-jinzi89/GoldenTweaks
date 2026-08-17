@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alloy_forgery:polished_blackslag_forge_controller"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 3
+  }
+}

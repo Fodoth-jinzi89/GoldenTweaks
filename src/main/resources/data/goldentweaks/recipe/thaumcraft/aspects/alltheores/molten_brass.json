@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:molten_brass"
+  },
+  "aspects": {
+    "ignis": 3,
+    "metallum": 3
+  }
+}

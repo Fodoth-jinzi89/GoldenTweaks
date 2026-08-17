@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_sawing_factory"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "instrumentum": 4,
+    "motus": 3,
+    "perditio": 3,
+    "machina": 2,
+    "volatus": 2
+  }
+}

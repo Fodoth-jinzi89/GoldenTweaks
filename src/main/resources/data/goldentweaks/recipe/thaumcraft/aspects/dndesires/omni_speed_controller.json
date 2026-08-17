@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:omni_speed_controller"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

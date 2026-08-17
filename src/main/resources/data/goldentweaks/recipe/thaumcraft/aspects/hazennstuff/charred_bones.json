@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:charred_bones"
+  },
+  "aspects": {
+    "mortuus": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:stir_fried_pork_with_peppers"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 2,
+    "messis": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "densemekanism:dense_lead_ore"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3
+  }
+}

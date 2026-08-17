@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:glowworm_silk_strand"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

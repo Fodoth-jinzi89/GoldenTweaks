@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismadvancedgenerators:big_ultimate_solar_generator"
+  },
+  "aspects": {
+    "terminus": 5,
+    "potentia": 4,
+    "lux": 3,
+    "machina": 3
+  }
+}

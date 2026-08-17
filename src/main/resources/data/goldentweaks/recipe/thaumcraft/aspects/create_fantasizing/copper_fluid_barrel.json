@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:copper_fluid_barrel"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3
+  }
+}

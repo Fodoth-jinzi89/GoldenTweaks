@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:cookedchickenwing"
+  },
+  "aspects": {
+    "motus": 3,
+    "victus": 3,
+    "fames": 2,
+    "volatus": 2
+  }
+}

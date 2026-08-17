@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:autoloader_crossbow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

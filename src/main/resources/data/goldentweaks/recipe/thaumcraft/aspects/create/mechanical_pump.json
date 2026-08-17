@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:mechanical_pump"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

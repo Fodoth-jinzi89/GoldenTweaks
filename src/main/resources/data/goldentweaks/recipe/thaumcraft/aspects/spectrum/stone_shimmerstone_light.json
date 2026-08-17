@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:stone_shimmerstone_light"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

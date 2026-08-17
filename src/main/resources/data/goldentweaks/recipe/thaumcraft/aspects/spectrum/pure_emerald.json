@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pure_emerald"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

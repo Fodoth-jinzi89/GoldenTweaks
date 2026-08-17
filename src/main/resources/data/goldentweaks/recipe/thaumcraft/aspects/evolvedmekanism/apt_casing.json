@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:apt_casing"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:blood_scribing_tools"
+  },
+  "aspects": {
+    "corpus": 3,
+    "instrumentum": 3
+  }
+}

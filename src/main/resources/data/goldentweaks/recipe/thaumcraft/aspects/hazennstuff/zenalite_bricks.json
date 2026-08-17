@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:zenalite_bricks"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

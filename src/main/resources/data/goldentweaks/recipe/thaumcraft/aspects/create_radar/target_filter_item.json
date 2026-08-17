@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_radar:target_filter_item"
+  },
+  "aspects": {
+    "metallum": 3,
+    "sensus": 3
+  }
+}

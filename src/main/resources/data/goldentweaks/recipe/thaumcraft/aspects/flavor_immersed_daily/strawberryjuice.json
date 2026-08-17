@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:strawberryjuice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:nickel_ore"
+  },
+  "aspects": {
+    "metallum": 3,
+    "terra": 3,
+    "perfodio": 2
+  }
+}

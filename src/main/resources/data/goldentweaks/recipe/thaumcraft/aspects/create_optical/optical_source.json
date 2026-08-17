@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_optical:optical_source"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2
+  }
+}

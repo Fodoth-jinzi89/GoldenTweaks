@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:exposed_copper_shingle_slab"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

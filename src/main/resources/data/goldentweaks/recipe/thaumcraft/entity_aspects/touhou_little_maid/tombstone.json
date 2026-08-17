@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "touhou_little_maid:tombstone"
+  },
+  "aspects": {
+    "bestia": 4,
+    "saxum": 3,
+    "victus": 3
+  }
+}

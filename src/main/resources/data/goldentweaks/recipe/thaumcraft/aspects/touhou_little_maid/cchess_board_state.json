@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:cchess_board_state"
+  },
+  "aspects": {
+    "humanus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "items": {
+    "ftbfiltersystem:smart_filter": "Smart Filter",
+    "ftbfiltersystem:smart_filter.tooltip.1": "Right-click: configure filter",
+    "ftbfiltersystem:smart_filter.tooltip.2": "Sneak + Right-click: Test filter with item in off hand"
+  },
+  "blocks": {},
+  "entities": {}
+}

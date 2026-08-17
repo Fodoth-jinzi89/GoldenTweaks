@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ferocious_glass_crest_bident"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

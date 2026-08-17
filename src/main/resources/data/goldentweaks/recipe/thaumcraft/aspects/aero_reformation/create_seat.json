@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:create_seat"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

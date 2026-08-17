@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:crystal_iron"
+  },
+  "aspects": {
+    "metallum": 3,
+    "vitreus": 3
+  }
+}

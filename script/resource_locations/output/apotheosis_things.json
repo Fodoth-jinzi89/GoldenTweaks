@@ -1,0 +1,17 @@
+{
+  "items": {
+    "apotheosis_things:salvaging_charm": "Salvaging Charm",
+    "apotheosis_things:salvaging_charm.desc.1": "Automatically salvaging gear you pick up (if this gear can be salvaging)",
+    "apotheosis_things:salvaging_charm.desc.2": "Doesn't salvaging gems or gear you've worn or held",
+    "apotheosis_things:salvaging_charm.desc.3": "Combine with Rarity Material on the Anvil to set the highest rarity that can be automatically salvaging",
+    "apotheosis_things:salvaging_charm.desc.4": "Current: salvaging gear of rarity of %s and below",
+    "apotheosis_things:transfer_charm": "Transfer Charm",
+    "apotheosis_things:transfer_charm.desc.1": "Automatically transfer the gems or enchanted books you pick up to the Gem Case or Library",
+    "apotheosis_things:transfer_charm.desc.2": "Hold this item and sneak and right-click on the Gem Case or Library to bind it",
+    "apotheosis_things:transfer_charm.ench_library": "Library Location: %s",
+    "apotheosis_things:transfer_charm.gem_case": "Gem Case Location: %s",
+    "apotheosis_things:transfer_charm.non": "Non"
+  },
+  "blocks": {},
+  "entities": {}
+}

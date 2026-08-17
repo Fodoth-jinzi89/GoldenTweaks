@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:creeper_head"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

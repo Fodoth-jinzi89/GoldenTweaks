@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "linearbearing:bubble_gum_block"
+  },
+  "aspects": {
+    "adhaesio": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:jadestone_bricks"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

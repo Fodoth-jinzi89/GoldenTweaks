@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:tortilla"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_leader_plate_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "arbor": 3,
+    "iter": 3,
+    "metallum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

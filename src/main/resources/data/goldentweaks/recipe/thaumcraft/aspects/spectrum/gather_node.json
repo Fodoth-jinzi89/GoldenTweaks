@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:gather_node"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

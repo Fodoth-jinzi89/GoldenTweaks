@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:chocolate_glazed_berries"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

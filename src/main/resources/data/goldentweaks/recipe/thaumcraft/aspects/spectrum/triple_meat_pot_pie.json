@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:triple_meat_pot_pie"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

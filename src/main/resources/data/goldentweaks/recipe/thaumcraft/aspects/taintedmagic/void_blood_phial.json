@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:void_blood_phial"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "corpus": 3
+  }
+}

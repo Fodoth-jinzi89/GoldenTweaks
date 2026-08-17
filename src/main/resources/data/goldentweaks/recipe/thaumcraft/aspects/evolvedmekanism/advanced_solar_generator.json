@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:advanced_solar_generator"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

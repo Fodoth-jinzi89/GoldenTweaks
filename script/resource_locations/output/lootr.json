@@ -1,0 +1,18 @@
+{
+  "items": {},
+  "blocks": {
+    "lootr:decorated_pot": "Decorated Loot Pot",
+    "lootr:lootr_barrel": "Loot Barrel",
+    "lootr:lootr_chest": "Loot Chest",
+    "lootr:lootr_inventory": "Loot Chest",
+    "lootr:lootr_shulker": "Loot Shulker",
+    "lootr:lootr_trapped_chest": "Loot Chest",
+    "lootr:suspicious_gravel": "Gravel",
+    "lootr:suspicious_sand": "Sand",
+    "lootr:trophy": "Centennial Trophy"
+  },
+  "entities": {
+    "lootr:item_frame": "Item Frame with Loot",
+    "lootr:lootr_minecart": "Minecart with Loot Chest"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:moss_block_3x"
+  },
+  "aspects": {
+    "herba": 8,
+    "dense": 6
+  }
+}

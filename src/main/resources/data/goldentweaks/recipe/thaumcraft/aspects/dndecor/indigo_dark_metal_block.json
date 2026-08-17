@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:indigo_dark_metal_block"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

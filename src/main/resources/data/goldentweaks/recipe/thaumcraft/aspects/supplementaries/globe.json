@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:globe"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

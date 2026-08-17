@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:dormant_deepshelf"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3,
+    "profundum": 3
+  }
+}

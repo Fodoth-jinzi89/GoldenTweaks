@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:grapevine_trellis"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2
+  }
+}

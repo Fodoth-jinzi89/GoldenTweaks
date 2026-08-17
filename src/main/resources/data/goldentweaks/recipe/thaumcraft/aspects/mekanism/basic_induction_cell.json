@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:basic_induction_cell"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:horse_idol"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

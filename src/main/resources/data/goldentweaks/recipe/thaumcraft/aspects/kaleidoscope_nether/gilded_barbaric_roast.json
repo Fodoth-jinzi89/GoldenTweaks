@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:gilded_barbaric_roast"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

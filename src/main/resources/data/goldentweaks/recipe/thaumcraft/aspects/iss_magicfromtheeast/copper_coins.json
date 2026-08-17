@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:copper_coins"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:brass_gear"
+  },
+  "aspects": {
+    "metallum": 3,
+    "machina": 2
+  }
+}

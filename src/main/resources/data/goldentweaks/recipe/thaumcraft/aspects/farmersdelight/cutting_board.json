@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:cutting_board"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

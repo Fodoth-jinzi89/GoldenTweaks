@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:netherward_tincture"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

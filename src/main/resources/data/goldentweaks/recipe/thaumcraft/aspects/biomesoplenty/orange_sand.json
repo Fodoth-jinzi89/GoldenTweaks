@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:orange_sand"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

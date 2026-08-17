@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_dragons_plus:dyenamics_lavender_dye_bucket"
+  },
+  "aspects": {
+    "alienis": 3,
+    "sensus": 2
+  }
+}

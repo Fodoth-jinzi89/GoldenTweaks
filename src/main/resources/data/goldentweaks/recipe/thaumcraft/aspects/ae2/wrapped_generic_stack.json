@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:wrapped_generic_stack"
+  },
+  "aspects": {
+    "machina": 3,
+    "ordo": 2
+  }
+}

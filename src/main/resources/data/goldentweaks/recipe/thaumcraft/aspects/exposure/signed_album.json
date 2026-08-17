@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposure:signed_album"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

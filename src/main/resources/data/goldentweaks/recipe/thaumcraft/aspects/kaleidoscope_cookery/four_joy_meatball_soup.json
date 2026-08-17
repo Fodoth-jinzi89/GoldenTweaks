@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:four_joy_meatball_soup"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

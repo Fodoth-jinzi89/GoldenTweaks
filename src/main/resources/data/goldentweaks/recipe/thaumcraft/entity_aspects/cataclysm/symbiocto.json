@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:symbiocto"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

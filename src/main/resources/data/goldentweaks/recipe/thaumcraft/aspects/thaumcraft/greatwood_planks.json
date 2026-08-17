@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:greatwood_planks"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

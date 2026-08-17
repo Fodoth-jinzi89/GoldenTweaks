@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:dark_metal_brick_stairs"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

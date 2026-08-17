@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:nightdew_sprout"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

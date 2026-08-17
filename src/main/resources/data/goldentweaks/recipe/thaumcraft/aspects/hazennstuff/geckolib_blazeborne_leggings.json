@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_blazeborne_leggings"
+  },
+  "aspects": {
+    "ardor": 4,
+    "tutamen": 4,
+    "ignis": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

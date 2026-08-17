@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:astronomical_reading"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "space": 3
+  }
+}

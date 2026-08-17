@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:item_grate"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

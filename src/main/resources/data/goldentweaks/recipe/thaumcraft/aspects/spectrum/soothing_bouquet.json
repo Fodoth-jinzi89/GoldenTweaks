@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:soothing_bouquet"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

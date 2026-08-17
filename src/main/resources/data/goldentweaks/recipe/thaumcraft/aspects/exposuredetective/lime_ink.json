@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposuredetective:lime_ink"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

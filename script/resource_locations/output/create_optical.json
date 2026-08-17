@@ -1,0 +1,34 @@
+{
+  "items": {
+    "create_optical:copper_coil": "Copper Coil",
+    "create_optical:golden_coil": "Golden Coil",
+    "create_optical:incomplete_copper_coil": "Incomplete Copper Coil",
+    "create_optical:incomplete_golden_coil": "Incomplete Golden Coil",
+    "create_optical:incomplete_mirror": "Incomplete Mirror",
+    "create_optical:incomplete_optical_device": "Incomplete Optical Device",
+    "create_optical:incomplete_polarizing_filter": "Incomplete Polarizing Filter",
+    "create_optical:incomplete_rose_quartz_catalyst_coil": "Incomplete Rose Quartz Catalyst Coil",
+    "create_optical:incomplete_zinc_coil": "Incomplete Zinc Coil",
+    "create_optical:mirror": "Mirror",
+    "create_optical:optical_device": "Optical Device",
+    "create_optical:polarizing_filter": "Polarizing Filter",
+    "create_optical:rose_quartz_catalyst_coil": "Rose Quartz Catalyst Coil",
+    "create_optical:zinc_coil": "Zinc Coil"
+  },
+  "blocks": {
+    "create_optical:absorption_polarizing_filter": "Absorption Polarizing Filter",
+    "create_optical:beam_condenser": "Beam Condenser",
+    "create_optical:beam_focuser": "Beam Focuser",
+    "create_optical:beam_modulator": "Beam Modulator",
+    "create_optical:beam_reader": "Beam Reader",
+    "create_optical:encased_mirror": "Encased Mirror",
+    "create_optical:heavy_optical_receptor": "Heavy Optical Receptor",
+    "create_optical:hologram_source": "Hologram Source",
+    "create_optical:optical_receptor": "Optical Receptor",
+    "create_optical:optical_sensor": "Optical Sensor",
+    "create_optical:optical_source": "Optical Source",
+    "create_optical:polarizing_beam_splitter_block": "Polarizing Beam Splitter Block",
+    "create_optical:thermal_optical_source": "Thermal Optical Source"
+  },
+  "entities": {}
+}

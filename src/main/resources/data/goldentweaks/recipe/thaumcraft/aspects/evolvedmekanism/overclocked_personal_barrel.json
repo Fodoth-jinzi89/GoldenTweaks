@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:overclocked_personal_barrel"
+  },
+  "aspects": {
+    "machina": 3,
+    "tempus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:turtle_normal"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3
+  }
+}

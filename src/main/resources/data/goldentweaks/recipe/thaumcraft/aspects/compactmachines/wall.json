@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "compactmachines:wall"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

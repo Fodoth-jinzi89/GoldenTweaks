@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:augment_riftcore_mythic"
+  },
+  "aspects": {
+    "terminus": 6,
+    "fabrico": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_patreon_lib:transmog_table"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 3
+  }
+}

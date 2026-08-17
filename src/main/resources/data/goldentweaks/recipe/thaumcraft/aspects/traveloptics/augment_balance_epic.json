@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:augment_balance_epic"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

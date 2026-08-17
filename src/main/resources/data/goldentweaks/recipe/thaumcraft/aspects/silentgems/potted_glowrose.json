@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:potted_glowrose"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

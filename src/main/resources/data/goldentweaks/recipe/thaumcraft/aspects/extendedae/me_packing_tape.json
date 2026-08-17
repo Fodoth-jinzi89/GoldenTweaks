@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:me_packing_tape"
+  },
+  "aspects": {
+    "machina": 3,
+    "cognitio": 2
+  }
+}

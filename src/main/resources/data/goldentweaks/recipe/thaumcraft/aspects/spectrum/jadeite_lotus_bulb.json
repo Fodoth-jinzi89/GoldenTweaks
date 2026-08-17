@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:jadeite_lotus_bulb"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

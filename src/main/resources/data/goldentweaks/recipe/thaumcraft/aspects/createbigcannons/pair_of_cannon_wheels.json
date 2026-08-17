@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:pair_of_cannon_wheels"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:dried_cocoa_nibs"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

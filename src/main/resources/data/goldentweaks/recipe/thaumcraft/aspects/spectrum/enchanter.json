@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:enchanter"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4
+  }
+}

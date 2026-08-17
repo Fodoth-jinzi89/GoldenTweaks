@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pyrite_slab"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

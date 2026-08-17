@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:life_fruit_tier_2"
+  },
+  "aspects": {
+    "metallum": 3,
+    "victus": 3,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedauto:package_component"
+  },
+  "aspects": {
+    "vas": 3,
+    "machina": 2
+  }
+}

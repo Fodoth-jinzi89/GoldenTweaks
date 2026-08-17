@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:golem_upgrade_fire"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 2
+  }
+}

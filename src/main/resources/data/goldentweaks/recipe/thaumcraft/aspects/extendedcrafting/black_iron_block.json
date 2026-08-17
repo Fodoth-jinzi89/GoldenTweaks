@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:black_iron_block"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:crafting_worker"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

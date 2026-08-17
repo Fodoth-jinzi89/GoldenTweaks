@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:prismarine_cluster"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

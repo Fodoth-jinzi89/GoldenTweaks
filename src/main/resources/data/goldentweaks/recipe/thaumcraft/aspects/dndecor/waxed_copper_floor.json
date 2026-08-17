@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:waxed_copper_floor"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "instrumentum": 3,
+    "metallum": 3
+  }
+}

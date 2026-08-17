@@ -1,0 +1,39 @@
+{
+  "items": {
+    "steampowered:bronze_sheet": "Bronze Sheet",
+    "steampowered:cast_iron_ingot": "Cast Iron Ingot",
+    "steampowered:cast_iron_sheet": "Cast Iron Sheet",
+    "steampowered:pressurized_gas_container": "Pressurized Gas Container",
+    "steampowered:pressurized_steam_container": "Pressurized Steam Container",
+    "steampowered:steam_bucket": "Steam Bucket",
+    "steampowered:steel_ingot": "Steel Ingot",
+    "steampowered:steel_sheet": "Steel Sheet"
+  },
+  "blocks": {
+    "steampowered:alternator": "Alternating Dynamo",
+    "steampowered:brass_flywheel": "Brass Flywheel",
+    "steampowered:bronze_boiler": "Bronze Boiler",
+    "steampowered:bronze_burner": "Bronze Burning Chamber",
+    "steampowered:bronze_cogwheel": "Bronze Cogwheel",
+    "steampowered:bronze_flywheel": "Bronze Flywheel",
+    "steampowered:bronze_large_cogwheel": "Bronze Large Cogwheel",
+    "steampowered:bronze_steam_engine": "Bronze Steam Engine",
+    "steampowered:cast_iron_boiler": "Cast Iron Boiler",
+    "steampowered:cast_iron_burner": "Cast Iron Burning Chamber",
+    "steampowered:cast_iron_cogwheel": "Cast Iron Cogwheel",
+    "steampowered:cast_iron_flywheel": "Cast Iron Flywheel",
+    "steampowered:cast_iron_large_cogwheel": "Cast Iron Large Cogwheel",
+    "steampowered:cast_iron_steam_engine": "Cast Iron Steam Engine",
+    "steampowered:furnace_engine": "Furnace Engine",
+    "steampowered:steam": "Steam",
+    "steampowered:steam_flow": "Steam",
+    "steampowered:steam_still": "Steam",
+    "steampowered:steel_boiler": "Steel Boiler",
+    "steampowered:steel_burner": "Steel Burning Chamber",
+    "steampowered:steel_cogwheel": "Steel Cogwheel",
+    "steampowered:steel_flywheel": "Steel Flywheel",
+    "steampowered:steel_large_cogwheel": "Steel Large Cogwheel",
+    "steampowered:steel_steam_engine": "Steel Steam Engine"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:eldritch_rune"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "synaxis:cimulink_luacuit"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

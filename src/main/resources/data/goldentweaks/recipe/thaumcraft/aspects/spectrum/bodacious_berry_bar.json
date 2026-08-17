@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bodacious_berry_bar"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

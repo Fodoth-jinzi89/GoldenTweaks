@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:egg_shell"
+  },
+  "aspects": {
+    "telum": 4,
+    "victus": 3,
+    "fames": 2
+  }
+}

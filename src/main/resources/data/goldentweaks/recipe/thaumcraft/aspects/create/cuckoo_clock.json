@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:cuckoo_clock"
+  },
+  "aspects": {
+    "tempus": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:ice_chunk_a"
+  },
+  "aspects": {
+    "bestia": 4,
+    "gelum": 3,
+    "victus": 3
+  }
+}

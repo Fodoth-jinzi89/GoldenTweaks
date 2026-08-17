@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "interiors:red_chair"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:diamond_upgrade_smithing_template"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "vitreus": 3,
+    "machina": 2,
+    "praecantatio": 2
+  }
+}

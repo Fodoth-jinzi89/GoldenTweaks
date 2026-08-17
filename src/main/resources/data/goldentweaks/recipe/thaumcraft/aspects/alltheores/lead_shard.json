@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:lead_shard"
+  },
+  "aspects": {
+    "metallum": 2
+  }
+}

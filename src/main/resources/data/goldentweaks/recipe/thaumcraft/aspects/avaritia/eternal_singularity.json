@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:eternal_singularity"
+  },
+  "aspects": {
+    "singularity": 6,
+    "alienis": 3
+  }
+}

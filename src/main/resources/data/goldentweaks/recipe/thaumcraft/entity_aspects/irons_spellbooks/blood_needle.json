@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:blood_needle"
+  },
+  "aspects": {
+    "bestia": 4,
+    "corpus": 3,
+    "victus": 3
+  }
+}

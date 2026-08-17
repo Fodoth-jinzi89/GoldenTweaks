@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_doll:tweaks_tool"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_rolling_mill_factory"
+  },
+  "aspects": {
+    "cosmic": 6
+  }
+}

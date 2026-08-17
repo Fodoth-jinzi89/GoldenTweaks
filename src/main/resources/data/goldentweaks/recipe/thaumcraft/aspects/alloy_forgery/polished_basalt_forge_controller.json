@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alloy_forgery:polished_basalt_forge_controller"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 3,
+    "saxum": 3
+  }
+}

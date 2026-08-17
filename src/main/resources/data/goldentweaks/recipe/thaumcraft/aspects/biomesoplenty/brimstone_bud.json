@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:brimstone_bud"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

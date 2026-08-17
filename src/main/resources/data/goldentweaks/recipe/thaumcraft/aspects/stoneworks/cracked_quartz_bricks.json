@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cracked_quartz_bricks"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:lesser_spell_slot_upgrade"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

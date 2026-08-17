@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:end_cinnabar_ore"
+  },
+  "aspects": {
+    "terra": 3,
+    "perfodio": 2,
+    "venenum": 2,
+    "vitreus": 2
+  }
+}

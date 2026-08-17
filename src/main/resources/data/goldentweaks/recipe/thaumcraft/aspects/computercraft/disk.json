@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:disk"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3
+  }
+}

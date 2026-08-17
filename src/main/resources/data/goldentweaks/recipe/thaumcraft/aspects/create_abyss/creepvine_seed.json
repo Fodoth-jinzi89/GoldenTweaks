@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_abyss:creepvine_seed"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

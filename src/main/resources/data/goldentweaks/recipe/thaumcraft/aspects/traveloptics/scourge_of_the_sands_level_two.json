@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:scourge_of_the_sands_level_two"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

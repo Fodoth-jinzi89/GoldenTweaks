@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ccbr:basic_integrated_circuit"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

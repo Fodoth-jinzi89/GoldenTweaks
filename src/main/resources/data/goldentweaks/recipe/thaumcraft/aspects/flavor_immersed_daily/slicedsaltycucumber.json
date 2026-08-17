@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:slicedsaltycucumber"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "messis": 2
+  }
+}

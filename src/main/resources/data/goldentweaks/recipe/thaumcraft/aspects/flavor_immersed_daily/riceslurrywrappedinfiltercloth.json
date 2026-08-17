@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:riceslurrywrappedinfiltercloth"
+  },
+  "aspects": {
+    "gelum": 3,
+    "sensus": 3,
+    "victus": 3,
+    "fames": 2,
+    "pannus": 2
+  }
+}

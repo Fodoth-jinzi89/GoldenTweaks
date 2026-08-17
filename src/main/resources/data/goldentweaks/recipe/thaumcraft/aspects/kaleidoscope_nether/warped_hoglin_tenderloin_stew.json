@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:warped_hoglin_tenderloin_stew"
+  },
+  "aspects": {
+    "alienis": 3,
+    "arbor": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

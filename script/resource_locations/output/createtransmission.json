@@ -1,0 +1,9 @@
+{
+  "items": {},
+  "blocks": {
+    "createtransmission:andesite_encased_transmission_chain": "Andesite Encased Transmission Chain",
+    "createtransmission:brass_encased_transmission_chain": "Brass Encased Transmission Chain",
+    "createtransmission:transmission_chain": "Transmission Chain"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:enderman_idol"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

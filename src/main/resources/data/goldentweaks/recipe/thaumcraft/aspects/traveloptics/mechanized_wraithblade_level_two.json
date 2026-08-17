@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:mechanized_wraithblade_level_two"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

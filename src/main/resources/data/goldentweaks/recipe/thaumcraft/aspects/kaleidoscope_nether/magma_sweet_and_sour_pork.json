@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:magma_sweet_and_sour_pork"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

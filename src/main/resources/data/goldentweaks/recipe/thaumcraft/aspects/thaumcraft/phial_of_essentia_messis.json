@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:phial_of_essentia_messis"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "herba": 3,
+    "messis": 3,
+    "machina": 2
+  }
+}

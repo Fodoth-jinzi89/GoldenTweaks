@@ -1,0 +1,9 @@
+{
+  "items": {
+    "tooltip:traveloptics.armor_cooldown": "Cooldown: %ss",
+    "tooltip:traveloptics.armor_ready": "Ability Ready!",
+    "tooltip:traveloptics.phantom_rage": "Phantom Rage: %s / %s"
+  },
+  "blocks": {},
+  "entities": {}
+}

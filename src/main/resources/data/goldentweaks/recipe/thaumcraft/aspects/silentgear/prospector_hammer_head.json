@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:prospector_hammer_head"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

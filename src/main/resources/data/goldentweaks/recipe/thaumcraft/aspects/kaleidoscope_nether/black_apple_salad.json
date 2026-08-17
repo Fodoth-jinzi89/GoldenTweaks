@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:black_apple_salad"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

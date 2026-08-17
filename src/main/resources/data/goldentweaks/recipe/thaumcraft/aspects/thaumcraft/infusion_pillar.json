@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:infusion_pillar"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "vitium": 2
+  }
+}

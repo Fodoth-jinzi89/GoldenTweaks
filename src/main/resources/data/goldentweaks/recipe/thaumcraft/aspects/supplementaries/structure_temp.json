@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:structure_temp"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

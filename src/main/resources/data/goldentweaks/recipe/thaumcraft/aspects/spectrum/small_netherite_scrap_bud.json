@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:small_netherite_scrap_bud"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:raw_lead"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

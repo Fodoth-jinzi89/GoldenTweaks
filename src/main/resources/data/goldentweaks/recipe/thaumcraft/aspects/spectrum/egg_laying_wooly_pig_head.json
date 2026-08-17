@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:egg_laying_wooly_pig_head"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

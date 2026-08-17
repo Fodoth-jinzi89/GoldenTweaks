@@ -1,0 +1,26 @@
+{
+  "items": {
+    "sable_tournament:gyro.tooltip1": "Horizontal Attitude Controller",
+    "sable_tournament:gyro.tooltip2": "Automatic stabilization for helicopters and drones",
+    "sable_tournament:gyro.tooltip3": "Redstone signal strength on top controls stabilization power",
+    "sable_tournament:six_way_spinner.tooltip1": "Six-Way Spinner System",
+    "sable_tournament:six_way_spinner.tooltip2": "Generates torque in both directions around X, Y, Z axis",
+    "sable_tournament:six_way_spinner.tooltip3": "Redstone signal strength controls torque magnitude. Configurable via NBT parameters",
+    "sable_tournament:six_way_thruster.tooltip1": "Six-Way Thruster System",
+    "sable_tournament:six_way_thruster.tooltip2": "Provides thrust in all six directions (+/-X, +/-Y, +/-Z)",
+    "sable_tournament:six_way_thruster.tooltip3": "Redstone signal strength controls thrust power. Configurable via NBT parameters",
+    "sable_tournament:tournament_flap.tooltip1": "Adjustable Aerodynamic Drag",
+    "sable_tournament:tournament_flap.tooltip2": "Creates drag force based on orientation and airflow",
+    "sable_tournament:tournament_flap.tooltip3": "Configurable drag coefficient via NBT. Must be placed perpendicular to airflow"
+  },
+  "blocks": {
+    "sable_tournament:explosive_instant_large": "Large Instant Explosive",
+    "sable_tournament:explosive_instant_medium": "Medium Instant Explosive",
+    "sable_tournament:explosive_instant_small": "Small Instant Explosive",
+    "sable_tournament:gyro": "Gyro",
+    "sable_tournament:six_way_spinner": "Six-Way Spinner",
+    "sable_tournament:six_way_thruster": "Six-Way Thruster",
+    "sable_tournament:tournament_flap": "Tournament Flap"
+  },
+  "entities": {}
+}

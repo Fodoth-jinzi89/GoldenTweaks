@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:mooshroom_red_head"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

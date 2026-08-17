@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:light_blue_slab"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

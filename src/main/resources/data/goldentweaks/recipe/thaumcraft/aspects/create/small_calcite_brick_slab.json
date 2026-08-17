@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:small_calcite_brick_slab"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

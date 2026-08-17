@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:pink_daffodil"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:earth_shard"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

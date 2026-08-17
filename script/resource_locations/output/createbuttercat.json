@@ -1,0 +1,18 @@
+{
+  "items": {
+    "createbuttercat:butter": "Butter",
+    "createbuttercat:cream_bucket": "Cream Bucket",
+    "createbuttercat:honey_butter": "Honey Butter",
+    "createbuttercat:incomplete_super_butter": "Incomplete Super Butter",
+    "createbuttercat:super_butter": "Super Butter"
+  },
+  "blocks": {
+    "createbuttercat:butter_block": "Butter Block",
+    "createbuttercat:butter_cat_engine": "Butter Cat Engine",
+    "createbuttercat:cream": "Cream",
+    "createbuttercat:honey_butter_block": "Honey Butter Block",
+    "createbuttercat:in_super_butter_block": "Incomplete Super Butter Block",
+    "createbuttercat:super_butter_block": "Super Butter Block"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:ancient_knowledge_fragment"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

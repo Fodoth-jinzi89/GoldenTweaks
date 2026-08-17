@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:andesite_girder_encased_shaft"
+  },
+  "aspects": {
+    "machina": 4,
+    "vacuos": 4,
+    "fabrico": 3,
+    "motus": 3,
+    "saxum": 3,
+    "vas": 2
+  }
+}

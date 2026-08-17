@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:chiseled_brimstone_bricks"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

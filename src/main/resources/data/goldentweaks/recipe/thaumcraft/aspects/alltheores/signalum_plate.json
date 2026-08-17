@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:signalum_plate"
+  },
+  "aspects": {
+    "metallum": 2
+  }
+}

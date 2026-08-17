@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:slate_cogwheel"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3,
+    "saxum": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:energy_addon_blaze_cube"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3,
+    "potentia": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_shield"
+  },
+  "aspects": {
+    "terminus": 6,
+    "tutamen": 4,
+    "terra": 3,
+    "machina": 2
+  }
+}

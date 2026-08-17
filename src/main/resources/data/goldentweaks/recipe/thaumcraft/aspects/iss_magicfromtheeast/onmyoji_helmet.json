@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:onmyoji_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

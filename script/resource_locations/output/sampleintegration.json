@@ -1,0 +1,9 @@
+{
+  "items": {
+    "sampleintegration:pattern_integrations": "Smart Pattern"
+  },
+  "blocks": {
+    "sampleintegration:pattern_expander": "Pattern Expander"
+  },
+  "entities": {}
+}

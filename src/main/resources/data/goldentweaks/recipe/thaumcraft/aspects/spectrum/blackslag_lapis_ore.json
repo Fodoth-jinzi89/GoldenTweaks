@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blackslag_lapis_ore"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

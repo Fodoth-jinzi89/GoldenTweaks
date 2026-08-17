@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:spear"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

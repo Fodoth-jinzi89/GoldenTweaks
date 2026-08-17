@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cinnabar_ore"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

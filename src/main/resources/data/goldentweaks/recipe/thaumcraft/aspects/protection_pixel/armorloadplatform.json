@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:armorloadplatform"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

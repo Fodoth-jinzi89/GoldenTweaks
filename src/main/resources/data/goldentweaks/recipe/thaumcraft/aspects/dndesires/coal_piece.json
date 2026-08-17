@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:coal_piece"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

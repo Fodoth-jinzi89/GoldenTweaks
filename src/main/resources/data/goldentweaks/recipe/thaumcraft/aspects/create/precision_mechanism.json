@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:precision_mechanism"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

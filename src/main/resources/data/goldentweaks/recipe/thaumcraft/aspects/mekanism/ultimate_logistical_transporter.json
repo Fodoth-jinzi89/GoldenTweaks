@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:ultimate_logistical_transporter"
+  },
+  "aspects": {
+    "terminus": 5,
+    "arbor": 3,
+    "permutatio": 3,
+    "machina": 2
+  }
+}

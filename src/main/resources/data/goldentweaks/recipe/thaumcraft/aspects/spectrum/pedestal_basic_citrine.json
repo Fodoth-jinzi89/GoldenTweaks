@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pedestal_basic_citrine"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

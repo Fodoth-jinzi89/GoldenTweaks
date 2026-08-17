@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:mars_tulip_seeds"
+  },
+  "aspects": {
+    "herba": 3,
+    "space": 3,
+    "messis": 2
+  }
+}

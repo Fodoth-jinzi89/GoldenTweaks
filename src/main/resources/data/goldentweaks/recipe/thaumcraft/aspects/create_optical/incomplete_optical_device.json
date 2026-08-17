@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_optical:incomplete_optical_device"
+  },
+  "aspects": {
+    "sensus": 4,
+    "gelum": 3,
+    "lux": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:creative_personal_barrel"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

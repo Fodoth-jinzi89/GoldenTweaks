@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:polished_bone_ash_slab"
+  },
+  "aspects": {
+    "mortuus": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:sawblade_grass"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "herba": 3,
+    "perditio": 3,
+    "machina": 2
+  }
+}

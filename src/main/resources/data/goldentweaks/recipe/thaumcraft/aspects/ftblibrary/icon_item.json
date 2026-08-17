@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ftblibrary:icon_item"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

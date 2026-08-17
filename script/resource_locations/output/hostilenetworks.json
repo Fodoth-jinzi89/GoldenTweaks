@@ -1,0 +1,30 @@
+{
+  "items": {
+    "hostilenetworks:blank_data_model": "Model Framework",
+    "hostilenetworks:data_model": "%s Data Model",
+    "hostilenetworks:deep_learner": "Deep Learner",
+    "hostilenetworks:end_prediction": "Generalized Ender Prediction",
+    "hostilenetworks:fab_directive": "Fabrication Directive",
+    "hostilenetworks:fab_directive.desc": "Stores selections from a Loot Fabricator",
+    "hostilenetworks:fab_directive.desc2": "Right-Click to copy, Shift-Right-Click to apply",
+    "hostilenetworks:nether_prediction": "Generalized Nether Prediction",
+    "hostilenetworks:overworld_prediction": "Generalized Overworld Prediction",
+    "hostilenetworks:prediction": "%s Prediction",
+    "hostilenetworks:prediction_matrix": "Prediction Matrix",
+    "hostilenetworks:twilight_prediction": "Generalized Twilight Prediction"
+  },
+  "blocks": {
+    "hostilenetworks:data_center": "Data Center",
+    "hostilenetworks:data_center.desc": "The peak of simulation! Runs up to 25 Data Models concurrently",
+    "hostilenetworks:data_center.desc2": "Requires a 7×7×7 hardened shell",
+    "hostilenetworks:data_center_io_port": "Data Center IO Port",
+    "hostilenetworks:data_center_io_port.desc": "Wired into a Data Center's shell",
+    "hostilenetworks:data_center_io_port.desc2": "Right-Click to switch modes",
+    "hostilenetworks:loot_fabricator": "Loot Fabricator",
+    "hostilenetworks:loot_fabricator.desc": "Materializes Predictions into real items",
+    "hostilenetworks:loot_fabricator.desc2": "A Fabrication Directive can clone its layout",
+    "hostilenetworks:sim_chamber": "Simulation Chamber",
+    "hostilenetworks:sim_chamber.desc": "Trains a Data Model through simulated combat"
+  },
+  "entities": {}
+}

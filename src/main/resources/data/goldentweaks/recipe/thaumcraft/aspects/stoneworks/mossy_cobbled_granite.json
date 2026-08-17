@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:mossy_cobbled_granite"
+  },
+  "aspects": {
+    "herba": 3,
+    "saxum": 3
+  }
+}

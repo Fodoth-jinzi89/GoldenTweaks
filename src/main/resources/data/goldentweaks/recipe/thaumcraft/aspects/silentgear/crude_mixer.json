@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:crude_mixer"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 2
+  }
+}

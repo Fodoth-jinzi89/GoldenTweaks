@@ -1,0 +1,47 @@
+{
+  "items": {
+    "avaritia_expand:blaze_boots": "Blaze Boots",
+    "avaritia_expand:blaze_chestplate": "Blaze Chestplate",
+    "avaritia_expand:blaze_helmet": "Blaze Helmet",
+    "avaritia_expand:blaze_leggings": "Blaze Leggings",
+    "avaritia_expand:blaze_portable_burner": "Blaze Portable Burner",
+    "avaritia_expand:blaze_totem": "Blaze Totem",
+    "avaritia_expand:blaze_wind_charge": "Blaze Sun Wind Charge",
+    "avaritia_expand:crystal_boots": "Crystal Matrix Boots",
+    "avaritia_expand:crystal_chestplate": "Crystal Matrix Chestplate",
+    "avaritia_expand:crystal_helmet": "Crystal Matrix Helmet",
+    "avaritia_expand:crystal_leggings": "Crystal Matrix Leggings",
+    "avaritia_expand:crystal_wind_charge": "Qi Control Wind Charge",
+    "avaritia_expand:infinity_book": "Infinity Book",
+    "avaritia_expand:infinity_bottle": "Infinity Bottle",
+    "avaritia_expand:infinity_shears": "Infinity Shears",
+    "avaritia_expand:neutron_axe": "Neutronium Axe",
+    "avaritia_expand:neutron_hoe": "Neutronium Hoe",
+    "avaritia_expand:neutron_mace": "Neutronium Mace",
+    "avaritia_expand:neutron_minecart": "Neutronium Minecart",
+    "avaritia_expand:neutron_mobile": "Neutronium Mobile",
+    "avaritia_expand:neutron_pickaxe": "Neutronium Pickaxe",
+    "avaritia_expand:neutron_shovel": "Neutronium Shovel",
+    "avaritia_expand:neutron_sword": "Neutronium Sword",
+    "avaritia_expand:neutron_wind_charge": "Neutronium Wind Charge",
+    "avaritia_expand:singularity_stew": "Singularity Stew",
+    "avaritia_expand:star": "Miniature Star",
+    "avaritia_expand:star_dessert": "Star Dessert",
+    "avaritia_expand:wither_star": "Wither Star",
+    "avaritia_expand:wither_totem": "Wither Totem"
+  },
+  "blocks": {
+    "avaritia_expand:crystal_rail": "Crystal Rail",
+    "avaritia_expand:infinity_tnt_block": "Infinity TNT",
+    "avaritia_expand:jeb_carpet": "Jeb_ Carpet",
+    "avaritia_expand:jeb_wool": "Jeb_ Wool",
+    "avaritia_expand:neutron_decompose": "Neutronium Decomposer"
+  },
+  "entities": {
+    "avaritia_expand:blaze_vindicator": "Blaze Vindicator",
+    "avaritia_expand:extreme_wither": "Extreme Wither",
+    "avaritia_expand:extreme_wither_skull": "Extreme Wither Skull",
+    "avaritia_expand:infinity_tnt_entity": "Infinity TNT",
+    "avaritia_expand:neutron_minecart": "Neutronium Minecart"
+  }
+}

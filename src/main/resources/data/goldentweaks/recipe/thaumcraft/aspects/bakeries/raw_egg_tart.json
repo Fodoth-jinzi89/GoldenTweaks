@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:raw_egg_tart"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

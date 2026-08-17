@@ -1,0 +1,9 @@
+{
+  "items": {
+    "create_computercraft_integration:basic_integrated_circuit": "Basic Integrated Circuit",
+    "create_computercraft_integration:integrated_circuit": "Integrated Circuit",
+    "create_computercraft_integration:lapis_sheet": "Lapis Sheet"
+  },
+  "blocks": {},
+  "entities": {}
+}

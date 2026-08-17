@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:scallion_2"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

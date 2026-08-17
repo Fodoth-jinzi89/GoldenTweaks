@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:refined_radiance_casing"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

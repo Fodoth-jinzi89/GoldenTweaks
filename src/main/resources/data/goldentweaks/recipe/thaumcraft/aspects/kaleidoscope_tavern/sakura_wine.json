@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:sakura_wine"
+  },
+  "aspects": {
+    "aqua": 2,
+    "fames": 2
+  }
+}

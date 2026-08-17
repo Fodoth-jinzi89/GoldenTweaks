@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "backpack_pixel:exmixedcontaineras"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

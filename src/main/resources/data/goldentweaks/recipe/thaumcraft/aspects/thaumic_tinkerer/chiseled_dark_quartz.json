@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:chiseled_dark_quartz"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

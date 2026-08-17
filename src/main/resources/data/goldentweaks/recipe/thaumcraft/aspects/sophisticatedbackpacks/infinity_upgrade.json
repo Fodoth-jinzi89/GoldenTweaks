@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedbackpacks:infinity_upgrade"
+  },
+  "aspects": {
+    "terminus": 6,
+    "machina": 2
+  }
+}

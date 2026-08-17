@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "netmusic:music_player_backpack"
+  },
+  "aspects": {
+    "sonus": 4,
+    "machina": 2
+  }
+}

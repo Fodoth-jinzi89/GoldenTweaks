@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:elderly_medulla_bucket"
+  },
+  "aspects": {
+    "terminus": 3
+  }
+}

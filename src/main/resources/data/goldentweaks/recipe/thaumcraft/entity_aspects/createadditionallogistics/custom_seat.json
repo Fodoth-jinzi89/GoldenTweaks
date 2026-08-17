@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createadditionallogistics:custom_seat"
+  },
+  "aspects": {
+    "bestia": 4,
+    "aqua": 3,
+    "victus": 3
+  }
+}

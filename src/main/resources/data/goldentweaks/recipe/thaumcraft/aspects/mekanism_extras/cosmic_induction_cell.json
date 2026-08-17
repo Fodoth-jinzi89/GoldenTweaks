@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_induction_cell"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "vacuos": 4,
+    "vas": 2
+  }
+}

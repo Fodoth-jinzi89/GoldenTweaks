@@ -1,0 +1,17 @@
+{
+  "items": {
+    "sophisticatedcore:storage.tooltip.empty": "No Upgrades or Inventory Contents",
+    "sophisticatedcore:storage.tooltip.energy": "%s FE",
+    "sophisticatedcore:storage.tooltip.fluid": "%s mB %s",
+    "sophisticatedcore:storage.tooltip.fluid_empty": "Empty tank",
+    "sophisticatedcore:storage.tooltip.inventory": "Inventory",
+    "sophisticatedcore:storage.tooltip.press_for_contents": "Press <%s> to View Contents",
+    "sophisticatedcore:storage.tooltip.right_click_to_add_to_storage": "Right Click To Add",
+    "sophisticatedcore:storage.tooltip.shift": "Left Shift",
+    "sophisticatedcore:storage.tooltip.stack_multiplier": "Stack Size Multiplier: %s",
+    "sophisticatedcore:storage.tooltip.upgrades": "Upgrades",
+    "sophisticatedcore:xp_bucket": "Bucket of Experience"
+  },
+  "blocks": {},
+  "entities": {}
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:insulated_copper_wire"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "potentia": 3
+  }
+}

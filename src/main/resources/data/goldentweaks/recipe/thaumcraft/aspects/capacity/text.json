@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "capacity:text"
+  },
+  "aspects": {
+    "vacuos": 3
+  }
+}

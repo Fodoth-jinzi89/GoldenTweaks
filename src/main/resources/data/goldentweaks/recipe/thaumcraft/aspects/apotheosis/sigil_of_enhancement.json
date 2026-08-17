@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:sigil_of_enhancement"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "vista_plus:url_cassette_maker"
+  },
+  "aspects": {
+    "sensus": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:crossbow_limbs"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

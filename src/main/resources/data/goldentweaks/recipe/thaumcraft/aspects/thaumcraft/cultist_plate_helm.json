@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_plate_helm"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

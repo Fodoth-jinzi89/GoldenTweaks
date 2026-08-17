@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_skyjade_bucket"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

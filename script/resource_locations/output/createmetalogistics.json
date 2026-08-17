@@ -1,0 +1,37 @@
+{
+  "items": {
+    "createmetalogistics:manifest": "Stock Manifest",
+    "createmetalogistics:manifest.tooltip.author": "Encoded %d/%d item types",
+    "createmetalogistics:manifest.tooltip1": "Encoded %d/%d item types",
+    "createmetalogistics:manifest.tooltip1_slice": "Encoded %d/%d item types (slice %d-%d)",
+    "createmetalogistics:manifest.tooltip2": "Manifest origin ID: %s",
+    "createmetalogistics:manifest.tooltip3": "Manifest origin author ID (if locked): %s",
+    "createmetalogistics:ticket": "Item Request Ticket",
+    "createmetalogistics:ticket.tooltip1": "Encoded stacks: %d",
+    "createmetalogistics:ticket.tooltip2": "Forwarding address: \"%s\"",
+    "createmetalogistics:ticket.tooltip3": "Network owner ID (if locked): %s",
+    "createmetalogistics:ticket.tooltip4": "Manifest origin ID: %s"
+  },
+  "blocks": {
+    "createmetalogistics:expansion_module": "Compiler Expansion Module",
+    "createmetalogistics:expansion_module.tooltip.linked": "Linked to a compiler; shift+use to clear",
+    "createmetalogistics:expansion_module.tooltip.linked_dimension": "Linked to a compiler in another dimension; shift+use to clear",
+    "createmetalogistics:expansion_module.tooltip1": "Connects to compiler blocks (shift+use, up to %d blocks away) to allow larger inventories to be encoded",
+    "createmetalogistics:expansion_module.tooltip2": "Additional items are listed in manifests generated in each expansion module, and can be distributed to readers as normal",
+    "createmetalogistics:filter_requester": "Filter Requester",
+    "createmetalogistics:filter_requester.tooltip1": "Filtering variant of the Redstone Requester that accepts a single filter for item types, instead of up to 9 item types",
+    "createmetalogistics:filter_requester.tooltip2": "Place and open to configure",
+    "createmetalogistics:station_chunk_loader": "Train Station Chunk Loader",
+    "createmetalogistics:station_chunk_loader.tooltip.linked": "Linked to a train station; shift+use to clear",
+    "createmetalogistics:station_chunk_loader.tooltip.linked_dimension": "Linked to a train station in another dimension; shift+use to clear",
+    "createmetalogistics:station_chunk_loader.tooltip1": "Can temporarily load chunks in a 3x3 area when connected to a train station (up to %d blocks away)",
+    "createmetalogistics:station_chunk_loader.tooltip2": "Cannot force tick",
+    "createmetalogistics:stock_manifest_compiler": "Stock Manifest Compiler",
+    "createmetalogistics:stock_manifest_reader": "Stock Manifest Reader",
+    "createmetalogistics:ticket_crate": "Ticket Crate",
+    "createmetalogistics:ticket_crate.tooltip1": "Unlimited source of tickets for 9 (individual) item types, typically for use with request systems; place and open to configure",
+    "createmetalogistics:ticket_crate.tooltip2": "May be connected to a network frequency for generated tickets to inherit that network's owner attribute (origin network will always be N/A)",
+    "createmetalogistics:ticket_crate.tooltip3": "Clipboards can be used on this block to transfer required materials into a ticket"
+  },
+  "entities": {}
+}

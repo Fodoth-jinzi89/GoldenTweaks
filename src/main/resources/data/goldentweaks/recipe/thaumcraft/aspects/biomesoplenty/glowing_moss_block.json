@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:glowing_moss_block"
+  },
+  "aspects": {
+    "herba": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

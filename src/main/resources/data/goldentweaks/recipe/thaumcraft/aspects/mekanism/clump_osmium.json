@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:clump_osmium"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:frostling_trinket"
+  },
+  "aspects": {
+    "accessories": 3,
+    "gelum": 3,
+    "praecantatio": 2
+  }
+}

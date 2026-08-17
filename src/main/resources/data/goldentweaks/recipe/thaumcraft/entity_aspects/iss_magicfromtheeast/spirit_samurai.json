@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "iss_magicfromtheeast:spirit_samurai"
+  },
+  "aspects": {
+    "bestia": 4,
+    "spiritus": 3,
+    "victus": 3
+  }
+}

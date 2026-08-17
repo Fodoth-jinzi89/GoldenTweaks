@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:raw_lamb_chops"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

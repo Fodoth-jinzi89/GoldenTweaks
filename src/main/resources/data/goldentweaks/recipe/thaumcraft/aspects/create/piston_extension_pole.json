@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:piston_extension_pole"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3,
+    "instrumentum": 2
+  }
+}

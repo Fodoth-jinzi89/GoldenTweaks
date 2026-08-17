@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:molten_cast_iron"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

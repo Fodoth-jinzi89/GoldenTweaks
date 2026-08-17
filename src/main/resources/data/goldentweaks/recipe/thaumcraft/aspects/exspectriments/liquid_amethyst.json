@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exspectriments:liquid_amethyst"
+  },
+  "aspects": {
+    "aqua": 3,
+    "vitreus": 3,
+    "machina": 2
+  }
+}

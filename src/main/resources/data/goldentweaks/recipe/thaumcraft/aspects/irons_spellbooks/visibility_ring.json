@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:visibility_ring"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

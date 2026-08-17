@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:uncooked_fishy_stew"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

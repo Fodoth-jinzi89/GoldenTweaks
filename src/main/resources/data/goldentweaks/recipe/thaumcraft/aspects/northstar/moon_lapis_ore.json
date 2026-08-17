@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:moon_lapis_ore"
+  },
+  "aspects": {
+    "space": 3,
+    "vitreus": 3
+  }
+}

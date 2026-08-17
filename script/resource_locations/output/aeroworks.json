@@ -1,0 +1,27 @@
+{
+  "items": {
+    "aeroworks:button_keypad_module": "Button Keypad",
+    "aeroworks:button_module": "Button Module",
+    "aeroworks:button_panel_module": "Button Panel Module",
+    "aeroworks:joystick_module": "Joystick Module",
+    "aeroworks:lever_module": "Lever Module",
+    "aeroworks:throttle_quadrant_module": "Throttle Quadrant",
+    "aeroworks:wheel_module": "Wheel Module",
+    "aeroworks:yoke_module": "Yoke Module"
+  },
+  "blocks": {
+    "aeroworks:control_desk": "Control Desk",
+    "aeroworks:gyroscope": "Gyroscope",
+    "aeroworks:joystick": "Joystick",
+    "aeroworks:joystick.tooltip.behaviour1": "_Toggles_ the Joystick. _Mouse movement_ is taken over to tilt the stick while it's active. Press _ESC_ to release.",
+    "aeroworks:joystick.tooltip.behaviour2": "Opens the manual _Configuration Interface_.",
+    "aeroworks:joystick.tooltip.behaviour3": "_Retains_ the handle's _tilt_.",
+    "aeroworks:joystick.tooltip.condition1": "When R-Clicked",
+    "aeroworks:joystick.tooltip.condition2": "When R-Clicked while Sneaking",
+    "aeroworks:joystick.tooltip.condition3": "When Powered by Redstone",
+    "aeroworks:joystick.tooltip.summary": "A two-axis _control stick_ that transmits on configurable _Redstone Link_ frequencies.",
+    "aeroworks:mechanical_servo": "Mechanical Servo",
+    "aeroworks:stepper_servo": "Stepper Servo"
+  },
+  "entities": {}
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:eldritch_crab_spawner"
+  },
+  "aspects": {
+    "bestia": 3,
+    "vinculum": 3
+  }
+}

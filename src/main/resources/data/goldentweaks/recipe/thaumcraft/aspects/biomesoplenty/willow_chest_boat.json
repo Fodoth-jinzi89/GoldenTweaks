@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:willow_chest_boat"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "iter": 3,
+    "motus": 2,
+    "vas": 2
+  }
+}

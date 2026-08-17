@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "waystones:warp_scroll_bound"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 2
+  }
+}

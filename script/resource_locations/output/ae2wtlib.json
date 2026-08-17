@@ -1,0 +1,14 @@
+{
+  "items": {
+    "ae2wtlib:magnet_card": "Magnet Card",
+    "ae2wtlib:magnet_card.desc": "Magnet upgrade for the Wireless Crafting Terminal",
+    "ae2wtlib:quantum_bridge_card": "Quantum Bridge Card",
+    "ae2wtlib:quantum_bridge_card.desc": "Allows wireless terminals to connect to a quantum bridge, allowing for unlimited range",
+    "ae2wtlib:wireless_pattern_access_terminal": "Wireless Pattern Access Terminal",
+    "ae2wtlib:wireless_pattern_encoding_terminal": "Wireless Pattern Encoding Terminal",
+    "ae2wtlib:wireless_universal_terminal": "Wireless Universal Terminal",
+    "ae2wtlib:wireless_universal_terminal.desc": "Installed Terminals:"
+  },
+  "blocks": {},
+  "entities": {}
+}

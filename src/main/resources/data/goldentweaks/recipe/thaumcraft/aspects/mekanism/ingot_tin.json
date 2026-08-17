@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:ingot_tin"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

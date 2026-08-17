@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:chiseled_jade"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

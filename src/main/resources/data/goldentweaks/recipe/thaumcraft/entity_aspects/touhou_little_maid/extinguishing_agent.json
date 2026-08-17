@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "touhou_little_maid:extinguishing_agent"
+  },
+  "aspects": {
+    "bestia": 4,
+    "metallum": 3,
+    "victus": 3
+  }
+}

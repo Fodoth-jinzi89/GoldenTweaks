@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismgenerators:turbine_rotor"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

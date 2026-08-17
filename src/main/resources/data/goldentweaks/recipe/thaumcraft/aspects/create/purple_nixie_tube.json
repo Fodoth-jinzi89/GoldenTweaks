@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:purple_nixie_tube"
+  },
+  "aspects": {
+    "sensus": 2
+  }
+}

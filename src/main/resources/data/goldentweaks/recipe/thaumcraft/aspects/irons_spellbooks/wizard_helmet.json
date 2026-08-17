@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:wizard_helmet"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tutamen": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:rusted_coins_sword"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

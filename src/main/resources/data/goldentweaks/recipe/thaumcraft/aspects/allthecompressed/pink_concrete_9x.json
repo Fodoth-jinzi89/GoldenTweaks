@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:pink_concrete_9x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 18
+  }
+}

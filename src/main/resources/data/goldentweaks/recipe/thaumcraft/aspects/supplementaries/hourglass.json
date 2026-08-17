@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:hourglass"
+  },
+  "aspects": {
+    "tempus": 3,
+    "vitreus": 3
+  }
+}

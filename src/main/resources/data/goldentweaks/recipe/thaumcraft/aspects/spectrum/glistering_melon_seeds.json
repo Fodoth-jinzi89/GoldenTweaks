@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:glistering_melon_seeds"
+  },
+  "aspects": {
+    "accessories": 3,
+    "herba": 3,
+    "messis": 2
+  }
+}

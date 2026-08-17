@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:forest_trinket"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "accessories": 3,
+    "herba": 3
+  }
+}

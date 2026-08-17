@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:arbitrium_wings"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

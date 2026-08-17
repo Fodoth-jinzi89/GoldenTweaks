@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:worldshapers_looking_glass"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

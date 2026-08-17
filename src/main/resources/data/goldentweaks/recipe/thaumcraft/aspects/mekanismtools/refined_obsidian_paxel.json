@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismtools:refined_obsidian_paxel"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

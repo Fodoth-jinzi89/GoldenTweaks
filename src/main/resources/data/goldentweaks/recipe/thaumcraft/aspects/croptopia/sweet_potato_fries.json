@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:sweet_potato_fries"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "items": {
+    "apothicenchantingaddition:compressed_solidified_flux_experience": "Compressed Solidified Flux Experience",
+    "apothicenchantingaddition:solidified_flux_experience": "Solidified Flux Experience"
+  },
+  "blocks": {
+    "apothicenchantingaddition:flux_anvil": "Flux Anvil",
+    "apothicenchantingaddition:flux_enchanting_table": "Flux Enchanting Table",
+    "apothicenchantingaddition:flux_spawner": "Flux Spawner",
+    "apothicenchantingaddition:flux_stats_bookshelf_tier_1": "Flux Adjustment Bookshelf (Tier 1)",
+    "apothicenchantingaddition:flux_stats_bookshelf_tier_2": "Flux Adjustment Bookshelf (Tier 2)",
+    "apothicenchantingaddition:flux_stats_bookshelf_tier_3": "Flux Adjustment Bookshelf (Tier 3)",
+    "apothicenchantingaddition:flux_stats_bookshelf_tier_4": "Flux Adjustment Bookshelf (Tier 4)",
+    "apothicenchantingaddition:ritual_core": "Ritual Core"
+  },
+  "entities": {}
+}

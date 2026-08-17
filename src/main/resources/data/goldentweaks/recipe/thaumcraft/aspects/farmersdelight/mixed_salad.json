@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:mixed_salad"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

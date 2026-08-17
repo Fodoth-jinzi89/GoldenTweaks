@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothicenchantingaddition:flux_anvil"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

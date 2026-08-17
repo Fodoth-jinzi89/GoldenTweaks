@@ -1,0 +1,8 @@
+{
+  "items": {
+    "ae2tb:terminal_bookmark_interact_card": "Terminal Bookmark Interact Card",
+    "ae2tb:terminal_bookmark_interact_card.desc": "Enables terminal interaction with JEI/EMI/REI bookmarks"
+  },
+  "blocks": {},
+  "entities": {}
+}

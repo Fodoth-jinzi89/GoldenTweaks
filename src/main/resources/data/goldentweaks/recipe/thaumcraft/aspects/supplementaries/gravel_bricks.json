@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:gravel_bricks"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

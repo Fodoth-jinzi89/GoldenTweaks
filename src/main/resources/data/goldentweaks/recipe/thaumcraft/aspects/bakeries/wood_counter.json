@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:wood_counter"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

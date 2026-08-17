@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:lavender"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

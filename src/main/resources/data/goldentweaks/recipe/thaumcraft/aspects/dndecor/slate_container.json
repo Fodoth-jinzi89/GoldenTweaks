@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:slate_container"
+  },
+  "aspects": {
+    "saxum": 3,
+    "vas": 3
+  }
+}

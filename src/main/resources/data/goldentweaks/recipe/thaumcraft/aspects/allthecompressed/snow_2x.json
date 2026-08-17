@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:snow_2x"
+  },
+  "aspects": {
+    "gelum": 5,
+    "dense": 4
+  }
+}

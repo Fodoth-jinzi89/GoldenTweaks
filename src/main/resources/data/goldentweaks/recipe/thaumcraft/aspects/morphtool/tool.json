@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "morphtool:tool"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

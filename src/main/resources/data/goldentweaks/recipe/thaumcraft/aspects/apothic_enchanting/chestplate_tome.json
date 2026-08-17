@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:chestplate_tome"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "tutamen": 4,
+    "vacuos": 4,
+    "cognitio": 3
+  }
+}

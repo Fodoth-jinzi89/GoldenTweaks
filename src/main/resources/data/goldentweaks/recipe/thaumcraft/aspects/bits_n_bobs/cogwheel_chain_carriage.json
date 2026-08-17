@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bits_n_bobs:cogwheel_chain_carriage"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

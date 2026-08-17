@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pigment_palette"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:sliver_cercis"
+  },
+  "aspects": {
+    "accessories": 3,
+    "metallum": 3
+  }
+}

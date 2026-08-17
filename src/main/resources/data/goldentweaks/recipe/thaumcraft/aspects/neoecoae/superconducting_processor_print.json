@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:superconducting_processor_print"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "metallum": 3
+  }
+}

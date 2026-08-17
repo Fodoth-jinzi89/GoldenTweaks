@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:deep_fried_shrimp"
+  },
+  "aspects": {
+    "profundum": 3
+  }
+}

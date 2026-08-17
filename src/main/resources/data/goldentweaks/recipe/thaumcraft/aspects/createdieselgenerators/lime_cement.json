@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:lime_cement"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

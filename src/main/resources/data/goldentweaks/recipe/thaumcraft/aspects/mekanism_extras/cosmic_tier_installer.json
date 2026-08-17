@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_tier_installer"
+  },
+  "aspects": {
+    "cosmic": 6
+  }
+}

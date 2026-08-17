@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:mod_kit"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

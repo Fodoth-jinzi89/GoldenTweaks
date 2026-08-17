@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:secondary_linear_chassis"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

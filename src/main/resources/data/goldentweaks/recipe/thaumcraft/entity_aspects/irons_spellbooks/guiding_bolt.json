@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:guiding_bolt"
+  },
+  "aspects": {
+    "telum": 4,
+    "fulmen": 3
+  }
+}

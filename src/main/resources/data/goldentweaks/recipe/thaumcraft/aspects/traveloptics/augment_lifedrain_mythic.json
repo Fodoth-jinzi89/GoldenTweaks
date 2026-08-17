@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:augment_lifedrain_mythic"
+  },
+  "aspects": {
+    "terminus": 6,
+    "fabrico": 3
+  }
+}

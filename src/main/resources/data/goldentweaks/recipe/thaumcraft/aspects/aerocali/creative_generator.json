@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:creative_generator"
+  },
+  "aspects": {
+    "potentia": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:wood_iron_wand"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arbor": 3,
+    "metallum": 3
+  }
+}

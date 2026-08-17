@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:brass_ladder"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

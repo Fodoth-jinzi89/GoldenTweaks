@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:lime_flywheel"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3,
+    "volatus": 2
+  }
+}

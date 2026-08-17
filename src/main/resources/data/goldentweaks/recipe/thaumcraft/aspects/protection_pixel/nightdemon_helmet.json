@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:nightdemon_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

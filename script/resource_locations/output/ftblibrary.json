@@ -1,0 +1,9 @@
+{
+  "items": {
+    "ftblibrary:fluid_container": "Fluid Container",
+    "ftblibrary:fluid_container.use": "Right-click on a tank to empty the container",
+    "ftblibrary:icon_item": "FTB Icon"
+  },
+  "blocks": {},
+  "entities": {}
+}

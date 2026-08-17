@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:blood_upgrade_orb"
+  },
+  "aspects": {
+    "corpus": 3,
+    "machina": 2
+  }
+}

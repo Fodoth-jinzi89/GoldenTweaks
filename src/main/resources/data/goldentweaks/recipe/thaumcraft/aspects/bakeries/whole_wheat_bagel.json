@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:whole_wheat_bagel"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "victus": 3,
+    "fames": 2,
+    "vas": 2
+  }
+}

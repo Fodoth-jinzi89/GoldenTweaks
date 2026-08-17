@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:runic_ring_lesser"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "accessories": 3
+  }
+}

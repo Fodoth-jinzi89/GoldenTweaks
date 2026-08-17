@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:celestial_gate_key"
+  },
+  "aspects": {
+    "cosmic": 3,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:music_disc_credits"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

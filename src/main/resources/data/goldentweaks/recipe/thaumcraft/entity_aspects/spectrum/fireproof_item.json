@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "spectrum:fireproof_item"
+  },
+  "aspects": {
+    "bestia": 4,
+    "ignis": 3,
+    "victus": 3
+  }
+}

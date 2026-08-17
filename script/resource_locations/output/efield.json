@@ -1,0 +1,27 @@
+{
+  "items": {},
+  "blocks": {
+    "efield:celestialaegis": "Celestial Aegis",
+    "efield:celestialaegis.tooltip": "Radius = 64, startup = 60s",
+    "efield:celestialaegis.tooltip.details": "Deflects incoming projectiles with 2.0 push strength. Costs 16k FE per hit and 90 FE/t while active. Hold an iron ingot to preview the shield.",
+    "efield:comgrafield": "ComGra Field",
+    "efield:comgrafield.tooltip": "Radius = 16, startup = 8s, configurable",
+    "efield:comgrafield.tooltip.details": "One-way defensive shield. Only deflects projectiles moving toward the center. Default push strength is 2.0, with 16k FE per hit and 90 FE/t upkeep. Hold an iron ingot to preview the shield.",
+    "efield:efield": "Energy Field",
+    "efield:efield.tooltip": "Radius = 8, startup = 1s",
+    "efield:efield.tooltip.details": "Deflects incoming projectiles with 1.5 push strength. Costs 8k FE per hit. Hold an iron ingot to preview the shield.",
+    "efield:kleinfield": "Klein Field",
+    "efield:kleinfield.tooltip": "Forward 9x9x9 defensive wall. External charging only fills it to half capacity.",
+    "efield:kleinfield.tooltip.details": "Deletes incoming projectiles, converts twice the interception cost into stored heat, shuts down when full, and bleeds heat above half capacity. Hold an iron ingot to preview the green range.",
+    "efield:nemerepairsystem": "Neme Repair System",
+    "efield:nemerepairsystem.tooltip": "Empty-hand right-click to configure and save a repair blueprint.",
+    "efield:nemerepairsystem.tooltip.details": "Repairs one missing air block per scan from neighboring containers. Copycat block entity data is preserved. Redstone disables it.",
+    "efield:regenerativehullcore": "Regenerative Hull Core",
+    "efield:regenerativehullcore.tooltip": "Empty-hand right-click to configure the stocked repair area.",
+    "efield:regenerativehullcore.tooltip.details": "Stores 9 stacks, accepts item pipes, and fills one air block in front of it per scan using stored FE.",
+    "efield:voidproxy": "Void Proxy",
+    "efield:voidproxy.tooltip": "Default radius = 8. Empty-hand right-click to set radius from 8 to 32.",
+    "efield:voidproxy.tooltip.details": "One-way spherical shield. Deletes incoming projectiles. Cost = speed * radius * coefficient. Hold an iron ingot to preview the purple range."
+  },
+  "entities": {}
+}

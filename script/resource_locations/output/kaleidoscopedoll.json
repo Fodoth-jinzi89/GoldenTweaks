@@ -1,0 +1,8 @@
+{
+  "items": {
+    "kaleidoscopedoll:doll_entity_item.place.tooltip": "- Right-click to place on blocks or mount on rideable entities",
+    "kaleidoscopedoll:doll_entity_item.throw.tooltip": "- Hold Shift + Right-click to throw"
+  },
+  "blocks": {},
+  "entities": {}
+}

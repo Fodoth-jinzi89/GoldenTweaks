@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:cash_register_computer"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

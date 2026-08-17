@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:air_shard"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

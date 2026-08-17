@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:netherite_kitchen_knife"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3
+  }
+}

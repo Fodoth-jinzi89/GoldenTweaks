@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:black_white_concrete"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

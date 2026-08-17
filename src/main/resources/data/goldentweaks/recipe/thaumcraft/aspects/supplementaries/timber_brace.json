@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:timber_brace"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

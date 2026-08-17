@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:athame"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

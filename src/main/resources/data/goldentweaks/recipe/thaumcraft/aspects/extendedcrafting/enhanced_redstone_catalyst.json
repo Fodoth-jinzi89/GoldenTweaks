@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:enhanced_redstone_catalyst"
+  },
+  "aspects": {
+    "saxum": 3,
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:venus_plume"
+  },
+  "aspects": {
+    "space": 3
+  }
+}

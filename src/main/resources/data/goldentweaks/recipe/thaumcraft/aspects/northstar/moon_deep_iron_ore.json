@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:moon_deep_iron_ore"
+  },
+  "aspects": {
+    "metallum": 3,
+    "profundum": 3,
+    "space": 3
+  }
+}

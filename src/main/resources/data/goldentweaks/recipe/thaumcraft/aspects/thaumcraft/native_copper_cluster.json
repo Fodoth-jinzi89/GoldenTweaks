@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:native_copper_cluster"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

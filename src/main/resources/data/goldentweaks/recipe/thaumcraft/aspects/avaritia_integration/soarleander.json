@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:soarleander"
+  },
+  "aspects": {
+    "terminus": 3
+  }
+}

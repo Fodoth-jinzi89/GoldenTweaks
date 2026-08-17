@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:steam_engine"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

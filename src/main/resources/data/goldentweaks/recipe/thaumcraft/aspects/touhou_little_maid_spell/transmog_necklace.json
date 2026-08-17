@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:transmog_necklace"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

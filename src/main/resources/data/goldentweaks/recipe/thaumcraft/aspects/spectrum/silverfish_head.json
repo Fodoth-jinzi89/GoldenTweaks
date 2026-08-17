@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:silverfish_head"
+  },
+  "aspects": {
+    "metallum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

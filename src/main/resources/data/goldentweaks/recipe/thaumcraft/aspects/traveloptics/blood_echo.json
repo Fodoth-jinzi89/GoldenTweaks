@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:blood_echo"
+  },
+  "aspects": {
+    "corpus": 3
+  }
+}

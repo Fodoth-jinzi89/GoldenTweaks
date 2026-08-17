@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:certus_quartz_cluster"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

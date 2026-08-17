@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hostilenetworks:data_center"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 2
+  }
+}

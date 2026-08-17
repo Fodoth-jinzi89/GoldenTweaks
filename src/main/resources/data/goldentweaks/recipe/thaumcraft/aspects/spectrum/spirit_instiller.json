@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:spirit_instiller"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

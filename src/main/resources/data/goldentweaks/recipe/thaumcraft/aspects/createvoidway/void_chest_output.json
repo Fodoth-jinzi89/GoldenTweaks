@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createvoidway:void_chest_output"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

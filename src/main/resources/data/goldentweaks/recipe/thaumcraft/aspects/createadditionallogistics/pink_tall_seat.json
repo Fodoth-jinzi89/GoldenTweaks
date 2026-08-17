@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createadditionallogistics:pink_tall_seat"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

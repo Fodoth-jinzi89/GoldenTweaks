@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:upgrade_speed3"
+  },
+  "aspects": {
+    "metallum": 3,
+    "machina": 2
+  }
+}

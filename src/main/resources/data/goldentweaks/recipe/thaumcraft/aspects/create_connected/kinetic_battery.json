@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:kinetic_battery"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:gem_fused_slate"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "saxum": 3,
+    "vitreus": 3,
+    "praecantatio": 2
+  }
+}

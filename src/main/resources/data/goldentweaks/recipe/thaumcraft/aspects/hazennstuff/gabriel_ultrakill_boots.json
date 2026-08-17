@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:gabriel_ultrakill_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

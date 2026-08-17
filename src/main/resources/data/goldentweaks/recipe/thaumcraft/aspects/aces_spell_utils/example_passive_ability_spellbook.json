@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_passive_ability_spellbook"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "cognitio": 3
+  }
+}

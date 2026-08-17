@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:expulsion_ring"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "items": {
+    "exposuredetective:black_ink": "Black Ink",
+    "exposuredetective:blue_ink": "Blue Ink",
+    "exposuredetective:brown_ink": "Brown Ink",
+    "exposuredetective:detective_hat": "Detective Hat",
+    "exposuredetective:gray_ink": "Invisible Ink",
+    "exposuredetective:green_ink": "Gray Ink",
+    "exposuredetective:invisible_ink": "Invisible Ink",
+    "exposuredetective:light_blue_ink": "Light Blue Ink",
+    "exposuredetective:light_gray_ink": "Light Gray Ink",
+    "exposuredetective:lime_ink": "Lime Ink",
+    "exposuredetective:magenta_ink": "Magenta Ink",
+    "exposuredetective:magnifier": "Magnifier",
+    "exposuredetective:orange_ink": "Orange Ink",
+    "exposuredetective:pink_ink": "Pink Ink",
+    "exposuredetective:purple_ink": "Purple Ink",
+    "exposuredetective:red_ink": "Red Ink",
+    "exposuredetective:red_string": "Red String",
+    "exposuredetective:white_ink": "White Ink",
+    "exposuredetective:yellow_ink": "Yellow Ink"
+  },
+  "blocks": {
+    "exposuredetective:board": "Board"
+  },
+  "entities": {}
+}

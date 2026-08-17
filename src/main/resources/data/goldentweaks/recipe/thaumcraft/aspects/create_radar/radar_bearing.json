@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_radar:radar_bearing"
+  },
+  "aspects": {
+    "machina": 4,
+    "sensus": 4,
+    "accessories": 3,
+    "motus": 3,
+    "lux": 2
+  }
+}

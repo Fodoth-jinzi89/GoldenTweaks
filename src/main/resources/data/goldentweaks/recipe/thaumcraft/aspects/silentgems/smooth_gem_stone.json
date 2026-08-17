@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:smooth_gem_stone"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "saxum": 3,
+    "vitreus": 3
+  }
+}

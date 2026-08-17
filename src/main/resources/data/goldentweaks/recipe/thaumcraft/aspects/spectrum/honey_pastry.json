@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:honey_pastry"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

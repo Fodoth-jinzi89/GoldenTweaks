@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:rock_crystal"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

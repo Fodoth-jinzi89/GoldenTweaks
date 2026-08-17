@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:soulward_ring"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

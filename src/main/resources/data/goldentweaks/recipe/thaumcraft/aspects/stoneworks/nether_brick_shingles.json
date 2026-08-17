@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:nether_brick_shingles"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

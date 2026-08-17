@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:poisonbloom_banner_pattern"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "pannus": 2
+  }
+}

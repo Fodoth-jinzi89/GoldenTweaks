@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:thaumic_alloy_plating"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "fabrico": 3,
+    "metallum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:firefly_incense"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

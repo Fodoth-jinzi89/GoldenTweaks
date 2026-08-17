@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createframed:framed_radon_lamp_cyan"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:meteorite_compass"
+  },
+  "aspects": {
+    "iter": 3
+  }
+}

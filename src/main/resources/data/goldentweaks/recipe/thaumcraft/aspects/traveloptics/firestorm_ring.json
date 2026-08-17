@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:firestorm_ring"
+  },
+  "aspects": {
+    "accessories": 3,
+    "ignis": 3
+  }
+}

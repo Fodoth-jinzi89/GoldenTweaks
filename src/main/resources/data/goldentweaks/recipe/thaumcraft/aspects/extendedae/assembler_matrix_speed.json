@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:assembler_matrix_speed"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

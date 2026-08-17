@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:infernal_devastator_level_three"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

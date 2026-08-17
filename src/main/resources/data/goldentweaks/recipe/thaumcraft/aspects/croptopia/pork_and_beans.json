@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:pork_and_beans"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

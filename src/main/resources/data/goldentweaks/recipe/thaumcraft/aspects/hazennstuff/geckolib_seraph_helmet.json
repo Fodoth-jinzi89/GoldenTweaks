@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_seraph_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

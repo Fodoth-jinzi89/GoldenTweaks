@@ -1,0 +1,22 @@
+{
+  "items": {
+    "netmusic:music_cd": "Music CD",
+    "netmusic:music_cd.tip": "A music CD used for writing musics, if it's read only, a music cannot be overwritten.",
+    "netmusic:music_player_backpack": "Music Player Backpack",
+    "netmusic:music_player_backpack.tip": "Adds a Music Player feature to your maid, this can play written musics cds."
+  },
+  "blocks": {
+    "netmusic:big_megaphone": "Big Megaphone",
+    "netmusic:big_megaphone.tip": "Configure an m3u8 live audio stream and broadcast it continuously to nearby players",
+    "netmusic:cd_burner": "CD Burner",
+    "netmusic:cd_burner.desc": "Only NetEase Cloud Music links can be written (Only available in Chinese mainland)",
+    "netmusic:cd_burner.tip": "Only NetEase Cloud Music links can be written (Only available in Chinese mainland)",
+    "netmusic:computer": "Computer",
+    "netmusic:computer.local_file.desc": "You can also use the local file path, but then only you can hear the music",
+    "netmusic:computer.tip": "Used for writing your favorite music to the CD via Local or Network, Only supports mp3/flac format",
+    "netmusic:computer.web_link.desc": "You can use any network link, Only supports mp3 and flac formats",
+    "netmusic:music_player": "Music Player",
+    "netmusic:music_player.tip": "Place a Music CD on a music player and enjoy your favorite music."
+  },
+  "entities": {}
+}

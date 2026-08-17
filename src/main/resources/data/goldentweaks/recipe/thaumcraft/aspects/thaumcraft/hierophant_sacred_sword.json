@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:hierophant_sacred_sword"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

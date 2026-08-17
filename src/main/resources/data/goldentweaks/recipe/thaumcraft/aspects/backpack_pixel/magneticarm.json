@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "backpack_pixel:magneticarm"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

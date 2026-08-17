@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:bronze_ore_hammer"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3,
+    "terra": 3,
+    "perfodio": 2
+  }
+}

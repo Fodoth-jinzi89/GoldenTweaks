@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:void_scatter_arrow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:ichorium_shovel"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

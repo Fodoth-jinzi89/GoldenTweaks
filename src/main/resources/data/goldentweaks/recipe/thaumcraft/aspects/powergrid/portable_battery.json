@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:portable_battery"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 3,
+    "potentia": 3
+  }
+}

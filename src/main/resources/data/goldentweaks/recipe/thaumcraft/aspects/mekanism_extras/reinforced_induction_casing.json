@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:reinforced_induction_casing"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

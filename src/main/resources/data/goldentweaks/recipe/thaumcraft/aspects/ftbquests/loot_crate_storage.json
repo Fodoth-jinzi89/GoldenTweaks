@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ftbquests:loot_crate_storage"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "lucrum": 3,
+    "vas": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:graphite_rod"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vitium": 3
+  }
+}

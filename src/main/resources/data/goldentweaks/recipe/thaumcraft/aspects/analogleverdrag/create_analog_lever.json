@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "analogleverdrag:create_analog_lever"
+  },
+  "aspects": {
+    "arbor": 3,
+    "machina": 3
+  }
+}

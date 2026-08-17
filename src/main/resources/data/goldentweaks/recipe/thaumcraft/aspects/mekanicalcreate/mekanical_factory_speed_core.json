@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanicalcreate:mekanical_factory_speed_core"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:diorite_paver_slab"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

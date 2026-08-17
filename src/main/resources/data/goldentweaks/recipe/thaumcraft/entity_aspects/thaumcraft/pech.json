@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:pech"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

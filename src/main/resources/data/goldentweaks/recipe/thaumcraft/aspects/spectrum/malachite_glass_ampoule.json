@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:malachite_glass_ampoule"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

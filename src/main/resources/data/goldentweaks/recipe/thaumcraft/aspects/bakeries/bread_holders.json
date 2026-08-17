@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:bread_holders"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:salvaging_table"
+  },
+  "aspects": {
+    "machina": 3,
+    "perditio": 3,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "items": {
+    "create_abyss:amphistium_spawn_egg": "Amphistium Spawn Egg",
+    "create_abyss:cookiecutter_shark_spawn_egg": "Cookiecutter Shark Spawn Egg"
+  },
+  "blocks": {
+    "create_abyss:creepvine_seed": "Creepvine Seed",
+    "create_abyss:submarine_liana": "Submarine Liana"
+  },
+  "entities": {
+    "create_abyss:amphistium": "Amphistium",
+    "create_abyss:cookiecutter_shark": "Cookiecutter Shark"
+  }
+}

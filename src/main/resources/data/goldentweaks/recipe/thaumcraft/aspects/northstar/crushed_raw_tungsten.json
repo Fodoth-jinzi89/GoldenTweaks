@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:crushed_raw_tungsten"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2
+  }
+}

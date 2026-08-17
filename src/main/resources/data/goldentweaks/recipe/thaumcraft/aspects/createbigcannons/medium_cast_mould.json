@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:medium_cast_mould"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

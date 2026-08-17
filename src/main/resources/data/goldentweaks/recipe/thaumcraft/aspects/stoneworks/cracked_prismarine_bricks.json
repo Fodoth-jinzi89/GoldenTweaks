@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cracked_prismarine_bricks"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

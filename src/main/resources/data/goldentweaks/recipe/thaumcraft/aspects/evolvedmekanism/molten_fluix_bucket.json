@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_fluix_bucket"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:crystal_matrix_nugget"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "terminus": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:phial_of_essentia_praecantaticherba"
+  },
+  "aspects": {
+    "praecantaticherba": 4,
+    "vas": 2,
+    "vitreus": 1
+  }
+}

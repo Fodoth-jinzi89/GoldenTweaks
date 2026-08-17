@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:pet_archmage_statue_model"
+  },
+  "aspects": {
+    "praecantatio": 2
+  }
+}

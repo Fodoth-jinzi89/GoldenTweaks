@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:aqua_dark_metal_plating"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3
+  }
+}

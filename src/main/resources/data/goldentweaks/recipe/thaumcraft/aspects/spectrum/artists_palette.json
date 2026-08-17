@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:artists_palette"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

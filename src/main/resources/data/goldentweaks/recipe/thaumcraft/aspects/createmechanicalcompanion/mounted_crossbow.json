@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:mounted_crossbow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

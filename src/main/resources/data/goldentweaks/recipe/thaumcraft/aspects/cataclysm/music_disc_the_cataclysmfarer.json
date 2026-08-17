@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:music_disc_the_cataclysmfarer"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

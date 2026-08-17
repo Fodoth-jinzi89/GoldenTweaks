@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "lootr:lootr_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "lucrum": 3,
+    "vas": 2
+  }
+}

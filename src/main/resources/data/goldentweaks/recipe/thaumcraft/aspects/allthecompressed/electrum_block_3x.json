@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:electrum_block_3x"
+  },
+  "aspects": {
+    "metallum": 8,
+    "dense": 6
+  }
+}

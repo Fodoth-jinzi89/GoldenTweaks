@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:string_light_block"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

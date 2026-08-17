@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:quantum_drive"
+  },
+  "aspects": {
+    "alienis": 3,
+    "machina": 3
+  }
+}

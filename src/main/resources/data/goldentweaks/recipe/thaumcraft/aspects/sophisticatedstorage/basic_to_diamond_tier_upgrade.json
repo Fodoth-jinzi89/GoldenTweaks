@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:basic_to_diamond_tier_upgrade"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "machina": 2
+  }
+}

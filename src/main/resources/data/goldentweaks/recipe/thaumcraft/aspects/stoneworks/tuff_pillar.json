@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:tuff_pillar"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

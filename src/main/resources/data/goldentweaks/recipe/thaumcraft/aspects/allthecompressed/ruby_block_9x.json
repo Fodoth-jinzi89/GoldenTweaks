@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:ruby_block_9x"
+  },
+  "aspects": {
+    "vitreus": 10,
+    "dense": 18
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:jungle_log_3x"
+  },
+  "aspects": {
+    "arbor": 6,
+    "dense": 6
+  }
+}

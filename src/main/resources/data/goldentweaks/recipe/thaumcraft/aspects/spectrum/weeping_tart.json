@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weeping_tart"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "items": {
+    "ae2peat:pattern_encoding_access_terminal": "ME Pattern Encoding Access Terminal",
+    "ae2peat:wireless_pattern_encoding_access_terminal": "Wireless Pattern Encoding Access Terminal"
+  },
+  "blocks": {},
+  "entities": {}
+}

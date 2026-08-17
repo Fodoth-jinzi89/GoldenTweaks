@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:alloy_thermonuclear"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vitium": 3
+  }
+}

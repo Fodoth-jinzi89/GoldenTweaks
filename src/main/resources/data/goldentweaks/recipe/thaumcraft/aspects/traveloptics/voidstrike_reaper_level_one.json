@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:voidstrike_reaper_level_one"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

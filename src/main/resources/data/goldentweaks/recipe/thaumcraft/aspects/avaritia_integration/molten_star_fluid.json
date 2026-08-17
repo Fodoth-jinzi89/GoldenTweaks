@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:molten_star_fluid"
+  },
+  "aspects": {
+    "terminus": 3
+  }
+}

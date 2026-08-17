@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:exposed_copper_floor"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3
+  }
+}

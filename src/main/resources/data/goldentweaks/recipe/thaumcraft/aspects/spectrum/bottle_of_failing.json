@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bottle_of_failing"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

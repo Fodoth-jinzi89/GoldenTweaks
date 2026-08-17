@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:orange_spore_blossom"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

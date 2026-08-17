@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:black_tungsten_alloy_hoe"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}
