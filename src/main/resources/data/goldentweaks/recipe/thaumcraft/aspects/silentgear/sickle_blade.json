@@ -4,6 +4,7 @@
     "id": "silentgear:sickle_blade"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "meto": 2
   }
 }

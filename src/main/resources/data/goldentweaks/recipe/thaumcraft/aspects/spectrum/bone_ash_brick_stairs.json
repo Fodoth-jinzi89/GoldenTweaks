@@ -4,6 +4,7 @@
     "id": "spectrum:bone_ash_brick_stairs"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "fossil": 2
   }
 }

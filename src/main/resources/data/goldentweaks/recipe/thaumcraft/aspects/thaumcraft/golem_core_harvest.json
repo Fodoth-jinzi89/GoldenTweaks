@@ -4,6 +4,7 @@
     "id": "thaumcraft:golem_core_harvest"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "meto": 2
   }
 }

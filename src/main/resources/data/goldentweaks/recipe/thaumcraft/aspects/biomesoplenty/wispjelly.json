@@ -4,6 +4,7 @@
     "id": "biomesoplenty:wispjelly"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "auram": 2
   }
 }

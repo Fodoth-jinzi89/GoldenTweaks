@@ -4,6 +4,8 @@
     "id": "avaritia:infinity_catalyst"
   },
   "aspects": {
-    "terminus": 6
+    "terminus": 6,
+    "universes": 2,
+    "alfirin": 2
   }
 }

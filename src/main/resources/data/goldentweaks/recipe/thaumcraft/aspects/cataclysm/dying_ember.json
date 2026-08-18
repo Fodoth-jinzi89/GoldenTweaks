@@ -4,6 +4,7 @@
     "id": "cataclysm:dying_ember"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "favilla": 2
   }
 }

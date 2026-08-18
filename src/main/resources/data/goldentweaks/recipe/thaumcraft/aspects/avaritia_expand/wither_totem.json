@@ -4,6 +4,7 @@
     "id": "avaritia_expand:wither_totem"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "exanimis": 2
   }
 }

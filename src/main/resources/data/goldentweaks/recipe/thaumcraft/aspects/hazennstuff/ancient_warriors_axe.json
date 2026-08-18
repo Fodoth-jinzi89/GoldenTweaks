@@ -4,6 +4,7 @@
     "id": "hazennstuff:ancient_warriors_axe"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "fossil": 2
   }
 }

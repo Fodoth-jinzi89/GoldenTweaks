@@ -4,6 +4,7 @@
     "id": "thaumcraftcelestial:lunar_phase_instrument"
   },
   "aspects": {
-    "space": 3
+    "space": 3,
+    "dream": 2
   }
 }

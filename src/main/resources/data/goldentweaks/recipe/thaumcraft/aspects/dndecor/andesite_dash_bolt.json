@@ -4,6 +4,7 @@
     "id": "dndecor:andesite_dash_bolt"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "favilla": 2
   }
 }

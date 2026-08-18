@@ -4,6 +4,7 @@
     "id": "spectrum:basalt_shimmerstone_light"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "auram": 2
   }
 }

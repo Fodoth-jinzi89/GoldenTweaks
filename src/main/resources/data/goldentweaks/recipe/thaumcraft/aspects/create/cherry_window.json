@@ -4,6 +4,7 @@
     "id": "create:cherry_window"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "tempestas": 2
   }
 }

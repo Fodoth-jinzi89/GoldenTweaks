@@ -4,6 +4,7 @@
     "id": "bits_n_bobs:scorchia_tile_slab"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "mornogol": 2
   }
 }

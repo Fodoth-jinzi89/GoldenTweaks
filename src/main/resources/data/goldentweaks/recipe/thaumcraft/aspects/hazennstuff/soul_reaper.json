@@ -4,6 +4,7 @@
     "id": "hazennstuff:soul_reaper"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "exanimis": 2
   }
 }

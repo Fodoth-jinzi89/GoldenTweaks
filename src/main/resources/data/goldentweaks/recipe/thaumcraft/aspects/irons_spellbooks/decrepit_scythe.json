@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:decrepit_scythe"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "meto": 2
   }
 }

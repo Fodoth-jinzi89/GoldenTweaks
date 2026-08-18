@@ -4,6 +4,7 @@
     "id": "dndecor:gold_dot_bolt"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "priscus": 2
   }
 }

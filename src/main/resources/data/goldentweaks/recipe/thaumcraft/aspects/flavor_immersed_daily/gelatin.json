@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:gelatin"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "limus": 2
   }
 }

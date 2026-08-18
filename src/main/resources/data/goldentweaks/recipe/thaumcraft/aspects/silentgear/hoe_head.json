@@ -4,6 +4,7 @@
     "id": "silentgear:hoe_head"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "meto": 2
   }
 }

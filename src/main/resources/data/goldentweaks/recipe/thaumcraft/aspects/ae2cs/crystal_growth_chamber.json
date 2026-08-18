@@ -4,6 +4,7 @@
     "id": "ae2cs:crystal_growth_chamber"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "expand": 2
   }
 }

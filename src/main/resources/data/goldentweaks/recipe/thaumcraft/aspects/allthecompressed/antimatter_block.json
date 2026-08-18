@@ -5,6 +5,8 @@
   },
   "aspects": {
     "dense": 2,
-    "substance": 2
+    "substance": 2,
+    "atrsubstance": 2,
+    "atrpotentia": 2
   }
 }

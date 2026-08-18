@@ -4,6 +4,7 @@
     "id": "avaritia_expand:crystal_wind_charge"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "tempestas": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:tainted_leaves"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "atrpraecantatic": 2
   }
 }

@@ -4,6 +4,8 @@
     "id": "thaumic_tinkerer:ender_shard"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

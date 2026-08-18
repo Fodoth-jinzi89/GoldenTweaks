@@ -4,6 +4,7 @@
     "id": "cataclysm:draugr_head"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "exanimis": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:cinderous_soulcaller"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "cataclysm:essence_of_the_storm"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "tempestas": 2
   }
 }

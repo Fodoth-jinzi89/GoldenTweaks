@@ -4,6 +4,7 @@
     "id": "ae2:semi_dark_monitor"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "evil": 2
   }
 }

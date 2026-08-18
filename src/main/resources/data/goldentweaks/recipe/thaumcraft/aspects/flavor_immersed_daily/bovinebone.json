@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:bovinebone"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "fossil": 2
   }
 }

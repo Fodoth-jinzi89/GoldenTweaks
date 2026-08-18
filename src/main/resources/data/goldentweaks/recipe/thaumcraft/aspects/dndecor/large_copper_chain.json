@@ -4,6 +4,7 @@
     "id": "dndecor:large_copper_chain"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "expand": 2
   }
 }

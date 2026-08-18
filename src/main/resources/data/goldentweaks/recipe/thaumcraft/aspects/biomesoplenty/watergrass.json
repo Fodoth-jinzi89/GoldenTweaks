@@ -4,6 +4,7 @@
     "id": "biomesoplenty:watergrass"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "waters": 2
   }
 }

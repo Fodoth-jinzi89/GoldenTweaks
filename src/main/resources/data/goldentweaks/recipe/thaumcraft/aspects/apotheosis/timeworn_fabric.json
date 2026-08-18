@@ -4,6 +4,7 @@
     "id": "apotheosis:timeworn_fabric"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "history": 2
   }
 }

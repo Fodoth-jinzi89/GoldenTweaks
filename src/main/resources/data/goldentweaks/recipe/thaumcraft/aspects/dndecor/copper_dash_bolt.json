@@ -4,6 +4,7 @@
     "id": "dndecor:copper_dash_bolt"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "favilla": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "bits_n_bobs:weathered_girder_strut"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "tempestas": 2
   }
 }

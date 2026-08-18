@@ -5,6 +5,7 @@
   },
   "aspects": {
     "substance": 7,
-    "dense": 8
+    "dense": 8,
+    "history": 2
   }
 }

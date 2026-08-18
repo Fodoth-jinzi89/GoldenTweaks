@@ -5,6 +5,7 @@
   },
   "aspects": {
     "substance": 10,
-    "dense": 14
+    "dense": 14,
+    "limus": 2
   }
 }

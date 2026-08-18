@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:manasteel_wand_cap"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "praecantaticherba": 2
   }
 }

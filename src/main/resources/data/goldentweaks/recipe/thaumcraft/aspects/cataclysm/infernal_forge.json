@@ -4,6 +4,7 @@
     "id": "cataclysm:infernal_forge"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "lava": 2
   }
 }

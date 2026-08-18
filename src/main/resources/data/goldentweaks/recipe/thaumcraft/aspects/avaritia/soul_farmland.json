@@ -4,6 +4,7 @@
     "id": "avaritia:soul_farmland"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "exanimis": 2
   }
 }

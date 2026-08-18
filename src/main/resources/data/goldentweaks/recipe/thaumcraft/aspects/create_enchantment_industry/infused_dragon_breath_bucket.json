@@ -4,6 +4,7 @@
     "id": "create_enchantment_industry:infused_dragon_breath_bucket"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dragon": 2
   }
 }

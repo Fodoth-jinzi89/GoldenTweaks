@@ -4,6 +4,7 @@
     "id": "cataclysm:burning_ashes"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "favilla": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "hazennstuff:bountiful_harvest"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "meto": 2
   }
 }

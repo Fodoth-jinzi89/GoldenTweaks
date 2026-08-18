@@ -4,6 +4,7 @@
     "id": "ae2cs:irradiated_seed"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "vegetatio": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "hazennstuff:thunder_prowler_boots"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "fulmen": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "cataclysm:soul_render"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 3,
+    "exanimis": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "hazennstuff:storm_weave"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "fulmen": 2
   }
 }

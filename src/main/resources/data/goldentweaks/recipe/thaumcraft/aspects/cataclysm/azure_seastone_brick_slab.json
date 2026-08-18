@@ -4,6 +4,7 @@
     "id": "cataclysm:azure_seastone_brick_slab"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "waters": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "avaritia_expand:jeb_wool"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "textus": 2
   }
 }

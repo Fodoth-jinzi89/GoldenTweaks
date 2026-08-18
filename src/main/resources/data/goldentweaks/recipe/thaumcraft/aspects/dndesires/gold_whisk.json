@@ -4,6 +4,7 @@
     "id": "dndesires:gold_whisk"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "priscus": 2
   }
 }

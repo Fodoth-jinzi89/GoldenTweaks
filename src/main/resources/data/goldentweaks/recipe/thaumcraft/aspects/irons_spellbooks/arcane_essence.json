@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:arcane_essence"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spiritus": 2
   }
 }

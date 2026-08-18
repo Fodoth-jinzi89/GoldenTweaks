@@ -4,6 +4,7 @@
     "id": "sg_tracks:track_stiffness_tool"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "orbita": 2
   }
 }

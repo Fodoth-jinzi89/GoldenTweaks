@@ -4,6 +4,7 @@
     "id": "alltheores:copper_clump"
   },
   "aspects": {
-    "metallum": 2
+    "metallum": 2,
+    "magnetis": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:moonstruck_nectar"
   },
   "aspects": {
-    "space": 3
+    "space": 3,
+    "dream": 2
   }
 }

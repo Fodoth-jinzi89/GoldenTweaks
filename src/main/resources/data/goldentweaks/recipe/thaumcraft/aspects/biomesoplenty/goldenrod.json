@@ -4,6 +4,7 @@
     "id": "biomesoplenty:goldenrod"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "treasure": 2
   }
 }

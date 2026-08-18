@@ -4,6 +4,7 @@
     "id": "spectrum:poisoners_handbook"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "venenum": 2
   }
 }

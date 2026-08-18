@@ -88,6 +88,29 @@ THAUMCRAFT_PRIMALS = {
     "air": "aer", "earth": "terra", "fire": "ignis",
     "water": "aqua", "order": "ordo", "entropy": "perditio",
 }
+THAUMCRAFT_ADDON_SHARDS = {
+    "forbiddenmagic:envy_shard": "invidia",
+    "forbiddenmagic:gluttony_shard": "gula",
+    "forbiddenmagic:greed_shard": "lucrum",
+    "forbiddenmagic:lust_shard": "luxuria",
+    "forbiddenmagic:pride_shard": "superbia",
+    "forbiddenmagic:sloth_shard": "desidia",
+    "forbiddenmagic:taint_shard": "vitium",
+    "forbiddenmagic:wrath_shard": "ira",
+    "taintedmagic:creation_shard": "arche",
+    "taintedmagic:focus_vis_shard": "potentia",
+    "taintedmagic:tainted_unbalanced_shard": "vitium",
+    "taintedmagic:warped_unbalanced_shard": "alienis",
+    "thaumcraft:air_shard": "aer",
+    "thaumcraft:balanced_shard": "ordo",
+    "thaumcraft:earth_shard": "terra",
+    "thaumcraft:entropy_shard": "perditio",
+    "thaumcraft:fire_shard": "ignis",
+    "thaumcraft:order_shard": "ordo",
+    "thaumcraft:water_shard": "aqua",
+    "thaumic_tinkerer:ender_shard": "alienis",
+    "thaumic_tinkerer:nether_shard": "infernus",
+}
 
 
 def add(aspects, aspect, amount):
@@ -196,6 +219,9 @@ def semantic_aspects(namespace, path, display, kind):
         return phial_aspects
     if path.startswith("wisp_essence_"):
         return {path.removeprefix("wisp_essence_"): 2}
+    shard_aspect = THAUMCRAFT_ADDON_SHARDS.get(f"{namespace}:{path}")
+    if shard_aspect:
+        return {shard_aspect: 2, "vitreus": 1, "praecantatio": 1}
     if namespace == "thaumcraft":
         if path in THAUMCRAFT_EXACT_ASPECTS:
             return THAUMCRAFT_EXACT_ASPECTS[path]

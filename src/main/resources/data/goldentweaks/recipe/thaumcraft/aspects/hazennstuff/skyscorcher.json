@@ -4,6 +4,7 @@
     "id": "hazennstuff:skyscorcher"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "laputa": 2
   }
 }

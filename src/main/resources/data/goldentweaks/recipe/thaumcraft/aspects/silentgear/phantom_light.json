@@ -4,6 +4,7 @@
     "id": "silentgear:phantom_light"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "spiritus": 2
   }
 }

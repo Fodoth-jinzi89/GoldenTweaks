@@ -4,6 +4,7 @@
     "id": "ae2:meteorite_compass"
   },
   "aspects": {
-    "iter": 3
+    "iter": 3,
+    "magnetis": 2
   }
 }

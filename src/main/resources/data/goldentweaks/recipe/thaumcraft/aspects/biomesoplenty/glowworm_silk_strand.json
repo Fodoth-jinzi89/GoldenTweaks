@@ -4,6 +4,7 @@
     "id": "biomesoplenty:glowworm_silk_strand"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "textus": 2
   }
 }

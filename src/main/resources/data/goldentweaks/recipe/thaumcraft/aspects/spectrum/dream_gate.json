@@ -4,6 +4,7 @@
     "id": "spectrum:dream_gate"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dream": 2
   }
 }

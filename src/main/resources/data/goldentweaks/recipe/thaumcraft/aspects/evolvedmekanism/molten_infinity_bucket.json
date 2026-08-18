@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:molten_infinity_bucket"
   },
   "aspects": {
-    "terminus": 6
+    "terminus": 6,
+    "alfirin": 2
   }
 }

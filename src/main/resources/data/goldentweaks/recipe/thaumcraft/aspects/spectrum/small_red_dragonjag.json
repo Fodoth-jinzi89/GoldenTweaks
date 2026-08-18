@@ -4,6 +4,7 @@
     "id": "spectrum:small_red_dragonjag"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dragon": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:tainted_stone_bricks"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "atrpraecantatic": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "alshanex_familiars:pet_soul"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "exanimis": 2
   }
 }

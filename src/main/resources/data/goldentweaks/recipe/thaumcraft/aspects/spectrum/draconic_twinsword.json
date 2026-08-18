@@ -4,6 +4,7 @@
     "id": "spectrum:draconic_twinsword"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "dragon": 2
   }
 }

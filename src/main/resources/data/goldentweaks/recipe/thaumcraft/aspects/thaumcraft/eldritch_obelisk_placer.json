@@ -4,6 +4,7 @@
     "id": "thaumcraft:eldritch_obelisk_placer"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpraecantatic": 2
   }
 }

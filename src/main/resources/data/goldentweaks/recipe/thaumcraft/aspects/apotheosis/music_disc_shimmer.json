@@ -4,6 +4,7 @@
     "id": "apotheosis:music_disc_shimmer"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "auram": 2
   }
 }

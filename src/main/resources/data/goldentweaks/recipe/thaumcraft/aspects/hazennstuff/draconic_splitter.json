@@ -4,6 +4,7 @@
     "id": "hazennstuff:draconic_splitter"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "dragon": 2
   }
 }

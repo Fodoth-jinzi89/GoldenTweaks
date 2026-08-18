@@ -4,6 +4,8 @@
     "id": "cataclysm:cursed_bow"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "evil": 2,
+    "atrpraecantatic": 2
   }
 }

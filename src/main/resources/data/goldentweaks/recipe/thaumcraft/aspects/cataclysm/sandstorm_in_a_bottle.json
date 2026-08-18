@@ -4,6 +4,7 @@
     "id": "cataclysm:sandstorm_in_a_bottle"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "tempestas": 2
   }
 }

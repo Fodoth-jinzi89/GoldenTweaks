@@ -4,6 +4,7 @@
     "id": "hazennstuff:eldritch_upgrade_orb"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "atrpraecantatic": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:frog_cold_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 2
   }
 }

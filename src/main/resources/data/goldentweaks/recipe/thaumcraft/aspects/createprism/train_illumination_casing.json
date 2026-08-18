@@ -4,6 +4,7 @@
     "id": "createprism:train_illumination_casing"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "orbita": 2
   }
 }

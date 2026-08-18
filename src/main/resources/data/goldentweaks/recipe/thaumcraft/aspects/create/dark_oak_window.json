@@ -4,6 +4,7 @@
     "id": "create:dark_oak_window"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "evil": 2
   }
 }

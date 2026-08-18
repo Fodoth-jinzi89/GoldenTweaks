@@ -4,6 +4,7 @@
     "id": "create:crushed_raw_gold"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "treasure": 2
   }
 }

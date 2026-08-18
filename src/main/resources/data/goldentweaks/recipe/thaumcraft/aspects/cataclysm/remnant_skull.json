@@ -4,6 +4,7 @@
     "id": "cataclysm:remnant_skull"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "mornogol": 2
   }
 }

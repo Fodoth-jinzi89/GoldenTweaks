@@ -4,6 +4,7 @@
     "id": "alltheores:constantan_nugget"
   },
   "aspects": {
-    "metallum": 1
+    "metallum": 1,
+    "mixtura": 2
   }
 }

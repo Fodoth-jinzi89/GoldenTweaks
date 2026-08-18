@@ -4,6 +4,7 @@
     "id": "spectrum:cracked_dragonbone"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "dragon": 2
   }
 }

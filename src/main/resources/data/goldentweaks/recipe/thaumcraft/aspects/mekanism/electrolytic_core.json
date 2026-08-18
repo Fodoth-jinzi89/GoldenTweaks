@@ -4,6 +4,7 @@
     "id": "mekanism:electrolytic_core"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "fulmen": 2
   }
 }

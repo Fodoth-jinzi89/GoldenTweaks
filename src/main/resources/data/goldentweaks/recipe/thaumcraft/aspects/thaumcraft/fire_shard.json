@@ -4,8 +4,8 @@
     "id": "thaumcraft:fire_shard"
   },
   "aspects": {
-    "praecantatio": 1,
     "ignis": 2,
-    "vitreus": 1
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

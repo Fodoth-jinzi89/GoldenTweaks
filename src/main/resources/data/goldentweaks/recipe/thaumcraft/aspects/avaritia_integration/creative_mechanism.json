@@ -4,6 +4,7 @@
     "id": "avaritia_integration:creative_mechanism"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "arche": 2
   }
 }

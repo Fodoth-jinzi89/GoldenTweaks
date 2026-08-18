@@ -4,6 +4,7 @@
     "id": "create:weathered_iron_window"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "tempestas": 2
   }
 }

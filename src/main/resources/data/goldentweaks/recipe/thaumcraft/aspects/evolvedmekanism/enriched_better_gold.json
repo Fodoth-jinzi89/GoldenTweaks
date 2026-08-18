@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:enriched_better_gold"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "priscus": 2
   }
 }

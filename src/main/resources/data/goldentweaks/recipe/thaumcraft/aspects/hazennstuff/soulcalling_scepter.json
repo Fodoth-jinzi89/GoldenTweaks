@@ -4,6 +4,7 @@
     "id": "hazennstuff:soulcalling_scepter"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "exanimis": 2
   }
 }

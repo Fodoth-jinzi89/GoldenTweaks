@@ -4,6 +4,7 @@
     "id": "create_enchantment_industry:crystal_essence_bucket"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "spiritus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "alltheores:electrum_block"
   },
   "aspects": {
-    "metallum": 12
+    "metallum": 12,
+    "mixtura": 2
   }
 }

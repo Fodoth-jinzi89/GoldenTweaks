@@ -4,6 +4,7 @@
     "id": "spectrum:primordial_lighter"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 2
   }
 }

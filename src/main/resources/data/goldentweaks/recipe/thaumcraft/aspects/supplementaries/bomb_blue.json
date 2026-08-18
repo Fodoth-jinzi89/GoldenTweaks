@@ -5,6 +5,7 @@
   },
   "aspects": {
     "telum": 4,
-    "explosion": 3
+    "explosion": 3,
+    "destroy": 2
   }
 }

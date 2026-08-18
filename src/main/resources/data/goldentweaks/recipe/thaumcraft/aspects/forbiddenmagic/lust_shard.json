@@ -4,7 +4,8 @@
     "id": "forbiddenmagic:lust_shard"
   },
   "aspects": {
-    "praecantatio": 4,
-    "vitium": 2
+    "luxuria": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

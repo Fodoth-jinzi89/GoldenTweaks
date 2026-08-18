@@ -4,6 +4,7 @@
     "id": "avaritia:refined_coal"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "favilla": 2
   }
 }

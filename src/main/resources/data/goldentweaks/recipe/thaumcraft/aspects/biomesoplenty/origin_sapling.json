@@ -4,6 +4,7 @@
     "id": "biomesoplenty:origin_sapling"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "arche": 2
   }
 }

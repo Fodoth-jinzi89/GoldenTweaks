@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:dreamwood_wand_rod"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "dream": 2
   }
 }

@@ -5,6 +5,7 @@
   },
   "aspects": {
     "arbor": 8,
-    "dense": 14
+    "dense": 14,
+    "history": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "dndecor:dark_metal_block_slab"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "evil": 2
   }
 }

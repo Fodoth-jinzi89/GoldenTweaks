@@ -4,6 +4,7 @@
     "id": "create_ore_excavation_plus:raw_diamond_dust"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "treasure": 2
   }
 }

@@ -5,6 +5,7 @@
   },
   "aspects": {
     "iter": 3,
-    "machina": 3
+    "machina": 3,
+    "orbita": 2
   }
 }

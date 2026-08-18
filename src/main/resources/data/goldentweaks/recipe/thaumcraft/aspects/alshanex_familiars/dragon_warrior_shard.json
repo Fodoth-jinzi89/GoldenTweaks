@@ -4,6 +4,7 @@
     "id": "alshanex_familiars:dragon_warrior_shard"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "dragon": 2
   }
 }

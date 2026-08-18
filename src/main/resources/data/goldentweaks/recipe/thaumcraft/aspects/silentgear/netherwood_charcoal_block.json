@@ -4,6 +4,7 @@
     "id": "silentgear:netherwood_charcoal_block"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "favilla": 2
   }
 }

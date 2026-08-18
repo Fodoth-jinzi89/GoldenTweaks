@@ -4,6 +4,7 @@
     "id": "spectrum:sludge_bucket"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "limus": 2
   }
 }

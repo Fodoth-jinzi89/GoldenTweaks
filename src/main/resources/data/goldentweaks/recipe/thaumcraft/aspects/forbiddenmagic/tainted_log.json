@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:tainted_log"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "atrpraecantatic": 2
   }
 }

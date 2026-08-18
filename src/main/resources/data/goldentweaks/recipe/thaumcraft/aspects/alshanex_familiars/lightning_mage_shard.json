@@ -4,6 +4,7 @@
     "id": "alshanex_familiars:lightning_mage_shard"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "fulmen": 2
   }
 }

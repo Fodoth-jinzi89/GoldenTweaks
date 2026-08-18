@@ -4,6 +4,7 @@
     "id": "thaumcraft:gold_coin"
   },
   "aspects": {
-    "lucrum": 1
+    "lucrum": 1,
+    "treasure": 2
   }
 }

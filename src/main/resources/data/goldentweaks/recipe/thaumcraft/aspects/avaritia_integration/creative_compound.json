@@ -4,6 +4,7 @@
     "id": "avaritia_integration:creative_compound"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "arche": 2
   }
 }

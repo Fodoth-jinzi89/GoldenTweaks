@@ -4,6 +4,7 @@
     "id": "cataclysm:wither_assault_shoulder_weapon"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "exanimis": 2
   }
 }

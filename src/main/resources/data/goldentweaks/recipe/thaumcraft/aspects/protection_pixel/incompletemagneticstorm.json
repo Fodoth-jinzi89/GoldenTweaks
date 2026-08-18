@@ -4,6 +4,7 @@
     "id": "protection_pixel:incompletemagneticstorm"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "magnetis": 2
   }
 }

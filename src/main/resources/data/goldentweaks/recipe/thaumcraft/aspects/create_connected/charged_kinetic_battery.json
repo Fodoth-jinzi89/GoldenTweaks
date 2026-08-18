@@ -4,6 +4,7 @@
     "id": "create_connected:charged_kinetic_battery"
   },
   "aspects": {
-    "potentia": 3
+    "potentia": 3,
+    "fulmen": 2
   }
 }

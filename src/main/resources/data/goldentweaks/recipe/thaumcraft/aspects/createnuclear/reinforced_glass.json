@@ -4,6 +4,7 @@
     "id": "createnuclear:reinforced_glass"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "mornogol": 2
   }
 }

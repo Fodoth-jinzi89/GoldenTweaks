@@ -4,6 +4,7 @@
     "id": "createnuclear:gray_cloth"
   },
   "aspects": {
-    "pannus": 2
+    "pannus": 2,
+    "textus": 2
   }
 }

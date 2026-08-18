@@ -4,6 +4,7 @@
     "id": "cataclysm:witherite_ingot"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "exanimis": 2
   }
 }

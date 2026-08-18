@@ -4,6 +4,7 @@
     "id": "silentgems:chaos_essence_block"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "spiritus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:creative_injecting_factory"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "arche": 2
   }
 }

@@ -4,6 +4,8 @@
     "id": "thaumic_tinkerer:nether_shard"
   },
   "aspects": {
-    "praecantatio": 4
+    "infernus": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

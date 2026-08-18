@@ -4,6 +4,7 @@
     "id": "avaritia_integration:molten_star_bucket"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "lava": 2
   }
 }

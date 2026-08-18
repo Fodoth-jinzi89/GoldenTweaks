@@ -4,6 +4,7 @@
     "id": "createnuclear:orange_cloth"
   },
   "aspects": {
-    "pannus": 2
+    "pannus": 2,
+    "textus": 2
   }
 }

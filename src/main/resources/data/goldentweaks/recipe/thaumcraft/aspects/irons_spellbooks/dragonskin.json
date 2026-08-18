@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:dragonskin"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dragon": 2
   }
 }

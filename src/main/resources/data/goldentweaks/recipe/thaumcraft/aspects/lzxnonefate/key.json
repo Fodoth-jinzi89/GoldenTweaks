@@ -5,6 +5,7 @@
   },
   "aspects": {
     "iter": 2,
-    "vinculum": 2
+    "vinculum": 2,
+    "mornogol": 32
   }
 }

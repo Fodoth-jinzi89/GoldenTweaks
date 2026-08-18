@@ -4,6 +4,7 @@
     "id": "hazennstuff:health_rune"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "sano": 2
   }
 }

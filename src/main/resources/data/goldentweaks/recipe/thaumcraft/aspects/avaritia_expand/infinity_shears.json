@@ -4,6 +4,7 @@
     "id": "avaritia_expand:infinity_shears"
   },
   "aspects": {
-    "terminus": 6
+    "terminus": 6,
+    "universes": 2
   }
 }

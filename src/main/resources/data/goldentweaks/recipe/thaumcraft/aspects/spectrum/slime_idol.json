@@ -4,6 +4,7 @@
     "id": "spectrum:slime_idol"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "limus": 2
   }
 }

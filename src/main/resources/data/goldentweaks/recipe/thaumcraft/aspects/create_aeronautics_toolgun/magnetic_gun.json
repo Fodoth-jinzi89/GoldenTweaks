@@ -4,6 +4,7 @@
     "id": "create_aeronautics_toolgun:magnetic_gun"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "magnetis": 2
   }
 }

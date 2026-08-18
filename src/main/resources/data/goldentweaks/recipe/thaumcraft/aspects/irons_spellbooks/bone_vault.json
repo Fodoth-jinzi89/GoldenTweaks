@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:bone_vault"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "fossil": 2
   }
 }

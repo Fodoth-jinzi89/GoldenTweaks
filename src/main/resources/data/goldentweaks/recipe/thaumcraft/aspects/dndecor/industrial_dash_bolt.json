@@ -4,6 +4,7 @@
     "id": "dndecor:industrial_dash_bolt"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "favilla": 2
   }
 }

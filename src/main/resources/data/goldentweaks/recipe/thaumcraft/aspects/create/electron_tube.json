@@ -4,6 +4,7 @@
     "id": "create:electron_tube"
   },
   "aspects": {
-    "potentia": 3
+    "potentia": 3,
+    "fulmen": 2
   }
 }

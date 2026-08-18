@@ -4,6 +4,7 @@
     "id": "alshanex_familiars:shrinking_station"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "imperium": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "sable_tournament:explosive_instant_small"
   },
   "aspects": {
-    "explosion": 4
+    "explosion": 4,
+    "destroy": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "apotheosis:music_disc_flash"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "favilla": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "cataclysm:azure_seastone_mural_harvest"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "meto": 2
   }
 }

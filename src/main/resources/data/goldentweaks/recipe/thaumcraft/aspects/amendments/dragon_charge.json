@@ -4,6 +4,7 @@
     "id": "amendments:dragon_charge"
   },
   "aspects": {
-    "substance": 2
+    "substance": 2,
+    "dragon": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "cataclysm:ancient_spear"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "mornogol": 2
   }
 }

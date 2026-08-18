@@ -1276,10 +1276,13 @@ def fallback_zh(name):
 
 def write_generated_lang(entries, resolver):
     generated = {"en_us": {}, "zh_cn": {}}
+    zh_path = LANG_DIR / "zh_cn.json"
+    existing_zh = json.loads(zh_path.read_text(encoding="utf-8")) if zh_path.exists() else {}
+    manual_zh = {key: value for key, value in existing_zh.items() if key.startswith("material.goldentweaks.compat.")}
     for entry in entries:
         key = generated_translation_key(entry)
         generated["en_us"][key] = resolver.item_name(entry["id"], "en_us") or entry["name"]
-        generated["zh_cn"][key] = ZH_OVERRIDES.get(entry["id"]) or resolver.item_name(entry["id"], "zh_cn") or fallback_zh(entry["material"])
+        generated["zh_cn"][key] = manual_zh.get(key) or ZH_OVERRIDES.get(entry["id"]) or resolver.item_name(entry["id"], "zh_cn") or fallback_zh(entry["material"])
     LANG_DIR.mkdir(parents=True, exist_ok=True)
     for locale, values in generated.items():
         path = LANG_DIR / f"{locale}.json"

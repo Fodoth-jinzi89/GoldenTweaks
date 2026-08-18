@@ -4,6 +4,7 @@
     "id": "aerocali:creative_generator"
   },
   "aspects": {
-    "potentia": 3
+    "potentia": 3,
+    "arche": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "create_sa:copper_magnet"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "magnetis": 2
   }
 }

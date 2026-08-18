@@ -4,6 +4,7 @@
     "id": "spectrum:phantom_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spiritus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "compactmachines:personal_shrinking_device"
   },
   "aspects": {
-    "gelum": 3
+    "gelum": 3,
+    "imperium": 2
   }
 }

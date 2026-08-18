@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:lightning_rod"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fulmen": 2
   }
 }

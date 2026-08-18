@@ -4,6 +4,7 @@
     "id": "thaumcraft:wisp_essence"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 3,
+    "spiritus": 2
   }
 }

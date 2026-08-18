@@ -4,6 +4,7 @@
     "id": "protection_pixel:pneumaticgrenadelauncharm"
   },
   "aspects": {
-    "accessories": 3
+    "accessories": 3,
+    "illecebra": 2
   }
 }

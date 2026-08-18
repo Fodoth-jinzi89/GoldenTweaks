@@ -4,6 +4,7 @@
     "id": "alltheores:copper_nugget"
   },
   "aspects": {
-    "metallum": 1
+    "metallum": 1,
+    "magnetis": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:ender_dragon_idol"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 3,
+    "dragon": 2
   }
 }

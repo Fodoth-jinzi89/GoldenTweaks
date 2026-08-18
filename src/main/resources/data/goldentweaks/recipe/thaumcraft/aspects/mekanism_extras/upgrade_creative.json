@@ -4,6 +4,7 @@
     "id": "mekanism_extras:upgrade_creative"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "arche": 2
   }
 }

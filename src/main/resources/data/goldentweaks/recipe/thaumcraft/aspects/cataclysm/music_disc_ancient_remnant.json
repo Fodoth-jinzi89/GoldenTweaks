@@ -4,6 +4,9 @@
     "id": "cataclysm:music_disc_ancient_remnant"
   },
   "aspects": {
-    "sonus": 4
+    "sonus": 4,
+    "mornogol": 2,
+    "fossil": 2,
+    "priscus": 2
   }
 }

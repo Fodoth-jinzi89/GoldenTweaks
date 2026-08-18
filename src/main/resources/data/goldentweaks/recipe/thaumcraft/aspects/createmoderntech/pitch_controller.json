@@ -4,6 +4,7 @@
     "id": "createmoderntech:pitch_controller"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "imperium": 2
   }
 }

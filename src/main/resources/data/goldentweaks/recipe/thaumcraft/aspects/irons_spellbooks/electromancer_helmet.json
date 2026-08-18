@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:electromancer_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "fulmen": 2
   }
 }

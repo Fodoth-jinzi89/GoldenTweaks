@@ -4,6 +4,7 @@
     "id": "computercraft:treasure_disk"
   },
   "aspects": {
-    "lucrum": 3
+    "lucrum": 3,
+    "treasure": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "alltheores:diamond_dust"
   },
   "aspects": {
-    "vitreus": 2
+    "vitreus": 2,
+    "treasure": 2
   }
 }

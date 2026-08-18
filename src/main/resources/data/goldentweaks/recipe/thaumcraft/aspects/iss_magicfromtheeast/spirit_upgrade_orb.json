@@ -4,6 +4,7 @@
     "id": "iss_magicfromtheeast:spirit_upgrade_orb"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "auram": 2
   }
 }

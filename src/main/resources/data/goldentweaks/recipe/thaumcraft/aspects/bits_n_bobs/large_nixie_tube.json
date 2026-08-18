@@ -4,6 +4,7 @@
     "id": "bits_n_bobs:large_nixie_tube"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "expand": 2
   }
 }

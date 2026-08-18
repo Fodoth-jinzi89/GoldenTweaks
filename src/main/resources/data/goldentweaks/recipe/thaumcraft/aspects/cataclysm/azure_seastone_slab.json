@@ -4,6 +4,7 @@
     "id": "cataclysm:azure_seastone_slab"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "aestus": 2
   }
 }

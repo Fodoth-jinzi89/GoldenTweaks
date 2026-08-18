@@ -4,6 +4,7 @@
     "id": "hazennstuff:health_upgrade_orb"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "sano": 2
   }
 }

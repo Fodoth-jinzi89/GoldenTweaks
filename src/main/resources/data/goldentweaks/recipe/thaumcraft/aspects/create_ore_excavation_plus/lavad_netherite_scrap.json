@@ -4,6 +4,7 @@
     "id": "create_ore_excavation_plus:lavad_netherite_scrap"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "lava": 2
   }
 }

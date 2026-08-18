@@ -4,6 +4,7 @@
     "id": "thaumcraft:charged_obsidian_totem"
   },
   "aspects": {
-    "potentia": 3
+    "potentia": 3,
+    "fulmen": 2
   }
 }

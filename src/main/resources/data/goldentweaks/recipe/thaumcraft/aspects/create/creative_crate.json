@@ -4,6 +4,7 @@
     "id": "create:creative_crate"
   },
   "aspects": {
-    "vas": 3
+    "vas": 3,
+    "arche": 2
   }
 }

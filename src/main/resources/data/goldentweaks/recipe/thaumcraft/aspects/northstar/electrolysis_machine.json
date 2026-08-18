@@ -4,6 +4,7 @@
     "id": "northstar:electrolysis_machine"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "fulmen": 2
   }
 }

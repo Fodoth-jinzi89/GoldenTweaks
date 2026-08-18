@@ -4,6 +4,7 @@
     "id": "hazennstuff:deus_essence"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "spiritus": 2
   }
 }

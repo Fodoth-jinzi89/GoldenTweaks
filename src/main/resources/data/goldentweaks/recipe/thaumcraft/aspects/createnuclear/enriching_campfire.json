@@ -4,6 +4,7 @@
     "id": "createnuclear:enriching_campfire"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "favilla": 2
   }
 }

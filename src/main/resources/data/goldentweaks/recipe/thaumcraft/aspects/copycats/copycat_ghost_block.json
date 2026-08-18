@@ -4,6 +4,7 @@
     "id": "copycats:copycat_ghost_block"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "spiritus": 2
   }
 }

@@ -4,8 +4,8 @@
     "id": "thaumcraft:water_shard"
   },
   "aspects": {
-    "praecantatio": 1,
     "aqua": 2,
-    "vitreus": 1
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

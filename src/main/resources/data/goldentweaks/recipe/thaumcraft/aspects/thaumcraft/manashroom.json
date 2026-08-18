@@ -4,6 +4,7 @@
     "id": "thaumcraft:manashroom"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "praecantaticherba": 2
   }
 }

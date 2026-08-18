@@ -4,6 +4,7 @@
     "id": "extendedae:threshold_export_bus"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "anteanus": 2
   }
 }

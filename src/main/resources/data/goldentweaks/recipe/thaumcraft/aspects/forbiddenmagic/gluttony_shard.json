@@ -4,7 +4,8 @@
     "id": "forbiddenmagic:gluttony_shard"
   },
   "aspects": {
-    "praecantatio": 4,
-    "vitium": 2
+    "gula": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

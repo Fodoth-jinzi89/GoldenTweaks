@@ -4,6 +4,7 @@
     "id": "dndecor:large_industrial_chain"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "expand": 2
   }
 }

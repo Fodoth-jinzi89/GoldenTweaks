@@ -4,6 +4,7 @@
     "id": "avaritia_integration:infinity_long_rod"
   },
   "aspects": {
-    "terminus": 6
+    "terminus": 6,
+    "alfirin": 2
   }
 }

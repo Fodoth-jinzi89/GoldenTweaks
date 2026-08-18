@@ -5,6 +5,9 @@
   },
   "aspects": {
     "bestia": 3,
-    "vinculum": 3
+    "vinculum": 3,
+    "mornogol": 2,
+    "fossil": 2,
+    "priscus": 2
   }
 }

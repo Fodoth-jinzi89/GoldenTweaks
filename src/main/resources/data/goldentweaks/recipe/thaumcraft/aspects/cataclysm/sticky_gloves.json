@@ -4,6 +4,7 @@
     "id": "cataclysm:sticky_gloves"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "limus": 2
   }
 }

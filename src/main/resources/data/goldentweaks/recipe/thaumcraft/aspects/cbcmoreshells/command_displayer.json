@@ -4,6 +4,7 @@
     "id": "cbcmoreshells:command_displayer"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "imperium": 2
   }
 }

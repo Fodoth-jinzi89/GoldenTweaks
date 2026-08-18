@@ -4,6 +4,7 @@
     "id": "createaddition:gold_rod"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "priscus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "dndecor:green_large_metal_girder"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "expand": 2
   }
 }

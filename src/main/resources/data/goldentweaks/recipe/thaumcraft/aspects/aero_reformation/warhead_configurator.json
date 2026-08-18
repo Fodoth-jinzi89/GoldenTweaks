@@ -6,6 +6,7 @@
   "aspects": {
     "explosion": 4,
     "telum": 4,
-    "machina": 3
+    "machina": 3,
+    "destroy": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:molten_certus_quartz_bucket"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "lava": 2
   }
 }

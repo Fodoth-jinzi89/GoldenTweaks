@@ -4,6 +4,7 @@
     "id": "iss_magicfromtheeast:arcane_relics"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fossil": 2
   }
 }

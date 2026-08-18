@@ -4,6 +4,7 @@
     "id": "create:bamboo_window_pane"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "tempestas": 2
   }
 }

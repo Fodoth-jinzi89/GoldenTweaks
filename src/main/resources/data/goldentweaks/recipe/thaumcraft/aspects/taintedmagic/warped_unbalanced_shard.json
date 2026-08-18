@@ -4,8 +4,8 @@
     "id": "taintedmagic:warped_unbalanced_shard"
   },
   "aspects": {
-    "iter": 4,
-    "arbor": 3,
-    "alienis": 2
+    "alienis": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

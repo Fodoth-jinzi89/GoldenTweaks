@@ -4,6 +4,7 @@
     "id": "northstar:moon_titanium_ore"
   },
   "aspects": {
-    "space": 3
+    "space": 3,
+    "dream": 2
   }
 }

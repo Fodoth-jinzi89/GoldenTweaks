@@ -5,6 +5,7 @@
   },
   "aspects": {
     "terminus": 6,
-    "explosion": 4
+    "explosion": 4,
+    "destroy": 2
   }
 }

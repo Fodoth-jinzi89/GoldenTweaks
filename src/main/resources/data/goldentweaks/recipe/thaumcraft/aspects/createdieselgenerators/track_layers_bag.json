@@ -5,6 +5,7 @@
   },
   "aspects": {
     "vacuos": 4,
-    "vas": 2
+    "vas": 2,
+    "orbita": 2
   }
 }

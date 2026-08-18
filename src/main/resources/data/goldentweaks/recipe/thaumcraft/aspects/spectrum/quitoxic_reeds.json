@@ -4,6 +4,7 @@
     "id": "spectrum:quitoxic_reeds"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "venenum": 2
   }
 }

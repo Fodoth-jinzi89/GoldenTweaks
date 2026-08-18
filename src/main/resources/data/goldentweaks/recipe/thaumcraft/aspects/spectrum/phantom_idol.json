@@ -4,6 +4,7 @@
     "id": "spectrum:phantom_idol"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "spiritus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "silentgear:fine_silk_cloth"
   },
   "aspects": {
-    "pannus": 2
+    "pannus": 2,
+    "textus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:block_alloy_hypercharged"
   },
   "aspects": {
-    "potentia": 3
+    "potentia": 3,
+    "fulmen": 2
   }
 }

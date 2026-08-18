@@ -4,6 +4,7 @@
     "id": "silentgems:reinforced_gold_rod"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "anteanus": 2
   }
 }

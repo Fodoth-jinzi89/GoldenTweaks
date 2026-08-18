@@ -4,6 +4,8 @@
     "id": "thaumcraft:balanced_shard"
   },
   "aspects": {
-    "praecantatio": 4
+    "ordo": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

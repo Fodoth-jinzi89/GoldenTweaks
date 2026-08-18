@@ -4,6 +4,7 @@
     "id": "traveloptics:lightning_spellweave_ingot"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fulmen": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "ae2wtlib:magnet_card"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "magnetis": 2
   }
 }

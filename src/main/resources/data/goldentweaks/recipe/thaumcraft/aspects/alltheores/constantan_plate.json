@@ -4,6 +4,7 @@
     "id": "alltheores:constantan_plate"
   },
   "aspects": {
-    "metallum": 2
+    "metallum": 2,
+    "mixtura": 2
   }
 }

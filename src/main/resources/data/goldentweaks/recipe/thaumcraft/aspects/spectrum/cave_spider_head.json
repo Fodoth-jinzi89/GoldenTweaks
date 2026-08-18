@@ -4,6 +4,7 @@
     "id": "spectrum:cave_spider_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spelunca": 2
   }
 }

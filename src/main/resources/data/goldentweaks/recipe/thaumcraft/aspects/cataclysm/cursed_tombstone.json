@@ -4,6 +4,8 @@
     "id": "cataclysm:cursed_tombstone"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "evil": 2,
+    "atrpraecantatic": 2
   }
 }

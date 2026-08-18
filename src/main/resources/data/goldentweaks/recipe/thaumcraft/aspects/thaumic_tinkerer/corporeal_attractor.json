@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:corporeal_attractor"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "illecebra": 2
   }
 }

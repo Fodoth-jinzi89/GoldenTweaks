@@ -4,6 +4,7 @@
     "id": "createbigcannons:molten_cast_iron_bucket"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "lava": 2
   }
 }

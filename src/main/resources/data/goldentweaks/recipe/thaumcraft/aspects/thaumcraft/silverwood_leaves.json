@@ -4,6 +4,7 @@
     "id": "thaumcraft:silverwood_leaves"
   },
   "aspects": {
-    "herba": 1
+    "herba": 1,
+    "praecantaticherba": 2
   }
 }

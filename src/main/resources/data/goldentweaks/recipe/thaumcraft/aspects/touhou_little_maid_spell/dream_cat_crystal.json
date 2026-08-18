@@ -4,6 +4,7 @@
     "id": "touhou_little_maid_spell:dream_cat_crystal"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "dream": 2
   }
 }

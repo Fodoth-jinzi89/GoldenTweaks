@@ -4,6 +4,7 @@
     "id": "create_ore_excavation_plus:washed_raw_emerald"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "favilla": 2
   }
 }

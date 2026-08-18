@@ -4,6 +4,7 @@
     "id": "spectrum:glow_phantom_frame"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spiritus": 2
   }
 }

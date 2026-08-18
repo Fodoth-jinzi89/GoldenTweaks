@@ -4,6 +4,7 @@
     "id": "cataclysm:azure_sea_shield"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "waters": 2
   }
 }

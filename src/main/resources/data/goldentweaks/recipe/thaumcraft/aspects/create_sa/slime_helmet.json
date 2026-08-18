@@ -4,6 +4,7 @@
     "id": "create_sa:slime_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "limus": 2
   }
 }

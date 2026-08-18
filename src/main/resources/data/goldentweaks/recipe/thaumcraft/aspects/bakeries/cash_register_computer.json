@@ -4,6 +4,7 @@
     "id": "bakeries:cash_register_computer"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "favilla": 2
   }
 }

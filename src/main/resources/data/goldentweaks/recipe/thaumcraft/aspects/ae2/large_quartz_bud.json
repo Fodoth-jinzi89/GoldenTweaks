@@ -4,6 +4,7 @@
     "id": "ae2:large_quartz_bud"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "expand": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "taintedmagic:primordial_mote"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:wither_skeleton_idol"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "exanimis": 2
   }
 }

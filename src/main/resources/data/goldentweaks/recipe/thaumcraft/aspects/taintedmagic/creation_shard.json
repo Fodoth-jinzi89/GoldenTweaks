@@ -4,6 +4,8 @@
     "id": "taintedmagic:creation_shard"
   },
   "aspects": {
-    "praecantatio": 4
+    "arche": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

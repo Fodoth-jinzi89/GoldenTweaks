@@ -4,6 +4,8 @@
     "id": "taintedmagic:focus_vis_shard"
   },
   "aspects": {
-    "praecantatio": 4
+    "potentia": 2,
+    "vitreus": 1,
+    "praecantatio": 1
   }
 }

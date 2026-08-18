@@ -6,6 +6,7 @@
   "aspects": {
     "herba": 2,
     "arbor": 1,
-    "praecantatio": 1
+    "praecantatio": 1,
+    "praecantaticherba": 2
   }
 }

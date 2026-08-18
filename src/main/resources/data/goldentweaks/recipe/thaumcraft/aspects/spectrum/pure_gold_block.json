@@ -4,6 +4,7 @@
     "id": "spectrum:pure_gold_block"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "anteanus": 2
   }
 }

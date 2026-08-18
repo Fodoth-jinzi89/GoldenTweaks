@@ -4,6 +4,7 @@
     "id": "avaritia:star_fuel"
   },
   "aspects": {
-    "terminus": 3
+    "terminus": 3,
+    "universes": 2
   }
 }

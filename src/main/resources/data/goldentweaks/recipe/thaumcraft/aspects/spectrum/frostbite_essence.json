@@ -4,6 +4,7 @@
     "id": "spectrum:frostbite_essence"
   },
   "aspects": {
-    "gelum": 3
+    "gelum": 3,
+    "spiritus": 2
   }
 }

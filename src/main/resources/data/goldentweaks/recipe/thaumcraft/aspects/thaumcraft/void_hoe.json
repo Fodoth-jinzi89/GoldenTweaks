@@ -4,6 +4,7 @@
     "id": "thaumcraft:void_hoe"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "meto": 2
   }
 }
