@@ -2,13 +2,13 @@
 材料总数：436
 说明：属性来自当前生成后的材料 JSON；原批注已保留；金属类别、等级和语义偏移与金属系材料设计同步。
 
-短ID	材料ID	显示名称	护甲值	挖掘速度	攻击力	原批注	材料类别	等级	语义偏移
-aluminum	goldentweaks:aluminum	Aluminum	14.56	5.533	2.33		硬金属	2	偏低 0.45
-azure_electrum	goldentweaks:azure_electrum	Azure Electrum	14.36	12.206	1.436		软金属	3	偏低 0.20
-azure_silver	goldentweaks:azure_silver	Azure Silver	10.28	8.738	1.028		软金属	2	偏低 0.30
+短ID	材料ID	显示名称	护甲值	挖掘速度	攻击力		材料类别	等级	语义偏移
+zinc_ingot	goldentweaks:compat/alltheores/zinc_ingot	Zinc Ingot	12.32	4.682	1.971		硬金属	1	偏高 0.10
 blaze_gold	goldentweaks:blaze_gold	Blaze Gold	8	6.8	0.8		软金属	1	中心
-brass	goldentweaks:brass	Brass	18.88	7.174	3.021		硬金属	3	偏低 0.35
-bronze	goldentweaks:bronze	Bronze	20	7.6	3.2		硬金属	3	中心
+electrum	goldentweaks:electrum	Electrum	8	6.8	0.8		软金属	1	中心
+gold	goldentweaks:gold	Golden	8	6.8	0.8		软金属	1	中心
+cardboard_ingot	goldentweaks:compat/createcardboardthings/cardboard_ingot	Cardboard Ingot	12	4.56	1.92		硬金属	1	偏低 0.75
+copper	goldentweaks:copper	Copper	12	4.56	1.92		硬金属	1	偏低 0.10
 fluix	goldentweaks:compat/ae2/fluix	Fluix Crystal	16.5	6.6	2.2
 sky_stone	goldentweaks:compat/ae2/sky_stone	Sky Stone	5.082	2.482	1.086
 purified_data	goldentweaks:compat/ae2cs/purified_data	Purified Data Crystal	18.627	13.662	5.187
@@ -21,20 +21,20 @@ purified_link	goldentweaks:compat/ae2cs/purified_link	Purified Link Crystal	18.7
 purified_meteor	goldentweaks:compat/ae2cs/purified_meteor	Purified Meteor Crystal	15.724	10.937	4.23
 purified_redstone	goldentweaks:compat/ae2cs/purified_redstone	Purified Redstone Crystal	17.819	12.889	4.918
 purified_resonating	goldentweaks:compat/ae2cs/purified_resonating	Purified Resonating Crystal	45.579	31.362	12.177
-constantan	goldentweaks:compat/alltheores/constantan	Constantan Ingot	20.2	7.676	3.232		硬金属	3	偏高 0.05
-iridium	goldentweaks:compat/alltheores/iridium	Iridium Ingot	36.32	13.802	5.811		硬金属	5	偏高 0.60
-zinc_ingot	goldentweaks:compat/alltheores/zinc_ingot	Zinc Ingot	12.32	4.682	1.971		硬金属	1	偏高 0.10
+lead	goldentweaks:lead	Lead	12.8	4.864	2.048		硬金属	1	偏高 0.25
+tin	goldentweaks:tin	Tin	12	4.56	1.92		硬金属	1	偏低 0.35
+aluminum	goldentweaks:aluminum	Aluminum	14.56	5.533	2.33		硬金属	2	偏低 0.45
 warden_tendril	goldentweaks:compat/apothic_enchanting/warden_tendril	Warden Tendril	不适用	不适用	不适用	是有机物，不是金属
 compressed_solidified_flux_experience	goldentweaks:compat/apothicenchantingaddition/compressed_solidified_flux_experience	Compressed Solidified Flux Experience	19.192	11.436	4.668	是宝石，不是金属
 blaze_cube	goldentweaks:compat/avaritia/blaze_cube	Blaze Cube	119.1	75.94	30.28	稀有宝石，增强10倍
-crystal_matrix_ingot	goldentweaks:compat/avaritia/crystal_matrix_ingot	Crystal Matrix Ingot	68	25.84	10.88	稀有金属，增强10倍	硬金属	8	偏高 0.70
+black_iron_ingot	goldentweaks:compat/extendedcrafting/black_iron_ingot	Black Iron Ingot	17.12	6.506	2.739		硬金属	2	偏高 0.35
 endest_pearl	goldentweaks:compat/avaritia/endest_pearl	Endest Pearl	127.645	103.325	37.905	稀有宝石，增强5倍
-infinity_ingot	goldentweaks:compat/avaritia/infinity_ingot	Infinity Ingot	460	276	105.8		神级金属	2	中心
-neutron_ingot	goldentweaks:compat/avaritia/neutron_ingot	Neutronium Ingot	300	180	69		神级金属	1	中心
-star_fuel	goldentweaks:compat/avaritia/star_fuel	Star Fuel	104.94	64.31	26	稀有宝石，增强10倍
-creative_compound	goldentweaks:compat/avaritia_integration/creative_compound	Creative Compound	151.299	146.255	50.433
-cosmic_ingot	goldentweaks:compat/avaritia_more_items/cosmic_ingot	Cosmic Ingot	1000	600	230		神级金属	4	中心
-quark_ingot	goldentweaks:compat/avaritia_more_items/quark_ingot	Quark Ingot	700	420	161	终极金属，增加至护甲值1000，其它属性相应增加	神级金属	3	中心
+neutron_ingot	goldentweaks:compat/avaritia/neutron_ingot	Neutronium Ingot	300	180.0	69.0		神级金属	1	中心
+infinity_ingot	goldentweaks:compat/avaritia/infinity_ingot	Infinity Ingot	460	276.0	105.8		神级金属	2	中心
+star_fuel	goldentweaks:compat/avaritia/star_fuel	Star Fuel	104.94	64.31	26.0	稀有宝石，增强10倍
+creative_compound	goldentweaks:compat/avaritia_integration/creative_compound	Creative Compound	180	108.0	41.4		神级灌注合金	1	中心
+quark_ingot	goldentweaks:compat/avaritia_more_items/quark_ingot	Quark Ingot	700	420.0	161.0	终极金属，增加至护甲值1000，其它属性相应增加	神级金属	3	中心
+cosmic_ingot	goldentweaks:compat/avaritia_more_items/cosmic_ingot	Cosmic Ingot	1000	600.0	230.0		神级金属	4	中心
 egg	goldentweaks:compat/bakeries/egg	Raw Egg Tart	不适用	不适用	不适用
 yeast	goldentweaks:compat/bakeries/yeast	Bottle Yeast	不适用	不适用	不适用
 black_sand	goldentweaks:compat/biomesoplenty/black_sand	Black Sand	4.929	2.385	1.047
@@ -76,53 +76,53 @@ white_sand	goldentweaks:compat/biomesoplenty/white_sand	White Sand	4.766	2.281	1
 willow	goldentweaks:compat/biomesoplenty/willow	Willow Log	3.418	1.474	0.674
 willow_vine	goldentweaks:compat/biomesoplenty/willow_vine	Willow Vine	不适用	不适用	不适用
 yellow_maple	goldentweaks:compat/biomesoplenty/yellow_maple	Yellow Maple Leaves	不适用	不适用	不适用
-ancient_metal_ingot	goldentweaks:compat/cataclysm/ancient_metal_ingot	Ancient Metal Ingot	45.8	17.404	7.328		硬金属	6	偏高 0.50
-black_steel_ingot	goldentweaks:compat/cataclysm/black_steel_ingot	Black Steel Ingot	42.92	16.31	6.867		硬金属	6	偏高 0.20
+ender_ingot	goldentweaks:compat/extendedcrafting/ender_ingot	Ender Ingot	16.96	6.445	2.714		硬金属	2	偏高 0.30
+redstone_ingot	goldentweaks:compat/extendedcrafting/redstone_ingot	Redstone Ingot	14.88	5.654	2.381		硬金属	2	偏低 0.35
 chorus	goldentweaks:compat/cataclysm/chorus	Chorus Stem	3.225	1.366	0.628
 crystallized_coral	goldentweaks:compat/cataclysm/crystallized_coral	Crystallized Coral	不适用	不适用	不适用
-cursium_ingot	goldentweaks:compat/cataclysm/cursium_ingot	Cursium Ingot	44.36	16.857	7.098		硬金属	6	偏高 0.35
+tungsten	goldentweaks:compat/neoecoae/tungsten	Tungsten Ingot	18.24	6.931	2.918		硬金属	2	偏高 0.70
 essence_of_the_storm	goldentweaks:compat/cataclysm/essence_of_the_storm	Essence of the Storm	12.242	7.873	3.13
-ignitium_ingot	goldentweaks:compat/cataclysm/ignitium_ingot	Ignitium Ingot	60.8	23.104	9.728		硬金属	7	偏高 0.65
+iron	goldentweaks:iron	Iron	16	6.08	2.56		硬金属	2	中心
 koboleton_bone	goldentweaks:compat/cataclysm/koboleton_bone	Koboleton Bone	不适用	不适用	不适用
 lacrima	goldentweaks:compat/cataclysm/lacrima	Lacrima	19.708	11.842	4.82	宝石，增强2倍
 void	goldentweaks:compat/cataclysm/void	Void Crystal	21.587	18.539	6.662
 void_stone	goldentweaks:compat/cataclysm/void_stone	Void Stone	14.296	11.991	4.345	削弱50%
-witherite_ingot	goldentweaks:compat/cataclysm/witherite_ingot	Witherite Ingot	68	25.84	10.88	稀有金属，增强10倍	硬金属	8	偏高 0.30
+nickel	goldentweaks:nickel	Nickel	16.48	6.262	2.637		硬金属	2	偏高 0.15
 andesite_alloy	goldentweaks:compat/create/andesite_alloy	Andesite Alloy	12.367	7.979	3.168
 limestone	goldentweaks:compat/create/limestone	Limestone	5.14	2.519	1.101
 polished_rose_quartz	goldentweaks:compat/create/polished_rose_quartz	Polished Rose Quartz	19.584	11.744	4.784
 scoria	goldentweaks:compat/create/scoria	Scoria	4.805	2.306	1.015
 alternative_chromatic_compound	goldentweaks:compat/create_fantasizing/alternative_chromatic_compound	Alternative Chromatic Compound	25.529	20.665	7.581
 heap_of_experience	goldentweaks:compat/create_sa/heap_of_experience	Heap of Experience	12.017	7.684	3.061
-cast_iron	goldentweaks:compat/createbigcannons/cast_iron	Cast Iron Ingot	19.36	7.357	3.098		硬金属	3	偏低 0.20
+brass	goldentweaks:brass	Brass	18.88	7.174	3.021		硬金属	3	偏低 0.35
 nethersteel_ingot	goldentweaks:compat/createbigcannons/nethersteel_ingot	Nethersteel Ingot	13.125	8.627	3.404		金属覆层	2	偏低 0.25
 honey_butter	goldentweaks:compat/createbuttercat/honey_butter	Honey Butter	不适用	不适用	不适用	是覆层
 super_butter	goldentweaks:compat/createbuttercat/super_butter	Super Butter	不适用	不适用	不适用	是覆层
-cardboard_ingot	goldentweaks:compat/createcardboardthings/cardboard_ingot	Cardboard Ingot	12	4.56	1.92		硬金属	1	偏低 0.75
+bronze	goldentweaks:bronze	Bronze	20	7.6	3.2		硬金属	3	中心
 cloth	goldentweaks:compat/createnuclear/cloth	Red Cloth	不适用	不适用	不适用
-void_steel_ingot	goldentweaks:compat/createvoidway/void_steel_ingot	Void Steel Ingot	45	43.5	15		金属覆层	2	偏高 0.55
+void_steel_ingot	goldentweaks:compat/createvoidway/void_steel_ingot	Void Steel Ingot	不适用	不适用	不适用		金属覆层	2	偏高 0.55
 cinnamon	goldentweaks:compat/croptopia/cinnamon	Cinnamon Log	3.705	1.639	0.742
 cut_stone	goldentweaks:compat/dndecor/cut_stone	Polished Cut Stone	5.058	2.466	1.08
 dolomite	goldentweaks:compat/dndecor/dolomite	Dolomite	4.411	2.061	0.916
 gabbro	goldentweaks:compat/dndecor/gabbro	Gabbro	4.317	2.004	0.893
 layered_stone	goldentweaks:compat/dndecor/layered_stone	Layered Stone	4.612	2.185	0.966
 alloy_creative	goldentweaks:compat/evolvedmekanism/alloy_creative	Creative Alloy	195.059	188.557	65.02	mek的合金等级：灌注<强化<原子<超频<绝对<亚原子<热核<奇点<闪耀<超界<光谱，亚原子及以上为稀有金属，最高光谱属性约为护甲值200，其它按比例缩放
-alloy_exoversal	goldentweaks:compat/evolvedmekanism/alloy_exoversal	Exoversal Alloy	181.5	72.6	24.2
-alloy_hypercharged	goldentweaks:compat/evolvedmekanism/alloy_hypercharged	Hypercharged Alloy	70.5	28.2	9.4
-alloy_singular	goldentweaks:compat/evolvedmekanism/alloy_singular	Singular Alloy	144.5	57.8	19.267
-alloy_subatomic	goldentweaks:compat/evolvedmekanism/alloy_subatomic	Subatomic Alloy	107.5	43	14.333
-ingot_better_gold	goldentweaks:compat/evolvedmekanism/ingot_better_gold	Better Gold Ingot	39.56	15.033	6.33		硬金属	6	偏低 0.20
-ingot_plaslitherite	goldentweaks:compat/evolvedmekanism/ingot_plaslitherite	Plaslitherite Ingot	61.4	23.332	9.824		硬金属	7	偏高 0.70
-ingot_refined_redstone	goldentweaks:compat/evolvedmekanism/ingot_refined_redstone	Refined Redstone Ingot	24.6	9.348	3.936	削弱50%	硬金属	4	偏低 0.10
-entro	goldentweaks:compat/extendedae/entro	Entro Crystal	14.188	8.911	3.571
+alloy_exoversal	goldentweaks:compat/evolvedmekanism/alloy_exoversal	Exoversal Alloy	51.52	21.638	7.213		超级灌注合金	3	中心
+alloy_hypercharged	goldentweaks:compat/evolvedmekanism/alloy_hypercharged	Hypercharged Alloy	21.16	8.887	2.962		灌注合金	4	中心
+alloy_singular	goldentweaks:compat/evolvedmekanism/alloy_singular	Singular Alloy	28.52	11.978	3.993		超级灌注合金	1	中心
+alloy_subatomic	goldentweaks:compat/evolvedmekanism/alloy_subatomic	Subatomic Alloy	38.64	16.229	5.41		超级灌注合金	2	中心
+constantan	goldentweaks:compat/alltheores/constantan	Constantan Ingot	20.2	7.676	3.232		硬金属	3	偏高 0.05
+cast_iron	goldentweaks:compat/createbigcannons/cast_iron	Cast Iron Ingot	19.36	7.357	3.098		硬金属	3	偏低 0.20
 entro_ingot	goldentweaks:compat/extendedae/entro_ingot	Entro Infused Ingot	22.6	8.588	3.616		硬金属	3	偏高 0.65
-black_iron_ingot	goldentweaks:compat/extendedcrafting/black_iron_ingot	Black Iron Ingot	17.12	6.506	2.739		硬金属	2	偏高 0.35
-crystaltine_ingot	goldentweaks:compat/extendedcrafting/crystaltine_ingot	Crystaltine Ingot	58.4	22.192	9.344	金属	硬金属	7	偏高 0.45
-ender_ingot	goldentweaks:compat/extendedcrafting/ender_ingot	Ender Ingot	16.96	6.445	2.714		硬金属	2	偏高 0.30
-enhanced_ender_ingot	goldentweaks:compat/extendedcrafting/enhanced_ender_ingot	Enhanced Ender Ingot	56	21.28	8.96		硬金属	7	偏高 0.25
-enhanced_redstone_ingot	goldentweaks:compat/extendedcrafting/enhanced_redstone_ingot	Enhanced Redstone Ingot	51.08	19.41	8.173		硬金属	7	偏低 0.20
-redstone_ingot	goldentweaks:compat/extendedcrafting/redstone_ingot	Redstone Ingot	14.88	5.654	2.381		硬金属	2	偏低 0.35
-the_ultimate_ingot	goldentweaks:compat/extendedcrafting/the_ultimate_ingot	The Ultimate Ingot	218	104.64	41.42		超级金属	5	中心
+entro	goldentweaks:compat/extendedae/entro	Entro Crystal	14.188	8.911	3.571
+thaumium_ingot	goldentweaks:compat/thaumcraft/thaumium_ingot	Thaumium Ingot	22.2	8.436	3.552		硬金属	3	偏高 0.55
+invar	goldentweaks:invar	Invar	21.2	8.056	3.392		硬金属	3	偏高 0.30
+ingot_refined_redstone	goldentweaks:compat/evolvedmekanism/ingot_refined_redstone	Refined Redstone Ingot	24.6	9.348	3.936		硬金属	4	偏低 0.10
+arcane_ingot	goldentweaks:compat/irons_spellbooks/arcane_ingot	Arcane Ingot	27.52	10.458	4.403		硬金属	4	偏高 0.45
+aluminum_alloy_ingot	goldentweaks:compat/neoecoae/aluminum_alloy_ingot	Aluminum Alloy Ingot	24.8	9.424	3.968		硬金属	4	偏低 0.05
+black_tungsten_alloy_ingot	goldentweaks:compat/neoecoae/black_tungsten_alloy_ingot	Black Tungsten Alloy Ingot	28.92	10.99	4.627		硬金属	4	偏高 0.70
+shadow_metal_ingot	goldentweaks:compat/taintedmagic/shadow_metal_ingot	Shadow Metal Ingot	26.96	10.245	4.314		硬金属	4	偏高 0.35
+abyssal_spellweave_ingot	goldentweaks:compat/traveloptics/abyssal_spellweave_ingot	Abyssal Spellweave Ingot	92.12	44.218	17.503		超级金属	1	偏高 0.55
 canvas	goldentweaks:compat/farmersdelight/canvas	Canvas	3.097	1.999	0.794	有机物，削弱75%
 straw	goldentweaks:compat/farmersdelight/straw	Straw	不适用	不适用	不适用
 tree_bark	goldentweaks:compat/farmersdelight/tree_bark	Tree Bark	不适用	不适用	不适用
@@ -179,7 +179,7 @@ winterjujubeleave_fruiting	goldentweaks:compat/flavor_immersed_daily/winterjujub
 envy	goldentweaks:compat/forbiddenmagic/envy	Envy Shard	29.973	19.15	7.63
 gluttony	goldentweaks:compat/forbiddenmagic/gluttony	Gluttony Shard	29.973	19.15	7.63
 greed	goldentweaks:compat/forbiddenmagic/greed	Greed Shard	29.973	19.15	7.63
-hexite_ingot	goldentweaks:compat/forbiddenmagic/hexite_ingot	Hexite Ingot	20	17	2		软金属	4	中心
+silver	goldentweaks:silver	Silver	8	6.8	0.8		软金属	1	中心
 lust	goldentweaks:compat/forbiddenmagic/lust	Lust Shard	29.973	19.15	7.63
 pride	goldentweaks:compat/forbiddenmagic/pride	Pride Shard	35.967	22.98	9.156
 sloth	goldentweaks:compat/forbiddenmagic/sloth	Sloth Shard	29.973	19.15	7.63
@@ -189,22 +189,22 @@ tainted_stone	goldentweaks:compat/forbiddenmagic/tainted_stone	Tainted Stone	13.
 wrath	goldentweaks:compat/forbiddenmagic/wrath	Wrath Shard	29.973	19.15	7.63
 arcane_sea_shell	goldentweaks:compat/hazennstuff/arcane_sea_shell	Arcane Sea Shell	不适用	不适用	不适用
 charred_bones	goldentweaks:compat/hazennstuff/charred_bones	Charred Bones	不适用	不适用	不适用
-chlorophyte_ingot	goldentweaks:compat/hazennstuff/chlorophyte_ingot	Chlorophyte Ingot	31.16	11.841	4.986		硬金属	5	偏低 0.15
+crimson_iron	goldentweaks:crimson_iron	Crimson Iron	25.84	9.819	4.134		硬金属	4	偏高 0.15
 cloth_of_the_flamebearer	goldentweaks:compat/hazennstuff/cloth_of_the_flamebearer	Cloth of the Flamebearer	不适用	不适用	不适用
-cosmic_gold_ingot	goldentweaks:compat/hazennstuff/cosmic_gold_ingot	Cosmic Gold Ingot	68	25.84	10.88	稀有金属，增强6倍	硬金属	8	偏高 0.45
-demonite_ingot	goldentweaks:compat/hazennstuff/demonite_ingot	Demonite Ingot	33.44	12.707	5.35		硬金属	5	偏高 0.20
+lumium	goldentweaks:lumium	Lumium	25.56	9.713	4.09		硬金属	4	偏高 0.10
+osmium	goldentweaks:osmium	Osmium	26.68	10.138	4.269		硬金属	4	偏高 0.30
 deus_essence	goldentweaks:compat/hazennstuff/deus_essence	Deus Essence	115.668	111.812	38.556	削弱50%
-dreadsteel_ingot	goldentweaks:compat/hazennstuff/dreadsteel_ingot	Dreadsteel Ingot	33.44	12.707	5.35		硬金属	5	偏高 0.20
+refined_glowstone	goldentweaks:refined_glowstone	Refined Glowstone	24.2	9.196	3.872		硬金属	4	偏低 0.20
 elder_guardian_spine	goldentweaks:compat/hazennstuff/elder_guardian_spine	Elder Guardian Spine	不适用	不适用	不适用
 fireblossom	goldentweaks:compat/hazennstuff/fireblossom	Fireblossom	不适用	不适用	不适用	有机物
 frostbite_birch	goldentweaks:compat/hazennstuff/frostbite_birch	Frostbite Birch Log	3.54	1.544	0.703
 glowing_mushroom	goldentweaks:compat/hazennstuff/glowing_mushroom	Glowing Mushroom	不适用	不适用	不适用
-hallowed_ingot	goldentweaks:compat/hazennstuff/hallowed_ingot	Hallowed Ingot	34.88	13.254	5.581		硬金属	5	偏高 0.40
+signalum	goldentweaks:signalum	Signalum	25.84	9.819	4.134		硬金属	4	偏高 0.15
 nightmare_fuel	goldentweaks:compat/hazennstuff/nightmare_fuel	Nightmare Fuel	12.224	7.858	3.124
 overgrown_bone	goldentweaks:compat/hazennstuff/overgrown_bone	Overgrown Bone	不适用	不适用	不适用
 permafrost	goldentweaks:compat/hazennstuff/permafrost	Frostbite Birch Leaves	不适用	不适用	不适用
 permafrost_fragment	goldentweaks:compat/hazennstuff/permafrost_fragment	Permafrost Fragment	12.014	7.681	3.06
-rose_gold_ingot	goldentweaks:compat/hazennstuff/rose_gold_ingot	Rose Gold Ingot	10.76	9.146	1.076		软金属	2	偏低 0.10
+azure_silver	goldentweaks:azure_silver	Azure Silver	10.28	8.738	1.028		软金属	2	偏低 0.30
 runestone_fragments	goldentweaks:compat/hazennstuff/runestone_fragments	Runestone Fragments	11.189	6.996	2.809
 shadow_scale	goldentweaks:compat/hazennstuff/shadow_scale	Shadow Scale	12.572	8.153	3.232
 silver_scraps	goldentweaks:compat/hazennstuff/silver_scraps	Silver Scraps	11.515	7.265	2.907
@@ -214,13 +214,13 @@ stardust	goldentweaks:compat/hazennstuff/stardust	Stardust	5.047	2.46	1.077
 storm_weave	goldentweaks:compat/hazennstuff/storm_weave	Storm Weave	不适用	不适用	不适用
 volt_core	goldentweaks:compat/hazennstuff/volt_core	Volt Core	13.39	8.857	3.486
 wisewood	goldentweaks:compat/hazennstuff/wisewood	Wisewood Log	3.562	1.556	0.708
-zenalite_ingot	goldentweaks:compat/hazennstuff/zenalite_ingot	Zenalite Ingot	56.6	21.508	9.056		硬金属	7	偏高 0.30
+steel	goldentweaks:steel	Steel	25.28	9.606	4.045		硬金属	4	偏高 0.05
 blaze	goldentweaks:compat/igleelib/blaze	Blaze Shard	14.541	9.204	3.679
+netherite	goldentweaks:netherite	Netherite	不适用	不适用	不适用		金属覆层	2	偏高 0.15
 blazum_ingot	goldentweaks:compat/igleelib/blazum_ingot	Blazum Ingot	不适用	不适用	不适用	覆层	金属覆层	3	偏高 0.35
 derium_ingot	goldentweaks:compat/igleelib/derium_ingot	Derium Ingot	不适用	不适用	不适用	覆层	金属覆层	3	偏高 0.65
 lavium_ingot	goldentweaks:compat/igleelib/lavium_ingot	Lavium Ingot	不适用	不适用	不适用	覆层	金属覆层	3	偏高 0.10
-modium_ingot	goldentweaks:compat/igleelib/modium_ingot	Modium Ingot	不适用	不适用	不适用	覆层	金属覆层	3	偏低 0.35
-arcane_ingot	goldentweaks:compat/irons_spellbooks/arcane_ingot	Arcane Ingot	27.52	10.458	4.403		硬金属	4	偏高 0.45
+uranium	goldentweaks:uranium	Uranium	27.24	10.351	4.358		硬金属	4	偏高 0.40
 bloody_vellum	goldentweaks:compat/irons_spellbooks/bloody_vellum	Bloody Vellum	不适用	不适用	不适用
 divine_pearl	goldentweaks:compat/irons_spellbooks/divine_pearl	Divine Pearl	不适用	不适用	不适用
 divine_soulshard	goldentweaks:compat/irons_spellbooks/divine_soulshard	Divine Soulshard	不适用	不适用	不适用
@@ -234,31 +234,31 @@ magic_cloth	goldentweaks:compat/irons_spellbooks/magic_cloth	Arcane Cloth	不适
 mithril	goldentweaks:compat/irons_spellbooks/mithril	Mithril Ingot	34.52	13.118	5.523			5	?? 0.35
 mithril_weave	goldentweaks:compat/irons_spellbooks/mithril_weave	Mithril Weave	不适用	不适用	不适用
 permafrost_shard	goldentweaks:compat/irons_spellbooks/permafrost_shard	Permafrost Shard	11.11	6.931	2.785
-pyrium_ingot	goldentweaks:compat/irons_spellbooks/pyrium_ingot	Pyrium Ingot	59	22.42	9.44		硬金属	7	偏高 0.50
+iridium	goldentweaks:compat/alltheores/iridium	Iridium Ingot	36.32	13.802	5.811		硬金属	5	偏高 0.60
 crystallized_soul	goldentweaks:compat/iss_magicfromtheeast/crystallized_soul	Soul Crystal	19.305	14.319	5.416
 jade	goldentweaks:compat/iss_magicfromtheeast/jade	Polished Jadestone	17.682	12.759	4.872
 red_shaft	goldentweaks:compat/iss_magicfromtheeast/red_shaft	Red Shaft	不适用	不适用	不适用	手柄
 red_string	goldentweaks:compat/iss_magicfromtheeast/red_string	Red String	不适用	不适用	不适用	线，有机物
-refined_jade_ingot	goldentweaks:compat/iss_magicfromtheeast/refined_jade_ingot	Refined Jade Ingot	31.44	11.947	5.03		硬金属	5	偏低 0.10
+chlorophyte_ingot	goldentweaks:compat/hazennstuff/chlorophyte_ingot	Chlorophyte Ingot	31.16	11.841	4.986		硬金属	5	偏低 0.15
 pork	goldentweaks:compat/kaleidoscope_cookery/pork	Raw Pork Belly	不适用	不适用	不适用
 hide	goldentweaks:compat/kaleidoscope_nether/hide	Ghast Hide	不适用	不适用	不适用
 meat	goldentweaks:compat/kaleidoscope_nether/meat	Raw Piglin Meat	不适用	不适用	不适用
 strider_rock_shell	goldentweaks:compat/kaleidoscope_nether/strider_rock_shell	Strider Rock Shell	不适用	不适用	不适用
 wither_rib	goldentweaks:compat/kaleidoscope_nether/wither_rib	Wither Rib	不适用	不适用	不适用	手柄
-alloy_atomic	goldentweaks:compat/mekanism/alloy_atomic	Atomic Alloy	52	20.8	6.933
-alloy_infused	goldentweaks:compat/mekanism/alloy_infused	Infused Alloy	15	6	2
-alloy_reinforced	goldentweaks:compat/mekanism/alloy_reinforced	Reinforced Alloy	33.5	13.4	4.467
+alloy_atomic	goldentweaks:compat/mekanism/alloy_atomic	Atomic Alloy	17.0	7.14	2.38		灌注合金	3	中心
+alloy_infused	goldentweaks:compat/mekanism/alloy_infused	Infused Alloy	9.0	3.78	1.26		灌注合金	1	中心
+alloy_reinforced	goldentweaks:compat/mekanism/alloy_reinforced	Reinforced Alloy	12.5	5.25	1.75		灌注合金	2	中心
 fluorite	goldentweaks:compat/mekanism/fluorite	Fluorite	10.833	6.705	2.701	用alltheores的
 hdpe_stick	goldentweaks:compat/mekanism/hdpe_stick	PlaStick	不适用	不适用	不适用	手柄
 pellet_antimatter	goldentweaks:compat/mekanism/pellet_antimatter	Antimatter Pellet	81.766	79.04	27.255	宝石
 pellet_plutonium	goldentweaks:compat/mekanism/pellet_plutonium	Plutonium Pellet	45.112	28.28	11.344
 pellet_polonium	goldentweaks:compat/mekanism/pellet_polonium	Polonium Pellet	46.036	29.04	11.624
 substrate	goldentweaks:compat/mekanism/substrate	Substrate	3.17	2.061	0.816	削弱75%
-alloy_radiance	goldentweaks:compat/mekanism_extras/alloy_radiance	Radiance Alloy	89	35.6	11.867
-alloy_shining	goldentweaks:compat/mekanism_extras/alloy_shining	Shining Alloy	163	65.2	21.733
-alloy_spectrum	goldentweaks:compat/mekanism_extras/alloy_spectrum	Spectrum Alloy	200	80	26.667
-alloy_thermonuclear	goldentweaks:compat/mekanism_extras/alloy_thermonuclear	Thermonuclear Alloy	126	50.4	16.8
-ingot_naquadah	goldentweaks:compat/mekanism_extras/ingot_naquadah	Naquadah Ingot	35.24	13.391	5.638		硬金属	5	偏高 0.45
+alloy_radiance	goldentweaks:compat/mekanism_extras/alloy_radiance	Radiance Alloy	23.0	9.66	3.22		灌注合金	4	中心
+alloy_shining	goldentweaks:compat/mekanism_extras/alloy_shining	Shining Alloy	42.0	17.64	5.88		超级灌注合金	2	中心
+alloy_spectrum	goldentweaks:compat/mekanism_extras/alloy_spectrum	Spectrum Alloy	56.0	23.52	7.84		超级灌注合金	3	中心
+alloy_thermonuclear	goldentweaks:compat/mekanism_extras/alloy_thermonuclear	Thermonuclear Alloy	31.0	13.02	4.34		超级灌注合金	1	中心
+demonite_ingot	goldentweaks:compat/hazennstuff/demonite_ingot	Demonite Ingot	33.44	12.707	5.35		硬金属	5	偏高 0.20
 empty_crystal	goldentweaks:compat/mekmm/empty_crystal	Empty Crystal	7.794	4.866	1.954	削弱30%
 scrap_box	goldentweaks:compat/mekmm/scrap_box	Scrap Box	18.627	12.033	4.776	增强50%
 uu_matter	goldentweaks:compat/mekmm/uu_matter	UU Matter	48.615	29.09	11.86
@@ -272,17 +272,17 @@ prismarine_shard	goldentweaks:compat/minecraft/prismarine_shard	Prismarine Shard
 rabbit_hide	goldentweaks:compat/minecraft/rabbit_hide	Rabbit Hide	不适用	不适用	不适用
 shulker_shell	goldentweaks:compat/minecraft/shulker_shell	Shulker Shell	不适用	不适用	不适用
 slime_ball	goldentweaks:compat/minecraft/slime_ball	Slime Ball	不适用	不适用	不适用
-aluminum_alloy_ingot	goldentweaks:compat/neoecoae/aluminum_alloy_ingot	Aluminum Alloy Ingot	24.8	9.424	3.968		硬金属	4	偏低 0.05
-black_tungsten_alloy_ingot	goldentweaks:compat/neoecoae/black_tungsten_alloy_ingot	Black Tungsten Alloy Ingot	28.92	10.99	4.627		硬金属	4	偏高 0.70
+dreadsteel_ingot	goldentweaks:compat/hazennstuff/dreadsteel_ingot	Dreadsteel Ingot	33.44	12.707	5.35		硬金属	5	偏高 0.20
+hallowed_ingot	goldentweaks:compat/hazennstuff/hallowed_ingot	Hallowed Ingot	34.88	13.254	5.581		硬金属	5	偏高 0.40
 cryotheum	goldentweaks:compat/neoecoae/cryotheum	Cryotheum Crystal	16.604	10.347	4.158
 crystal_ingot	goldentweaks:compat/neoecoae/crystal_ingot	Crystal Ingot	46.744	29.628	11.84
 energized	goldentweaks:compat/neoecoae/energized	Energized Crystal	21.075	16.066	6.019
 energized_fluix	goldentweaks:compat/neoecoae/energized_fluix	Energized Fluix Crystal	28.74	22.515	8.355
-energized_superconductive_ingot	goldentweaks:compat/neoecoae/energized_superconductive_ingot	Energized Superconductive Ingot	37.04	14.075	5.926		硬金属	5	偏高 0.70
-tungsten	goldentweaks:compat/neoecoae/tungsten	Tungsten Ingot	18.24	6.931	2.918	削弱30%	硬金属	2	偏高 0.70
+refined_jade_ingot	goldentweaks:compat/iss_magicfromtheeast/refined_jade_ingot	Refined Jade Ingot	31.44	11.947	5.03		硬金属	5	偏低 0.10
+ingot_naquadah	goldentweaks:compat/mekanism_extras/ingot_naquadah	Naquadah Ingot	35.24	13.391	5.638		硬金属	5	偏高 0.45
 argyre	goldentweaks:compat/northstar/argyre	Argyre Log	3.248	1.379	0.634
 calorian	goldentweaks:compat/northstar/calorian	Calorian Log	3.761	1.672	0.756
-coiler	goldentweaks:compat/northstar/coiler	Coiler Log	22	15	6
+coiler	goldentweaks:compat/northstar/coiler	Coiler Log	22.0	15.0	6.0
 dry_plant	goldentweaks:compat/northstar/dry_plant	Dry Plant Fiber	不适用	不适用	不适用
 enriched_glowstone_ore	goldentweaks:compat/northstar/enriched_glowstone_ore	Enriched Glowstone Ore	13.41	8.874	3.493
 glowing_venus_vines	goldentweaks:compat/northstar/glowing_venus_vines	Glowing Venus Vines	不适用	不适用	不适用
@@ -293,7 +293,7 @@ mars_sand	goldentweaks:compat/northstar/mars_sand	Mars Sand	4.998	2.428	1.065
 mars_sprout	goldentweaks:compat/northstar/mars_sprout	Mars Sprout	不适用	不适用	不适用	有机物
 mars_stone	goldentweaks:compat/northstar/mars_stone	Mars Stone	5.059	2.467	1.08
 mars_tulip	goldentweaks:compat/northstar/mars_tulip	Mars Tulip	不适用	不适用	不适用	有机物
-martian_steel_ingot	goldentweaks:compat/northstar/martian_steel_ingot	Martian Steel Ingot	41.48	15.762	6.637		硬金属	6	偏高 0.05
+energized_superconductive_ingot	goldentweaks:compat/neoecoae/energized_superconductive_ingot	Energized Superconductive Ingot	37.04	14.075	5.926		硬金属	5	偏高 0.70
 mercury_deep_stone	goldentweaks:compat/northstar/mercury_deep_stone	Deep Mercury Stone	5.114	2.503	1.094
 mercury_stone	goldentweaks:compat/northstar/mercury_stone	Mercury Stone	4.796	2.3	1.013
 moon_deep_stone	goldentweaks:compat/northstar/moon_deep_stone	Moon Deep Stone	4.699	2.24	0.988
@@ -342,7 +342,7 @@ pure_echo	goldentweaks:compat/spectrum/pure_echo	Pure Echo	28.983	17.31	7.062	�
 pure_emerald	goldentweaks:compat/spectrum/pure_emerald	Pure Emerald	29.667	17.847	7.263	宝石
 pure_fluix	goldentweaks:compat/spectrum/pure_fluix	Pure Fluix Crystal	28.965	17.295	7.056	宝石
 pure_glowstone	goldentweaks:compat/spectrum/pure_glowstone	Pure Glowstone	33.138	20.637	8.298	宝石
-pure_gold	goldentweaks:compat/spectrum/pure_gold	Pure Gold	33	20.523	8.253
+pure_gold	goldentweaks:compat/spectrum/pure_gold	Pure Gold	33.0	20.523	8.253
 pure_iron	goldentweaks:compat/spectrum/pure_iron	Pure Iron	34.362	21.642	8.667
 pure_lapis	goldentweaks:compat/spectrum/pure_lapis	Pure Lapis	29.241	17.511	7.137	宝石
 pure_malachite	goldentweaks:compat/spectrum/pure_malachite	Pure Malachite	64.782	40.056	16.14	宝石
@@ -364,14 +364,14 @@ storm_stone	goldentweaks:compat/spectrum/storm_stone	Storm Stone	18.192	8.58	3.8
 stratine	goldentweaks:compat/spectrum/stratine	Stratine Gem	25.707	16.068	6.452	宝石
 topaz	goldentweaks:compat/spectrum/topaz	Topaz Shard	9.711	5.808	2.368
 vegetal	goldentweaks:compat/spectrum/vegetal	Vegetal	不适用	不适用	不适用	有机物
-weeping_gala	goldentweaks:compat/spectrum/weeping_gala	Weeping Gala Log	22	15	6
+weeping_gala	goldentweaks:compat/spectrum/weeping_gala	Weeping Gala Log	22.0	15.0	6.0
 ash_brick	goldentweaks:compat/supplementaries/ash_brick	Ash Brick	5.182	2.546	1.112
 fine	goldentweaks:compat/supplementaries/fine	Fine Wood	3.15	1.324	0.611
 fine_wood	goldentweaks:compat/supplementaries/fine_wood	Fine Wood Slab	3.787	1.687	0.762
-creation	goldentweaks:compat/taintedmagic/creation	Shard of Creation	255	246.5	85
+creation	goldentweaks:compat/taintedmagic/creation	Shard of Creation	255.0	246.5	85.0
 crimson_stained_cloth	goldentweaks:compat/taintedmagic/crimson_stained_cloth	Crimson-stained Cloth	不适用	不适用	不适用
 shadow_imbued_cloth	goldentweaks:compat/taintedmagic/shadow_imbued_cloth	Shadow-imbued Cloth	不适用	不适用	不适用
-shadow_metal_ingot	goldentweaks:compat/taintedmagic/shadow_metal_ingot	Shadow Metal Ingot	26.96	10.245	4.314		硬金属	4	偏高 0.35
+refined_obsidian	goldentweaks:refined_obsidian	Refined Obsidian	35.96	13.665	5.754		硬金属	5	偏高 0.55
 tainted_unbalanced	goldentweaks:compat/taintedmagic/tainted_unbalanced	Tainted Unbalanced Shard	14.918	12.681	4.574
 warped_unbalanced	goldentweaks:compat/taintedmagic/warped_unbalanced	Warped Unbalanced Shard	12.555	11.305	3.996
 warpwood	goldentweaks:compat/taintedmagic/warpwood	Warpwood Log	13.428	8.89	3.498
@@ -388,15 +388,15 @@ grass	goldentweaks:compat/thaumcraft/grass	Tainted Grass	不适用	不适用	不
 greatwood	goldentweaks:compat/thaumcraft/greatwood	Greatwood Log	3.586	1.57	0.714
 order	goldentweaks:compat/thaumcraft/order	Order Shard	11.989	7.66	3.052
 silverwood	goldentweaks:compat/thaumcraft/silverwood	Silverwood Log	6.28	3.277	1.401
-thaumium_ingot	goldentweaks:compat/thaumcraft/thaumium_ingot	Thaumium Ingot	22.2	8.436	3.552		硬金属	3	偏高 0.55
-void_metal_ingot	goldentweaks:compat/thaumcraft/void_metal_ingot	Void Metal Ingot	17.4	14.79	1.74		软金属	3	偏高 0.60
+titanium	goldentweaks:titanium	Titanium	33.8	12.844	5.408		硬金属	5	偏高 0.25
+rose_gold_ingot	goldentweaks:compat/hazennstuff/rose_gold_ingot	Rose Gold Ingot	10.76	9.146	1.076		软金属	2	偏低 0.10
 water	goldentweaks:compat/thaumcraft/water	Water Shard	11.989	7.66	3.052
-astral_alloy	goldentweaks:compat/thaumcraftcelestial/astral_alloy	Astral Alloy	80.189	77.516	26.73
+astral_alloy	goldentweaks:compat/thaumcraftcelestial/astral_alloy	Astral Alloy	68	25.84	10.88		硬金属	8	偏高 0.40
 meteorite_fragment	goldentweaks:compat/thaumcraftcelestial/meteorite_fragment	Meteorite Fragment	69.963	67.631	23.321	宝石
 ender	goldentweaks:compat/thaumic_tinkerer/ender	Ender Shard	22.127	17.127	6.382
 ichor	goldentweaks:compat/thaumic_tinkerer/ichor	Ichor	不适用	不适用	不适用	稀有覆层，增强10倍
 ichorcloth	goldentweaks:compat/thaumic_tinkerer/ichorcloth	Ichorcloth	不适用	不适用	不适用	稀有有机物，增强10倍
-ichorium_ingot	goldentweaks:compat/thaumic_tinkerer/ichorium_ingot	Ichorium	255.29	206.65	75.81	稀有金属，增强10倍
+ichorium_ingot	goldentweaks:compat/thaumic_tinkerer/ichorium_ingot	Ichorium	68	25.84	10.88	稀有金属，增强10倍	硬金属	8	偏高 0.65
 shard	goldentweaks:compat/thaumic_tinkerer/shard	Nether Shard	不适用	不适用	不适用
 smoky_quartz	goldentweaks:compat/thaumic_tinkerer/smoky_quartz	Smokey Quartz	11.48	7.236	2.897	宝石
 fabric	goldentweaks:compat/touhou_little_maid/fabric	Nimble Fabric	不适用	不适用	不适用
@@ -405,37 +405,37 @@ jingxu_youlan	goldentweaks:compat/touhou_little_maid_spell/jingxu_youlan	Jingxu 
 molten_fox	goldentweaks:compat/touhou_little_maid_spell/molten_fox	Molten Fox Leaf	不适用	不适用	不适用
 scarlet_zhuhua	goldentweaks:compat/touhou_little_maid_spell/scarlet_zhuhua	Scarlet Zhuhua	不适用	不适用	不适用	有机物
 yue_linglan	goldentweaks:compat/touhou_little_maid_spell/yue_linglan	Yue Linglan	不适用	不适用	不适用	有机物
-abyssal_spellweave_ingot	goldentweaks:compat/traveloptics/abyssal_spellweave_ingot	Abyssal Spellweave Ingot	92.12	44.218	17.503		超级金属	1	偏高 0.55
-celestial_spellweave_ingot	goldentweaks:compat/traveloptics/celestial_spellweave_ingot	Celestial Spellweave Ingot	193.56	92.909	36.776		超级金属	4	偏高 0.60
-crimson_spellweave_ingot	goldentweaks:compat/traveloptics/crimson_spellweave_ingot	Crimson Spellweave Ingot	107.32	51.514	20.391		超级金属	2	偏高 0.10
-cryo_spellweave_ingot	goldentweaks:compat/traveloptics/cryo_spellweave_ingot	Cryo Spellweave Ingot	101.32	48.634	19.251		超级金属	2	偏低 0.20
-eldritch_spellweave_ingot	goldentweaks:compat/traveloptics/eldritch_spellweave_ingot	Eldritch Spellweave Ingot	150.28	72.134	28.553		超级金属	3	偏高 0.55
-evokated_spellweave_ingot	goldentweaks:compat/traveloptics/evokated_spellweave_ingot	Evokated Spellweave Ingot	138.44	66.451	26.304		超级金属	3	偏高 0.15
-lightning_spellweave_ingot	goldentweaks:compat/traveloptics/lightning_spellweave_ingot	Lightning Spellweave Ingot	115.44	55.411	21.934		超级金属	2	偏高 0.45
 pyro_spellweave_ingot	goldentweaks:compat/traveloptics/pyro_spellweave_ingot	Pyro Spellweave Ingot	83.84	40.243	15.93		超级金属	1	偏高 0.10
 verdant_spellweave_ingot	goldentweaks:compat/traveloptics/verdant_spellweave_ingot	Verdant Spellweave Ingot	82	39.36	15.58		超级金属	1	偏低 0.25
 void_spellweave_ingot	goldentweaks:compat/traveloptics/void_spellweave_ingot	Void Spellweave Ingot	88.44	42.451	16.804		超级金属	1	偏高 0.35
+crimson_spellweave_ingot	goldentweaks:compat/traveloptics/crimson_spellweave_ingot	Crimson Spellweave Ingot	107.32	51.514	20.391		超级金属	2	偏高 0.10
+cryo_spellweave_ingot	goldentweaks:compat/traveloptics/cryo_spellweave_ingot	Cryo Spellweave Ingot	101.32	48.634	19.251		超级金属	2	偏低 0.20
+lightning_spellweave_ingot	goldentweaks:compat/traveloptics/lightning_spellweave_ingot	Lightning Spellweave Ingot	115.44	55.411	21.934		超级金属	2	偏高 0.45
+eldritch_spellweave_ingot	goldentweaks:compat/traveloptics/eldritch_spellweave_ingot	Eldritch Spellweave Ingot	150.28	72.134	28.553		超级金属	3	偏高 0.55
+evokated_spellweave_ingot	goldentweaks:compat/traveloptics/evokated_spellweave_ingot	Evokated Spellweave Ingot	138.44	66.451	26.304		超级金属	3	偏高 0.15
+celestial_spellweave_ingot	goldentweaks:compat/traveloptics/celestial_spellweave_ingot	Celestial Spellweave Ingot	193.56	92.909	36.776		超级金属	4	偏高 0.60
+the_ultimate_ingot	goldentweaks:compat/extendedcrafting/the_ultimate_ingot	The Ultimate Ingot	218	104.64	41.42		超级金属	5	中心
 crystalline	goldentweaks:compat/vista/crystalline	Crystalline	10.474	6.415	2.594	宝石
-copper	goldentweaks:copper	Copper	12	4.56	1.92		硬金属	1	偏低 0.10
-crimson_iron	goldentweaks:crimson_iron	Crimson Iron	25.84	9.819	4.134		硬金属	4	偏高 0.15
-crimson_steel	goldentweaks:crimson_steel	Crimson Steel	40.64	15.443	6.502		硬金属	6	偏低 0.05
-electrum	goldentweaks:electrum	Electrum	8	6.8	0.8		软金属	1	中心
-enderium	goldentweaks:enderium	Enderium	57.8	21.964	9.248		硬金属	7	偏高 0.40
-gold	goldentweaks:gold	Golden	8	6.8	0.8		软金属	1	中心
-invar	goldentweaks:invar	Invar	21.2	8.056	3.392		硬金属	3	偏高 0.30
-iron	goldentweaks:iron	Iron	16	6.08	2.56		硬金属	2	中心
-lead	goldentweaks:lead	Lead	12.8	4.864	2.048		硬金属	1	偏高 0.25
-lumium	goldentweaks:lumium	Lumium	25.56	9.713	4.09		硬金属	4	偏高 0.10
-netherite	goldentweaks:netherite	Netherite	不适用	不适用	不适用		金属覆层	2	偏高 0.15
-nickel	goldentweaks:nickel	Nickel	16.48	6.262	2.637		硬金属	2	偏高 0.15
-osmium	goldentweaks:osmium	Osmium	26.68	10.138	4.269		硬金属	4	偏高 0.30
+ancient_metal_ingot	goldentweaks:compat/cataclysm/ancient_metal_ingot	Ancient Metal Ingot	45.8	17.404	7.328		硬金属	6	偏高 0.50
+black_steel_ingot	goldentweaks:compat/cataclysm/black_steel_ingot	Black Steel Ingot	42.92	16.31	6.867		硬金属	6	偏高 0.20
+cursium_ingot	goldentweaks:compat/cataclysm/cursium_ingot	Cursium Ingot	44.36	16.857	7.098		硬金属	6	偏高 0.35
 platinum	goldentweaks:platinum	Platinum	12.76	10.846	1.276		软金属	2	偏高 0.55
-refined_glowstone	goldentweaks:refined_glowstone	Refined Glowstone	24.2	9.196	3.872		硬金属	4	偏低 0.20
-refined_obsidian	goldentweaks:refined_obsidian	Refined Obsidian	35.96	13.665	5.754		硬金属	5	偏高 0.55
-signalum	goldentweaks:signalum	Signalum	25.84	9.819	4.134		硬金属	4	偏高 0.15
-silver	goldentweaks:silver	Silver	8	6.8	0.8		软金属	1	中心
-steel	goldentweaks:steel	Steel	25.28	9.606	4.045		硬金属	4	偏高 0.05
-tin	goldentweaks:tin	Tin	12	4.56	1.92		硬金属	1	偏低 0.35
-titanium	goldentweaks:titanium	Titanium	33.8	12.844	5.408		硬金属	5	偏高 0.25
+ingot_better_gold	goldentweaks:compat/evolvedmekanism/ingot_better_gold	Better Gold Ingot	39.56	15.033	6.33		硬金属	6	偏低 0.20
+azure_electrum	goldentweaks:azure_electrum	Azure Electrum	14.36	12.206	1.436		软金属	3	偏低 0.20
+martian_steel_ingot	goldentweaks:compat/northstar/martian_steel_ingot	Martian Steel Ingot	41.48	15.762	6.637		硬金属	6	偏高 0.05
+crimson_steel	goldentweaks:crimson_steel	Crimson Steel	40.64	15.443	6.502		硬金属	6	偏低 0.05
+ignitium_ingot	goldentweaks:compat/cataclysm/ignitium_ingot	Ignitium Ingot	60.8	23.104	9.728		硬金属	7	偏高 0.65
+ingot_plaslitherite	goldentweaks:compat/evolvedmekanism/ingot_plaslitherite	Plaslitherite Ingot	61.4	23.332	9.824		硬金属	7	偏高 0.70
+modium_ingot	goldentweaks:compat/igleelib/modium_ingot	Modium Ingot	不适用	不适用	不适用	覆层	金属覆层	3	偏低 0.35
+crystaltine_ingot	goldentweaks:compat/extendedcrafting/crystaltine_ingot	Crystaltine Ingot	58.4	22.192	9.344		硬金属	7	偏高 0.45
+enhanced_ender_ingot	goldentweaks:compat/extendedcrafting/enhanced_ender_ingot	Enhanced Ender Ingot	56.0	21.28	8.96		硬金属	7	偏高 0.25
+void_metal_ingot	goldentweaks:compat/thaumcraft/void_metal_ingot	Void Metal Ingot	17.4	14.79	1.74		软金属	3	偏高 0.60
+enhanced_redstone_ingot	goldentweaks:compat/extendedcrafting/enhanced_redstone_ingot	Enhanced Redstone Ingot	51.08	19.41	8.173		硬金属	7	偏低 0.20
+zenalite_ingot	goldentweaks:compat/hazennstuff/zenalite_ingot	Zenalite Ingot	56.6	21.508	9.056		硬金属	7	偏高 0.30
+pyrium_ingot	goldentweaks:compat/irons_spellbooks/pyrium_ingot	Pyrium Ingot	59.0	22.42	9.44		硬金属	7	偏高 0.50
+hexite_ingot	goldentweaks:compat/forbiddenmagic/hexite_ingot	Hexite Ingot	20	17.0	2.0		软金属	4	中心
+enderium	goldentweaks:enderium	Enderium	57.8	21.964	9.248		硬金属	7	偏高 0.40
+crystal_matrix_ingot	goldentweaks:compat/avaritia/crystal_matrix_ingot	Crystal Matrix Ingot	68	25.84	10.88		硬金属	8	偏高 0.70
+witherite_ingot	goldentweaks:compat/cataclysm/witherite_ingot	Witherite Ingot	68	25.84	10.88		硬金属	8	偏高 0.30
+cosmic_gold_ingot	goldentweaks:compat/hazennstuff/cosmic_gold_ingot	Cosmic Gold Ingot	68	25.84	10.88		硬金属	8	偏高 0.45
 tyrian_steel	goldentweaks:tyrian_steel	Tyrian Steel	66.8	25.384	10.688		硬金属	8	偏低 0.10
-uranium	goldentweaks:uranium	Uranium	27.24	10.351	4.358		硬金属	4	偏高 0.40

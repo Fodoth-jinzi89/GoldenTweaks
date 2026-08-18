@@ -120,7 +120,8 @@ METAL_DESIGN.update(metal_design("hard_metal", [
      ("extendedcrafting:crystaltine_ingot", "crystaltine_ingot"), ("cataclysm:ignitium_ingot", "ignitium_ingot"),
      ("irons_spellbooks:pyrium_ingot", "pyrium_ingot"), ("evolvedmekanism:ingot_plaslitherite", "ingot_plaslitherite")],
     [("silentgear:tyrian_steel_ingot", "tyrian_steel"), ("hazennstuff:cosmic_gold_ingot", "cosmic_gold_ingot"),
-     ("cataclysm:witherite_ingot", "witherite_ingot"), ("avaritia:crystal_matrix_ingot", "crystal_matrix_ingot")],
+     ("cataclysm:witherite_ingot", "witherite_ingot"), ("avaritia:crystal_matrix_ingot", "crystal_matrix_ingot"),
+     ("thaumic_tinkerer:ichorium_ingot", "ichorium_ingot"), ("thaumcraftcelestial:astral_alloy", "astral_alloy")],
 ]))
 METAL_DESIGN.update(metal_design("super_metal", [
     [("traveloptics:pyro_spellweave_ingot", "pyro_spellweave_ingot"), ("traveloptics:void_spellweave_ingot", "void_spellweave_ingot"),
@@ -142,6 +143,20 @@ METAL_DESIGN.update(metal_design("soft_metal", [
      ("alltheores:platinum_ingot", "platinum")],
     [("silentgear:azure_electrum_ingot", "azure_electrum"), ("thaumcraft:void_metal_ingot", "void_metal_ingot")],
     [("forbiddenmagic:hexite_ingot", "hexite_ingot")],
+]))
+METAL_DESIGN.update(metal_design("infused_alloy", [
+    [("mekanism:alloy_infused", "alloy_infused")],
+    [("mekanism:alloy_reinforced", "alloy_reinforced")],
+    [("mekanism:alloy_atomic", "alloy_atomic")],
+    [("evolvedmekanism:alloy_hypercharged", "alloy_hypercharged"), ("mekanism_extras:alloy_radiance", "alloy_radiance")],
+]))
+METAL_DESIGN.update(metal_design("super_infused_alloy", [
+    [("evolvedmekanism:alloy_singular", "alloy_singular"), ("mekanism_extras:alloy_thermonuclear", "alloy_thermonuclear")],
+    [("evolvedmekanism:alloy_subatomic", "alloy_subatomic"), ("mekanism_extras:alloy_shining", "alloy_shining")],
+    [("evolvedmekanism:alloy_exoversal", "alloy_exoversal"), ("mekanism_extras:alloy_spectrum", "alloy_spectrum")],
+]))
+METAL_DESIGN.update(metal_design("god_infused_alloy", [
+    [("avaritia_integration:creative_compound", "creative_compound")],
 ]))
 COATING_DESIGN = metal_design("metal_coating", [
     [("minecraft:gold_ingot", "gold"), ("silentgear:blaze_gold_ingot", "blaze_gold")],
@@ -194,11 +209,15 @@ METAL_SEMANTIC_BIAS = {
     "silentgear:azure_silver_ingot": -0.30, "hazennstuff:rose_gold_ingot": -0.10,
     "alltheores:platinum_ingot": 0.55, "silentgear:azure_electrum_ingot": -0.20,
     "thaumcraft:void_metal_ingot": 0.60,
+    "thaumic_tinkerer:ichorium_ingot": 0.65, "thaumcraftcelestial:astral_alloy": 0.40,
 }
 COATING_SEMANTIC_BIAS = {
     "minecraft:netherite_ingot": 0.15, "createbigcannons:nethersteel_ingot": -0.25,
     "createvoidway:void_steel_ingot": 0.55, "igleelib:modium_ingot": -0.35,
     "igleelib:lavium_ingot": 0.10, "igleelib:blazum_ingot": 0.35, "igleelib:derium_ingot": 0.65,
+}
+WEAKER_INFUSED_ALLOYS = {
+    "alloy_hypercharged", "alloy_singular", "alloy_subatomic", "alloy_exoversal",
 }
 
 BUILTIN_PATHS = {
@@ -873,6 +892,9 @@ def metal_level_centers(family):
         "super_metal": [82, 105, 134, 171, 218],
         "god_metal": [300, 460, 700, 1000],
         "soft_metal": [8, 11, 15, 20],
+        "infused_alloy": [18, 25, 34, 46],
+        "super_infused_alloy": [62, 84, 112],
+        "god_infused_alloy": [180],
     }[family]
 
 
@@ -891,8 +913,10 @@ def designed_main_properties(family, level, traits, semantic_bias=0.0):
         durability, melee, tools, ranged = armor * 28, armor * 0.16, armor * 0.38, armor * 0.07
     elif family == "super_metal":
         durability, melee, tools, ranged = armor * 34, armor * 0.19, armor * 0.48, armor * 0.13
-    elif family == "god_metal":
+    elif family in {"god_metal", "god_infused_alloy"}:
         durability, melee, tools, ranged = armor * 42, armor * 0.23, armor * 0.60, armor * 0.18
+    elif family in {"infused_alloy", "super_infused_alloy"}:
+        durability, melee, tools, ranged = armor * 24, armor * 0.14, armor * 0.42, armor * 0.12
     else:
         durability, melee, tools, ranged = armor * 8, armor * 0.10, armor * 0.85, armor * 0.16
     harvest = min(4, max(1, level if family == "hard_metal" else level + 3 if family != "soft_metal" else level))
@@ -909,6 +933,36 @@ def designed_main_properties(family, level, traits, semantic_bias=0.0):
         "projectile_accuracy": round(1.0 + ranged / 18, 3), "projectile_speed": round(1.0 + ranged / 15, 3),
         "ranged_damage": round(ranged, 3), "rarity": round(12 + armor * 0.75, 3), "traits": traits,
     }
+
+
+def infused_alloy_properties(family, level, traits, material):
+    main = designed_main_properties(family, level, traits)
+    if family == "infused_alloy":
+        progress = (level - 1) / 3
+    elif family == "super_infused_alloy":
+        progress = 1.25 + (level - 1) * 0.45
+    else:
+        progress = 2.6
+    main.update({
+        "attack_speed": round(0.05 + progress * 0.08, 3),
+        "repair_efficiency": round(0.10 + progress * 0.12, 3),
+        "repair_value": round(0.08 + progress * 0.10, 3),
+        "block_reach": round(0.25 + progress * 0.35, 3),
+        "attack_reach": round(0.15 + progress * 0.25, 3),
+        "projectile_speed": round(1.15 + progress * 0.30, 3),
+        "projectile_accuracy": round(1.20 + progress * 0.25, 3),
+        "armor_toughness": round(main["armor_toughness"] * (1.25 + progress * 0.15), 3),
+        "knockback_resistance": round(0.05 + progress * 0.08, 3),
+    })
+    if family in {"infused_alloy", "super_infused_alloy"}:
+        for key, value in list(main.items()):
+            if key not in {"traits", "harvest_tier"}:
+                main[key] = multiply_numbers(value, 0.5)
+    if material in WEAKER_INFUSED_ALLOYS:
+        for key, value in list(main.items()):
+            if key not in {"traits", "harvest_tier"}:
+                main[key] = multiply_numbers(value, 0.92)
+    return main
 
 
 def designed_traits(family, material, resource_id, level):
@@ -937,9 +991,12 @@ def apply_metal_design(data, entry):
     if family != "metal_coating":
         data["crafting"]["categories"] = [family, "endgame" if family in {"super_metal", "god_metal"} else "advanced"]
         semantic_bias = METAL_SEMANTIC_BIAS.get(entry["id"], 0.0)
-        data["properties"] = {"silentgear:main": designed_main_properties(family, level, traits, semantic_bias)}
+        main = infused_alloy_properties(family, level, traits, entry["material"]) if "infused_alloy" in family else designed_main_properties(family, level, traits, semantic_bias)
+        data["properties"] = {"silentgear:main": main}
         rod_level = max(1, min(5, level))
-        if family == "soft_metal":
+        if "infused_alloy" in family:
+            pass
+        elif family == "soft_metal":
             data["properties"]["silentgear:rod"] = {
                 "draw_speed": {"operation": "ADD", "value": round(0.15 + level * 0.08, 3)},
                 "harvest_speed": {"operation": "ADD", "value": round(1.5 + level * 0.75, 3)},
@@ -955,6 +1012,7 @@ def apply_metal_design(data, entry):
                 "silentgear:fletching": {"projectile_accuracy": {"operation": "MULTIPLY_BASE", "value": round(0.18 + level * 0.05, 3)}, "traits": traits},
                 "silentgear:lining": {"armor_durability": {"operation": "MULTIPLY_BASE", "value": round(0.2 + level * 0.06, 3)}, "traits": traits},
             })
+            data["properties"]["silentgear:coating"] = coating_properties(0.42 + level * 0.08, traits)
     coating_level = design.get("coating_level", level if family == "metal_coating" else None)
     if coating_level is not None:
         coating_traits = designed_traits("soft_metal" if family == "soft_metal" else "hard_metal", entry["material"], entry["id"], coating_level)
@@ -962,6 +1020,8 @@ def apply_metal_design(data, entry):
         coating_bias = COATING_SEMANTIC_BIAS.get(entry["id"], 0.0) if coating_level >= 2 else 0.0
         coating_tier = semantic_level_value(coating_centers, coating_level, coating_bias)
         data["properties"]["silentgear:coating"] = coating_properties(coating_tier, coating_traits)
+    if entry["id"] == "createvoidway:void_steel_ingot":
+        data["properties"] = {"silentgear:coating": data["properties"]["silentgear:coating"]}
 
 
 def apply_part_override(data, material, tier, traits):
@@ -1160,6 +1220,11 @@ def main():
                 centers = metal_level_centers(design["family"])
                 lower = centers[design["level"] - 2] if design["level"] > 1 else centers[0]
                 upper = centers[design["level"]] if design["level"] < len(centers) else centers[-1]
+                if design["family"] in {"infused_alloy", "super_infused_alloy"}:
+                    lower *= 0.5
+                    upper *= 0.5
+                if entry["material"] in WEAKER_INFUSED_ALLOYS:
+                    lower *= 0.92
                 designed_values[entry["id"]] = (lower, main["armor"], upper)
 
     for path in OUTPUT.rglob("*.json"):

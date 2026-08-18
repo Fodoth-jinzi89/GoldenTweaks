@@ -140,6 +140,48 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:coating": {
+      "armor_durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.18
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 3.25
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.225
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.24
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.115
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.225
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.225
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:void_ward"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
     }
   }
 }

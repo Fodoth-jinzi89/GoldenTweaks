@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "infused_alloy",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -23,54 +23,43 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 70.5,
-      "armor/boots": 9.4,
-      "armor/chestplate": 28.2,
-      "armor/helmet": 9.4,
-      "armor/leggings": 23.5,
-      "armor_durability": 70.5,
-      "armor_toughness": 3.723,
-      "attack_damage": 9.4,
-      "charging_value": 3.29,
-      "durability": 1175.0,
-      "enchantment_value": 65.8,
-      "harvest_speed": 28.2,
+      "armor": 21.16,
+      "armor/boots": 3.174,
+      "armor/chestplate": 8.464,
+      "armor/helmet": 3.174,
+      "armor/leggings": 6.348,
+      "armor_durability": 28.213,
+      "armor_toughness": 5.332,
+      "attack_damage": 2.962,
+      "charging_value": 0.452,
+      "draw_speed": 0.235,
+      "durability": 507.84,
+      "enchantment_value": 11.371,
+      "harvest_speed": 8.887,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
       },
-      "magic_armor": 28.2,
-      "magic_damage": 4.7,
-      "projectile_accuracy": 5.17,
-      "projectile_speed": 4.7,
-      "ranged_damage": 4.7,
-      "rarity": 94.0,
+      "magic_armor": 8.041,
+      "magic_damage": 2.518,
+      "projectile_accuracy": 0.667,
+      "projectile_speed": 0.667,
+      "ranged_damage": 2.539,
+      "rarity": 21.39,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
         }
       ],
-      "attack_speed": 0.0,
-      "attack_speed/axe": -0.47,
-      "attack_speed/hoe": 0.0,
-      "draw_speed": 0.47
-    },
-    "silentgear:rod": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
-        }
-      ]
+      "attack_speed": 0.06,
+      "repair_efficiency": 0.101,
+      "repair_value": 0.083,
+      "block_reach": 0.276,
+      "attack_reach": 0.184,
+      "knockback_resistance": 0.06
     }
   }
 }
