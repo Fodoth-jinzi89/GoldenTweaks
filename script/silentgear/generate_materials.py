@@ -1252,6 +1252,9 @@ def wood_main_properties(family, traits, bias, resource_id):
             "armor_toughness": round(main["armor_toughness"] * 1.4, 3),
             "knockback_resistance": round(0.08 + progress * 0.08, 3),
         })
+    durability_factor = 0.5 if family in {"dyed_wood", "tool_wood", "rare_wood"} else 0.25
+    main["durability"] = round(main["durability"] * durability_factor, 3)
+    main["armor_durability"] = round(main["armor_durability"] * durability_factor, 3)
     return main
 
 
