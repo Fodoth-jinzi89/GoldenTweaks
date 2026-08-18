@@ -1,0 +1,31 @@
+统一使用木板（除特殊标注外）不再使用原木、木头、菌柄、菌帽、茎等
+每一组的语义偏移是随机的，不是顺序的
+木材能够做主要部件、手柄和握把
+原有的条目可能是用tag写的，我们这里要把tag拆成一个个物品，或者物品优先，tag靠后，可能需要替换或改写
+
+普通木材
+属性比 1 级硬金属略低
+橡木 白桦 云杉 丛林 深色橡木 樱花 红树 金合欢
+
+染色木材
+属性比 1 级硬金属略高，有特殊trait，棕/黑更高一些，白/灰/淡灰再更高一些
+16种颜色的染色木板
+
+魔法木材
+属性比 2 级硬金属略高，且特化魔攻魔防，有特殊trait
+扭曲 宏伟之数 银树 智慧 寒霜白桦 腐化
+
+工具木材
+属性比 3 级硬金属略高，且特化工具属性，有挖掘速度、方块交互距离加成
+木屑块~核毅果木板
+
+异界木材
+属性比 2 级硬金属略高，且特化远程、护甲属性，有护甲韧性、击退抗性加成
+蓝花楹木板~下界木板
+
+稀有木材
+属性比 5 级硬金属略高，拥有灌注合金的进阶属性，有特殊trait
+魂灵柳原木（因为它没有木板） 卷须木板
+
+供参考的id列表
+[188月2026 12:52:28.788] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] -8, 56, -195拥有以下方块数据：{packed: 0b, woodType: "birch", z: -195, x: -8, id: "sophisticatedstorage:barrel", storageWrapper: {numberOfUpgradeSlots: 4, contents: {inventory: {Size: 108, Items: [{Slot: 23, count: 64, id: "spectrum:cyan_planks"}, {Slot: 24, count: 64, id: "spectrum:lime_planks"}, {Slot: 25, count: 64, id: "spectrum:yellow_planks"}, {Slot: 26, count: 64, id: "spectrum:black_planks"}, {Slot: 0, count: 64, id: "minecraft:oak_planks"}, {Slot: 1, count: 64, id: "minecraft:birch_planks"}, {Slot: 4, count: 64, id: "minecraft:dark_oak_planks"}, {Slot: 6, count: 64, id: "minecraft:mangrove_planks"}, {Slot: 21, count: 64, id: "spectrum:green_planks"}, {Slot: 22, count: 64, id: "spectrum:blue_planks"}, {Slot: 19, count: 64, id: "spectrum:purple_planks"}, {Slot: 12, count: 64, id: "spectrum:brown_planks"}, {Slot: 13, count: 64, id: "spectrum:orange_planks"}, {Slot: 14, count: 64, id: "spectrum:light_gray_planks"}, {Slot: 15, count: 64, id: "spectrum:light_blue_planks"}, {Slot: 16, count: 64, id: "spectrum:gray_planks"}, {Slot: 17, count: 64, id: "spectrum:white_planks"}, {Slot: 18, count: 64, id: "spectrum:pink_planks"}, {Slot: 20, count: 64, id: "spectrum:red_planks"}, {Slot: 72, count: 64, id: "spectrum:weeping_gala_planks"}, {Slot: 73, count: 64, id: "spectrum:chestnut_noxwood_planks"}, {Slot: 74, count: 64, id: "spectrum:ivory_noxwood_planks"}, {Slot: 75, count: 64, id: "spectrum:ebony_noxwood_planks"}, {Slot: 76, count: 64, id: "spectrum:slate_noxwood_planks"}, {Slot: 77, count: 64, id: "cataclysm:chorus_planks"}, {Slot: 78, count: 64, id: "northstar:calorian_planks"}, {Slot: 79, count: 64, id: "northstar:argyre_planks"}, {Slot: 80, count: 64, id: "northstar:wilter_planks"}, {Slot: 81, count: 64, id: "minecraft:warped_planks"}, {Slot: 82, count: 64, id: "minecraft:crimson_planks"}, {Slot: 7, count: 64, id: "minecraft:acacia_planks"}, {Slot: 27, count: 64, id: "spectrum:magenta_planks"}, {Slot: 36, count: 64, id: "taintedmagic:warpwood_planks"}, {Slot: 37, count: 64, id: "thaumcraft:greatwood_planks"}, {Slot: 38, count: 64, id: "thaumcraft:silverwood_planks"}, {Slot: 39, count: 64, id: "hazennstuff:wisewood_planks"}, {Slot: 40, count: 64, id: "hazennstuff:frostbite_birch_planks"}, {Slot: 41, count: 64, id: "forbiddenmagic:tainted_planks"}, {Slot: 48, count: 1, id: "createdieselgenerators:chip_wood_block"}, {Slot: 49, count: 64, id: "flavor_immersed_daily:orchard_heartwood_planks"}, {Slot: 50, count: 64, id: "flavor_immersed_daily:vineheart_timber_planks"}, {Slot: 51, count: 64, id: "flavor_immersed_daily:solarwood_planks"}, {Slot: 52, count: 64, id: "flavor_immersed_daily:verdant_grace_planks"}, {Slot: 53, count: 64, id: "flavor_immersed_daily:stonebark_planks"}, {Slot: 96, count: 1, id: "spectrum:spirit_sallow_log"}, {Slot: 97, count: 64, id: "northstar:coiler_planks"}, {Slot: 60, count: 64, id: "biomesoplenty:jacaranda_planks"}, {Slot: 61, count: 64, id: "biomesoplenty:empyreal_planks"}, {Slot: 62, count: 64, id: "biomesoplenty:magic_planks"}, {Slot: 63, count: 64, id: "biomesoplenty:hellbark_planks"}, {Slot: 64, count: 64, id: "biomesoplenty:redwood_planks"}, {Slot: 65, count: 64, id: "biomesoplenty:palm_planks"}, {Slot: 66, count: 64, id: "biomesoplenty:mahogany_planks"}, {Slot: 67, count: 64, id: "biomesoplenty:willow_planks"}, {Slot: 68, count: 64, id: "biomesoplenty:maple_planks"}, {Slot: 69, count: 64, id: "biomesoplenty:dead_planks"}, {Slot: 70, count: 64, id: "biomesoplenty:pine_planks"}, {Slot: 71, count: 64, id: "biomesoplenty:fir_planks"}, {Slot: 83, count: 64, id: "biomesoplenty:umbran_planks"}, {Slot: 5, count: 64, id: "minecraft:cherry_planks"}, {Slot: 2, count: 64, id: "minecraft:spruce_planks"}, {Slot: 3, count: 64, id: "minecraft:jungle_planks"}, {Slot: 84, count: 64, id: "silentgear:netherwood_planks"}]}, partitioner: {inventoryPartNames: ["default"], baseIndexes: [I; 0]}}, numberOfInventorySlots: 108, sortBy: "mod", renderInfo: {upgradeItems: [{}, {}, {}, {}]}, settings: {global: {}}}, y: 56, components: {"sophisticatedstorage:wood_type": "birch"}, materials: {}}

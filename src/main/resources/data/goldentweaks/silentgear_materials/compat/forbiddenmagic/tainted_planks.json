@@ -1,0 +1,116 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "magic_wood",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:tainted_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF2C1837",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.forbiddenmagic.tainted_planks"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.298,
+      "armor/boots": 1.395,
+      "armor/chestplate": 3.719,
+      "armor/helmet": 1.395,
+      "armor/leggings": 2.789,
+      "armor_durability": 21.457,
+      "armor_toughness": 1.788,
+      "attack_damage": 1.967,
+      "attack_speed": 0.152,
+      "charging_value": 0.765,
+      "draw_speed": 0.187,
+      "durability": 429.144,
+      "enchantment_value": 13.722,
+      "harvest_speed": 6.437,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_wooden_tool",
+        "level_hint": "0",
+        "name": "wood"
+      },
+      "magic_armor": 9.835,
+      "magic_damage": 7.51,
+      "projectile_accuracy": 1.143,
+      "projectile_speed": 1.179,
+      "ranged_damage": 1.788,
+      "rarity": 22.305,
+      "repair_efficiency": 0.493,
+      "repair_value": 0.134,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.142
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.097
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.061
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.142
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        }
+      ]
+    }
+  }
+}

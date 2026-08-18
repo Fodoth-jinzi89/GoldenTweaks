@@ -4,17 +4,17 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "wood",
+      "organic",
       "basic"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "biomesoplenty:redwood_log"
+      "item": "biomesoplenty:redwood_leaves"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF8F3726",
+    "color": "#FF4F6730",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.biomesoplenty.redwood"
@@ -22,54 +22,78 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 3.77,
-      "armor/boots": 0.566,
-      "armor/chestplate": 1.508,
-      "armor/helmet": 0.566,
-      "armor/leggings": 1.131,
-      "armor_durability": 3.708,
-      "armor_toughness": 0.861,
-      "attack_damage": 0.758,
-      "charging_value": 0.706,
-      "durability": 77.779,
-      "enchantment_value": 1.83,
-      "harvest_speed": 1.677,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
-        "level_hint": "1",
-        "name": "stone"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.045
       },
-      "magic_armor": 1.495,
-      "magic_damage": 0.778,
-      "projectile_accuracy": 0.933,
-      "projectile_speed": 1.017,
-      "ranged_damage": 0.183,
-      "rarity": 2.412,
       "traits": [
         {
           "conditions": [],
-          "level": 2,
+          "level": 1,
           "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flammable"
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.064
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
+          "level": 1,
           "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.064
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.036
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.04
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.06
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
         }
       ]
     }

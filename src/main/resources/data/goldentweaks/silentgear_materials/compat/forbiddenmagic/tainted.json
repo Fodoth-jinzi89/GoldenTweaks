@@ -4,17 +4,17 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "wood",
-      "advanced"
+      "organic",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "forbiddenmagic:tainted_log"
+      "item": "forbiddenmagic:tainted_leaves"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF433A4E",
+    "color": "#FF32084B",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.forbiddenmagic.tainted"
@@ -22,54 +22,83 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 10.115,
-      "armor/boots": 1.517,
-      "armor/chestplate": 4.046,
-      "armor/helmet": 1.517,
-      "armor/leggings": 3.034,
-      "armor_durability": 15.087,
-      "armor_toughness": 3.238,
-      "attack_damage": 2.487,
-      "charging_value": 0.98,
-      "durability": 423.0,
-      "enchantment_value": 7.34,
-      "harvest_speed": 6.128,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.18
       },
-      "magic_armor": 4.834,
-      "magic_damage": 2.624,
-      "projectile_accuracy": 1.129,
-      "projectile_speed": 1.357,
-      "ranged_damage": 0.734,
-      "rarity": 13.014,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:lustrous"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:venom"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:organic"
         }
       ]
     },
-    "silentgear:rod": {
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.164
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.164
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.115
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:venom"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.148
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.217
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:venom"
         }
       ]
     }

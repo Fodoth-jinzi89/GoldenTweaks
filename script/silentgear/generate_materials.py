@@ -311,6 +311,89 @@ GEM_BUILTIN_PATHS = {
     **{resource_id: resource_id.split(":", 1)[1] for resource_id in GEM_DESIGN if resource_id.startswith("silentgems:")},
 }
 
+
+def wood_design(family, resource_ids):
+    return {
+        resource_id: {
+            "family": family, "level": 1, "material": material,
+            "bias": round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
+        }
+        for resource_id, material in resource_ids
+    }
+
+
+WOOD_DESIGN = {}
+WOOD_DESIGN.update(wood_design("wood", [
+    ("minecraft:oak_planks", "wood/oak"), ("minecraft:birch_planks", "wood/birch"),
+    ("minecraft:spruce_planks", "wood/spruce"), ("minecraft:jungle_planks", "wood/jungle"),
+    ("minecraft:dark_oak_planks", "wood/dark_oak"), ("minecraft:cherry_planks", "wood/cherry"),
+    ("minecraft:mangrove_planks", "wood/mangrove"), ("minecraft:acacia_planks", "wood/acacia"),
+]))
+WOOD_DESIGN.update(wood_design("dyed_wood", [(f"spectrum:{color}_planks", f"{color}_planks") for color in (
+    "brown", "orange", "light_gray", "light_blue", "gray", "white", "pink", "magenta",
+    "red", "purple", "green", "blue", "cyan", "lime", "yellow", "black",
+)]))
+WOOD_DESIGN.update(wood_design("magic_wood", [
+    ("taintedmagic:warpwood_planks", "warpwood_planks"), ("thaumcraft:greatwood_planks", "greatwood_planks"),
+    ("thaumcraft:silverwood_planks", "silverwood_planks"), ("hazennstuff:wisewood_planks", "wisewood_planks"),
+    ("hazennstuff:frostbite_birch_planks", "frostbite_birch_planks"), ("forbiddenmagic:tainted_planks", "tainted_planks"),
+]))
+WOOD_DESIGN.update(wood_design("tool_wood", [
+    ("createdieselgenerators:chip_wood_block", "chip_wood_block"),
+    ("flavor_immersed_daily:orchard_heartwood_planks", "orchard_heartwood_planks"),
+    ("flavor_immersed_daily:vineheart_timber_planks", "vineheart_timber_planks"),
+    ("flavor_immersed_daily:solarwood_planks", "solarwood_planks"),
+    ("flavor_immersed_daily:verdant_grace_planks", "verdant_grace_planks"),
+    ("flavor_immersed_daily:stonebark_planks", "stonebark_planks"),
+]))
+WOOD_DESIGN.update(wood_design("otherworldly_wood", [
+    ("biomesoplenty:jacaranda_planks", "jacaranda_planks"), ("biomesoplenty:empyreal_planks", "empyreal_planks"),
+    ("biomesoplenty:magic_planks", "magic_planks"), ("biomesoplenty:hellbark_planks", "hellbark_planks"),
+    ("biomesoplenty:redwood_planks", "redwood_planks"), ("biomesoplenty:palm_planks", "palm_planks"),
+    ("biomesoplenty:mahogany_planks", "mahogany_planks"), ("biomesoplenty:willow_planks", "willow_planks"),
+    ("biomesoplenty:maple_planks", "maple_planks"), ("biomesoplenty:dead_planks", "dead_planks"),
+    ("biomesoplenty:pine_planks", "pine_planks"), ("biomesoplenty:fir_planks", "fir_planks"),
+    ("biomesoplenty:umbran_planks", "umbran_planks"), ("spectrum:weeping_gala_planks", "weeping_gala_planks"),
+    ("spectrum:chestnut_noxwood_planks", "chestnut_noxwood_planks"),
+    ("spectrum:ivory_noxwood_planks", "ivory_noxwood_planks"),
+    ("spectrum:ebony_noxwood_planks", "ebony_noxwood_planks"),
+    ("spectrum:slate_noxwood_planks", "slate_noxwood_planks"), ("cataclysm:chorus_planks", "chorus_planks"),
+    ("northstar:calorian_planks", "calorian_planks"), ("northstar:argyre_planks", "argyre_planks"),
+    ("northstar:wilter_planks", "wilter_planks"), ("minecraft:warped_planks", "wood/warped"),
+    ("minecraft:crimson_planks", "wood/crimson"), ("silentgear:netherwood_planks", "netherwood"),
+]))
+WOOD_DESIGN.update(wood_design("rare_wood", [
+    ("spectrum:spirit_sallow_log", "spirit_sallow_log"), ("northstar:coiler_planks", "coiler_planks"),
+]))
+WOOD_BUILTIN_PATHS = {
+    resource_id: design["material"] for resource_id, design in WOOD_DESIGN.items()
+    if resource_id.startswith("minecraft:") or resource_id == "silentgear:netherwood_planks"
+}
+WOOD_BUILTIN_PATHS.pop("minecraft:cherry_planks")
+WOOD_BUILTIN_PATHS.pop("minecraft:mangrove_planks")
+
+
+def wood_root(resource_id):
+    namespace, path = resource_id.split(":", 1)
+    for suffix in ("_planks", "_log", "_wood", "_stem", "_hyphae", "_block"):
+        if path.endswith(suffix):
+            path = path.removesuffix(suffix)
+            break
+    return namespace, path
+
+
+WOOD_ROOTS = {wood_root(resource_id) for resource_id in WOOD_DESIGN}
+
+
+def is_replaced_wood_variant(resource_id):
+    if resource_id in WOOD_DESIGN:
+        return False
+    namespace, path = wood_root(resource_id)
+    return (namespace, path) in WOOD_ROOTS and any(
+        resource_id.split(":", 1)[1].endswith(suffix)
+        for suffix in ("_log", "_wood", "_stem", "_hyphae")
+    )
+
 BUILTIN_PATHS = {
     "minecraft:copper_ingot": "copper", "mekanism:ingot_tin": "tin", "mekanism:ingot_lead": "lead",
     "minecraft:iron_ingot": "iron", "alltheores:nickel_ingot": "nickel", "alltheores:aluminum_ingot": "aluminum",
@@ -1120,6 +1203,84 @@ def scale_property_group(properties, factor):
             properties[key] = multiply_numbers(value, factor)
 
 
+def wood_traits(material, resource_id, level):
+    traits = traits_for("木头", material, resource_id, min(1.0, 0.25 + level * 0.12))
+    return traits[:3]
+
+
+def wood_main_properties(family, traits, bias, resource_id):
+    centers = {
+        "wood": 10.5, "dyed_wood": 13.5, "magic_wood": 18.5,
+        "tool_wood": 22.5, "otherworldly_wood": 18.5, "rare_wood": 35.0,
+    }
+    power = round(centers[family] * (1 + bias * 0.12), 3)
+    armor = power * (0.62 if family == "otherworldly_wood" else 0.52)
+    main = {
+        "armor": round(armor, 3), "armor/boots": round(armor * 0.15, 3),
+        "armor/chestplate": round(armor * 0.4, 3), "armor/helmet": round(armor * 0.15, 3),
+        "armor/leggings": round(armor * 0.3, 3), "armor_durability": round(power * 1.2, 3),
+        "armor_toughness": round(power * 0.1, 3), "attack_damage": round(power * 0.11, 3),
+        "attack_speed": round(0.08 + power * 0.004, 3), "charging_value": round(0.55 + power * 0.012, 3),
+        "draw_speed": round(0.08 + power * 0.006, 3), "durability": round(power * 24, 3),
+        "enchantment_value": round(8 + power * 0.32, 3), "harvest_speed": round(power * 0.36, 3),
+        "harvest_tier": {"incorrect_blocks_for_tool": "minecraft:incorrect_for_wooden_tool", "level_hint": "0", "name": "wood"},
+        "magic_armor": round(power * 0.28, 3), "magic_damage": round(power * 0.16, 3),
+        "projectile_accuracy": round(1.0 + power * 0.008, 3), "projectile_speed": round(1.0 + power * 0.01, 3),
+        "ranged_damage": round(power * 0.1, 3), "rarity": round(8 + power * 0.8, 3),
+        "repair_efficiency": round(0.35 + power * 0.008, 3), "repair_value": round(0.08 + power * 0.003, 3),
+        "traits": traits,
+    }
+    if family == "magic_wood":
+        main["magic_armor"] = round(power * 0.55, 3)
+        main["magic_damage"] = round(power * 0.42, 3)
+    elif family == "tool_wood":
+        main["harvest_speed"] = round(power * 0.62, 3)
+        main["block_reach"] = round(0.25 + power * 0.012, 3)
+    elif family == "otherworldly_wood":
+        main["armor_toughness"] = round(power * 0.2, 3)
+        main["knockback_resistance"] = round(0.05 + power * 0.004, 3)
+        main["projectile_speed"] = round(1.0 + power * 0.022, 3)
+        main["projectile_accuracy"] = round(1.0 + power * 0.018, 3)
+        main["ranged_damage"] = round(power * 0.2, 3)
+    elif family == "rare_wood":
+        progress = power / 35
+        main.update({
+            "attack_speed": round(0.12 + progress * 0.08, 3), "repair_efficiency": round(0.45 + progress * 0.15, 3),
+            "repair_value": round(0.12 + progress * 0.1, 3), "block_reach": round(0.3 + progress * 0.35, 3),
+            "attack_reach": round(0.2 + progress * 0.25, 3), "projectile_speed": round(1.15 + progress * 0.3, 3),
+            "projectile_accuracy": round(1.15 + progress * 0.25, 3),
+            "armor_toughness": round(main["armor_toughness"] * 1.4, 3),
+            "knockback_resistance": round(0.08 + progress * 0.08, 3),
+        })
+    return main
+
+
+def apply_wood_design(data, entry):
+    design = WOOD_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    family, bias = design["family"], design["bias"]
+    traits = wood_traits(entry["material"], entry["id"], 3 if family == "rare_wood" else 2)
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": [family, "advanced" if family == "rare_wood" else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {
+        "silentgear:main": wood_main_properties(family, traits, bias, entry["id"]),
+        "silentgear:rod": {
+            "durability": {"operation": "MULTIPLY_TOTAL", "value": round(0.12 + abs(bias) * 0.08, 3)},
+            "harvest_speed": {"operation": "MULTIPLY_TOTAL", "value": round(0.08 + abs(bias) * 0.06, 3)},
+            "traits": traits[:2],
+        },
+        "silentgear:grip": {
+            "attack_speed": {"operation": "ADD", "value": round(0.05 + abs(bias) * 0.04, 3)},
+            "repair_efficiency": {"operation": "MULTIPLY_BASE", "value": round(0.12 + abs(bias) * 0.08, 3)},
+            "traits": traits[:2],
+        },
+    }
+
+
 def gem_main_properties(family, level, traits, bias):
     power = semantic_level_value(gem_level_centers(family), level, bias)
     pure = family in {"pure_gem", "super_pure_gem"}
@@ -1366,6 +1527,7 @@ def make_material(category, entry, bounds, profiles, resolver):
                     properties[key] = multiply_numbers(value, factor)
     apply_metal_design(data, entry)
     apply_gem_design(data, entry)
+    apply_wood_design(data, entry)
     return data, tier
 
 
@@ -1382,7 +1544,11 @@ def main():
             continue
         for entry in entries:
             entry = dict(entry)
+            if is_replaced_wood_variant(entry["id"]):
+                continue
             material = MATERIAL_ALIASES.get(entry["material"], entry["material"])
+            if entry["id"] in WOOD_DESIGN:
+                material = WOOD_DESIGN[entry["id"]]["material"].replace("/", "_")
             entry["material"] = material
             if material in GEM_OVERRIDES:
                 category = "宝石"
@@ -1392,10 +1558,16 @@ def main():
                 continue
             candidates.append((category, entry))
     for category, entry in extra_entries():
+        if is_replaced_wood_variant(entry["id"]):
+            continue
         design = METAL_DESIGN.get(entry["id"])
         if design is not None:
             entry["material"] = design["material"]
             category = "金属"
+        wood = WOOD_DESIGN.get(entry["id"])
+        if wood is not None:
+            entry["material"] = wood["material"].replace("/", "_")
+            category = "木头"
         if design is not None or entry["material"] not in builtins and entry["material"] not in existing and valid(category, entry):
             candidates.append((category, entry))
     candidate_ids = {entry["id"] for _, entry in candidates}
@@ -1413,13 +1585,19 @@ def main():
                 "id": resource_id, "material": design["material"],
                 "name": design["material"].replace("_", " ").title(), "extra": True,
             }))
+    for resource_id, design in WOOD_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("木头", {
+                "id": resource_id, "material": design["material"].replace("/", "_"),
+                "name": design["material"].replace("/", " ").replace("_", " ").title(), "extra": True,
+            }))
 
     candidates.sort(key=lambda item: (not item[1].get("extra", False), CATEGORY_ORDER[item[0]], item[1]["material"], item[1]["id"]))
     chosen = []
     seen_ingredients = set()
     seen_outputs = set()
     for category, entry in candidates:
-        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"])
+        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"]) or WOOD_BUILTIN_PATHS.get(entry["id"])
         output_key = ("builtin", builtin_path) if builtin_path in builtin_data else (
             entry["id"].split(":", 1)[0], entry["material"]
         )
@@ -1436,7 +1614,7 @@ def main():
     designed_values = {}
     for category, entry in chosen:
         namespace = entry["id"].split(":", 1)[0]
-        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"])
+        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"]) or WOOD_BUILTIN_PATHS.get(entry["id"])
         if builtin_path not in builtin_data:
             builtin_path = None
         path = OVERRIDE_OUTPUT / f"{builtin_path}.json" if builtin_path else OUTPUT / namespace / f"{entry['material']}.json"
@@ -1445,6 +1623,7 @@ def main():
             data = json.loads(json.dumps(builtin_data[builtin_path]))
             apply_metal_design(data, entry)
             apply_gem_design(data, entry)
+            apply_wood_design(data, entry)
             tier = entry["id"] in METAL_DESIGN and METAL_DESIGN[entry["id"]]["level"] / 8 or 0.5
         else:
             data, tier = make_material(category, entry, bounds, profiles, resolver)
@@ -1493,6 +1672,17 @@ def main():
     trait_coverage = sum(bool((data["properties"].get("silentgear:main") or data["properties"].get("silentgear:tip", {})).get("traits")) for data in gem_data)
     assert setting_coverage / len(GEM_DESIGN) >= 0.8
     assert trait_coverage / len(GEM_DESIGN) >= 0.8
+    wood_files = []
+    for resource_id, design in WOOD_DESIGN.items():
+        builtin_path = WOOD_BUILTIN_PATHS.get(resource_id)
+        material = design["material"].replace("/", "_")
+        candidates = ([OVERRIDE_OUTPUT / f"{builtin_path}.json"] if builtin_path else []) + [
+            OUTPUT / resource_id.split(":", 1)[0] / f"{material}.json"
+        ]
+        wood_files.append(next(path for path in candidates if path.exists()))
+    wood_data = [json.loads(path.read_text(encoding="utf-8")) for path in wood_files]
+    assert all(set(data["properties"]) >= {"silentgear:main", "silentgear:rod", "silentgear:grip"} for data in wood_data)
+    assert all("item" in data["crafting"]["ingredient"] for data in wood_data)
     generated_lang = write_generated_lang([entry for _, entry in chosen], resolver)
     resolver.close()
     print(f"Silent Gear JAR: {jar.name}")

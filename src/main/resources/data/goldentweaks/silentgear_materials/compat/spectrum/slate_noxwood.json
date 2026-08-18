@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "wood",
-      "basic"
+      "otherworldly_wood",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -23,52 +23,92 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 3.323,
-      "armor/boots": 0.498,
-      "armor/chestplate": 1.329,
-      "armor/helmet": 0.498,
-      "armor/leggings": 0.997,
-      "armor_durability": 3.099,
-      "armor_toughness": 0.727,
-      "attack_damage": 0.651,
-      "charging_value": 0.671,
-      "durability": 62.647,
-      "enchantment_value": 1.532,
-      "harvest_speed": 1.421,
+      "armor": 10.849,
+      "armor/boots": 1.627,
+      "armor/chestplate": 4.34,
+      "armor/helmet": 1.627,
+      "armor/leggings": 3.255,
+      "armor_durability": 20.999,
+      "armor_toughness": 3.5,
+      "attack_damage": 1.925,
+      "attack_speed": 0.15,
+      "charging_value": 0.76,
+      "draw_speed": 0.185,
+      "durability": 419.976,
+      "enchantment_value": 13.6,
+      "harvest_speed": 6.3,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
-        "level_hint": "1",
-        "name": "stone"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_wooden_tool",
+        "level_hint": "0",
+        "name": "wood"
       },
-      "magic_armor": 1.287,
-      "magic_damage": 0.666,
-      "projectile_accuracy": 0.908,
-      "projectile_speed": 0.974,
-      "ranged_damage": 0.153,
-      "rarity": 1.945,
+      "magic_armor": 4.9,
+      "magic_damage": 2.8,
+      "projectile_accuracy": 1.315,
+      "projectile_speed": 1.385,
+      "ranged_damage": 3.5,
+      "rarity": 21.999,
+      "repair_efficiency": 0.49,
+      "repair_value": 0.132,
       "traits": [
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
           "trait": "silentgear:organic"
         },
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
           "trait": "silentgear:flammable"
         }
-      ]
+      ],
+      "knockback_resistance": 0.12
     },
     "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.156
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.107
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.068
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.156
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
           "trait": "silentgear:flexible"
         }
       ]
