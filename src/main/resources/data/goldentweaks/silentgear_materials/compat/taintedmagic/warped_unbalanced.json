@@ -25,31 +25,31 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 3.614
+        "value": 1.807
       },
       "charging_value": {
         "operation": "ADD",
-        "value": 1.606
+        "value": 0.803
       },
       "durability": {
         "operation": "ADD",
-        "value": 361.44
+        "value": 180.72
       },
       "enchantment_value": {
         "operation": "ADD",
-        "value": 16.064
+        "value": 8.032
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 8.434
+        "value": 4.217
       },
       "magic_damage": {
         "operation": "ADD",
-        "value": 7.63
+        "value": 3.815
       },
       "rarity": {
         "operation": "ADD",
-        "value": 30.12
+        "value": 15.06
       },
       "traits": [
         {
@@ -69,6 +69,14 @@
         }
       ]
     },
-    "silentgear:setting": {}
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgems:cloaking"
+        }
+      ]
+    }
   }
 }

@@ -25,31 +25,31 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 4.716
+        "value": 2.358
       },
       "charging_value": {
         "operation": "ADD",
-        "value": 2.096
+        "value": 1.048
       },
       "durability": {
         "operation": "ADD",
-        "value": 471.6
+        "value": 235.8
       },
       "enchantment_value": {
         "operation": "ADD",
-        "value": 20.96
+        "value": 10.48
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 11.004
+        "value": 5.502
       },
       "magic_damage": {
         "operation": "ADD",
-        "value": 9.956
+        "value": 4.978
       },
       "rarity": {
         "operation": "ADD",
-        "value": 39.3
+        "value": 19.65
       },
       "traits": [
         {
@@ -64,6 +64,14 @@
         }
       ]
     },
-    "silentgear:setting": {}
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgems:hasty"
+        }
+      ]
+    }
   }
 }

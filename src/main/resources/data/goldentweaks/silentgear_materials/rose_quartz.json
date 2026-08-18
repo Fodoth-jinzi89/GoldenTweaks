@@ -111,6 +111,14 @@
         }
       ]
     },
-    "silentgear:setting": {}
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgems:barrier_jacket"
+        }
+      ]
+    }
   }
 }

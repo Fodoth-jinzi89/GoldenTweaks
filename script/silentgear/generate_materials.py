@@ -1080,6 +1080,46 @@ def gem_traits(material, resource_id, level):
     return traits[:3]
 
 
+GEM_SETTING_TRAITS = {
+    "fire": "silentgems:power", "blazing": "silentgems:power", "ember": "silentgems:power",
+    "wrath": "silentgems:critical_strike", "redstone": "silentgems:booster", "charged": "silentgems:booster",
+    "energized": "silentgems:booster", "lightning": "silentgems:booster", "air": "silentgems:twinkletoes",
+    "frost": "silentgems:freeze_resistant", "cryo": "silentgems:freeze_resistant", "ice": "silentgems:freeze_resistant",
+    "water": "silentgems:neptunes_blessing", "aqua": "silentgems:neptunes_blessing",
+    "pearl": "silentgems:neptunes_blessing", "prismarine": "silentgems:neptunes_blessing",
+    "ender": "silentgems:enderbane", "void": "silentgems:cloaking", "taint": "silentgems:cloaking",
+    "entropy": "silentgems:cloaking", "onyx": "silentgems:cloaking", "black": "silentgems:cloaking",
+    "moon": "silentgems:twinkletoes", "lunar": "silentgems:twinkletoes", "meteor": "silentgems:twinkletoes",
+    "diamond": "silentgems:barrier_jacket", "quartz": "silentgems:barrier_jacket",
+    "earth": "silentgems:hearty", "coal": "silentgems:hearty", "blood": "silentgems:hearty",
+    "emerald": "silentgems:hearty", "malachite": "silentgems:hearty", "azurite": "silentgems:step_up",
+    "topaz": "silentgems:hasty", "citrine": "silentgems:hasty", "fluix": "silentgems:booster",
+    "order": "silentgems:step_up", "balanced": "silentgems:step_up", "creation": "silentgems:fractal",
+    "spectral": "silentgems:fractal", "quantum": "silentgems:fractal", "overload": "silentgems:power",
+    "pride": "silentgems:power", "greed": "silentgems:power", "sloth": "silentgems:hearty",
+}
+GEM_SETTING_FALLBACKS = (
+    "silentgems:booster", "silentgems:hearty", "silentgems:hasty", "silentgems:step_up",
+    "silentgems:power", "silentgems:barrier_jacket", "silentgems:critical_strike", "silentgems:fractal",
+)
+
+
+def gem_setting_properties(material, resource_id, level, existing):
+    if existing.get("traits"):
+        return existing
+    text = f"{material}_{resource_id}".lower()
+    selected = next((trait_id for word, trait_id in GEM_SETTING_TRAITS.items() if word in text), None)
+    if selected is None:
+        selected = GEM_SETTING_FALLBACKS[int(hashlib.sha256(text.encode()).hexdigest()[:4], 16) % len(GEM_SETTING_FALLBACKS)]
+    return {"traits": [{"conditions": [], "level": max(1, min(5, level)), "trait": selected}]}
+
+
+def scale_property_group(properties, factor):
+    for key, value in list(properties.items()):
+        if key not in {"traits", "harvest_tier"}:
+            properties[key] = multiply_numbers(value, factor)
+
+
 def gem_main_properties(family, level, traits, bias):
     power = semantic_level_value(gem_level_centers(family), level, bias)
     pure = family in {"pure_gem", "super_pure_gem"}
@@ -1130,7 +1170,7 @@ def apply_gem_design(data, entry):
         return
     family, level, bias = design["family"], design["level"], design["bias"]
     traits = gem_traits(entry["material"], entry["id"], level)
-    setting = data.get("properties", {}).get("silentgear:setting", {})
+    setting = gem_setting_properties(entry["material"], entry["id"], level, data.get("properties", {}).get("silentgear:setting", {}))
     data["crafting"]["categories"] = [family, "endgame" if family.startswith("super") else "advanced"]
     if family in {"shard", "super_shard"}:
         data["properties"] = {"silentgear:tip": gem_tip_properties(family, level, traits, bias), "silentgear:setting": setting}
@@ -1142,6 +1182,14 @@ def apply_gem_design(data, entry):
         }
     if entry["id"] == "spectrum:pure_netherite_scrap":
         data["properties"]["silentgear:coating"] = coating_properties(1.08, traits)
+    if family in {"pure_gem", "super_pure_gem"}:
+        for properties in data["properties"].values():
+            scale_property_group(properties, 0.7)
+        purity_factor = 0.7 if entry["id"].startswith("ae2cs:") else 0.9
+        for properties in data["properties"].values():
+            scale_property_group(properties, purity_factor)
+    elif family in {"shard", "super_shard"}:
+        scale_property_group(data["properties"]["silentgear:tip"], 0.5)
 
 
 def designed_traits(family, material, resource_id, level):
@@ -1433,6 +1481,18 @@ def main():
         for data in [json.loads(path.read_text(encoding="utf-8"))]
     }
     assert set(GEM_DESIGN).issubset(generated_ingredients | set(GEM_BUILTIN_PATHS))
+    gem_files = []
+    for resource_id, design in GEM_DESIGN.items():
+        builtin_path = GEM_BUILTIN_PATHS.get(resource_id)
+        candidates = ([OVERRIDE_OUTPUT / f"{builtin_path}.json"] if builtin_path else []) + [
+            OUTPUT / resource_id.split(":", 1)[0] / f"{design['material']}.json"
+        ]
+        gem_files.append(next(path for path in candidates if path.exists()))
+    gem_data = [json.loads(path.read_text(encoding="utf-8")) for path in gem_files]
+    setting_coverage = sum(bool(data["properties"].get("silentgear:setting", {}).get("traits")) for data in gem_data)
+    trait_coverage = sum(bool((data["properties"].get("silentgear:main") or data["properties"].get("silentgear:tip", {})).get("traits")) for data in gem_data)
+    assert setting_coverage / len(GEM_DESIGN) >= 0.8
+    assert trait_coverage / len(GEM_DESIGN) >= 0.8
     generated_lang = write_generated_lang([entry for _, entry in chosen], resolver)
     resolver.close()
     print(f"Silent Gear JAR: {jar.name}")

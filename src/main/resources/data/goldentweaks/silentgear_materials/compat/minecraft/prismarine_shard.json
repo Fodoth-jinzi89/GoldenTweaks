@@ -25,31 +25,31 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 2.556
+        "value": 1.278
       },
       "charging_value": {
         "operation": "ADD",
-        "value": 1.136
+        "value": 0.568
       },
       "durability": {
         "operation": "ADD",
-        "value": 255.6
+        "value": 127.8
       },
       "enchantment_value": {
         "operation": "ADD",
-        "value": 11.36
+        "value": 5.68
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 5.964
+        "value": 2.982
       },
       "magic_damage": {
         "operation": "ADD",
-        "value": 5.396
+        "value": 2.698
       },
       "rarity": {
         "operation": "ADD",
-        "value": 21.3
+        "value": 10.65
       },
       "traits": [
         {
@@ -64,6 +64,14 @@
         }
       ]
     },
-    "silentgear:setting": {}
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgems:neptunes_blessing"
+        }
+      ]
+    }
   }
 }
