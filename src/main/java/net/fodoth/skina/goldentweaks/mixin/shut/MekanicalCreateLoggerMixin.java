@@ -1,12 +1,12 @@
 package net.fodoth.skina.goldentweaks.mixin.shut;
 
-import io.github.langqi99.mekanicalcreate.MekanicalCreate;
+import io.github.langqi99.mekanicalcreate.content.CreateFamilyRecipeDiscovery;
 import org.slf4j.Logger;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(value = MekanicalCreate.class, remap = false)
+@Mixin(value = CreateFamilyRecipeDiscovery.class, remap = false)
 public class MekanicalCreateLoggerMixin {
 
     @Redirect(
