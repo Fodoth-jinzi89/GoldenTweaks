@@ -1,0 +1,119 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:gems/lapis"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF224BAF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.lapis_lazuli"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 6.253,
+      "armor/boots": 0.938,
+      "armor/chestplate": 2.501,
+      "armor/helmet": 0.938,
+      "armor/leggings": 1.876,
+      "armor_durability": 19.329,
+      "armor_toughness": 0.796,
+      "attack_damage": 3.184,
+      "charging_value": 1.198,
+      "durability": 591.24,
+      "enchantment_value": 20.527,
+      "harvest_speed": 5.003,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 5.685,
+      "magic_damage": 3.638,
+      "projectile_accuracy": 1.136,
+      "projectile_speed": 1.159,
+      "ranged_damage": 1.819,
+      "rarity": 40.466,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.364
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.455
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 272.88
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 5.685
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.501
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.274
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 11.37
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.75
+            }
+          ],
+          "level": 3,
+          "trait": "silentgear:lucky"
+        }
+      ]
+    }
+  }
+}

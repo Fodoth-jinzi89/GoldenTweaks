@@ -1,0 +1,106 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:gems/moldavite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA6D923",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "gem.silentgems.moldavite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.24,
+      "armor/boots": 1.386,
+      "armor/chestplate": 3.696,
+      "armor/helmet": 1.386,
+      "armor/leggings": 2.772,
+      "armor_durability": 28.56,
+      "armor_toughness": 1.176,
+      "attack_damage": 4.704,
+      "charging_value": 1.388,
+      "durability": 873.6,
+      "enchantment_value": 24.6,
+      "harvest_speed": 7.392,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 8.4,
+      "magic_damage": 5.376,
+      "projectile_accuracy": 1.202,
+      "projectile_speed": 1.235,
+      "ranged_damage": 2.688,
+      "rarity": 50.24,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.016
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.672
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 403.2
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 8.4
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 3.696
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 3.36
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 16.8
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {}
+  }
+}

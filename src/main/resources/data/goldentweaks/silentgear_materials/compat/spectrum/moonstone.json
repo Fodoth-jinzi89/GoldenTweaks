@@ -23,43 +23,43 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 20.162,
-      "armor/boots": 3.024,
-      "armor/chestplate": 8.064,
-      "armor/helmet": 3.024,
-      "armor/leggings": 6.048,
-      "armor_durability": 30.03,
-      "armor_toughness": 6.446,
-      "attack_damage": 4.954,
-      "charging_value": 1.958,
-      "durability": 841.108,
-      "enchantment_value": 14.61,
-      "harvest_speed": 12.202,
+      "armor": 13.284,
+      "armor/boots": 1.993,
+      "armor/chestplate": 5.313,
+      "armor/helmet": 1.993,
+      "armor/leggings": 3.985,
+      "armor_durability": 41.058,
+      "armor_toughness": 1.691,
+      "attack_damage": 6.763,
+      "charging_value": 1.645,
+      "durability": 1255.904,
+      "enchantment_value": 30.114,
+      "harvest_speed": 10.627,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 9.628,
-      "magic_damage": 5.226,
-      "projectile_accuracy": 2.256,
-      "projectile_speed": 2.71,
-      "ranged_damage": 1.462,
-      "rarity": 25.878,
+      "magic_armor": 12.076,
+      "magic_damage": 7.729,
+      "projectile_accuracy": 1.29,
+      "projectile_speed": 1.338,
+      "ranged_damage": 3.864,
+      "rarity": 63.474,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:moonwalker"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:lustrous"
         }
       ]
@@ -67,28 +67,50 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 1.734
+        "value": 2.898
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.966
       },
       "durability": {
         "operation": "ADD",
-        "value": 168.222
+        "value": 579.648
       },
-      "harvest_speed": {
+      "enchantment_value": {
         "operation": "ADD",
-        "value": 2.44
+        "value": 12.076
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 5.313
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 4.83
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 24.152
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:moonwalker"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
         }
       ]
-    }
+    },
+    "silentgear:setting": {}
   }
 }

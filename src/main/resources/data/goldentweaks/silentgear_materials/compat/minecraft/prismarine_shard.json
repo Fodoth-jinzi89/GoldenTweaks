@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "stone",
-      "intermediate"
+      "shard",
+      "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -14,7 +14,7 @@
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF716876",
+    "color": "#FF43BAD2",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.minecraft.prismarine_shard"
@@ -22,42 +22,48 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 9.89,
-      "armor/boots": 1.484,
-      "armor/chestplate": 3.956,
-      "armor/helmet": 1.484,
-      "armor/leggings": 2.968,
-      "armor_durability": 10.908,
-      "armor_toughness": 2.478,
-      "attack_damage": 2.102,
-      "charging_value": 1.562,
-      "durability": 247.83,
-      "enchantment_value": 5.362,
-      "harvest_speed": 4.79,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
-        "level_hint": "1",
-        "name": "stone"
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.556
       },
-      "magic_armor": 4.13,
-      "magic_damage": 2.174,
-      "projectile_accuracy": 1.974,
-      "projectile_speed": 2.22,
-      "ranged_damage": 0.536,
-      "rarity": 7.67,
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.136
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 255.6
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 11.36
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 5.964
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 5.396
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 21.3
+      },
       "traits": [
         {
           "conditions": [],
           "level": 2,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
           "level": 2,
-          "trait": "silentgear:heavy"
+          "trait": "silentgear:lustrous"
         }
       ]
-    }
+    },
+    "silentgear:setting": {}
   }
 }

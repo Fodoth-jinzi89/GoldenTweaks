@@ -220,6 +220,97 @@ WEAKER_INFUSED_ALLOYS = {
     "alloy_hypercharged", "alloy_singular", "alloy_subatomic", "alloy_exoversal",
 }
 
+
+def gem_design(family, levels):
+    result = {}
+    for level, entries in enumerate(levels, 1):
+        count = len(entries)
+        for index, (resource_id, material) in enumerate(entries):
+            bias = 0.0 if count == 1 else -0.55 + 1.10 * index / (count - 1)
+            result[resource_id] = {"family": family, "level": level, "material": material, "bias": round(bias, 3)}
+    return result
+
+
+GEM_DESIGN = {}
+GEM_DESIGN.update(gem_design("gem", [
+    [("ae2:certus_quartz_crystal", "certus_quartz"), ("ae2:charged_certus_quartz_crystal", "charged_certus_quartz"),
+     ("minecraft:quartz", "quartz"), ("minecraft:amethyst_shard", "amethyst"), ("spectrum:topaz_shard", "topaz"),
+     ("spectrum:citrine_shard", "citrine"), ("thaumic_tinkerer:smoky_quartz", "smoky_quartz"),
+     ("minecraft:redstone", "redstone"), ("minecraft:lapis_lazuli", "lapis_lazuli"), ("minecraft:coal", "coal")],
+    [("spectrum:blazing_crystal", "blazing"), ("spectrum:frostbite_crystal", "frostbite"),
+     ("spectrum:shimmerstone_gem", "shimmerstone"), ("spectrum:mermaids_gem", "mermaids"),
+     ("ae2:fluix_crystal", "fluix"), ("silentgems:kyanite", "kyanite"), ("silentgems:opal", "opal"),
+     ("silentgems:garnet", "garnet"), ("silentgems:carnelian", "carnelian"),
+     ("silentgems:topaz", "topaz_silentgems"), ("silentgems:tanzanite", "tanzanite")],
+    [("silentgems:moldavite", "moldavite"), ("silentgems:heliodor", "heliodor"),
+     ("silentgems:citrine", "citrine_silentgems"), ("silentgems:turquoise", "turquoise"),
+     ("silentgems:rose_quartz", "rose_quartz"), ("silentgems:aquamarine", "aquamarine"),
+     ("silentgems:iolite", "iolite"), ("silentgems:alexandrite", "alexandrite"),
+     ("minecraft:prismarine_crystals", "prismarine_crystals")],
+    [("extendedae:entro_crystal", "entro"), ("spectrum:moonstone_shard", "moonstone"),
+     ("spectrum:stratine_gem", "stratine"), ("silentgems:pearl", "pearl"),
+     ("minecraft:diamond", "diamond"), ("minecraft:emerald", "emerald")],
+    [("neoecoae:energized_crystal", "energized"), ("neoecoae:energized_fluix_crystal", "energized_fluix"),
+     ("spectrum:paltaeria_gem", "paltaeria"), ("northstar:lunar_sapphire_shard", "lunar_sapphire_shard"),
+     ("silentgems:white_diamond", "white_diamond"), ("silentgems:black_diamond", "black_diamond"),
+     ("silentgems:ammolite", "ammolite"), ("spectrum:onyx_shard", "onyx")],
+]))
+GEM_DESIGN.update(gem_design("super_gem", [
+    [("spectrum:bismuth_crystal", "bismuth_crystal")],
+    [("cataclysm:lacrima", "lacrima"), ("mekmm:empty_crystal", "empty_crystal")],
+    [("mekmm:uu_matter", "uu_matter")],
+]))
+GEM_DESIGN.update(gem_design("pure_gem", [
+    [("ae2cs:purified_certus_quartz_crystal", "purified_certus_quartz"),
+     ("ae2cs:purified_rose_quartz", "purified_rose_quartz"), ("ae2cs:purified_nether_quartz_crystal", "purified_nether_quartz")],
+    [("spectrum:pure_coal", "pure_coal"), ("spectrum:pure_redstone", "pure_redstone"),
+     ("spectrum:pure_lapis", "pure_lapis"), ("spectrum:pure_quartz", "pure_quartz"),
+     ("spectrum:pure_glowstone", "pure_glowstone"), ("ae2cs:purified_meteor_crystal", "purified_meteor"),
+     ("ae2cs:purified_fluix_crystal", "purified_fluix"), ("ae2cs:purified_ender_quartz", "purified_ender_quartz"),
+     ("ae2cs:purified_link_crystal", "purified_link"), ("ae2cs:purified_redstone_crystal", "purified_redstone"),
+     ("ae2cs:purified_ember_crystal", "purified_ember")],
+    [("spectrum:pure_certus_quartz", "pure_certus_quartz"), ("spectrum:pure_fluix", "pure_fluix"),
+     ("spectrum:pure_prismarine", "pure_prismarine"), ("ae2cs:purified_resonating_crystal", "purified_resonating"),
+     ("ae2cs:purified_irradiated_crystal", "purified_irradiated"), ("ae2cs:purified_entro_crystal", "purified_entro"),
+     ("ae2cs:purified_data_crystal", "purified_data")],
+    [("spectrum:pure_diamond", "pure_diamond"), ("spectrum:pure_echo", "pure_echo"),
+     ("spectrum:pure_emerald", "pure_emerald"), ("spectrum:pure_netherite_scrap", "pure_netherite_scrap"),
+     ("ae2cs:purified_energized_fluix_crystal", "purified_energized_fluix"),
+     ("ae2cs:purified_energized_certus_quartz_crystal", "purified_energized_certus_quartz"),
+     ("ae2cs:purified_quantum_crystal", "purified_quantum"), ("ae2cs:purified_overload_crystal", "purified_overload")],
+]))
+GEM_DESIGN.update(gem_design("super_pure_gem", [
+    [("spectrum:pure_azurite", "pure_azurite"), ("spectrum:pure_malachite", "pure_malachite"),
+     ("spectrum:pure_bloodstone", "pure_bloodstone")],
+    [("spectrum:spectral_shard", "spectral")],
+]))
+GEM_DESIGN.update(gem_design("shard", [
+    [("thaumcraft:air_shard", "air"), ("thaumcraft:earth_shard", "earth"), ("thaumcraft:water_shard", "water"),
+     ("thaumcraft:fire_shard", "fire"), ("thaumcraft:order_shard", "order"), ("thaumcraft:entropy_shard", "entropy"),
+     ("minecraft:prismarine_shard", "prismarine_shard")],
+    [("thaumcraft:balanced_shard", "balanced"), ("forbiddenmagic:taint_shard", "taint"),
+     ("taintedmagic:tainted_unbalanced_shard", "tainted_unbalanced"), ("taintedmagic:warped_unbalanced_shard", "warped_unbalanced")],
+    [("spectrum:stratine_fragments", "stratine_fragments"), ("forbiddenmagic:wrath_shard", "wrath"),
+     ("forbiddenmagic:greed_shard", "greed"), ("forbiddenmagic:envy_shard", "envy"),
+     ("thaumic_tinkerer:nether_shard", "shard")],
+    [("spectrum:paltaeria_fragments", "paltaeria_fragments"), ("forbiddenmagic:gluttony_shard", "gluttony"),
+     ("forbiddenmagic:lust_shard", "lust"), ("forbiddenmagic:sloth_shard", "sloth"),
+     ("thaumic_tinkerer:ender_shard", "ender")],
+    [("spectrum:midnight_chip", "midnight_chip"), ("forbiddenmagic:pride_shard", "pride"),
+     ("thaumcraftcelestial:meteorite_fragment", "meteorite_fragment")],
+]))
+GEM_DESIGN.update(gem_design("super_shard", [
+    [("spectrum:downstone_fragments", "downstone_fragments")],
+    [("taintedmagic:creation_shard", "creation")],
+]))
+
+GEM_BUILTIN_PATHS = {
+    "minecraft:quartz": "quartz", "minecraft:amethyst_shard": "amethyst", "minecraft:redstone": "redstone",
+    "minecraft:lapis_lazuli": "lapis_lazuli", "minecraft:coal": "coal", "minecraft:diamond": "diamond",
+    "minecraft:emerald": "emerald", "ae2:fluix_crystal": "fluix",
+    **{resource_id: resource_id.split(":", 1)[1] for resource_id in GEM_DESIGN if resource_id.startswith("silentgems:")},
+}
+
 BUILTIN_PATHS = {
     "minecraft:copper_ingot": "copper", "mekanism:ingot_tin": "tin", "mekanism:ingot_lead": "lead",
     "minecraft:iron_ingot": "iron", "alltheores:nickel_ingot": "nickel", "alltheores:aluminum_ingot": "aluminum",
@@ -573,6 +664,12 @@ def builtin_materials_and_bounds(jar):
             for key, value in properties.items():
                 if key not in {"traits", "harvest_tier", "additive"} and isinstance(value, (int, float)) and value > 0:
                     values.setdefault(key, []).append(value)
+    for jar_path in PRODUCTION_MODS.glob("*silentgems*.jar"):
+        with zipfile.ZipFile(jar_path) as archive:
+            for path in archive.namelist():
+                if path.startswith("data/silentgems/silentgear_materials/") and path.endswith(".json"):
+                    relative = path.removeprefix("data/silentgems/silentgear_materials/").removesuffix(".json")
+                    material_data[relative] = json.loads(archive.read(path))
     bounds = {key: (min(nums) * 0.5, max(nums) * 10.0) for key, nums in values.items() if nums}
     return material_names, bounds, profiles, material_data
 
@@ -898,6 +995,17 @@ def metal_level_centers(family):
     }[family]
 
 
+def gem_level_centers(family):
+    return {
+        "gem": [10, 14, 19, 26, 36],
+        "super_gem": [50, 72, 102],
+        "pure_gem": [32, 48, 70, 100],
+        "super_pure_gem": [145, 210],
+        "shard": [12, 17, 24, 34, 48],
+        "super_shard": [72, 118],
+    }[family]
+
+
 def semantic_level_value(centers, level, bias):
     center = centers[level - 1]
     if bias < 0 and level > 1:
@@ -963,6 +1071,77 @@ def infused_alloy_properties(family, level, traits, material):
             if key not in {"traits", "harvest_tier"}:
                 main[key] = multiply_numbers(value, 0.92)
     return main
+
+
+def gem_traits(material, resource_id, level):
+    traits = traits_for("宝石", material, resource_id, min(1.0, 0.2 + level * 0.15))
+    if not any(item["trait"] == "silentgear:brittle" for item in traits):
+        traits.insert(0, trait("brittle", max(1, min(5, level))))
+    return traits[:3]
+
+
+def gem_main_properties(family, level, traits, bias):
+    power = semantic_level_value(gem_level_centers(family), level, bias)
+    pure = family in {"pure_gem", "super_pure_gem"}
+    armor = power * (0.48 if pure else 0.55)
+    main = {
+        "armor": round(armor, 3), "armor/boots": round(armor * 0.15, 3),
+        "armor/chestplate": round(armor * 0.4, 3), "armor/helmet": round(armor * 0.15, 3),
+        "armor/leggings": round(armor * 0.3, 3), "armor_durability": round(power * 1.7, 3),
+        "armor_toughness": round(power * 0.07, 3), "attack_damage": round(power * 0.28, 3),
+        "charging_value": round(0.8 + power * 0.035, 3), "durability": round(power * 52, 3),
+        "enchantment_value": round(12 + power * 0.75, 3), "harvest_speed": round(power * 0.44, 3),
+        "harvest_tier": {"incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool", "level_hint": "3", "name": "diamond"},
+        "magic_armor": round(power * 0.5, 3), "magic_damage": round(power * 0.32, 3),
+        "projectile_accuracy": round(1.0 + power * 0.012, 3), "projectile_speed": round(1.0 + power * 0.014, 3),
+        "ranged_damage": round(power * 0.16, 3), "rarity": round(20 + power * 1.8, 3), "traits": traits,
+    }
+    if pure:
+        progress = power / 50
+        main.update({
+            "attack_speed": round(0.04 + progress * 0.05, 3), "repair_efficiency": round(0.08 + progress * 0.08, 3),
+            "repair_value": round(0.06 + progress * 0.07, 3), "block_reach": round(0.18 + progress * 0.2, 3),
+            "attack_reach": round(0.12 + progress * 0.15, 3), "projectile_speed": round(1.1 + progress * 0.2, 3),
+            "projectile_accuracy": round(1.15 + progress * 0.18, 3),
+            "armor_toughness": round(main["armor_toughness"] * 1.3, 3),
+            "knockback_resistance": round(0.04 + progress * 0.05, 3),
+        })
+    return main
+
+
+def gem_tip_properties(family, level, traits, bias):
+    power = semantic_level_value(gem_level_centers(family), level, bias)
+    shard = family in {"shard", "super_shard"}
+    return {
+        "attack_damage": {"operation": "ADD", "value": round(power * (0.18 if shard else 0.12), 3)},
+        "charging_value": {"operation": "ADD", "value": round(power * (0.08 if shard else 0.04), 3)},
+        "durability": {"operation": "ADD", "value": round(power * (18 if shard else 24), 3)},
+        "enchantment_value": {"operation": "ADD", "value": round(power * (0.8 if shard else 0.5), 3)},
+        "magic_armor": {"operation": "ADD", "value": round(power * (0.42 if shard else 0.22), 3)},
+        "magic_damage": {"operation": "ADD", "value": round(power * (0.38 if shard else 0.2), 3)},
+        "rarity": {"operation": "ADD", "value": round(power * (1.5 if shard else 1.0), 3)},
+        "traits": traits,
+    }
+
+
+def apply_gem_design(data, entry):
+    design = GEM_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    family, level, bias = design["family"], design["level"], design["bias"]
+    traits = gem_traits(entry["material"], entry["id"], level)
+    setting = data.get("properties", {}).get("silentgear:setting", {})
+    data["crafting"]["categories"] = [family, "endgame" if family.startswith("super") else "advanced"]
+    if family in {"shard", "super_shard"}:
+        data["properties"] = {"silentgear:tip": gem_tip_properties(family, level, traits, bias), "silentgear:setting": setting}
+    else:
+        data["properties"] = {
+            "silentgear:main": gem_main_properties(family, level, traits, bias),
+            "silentgear:tip": gem_tip_properties(family, level, traits, bias),
+            "silentgear:setting": setting,
+        }
+    if entry["id"] == "spectrum:pure_netherite_scrap":
+        data["properties"]["silentgear:coating"] = coating_properties(1.08, traits)
 
 
 def designed_traits(family, material, resource_id, level):
@@ -1138,6 +1317,7 @@ def make_material(category, entry, bounds, profiles, resolver):
                 if key not in {"traits", "harvest_tier"}:
                     properties[key] = multiply_numbers(value, factor)
     apply_metal_design(data, entry)
+    apply_gem_design(data, entry)
     return data, tier
 
 
@@ -1179,16 +1359,26 @@ def main():
                 "name": design["material"].replace("_", " ").title(),
                 "extra": True,
             }))
+    for resource_id, design in GEM_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("宝石", {
+                "id": resource_id, "material": design["material"],
+                "name": design["material"].replace("_", " ").title(), "extra": True,
+            }))
 
     candidates.sort(key=lambda item: (not item[1].get("extra", False), CATEGORY_ORDER[item[0]], item[1]["material"], item[1]["id"]))
     chosen = []
-    seen_materials = set()
     seen_ingredients = set()
+    seen_outputs = set()
     for category, entry in candidates:
-        if entry["material"] in seen_materials or entry["id"] in seen_ingredients:
+        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"])
+        output_key = ("builtin", builtin_path) if builtin_path in builtin_data else (
+            entry["id"].split(":", 1)[0], entry["material"]
+        )
+        if entry["id"] in seen_ingredients or output_key in seen_outputs:
             continue
-        seen_materials.add(entry["material"])
         seen_ingredients.add(entry["id"])
+        seen_outputs.add(output_key)
         chosen.append((category, entry))
 
     OUTPUT.mkdir(parents=True, exist_ok=True)
@@ -1198,7 +1388,7 @@ def main():
     designed_values = {}
     for category, entry in chosen:
         namespace = entry["id"].split(":", 1)[0]
-        builtin_path = BUILTIN_PATHS.get(entry["id"])
+        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"])
         if builtin_path not in builtin_data:
             builtin_path = None
         path = OVERRIDE_OUTPUT / f"{builtin_path}.json" if builtin_path else OUTPUT / namespace / f"{entry['material']}.json"
@@ -1206,6 +1396,7 @@ def main():
         if builtin_path:
             data = json.loads(json.dumps(builtin_data[builtin_path]))
             apply_metal_design(data, entry)
+            apply_gem_design(data, entry)
             tier = entry["id"] in METAL_DESIGN and METAL_DESIGN[entry["id"]]["level"] / 8 or 0.5
         else:
             data, tier = make_material(category, entry, bounds, profiles, resolver)
@@ -1227,14 +1418,21 @@ def main():
                     lower *= 0.92
                 designed_values[entry["id"]] = (lower, main["armor"], upper)
 
-    for path in OUTPUT.rglob("*.json"):
-        if path.resolve() not in expected:
-            path.unlink()
+    if EXTRA_INPUT.exists():
+        for path in OUTPUT.rglob("*.json"):
+            if path.resolve() not in expected:
+                path.unlink()
 
     assert len(expected) == len(chosen)
     assert all(json.loads(path.read_text(encoding="utf-8"))["type"] == "silentgear:simple" for path in expected)
     assert designed_ids == set(METAL_DESIGN)
     assert all(lower <= value <= upper for lower, value, upper in designed_values.values())
+    generated_ingredients = {
+        data["crafting"]["ingredient"].get("item")
+        for path in expected
+        for data in [json.loads(path.read_text(encoding="utf-8"))]
+    }
+    assert set(GEM_DESIGN).issubset(generated_ingredients | set(GEM_BUILTIN_PATHS))
     generated_lang = write_generated_lang([entry for _, entry in chosen], resolver)
     resolver.close()
     print(f"Silent Gear JAR: {jar.name}")

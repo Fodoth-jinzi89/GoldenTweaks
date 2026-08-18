@@ -1,0 +1,122 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "pure_gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2cs:purified_rose_quartz"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD6747C",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.ae2cs.purified_rose_quartz"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 15.36,
+      "armor/boots": 2.304,
+      "armor/chestplate": 6.144,
+      "armor/helmet": 2.304,
+      "armor/leggings": 4.608,
+      "armor_durability": 54.4,
+      "armor_toughness": 2.912,
+      "attack_damage": 8.96,
+      "charging_value": 1.92,
+      "durability": 1664,
+      "enchantment_value": 36.0,
+      "harvest_speed": 14.08,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 16.0,
+      "magic_damage": 10.24,
+      "projectile_accuracy": 1.265,
+      "projectile_speed": 1.228,
+      "ranged_damage": 5.12,
+      "rarity": 77.6,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:refractive"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ],
+      "attack_speed": 0.072,
+      "repair_efficiency": 0.131,
+      "repair_value": 0.105,
+      "block_reach": 0.308,
+      "attack_reach": 0.216,
+      "knockback_resistance": 0.072
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3.84
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.28
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 768
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 16.0
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 7.04
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 6.4
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 32.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:refractive"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {}
+  }
+}

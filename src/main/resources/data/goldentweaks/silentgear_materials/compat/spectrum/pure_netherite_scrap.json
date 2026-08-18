@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "coating",
+      "pure_gem",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -22,34 +22,82 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:coating": {
-      "armor_durability": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.777
+    "silentgear:main": {
+      "armor": 47.09,
+      "armor/boots": 7.063,
+      "armor/chestplate": 18.836,
+      "armor/helmet": 7.063,
+      "armor/leggings": 14.127,
+      "armor_durability": 166.777,
+      "armor_toughness": 8.927,
+      "attack_damage": 27.469,
+      "charging_value": 4.234,
+      "durability": 5101.408,
+      "enchantment_value": 85.578,
+      "harvest_speed": 43.166,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "armor_toughness": {
-        "operation": "ADD",
-        "value": 14.433
-      },
+      "magic_armor": 49.052,
+      "magic_damage": 31.393,
+      "projectile_accuracy": 1.503,
+      "projectile_speed": 1.492,
+      "ranged_damage": 15.697,
+      "rarity": 196.587,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ],
+      "attack_speed": 0.138,
+      "repair_efficiency": 0.237,
+      "repair_value": 0.197,
+      "block_reach": 0.572,
+      "attack_reach": 0.414,
+      "knockback_resistance": 0.138
+    },
+    "silentgear:tip": {
       "attack_damage": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.972
+        "operation": "ADD",
+        "value": 11.772
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 3.924
       },
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.993
+        "operation": "ADD",
+        "value": 2354.496
       },
-      "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.489
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 49.052
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 21.583
       },
       "magic_damage": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.972
+        "operation": "ADD",
+        "value": 19.621
       },
-      "ranged_damage": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.972
+      "rarity": {
+        "operation": "ADD",
+        "value": 98.104
       },
       "traits": [
         {
@@ -60,12 +108,60 @@
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {},
+    "silentgear:coating": {
+      "armor_durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.342
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 6.44
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.428
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.426
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.214
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.428
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.428
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
         }
       ]
     }

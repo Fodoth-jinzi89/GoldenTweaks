@@ -9,12 +9,12 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "biomesoplenty:bramble"
+      "item": "biomesoplenty:bramble_leaves"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF915C54",
+    "color": "#FF868586",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.biomesoplenty.bramble"
@@ -25,7 +25,7 @@
     "silentgear:binding": {
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.053
+        "value": 0.049
       },
       "traits": [
         {
@@ -43,7 +43,7 @@
     "silentgear:cord": {
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.071
+        "value": 0.068
       },
       "traits": [
         {
@@ -56,11 +56,11 @@
     "silentgear:fletching": {
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.071
+        "value": 0.068
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.041
+        "value": 0.039
       },
       "traits": [
         {
@@ -78,11 +78,11 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.047
+        "value": 0.044
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.065
+        "value": 0.063
       },
       "traits": [
         {

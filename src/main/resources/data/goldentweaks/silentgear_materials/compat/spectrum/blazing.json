@@ -23,29 +23,29 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 10.357,
-      "armor/boots": 1.554,
-      "armor/chestplate": 4.143,
-      "armor/helmet": 1.554,
-      "armor/leggings": 3.107,
-      "armor_durability": 15.602,
-      "armor_toughness": 3.342,
-      "attack_damage": 2.559,
-      "charging_value": 0.987,
-      "durability": 440.475,
-      "enchantment_value": 7.588,
-      "harvest_speed": 6.321,
+      "armor": 6.732,
+      "armor/boots": 1.01,
+      "armor/chestplate": 2.693,
+      "armor/helmet": 1.01,
+      "armor/leggings": 2.02,
+      "armor_durability": 20.808,
+      "armor_toughness": 0.857,
+      "attack_damage": 3.427,
+      "charging_value": 1.228,
+      "durability": 636.48,
+      "enchantment_value": 21.18,
+      "harvest_speed": 5.386,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 4.971,
-      "magic_damage": 2.701,
-      "projectile_accuracy": 1.133,
-      "projectile_speed": 1.365,
-      "ranged_damage": 0.759,
-      "rarity": 13.549,
+      "magic_armor": 6.12,
+      "magic_damage": 3.917,
+      "projectile_accuracy": 1.147,
+      "projectile_speed": 1.171,
+      "ranged_damage": 1.958,
+      "rarity": 42.032,
       "traits": [
         {
           "conditions": [],
@@ -62,15 +62,31 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 0.896
+        "value": 1.469
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.49
       },
       "durability": {
         "operation": "ADD",
-        "value": 88.095
+        "value": 293.76
       },
-      "harvest_speed": {
+      "enchantment_value": {
         "operation": "ADD",
-        "value": 1.264
+        "value": 6.12
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.693
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.448
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 12.24
       },
       "traits": [
         {
@@ -84,6 +100,7 @@
           "trait": "silentgear:lustrous"
         }
       ]
-    }
+    },
+    "silentgear:setting": {}
   }
 }

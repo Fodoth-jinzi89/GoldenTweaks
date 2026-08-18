@@ -5,7 +5,7 @@
     "can_salvage": true,
     "categories": [
       "gem",
-      "intermediate"
+      "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -23,38 +23,38 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 9.798,
-      "armor/boots": 1.47,
-      "armor/chestplate": 3.919,
-      "armor/helmet": 1.47,
-      "armor/leggings": 2.939,
-      "armor_durability": 14.418,
-      "armor_toughness": 3.102,
-      "attack_damage": 2.394,
-      "charging_value": 0.971,
-      "durability": 400.471,
-      "enchantment_value": 7.018,
-      "harvest_speed": 5.877,
+      "armor": 5.607,
+      "armor/boots": 0.841,
+      "armor/chestplate": 2.243,
+      "armor/helmet": 0.841,
+      "armor/leggings": 1.682,
+      "armor_durability": 17.331,
+      "armor_toughness": 0.714,
+      "attack_damage": 2.855,
+      "charging_value": 1.157,
+      "durability": 530.14,
+      "enchantment_value": 19.646,
+      "harvest_speed": 4.486,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 4.654,
-      "magic_damage": 2.523,
+      "magic_armor": 5.098,
+      "magic_damage": 3.262,
       "projectile_accuracy": 1.122,
-      "projectile_speed": 1.346,
-      "ranged_damage": 0.702,
-      "rarity": 12.324,
+      "projectile_speed": 1.143,
+      "ranged_damage": 1.631,
+      "rarity": 38.351,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:lustrous"
         }
       ]
@@ -62,28 +62,45 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 0.838
+        "value": 1.223
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.408
       },
       "durability": {
         "operation": "ADD",
-        "value": 80.094
+        "value": 244.68
       },
-      "harvest_speed": {
+      "enchantment_value": {
         "operation": "ADD",
-        "value": 1.175
+        "value": 5.098
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.243
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.039
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 10.195
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:brittle"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:lustrous"
         }
       ]
-    }
+    },
+    "silentgear:setting": {}
   }
 }

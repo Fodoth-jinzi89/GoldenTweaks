@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "gem",
+      "shard",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -22,30 +22,35 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 22.127,
-      "armor/boots": 3.319,
-      "armor/chestplate": 8.851,
-      "armor/helmet": 3.319,
-      "armor/leggings": 6.638,
-      "armor_durability": 45.919,
-      "armor_toughness": 9.257,
-      "attack_damage": 6.382,
-      "charging_value": 1.198,
-      "durability": 1620.438,
-      "enchantment_value": 22.09,
-      "harvest_speed": 17.127,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 7.229
       },
-      "magic_armor": 12.257,
-      "magic_damage": 6.882,
-      "projectile_accuracy": 1.284,
-      "projectile_speed": 1.626,
-      "ranged_damage": 2.209,
-      "rarity": 49.538,
+      "charging_value": {
+        "operation": "ADD",
+        "value": 3.213
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 722.88
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 32.128
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 16.867
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 15.261
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 60.24
+      },
       "traits": [
         {
           "conditions": [],
@@ -64,31 +69,6 @@
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 2.234
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 324.088
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 3.425
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:terminus"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:brittle"
-        }
-      ]
-    }
+    "silentgear:setting": {}
   }
 }

@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "gem",
+      "shard",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -22,73 +22,53 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 14.918,
-      "armor/boots": 2.238,
-      "armor/chestplate": 5.968,
-      "armor/helmet": 2.238,
-      "armor/leggings": 4.476,
-      "armor_durability": 35.123,
-      "armor_toughness": 6.913,
-      "attack_damage": 4.574,
-      "charging_value": 0.64,
-      "durability": 1353.297,
-      "enchantment_value": 16.824,
-      "harvest_speed": 12.681,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3.244
       },
-      "magic_armor": 8.743,
-      "magic_damage": 4.973,
-      "projectile_accuracy": 0.671,
-      "projectile_speed": 0.865,
-      "ranged_damage": 1.683,
-      "rarity": 41.27,
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.442
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 324.45
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 14.42
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 7.57
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 6.849
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 27.037
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
+          "level": 3,
           "trait": "silentgear:lustrous"
         },
         {
           "conditions": [],
-          "level": 4,
+          "level": 3,
           "trait": "silentgear:venom"
         },
         {
           "conditions": [],
-          "level": 4,
+          "level": 3,
           "trait": "silentgear:brittle"
         }
       ]
     },
-    "silentgear:tip": {
-      "attack_damage": {
-        "operation": "ADD",
-        "value": 1.601
-      },
-      "durability": {
-        "operation": "ADD",
-        "value": 270.659
-      },
-      "harvest_speed": {
-        "operation": "ADD",
-        "value": 2.536
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:lustrous"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:venom"
-        }
-      ]
-    }
+    "silentgear:setting": {}
   }
 }

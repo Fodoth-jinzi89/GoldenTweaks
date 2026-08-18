@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "organic",
-      "basic"
+      "shard",
+      "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,72 +22,34 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.09
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 5.112
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:fireproof"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.114
+      "charging_value": {
+        "operation": "ADD",
+        "value": 2.272
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.114
+      "durability": {
+        "operation": "ADD",
+        "value": 511.2
       },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.068
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:fireproof"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        }
-      ]
-    },
-    "silentgear:lining": {
-      "armor_durability": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.08
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 22.72
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.104
+        "value": 11.928
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 10.792
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 42.6
       },
       "traits": [
         {
@@ -97,10 +59,16 @@
         },
         {
           "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
         }
       ]
-    }
+    },
+    "silentgear:setting": {}
   }
 }
