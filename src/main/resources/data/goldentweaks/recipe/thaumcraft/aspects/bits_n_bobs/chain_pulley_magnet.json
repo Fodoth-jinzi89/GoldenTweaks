@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bits_n_bobs:chain_pulley_magnet"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

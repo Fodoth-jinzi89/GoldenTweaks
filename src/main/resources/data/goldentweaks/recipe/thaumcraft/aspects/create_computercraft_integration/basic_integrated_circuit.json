@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_computercraft_integration:basic_integrated_circuit"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "amendments:liquid_cauldron"
-  },
-  "aspects": {
-    "substance": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:picnic_mat"
-  },
-  "aspects": {
-    "humanus": 3
-  }
-}

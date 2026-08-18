@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:titanlord_scepter_tectonic"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

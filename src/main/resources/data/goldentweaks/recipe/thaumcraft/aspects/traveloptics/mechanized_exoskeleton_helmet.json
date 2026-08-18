@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:mechanized_exoskeleton_helmet"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

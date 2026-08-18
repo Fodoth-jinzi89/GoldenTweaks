@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndecor:solid_ginger_container"
-  },
-  "aspects": {
-    "vas": 3
-  }
-}

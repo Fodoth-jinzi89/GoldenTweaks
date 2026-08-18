@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_connected:kinetic_bridge_destination"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

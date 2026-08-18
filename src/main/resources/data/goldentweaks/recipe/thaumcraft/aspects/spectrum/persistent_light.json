@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:persistent_light"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

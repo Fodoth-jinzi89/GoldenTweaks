@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_enchantment_industry:crystal_essence"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "amendments:directional_cake"
-  },
-  "aspects": {
-    "victus": 3
-  }
-}

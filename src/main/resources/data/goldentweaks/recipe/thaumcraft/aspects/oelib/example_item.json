@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "oelib:example_item"
-  },
-  "aspects": {
-    "substance": 2
-  }
-}

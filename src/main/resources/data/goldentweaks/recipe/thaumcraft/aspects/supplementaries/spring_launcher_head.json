@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:spring_launcher_head"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

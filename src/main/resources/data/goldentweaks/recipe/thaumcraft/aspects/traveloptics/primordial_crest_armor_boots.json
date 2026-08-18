@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:primordial_crest_armor_boots"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

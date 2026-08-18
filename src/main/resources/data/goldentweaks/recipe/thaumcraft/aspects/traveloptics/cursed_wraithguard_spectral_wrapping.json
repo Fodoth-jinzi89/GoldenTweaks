@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:cursed_wraithguard_spectral_wrapping"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

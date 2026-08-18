@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:flames_of_eldritch_level_one"
-  },
-  "aspects": {
-    "ignis": 3
-  }
-}

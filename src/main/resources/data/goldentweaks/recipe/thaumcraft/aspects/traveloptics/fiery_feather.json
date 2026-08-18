@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:fiery_feather"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

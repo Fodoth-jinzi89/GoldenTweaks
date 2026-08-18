@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:slate_valve_handle"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

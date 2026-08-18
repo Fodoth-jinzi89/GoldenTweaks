@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:codex_of_the_crushing_depths"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

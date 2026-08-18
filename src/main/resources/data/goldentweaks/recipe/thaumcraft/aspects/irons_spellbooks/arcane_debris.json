@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_spellbooks:arcane_debris"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

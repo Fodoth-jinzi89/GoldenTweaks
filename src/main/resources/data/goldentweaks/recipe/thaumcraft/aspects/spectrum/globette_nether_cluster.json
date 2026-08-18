@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:globette_nether_cluster"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

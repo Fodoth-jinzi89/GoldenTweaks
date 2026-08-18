@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bits_n_bobs:chain_rope"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

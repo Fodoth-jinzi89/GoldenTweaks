@@ -10,7 +10,6 @@ import net.minecraft.world.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Unique;
-import thaumcraft.Thaumcraft;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.common.aspects.ItemAspectRegistry;
 import thaumcraft.integration.jei.ThaumcraftJeiPlugin;
@@ -35,8 +34,6 @@ public abstract class ThaumcraftJeiPluginMixin {
             stackHelper.getUidForStack(stack, UidContext.Ingredient);
             return true;
         } catch (LinkageError | RuntimeException error) {
-            ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
-            Thaumcraft.LOGGER.warn("Skipping {} from JEI aspect sources because its subtype interpreter failed", itemId, error);
             return false;
         }
     }

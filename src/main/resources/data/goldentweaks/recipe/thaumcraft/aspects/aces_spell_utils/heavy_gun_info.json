@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "aces_spell_utils:heavy_gun_info"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "compactmachines:bound_machine_fallback"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

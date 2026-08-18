@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_connected:linked_spruce_button"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

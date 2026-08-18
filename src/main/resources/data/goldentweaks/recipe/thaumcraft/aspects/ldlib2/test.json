@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ldlib2:test"
-  },
-  "aspects": {
-    "substance": 2
-  }
-}

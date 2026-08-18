@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid_spell:potted_jingxu_youlan"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

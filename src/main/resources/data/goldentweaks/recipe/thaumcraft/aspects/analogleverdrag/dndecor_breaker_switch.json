@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "analogleverdrag:dndecor_breaker_switch"
-  },
-  "aspects": {
-    "substance": 2
-  }
-}

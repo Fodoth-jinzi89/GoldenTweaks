@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:tectonic_crest_armor_helmet"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

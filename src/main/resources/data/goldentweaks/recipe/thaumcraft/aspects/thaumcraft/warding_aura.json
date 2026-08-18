@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:warding_aura"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

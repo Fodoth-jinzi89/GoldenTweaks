@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alshanex_familiars:furled_hunter_campsite_map"
-  },
-  "aspects": {
-    "praecantatio": 2
-  }
-}

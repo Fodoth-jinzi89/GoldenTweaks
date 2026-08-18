@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_cc:lapis_sheet"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

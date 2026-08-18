@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:aqua_postbox"
-  },
-  "aspects": {
-    "vas": 3
-  }
-}

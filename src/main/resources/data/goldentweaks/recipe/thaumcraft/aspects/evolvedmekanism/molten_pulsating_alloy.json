@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "evolvedmekanism:molten_pulsating_alloy"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

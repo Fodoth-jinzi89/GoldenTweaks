@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "avaritia_integration:asgard_dandelion_floating"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

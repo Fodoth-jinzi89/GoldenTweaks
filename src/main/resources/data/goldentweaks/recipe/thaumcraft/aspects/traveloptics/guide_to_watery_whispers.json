@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:guide_to_watery_whispers"
-  },
-  "aspects": {
-    "cognitio": 4
-  }
-}

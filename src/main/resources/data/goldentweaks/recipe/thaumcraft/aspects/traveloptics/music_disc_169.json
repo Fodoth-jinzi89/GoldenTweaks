@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:music_disc_169"
-  },
-  "aspects": {
-    "sonus": 4
-  }
-}

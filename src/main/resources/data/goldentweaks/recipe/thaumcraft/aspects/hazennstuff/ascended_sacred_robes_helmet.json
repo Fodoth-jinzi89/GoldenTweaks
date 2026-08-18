@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:ascended_sacred_robes_helmet"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

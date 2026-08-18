@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:midnight_solution"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

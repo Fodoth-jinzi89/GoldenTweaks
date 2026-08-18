@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cosmeticcorpsecompat:example_block"
-  },
-  "aspects": {
-    "substance": 2
-  }
-}

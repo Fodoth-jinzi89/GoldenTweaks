@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "avaritia_integration:infinity_capacitor"
-  },
-  "aspects": {
-    "terminus": 6
-  }
-}

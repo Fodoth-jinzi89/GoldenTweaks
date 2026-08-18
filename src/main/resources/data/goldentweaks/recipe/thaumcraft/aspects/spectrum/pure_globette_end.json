@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:pure_globette_end"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

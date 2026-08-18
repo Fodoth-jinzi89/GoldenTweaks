@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "taintedmagic:lumos"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:cursed_wraithguard_crown"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

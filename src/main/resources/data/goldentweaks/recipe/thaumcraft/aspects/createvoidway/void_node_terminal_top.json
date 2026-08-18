@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createvoidway:void_node_terminal_top"
-  },
-  "aspects": {
-    "cognitio": 3
-  }
-}

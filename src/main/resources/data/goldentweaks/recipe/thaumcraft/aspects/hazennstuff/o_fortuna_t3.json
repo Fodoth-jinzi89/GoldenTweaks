@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:o_fortuna_t3"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}
