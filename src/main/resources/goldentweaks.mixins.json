@@ -65,6 +65,7 @@
     "fix.bountiful.BountyLongButtonMixin",
     "fix.bountiful.MixinBountyItem",
     "fix.cbcmoreshells.CbcmoreshellsNeoForgeMixin",
+    "fix.carryon.PickupHandlerDummyMixin",
     "fix.ccbtweaks.ReleaseMouseMixin",
     "fix.cdg.CDGSpriteShiftsMixin",
     "fix.cfwinfo.ClientSetupMixin",

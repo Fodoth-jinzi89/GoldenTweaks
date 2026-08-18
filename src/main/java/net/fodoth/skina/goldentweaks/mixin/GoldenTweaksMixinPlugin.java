@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -81,6 +82,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                     && checkIfPresent("dev.uncandango.ftbquestslangsplitter.FTBQuestsLangSplitter");
         }
 
+        if (mixinClassName.endsWith("fix.carryon.PickupHandlerDummyMixin")) {
+            return checkIfPresent("tschipp.carryon.common.carry.PickupHandler")
+                    && checkIfPresent("gay.git.copygirl.carryonaerocompat.CarryOnAeroCompat");
+        }
+
         // 对于原版类的 mixin 应启用模组检查
         if (mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
             return checkIfPresent("com.github.qichensn.TouhouLostMaid");
@@ -134,6 +140,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                          String mixinClassName, IMixinInfo mixinInfo) {
 
         ExspectrimentsASM.patch(targetClassName, targetClass);
+        CarryOnAeroCompatASM.patch(targetClassName, targetClass);
 
     }
 
