@@ -1,5 +1,52 @@
 # GoldenTweaks Update Log
 
+## 2026.08.18 - v4.0
+
+### Thaumcraft 要素系统
+- 为整合包中的物品、方块和实体批量补充要素数据，覆盖 250 个命名空间；保留语义化分配、稀有要素来源补充及源质安瓿/灵气精华专用规则
+  - [物品与方块要素](src/main/resources/data/goldentweaks/recipe/thaumcraft/aspects/)
+  - [实体要素](src/main/resources/data/goldentweaks/recipe/thaumcraft/entity_aspects/)
+  - [generate_aspect_batch.py](script/resource_locations/generate_aspect_batch.py)
+  - [supplement_rare_aspects.py](script/resource_locations/supplement_rare_aspects.py)
+- 新增资源位置提取工具，可从生产端模组生成物品、方块和实体 ID 清单
+  - [extract_resource_locations.py](script/resource_locations/extract_resource_locations.py)
+
+### Silent Gear
+- 新增 629 种整合包联动材料，覆盖金属、宝石、木材、石材、线、革织、柄、树叶和花羽等分类，包含属性、部件类型、特性、颜色及中英文名称
+  - [联动材料数据](src/main/resources/data/goldentweaks/silentgear_materials/compat/)
+  - [generate_materials.py](script/silentgear/generate_materials.py)
+  - [材料设计文档](script/materials/)
+- 新增模组材料提取工具，用于汇总并去重生产端可用材料
+  - [extract_materials.py](script/materials/extract_materials.py)
+
+### 魔导手册与配方
+- JSON 研究页面新增奥术合成、坩埚、注魔和注魔附魔配方页，并兼容原有文本页
+  - [GTResearchRecipePages.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTResearchRecipePages.java)
+  - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
+- 魔导手册中的注魔与坩埚要素列表改为居中分页/滚动布局，与 JEI/EMI 页面保持一致
+  - [ThaumonomiconScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumonomiconScreenMixin.java)
+
+### RenderBlender / Iris
+- 适配新版 RenderBlender API，移除已由上游实现的模型烘焙与队列逻辑，并修复宇宙渲染颜色数组、第一人称矩阵和深度状态问题
+  - [RenderBlenderCosmicQueueFlushHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/fix/renderblender/RenderBlenderCosmicQueueFlushHandler.java)
+  - [GTCosmicJarRenderQueue.java](src/main/java/net/fodoth/skina/goldentweaks/compat/renderblender/GTCosmicJarRenderQueue.java)
+  - [CosmicRenderLayerDepthMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/renderblender/CosmicRenderLayerDepthMixin.java)
+- 为缺少末地闪光 uniform 的光影包提供 Iris 兼容值
+  - [IrisExclusiveUniformsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/iris/IrisExclusiveUniformsMixin.java)
+
+### 模组兼容
+- 适配 Exspectriments 0.3.0 与 Spectrum 1.12.4 的墨水 API 和界面注册变化
+  - [ExspectrimentsASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/exspectriments/ExspectrimentsASM.java)
+  - [ExspScreensMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/exspectriments/ExspScreensMixin.java)
+- 修复 FTB Quests Lang Splitter 1.0.6 在新版 FTB Quests 下调用已移除权限方法的问题
+  - [FTBQuestsLangSplitterASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/FTBQuestsLangSplitterASM.java)
+- 修复 CarryOnAeroCompat 1.1.1 在 Carry On 2.2.6.13 下因目标调用变化而无法应用的问题
+  - [CarryOnAeroCompatASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/carryon/CarryOnAeroCompatASM.java)
+
+### 日志清理
+- 压制 Thaumcraft JEI、Mekanical Create、Annuus、KubeJS、Silent Gear、女仆仓库管理器和 Yammo 的已知无害错误或刷屏日志
+  - [日志压制 Mixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/)
+
 ## 2026.08.16 - v3.9
 
 ### Thaumcraft
