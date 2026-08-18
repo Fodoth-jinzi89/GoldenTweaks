@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:milk"
+    "flavor_immersed_daily:milkbottle",
+    "minecraft:milk_bucket"
   ]
 }

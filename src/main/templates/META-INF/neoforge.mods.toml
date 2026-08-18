@@ -880,3 +880,10 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "xaeroworldmap"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
