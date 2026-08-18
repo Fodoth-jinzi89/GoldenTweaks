@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
+import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import org.objectweb.asm.tree.ClassNode;
@@ -75,8 +76,17 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
         }
 
+        if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
+            return checkIfPresent("dev.ftb.mods.ftbquests.integration.PermissionsHelper")
+                    && checkIfPresent("dev.uncandango.ftbquestslangsplitter.FTBQuestsLangSplitter");
+        }
+
         // 对于原版类的 mixin 应启用模组检查
-        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid") || mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
+        if (mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
+            return checkIfPresent("com.github.qichensn.TouhouLostMaid");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid")) {
             return checkIfPresent("com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid") && checkIfPresent("com.github.qichensn.TouhouLostMaid");
         }
 
@@ -129,5 +139,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public void postApply(String targetClassName, ClassNode targetClass,
-                          String mixinClassName, IMixinInfo mixinInfo) {}
+                          String mixinClassName, IMixinInfo mixinInfo) {
+        FTBQuestsLangSplitterASM.patch(targetClassName, targetClass);
+    }
 }
