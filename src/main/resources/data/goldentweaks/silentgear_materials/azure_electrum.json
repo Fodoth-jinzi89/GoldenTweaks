@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/azure_electrum"
+      "item": "silentgear:azure_electrum_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF4575E3",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.azure_electrum"
+      "translate": "material.goldentweaks.compat.silentgear.azure_electrum"
     },
     "name_prefix": ""
   },

@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:blackslag"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF4C4643",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.spectrum.blackslag"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 7.24,
+      "armor/boots": 1.086,
+      "armor/chestplate": 2.896,
+      "armor/helmet": 1.086,
+      "armor/leggings": 2.172,
+      "armor_durability": 6.126,
+      "armor_toughness": 0.891,
+      "attack_damage": 1.559,
+      "attack_speed": -0.23,
+      "charging_value": 0.317,
+      "draw_speed": -0.16,
+      "durability": 111.38,
+      "enchantment_value": 4.337,
+      "harvest_speed": 2.45,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.114,
+      "magic_damage": 0.78,
+      "projectile_accuracy": 0.66,
+      "projectile_speed": 0.61,
+      "ranged_damage": 2.005,
+      "rarity": 6.564,
+      "knockback_resistance": 0.101,
+      "repair_efficiency": 0.38,
+      "repair_value": 0.13,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

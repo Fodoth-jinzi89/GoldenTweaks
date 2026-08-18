@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/lapis"
+      "item": "minecraft:lapis_lazuli"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FF224BAF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.lapis_lazuli"
+      "translate": "material.goldentweaks.compat.minecraft.lapis_lazuli"
     },
     "name_prefix": ""
   },

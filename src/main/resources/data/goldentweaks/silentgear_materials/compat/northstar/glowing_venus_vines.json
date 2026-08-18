@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
-      "basic"
+      "cord",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,83 +22,61 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
+    "silentgear:cord": {
+      "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.07
+        "value": 0.468
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.374
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.328
       },
       "traits": [
         {
           "conditions": [],
-          "level": 1,
+          "level": 5,
           "trait": "silentgear:brilliant"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 5,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 5,
           "trait": "silentgear:soft"
         }
       ]
     },
-    "silentgear:cord": {
-      "draw_speed": {
+    "silentgear:binding": {
+      "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.083
+        "value": 0.421
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.083
-      },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.051
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:brilliant"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:lining": {
-      "armor_durability": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.06
-      },
-      "magic_armor": {
+      "repair_value": {
         "operation": "ADD",
-        "value": 0.076
+        "value": 0.164
       },
       "traits": [
         {
           "conditions": [],
-          "level": 1,
+          "level": 5,
           "trait": "silentgear:brilliant"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 5,
           "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
         }
       ]
     }

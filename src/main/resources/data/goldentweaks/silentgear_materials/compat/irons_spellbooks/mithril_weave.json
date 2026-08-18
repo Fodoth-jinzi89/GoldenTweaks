@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
-      "intermediate"
+      "rare_textile",
+      "endgame"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,77 +22,54 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.167
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.155
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.155
-      },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.107
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.137
+        "value": 0.72
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 2.52
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.192
+        "value": 3.6
       },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.252
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.504
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.144
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
           "trait": "silentgear:soft"
         }
       ]

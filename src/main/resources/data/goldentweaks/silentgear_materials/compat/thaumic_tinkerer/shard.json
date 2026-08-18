@@ -15,7 +15,7 @@
   },
   "display": {
     "color": "#FF750920",
-    "main_texture_type": "LOW_CONTRAST",
+    "main_texture_type": "HIGH_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.thaumic_tinkerer.shard"
     },

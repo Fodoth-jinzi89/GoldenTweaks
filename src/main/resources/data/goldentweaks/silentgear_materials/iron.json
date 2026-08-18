@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/iron"
+      "item": "minecraft:iron_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFFFFFFF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.iron"
+      "translate": "material.goldentweaks.compat.minecraft.iron"
     },
     "name_prefix": ""
   },

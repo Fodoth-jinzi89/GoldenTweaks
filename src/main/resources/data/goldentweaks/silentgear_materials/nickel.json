@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/nickel"
+      "item": "alltheores:nickel_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFEFE87B",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.nickel"
+      "translate": "material.goldentweaks.compat.alltheores.nickel"
     },
     "name_prefix": ""
   },

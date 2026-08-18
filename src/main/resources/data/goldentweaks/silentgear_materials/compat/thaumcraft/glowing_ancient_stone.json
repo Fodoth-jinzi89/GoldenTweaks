@@ -5,7 +5,7 @@
     "can_salvage": true,
     "categories": [
       "stone",
-      "intermediate"
+      "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -23,43 +23,48 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 14.024,
-      "armor/boots": 2.104,
-      "armor/chestplate": 5.61,
-      "armor/helmet": 2.104,
-      "armor/leggings": 4.208,
-      "armor_durability": 17.92,
-      "armor_toughness": 3.96,
-      "attack_damage": 3.2,
-      "charging_value": 1.756,
-      "durability": 451.134,
-      "enchantment_value": 8.764,
-      "harvest_speed": 7.576,
+      "armor": 13.621,
+      "armor/boots": 2.043,
+      "armor/chestplate": 5.448,
+      "armor/helmet": 2.043,
+      "armor/leggings": 4.086,
+      "armor_durability": 11.525,
+      "armor_toughness": 1.676,
+      "attack_damage": 2.934,
+      "attack_speed": -0.28,
+      "charging_value": 0.376,
+      "draw_speed": -0.2,
+      "durability": 209.55,
+      "enchantment_value": 5.515,
+      "harvest_speed": 4.61,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
       },
-      "magic_armor": 6.254,
-      "magic_damage": 3.342,
-      "projectile_accuracy": 2.112,
-      "projectile_speed": 2.46,
-      "ranged_damage": 0.876,
-      "rarity": 13.922,
+      "magic_armor": 2.095,
+      "magic_damage": 1.467,
+      "projectile_accuracy": 0.52,
+      "projectile_speed": 0.47,
+      "ranged_damage": 3.772,
+      "rarity": 9.706,
+      "knockback_resistance": 0.161,
+      "repair_efficiency": 0.48,
+      "repair_value": 0.18,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:brilliant"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:hard"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:heavy"
         }
       ]

@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/refined_obsidian"
+      "item": "mekanism:ingot_refined_obsidian"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF665482",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.refined_obsidian"
+      "translate": "material.goldentweaks.compat.mekanism.refined_obsidian"
     },
     "name_prefix": ""
   },

@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "organic",
-      "basic"
+      "flower_feather",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,77 +22,28 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.06
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.076
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
     "silentgear:fletching": {
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.076
+        "value": 0.318
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.045
+        "value": 0.27
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:lining": {
-      "armor_durability": {
+      "ranged_damage": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.053
-      },
-      "magic_armor": {
-        "operation": "ADD",
-        "value": 0.07
+        "value": 0.175
       },
       "traits": [
         {
           "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
+          "level": 4,
+          "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 4,
           "trait": "silentgear:soft"
         }
       ]

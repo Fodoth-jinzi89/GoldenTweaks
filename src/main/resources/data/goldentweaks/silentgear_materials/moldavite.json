@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/moldavite"
+      "item": "silentgems:moldavite"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFA6D923",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.moldavite"
+      "translate": "material.goldentweaks.compat.silentgems.moldavite"
     },
     "name_prefix": ""
   },

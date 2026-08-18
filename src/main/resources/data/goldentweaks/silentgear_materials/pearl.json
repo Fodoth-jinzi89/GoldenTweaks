@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/pearl"
+      "item": "silentgems:pearl"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFD3CBBF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.pearl"
+      "translate": "material.goldentweaks.compat.silentgems.pearl"
     },
     "name_prefix": ""
   },

@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
-      "intermediate"
+      "rare_textile",
+      "endgame"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,10 +22,18 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
+    "silentgear:lining": {
+      "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.221
+        "value": 0.831
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 2.909
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 4.155
       },
       "traits": [
         {
@@ -45,60 +53,34 @@
         }
       ]
     },
-    "silentgear:cord": {
-      "draw_speed": {
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.291
+      },
+      "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.195
+        "value": 0.582
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.166
       },
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
         {
           "conditions": [],
           "level": 3,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.195
-      },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.139
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:silky"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:fiery"
-        }
-      ]
-    },
-    "silentgear:lining": {
-      "armor_durability": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.18
-      },
-      "magic_armor": {
-        "operation": "ADD",
-        "value": 0.321
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:silky"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:fiery"
+          "trait": "silentgear:lustrous"
         }
       ]
     }

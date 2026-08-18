@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/aluminum"
+      "item": "alltheores:aluminum_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFBFD4DE",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.aluminum"
+      "translate": "material.goldentweaks.compat.alltheores.aluminum"
     },
     "name_prefix": ""
   },

@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/quartz"
+      "item": "minecraft:quartz"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFD4CABA",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.quartz"
+      "translate": "material.goldentweaks.compat.minecraft.quartz"
     },
     "name_prefix": ""
   },

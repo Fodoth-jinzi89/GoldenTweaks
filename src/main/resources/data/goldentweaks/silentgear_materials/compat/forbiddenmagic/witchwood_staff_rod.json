@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:witchwood_staff_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7D6A96",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.forbiddenmagic.witchwood_staff_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.275
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.21
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.25
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 3.0
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.4
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 1.75
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.175
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

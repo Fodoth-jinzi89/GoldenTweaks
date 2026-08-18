@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/gold"
+      "item": "minecraft:gold_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFFDFF70",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.gold"
+      "translate": "material.goldentweaks.compat.minecraft.gold"
     },
     "name_prefix": ""
   },

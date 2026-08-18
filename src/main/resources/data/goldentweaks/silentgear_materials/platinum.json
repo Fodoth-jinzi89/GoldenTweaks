@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/platinum"
+      "item": "alltheores:platinum_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFB3B3FF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.platinum"
+      "translate": "material.goldentweaks.compat.alltheores.platinum"
     },
     "name_prefix": ""
   },

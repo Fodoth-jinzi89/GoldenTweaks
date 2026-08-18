@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/amethyst"
+      "item": "minecraft:amethyst_shard"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFA31DE6",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.amethyst"
+      "translate": "material.goldentweaks.compat.minecraft.amethyst"
     },
     "name_prefix": ""
   },

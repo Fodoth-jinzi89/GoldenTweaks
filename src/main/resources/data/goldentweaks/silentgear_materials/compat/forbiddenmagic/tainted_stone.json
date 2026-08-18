@@ -23,43 +23,48 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 13.289,
-      "armor/boots": 1.993,
-      "armor/chestplate": 5.316,
-      "armor/helmet": 1.993,
-      "armor/leggings": 3.987,
-      "armor_durability": 22.241,
-      "armor_toughness": 4.67,
-      "attack_damage": 3.455,
-      "charging_value": 1.056,
-      "durability": 675.65,
-      "enchantment_value": 10.778,
-      "harvest_speed": 8.769,
+      "armor": 12.65,
+      "armor/boots": 1.898,
+      "armor/chestplate": 5.06,
+      "armor/helmet": 1.898,
+      "armor/leggings": 3.795,
+      "armor_durability": 10.704,
+      "armor_toughness": 1.557,
+      "attack_damage": 2.725,
+      "attack_speed": -0.28,
+      "charging_value": 0.367,
+      "draw_speed": -0.2,
+      "durability": 194.62,
+      "enchantment_value": 5.335,
+      "harvest_speed": 4.282,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
       },
-      "magic_armor": 6.686,
-      "magic_damage": 3.673,
-      "projectile_accuracy": 1.183,
-      "projectile_speed": 1.45,
-      "ranged_damage": 1.078,
-      "rarity": 20.741,
+      "magic_armor": 1.946,
+      "magic_damage": 1.362,
+      "projectile_accuracy": 0.52,
+      "projectile_speed": 0.47,
+      "ranged_damage": 3.503,
+      "rarity": 9.228,
+      "knockback_resistance": 0.159,
+      "repair_efficiency": 0.48,
+      "repair_value": 0.18,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:lustrous"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:venom"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 4,
           "trait": "silentgear:hard"
         }
       ]

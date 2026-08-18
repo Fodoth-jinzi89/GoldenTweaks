@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/osmium"
+      "item": "mekanism:ingot_osmium"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF92A6B8",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.osmium"
+      "translate": "material.goldentweaks.compat.mekanism.osmium"
     },
     "name_prefix": ""
   },

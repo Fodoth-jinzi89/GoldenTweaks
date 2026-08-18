@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/steel"
+      "item": "mekanism:ingot_steel"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF929292",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.steel"
+      "translate": "material.goldentweaks.compat.mekanism.steel"
     },
     "name_prefix": ""
   },

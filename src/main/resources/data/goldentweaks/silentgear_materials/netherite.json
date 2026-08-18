@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/netherite"
+      "item": "minecraft:netherite_ingot"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FF867B86",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.netherite"
+      "translate": "material.goldentweaks.compat.minecraft.netherite"
     },
     "name_prefix": {
       "translate": "material.silentgear.netherite"

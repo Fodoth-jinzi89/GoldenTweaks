@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "createnuclear:uranium_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF69A00E",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.createnuclear.uranium_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.366
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.066
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.146
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.11
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.403
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.512
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.238
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.256
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.22
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

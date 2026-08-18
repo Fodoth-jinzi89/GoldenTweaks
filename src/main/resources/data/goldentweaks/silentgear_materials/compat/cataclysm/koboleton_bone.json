@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "organic",
-      "basic"
+      "handle",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,77 +22,52 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
+    "silentgear:rod": {
+      "harvest_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.038
+        "value": 0.548
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.06
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.099
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.219
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.164
+      },
+      "durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.06
+        "value": 0.603
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.767
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.033
+        "value": 0.356
       },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:lining": {
-      "armor_durability": {
+      "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.035
+        "value": 0.384
       },
-      "magic_armor": {
-        "operation": "ADD",
-        "value": 0.057
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.329
       },
       "traits": [
         {
           "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
+          "level": 5,
+          "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 5,
           "trait": "silentgear:soft"
         }
       ]

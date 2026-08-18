@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
-      "advanced"
+      "cord",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,7 +15,7 @@
   },
   "display": {
     "color": "#FFBC2A34",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.iss_magicfromtheeast.red_string"
     },
@@ -25,13 +25,58 @@
     "silentgear:cord": {
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.141
+        "value": 0.48
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.384
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.336
       },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
+          "level": 5,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 5,
           "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.432
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.168
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
         }
       ]
     }

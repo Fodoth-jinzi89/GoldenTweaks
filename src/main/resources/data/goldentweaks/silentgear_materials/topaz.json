@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/topaz"
+      "item": "silentgems:topaz"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFE6711D",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.topaz"
+      "translate": "material.goldentweaks.compat.silentgems.topaz_silentgems"
     },
     "name_prefix": ""
   },

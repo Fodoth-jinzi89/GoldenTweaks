@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:wand_rod_greatwood"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF403434",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraft.greatwood_wand_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.112
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.084
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 1.26
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 1.68
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.28
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 0.98
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.098
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/ammolite"
+      "item": "silentgems:ammolite"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFDB2BFF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.ammolite"
+      "translate": "material.goldentweaks.compat.silentgems.ammolite"
     },
     "name_prefix": ""
   },

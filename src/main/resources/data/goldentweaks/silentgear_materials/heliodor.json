@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/heliodor"
+      "item": "silentgems:heliodor"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFE6C51D",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.heliodor"
+      "translate": "material.goldentweaks.compat.silentgems.heliodor"
     },
     "name_prefix": ""
   },

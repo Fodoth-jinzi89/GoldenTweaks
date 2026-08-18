@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:diorite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFFFFFFF",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.minecraft.diorite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 6.666,
+      "armor/boots": 1.0,
+      "armor/chestplate": 2.667,
+      "armor/helmet": 1.0,
+      "armor/leggings": 2.0,
+      "armor_durability": 5.641,
+      "armor_toughness": 0.82,
+      "attack_damage": 1.436,
+      "attack_speed": -0.23,
+      "charging_value": 0.312,
+      "draw_speed": -0.16,
+      "durability": 102.56,
+      "enchantment_value": 4.231,
+      "harvest_speed": 2.256,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.026,
+      "magic_damage": 0.718,
+      "projectile_accuracy": 0.66,
+      "projectile_speed": 0.61,
+      "ranged_damage": 1.846,
+      "rarity": 6.282,
+      "knockback_resistance": 0.1,
+      "repair_efficiency": 0.38,
+      "repair_value": 0.13,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

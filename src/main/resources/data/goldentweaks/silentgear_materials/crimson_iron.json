@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/crimson_iron"
+      "item": "silentgear:crimson_iron_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFFF6189",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.crimson_iron"
+      "translate": "material.goldentweaks.compat.silentgear.crimson_iron"
     },
     "name_prefix": ""
   },

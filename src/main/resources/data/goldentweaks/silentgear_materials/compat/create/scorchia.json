@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "create:scorchia"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF333739",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.create.scorchia"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 6.927,
+      "armor/boots": 1.039,
+      "armor/chestplate": 2.771,
+      "armor/helmet": 1.039,
+      "armor/leggings": 2.078,
+      "armor_durability": 5.861,
+      "armor_toughness": 0.853,
+      "attack_damage": 1.492,
+      "attack_speed": -0.23,
+      "charging_value": 0.314,
+      "draw_speed": -0.16,
+      "durability": 106.57,
+      "enchantment_value": 4.279,
+      "harvest_speed": 2.345,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.066,
+      "magic_damage": 0.746,
+      "projectile_accuracy": 0.66,
+      "projectile_speed": 0.61,
+      "ranged_damage": 1.918,
+      "rarity": 6.41,
+      "knockback_resistance": 0.101,
+      "repair_efficiency": 0.38,
+      "repair_value": 0.13,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

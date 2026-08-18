@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/emerald"
+      "item": "minecraft:emerald"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF00B038",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.emerald"
+      "translate": "material.goldentweaks.compat.minecraft.emerald"
     },
     "name_prefix": ""
   },

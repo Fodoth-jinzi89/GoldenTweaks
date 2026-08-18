@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:dusts/redstone"
+      "item": "minecraft:redstone"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFBB0000",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.redstone"
+      "translate": "material.goldentweaks.compat.minecraft.redstone"
     },
     "name_prefix": ""
   },

@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "organic",
-      "basic"
+      "tool_leaf",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -22,55 +22,29 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.059
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:organic"
-        },
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:soft"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.075
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
     "silentgear:fletching": {
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.075
+        "value": 0.313
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.045
+        "value": 0.261
       },
       "traits": [
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:organic"
+          "trait": "silentgear:yummy"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
           "trait": "silentgear:soft"
         }
       ]
@@ -78,21 +52,26 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.052
+        "value": 0.244
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.069
+        "value": 1.218
       },
       "traits": [
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:organic"
+          "trait": "silentgear:yummy"
         },
         {
           "conditions": [],
-          "level": 1,
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
           "trait": "silentgear:soft"
         }
       ]

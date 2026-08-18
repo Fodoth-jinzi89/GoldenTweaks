@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
+      "textile",
       "intermediate"
     ],
     "gear_type_blacklist": [],
@@ -22,72 +22,18 @@
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:binding": {
-      "repair_efficiency": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.162
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:silky"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:lustrous"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:cord": {
-      "draw_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.151
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
-        }
-      ]
-    },
-    "silentgear:fletching": {
-      "projectile_accuracy": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.151
-      },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.104
-      },
-      "traits": [
-        {
-          "conditions": [],
-          "level": 1,
-          "trait": "silentgear:silky"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:lustrous"
-        }
-      ]
-    },
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.133
+        "value": 0.416
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1.456
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 0.182
+        "value": 2.08
       },
       "traits": [
         {
@@ -97,8 +43,44 @@
         },
         {
           "conditions": [],
-          "level": 2,
+          "level": 4,
           "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.146
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.291
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.083
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
         }
       ]
     }

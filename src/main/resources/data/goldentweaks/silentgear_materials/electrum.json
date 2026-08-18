@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/electrum"
+      "item": "alltheores:electrum_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFD6E037",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.electrum"
+      "translate": "material.goldentweaks.compat.alltheores.electrum"
     },
     "name_prefix": ""
   },

@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/uranium"
+      "item": "mekanism:ingot_uranium"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF21FF0F",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.uranium"
+      "translate": "material.goldentweaks.compat.mekanism.uranium"
     },
     "name_prefix": ""
   },

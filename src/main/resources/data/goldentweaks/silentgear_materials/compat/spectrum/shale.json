@@ -23,38 +23,43 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 5.154,
-      "armor/boots": 0.773,
-      "armor/chestplate": 2.062,
-      "armor/helmet": 0.773,
-      "armor/leggings": 1.546,
-      "armor_durability": 5.785,
-      "armor_toughness": 1.31,
-      "attack_damage": 1.105,
-      "charging_value": 0.793,
-      "durability": 133.029,
-      "enchantment_value": 2.842,
-      "harvest_speed": 2.529,
+      "armor": 7.165,
+      "armor/boots": 1.075,
+      "armor/chestplate": 2.866,
+      "armor/helmet": 1.075,
+      "armor/leggings": 2.149,
+      "armor_durability": 6.063,
+      "armor_toughness": 0.882,
+      "attack_damage": 1.543,
+      "attack_speed": -0.23,
+      "charging_value": 0.316,
+      "draw_speed": -0.16,
+      "durability": 110.23,
+      "enchantment_value": 4.323,
+      "harvest_speed": 2.425,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
         "level_hint": "1",
         "name": "stone"
       },
-      "magic_armor": 2.169,
-      "magic_damage": 1.144,
-      "projectile_accuracy": 0.995,
-      "projectile_speed": 1.125,
-      "ranged_damage": 0.284,
-      "rarity": 4.115,
+      "magic_armor": 1.102,
+      "magic_damage": 0.772,
+      "projectile_accuracy": 0.66,
+      "projectile_speed": 0.61,
+      "ranged_damage": 1.984,
+      "rarity": 6.527,
+      "knockback_resistance": 0.101,
+      "repair_efficiency": 0.38,
+      "repair_value": 0.13,
       "traits": [
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
           "trait": "silentgear:hard"
         },
         {
           "conditions": [],
-          "level": 2,
+          "level": 3,
           "trait": "silentgear:heavy"
         }
       ]

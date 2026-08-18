@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/tanzanite"
+      "item": "silentgems:tanzanite"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FF3D00B9",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.tanzanite"
+      "translate": "material.goldentweaks.compat.silentgems.tanzanite"
     },
     "name_prefix": ""
   },

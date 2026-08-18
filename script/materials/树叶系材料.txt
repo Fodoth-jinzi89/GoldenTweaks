@@ -1,0 +1,104 @@
+树叶只能制造箭羽和内衬；根据语义提供traits，果树类应有“美味”
+语义偏移和木头类似，spectrum的彩色树叶和彩色木头的规则类似
+
+普通树叶
+- minecraft:oak_leaves
+- minecraft:spruce_leaves
+- minecraft:birch_leaves
+- minecraft:jungle_leaves
+- minecraft:acacia_leaves
+- minecraft:dark_oak_leaves
+- minecraft:mangrove_leaves
+- minecraft:cherry_leaves
+- minecraft:azalea_leaves
+- minecraft:flowering_azalea_leaves  
+
+异界树叶
+- biomesoplenty:fir_leaves
+- biomesoplenty:pine_leaves
+- biomesoplenty:cypress_leaves
+- biomesoplenty:willow_leaves
+- biomesoplenty:mahogany_leaves
+- biomesoplenty:palm_leaves
+- biomesoplenty:redwood_leaves
+- biomesoplenty:jacaranda_leaves 
+- biomesoplenty:origin_leaves
+- biomesoplenty:magic_leaves
+- biomesoplenty:snowblossom_leaves 
+- biomesoplenty:rainbow_birch_leaves
+- biomesoplenty:umbran_leaves
+- biomesoplenty:dead_leaves
+- biomesoplenty:orange_maple_leaves
+- biomesoplenty:red_maple_leaves
+- biomesoplenty:yellow_maple_leaves
+- biomesoplenty:flowering_oak_leaves 
+- biomesoplenty:hellbark_leaves
+- biomesoplenty:empyreal_leaves 
+- silentgear:netherwood_leaves  
+
+工具树叶
+- flavor_immersed_daily:winterjujubeleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves_hawthorn
+- flavor_immersed_daily:mangosteenleave_fruiting_leaves
+- flavor_immersed_daily:pistachionutleave_fruiting_leaves
+- flavor_immersed_daily:pawpawleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves_apricot
+- flavor_immersed_daily:carambolaleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves_loquat
+- flavor_immersed_daily:lemonleave_fruiting_leaves
+- flavor_immersed_daily:walnutleaves_fruiting_leaves
+- flavor_immersed_daily:mulberryleaves_fruiting_leaves
+- flavor_immersed_daily:pearleaves_fruiting_leaves
+- flavor_immersed_daily:durianleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves_cherry
+- flavor_immersed_daily:orangeleave_fruiting_leaves
+- flavor_immersed_daily:nectarineleave_fruiting_leaves
+- flavor_immersed_daily:kiwifruitsleave_fruiting_leaves
+- flavor_immersed_daily:sweetmelonleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves_pomegranate
+- flavor_immersed_daily:reddateleave_fruiting_leaves
+- flavor_immersed_daily:mangoleave_fruiting_leaves
+- flavor_immersed_daily:appleleave_fruiting_leaves
+- flavor_immersed_daily:lycheeleave_fruiting_leaves
+- flavor_immersed_daily:honeypeachleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves_greenplum
+- flavor_immersed_daily:tangerineleave_fruiting_leaves
+- flavor_immersed_daily:verdant_grace_leaves
+- flavor_immersed_daily:verdant_grace_fruiting_leaves  
+- flavor_immersed_daily:stonebark_leaves
+- flavor_immersed_daily:solarwood_leaves
+- flavor_immersed_daily:vineheart_timber_leaves
+- flavor_immersed_daily:orchard_heartwood_leaves
+
+
+
+染色树叶
+- spectrum:magenta_leaves
+- spectrum:brown_leaves
+- spectrum:orange_leaves
+- spectrum:light_gray_leaves
+- spectrum:light_blue_leaves
+- spectrum:gray_leaves
+- spectrum:white_leaves
+- spectrum:pink_leaves
+- spectrum:purple_leaves
+- spectrum:red_leaves
+- spectrum:green_leaves
+- spectrum:blue_leaves
+- spectrum:cyan_leaves
+- spectrum:lime_leaves
+- spectrum:yellow_leaves
+- spectrum:black_leaves
+
+魔法树叶
+- thaumcraft:greatwood_leaves
+- thaumcraft:silverwood_leaves
+- hazennstuff:wisewood_leaves
+- taintedmagic:warpwood_leaves
+- forbiddenmagic:tainted_leaves
+
+稀有树叶
+- northstar:coiler_leaves
+- northstar:wilter_leaves
+- northstar:argyre_leaves
+- spectrum:weeping_gala_leaves

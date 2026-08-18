@@ -17,7 +17,7 @@
     "color": "#FF398382",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.silentgear.wood.warped"
+      "translate": "material.goldentweaks.compat.minecraft.wood_warped"
     },
     "name_prefix": ""
   },

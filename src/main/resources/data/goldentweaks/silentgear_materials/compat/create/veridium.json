@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "create:veridium"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF366D5D",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.create.veridium"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.758,
+      "armor/boots": 1.464,
+      "armor/chestplate": 3.903,
+      "armor/helmet": 1.464,
+      "armor/leggings": 2.927,
+      "armor_durability": 8.257,
+      "armor_toughness": 1.201,
+      "attack_damage": 2.102,
+      "attack_speed": -0.255,
+      "charging_value": 0.34,
+      "draw_speed": -0.18,
+      "durability": 150.12,
+      "enchantment_value": 4.801,
+      "harvest_speed": 3.303,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.501,
+      "magic_damage": 1.051,
+      "projectile_accuracy": 0.59,
+      "projectile_speed": 0.54,
+      "ranged_damage": 2.702,
+      "rarity": 7.804,
+      "knockback_resistance": 0.13,
+      "repair_efficiency": 0.43,
+      "repair_value": 0.155,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

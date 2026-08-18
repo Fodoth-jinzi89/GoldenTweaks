@@ -17,7 +17,7 @@
     "color": "#FF4F3218",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.silentgear.wood.dark_oak"
+      "translate": "material.goldentweaks.compat.minecraft.wood_dark_oak"
     },
     "name_prefix": ""
   },

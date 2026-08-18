@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/enderium"
+      "item": "alltheores:enderium_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF468C75",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.enderium"
+      "translate": "material.goldentweaks.compat.alltheores.enderium"
     },
     "name_prefix": ""
   },

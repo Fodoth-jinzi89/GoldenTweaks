@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "super_wand_handle",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "taintedmagic:warpwood_staff_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF674E24",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.taintedmagic.warpwood_staff_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.535
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.408
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 4.374
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 5.832
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.778
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 3.402
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.34
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        }
+      ]
+    }
+  }
+}

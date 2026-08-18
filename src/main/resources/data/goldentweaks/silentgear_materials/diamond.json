@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/diamond"
+      "item": "minecraft:diamond"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF33EBCB",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.diamond"
+      "translate": "material.goldentweaks.compat.minecraft.diamond"
     },
     "name_prefix": ""
   },

@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/refined_glowstone"
+      "item": "mekanism:ingot_refined_glowstone"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFFDE054",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.refined_glowstone"
+      "translate": "material.goldentweaks.compat.mekanism.refined_glowstone"
     },
     "name_prefix": ""
   },

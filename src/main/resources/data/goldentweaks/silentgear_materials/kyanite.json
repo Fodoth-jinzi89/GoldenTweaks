@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/kyanite"
+      "item": "silentgems:kyanite"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FF41C4F3",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.kyanite"
+      "translate": "material.goldentweaks.compat.silentgems.kyanite"
     },
     "name_prefix": ""
   },

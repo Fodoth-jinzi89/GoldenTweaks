@@ -17,7 +17,7 @@
     "color": "#FFBA6337",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.silentgear.wood.acacia"
+      "translate": "material.goldentweaks.compat.minecraft.wood_acacia"
     },
     "name_prefix": ""
   },

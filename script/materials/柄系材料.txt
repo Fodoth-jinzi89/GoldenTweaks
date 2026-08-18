@@ -1,0 +1,32 @@
+手柄
+只能用作手柄
+根据语义提供traits
+语义偏移和木头类似
+提供挖掘速度、攻击速度、方块范围、攻击范围、耐久度、攻击伤害、弹射物速度、拉弓速度、弹射物精准度的加成
+长柄比普通柄略强，但更重、更慢
+lv1 竹子~石杆
+lv2 法棍~生羊脊骨
+lv3 末地烛~糖棒
+lv4 黄水晶糖棒~骸龙之骨
+稀有手柄
+lv1 炽焰杆 炽焰长杆
+lv2 水晶矩阵杆 水晶矩阵长杆
+神级手柄
+lv1 中子杆 中子长杆
+lv2 无尽杆 无尽长杆
+lv3 夸克杆 夸克长杆
+
+杖柄
+只能用作手柄
+根据语义提供traits
+语义偏移和木头类似
+提供方块范围、攻击范围、魔法伤害、附魔能力、充能值、稀有度、修复增益的加成
+杖芯比普通杖略强，但更重、更慢
+lv1 宏伟之木杖柄~朱红杖身
+lv2 巫魂木杖柄~梦之木杖芯
+超级杖柄
+lv1 扭曲之木杖柄~元始杖芯
+lv2 灵布包层银树杖柄
+
+[188月2026 16:56:43.166] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] -3, 56, -196拥有以下方块数据：{packed: 0b, woodType: "birch", z: -196, x: -3, id: "sophisticatedstorage:barrel", storageWrapper: {numberOfUpgradeSlots: 4, contents: {inventory: {Size: 108, Items: [{Slot: 0, count: 1, id: "minecraft:bamboo"}, {Slot: 1, count: 64, id: "kaleidoscope_nether:wither_rib"}, {Slot: 2, count: 64, id: "silentgear:netherwood_stick"}, {Slot: 3, count: 1, id: "minecraft:stick"}, {Slot: 4, count: 1, id: "minecraft:bone"}, {Slot: 5, count: 1, id: "minecraft:sugar_cane"}, {Slot: 6, count: 1, id: "create:cardboard_sword"}, {Slot: 7, count: 1, id: "silentgems:reinforced_gold_rod"}, {Slot: 8, count: 1, id: "silentgems:reinforced_silver_rod"}, {Slot: 12, count: 1, id: "bakeries:baguette"}, {Slot: 13, count: 1, id: "minecraft:blaze_rod"}, {Slot: 24, count: 1, id: "minecraft:end_rod"}, {Slot: 14, count: 1, id: "minecraft:breeze_rod"}, {Slot: 9, count: 64, id: "silentgear:stone_rod"}, {Slot: 36, count: 64, id: "spectrum:citrine_sugar_stick"}, {Slot: 37, count: 64, id: "spectrum:onyx_sugar_stick"}, {Slot: 38, count: 64, id: "spectrum:amethyst_sugar_stick"}, {Slot: 39, count: 64, id: "spectrum:moonstone_sugar_stick"}, {Slot: 40, count: 64, id: "spectrum:topaz_sugar_stick"}, {Slot: 48, count: 1, id: "avaritia_more_items:blaze_rod"}, {Slot: 49, count: 1, id: "avaritia_more_items:blaze_long_rod"}, {Slot: 60, count: 1, id: "avaritia_more_items:crystal_matrix_rod"}, {Slot: 61, count: 1, id: "avaritia_more_items:crystal_matrix_long_rod"}, {Slot: 73, count: 1, id: "avaritia_more_items:neutron_long_rod"}, {Slot: 72, count: 1, id: "avaritia_more_items:neutron_rod"}, {Slot: 84, count: 1, id: "avaritia_more_items:quark_rod"}, {Slot: 85, count: 1, id: "avaritia_more_items:quark_long_rod"}, {Slot: 15, count: 1, id: "mekanism:hdpe_stick"}, {Slot: 25, count: 64, id: "createnuclear:graphite_rod"}, {Slot: 26, count: 64, id: "createnuclear:uranium_rod"}, {Slot: 27, count: 64, id: "spectrum:sugar_stick"}, {Slot: 16, count: 64, id: "irons_spellbooks:frozen_bone"}, {Slot: 17, count: 64, id: "hazennstuff:overgrown_bone"}, {Slot: 41, count: 64, id: "irons_spellbooks:frosted_helve"}, {Slot: 18, count: 64, id: "flavor_immersed_daily:bovinebone"}, {Slot: 19, count: 64, id: "flavor_immersed_daily:rawsheepspine"}, {Slot: 42, count: 64, id: "cataclysm:koboleton_bone"}]}, partitioner: {inventoryPartNames: ["default"], baseIndexes: [I; 0]}}, numberOfInventorySlots: 108, sortBy: "name", renderInfo: {upgradeItems: [{}, {}, {}, {}]}, settings: {global: {}}}, y: 56, components: {"sophisticatedstorage:wood_type": "birch"}, materials: {}}
+[188月2026 16:56:48.633] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] -3, 56, -195拥有以下方块数据：{packed: 0b, woodType: "birch", z: -195, x: -3, id: "sophisticatedstorage:barrel", storageWrapper: {numberOfUpgradeSlots: 4, contents: {inventory: {Size: 108, Items: [{Slot: 0, count: 64, id: "thaumcraft:wand_rod_greatwood"}, {Slot: 36, count: 64, id: "taintedmagic:warpwood_wand_rod"}, {Slot: 37, count: 64, id: "taintedmagic:warpwood_staff_rod"}, {Slot: 1, count: 64, id: "thaumcraft:staff_rod_greatwood"}, {Slot: 2, count: 64, id: "forbiddenmagic:livingwood_wand_rod"}, {Slot: 3, count: 64, id: "forbiddenmagic:profane_wand_rod"}, {Slot: 6, count: 64, id: "thaumcraft:wand_rod_ice"}, {Slot: 7, count: 64, id: "thaumcraft:staff_rod_ice"}, {Slot: 4, count: 64, id: "thaumcraft:wand_rod_blaze"}, {Slot: 5, count: 64, id: "thaumcraft:staff_rod_blaze"}, {Slot: 8, count: 64, id: "thaumcraft:wand_rod_reed"}, {Slot: 9, count: 64, id: "thaumcraft:staff_rod_reed"}, {Slot: 10, count: 64, id: "thaumcraft:wand_rod_bone"}, {Slot: 11, count: 64, id: "thaumcraft:staff_rod_bone"}, {Slot: 38, count: 64, id: "thaumcraft:staff_rod_primal"}, {Slot: 48, count: 64, id: "thaumic_tinkerer:ichorcloth_wand_rod"}, {Slot: 12, count: 64, id: "thaumcraft:wand_rod_obsidian"}, {Slot: 13, count: 64, id: "thaumcraft:staff_rod_obsidian"}, {Slot: 14, count: 64, id: "thaumcraft:wand_rod_quartz"}, {Slot: 15, count: 64, id: "thaumcraft:staff_rod_quartz"}, {Slot: 24, count: 64, id: "forbiddenmagic:witchwood_wand_rod"}, {Slot: 25, count: 64, id: "forbiddenmagic:witchwood_staff_rod"}, {Slot: 26, count: 64, id: "forbiddenmagic:blood_wand_rod"}, {Slot: 27, count: 64, id: "forbiddenmagic:blood_staff_rod"}, {Slot: 28, count: 64, id: "forbiddenmagic:tainted_wand_rod"}, {Slot: 29, count: 64, id: "forbiddenmagic:infernal_wand_rod"}, {Slot: 30, count: 64, id: "thaumcraft:wand_rod_silverwood"}, {Slot: 31, count: 64, id: "thaumcraft:staff_rod_silverwood"}, {Slot: 33, count: 64, id: "forbiddenmagic:dreamwood_staff_rod"}, {Slot: 32, count: 64, id: "forbiddenmagic:dreamwood_wand_rod"}, {Slot: 16, count: 64, id: "iss_magicfromtheeast:red_shaft"}]}, partitioner: {inventoryPartNames: ["default"], baseIndexes: [I; 0]}}, numberOfInventorySlots: 108, sortBy: "mod", renderInfo: {upgradeItems: [{}, {}, {}, {}]}, settings: {global: {}}}, y: 56, components: {"sophisticatedstorage:wood_type": "birch"}, materials: {}} 

@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "flavor_immersed_daily:bovinebone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF6D6D6D",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.bovine_bone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.235
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.042
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.094
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.07
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.259
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.329
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.153
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.164
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.141
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

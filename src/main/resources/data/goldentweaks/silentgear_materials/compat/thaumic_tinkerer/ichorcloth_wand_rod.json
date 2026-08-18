@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "super_wand_handle",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumic_tinkerer:ichorcloth_wand_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC4A052",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumic_tinkerer.ichorcloth_wand_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.488
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.366
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 5.486
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 7.314
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.219
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 4.267
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.427
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

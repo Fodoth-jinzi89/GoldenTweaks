@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/titanium"
+      "item": "northstar:titanium_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FF2E4CE6",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.titanium"
+      "translate": "material.goldentweaks.compat.northstar.titanium"
     },
     "name_prefix": ""
   },

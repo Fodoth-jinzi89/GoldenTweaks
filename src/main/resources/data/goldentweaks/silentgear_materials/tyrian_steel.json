@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/tyrian_steel"
+      "item": "silentgear:tyrian_steel_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFB01080",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.tyrian_steel"
+      "translate": "material.goldentweaks.compat.silentgear.tyrian_steel"
     },
     "name_prefix": ""
   },

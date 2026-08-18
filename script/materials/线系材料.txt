@@ -1,0 +1,20 @@
+只能用来做线和绑定结
+线提供远程属性，包括拉弓速度、弹射物速度、弹射物精准度
+绑定结提供修复属性，包括修复效率、修复增益
+根据语义提供traits
+语义偏移和木头类似
+线
+lv1 草秆~石英纤维 发光地衣 垂根 小麦 大麦 海燕麦 燕麦 亚麻
+lv2 铜导线~荧光蛛丝 垂类藤 缠怨藤 绯红菌索 诡异菌索
+lv3 铁导线~钢制缆绳
+lv4 金导线~金星绿藤
+超级线
+lv1 炽骨立方线
+lv2 水晶矩阵线
+神级线
+lv1 中子线
+lv2 无尽线
+lv3 夸克线
+
+id:
+[188月2026 16:12:23.316] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] -6, 56, -195拥有以下方块数据：{packed: 0b, woodType: "birch", z: -195, x: -6, id: "sophisticatedstorage:barrel", storageWrapper: {numberOfUpgradeSlots: 4, uuid: [I; 1877326605, 737233779, -2024782030, -1046407700], contents: {partitioner: {inventoryPartNames: ["default"], baseIndexes: [I; 0]}, inventory: {Size: 108, Items: [{Slot: 0, count: 64, id: "farmersdelight:straw"}, {Slot: 1, count: 64, id: "simulated:rope_coupling"}, {Slot: 2, count: 64, id: "farmersdelight:rope"}, {Slot: 3, count: 64, id: "supplementaries:rope"}, {Slot: 4, count: 64, id: "minecraft:vine"}, {Slot: 5, count: 64, id: "biomesoplenty:willow_vine"}, {Slot: 6, count: 64, id: "biomesoplenty:reed"}, {Slot: 7, count: 64, id: "biomesoplenty:hanging_cobweb"}, {Slot: 8, count: 64, id: "biomesoplenty:webbing"}, {Slot: 9, count: 64, id: "minecraft:string"}, {Slot: 10, count: 64, id: "ae2:quartz_fiber"}, {Slot: 12, count: 64, id: "powergrid:wire"}, {Slot: 13, count: 64, id: "createaddition:copper_wire"}, {Slot: 14, count: 64, id: "ae2:fluix_glass_cable"}, {Slot: 15, count: 64, id: "silentgear:fluffy_string"}, {Slot: 16, count: 64, id: "silentgear:sinew_fiber"}, {Slot: 17, count: 64, id: "silentgear:flax_string"}, {Slot: 18, count: 64, id: "silentgear:flax_fiber"}, {Slot: 19, count: 64, id: "biomesoplenty:hair"}, {Slot: 20, count: 64, id: "biomesoplenty:flesh_tendons"}, {Slot: 21, count: 64, id: "biomesoplenty:glowworm_silk"}, {Slot: 24, count: 64, id: "powergrid:iron_wire"}, {Slot: 25, count: 64, id: "createaddition:iron_wire"}, {Slot: 26, count: 64, id: "ae2:fluix_smart_cable"}, {Slot: 27, count: 64, id: "silentgear:fine_silk"}, {Slot: 28, count: 64, id: "northstar:dry_plant_fiber"}, {Slot: 29, count: 64, id: "create_submarine:steel_cable"}, {Slot: 36, count: 64, id: "powergrid:golden_wire"}, {Slot: 37, count: 64, id: "createaddition:electrum_wire"}, {Slot: 38, count: 64, id: "createaddition:gold_wire"}, {Slot: 39, count: 64, id: "ae2:fluix_smart_dense_cable"}, {Slot: 40, count: 64, id: "iss_magicfromtheeast:red_string"}, {Slot: 41, count: 64, id: "apothic_enchanting:warden_tendril"}, {Slot: 42, count: 64, id: "northstar:glowing_venus_vines"}, {Slot: 43, count: 64, id: "northstar:venus_vines"}, {Slot: 48, count: 64, id: "avaritia_integration:blaze_cube_wire"}, {Slot: 60, count: 64, id: "avaritia_integration:crystal_matrix_wire"}, {Slot: 72, count: 64, id: "avaritia_integration:neutron_wire"}, {Slot: 84, count: 64, id: "avaritia_integration:infinity_wire"}, {Slot: 96, count: 64, id: "avaritia_more_items:quark_wire"}]}, upgradeInventory: {Size: 4, Items: []}}, numberOfInventorySlots: 108, sortBy: "name", renderInfo: {upgradeItems: [{}, {}, {}, {}]}, settings: {global: {}}}, y: 56, components: {"sophisticatedcore:number_of_inventory_slots": 108, "sophisticatedcore:storage_uuid": [I; 1877326605, 737233779, -2024782030, -1046407700], "sophisticatedstorage:wood_type": "birch", "sophisticatedcore:number_of_upgrade_slots": 4, "sophisticatedstorage:packed": 1b}, materials: {}}

@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/citrine"
+      "item": "silentgems:citrine"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFC78B03",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.citrine"
+      "translate": "material.goldentweaks.compat.silentgems.citrine_silentgems"
     },
     "name_prefix": ""
   },

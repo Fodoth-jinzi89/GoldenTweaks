@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/azure_silver"
+      "item": "silentgear:azure_silver_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFCBBAFF",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.azure_silver"
+      "translate": "material.goldentweaks.compat.silentgear.azure_silver"
     },
     "name_prefix": ""
   },

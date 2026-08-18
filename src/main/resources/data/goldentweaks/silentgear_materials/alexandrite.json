@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/alexandrite"
+      "item": "silentgems:alexandrite"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FFAB37E5",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.alexandrite"
+      "translate": "material.goldentweaks.compat.silentgems.alexandrite"
     },
     "name_prefix": ""
   },

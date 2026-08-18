@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:bone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFECC7A3",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.minecraft.bone_handle"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.158
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.028
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.063
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.047
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.174
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.221
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.103
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.111
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.095
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

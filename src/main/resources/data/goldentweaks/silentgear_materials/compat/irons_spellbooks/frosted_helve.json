@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "advanced"
+      "handle",
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,61 +15,65 @@
   },
   "display": {
     "color": "#FF9BB0B7",
-    "main_texture_type": "HIGH_CONTRAST",
+    "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.irons_spellbooks.frosted_helve"
     },
     "name_prefix": ""
   },
   "properties": {
-    "silentgear:main": {
-      "armor": 12.322,
-      "armor/boots": 1.848,
-      "armor/chestplate": 4.929,
-      "armor/helmet": 1.848,
-      "armor/leggings": 3.697,
-      "armor_durability": 19.974,
-      "armor_toughness": 4.22,
-      "attack_damage": 3.154,
-      "charging_value": 1.035,
-      "durability": 593.455,
-      "enchantment_value": 9.69,
-      "harvest_speed": 7.94,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.55
       },
-      "magic_armor": 6.111,
-      "magic_damage": 3.346,
-      "projectile_accuracy": 1.168,
-      "projectile_speed": 1.424,
-      "ranged_damage": 0.969,
-      "rarity": 18.229,
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.099
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.22
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.165
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.605
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.77
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.358
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.385
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.33
+      },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:chilled"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 5,
+          "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:rod": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:malleable"
+          "level": 5,
+          "trait": "silentgear:soft"
         }
       ]
     }

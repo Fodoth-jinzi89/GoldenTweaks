@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:staff_rod_ice"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF8EA8A6",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraft.ice_staff_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.189
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.144
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 1.545
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 2.061
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.275
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 1.202
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.12
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:chilled"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

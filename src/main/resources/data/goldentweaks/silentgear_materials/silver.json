@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/silver"
+      "item": "alltheores:silver_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFCBCCEA",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.silver"
+      "translate": "material.goldentweaks.compat.alltheores.silver"
     },
     "name_prefix": ""
   },

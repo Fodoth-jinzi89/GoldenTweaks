@@ -394,6 +394,300 @@ def is_replaced_wood_variant(resource_id):
         for suffix in ("_log", "_wood", "_stem", "_hyphae")
     )
 
+
+def stone_design(levels):
+    return {
+        resource_id: {
+            "family": "stone", "level": level, "material": material,
+            "bias": round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
+        }
+        for level, entries in enumerate(levels, 1)
+        for resource_id, material in entries
+    }
+
+
+STONE_DESIGN = stone_design([
+    [("minecraft:stone", "stone"), ("minecraft:deepslate", "deepslate"), ("minecraft:blackstone", "blackstone"),
+     ("minecraft:netherrack", "netherrack"), ("minecraft:tuff", "tuff"), ("minecraft:mossy_cobblestone", "mossy_cobblestone"),
+     ("minecraft:dripstone_block", "dripstone_block"), ("minecraft:nether_bricks", "nether_bricks"),
+     ("supplementaries:ash_bricks", "ash_bricks"), ("minecraft:bricks", "bricks")],
+    [("create:limestone", "limestone"), ("minecraft:calcite", "calcite"), ("dndecor:dolomite", "dolomite"),
+     ("minecraft:basalt", "basalt"), ("minecraft:granite", "granite"), ("minecraft:andesite", "andesite"),
+     ("minecraft:diorite", "diorite"), ("create:scoria", "scoria"), ("create:scorchia", "scorchia"),
+     ("spectrum:blackslag", "blackslag"), ("spectrum:shale_clay", "shale"), ("minecraft:obsidian", "obsidian")],
+    [("minecraft:prismarine", "prismarine"), ("minecraft:end_stone", "end_stone"), ("create:veridium", "veridium"),
+     ("create:ochrum", "ochrum"), ("create:asurine", "asurine"), ("create:crimsite", "crimsite"),
+     ("createnuclear:autunite", "autunite"), ("thaumcraft:arcane_stone", "arcane_stone"),
+     ("northstar:moon_stone", "moon_stone"), ("northstar:moon_deep_stone", "moon_deep_stone"),
+     ("northstar:mars_stone", "mars_stone"), ("northstar:mars_deep_stone", "mars_deep_stone")],
+    [("thaumcraft:crusted_stone", "crusted_stone"), ("thaumcraft:glowing_ancient_stone", "glowing_ancient_stone"),
+     ("thaumcraft:ancient_stone", "ancient_stone"), ("dndecor:gabbro", "gabbro"), ("dndesires:breccia", "breccia"),
+     ("forbiddenmagic:tainted_stone", "tainted_stone"), ("hazennstuff:zenalite_bricks", "zenalite_bricks"),
+     ("dndesires:asphalt", "asphalt"), ("northstar:venus_deep_stone", "venus_deep_stone"),
+     ("northstar:venus_stone", "venus_stone"), ("northstar:mercury_stone", "mercury_stone"),
+     ("cataclysm:void_stone", "void_stone")],
+    [("spectrum:basal_marble", "marble"), ("northstar:mercury_deep_stone", "mercury_deep_stone"),
+     ("minecraft:reinforced_deepslate", "reinforced_deepslate")],
+])
+STONE_BUILTIN_PATHS = {
+    "minecraft:stone": "stone", "minecraft:blackstone": "blackstone", "minecraft:netherrack": "netherrack",
+    "minecraft:basalt": "basalt", "minecraft:granite": "stone/granite", "minecraft:andesite": "stone/andesite",
+    "minecraft:diorite": "stone/diorite", "minecraft:obsidian": "obsidian", "minecraft:prismarine": "prismarine",
+    "minecraft:end_stone": "end_stone",
+}
+
+
+def cord_design(family, levels):
+    return {
+        resource_id: {
+            "family": family, "level": level, "material": material,
+            "bias": round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
+        }
+        for level, entries in enumerate(levels, 1)
+        for resource_id, material in entries
+    }
+
+
+CORD_DESIGN = {}
+CORD_DESIGN.update(cord_design("cord", [
+    [("farmersdelight:straw", "straw"), ("simulated:rope_coupling", "rope_coupling"),
+     ("farmersdelight:rope", "farmers_rope"), ("supplementaries:rope", "supplementaries_rope"),
+     ("minecraft:vine", "vine"), ("biomesoplenty:willow_vine", "willow_vine"),
+     ("biomesoplenty:reed", "reed"), ("biomesoplenty:hanging_cobweb", "hanging_cobweb"),
+     ("biomesoplenty:webbing", "webbing"), ("minecraft:string", "string"), ("ae2:quartz_fiber", "quartz_fiber"),
+     ("minecraft:glow_lichen", "glow_lichen"), ("minecraft:hanging_roots", "hanging_roots"),
+     ("minecraft:wheat", "wheat"), ("biomesoplenty:barley", "barley"),
+     ("biomesoplenty:sea_oats", "sea_oats"), ("flavor_immersed_daily:oat", "oat"),
+     ("supplementaries:flax", "supplementaries_flax")],
+    [("powergrid:wire", "copper_wire_powergrid"), ("createaddition:copper_wire", "copper_wire"),
+     ("ae2:fluix_glass_cable", "fluix_glass_cable"), ("silentgear:fluffy_string", "fluffy_string"),
+     ("silentgear:sinew_fiber", "sinew"), ("silentgear:flax_string", "flax_string"),
+     ("silentgear:flax_fiber", "flax"), ("biomesoplenty:hair", "hair"),
+     ("biomesoplenty:flesh_tendons", "flesh_tendons"), ("biomesoplenty:glowworm_silk", "silk"),
+     ("minecraft:weeping_vines", "weeping_vines"), ("minecraft:twisting_vines", "twisting_vines"),
+     ("minecraft:crimson_roots", "crimson_roots"), ("minecraft:warped_roots", "warped_roots")],
+    [("powergrid:iron_wire", "iron_wire_powergrid"), ("createaddition:iron_wire", "iron_wire"),
+     ("ae2:fluix_smart_cable", "fluix_smart_cable"), ("silentgear:fine_silk", "fine_silk"),
+     ("northstar:dry_plant_fiber", "dry_plant"), ("create_submarine:steel_cable", "steel_cable")],
+    [("powergrid:golden_wire", "golden_wire"), ("createaddition:electrum_wire", "electrum_wire"),
+     ("createaddition:gold_wire", "gold_wire"), ("ae2:fluix_smart_dense_cable", "fluix_smart_dense_cable"),
+     ("iss_magicfromtheeast:red_string", "red_string"), ("apothic_enchanting:warden_tendril", "warden_tendril"),
+     ("northstar:glowing_venus_vines", "glowing_venus_vines"), ("northstar:venus_vines", "venus_vines")],
+]))
+CORD_DESIGN.update(cord_design("super_cord", [
+    [("avaritia_integration:blaze_cube_wire", "blaze_cube_wire")],
+    [("avaritia_integration:crystal_matrix_wire", "crystal_matrix_wire")],
+]))
+CORD_DESIGN.update(cord_design("god_cord", [
+    [("avaritia_integration:neutron_wire", "neutron_wire")],
+    [("avaritia_integration:infinity_wire", "infinity_wire")],
+    [("avaritia_more_items:quark_wire", "quark_wire")],
+]))
+CORD_BUILTIN_PATHS = {
+    "minecraft:string": "string", "minecraft:vine": "vine", "silentgear:fluffy_string": "fluffy_string",
+    "silentgear:sinew_fiber": "sinew",
+    "silentgear:fine_silk": "fine_silk",
+}
+
+
+def textile_design(family, levels):
+    result = {}
+    for level, entries in enumerate(levels, 1):
+        for resource_id, material, fixed_bias in entries:
+            bias = fixed_bias if fixed_bias is not None else int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55
+            result[resource_id] = {"family": family, "level": level, "material": material, "bias": round(bias, 3)}
+    return result
+
+
+COLORS = ("white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black")
+TEXTILE_DESIGN = {}
+TEXTILE_DESIGN.update(textile_design("textile", [
+    [("minecraft:leather", "leather", None), ("flavor_immersed_daily:flourskin", "flourskin", None),
+     ("farmersdelight:canvas", "canvas", None), ("farmersdelight:tree_bark", "tree_bark", None),
+     ("flavor_immersed_daily:dumpling_skin", "dumpling_skin", None), ("bakeries:pastry", "pastry", None),
+     ("flavor_immersed_daily:raweggskin", "raweggskin", None),
+     ("flavor_immersed_daily:rawglutinousskin", "rawglutinousskin", None),
+     ("croptopia:corn_husk", "corn_husk", None), ("flavor_immersed_daily:shumaiskin", "shumaiskin", None),
+     ("flavor_immersed_daily:drycinnamon", "drycinnamon", None), ("flavor_immersed_daily:baozi_skin", "baozi_skin", None)],
+    [("flavor_immersed_daily:rawpigskin", "rawpigskin", None), ("irons_spellbooks:hogskin", "hogskin", None),
+     ("minecraft:rabbit_hide", "rabbit_hide", None), ("protection_pixel:reinforcedfiber", "reinforcedfiber", None),
+     ("flavor_immersed_daily:oiledflourskin", "oiledflourskin", None),
+     ("flavor_immersed_daily:dried_tofu_skin", "dried_tofu_skin", None),
+     ("flavor_immersed_daily:thousand_layer_tofu_skin", "thousand_layer_tofu_skin", None),
+     ("flavor_immersed_daily:drypowderskin", "drypowderskin", None), ("farmersdelight:pie_crust", "pie_crust", None),
+     ("northstar:durable_fabric", "durable_fabric", None)]
+     + [(f"minecraft:{color}_wool", f"wool/{color}", 0.0) for color in COLORS]
+     + [(f"createnuclear:{color}_cloth", f"{color}_cloth", 0.0) for color in COLORS],
+    [("taintedmagic:shadow_imbued_cloth", "shadow_imbued_cloth", None),
+     ("thaumcraft:enchanted_fabric", "enchanted_fabric", None), ("mek_x_star:crushed_wool", "crushed_wool", None),
+     ("irons_spellbooks:bloody_vellum", "bloody_vellum", None),
+     ("minecraft:phantom_membrane", "phantom_membrane", None), ("irons_spellbooks:magic_cloth", "magic_cloth", None),
+     ("mekanism:hdpe_sheet", "hdpe_sheet", None), ("silentgear:fluffy_fabric", "fluffy_fabric", None)],
+]))
+TEXTILE_DESIGN.update(textile_design("rare_textile", [
+    [("taintedmagic:crimson_stained_cloth", "crimson_stained_cloth", None),
+     ("irons_spellbooks:mithril_weave", "mithril_weave", None), ("hazennstuff:storm_weave", "storm_weave", None)],
+    [("thaumic_tinkerer:ichorcloth", "ichorcloth", None),
+     ("hazennstuff:cloth_of_the_flamebearer", "cloth_of_the_flamebearer", None)],
+]))
+TEXTILE_BUILTIN_PATHS = {
+    "minecraft:leather": "leather",
+    "minecraft:phantom_membrane": "phantom_membrane", "silentgear:fluffy_fabric": "fluffy_fabric",
+    **{f"minecraft:{color}_wool": f"wool/{color}" for color in COLORS},
+}
+TEXTILE_FOOD_IDS = {
+    "bakeries:pastry", "croptopia:corn_husk", "farmersdelight:pie_crust",
+    "flavor_immersed_daily:baozi_skin", "flavor_immersed_daily:dried_tofu_skin",
+    "flavor_immersed_daily:drycinnamon", "flavor_immersed_daily:drypowderskin",
+    "flavor_immersed_daily:dumpling_skin", "flavor_immersed_daily:flourskin",
+    "flavor_immersed_daily:oiledflourskin", "flavor_immersed_daily:raweggskin",
+    "flavor_immersed_daily:rawglutinousskin", "flavor_immersed_daily:shumaiskin",
+    "flavor_immersed_daily:thousand_layer_tofu_skin",
+}
+
+
+def handle_design(family, levels):
+    return {
+        resource_id: {
+            "family": family, "level": level, "material": material,
+            "long": "long_rod" in resource_id or "staff_rod" in resource_id,
+            "bias": round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
+        }
+        for level, entries in enumerate(levels, 1)
+        for resource_id, material in entries
+    }
+
+
+HANDLE_DESIGN = {}
+HANDLE_DESIGN.update(handle_design("handle", [
+    [("minecraft:bamboo", "bamboo_handle"), ("kaleidoscope_nether:wither_rib", "wither_rib"),
+     ("silentgear:netherwood_stick", "netherwood_stick"), ("minecraft:stick", "wooden_stick"),
+     ("minecraft:bone", "bone_handle"), ("minecraft:sugar_cane", "sugar_cane_handle"),
+     ("create:cardboard_sword", "cardboard_handle"), ("silentgems:reinforced_gold_rod", "reinforced_gold_rod"),
+     ("silentgems:reinforced_silver_rod", "reinforced_silver_rod"), ("silentgear:stone_rod", "stone_rod")],
+    [("bakeries:baguette", "baguette_handle"), ("minecraft:blaze_rod", "vanilla_blaze_rod"),
+     ("minecraft:breeze_rod", "breeze_rod"), ("mekanism:hdpe_stick", "hdpe_stick"),
+     ("irons_spellbooks:frozen_bone", "frozen_bone"), ("hazennstuff:overgrown_bone", "overgrown_bone"),
+     ("flavor_immersed_daily:bovinebone", "bovine_bone"), ("flavor_immersed_daily:rawsheepspine", "raw_sheep_spine")],
+    [("minecraft:end_rod", "end_rod"), ("createnuclear:graphite_rod", "graphite_rod"),
+     ("createnuclear:uranium_rod", "uranium_rod"), ("spectrum:sugar_stick", "sugar_stick")],
+    [("spectrum:citrine_sugar_stick", "citrine_sugar_stick"), ("spectrum:onyx_sugar_stick", "onyx_sugar_stick"),
+     ("spectrum:amethyst_sugar_stick", "amethyst_sugar_stick"), ("spectrum:moonstone_sugar_stick", "moonstone_sugar_stick"),
+     ("spectrum:topaz_sugar_stick", "topaz_sugar_stick"), ("irons_spellbooks:frosted_helve", "frosted_helve"),
+     ("cataclysm:koboleton_bone", "koboleton_bone")],
+]))
+HANDLE_DESIGN.update(handle_design("rare_handle", [
+    [("avaritia_more_items:blaze_rod", "blaze_rod"), ("avaritia_more_items:blaze_long_rod", "blaze_long_rod")],
+    [("avaritia_more_items:crystal_matrix_rod", "crystal_matrix_rod"),
+     ("avaritia_more_items:crystal_matrix_long_rod", "crystal_matrix_long_rod")],
+]))
+HANDLE_DESIGN.update(handle_design("god_handle", [
+    [("avaritia_more_items:neutron_rod", "neutron_rod"), ("avaritia_more_items:neutron_long_rod", "neutron_long_rod")],
+    [("avaritia_integration:infinity_rod", "infinity_rod"), ("avaritia_integration:infinity_long_rod", "infinity_long_rod")],
+    [("avaritia_more_items:quark_rod", "quark_rod"), ("avaritia_more_items:quark_long_rod", "quark_long_rod")],
+]))
+
+WAND_HANDLE_DESIGN = {}
+WAND_HANDLE_DESIGN.update(handle_design("wand_handle", [
+    [("thaumcraft:wand_rod_greatwood", "greatwood_wand_rod"), ("thaumcraft:staff_rod_greatwood", "greatwood_staff_rod"),
+     ("forbiddenmagic:livingwood_wand_rod", "livingwood_wand_rod"), ("forbiddenmagic:profane_wand_rod", "profane_wand_rod"),
+     ("thaumcraft:wand_rod_blaze", "blaze_wand_rod"), ("thaumcraft:staff_rod_blaze", "blaze_staff_rod"),
+     ("thaumcraft:wand_rod_ice", "ice_wand_rod"), ("thaumcraft:staff_rod_ice", "ice_staff_rod"),
+     ("thaumcraft:wand_rod_reed", "reed_wand_rod"), ("thaumcraft:staff_rod_reed", "reed_staff_rod"),
+     ("thaumcraft:wand_rod_bone", "bone_wand_rod"), ("thaumcraft:staff_rod_bone", "bone_staff_rod"),
+     ("thaumcraft:wand_rod_obsidian", "obsidian_wand_rod"), ("thaumcraft:staff_rod_obsidian", "obsidian_staff_rod"),
+     ("thaumcraft:wand_rod_quartz", "quartz_wand_rod"), ("thaumcraft:staff_rod_quartz", "quartz_staff_rod"),
+     ("iss_magicfromtheeast:red_shaft", "red_shaft")],
+    [("forbiddenmagic:witchwood_wand_rod", "witchwood_wand_rod"), ("forbiddenmagic:witchwood_staff_rod", "witchwood_staff_rod"),
+     ("forbiddenmagic:blood_wand_rod", "blood_wand_rod"), ("forbiddenmagic:blood_staff_rod", "blood_staff_rod"),
+     ("forbiddenmagic:tainted_wand_rod", "tainted_wand_rod"), ("forbiddenmagic:infernal_wand_rod", "infernal_wand_rod"),
+     ("thaumcraft:wand_rod_silverwood", "silverwood_wand_rod"), ("thaumcraft:staff_rod_silverwood", "silverwood_staff_rod"),
+     ("forbiddenmagic:dreamwood_wand_rod", "dreamwood_wand_rod"), ("forbiddenmagic:dreamwood_staff_rod", "dreamwood_staff_rod")],
+]))
+WAND_HANDLE_DESIGN.update(handle_design("super_wand_handle", [
+    [("taintedmagic:warpwood_wand_rod", "warpwood_wand_rod"), ("taintedmagic:warpwood_staff_rod", "warpwood_staff_rod"),
+     ("thaumcraft:staff_rod_primal", "primal_staff_rod")],
+    [("thaumic_tinkerer:ichorcloth_wand_rod", "ichorcloth_wand_rod")],
+]))
+
+
+def leaf_design(family, entries, fixed_bias=None):
+    return {
+        resource_id: {
+            "family": family, "material": resource_id.split(":", 1)[1],
+            "bias": fixed_bias if fixed_bias is not None else round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
+        }
+        for resource_id in entries
+    }
+
+
+LEAF_DESIGN = {}
+LEAF_DESIGN.update(leaf_design("leaf", [
+    "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves",
+    "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves",
+    "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves",
+]))
+LEAF_DESIGN.update(leaf_design("otherworldly_leaf", [
+    "biomesoplenty:fir_leaves", "biomesoplenty:pine_leaves", "biomesoplenty:cypress_leaves", "biomesoplenty:willow_leaves",
+    "biomesoplenty:mahogany_leaves", "biomesoplenty:palm_leaves", "biomesoplenty:redwood_leaves", "biomesoplenty:jacaranda_leaves",
+    "biomesoplenty:origin_leaves", "biomesoplenty:magic_leaves", "biomesoplenty:snowblossom_leaves", "biomesoplenty:rainbow_birch_leaves",
+    "biomesoplenty:umbran_leaves", "biomesoplenty:dead_leaves", "biomesoplenty:orange_maple_leaves", "biomesoplenty:red_maple_leaves",
+    "biomesoplenty:yellow_maple_leaves", "biomesoplenty:flowering_oak_leaves", "biomesoplenty:hellbark_leaves",
+    "biomesoplenty:empyreal_leaves", "silentgear:netherwood_leaves",
+]))
+LEAF_DESIGN.update(leaf_design("tool_leaf", [
+    "flavor_immersed_daily:winterjujubeleave_fruiting_leaves", "flavor_immersed_daily:verdant_grace_fruiting_leaves_hawthorn",
+    "flavor_immersed_daily:mangosteenleave_fruiting_leaves", "flavor_immersed_daily:pistachionutleave_fruiting_leaves",
+    "flavor_immersed_daily:pawpawleave_fruiting_leaves", "flavor_immersed_daily:verdant_grace_fruiting_leaves_apricot",
+    "flavor_immersed_daily:carambolaleave_fruiting_leaves", "flavor_immersed_daily:verdant_grace_fruiting_leaves_loquat",
+    "flavor_immersed_daily:lemonleave_fruiting_leaves", "flavor_immersed_daily:walnutleaves_fruiting_leaves",
+    "flavor_immersed_daily:mulberryleaves_fruiting_leaves", "flavor_immersed_daily:pearleaves_fruiting_leaves",
+    "flavor_immersed_daily:durianleave_fruiting_leaves", "flavor_immersed_daily:verdant_grace_fruiting_leaves_cherry",
+    "flavor_immersed_daily:orangeleave_fruiting_leaves", "flavor_immersed_daily:nectarineleave_fruiting_leaves",
+    "flavor_immersed_daily:kiwifruitsleave_fruiting_leaves", "flavor_immersed_daily:sweetmelonleave_fruiting_leaves",
+    "flavor_immersed_daily:verdant_grace_fruiting_leaves_pomegranate", "flavor_immersed_daily:reddateleave_fruiting_leaves",
+    "flavor_immersed_daily:mangoleave_fruiting_leaves", "flavor_immersed_daily:appleleave_fruiting_leaves",
+    "flavor_immersed_daily:lycheeleave_fruiting_leaves", "flavor_immersed_daily:honeypeachleave_fruiting_leaves",
+    "flavor_immersed_daily:verdant_grace_fruiting_leaves_greenplum", "flavor_immersed_daily:tangerineleave_fruiting_leaves",
+    "flavor_immersed_daily:verdant_grace_leaves", "flavor_immersed_daily:verdant_grace_fruiting_leaves",
+    "flavor_immersed_daily:stonebark_leaves", "flavor_immersed_daily:solarwood_leaves",
+    "flavor_immersed_daily:vineheart_timber_leaves", "flavor_immersed_daily:orchard_heartwood_leaves",
+]))
+LEAF_DESIGN.update(leaf_design("dyed_leaf", [f"spectrum:{color}_leaves" for color in COLORS], 0.0))
+LEAF_DESIGN.update(leaf_design("magic_leaf", [
+    "thaumcraft:greatwood_leaves", "thaumcraft:silverwood_leaves", "hazennstuff:wisewood_leaves",
+    "taintedmagic:warpwood_leaves", "forbiddenmagic:tainted_leaves",
+]))
+LEAF_DESIGN.update(leaf_design("rare_leaf", [
+    "northstar:coiler_leaves", "northstar:wilter_leaves", "northstar:argyre_leaves", "spectrum:weeping_gala_leaves",
+]))
+
+
+def flower_feather_design(levels):
+    return {
+        resource_id: {
+            "level": level, "material": resource_id.split(":", 1)[1],
+            "bias": fixed_bias if fixed_bias is not None else round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
+        }
+        for level, entries in enumerate(levels, 1)
+        for resource_id, fixed_bias in entries
+    }
+
+
+FLOWER_FEATHER_DESIGN = flower_feather_design([
+    [("minecraft:feather", None), ("silentgear:fluffy_feather", None)],
+    [("neoguanniao:bird_feather", None), ("croptopia:kale", None)],
+    [("touhou_little_maid_spell:scarlet_zhuhua", None), ("touhou_little_maid_spell:jingxu_youlan", None),
+     ("touhou_little_maid_spell:yue_linglan", None), ("spectrum:jadeite_petals", None)],
+    [("spectrum:resplendent_feather", 0.0)]
+    + [(f"spectral_decorations:{color}_resplendent_feather", 0.0) for color in COLORS],
+    [("northstar:mars_sprout", None), ("northstar:mars_palm", None), ("northstar:mars_tulip", None)],
+])
+DESIGNED_IDS = set().union(
+    METAL_DESIGN, GEM_DESIGN, WOOD_DESIGN, STONE_DESIGN, CORD_DESIGN, TEXTILE_DESIGN,
+    HANDLE_DESIGN, WAND_HANDLE_DESIGN, LEAF_DESIGN, FLOWER_FEATHER_DESIGN,
+)
+
 BUILTIN_PATHS = {
     "minecraft:copper_ingot": "copper", "mekanism:ingot_tin": "tin", "mekanism:ingot_lead": "lead",
     "minecraft:iron_ingot": "iron", "alltheores:nickel_ingot": "nickel", "alltheores:aluminum_ingot": "aluminum",
@@ -1284,6 +1578,212 @@ def apply_wood_design(data, entry):
     }
 
 
+def stone_main_properties(level, traits, bias):
+    center = [7.5, 10.5, 14.5, 20.0, 28.0][level - 1]
+    power = round(center * (1 + bias * 0.12), 3)
+    armor = power * 0.65
+    return {
+        "armor": round(armor, 3), "armor/boots": round(armor * 0.15, 3),
+        "armor/chestplate": round(armor * 0.4, 3), "armor/helmet": round(armor * 0.15, 3),
+        "armor/leggings": round(armor * 0.3, 3), "armor_durability": round(power * 0.55, 3),
+        "armor_toughness": round(power * 0.08, 3), "attack_damage": round(power * 0.14, 3),
+        "attack_speed": round(-0.18 - level * 0.025, 3), "charging_value": round(0.25 + power * 0.006, 3),
+        "draw_speed": round(-0.12 - level * 0.02, 3), "durability": round(power * 10, 3),
+        "enchantment_value": round(3 + power * 0.12, 3), "harvest_speed": round(power * 0.22, 3),
+        "harvest_tier": {"incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool", "level_hint": "1", "name": "stone"},
+        "magic_armor": round(power * 0.1, 3), "magic_damage": round(power * 0.07, 3),
+        "projectile_accuracy": round(max(0.2, 0.8 - level * 0.07), 3),
+        "projectile_speed": round(max(0.2, 0.75 - level * 0.07), 3),
+        "ranged_damage": round(power * 0.18, 3), "rarity": round(3 + power * 0.32, 3),
+        "knockback_resistance": round(0.04 + level * 0.025 + power * 0.001, 3),
+        "repair_efficiency": round(0.28 + level * 0.05, 3), "repair_value": round(0.08 + level * 0.025, 3),
+        "traits": traits,
+    }
+
+
+def apply_stone_design(data, entry):
+    design = STONE_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    traits = traits_for("岩石", entry["material"], entry["id"], min(1.0, 0.2 + design["level"] * 0.14))
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": ["stone", "advanced" if design["level"] >= 4 else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {"silentgear:main": stone_main_properties(design["level"], traits, design["bias"])}
+
+
+def cord_power(family, level, bias):
+    centers = {
+        "cord": [0.12, 0.2, 0.32, 0.48],
+        "super_cord": [0.72, 1.05],
+        "god_cord": [1.5, 2.25, 3.25],
+    }[family]
+    return semantic_level_value(centers, level, bias)
+
+
+def apply_cord_design(data, entry):
+    design = CORD_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    family, level, bias = design["family"], design["level"], design["bias"]
+    power = cord_power(family, level, bias)
+    traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.2 + level * 0.18))[:3]
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": [family, "endgame" if family != "cord" else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {
+        "silentgear:cord": {
+            "draw_speed": {"operation": "MULTIPLY_BASE", "value": round(power, 3)},
+            "projectile_speed": {"operation": "MULTIPLY_BASE", "value": round(power * 0.8, 3)},
+            "projectile_accuracy": {"operation": "MULTIPLY_BASE", "value": round(power * 0.7, 3)},
+            "traits": traits,
+        },
+        "silentgear:binding": {
+            "repair_efficiency": {"operation": "MULTIPLY_BASE", "value": round(power * 0.9, 3)},
+            "repair_value": {"operation": "ADD", "value": round(power * 0.35, 3)},
+            "traits": traits,
+        },
+    }
+
+
+def apply_textile_design(data, entry):
+    design = TEXTILE_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    family, level, bias = design["family"], design["level"], design["bias"]
+    centers = {"textile": [0.16, 0.28, 0.46], "rare_textile": [0.72, 1.08]}[family]
+    power = semantic_level_value(centers, level, bias)
+    traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.2 + level * 0.2))[:3]
+    if entry["id"] in TEXTILE_FOOD_IDS and not any(value["trait"] == "silentgear:yummy" for value in traits):
+        traits = [trait("yummy", 1), *traits[:2]]
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": [family, "endgame" if family == "rare_textile" else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {
+        "silentgear:lining": {
+            "armor_durability": {"operation": "MULTIPLY_BASE", "value": round(power, 3)},
+            "armor_toughness": {"operation": "ADD", "value": round(power * 3.5, 3)},
+            "magic_armor": {"operation": "ADD", "value": round(power * 5, 3)},
+            "traits": traits,
+        },
+        "silentgear:grip": {
+            "attack_speed": {"operation": "ADD", "value": round(power * 0.35, 3)},
+            "repair_efficiency": {"operation": "MULTIPLY_BASE", "value": round(power * 0.7, 3)},
+            "repair_value": {"operation": "ADD", "value": round(power * 0.2, 3)},
+            "traits": traits,
+        },
+    }
+
+
+def apply_handle_design(data, entry):
+    design = HANDLE_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    centers = {"handle": [0.12, 0.22, 0.36, 0.55], "rare_handle": [0.85, 1.2], "god_handle": [1.7, 2.5, 3.6]}[design["family"]]
+    power = semantic_level_value(centers, design["level"], design["bias"]) * (1.08 if design["long"] else 1)
+    traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.25 + design["level"] * 0.18))[:3]
+    if design["long"] and not any(value["trait"] == "silentgear:heavy" for value in traits):
+        traits = [trait("heavy", min(5, design["level"] + 1)), *traits[:2]]
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": [design["family"], "endgame" if design["family"] != "handle" else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {"silentgear:rod": {
+        "harvest_speed": {"operation": "MULTIPLY_BASE", "value": round(power * (0.85 if design["long"] else 1), 3)},
+        "attack_speed": {"operation": "ADD", "value": round(power * (0.08 if design["long"] else 0.18), 3)},
+        "block_reach": {"operation": "ADD", "value": round(power * (0.55 if design["long"] else 0.4), 3)},
+        "attack_reach": {"operation": "ADD", "value": round(power * (0.42 if design["long"] else 0.3), 3)},
+        "durability": {"operation": "MULTIPLY_BASE", "value": round(power * 1.1, 3)},
+        "attack_damage": {"operation": "ADD", "value": round(power * 1.4, 3)},
+        "projectile_speed": {"operation": "MULTIPLY_BASE", "value": round(power * 0.65, 3)},
+        "draw_speed": {"operation": "MULTIPLY_BASE", "value": round(power * (0.55 if design["long"] else 0.7), 3)},
+        "projectile_accuracy": {"operation": "MULTIPLY_BASE", "value": round(power * 0.6, 3)},
+        "traits": traits,
+    }}
+
+
+def apply_wand_handle_design(data, entry):
+    design = WAND_HANDLE_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    centers = {"wand_handle": [0.28, 0.52], "super_wand_handle": [0.9, 1.35]}[design["family"]]
+    power = semantic_level_value(centers, design["level"], design["bias"]) * (1.08 if design["long"] else 1)
+    traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.3 + design["level"] * 0.22))[:3]
+    if design["long"] and not any(value["trait"] == "silentgear:heavy" for value in traits):
+        traits = [trait("heavy", min(5, design["level"] + 1)), *traits[:2]]
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": [design["family"], "endgame" if design["family"] == "super_wand_handle" else "advanced"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {"silentgear:rod": {
+        "block_reach": {"operation": "ADD", "value": round(power * (0.55 if design["long"] else 0.4), 3)},
+        "attack_reach": {"operation": "ADD", "value": round(power * (0.42 if design["long"] else 0.3), 3)},
+        "magic_damage": {"operation": "ADD", "value": round(power * 4.5, 3)},
+        "enchantment_value": {"operation": "ADD", "value": round(power * 6, 3)},
+        "charging_value": {"operation": "ADD", "value": round(power * (0.8 if design["long"] else 1), 3)},
+        "rarity": {"operation": "ADD", "value": round(power * 3.5, 3)},
+        "repair_value": {"operation": "ADD", "value": round(power * 0.35, 3)},
+        "traits": traits,
+    }}
+
+
+def apply_leaf_design(data, entry):
+    design = LEAF_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    centers = {"leaf": 0.14, "otherworldly_leaf": 0.23, "tool_leaf": 0.32, "dyed_leaf": 0.2, "magic_leaf": 0.42, "rare_leaf": 0.62}
+    power = round(centers[design["family"]] * (1 + design["bias"] * 0.22), 3)
+    traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.25 + power))[:3]
+    if design["family"] == "tool_leaf" and not any(value["trait"] == "silentgear:yummy" for value in traits):
+        traits = [trait("yummy", 1), *traits[:2]]
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": [design["family"], "advanced" if design["family"] in {"magic_leaf", "rare_leaf"} else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {
+        "silentgear:fletching": {
+            "projectile_accuracy": {"operation": "MULTIPLY_BASE", "value": round(power * 0.9, 3)},
+            "projectile_speed": {"operation": "MULTIPLY_BASE", "value": round(power * 0.75, 3)},
+            "traits": traits,
+        },
+        "silentgear:lining": {
+            "armor_durability": {"operation": "MULTIPLY_BASE", "value": round(power * 0.7, 3)},
+            "magic_armor": {"operation": "ADD", "value": round(power * 3.5, 3)},
+            "traits": traits,
+        },
+    }
+
+
+def apply_flower_feather_design(data, entry):
+    design = FLOWER_FEATHER_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    power = semantic_level_value([0.12, 0.2, 0.32, 0.5, 0.75], design["level"], design["bias"])
+    traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.2 + design["level"] * 0.16))[:3]
+    if entry["id"] == "croptopia:kale" and not any(value["trait"] == "silentgear:yummy" for value in traits):
+        traits = [trait("yummy", 1), *traits[:2]]
+    data["parent"] = "silentgear:empty"
+    data["crafting"] = {
+        "can_salvage": True, "categories": ["flower_feather", "advanced" if design["level"] >= 4 else "intermediate"],
+        "gear_type_blacklist": [], "ingredient": {"item": entry["id"]}, "part_substitutes": {},
+    }
+    data["properties"] = {"silentgear:fletching": {
+        "projectile_accuracy": {"operation": "MULTIPLY_BASE", "value": round(power, 3)},
+        "projectile_speed": {"operation": "MULTIPLY_BASE", "value": round(power * 0.85, 3)},
+        "ranged_damage": {"operation": "MULTIPLY_BASE", "value": round(power * 0.55, 3)},
+        "traits": traits,
+    }}
+
+
 def gem_main_properties(family, level, traits, bias):
     power = semantic_level_value(gem_level_centers(family), level, bias)
     pure = family in {"pure_gem", "super_pure_gem"}
@@ -1531,6 +2031,13 @@ def make_material(category, entry, bounds, profiles, resolver):
     apply_metal_design(data, entry)
     apply_gem_design(data, entry)
     apply_wood_design(data, entry)
+    apply_stone_design(data, entry)
+    apply_cord_design(data, entry)
+    apply_textile_design(data, entry)
+    apply_handle_design(data, entry)
+    apply_wand_handle_design(data, entry)
+    apply_leaf_design(data, entry)
+    apply_flower_feather_design(data, entry)
     return data, tier
 
 
@@ -1547,11 +2054,19 @@ def main():
             continue
         for entry in entries:
             entry = dict(entry)
+            if entry["id"] not in DESIGNED_IDS:
+                continue
             if is_replaced_wood_variant(entry["id"]):
                 continue
             material = MATERIAL_ALIASES.get(entry["material"], entry["material"])
             if entry["id"] in WOOD_DESIGN:
                 material = WOOD_DESIGN[entry["id"]]["material"].replace("/", "_")
+            if entry["id"] in TEXTILE_DESIGN:
+                material = TEXTILE_DESIGN[entry["id"]]["material"].replace("/", "_")
+            if entry["id"] in LEAF_DESIGN:
+                material = LEAF_DESIGN[entry["id"]]["material"]
+            if entry["id"] in FLOWER_FEATHER_DESIGN:
+                material = FLOWER_FEATHER_DESIGN[entry["id"]]["material"]
             entry["material"] = material
             if material in GEM_OVERRIDES:
                 category = "宝石"
@@ -1561,6 +2076,8 @@ def main():
                 continue
             candidates.append((category, entry))
     for category, entry in extra_entries():
+        if entry["id"] not in DESIGNED_IDS:
+            continue
         if is_replaced_wood_variant(entry["id"]):
             continue
         design = METAL_DESIGN.get(entry["id"])
@@ -1571,6 +2088,14 @@ def main():
         if wood is not None:
             entry["material"] = wood["material"].replace("/", "_")
             category = "木头"
+        leaf = LEAF_DESIGN.get(entry["id"])
+        if leaf is not None:
+            entry["material"] = leaf["material"]
+            category = "纤维"
+        flower_feather = FLOWER_FEATHER_DESIGN.get(entry["id"])
+        if flower_feather is not None:
+            entry["material"] = flower_feather["material"]
+            category = "纤维"
         if design is not None or entry["material"] not in builtins and entry["material"] not in existing and valid(category, entry):
             candidates.append((category, entry))
     candidate_ids = {entry["id"] for _, entry in candidates}
@@ -1594,13 +2119,49 @@ def main():
                 "id": resource_id, "material": design["material"].replace("/", "_"),
                 "name": design["material"].replace("/", " ").replace("_", " ").title(), "extra": True,
             }))
+    for resource_id, design in STONE_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("岩石", {
+                "id": resource_id, "material": design["material"],
+                "name": design["material"].replace("_", " ").title(), "extra": True,
+            }))
+    for resource_id, design in CORD_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("纤维", {
+                "id": resource_id, "material": design["material"],
+                "name": design["material"].replace("_", " ").title(), "extra": True,
+            }))
+    for resource_id, design in TEXTILE_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("纤维", {
+                "id": resource_id, "material": design["material"].replace("/", "_"),
+                "name": design["material"].replace("/", " ").replace("_", " ").title(), "extra": True,
+            }))
+    for resource_id, design in {**HANDLE_DESIGN, **WAND_HANDLE_DESIGN}.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("纤维", {
+                "id": resource_id, "material": design["material"],
+                "name": design["material"].replace("_", " ").title(), "extra": True,
+            }))
+    for resource_id, design in LEAF_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("纤维", {
+                "id": resource_id, "material": design["material"],
+                "name": design["material"].replace("_", " ").title(), "extra": True,
+            }))
+    for resource_id, design in FLOWER_FEATHER_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("纤维", {
+                "id": resource_id, "material": design["material"],
+                "name": design["material"].replace("_", " ").title(), "extra": True,
+            }))
 
     candidates.sort(key=lambda item: (not item[1].get("extra", False), CATEGORY_ORDER[item[0]], item[1]["material"], item[1]["id"]))
     chosen = []
     seen_ingredients = set()
     seen_outputs = set()
     for category, entry in candidates:
-        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"]) or WOOD_BUILTIN_PATHS.get(entry["id"])
+        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"]) or WOOD_BUILTIN_PATHS.get(entry["id"]) or STONE_BUILTIN_PATHS.get(entry["id"]) or CORD_BUILTIN_PATHS.get(entry["id"]) or TEXTILE_BUILTIN_PATHS.get(entry["id"])
         output_key = ("builtin", builtin_path) if builtin_path in builtin_data else (
             entry["id"].split(":", 1)[0], entry["material"]
         )
@@ -1617,7 +2178,7 @@ def main():
     designed_values = {}
     for category, entry in chosen:
         namespace = entry["id"].split(":", 1)[0]
-        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"]) or WOOD_BUILTIN_PATHS.get(entry["id"])
+        builtin_path = BUILTIN_PATHS.get(entry["id"]) or GEM_BUILTIN_PATHS.get(entry["id"]) or WOOD_BUILTIN_PATHS.get(entry["id"]) or STONE_BUILTIN_PATHS.get(entry["id"]) or CORD_BUILTIN_PATHS.get(entry["id"]) or TEXTILE_BUILTIN_PATHS.get(entry["id"])
         if builtin_path not in builtin_data:
             builtin_path = None
         path = OVERRIDE_OUTPUT / f"{builtin_path}.json" if builtin_path else OUTPUT / namespace / f"{entry['material']}.json"
@@ -1627,9 +2188,18 @@ def main():
             apply_metal_design(data, entry)
             apply_gem_design(data, entry)
             apply_wood_design(data, entry)
+            apply_stone_design(data, entry)
+            apply_cord_design(data, entry)
+            apply_textile_design(data, entry)
+            apply_handle_design(data, entry)
+            apply_wand_handle_design(data, entry)
+            apply_leaf_design(data, entry)
+            apply_flower_feather_design(data, entry)
             tier = entry["id"] in METAL_DESIGN and METAL_DESIGN[entry["id"]]["level"] / 8 or 0.5
         else:
             data, tier = make_material(category, entry, bounds, profiles, resolver)
+        data["crafting"]["ingredient"] = {"item": entry["id"]}
+        data["display"]["name"] = {"translate": generated_translation_key(entry)}
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         tiers.append((tier, category, entry["material"], entry["id"]))
@@ -1648,10 +2218,9 @@ def main():
                     lower *= 0.92
                 designed_values[entry["id"]] = (lower, main["armor"], upper)
 
-    if EXTRA_INPUT.exists():
-        for path in OUTPUT.rglob("*.json"):
-            if path.resolve() not in expected:
-                path.unlink()
+    for path in OVERRIDE_OUTPUT.rglob("*.json"):
+        if path.resolve() not in expected:
+            path.unlink()
 
     assert len(expected) == len(chosen)
     assert all(json.loads(path.read_text(encoding="utf-8"))["type"] == "silentgear:simple" for path in expected)
@@ -1686,6 +2255,55 @@ def main():
     wood_data = [json.loads(path.read_text(encoding="utf-8")) for path in wood_files]
     assert all(set(data["properties"]) >= {"silentgear:main", "silentgear:rod", "silentgear:grip"} for data in wood_data)
     assert all("item" in data["crafting"]["ingredient"] for data in wood_data)
+    stone_files = []
+    for resource_id, design in STONE_DESIGN.items():
+        builtin_path = STONE_BUILTIN_PATHS.get(resource_id)
+        candidates = ([OVERRIDE_OUTPUT / f"{builtin_path}.json"] if builtin_path else []) + [
+            OUTPUT / resource_id.split(":", 1)[0] / f"{design['material']}.json"
+        ]
+        stone_files.append(next(path for path in candidates if path.exists()))
+    stone_data = [json.loads(path.read_text(encoding="utf-8")) for path in stone_files]
+    assert all(set(data["properties"]) == {"silentgear:main"} for data in stone_data)
+    assert all(data["crafting"]["ingredient"].get("item") in STONE_DESIGN for data in stone_data)
+    cord_files = []
+    for resource_id, design in CORD_DESIGN.items():
+        builtin_path = CORD_BUILTIN_PATHS.get(resource_id)
+        candidates = ([OVERRIDE_OUTPUT / f"{builtin_path}.json"] if builtin_path else []) + [
+            OUTPUT / resource_id.split(":", 1)[0] / f"{design['material']}.json"
+        ]
+        cord_files.append(next(path for path in candidates if path.exists()))
+    cord_data = [json.loads(path.read_text(encoding="utf-8")) for path in cord_files]
+    assert all(set(data["properties"]) == {"silentgear:cord", "silentgear:binding"} for data in cord_data)
+    assert all(data["crafting"]["ingredient"].get("item") in CORD_DESIGN for data in cord_data)
+    textile_files = []
+    for resource_id, design in TEXTILE_DESIGN.items():
+        builtin_path = TEXTILE_BUILTIN_PATHS.get(resource_id)
+        material = design["material"].replace("/", "_")
+        candidates = ([OVERRIDE_OUTPUT / f"{builtin_path}.json"] if builtin_path else []) + [
+            OUTPUT / resource_id.split(":", 1)[0] / f"{material}.json"
+        ]
+        textile_files.append(next(path for path in candidates if path.exists()))
+    textile_data = [json.loads(path.read_text(encoding="utf-8")) for path in textile_files]
+    assert all(set(data["properties"]) == {"silentgear:lining", "silentgear:grip"} for data in textile_data)
+    assert all(data["crafting"]["ingredient"].get("item") in TEXTILE_DESIGN for data in textile_data)
+    handle_data = []
+    for resource_id, design in {**HANDLE_DESIGN, **WAND_HANDLE_DESIGN}.items():
+        path = OUTPUT / resource_id.split(":", 1)[0] / f"{design['material']}.json"
+        handle_data.append(json.loads(path.read_text(encoding="utf-8")))
+    assert all(set(data["properties"]) == {"silentgear:rod"} for data in handle_data)
+    assert all(data["crafting"]["ingredient"].get("item") in HANDLE_DESIGN | WAND_HANDLE_DESIGN for data in handle_data)
+    leaf_data = []
+    for resource_id, design in LEAF_DESIGN.items():
+        path = OUTPUT / resource_id.split(":", 1)[0] / f"{design['material']}.json"
+        leaf_data.append(json.loads(path.read_text(encoding="utf-8")))
+    assert all(set(data["properties"]) == {"silentgear:fletching", "silentgear:lining"} for data in leaf_data)
+    assert all(data["crafting"]["ingredient"].get("item") in LEAF_DESIGN for data in leaf_data)
+    flower_feather_data = []
+    for resource_id, design in FLOWER_FEATHER_DESIGN.items():
+        path = OUTPUT / resource_id.split(":", 1)[0] / f"{design['material']}.json"
+        flower_feather_data.append(json.loads(path.read_text(encoding="utf-8")))
+    assert all(set(data["properties"]) == {"silentgear:fletching"} for data in flower_feather_data)
+    assert all(data["crafting"]["ingredient"].get("item") in FLOWER_FEATHER_DESIGN for data in flower_feather_data)
     generated_lang = write_generated_lang([entry for _, entry in chosen], resolver)
     resolver.close()
     print(f"Silent Gear JAR: {jar.name}")

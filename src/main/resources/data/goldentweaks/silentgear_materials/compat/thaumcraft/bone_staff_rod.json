@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:staff_rod_bone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC0B7B0",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraft.bone_staff_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.21
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.16
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 1.716
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 2.287
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.305
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 1.334
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.133
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

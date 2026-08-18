@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:ingots/signalum"
+      "item": "alltheores:signalum_ingot"
     },
     "part_substitutes": {
       "silentgear:rod": {
@@ -21,7 +21,7 @@
     "color": "#FFFF5E28",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.silentgear.signalum"
+      "translate": "material.goldentweaks.compat.alltheores.signalum"
     },
     "name_prefix": ""
   },

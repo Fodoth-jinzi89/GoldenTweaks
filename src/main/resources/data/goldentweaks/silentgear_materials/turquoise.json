@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "tag": "c:gems/turquoise"
+      "item": "silentgems:turquoise"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FF3DF4BD",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "gem.silentgems.turquoise"
+      "translate": "material.goldentweaks.compat.silentgems.turquoise"
     },
     "name_prefix": ""
   },
