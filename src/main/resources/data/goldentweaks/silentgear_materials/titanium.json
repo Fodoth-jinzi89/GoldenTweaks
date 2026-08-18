@@ -1,0 +1,72 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/titanium"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/titanium"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF2E4CE6",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.titanium"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 33.8,
+      "armor/boots": 5.07,
+      "armor/chestplate": 13.52,
+      "armor/helmet": 5.07,
+      "armor/leggings": 10.14,
+      "armor_durability": 52.578,
+      "armor_toughness": 6.084,
+      "attack_damage": 5.408,
+      "charging_value": 0.882,
+      "draw_speed": 0.247,
+      "durability": 946.4,
+      "enchantment_value": 20.816,
+      "harvest_speed": 12.844,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 12.844,
+      "magic_damage": 4.597,
+      "projectile_accuracy": 1.131,
+      "projectile_speed": 1.158,
+      "ranged_damage": 2.366,
+      "rarity": 37.35,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "fiber",
-      "basic"
+      "super_metal",
+      "endgame"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -15,85 +15,129 @@
   },
   "display": {
     "color": "#FFCB721B",
-    "main_texture_type": "LOW_CONTRAST",
+    "main_texture_type": "HIGH_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.traveloptics.pyro_spellweave_ingot"
     },
     "name_prefix": ""
   },
   "properties": {
+    "silentgear:main": {
+      "armor": 83.84,
+      "armor/boots": 12.576,
+      "armor/chestplate": 33.536,
+      "armor/helmet": 12.576,
+      "armor/leggings": 25.152,
+      "armor_durability": 158.364,
+      "armor_toughness": 15.091,
+      "attack_damage": 15.93,
+      "charging_value": 1.299,
+      "draw_speed": 0.958,
+      "durability": 2850.56,
+      "enchantment_value": 36.829,
+      "harvest_speed": 40.243,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 31.859,
+      "magic_damage": 13.54,
+      "projectile_accuracy": 1.606,
+      "projectile_speed": 1.727,
+      "ranged_damage": 10.899,
+      "rarity": 74.88,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
     "silentgear:binding": {
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.087
+        "value": 0.26
       },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
+          "level": 1,
+          "trait": "silentgear:soft"
         },
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:soft"
+          "level": 1,
+          "trait": "silentgear:malleable"
         }
       ]
     },
     "silentgear:cord": {
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.096
+        "value": 0.23
       },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
+          "level": 1,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
         }
       ]
     },
     "silentgear:fletching": {
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.096
-      },
-      "projectile_speed": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.061
+        "value": 0.23
       },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
+          "level": 1,
+          "trait": "silentgear:soft"
         },
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:soft"
+          "level": 1,
+          "trait": "silentgear:malleable"
         }
       ]
     },
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.074
-      },
-      "magic_armor": {
-        "operation": "ADD",
-        "value": 0.09
+        "value": 0.26
       },
       "traits": [
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:flexible"
+          "level": 1,
+          "trait": "silentgear:soft"
         },
         {
           "conditions": [],
-          "level": 2,
-          "trait": "silentgear:soft"
+          "level": 1,
+          "trait": "silentgear:malleable"
         }
       ]
     }

@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "hard_metal",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -23,39 +23,35 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 16.209,
-      "armor/boots": 2.431,
-      "armor/chestplate": 6.483,
-      "armor/helmet": 2.431,
-      "armor/leggings": 4.863,
-      "armor_durability": 34.29,
-      "armor_toughness": 6.888,
-      "attack_damage": 4.719,
-      "charging_value": 0.847,
-      "durability": 1226.367,
-      "enchantment_value": 16.485,
-      "harvest_speed": 12.727,
+      "armor": 18.24,
+      "armor/boots": 2.736,
+      "armor/chestplate": 7.296,
+      "armor/helmet": 2.736,
+      "armor/leggings": 5.472,
+      "armor_durability": 28.373,
+      "armor_toughness": 3.283,
+      "attack_damage": 2.918,
+      "charging_value": 0.752,
+      "draw_speed": 0.156,
+      "durability": 510.72,
+      "enchantment_value": 15.837,
+      "harvest_speed": 6.931,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
       },
-      "magic_armor": 9.056,
-      "magic_damage": 5.095,
-      "projectile_accuracy": 0.905,
-      "projectile_speed": 1.149,
-      "ranged_damage": 1.648,
-      "rarity": 37.477,
+      "magic_armor": 6.931,
+      "magic_damage": 2.481,
+      "projectile_accuracy": 1.071,
+      "projectile_speed": 1.085,
+      "ranged_damage": 1.277,
+      "rarity": 25.68,
       "traits": [
         {
           "conditions": [],
-          "level": 4,
+          "level": 2,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:hard"
         }
       ]
     },
@@ -63,7 +59,7 @@
       "traits": [
         {
           "conditions": [],
-          "level": 4,
+          "level": 2,
           "trait": "silentgear:malleable"
         }
       ]

@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "god_metal",
       "endgame"
     ],
     "gear_type_blacklist": [],
@@ -23,39 +23,35 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 1000.0,
-      "armor/boots": 150.0,
-      "armor/chestplate": 400.0,
-      "armor/helmet": 150.0,
-      "armor/leggings": 300.0,
-      "armor_durability": 2800.0,
-      "armor_toughness": 533.333,
-      "attack_damage": 333.333,
-      "charging_value": 5.0,
-      "durability": 121733.333,
-      "enchantment_value": 1333.333,
-      "harvest_speed": 966.667,
+      "armor": 700,
+      "armor/boots": 105.0,
+      "armor/chestplate": 280.0,
+      "armor/helmet": 105.0,
+      "armor/leggings": 210.0,
+      "armor_durability": 1633.333,
+      "armor_toughness": 126.0,
+      "attack_damage": 161.0,
+      "charging_value": 6.433,
+      "draw_speed": 10.55,
+      "durability": 29400,
+      "enchantment_value": 234.0,
+      "harvest_speed": 420.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
         "level_hint": "4",
         "name": "netherite"
       },
-      "magic_armor": 633.333,
-      "magic_damage": 366.667,
-      "projectile_accuracy": 5.0,
-      "projectile_speed": 6.667,
-      "ranged_damage": 133.333,
-      "rarity": 3700.0,
+      "magic_armor": 266.0,
+      "magic_damage": 136.85,
+      "projectile_accuracy": 8.0,
+      "projectile_speed": 9.4,
+      "ranged_damage": 126.0,
+      "rarity": 537.0,
       "traits": [
         {
           "conditions": [],
-          "level": 5,
+          "level": 3,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 5,
-          "trait": "silentgear:hard"
         }
       ]
     },
@@ -63,7 +59,7 @@
       "traits": [
         {
           "conditions": [],
-          "level": 5,
+          "level": 3,
           "trait": "silentgear:malleable"
         }
       ]

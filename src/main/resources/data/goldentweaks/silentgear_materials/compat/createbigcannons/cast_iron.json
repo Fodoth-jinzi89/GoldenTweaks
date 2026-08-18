@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "hard_metal",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -23,45 +23,37 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 16.5,
-      "armor/boots": 2.2,
-      "armor/chestplate": 6.6,
-      "armor/helmet": 2.2,
-      "armor/leggings": 5.5,
-      "armor_durability": 16.5,
-      "armor_toughness": 3.552,
-      "attack_damage": 2.2,
-      "charging_value": 0.77,
-      "durability": 275.0,
-      "enchantment_value": 15.4,
-      "harvest_speed": 6.6,
+      "armor": 19.36,
+      "armor/boots": 2.904,
+      "armor/chestplate": 7.744,
+      "armor/helmet": 2.904,
+      "armor/leggings": 5.808,
+      "armor_durability": 30.116,
+      "armor_toughness": 3.485,
+      "attack_damage": 3.098,
+      "charging_value": 0.761,
+      "draw_speed": 0.163,
+      "durability": 542.08,
+      "enchantment_value": 16.195,
+      "harvest_speed": 7.357,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 6.6,
-      "magic_damage": 1.1,
-      "projectile_accuracy": 1.21,
-      "projectile_speed": 1.1,
-      "ranged_damage": 1.1,
-      "rarity": 22.0,
+      "magic_armor": 7.357,
+      "magic_damage": 2.633,
+      "projectile_accuracy": 1.075,
+      "projectile_speed": 1.09,
+      "ranged_damage": 1.355,
+      "rarity": 26.52,
       "traits": [
         {
           "conditions": [],
           "level": 3,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
         }
-      ],
-      "attack_speed": 0.0,
-      "attack_speed/axe": -0.11,
-      "attack_speed/hoe": 0.0,
-      "draw_speed": 0.11
+      ]
     },
     "silentgear:rod": {
       "traits": [

@@ -1,0 +1,72 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/nickel"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/nickel"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFEFE87B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.nickel"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 16.48,
+      "armor/boots": 2.472,
+      "armor/chestplate": 6.592,
+      "armor/helmet": 2.472,
+      "armor/leggings": 4.944,
+      "armor_durability": 25.636,
+      "armor_toughness": 2.966,
+      "attack_damage": 2.637,
+      "charging_value": 0.737,
+      "draw_speed": 0.146,
+      "durability": 461.44,
+      "enchantment_value": 15.274,
+      "harvest_speed": 6.262,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.262,
+      "magic_damage": 2.241,
+      "projectile_accuracy": 1.064,
+      "projectile_speed": 1.077,
+      "ranged_damage": 1.154,
+      "rarity": 24.36,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

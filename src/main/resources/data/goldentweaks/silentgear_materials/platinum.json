@@ -1,0 +1,94 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "soft_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/platinum"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/platinum"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFB3B3FF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.platinum"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.76,
+      "armor/boots": 1.914,
+      "armor/chestplate": 5.104,
+      "armor/helmet": 1.914,
+      "armor/leggings": 3.828,
+      "armor_durability": 5.671,
+      "armor_toughness": 2.297,
+      "attack_damage": 1.276,
+      "charging_value": 0.706,
+      "draw_speed": 0.22,
+      "durability": 102.08,
+      "enchantment_value": 14.083,
+      "harvest_speed": 10.846,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 4.849,
+      "magic_damage": 1.085,
+      "projectile_accuracy": 1.113,
+      "projectile_speed": 1.136,
+      "ranged_damage": 2.042,
+      "rarity": 21.57,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "draw_speed": {
+        "operation": "ADD",
+        "value": 0.31
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.0
+      },
+      "projectile_speed": {
+        "operation": "ADD",
+        "value": 0.26
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

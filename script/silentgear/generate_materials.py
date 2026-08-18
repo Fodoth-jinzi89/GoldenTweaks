@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "script" / "materials" / "output" / "materials.json"
 EXTRA_INPUT = ROOT / "游戏内的新材料.txt"
 OUTPUT = ROOT / "src" / "main" / "resources" / "data" / "goldentweaks" / "silentgear_materials" / "compat"
+OVERRIDE_OUTPUT = ROOT / "src" / "main" / "resources" / "data" / "goldentweaks" / "silentgear_materials"
 LANG_DIR = ROOT / "src" / "main" / "resources" / "assets" / "goldentweaks" / "lang"
 PRODUCTION_MODS = Path(r"E:\机械动力魔法大冒险\.minecraft\versions\hkx\mods")
 JAR_GLOB = "silent-gear-*.jar"
@@ -60,7 +61,7 @@ STRENGTH_OVERRIDES = {
     "void_stone": 0.78,
     "warped_unbalanced": 0.84,
     "warpwood": 0.58,
-    "abyssal_spellweave_ingot": 0.75,
+    "abyssal_spellweave_ingot": 0.82,
     "aether_vestiges": 0.75,
     "alternative_chromatic_compound": 0.75,
     "bedrock_dust": 0.75,
@@ -70,6 +71,150 @@ STRENGTH_OVERRIDES = {
     "ichor": 0.75,
     "ichorium_ingot": 0.75,
     "quark_ingot": 1.0,
+}
+PROFILE_TARGET_ARMOR = {
+    "abyssal_spellweave_ingot": 120.0,
+    "pyro_spellweave_ingot": 88.0,
+    "verdant_spellweave_ingot": 80.0,
+    "void_spellweave_ingot": 105.0,
+}
+
+
+def metal_design(family, levels):
+    return {
+        resource_id: {"family": family, "level": level, "material": material}
+        for level, entries in enumerate(levels, 1)
+        for resource_id, material in entries
+    }
+
+
+METAL_DESIGN = {}
+METAL_DESIGN.update(metal_design("hard_metal", [
+    [("minecraft:copper_ingot", "copper"), ("createcardboardthings:cardboard_ingot", "cardboard_ingot"),
+     ("mekanism:ingot_tin", "tin"), ("alltheores:zinc_ingot", "zinc_ingot"), ("mekanism:ingot_lead", "lead")],
+    [("minecraft:iron_ingot", "iron"), ("extendedcrafting:black_iron_ingot", "black_iron_ingot"),
+     ("alltheores:nickel_ingot", "nickel"), ("extendedcrafting:redstone_ingot", "redstone_ingot"),
+     ("extendedcrafting:ender_ingot", "ender_ingot"), ("alltheores:aluminum_ingot", "aluminum"),
+     ("neoecoae:tungsten_ingot", "tungsten")],
+    [("alltheores:constantan_ingot", "constantan"), ("createbigcannons:cast_iron_ingot", "cast_iron"),
+     ("alltheores:bronze_ingot", "bronze"), ("create:brass_ingot", "brass"),
+     ("alltheores:invar_ingot", "invar"), ("thaumcraft:thaumium_ingot", "thaumium_ingot"),
+     ("extendedae:entro_ingot", "entro_ingot")],
+    [("mekanism:ingot_refined_glowstone", "refined_glowstone"), ("silentgear:crimson_iron_ingot", "crimson_iron"),
+     ("mekanism:ingot_steel", "steel"), ("mekanism:ingot_osmium", "osmium"),
+     ("irons_spellbooks:arcane_ingot", "arcane_ingot"), ("evolvedmekanism:ingot_refined_redstone", "ingot_refined_redstone"),
+     ("taintedmagic:shadow_metal_ingot", "shadow_metal_ingot"), ("mekanism:ingot_uranium", "uranium"),
+     ("alltheores:signalum_ingot", "signalum"), ("alltheores:lumium_ingot", "lumium"),
+     ("neoecoae:aluminum_alloy_ingot", "aluminum_alloy_ingot"), ("neoecoae:black_tungsten_alloy_ingot", "black_tungsten_alloy_ingot")],
+    [("hazennstuff:dreadsteel_ingot", "dreadsteel_ingot"), ("hazennstuff:chlorophyte_ingot", "chlorophyte_ingot"),
+     ("mekanism_extras:ingot_naquadah", "ingot_naquadah"), ("irons_spellbooks:mithril_ingot", "mithril_ingot"),
+     ("hazennstuff:demonite_ingot", "demonite_ingot"), ("iss_magicfromtheeast:refined_jade_ingot", "refined_jade_ingot"),
+     ("alltheores:iridium_ingot", "iridium"), ("mekanism:ingot_refined_obsidian", "refined_obsidian"),
+     ("hazennstuff:hallowed_ingot", "hallowed_ingot"), ("northstar:titanium_ingot", "titanium"),
+     ("neoecoae:energized_superconductive_ingot", "energized_superconductive_ingot")],
+    [("silentgear:crimson_steel_ingot", "crimson_steel"), ("northstar:martian_steel_ingot", "martian_steel_ingot"),
+     ("cataclysm:cursium_ingot", "cursium_ingot"), ("cataclysm:black_steel_ingot", "black_steel_ingot"),
+     ("cataclysm:ancient_metal_ingot", "ancient_metal_ingot"), ("evolvedmekanism:ingot_better_gold", "ingot_better_gold")],
+    [("extendedcrafting:enhanced_ender_ingot", "enhanced_ender_ingot"), ("extendedcrafting:enhanced_redstone_ingot", "enhanced_redstone_ingot"),
+     ("alltheores:enderium_ingot", "enderium"), ("hazennstuff:zenalite_ingot", "zenalite_ingot"),
+     ("extendedcrafting:crystaltine_ingot", "crystaltine_ingot"), ("cataclysm:ignitium_ingot", "ignitium_ingot"),
+     ("irons_spellbooks:pyrium_ingot", "pyrium_ingot"), ("evolvedmekanism:ingot_plaslitherite", "ingot_plaslitherite")],
+    [("silentgear:tyrian_steel_ingot", "tyrian_steel"), ("hazennstuff:cosmic_gold_ingot", "cosmic_gold_ingot"),
+     ("cataclysm:witherite_ingot", "witherite_ingot"), ("avaritia:crystal_matrix_ingot", "crystal_matrix_ingot")],
+]))
+METAL_DESIGN.update(metal_design("super_metal", [
+    [("traveloptics:pyro_spellweave_ingot", "pyro_spellweave_ingot"), ("traveloptics:void_spellweave_ingot", "void_spellweave_ingot"),
+     ("traveloptics:verdant_spellweave_ingot", "verdant_spellweave_ingot"), ("traveloptics:abyssal_spellweave_ingot", "abyssal_spellweave_ingot")],
+    [("traveloptics:crimson_spellweave_ingot", "crimson_spellweave_ingot"), ("traveloptics:lightning_spellweave_ingot", "lightning_spellweave_ingot"),
+     ("traveloptics:cryo_spellweave_ingot", "cryo_spellweave_ingot")],
+    [("traveloptics:eldritch_spellweave_ingot", "eldritch_spellweave_ingot"), ("traveloptics:evokated_spellweave_ingot", "evokated_spellweave_ingot")],
+    [("traveloptics:celestial_spellweave_ingot", "celestial_spellweave_ingot")],
+    [("extendedcrafting:the_ultimate_ingot", "the_ultimate_ingot")],
+]))
+METAL_DESIGN.update(metal_design("god_metal", [
+    [("avaritia:neutron_ingot", "neutron_ingot")], [("avaritia:infinity_ingot", "infinity_ingot")],
+    [("avaritia_more_items:quark_ingot", "quark_ingot")], [("avaritia_more_items:cosmic_ingot", "cosmic_ingot")],
+]))
+METAL_DESIGN.update(metal_design("soft_metal", [
+    [("minecraft:gold_ingot", "gold"), ("alltheores:silver_ingot", "silver"),
+     ("alltheores:electrum_ingot", "electrum"), ("silentgear:blaze_gold_ingot", "blaze_gold")],
+    [("silentgear:azure_silver_ingot", "azure_silver"), ("hazennstuff:rose_gold_ingot", "rose_gold_ingot"),
+     ("alltheores:platinum_ingot", "platinum")],
+    [("silentgear:azure_electrum_ingot", "azure_electrum"), ("thaumcraft:void_metal_ingot", "void_metal_ingot")],
+    [("forbiddenmagic:hexite_ingot", "hexite_ingot")],
+]))
+COATING_DESIGN = metal_design("metal_coating", [
+    [("minecraft:gold_ingot", "gold"), ("silentgear:blaze_gold_ingot", "blaze_gold")],
+    [("minecraft:netherite_ingot", "netherite"), ("createbigcannons:nethersteel_ingot", "nethersteel_ingot"),
+     ("createvoidway:void_steel_ingot", "void_steel_ingot")],
+    [("igleelib:modium_ingot", "modium_ingot"), ("igleelib:lavium_ingot", "lavium_ingot"),
+     ("igleelib:blazum_ingot", "blazum_ingot"), ("igleelib:derium_ingot", "derium_ingot")],
+])
+for resource_id, design in COATING_DESIGN.items():
+    METAL_DESIGN.setdefault(resource_id, design)["coating_level"] = design["level"]
+
+# Semantic position inside a level. -1 leans toward the previous level's center,
+# +1 leans toward the next level's center. The generated value never crosses either center.
+METAL_SEMANTIC_BIAS = {
+    "minecraft:copper_ingot": -0.10, "createcardboardthings:cardboard_ingot": -0.75,
+    "mekanism:ingot_tin": -0.35, "alltheores:zinc_ingot": 0.10, "mekanism:ingot_lead": 0.25,
+    "minecraft:iron_ingot": 0.00, "extendedcrafting:black_iron_ingot": 0.35,
+    "alltheores:nickel_ingot": 0.15, "extendedcrafting:redstone_ingot": -0.35,
+    "extendedcrafting:ender_ingot": 0.30, "alltheores:aluminum_ingot": -0.45,
+    "neoecoae:tungsten_ingot": 0.70, "alltheores:constantan_ingot": 0.05,
+    "createbigcannons:cast_iron_ingot": -0.20, "alltheores:bronze_ingot": 0.00,
+    "create:brass_ingot": -0.35, "alltheores:invar_ingot": 0.30,
+    "thaumcraft:thaumium_ingot": 0.55, "extendedae:entro_ingot": 0.65,
+    "mekanism:ingot_refined_glowstone": -0.20, "silentgear:crimson_iron_ingot": 0.15,
+    "mekanism:ingot_steel": 0.05, "mekanism:ingot_osmium": 0.30,
+    "irons_spellbooks:arcane_ingot": 0.45, "evolvedmekanism:ingot_refined_redstone": -0.10,
+    "taintedmagic:shadow_metal_ingot": 0.35, "mekanism:ingot_uranium": 0.40,
+    "alltheores:signalum_ingot": 0.15, "alltheores:lumium_ingot": 0.10,
+    "neoecoae:aluminum_alloy_ingot": -0.05, "neoecoae:black_tungsten_alloy_ingot": 0.70,
+    "hazennstuff:dreadsteel_ingot": 0.20, "hazennstuff:chlorophyte_ingot": -0.15,
+    "mekanism_extras:ingot_naquadah": 0.45, "irons_spellbooks:mithril_ingot": 0.35,
+    "hazennstuff:demonite_ingot": 0.20, "iss_magicfromtheeast:refined_jade_ingot": -0.10,
+    "alltheores:iridium_ingot": 0.60, "mekanism:ingot_refined_obsidian": 0.55,
+    "hazennstuff:hallowed_ingot": 0.40, "northstar:titanium_ingot": 0.25,
+    "neoecoae:energized_superconductive_ingot": 0.70,
+    "silentgear:crimson_steel_ingot": -0.05, "northstar:martian_steel_ingot": 0.05,
+    "cataclysm:cursium_ingot": 0.35, "cataclysm:black_steel_ingot": 0.20,
+    "cataclysm:ancient_metal_ingot": 0.50, "evolvedmekanism:ingot_better_gold": -0.20,
+    "extendedcrafting:enhanced_ender_ingot": 0.25, "extendedcrafting:enhanced_redstone_ingot": -0.20,
+    "alltheores:enderium_ingot": 0.40, "hazennstuff:zenalite_ingot": 0.30,
+    "extendedcrafting:crystaltine_ingot": 0.45, "cataclysm:ignitium_ingot": 0.65,
+    "irons_spellbooks:pyrium_ingot": 0.50, "evolvedmekanism:ingot_plaslitherite": 0.70,
+    "silentgear:tyrian_steel_ingot": -0.10, "hazennstuff:cosmic_gold_ingot": 0.45,
+    "cataclysm:witherite_ingot": 0.30, "avaritia:crystal_matrix_ingot": 0.70,
+    "traveloptics:pyro_spellweave_ingot": 0.10, "traveloptics:void_spellweave_ingot": 0.35,
+    "traveloptics:verdant_spellweave_ingot": -0.25, "traveloptics:abyssal_spellweave_ingot": 0.55,
+    "traveloptics:crimson_spellweave_ingot": 0.10, "traveloptics:lightning_spellweave_ingot": 0.45,
+    "traveloptics:cryo_spellweave_ingot": -0.20, "traveloptics:eldritch_spellweave_ingot": 0.55,
+    "traveloptics:evokated_spellweave_ingot": 0.15, "traveloptics:celestial_spellweave_ingot": 0.60,
+    "silentgear:azure_silver_ingot": -0.30, "hazennstuff:rose_gold_ingot": -0.10,
+    "alltheores:platinum_ingot": 0.55, "silentgear:azure_electrum_ingot": -0.20,
+    "thaumcraft:void_metal_ingot": 0.60,
+}
+COATING_SEMANTIC_BIAS = {
+    "minecraft:netherite_ingot": 0.15, "createbigcannons:nethersteel_ingot": -0.25,
+    "createvoidway:void_steel_ingot": 0.55, "igleelib:modium_ingot": -0.35,
+    "igleelib:lavium_ingot": 0.10, "igleelib:blazum_ingot": 0.35, "igleelib:derium_ingot": 0.65,
+}
+
+BUILTIN_PATHS = {
+    "minecraft:copper_ingot": "copper", "mekanism:ingot_tin": "tin", "mekanism:ingot_lead": "lead",
+    "minecraft:iron_ingot": "iron", "alltheores:nickel_ingot": "nickel", "alltheores:aluminum_ingot": "aluminum",
+    "alltheores:bronze_ingot": "bronze", "create:brass_ingot": "brass", "alltheores:invar_ingot": "invar",
+    "mekanism:ingot_refined_glowstone": "refined_glowstone", "silentgear:crimson_iron_ingot": "crimson_iron",
+    "mekanism:ingot_steel": "steel", "mekanism:ingot_osmium": "osmium", "mekanism:ingot_uranium": "uranium",
+    "alltheores:signalum_ingot": "signalum", "alltheores:lumium_ingot": "lumium",
+    "mekanism:ingot_refined_obsidian": "refined_obsidian", "alltheores:iridium_ingot": "iridium",
+    "northstar:titanium_ingot": "titanium", "silentgear:crimson_steel_ingot": "crimson_steel",
+    "alltheores:enderium_ingot": "enderium", "silentgear:tyrian_steel_ingot": "tyrian_steel",
+    "minecraft:gold_ingot": "gold", "alltheores:silver_ingot": "silver", "alltheores:electrum_ingot": "electrum",
+    "silentgear:blaze_gold_ingot": "blaze_gold", "silentgear:azure_silver_ingot": "azure_silver",
+    "alltheores:platinum_ingot": "platinum", "silentgear:azure_electrum_ingot": "azure_electrum",
+    "minecraft:netherite_ingot": "netherite",
 }
 PRIMAL_SHARDS = {"air", "earth", "entropy", "fire", "order", "water"}
 SINS = {"envy", "gluttony", "greed", "lust", "pride", "sloth", "wrath"}
@@ -238,6 +383,10 @@ EXTRA_CATEGORY_OVERRIDES = {
     "jingxu_youlan": "有机物",
     "scarlet_zhuhua": "有机物",
     "yue_linglan": "有机物",
+    "abyssal_spellweave_ingot": "金属",
+    "pyro_spellweave_ingot": "金属",
+    "verdant_spellweave_ingot": "金属",
+    "void_spellweave_ingot": "金属",
 }
 COATING_MATERIALS = {
     "honey_butter", "super_butter", "blazum_ingot", "derium_ingot", "lavium_ingot",
@@ -392,19 +541,21 @@ def builtin_materials_and_bounds(jar):
     material_names = set()
     values = {}
     profiles = {}
+    material_data = {}
     with zipfile.ZipFile(jar) as archive:
         paths = [name for name in archive.namelist() if name.startswith("data/silentgear/silentgear_materials/") and name.endswith(".json")]
         for path in paths:
             relative = path.removeprefix("data/silentgear/silentgear_materials/").removesuffix(".json")
             material_names.update((relative, relative.rsplit("/", 1)[-1]))
             data = json.loads(archive.read(path))
+            material_data[relative] = data
             properties = data.get("properties", {}).get("silentgear:main", {})
             profiles[relative.rsplit("/", 1)[-1]] = properties
             for key, value in properties.items():
                 if key not in {"traits", "harvest_tier", "additive"} and isinstance(value, (int, float)) and value > 0:
                     values.setdefault(key, []).append(value)
     bounds = {key: (min(nums) * 0.5, max(nums) * 10.0) for key, nums in values.items() if nums}
-    return material_names, bounds, profiles
+    return material_names, bounds, profiles, material_data
 
 
 def existing_materials():
@@ -532,6 +683,8 @@ def traits_for(category, material, resource_id, tier):
     }[category]
     text = f"{material}_{resource_id}".lower()
     selected = []
+    if material.endswith("spellweave_ingot"):
+        selected.append("soft")
     for word, special in SPECIAL_TRAITS.items():
         if word in text and special not in selected:
             selected.append(special)
@@ -714,6 +867,103 @@ def coating_properties(tier, traits):
     }
 
 
+def metal_level_centers(family):
+    return {
+        "hard_metal": [12, 16, 20, 25, 32, 41, 53, 68],
+        "super_metal": [82, 105, 134, 171, 218],
+        "god_metal": [300, 460, 700, 1000],
+        "soft_metal": [8, 11, 15, 20],
+    }[family]
+
+
+def semantic_level_value(centers, level, bias):
+    center = centers[level - 1]
+    if bias < 0 and level > 1:
+        return round(center + (center - centers[level - 2]) * bias * 0.8, 3)
+    if bias > 0 and level < len(centers):
+        return round(center + (centers[level] - center) * bias * 0.8, 3)
+    return center
+
+
+def designed_main_properties(family, level, traits, semantic_bias=0.0):
+    armor = semantic_level_value(metal_level_centers(family), level, semantic_bias)
+    if family == "hard_metal":
+        durability, melee, tools, ranged = armor * 28, armor * 0.16, armor * 0.38, armor * 0.07
+    elif family == "super_metal":
+        durability, melee, tools, ranged = armor * 34, armor * 0.19, armor * 0.48, armor * 0.13
+    elif family == "god_metal":
+        durability, melee, tools, ranged = armor * 42, armor * 0.23, armor * 0.60, armor * 0.18
+    else:
+        durability, melee, tools, ranged = armor * 8, armor * 0.10, armor * 0.85, armor * 0.16
+    harvest = min(4, max(1, level if family == "hard_metal" else level + 3 if family != "soft_metal" else level))
+    tier_name = ("stone", "iron", "diamond", "netherite")[harvest - 1]
+    return {
+        "armor": armor, "armor/boots": round(armor * 0.15, 3), "armor/chestplate": round(armor * 0.4, 3),
+        "armor/helmet": round(armor * 0.15, 3), "armor/leggings": round(armor * 0.3, 3),
+        "armor_durability": round(durability / 18, 3), "armor_toughness": round(armor * 0.18, 3),
+        "attack_damage": round(melee, 3), "charging_value": round(0.6 + armor / 120, 3),
+        "draw_speed": round(0.05 + ranged / 12, 3), "durability": round(durability, 3),
+        "enchantment_value": round(10 + armor * 0.32, 3), "harvest_speed": round(tools, 3),
+        "harvest_tier": {"incorrect_blocks_for_tool": f"minecraft:incorrect_for_{tier_name}_tool", "level_hint": str(harvest), "name": tier_name},
+        "magic_armor": round(armor * 0.38, 3), "magic_damage": round(melee * 0.85, 3),
+        "projectile_accuracy": round(1.0 + ranged / 18, 3), "projectile_speed": round(1.0 + ranged / 15, 3),
+        "ranged_damage": round(ranged, 3), "rarity": round(12 + armor * 0.75, 3), "traits": traits,
+    }
+
+
+def designed_traits(family, material, resource_id, level):
+    selected = []
+    text = f"{material}_{resource_id}".lower()
+    for word, special in SPECIAL_TRAITS.items():
+        if word in text and special not in selected:
+            selected.append(special)
+    if family == "soft_metal":
+        selected.extend(name for name in ("soft", "malleable") if name not in selected)
+    elif family == "super_metal" and material.endswith("spellweave_ingot"):
+        selected.extend(name for name in ("soft", "malleable") if name not in selected)
+    else:
+        selected.append("malleable")
+    return [trait(name, max(1, min(5, level))) for name in selected[:2]]
+
+
+def apply_metal_design(data, entry):
+    design = METAL_DESIGN.get(entry["id"])
+    if design is None:
+        return
+    family, level = design["family"], design["level"]
+    if family == "metal_coating":
+        data["crafting"]["categories"] = ["metal_coating", "advanced"]
+    traits = designed_traits(family, entry["material"], entry["id"], level)
+    if family != "metal_coating":
+        data["crafting"]["categories"] = [family, "endgame" if family in {"super_metal", "god_metal"} else "advanced"]
+        semantic_bias = METAL_SEMANTIC_BIAS.get(entry["id"], 0.0)
+        data["properties"] = {"silentgear:main": designed_main_properties(family, level, traits, semantic_bias)}
+        rod_level = max(1, min(5, level))
+        if family == "soft_metal":
+            data["properties"]["silentgear:rod"] = {
+                "draw_speed": {"operation": "ADD", "value": round(0.15 + level * 0.08, 3)},
+                "harvest_speed": {"operation": "ADD", "value": round(1.5 + level * 0.75, 3)},
+                "projectile_speed": {"operation": "ADD", "value": round(0.1 + level * 0.08, 3)},
+                "traits": traits,
+            }
+        else:
+            data["properties"]["silentgear:rod"] = {"traits": [trait("malleable", rod_level)]}
+        if family == "super_metal" and entry["material"].endswith("spellweave_ingot"):
+            data["properties"].update({
+                "silentgear:binding": {"repair_efficiency": {"operation": "MULTIPLY_BASE", "value": round(0.2 + level * 0.06, 3)}, "traits": traits},
+                "silentgear:cord": {"draw_speed": {"operation": "MULTIPLY_BASE", "value": round(0.18 + level * 0.05, 3)}, "traits": traits},
+                "silentgear:fletching": {"projectile_accuracy": {"operation": "MULTIPLY_BASE", "value": round(0.18 + level * 0.05, 3)}, "traits": traits},
+                "silentgear:lining": {"armor_durability": {"operation": "MULTIPLY_BASE", "value": round(0.2 + level * 0.06, 3)}, "traits": traits},
+            })
+    coating_level = design.get("coating_level", level if family == "metal_coating" else None)
+    if coating_level is not None:
+        coating_traits = designed_traits("soft_metal" if family == "soft_metal" else "hard_metal", entry["material"], entry["id"], coating_level)
+        coating_centers = [0.36, 0.54, 0.72, 0.90]
+        coating_bias = COATING_SEMANTIC_BIAS.get(entry["id"], 0.0) if coating_level >= 2 else 0.0
+        coating_tier = semantic_level_value(coating_centers, coating_level, coating_bias)
+        data["properties"]["silentgear:coating"] = coating_properties(coating_tier, coating_traits)
+
+
 def apply_part_override(data, material, tier, traits):
     if material in COATING_MATERIALS:
         data["crafting"]["categories"] = ["coating", data["crafting"]["categories"][-1]]
@@ -748,6 +998,17 @@ def apply_mekanism_alloy_profile(data, material, profiles):
         for key, value in profiles["iron"].items():
             if key != "traits":
                 main[key] = multiply_numbers(value, factor)
+
+
+def apply_target_armor(data, material, profiles):
+    target = PROFILE_TARGET_ARMOR.get(material)
+    main = data["properties"].get("silentgear:main")
+    if target is None or main is None:
+        return
+    factor = target / main["armor"]
+    for key, value in list(main.items()):
+        if key not in {"traits", "harvest_tier"}:
+            main[key] = multiply_numbers(value, factor)
 
 
 def make_material(category, entry, bounds, profiles, resolver):
@@ -809,18 +1070,20 @@ def make_material(category, entry, bounds, profiles, resolver):
     apply_mekanism_alloy_profile(data, material, profiles)
     apply_part_override(data, material, tier, traits)
     apply_annotation_overrides(data, material, profiles)
+    apply_target_armor(data, material, profiles)
     if material == "quark_ingot":
         factor = 1000.0 / data["properties"]["silentgear:main"]["armor"]
         for properties in data["properties"].values():
             for key, value in list(properties.items()):
                 if key not in {"traits", "harvest_tier"}:
                     properties[key] = multiply_numbers(value, factor)
+    apply_metal_design(data, entry)
     return data, tier
 
 
 def main():
     jar = find_jar()
-    builtins, bounds, profiles = builtin_materials_and_bounds(jar)
+    builtins, bounds, profiles, builtin_data = builtin_materials_and_bounds(jar)
     resolver = AssetResolver()
     existing = existing_materials()
     source = json.loads(INPUT.read_text(encoding="utf-8"))
@@ -841,8 +1104,21 @@ def main():
                 continue
             candidates.append((category, entry))
     for category, entry in extra_entries():
-        if entry["material"] not in builtins and entry["material"] not in existing and valid(category, entry):
+        design = METAL_DESIGN.get(entry["id"])
+        if design is not None:
+            entry["material"] = design["material"]
+            category = "金属"
+        if design is not None or entry["material"] not in builtins and entry["material"] not in existing and valid(category, entry):
             candidates.append((category, entry))
+    candidate_ids = {entry["id"] for _, entry in candidates}
+    for resource_id, design in METAL_DESIGN.items():
+        if resource_id not in candidate_ids:
+            candidates.append(("金属", {
+                "id": resource_id,
+                "material": design["material"],
+                "name": design["material"].replace("_", " ").title(),
+                "extra": True,
+            }))
 
     candidates.sort(key=lambda item: (not item[1].get("extra", False), CATEGORY_ORDER[item[0]], item[1]["material"], item[1]["id"]))
     chosen = []
@@ -858,14 +1134,33 @@ def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
     expected = set()
     tiers = []
+    designed_ids = set()
+    designed_values = {}
     for category, entry in chosen:
         namespace = entry["id"].split(":", 1)[0]
-        path = OUTPUT / namespace / f"{entry['material']}.json"
+        builtin_path = BUILTIN_PATHS.get(entry["id"])
+        if builtin_path not in builtin_data:
+            builtin_path = None
+        path = OVERRIDE_OUTPUT / f"{builtin_path}.json" if builtin_path else OUTPUT / namespace / f"{entry['material']}.json"
         expected.add(path.resolve())
-        data, tier = make_material(category, entry, bounds, profiles, resolver)
+        if builtin_path:
+            data = json.loads(json.dumps(builtin_data[builtin_path]))
+            apply_metal_design(data, entry)
+            tier = entry["id"] in METAL_DESIGN and METAL_DESIGN[entry["id"]]["level"] / 8 or 0.5
+        else:
+            data, tier = make_material(category, entry, bounds, profiles, resolver)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         tiers.append((tier, category, entry["material"], entry["id"]))
+        design = METAL_DESIGN.get(entry["id"])
+        if design is not None:
+            designed_ids.add(entry["id"])
+            main = data["properties"].get("silentgear:main")
+            if main is not None and design["family"] != "metal_coating":
+                centers = metal_level_centers(design["family"])
+                lower = centers[design["level"] - 2] if design["level"] > 1 else centers[0]
+                upper = centers[design["level"]] if design["level"] < len(centers) else centers[-1]
+                designed_values[entry["id"]] = (lower, main["armor"], upper)
 
     for path in OUTPUT.rglob("*.json"):
         if path.resolve() not in expected:
@@ -873,6 +1168,8 @@ def main():
 
     assert len(expected) == len(chosen)
     assert all(json.loads(path.read_text(encoding="utf-8"))["type"] == "silentgear:simple" for path in expected)
+    assert designed_ids == set(METAL_DESIGN)
+    assert all(lower <= value <= upper for lower, value, upper in designed_values.values())
     generated_lang = write_generated_lang([entry for _, entry in chosen], resolver)
     resolver.close()
     print(f"Silent Gear JAR: {jar.name}")

@@ -1,0 +1,72 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/invar"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/invar"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFC2CBB8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.invar"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 21.2,
+      "armor/boots": 3.18,
+      "armor/chestplate": 8.48,
+      "armor/helmet": 3.18,
+      "armor/leggings": 6.36,
+      "armor_durability": 32.978,
+      "armor_toughness": 3.816,
+      "attack_damage": 3.392,
+      "charging_value": 0.777,
+      "draw_speed": 0.174,
+      "durability": 593.6,
+      "enchantment_value": 16.784,
+      "harvest_speed": 8.056,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 8.056,
+      "magic_damage": 2.883,
+      "projectile_accuracy": 1.082,
+      "projectile_speed": 1.099,
+      "ranged_damage": 1.484,
+      "rarity": 27.9,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

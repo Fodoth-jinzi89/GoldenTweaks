@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "hard_metal",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -23,39 +23,35 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 13.859,
-      "armor/boots": 2.079,
-      "armor/chestplate": 5.544,
-      "armor/helmet": 2.079,
-      "armor/leggings": 4.157,
-      "armor_durability": 21.488,
-      "armor_toughness": 4.577,
-      "attack_damage": 3.473,
-      "charging_value": 1.258,
-      "durability": 618.899,
-      "enchantment_value": 10.44,
-      "harvest_speed": 8.641,
+      "armor": 20.2,
+      "armor/boots": 3.03,
+      "armor/chestplate": 8.08,
+      "armor/helmet": 3.03,
+      "armor/leggings": 6.06,
+      "armor_durability": 31.422,
+      "armor_toughness": 3.636,
+      "attack_damage": 3.232,
+      "charging_value": 0.768,
+      "draw_speed": 0.168,
+      "durability": 565.6,
+      "enchantment_value": 16.464,
+      "harvest_speed": 7.676,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 6.739,
-      "magic_damage": 3.673,
-      "projectile_accuracy": 1.434,
-      "projectile_speed": 1.735,
-      "ranged_damage": 1.044,
-      "rarity": 19.027,
+      "magic_armor": 7.676,
+      "magic_damage": 2.747,
+      "projectile_accuracy": 1.079,
+      "projectile_speed": 1.094,
+      "ranged_damage": 1.414,
+      "rarity": 27.15,
       "traits": [
         {
           "conditions": [],
           "level": 3,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
         }
       ]
     },

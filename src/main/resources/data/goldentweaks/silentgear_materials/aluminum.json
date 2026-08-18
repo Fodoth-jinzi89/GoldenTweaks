@@ -1,0 +1,72 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/aluminum"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/aluminum"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFBFD4DE",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.aluminum"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 14.56,
+      "armor/boots": 2.184,
+      "armor/chestplate": 5.824,
+      "armor/helmet": 2.184,
+      "armor/leggings": 4.368,
+      "armor_durability": 22.649,
+      "armor_toughness": 2.621,
+      "attack_damage": 2.33,
+      "charging_value": 0.721,
+      "draw_speed": 0.135,
+      "durability": 407.68,
+      "enchantment_value": 14.659,
+      "harvest_speed": 5.533,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 5.533,
+      "magic_damage": 1.98,
+      "projectile_accuracy": 1.057,
+      "projectile_speed": 1.068,
+      "ranged_damage": 1.019,
+      "rarity": 22.92,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

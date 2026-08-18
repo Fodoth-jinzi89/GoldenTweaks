@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "hard_metal",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -23,39 +23,35 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 66.504,
-      "armor/boots": 9.978,
-      "armor/chestplate": 26.604,
-      "armor/helmet": 9.978,
-      "armor/leggings": 19.95,
-      "armor_durability": 103.104,
-      "armor_toughness": 21.966,
-      "attack_damage": 16.662,
-      "charging_value": 6.036,
-      "durability": 2969.514,
-      "enchantment_value": 50.094,
-      "harvest_speed": 41.46,
+      "armor": 44.36,
+      "armor/boots": 6.654,
+      "armor/chestplate": 17.744,
+      "armor/helmet": 6.654,
+      "armor/leggings": 13.308,
+      "armor_durability": 69.004,
+      "armor_toughness": 7.985,
+      "attack_damage": 7.098,
+      "charging_value": 0.97,
+      "draw_speed": 0.309,
+      "durability": 1242.08,
+      "enchantment_value": 24.195,
+      "harvest_speed": 16.857,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
       },
-      "magic_armor": 32.334,
-      "magic_damage": 17.622,
-      "projectile_accuracy": 6.882,
-      "projectile_speed": 8.328,
-      "ranged_damage": 5.01,
-      "rarity": 91.296,
+      "magic_armor": 16.857,
+      "magic_damage": 6.033,
+      "projectile_accuracy": 1.173,
+      "projectile_speed": 1.207,
+      "ranged_damage": 3.105,
+      "rarity": 45.27,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
         }
       ]
     },
@@ -63,7 +59,7 @@
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:malleable"
         }
       ]

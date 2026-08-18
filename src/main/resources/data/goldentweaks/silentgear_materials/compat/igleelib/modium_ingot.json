@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "coating",
+      "metal_coating",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -25,42 +25,37 @@
     "silentgear:coating": {
       "armor_durability": {
         "operation": "MULTIPLY_TOTAL",
-        "value": 0.388
+        "value": 0.228
       },
       "armor_toughness": {
         "operation": "ADD",
-        "value": 7.036
+        "value": 4.185
       },
       "attack_damage": {
         "operation": "MULTIPLY_TOTAL",
-        "value": 0.484
+        "value": 0.284
       },
       "durability": {
         "operation": "MULTIPLY_TOTAL",
-        "value": 0.512
+        "value": 0.294
       },
       "harvest_speed": {
         "operation": "MULTIPLY_TOTAL",
-        "value": 0.246
+        "value": 0.144
       },
       "magic_damage": {
         "operation": "MULTIPLY_TOTAL",
-        "value": 0.484
+        "value": 0.284
       },
       "ranged_damage": {
         "operation": "MULTIPLY_TOTAL",
-        "value": 0.484
+        "value": 0.284
       },
       "traits": [
         {
           "conditions": [],
           "level": 3,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
         }
       ]
     }

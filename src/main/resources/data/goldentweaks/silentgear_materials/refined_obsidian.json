@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/refined_obsidian"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/refined_obsidian"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF665482",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.refined_obsidian"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 35.96,
+      "armor/boots": 5.394,
+      "armor/chestplate": 14.384,
+      "armor/helmet": 5.394,
+      "armor/leggings": 10.788,
+      "armor_durability": 55.938,
+      "armor_toughness": 6.473,
+      "attack_damage": 5.754,
+      "charging_value": 0.9,
+      "draw_speed": 0.26,
+      "durability": 1006.88,
+      "enchantment_value": 21.507,
+      "harvest_speed": 13.665,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 13.665,
+      "magic_damage": 4.891,
+      "projectile_accuracy": 1.14,
+      "projectile_speed": 1.168,
+      "ranged_damage": 2.517,
+      "rarity": 38.97,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

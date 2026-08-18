@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
-      "endgame"
+      "hard_metal",
+      "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -23,29 +23,30 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 27.188,
-      "armor/boots": 4.079,
-      "armor/chestplate": 10.875,
-      "armor/helmet": 4.079,
-      "armor/leggings": 8.156,
-      "armor_durability": 69.49,
-      "armor_toughness": 13.467,
-      "attack_damage": 8.672,
-      "charging_value": 1.001,
-      "durability": 2835.177,
-      "enchantment_value": 33.194,
-      "harvest_speed": 24.562,
+      "armor": 26.96,
+      "armor/boots": 4.044,
+      "armor/chestplate": 10.784,
+      "armor/helmet": 4.044,
+      "armor/leggings": 8.088,
+      "armor_durability": 41.938,
+      "armor_toughness": 4.853,
+      "attack_damage": 4.314,
+      "charging_value": 0.825,
+      "draw_speed": 0.207,
+      "durability": 754.88,
+      "enchantment_value": 18.627,
+      "harvest_speed": 10.245,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
       },
-      "magic_armor": 16.531,
-      "magic_damage": 9.482,
-      "projectile_accuracy": 1.036,
-      "projectile_speed": 1.347,
-      "ranged_damage": 3.32,
-      "rarity": 86.326,
+      "magic_armor": 10.245,
+      "magic_damage": 3.667,
+      "projectile_accuracy": 1.105,
+      "projectile_speed": 1.126,
+      "ranged_damage": 1.887,
+      "rarity": 32.22,
       "traits": [
         {
           "conditions": [],
@@ -56,11 +57,6 @@
           "conditions": [],
           "level": 4,
           "trait": "silentgear:venom"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:malleable"
         }
       ]
     },

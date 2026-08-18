@@ -4,7 +4,7 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
+      "soft_metal",
       "advanced"
     ],
     "gear_type_blacklist": [],
@@ -23,29 +23,30 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 19.928,
-      "armor/boots": 2.989,
-      "armor/chestplate": 7.971,
-      "armor/helmet": 2.989,
-      "armor/leggings": 5.978,
-      "armor_durability": 39.57,
-      "armor_toughness": 8.044,
-      "attack_damage": 5.627,
-      "charging_value": 1.169,
-      "durability": 1354.078,
-      "enchantment_value": 19.064,
-      "harvest_speed": 14.928,
+      "armor": 20,
+      "armor/boots": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 8.889,
+      "armor_toughness": 3.6,
+      "attack_damage": 2.0,
+      "charging_value": 0.767,
+      "draw_speed": 0.317,
+      "durability": 160,
+      "enchantment_value": 16.4,
+      "harvest_speed": 17.0,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
       },
-      "magic_armor": 10.823,
-      "magic_damage": 6.05,
-      "projectile_accuracy": 1.263,
-      "projectile_speed": 1.59,
-      "ranged_damage": 1.906,
-      "rarity": 41.431,
+      "magic_armor": 7.6,
+      "magic_damage": 1.7,
+      "projectile_accuracy": 1.178,
+      "projectile_speed": 1.213,
+      "ranged_damage": 3.2,
+      "rarity": 27.0,
       "traits": [
         {
           "conditions": [],
@@ -55,21 +56,33 @@
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:hard"
+          "trait": "silentgear:soft"
         }
       ]
     },
     "silentgear:rod": {
+      "draw_speed": {
+        "operation": "ADD",
+        "value": 0.47
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 4.5
+      },
+      "projectile_speed": {
+        "operation": "ADD",
+        "value": 0.42
+      },
       "traits": [
         {
           "conditions": [],
           "level": 4,
-          "trait": "silentgear:malleable"
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
         }
       ]
     }
