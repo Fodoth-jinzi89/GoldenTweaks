@@ -1,5 +1,7 @@
 import json
+import argparse
 from decimal import Decimal, getcontext
+from pathlib import Path
 
 # 提高精度，避免累计误差
 getcontext().prec = 28
@@ -17,7 +19,7 @@ RARITY_MAP = {
 # =========================
 # 安全计算（使用 Decimal）
 # =========================
-def compute_value(unit_worth: int, min_v: int, max_v: int) -> Decimal:
+def compute_value(unit_worth: Decimal, min_v: int, max_v: int) -> Decimal:
     return Decimal(unit_worth) * Decimal("0.5") * Decimal(min_v + max_v)
 
 
@@ -50,7 +52,7 @@ def parse_raw_line(line: str):
         "key": item_id.split(":")[1],
         "min": int(parts[2]),
         "max": int(parts[3]),
-        "unitWorth": int(parts[4]),
+        "unitWorth": Decimal(parts[4]),
         "rarity_code": parts[6] if len(parts) == 7 else None
     }
 
@@ -84,9 +86,14 @@ def process(obj):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", nargs="?", default="input.json")
+    parser.add_argument("output", nargs="?", default="output.json")
+    args = parser.parse_args()
+
     raw_items = []
 
-    with open("input.json", "r", encoding="utf-8") as f:
+    with open(args.input, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if not line or line.startswith("#"):
@@ -145,7 +152,9 @@ def main():
     # =========================
     data = process(data)
 
-    with open("output.json", "w", encoding="utf-8") as f:
+    output = Path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("w", encoding="utf-8") as f:
         json.dump(
             data,
             f,
@@ -153,7 +162,7 @@ def main():
             indent=4
         )
 
-    print("done -> output.json")
+    print(f"done -> {output}")
 
 
 if __name__ == "__main__":

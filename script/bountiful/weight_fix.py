@@ -1,4 +1,5 @@
 import json
+import argparse
 from pathlib import Path
 
 def transform_file(path: Path):
@@ -19,7 +20,11 @@ def transform_file(path: Path):
         print(f"updated: {path.name}")
 
 def main():
-    for file in Path(".").glob("*.json"):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("files", nargs="+", type=Path)
+    args = parser.parse_args()
+
+    for file in args.files:
         if file.is_file():
             try:
                 transform_file(file)

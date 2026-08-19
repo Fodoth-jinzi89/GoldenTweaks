@@ -1,0 +1,4236 @@
+{
+    "content": {
+        "void_axe": {
+            "type": "item",
+            "content": "thaumcraft:void_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "elemental_axe": {
+            "type": "item",
+            "content": "thaumcraft:elemental_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "elemental_shovel": {
+            "type": "item",
+            "content": "thaumcraft:elemental_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "thaumium_shovel": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "void_shovel": {
+            "type": "item",
+            "content": "thaumcraft:void_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "crimson_blade": {
+            "type": "item",
+            "content": "thaumcraft:crimson_blade",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "elemental_sword": {
+            "type": "item",
+            "content": "thaumcraft:elemental_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "hierophant_sacred_sword": {
+            "type": "item",
+            "content": "thaumcraft:hierophant_sacred_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "thaumium_sword": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "boots_traveller": {
+            "type": "item",
+            "content": "thaumcraft:boots_traveller",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_boots": {
+            "type": "item",
+            "content": "thaumcraft:cultist_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_boots": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_robe_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:void_robe_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "hover_harness": {
+            "type": "item",
+            "content": "thaumcraft:hover_harness",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_robe_leggings": {
+            "type": "item",
+            "content": "thaumcraft:void_robe_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_plate_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:cultist_plate_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_robe_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:cultist_robe_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "goggles_revealing": {
+            "type": "item",
+            "content": "thaumcraft:goggles_revealing",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_robe_hood": {
+            "type": "item",
+            "content": "thaumcraft:void_robe_hood",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_plate_leggings": {
+            "type": "item",
+            "content": "thaumcraft:cultist_plate_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_robe_leggings": {
+            "type": "item",
+            "content": "thaumcraft:cultist_robe_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_leggings": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_leggings": {
+            "type": "item",
+            "content": "thaumcraft:void_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_plate_helm": {
+            "type": "item",
+            "content": "thaumcraft:cultist_plate_helm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_robe_hood": {
+            "type": "item",
+            "content": "thaumcraft:cultist_robe_hood",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_helm": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_helm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_helm": {
+            "type": "item",
+            "content": "thaumcraft:void_helm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_ingot": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "void_metal_ingot": {
+            "type": "item",
+            "content": "thaumcraft:void_metal_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_portablehole": {
+            "type": "item",
+            "content": "thaumcraft:focus_portablehole",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_primal": {
+            "type": "item",
+            "content": "thaumcraft:focus_primal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_shock": {
+            "type": "item",
+            "content": "thaumcraft:focus_shock",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_trade": {
+            "type": "item",
+            "content": "thaumcraft:focus_trade",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_warding": {
+            "type": "item",
+            "content": "thaumcraft:focus_warding",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "hand_mirror": {
+            "type": "item",
+            "content": "thaumcraft:hand_mirror",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "jar_label": {
+            "type": "item",
+            "content": "thaumcraft:jar_label",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "knowledge_fragment": {
+            "type": "item",
+            "content": "thaumcraft:knowledge_fragment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "magic_tallow": {
+            "type": "item",
+            "content": "thaumcraft:magic_tallow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "mirrored_glass": {
+            "type": "item",
+            "content": "thaumcraft:mirrored_glass",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "nitor": {
+            "type": "item",
+            "content": "thaumcraft:nitor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "primal_charm": {
+            "type": "item",
+            "content": "thaumcraft:primal_charm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "quicksilver": {
+            "type": "item",
+            "content": "thaumcraft:quicksilver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "scribing_tools": {
+            "type": "item",
+            "content": "thaumcraft:scribing_tools",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_blaze": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_blaze",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_bone": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_greatwood": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_greatwood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_ice": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_ice",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_obsidian": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_obsidian",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_primal": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_primal",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_quartz": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_quartz",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_reed": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_reed",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "staff_rod_silverwood": {
+            "type": "item",
+            "content": "thaumcraft:staff_rod_silverwood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "taint_tendril": {
+            "type": "item",
+            "content": "thaumcraft:taint_tendril",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "tainted_goo": {
+            "type": "item",
+            "content": "thaumcraft:tainted_goo",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "thaumium_block": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "thaumometer": {
+            "type": "item",
+            "content": "thaumcraft:thaumometer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "void_seed": {
+            "type": "item",
+            "content": "thaumcraft:void_seed",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_copper": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_copper",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_gold": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_gold",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_iron": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_iron",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_silver": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_silver",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_silver_inert": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_silver_inert",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_thaumium": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_thaumium",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_thaumium_inert": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_thaumium_inert",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_cap_void_inert": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_void_inert",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_blaze": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_blaze",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_bone": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_bone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_greatwood": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_greatwood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_ice": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_ice",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_obsidian": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_obsidian",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_quartz": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_quartz",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_reed": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_reed",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wand_rod_silverwood": {
+            "type": "item",
+            "content": "thaumcraft:wand_rod_silverwood",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "void_sword": {
+            "type": "item",
+            "content": "thaumcraft:void_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "elemental_hoe": {
+            "type": "item",
+            "content": "thaumcraft:elemental_hoe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "thaumium_hoe": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_hoe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "void_hoe": {
+            "type": "item",
+            "content": "thaumcraft:void_hoe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "elemental_pickaxe": {
+            "type": "item",
+            "content": "thaumcraft:elemental_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "thaumium_pickaxe": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "void_pickaxe": {
+            "type": "item",
+            "content": "thaumcraft:void_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "thaumium_axe": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "amber": {
+            "type": "item",
+            "content": "thaumcraft:amber",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "enchanted_fabric": {
+            "type": "item",
+            "content": "thaumcraft:enchanted_fabric",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "flux_scrubber": {
+            "type": "item",
+            "content": "thaumcraft:flux_scrubber",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "focus_excavation": {
+            "type": "item",
+            "content": "thaumcraft:focus_excavation",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_fire": {
+            "type": "item",
+            "content": "thaumcraft:focus_fire",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_frost": {
+            "type": "item",
+            "content": "thaumcraft:focus_frost",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_hellbat": {
+            "type": "item",
+            "content": "thaumcraft:focus_hellbat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_pech": {
+            "type": "item",
+            "content": "thaumcraft:focus_pech",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "wand_cap_void": {
+            "type": "item",
+            "content": "thaumcraft:wand_cap_void",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "thaumaturge_boots": {
+            "type": "item",
+            "content": "thaumcraft:thaumaturge_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_amulet_emergency": {
+            "type": "item",
+            "content": "thaumcraft:runic_amulet_emergency",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "vis_amulet": {
+            "type": "item",
+            "content": "thaumcraft:vis_amulet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "vis_amulet_lesser": {
+            "type": "item",
+            "content": "thaumcraft:vis_amulet_lesser",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "bauble_ring": {
+            "type": "item",
+            "content": "thaumcraft:bauble_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "bauble_ring_iron": {
+            "type": "item",
+            "content": "thaumcraft:bauble_ring_iron",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_ring": {
+            "type": "item",
+            "content": "thaumcraft:runic_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_ring_charged": {
+            "type": "item",
+            "content": "thaumcraft:runic_ring_charged",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_ring_lesser": {
+            "type": "item",
+            "content": "thaumcraft:runic_ring_lesser",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_ring_regen": {
+            "type": "item",
+            "content": "thaumcraft:runic_ring_regen",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "air_arrow": {
+            "type": "item",
+            "content": "thaumcraft:air_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "air_infused_stone": {
+            "type": "item",
+            "content": "thaumcraft:air_infused_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "amber_block": {
+            "type": "item",
+            "content": "thaumcraft:amber_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "arcane_stone": {
+            "type": "item",
+            "content": "thaumcraft:arcane_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "arcane_stone_bricks": {
+            "type": "item",
+            "content": "thaumcraft:arcane_stone_bricks",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "bath_salts": {
+            "type": "item",
+            "content": "thaumcraft:bath_salts",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "bottled_taint": {
+            "type": "item",
+            "content": "thaumcraft:bottled_taint",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "bucket_death": {
+            "type": "item",
+            "content": "thaumcraft:bucket_death",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "bucket_pure": {
+            "type": "item",
+            "content": "thaumcraft:bucket_pure",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "crimson_rites": {
+            "type": "item",
+            "content": "thaumcraft:crimson_rites",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "earth_arrow": {
+            "type": "item",
+            "content": "thaumcraft:earth_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "earth_infused_stone": {
+            "type": "item",
+            "content": "thaumcraft:earth_infused_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "entropy_arrow": {
+            "type": "item",
+            "content": "thaumcraft:entropy_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "entropy_infused_stone": {
+            "type": "item",
+            "content": "thaumcraft:entropy_infused_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "fire_arrow": {
+            "type": "item",
+            "content": "thaumcraft:fire_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "fire_infused_stone": {
+            "type": "item",
+            "content": "thaumcraft:fire_infused_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "flesh_block": {
+            "type": "item",
+            "content": "thaumcraft:flesh_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "gold_arcane_key": {
+            "type": "item",
+            "content": "thaumcraft:gold_arcane_key",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "paving_stone_warding": {
+            "type": "item",
+            "content": "thaumcraft:paving_stone_warding",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "resonator": {
+            "type": "item",
+            "content": "thaumcraft:resonator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "runed_tablet": {
+            "type": "item",
+            "content": "thaumcraft:runed_tablet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "sanity_checker": {
+            "type": "item",
+            "content": "thaumcraft:sanity_checker",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "sanity_soap": {
+            "type": "item",
+            "content": "thaumcraft:sanity_soap",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "tallow_block": {
+            "type": "item",
+            "content": "thaumcraft:tallow_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "traveling_trunk": {
+            "type": "item",
+            "content": "thaumcraft:traveling_trunk",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "warded_glass": {
+            "type": "item",
+            "content": "thaumcraft:warded_glass",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "water_infused_stone": {
+            "type": "item",
+            "content": "thaumcraft:water_infused_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "cultist_leader_plate_helm": {
+            "type": "item",
+            "content": "thaumcraft:cultist_leader_plate_helm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_fortress_helm": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_fortress_helm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "bone_bow": {
+            "type": "item",
+            "content": "thaumcraft:bone_bow",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "triple_meat_treat": {
+            "type": "item",
+            "content": "thaumcraft:triple_meat_treat",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "zombie_brain": {
+            "type": "item",
+            "content": "thaumcraft:zombie_brain",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "bauble_belt": {
+            "type": "item",
+            "content": "thaumcraft:bauble_belt",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_girdle": {
+            "type": "item",
+            "content": "thaumcraft:runic_girdle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_girdle_kinetic": {
+            "type": "item",
+            "content": "thaumcraft:runic_girdle_kinetic",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumostatic_girdle": {
+            "type": "item",
+            "content": "thaumcraft:thaumostatic_girdle",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "bauble_amulet": {
+            "type": "item",
+            "content": "thaumcraft:bauble_amulet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "runic_amulet": {
+            "type": "item",
+            "content": "thaumcraft:runic_amulet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_boots": {
+            "type": "item",
+            "content": "thaumcraft:void_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumaturge_robe": {
+            "type": "item",
+            "content": "thaumcraft:thaumaturge_robe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "thaumaturge_leggings": {
+            "type": "item",
+            "content": "thaumcraft:thaumaturge_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_leader_plate_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:cultist_leader_plate_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_fortress_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_fortress_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_chestplate": {
+            "type": "item",
+            "content": "thaumcraft:void_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cultist_leader_plate_leggings": {
+            "type": "item",
+            "content": "thaumcraft:cultist_leader_plate_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "thaumium_fortress_leggings": {
+            "type": "item",
+            "content": "thaumcraft:thaumium_fortress_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "eldritch_eye": {
+            "type": "item",
+            "content": "thaumcraft:eldritch_eye",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "iron_arcane_key": {
+            "type": "item",
+            "content": "thaumcraft:iron_arcane_key",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "loot_bag_rare": {
+            "type": "item",
+            "content": "thaumcraft:loot_bag_rare",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "loot_bag_uncommon": {
+            "type": "item",
+            "content": "thaumcraft:loot_bag_uncommon",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "obsidian_totem": {
+            "type": "item",
+            "content": "thaumcraft:obsidian_totem",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "order_arrow": {
+            "type": "item",
+            "content": "thaumcraft:order_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "order_infused_stone": {
+            "type": "item",
+            "content": "thaumcraft:order_infused_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "paving_stone_travel": {
+            "type": "item",
+            "content": "thaumcraft:paving_stone_travel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "loot_bag_common": {
+            "type": "item",
+            "content": "thaumcraft:loot_bag_common",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "water_arrow": {
+            "type": "item",
+            "content": "thaumcraft:water_arrow",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "morph_axe": {
+            "type": "item",
+            "content": "forbiddenmagic:morph_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "morph_sword": {
+            "type": "item",
+            "content": "forbiddenmagic:morph_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "morph_pickaxe": {
+            "type": "item",
+            "content": "forbiddenmagic:morph_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "morph_shovel": {
+            "type": "item",
+            "content": "forbiddenmagic:morph_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "blood_rapier": {
+            "type": "item",
+            "content": "forbiddenmagic:blood_rapier",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "diabolist_fork": {
+            "type": "item",
+            "content": "forbiddenmagic:diabolist_fork",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "dragonslayer": {
+            "type": "item",
+            "content": "forbiddenmagic:dragonslayer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "skull_axe": {
+            "type": "item",
+            "content": "forbiddenmagic:skull_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "tainted_pickaxe": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "tainted_shovel": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "cinderpearl": {
+            "type": "item",
+            "content": "thaumcraft:cinderpearl",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "shimmerleaf": {
+            "type": "item",
+            "content": "thaumcraft:shimmerleaf",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "greatwood_sapling": {
+            "type": "item",
+            "content": "thaumcraft:greatwood_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "silverwood_sapling": {
+            "type": "item",
+            "content": "thaumcraft:silverwood_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "greatwood_log": {
+            "type": "item",
+            "content": "thaumcraft:greatwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "silverwood_log": {
+            "type": "item",
+            "content": "thaumcraft:silverwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "subjugation_collar": {
+            "type": "item",
+            "content": "forbiddenmagic:subjugation_collar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "tainted_fruit": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_fruit",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "tainted_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "witchwood_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:witchwood_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wrath_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:wrath_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "infusion_intercepter": {
+            "type": "item",
+            "content": "goldentweaks:infusion_intercepter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "warptheory_cleanser": {
+            "type": "item",
+            "content": "goldentweaks:warptheory_cleanser",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "air_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:air_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "ancient_rock": {
+            "type": "item",
+            "content": "thaumcraft:ancient_rock",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "ancient_stone": {
+            "type": "item",
+            "content": "thaumcraft:ancient_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "arcane_lamp": {
+            "type": "item",
+            "content": "thaumcraft:arcane_lamp",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "arcane_lamp_fertility": {
+            "type": "item",
+            "content": "thaumcraft:arcane_lamp_fertility",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "arcane_lamp_growth": {
+            "type": "item",
+            "content": "thaumcraft:arcane_lamp_growth",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "arcane_lifter": {
+            "type": "item",
+            "content": "thaumcraft:arcane_lifter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "arcane_pressure_plate": {
+            "type": "item",
+            "content": "thaumcraft:arcane_pressure_plate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "crusted_stone": {
+            "type": "item",
+            "content": "thaumcraft:crusted_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "earth_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:earth_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "entropy_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:entropy_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "essentia_mirror": {
+            "type": "item",
+            "content": "thaumcraft:essentia_mirror",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "ethereal_bloom": {
+            "type": "item",
+            "content": "thaumcraft:ethereal_bloom",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "focal_manipulator": {
+            "type": "item",
+            "content": "thaumcraft:focal_manipulator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "infusion_pedestal": {
+            "type": "item",
+            "content": "thaumcraft:infusion_pedestal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "item_grate": {
+            "type": "item",
+            "content": "thaumcraft:item_grate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "loot_urn": {
+            "type": "item",
+            "content": "thaumcraft:loot_urn",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "magic_mirror": {
+            "type": "item",
+            "content": "thaumcraft:magic_mirror",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "manashroom": {
+            "type": "item",
+            "content": "thaumcraft:manashroom",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "mixed_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:mixed_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "node_stabilizer": {
+            "type": "item",
+            "content": "thaumcraft:node_stabilizer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "order_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:order_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "spa": {
+            "type": "item",
+            "content": "thaumcraft:spa",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "table": {
+            "type": "item",
+            "content": "thaumcraft:table",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "astrolabe": {
+            "type": "item",
+            "content": "thaumcraftcelestial:astrolabe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "fire_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:fire_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "glowing_ancient_stone": {
+            "type": "item",
+            "content": "thaumcraft:glowing_ancient_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "hungry_chest": {
+            "type": "item",
+            "content": "thaumcraft:hungry_chest",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "loot_crate": {
+            "type": "item",
+            "content": "thaumcraft:loot_crate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "node_stabilizer_advanced": {
+            "type": "item",
+            "content": "thaumcraft:node_stabilizer_advanced",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "node_transducer": {
+            "type": "item",
+            "content": "thaumcraft:node_transducer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "vis_charge_relay": {
+            "type": "item",
+            "content": "thaumcraft:vis_charge_relay",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "vis_relay": {
+            "type": "item",
+            "content": "thaumcraft:vis_relay",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "wand_recharge_pedestal": {
+            "type": "item",
+            "content": "thaumcraft:wand_recharge_pedestal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "water_crystal_cluster": {
+            "type": "item",
+            "content": "thaumcraft:water_crystal_cluster",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "celestial_lens": {
+            "type": "item",
+            "content": "thaumcraftcelestial:celestial_lens",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "lunar_phase_instrument": {
+            "type": "item",
+            "content": "thaumcraftcelestial:lunar_phase_instrument",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "experience_talisman": {
+            "type": "item",
+            "content": "thaumic_tinkerer:experience_talisman",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "ring_nutrition": {
+            "type": "item",
+            "content": "forbiddenmagic:ring_nutrition",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "black_dye": {
+            "type": "item",
+            "content": "forbiddenmagic:black_dye",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "blink_focus": {
+            "type": "item",
+            "content": "forbiddenmagic:blink_focus",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "blood_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:blood_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "crystal_scribing_tools": {
+            "type": "item",
+            "content": "forbiddenmagic:crystal_scribing_tools",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "dreamwood_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:dreamwood_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "empty_mob_crystal": {
+            "type": "item",
+            "content": "forbiddenmagic:empty_mob_crystal",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "envy_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:envy_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "infernal_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:infernal_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "livingwood_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:livingwood_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "pride_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:pride_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "profane_wand_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:profane_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "riding_crop": {
+            "type": "item",
+            "content": "forbiddenmagic:riding_crop",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "taint_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:taint_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "tainted_coal": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_coal",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "meteorite_block": {
+            "type": "item",
+            "content": "thaumcraftcelestial:meteorite_block",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "meteorite_fragment": {
+            "type": "item",
+            "content": "thaumcraftcelestial:meteorite_fragment",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "stargazing_instrument": {
+            "type": "item",
+            "content": "thaumcraftcelestial:stargazing_instrument",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "animation_tablet": {
+            "type": "item",
+            "content": "thaumic_tinkerer:animation_tablet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "aspectalyzer": {
+            "type": "item",
+            "content": "thaumic_tinkerer:aspectalyzer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "celestial_pearl": {
+            "type": "item",
+            "content": "thaumic_tinkerer:celestial_pearl",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "corporeal_attractor": {
+            "type": "item",
+            "content": "thaumic_tinkerer:corporeal_attractor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "essentia_funnel": {
+            "type": "item",
+            "content": "thaumic_tinkerer:essentia_funnel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "ethereal_platform": {
+            "type": "item",
+            "content": "thaumic_tinkerer:ethereal_platform",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "golem_connector": {
+            "type": "item",
+            "content": "thaumic_tinkerer:golem_connector",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "kinetic_attractor": {
+            "type": "item",
+            "content": "thaumic_tinkerer:kinetic_attractor",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "levitational_locomotive": {
+            "type": "item",
+            "content": "thaumic_tinkerer:levitational_locomotive",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "levitational_relay": {
+            "type": "item",
+            "content": "thaumic_tinkerer:levitational_relay",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "protoclay": {
+            "type": "item",
+            "content": "thaumic_tinkerer:protoclay",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "remote_placer": {
+            "type": "item",
+            "content": "thaumic_tinkerer:remote_placer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "soul_mould": {
+            "type": "item",
+            "content": "thaumic_tinkerer:soul_mould",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "thaumic_restorer": {
+            "type": "item",
+            "content": "thaumic_tinkerer:thaumic_restorer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "transvector_dislocator": {
+            "type": "item",
+            "content": "thaumic_tinkerer:transvector_dislocator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "transvector_interface": {
+            "type": "item",
+            "content": "thaumic_tinkerer:transvector_interface",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "warp_gate": {
+            "type": "item",
+            "content": "thaumic_tinkerer:warp_gate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "hollow_dagger": {
+            "type": "item",
+            "content": "taintedmagic:hollow_dagger",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "shadow_metal_sword": {
+            "type": "item",
+            "content": "taintedmagic:shadow_metal_sword",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "shadowmetal_katana": {
+            "type": "item",
+            "content": "taintedmagic:shadowmetal_katana",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "thaumium_katana": {
+            "type": "item",
+            "content": "taintedmagic:thaumium_katana",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "voidmetal_katana": {
+            "type": "item",
+            "content": "taintedmagic:voidmetal_katana",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "shadow_metal_axe": {
+            "type": "item",
+            "content": "taintedmagic:shadow_metal_axe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "shadow_metal_hoe": {
+            "type": "item",
+            "content": "taintedmagic:shadow_metal_hoe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "shadow_metal_pickaxe": {
+            "type": "item",
+            "content": "taintedmagic:shadow_metal_pickaxe",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "shadow_metal_shovel": {
+            "type": "item",
+            "content": "taintedmagic:shadow_metal_shovel",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 6000,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 6000
+        },
+        "thaumic_disassembler": {
+            "type": "item",
+            "content": "taintedmagic:thaumic_disassembler",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "cursed_spirit_blade": {
+            "type": "item",
+            "content": "thaumic_tinkerer:cursed_spirit_blade",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 20000,
+            "weightMult": 11.002310485201892,
+            "effectiveValue": 20000
+        },
+        "voidwalker_boots": {
+            "type": "item",
+            "content": "taintedmagic:voidwalker_boots",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "shadow_fortress_chestplate": {
+            "type": "item",
+            "content": "taintedmagic:shadow_fortress_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "shadow_fortress_leggings": {
+            "type": "item",
+            "content": "taintedmagic:shadow_fortress_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_fortress_chestplate": {
+            "type": "item",
+            "content": "taintedmagic:void_fortress_chestplate",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "shadow_fortress_helmet": {
+            "type": "item",
+            "content": "taintedmagic:shadow_fortress_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_fortress_leggings": {
+            "type": "item",
+            "content": "taintedmagic:void_fortress_leggings",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "void_fortress_helmet": {
+            "type": "item",
+            "content": "taintedmagic:void_fortress_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "voidmetal_goggles": {
+            "type": "item",
+            "content": "taintedmagic:voidmetal_goggles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "warped_goggles": {
+            "type": "item",
+            "content": "taintedmagic:warped_goggles",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "shadow_ore": {
+            "type": "item",
+            "content": "taintedmagic:shadow_ore",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "voidwalker_sash": {
+            "type": "item",
+            "content": "taintedmagic:voidwalker_sash",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "cleansing_talisman": {
+            "type": "item",
+            "content": "thaumic_tinkerer:cleansing_talisman",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "feline_amulet": {
+            "type": "item",
+            "content": "thaumic_tinkerer:feline_amulet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "lumos_ring": {
+            "type": "item",
+            "content": "taintedmagic:lumos_ring",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "tainted_log": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "warpwood_log": {
+            "type": "item",
+            "content": "taintedmagic:warpwood_log",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "alchemical_wand_cap": {
+            "type": "item",
+            "content": "forbiddenmagic:alchemical_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "arcane_cake": {
+            "type": "item",
+            "content": "forbiddenmagic:arcane_cake",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "blood_staff_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:blood_staff_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "dreamwood_staff_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:dreamwood_staff_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "elementium_wand_cap": {
+            "type": "item",
+            "content": "forbiddenmagic:elementium_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "gluttony_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:gluttony_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "greed_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:greed_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "hexite_ingot": {
+            "type": "item",
+            "content": "forbiddenmagic:hexite_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "ink_flower": {
+            "type": "item",
+            "content": "forbiddenmagic:ink_flower",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "lust_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:lust_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "manasteel_wand_cap": {
+            "type": "item",
+            "content": "forbiddenmagic:manasteel_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "sloth_shard": {
+            "type": "item",
+            "content": "forbiddenmagic:sloth_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "tainted_sapling": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "tainted_stone": {
+            "type": "item",
+            "content": "forbiddenmagic:tainted_stone",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "terrasteel_wand_cap": {
+            "type": "item",
+            "content": "forbiddenmagic:terrasteel_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "umbral_rose": {
+            "type": "item",
+            "content": "forbiddenmagic:umbral_rose",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "vinteum_wand_cap": {
+            "type": "item",
+            "content": "forbiddenmagic:vinteum_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "witchwood_staff_rod": {
+            "type": "item",
+            "content": "forbiddenmagic:witchwood_staff_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "wrath_cage": {
+            "type": "item",
+            "content": "forbiddenmagic:wrath_cage",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "cloth_wand_cap": {
+            "type": "item",
+            "content": "taintedmagic:cloth_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "crimson_blood_phial": {
+            "type": "item",
+            "content": "taintedmagic:crimson_blood_phial",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "crimson_cloth_wand_cap": {
+            "type": "item",
+            "content": "taintedmagic:crimson_cloth_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "crimson_plating": {
+            "type": "item",
+            "content": "taintedmagic:crimson_plating",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "crimson_stained_cloth": {
+            "type": "item",
+            "content": "taintedmagic:crimson_stained_cloth",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "focus_dark_matter": {
+            "type": "item",
+            "content": "taintedmagic:focus_dark_matter",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_lumos": {
+            "type": "item",
+            "content": "taintedmagic:focus_lumos",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_mage_mace": {
+            "type": "item",
+            "content": "taintedmagic:focus_mage_mace",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_shockwave": {
+            "type": "item",
+            "content": "taintedmagic:focus_shockwave",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_taint_swarm": {
+            "type": "item",
+            "content": "taintedmagic:focus_taint_swarm",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_vis_shard": {
+            "type": "item",
+            "content": "taintedmagic:focus_vis_shard",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "magic_funguar": {
+            "type": "item",
+            "content": "taintedmagic:magic_funguar",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "nightshade_berries": {
+            "type": "item",
+            "content": "taintedmagic:nightshade_berries",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "nightshade_bush": {
+            "type": "item",
+            "content": "taintedmagic:nightshade_bush",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "shadow_cloth_wand_cap": {
+            "type": "item",
+            "content": "taintedmagic:shadow_cloth_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "shadow_imbued_cloth": {
+            "type": "item",
+            "content": "taintedmagic:shadow_imbued_cloth",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "shadow_metal_ingot": {
+            "type": "item",
+            "content": "taintedmagic:shadow_metal_ingot",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 800,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "shadowmetal_wand_cap": {
+            "type": "item",
+            "content": "taintedmagic:shadowmetal_wand_cap",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "sky_salis": {
+            "type": "item",
+            "content": "taintedmagic:sky_salis",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "tainted_unbalanced_shard": {
+            "type": "item",
+            "content": "taintedmagic:tainted_unbalanced_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "thaumic_alloy_plating": {
+            "type": "item",
+            "content": "taintedmagic:thaumic_alloy_plating",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "time_salis": {
+            "type": "item",
+            "content": "taintedmagic:time_salis",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "void_blood_phial": {
+            "type": "item",
+            "content": "taintedmagic:void_blood_phial",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "warped_unbalanced_shard": {
+            "type": "item",
+            "content": "taintedmagic:warped_unbalanced_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "warping_fertilizer": {
+            "type": "item",
+            "content": "taintedmagic:warping_fertilizer",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "warpwood_sapling": {
+            "type": "item",
+            "content": "taintedmagic:warpwood_sapling",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 16,
+                "max": 32
+            },
+            "unitWorth": 35.0,
+            "weightMult": 1.1552426009461987,
+            "effectiveValue": 840
+        },
+        "warpwood_staff_rod": {
+            "type": "item",
+            "content": "taintedmagic:warpwood_staff_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "warpwood_wand_rod": {
+            "type": "item",
+            "content": "taintedmagic:warpwood_wand_rod",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "bright_nitor": {
+            "type": "item",
+            "content": "thaumic_tinkerer:bright_nitor",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "ender_shard": {
+            "type": "item",
+            "content": "thaumic_tinkerer:ender_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "focus_celestial_recall": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_celestial_recall",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_dislocation": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_dislocation",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_distortion": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_distortion",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_ender_rift": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_ender_rift",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_experience_drain": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_experience_drain",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_mending": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_mending",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_shadowbeam": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_shadowbeam",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_smelt": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_smelt",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_telekinesis": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_telekinesis",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "focus_uprising": {
+            "type": "item",
+            "content": "thaumic_tinkerer:focus_uprising",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1600,
+            "weightMult": 3.300693145560568,
+            "effectiveValue": 2400
+        },
+        "fume_dissipator": {
+            "type": "item",
+            "content": "thaumic_tinkerer:fume_dissipator",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1200,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "gaseous_illuminae": {
+            "type": "item",
+            "content": "thaumic_tinkerer:gaseous_illuminae",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "gaseous_tenebrae": {
+            "type": "item",
+            "content": "thaumic_tinkerer:gaseous_tenebrae",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "infused_potion_aer": {
+            "type": "item",
+            "content": "thaumic_tinkerer:infused_potion_aer",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "infused_potion_aqua": {
+            "type": "item",
+            "content": "thaumic_tinkerer:infused_potion_aqua",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "infused_potion_ignis": {
+            "type": "item",
+            "content": "thaumic_tinkerer:infused_potion_ignis",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "infused_potion_terra": {
+            "type": "item",
+            "content": "thaumic_tinkerer:infused_potion_terra",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "infused_seeds": {
+            "type": "item",
+            "content": "thaumic_tinkerer:infused_seeds",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "knowledge_sharing_tome": {
+            "type": "item",
+            "content": "thaumic_tinkerer:knowledge_sharing_tome",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "nether_shard": {
+            "type": "item",
+            "content": "thaumic_tinkerer:nether_shard",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        },
+        "revealing_helmet": {
+            "type": "item",
+            "content": "thaumic_tinkerer:revealing_helmet",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000,
+            "weightMult": 4.4009241940807575,
+            "effectiveValue": 8000
+        },
+        "smoky_quartz": {
+            "type": "item",
+            "content": "thaumic_tinkerer:smoky_quartz",
+            "rarity": "UNCOMMON",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 600,
+            "weightMult": 2.4755198591704257,
+            "effectiveValue": 1800
+        },
+        "spellbinding_cloth": {
+            "type": "item",
+            "content": "thaumic_tinkerer:spellbinding_cloth",
+            "rarity": "COMMON",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 180,
+            "weightMult": 1.4853119155022554,
+            "effectiveValue": 1080
+        }
+    },
+    "requires": [
+        "forbiddenmagic",
+        "goldentweaks",
+        "taintedmagic",
+        "thaumcraft",
+        "thaumcraftcelestial",
+        "thaumic_tinkerer"
+    ]
+}

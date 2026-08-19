@@ -1,5 +1,6 @@
 import json
 import os
+import argparse
 
 professions = [
     "ae2_specialist",
@@ -34,13 +35,27 @@ professions = [
     "musician",
     "bartender",
     "carpenter",
-    "creator"
+    "creator",
+    "arcanist",
+    "alchemist"
 ]
 
-output_dir = "output_professions"
+parser = argparse.ArgumentParser()
+parser.add_argument("--output-dir", default="output_professions")
+parser.add_argument("professions", nargs="*")
+args = parser.parse_args()
+
+if args.professions:
+    professions = args.professions
+
+output_dir = args.output_dir
 os.makedirs(output_dir, exist_ok=True)
 
-split_index = professions.index("mechanic")
+unlinked_professions = {
+    "mechanic", "wizard", "programmer", "adventurer", "pilot", "admiral",
+    "astronaut", "photographer", "chemical_engineer", "painter", "musician",
+    "bartender", "carpenter", "creator", "arcanist", "alchemist"
+}
 
 for i, prof in enumerate(professions):
     data = {
@@ -49,7 +64,7 @@ for i, prof in enumerate(professions):
     }
 
     # mechanic 之前保留 linkedProfessions
-    if i < split_index:
+    if prof not in unlinked_professions:
         data["linkedProfessions"] = [prof]
 
     file_path = os.path.join(output_dir, f"{prof}.json")

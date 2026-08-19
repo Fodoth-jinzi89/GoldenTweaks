@@ -1,54 +1,39 @@
+import argparse
 import json
 from pathlib import Path
 
-def transform_file(path: Path):
-    with open(path, "r", encoding="utf-8") as f:
+
+def transform_file(path: Path, output_dir: Path):
+    with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
-    new_data = {
-        "content": {},
-        "requires": data.get("requires", [])
-    }
-
-    content = data.get("content", {})
-
-    for key, value in content.items():
+    new_data = {"content": {}, "requires": data.get("requires", [])}
+    for key, value in data.get("content", {}).items():
         new_value = dict(value)
-
         amount = new_value.get("amount", {})
-        min_v = amount.get("min")
-        max_v = amount.get("max")
-
-        # 判断倍率
-        if min_v == 1 and max_v == 1:
-            factor = 5
-        else:
-            factor = 2
-
-        if "unitWorth" in new_value and isinstance(new_value["unitWorth"], (int, float)):
-            new_value["unitWorth"] *= factor
-
-        if "effectiveValue" in new_value and isinstance(new_value["effectiveValue"], (int, float)):
-            new_value["effectiveValue"] *= factor
-
+        factor = 5 if amount.get("min") == 1 and amount.get("max") == 1 else 2
+        for field in ("unitWorth", "effectiveValue"):
+            if isinstance(new_value.get(field), (int, float)):
+                new_value[field] *= factor
         new_data["content"][key] = new_value
 
-    new_path = path.with_name(f"{path.stem}_sell.json")
-
-    with open(new_path, "w", encoding="utf-8") as f:
+    stem = path.stem.removesuffix("_objs")
+    new_path = output_dir / f"{stem}_sell.json"
+    with new_path.open("w", encoding="utf-8") as f:
         json.dump(new_data, f, ensure_ascii=False, indent=4)
+    print(f"generated: {path} -> {new_path}")
 
 
 def main():
-    for file in Path(".").glob("*.json"):
-        if file.name.endswith("_sell.json"):
-            continue
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-dir", type=Path)
+    parser.add_argument("files", nargs="+", type=Path)
+    args = parser.parse_args()
 
-        if not file.is_file():
-            continue
-
-        transform_file(file)
-        print(f"generated: {file.name} -> {file.stem}_sell.json")
+    for file in args.files:
+        output_dir = args.output_dir or file.parent
+        output_dir.mkdir(parents=True, exist_ok=True)
+        transform_file(file, output_dir)
 
 
 if __name__ == "__main__":
