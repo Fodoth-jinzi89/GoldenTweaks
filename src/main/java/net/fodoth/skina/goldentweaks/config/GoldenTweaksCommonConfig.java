@@ -55,6 +55,9 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.IntValue TC_JEI_ASPECT_MAX_PAGE;
 
     public static final ModConfigSpec.IntValue ARCANE_CRAFTING_CACHE_SIZE;
+    public static final ModConfigSpec.IntValue THAUMONOMICON_ASPECT_SOURCE_ITEMS_PER_FRAME;
+    public static final ModConfigSpec.BooleanValue THAUMONOMICON_ASPECT_SOURCE_AUTO_PAGE;
+    public static final ModConfigSpec.IntValue THAUMONOMICON_ASPECT_SOURCE_PAGE_INTERVAL;
 
     public static final ModConfigSpec.BooleanValue ARCANE_WORKBENCH_VANILLA_CRAFTING;
 
@@ -227,6 +230,21 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.thaumcraft.arcane_crafting_cache_size"))
                 .defineInRange("arcaneCraftingCacheSize", 64, 0, 256);
 
+        THAUMONOMICON_ASPECT_SOURCE_ITEMS_PER_FRAME = builder
+                .translation(key("balance.thaumcraft.thaumonomicon_aspect_source_items_per_frame"))
+                .comment(comment("balance.thaumcraft.thaumonomicon_aspect_source_items_per_frame"))
+                .defineInRange("thaumonomiconAspectSourceItemsPerFrame", 256, 1, Integer.MAX_VALUE);
+
+        THAUMONOMICON_ASPECT_SOURCE_AUTO_PAGE = builder
+                .translation(key("balance.thaumcraft.thaumonomicon_aspect_source_auto_page"))
+                .comment(comment("balance.thaumcraft.thaumonomicon_aspect_source_auto_page"))
+                .define("thaumonomiconAspectSourceAutoPage", false);
+
+        THAUMONOMICON_ASPECT_SOURCE_PAGE_INTERVAL = builder
+                .translation(key("balance.thaumcraft.thaumonomicon_aspect_source_page_interval"))
+                .comment(comment("balance.thaumcraft.thaumonomicon_aspect_source_page_interval"))
+                .defineInRange("thaumonomiconAspectSourcePageInterval", 2000, 250, 60000);
+
         ARCANE_WORKBENCH_VANILLA_CRAFTING = builder
                 .translation(key("balance.thaumcraft.arcane_workbench_vanilla_crafting"))
                 .comment(comment("balance.thaumcraft.arcane_workbench_vanilla_crafting"))
@@ -331,6 +349,24 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return ARCANE_CRAFTING_CACHE_SIZE.get();
+    }
+
+    public static int getThaumonomiconAspectSourceItemsPerFrame() {
+        if (!GTState.isReady()) {
+            return 256;
+        }
+        return THAUMONOMICON_ASPECT_SOURCE_ITEMS_PER_FRAME.get();
+    }
+
+    public static boolean isThaumonomiconAspectSourceAutoPage() {
+        return GTState.isReady() && THAUMONOMICON_ASPECT_SOURCE_AUTO_PAGE.get();
+    }
+
+    public static int getThaumonomiconAspectSourcePageInterval() {
+        if (!GTState.isReady()) {
+            return 2000;
+        }
+        return THAUMONOMICON_ASPECT_SOURCE_PAGE_INTERVAL.get();
     }
 
     public static boolean isArcaneWorkbenchVanillaCrafting() {

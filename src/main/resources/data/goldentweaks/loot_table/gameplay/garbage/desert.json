@@ -32,7 +32,7 @@
         { "type": "minecraft:item", "name": "croptopia:snicker_doodle", "weight": 14 },
         { "type": "minecraft:item", "name": "kaleidoscope_nether:lava_roasted_chicken", "weight": 10 },
         { "type": "minecraft:item", "name": "croptopia:calamari", "weight": 12 },
-        { "type": "minecraft:item", "name": "flavor_immersed_daily:cowpeabean", "weight": 18 },
+        { "type": "minecraft:item", "name": "flavor_immersed_daily:cowpea", "weight": 18 },
         { "type": "minecraft:item", "name": "croptopia:blackberry_jam", "weight": 14 },
         { "type": "minecraft:item", "name": "kaleidoscope_cookery:fish_flavored_shredded_pork", "weight": 10 },
         { "type": "minecraft:item", "name": "minecraft:dandelion", "weight": 20 },

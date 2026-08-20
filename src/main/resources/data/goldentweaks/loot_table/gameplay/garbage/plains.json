@@ -31,7 +31,7 @@
         { "type": "minecraft:item", "name": "flavor_immersed_daily:corn", "weight": 18 },
         { "type": "minecraft:item", "name": "flavor_immersed_daily:eggbiscuit", "weight": 15 },
         { "type": "minecraft:item", "name": "kaleidoscope_nether:roujiamo", "weight": 12 },
-        { "type": "minecraft:item", "name": "flavor_immersed_daily:soybean_0", "weight": 18 },
+        { "type": "minecraft:item", "name": "flavor_immersed_daily:soybean", "weight": 18 },
         { "type": "minecraft:item", "name": "croptopia:fried_calamari", "weight": 14 },
         { "type": "minecraft:item", "name": "croptopia:raspberry_jam", "weight": 14 },
         { "type": "minecraft:item", "name": "kaleidoscope_nether:sauerkraut_fish", "weight": 12 },

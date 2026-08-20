@@ -10,6 +10,8 @@ import net.fodoth.skina.goldentweaks.compat.questshop.QSCompat;
 import net.fodoth.skina.goldentweaks.compat.fix.renderblender.RenderBlenderCosmicQueueFlushHandler;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftCompat;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftRecipeLoader;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.BrainJarResearchEvent;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.ThaumometerStorageScanQueue;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAnimatedIconAnimator;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
@@ -100,6 +102,10 @@ public class GoldenTweaks {
 
             GTThaumcraftCompat.register(modEventBus, container);
             NeoForge.EVENT_BUS.register(GTThaumcraftRecipeLoader.class);
+            NeoForge.EVENT_BUS.register(BrainJarResearchEvent.class);
+            if (ModList.get().isLoaded("ae2")) {
+                NeoForge.EVENT_BUS.register(ThaumometerStorageScanQueue.class);
+            }
         }
 
         modEventBus.addListener(this::onClientSetup);

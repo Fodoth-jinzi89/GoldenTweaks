@@ -10,9 +10,12 @@
     "count": 1
   },
   "aspects": {
-    "praecantatio": 8,
-    "instrumentum": 4,
-    "machina": 4
+    "substance": 1,
+    "tempus": 1,
+    "space": 1,
+    "praecantatio": 1,
+    "dense": 1,
+    "atrpraecantatic": 1
   },
   "parents": [
     "INFUSION"

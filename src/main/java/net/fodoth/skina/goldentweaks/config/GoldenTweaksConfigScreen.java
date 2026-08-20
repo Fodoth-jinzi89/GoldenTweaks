@@ -207,6 +207,20 @@ public class GoldenTweaksConfigScreen {
                     ARCANE_CRAFTING_CACHE_SIZE,
                     64, 0, 256);
 
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_items_per_frame",
+                    THAUMONOMICON_ASPECT_SOURCE_ITEMS_PER_FRAME,
+                    256, 1, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_auto_page",
+                    THAUMONOMICON_ASPECT_SOURCE_AUTO_PAGE, false);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval",
+                    THAUMONOMICON_ASPECT_SOURCE_PAGE_INTERVAL,
+                    2000, 250, 60000);
+
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.thaumcraft.arcane_workbench_vanilla_crafting",
                     ARCANE_WORKBENCH_VANILLA_CRAFTING, true);

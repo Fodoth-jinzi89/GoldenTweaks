@@ -993,5 +993,21 @@
   "tc.research_page.GT_INFUSION_INTERCEPTER.2": "更令人不安的是，截流者似乎能够替施法者承担一部分注魔仪式中的「不确定性」。那些原本足以令奥术师却步的危险配方，在它的介入下变得异常安静。<BR>当所有源质均已备齐，截流者会一次性取走基座上的全部祭品，并在一瞬之间完成注魔。没有漫长的吟唱，没有逐渐累积的仪式，也没有留下任何可以解释的中间过程。<BR>有人认为，截流者内部储存的并非简单的奥术咒文，而是某种「仪式的记忆」。因此，即使它的主人暂时离开这个世界，它仍会继续工作，像一名不知疲倦的书记员，在无人注视的夜晚替主人完成尚未结束的仪式。",
   "tc.research_page.GT_WARPTHEORY_CLEANSER.1": "在奥术浴场的研究中，你偶然窥见了某种不应被窥见的真理。由此诞生的秘药，被称为「纯净泪水」——据说，那是连扭曲本身都无法玷污的液体。<BR>饮下它，缠绕于身的扭曲将如同从未存在过一般消退。无论是永久扭曲、暂时扭曲，还是那些如执念般附着不去的粘性扭曲，都将被彻底清除。<BR>古老的配方曾要求饮用者付出代价，而如今的配方已将那份代价从杯中剔除。你只需饮下，然后等待自己的灵魂重新归于寂静。<BR>不过，请谨慎对待这份纯净。毕竟，有些知识只会向被扭曲之人显现；当扭曲消失时，与它一同消失的，也许不只是疯狂。",
   "tc.research_text.GT_INFUSION_INTERCEPTER": "§o自动注魔：自动化一切§r",
-  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§o彻底净化扭曲§r"
+  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§o彻底净化扭曲§r",
+  "tc.research_name.GT_THAUMIC_MICROSCOPY": "魔导显微",
+  "tc.research_text.GT_THAUMIC_MICROSCOPY": "§o一瞥之间，洞悉万物§r",
+  "tc.research_page.GT_THAUMIC_MICROSCOPY.1": "当你对研究之道的掌握趋于精熟，魔导透镜中那些原本模糊不清的光晕终于显露出更细微的层次。容器不再只是一个拥有自身源质的整体；透过层层叠合的奥术映像，你能够分辨其中每一种内容物留下的独特回响。<BR>完成此项研究后，以魔导透镜扫描容器时，其中尚未记录的所有内容物也会被一并辨识。相同的物品只会被分析一次，因此堆叠数量并不会徒增观察负担。",
+  "tc.research_page.GT_THAUMIC_MICROSCOPY.2": "这种观察方式同样能够穿透应用能源与 QIO 系统的存储介质。扫描掉落在地面的 AE2 存储元件、NeoECOAE 存储矩阵或 Mekanism QIO 驱动器，便可逐步解析其中保存的全部物品；扫描 AE2 驱动器、ExtendedAE 扩展驱动器、NeoECOAE 存储矩阵驱动器或 QIO 驱动器阵列时，其中安装的每一枚存储介质也会接受同样的检视。<BR>大型存储介质可能包含成千上万种物品。为避免过量信息在一瞬间冲击心智，透镜会将解析过程分散到一段时间内完成。你无需持续注视目标，新的发现会随着解析推进逐步记入研究记录。"
+  ,"gui.goldentweaks.thaumonomicon.aspect_sources.page": "第%s页/共%s页，共%s项"
+  ,"config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_items_per_frame": "魔导手册要素来源每帧处理物品数",
+  "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_items_per_frame.comment": "首次悬浮要素时，每帧扫描的物品数量。数值越高加载越快，但可能造成瞬时掉帧。"
+  ,"config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_auto_page": "魔导手册要素来源自动翻页",
+  "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_auto_page.comment": "是否自动轮播要素来源物品列表。手动滚轮翻页不受影响。",
+  "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval": "魔导手册要素来源翻页间隔",
+  "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval.comment": "要素来源物品列表自动翻页的间隔时间，单位为毫秒。",
+  "tc.research_name.GT_BRAIN_JAR_RESEARCHER": "缸中研究者",
+  "tc.research_text.GT_BRAIN_JAR_RESEARCHER": "§o让另一颗头脑替你思考§r",
+  "tc.research_page.GT_BRAIN_JAR_RESEARCHER.1": "缸中之脑吞食的并不只是经验，而是思考、记忆与灵感留下的碎屑。经过适当引导，这颗躁动的头脑能够把积蓄的经验灌入尚未完成的研究笔记，替你跨过最后的推演。<BR>完成此项研究后，手持未完成的研究笔记右击缸中之脑，即可尝试消耗其中储存的经验并完成笔记。研究越复杂，所需经验越多。缸中之脑会优先支付；若其储量不足，则会从你的经验中补足差额。两者合计仍然不足时，不会消耗任何经验。",
+  "goldentweaks.brain_jar_research.insufficient_xp": "缸中之脑的经验不足，需要 %s 点经验",
+  "goldentweaks.brain_jar_research.completed": "缸中之脑完成了研究笔记"
 }

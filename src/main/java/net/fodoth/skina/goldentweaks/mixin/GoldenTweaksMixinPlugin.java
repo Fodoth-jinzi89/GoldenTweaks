@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
+import net.fodoth.skina.goldentweaks.compat.ftbquests.CertainQuestingAdditionsASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -82,6 +83,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                     && checkIfPresent("dev.uncandango.ftbquestslangsplitter.FTBQuestsLangSplitter");
         }
 
+        if (mixinClassName.endsWith("fix.ftbquests.ChapterImageConfigGroupDummyMixin")) {
+            return checkIfPresent("dev.ftb.mods.ftbquests.client.gui.quests.ChapterImageButton$3")
+                    && checkIfPresent("ru.hollowhorizon.additions.questing.mixins.ChapterImageConfigGroupMixin");
+        }
+
         if (mixinClassName.endsWith("fix.carryon.PickupHandlerDummyMixin")) {
             return checkIfPresent("tschipp.carryon.common.carry.PickupHandler")
                     && checkIfPresent("gay.git.copygirl.carryonaerocompat.CarryOnAeroCompat");
@@ -98,6 +104,15 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily")) {
             return checkIfPresent("com.fidtest.ExampleMod");
+        }
+
+        if (mixinClassName.endsWith("fix.ftbultimine.VanillaCropLikeHandlerMixin")) {
+            return checkIfPresent("dev.ftb.mods.ftbultimine.crops.VanillaCropLikeHandler")
+                    && checkIfPresent("net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock");
+        }
+
+        if (mixinClassName.endsWith("fix.thaumcraft.ThaumcraftOverworldBiomesMixin")) {
+            return checkIfPresent("thaumcraft.common.worldgen.ThaumcraftOverworldBiomes");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
@@ -141,6 +156,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         ExspectrimentsASM.patch(targetClassName, targetClass);
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
+        CertainQuestingAdditionsASM.patch(targetClassName, targetClass);
 
     }
 
