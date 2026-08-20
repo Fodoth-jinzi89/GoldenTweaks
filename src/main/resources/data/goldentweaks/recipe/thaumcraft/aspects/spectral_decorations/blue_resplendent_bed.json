@@ -5,6 +5,10 @@
   },
   "aspects": {
     "fabrico": 3,
-    "pannus": 2
+    "pannus": 2,
+    "sano": 6,
+    "dragon": 1,
+    "desidia": 6,
+    "luxuria": 8
   }
 }

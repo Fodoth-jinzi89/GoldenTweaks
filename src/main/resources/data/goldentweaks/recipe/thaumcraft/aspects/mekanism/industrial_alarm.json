@@ -4,6 +4,7 @@
     "id": "mekanism:industrial_alarm"
   },
   "aspects": {
-    "sonus": 3
+    "sonus": 3,
+    "ira": 4
   }
 }

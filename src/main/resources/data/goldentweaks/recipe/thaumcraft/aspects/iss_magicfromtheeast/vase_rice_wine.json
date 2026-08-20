@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:vase_rice_wine"
+  },
+  "aspects": {
+    "alfirin": 6,
+    "luxuria": 4
+  }
+}

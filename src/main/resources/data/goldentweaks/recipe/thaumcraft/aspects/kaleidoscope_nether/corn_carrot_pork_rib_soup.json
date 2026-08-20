@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:corn_carrot_pork_rib_soup"
+  },
+  "aspects": {
+    "sano": 8,
+    "luxuria": 4
+  }
+}

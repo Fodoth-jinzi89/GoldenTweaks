@@ -4,6 +4,7 @@
     "id": "aero_reformation:power"
   },
   "aspects": {
-    "potentia": 3
+    "potentia": 3,
+    "desidia": 1
   }
 }

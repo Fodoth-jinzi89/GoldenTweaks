@@ -4,6 +4,8 @@
     "id": "spectrum:aether_graced_nectar_gloves"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "alfirin": 6,
+    "anteanus": 4
   }
 }

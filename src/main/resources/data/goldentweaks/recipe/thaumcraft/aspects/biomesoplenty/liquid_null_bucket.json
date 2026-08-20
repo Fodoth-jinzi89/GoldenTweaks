@@ -4,6 +4,7 @@
     "id": "biomesoplenty:liquid_null_bucket"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "arche": 1
   }
 }

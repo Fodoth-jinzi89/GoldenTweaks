@@ -4,6 +4,8 @@
     "id": "spectrum:lizard_purple_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fossil": 6,
+    "evil": 4
   }
 }

@@ -4,6 +4,8 @@
     "id": "taintedmagic:hollow_dagger"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 6,
+    "mornogol": 6
   }
 }

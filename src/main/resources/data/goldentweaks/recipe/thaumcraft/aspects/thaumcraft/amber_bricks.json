@@ -4,6 +4,7 @@
     "id": "thaumcraft:amber_bricks"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fossil": 6
   }
 }

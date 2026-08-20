@@ -5,6 +5,7 @@
   },
   "aspects": {
     "herba": 10,
-    "dense": 10
+    "dense": 10,
+    "vegetatio": 2
   }
 }

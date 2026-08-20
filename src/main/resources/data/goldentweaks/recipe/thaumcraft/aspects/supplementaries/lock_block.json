@@ -4,6 +4,7 @@
     "id": "supplementaries:lock_block"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "invidia": 6
   }
 }

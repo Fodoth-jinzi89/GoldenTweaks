@@ -5,6 +5,9 @@
   },
   "aspects": {
     "herba": 3,
-    "metallum": 3
+    "metallum": 3,
+    "vegetatio": 2,
+    "auram": 8,
+    "laputa": 8
   }
 }

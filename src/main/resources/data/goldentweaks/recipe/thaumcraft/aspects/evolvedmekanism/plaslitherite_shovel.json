@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:plaslitherite_shovel"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "mixtura": 1
   }
 }

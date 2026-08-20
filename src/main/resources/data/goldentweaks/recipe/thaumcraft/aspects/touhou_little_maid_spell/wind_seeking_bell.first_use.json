@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:wind_seeking_bell.first_use"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

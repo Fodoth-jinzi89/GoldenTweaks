@@ -4,6 +4,7 @@
     "id": "taintedmagic:voidwalker_sash"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 8
   }
 }

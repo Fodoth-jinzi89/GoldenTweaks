@@ -4,6 +4,7 @@
     "id": "extendedcrafting:black_iron_ingot"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "atrpotentia": 4
   }
 }

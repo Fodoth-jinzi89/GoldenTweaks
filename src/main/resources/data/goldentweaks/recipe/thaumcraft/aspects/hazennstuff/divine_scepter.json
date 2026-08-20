@@ -4,6 +4,7 @@
     "id": "hazennstuff:divine_scepter"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "imperium": 1
   }
 }

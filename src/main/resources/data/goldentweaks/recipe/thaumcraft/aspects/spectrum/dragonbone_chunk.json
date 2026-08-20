@@ -5,6 +5,9 @@
   },
   "aspects": {
     "mortuus": 3,
-    "dragon": 2
+    "dragon": 8,
+    "priscus": 6,
+    "fossil": 8,
+    "anteanus": 4
   }
 }

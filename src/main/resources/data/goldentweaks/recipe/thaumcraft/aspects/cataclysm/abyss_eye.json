@@ -4,6 +4,8 @@
     "id": "cataclysm:abyss_eye"
   },
   "aspects": {
-    "profundum": 3
+    "profundum": 3,
+    "alfirin": 4,
+    "invidia": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "northstar:mars_sprout_big"
   },
   "aspects": {
-    "space": 3
+    "space": 3,
+    "universes": 4
   }
 }

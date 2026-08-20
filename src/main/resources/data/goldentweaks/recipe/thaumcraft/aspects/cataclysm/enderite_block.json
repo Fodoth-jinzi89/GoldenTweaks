@@ -4,6 +4,7 @@
     "id": "cataclysm:enderite_block"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 3,
+    "mixtura": 1
   }
 }

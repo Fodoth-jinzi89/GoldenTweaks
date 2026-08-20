@@ -4,6 +4,8 @@
     "id": "alshanex_familiars:spider_fang"
   },
   "aspects": {
-    "praecantatio": 2
+    "praecantatio": 2,
+    "fossil": 1,
+    "evil": 1
   }
 }

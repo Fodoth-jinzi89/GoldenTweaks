@@ -4,6 +4,8 @@
     "id": "spectrum:onyx_block"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spelunca": 2,
+    "atrpraecantatic": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "mekmm:empty_crystal"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "substance": 16
   }
 }

@@ -4,6 +4,7 @@
     "id": "lootr:suspicious_gravel"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "gravitas": 2
   }
 }

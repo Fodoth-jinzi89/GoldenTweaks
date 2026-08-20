@@ -4,6 +4,8 @@
     "id": "spectrum:night_salts"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 6,
+    "atrpraecantatic": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:vineheartchair"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "anteanus": 1
   }
 }

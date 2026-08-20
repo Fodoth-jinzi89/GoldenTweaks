@@ -5,6 +5,9 @@
   },
   "aspects": {
     "fabrico": 3,
-    "machina": 2
+    "machina": 2,
+    "lava": 8,
+    "mixtura": 1,
+    "ira": 1
   }
 }

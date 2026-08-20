@@ -4,6 +4,7 @@
     "id": "interiors:kelp_chair"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "desidia": 4
   }
 }

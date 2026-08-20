@@ -4,6 +4,7 @@
     "id": "dndecor:polished_cut_packed_mud_slab"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "mornogol": 2
   }
 }

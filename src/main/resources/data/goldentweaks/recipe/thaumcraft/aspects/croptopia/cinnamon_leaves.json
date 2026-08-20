@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:cinnamon_leaves"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

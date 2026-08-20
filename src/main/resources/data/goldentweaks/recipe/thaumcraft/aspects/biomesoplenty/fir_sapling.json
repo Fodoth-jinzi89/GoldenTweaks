@@ -4,6 +4,7 @@
     "id": "biomesoplenty:fir_sapling"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "fossil": 1
   }
 }

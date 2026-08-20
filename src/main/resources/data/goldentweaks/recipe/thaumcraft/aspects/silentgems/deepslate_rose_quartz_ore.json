@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:deepslate_rose_quartz_ore"
+  },
+  "aspects": {
+    "spelunca": 6
+  }
+}

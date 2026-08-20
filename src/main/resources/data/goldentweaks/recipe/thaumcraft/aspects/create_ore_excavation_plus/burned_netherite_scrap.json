@@ -4,6 +4,7 @@
     "id": "create_ore_excavation_plus:burned_netherite_scrap"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "mixtura": 1
   }
 }

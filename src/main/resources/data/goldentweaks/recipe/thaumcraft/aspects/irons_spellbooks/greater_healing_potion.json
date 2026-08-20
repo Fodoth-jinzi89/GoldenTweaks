@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:greater_healing_potion"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "sano": 8
   }
 }

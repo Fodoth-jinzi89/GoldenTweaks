@@ -4,6 +4,9 @@
     "id": "flavor_immersed_daily:stone_lion"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "alfirin": 4,
+    "dragon": 1,
+    "anteanus": 1
   }
 }

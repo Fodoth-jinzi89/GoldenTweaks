@@ -4,6 +4,7 @@
     "id": "spectrum:jadeite_petal_block"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 4
   }
 }

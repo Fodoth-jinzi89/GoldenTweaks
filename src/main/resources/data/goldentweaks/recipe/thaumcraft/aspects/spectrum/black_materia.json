@@ -4,6 +4,8 @@
     "id": "spectrum:black_materia"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpotentia": 6,
+    "atrpraecantatic": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:amethyst_pylon"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "anteanus": 4
   }
 }

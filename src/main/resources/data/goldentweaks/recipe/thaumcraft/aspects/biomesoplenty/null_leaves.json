@@ -4,6 +4,8 @@
     "id": "biomesoplenty:null_leaves"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2,
+    "arche": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:moss_ball"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "auram": 6
   }
 }

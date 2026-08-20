@@ -4,6 +4,7 @@
     "id": "cataclysm:the_incinerator"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "ira": 1
   }
 }

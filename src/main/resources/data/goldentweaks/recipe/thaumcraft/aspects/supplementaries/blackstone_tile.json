@@ -4,6 +4,7 @@
     "id": "supplementaries:blackstone_tile"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "atrpotentia": 8
   }
 }

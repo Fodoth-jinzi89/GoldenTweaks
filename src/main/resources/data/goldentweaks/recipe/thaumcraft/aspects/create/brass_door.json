@@ -4,6 +4,7 @@
     "id": "create:brass_door"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "mixtura": 4
   }
 }

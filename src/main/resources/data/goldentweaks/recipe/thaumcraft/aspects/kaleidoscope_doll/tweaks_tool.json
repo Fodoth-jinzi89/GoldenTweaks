@@ -4,6 +4,7 @@
     "id": "kaleidoscope_doll:tweaks_tool"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "childish": 8
   }
 }

@@ -4,6 +4,7 @@
     "id": "protection_pixel:plagueas_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "mixtura": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:bottomless_bundle"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "alfirin": 8
   }
 }

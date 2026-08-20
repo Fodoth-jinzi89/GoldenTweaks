@@ -4,6 +4,7 @@
     "id": "cataclysm:kobolediator_skull"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "priscus": 1
   }
 }

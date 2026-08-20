@@ -4,6 +4,8 @@
     "id": "cataclysm:void_forge"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "fossil": 1,
+    "ira": 1
   }
 }

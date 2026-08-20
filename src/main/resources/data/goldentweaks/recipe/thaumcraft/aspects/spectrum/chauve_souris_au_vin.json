@@ -4,6 +4,9 @@
     "id": "spectrum:chauve_souris_au_vin"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fossil": 4,
+    "luxuria": 8,
+    "evil": 4
   }
 }

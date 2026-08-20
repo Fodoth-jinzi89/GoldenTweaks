@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:overclocked_alloying_factory"
   },
   "aspects": {
-    "tempus": 3
+    "tempus": 3,
+    "mixtura": 6
   }
 }

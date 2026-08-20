@@ -4,6 +4,7 @@
     "id": "northstar:spike_fungus"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "evil": 4
   }
 }

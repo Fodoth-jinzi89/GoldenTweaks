@@ -4,6 +4,7 @@
     "id": "spectrum:amaranth_grains"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 4
   }
 }

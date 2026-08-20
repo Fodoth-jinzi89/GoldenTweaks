@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:ichor"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "arche": 6
   }
 }

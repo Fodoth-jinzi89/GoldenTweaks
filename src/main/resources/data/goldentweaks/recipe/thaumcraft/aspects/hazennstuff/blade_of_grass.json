@@ -4,6 +4,7 @@
     "id": "hazennstuff:blade_of_grass"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

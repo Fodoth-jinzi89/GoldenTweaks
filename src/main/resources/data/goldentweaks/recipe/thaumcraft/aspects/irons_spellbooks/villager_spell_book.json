@@ -5,6 +5,8 @@
   },
   "aspects": {
     "praecantatio": 4,
-    "cognitio": 3
+    "cognitio": 3,
+    "sano": 4,
+    "history": 4
   }
 }

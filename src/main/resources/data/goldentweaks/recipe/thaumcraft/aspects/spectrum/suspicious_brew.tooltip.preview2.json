@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:suspicious_brew.tooltip.preview2"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

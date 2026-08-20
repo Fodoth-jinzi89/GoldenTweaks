@@ -4,6 +4,7 @@
     "id": "spectrum:glow_vision_goggles"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "invidia": 6
   }
 }

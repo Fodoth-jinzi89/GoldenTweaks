@@ -4,6 +4,7 @@
     "id": "touhou_little_maid_spell:soul_book"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "history": 6
   }
 }

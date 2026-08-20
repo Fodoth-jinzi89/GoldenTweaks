@@ -4,6 +4,7 @@
     "id": "avaritia_more_items:side_config_card"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "terminus": 1
   }
 }

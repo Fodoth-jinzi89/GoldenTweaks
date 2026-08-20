@@ -4,6 +4,7 @@
     "id": "sophisticatedstorage:basic_tier_upgrade"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "arche": 6
   }
 }

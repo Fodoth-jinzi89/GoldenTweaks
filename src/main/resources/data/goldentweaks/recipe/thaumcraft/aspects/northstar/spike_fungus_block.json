@@ -4,6 +4,7 @@
     "id": "northstar:spike_fungus_block"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "universes": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "kaleidoscope_tavern:bar_cabinet"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "luxuria": 6
   }
 }

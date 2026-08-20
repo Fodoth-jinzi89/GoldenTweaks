@@ -5,6 +5,8 @@
   },
   "aspects": {
     "ardor": 4,
-    "ignis": 3
+    "ignis": 3,
+    "fossil": 1,
+    "ira": 6
   }
 }

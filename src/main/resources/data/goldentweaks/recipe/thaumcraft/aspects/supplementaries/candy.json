@@ -4,6 +4,7 @@
     "id": "supplementaries:candy"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "childish": 8
   }
 }

@@ -4,6 +4,7 @@
     "id": "backpack_pixel:unitboxas"
   },
   "aspects": {
-    "vas": 3
+    "vas": 3,
+    "mixtura": 1
   }
 }

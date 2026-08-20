@@ -4,6 +4,8 @@
     "id": "cataclysm:flame_eye"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "alfirin": 4,
+    "invidia": 8
   }
 }

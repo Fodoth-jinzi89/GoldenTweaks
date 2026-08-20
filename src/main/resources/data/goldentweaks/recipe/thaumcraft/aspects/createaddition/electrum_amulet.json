@@ -4,6 +4,8 @@
     "id": "createaddition:electrum_amulet"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "mixtura": 6,
+    "mornogol": 1
   }
 }

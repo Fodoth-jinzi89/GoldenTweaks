@@ -4,6 +4,7 @@
     "id": "traveloptics:chronicles_of_the_firelord"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "lava": 16
   }
 }

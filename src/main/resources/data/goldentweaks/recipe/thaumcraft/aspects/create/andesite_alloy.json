@@ -4,6 +4,7 @@
     "id": "create:andesite_alloy"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "mixtura": 4
   }
 }

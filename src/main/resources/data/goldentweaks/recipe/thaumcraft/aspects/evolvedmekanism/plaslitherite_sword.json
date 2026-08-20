@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:plaslitherite_sword"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "mixtura": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "goldentweaks:immaculate_gold"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "treasure": 4
   }
 }

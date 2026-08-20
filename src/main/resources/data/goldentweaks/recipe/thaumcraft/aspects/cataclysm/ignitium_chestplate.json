@@ -6,6 +6,8 @@
   "aspects": {
     "tutamen": 4,
     "vacuos": 4,
-    "vas": 2
+    "vas": 2,
+    "lava": 8,
+    "ira": 1
   }
 }

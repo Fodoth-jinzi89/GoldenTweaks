@@ -4,6 +4,8 @@
     "id": "irons_spellbooks:chained_book"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "invidia": 4,
+    "history": 4
   }
 }

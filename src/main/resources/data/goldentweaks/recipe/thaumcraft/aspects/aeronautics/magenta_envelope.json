@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics:magenta_envelope"
+  },
+  "aspects": {
+    "laputa": 4
+  }
+}

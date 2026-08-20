@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:sniffer_spawn_egg"
+  },
+  "aspects": {
+    "fossil": 4
+  }
+}

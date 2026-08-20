@@ -4,6 +4,8 @@
     "id": "irons_spellbooks:holy_rune"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "sano": 2,
+    "auram": 1
   }
 }

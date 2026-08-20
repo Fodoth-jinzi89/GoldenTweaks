@@ -4,6 +4,7 @@
     "id": "spectrum:splinterspawn_infested_shale_clay"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "anteanus": 6
   }
 }

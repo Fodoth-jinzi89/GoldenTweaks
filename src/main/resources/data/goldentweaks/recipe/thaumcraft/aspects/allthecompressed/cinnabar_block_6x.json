@@ -5,6 +5,7 @@
   },
   "aspects": {
     "substance": 10,
-    "dense": 12
+    "dense": 12,
+    "invidia": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:mushroomswrappedinbatter"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "expand": 6
   }
 }

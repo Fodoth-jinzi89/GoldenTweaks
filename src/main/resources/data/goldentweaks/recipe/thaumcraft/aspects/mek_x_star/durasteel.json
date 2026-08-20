@@ -4,6 +4,7 @@
     "id": "mek_x_star:durasteel"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "universes": 1
   }
 }

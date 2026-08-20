@@ -4,6 +4,7 @@
     "id": "aerocali:mechanical_anvil_0"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "gravitas": 8
   }
 }

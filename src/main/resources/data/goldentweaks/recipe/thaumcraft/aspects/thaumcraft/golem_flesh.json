@@ -4,6 +4,7 @@
     "id": "thaumcraft:golem_flesh"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 3,
+    "evil": 4
   }
 }

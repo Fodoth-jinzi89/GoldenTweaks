@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:miner_pottery_sherd"
+  },
+  "aspects": {
+    "anteanus": 2,
+    "mornogol": 4
+  }
+}

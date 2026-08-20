@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:cultist_boots"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "atrpraecantatic": 1
   }
 }

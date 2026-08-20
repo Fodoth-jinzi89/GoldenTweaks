@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:crystalsugar"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "childish": 1
   }
 }

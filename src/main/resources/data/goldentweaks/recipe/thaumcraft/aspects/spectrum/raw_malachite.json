@@ -4,6 +4,7 @@
     "id": "spectrum:raw_malachite"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 4
   }
 }

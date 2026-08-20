@@ -4,6 +4,7 @@
     "id": "packagedauto:settings_cloner"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "desidia": 4
   }
 }

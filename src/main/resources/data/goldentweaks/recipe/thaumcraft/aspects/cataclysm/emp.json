@@ -4,6 +4,7 @@
     "id": "cataclysm:emp"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "magnetis": 1
   }
 }

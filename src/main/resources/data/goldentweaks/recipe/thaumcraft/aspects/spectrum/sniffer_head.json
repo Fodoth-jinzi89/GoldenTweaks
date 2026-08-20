@@ -4,6 +4,7 @@
     "id": "spectrum:sniffer_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fossil": 6
   }
 }

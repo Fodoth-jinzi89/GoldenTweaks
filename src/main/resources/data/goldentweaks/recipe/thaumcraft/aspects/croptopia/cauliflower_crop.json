@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:cauliflower_crop"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

@@ -4,6 +4,7 @@
     "id": "stoneworks:cracked_end_stone_tiles"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "anteanus": 6
   }
 }

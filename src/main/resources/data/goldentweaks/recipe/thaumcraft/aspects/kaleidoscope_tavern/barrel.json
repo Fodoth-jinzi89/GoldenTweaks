@@ -4,6 +4,7 @@
     "id": "kaleidoscope_tavern:barrel"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "luxuria": 6
   }
 }

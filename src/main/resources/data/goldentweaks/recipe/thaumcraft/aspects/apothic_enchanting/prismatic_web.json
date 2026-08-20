@@ -4,6 +4,7 @@
     "id": "apothic_enchanting:prismatic_web"
   },
   "aspects": {
-    "vinculum": 3
+    "vinculum": 3,
+    "evil": 1
   }
 }

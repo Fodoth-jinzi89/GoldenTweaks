@@ -4,6 +4,7 @@
     "id": "spectrum:diorite_shimmerstone_light"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "anteanus": 4
   }
 }

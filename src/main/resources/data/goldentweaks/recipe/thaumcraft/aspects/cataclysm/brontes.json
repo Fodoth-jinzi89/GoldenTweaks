@@ -4,6 +4,8 @@
     "id": "cataclysm:brontes"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "fossil": 1,
+    "ira": 1
   }
 }

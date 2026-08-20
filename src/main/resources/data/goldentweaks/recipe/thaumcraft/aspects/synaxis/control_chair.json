@@ -4,6 +4,7 @@
     "id": "synaxis:control_chair"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "imperium": 4
   }
 }

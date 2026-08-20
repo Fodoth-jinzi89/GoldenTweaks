@@ -4,6 +4,7 @@
     "id": "hazennstuff:advanced"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "auram": 1
   }
 }

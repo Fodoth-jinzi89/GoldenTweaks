@@ -4,6 +4,7 @@
     "id": "traveloptics:desert_jewel_fragment"
   },
   "aspects": {
-    "lucrum": 3
+    "lucrum": 3,
+    "arche": 8
   }
 }

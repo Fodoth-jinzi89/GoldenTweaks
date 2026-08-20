@@ -4,6 +4,8 @@
     "id": "spectrum:staff_of_remembrance"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "alfirin": 8,
+    "anteanus": 6
   }
 }

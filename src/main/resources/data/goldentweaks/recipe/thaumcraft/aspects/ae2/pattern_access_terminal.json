@@ -4,6 +4,7 @@
     "id": "ae2:pattern_access_terminal"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "imperium": 1
   }
 }

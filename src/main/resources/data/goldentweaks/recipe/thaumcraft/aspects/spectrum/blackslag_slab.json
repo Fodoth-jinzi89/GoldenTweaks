@@ -4,6 +4,7 @@
     "id": "spectrum:blackslag_slab"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spelunca": 1
   }
 }

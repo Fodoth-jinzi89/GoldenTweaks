@@ -4,6 +4,7 @@
     "id": "taintedmagic:primal_blade"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 6
   }
 }

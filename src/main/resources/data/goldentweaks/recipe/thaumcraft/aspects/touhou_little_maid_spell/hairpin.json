@@ -4,6 +4,7 @@
     "id": "touhou_little_maid_spell:hairpin"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "invidia": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:blackslag_iron_ore"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "spelunca": 1
   }
 }

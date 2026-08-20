@@ -5,6 +5,8 @@
   },
   "aspects": {
     "vitreus": 5,
-    "terminus": 3
+    "terminus": 4,
+    "fossil": 1,
+    "ira": 1
   }
 }

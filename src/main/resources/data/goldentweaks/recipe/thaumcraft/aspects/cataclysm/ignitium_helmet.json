@@ -4,6 +4,8 @@
     "id": "cataclysm:ignitium_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "lava": 8,
+    "ira": 1
   }
 }

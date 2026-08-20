@@ -4,6 +4,7 @@
     "id": "sophisticatedstorage:paintbrush"
   },
   "aspects": {
-    "sensus": 2
+    "sensus": 2,
+    "fossil": 4
   }
 }

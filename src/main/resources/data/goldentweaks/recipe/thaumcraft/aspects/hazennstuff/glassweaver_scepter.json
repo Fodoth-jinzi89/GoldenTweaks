@@ -4,6 +4,7 @@
     "id": "hazennstuff:glassweaver_scepter"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "imperium": 1
   }
 }

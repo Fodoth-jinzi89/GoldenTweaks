@@ -4,6 +4,7 @@
     "id": "spectrum:marrow_head"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "fossil": 6
   }
 }

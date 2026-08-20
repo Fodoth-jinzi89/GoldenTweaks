@@ -4,6 +4,7 @@
     "id": "touhou_little_maid:item_magnet_bauble"
   },
   "aspects": {
-    "humanus": 3
+    "humanus": 3,
+    "magnetis": 6
   }
 }

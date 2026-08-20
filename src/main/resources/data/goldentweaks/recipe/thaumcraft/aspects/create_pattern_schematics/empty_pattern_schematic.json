@@ -4,6 +4,7 @@
     "id": "create_pattern_schematics:empty_pattern_schematic"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "arche": 4
   }
 }

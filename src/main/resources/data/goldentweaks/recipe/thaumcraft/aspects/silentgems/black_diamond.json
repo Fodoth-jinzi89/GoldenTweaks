@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:black_diamond"
+  },
+  "aspects": {
+    "alfirin": 6
+  }
+}

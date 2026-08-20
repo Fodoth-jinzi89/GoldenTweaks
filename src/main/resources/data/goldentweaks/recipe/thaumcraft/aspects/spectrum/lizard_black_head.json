@@ -4,6 +4,8 @@
     "id": "spectrum:lizard_black_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "fossil": 4,
+    "evil": 4
   }
 }

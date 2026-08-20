@@ -4,6 +4,7 @@
     "id": "hazennstuff:solar_core"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "ira": 4
   }
 }

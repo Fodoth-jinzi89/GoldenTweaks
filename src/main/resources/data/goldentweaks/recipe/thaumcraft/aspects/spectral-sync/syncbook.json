@@ -4,6 +4,7 @@
     "id": "spectral-sync:syncbook"
   },
   "aspects": {
-    "cognitio": 4
+    "cognitio": 4,
+    "history": 6
   }
 }

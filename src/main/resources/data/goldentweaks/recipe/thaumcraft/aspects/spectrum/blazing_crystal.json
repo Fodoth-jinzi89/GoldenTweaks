@@ -4,6 +4,7 @@
     "id": "spectrum:blazing_crystal"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "lava": 8
   }
 }

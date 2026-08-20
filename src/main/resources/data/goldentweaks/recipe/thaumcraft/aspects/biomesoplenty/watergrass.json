@@ -5,6 +5,7 @@
   },
   "aspects": {
     "herba": 3,
-    "waters": 2
+    "waters": 2,
+    "vegetatio": 2
   }
 }

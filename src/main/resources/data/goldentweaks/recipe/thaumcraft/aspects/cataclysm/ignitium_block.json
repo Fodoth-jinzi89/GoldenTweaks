@@ -4,6 +4,8 @@
     "id": "cataclysm:ignitium_block"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "lava": 16,
+    "ira": 1
   }
 }

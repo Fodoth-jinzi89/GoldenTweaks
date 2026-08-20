@@ -4,6 +4,7 @@
     "id": "biomesoplenty:pine_pressure_plate"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "mornogol": 1
   }
 }

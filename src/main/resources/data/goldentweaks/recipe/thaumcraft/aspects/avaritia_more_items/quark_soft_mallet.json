@@ -4,6 +4,8 @@
     "id": "avaritia_more_items:quark_soft_mallet"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "fossil": 1,
+    "ira": 1
   }
 }

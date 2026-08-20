@@ -4,6 +4,7 @@
     "id": "spectrum:azurite_glass_ampoule"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "auram": 4
   }
 }

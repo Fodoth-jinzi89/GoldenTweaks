@@ -4,6 +4,7 @@
     "id": "extendedae:ex_pattern_access_part"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "imperium": 1
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:module_blasting_unit"
+  },
+  "aspects": {
+    "fossil": 4
+  }
+}

@@ -4,6 +4,7 @@
     "id": "createpropulsion:auto_glue"
   },
   "aspects": {
-    "adhaesio": 3
+    "adhaesio": 3,
+    "fossil": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:malachite_crossbow"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "auram": 6
   }
 }

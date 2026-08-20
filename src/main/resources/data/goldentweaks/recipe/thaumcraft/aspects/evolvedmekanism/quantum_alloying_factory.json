@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:quantum_alloying_factory"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 3,
+    "mixtura": 6
   }
 }

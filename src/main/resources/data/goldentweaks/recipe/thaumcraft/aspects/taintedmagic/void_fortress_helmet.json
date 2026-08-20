@@ -4,6 +4,7 @@
     "id": "taintedmagic:void_fortress_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "evil": 8
   }
 }

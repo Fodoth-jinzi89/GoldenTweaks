@@ -4,6 +4,7 @@
     "id": "ftbquests:book"
   },
   "aspects": {
-    "cognitio": 4
+    "cognitio": 4,
+    "history": 4
   }
 }

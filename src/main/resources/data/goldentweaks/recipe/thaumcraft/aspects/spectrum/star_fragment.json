@@ -4,6 +4,7 @@
     "id": "spectrum:star_fragment"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 6
   }
 }

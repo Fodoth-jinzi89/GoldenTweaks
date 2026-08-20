@@ -5,6 +5,8 @@
   },
   "aspects": {
     "arbor": 3,
-    "pannus": 2
+    "pannus": 2,
+    "imperium": 8,
+    "evil": 4
   }
 }

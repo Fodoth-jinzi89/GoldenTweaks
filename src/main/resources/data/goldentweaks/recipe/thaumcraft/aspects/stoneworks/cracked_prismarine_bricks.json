@@ -4,6 +4,7 @@
     "id": "stoneworks:cracked_prismarine_bricks"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "anteanus": 6
   }
 }

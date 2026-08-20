@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_doll:doll_64"
+  },
+  "aspects": {
+    "childish": 6
+  }
+}

@@ -4,6 +4,8 @@
     "id": "cataclysm:netherite_effigy"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "lava": 8,
+    "mixtura": 1
   }
 }

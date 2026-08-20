@@ -4,6 +4,7 @@
     "id": "createframed:brass_window_pane"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "mixtura": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "stoneworks:cracked_tuff_tiles"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "anteanus": 8
   }
 }

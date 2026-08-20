@@ -4,6 +4,7 @@
     "id": "silentgems:potato_on_a_stick"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "expand": 8
   }
 }

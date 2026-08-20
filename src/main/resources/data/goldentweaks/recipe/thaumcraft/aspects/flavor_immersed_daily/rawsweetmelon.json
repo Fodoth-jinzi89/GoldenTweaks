@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:rawsweetmelon"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

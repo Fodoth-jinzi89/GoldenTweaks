@@ -4,6 +4,7 @@
     "id": "thaumcraft:void_robe_hood"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:chronicle"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "history": 4
   }
 }

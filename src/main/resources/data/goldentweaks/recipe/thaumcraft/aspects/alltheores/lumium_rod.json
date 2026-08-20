@@ -4,6 +4,7 @@
     "id": "alltheores:lumium_rod"
   },
   "aspects": {
-    "metallum": 2
+    "metallum": 2,
+    "mixtura": 4
   }
 }

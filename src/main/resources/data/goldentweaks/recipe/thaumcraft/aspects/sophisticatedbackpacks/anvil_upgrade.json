@@ -4,6 +4,7 @@
     "id": "sophisticatedbackpacks:anvil_upgrade"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "gravitas": 8
   }
 }

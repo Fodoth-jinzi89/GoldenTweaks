@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:infused_beverage.tooltip.variant.greener_grasses"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

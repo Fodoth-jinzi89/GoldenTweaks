@@ -4,6 +4,7 @@
     "id": "biomesoplenty:blood_bucket"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 3,
+    "evil": 1
   }
 }

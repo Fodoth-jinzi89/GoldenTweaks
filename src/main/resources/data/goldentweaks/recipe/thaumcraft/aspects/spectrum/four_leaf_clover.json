@@ -4,6 +4,8 @@
     "id": "spectrum:four_leaf_clover"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2,
+    "mornogol": 6
   }
 }

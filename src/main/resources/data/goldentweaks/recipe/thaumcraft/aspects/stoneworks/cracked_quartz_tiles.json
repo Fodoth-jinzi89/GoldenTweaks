@@ -4,6 +4,7 @@
     "id": "stoneworks:cracked_quartz_tiles"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "anteanus": 8
   }
 }

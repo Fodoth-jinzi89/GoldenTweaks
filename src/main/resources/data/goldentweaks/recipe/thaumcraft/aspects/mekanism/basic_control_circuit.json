@@ -4,6 +4,7 @@
     "id": "mekanism:basic_control_circuit"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "imperium": 4
   }
 }

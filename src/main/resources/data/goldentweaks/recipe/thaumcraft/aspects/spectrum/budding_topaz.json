@@ -4,6 +4,7 @@
     "id": "spectrum:budding_topaz"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spelunca": 1
   }
 }

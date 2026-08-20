@@ -4,6 +4,7 @@
     "id": "linearbearing:bubble_gum_block"
   },
   "aspects": {
-    "adhaesio": 3
+    "adhaesio": 3,
+    "childish": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "silentgear:refabricator"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "mixtura": 2
   }
 }

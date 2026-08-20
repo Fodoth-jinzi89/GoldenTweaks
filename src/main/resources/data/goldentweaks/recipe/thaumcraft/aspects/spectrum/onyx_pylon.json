@@ -4,6 +4,7 @@
     "id": "spectrum:onyx_pylon"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 4
   }
 }

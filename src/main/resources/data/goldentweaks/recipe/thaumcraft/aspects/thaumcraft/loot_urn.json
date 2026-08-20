@@ -4,6 +4,7 @@
     "id": "thaumcraft:loot_urn"
   },
   "aspects": {
-    "lucrum": 3
+    "lucrum": 3,
+    "anteanus": 8
   }
 }

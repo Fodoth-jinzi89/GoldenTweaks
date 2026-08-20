@@ -4,6 +4,7 @@
     "id": "computercraft:disk_drive"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "arche": 2
   }
 }

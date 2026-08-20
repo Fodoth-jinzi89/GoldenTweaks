@@ -5,6 +5,8 @@
   },
   "aspects": {
     "accessories": 3,
-    "corpus": 3
+    "corpus": 3,
+    "invidia": 6,
+    "evil": 6
   }
 }

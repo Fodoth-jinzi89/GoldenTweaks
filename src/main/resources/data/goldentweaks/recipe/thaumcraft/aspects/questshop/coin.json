@@ -5,6 +5,7 @@
   },
   "aspects": {
     "lucrum": 4,
-    "metallum": 2
+    "metallum": 2,
+    "treasure": 6
   }
 }

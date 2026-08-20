@@ -4,6 +4,7 @@
     "id": "kaleidoscope_tavern:glassware_holder"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "luxuria": 6
   }
 }

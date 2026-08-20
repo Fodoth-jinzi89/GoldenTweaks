@@ -4,6 +4,7 @@
     "id": "hazennstuff:legionnaire_commander_boots"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "imperium": 6
   }
 }

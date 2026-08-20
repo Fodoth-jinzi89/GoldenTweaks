@@ -4,6 +4,9 @@
     "id": "cataclysm:ignitium_ingot"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "lava": 4,
+    "alfirin": 4,
+    "ira": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "cbc_ballistics:cannon_control"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "imperium": 4
   }
 }

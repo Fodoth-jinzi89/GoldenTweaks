@@ -4,6 +4,7 @@
     "id": "thaumcraft:greatwood_leaves"
   },
   "aspects": {
-    "herba": 1
+    "herba": 1,
+    "vegetatio": 2
   }
 }

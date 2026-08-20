@@ -4,6 +4,8 @@
     "id": "supplementaries:goblet"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "luxuria": 8,
+    "invidia": 6
   }
 }

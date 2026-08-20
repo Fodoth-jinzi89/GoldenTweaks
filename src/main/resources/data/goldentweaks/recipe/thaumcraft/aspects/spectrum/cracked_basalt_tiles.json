@@ -4,6 +4,7 @@
     "id": "spectrum:cracked_basalt_tiles"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "anteanus": 4
   }
 }

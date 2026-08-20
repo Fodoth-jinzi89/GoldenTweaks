@@ -4,6 +4,7 @@
     "id": "create_mobile_packages:mobile_packager"
   },
   "aspects": {
-    "vas": 3
+    "vas": 3,
+    "desidia": 1
   }
 }

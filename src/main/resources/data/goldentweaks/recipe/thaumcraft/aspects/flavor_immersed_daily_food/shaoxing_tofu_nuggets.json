@@ -5,6 +5,7 @@
   },
   "aspects": {
     "victus": 3,
-    "fames": 2
+    "fames": 2,
+    "expand": 8
   }
 }

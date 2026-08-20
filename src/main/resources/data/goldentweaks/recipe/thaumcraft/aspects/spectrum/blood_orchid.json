@@ -4,6 +4,9 @@
     "id": "spectrum:blood_orchid"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 3,
+    "anteanus": 4,
+    "evil": 4,
+    "ira": 4
   }
 }

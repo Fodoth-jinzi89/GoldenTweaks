@@ -4,6 +4,7 @@
     "id": "ccterminals:terminal_advanced"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "arche": 1
   }
 }

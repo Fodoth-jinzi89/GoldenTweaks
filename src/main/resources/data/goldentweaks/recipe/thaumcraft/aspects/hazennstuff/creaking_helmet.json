@@ -4,6 +4,7 @@
     "id": "hazennstuff:creaking_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "evil": 1
   }
 }

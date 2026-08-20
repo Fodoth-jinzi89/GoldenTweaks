@@ -4,6 +4,8 @@
     "id": "spectrum:resplendent_feather"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dragon": 6,
+    "anteanus": 4
   }
 }

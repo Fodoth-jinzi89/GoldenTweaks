@@ -4,6 +4,7 @@
     "id": "northstar:ice_box"
   },
   "aspects": {
-    "gelum": 3
+    "gelum": 3,
+    "universes": 2
   }
 }

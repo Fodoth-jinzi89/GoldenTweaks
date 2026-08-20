@@ -4,6 +4,7 @@
     "id": "dndecor:small_packed_mud_bricks"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "mornogol": 4
   }
 }

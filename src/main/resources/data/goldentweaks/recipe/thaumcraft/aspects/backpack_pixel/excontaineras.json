@@ -4,6 +4,7 @@
     "id": "backpack_pixel:excontaineras"
   },
   "aspects": {
-    "vas": 3
+    "vas": 3,
+    "mixtura": 1
   }
 }

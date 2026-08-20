@@ -4,6 +4,7 @@
     "id": "alltheores:enderium_dust"
   },
   "aspects": {
-    "metallum": 2
+    "metallum": 2,
+    "mixtura": 1
   }
 }

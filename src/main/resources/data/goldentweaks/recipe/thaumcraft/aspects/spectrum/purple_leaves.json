@@ -4,6 +4,7 @@
     "id": "spectrum:purple_leaves"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

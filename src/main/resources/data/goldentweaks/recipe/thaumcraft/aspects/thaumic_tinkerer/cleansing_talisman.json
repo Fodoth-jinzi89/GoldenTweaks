@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:cleansing_talisman"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpotentia": 8
   }
 }

@@ -4,6 +4,7 @@
     "id": "hazennstuff:cryogenic_ruler_boots"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "auram": 1
   }
 }

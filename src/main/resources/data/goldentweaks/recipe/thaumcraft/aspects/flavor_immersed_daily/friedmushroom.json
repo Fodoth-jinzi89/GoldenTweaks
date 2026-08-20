@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:friedmushroom"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "expand": 4
   }
 }

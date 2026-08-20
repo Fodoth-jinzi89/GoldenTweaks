@@ -4,6 +4,7 @@
     "id": "supplementaries:raked_gravel"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "gravitas": 2
   }
 }

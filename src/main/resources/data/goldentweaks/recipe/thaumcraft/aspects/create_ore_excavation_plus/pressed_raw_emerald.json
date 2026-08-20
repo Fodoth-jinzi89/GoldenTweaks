@@ -6,6 +6,7 @@
   "aspects": {
     "fabrico": 3,
     "vitreus": 3,
-    "machina": 2
+    "machina": 2,
+    "treasure": 4
   }
 }

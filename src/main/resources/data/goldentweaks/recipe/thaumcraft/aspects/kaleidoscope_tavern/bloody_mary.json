@@ -4,6 +4,7 @@
     "id": "kaleidoscope_tavern:bloody_mary"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 3,
+    "evil": 4
   }
 }

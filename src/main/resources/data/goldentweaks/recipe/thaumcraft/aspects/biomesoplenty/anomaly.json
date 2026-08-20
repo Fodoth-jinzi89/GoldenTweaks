@@ -4,6 +4,7 @@
     "id": "biomesoplenty:anomaly"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "arche": 1
   }
 }

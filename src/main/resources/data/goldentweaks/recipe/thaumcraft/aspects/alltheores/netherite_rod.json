@@ -4,6 +4,7 @@
     "id": "alltheores:netherite_rod"
   },
   "aspects": {
-    "metallum": 2
+    "metallum": 2,
+    "mixtura": 1
   }
 }

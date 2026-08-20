@@ -5,6 +5,7 @@
   },
   "aspects": {
     "iter": 3,
-    "space": 3
+    "space": 3,
+    "universes": 1
   }
 }

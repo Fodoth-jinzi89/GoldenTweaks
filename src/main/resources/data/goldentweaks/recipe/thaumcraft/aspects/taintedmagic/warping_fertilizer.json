@@ -5,6 +5,7 @@
   },
   "aspects": {
     "iter": 4,
-    "alienis": 2
+    "alienis": 2,
+    "evil": 8
   }
 }

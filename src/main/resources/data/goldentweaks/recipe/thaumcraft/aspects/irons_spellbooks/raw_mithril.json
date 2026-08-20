@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:raw_mithril"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 4
   }
 }

@@ -4,6 +4,8 @@
     "id": "touhou_little_maid_spell:molten_fox_leaf"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "lava": 4,
+    "vegetatio": 2
   }
 }

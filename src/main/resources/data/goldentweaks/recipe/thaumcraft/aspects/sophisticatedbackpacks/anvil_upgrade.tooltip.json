@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedbackpacks:anvil_upgrade.tooltip"
+  },
+  "aspects": {
+    "gravitas": 8
+  }
+}

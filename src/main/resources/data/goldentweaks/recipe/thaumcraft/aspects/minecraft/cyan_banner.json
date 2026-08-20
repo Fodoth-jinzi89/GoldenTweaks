@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:cyan_banner"
+  },
+  "aspects": {
+    "imperium": 6
+  }
+}

@@ -4,6 +4,7 @@
     "id": "silentgear:alloy_forge"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "mixtura": 8
   }
 }

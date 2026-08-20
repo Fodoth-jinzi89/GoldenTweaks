@@ -4,6 +4,9 @@
     "id": "flavor_immersed_daily:chinese_knotting"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "alfirin": 4,
+    "dragon": 1,
+    "anteanus": 1
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:switcheroo"
+  },
+  "aspects": {
+    "history": 1
+  }
+}

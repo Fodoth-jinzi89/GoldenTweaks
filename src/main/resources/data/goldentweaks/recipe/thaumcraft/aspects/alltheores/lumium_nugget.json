@@ -4,6 +4,7 @@
     "id": "alltheores:lumium_nugget"
   },
   "aspects": {
-    "metallum": 1
+    "metallum": 1,
+    "mixtura": 4
   }
 }

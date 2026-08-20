@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:deepslate_tanzanite_ore"
+  },
+  "aspects": {
+    "spelunca": 6
+  }
+}

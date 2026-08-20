@@ -4,6 +4,7 @@
     "id": "spectrum:molten_rod"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "lava": 8
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:pure_emerald"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "treasure": 8
   }
 }

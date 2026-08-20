@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:rawpigblood"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 3,
+    "evil": 1
   }
 }

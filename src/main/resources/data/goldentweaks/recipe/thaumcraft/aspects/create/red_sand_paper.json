@@ -4,6 +4,7 @@
     "id": "create:red_sand_paper"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "gravitas": 2
   }
 }

@@ -5,6 +5,7 @@
   },
   "aspects": {
     "sensus": 4,
-    "lux": 2
+    "lux": 2,
+    "evil": 6
   }
 }

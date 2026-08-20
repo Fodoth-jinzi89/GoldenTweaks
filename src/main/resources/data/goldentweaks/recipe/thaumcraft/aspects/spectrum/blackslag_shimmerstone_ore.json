@@ -4,6 +4,7 @@
     "id": "spectrum:blackslag_shimmerstone_ore"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "spelunca": 1
   }
 }

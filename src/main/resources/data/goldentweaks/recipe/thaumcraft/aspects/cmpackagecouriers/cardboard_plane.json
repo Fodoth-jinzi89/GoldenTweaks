@@ -4,6 +4,7 @@
     "id": "cmpackagecouriers:cardboard_plane"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "desidia": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "iss_magicfromtheeast:jadestone_bricks_slab"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "imperium": 4
   }
 }

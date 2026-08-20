@@ -4,6 +4,7 @@
     "id": "neoecoae:black_tungsten_alloy_sword"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "mixtura": 8
   }
 }

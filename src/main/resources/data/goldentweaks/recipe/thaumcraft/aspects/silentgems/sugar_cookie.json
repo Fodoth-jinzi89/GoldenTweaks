@@ -4,6 +4,7 @@
     "id": "silentgems:sugar_cookie"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "childish": 4
   }
 }

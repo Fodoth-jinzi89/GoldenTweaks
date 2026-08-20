@@ -5,6 +5,8 @@
   },
   "aspects": {
     "cognitio": 3,
-    "sensus": 2
+    "sensus": 2,
+    "arche": 2,
+    "invidia": 1
   }
 }

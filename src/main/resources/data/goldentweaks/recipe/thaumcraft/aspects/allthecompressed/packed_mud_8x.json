@@ -5,6 +5,7 @@
   },
   "aspects": {
     "substance": 8,
-    "dense": 16
+    "dense": 16,
+    "mornogol": 1
   }
 }

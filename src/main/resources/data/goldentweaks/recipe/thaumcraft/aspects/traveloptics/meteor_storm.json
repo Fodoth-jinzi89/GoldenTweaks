@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:meteor_storm"
+  },
+  "aspects": {
+    "ira": 4
+  }
+}

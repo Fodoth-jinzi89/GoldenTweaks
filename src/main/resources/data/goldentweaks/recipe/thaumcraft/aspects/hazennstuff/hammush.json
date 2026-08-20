@@ -4,6 +4,8 @@
     "id": "hazennstuff:hammush"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "fossil": 4,
+    "ira": 4
   }
 }

@@ -4,6 +4,8 @@
     "id": "spectrum:budding_onyx"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "spelunca": 1,
+    "atrpraecantatic": 4
   }
 }

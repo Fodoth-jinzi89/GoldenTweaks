@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:epic_ink"
   },
   "aspects": {
-    "sensus": 3
+    "sensus": 3,
+    "history": 4
   }
 }

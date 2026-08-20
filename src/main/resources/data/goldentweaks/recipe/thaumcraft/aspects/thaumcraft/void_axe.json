@@ -4,6 +4,8 @@
     "id": "thaumcraft:void_axe"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "evil": 6,
+    "ira": 8
   }
 }

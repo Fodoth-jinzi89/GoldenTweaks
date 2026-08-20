@@ -4,6 +4,7 @@
     "id": "spectrum:weeping_gala_sprig"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 8
   }
 }

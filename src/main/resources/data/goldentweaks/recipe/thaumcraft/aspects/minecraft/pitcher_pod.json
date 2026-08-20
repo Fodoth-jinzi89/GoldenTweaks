@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:pitcher_pod"
+  },
+  "aspects": {
+    "alfirin": 6
+  }
+}

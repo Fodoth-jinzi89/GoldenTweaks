@@ -4,6 +4,7 @@
     "id": "packagedauto:encoder"
   },
   "aspects": {
-    "vas": 3
+    "vas": 3,
+    "desidia": 4
   }
 }

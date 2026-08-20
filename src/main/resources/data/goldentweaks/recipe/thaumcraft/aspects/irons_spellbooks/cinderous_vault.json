@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:cinderous_vault"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpraecantatic": 1
   }
 }

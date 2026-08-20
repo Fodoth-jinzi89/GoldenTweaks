@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:pepper_pork_belly_chicken_soup"
+  },
+  "aspects": {
+    "sano": 8,
+    "luxuria": 4,
+    "ira": 4
+  }
+}

@@ -4,6 +4,7 @@
     "id": "thaumcraft:hierophant_sacred_sword"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "evil": 4
   }
 }

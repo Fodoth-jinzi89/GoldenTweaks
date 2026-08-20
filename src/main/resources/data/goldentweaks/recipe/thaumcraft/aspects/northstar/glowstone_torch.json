@@ -4,6 +4,7 @@
     "id": "northstar:glowstone_torch"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "universes": 2
   }
 }

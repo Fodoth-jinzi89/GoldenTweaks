@@ -5,6 +5,8 @@
   },
   "aspects": {
     "praecantatio": 4,
-    "spiritus": 2
+    "spiritus": 2,
+    "lava": 2,
+    "auram": 8
   }
 }

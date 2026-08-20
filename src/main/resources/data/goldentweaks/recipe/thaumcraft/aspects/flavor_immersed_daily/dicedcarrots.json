@@ -4,6 +4,7 @@
     "id": "flavor_immersed_daily:dicedcarrots"
   },
   "aspects": {
-    "gelum": 3
+    "gelum": 3,
+    "vegetatio": 2
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:heliodor_glass"
+  },
+  "aspects": {
+    "superbia": 2
+  }
+}

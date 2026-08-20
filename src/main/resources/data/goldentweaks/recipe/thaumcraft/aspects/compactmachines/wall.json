@@ -4,6 +4,7 @@
     "id": "compactmachines:wall"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "expand": 4
   }
 }

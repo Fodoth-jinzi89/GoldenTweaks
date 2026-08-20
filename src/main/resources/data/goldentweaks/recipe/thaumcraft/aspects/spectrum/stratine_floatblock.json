@@ -4,6 +4,7 @@
     "id": "spectrum:stratine_floatblock"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "laputa": 4
   }
 }

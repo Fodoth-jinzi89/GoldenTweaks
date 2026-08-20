@@ -4,6 +4,7 @@
     "id": "sophisticatedstorage:advanced_magnet_upgrade"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "magnetis": 4
   }
 }

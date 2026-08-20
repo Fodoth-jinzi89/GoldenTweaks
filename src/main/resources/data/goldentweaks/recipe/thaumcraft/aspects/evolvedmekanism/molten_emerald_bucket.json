@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:molten_emerald_bucket"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "treasure": 4
   }
 }

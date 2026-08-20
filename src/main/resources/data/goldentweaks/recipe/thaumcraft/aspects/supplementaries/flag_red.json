@@ -4,6 +4,7 @@
     "id": "supplementaries:flag_red"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "imperium": 4
   }
 }

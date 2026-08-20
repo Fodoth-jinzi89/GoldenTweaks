@@ -4,6 +4,8 @@
     "id": "cataclysm:ring_of_grudged"
   },
   "aspects": {
-    "accessories": 3
+    "accessories": 3,
+    "invidia": 1,
+    "ira": 1
   }
 }

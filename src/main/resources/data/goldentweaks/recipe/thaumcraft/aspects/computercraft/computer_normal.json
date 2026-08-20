@@ -4,6 +4,8 @@
     "id": "computercraft:computer_normal"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "arche": 1,
+    "invidia": 1
   }
 }

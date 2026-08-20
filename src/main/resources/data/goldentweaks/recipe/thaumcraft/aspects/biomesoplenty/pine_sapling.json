@@ -4,6 +4,7 @@
     "id": "biomesoplenty:pine_sapling"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "mornogol": 1
   }
 }

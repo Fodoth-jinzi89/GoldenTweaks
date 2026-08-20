@@ -4,6 +4,8 @@
     "id": "flavor_immersed_daily:bloodorange"
   },
   "aspects": {
-    "corpus": 3
+    "corpus": 3,
+    "vegetatio": 2,
+    "evil": 1
   }
 }

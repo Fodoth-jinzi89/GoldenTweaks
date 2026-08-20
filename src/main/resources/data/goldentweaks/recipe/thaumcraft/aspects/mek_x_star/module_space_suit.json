@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mek_x_star:module_space_suit"
+  },
+  "aspects": {
+    "universes": 1
+  }
+}

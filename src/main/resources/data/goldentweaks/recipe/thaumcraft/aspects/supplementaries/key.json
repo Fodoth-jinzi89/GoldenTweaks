@@ -4,6 +4,7 @@
     "id": "supplementaries:key"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "invidia": 6
   }
 }

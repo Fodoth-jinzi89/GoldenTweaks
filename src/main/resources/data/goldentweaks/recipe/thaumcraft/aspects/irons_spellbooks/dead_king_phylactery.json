@@ -4,6 +4,9 @@
     "id": "irons_spellbooks:dead_king_phylactery"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 1,
+    "superbia": 1,
+    "imperium": 6
   }
 }

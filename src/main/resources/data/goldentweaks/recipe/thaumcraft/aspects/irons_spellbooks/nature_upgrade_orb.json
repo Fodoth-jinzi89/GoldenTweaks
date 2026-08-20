@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:nature_upgrade_orb"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "auram": 2
   }
 }

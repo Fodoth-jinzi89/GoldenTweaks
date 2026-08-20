@@ -5,6 +5,7 @@
   },
   "aspects": {
     "metallum": 10,
-    "dense": 14
+    "dense": 14,
+    "mixtura": 1
   }
 }

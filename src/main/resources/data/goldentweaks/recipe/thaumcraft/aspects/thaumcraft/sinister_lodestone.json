@@ -4,6 +4,7 @@
     "id": "thaumcraft:sinister_lodestone"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "magnetis": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "traveloptics:flame_tempered_handguard"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "arche": 8
   }
 }

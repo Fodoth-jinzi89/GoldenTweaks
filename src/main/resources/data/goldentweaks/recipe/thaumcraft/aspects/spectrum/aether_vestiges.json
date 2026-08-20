@@ -4,6 +4,9 @@
     "id": "spectrum:aether_vestiges"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "alfirin": 8,
+    "atrpraecantatic": 4,
+    "anteanus": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:bottle_of_fading"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpraecantatic": 4
   }
 }

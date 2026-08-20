@@ -4,6 +4,8 @@
     "id": "spectrum:blackslag_shimmerstone_light"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "spelunca": 1,
+    "anteanus": 4
   }
 }

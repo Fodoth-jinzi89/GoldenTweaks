@@ -4,6 +4,7 @@
     "id": "spectral_decorations:light_blue_amphora"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "mornogol": 6
   }
 }

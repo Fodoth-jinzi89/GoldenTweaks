@@ -4,6 +4,7 @@
     "id": "spectrum:small_netherite_scrap_bud"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "mixtura": 4
   }
 }

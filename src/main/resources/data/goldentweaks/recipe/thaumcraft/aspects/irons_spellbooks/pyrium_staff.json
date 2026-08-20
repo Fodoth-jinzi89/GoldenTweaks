@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:pyrium_staff"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "evil": 2
   }
 }

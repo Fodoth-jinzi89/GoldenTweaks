@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:sand_paper.tooltip.summary"
+  },
+  "aspects": {
+    "gravitas": 2
+  }
+}

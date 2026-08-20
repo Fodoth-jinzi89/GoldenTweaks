@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:graybeard_staff"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "arche": 4
   }
 }

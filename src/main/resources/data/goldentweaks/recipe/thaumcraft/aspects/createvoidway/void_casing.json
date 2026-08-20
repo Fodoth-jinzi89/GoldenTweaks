@@ -4,6 +4,7 @@
     "id": "createvoidway:void_casing"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "atrpotentia": 1
   }
 }

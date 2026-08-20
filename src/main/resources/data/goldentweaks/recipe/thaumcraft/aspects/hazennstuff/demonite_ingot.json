@@ -4,6 +4,7 @@
     "id": "hazennstuff:demonite_ingot"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "evil": 6
   }
 }

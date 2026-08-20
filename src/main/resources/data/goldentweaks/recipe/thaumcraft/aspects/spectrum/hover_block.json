@@ -4,6 +4,7 @@
     "id": "spectrum:hover_block"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "laputa": 4
   }
 }

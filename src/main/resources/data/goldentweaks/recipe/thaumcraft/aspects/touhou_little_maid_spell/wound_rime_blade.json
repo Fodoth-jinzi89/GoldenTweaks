@@ -4,6 +4,7 @@
     "id": "touhou_little_maid_spell:wound_rime_blade"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 6
   }
 }

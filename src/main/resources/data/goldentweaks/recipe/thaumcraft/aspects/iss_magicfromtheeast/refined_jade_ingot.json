@@ -4,6 +4,7 @@
     "id": "iss_magicfromtheeast:refined_jade_ingot"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "imperium": 4
   }
 }

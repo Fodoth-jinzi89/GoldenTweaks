@@ -5,6 +5,7 @@
   },
   "aspects": {
     "praecantatio": 2,
-    "venenum": 2
+    "venenum": 2,
+    "evil": 1
   }
 }

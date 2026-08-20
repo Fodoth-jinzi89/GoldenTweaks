@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:priest_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "sano": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:topaz_chime"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 6
   }
 }

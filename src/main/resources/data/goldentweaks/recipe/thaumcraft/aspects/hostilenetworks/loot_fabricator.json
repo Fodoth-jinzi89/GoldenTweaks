@@ -4,6 +4,7 @@
     "id": "hostilenetworks:loot_fabricator"
   },
   "aspects": {
-    "lucrum": 3
+    "lucrum": 3,
+    "imperium": 2
   }
 }

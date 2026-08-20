@@ -5,6 +5,7 @@
   },
   "aspects": {
     "vitreus": 10,
-    "dense": 10
+    "dense": 10,
+    "treasure": 1
   }
 }

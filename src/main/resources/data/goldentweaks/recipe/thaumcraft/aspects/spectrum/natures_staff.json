@@ -4,6 +4,7 @@
     "id": "spectrum:natures_staff"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "auram": 6
   }
 }

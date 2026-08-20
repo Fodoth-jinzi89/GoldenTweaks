@@ -5,6 +5,7 @@
   },
   "aspects": {
     "terra": 8,
-    "dense": 16
+    "dense": 16,
+    "gravitas": 2
   }
 }

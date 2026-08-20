@@ -4,6 +4,7 @@
     "id": "hazennstuff:insania_aeternus"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "anteanus": 1
   }
 }

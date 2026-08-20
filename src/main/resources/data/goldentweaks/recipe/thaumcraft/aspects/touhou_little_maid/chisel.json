@@ -4,6 +4,7 @@
     "id": "touhou_little_maid:chisel"
   },
   "aspects": {
-    "humanus": 3
+    "humanus": 3,
+    "fossil": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "spectrum:splinterspawn_infested_pyrite"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 6
   }
 }

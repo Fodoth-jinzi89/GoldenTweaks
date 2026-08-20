@@ -4,6 +4,8 @@
     "id": "spectrum:heartsingers_reward"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "sano": 6,
+    "auram": 4
   }
 }

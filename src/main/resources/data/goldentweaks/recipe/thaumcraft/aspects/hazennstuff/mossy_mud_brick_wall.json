@@ -4,6 +4,7 @@
     "id": "hazennstuff:mossy_mud_brick_wall"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "mornogol": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "createvoidway:void_teleport_link"
   },
   "aspects": {
-    "sensus": 3
+    "sensus": 3,
+    "atrpotentia": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "create_optical:absorption_polarizing_filter"
   },
   "aspects": {
-    "sensus": 3
+    "sensus": 3,
+    "arche": 4
   }
 }

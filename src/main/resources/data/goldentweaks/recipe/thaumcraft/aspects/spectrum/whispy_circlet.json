@@ -4,6 +4,7 @@
     "id": "spectrum:whispy_circlet"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 4
   }
 }

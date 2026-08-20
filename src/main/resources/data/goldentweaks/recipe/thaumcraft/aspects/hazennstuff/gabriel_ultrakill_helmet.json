@@ -4,6 +4,8 @@
     "id": "hazennstuff:gabriel_ultrakill_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "imperium": 1,
+    "evil": 1
   }
 }

@@ -4,6 +4,9 @@
     "id": "spectrum:bone_ash_bricks"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "dragon": 4,
+    "priscus": 4,
+    "fossil": 8
   }
 }

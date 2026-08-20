@@ -4,6 +4,8 @@
     "id": "evolvedmekanism:plaslitherite_axe"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "mixtura": 1,
+    "ira": 6
   }
 }

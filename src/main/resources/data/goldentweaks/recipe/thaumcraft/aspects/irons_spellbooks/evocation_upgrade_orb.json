@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:evocation_upgrade_orb"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "auram": 1
   }
 }

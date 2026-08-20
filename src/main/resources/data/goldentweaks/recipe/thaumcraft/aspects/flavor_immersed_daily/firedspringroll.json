@@ -5,6 +5,7 @@
   },
   "aspects": {
     "accessories": 3,
-    "ignis": 3
+    "ignis": 3,
+    "expand": 4
   }
 }

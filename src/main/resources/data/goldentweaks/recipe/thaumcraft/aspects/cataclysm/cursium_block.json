@@ -4,6 +4,7 @@
     "id": "cataclysm:cursium_block"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "evil": 1
   }
 }

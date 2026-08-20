@@ -4,6 +4,7 @@
     "id": "hazennstuff:nautilus_knight_boots"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "fossil": 4
   }
 }

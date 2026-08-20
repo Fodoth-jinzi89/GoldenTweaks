@@ -4,6 +4,7 @@
     "id": "spectrum:ivory_noxwood_amphora"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "mornogol": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:plaslitherite_boots"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "mixtura": 1
   }
 }

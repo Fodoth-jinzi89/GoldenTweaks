@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:mithril_weave"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 2
   }
 }

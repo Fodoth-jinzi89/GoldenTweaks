@@ -4,6 +4,7 @@
     "id": "spectrum:exposed_shale_clay_tile_slab"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "anteanus": 4
   }
 }

@@ -4,6 +4,8 @@
     "id": "spectrum:rotten_ground"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "atrpotentia": 8,
+    "atrpraecantatic": 8
   }
 }

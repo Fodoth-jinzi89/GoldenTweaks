@@ -4,6 +4,7 @@
     "id": "cataclysm:monstrous_horn"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "evil": 1
   }
 }

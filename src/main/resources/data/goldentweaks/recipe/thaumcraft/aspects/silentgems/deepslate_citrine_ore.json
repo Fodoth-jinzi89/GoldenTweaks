@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:deepslate_citrine_ore"
+  },
+  "aspects": {
+    "spelunca": 6
+  }
+}

@@ -4,6 +4,7 @@
     "id": "spectrum:paltaeria_floatblock"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "laputa": 4
   }
 }

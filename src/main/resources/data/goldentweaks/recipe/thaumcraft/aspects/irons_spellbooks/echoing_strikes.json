@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:echoing_strikes"
+  },
+  "aspects": {
+    "invidia": 4
+  }
+}

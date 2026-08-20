@@ -4,6 +4,7 @@
     "id": "spectrum:neolith_block"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpraecantatic": 6
   }
 }

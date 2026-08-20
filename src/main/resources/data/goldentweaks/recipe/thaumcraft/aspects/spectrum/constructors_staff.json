@@ -4,6 +4,7 @@
     "id": "spectrum:constructors_staff"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "auram": 4
   }
 }

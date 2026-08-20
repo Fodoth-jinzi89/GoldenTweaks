@@ -4,6 +4,7 @@
     "id": "biomesoplenty:pine_planks"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "mornogol": 1
   }
 }

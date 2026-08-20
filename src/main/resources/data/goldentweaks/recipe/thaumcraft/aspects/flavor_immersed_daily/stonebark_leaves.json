@@ -5,6 +5,7 @@
   },
   "aspects": {
     "herba": 3,
-    "saxum": 3
+    "saxum": 3,
+    "vegetatio": 2
   }
 }

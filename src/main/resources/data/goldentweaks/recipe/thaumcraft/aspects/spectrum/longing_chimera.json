@@ -4,6 +4,8 @@
     "id": "spectrum:longing_chimera"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "luxuria": 8,
+    "anteanus": 4
   }
 }

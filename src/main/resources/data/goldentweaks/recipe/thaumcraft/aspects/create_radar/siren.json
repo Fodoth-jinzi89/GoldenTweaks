@@ -4,6 +4,7 @@
     "id": "create_radar:siren"
   },
   "aspects": {
-    "sonus": 3
+    "sonus": 3,
+    "ira": 1
   }
 }

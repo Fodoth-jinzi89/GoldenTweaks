@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:golden_shower"
+  },
+  "aspects": {
+    "history": 4
+  }
+}

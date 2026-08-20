@@ -4,6 +4,8 @@
     "id": "irons_spellbooks:cooldown_upgrade_orb"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "alfirin": 6,
+    "auram": 1
   }
 }

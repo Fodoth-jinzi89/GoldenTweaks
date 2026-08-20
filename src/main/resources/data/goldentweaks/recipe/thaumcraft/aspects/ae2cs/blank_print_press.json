@@ -4,6 +4,7 @@
     "id": "ae2cs:blank_print_press"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "arche": 1
   }
 }

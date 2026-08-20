@@ -4,6 +4,7 @@
     "id": "alltheores:lumium_ingot"
   },
   "aspects": {
-    "metallum": 4
+    "metallum": 4,
+    "mixtura": 4
   }
 }

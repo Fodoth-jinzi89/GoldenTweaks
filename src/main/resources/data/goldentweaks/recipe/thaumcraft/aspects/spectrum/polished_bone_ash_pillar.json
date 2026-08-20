@@ -4,6 +4,9 @@
     "id": "spectrum:polished_bone_ash_pillar"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "dragon": 4,
+    "priscus": 6,
+    "fossil": 8
   }
 }

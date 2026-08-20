@@ -4,6 +4,7 @@
     "id": "aeronautics_dyeable_components:gray_levitite"
   },
   "aspects": {
-    "gravitas": 4
+    "gravitas": 4,
+    "laputa": 6
   }
 }

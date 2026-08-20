@@ -4,6 +4,7 @@
     "id": "spectral_decorations:birch_amphora"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "mornogol": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "thaumcraft:golem_deco_glasses"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "invidia": 6
   }
 }

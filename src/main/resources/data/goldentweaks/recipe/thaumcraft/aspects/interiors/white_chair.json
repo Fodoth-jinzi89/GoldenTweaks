@@ -4,6 +4,7 @@
     "id": "interiors:white_chair"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "desidia": 6
   }
 }

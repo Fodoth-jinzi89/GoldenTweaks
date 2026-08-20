@@ -4,6 +4,7 @@
     "id": "northstar:bloom_fungus_stem_block"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "universes": 1
   }
 }

@@ -5,6 +5,9 @@
   },
   "aspects": {
     "fabrico": 3,
-    "metallum": 3
+    "metallum": 3,
+    "dragon": 1,
+    "superbia": 4,
+    "anteanus": 8
   }
 }

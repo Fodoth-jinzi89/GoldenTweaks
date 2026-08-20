@@ -4,6 +4,7 @@
     "id": "hazennstuff:bounty_hunter_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "superbia": 1
   }
 }

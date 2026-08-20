@@ -4,6 +4,7 @@
     "id": "spectrum:light_gray_leaves"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

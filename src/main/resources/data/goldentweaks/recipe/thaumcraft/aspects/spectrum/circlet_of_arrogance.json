@@ -4,6 +4,8 @@
     "id": "spectrum:circlet_of_arrogance"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "superbia": 4,
+    "atrpraecantatic": 4
   }
 }

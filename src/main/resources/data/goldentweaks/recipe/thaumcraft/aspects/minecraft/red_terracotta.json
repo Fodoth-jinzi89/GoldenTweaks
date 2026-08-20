@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:red_terracotta"
+  },
+  "aspects": {
+    "mornogol": 4
+  }
+}

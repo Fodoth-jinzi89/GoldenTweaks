@@ -4,6 +4,7 @@
     "id": "spectrum:pyrite_pile"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "anteanus": 4
   }
 }

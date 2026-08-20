@@ -4,6 +4,7 @@
     "id": "spectrum:cobbled_blackslag_wall"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "spelunca": 2
   }
 }

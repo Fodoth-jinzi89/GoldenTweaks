@@ -5,6 +5,7 @@
   },
   "aspects": {
     "corpus": 3,
-    "saxum": 3
+    "saxum": 3,
+    "evil": 4
   }
 }

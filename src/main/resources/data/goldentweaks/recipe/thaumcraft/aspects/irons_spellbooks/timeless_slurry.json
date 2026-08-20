@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:timeless_slurry"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 4
   }
 }

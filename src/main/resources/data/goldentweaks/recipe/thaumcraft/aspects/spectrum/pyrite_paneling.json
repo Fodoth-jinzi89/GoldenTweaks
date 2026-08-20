@@ -4,6 +4,7 @@
     "id": "spectrum:pyrite_paneling"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "anteanus": 4
   }
 }

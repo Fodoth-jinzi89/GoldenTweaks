@@ -4,6 +4,7 @@
     "id": "spectrum:blackslag_diamond_ore"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "spelunca": 1
   }
 }

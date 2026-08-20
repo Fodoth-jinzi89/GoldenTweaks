@@ -4,6 +4,7 @@
     "id": "torchmaster:dreadlamp"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "atrpotentia": 8
   }
 }

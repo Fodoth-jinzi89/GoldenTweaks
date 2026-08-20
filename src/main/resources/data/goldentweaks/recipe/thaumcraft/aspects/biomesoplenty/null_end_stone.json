@@ -4,6 +4,7 @@
     "id": "biomesoplenty:null_end_stone"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "arche": 1
   }
 }

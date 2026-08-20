@@ -4,6 +4,7 @@
     "id": "cataclysm:coral_chunk"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "alfirin": 4
   }
 }

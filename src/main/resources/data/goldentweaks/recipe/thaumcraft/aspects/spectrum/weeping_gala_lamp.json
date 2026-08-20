@@ -4,6 +4,7 @@
     "id": "spectrum:weeping_gala_lamp"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "anteanus": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "farmersdelight:sandy_shrub"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "vegetatio": 2
   }
 }

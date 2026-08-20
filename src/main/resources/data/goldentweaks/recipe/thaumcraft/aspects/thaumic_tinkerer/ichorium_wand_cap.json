@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:ichorium_wand_cap"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "arche": 8
   }
 }

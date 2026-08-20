@@ -4,6 +4,7 @@
     "id": "spectrum:kindling_head"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dragon": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "biomesoplenty:potted_glowflower"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:banner.spectrum.four_leaf_clover.yellow"
+  },
+  "aspects": {
+    "vegetatio": 2
+  }
+}

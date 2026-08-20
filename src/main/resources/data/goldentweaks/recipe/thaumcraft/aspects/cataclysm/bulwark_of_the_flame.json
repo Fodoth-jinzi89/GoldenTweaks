@@ -4,6 +4,7 @@
     "id": "cataclysm:bulwark_of_the_flame"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "alfirin": 4
   }
 }

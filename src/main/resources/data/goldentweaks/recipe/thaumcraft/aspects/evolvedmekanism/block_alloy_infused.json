@@ -4,6 +4,7 @@
     "id": "evolvedmekanism:block_alloy_infused"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "mixtura": 6
   }
 }

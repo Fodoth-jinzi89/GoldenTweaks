@@ -4,6 +4,7 @@
     "id": "biomesoplenty:eyebulb"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "invidia": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "cataclysm:astrape"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "ira": 1
   }
 }

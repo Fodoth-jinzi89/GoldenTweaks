@@ -4,6 +4,7 @@
     "id": "biomesoplenty:high_grass_plant"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

@@ -4,6 +4,7 @@
     "id": "mekanism_weaponry:cotton_candy_paint_bucket"
   },
   "aspects": {
-    "sensus": 2
+    "sensus": 2,
+    "childish": 8
   }
 }

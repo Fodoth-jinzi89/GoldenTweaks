@@ -4,6 +4,7 @@
     "id": "fluxnetworks:admin_configurator"
   },
   "aspects": {
-    "machina": 3
+    "machina": 3,
+    "atrpotentia": 4
   }
 }

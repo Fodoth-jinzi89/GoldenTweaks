@@ -4,6 +4,7 @@
     "id": "biomesoplenty:blackstone_spines"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "evil": 1
   }
 }

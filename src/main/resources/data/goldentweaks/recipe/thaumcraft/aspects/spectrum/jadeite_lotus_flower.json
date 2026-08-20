@@ -4,6 +4,8 @@
     "id": "spectrum:jadeite_lotus_flower"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2,
+    "auram": 4
   }
 }

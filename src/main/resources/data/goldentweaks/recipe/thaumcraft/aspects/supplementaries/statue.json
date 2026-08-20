@@ -4,6 +4,7 @@
     "id": "supplementaries:statue"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "mornogol": 6
   }
 }

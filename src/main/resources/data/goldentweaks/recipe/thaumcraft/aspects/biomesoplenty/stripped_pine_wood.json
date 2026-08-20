@@ -4,6 +4,7 @@
     "id": "biomesoplenty:stripped_pine_wood"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "mornogol": 1
   }
 }

@@ -5,6 +5,7 @@
   },
   "aspects": {
     "herba": 3,
-    "sensus": 3
+    "sensus": 3,
+    "vegetatio": 2
   }
 }

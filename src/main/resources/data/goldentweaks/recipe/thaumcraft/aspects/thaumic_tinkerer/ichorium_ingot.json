@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:ichorium_ingot"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "arche": 6
   }
 }

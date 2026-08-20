@@ -4,6 +4,7 @@
     "id": "thaumcraftcelestial:astral_alloy"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "mixtura": 8
   }
 }

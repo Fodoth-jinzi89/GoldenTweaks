@@ -4,6 +4,7 @@
     "id": "thaumcraft:crimson_blade"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "evil": 4
   }
 }

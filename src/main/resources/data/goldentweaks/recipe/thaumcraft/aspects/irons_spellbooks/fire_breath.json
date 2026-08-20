@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:fire_breath"
+  },
+  "aspects": {
+    "dragon": 1
+  }
+}

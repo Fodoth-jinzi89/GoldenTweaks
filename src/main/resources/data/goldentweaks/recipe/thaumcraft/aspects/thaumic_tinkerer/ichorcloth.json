@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:ichorcloth"
   },
   "aspects": {
-    "pannus": 2
+    "pannus": 2,
+    "arche": 6
   }
 }

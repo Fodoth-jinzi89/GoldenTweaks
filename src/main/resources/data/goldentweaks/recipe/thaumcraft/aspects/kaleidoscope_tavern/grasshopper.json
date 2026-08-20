@@ -4,6 +4,7 @@
     "id": "kaleidoscope_tavern:grasshopper"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pure_bloodstone_block"
+  },
+  "aspects": {
+    "anteanus": 4,
+    "evil": 4
+  }
+}

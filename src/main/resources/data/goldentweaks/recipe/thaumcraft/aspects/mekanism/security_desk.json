@@ -4,6 +4,7 @@
     "id": "mekanism:security_desk"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "invidia": 4
   }
 }

@@ -4,6 +4,7 @@
     "id": "thaumcraftcelestial:stargazing_instrument"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "dream": 8
   }
 }

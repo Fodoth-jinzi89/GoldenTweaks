@@ -4,6 +4,7 @@
     "id": "cataclysm:strange_key"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "invidia": 1
   }
 }

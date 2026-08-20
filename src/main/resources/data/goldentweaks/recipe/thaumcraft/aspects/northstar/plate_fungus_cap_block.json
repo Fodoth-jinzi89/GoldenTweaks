@@ -4,6 +4,7 @@
     "id": "northstar:plate_fungus_cap_block"
   },
   "aspects": {
-    "fungus": 3
+    "fungus": 3,
+    "universes": 4
   }
 }

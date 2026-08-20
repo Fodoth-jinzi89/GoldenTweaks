@@ -4,6 +4,7 @@
     "id": "supplementaries:gravel_bricks"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "gravitas": 2
   }
 }

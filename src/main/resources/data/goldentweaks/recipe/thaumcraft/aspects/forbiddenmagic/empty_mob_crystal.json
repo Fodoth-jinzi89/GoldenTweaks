@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:empty_mob_crystal"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "arche": 4
   }
 }

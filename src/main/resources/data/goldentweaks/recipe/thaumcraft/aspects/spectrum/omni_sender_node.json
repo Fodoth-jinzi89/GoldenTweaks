@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:omni_sender_node"
+  },
+  "aspects": {
+    "auram": 6
+  }
+}

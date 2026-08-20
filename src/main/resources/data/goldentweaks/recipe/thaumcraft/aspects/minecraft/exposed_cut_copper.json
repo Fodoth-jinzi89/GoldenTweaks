@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:exposed_cut_copper"
+  },
+  "aspects": {
+    "anteanus": 2
+  }
+}

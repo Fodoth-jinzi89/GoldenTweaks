@@ -5,6 +5,7 @@
   },
   "aspects": {
     "corpus": 3,
-    "instrumentum": 3
+    "instrumentum": 3,
+    "evil": 6
   }
 }

@@ -4,6 +4,7 @@
     "id": "createmetalogistics:ticket_crate"
   },
   "aspects": {
-    "vas": 3
+    "vas": 3,
+    "invidia": 2
   }
 }

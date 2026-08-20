@@ -4,6 +4,7 @@
     "id": "cataclysm:athame"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "mornogol": 1
   }
 }

@@ -4,6 +4,7 @@
     "id": "igleelib:modium_ingot"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "mixtura": 1
   }
 }

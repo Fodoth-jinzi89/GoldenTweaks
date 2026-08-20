@@ -5,6 +5,7 @@
   },
   "aspects": {
     "substance": 6,
-    "dense": 2
+    "dense": 2,
+    "fossil": 6
   }
 }

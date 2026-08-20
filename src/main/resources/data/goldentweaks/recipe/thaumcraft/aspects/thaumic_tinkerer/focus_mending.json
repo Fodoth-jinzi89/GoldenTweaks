@@ -4,6 +4,7 @@
     "id": "thaumic_tinkerer:focus_mending"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "sano": 6
   }
 }

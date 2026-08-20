@@ -4,6 +4,7 @@
     "id": "stoneworks:cracked_purpur_bricks"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "anteanus": 6
   }
 }

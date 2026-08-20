@@ -4,6 +4,8 @@
     "id": "spectral_decorations:white_resplendent_feather"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "auram": 4,
+    "dragon": 4
   }
 }

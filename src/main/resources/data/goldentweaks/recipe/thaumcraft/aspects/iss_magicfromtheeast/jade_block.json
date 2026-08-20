@@ -4,6 +4,7 @@
     "id": "iss_magicfromtheeast:jade_block"
   },
   "aspects": {
-    "saxum": 3
+    "saxum": 3,
+    "imperium": 4
   }
 }

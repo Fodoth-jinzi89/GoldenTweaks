@@ -4,6 +4,7 @@
     "id": "taintedmagic:nightshade_bush"
   },
   "aspects": {
-    "machina": 2
+    "machina": 2,
+    "vegetatio": 2
   }
 }

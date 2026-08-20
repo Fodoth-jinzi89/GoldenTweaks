@@ -4,6 +4,7 @@
     "id": "silentgear:recrystallizer"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "mixtura": 2
   }
 }

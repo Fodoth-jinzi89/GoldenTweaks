@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:writable_book"
+  },
+  "aspects": {
+    "history": 6
+  }
+}

@@ -4,6 +4,8 @@
     "id": "hazennstuff:alchemist_supreme_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "superbia": 6,
+    "evil": 1
   }
 }

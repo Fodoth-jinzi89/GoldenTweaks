@@ -4,6 +4,7 @@
     "id": "biomesoplenty:orange_sand"
   },
   "aspects": {
-    "terra": 3
+    "terra": 3,
+    "gravitas": 2
   }
 }

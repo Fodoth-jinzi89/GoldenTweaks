@@ -4,6 +4,7 @@
     "id": "iss_magicfromtheeast:ritual_orihon"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "atrpraecantatic": 4
   }
 }

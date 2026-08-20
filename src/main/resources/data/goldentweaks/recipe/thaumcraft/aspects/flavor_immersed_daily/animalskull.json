@@ -4,6 +4,8 @@
     "id": "flavor_immersed_daily:animalskull"
   },
   "aspects": {
-    "mortuus": 3
+    "mortuus": 3,
+    "fossil": 4,
+    "mornogol": 4
   }
 }

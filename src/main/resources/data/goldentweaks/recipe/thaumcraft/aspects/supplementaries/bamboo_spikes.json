@@ -4,6 +4,7 @@
     "id": "supplementaries:bamboo_spikes"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "evil": 4
   }
 }

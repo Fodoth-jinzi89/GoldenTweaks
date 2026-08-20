@@ -4,6 +4,7 @@
     "id": "avaritia_more_items:compositing_editor_desk"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "terminus": 1
   }
 }

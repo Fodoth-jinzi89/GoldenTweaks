@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:fire_ale"
   },
   "aspects": {
-    "ignis": 3
+    "ignis": 3,
+    "luxuria": 4
   }
 }

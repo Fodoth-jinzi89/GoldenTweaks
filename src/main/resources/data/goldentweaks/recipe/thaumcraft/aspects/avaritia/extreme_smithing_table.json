@@ -5,6 +5,7 @@
   },
   "aspects": {
     "fabrico": 3,
-    "machina": 3
+    "machina": 3,
+    "terminus": 1
   }
 }

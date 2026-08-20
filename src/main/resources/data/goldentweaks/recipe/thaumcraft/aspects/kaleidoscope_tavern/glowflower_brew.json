@@ -6,6 +6,9 @@
   "aspects": {
     "herba": 3,
     "aqua": 2,
-    "fames": 2
+    "fames": 2,
+    "vegetatio": 2,
+    "sano": 4,
+    "auram": 4
   }
 }

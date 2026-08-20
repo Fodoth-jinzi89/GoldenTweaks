@@ -4,6 +4,8 @@
     "id": "spectrum:morchella"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "luxuria": 8,
+    "childish": 4
   }
 }

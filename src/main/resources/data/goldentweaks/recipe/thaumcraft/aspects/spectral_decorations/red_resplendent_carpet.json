@@ -4,6 +4,7 @@
     "id": "spectral_decorations:red_resplendent_carpet"
   },
   "aspects": {
-    "pannus": 2
+    "pannus": 2,
+    "dragon": 4
   }
 }

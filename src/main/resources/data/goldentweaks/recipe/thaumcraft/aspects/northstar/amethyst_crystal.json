@@ -4,6 +4,7 @@
     "id": "northstar:amethyst_crystal"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "universes": 1
   }
 }

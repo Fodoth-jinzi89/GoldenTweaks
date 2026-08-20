@@ -4,6 +4,7 @@
     "id": "ae2:blank_pattern"
   },
   "aspects": {
-    "cognitio": 3
+    "cognitio": 3,
+    "arche": 1
   }
 }

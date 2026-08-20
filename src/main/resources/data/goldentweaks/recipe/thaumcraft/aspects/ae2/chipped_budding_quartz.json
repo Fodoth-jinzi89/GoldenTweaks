@@ -4,6 +4,8 @@
     "id": "ae2:chipped_budding_quartz"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "arche": 1,
+    "spelunca": 1
   }
 }

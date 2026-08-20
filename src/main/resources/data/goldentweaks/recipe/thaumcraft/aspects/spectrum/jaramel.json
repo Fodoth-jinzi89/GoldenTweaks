@@ -4,6 +4,7 @@
     "id": "spectrum:jaramel"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "childish": 4
   }
 }

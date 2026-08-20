@@ -4,6 +4,7 @@
     "id": "irons_spellbooks:weapon_parts"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "auram": 4
   }
 }

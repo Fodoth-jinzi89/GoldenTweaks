@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:white_banner"
+  },
+  "aspects": {
+    "imperium": 8
+  }
+}

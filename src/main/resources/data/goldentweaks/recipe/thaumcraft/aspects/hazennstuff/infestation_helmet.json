@@ -4,6 +4,7 @@
     "id": "hazennstuff:infestation_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "evil": 1
   }
 }

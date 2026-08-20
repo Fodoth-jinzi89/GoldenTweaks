@@ -4,6 +4,7 @@
     "id": "spectrum:courier_statue"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "evil": 4
   }
 }

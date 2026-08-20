@@ -4,6 +4,7 @@
     "id": "createvoidway:void_portal_stress"
   },
   "aspects": {
-    "alienis": 3
+    "alienis": 3,
+    "atrpotentia": 1
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:absorption"
+  },
+  "aspects": {
+    "luxuria": 6
+  }
+}

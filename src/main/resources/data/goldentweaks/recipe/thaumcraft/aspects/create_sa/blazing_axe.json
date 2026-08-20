@@ -4,6 +4,7 @@
     "id": "create_sa:blazing_axe"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "ira": 6
   }
 }

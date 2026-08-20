@@ -4,6 +4,7 @@
     "id": "thaumcraft:arcane_lifter"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "laputa": 8
   }
 }

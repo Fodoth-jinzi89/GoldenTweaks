@@ -4,6 +4,8 @@
     "id": "extendedae:entro_budding_hardly"
   },
   "aspects": {
-    "vitreus": 3
+    "vitreus": 3,
+    "arche": 4,
+    "spelunca": 1
   }
 }

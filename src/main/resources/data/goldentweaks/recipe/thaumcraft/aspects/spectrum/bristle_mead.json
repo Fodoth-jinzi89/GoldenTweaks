@@ -4,6 +4,7 @@
     "id": "spectrum:bristle_mead"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "luxuria": 8
   }
 }

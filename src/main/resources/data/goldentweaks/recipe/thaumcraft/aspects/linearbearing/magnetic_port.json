@@ -4,7 +4,7 @@
     "id": "linearbearing:magnetic_port"
   },
   "aspects": {
-    "magnetis": 3,
+    "magnetis": 6,
     "machina": 2
   }
 }

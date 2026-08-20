@@ -4,6 +4,7 @@
     "id": "protection_pixel:lanceras_helmet"
   },
   "aspects": {
-    "tutamen": 4
+    "tutamen": 4,
+    "mixtura": 2
   }
 }

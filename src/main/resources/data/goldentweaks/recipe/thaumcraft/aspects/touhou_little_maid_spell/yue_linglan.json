@@ -4,6 +4,8 @@
     "id": "touhou_little_maid_spell:yue_linglan"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "sano": 6,
+    "auram": 8
   }
 }

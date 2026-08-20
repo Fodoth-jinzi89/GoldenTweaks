@@ -4,6 +4,7 @@
     "id": "supplementaries:daub_frame"
   },
   "aspects": {
-    "fabrico": 3
+    "fabrico": 3,
+    "mornogol": 6
   }
 }

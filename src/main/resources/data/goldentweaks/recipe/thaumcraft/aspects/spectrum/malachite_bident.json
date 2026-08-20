@@ -4,6 +4,7 @@
     "id": "spectrum:malachite_bident"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 4
   }
 }

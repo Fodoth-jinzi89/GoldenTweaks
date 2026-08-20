@@ -4,6 +4,7 @@
     "id": "bakeries:egg_tart_shell"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "expand": 1
   }
 }

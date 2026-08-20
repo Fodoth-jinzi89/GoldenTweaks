@@ -5,6 +5,7 @@
   },
   "aspects": {
     "space": 3,
-    "machina": 2
+    "machina": 2,
+    "expand": 4
   }
 }

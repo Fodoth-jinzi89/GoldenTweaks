@@ -4,6 +4,7 @@
     "id": "createlazytick:clock"
   },
   "aspects": {
-    "tempus": 3
+    "tempus": 3,
+    "imperium": 1
   }
 }

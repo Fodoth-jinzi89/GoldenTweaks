@@ -4,6 +4,7 @@
     "id": "spectrum:spirit_instiller"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "auram": 8
   }
 }

@@ -4,6 +4,7 @@
     "id": "thaumcraft:void_pickaxe"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "evil": 6
   }
 }

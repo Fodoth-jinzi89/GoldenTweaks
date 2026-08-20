@@ -4,6 +4,7 @@
     "id": "cataclysm:goddess_statue"
   },
   "aspects": {
-    "reliquiae": 3
+    "reliquiae": 3,
+    "imperium": 1
   }
 }

@@ -4,6 +4,9 @@
     "id": "irons_spellbooks:decrepit_key"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "alfirin": 6,
+    "atrpraecantatic": 1,
+    "invidia": 4
   }
 }

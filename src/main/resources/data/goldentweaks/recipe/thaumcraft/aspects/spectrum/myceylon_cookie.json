@@ -4,6 +4,7 @@
     "id": "spectrum:myceylon_cookie"
   },
   "aspects": {
-    "praecantatio": 4
+    "praecantatio": 4,
+    "expand": 8
   }
 }

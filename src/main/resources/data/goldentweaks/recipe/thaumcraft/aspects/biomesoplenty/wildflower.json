@@ -4,6 +4,7 @@
     "id": "biomesoplenty:wildflower"
   },
   "aspects": {
-    "herba": 3
+    "herba": 3,
+    "vegetatio": 2
   }
 }

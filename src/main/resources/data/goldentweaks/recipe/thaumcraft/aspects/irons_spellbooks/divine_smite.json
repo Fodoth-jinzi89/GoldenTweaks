@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:divine_smite"
+  },
+  "aspects": {
+    "superbia": 6,
+    "fossil": 4,
+    "imperium": 2,
+    "ira": 4
+  }
+}

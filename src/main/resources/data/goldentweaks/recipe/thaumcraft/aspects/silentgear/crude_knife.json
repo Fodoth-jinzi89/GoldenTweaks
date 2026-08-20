@@ -4,6 +4,7 @@
     "id": "silentgear:crude_knife"
   },
   "aspects": {
-    "instrumentum": 3
+    "instrumentum": 3,
+    "mornogol": 6
   }
 }

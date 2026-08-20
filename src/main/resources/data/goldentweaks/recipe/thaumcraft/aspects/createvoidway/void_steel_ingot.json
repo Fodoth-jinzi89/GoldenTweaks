@@ -4,6 +4,7 @@
     "id": "createvoidway:void_steel_ingot"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "atrpotentia": 2
   }
 }
