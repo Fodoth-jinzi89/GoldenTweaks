@@ -4,7 +4,6 @@
     "id": "mekanism:ultimate_compressing_factory"
   },
   "aspects": {
-    "terminus": 5,
     "fabrico": 3,
     "machina": 2
   }

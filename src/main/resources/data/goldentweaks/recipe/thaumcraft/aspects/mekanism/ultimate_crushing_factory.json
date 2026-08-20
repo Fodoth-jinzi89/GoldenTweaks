@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanism:ultimate_crushing_factory"
-  },
-  "aspects": {
-    "terminus": 5
-  }
-}

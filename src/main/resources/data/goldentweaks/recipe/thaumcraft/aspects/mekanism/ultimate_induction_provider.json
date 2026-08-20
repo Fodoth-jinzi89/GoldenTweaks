@@ -4,7 +4,6 @@
     "id": "mekanism:ultimate_induction_provider"
   },
   "aspects": {
-    "terminus": 5,
     "machina": 3
   }
 }

@@ -4,9 +4,8 @@
     "id": "flavor_immersed_daily:stirfriedstringbeans"
   },
   "aspects": {
-    "accessories": 3,
     "victus": 3,
-    "fames": 2,
+    "fames": 4,
     "sano": 2
   }
 }

@@ -4,7 +4,6 @@
     "id": "mekanismadvancedgenerators:ultimate_solar_panel"
   },
   "aspects": {
-    "terminus": 5,
     "fabrico": 3,
     "lux": 3,
     "potentia": 3

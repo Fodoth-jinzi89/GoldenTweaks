@@ -4,7 +4,6 @@
     "id": "mekanism:ultimate_fluid_tank"
   },
   "aspects": {
-    "terminus": 5,
     "vacuos": 4,
     "aqua": 3,
     "machina": 2,
