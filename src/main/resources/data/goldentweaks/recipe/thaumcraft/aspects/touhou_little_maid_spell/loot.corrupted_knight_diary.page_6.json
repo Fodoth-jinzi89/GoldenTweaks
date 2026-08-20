@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid_spell:loot.corrupted_knight_diary.page_6"
-  },
-  "aspects": {
-    "vegetatio": 2
-  }
-}

@@ -2,7 +2,6 @@ package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
-import net.fodoth.skina.goldentweaks.compat.ftbquests.CertainQuestingAdditionsASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -156,8 +155,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         ExspectrimentsASM.patch(targetClassName, targetClass);
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
-        CertainQuestingAdditionsASM.patch(targetClassName, targetClass);
-
     }
 
     @Override

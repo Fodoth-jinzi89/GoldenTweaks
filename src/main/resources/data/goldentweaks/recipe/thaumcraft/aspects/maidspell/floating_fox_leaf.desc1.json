@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "maidspell:floating_fox_leaf.desc1"
-  },
-  "aspects": {
-    "vegetatio": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "traveloptics:orbital_void"
-  },
-  "aspects": {
-    "evil": 6
-  }
-}

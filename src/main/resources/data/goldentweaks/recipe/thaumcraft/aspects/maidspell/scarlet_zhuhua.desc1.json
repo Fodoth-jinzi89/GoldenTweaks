@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "maidspell:scarlet_zhuhua.desc1"
-  },
-  "aspects": {
-    "vegetatio": 2
-  }
-}

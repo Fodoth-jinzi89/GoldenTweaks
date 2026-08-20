@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:scorching_slash"
-  },
-  "aspects": {
-    "ira": 4
-  }
-}

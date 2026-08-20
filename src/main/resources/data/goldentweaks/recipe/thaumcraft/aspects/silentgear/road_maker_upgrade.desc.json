@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgear:road_maker_upgrade.desc"
-  },
-  "aspects": {
-    "vegetatio": 2
-  }
-}

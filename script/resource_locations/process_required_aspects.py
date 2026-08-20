@@ -65,8 +65,7 @@ def load_resources():
     resources = {}
     for path in RESOURCE_ROOT.glob("*.json"):
         data = json.loads(path.read_text(encoding="utf-8-sig"))
-        for kind in ("items", "blocks"):
-            resources.update(data.get(kind, {}))
+        resources.update(data.get("items", {}))
     return resources
 
 
