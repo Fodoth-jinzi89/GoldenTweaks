@@ -1937,7 +1937,7 @@
   "tc.resonator3": "未绑定类型",
   "focus.upgrade.architect.text": "这种升级能够更精确地控制某些核心的作用区域。具体范围会显示出来，你可以使用法杖切换键（默认为 G）改变范围大小；潜行并按 G 可切换要调整的维度。",
   "screen.thaumcraft.thaumonomicon.status.complete": "研究已完成",
-  "screen.thaumcraft.thaumonomicon.status.purchase": "点击购买这项次要研究",
+  "screen.thaumcraft.thaumonomicon.status.purchase": "消耗要素解锁此研究",
   "screen.thaumcraft.thaumonomicon.status.create_note": "点击创建研究笔记",
   "screen.thaumcraft.thaumonomicon.status.missing_aspects": "研究点数不足",
   "screen.thaumcraft.thaumonomicon.status.missing_clue": "必须先发现相关线索",

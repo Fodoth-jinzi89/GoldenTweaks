@@ -127,6 +127,7 @@
     "fix.thaumcraft.ShockOrbEntityMixin",
     "fix.thaumcraft.TTUtilityItemClientSetupMixin",
     "feature.thaumcraft.ResearchTableMenuMixin",
+    "feature.thaumcraft.ResearchNotesItemMixin",
     "feature.thaumcraft.ThaumometerItemMixin",
     "feature.thaumcraft.ThaumometerScanManagerMixin",
     "feature.thaumcraft.accessor.BrainJarBlockEntityAccessor",

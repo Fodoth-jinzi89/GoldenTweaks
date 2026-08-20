@@ -32,6 +32,7 @@ import java.util.Map;
  *   "aspects": { "praecantatio": 8, "instrumentum": 4, "machina": 4 },
  *   "parents": ["INFUSION"],
  *   "concealed": true,
+ *   "secondary": false,
  *   "pages": [
  *     { "type": "goldentweaks:text", "text": "tc.research_page.GT_INFUSION_INTERCEPTER.1" },
  *     { "type": "goldentweaks:infusion", "recipe_id": "goldentweaks:infusion_intercepter" }
@@ -56,6 +57,7 @@ public final class GTThaumcraftResearch {
     private final List<String> parents = new ArrayList<>();
     private final List<ResearchPage> pages = new ArrayList<>();
     private boolean concealed;
+    private boolean secondary;
 
     private GTThaumcraftResearch(
             String key,
@@ -90,6 +92,9 @@ public final class GTThaumcraftResearch {
             }
             if (concealed) {
                 research.setConcealed();
+            }
+            if (secondary) {
+                research.setSecondary();
             }
             if (!pages.isEmpty()) {
                 research.setPages(pages.toArray(ResearchPage[]::new));
@@ -163,6 +168,15 @@ public final class GTThaumcraftResearch {
                 return null;
             }
             research.concealed = concealedElement.getAsBoolean();
+        }
+
+        JsonElement secondaryElement = json.get("secondary");
+        if (secondaryElement != null) {
+            if (!secondaryElement.isJsonPrimitive() || !secondaryElement.getAsJsonPrimitive().isBoolean()) {
+                GoldenTweaks.LOGGER.warn("Invalid Thaumcraft research '{}': 'secondary' must be a boolean.", key);
+                return null;
+            }
+            research.secondary = secondaryElement.getAsBoolean();
         }
 
         return research;

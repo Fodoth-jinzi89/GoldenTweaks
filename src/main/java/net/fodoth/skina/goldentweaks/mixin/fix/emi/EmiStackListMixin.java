@@ -1,7 +1,9 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.emi;
 
 import dev.emi.emi.registry.EmiStackList;
+import dev.emi.emi.api.stack.EmiStack;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -36,6 +38,18 @@ public class EmiStackListMixin {
             at = @At("TAIL")
     )
     private static void goldentweaks$makeStacksSafe(CallbackInfo ci) {
+
+        for (Item item : BuiltInRegistries.ITEM) {
+            var id = BuiltInRegistries.ITEM.getKey(item);
+            if (id.getNamespace().equals("traveloptics")
+                    && !id.getPath().contains("example")
+                    && !id.getPath().contains("dummy")) {
+                var stack = EmiStack.of(new ItemStack(item));
+                if (!EmiStackList.stacks.contains(stack)) {
+                    EmiStackList.stacks.add(stack);
+                }
+            }
+        }
 
         EmiStackList.stacks =
                 Collections.synchronizedList(
