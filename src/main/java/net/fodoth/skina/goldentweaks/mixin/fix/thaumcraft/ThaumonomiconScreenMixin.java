@@ -101,6 +101,7 @@ public abstract class ThaumonomiconScreenMixin {
     @Unique private static int gt$sourceBoxY;
     @Unique private static int gt$sourceBoxWidth;
     @Unique private static int gt$sourceBoxHeight;
+    @Unique private static boolean gt$sourceBoxOpen;
     @Unique private final Map<Aspect, List<ItemStack>> gt$sourceItems = new LinkedHashMap<>();
     @Unique private final Map<Aspect, Map<String, Integer>> gt$sourceAmounts = new LinkedHashMap<>();
     @Unique private final Map<Aspect, Iterator<Item>> gt$sourceLoaders = new LinkedHashMap<>();
@@ -117,9 +118,6 @@ public abstract class ThaumonomiconScreenMixin {
     private void gt$drawAspectKnowledgePage(GuiGraphics graphics, ResearchAspectPageLayout.Page page,
                                              int x, int y, int height, CallbackInfo ci) {
         if (page == null) return;
-        gt$sourceBoxWidth = 0;
-        gt$sourceBoxHeight = 0;
-        this.gt$componentClickAspect = null;
         List<ResearchAspectPageLayout.Entry> entries = new ArrayList<>(page.entries());
         entries.sort(Comparator.comparingInt((ResearchAspectPageLayout.Entry e) -> gt$tier(e.aspect())).thenComparing(e -> e.aspect().tag()));
         Aspect hovered = null;
@@ -178,6 +176,14 @@ public abstract class ThaumonomiconScreenMixin {
         ci.cancel();
     }
 
+    @Inject(method = "renderResearchDetailPages", at = @At("HEAD"))
+    private void gt$resetAspectPageInteraction(CallbackInfo ci) {
+        gt$sourceBoxWidth = 0;
+        gt$sourceBoxHeight = 0;
+        gt$sourceBoxOpen = false;
+        this.gt$componentClickAspect = null;
+    }
+
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void gt$openComponentAspect(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
         if (button != 0 || this.gt$componentClickAspect == null) {
@@ -211,6 +217,7 @@ public abstract class ThaumonomiconScreenMixin {
     @Unique private void gt$drawScannedAspectSources(GuiGraphics graphics, Aspect aspect, int x, int y, int height) {
         Minecraft minecraft = Minecraft.getInstance();
         if (minecraft.player == null) return;
+        gt$sourceBoxOpen = true;
         graphics.pose().pushPose();
         graphics.pose().translate(0.0F, 0.0F, 300.0F);
         this.gt$loadAspectItems(aspect);
@@ -289,7 +296,7 @@ public abstract class ThaumonomiconScreenMixin {
 
     @Inject(method = "mouseScrolled", at = @At("HEAD"), cancellable = true)
     private void gt$scrollSourcePages(double mouseX, double mouseY, double scrollX, double scrollY, CallbackInfoReturnable<Boolean> cir) {
-        if (gt$sourceBoxWidth <= 0 || gt$sourceBoxHeight <= 0) {
+        if (!gt$sourceBoxOpen) {
             return;
         }
         gt$sourceCarouselPage = Mth.clamp(gt$sourceCarouselPage + (scrollY < 0 ? 1 : -1), 0, gt$sourceCarouselPages - 1);
