@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "goldentweaks:item/sequenced_assembly/incomplete_evokated_spellweave_ingot"
+  }
+}

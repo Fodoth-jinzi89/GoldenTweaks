@@ -19,6 +19,10 @@ public class GTCreateItems {
 
     public static ItemEntry<SequencedAssemblyItem> UNPROCESSED_ANCIENT_MATERIAL;
 
+    public static ItemEntry<SequencedAssemblyItem> INCOMPLETE_ELDRITCH_SPELLWEAVE_INGOT;
+
+    public static ItemEntry<SequencedAssemblyItem> INCOMPLETE_EVOKATED_SPELLWEAVE_INGOT;
+
     public static void register() {
         UNPROCESSED_GEM_DUST = sequencedItem("unprocessed_gem_dust");
         UNPROCESSED_COMMON_MATERIAL = sequencedItem("unprocessed_common_material");
@@ -27,6 +31,8 @@ public class GTCreateItems {
         UNPROCESSED_EPIC_MATERIAL = sequencedItem("unprocessed_epic_material");
         UNPROCESSED_MYTHIC_MATERIAL = sequencedItem("unprocessed_mythic_material");
         UNPROCESSED_ANCIENT_MATERIAL = sequencedItem("unprocessed_ancient_material");
+        INCOMPLETE_ELDRITCH_SPELLWEAVE_INGOT = sequencedItem("incomplete_eldritch_spellweave_ingot");
+        INCOMPLETE_EVOKATED_SPELLWEAVE_INGOT = sequencedItem("incomplete_evokated_spellweave_ingot");
     }
 
     private static ItemEntry<SequencedAssemblyItem> sequencedItem(String name) {
