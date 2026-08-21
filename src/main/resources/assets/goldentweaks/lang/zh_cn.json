@@ -1017,5 +1017,8 @@
   "tc.research_text.GT_BRAIN_JAR_RESEARCHER": "§o让另一颗头脑替你思考§r",
   "tc.research_page.GT_BRAIN_JAR_RESEARCHER.1": "缸中之脑吞食的并不只是经验，而是思考、记忆与灵感留下的碎屑。经过适当引导，这颗躁动的头脑能够把积蓄的经验灌入尚未完成的研究笔记，替你跨过最后的推演。<BR>完成此项研究后，手持未完成的研究笔记右击缸中之脑，即可尝试消耗其中储存的经验并完成笔记。研究越复杂，所需经验越多。缸中之脑会优先支付；若其储量不足，则会从你的经验中补足差额。两者合计仍然不足时，不会消耗任何经验。",
   "goldentweaks.brain_jar_research.insufficient_xp": "缸中之脑的经验不足，需要 %s 点经验",
-  "goldentweaks.brain_jar_research.completed": "缸中之脑完成了研究笔记"
+  "goldentweaks.brain_jar_research.completed": "缸中之脑完成了研究笔记",
+  "tc.research_name.GT_UITIMATE_INGOT": "超级锭",
+  "tc.research_text.GT_UITIMATE_INGOT": "§o诸界精华，归于一锭§r",
+  "tc.research_page.GT_UITIMATE_INGOT.1": "你试图将十种法织锭所承载的异质力量统合为一。唯有光谱碎片能够充当仪式核心，在极度不稳定的注魔中容纳这些彼此冲突的本质，并将它们凝结为足以代表终极物质的超级锭。"
 }

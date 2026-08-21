@@ -4,6 +4,7 @@
     "id": "hazennstuff:tidal_wave"
   },
   "aspects": {
-    "praecantatio": 3
+    "praecantatio": 3,
+    "aestus": 16
   }
 }

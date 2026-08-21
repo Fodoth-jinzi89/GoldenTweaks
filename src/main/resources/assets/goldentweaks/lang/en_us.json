@@ -1017,5 +1017,8 @@
   "tc.research_text.GT_BRAIN_JAR_RESEARCHER": "§oLet another mind do the thinking§r",
   "tc.research_page.GT_BRAIN_JAR_RESEARCHER.1": "A Brain in a Jar devours more than experience: it feeds upon fragments of thought, memory, and inspiration. With the proper guidance, that restless mind can pour its stored experience into unfinished research notes and perform the final deductions for you.<BR>After completing this research, right-click a Brain in a Jar while holding unfinished research notes to consume experience and complete the notes. More complex research costs more experience. The jar pays first; if it lacks enough, your own experience supplies the difference. If the combined total is still insufficient, no experience is consumed.",
   "goldentweaks.brain_jar_research.insufficient_xp": "The Brain in a Jar lacks experience; %s XP is required",
-  "goldentweaks.brain_jar_research.completed": "The Brain in a Jar completed the research notes"
+  "goldentweaks.brain_jar_research.completed": "The Brain in a Jar completed the research notes",
+  "tc.research_name.GT_UITIMATE_INGOT": "Ultimate Ingot",
+  "tc.research_text.GT_UITIMATE_INGOT": "§oThe essence of many worlds, bound into one ingot§r",
+  "tc.research_page.GT_UITIMATE_INGOT.1": "You have attempted to unite the disparate powers carried by ten spellweave ingots. Only a Spectral Shard can serve as the ritual core, containing their conflicting essences through an extraordinarily unstable infusion and condensing them into the Ultimate Ingot."
 }

@@ -4,7 +4,6 @@
     "id": "cataclysm:azure_seastone_pillar"
   },
   "aspects": {
-    "saxum": 3,
-    "aestus": 2
+    "saxum": 3
   }
 }

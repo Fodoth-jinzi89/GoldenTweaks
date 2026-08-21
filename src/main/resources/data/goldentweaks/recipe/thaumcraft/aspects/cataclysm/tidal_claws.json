@@ -4,6 +4,7 @@
     "id": "cataclysm:tidal_claws"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "aestus": 12
   }
 }

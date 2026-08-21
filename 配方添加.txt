@@ -1,0 +1,3 @@
+1. 为新增的法织锭、超级锭配方添加 neoforge:mod_loaded 条件，使之仅在所有原料和产物的模组都存在时加载
+2. eldritch法织锭的光束加工需要伽马射线，evokated则需要无线电波
+3. 完善超级锭注魔配方，中心物品为spectrum:spectral_shard，周围物品我已经写了，研究需要GT_UITIMATE_INGOT（超级锭，新建在goldentweaks页面），instability=25，需要要素 统御 时间 不朽 率启 反物质 宇宙 水域 龙 饕餮 飞岛 空间 梦想 童趣 财富 各256

@@ -1,0 +1,27 @@
+{
+  "type": "goldentweaks:research",
+  "key": "GT_UITIMATE_INGOT",
+  "category": "GT_MODIFICATIONS",
+  "column": -5,
+  "row": 6,
+  "complexity": 3,
+  "icon": {
+    "id": "extendedcrafting:the_ultimate_ingot",
+    "count": 1
+  },
+  "aspects": {
+    "imperium": 1,
+    "tempus": 1,
+    "alfirin": 1,
+    "universes": 1,
+    "space": 1,
+    "treasure": 1
+  },
+  "parents": [
+    "INFUSION"
+  ],
+  "concealed": true,
+  "pages": [
+    "tc.research_page.GT_UITIMATE_INGOT.1"
+  ]
+}

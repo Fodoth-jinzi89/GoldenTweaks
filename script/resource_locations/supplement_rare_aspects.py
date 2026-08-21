@@ -31,7 +31,7 @@ KEYWORDS = {
     "sano": ("heal", "health", "medical", "medicine", "bandage", "regeneration", "restor", "hospital", "food", "meal", "stew", "soup", "bread", "cake", "pie", "juice", "salad", "sandwich", "baked", "cooked", "jerky", "pasta", "pizza", "toast", "rice", "noodle", "croptopia"),
     "auram": ("aura", "wisp", "silverwood", "shimmer", "ethereal", "spirit", "soul"),
     "spiritus": ("spirit", "soul", "ghost", "spectral", "phantom", "wisp", "essence"),
-    "aestus": ("ocean", "sea", "tidal", "tide", "aquatic", "coral", "kelp", "prismarine", "water"),
+    "aestus": ("tidal", "tide", "wave", "surge", "current", "flow", "water_wheel", "water_thruster", "torpedo"),
     "lava": ("lava", "molten", "magma", "volcan", "blaze", "infernal"),
     "magnetis": ("magnet", "magnetic", "lodestone", "compass", "electromagnet", "copper"),
     "textus": ("cloth", "fabric", "wool", "carpet", "canvas", "textile", "silk", "thread"),

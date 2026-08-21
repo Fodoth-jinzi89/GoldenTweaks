@@ -1,4 +1,13 @@
 {
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "cataclysm" },
+    { "type": "neoforge:mod_loaded", "modid": "createbigcannons" },
+    { "type": "neoforge:mod_loaded", "modid": "extendedcrafting" },
+    { "type": "neoforge:mod_loaded", "modid": "hazennstuff" },
+    { "type": "neoforge:mod_loaded", "modid": "silentgear" },
+    { "type": "neoforge:mod_loaded", "modid": "spectrum" },
+    { "type": "neoforge:mod_loaded", "modid": "traveloptics" }
+  ],
   "type": "spectrum:fusion_shrine",
   "time": 1200,
   "experience": 16.0,

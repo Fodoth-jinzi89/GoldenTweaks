@@ -4,6 +4,7 @@
     "id": "cataclysm:coral_spear"
   },
   "aspects": {
-    "telum": 4
+    "telum": 4,
+    "aestus": 6
   }
 }

@@ -1,0 +1,169 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "create" },
+    { "type": "neoforge:mod_loaded", "modid": "create_fantasizing" },
+    { "type": "neoforge:mod_loaded", "modid": "create_optical" },
+    { "type": "neoforge:mod_loaded", "modid": "goldentweaks" },
+    { "type": "neoforge:mod_loaded", "modid": "mekanism_extras" },
+    { "type": "neoforge:mod_loaded", "modid": "neoecoae" },
+    { "type": "neoforge:mod_loaded", "modid": "northstar" },
+    { "type": "neoforge:mod_loaded", "modid": "spectrum" },
+    { "type": "neoforge:mod_loaded", "modid": "thaumcraft" },
+    { "type": "neoforge:mod_loaded", "modid": "traveloptics" }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "spectrum:pure_echo"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 100.0,
+      "id": "traveloptics:eldritch_spellweave_ingot"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        },
+        {
+          "item": "neoecoae:black_tungsten_alloy_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "thaumcraft:fluid_death"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        },
+        {
+          "item": "mekanism_extras:ingot_naquadah"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+	{
+      "type": "create_fantasizing:shadow_plating",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+	{
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        },
+        {
+          "item": "create:shadow_steel"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create_optical:focusing",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ],
+      "mode": 3,
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+	{
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        },
+        {
+          "item": "mekanism_extras:alloy_spectrum"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+    {
+      "type": "northstar:engraving",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ],
+      "processing_time": 200,
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    },
+	{
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        },
+        {
+          "item": "spectrum:onyx_powder_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "goldentweaks:incomplete_eldritch_spellweave_ingot"
+  }
+}
