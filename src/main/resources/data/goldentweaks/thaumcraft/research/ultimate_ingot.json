@@ -22,6 +22,10 @@
   ],
   "concealed": true,
   "pages": [
-    "tc.research_page.GT_UITIMATE_INGOT.1"
+    "tc.research_page.GT_UITIMATE_INGOT.1",
+    {
+      "type": "goldentweaks:infusion",
+      "recipe_id": "goldentweaks:the_ultimate_ingot"
+    }
   ]
 }

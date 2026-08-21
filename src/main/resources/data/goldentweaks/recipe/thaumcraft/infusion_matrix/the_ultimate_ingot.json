@@ -35,34 +35,34 @@
   },
   "ingredients": [
     {
-      "item": "traveloptics:evokated_spellweave_ingot"
+      "id": "traveloptics:evokated_spellweave_ingot"
     },
     {
-      "item": "traveloptics:celestial_spellweave_ingot"
+      "id": "traveloptics:celestial_spellweave_ingot"
     },
     {
-      "item": "traveloptics:cryo_spellweave_ingot"
+      "id": "traveloptics:cryo_spellweave_ingot"
     },
     {
-      "item": "traveloptics:eldritch_spellweave_ingot"
+      "id": "traveloptics:eldritch_spellweave_ingot"
     },
     {
-      "item": "traveloptics:crimson_spellweave_ingot"
+      "id": "traveloptics:crimson_spellweave_ingot"
     },
     {
-      "item": "traveloptics:lightning_spellweave_ingot"
+      "id": "traveloptics:lightning_spellweave_ingot"
     },
     {
-      "item": "traveloptics:void_spellweave_ingot"
+      "id": "traveloptics:void_spellweave_ingot"
     },
     {
-      "item": "traveloptics:verdant_spellweave_ingot"
+      "id": "traveloptics:verdant_spellweave_ingot"
     },
     {
-      "item": "traveloptics:pyro_spellweave_ingot"
+      "id": "traveloptics:pyro_spellweave_ingot"
     },
     {
-      "item": "traveloptics:abyssal_spellweave_ingot"
+      "id": "traveloptics:abyssal_spellweave_ingot"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "type": "goldentweaks:research",
+  "key": "GT_CRIMSON_RITES",
+  "category": "GT_MODIFICATIONS",
+  "column": -6,
+  "row": 6,
+  "complexity": 2,
+  "icon": {
+    "id": "thaumcraft:crimson_rites",
+    "count": 1
+  },
+  "aspects": {
+    "atrpotentia": 1,
+    "atrpraecantatic": 1,
+    "evil": 1,
+    "vitium": 1
+  },
+  "parents": [
+    "ELDRITCHMINOR"
+  ],
+  "concealed": true,
+  "pages": [
+    "tc.research_page.GT_CRIMSON_RITES.1",
+    {
+      "type": "goldentweaks:infusion",
+      "recipe_id": "goldentweaks:crimson_rites"
+    }
+  ]
+}

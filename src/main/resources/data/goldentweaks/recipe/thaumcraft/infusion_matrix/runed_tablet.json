@@ -1,0 +1,45 @@
+{
+  "type": "thaumcraft:infusion_matrix",
+  "research": "GT_RUNED_TABLET",
+  "instability": 8,
+  "result": {
+    "id": "thaumcraft:runed_tablet",
+    "count": 1
+  },
+  "aspects": {
+    "destroy": 32,
+    "spelunca": 32,
+    "profundum": 32,
+    "alienis": 32
+  },
+  "catalyst": {
+    "id": "irons_spellbooks:blank_rune",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "id": "hazentouvelib:shadow_rune"
+    },
+    {
+      "id": "hazentouvelib:cosmic_rune"
+    },
+    {
+      "id": "hazennstuff:archery_rune"
+    },
+    {
+      "id": "hazennstuff:eldritch_rune"
+    },
+    {
+      "id": "hazentouvelib:radiance_rune"
+    },
+    {
+      "id": "tunes_n_tomes:melody_rune"
+    },
+    {
+      "id": "iss_magicfromtheeast:spirit_rune"
+    },
+    {
+      "id": "hazennstuff:health_rune"
+    }
+  ]
+}
