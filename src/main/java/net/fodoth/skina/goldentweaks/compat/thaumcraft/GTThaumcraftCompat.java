@@ -24,6 +24,14 @@ public final class GTThaumcraftCompat {
     }
 
     public static void register(IEventBus modEventBus, ModContainer container) {
+        for (String tag : List.of(
+                "adhaesio", "aestus", "ardor", "favilla", "fulmen", "fungus", "gravitas",
+                "illecebra", "imperium", "magnetis", "orbita", "profundum", "reliquiae",
+                "sonus", "tempus", "textus", "vas"
+        )) {
+            GTThaumcraftAdditionalItems.registerWisp(tag);
+        }
+
         GTThaumcraftAdditionalBlocks.BLOCKS.register(modEventBus);
         GTThaumcraftAdditionalBlocks.ITEMS.register(modEventBus);
         GTThaumcraftAdditionalItems.ITEMS.register(modEventBus);

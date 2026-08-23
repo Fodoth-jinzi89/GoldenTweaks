@@ -14,7 +14,7 @@
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF8C7388",
+    "color": "#FFADC0CA",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.spectrum.spectral"

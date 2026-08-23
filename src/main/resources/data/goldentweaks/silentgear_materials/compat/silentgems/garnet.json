@@ -14,7 +14,7 @@
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF970000",
+    "color": "#FF8D3334",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.silentgems.garnet"
@@ -106,7 +106,7 @@
         {
           "conditions": [],
           "level": 2,
-          "trait": "silentgems:power"
+          "trait": "silentgems:fractal"
         }
       ]
     }

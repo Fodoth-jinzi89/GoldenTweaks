@@ -114,6 +114,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("thaumcraft.common.worldgen.ThaumcraftOverworldBiomes");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumcraftcelestial")) {
+            return checkIfPresent("thaumcraft.celestial.CelestialThaumaturgy");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
             return checkIfPresent("io.redspace.ironsjewelry.IronsJewelry");
         }

@@ -133,8 +133,8 @@ METAL_DESIGN.update(metal_design("super_metal", [
     [("extendedcrafting:the_ultimate_ingot", "the_ultimate_ingot")],
 ]))
 METAL_DESIGN.update(metal_design("god_metal", [
-    [("avaritia:neutron_ingot", "neutron_ingot")], [("avaritia:infinity_ingot", "infinity_ingot")],
-    [("avaritia_more_items:quark_ingot", "quark_ingot")], [("avaritia_more_items:cosmic_ingot", "cosmic_ingot")],
+    [("avaritia:neutron_ingot", "neutron_ingot")], [("avaritia_more_items:quark_ingot", "quark_ingot")],
+    [("avaritia:infinity_ingot", "infinity_ingot")], [("avaritia_more_items:cosmic_ingot", "cosmic_ingot")],
 ]))
 METAL_DESIGN.update(metal_design("soft_metal", [
     [("minecraft:gold_ingot", "gold"), ("alltheores:silver_ingot", "silver"),
@@ -163,7 +163,8 @@ COATING_DESIGN = metal_design("metal_coating", [
     [("minecraft:netherite_ingot", "netherite"), ("createbigcannons:nethersteel_ingot", "nethersteel_ingot"),
      ("createvoidway:void_steel_ingot", "void_steel_ingot")],
     [("igleelib:modium_ingot", "modium_ingot"), ("igleelib:lavium_ingot", "lavium_ingot"),
-     ("igleelib:blazum_ingot", "blazum_ingot"), ("igleelib:derium_ingot", "derium_ingot")],
+     ("igleelib:blazum_ingot", "blazum_ingot"), ("igleelib:derium_ingot", "derium_ingot"),
+     ("avaritia:blaze_cube", "blaze_cube")],
 ])
 for resource_id, design in COATING_DESIGN.items():
     METAL_DESIGN.setdefault(resource_id, design)["coating_level"] = design["level"]
@@ -1914,6 +1915,9 @@ def apply_metal_design(data, entry):
         coating_bias = COATING_SEMANTIC_BIAS.get(entry["id"], 0.0) if coating_level >= 2 else 0.0
         coating_tier = semantic_level_value(coating_centers, coating_level, coating_bias)
         data["properties"]["silentgear:coating"] = coating_properties(coating_tier, coating_traits)
+    if entry["id"] == "avaritia:blaze_cube":
+        blaze_gold_traits = designed_traits("soft_metal", "blaze_gold", "silentgear:blaze_gold_ingot", 1)
+        data["properties"] = {"silentgear:coating": multiply_numbers(coating_properties(0.36, blaze_gold_traits), 3)}
     if entry["id"] == "createvoidway:void_steel_ingot":
         data["properties"] = {"silentgear:coating": data["properties"]["silentgear:coating"]}
 

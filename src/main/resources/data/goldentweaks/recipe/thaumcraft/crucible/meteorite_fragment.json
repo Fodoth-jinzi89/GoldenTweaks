@@ -2,15 +2,15 @@
   "type": "thaumcraft:crucible",
   "research": "GT_SHARD_ALCHEMY",
   "result": {
-    "id": "thaumcraft:earth_shard",
+    "id": "thaumcraftcelestial:meteorite_fragment",
     "count": 1
   },
   "catalyst": {
     "type": "item",
-    "id": "ae2cs:nether_quartz_seed"
+    "id": "spectrum:star_fragment"
   },
   "aspects": {
-    "terra": 2,
-    "praecantatio": 1
+    "cosmic": 2,
+    "vitreus": 1
   }
 }

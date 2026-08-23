@@ -9,15 +9,15 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "silentgems:black_diamond"
+      "item": "silentgems:ammolite"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF5F524C",
+    "color": "#FF9E2AC2",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.silentgems.black_diamond"
+      "translate": "material.goldentweaks.compat.silentgems.ammolite"
     },
     "name_prefix": ""
   },
@@ -105,8 +105,8 @@
       "traits": [
         {
           "conditions": [],
-          "level": 1,
-          "trait": "silentgear:cure_wither"
+          "level": 5,
+          "trait": "silentgems:fractal"
         }
       ]
     }

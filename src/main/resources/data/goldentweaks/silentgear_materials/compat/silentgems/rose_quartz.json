@@ -9,44 +9,49 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "silentgems:aquamarine"
+      "item": "silentgems:rose_quartz"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF6EE9F4",
+    "color": "#FFC06498",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.silentgems.aquamarine"
+      "translate": "material.goldentweaks.compat.silentgems.rose_quartz"
     },
     "name_prefix": ""
   },
   "properties": {
     "silentgear:main": {
-      "armor": 10.872,
-      "armor/boots": 1.631,
-      "armor/chestplate": 4.349,
-      "armor/helmet": 1.631,
-      "armor/leggings": 3.262,
-      "armor_durability": 33.604,
-      "armor_toughness": 1.384,
-      "attack_damage": 5.535,
-      "charging_value": 1.492,
-      "durability": 1027.884,
-      "enchantment_value": 26.825,
-      "harvest_speed": 8.697,
+      "armor": 10.45,
+      "armor/boots": 1.568,
+      "armor/chestplate": 4.18,
+      "armor/helmet": 1.568,
+      "armor/leggings": 3.135,
+      "armor_durability": 32.3,
+      "armor_toughness": 1.33,
+      "attack_damage": 5.32,
+      "charging_value": 1.465,
+      "durability": 988,
+      "enchantment_value": 26.25,
+      "harvest_speed": 8.36,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
         "level_hint": "3",
         "name": "diamond"
       },
-      "magic_armor": 9.883,
-      "magic_damage": 6.325,
-      "projectile_accuracy": 1.237,
-      "projectile_speed": 1.277,
-      "ranged_damage": 3.163,
-      "rarity": 55.581,
+      "magic_armor": 9.5,
+      "magic_damage": 6.08,
+      "projectile_accuracy": 1.228,
+      "projectile_speed": 1.266,
+      "ranged_damage": 3.04,
+      "rarity": 54.2,
       "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:refractive"
+        },
         {
           "conditions": [],
           "level": 4,
@@ -62,33 +67,38 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 2.372
+        "value": 2.28
       },
       "charging_value": {
         "operation": "ADD",
-        "value": 0.791
+        "value": 0.76
       },
       "durability": {
         "operation": "ADD",
-        "value": 474.408
+        "value": 456
       },
       "enchantment_value": {
         "operation": "ADD",
-        "value": 9.883
+        "value": 9.5
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 4.349
+        "value": 4.18
       },
       "magic_damage": {
         "operation": "ADD",
-        "value": 3.953
+        "value": 3.8
       },
       "rarity": {
         "operation": "ADD",
-        "value": 19.767
+        "value": 19.0
       },
       "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:refractive"
+        },
         {
           "conditions": [],
           "level": 4,
@@ -105,8 +115,8 @@
       "traits": [
         {
           "conditions": [],
-          "level": 1,
-          "trait": "silentgems:step_up"
+          "level": 3,
+          "trait": "silentgems:barrier_jacket"
         }
       ]
     }

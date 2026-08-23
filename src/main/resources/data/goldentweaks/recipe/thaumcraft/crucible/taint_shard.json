@@ -1,6 +1,6 @@
 {
   "type": "thaumcraft:crucible",
-  "research": "ALCHEMICALMANUFACTURE",
+  "research": "GT_SHARD_ALCHEMY",
   "result": {
     "id": "forbiddenmagic:taint_shard",
     "count": 1

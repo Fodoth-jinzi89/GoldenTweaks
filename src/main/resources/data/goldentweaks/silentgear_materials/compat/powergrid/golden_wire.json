@@ -14,7 +14,7 @@
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FFB68B43",
+    "color": "#FFBC8935",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.powergrid.golden_wire"

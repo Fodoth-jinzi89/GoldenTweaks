@@ -9,43 +9,43 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "silentgems:iolite"
+      "item": "silentgems:moldavite"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF7543F5",
+    "color": "#FF87A84C",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.silentgems.iolite"
+      "translate": "material.goldentweaks.compat.silentgems.moldavite"
     },
     "name_prefix": ""
   },
   "properties": {
     "silentgear:main": {
-      "armor": 11.297,
-      "armor/boots": 1.695,
-      "armor/chestplate": 4.519,
-      "armor/helmet": 1.695,
-      "armor/leggings": 3.389,
-      "armor_durability": 34.918,
-      "armor_toughness": 1.438,
-      "attack_damage": 5.751,
-      "charging_value": 1.519,
-      "durability": 1068.08,
-      "enchantment_value": 27.405,
-      "harvest_speed": 9.038,
+      "armor": 9.24,
+      "armor/boots": 1.386,
+      "armor/chestplate": 3.696,
+      "armor/helmet": 1.386,
+      "armor/leggings": 2.772,
+      "armor_durability": 28.56,
+      "armor_toughness": 1.176,
+      "attack_damage": 4.704,
+      "charging_value": 1.388,
+      "durability": 873.6,
+      "enchantment_value": 24.6,
+      "harvest_speed": 7.392,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
         "level_hint": "3",
         "name": "diamond"
       },
-      "magic_armor": 10.27,
-      "magic_damage": 6.573,
-      "projectile_accuracy": 1.246,
-      "projectile_speed": 1.288,
-      "ranged_damage": 3.286,
-      "rarity": 56.972,
+      "magic_armor": 8.4,
+      "magic_damage": 5.376,
+      "projectile_accuracy": 1.202,
+      "projectile_speed": 1.235,
+      "ranged_damage": 2.688,
+      "rarity": 50.24,
       "traits": [
         {
           "conditions": [],
@@ -62,31 +62,31 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 2.465
+        "value": 2.016
       },
       "charging_value": {
         "operation": "ADD",
-        "value": 0.822
+        "value": 0.672
       },
       "durability": {
         "operation": "ADD",
-        "value": 492.96
+        "value": 403.2
       },
       "enchantment_value": {
         "operation": "ADD",
-        "value": 10.27
+        "value": 8.4
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 4.519
+        "value": 3.696
       },
       "magic_damage": {
         "operation": "ADD",
-        "value": 4.108
+        "value": 3.36
       },
       "rarity": {
         "operation": "ADD",
-        "value": 20.54
+        "value": 16.8
       },
       "traits": [
         {
@@ -105,8 +105,8 @@
       "traits": [
         {
           "conditions": [],
-          "level": 1,
-          "trait": "silentgear:cure_poison"
+          "level": 3,
+          "trait": "silentgems:booster"
         }
       ]
     }

@@ -9,43 +9,43 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "silentgems:turquoise"
+      "item": "silentgems:pearl"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF3DF4BD",
+    "color": "#FFB2ABA1",
     "main_texture_type": "HIGH_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.silentgems.turquoise"
+      "translate": "material.goldentweaks.compat.silentgems.pearl"
     },
     "name_prefix": ""
   },
   "properties": {
     "silentgear:main": {
-      "armor": 10.146,
-      "armor/boots": 1.522,
-      "armor/chestplate": 4.059,
-      "armor/helmet": 1.522,
-      "armor/leggings": 3.044,
-      "armor_durability": 31.362,
-      "armor_toughness": 1.291,
-      "attack_damage": 5.165,
-      "charging_value": 1.446,
-      "durability": 959.296,
-      "enchantment_value": 25.836,
-      "harvest_speed": 8.117,
+      "armor": 14.784,
+      "armor/boots": 2.218,
+      "armor/chestplate": 5.914,
+      "armor/helmet": 2.218,
+      "armor/leggings": 4.435,
+      "armor_durability": 45.696,
+      "armor_toughness": 1.882,
+      "attack_damage": 7.526,
+      "charging_value": 1.741,
+      "durability": 1397.76,
+      "enchantment_value": 32.16,
+      "harvest_speed": 11.827,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
         "level_hint": "3",
         "name": "diamond"
       },
-      "magic_armor": 9.224,
-      "magic_damage": 5.903,
-      "projectile_accuracy": 1.221,
-      "projectile_speed": 1.258,
-      "ranged_damage": 2.952,
-      "rarity": 53.206,
+      "magic_armor": 13.44,
+      "magic_damage": 8.602,
+      "projectile_accuracy": 1.323,
+      "projectile_speed": 1.376,
+      "ranged_damage": 4.301,
+      "rarity": 68.384,
       "traits": [
         {
           "conditions": [],
@@ -62,31 +62,31 @@
     "silentgear:tip": {
       "attack_damage": {
         "operation": "ADD",
-        "value": 2.214
+        "value": 3.226
       },
       "charging_value": {
         "operation": "ADD",
-        "value": 0.738
+        "value": 1.075
       },
       "durability": {
         "operation": "ADD",
-        "value": 442.752
+        "value": 645.12
       },
       "enchantment_value": {
         "operation": "ADD",
-        "value": 9.224
+        "value": 13.44
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 4.059
+        "value": 5.914
       },
       "magic_damage": {
         "operation": "ADD",
-        "value": 3.69
+        "value": 5.376
       },
       "rarity": {
         "operation": "ADD",
-        "value": 18.448
+        "value": 26.88
       },
       "traits": [
         {
@@ -105,8 +105,8 @@
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgems:leaping"
+          "level": 4,
+          "trait": "silentgems:neptunes_blessing"
         }
       ]
     }

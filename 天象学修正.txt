@@ -1,0 +1,3 @@
+1. 所有仪器中“凝聚”按钮的悬浮提示是错的，500应为50,250应为25
+2. 月华精华的物品改为spectrum:moonstruck_nectar（望舒琼浆），日辉精华的物品改为avaritia:blaze_cube（炽骨立方），星辉精华的不变，星铸合金的改为thaumic_tinkerer:ichorium_ingot（灵宝）
+3. 观测得到的星灾增加改为当前的 1/10

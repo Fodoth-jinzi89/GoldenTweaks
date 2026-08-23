@@ -55,6 +55,10 @@ public final class GTThaumcraftAdditionalItems {
         WISPS.computeIfAbsent(tag, GTThaumcraftAdditionalItems::createWisp);
     }
 
+    public static void registerWisp(String tag) {
+        WISPS.computeIfAbsent(tag, GTThaumcraftAdditionalItems::createWisp);
+    }
+
     public static Map<String, DeferredItem<Item>> phials() {
         return Collections.unmodifiableMap(PHIALS);
     }
