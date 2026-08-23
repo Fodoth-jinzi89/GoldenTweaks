@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     {
+      "id": "forbiddenmagic:arcane_cake",
+      "required": false
+    },
+    {
       "id": "flavor_immersed_daily:drawneggplant",
       "required": false
     },

@@ -5,6 +5,7 @@ import com.github.tartaricacid.touhoulittlemaid.entity.ai.edible.MaidEdibleBlock
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.snack_cabinet.avaritia.EndlessCakeMaidCompat;
 import net.fodoth.skina.goldentweaks.compat.snack_cabinet.flavor_immersed_daily.FidMaidCompat;
+import net.fodoth.skina.goldentweaks.compat.snack_cabinet.forbiddenmagic.ArcaneCakeMaidCompat;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -31,8 +32,9 @@ public class MaidEdibleBlockManagerMixin {
             List<IMaidEdibleBlock> list = (List<IMaidEdibleBlock>) field.get(null);
             list.add(new EndlessCakeMaidCompat());
             list.add(new FidMaidCompat());
+            list.add(new ArcaneCakeMaidCompat());
         } catch (Exception e) {
-            GoldenTweaks.LOGGER.error("Failed to add endless cake edible blocks.", e);
+            GoldenTweaks.LOGGER.error("Failed to add maid edible blocks.", e);
         }
     }
 }
