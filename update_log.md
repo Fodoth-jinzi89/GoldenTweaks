@@ -1,5 +1,90 @@
 # GoldenTweaks Update Log
 
+## 2026.08.24 - v4.1
+
+### Thaumcraft
+- 新增「缸中之脑研究者」研究：手持未完成的研究笔记右键脑罐，脑罐会消耗自身经验代为完成研究；经验不足时差额由玩家经验补充，总经验不足则不会扣除任何经验
+  - [BrainJarResearchEvent.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/BrainJarResearchEvent.java)
+  - [brain_jar_researcher.json](src/main/resources/data/goldentweaks/thaumcraft/research/brain_jar_researcher.json)
+- 新增「神秘显微术」研究：魔导透镜扫描容器或掉落物时，可同时补全容器内物品的研究记录
+  - 支持 AE2 存储元件、ExtendedAE、NeoECOAE 存储矩阵、Mekanism QIO 驱动器/阵列，扫描任务按 tick 排队处理，避免大容量存储导致卡顿
+  - [ThaumometerStorageScanQueue.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ThaumometerStorageScanQueue.java)
+  - [ThaumometerScanManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ThaumometerScanManagerMixin.java)
+  - [ThaumometerItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ThaumometerItemMixin.java)
+  - [thaumic_microscopy.json](src/main/resources/data/goldentweaks/thaumcraft/research/thaumic_microscopy.json)
+- 研究笔记在附近研究台缺少墨水时可直接借用台内墨水，且 FakePlayer 不再触发研究请求
+  - [ResearchNotesItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ResearchNotesItemMixin.java)
+- 魔导手册「要素知识」页面重做：每页 10 个要素并按层级排序、显示要素等级与合成组件，点击组件可跳转到对应要素页；悬浮要素时显示已扫描的要素来源物品列表，支持滚轮翻页与自动轮播（可配置）
+  - [ThaumonomiconScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumonomiconScreenMixin.java)
+  - [ResearchAspectPageLayoutMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ResearchAspectPageLayoutMixin.java)
+- 新增研究：碎片炼金（16 种碎片坩埚配方，含陨星碎片）、原始珍珠复制、符文石板、绯红仪式、终极锭注魔
+  - [研究文件](src/main/resources/data/goldentweaks/thaumcraft/research/)
+  - [注魔/坩埚配方](src/main/resources/data/goldentweaks/recipe/thaumcraft/)
+- 新增 17 种天域之华物品：adhaesio、aestus、ardor、favilla、fulmen、fungus、gravitas、illecebra、imperium、magnetis、orbita、profundum、reliquiae、sonus、tempus、textus、vas
+  - [GTThaumcraftAdditionalItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftAdditionalItems.java)
+- 研究 JSON 注册支持 `secondary` 字段
+  - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
+- 修复神秘时代主世界腐化生物群系参数爆炸导致的生成异常
+  - [ThaumcraftOverworldBiomesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftOverworldBiomesMixin.java)
+- 要素数据批量修正：重做 fames 数值分布、修正水晶种子/终极 Mek 系列错误要素、调整 accessory 条目，并将 aestus（浪涌）要素来源改为海潮/巨浪相关物品
+  - [process_rewritten_aspects.py](script/thaumcraft/process_rewritten_aspects.py)
+  - [rework_aestus_aspect.py](script/thaumcraft/rework_aestus_aspect.py)
+  - [process_required_aspects.py](script/resource_locations/process_required_aspects.py)
+- 汉化：aestus 统一为「浪涌」，修正若干实体/方块译名
+
+### Thaumcraft Celestial（天象神秘学）
+- 按天象学修正清单调整催化物与消耗：
+  - 日辉精华：下界石英 → 炽骨立方，消耗 500 → 50
+  - 月华精华：紫水晶碎片 → 望舒琼浆，消耗 500 → 50
+  - 星铸合金：神秘锭 → 灵宝，三种辉光各 250 → 25
+  - 主手直接右键仪器即可凝聚，无需打开界面
+  - [CelestialInstrumentBlockMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraftcelestial/CelestialInstrumentBlockMixin.java)
+  - [CelestialInstrumentBlockEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraftcelestial/CelestialInstrumentBlockEntityMixin.java)
+- 观测获得的星灾增加量降为原来的 1/10
+  - [CelestialAffinityManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraftcelestial/CelestialAffinityManagerMixin.java)
+- 自动化（FakePlayer）凝聚产出改为掉落物，避免产出丢失
+- 修正凝聚悬浮提示、研究文本等汉化
+
+### 合成与配方
+- 新增 Spellweave 系列锭配方：
+  - Create 机械合成：绯红/寒霜/闪电 Spellweave 锭
+  - Create 序列装配：远古/唤魔 Spellweave 锭（含新增中间物品）
+  - Extended Crafting 组合：星界 Spellweave 锭
+  - [配方文件](src/main/resources/data/goldentweaks/recipe/)
+- 新增终极锭注魔配方（10 种 Spellweave 锭 + 光谱碎片），并调整 Extended Crafting 终极锭配方
+  - [the_ultimate_ingot.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/infusion_matrix/the_ultimate_ingot.json)
+- 新增符文石板、血腥仪式注魔配方
+  - [runed_tablet.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/infusion_matrix/runed_tablet.json)
+  - [crimson_rites.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/infusion_matrix/crimson_rites.json)
+- 为 Spectrum 融合祭坛 4 种 Spellweave 锭配方补充 mod 加载条件
+- 补充/修正大量物品要素与 Silent Gear 联动材料（新增炽骨立方材料，Silent Gems 材料归入 `compat/silentgems`）
+
+### Bountiful
+- 新增「炼金术士」「神秘学家」职业悬赏池与悬赏令，含任务/出售两套池子
+  - [bounty_pools](src/main/resources/data/bountiful/bounty_pools/goldentweaks/)
+  - [bounty_decrees](src/main/resources/data/bountiful/bounty_decrees/goldentweaks/)
+- 重写生成脚本：支持命令行参数、Decimal 精确计价、无 linkedProfessions 职业等
+  - [script/bountiful/](script/bountiful/)
+
+### 模组兼容与修复
+- 女仆现在会食用禁忌魔法奥术蛋糕
+  - [ArcaneCakeMaidCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/snack_cabinet/forbiddenmagic/ArcaneCakeMaidCompat.java)
+- 修复 Traveloptics 物品被 EMI 隐藏/缺失的问题
+  - [EmiStackListMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiStackListMixin.java)
+- 修复 FTB Quests Questing Additions 章节图片配置组缺失字段导致的崩溃
+  - [ChapterImageConfigGroupDummyMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ftbquests/ChapterImageConfigGroupDummyMixin.java)
+- 修复 FTB Ultimine 将 Supplementaries 亚麻上半部分误判为作物的问题
+  - [VanillaCropLikeHandlerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ftbultimine/VanillaCropLikeHandlerMixin.java)
+- 压制 Iris 光影管线 "Width must be greater than zero" 误报日志
+  - [IrisPipelineErrorMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/IrisPipelineErrorMixin.java)
+- Xaero 小地图/世界地图新增完整中文汉化，并声明可选依赖
+  - [xaerominimap/lang/zh_cn.json](src/main/resources/assets/xaerominimap/lang/zh_cn.json)
+  - [xaeroworldmap/lang/zh_cn.json](src/main/resources/assets/xaeroworldmap/lang/zh_cn.json)
+- 标签与配方补充：C 标签（jade、oats、milks、raw_fishes、vegetables、cut_vegetable 等）、Farmer's Delight 热源/卷心菜卷配料、Flavor Immersed Daily seedtobran、Interiors 椅子染色转换、Kaleidoscope Cookery 热源、女仆零食柜半砖等
+
+### 依赖
+- 新增/更新编译依赖：ExtendedAE、FarmersDelight、Mekanism 10.7.19.85、Supplementaries、FTB Ultimine、Questing Additions、Create Optical、Create Interiors、Iron's Spellbooks 3.16.2 + Iron's Lib、ISS Magic from the East 等
+
 ## 2026.08.18 - v4.0
 
 ### Thaumcraft 要素系统
