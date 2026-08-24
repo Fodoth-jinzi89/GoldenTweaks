@@ -169,6 +169,7 @@
     "shut.CustomUniformsMixin",
     "shut.EmiLogMixin",
     "shut.IncompatibilityCheckerEventMixin",
+    "shut.IrisPipelineErrorMixin",
     "shut.LootDataTypeMixin",
     "shut.KubeRecipeParseLoggerMixin",
     "shut.MaidStorageManagerLoggerMixin",
