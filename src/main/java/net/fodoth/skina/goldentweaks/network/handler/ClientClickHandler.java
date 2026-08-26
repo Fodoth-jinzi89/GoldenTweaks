@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
@@ -138,9 +139,12 @@ public final class ClientClickHandler {
                         eye,
                         reachEnd,
                         searchBox,
-                        e -> e instanceof ItemEntity item
+                        e -> (e instanceof ItemEntity item
                                 && item.isAlive()
-                                && !item.hasPickUpDelay(),
+                                && !item.hasPickUpDelay())
+                                || (GoldenTweaksCommonConfig.ALLOW_EXPERIENCE_ORB_PICKUP.get()
+                                && e instanceof ExperienceOrb orb
+                                && orb.isAlive()),
                         GoldenTweaksCommonConfig.TRACE_BIAS.get(),
                         GoldenTweaksCommonConfig.ALLOW_THROUGH_WALLS.get(),
                         GoldenTweaksCommonConfig.MAX_TARGETS.get()

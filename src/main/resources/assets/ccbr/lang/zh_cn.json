@@ -2,16 +2,13 @@
   "item.create_computercraft_integration.integrated_circuit": "集成电路",
   "item.cc_better_recipes.integrated_circuit": "集成电路",
   "item.ccbr.integrated_circuit": "集成电路",
-
   "item.create_computercraft_integration.basic_integrated_circuit": "基础集成电路",
   "item.ccbr.basic_integrated_circuit": "基础集成电路",
   "item.cc_better_recipes.basic_integrated_circuit": "基础集成电路",
   "item.create_cc.basic_integrated_circuit": "基础集成电路",
-
   "item.ccbr.lapis_sheet": "青金石板",
   "item.cc_better_recipes.lapis_sheet": "青金石板",
   "item.create_cc.lapis_sheet": "青金石板",
   "item.create_computercraft_integration.lapis_sheet": "青金石板",
-
   "item.create_cc.integrated_circuit": "集成电路"
 }

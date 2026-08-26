@@ -72,6 +72,8 @@
   "config.goldentweaks.pickup": "右键物品拾取",
   "config.goldentweaks.pickup.allow_continuous_pickup": "允许连续拾取",
   "config.goldentweaks.pickup.allow_continuous_pickup.comment": "允许按住右键连续拾取附近的掉落物。",
+  "config.goldentweaks.pickup.allow_experience_orb_pickup": "允许拾取经验球",
+  "config.goldentweaks.pickup.allow_experience_orb_pickup.comment": "允许通过右键拾取附近的经验球。",
   "config.goldentweaks.pickup.allow_infinite_delay": "允许无限拾取延迟",
   "config.goldentweaks.pickup.allow_infinite_delay.comment": "允许拾取具有无限拾取延迟的物品实体。",
   "config.goldentweaks.pickup.allow_sneak_pickup": "允许潜行拾取",

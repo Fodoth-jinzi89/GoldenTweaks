@@ -51,6 +51,10 @@ public abstract class EmiLogMixin {
             return false;
         }
 
+        if (t instanceof NullPointerException) {
+            return true;
+        }
+
         // PinIn / JECharacters stack
         String throwable = t.toString();
 

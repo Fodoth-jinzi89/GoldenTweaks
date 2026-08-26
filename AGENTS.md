@@ -56,6 +56,5 @@ No formal suite. Verify with:
 ## Git
 
 - Short descriptive commits.
-- Releases: v 3.1 prefix.
 - PRs: explain what/why; screenshots for visuals.
 - Major version only: update update_log.md when user explicitly triggers it.

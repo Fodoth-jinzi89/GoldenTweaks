@@ -11,6 +11,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.ExperienceOrb;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import org.jetbrains.annotations.NotNull;
 
@@ -31,7 +32,12 @@ public record C2SPickupItemPacket(int entityId) implements CustomPacketPayload {
             if (player instanceof ServerPlayer sp) {
                 var level = sp.level();
                 var e = level.getEntity(pkt.entityId());
-                if (e instanceof ItemEntity item) {
+                if (e instanceof ExperienceOrb orb) {
+                    if (GoldenTweaksCommonConfig.ALLOW_EXPERIENCE_ORB_PICKUP.get()
+                            && sp.distanceTo(orb) <= getMaxReach(player)) {
+                        orb.playerTouch(sp);
+                    }
+                } else if (e instanceof ItemEntity item) {
                     int delay = ((ItemEntityAccessor) item).goldentweaks$getPickupDelay();
                     boolean canPickup = GoldenTweaksCommonConfig.ALLOW_INFINITE_DELAY.get()
                             || delay <= GoldenTweaksCommonConfig.PICKUP_DELAY_THRESHOLD.get();

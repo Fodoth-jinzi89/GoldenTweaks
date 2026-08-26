@@ -72,6 +72,8 @@
   "config.goldentweaks.pickup": "Pickup Interaction",
   "config.goldentweaks.pickup.allow_continuous_pickup": "Allow Continuous Pickup",
   "config.goldentweaks.pickup.allow_continuous_pickup.comment": "Allows holding right click to continuously pick up nearby items.",
+  "config.goldentweaks.pickup.allow_experience_orb_pickup": "Allow Experience Orb Pickup",
+  "config.goldentweaks.pickup.allow_experience_orb_pickup.comment": "Allows picking up nearby experience orbs with right click.",
   "config.goldentweaks.pickup.allow_infinite_delay": "Allow Infinite Pickup Delay",
   "config.goldentweaks.pickup.allow_infinite_delay.comment": "Allows picking up item entities with an infinite pickup delay.",
   "config.goldentweaks.pickup.allow_sneak_pickup": "Allow Sneak Pickup",

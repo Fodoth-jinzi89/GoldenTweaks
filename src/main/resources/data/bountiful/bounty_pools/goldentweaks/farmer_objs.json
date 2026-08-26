@@ -1010,7 +1010,7 @@
         },
         "peanut_0": {
             "type": "item",
-            "content": "flavor_immersed_daily:peanut_0",
+            "content": "flavor_immersed_daily:peanut",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1058,7 +1058,7 @@
         },
         "mungbean_0": {
             "type": "item",
-            "content": "flavor_immersed_daily:mungbean_0",
+            "content": "flavor_immersed_daily:mungbean",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1106,7 +1106,7 @@
         },
         "aubergineseed": {
             "type": "item",
-            "content": "flavor_immersed_daily:aubergineseed",
+            "content": "flavor_immersed_daily:aubergine",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1118,7 +1118,7 @@
         },
         "cucumber_seed": {
             "type": "item",
-            "content": "flavor_immersed_daily:cucumber_seed",
+            "content": "flavor_immersed_daily:cucumberseeds",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1130,7 +1130,7 @@
         },
         "corn_0": {
             "type": "item",
-            "content": "flavor_immersed_daily:corn_0",
+            "content": "flavor_immersed_daily:corn",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1322,7 +1322,7 @@
         },
         "soybean_0": {
             "type": "item",
-            "content": "flavor_immersed_daily:soybean_0",
+            "content": "flavor_immersed_daily:soybean",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1478,7 +1478,7 @@
         },
         "oldlychee": {
             "type": "item",
-            "content": "flavor_immersed_daily:oldlychee",
+            "content": "flavor_immersed_daily:lychee",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1502,7 +1502,7 @@
         },
         "lycheemeat": {
             "type": "item",
-            "content": "flavor_immersed_daily:lycheemeat",
+            "content": "flavor_immersed_daily:lychee",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1538,7 +1538,7 @@
         },
         "durianshellhat_helmet": {
             "type": "item",
-            "content": "flavor_immersed_daily:durianshellhat_helmet",
+            "content": "flavor_immersed_daily:durianshellhat",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -1778,7 +1778,7 @@
         },
         "sheepmelon": {
             "type": "item",
-            "content": "flavor_immersed_daily:sheepmelon",
+            "content": "flavor_immersed_daily:sweetmelon",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2114,7 +2114,7 @@
         },
         "cassava_2": {
             "type": "item",
-            "content": "flavor_immersed_daily:cassava_2",
+            "content": "flavor_immersed_daily:cassava",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2198,7 +2198,7 @@
         },
         "nutmeg": {
             "type": "item",
-            "content": "flavor_immersed_daily:nutmeg",
+            "content": "flavor_immersed_daily:drynutmeg",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2438,7 +2438,7 @@
         },
         "coffeebean": {
             "type": "item",
-            "content": "flavor_immersed_daily:coffeebean",
+            "content": "flavor_immersed_daily:drycoffeebean",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2534,7 +2534,7 @@
         },
         "redbeanshrub_0": {
             "type": "item",
-            "content": "flavor_immersed_daily:redbeanshrub_0",
+            "content": "flavor_immersed_daily:redbeanpaste",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2546,7 +2546,7 @@
         },
         "wax_gourd_seed": {
             "type": "item",
-            "content": "flavor_immersed_daily:wax_gourd_seed",
+            "content": "flavor_immersed_daily:wax_gourd_seed_block",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2714,7 +2714,7 @@
         },
         "cowpeabean": {
             "type": "item",
-            "content": "flavor_immersed_daily:cowpeabean",
+            "content": "flavor_immersed_daily:cowpea",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2870,7 +2870,7 @@
         },
         "fennel_0": {
             "type": "item",
-            "content": "flavor_immersed_daily:fennel_0",
+            "content": "flavor_immersed_daily:fennel",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,
@@ -2906,7 +2906,7 @@
         },
         "freshlilac": {
             "type": "item",
-            "content": "flavor_immersed_daily:freshlilac",
+            "content": "flavor_immersed_daily:drylilac",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 48,

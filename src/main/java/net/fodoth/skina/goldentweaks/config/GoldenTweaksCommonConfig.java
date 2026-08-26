@@ -24,6 +24,7 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.BooleanValue ALLOW_SNEAK_PICKUP;
     public static final ModConfigSpec.BooleanValue BLOCK_USE;
     public static final ModConfigSpec.BooleanValue ALLOW_CONTINUOUS_PICKUP;
+    public static final ModConfigSpec.BooleanValue ALLOW_EXPERIENCE_ORB_PICKUP;
 
     public static final ModConfigSpec.IntValue PICKUP_DELAY_THRESHOLD;
     public static final ModConfigSpec.BooleanValue ALLOW_INFINITE_DELAY;
@@ -123,6 +124,11 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("pickup.allow_continuous_pickup"))
                 .comment(comment("pickup.allow_continuous_pickup"))
                 .define("allowContinuousPickup", true);
+
+        ALLOW_EXPERIENCE_ORB_PICKUP = builder
+                .translation(key("pickup.allow_experience_orb_pickup"))
+                .comment(comment("pickup.allow_experience_orb_pickup"))
+                .define("allowExperienceOrbPickup", true);
 
         CONTINUOUS_PICKUP_INTERVAL = builder
                 .translation(key("pickup.continuous_pickup_interval"))

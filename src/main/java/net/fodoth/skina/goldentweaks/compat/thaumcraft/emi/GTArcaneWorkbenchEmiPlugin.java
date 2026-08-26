@@ -3,6 +3,7 @@ package net.fodoth.skina.goldentweaks.compat.thaumcraft.emi;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
+import net.neoforged.fml.ModList;
 import thaumcraft.common.registry.TCMenuTypes;
 
 /**
@@ -14,6 +15,9 @@ public class GTArcaneWorkbenchEmiPlugin implements EmiPlugin {
 
     @Override
     public void register(EmiRegistry registry) {
+        if (!ModList.get().isLoaded("thaumcraft")) {
+            return;
+        }
         registry.addRecipeHandler(
                 TCMenuTypes.ARCANE_WORKBENCH.get(),
                 new ArcaneWorkbenchEmiRecipeHandler()

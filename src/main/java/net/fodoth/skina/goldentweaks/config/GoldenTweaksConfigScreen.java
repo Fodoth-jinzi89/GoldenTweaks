@@ -84,6 +84,10 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.pickup.allow_continuous_pickup",
                     ALLOW_CONTINUOUS_PICKUP, true);
 
+            ConfigScreenHelper.addBool(pickup, eb,
+                    "config.goldentweaks.pickup.allow_experience_orb_pickup",
+                    ALLOW_EXPERIENCE_ORB_PICKUP, true);
+
             ConfigScreenHelper.addInt(pickup, eb,
                     "config.goldentweaks.pickup.pickup_delay_threshold",
                     PICKUP_DELAY_THRESHOLD, 32766, 0, 32766);

@@ -77,6 +77,27 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
         }
 
+        if (mixinClassName.endsWith("fix.aeallpattern.ClientJeiAggregateScannerMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.client.ClientJeiAggregateScanner")
+                    && checkIfPresent("mezz.jei.api.runtime.IJeiRuntime");
+        }
+
+        if (mixinClassName.endsWith("fix.aeallpattern.TianshuRoutingScreenMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.tianshu.TianshuRoutingScreen");
+        }
+
+        if (mixinClassName.endsWith("fix.aeallpattern.PatternBinderItemMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.binding.PatternBinderItem");
+        }
+
+        if (mixinClassName.endsWith("fix.neoecoae.NEExtraModelsMixin")) {
+            return checkIfPresent("cn.dancingsnow.neoecoae.client.all.NEExtraModels");
+        }
+
+        if (mixinClassName.endsWith("fix.ae2cs.AECSAdditionalModelsMixin")) {
+            return checkIfPresent("io.github.lounode.ae2cs.common.init.client.AECSAdditionalModels");
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
             return checkIfPresent("dev.ftb.mods.ftbquests.integration.PermissionsHelper")
                     && checkIfPresent("dev.uncandango.ftbquestslangsplitter.FTBQuestsLangSplitter");
