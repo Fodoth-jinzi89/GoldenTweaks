@@ -96,33 +96,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                     && checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
         }
 
-        if (mixinClassName.endsWith("fix.aeallpattern.ClientJeiAggregateScannerMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.client.ClientJeiAggregateScanner")
-                    && checkIfPresent("mezz.jei.api.runtime.IJeiRuntime");
-        }
-
-        if (mixinClassName.endsWith("fix.aeallpattern.ClientEventsMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.client.ClientEvents");
-        }
-
-        if (mixinClassName.endsWith("fix.aeallpattern.PatternProviderLogicMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander")
-                    && checkIfPresent("appeng.helpers.patternprovider.PatternProviderLogic");
-        }
-
-        if (mixinClassName.endsWith("fix.aeallpattern.AggregatePatternExpanderMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander");
-        }
-
-        if (mixinClassName.endsWith("fix.aeallpattern.ECOCraftingPatternBusBlockEntityMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander")
-                    && checkIfPresent("cn.dancingsnow.neoecoae.blocks.entity.crafting.ECOCraftingPatternBusBlockEntity");
-        }
-
-        if (mixinClassName.endsWith("fix.aeallpattern.PatternBinderItemMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.binding.PatternBinderItem");
-        }
-
         if (mixinClassName.endsWith("fix.neoecoae.NEExtraModelsMixin")) {
             return checkIfPresent("cn.dancingsnow.neoecoae.client.all.NEExtraModels");
         }
