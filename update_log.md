@@ -1,5 +1,41 @@
 # GoldenTweaks Update Log
 
+## 2026.08.27 - v4.2
+
+### AE2 自动样板与整合
+- 新增 AE2 自动样板上传兼容：支持样板终端选择、图标同步及网络包处理
+  - [AutoPatternUploadButton.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2autopatternupload/AutoPatternUploadButton.java)
+  - [ProviderSelectScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2autopatternupload/ProviderSelectScreenMixin.java)
+  - [S2CProviderIconsPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/S2CProviderIconsPacket.java)
+- 新增 AE2 All Pattern、AE2 Pattern Provider 和 AE2 Peat 的样板整合与 EMI 支持
+  - [PeatPatternUploadCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2autopatternupload/PeatPatternUploadCompat.java)
+  - [ProviderIconCache.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2autopatternupload/ProviderIconCache.java)
+  - [pattern_binder.json](src/main/resources/data/aeallpattern/recipe/pattern_binder.json)
+
+### Thaumcraft
+- 扩展神秘显微术与魔导手册配方页面，补充配方索引和研究页面联动
+  - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
+  - [GTResearchRecipePages.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTResearchRecipePages.java)
+- 新增矿脉生成兼容，修复相关矿石特征注册问题
+  - [ThaumcraftOreFeatureMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftOreFeatureMixin.java)
+
+### 模组兼容
+- 适配 Exspectriments 0.3.0 / Spectrum 1.12.4 的界面与墨水 API 变化
+  - [ExspectrimentsASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/exspectriments/ExspectrimentsASM.java)
+  - [ExspScreensMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/exspectriments/ExspScreensMixin.java)
+- 修复 FTB Quests、Carry On、NeoECOAE、Mekanism More Machines、Create、FancyMenu、Ponder 和 Too Many Recipe Viewers 的版本兼容问题
+  - [FTBQuestsLangSplitterASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/FTBQuestsLangSplitterASM.java)
+  - [CarryOnAeroCompatASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/carryon/CarryOnAeroCompatASM.java)
+  - [NEExtraModelsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/neoecoae/NEExtraModelsMixin.java)
+  - [MoreMachineEMIMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mekanismextras/MoreMachineEMIMixin.java)
+
+### 游戏体验与日志
+- 新增语义字体换行支持，改善中文等宽文本显示
+  - [SemanticFontWrapMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/vanilla/SemanticFontWrapMixin.java)
+- 增加多个存储、配方、粒子和食物日志的已知无害错误抑制，减少启动与运行时刷屏
+  - [日志抑制 Mixin](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/)
+- 更新 NeoGuanniao、Flavor Immersed Daily、Biomes O' Plenty、AE2 All Pattern、EMI 等兼容依赖
+
 ## 2026.08.24 - v4.1
 
 ### Thaumcraft
