@@ -111,6 +111,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("fancymenu");
         }
 
+        if (mixinClassName.endsWith("fix.tmrv.JEIPluginManagerMixin")) {
+            return isModLoaded("toomanyrecipeviewers");
+        }
+
+        if (mixinClassName.endsWith("shut.AEKeyLegacyComponentLoggerMixin")) {
+            return isModLoaded("ae2") && isModLoaded("northstar");
+        }
+
         if (mixinClassName.endsWith("fix.ponder.BakedModelBuffererImplMixin")) {
             return checkIfPresent("net.createmod.catnip.impl.client.render.model.BakedModelBuffererImpl");
         }
