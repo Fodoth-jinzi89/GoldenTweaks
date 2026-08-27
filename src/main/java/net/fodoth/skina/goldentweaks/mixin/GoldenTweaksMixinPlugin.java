@@ -115,6 +115,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("net.createmod.catnip.impl.client.render.model.BakedModelBuffererImpl");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.mekanismextras")) {
+            return isModLoaded("mekanism_extras") && isModLoaded("mekmm") && isModLoaded("emi");
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
             return isModLoaded("ftbquests") && isModLoaded("ftbquestslangsplitter");
         }
@@ -131,6 +135,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // 对于原版类的 mixin 应启用模组检查
         if (mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
             return isModLoaded("touhou_lost_maid");
+        }
+
+        if (mixinClassName.endsWith("shut.FlavorImmersedDailyLoggerMixin")) {
+            return isModLoaded("flavor_immersed_daily");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid")) {
