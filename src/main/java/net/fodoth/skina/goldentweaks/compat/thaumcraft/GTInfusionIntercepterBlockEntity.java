@@ -6,6 +6,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -45,6 +46,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
     private static final int SOURCE_SCAN_INTERVAL = 200; // 10s
     private static final int PEDESTAL_CHECK_INTERVAL = 20; // 1s
     private static final int CRAFT_TRIGGER_DELAY = 20; // 1s after item change
+    private static final String RESEARCH_KEY = "ThaumcraftResearch";
 
     private static volatile VarHandle MATRIX_INSTABILITY;
     private static volatile VarHandle MATRIX_RECIPE_ESSENTIA;
@@ -92,9 +94,17 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         // Cache research progress for offline infusion triggering
         PlayerProgressData data = PlayerProgressData.get(player);
         if (data != null && level != null) {
-            this.cachedResearchData = data.serializeNBT(level.registryAccess());
+            this.cachedResearchData = researchOnly(data.serializeNBT(level.registryAccess()));
         }
         setChanged();
+    }
+
+    private static CompoundTag researchOnly(CompoundTag progressData) {
+        CompoundTag researchData = new CompoundTag();
+        if (progressData.contains(RESEARCH_KEY, Tag.TAG_COMPOUND)) {
+            researchData.put(RESEARCH_KEY, progressData.getCompound(RESEARCH_KEY).copy());
+        }
+        return researchData;
     }
 
     /* ------------------------------------------------------ */
@@ -404,7 +414,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
             // Sync latest research
             PlayerProgressData data = PlayerProgressData.get(owner);
             if (data != null && level != null) {
-                cachedResearchData = data.serializeNBT(level.registryAccess());
+                cachedResearchData = researchOnly(data.serializeNBT(level.registryAccess()));
             }
             matrix.craftingStart(owner);
             return;
@@ -776,7 +786,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
             ownerName = tag.getString("ownerName");
         }
         if (tag.contains("research")) {
-            cachedResearchData = tag.getCompound("research");
+            cachedResearchData = researchOnly(tag.getCompound("research"));
         }
     }
 }

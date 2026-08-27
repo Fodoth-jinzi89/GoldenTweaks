@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "mekmm:planting",
+  "item_input": {
+    "count": 1,
+    "item": "biomesoplenty:jacaranda_sapling"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "main_output": {
+    "count": 6,
+    "id": "biomesoplenty:jacaranda_log"
+  },
+  "secondary_output": {
+    "count": 3,
+    "id": "biomesoplenty:jacaranda_sapling"
+  },
+  "secondary_chance": 0.8,
+  "per_tick_usage": true
+}

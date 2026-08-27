@@ -1,0 +1,24 @@
+{
+  "type": "apotheosis:attribute",
+  "attribute": "apothic_attributes:current_hp_damage",
+  "categories": [
+    "apotheosis:melee_weapon"
+  ],
+  "definition": {
+    "affix_type": "stat",
+    "exclusive_set": [],
+    "weights": {
+      "pinnacle": {
+        "quality": 5.0,
+        "weight": 20
+      }
+    }
+  },
+  "operation": "add_value",
+  "values": {
+    "ancientreforging:ancient": {
+      "min": 0.01,
+      "max": 0.03
+    }
+  }
+}

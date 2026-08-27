@@ -898,13 +898,6 @@ side = "BOTH"
 [[dependencies."${mod_id}"]]
 modId = "aeallpattern"
 type = "optional"
-versionRange = "[0.1.2,0.2.0)"
-ordering = "AFTER"
-side = "BOTH"
-
-[[dependencies."${mod_id}"]]
-modId = "thunderbolt"
-type = "optional"
-versionRange = "[1.0.6,2.0.0)"
+versionRange = "[0.1.0,0.2.0)"
 ordering = "AFTER"
 side = "BOTH"
