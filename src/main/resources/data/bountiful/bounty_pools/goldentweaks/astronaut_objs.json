@@ -182,7 +182,7 @@
         },
         "martian_steel": {
             "type": "item",
-            "content": "northstar:martian_steel",
+            "content": "northstar:martian_steel_ingot",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 16,

@@ -77,6 +77,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2.")) {
+            return checkIfPresent("appeng.menu.me.common.MEStorageMenu");
+        }
+
         if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
             return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload")
                     && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE");
@@ -97,13 +101,22 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                     && checkIfPresent("mezz.jei.api.runtime.IJeiRuntime");
         }
 
-        if (mixinClassName.endsWith("fix.aeallpattern.TianshuRoutingScreenMixin")) {
-            return checkIfPresent("io.github.langqi99.aeallpattern.tianshu.TianshuRoutingScreen");
+        if (mixinClassName.endsWith("fix.aeallpattern.ClientEventsMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.client.ClientEvents");
         }
 
         if (mixinClassName.endsWith("fix.aeallpattern.PatternProviderLogicMixin")) {
             return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander")
                     && checkIfPresent("appeng.helpers.patternprovider.PatternProviderLogic");
+        }
+
+        if (mixinClassName.endsWith("fix.aeallpattern.AggregatePatternExpanderMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander");
+        }
+
+        if (mixinClassName.endsWith("fix.aeallpattern.ECOCraftingPatternBusBlockEntityMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander")
+                    && checkIfPresent("cn.dancingsnow.neoecoae.blocks.entity.crafting.ECOCraftingPatternBusBlockEntity");
         }
 
         if (mixinClassName.endsWith("fix.aeallpattern.PatternBinderItemMixin")) {
@@ -116,6 +129,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.endsWith("fix.ae2cs.AECSAdditionalModelsMixin")) {
             return checkIfPresent("io.github.lounode.ae2cs.common.init.client.AECSAdditionalModels");
+        }
+
+        if (mixinClassName.endsWith("fix.fancymenu.MainThreadTaskExecutorMixin")) {
+            return checkIfPresent("de.keksuccino.fancymenu.util.threading.MainThreadTaskExecutor");
+        }
+
+        if (mixinClassName.endsWith("fix.ponder.BakedModelBuffererImplMixin")) {
+            return checkIfPresent("net.createmod.catnip.impl.client.render.model.BakedModelBuffererImpl");
         }
 
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {

@@ -9,13 +9,17 @@ import dev.emi.emi.api.recipe.VanillaEmiRecipeCategories;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.nolij.toomanyrecipeviewers.impl.ingredient.TMRVStack;
+import io.netty.buffer.Unpooled;
 import io.github.langqi99.aeallpattern.aggregate.AggregateInputSlot;
 import io.github.langqi99.aeallpattern.aggregate.AggregatePatternKind;
 import io.github.langqi99.aeallpattern.aggregate.AggregateRecipe;
 import io.github.langqi99.aeallpattern.network.GenerateAggregatePayload;
+import mezz.jei.api.ingredients.IIngredientType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.CraftingRecipe;
@@ -27,6 +31,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.network.connection.ConnectionType;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -79,17 +84,32 @@ public final class EmiAggregateScanner {
 
         ResourceLocation catalystId = BuiltInRegistries.BLOCK.getKey(block);
         String machineName = block.getDescriptionId();
-        CompletableFuture.runAsync(() -> buildAndSend(pos, catalystId, machineName, candidates))
+        var connection = minecraft.getConnection();
+        if (connection == null) {
+            SCAN_RUNNING.set(false);
+            return true;
+        }
+        RegistryAccess registryAccess = connection.registryAccess();
+        ConnectionType connectionType = connection.getConnectionType();
+        CompletableFuture.runAsync(() -> buildAndSend(pos, catalystId, machineName, candidates,
+                        registryAccess, connectionType))
                 .whenComplete((ignored, error) -> SCAN_RUNNING.set(false));
         return true;
     }
 
     private static void buildAndSend(BlockPos pos, ResourceLocation catalystId, String machineName,
-                                     List<EmiRecipe> candidates) {
+                                     List<EmiRecipe> candidates, RegistryAccess registryAccess,
+                                     ConnectionType connectionType) {
         List<AggregateRecipe> recipes = new ArrayList<>();
         Set<String> ids = new HashSet<>();
         for (EmiRecipe recipe : candidates) {
-            toAggregate(recipe, ids).ifPresent(recipes::add);
+            try {
+                toAggregate(recipe, ids)
+                        .filter(aggregate -> canEncode(aggregate, registryAccess, connectionType))
+                        .ifPresent(recipes::add);
+            } catch (RuntimeException ignored) {
+                // A malformed third-party recipe must not abort the entire machine scan.
+            }
             if (recipes.size() >= MAX_RECIPES) {
                 break;
             }
@@ -108,6 +128,19 @@ public final class EmiAggregateScanner {
                         machineName, pageIndex, pageCount, recipes.size(), recipes.subList(from, to)));
             }
         });
+    }
+
+    private static boolean canEncode(AggregateRecipe recipe, RegistryAccess registryAccess,
+                                     ConnectionType connectionType) {
+        RegistryFriendlyByteBuf buffer = new RegistryFriendlyByteBuf(Unpooled.buffer(), registryAccess, connectionType);
+        try {
+            AggregateRecipe.STREAM_CODEC.encode(buffer, recipe);
+            return true;
+        } catch (RuntimeException ignored) {
+            return false;
+        } finally {
+            buffer.release();
+        }
     }
 
     private static boolean isCraftingMachine(ItemStack machine, EmiRecipeCategory category) {
@@ -136,6 +169,9 @@ public final class EmiAggregateScanner {
         }
 
         RecipeHolder<?> backingRecipe = recipe.getBackingRecipe();
+        if (backingRecipe != null && backingRecipe.value().isSpecial()) {
+            return Optional.empty();
+        }
         ResourceLocation recipeId = backingRecipe == null ? recipe.getId() : backingRecipe.id();
         if (recipeId == null) {
             return Optional.empty();
@@ -181,7 +217,7 @@ public final class EmiAggregateScanner {
     private static Optional<GenericStack> convertRegistered(TMRVStack<?> stack) {
         try {
             Class<?> converters = Class.forName("tamaized.ae2jeiintegration.api.integrations.jei.IngredientConverters");
-            Method getConverter = converters.getMethod("getConverter", mezz.jei.api.ingredients.IIngredientType.class);
+            Method getConverter = converters.getMethod("getConverter", IIngredientType.class);
             Object converter = getConverter.invoke(null, stack.type);
             if (converter == null) {
                 return Optional.empty();
