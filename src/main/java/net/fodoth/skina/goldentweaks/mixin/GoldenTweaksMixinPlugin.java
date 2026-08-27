@@ -4,6 +4,7 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
+import net.neoforged.fml.loading.FMLLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import org.objectweb.asm.tree.ClassNode;
@@ -26,20 +27,24 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
     private static Mode MODE_CACHE = null;
 
+    private static boolean isModLoaded(String modId) {
+        return FMLLoader.getLoadingModList().getModFileById(modId) != null;
+    }
+
     private Mode detectMode() {
         if (MODE_CACHE != null) {
             return MODE_CACHE;
         }
 
         boolean vkLike =
-                checkIfPresent("net.caffeinemc.mods.sodium.client.SodiumClientMod") ||
-        checkIfPresent("org.lwjgl.vulkan.VK") ||
-                        checkIfPresent("io.homo.superresolution.common.SuperResolution") ||
-                        checkIfPresent("foundry.veil.Veil");
+                isModLoaded("sodium") ||
+                        checkIfPresent("org.lwjgl.vulkan.VK") ||
+                        isModLoaded("superresolution") ||
+                        isModLoaded("veil");
 
         boolean compatLike =
-                checkIfPresent("lol.richy.threatengl.ThreatenGL") ||
-                        checkIfPresent("icyllis.modernui.ModernUI");
+                isModLoaded("threatengl") ||
+                        isModLoaded("modernui");
 
         if (vkLike) {
             MODE_CACHE = Mode.VK;
@@ -70,30 +75,28 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers")) {
-            return checkIfPresent("io.github.lounode.ae2cs.AE2CrystalScience") && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE") && checkIfPresent("com.glodblock.github.extendedae.ExtendedAE") && checkIfPresent("rearth.ae2helpers.ae2helpers") && checkIfPresent("thelm.packagedauto.PackagedAuto");
+            return isModLoaded("ae2cs") && isModLoaded("neoecoae") && isModLoaded("extendedae") && isModLoaded("ae2helpers") && isModLoaded("packagedauto");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2peat")) {
-            return checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
+            return isModLoaded("ae2peat");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2.")) {
-            return checkIfPresent("appeng.menu.me.common.MEStorageMenu");
+            return isModLoaded("ae2");
         }
 
         if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
-            return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload")
-                    && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE");
+            return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("neoecoae");
         }
 
         if (mixinClassName.endsWith("fix.ae2autopatternupload.ProviderSelectScreenMixin")
                 || mixinClassName.endsWith("fix.ae2autopatternupload.accessor.ProviderGroupAccessor")) {
-            return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload");
+            return isModLoaded("ae2_auto_pattern_upload");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2autopatternupload")) {
-            return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload")
-                    && checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
+            return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("ae2peat");
         }
 
         if (mixinClassName.endsWith("fix.neoecoae.NEExtraModelsMixin")) {
@@ -105,7 +108,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.fancymenu.MainThreadTaskExecutorMixin")) {
-            return checkIfPresent("de.keksuccino.fancymenu.util.threading.MainThreadTaskExecutor");
+            return isModLoaded("fancymenu");
         }
 
         if (mixinClassName.endsWith("fix.ponder.BakedModelBuffererImplMixin")) {
@@ -113,8 +116,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
-            return checkIfPresent("dev.ftb.mods.ftbquests.integration.PermissionsHelper")
-                    && checkIfPresent("dev.uncandango.ftbquestslangsplitter.FTBQuestsLangSplitter");
+            return isModLoaded("ftbquests") && isModLoaded("ftbquestslangsplitter");
         }
 
         if (mixinClassName.endsWith("fix.ftbquests.ChapterImageConfigGroupDummyMixin")) {
@@ -123,38 +125,36 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.carryon.PickupHandlerDummyMixin")) {
-            return checkIfPresent("tschipp.carryon.common.carry.PickupHandler")
-                    && checkIfPresent("gay.git.copygirl.carryonaerocompat.CarryOnAeroCompat");
+            return isModLoaded("carryon") && isModLoaded("carryonaerocompat");
         }
 
         // 对于原版类的 mixin 应启用模组检查
         if (mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
-            return checkIfPresent("com.github.qichensn.TouhouLostMaid");
+            return isModLoaded("touhou_lost_maid");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.touhoulostmaid")) {
-            return checkIfPresent("com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid") && checkIfPresent("com.github.qichensn.TouhouLostMaid");
+            return isModLoaded("touhou_little_maid") && isModLoaded("touhou_lost_maid");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily")) {
-            return checkIfPresent("com.fidtest.ExampleMod");
+            return isModLoaded("flavor_immersed_daily");
         }
 
         if (mixinClassName.endsWith("fix.ftbultimine.VanillaCropLikeHandlerMixin")) {
-            return checkIfPresent("dev.ftb.mods.ftbultimine.crops.VanillaCropLikeHandler")
-                    && checkIfPresent("net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock");
+            return isModLoaded("ftbultimine") && isModLoaded("supplementaries");
         }
 
         if (mixinClassName.endsWith("fix.thaumcraft.ThaumcraftOverworldBiomesMixin")) {
-            return checkIfPresent("thaumcraft.common.worldgen.ThaumcraftOverworldBiomes");
+            return isModLoaded("thaumcraft");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumcraftcelestial")) {
-            return checkIfPresent("thaumcraft.celestial.CelestialThaumaturgy");
+            return isModLoaded("thaumcraftcelestial");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
-            return checkIfPresent("io.redspace.ironsjewelry.IronsJewelry");
+            return isModLoaded("irons_jewelry");
         }
 
         Mode mode = detectMode();
