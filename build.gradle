@@ -107,6 +107,9 @@ neoForge.ideSyncTask tasks.named("generateModMetadata")
 
 
 dependencies {
+    // NeoForge's Minecraft dependency already ships ICU4J; keep this compile-only
+    // so the mixin links against the same runtime copy without embedding the full jar.
+    compileOnly "com.ibm.icu:icu4j:73.2"
     compileOnly "maven.modrinth:create:6.0.10+mc1.21.1"
     compileOnlyApi "net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1"
     compileOnly "maven.modrinth:create-stuff-additions:2.1.0.e"

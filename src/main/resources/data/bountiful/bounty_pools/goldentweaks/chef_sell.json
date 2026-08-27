@@ -5520,9 +5520,9 @@
             "weightMult": 0.001784121320249777,
             "effectiveValue": 8640
         },
-        "congeewith_minced_porkand_preserved_egg": {
+        "congee_with_minced_pork_and_preserved_egg": {
             "type": "item",
-            "content": "flavor_immersed_daily:congeewith_minced_porkand_preserved_egg",
+            "content": "flavor_immersed_daily:congee_with_minced_pork_and_preserved_egg",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 6,

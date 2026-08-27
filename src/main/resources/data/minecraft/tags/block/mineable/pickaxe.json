@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "goldentweaks:garbage_station_floor"
+    "goldentweaks:garbage_station_floor",
+    "goldentweaks:infusion_intercepter"
   ]
 }

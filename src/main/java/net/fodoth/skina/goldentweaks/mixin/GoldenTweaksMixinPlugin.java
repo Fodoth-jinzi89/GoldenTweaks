@@ -77,6 +77,21 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
         }
 
+        if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
+            return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload")
+                    && checkIfPresent("cn.dancingsnow.neoecoae.NeoECOAE");
+        }
+
+        if (mixinClassName.endsWith("fix.ae2autopatternupload.ProviderSelectScreenMixin")
+                || mixinClassName.endsWith("fix.ae2autopatternupload.accessor.ProviderGroupAccessor")) {
+            return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2autopatternupload")) {
+            return checkIfPresent("com.gali.ae2_auto_pattern_upload.AE2AutoPatternUpload")
+                    && checkIfPresent("yuuki1293.ae2peat.AE2PEAT");
+        }
+
         if (mixinClassName.endsWith("fix.aeallpattern.ClientJeiAggregateScannerMixin")) {
             return checkIfPresent("io.github.langqi99.aeallpattern.client.ClientJeiAggregateScanner")
                     && checkIfPresent("mezz.jei.api.runtime.IJeiRuntime");
@@ -84,6 +99,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.endsWith("fix.aeallpattern.TianshuRoutingScreenMixin")) {
             return checkIfPresent("io.github.langqi99.aeallpattern.tianshu.TianshuRoutingScreen");
+        }
+
+        if (mixinClassName.endsWith("fix.aeallpattern.PatternProviderLogicMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander")
+                    && checkIfPresent("appeng.helpers.patternprovider.PatternProviderLogic");
         }
 
         if (mixinClassName.endsWith("fix.aeallpattern.PatternBinderItemMixin")) {

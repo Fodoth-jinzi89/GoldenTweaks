@@ -4,6 +4,7 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPickupItemPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CConsumableSyncPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2COpenMaterialBookPacket;
+import net.fodoth.skina.goldentweaks.network.packet.S2CProviderIconsPacket;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
@@ -34,6 +35,12 @@ public class ModNetworking {
                 S2CConsumableSyncPacket.TYPE,
                 S2CConsumableSyncPacket.STREAM_CODEC,
                 S2CConsumableSyncPacket::handle
+        );
+
+        registrar.playToClient(
+                S2CProviderIconsPacket.TYPE,
+                S2CProviderIconsPacket.STREAM_CODEC,
+                S2CProviderIconsPacket::handle
         );
     }
 }

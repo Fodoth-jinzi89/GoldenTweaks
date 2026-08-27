@@ -12,7 +12,9 @@ import mezz.jei.api.gui.ingredient.IRecipeSlotView;
 import mezz.jei.api.ingredients.ITypedIngredient;
 import mezz.jei.library.ingredients.TypedIngredient;
 import mezz.jei.api.runtime.IJeiRuntime;
+import net.fodoth.skina.goldentweaks.compat.aeallpattern.EmiAggregateScanner;
 import net.minecraft.core.BlockPos;
+import net.neoforged.fml.ModList;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -62,6 +64,15 @@ public abstract class ClientJeiAggregateScannerMixin {
             BlockPos pos,
             Operation<Void> original
     ) {
+        if (ModList.get().isLoaded("toomanyrecipeviewers")) {
+            try {
+                if (EmiAggregateScanner.scan(pos)) {
+                    return;
+                }
+            } catch (RuntimeException ignored) {
+                // Fall back to the original JEI scanner if EMI is not ready yet.
+            }
+        }
         try {
             original.call(runtime, pos);
         } catch (RuntimeException ignored) {
