@@ -13,7 +13,7 @@
   - [pattern_binder.json](src/main/resources/data/aeallpattern/recipe/pattern_binder.json)
 
 ### Thaumcraft
-- 扩展神秘显微术与魔导手册配方页面，补充配方索引和研究页面联动
+- 扩展魔导显微与魔导手册配方页面，补充配方索引和研究页面联动
   - [GTThaumcraftResearch.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTThaumcraftResearch.java)
   - [GTResearchRecipePages.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTResearchRecipePages.java)
 - 新增矿脉生成兼容，修复相关矿石特征注册问题
@@ -39,10 +39,10 @@
 ## 2026.08.24 - v4.1
 
 ### Thaumcraft
-- 新增「缸中之脑研究者」研究：手持未完成的研究笔记右键脑罐，脑罐会消耗自身经验代为完成研究；经验不足时差额由玩家经验补充，总经验不足则不会扣除任何经验
+- 新增「缸中研究者」研究：手持未完成的研究笔记右键脑罐，脑罐会消耗自身经验代为完成研究；经验不足时差额由玩家经验补充，总经验不足则不会扣除任何经验
   - [BrainJarResearchEvent.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/BrainJarResearchEvent.java)
   - [brain_jar_researcher.json](src/main/resources/data/goldentweaks/thaumcraft/research/brain_jar_researcher.json)
-- 新增「神秘显微术」研究：魔导透镜扫描容器或掉落物时，可同时补全容器内物品的研究记录
+- 新增「魔导显微」研究：魔导透镜扫描容器或掉落物时，可同时补全容器内物品的研究记录
   - 支持 AE2 存储元件、ExtendedAE、NeoECOAE 存储矩阵、Mekanism QIO 驱动器/阵列，扫描任务按 tick 排队处理，避免大容量存储导致卡顿
   - [ThaumometerStorageScanQueue.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ThaumometerStorageScanQueue.java)
   - [ThaumometerScanManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ThaumometerScanManagerMixin.java)

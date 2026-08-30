@@ -10,16 +10,22 @@
     "count": 1
   },
   "aspects": {
-    "praecantatio": 5,
-    "sano": 5,
-    "auram": 3,
-    "ordo": 3
+    "praecantatio": 1,
+    "atrpraecantatic": 1,
+    "childish": 1,
+    "evil": 1,
+    "auram": 1,
+    "vitium": 1
   },
   "parents": [
     "ARCANESPA"
   ],
   "concealed": true,
   "pages": [
-    "tc.research_page.GT_WARPTHEORY_CLEANSER.1"
+    "tc.research_page.GT_WARPTHEORY_CLEANSER.1",
+    {
+      "type": "goldentweaks:infusion",
+      "recipe_id": "goldentweaks:warptheory_cleanser"
+    }
   ]
 }

@@ -56,6 +56,10 @@
   "config.goldentweaks.fast_math": "Fast Math",
   "config.goldentweaks.fast_math.comment": "Use faster but less accurate math functions.",
   "config.goldentweaks.feature.always_edible_food": "Always Edible Food",
+  "config.goldentweaks.pickup.lootr_quick_loot": "Lootr Quick Loot",
+  "config.goldentweaks.pickup.lootr_quick_loot.comment": "Right-click Lootr containers to generate and pick up all loot directly.",
+  "config.goldentweaks.balance.remove_thaumonomicon_research_highlight": "Remove Incomplete Research Highlight",
+  "config.goldentweaks.balance.remove_thaumonomicon_research_highlight.comment": "Removes the yellow highlight frame from incomplete research in the Thaumonomicon map.",
   "config.goldentweaks.feature.always_edible_food.comment": "Allows all food items to be eaten even when the player is fully saturated.",
   "config.goldentweaks.feature.flavor_auto_continuous": "Flavor Automation (Continuous)",
   "config.goldentweaks.feature.flavor_auto_continuous.comment": "Automates flavor immersed daily machines when receives continuous redstone signal",
@@ -125,6 +129,7 @@
   "goldentweaks.researchtable.usagehint.header": "How to use",
   "goldentweaks.researchtable.usagehint.research_expertise": "Hold ctrl while combining to make up to 10 aspects. Works with research mastery.",
   "gui.goldentweaks.thaumonomicon.aspect_sources.page": "Page %s/%s, %s items",
+  "tag.item.goldentweaks.traveloptics_spellweave_ingots": "Travel Optics Spellweave Ingots",
   "item.goldentweaks.armor_plate_tier_1": "Wooden Armor Plate",
   "item.goldentweaks.armor_plate_tier_10": "Endless Armor Plate",
   "item.goldentweaks.armor_plate_tier_2": "Copper Armor Plate",
@@ -1054,5 +1059,13 @@
   "tc.research_text.GT_SHARD_ALCHEMY": "§oAwaken one shard from the memory of another§r",
   "tc.research_text.GT_THAUMIC_MICROSCOPY": "§oPerceive a multitude in a single glance§r",
   "tc.research_text.GT_UITIMATE_INGOT": "§oThe essences of many realms, made one§r",
-  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§oPurge all warp completely§r"
+  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§oPurge all warp completely§r",
+  "config.goldentweaks.pickup.lootr_play_open_animation": "Play Lootr Opening Animation",
+  "config.goldentweaks.pickup.lootr_play_open_animation.comment": "Whether to play the container opening animation during Lootr quick loot.",
+  "config.goldentweaks.pickup.lootr_show_flying_items": "Show Lootr Flying Items",
+  "config.goldentweaks.pickup.lootr_show_flying_items.comment": "Spawn item entities above the container and attract them with right-click item pickup.",
+  "config.goldentweaks.pickup.lootr_pickup_groups": "Lootr Pickup Groups",
+  "config.goldentweaks.pickup.lootr_pickup_groups.comment": "Loot groups picked up per right click; 0 means unlimited.",
+  "config.goldentweaks.pickup.lootr_hold_pickup_interval": "Lootr Hold Pickup Interval",
+  "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "Interval for continuous pickup while holding right click, in ticks; default 10 (0.5 seconds)."
 }

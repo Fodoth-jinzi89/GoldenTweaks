@@ -4,7 +4,7 @@ license = "GPL-3.0-only"
 
 [[mods]]
 modId = "goldentweaks"
-version = "3.8"
+version = "4.2"
 displayName = "GoldenTweaks"
 logoFile = "icon.png"
 displayURL = "https://space.bilibili.com/38982471"
@@ -878,5 +878,26 @@ side = "BOTH"
 modId = "thaumcraftcelestial"
 type = "optional"
 versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "xaeroworldmap"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "ccredstonelinkbridge"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."goldentweaks"]]
+modId = "aeallpattern"
+type = "optional"
+versionRange = "[0.1.5,0.2.0)"
 ordering = "AFTER"
 side = "BOTH"

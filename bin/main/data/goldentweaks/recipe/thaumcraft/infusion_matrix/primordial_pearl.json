@@ -1,6 +1,6 @@
 {
   "type": "thaumcraft:infusion_matrix",
-  "research": "PRIMPEARL",
+  "research": "GT_PRIMORDIAL_REPLICATION",
   "instability": 8,
   "result": {
     "id": "thaumcraft:primordial_pearl",

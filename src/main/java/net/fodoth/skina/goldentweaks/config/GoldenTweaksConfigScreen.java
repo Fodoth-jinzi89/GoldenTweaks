@@ -84,6 +84,10 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.pickup.allow_continuous_pickup",
                     ALLOW_CONTINUOUS_PICKUP, true);
 
+            ConfigScreenHelper.addInt(pickup, eb,
+                    "config.goldentweaks.pickup.continuous_pickup_interval",
+                    CONTINUOUS_PICKUP_INTERVAL, 2, 1, Integer.MAX_VALUE);
+
             ConfigScreenHelper.addBool(pickup, eb,
                     "config.goldentweaks.pickup.allow_experience_orb_pickup",
                     ALLOW_EXPERIENCE_ORB_PICKUP, true);
@@ -96,6 +100,14 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.pickup.allow_infinite_delay",
                     ALLOW_INFINITE_DELAY, false);
 
+            ConfigScreenHelper.addBool(pickup, eb,
+                    "config.goldentweaks.pickup.lootr_quick_loot",
+                    LOOTR_QUICK_LOOT, true);
+            ConfigScreenHelper.addBool(pickup, eb, "config.goldentweaks.pickup.lootr_play_open_animation", LOOTR_PLAY_OPEN_ANIMATION, true);
+            ConfigScreenHelper.addBool(pickup, eb, "config.goldentweaks.pickup.lootr_show_flying_items", LOOTR_SHOW_FLYING_ITEMS, true);
+            ConfigScreenHelper.addInt(pickup, eb, "config.goldentweaks.pickup.lootr_pickup_groups", LOOTR_PICKUP_GROUPS, 0, 0, 64);
+            ConfigScreenHelper.addInt(pickup, eb, "config.goldentweaks.pickup.lootr_hold_pickup_interval", LOOTR_HOLD_PICKUP_INTERVAL, 5, 1, Integer.MAX_VALUE);
+
             // =========================================================
             // Feature
             // =========================================================
@@ -107,7 +119,6 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(feature, eb,
                     "config.goldentweaks.feature.always_edible_food",
                     ALWAYS_EDIBLE_FOOD, true);
-
 
             ConfigScreenHelper.addBool(feature, eb,
                     "config.goldentweaks.feature.lost_maid_drop",
@@ -190,6 +201,10 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.cataclysm_balance",
                     CATACLYSM_BALANCE, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.remove_thaumonomicon_research_highlight",
+                    REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT, true);
 
             ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.haggler_max_discount",

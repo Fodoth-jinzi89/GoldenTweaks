@@ -1,4 +1,49 @@
-[
+[ 
+  {
+    "matchItems": [
+      "silentgems:peridot_block",
+      "alltheores:peridot_block"
+    ],
+    "resultItems": "alltheores:peridot_block"
+  },
+  {
+    "matchItems": [
+      "irons_jewelry:peridot",
+      "silentgems:peridot",
+      "alltheores:peridot"
+    ],
+    "resultItems": "alltheores:peridot"
+  },
+  {
+    "matchItems": [
+      "silentgems:sapphire_block",
+      "alltheores:sapphire_block"
+    ],
+    "resultItems": "alltheores:sapphire_block"
+  },
+  {
+    "matchItems": [
+      "irons_jewelry:sapphire",
+      "silentgems:sapphire",
+      "alltheores:sapphire"
+    ],
+    "resultItems": "alltheores:sapphire"
+  },
+  {
+    "matchItems": [
+      "silentgems:ruby_block",
+      "alltheores:ruby_block"
+    ],
+    "resultItems": "alltheores:ruby_block"
+  },
+  {
+    "matchItems": [
+      "irons_jewelry:ruby",
+      "silentgems:ruby",
+      "alltheores:ruby"
+    ],
+    "resultItems": "alltheores:ruby"
+  },
   {
     "matchItems": [
       "silentgear:emerald_shard",

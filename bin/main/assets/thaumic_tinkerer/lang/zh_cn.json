@@ -371,7 +371,7 @@
   "tc.research_page.PLATFORM.1": "你设计出一种方块,仅对伫立于其上的人才实在存在.如若未站立于上,或者处于潜行,则该方块对他们不会有碰撞体积.<BR><BR>拿着其他方块右击能够对这种方块的样子进行伪装.<BR><BR>你觉得配合奥术悬浮台你能够达成许多有趣的效果.",
   "tc.research_name.DIMENSION_SHARDS": "次元裂片",
   "tc.research_text.DIMENSION_SHARDS": "自新世界的珍奇",
-  "tc.research_page.DIMENSION_SHARDS.1": "类似主世界,下界和末地同样也有独特的水晶碎片,有时候它们会极少见地出现在原住民,比如下界的僵尸猪人或者末地的末影人,手中.或许它们在今后的某些研究里能派得上用场,尽管你还不能非常确定. <BR><BR><IMG>ttinkerer:textures/items/netherShard.png:0:0:255:255:0.0625</IMG><IMG>ttinkerer:textures/items/enderShard.png:0:0:255:255:0.0625</IMG>",
+  "tc.research_page.DIMENSION_SHARDS.1": "类似主世界,下界和末地同样也有独特的水晶碎片,有时候它们会极少见地出现在原住民,比如下界的僵尸猪人或者末地的末影人,手中.或许它们在今后的某些研究里能派得上用场,尽管你还不能非常确定. <BR><BR><IMG>thaumic_tinkerer:textures/item/nether_shard.png:0:0:255:255:0.0625</IMG><IMG>thaumic_tinkerer:textures/item/ender_shard.png:0:0:255:255:0.0625</IMG>",
   "tc.research_name.ICHOR": "灵液",
   "tc.research_text.ICHOR": "神之血",
   "tc.research_page.ICHOR.1": "涉猎神秘学的全部科类,进行广泛的研究,你发现了一种物质,你认为它将是你今后竭力研究的对象.<BR><BR>这种极端强大的物质,你名之为\"灵液\",蕴含着来自下界之星的天然觉醒之力.你确信今后它将会被广泛应用于不计其数的设备.",
@@ -519,5 +519,10 @@
   "item.thaumic_tinkerer.legacy_aspect_spawn_egg": "旧版要素作物刷怪蛋",
   "biome.thaumic_tinkerer.bedrock": "基岩矿界",
   "waystones.groups.dimension.thaumic_tinkerer.bedrock": "基岩矿界",
-  "waystones.groups.dimension.thaumcraft.outer_lands": "外域"
+  "waystones.groups.dimension.thaumcraft.outer_lands": "外域",
+  "config.jade.plugin_thaumic_tinkerer.animation_tablet": "活化工具台",
+  "config.jade.plugin_thaumic_tinkerer.transvector_interface": "矢量变换接口",
+  "config.jade.plugin_thaumic_tinkerer.thaumic_restorer": "奥法修复台",
+  "config.jade.plugin_thaumic_tinkerer.warp_gate": "仙域之门",
+  "config.jade.plugin_thaumic_tinkerer.attractor": "奥术磁铁"
 }

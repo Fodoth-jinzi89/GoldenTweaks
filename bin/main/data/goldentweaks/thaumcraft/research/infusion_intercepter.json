@@ -10,9 +10,12 @@
     "count": 1
   },
   "aspects": {
-    "praecantatio": 8,
-    "instrumentum": 4,
-    "machina": 4
+    "substance": 1,
+    "tempus": 1,
+    "space": 1,
+    "praecantatio": 1,
+    "dense": 1,
+    "atrpraecantatic": 1
   },
   "parents": [
     "INFUSION"
@@ -20,6 +23,10 @@
   "concealed": true,
   "pages": [
     "tc.research_page.GT_INFUSION_INTERCEPTER.1",
-    "tc.research_page.GT_INFUSION_INTERCEPTER.2"
+    "tc.research_page.GT_INFUSION_INTERCEPTER.2",
+    {
+      "type": "goldentweaks:infusion",
+      "recipe_id": "goldentweaks:infusion_intercepter"
+    }
   ]
 }

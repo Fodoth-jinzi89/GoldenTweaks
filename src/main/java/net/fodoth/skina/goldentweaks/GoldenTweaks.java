@@ -22,6 +22,7 @@ import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
 import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
+import net.fodoth.skina.goldentweaks.compat.lootr.LootrQuickLootEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
@@ -106,6 +107,11 @@ public class GoldenTweaks {
             if (ModList.get().isLoaded("ae2")) {
                 NeoForge.EVENT_BUS.register(ThaumometerStorageScanQueue.class);
             }
+        }
+
+        if (ModList.get().isLoaded("lootr")) {
+            LOGGER.info("Detected lootr, registering quick loot interaction");
+            NeoForge.EVENT_BUS.register(LootrQuickLootEvent.class);
         }
 
         modEventBus.addListener(this::onClientSetup);

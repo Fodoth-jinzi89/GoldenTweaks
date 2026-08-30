@@ -32,7 +32,7 @@
         { "type": "minecraft:item", "name": "croptopia:snicker_doodle", "weight": 14 },
         { "type": "minecraft:item", "name": "kaleidoscope_nether:spicy_pot", "weight": 12 },
         { "type": "minecraft:item", "name": "croptopia:fish_and_chips", "weight": 12 },
-        { "type": "minecraft:item", "name": "flavor_immersed_daily:redbeanshrub_0", "weight": 18 },
+        { "type": "minecraft:item", "name": "flavor_immersed_daily:red_bean_block", "weight": 18 },
         { "type": "minecraft:item", "name": "croptopia:elderberry_jam", "weight": 14 },
         { "type": "minecraft:item", "name": "silentgems:fishy_stew", "weight": 10 },
         { "type": "minecraft:item", "name": "minecraft:sunflower", "weight": 20 },

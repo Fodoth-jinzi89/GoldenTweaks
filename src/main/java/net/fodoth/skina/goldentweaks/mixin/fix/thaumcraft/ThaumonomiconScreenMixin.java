@@ -114,6 +114,17 @@ public abstract class ThaumonomiconScreenMixin {
     @Shadow protected abstract List<?> currentDetailPages();
     @Shadow protected abstract void drawLargeAspectTag(GuiGraphics graphics, Aspect aspect, int amount, int x, int y);
 
+    @Redirect(
+            method = "drawResearchNodes",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;renderOutline(IIIII)V")
+    )
+    private void gt$hideIncompleteResearchHighlight(GuiGraphics graphics, int x, int y, int width, int height, int color) {
+        if (!GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()
+                || (color & 0x00FFFFFF) != 0x00E8A48E) {
+            graphics.renderOutline(x, y, width, height, color);
+        }
+    }
+
     @Inject(method = "drawAspectKnowledgePage", at = @At("HEAD"), cancellable = true)
     private void gt$drawAspectKnowledgePage(GuiGraphics graphics, ResearchAspectPageLayout.Page page,
                                              int x, int y, int height, CallbackInfo ci) {

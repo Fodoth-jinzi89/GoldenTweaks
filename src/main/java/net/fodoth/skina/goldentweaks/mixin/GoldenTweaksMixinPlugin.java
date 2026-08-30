@@ -7,7 +7,9 @@ import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import net.neoforged.fml.loading.FMLLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.InsnNode;
 
 import java.util.List;
 import java.util.Set;
@@ -82,6 +84,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2peat");
         }
 
+        if (mixinClassName.endsWith("fix.ae2helpers.WcwtCraftingRecipeTransferMixin")) {
+            return isModLoaded("ae2helpers") && isModLoaded("wcwt");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2.")) {
             return isModLoaded("ae2");
         }
@@ -97,6 +103,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2autopatternupload")) {
             return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("ae2peat");
+        }
+
+        if (mixinClassName.endsWith("fix.extendedae_plus.JeiRuntimeCompatMixin")) {
+            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus")) {
+            return isModLoaded("extendedae_plus") && isModLoaded("extendedae") && isModLoaded("patternbetter");
         }
 
         if (mixinClassName.endsWith("fix.neoecoae.NEExtraModelsMixin")) {
@@ -215,6 +229,34 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
     @Override
     public void postApply(String targetClassName, ClassNode targetClass,
                           String mixinClassName, IMixinInfo mixinInfo) {
+        if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
+            targetClass.methods.stream()
+                    .filter(method -> method.name.equals("ae2apu$attachButton")
+                            || method.name.endsWith("$extendedae_plus$eap$addUploadButton")
+                            || method.name.endsWith("$extendedae_plus$eap$ensureUploadButton"))
+                    .forEach(method -> {
+                        method.instructions.clear();
+                        method.tryCatchBlocks.clear();
+                        method.localVariables = null;
+                        method.visibleLocalVariableAnnotations = null;
+                        method.invisibleLocalVariableAnnotations = null;
+                        method.instructions.add(new InsnNode(Opcodes.RETURN));
+                    });
+        }
+
+        if (mixinClassName.endsWith("fix.extendedae_plus.AEBaseScreenMixin")) {
+            targetClass.methods.stream()
+                    .filter(method -> method.name.endsWith("eap$appendPageAfterPatternsLabel"))
+                    .forEach(method -> {
+                        method.instructions.clear();
+                        method.tryCatchBlocks.clear();
+                        method.localVariables = null;
+                        method.visibleLocalVariableAnnotations = null;
+                        method.invisibleLocalVariableAnnotations = null;
+                        method.instructions.add(new InsnNode(Opcodes.RETURN));
+                    });
+        }
+
         FTBQuestsLangSplitterASM.patch(targetClassName, targetClass);
     }
 }

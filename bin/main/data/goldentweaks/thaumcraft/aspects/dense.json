@@ -6,5 +6,6 @@
     "gravitas",
     "potentia"
   ],
-  "image": "goldentweaks:textures/aspects/dense.png"
+  "image": "goldentweaks:textures/aspects/dense.png",
+  "tint": true
 }

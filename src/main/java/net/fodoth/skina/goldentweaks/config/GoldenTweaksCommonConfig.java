@@ -28,12 +28,19 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.IntValue PICKUP_DELAY_THRESHOLD;
     public static final ModConfigSpec.BooleanValue ALLOW_INFINITE_DELAY;
+    public static final ModConfigSpec.BooleanValue LOOTR_PLAY_OPEN_ANIMATION;
+    public static final ModConfigSpec.BooleanValue LOOTR_SHOW_FLYING_ITEMS;
+    public static final ModConfigSpec.IntValue LOOTR_PICKUP_GROUPS;
+    public static final ModConfigSpec.IntValue LOOTR_HOLD_PICKUP_INTERVAL;
 
 
     // =========================
     // feature 系统
     // =========================
     public static final ModConfigSpec.BooleanValue ALWAYS_EDIBLE_FOOD;
+
+    public static final ModConfigSpec.BooleanValue LOOTR_QUICK_LOOT;
+    public static final ModConfigSpec.BooleanValue REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT;
 
     public static final ModConfigSpec.BooleanValue LOST_MAID_DROP;
 
@@ -133,7 +140,7 @@ public final class GoldenTweaksCommonConfig {
         CONTINUOUS_PICKUP_INTERVAL = builder
                 .translation(key("pickup.continuous_pickup_interval"))
                 .comment(comment("pickup.continuous_pickup_interval"))
-                .defineInRange("continuousPickupInterval", 2, 1, 20);
+                .defineInRange("continuousPickupInterval", 2, 1, Integer.MAX_VALUE);
 
         PICKUP_DELAY_THRESHOLD = builder
                 .translation(key("pickup.pickup_delay_threshold"))
@@ -144,6 +151,23 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("pickup.allow_infinite_delay"))
                 .comment(comment("pickup.allow_infinite_delay"))
                 .define("allowInfiniteDelay", false);
+
+        LOOTR_PLAY_OPEN_ANIMATION = builder
+                .translation(key("pickup.lootr_play_open_animation"))
+                .comment(comment("pickup.lootr_play_open_animation"))
+                .define("lootrPlayOpenAnimation", true);
+        LOOTR_SHOW_FLYING_ITEMS = builder
+                .translation(key("pickup.lootr_show_flying_items"))
+                .comment(comment("pickup.lootr_show_flying_items"))
+                .define("lootrShowFlyingItems", true);
+        LOOTR_PICKUP_GROUPS = builder
+                .translation(key("pickup.lootr_pickup_groups"))
+                .comment(comment("pickup.lootr_pickup_groups"))
+                .defineInRange("lootrPickupGroups", 0, 0, 64);
+        LOOTR_HOLD_PICKUP_INTERVAL = builder
+                .translation(key("pickup.lootr_hold_pickup_interval"))
+                .comment(comment("pickup.lootr_hold_pickup_interval"))
+                .defineInRange("lootrHoldPickupInterval", 5, 1, Integer.MAX_VALUE);
 
         builder.pop();
 
@@ -157,6 +181,11 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("feature.always_edible_food"))
                 .comment(comment("feature.always_edible_food"))
                 .define("alwaysEdibleFood", true);
+
+        LOOTR_QUICK_LOOT = builder
+                .translation(key("pickup.lootr_quick_loot"))
+                .comment(comment("pickup.lootr_quick_loot"))
+                .define("lootrQuickLoot", true);
 
         LOST_MAID_DROP = builder
                 .translation(key("feature.lost_maid_drop"))
@@ -176,6 +205,11 @@ public final class GoldenTweaksCommonConfig {
         // =========================
         builder.translation(key("balance"));
         builder.push("balance");
+
+        REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT = builder
+                .translation(key("balance.remove_thaumonomicon_research_highlight"))
+                .comment(comment("balance.remove_thaumonomicon_research_highlight"))
+                .define("removeThaumonomiconResearchHighlight", true);
 
         // =========================
         // evolved mekanism
@@ -207,6 +241,7 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.cataclysm_balance"))
                 .comment(comment("balance.cataclysm_balance"))
                 .define("cataclysmBalance", true);
+
 
         builder.pop();
 

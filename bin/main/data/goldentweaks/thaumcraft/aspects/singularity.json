@@ -1,11 +1,11 @@
 {
   "type": "goldentweaks:aspect",
   "tag": "singularity",
-  "color": "#568748",
+  "color": "0x281b2c",
   "components": [
     "gravitas",
     "dense"
   ],
   "image": "goldentweaks:textures/aspects/singularity.png",
-  "tint": false
+  "tint": true
 }

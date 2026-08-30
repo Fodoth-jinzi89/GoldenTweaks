@@ -106,11 +106,12 @@ public abstract class ThaumcraftJeiPluginMixin {
                 Class<?> clazz = Class.forName("thaumcraft.integration.jei.JeiAspectSourceRecipe");
                 recipeConstructor = clazz.getDeclaredConstructor(
                         ResourceLocation.class, Aspect.class, ItemStack.class,
-                        List.class, List.class, int.class, int.class
+                        List.class, int.class
                 );
                 recipeConstructor.setAccessible(true);
             }
-            return recipeConstructor.newInstance(id, aspect, aspectStack, sources, allSources, page, pageCount);
+            return recipeConstructor.newInstance(id, aspect, aspectStack,
+                    List.of(List.copyOf(sources)), allSources.size());
         } catch (Exception e) {
             throw new RuntimeException("Failed creating JeiAspectSourceRecipe", e);
         }

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "flavor_immersed_daily:dough",
-    "flavor_immersed_daily:eggdough",
-    "flavor_immersed_daily:rawglutinousdough",
-    "flavor_immersed_daily:sweetpotatodough"
+    { "id": "flavor_immersed_daily:dough", "required": false },
+    { "id": "flavor_immersed_daily:eggdough", "required": false },
+    { "id": "flavor_immersed_daily:rawglutinousdough", "required": false },
+    { "id": "flavor_immersed_daily:sweetpotatodough", "required": false }
   ]
 }

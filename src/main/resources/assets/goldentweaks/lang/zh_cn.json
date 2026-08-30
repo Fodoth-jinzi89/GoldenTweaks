@@ -56,6 +56,10 @@
   "config.goldentweaks.fast_math": "快速数学",
   "config.goldentweaks.fast_math.comment": "使用更快但精度稍低的数学函数。",
   "config.goldentweaks.feature.always_edible_food": "食物永远能吃",
+  "config.goldentweaks.pickup.lootr_quick_loot": "Lootr 右键快速拾取",
+  "config.goldentweaks.pickup.lootr_quick_loot.comment": "右键 Lootr 战利品容器时直接生成并拾取全部战利品。",
+  "config.goldentweaks.balance.remove_thaumonomicon_research_highlight": "移除魔导手册未完成研究高亮框",
+  "config.goldentweaks.balance.remove_thaumonomicon_research_highlight.comment": "移除魔导手册研究地图中未完成研究的黄色高亮框。",
   "config.goldentweaks.feature.always_edible_food.comment": "满饱食度下食物也可以吃。",
   "config.goldentweaks.feature.flavor_auto_continuous": "烟火凡人心自动化（持续模式）",
   "config.goldentweaks.feature.flavor_auto_continuous.comment": "当持续接收到红石信号时自动运行烟火凡人心厨具（需要物品输入）",
@@ -125,6 +129,7 @@
   "goldentweaks.researchtable.usagehint.header": "使用方法",
   "goldentweaks.researchtable.usagehint.research_expertise": "合成时按住 Ctrl 可一次合成最多 10 个要素（需研究专精）。",
   "gui.goldentweaks.thaumonomicon.aspect_sources.page": "第%s页/共%s页，共%s项",
+  "tag.item.goldentweaks.traveloptics_spellweave_ingots": "法织锭",
   "item.goldentweaks.armor_plate_tier_1": "木护甲板",
   "item.goldentweaks.armor_plate_tier_10": "无尽护甲板",
   "item.goldentweaks.armor_plate_tier_2": "铜护甲板",
@@ -1054,5 +1059,13 @@
   "tc.research_text.GT_SHARD_ALCHEMY": "§o以一种碎片，唤醒另一种碎片§r",
   "tc.research_text.GT_THAUMIC_MICROSCOPY": "§o一瞥之间，洞悉万物§r",
   "tc.research_text.GT_UITIMATE_INGOT": "§o诸界精华，归于一锭§r",
-  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§o彻底净化扭曲§r"
+  "tc.research_text.GT_WARPTHEORY_CLEANSER": "§o彻底净化扭曲§r",
+  "config.goldentweaks.pickup.lootr_play_open_animation": "Lootr 播放开箱动画",
+  "config.goldentweaks.pickup.lootr_play_open_animation.comment": "是否在快速拾取 Lootr 战利品时播放开箱动画。",
+  "config.goldentweaks.pickup.lootr_show_flying_items": "Lootr 展示物品飞出",
+  "config.goldentweaks.pickup.lootr_show_flying_items.comment": "是否先在容器上方生成物品实体，再通过右键物品拾取吸引至玩家。",
+  "config.goldentweaks.pickup.lootr_pickup_groups": "Lootr 每次拾取组数",
+  "config.goldentweaks.pickup.lootr_pickup_groups.comment": "每次右键拾取的战利品组数，0 表示不限制。",
+  "config.goldentweaks.pickup.lootr_hold_pickup_interval": "Lootr 长按拾取间隔",
+  "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "长按右键连续拾取的间隔，单位为 tick，默认 10 tick（0.5 秒）。"
 }
