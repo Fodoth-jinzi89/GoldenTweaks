@@ -11,9 +11,7 @@ import net.neoforged.neoforge.event.EventHooks;
 public final class ItemPickupUtil {
 
     public static boolean canPickup(ItemEntity item) {
-
         return item.isAlive();
-                //&& !item.hasPickUpDelay();
     }
 
     public static void pickup(Player player, ItemEntity item) {
@@ -33,8 +31,13 @@ public final class ItemPickupUtil {
         }
 
         if (!player.getInventory().add(stack)) {
-            pullToPlayer(player, item);
-            return;
+            // 创造模式：背包满也视为拾取成功（清空栈走下面的正常结算逻辑），
+            // 避免物品被 pullToPlayer 拉到空中后因背包满而掉回地面。
+            if (!player.getAbilities().instabuild) {
+                pullToPlayer(player, item);
+                return;
+            }
+            stack.setCount(0);
         }
 
         EventHooks.fireItemPickupPost(

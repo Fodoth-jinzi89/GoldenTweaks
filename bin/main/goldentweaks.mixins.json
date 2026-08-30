@@ -56,6 +56,7 @@
     "feature.touhoulostmaid.EntityMaidDieMixin",
     "feature.touhoulostmaid.ModMaidDeathEventMixin",
     "feature.touhoulostmaid.TamableAnimalMixin",
+    "feature.vanilla.ItemEntityCreativePickupMixin",
     "feature.vanilla.accessor.ItemEntityAccessor",
     "fix.ae2peat.EmiItemStackConverterMixin",
     "fix.ae2peat.PatternEncodingAccessTermMenuBroadcastMixin",
