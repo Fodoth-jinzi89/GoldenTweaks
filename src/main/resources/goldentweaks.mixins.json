@@ -108,6 +108,7 @@
     "fix.jaopca.LocalizationRepoHandlerMixin",
     "fix.lootr.LootrItemFrameMixin",
     "fix.lootr.LootrOpenedStateMixin",
+    "fix.lootr.LootrOpenedStateTickMixin",
     "fix.maid.MaidTrackerMixin",
     "fix.mek.APTPortEnergySafeMixin",
     "fix.mek.MultiblockDataMixin",

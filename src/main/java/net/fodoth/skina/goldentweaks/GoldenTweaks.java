@@ -111,6 +111,7 @@ public class GoldenTweaks {
 
         if (ModList.get().isLoaded("lootr")) {
             LOGGER.info("Detected lootr, registering quick loot interaction");
+            // 快速拾取：按住右键直接拿取 Lootr 容器内的战利品（见 compat/lootr/LootrQuickLootEvent）
             NeoForge.EVENT_BUS.register(LootrQuickLootEvent.class);
         }
 

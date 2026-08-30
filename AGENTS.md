@@ -44,6 +44,7 @@ CI: .github/workflows/
 - Smallest working implementation — no speculative abstractions, no unfinished replacements.
 - Keep modules separated; check existing APIs before adding new libs.
 - If working directory vanishes, create a new one.
+- 如果 Bash 报错 `spawn ... ENOENT` 且 cwd 指向不存在的目录（例如 `\tmp\lootrjar`），说明上次 `cd` 进了不存在的路径；先创建该目录或用 `cd` 回到存在的目录，再继续执行，不要卡住。
 
 ## Testing
 
