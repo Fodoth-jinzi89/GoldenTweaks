@@ -217,6 +217,8 @@
   },
   "client": [
     "fix.ae2helpers.WcwtCraftingRecipeTransferMixin",
+    "fix.ae2helpers.WcwtRecipeTransferHandlerMixin",
+    "fix.ae2helpers.WcwtEmiRecipeHandlerMixin",
     "feature.vanilla.SemanticFontWrapMixin",
     "fix.neoecoae.NEExtraModelsMixin",
     "fix.ae2cs.AECSAdditionalModelsMixin",

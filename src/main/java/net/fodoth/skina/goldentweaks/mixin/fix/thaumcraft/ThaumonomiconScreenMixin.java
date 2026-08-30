@@ -119,10 +119,14 @@ public abstract class ThaumonomiconScreenMixin {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;renderOutline(IIIII)V")
     )
     private void gt$hideIncompleteResearchHighlight(GuiGraphics graphics, int x, int y, int width, int height, int color) {
-        if (!GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()
-                || (color & 0x00FFFFFF) != 0x00E8A48E) {
-            graphics.renderOutline(x, y, width, height, color);
+        // 老版本 port.152 的 drawResearchNodes 没有 renderOutline；
+        // port.239 里该方法唯一的 renderOutline（26x26）就是未完成/可解锁研究的黄色外框，
+        // 且颜色已从 0xE8A48E 改为 0xE8B84E，不能再用颜色判断。
+        if (GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()
+                && width == 26 && height == 26) {
+            return;
         }
+        graphics.renderOutline(x, y, width, height, color);
     }
 
     @Inject(method = "drawAspectKnowledgePage", at = @At("HEAD"), cancellable = true)

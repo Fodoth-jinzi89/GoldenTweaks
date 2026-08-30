@@ -210,26 +210,32 @@ public final class LootrQuickLootEvent {
         BlockPos pos = container.getBlockPos();
         BlockState state = level.getBlockState(pos);
         SoundEvent sound;
-        if (container instanceof LootrChestBlockEntity chest) {
-            chest.triggerEvent(1, open ? 1 : 0);
-            level.blockEvent(pos, state.getBlock(), 1, open ? 1 : 0);
-            sound = open ? SoundEvents.CHEST_OPEN : SoundEvents.CHEST_CLOSE;
-        } else if (container instanceof LootrShulkerBlockEntity shulker) {
-            shulker.triggerEvent(1, open ? 1 : 0);
-            level.blockEvent(pos, state.getBlock(), 1, open ? 1 : 0);
-            sound = open ? SoundEvents.SHULKER_BOX_OPEN : SoundEvents.SHULKER_BOX_CLOSE;
-        } else if (container instanceof LootrBarrelBlockEntity) {
-            if (state.hasProperty(BarrelBlock.OPEN)) {
-                level.setBlock(pos, state.setValue(BarrelBlock.OPEN, open), 3);
+        switch (container) {
+            case LootrChestBlockEntity chest -> {
+                chest.triggerEvent(1, open ? 1 : 0);
+                level.blockEvent(pos, state.getBlock(), 1, open ? 1 : 0);
+                sound = open ? SoundEvents.CHEST_OPEN : SoundEvents.CHEST_CLOSE;
             }
-            sound = open ? SoundEvents.BARREL_OPEN : SoundEvents.BARREL_CLOSE;
-        } else {
-            return;
+            case LootrShulkerBlockEntity shulker -> {
+                shulker.triggerEvent(1, open ? 1 : 0);
+                level.blockEvent(pos, state.getBlock(), 1, open ? 1 : 0);
+                sound = open ? SoundEvents.SHULKER_BOX_OPEN : SoundEvents.SHULKER_BOX_CLOSE;
+            }
+            case LootrBarrelBlockEntity ignored -> {
+                if (state.hasProperty(BarrelBlock.OPEN)) {
+                    level.setBlock(pos, state.setValue(BarrelBlock.OPEN, open), 3);
+                }
+                sound = open ? SoundEvents.BARREL_OPEN : SoundEvents.BARREL_CLOSE;
+            }
+            default -> {
+                return;
+            }
         }
         level.playSound(null, pos, sound, SoundSource.BLOCKS, 0.5F, level.random.nextFloat() * 0.1F + 0.9F);
     }
 
     /** 从 Lootr 容器取出至多一组物品，生成掉落物并吸入玩家。返回本次结果。 */
+    @SuppressWarnings("deprecation")
     private static LootResult loot(BlockEntity container, ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos) {
         ILootrInfoProvider provider;
         ILootrInventory inventory;
@@ -242,6 +248,7 @@ public final class LootrQuickLootEvent {
             } else if (container instanceof LootrShulkerBlockEntity shulker) {
                 shulker.unpackLootTable(player);
             }
+
             inventory = LootrAPI.getInventory(provider, player, DefaultLootFiller.getInstance());
         } catch (Throwable ignored) {
             return new LootResult(0, false);
