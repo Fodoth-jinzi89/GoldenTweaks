@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create:potato_projectile"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "spectrum:shooting_star"
+  },
+  "aspects": {
+    "bestia": 4,
+    "metallum": 3,
+    "victus": 3
+  }
+}

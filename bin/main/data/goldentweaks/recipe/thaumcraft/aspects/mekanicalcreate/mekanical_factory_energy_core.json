@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanicalcreate:mekanical_factory_energy_core"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

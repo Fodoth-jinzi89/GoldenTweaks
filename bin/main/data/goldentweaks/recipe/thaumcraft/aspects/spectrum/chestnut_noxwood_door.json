@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:chestnut_noxwood_door"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "arbor": 3,
+    "vas": 3
+  }
+}

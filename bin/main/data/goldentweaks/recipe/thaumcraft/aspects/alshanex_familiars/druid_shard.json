@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:druid_shard"
+  },
+  "aspects": {
+    "praecantatio": 2
+  }
+}

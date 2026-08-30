@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:com_offset"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

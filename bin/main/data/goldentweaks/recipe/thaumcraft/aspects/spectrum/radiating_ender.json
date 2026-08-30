@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:radiating_ender"
+  },
+  "aspects": {
+    "alienis": 3,
+    "metallum": 3
+  }
+}

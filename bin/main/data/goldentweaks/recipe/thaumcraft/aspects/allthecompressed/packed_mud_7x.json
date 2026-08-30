@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:packed_mud_7x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 14,
+    "mornogol": 1
+  }
+}

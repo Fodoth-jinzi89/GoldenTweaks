@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:red_beam"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

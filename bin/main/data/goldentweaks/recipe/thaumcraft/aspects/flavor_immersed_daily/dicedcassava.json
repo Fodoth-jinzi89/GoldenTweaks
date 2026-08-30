@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:dicedcassava"
+  },
+  "aspects": {
+    "gelum": 3,
+    "expand": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:vineheartchair"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "anteanus": 1
+  }
+}

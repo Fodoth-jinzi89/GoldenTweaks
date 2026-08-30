@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:infinity_upgrade"
+  },
+  "aspects": {
+    "terminus": 6,
+    "machina": 2
+  }
+}

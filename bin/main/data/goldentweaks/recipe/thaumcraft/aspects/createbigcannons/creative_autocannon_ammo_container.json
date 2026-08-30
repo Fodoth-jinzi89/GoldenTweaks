@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:creative_autocannon_ammo_container"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3,
+    "vas": 3
+  }
+}

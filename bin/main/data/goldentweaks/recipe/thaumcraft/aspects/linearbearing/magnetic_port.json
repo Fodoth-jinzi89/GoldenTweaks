@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "linearbearing:magnetic_port"
+  },
+  "aspects": {
+    "magnetis": 6,
+    "machina": 2
+  }
+}

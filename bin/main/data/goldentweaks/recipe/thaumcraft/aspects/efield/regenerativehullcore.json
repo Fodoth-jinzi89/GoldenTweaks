@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "efield:regenerativehullcore"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

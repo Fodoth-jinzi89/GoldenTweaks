@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothicenchantingaddition:solidified_flux_experience"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "potentia": 2
+  }
+}

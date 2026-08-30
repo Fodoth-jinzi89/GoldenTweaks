@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2cs:charged_overload_crystal_block"
+  },
+  "aspects": {
+    "potentia": 3,
+    "vitreus": 3
+  }
+}

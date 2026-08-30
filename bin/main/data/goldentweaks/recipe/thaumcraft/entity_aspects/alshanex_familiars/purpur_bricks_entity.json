@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "alshanex_familiars:purpur_bricks_entity"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:charged_certus_quartz_crystal"
+  },
+  "aspects": {
+    "potentia": 3,
+    "vitreus": 3
+  }
+}

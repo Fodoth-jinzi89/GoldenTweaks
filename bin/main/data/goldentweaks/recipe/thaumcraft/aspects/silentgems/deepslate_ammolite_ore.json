@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:deepslate_ammolite_ore"
+  },
+  "aspects": {
+    "spelunca": 6,
+    "fossil": 4
+  }
+}

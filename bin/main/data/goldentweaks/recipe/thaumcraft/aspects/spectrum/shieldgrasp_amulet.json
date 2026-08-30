@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:shieldgrasp_amulet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "accessories": 3,
+    "lucrum": 2,
+    "auram": 6
+  }
+}

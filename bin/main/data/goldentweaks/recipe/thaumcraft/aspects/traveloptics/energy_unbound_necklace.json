@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:energy_unbound_necklace"
+  },
+  "aspects": {
+    "potentia": 4,
+    "accessories": 3,
+    "machina": 3
+  }
+}

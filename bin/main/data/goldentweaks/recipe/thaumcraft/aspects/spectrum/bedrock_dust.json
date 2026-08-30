@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bedrock_dust"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "pannus": 2,
+    "atrpraecantatic": 4
+  }
+}

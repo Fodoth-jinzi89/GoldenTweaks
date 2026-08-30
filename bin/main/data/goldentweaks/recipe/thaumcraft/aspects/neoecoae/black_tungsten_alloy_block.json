@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:black_tungsten_alloy_block"
+  },
+  "aspects": {
+    "machina": 3,
+    "cognitio": 2,
+    "mixtura": 8
+  }
+}

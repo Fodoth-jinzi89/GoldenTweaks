@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:mermaids_popcorn"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2,
+    "childish": 4
+  }
+}

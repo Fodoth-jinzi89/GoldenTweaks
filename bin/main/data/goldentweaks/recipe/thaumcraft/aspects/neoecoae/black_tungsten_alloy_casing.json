@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:black_tungsten_alloy_casing"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "mixtura": 8
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:light_blue_sapling"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2
+  }
+}

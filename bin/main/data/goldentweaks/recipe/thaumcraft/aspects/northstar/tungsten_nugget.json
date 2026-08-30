@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:tungsten_nugget"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2
+  }
+}

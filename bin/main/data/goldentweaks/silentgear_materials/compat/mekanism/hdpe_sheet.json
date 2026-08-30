@@ -1,0 +1,78 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "textile",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFDCDCD3",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.mekanism.hdpe_sheet"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.46
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1.61
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.3
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.161
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.322
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.092
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

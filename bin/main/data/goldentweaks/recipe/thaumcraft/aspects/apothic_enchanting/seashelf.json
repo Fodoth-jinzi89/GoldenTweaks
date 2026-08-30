@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:seashelf"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3,
+    "history": 2
+  }
+}

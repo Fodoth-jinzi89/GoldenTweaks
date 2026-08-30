@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:jingxu_youlan"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "sano": 6
+  }
+}

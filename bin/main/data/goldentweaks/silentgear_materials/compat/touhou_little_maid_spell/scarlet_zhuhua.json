@@ -1,0 +1,52 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "flower_feather",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "touhou_little_maid_spell:scarlet_zhuhua"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFBE1A38",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.touhou_little_maid_spell.scarlet_zhuhua"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.337
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.286
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.185
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:module_laser_dissipation_unit"
+  },
+  "aspects": {
+    "invidia": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:fe_p2p_tunnel"
+  },
+  "aspects": {
+    "potentia": 3
+  }
+}

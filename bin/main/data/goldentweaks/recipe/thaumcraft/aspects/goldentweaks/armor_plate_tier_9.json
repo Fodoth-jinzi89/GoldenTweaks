@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:armor_plate_tier_9"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:taint_block"
+  },
+  "aspects": {
+    "arbor": 1,
+    "vitium": 3,
+    "anteanus": 8
+  }
+}

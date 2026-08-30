@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:parametric_mining_device"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

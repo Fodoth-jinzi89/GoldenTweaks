@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeroworks:copycat_control_desk"
+  },
+  "aspects": {
+    "imperium": 1
+  }
+}

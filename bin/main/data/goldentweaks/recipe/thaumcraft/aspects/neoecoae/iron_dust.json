@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:iron_dust"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

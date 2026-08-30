@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:cable"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 2,
+    "potentia": 2,
+    "arche": 1
+  }
+}

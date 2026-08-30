@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:qio_drive_singularity"
+  },
+  "aspects": {
+    "singularity": 6,
+    "alienis": 3,
+    "machina": 3,
+    "atrsubstance": 2
+  }
+}

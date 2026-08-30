@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pyrite_pile"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "anteanus": 4
+  }
+}

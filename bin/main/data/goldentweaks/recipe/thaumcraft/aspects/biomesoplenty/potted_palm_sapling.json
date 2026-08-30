@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:potted_palm_sapling"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

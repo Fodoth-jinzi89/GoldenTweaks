@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:closedas_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "mixtura": 2
+  }
+}

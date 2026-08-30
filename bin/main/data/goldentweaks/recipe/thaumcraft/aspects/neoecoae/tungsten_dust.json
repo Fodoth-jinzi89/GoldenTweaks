@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:tungsten_dust"
+  },
+  "aspects": {
+    "machina": 3,
+    "cognitio": 2
+  }
+}

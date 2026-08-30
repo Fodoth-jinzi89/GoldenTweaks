@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:rawglutinousnoodles"
+  },
+  "aspects": {
+    "gelum": 3,
+    "metallum": 3,
+    "victus": 3,
+    "fames": 6,
+    "expand": 6
+  }
+}

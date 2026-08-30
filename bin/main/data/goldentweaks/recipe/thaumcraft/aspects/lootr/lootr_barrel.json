@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "lootr:lootr_barrel"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "machina": 3
+  }
+}

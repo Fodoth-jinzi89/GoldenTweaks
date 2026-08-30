@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:better_gold_axe"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3,
+    "superbia": 4,
+    "ira": 6
+  }
+}

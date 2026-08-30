@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:trident_prongs"
+  },
+  "aspects": {
+    "telum": 4,
+    "aqua": 2,
+    "aestus": 1
+  }
+}

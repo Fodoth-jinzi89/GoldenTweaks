@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:phial_of_essentia_reliquiae"
+  },
+  "aspects": {
+    "reliquiae": 8,
+    "vas": 2,
+    "vitreus": 1
+  }
+}

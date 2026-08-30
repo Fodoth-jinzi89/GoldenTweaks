@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "cataclysm:void_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7041C4",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.cataclysm.void_stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.142,
+      "armor/boots": 1.971,
+      "armor/chestplate": 5.257,
+      "armor/helmet": 1.971,
+      "armor/leggings": 3.943,
+      "armor_durability": 11.12,
+      "armor_toughness": 1.617,
+      "attack_damage": 2.831,
+      "attack_speed": -0.28,
+      "charging_value": 0.371,
+      "draw_speed": -0.2,
+      "durability": 202.18,
+      "enchantment_value": 5.426,
+      "harvest_speed": 4.448,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.022,
+      "magic_damage": 1.415,
+      "projectile_accuracy": 0.52,
+      "projectile_speed": 0.47,
+      "ranged_damage": 3.639,
+      "rarity": 9.47,
+      "knockback_resistance": 0.16,
+      "repair_efficiency": 0.48,
+      "repair_value": 0.18,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:void_ward"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:tree_cutter"
+  },
+  "aspects": {
+    "meto": 4,
+    "instrumentum": 3,
+    "ira": 1
+  }
+}

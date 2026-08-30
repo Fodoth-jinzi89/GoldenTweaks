@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:phantom_arrow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

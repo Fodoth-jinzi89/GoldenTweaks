@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:lead_ore"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3
+  }
+}

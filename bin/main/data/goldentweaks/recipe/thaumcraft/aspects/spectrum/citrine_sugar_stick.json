@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:citrine_sugar_stick"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "childish": 4
+  }
+}

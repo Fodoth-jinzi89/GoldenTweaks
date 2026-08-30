@@ -1,0 +1,74 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "god_cord",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "avaritia_more_items:quark_wire"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFCDB1D9",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.avaritia_more_items.quark_wire"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 3.25
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 2.6
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 2.275
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 2.925
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 1.137
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

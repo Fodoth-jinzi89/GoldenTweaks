@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_aeronautics_toolgun:creative_magnetic_gun"
+  },
+  "aspects": {
+    "telum": 4,
+    "magnetis": 6
+  }
+}

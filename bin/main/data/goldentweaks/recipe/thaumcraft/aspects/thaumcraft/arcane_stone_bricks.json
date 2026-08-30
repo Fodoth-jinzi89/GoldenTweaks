@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:arcane_stone_bricks"
+  },
+  "aspects": {
+    "terra": 1,
+    "praecantatio": 1
+  }
+}

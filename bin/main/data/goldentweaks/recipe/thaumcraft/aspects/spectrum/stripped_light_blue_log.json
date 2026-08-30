@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:stripped_light_blue_log"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

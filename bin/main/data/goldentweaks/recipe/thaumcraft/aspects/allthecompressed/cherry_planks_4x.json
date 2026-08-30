@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:cherry_planks_4x"
+  },
+  "aspects": {
+    "arbor": 7,
+    "dense": 8
+  }
+}

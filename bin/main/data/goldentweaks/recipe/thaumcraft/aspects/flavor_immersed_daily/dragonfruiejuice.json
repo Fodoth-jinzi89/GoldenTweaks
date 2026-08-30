@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:dragonfruiejuice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2,
+    "dragon": 6,
+    "dream": 2
+  }
+}

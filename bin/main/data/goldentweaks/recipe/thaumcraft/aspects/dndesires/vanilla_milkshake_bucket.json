@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:vanilla_milkshake_bucket"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2,
+    "sano": 1
+  }
+}

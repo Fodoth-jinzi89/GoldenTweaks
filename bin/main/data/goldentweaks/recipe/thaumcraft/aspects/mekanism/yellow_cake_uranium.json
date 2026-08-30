@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:yellow_cake_uranium"
+  },
+  "aspects": {
+    "potentia": 4,
+    "metallum": 3,
+    "victus": 3,
+    "vitium": 3,
+    "fames": 8
+  }
+}

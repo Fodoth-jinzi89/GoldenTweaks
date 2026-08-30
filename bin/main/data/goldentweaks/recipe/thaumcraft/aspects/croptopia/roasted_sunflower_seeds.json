@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:roasted_sunflower_seeds"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2,
+    "vegetatio": 2,
+    "luxuria": 4
+  }
+}

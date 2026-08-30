@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:crushed_raw_copper"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

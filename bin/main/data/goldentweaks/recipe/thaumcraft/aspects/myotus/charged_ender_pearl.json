@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "myotus:charged_ender_pearl"
+  },
+  "aspects": {
+    "atrpotentia": 6
+  }
+}

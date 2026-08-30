@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cobbled_quartz"
+  },
+  "aspects": {
+    "saxum": 3,
+    "vitreus": 3
+  }
+}

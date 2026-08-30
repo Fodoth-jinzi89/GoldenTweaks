@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:guidebook"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "sensus": 2
+  }
+}

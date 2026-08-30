@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:mercury_stone"
+  },
+  "aspects": {
+    "saxum": 3,
+    "space": 3,
+    "universes": 4
+  }
+}

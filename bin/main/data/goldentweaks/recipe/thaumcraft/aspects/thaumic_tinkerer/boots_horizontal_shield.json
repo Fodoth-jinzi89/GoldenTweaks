@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:boots_horizontal_shield"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:the_baby_leviathan"
+  },
+  "aspects": {
+    "bestia": 4,
+    "profundum": 3,
+    "victus": 3
+  }
+}

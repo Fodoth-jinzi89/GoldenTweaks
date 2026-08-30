@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:controller"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "machina": 3,
+    "vas": 3,
+    "imperium": 8
+  }
+}

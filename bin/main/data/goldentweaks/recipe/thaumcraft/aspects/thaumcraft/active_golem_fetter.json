@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:active_golem_fetter"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

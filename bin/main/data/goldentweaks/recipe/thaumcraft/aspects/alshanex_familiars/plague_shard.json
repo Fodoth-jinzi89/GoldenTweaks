@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:plague_shard"
+  },
+  "aspects": {
+    "praecantatio": 2
+  }
+}

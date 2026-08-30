@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_ap_magic_sword"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "telum": 4
+  }
+}

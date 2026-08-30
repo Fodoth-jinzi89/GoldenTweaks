@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cinderpearl"
+  },
+  "aspects": {
+    "herba": 2,
+    "ignis": 2,
+    "praecantatio": 2,
+    "praecantaticherba": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:molten_crystal_matrix_bucket"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "terminus": 6
+  }
+}

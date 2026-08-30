@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:crystallized_soul"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "auram": 2
+  }
+}

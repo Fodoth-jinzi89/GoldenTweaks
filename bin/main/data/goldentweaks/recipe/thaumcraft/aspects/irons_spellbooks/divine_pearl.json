@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:divine_pearl"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

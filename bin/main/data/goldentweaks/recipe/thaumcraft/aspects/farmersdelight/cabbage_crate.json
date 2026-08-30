@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:cabbage_crate"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "herba": 3,
+    "vas": 3,
+    "messis": 2
+  }
+}

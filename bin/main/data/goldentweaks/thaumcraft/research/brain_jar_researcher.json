@@ -1,0 +1,27 @@
+{
+  "type": "goldentweaks:research",
+  "key": "GT_BRAIN_JAR_RESEARCHER",
+  "category": "GT_MODIFICATIONS",
+  "column": -3,
+  "row": 5,
+  "complexity": 2,
+  "icon": {
+    "id": "thaumcraft:brain_jar",
+    "count": 1
+  },
+  "aspects": {
+    "atrpotentia": 1,
+    "exanimis": 1,
+    "cognitio": 1,
+    "desidia": 1,
+    "dream": 1,
+    "lucrum": 1
+  },
+  "parents": [
+    "JARBRAIN"
+  ],
+  "concealed": true,
+  "pages": [
+    "tc.research_page.GT_BRAIN_JAR_RESEARCHER.1"
+  ]
+}

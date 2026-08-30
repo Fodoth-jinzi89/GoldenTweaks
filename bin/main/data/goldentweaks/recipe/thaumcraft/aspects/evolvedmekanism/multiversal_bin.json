@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:multiversal_bin"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

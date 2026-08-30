@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:dense_personal_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2,
+    "invidia": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:caramel_nether_caterpillar"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4,
+    "sano": 4,
+    "luxuria": 4,
+    "childish": 4
+  }
+}

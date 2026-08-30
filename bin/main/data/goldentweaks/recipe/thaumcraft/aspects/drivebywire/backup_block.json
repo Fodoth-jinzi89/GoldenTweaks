@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "drivebywire:backup_block"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:coral_bardiche"
+  },
+  "aspects": {
+    "telum": 4,
+    "aestus": 6
+  }
+}

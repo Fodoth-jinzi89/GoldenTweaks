@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createframed:maroon_cardboard_window_pane"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_ore_excavation_plus:ultimate_drill"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "perfodio": 4,
+    "perditio": 3,
+    "machina": 2
+  }
+}

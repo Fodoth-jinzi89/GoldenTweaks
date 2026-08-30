@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createpropulsion:coral_bucket"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

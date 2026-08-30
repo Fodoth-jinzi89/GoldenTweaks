@@ -1,0 +1,70 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal_coating",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF867B86",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.minecraft.netherite"
+    },
+    "name_prefix": {
+      "translate": "material.silentgear.netherite"
+    }
+  },
+  "properties": {
+    "silentgear:coating": {
+      "armor_durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.197
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 3.591
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.247
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.26
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.126
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.247
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.247
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

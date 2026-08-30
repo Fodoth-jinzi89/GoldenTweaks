@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:necromancer_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "mortuus": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 4
+  }
+}

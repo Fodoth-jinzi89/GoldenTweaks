@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createoreexcavation:diamond_drill"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "perfodio": 4,
+    "perditio": 3,
+    "vitreus": 3,
+    "machina": 2
+  }
+}

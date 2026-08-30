@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:celestial_spellweave_ingot"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "cosmic": 3
+  }
+}

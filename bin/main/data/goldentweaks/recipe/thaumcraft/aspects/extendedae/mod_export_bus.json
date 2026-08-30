@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:mod_export_bus"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

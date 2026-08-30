@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:nether_star_block"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "ordo": 2
+  }
+}

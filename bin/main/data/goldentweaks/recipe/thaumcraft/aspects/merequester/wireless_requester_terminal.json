@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "merequester:wireless_requester_terminal"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "machina": 3,
+    "permutatio": 3,
+    "aer": 2,
+    "iter": 2
+  }
+}

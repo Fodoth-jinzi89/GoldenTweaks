@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:amethyst_calcite_light"
+  },
+  "aspects": {
+    "saxum": 3,
+    "vitreus": 3
+  }
+}

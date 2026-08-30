@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:martian_steel_sheetmetal_vertical_slab"
+  },
+  "aspects": {
+    "metallum": 3,
+    "space": 3,
+    "universes": 4
+  }
+}

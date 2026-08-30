@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:granite_tile_slab"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

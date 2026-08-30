@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bismuth_crystal"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "arche": 6
+  }
+}

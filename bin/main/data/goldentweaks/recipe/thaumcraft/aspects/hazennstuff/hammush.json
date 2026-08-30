@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:hammush"
+  },
+  "aspects": {
+    "praecantatio": 3,
+    "fossil": 4,
+    "ira": 4
+  }
+}

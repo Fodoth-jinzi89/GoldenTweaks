@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:flesh_tendons_strand"
+  },
+  "aspects": {
+    "corpus": 3
+  }
+}

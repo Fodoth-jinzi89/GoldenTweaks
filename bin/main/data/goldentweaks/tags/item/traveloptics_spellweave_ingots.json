@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "traveloptics:abyssal_spellweave_ingot",
+    "traveloptics:celestial_spellweave_ingot",
+    "traveloptics:crimson_spellweave_ingot",
+    "traveloptics:cryo_spellweave_ingot",
+    "traveloptics:eldritch_spellweave_ingot",
+    "traveloptics:evokated_spellweave_ingot",
+    "traveloptics:lightning_spellweave_ingot",
+    "traveloptics:pyro_spellweave_ingot",
+    "traveloptics:verdant_spellweave_ingot",
+    "traveloptics:void_spellweave_ingot"
+  ]
+}

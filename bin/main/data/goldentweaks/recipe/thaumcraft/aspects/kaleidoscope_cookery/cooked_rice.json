@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:cooked_rice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

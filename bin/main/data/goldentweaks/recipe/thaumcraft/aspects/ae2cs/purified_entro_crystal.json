@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2cs:purified_entro_crystal"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

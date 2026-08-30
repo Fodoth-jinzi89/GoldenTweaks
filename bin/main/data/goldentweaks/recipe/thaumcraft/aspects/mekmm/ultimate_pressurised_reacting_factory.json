@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:ultimate_pressurised_reacting_factory"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "machina": 2
+  }
+}

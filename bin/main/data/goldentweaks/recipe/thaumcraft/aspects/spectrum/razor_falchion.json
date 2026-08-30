@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:razor_falchion"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

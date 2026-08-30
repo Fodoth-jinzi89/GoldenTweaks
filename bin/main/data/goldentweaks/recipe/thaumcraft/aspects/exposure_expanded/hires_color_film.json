@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposure_expanded:hires_color_film"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:pulley_block"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

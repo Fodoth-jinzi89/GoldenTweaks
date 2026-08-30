@@ -1,0 +1,74 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "cord",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2:fluix_smart_cable"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF534281",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.ae2.fluix_smart_cable"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.344
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.275
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.241
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.31
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.12
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

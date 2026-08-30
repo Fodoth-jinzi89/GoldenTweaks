@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbuttercat:in_super_butter_block"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1
+  }
+}

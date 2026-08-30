@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:chicken_cuts"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:computer_command"
+  },
+  "aspects": {
+    "machina": 3,
+    "imperium": 2
+  }
+}

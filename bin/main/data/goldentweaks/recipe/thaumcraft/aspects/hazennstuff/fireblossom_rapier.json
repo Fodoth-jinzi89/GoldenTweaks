@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:fireblossom_rapier"
+  },
+  "aspects": {
+    "ignis": 3,
+    "victus": 3,
+    "fames": 8
+  }
+}

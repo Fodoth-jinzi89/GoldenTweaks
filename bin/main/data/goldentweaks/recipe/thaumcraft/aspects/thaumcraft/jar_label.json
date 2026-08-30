@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:jar_label"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

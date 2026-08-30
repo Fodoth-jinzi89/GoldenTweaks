@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:light_gray_resplendent_cushion"
+  },
+  "aspects": {
+    "pannus": 3,
+    "fabrico": 2,
+    "dragon": 4
+  }
+}

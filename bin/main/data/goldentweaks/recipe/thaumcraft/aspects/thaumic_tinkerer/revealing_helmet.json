@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:revealing_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

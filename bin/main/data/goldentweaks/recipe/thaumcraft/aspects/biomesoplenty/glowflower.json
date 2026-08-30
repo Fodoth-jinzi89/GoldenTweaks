@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:glowflower"
+  },
+  "aspects": {
+    "herba": 3,
+    "vegetatio": 2
+  }
+}

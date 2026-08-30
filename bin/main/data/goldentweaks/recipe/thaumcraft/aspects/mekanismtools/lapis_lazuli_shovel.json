@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismtools:lapis_lazuli_shovel"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "vitreus": 3
+  }
+}

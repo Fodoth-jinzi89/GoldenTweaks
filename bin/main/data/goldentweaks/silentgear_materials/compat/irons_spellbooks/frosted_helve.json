@@ -1,0 +1,81 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "irons_spellbooks:frosted_helve"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9BB0B7",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.irons_spellbooks.frosted_helve"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.55
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.099
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.22
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.165
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.605
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.77
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.358
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.385
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.33
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:chilled"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

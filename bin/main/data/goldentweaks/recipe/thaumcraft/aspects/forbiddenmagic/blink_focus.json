@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:blink_focus"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

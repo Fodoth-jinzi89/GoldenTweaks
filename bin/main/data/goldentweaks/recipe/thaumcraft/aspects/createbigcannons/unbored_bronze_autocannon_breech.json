@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:unbored_bronze_autocannon_breech"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3,
+    "metallum": 3,
+    "mixtura": 6
+  }
+}

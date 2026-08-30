@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:magic_mirror"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "sensus": 4,
+    "lux": 2,
+    "evil": 4
+  }
+}

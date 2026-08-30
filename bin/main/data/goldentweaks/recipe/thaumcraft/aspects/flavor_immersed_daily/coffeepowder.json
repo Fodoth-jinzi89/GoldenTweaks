@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:coffeepowder"
+  },
+  "aspects": {
+    "telum": 4,
+    "victus": 3,
+    "fames": 2,
+    "dream": 2
+  }
+}

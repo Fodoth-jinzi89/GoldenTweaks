@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:wound_rime_blade"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "evil": 6
+  }
+}

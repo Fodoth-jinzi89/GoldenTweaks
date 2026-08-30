@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:weathered_copper_shingles"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

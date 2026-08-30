@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:flesh_mass_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "corpus": 3,
+    "evil": 1
+  }
+}

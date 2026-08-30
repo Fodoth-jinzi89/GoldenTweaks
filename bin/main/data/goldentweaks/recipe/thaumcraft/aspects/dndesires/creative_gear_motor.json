@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:creative_gear_motor"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

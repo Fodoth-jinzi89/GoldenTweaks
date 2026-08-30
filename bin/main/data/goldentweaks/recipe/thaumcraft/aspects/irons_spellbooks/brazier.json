@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:brazier"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

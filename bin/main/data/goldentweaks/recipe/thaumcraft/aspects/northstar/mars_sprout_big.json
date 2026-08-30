@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:mars_sprout_big"
+  },
+  "aspects": {
+    "space": 3,
+    "universes": 4
+  }
+}

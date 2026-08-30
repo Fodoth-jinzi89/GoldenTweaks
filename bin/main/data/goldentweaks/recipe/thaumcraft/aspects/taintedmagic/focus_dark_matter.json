@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:focus_dark_matter"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vitium": 3,
+    "tenebrae": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:shadow_assassin_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "vitium": 3,
+    "fames": 6,
+    "tenebrae": 2
+  }
+}

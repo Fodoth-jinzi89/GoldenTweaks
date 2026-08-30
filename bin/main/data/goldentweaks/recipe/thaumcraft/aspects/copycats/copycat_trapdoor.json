@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "copycats:copycat_trapdoor"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

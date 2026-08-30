@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:weathered_iron_window_pane"
+  },
+  "aspects": {
+    "metallum": 3,
+    "tempestas": 2
+  }
+}

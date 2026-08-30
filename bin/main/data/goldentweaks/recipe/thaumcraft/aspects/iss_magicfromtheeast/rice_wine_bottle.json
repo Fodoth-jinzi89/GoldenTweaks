@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:rice_wine_bottle"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "aqua": 2,
+    "fames": 6,
+    "alfirin": 6,
+    "luxuria": 4
+  }
+}

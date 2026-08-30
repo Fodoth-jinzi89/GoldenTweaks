@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:hunter_trinket"
+  },
+  "aspects": {
+    "accessories": 3,
+    "praecantatio": 2,
+    "alfirin": 1
+  }
+}

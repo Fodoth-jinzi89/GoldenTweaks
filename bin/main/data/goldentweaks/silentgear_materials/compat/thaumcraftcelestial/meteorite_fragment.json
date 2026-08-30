@@ -1,0 +1,82 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraftcelestial:meteorite_fragment"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF6D72B4",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraftcelestial.meteorite_fragment"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 4.32
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.92
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 432.0
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 19.2
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 10.08
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 9.12
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 36.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgems:twinkletoes"
+        }
+      ]
+    }
+  }
+}

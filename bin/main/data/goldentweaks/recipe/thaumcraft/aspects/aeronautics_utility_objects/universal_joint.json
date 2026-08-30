@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics_utility_objects:universal_joint"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

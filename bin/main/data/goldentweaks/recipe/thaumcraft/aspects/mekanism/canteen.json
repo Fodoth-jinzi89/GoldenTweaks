@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:canteen"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2,
+    "sano": 4
+  }
+}

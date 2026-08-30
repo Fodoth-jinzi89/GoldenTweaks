@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:myceylon_cookie"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "expand": 8
+  }
+}

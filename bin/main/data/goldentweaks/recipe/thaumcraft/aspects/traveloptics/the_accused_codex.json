@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:the_accused_codex"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:wrath_of_the_desert"
+  },
+  "aspects": {
+    "reliquiae": 3,
+    "ira": 6
+  }
+}

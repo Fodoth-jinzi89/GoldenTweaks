@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:orange_lamp"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

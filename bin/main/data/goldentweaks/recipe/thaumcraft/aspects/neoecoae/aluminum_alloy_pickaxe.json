@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:aluminum_alloy_pickaxe"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3,
+    "mixtura": 8
+  }
+}

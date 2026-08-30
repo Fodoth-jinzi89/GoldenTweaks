@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:paltaeria_fragments"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF6092A2",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.spectrum.paltaeria_fragments"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.664
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.184
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 266.4
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 11.84
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 6.216
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 5.624
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 22.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgems:booster"
+        }
+      ]
+    }
+  }
+}

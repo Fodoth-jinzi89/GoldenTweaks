@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:sky_stone_block_2x"
+  },
+  "aspects": {
+    "saxum": 7,
+    "dense": 4
+  }
+}

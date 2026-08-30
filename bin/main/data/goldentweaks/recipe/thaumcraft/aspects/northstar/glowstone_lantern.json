@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:glowstone_lantern"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "saxum": 3,
+    "universes": 1
+  }
+}

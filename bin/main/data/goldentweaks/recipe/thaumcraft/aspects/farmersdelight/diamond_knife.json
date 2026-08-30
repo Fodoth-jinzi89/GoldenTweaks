@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:diamond_knife"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:void_sword"
+  },
+  "aspects": {
+    "telum": 4,
+    "evil": 6
+  }
+}

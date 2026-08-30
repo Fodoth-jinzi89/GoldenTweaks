@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedbackpacks:refill_upgrade"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

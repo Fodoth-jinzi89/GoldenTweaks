@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createendertransmission:energy_transmitter"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3,
+    "cognitio": 2
+  }
+}

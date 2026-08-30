@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:citrine_chiseled_basalt"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

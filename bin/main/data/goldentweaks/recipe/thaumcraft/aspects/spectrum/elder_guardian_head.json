@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:elder_guardian_head"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

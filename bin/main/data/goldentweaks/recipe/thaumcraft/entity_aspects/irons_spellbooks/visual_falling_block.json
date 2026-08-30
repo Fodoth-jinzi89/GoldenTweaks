@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:visual_falling_block"
+  },
+  "aspects": {
+    "terra": 4,
+    "motus": 2
+  }
+}

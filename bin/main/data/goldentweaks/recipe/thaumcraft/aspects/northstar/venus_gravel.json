@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:venus_gravel"
+  },
+  "aspects": {
+    "space": 3,
+    "terra": 3,
+    "gravitas": 2,
+    "universes": 8
+  }
+}

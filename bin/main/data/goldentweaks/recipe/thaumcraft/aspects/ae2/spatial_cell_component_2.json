@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:spatial_cell_component_2"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "alienis": 3,
+    "machina": 2,
+    "vas": 2
+  }
+}

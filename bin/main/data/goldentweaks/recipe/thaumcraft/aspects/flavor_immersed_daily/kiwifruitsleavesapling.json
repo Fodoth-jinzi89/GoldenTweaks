@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:kiwifruitsleavesapling"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 2,
+    "messis": 2,
+    "vegetatio": 2
+  }
+}

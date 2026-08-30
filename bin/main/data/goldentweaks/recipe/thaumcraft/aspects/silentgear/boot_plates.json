@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:boot_plates"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

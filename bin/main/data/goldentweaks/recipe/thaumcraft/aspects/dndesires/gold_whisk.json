@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:gold_whisk"
+  },
+  "aspects": {
+    "metallum": 3,
+    "priscus": 2,
+    "mornogol": 4
+  }
+}

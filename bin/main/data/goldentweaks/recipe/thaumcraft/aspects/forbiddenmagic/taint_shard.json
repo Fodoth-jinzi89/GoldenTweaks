@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:taint_shard"
+  },
+  "aspects": {
+    "vitium": 2,
+    "vitreus": 1,
+    "praecantatio": 1
+  }
+}

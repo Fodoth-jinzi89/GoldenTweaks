@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:ender_pearl_block_3x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 6
+  }
+}

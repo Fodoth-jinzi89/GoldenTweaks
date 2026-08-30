@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createprism:copper_glass_scaffolding"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "vitreus": 3
+  }
+}

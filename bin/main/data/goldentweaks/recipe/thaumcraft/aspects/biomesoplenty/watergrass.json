@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:watergrass"
+  },
+  "aspects": {
+    "herba": 3,
+    "waters": 2,
+    "vegetatio": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:martian_steel_lamp"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "space": 3,
+    "universes": 4
+  }
+}

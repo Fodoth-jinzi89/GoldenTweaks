@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:sugar_cube"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

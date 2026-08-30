@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:cold_cut_ham_slices"
+  },
+  "aspects": {
+    "gelum": 3,
+    "anteanus": 2
+  }
+}

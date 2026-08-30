@@ -1,0 +1,78 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "textile",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "irons_spellbooks:hogskin"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC4826C",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.irons_spellbooks.hogskin"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.315
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1.103
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 1.575
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.11
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.22
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.063
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

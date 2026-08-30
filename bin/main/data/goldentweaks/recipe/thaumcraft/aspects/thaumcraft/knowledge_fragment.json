@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:knowledge_fragment"
+  },
+  "aspects": {
+    "cognitio": 8
+  }
+}

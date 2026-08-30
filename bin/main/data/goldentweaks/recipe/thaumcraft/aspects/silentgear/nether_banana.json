@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:nether_banana"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2
+  }
+}

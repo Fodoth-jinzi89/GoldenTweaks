@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:crystal_lead"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3,
+    "vitreus": 3
+  }
+}

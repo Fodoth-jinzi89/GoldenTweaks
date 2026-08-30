@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_supreme_witch_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

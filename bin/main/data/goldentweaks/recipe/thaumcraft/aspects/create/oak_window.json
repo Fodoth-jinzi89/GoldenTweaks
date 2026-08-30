@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:oak_window"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

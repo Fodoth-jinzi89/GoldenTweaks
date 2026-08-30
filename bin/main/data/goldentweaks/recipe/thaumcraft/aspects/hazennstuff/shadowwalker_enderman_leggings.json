@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:shadowwalker_enderman_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "alienis": 3,
+    "victus": 3,
+    "fames": 4
+  }
+}

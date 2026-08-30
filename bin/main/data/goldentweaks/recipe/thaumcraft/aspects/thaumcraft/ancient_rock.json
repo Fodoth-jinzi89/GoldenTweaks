@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:ancient_rock"
+  },
+  "aspects": {
+    "terra": 1,
+    "alienis": 1,
+    "anteanus": 8
+  }
+}

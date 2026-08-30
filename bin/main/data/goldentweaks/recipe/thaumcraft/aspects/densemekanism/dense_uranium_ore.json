@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "densemekanism:dense_uranium_ore"
+  },
+  "aspects": {
+    "potentia": 4,
+    "metallum": 3,
+    "vitium": 3
+  }
+}

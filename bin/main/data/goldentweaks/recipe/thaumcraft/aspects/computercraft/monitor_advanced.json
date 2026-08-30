@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:monitor_advanced"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "sensus": 2,
+    "arche": 2,
+    "invidia": 1
+  }
+}

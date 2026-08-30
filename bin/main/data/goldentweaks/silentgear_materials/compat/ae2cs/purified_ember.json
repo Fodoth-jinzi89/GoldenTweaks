@@ -1,0 +1,120 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "pure_gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2cs:purified_ember_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD08D35",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.ae2cs.purified_ember"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.566,
+      "armor/boots": 2.035,
+      "armor/chestplate": 5.426,
+      "armor/helmet": 2.035,
+      "armor/leggings": 4.07,
+      "armor_durability": 48.047,
+      "armor_toughness": 2.572,
+      "attack_damage": 7.913,
+      "charging_value": 1.381,
+      "durability": 1469.686,
+      "enchantment_value": 27.077,
+      "harvest_speed": 12.435,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 14.132,
+      "magic_damage": 9.045,
+      "projectile_accuracy": 0.666,
+      "projectile_speed": 0.652,
+      "ranged_damage": 4.522,
+      "rarity": 60.674,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ],
+      "attack_speed": 0.048,
+      "repair_efficiency": 0.084,
+      "repair_value": 0.069,
+      "block_reach": 0.202,
+      "attack_reach": 0.143,
+      "knockback_resistance": 0.048
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3.391
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 1.13
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 678.317
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 14.132
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 6.218
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 5.652
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 28.263
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgems:power"
+        }
+      ]
+    }
+  }
+}

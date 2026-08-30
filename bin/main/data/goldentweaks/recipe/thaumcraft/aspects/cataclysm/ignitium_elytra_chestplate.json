@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:ignitium_elytra_chestplate"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vacuos": 4,
+    "vas": 2,
+    "lava": 16,
+    "ira": 1
+  }
+}

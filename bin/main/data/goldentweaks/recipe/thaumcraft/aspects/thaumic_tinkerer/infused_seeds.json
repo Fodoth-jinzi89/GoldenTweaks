@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:infused_seeds"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "herba": 3,
+    "messis": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:white_sandstone_slab"
+  },
+  "aspects": {
+    "saxum": 3,
+    "terra": 3
+  }
+}

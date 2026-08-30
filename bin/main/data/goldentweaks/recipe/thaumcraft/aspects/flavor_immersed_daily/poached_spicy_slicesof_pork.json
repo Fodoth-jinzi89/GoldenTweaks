@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:poached_spicy_slicesof_pork"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 8,
+    "sano": 1
+  }
+}

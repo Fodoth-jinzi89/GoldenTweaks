@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:upgrade_creative"
+  },
+  "aspects": {
+    "machina": 2,
+    "arche": 2
+  }
+}

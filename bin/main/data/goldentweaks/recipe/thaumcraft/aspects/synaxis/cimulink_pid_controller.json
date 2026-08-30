@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "synaxis:cimulink_pid_controller"
+  },
+  "aspects": {
+    "machina": 3,
+    "sensus": 3,
+    "imperium": 8
+  }
+}

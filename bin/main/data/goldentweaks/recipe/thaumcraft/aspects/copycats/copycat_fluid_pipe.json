@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "copycats:copycat_fluid_pipe"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "permutatio": 3,
+    "machina": 2
+  }
+}

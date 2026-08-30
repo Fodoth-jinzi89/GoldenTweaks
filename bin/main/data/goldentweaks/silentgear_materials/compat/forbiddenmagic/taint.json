@@ -1,0 +1,82 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:taint_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF4A00C1",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.forbiddenmagic.taint"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.464
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.65
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 146.412
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 6.507
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 3.417
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 3.091
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 12.201
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgems:cloaking"
+        }
+      ]
+    }
+  }
+}

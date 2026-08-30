@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "copycats:copycat_folding_door"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "priscus": 2
+  }
+}

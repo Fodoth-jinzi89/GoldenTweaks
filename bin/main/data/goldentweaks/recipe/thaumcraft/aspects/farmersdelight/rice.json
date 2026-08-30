@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:rice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "messis": 3,
+    "victus": 3,
+    "fames": 6,
+    "machina": 2
+  }
+}

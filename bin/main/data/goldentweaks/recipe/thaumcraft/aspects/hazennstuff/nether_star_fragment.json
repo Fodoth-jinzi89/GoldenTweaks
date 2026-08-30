@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:nether_star_fragment"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

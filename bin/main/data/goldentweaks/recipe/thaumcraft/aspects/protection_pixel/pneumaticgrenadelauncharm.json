@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:pneumaticgrenadelauncharm"
+  },
+  "aspects": {
+    "accessories": 3,
+    "illecebra": 2
+  }
+}

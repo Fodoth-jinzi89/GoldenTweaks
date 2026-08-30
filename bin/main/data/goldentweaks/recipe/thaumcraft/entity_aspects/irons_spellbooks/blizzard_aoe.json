@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:blizzard_aoe"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "gelum": 3
+  }
+}

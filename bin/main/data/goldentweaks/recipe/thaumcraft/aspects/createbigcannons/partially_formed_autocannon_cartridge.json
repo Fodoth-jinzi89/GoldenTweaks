@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:partially_formed_autocannon_cartridge"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3
+  }
+}

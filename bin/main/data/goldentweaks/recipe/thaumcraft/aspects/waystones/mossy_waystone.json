@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "waystones:mossy_waystone"
+  },
+  "aspects": {
+    "iter": 4,
+    "herba": 3,
+    "saxum": 3,
+    "alienis": 2,
+    "mornogol": 8
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:verdant_grace_fruiting_leaves_apricot"
+  },
+  "aspects": {
+    "herba": 3,
+    "metallum": 3,
+    "victus": 3,
+    "fames": 4,
+    "messis": 2,
+    "vegetatio": 2
+  }
+}

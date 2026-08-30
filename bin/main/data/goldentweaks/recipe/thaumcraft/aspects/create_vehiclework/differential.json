@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_vehiclework:differential"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

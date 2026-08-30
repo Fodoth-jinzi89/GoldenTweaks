@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:ex_interface"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

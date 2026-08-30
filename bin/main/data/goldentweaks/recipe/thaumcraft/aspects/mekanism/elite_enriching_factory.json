@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:elite_enriching_factory"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics_utility_objects:hydraulic_connection_head"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

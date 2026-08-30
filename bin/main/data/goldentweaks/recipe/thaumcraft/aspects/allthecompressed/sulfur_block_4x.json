@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:sulfur_block_4x"
+  },
+  "aspects": {
+    "substance": 9,
+    "dense": 8
+  }
+}

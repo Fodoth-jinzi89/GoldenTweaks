@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "dndecor:dolomite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFDDDCD6",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.dndecor.dolomite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 7.175,
+      "armor/boots": 1.076,
+      "armor/chestplate": 2.87,
+      "armor/helmet": 1.076,
+      "armor/leggings": 2.153,
+      "armor_durability": 6.071,
+      "armor_toughness": 0.883,
+      "attack_damage": 1.545,
+      "attack_speed": -0.23,
+      "charging_value": 0.316,
+      "draw_speed": -0.16,
+      "durability": 110.39,
+      "enchantment_value": 4.325,
+      "harvest_speed": 2.429,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.104,
+      "magic_damage": 0.773,
+      "projectile_accuracy": 0.66,
+      "projectile_speed": 0.61,
+      "ranged_damage": 1.987,
+      "rarity": 6.532,
+      "knockback_resistance": 0.101,
+      "repair_efficiency": 0.38,
+      "repair_value": 0.13,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

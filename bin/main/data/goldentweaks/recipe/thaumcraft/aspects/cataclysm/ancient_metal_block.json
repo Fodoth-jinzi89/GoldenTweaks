@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:ancient_metal_block"
+  },
+  "aspects": {
+    "metallum": 3,
+    "mornogol": 2,
+    "superbia": 1
+  }
+}

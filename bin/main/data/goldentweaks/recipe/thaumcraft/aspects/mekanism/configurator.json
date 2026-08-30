@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:configurator"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

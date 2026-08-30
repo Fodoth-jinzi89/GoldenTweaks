@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:frozen_block"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4
+  }
+}

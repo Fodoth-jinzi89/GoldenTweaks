@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:brass_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "metallum": 3,
+    "mixtura": 6
+  }
+}

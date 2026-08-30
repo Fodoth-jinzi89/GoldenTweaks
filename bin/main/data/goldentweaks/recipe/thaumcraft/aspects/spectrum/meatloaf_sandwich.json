@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:meatloaf_sandwich"
+  },
+  "aspects": {
+    "corpus": 3,
+    "terra": 3,
+    "victus": 3,
+    "fames": 8
+  }
+}

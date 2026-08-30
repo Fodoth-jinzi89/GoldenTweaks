@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:gold_clump"
+  },
+  "aspects": {
+    "metallum": 2,
+    "treasure": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:saltydicedcurumber"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "messis": 2,
+    "vegetatio": 2,
+    "childish": 4
+  }
+}

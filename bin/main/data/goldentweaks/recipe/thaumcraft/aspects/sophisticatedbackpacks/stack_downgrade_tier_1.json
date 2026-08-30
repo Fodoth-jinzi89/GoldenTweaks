@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedbackpacks:stack_downgrade_tier_1"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 3
+  }
+}

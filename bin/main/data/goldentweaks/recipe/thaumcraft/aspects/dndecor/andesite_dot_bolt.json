@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:andesite_dot_bolt"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

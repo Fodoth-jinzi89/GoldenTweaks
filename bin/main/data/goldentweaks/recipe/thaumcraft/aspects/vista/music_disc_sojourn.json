@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "vista:music_disc_sojourn"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

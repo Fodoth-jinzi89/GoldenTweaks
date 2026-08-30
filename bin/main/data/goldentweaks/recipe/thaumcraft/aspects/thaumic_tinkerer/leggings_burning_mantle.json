@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:leggings_burning_mantle"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "ignis": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

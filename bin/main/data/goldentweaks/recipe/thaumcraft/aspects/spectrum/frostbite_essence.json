@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:frostbite_essence"
+  },
+  "aspects": {
+    "gelum": 3,
+    "spiritus": 2,
+    "auram": 8
+  }
+}

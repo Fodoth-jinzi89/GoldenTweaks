@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:amethyst_crab"
+  },
+  "aspects": {
+    "bestia": 4,
+    "aqua": 3,
+    "victus": 3,
+    "vitreus": 3
+  }
+}

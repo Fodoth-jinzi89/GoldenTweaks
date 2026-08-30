@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:flint_block"
+  },
+  "aspects": {
+    "dense": 2,
+    "substance": 2
+  }
+}

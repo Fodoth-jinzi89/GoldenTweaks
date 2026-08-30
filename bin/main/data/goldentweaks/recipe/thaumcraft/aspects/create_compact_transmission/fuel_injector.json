@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_compact_transmission:fuel_injector"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:record_fragment"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:legging_plates"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6
+  }
+}

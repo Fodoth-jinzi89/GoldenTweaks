@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:celestial_pearl"
+  },
+  "aspects": {
+    "cosmic": 3,
+    "praecantatio": 2
+  }
+}

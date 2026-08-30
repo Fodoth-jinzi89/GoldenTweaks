@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createadditionallogistics:white_short_seat"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "desidia": 4
+  }
+}

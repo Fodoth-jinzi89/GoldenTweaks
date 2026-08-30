@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:colachickenwings"
+  },
+  "aspects": {
+    "motus": 3,
+    "victus": 3,
+    "fames": 6,
+    "volatus": 2,
+    "sano": 1
+  }
+}

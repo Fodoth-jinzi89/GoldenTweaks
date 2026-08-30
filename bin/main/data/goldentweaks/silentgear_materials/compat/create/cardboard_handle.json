@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "create:cardboard_sword"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFAD8A63",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.create.cardboard_handle"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.122
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.022
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.049
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.037
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.134
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.171
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.079
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.085
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.073
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

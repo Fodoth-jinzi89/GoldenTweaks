@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:block_alloy_atomic"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2,
+    "mixtura": 6
+  }
+}

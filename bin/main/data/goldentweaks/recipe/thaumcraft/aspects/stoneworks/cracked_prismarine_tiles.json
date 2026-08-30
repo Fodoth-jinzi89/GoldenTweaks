@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cracked_prismarine_tiles"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "anteanus": 6
+  }
+}

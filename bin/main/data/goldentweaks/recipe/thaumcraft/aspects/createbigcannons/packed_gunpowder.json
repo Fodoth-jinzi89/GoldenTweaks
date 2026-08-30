@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:packed_gunpowder"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

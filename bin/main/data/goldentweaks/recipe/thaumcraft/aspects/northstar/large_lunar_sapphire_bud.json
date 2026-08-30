@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:large_lunar_sapphire_bud"
+  },
+  "aspects": {
+    "space": 3,
+    "vitreus": 3
+  }
+}

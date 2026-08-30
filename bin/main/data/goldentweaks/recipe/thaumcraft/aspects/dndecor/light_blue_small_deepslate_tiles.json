@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:light_blue_small_deepslate_tiles"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3,
+    "spelunca": 4
+  }
+}

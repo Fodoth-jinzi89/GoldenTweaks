@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:seraph_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "imperium": 2
+  }
+}

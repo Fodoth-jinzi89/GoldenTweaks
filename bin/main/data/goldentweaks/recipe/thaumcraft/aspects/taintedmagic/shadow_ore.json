@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:shadow_ore"
+  },
+  "aspects": {
+    "vitium": 3,
+    "tenebrae": 2
+  }
+}

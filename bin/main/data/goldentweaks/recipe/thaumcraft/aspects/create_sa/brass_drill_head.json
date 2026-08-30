@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:brass_drill_head"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "perfodio": 4,
+    "metallum": 3,
+    "perditio": 3,
+    "machina": 2,
+    "mixtura": 6
+  }
+}

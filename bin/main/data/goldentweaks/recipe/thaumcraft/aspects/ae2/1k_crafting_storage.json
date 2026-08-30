@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:1k_crafting_storage"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "metallum": 3,
+    "vas": 2
+  }
+}

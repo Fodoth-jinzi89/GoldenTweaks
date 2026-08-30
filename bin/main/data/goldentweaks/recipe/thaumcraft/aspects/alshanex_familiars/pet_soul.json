@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:pet_soul"
+  },
+  "aspects": {
+    "praecantatio": 2,
+    "exanimis": 2,
+    "auram": 8
+  }
+}

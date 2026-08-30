@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:kiwifruitjuice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 4,
+    "dream": 4
+  }
+}

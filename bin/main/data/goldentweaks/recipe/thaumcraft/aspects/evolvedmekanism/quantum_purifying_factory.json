@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:quantum_purifying_factory"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

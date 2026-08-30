@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createprism:train_glass_casing"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "vitreus": 3
+  }
+}

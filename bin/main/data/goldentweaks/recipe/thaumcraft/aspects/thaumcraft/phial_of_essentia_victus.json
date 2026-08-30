@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:phial_of_essentia_victus"
+  },
+  "aspects": {
+    "victus": 8,
+    "vas": 2,
+    "vitreus": 1
+  }
+}

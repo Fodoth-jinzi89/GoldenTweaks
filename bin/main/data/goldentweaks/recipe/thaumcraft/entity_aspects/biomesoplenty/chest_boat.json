@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "biomesoplenty:chest_boat"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

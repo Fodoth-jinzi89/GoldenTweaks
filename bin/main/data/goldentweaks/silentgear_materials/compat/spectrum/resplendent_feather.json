@@ -1,0 +1,52 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "flower_feather",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:resplendent_feather"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC86F6B",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.spectrum.resplendent_feather"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.5
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.425
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.275
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

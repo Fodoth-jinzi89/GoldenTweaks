@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:infused_dragon_breath_bucket"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "dragon": 6
+  }
+}

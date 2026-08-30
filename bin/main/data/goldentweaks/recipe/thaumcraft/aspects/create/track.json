@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:track"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "orbita": 2
+  }
+}

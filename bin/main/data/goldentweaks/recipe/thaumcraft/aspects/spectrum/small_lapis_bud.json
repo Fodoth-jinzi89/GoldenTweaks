@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:small_lapis_bud"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

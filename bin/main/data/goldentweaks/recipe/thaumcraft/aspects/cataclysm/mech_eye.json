@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:mech_eye"
+  },
+  "aspects": {
+    "praecantatio": 3,
+    "tenebrae": 2,
+    "alfirin": 4,
+    "invidia": 8
+  }
+}

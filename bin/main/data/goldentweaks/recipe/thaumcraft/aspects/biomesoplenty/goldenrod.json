@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:goldenrod"
+  },
+  "aspects": {
+    "metallum": 3,
+    "treasure": 2
+  }
+}

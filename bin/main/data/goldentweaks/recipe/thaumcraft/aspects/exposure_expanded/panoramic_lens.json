@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposure_expanded:panoramic_lens"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2
+  }
+}

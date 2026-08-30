@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ftbquests:custom_icon"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

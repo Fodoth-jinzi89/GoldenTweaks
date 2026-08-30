@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:firebolt"
+  },
+  "aspects": {
+    "telum": 4,
+    "fulmen": 3,
+    "ignis": 3
+  }
+}

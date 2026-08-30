@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:canvas_screen_2"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2,
+    "alfirin": 4,
+    "dragon": 1,
+    "anteanus": 1
+  }
+}

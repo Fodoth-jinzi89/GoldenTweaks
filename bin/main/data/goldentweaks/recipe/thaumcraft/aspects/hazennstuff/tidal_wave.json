@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:tidal_wave"
+  },
+  "aspects": {
+    "praecantatio": 3,
+    "aestus": 16
+  }
+}

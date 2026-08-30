@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_loot_bag"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "lucrum": 3,
+    "vas": 2
+  }
+}

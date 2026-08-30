@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:honeyed_apple"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "invidia": 8
+  }
+}

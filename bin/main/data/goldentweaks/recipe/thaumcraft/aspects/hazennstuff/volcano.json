@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:volcano"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

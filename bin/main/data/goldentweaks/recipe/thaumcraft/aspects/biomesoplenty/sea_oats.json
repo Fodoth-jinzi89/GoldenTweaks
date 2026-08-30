@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:sea_oats"
+  },
+  "aspects": {
+    "terra": 3,
+    "waters": 2
+  }
+}

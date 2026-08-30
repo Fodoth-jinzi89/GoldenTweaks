@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:crystal_affix_template"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "arche": 4
+  }
+}

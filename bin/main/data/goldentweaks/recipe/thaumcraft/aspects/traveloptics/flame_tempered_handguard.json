@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:flame_tempered_handguard"
+  },
+  "aspects": {
+    "ignis": 3,
+    "arche": 8
+  }
+}

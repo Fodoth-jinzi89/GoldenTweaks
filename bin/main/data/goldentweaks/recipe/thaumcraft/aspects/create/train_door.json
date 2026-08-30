@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:train_door"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "orbita": 2
+  }
+}

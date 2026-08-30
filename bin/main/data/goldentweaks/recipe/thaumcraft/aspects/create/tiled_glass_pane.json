@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:tiled_glass_pane"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

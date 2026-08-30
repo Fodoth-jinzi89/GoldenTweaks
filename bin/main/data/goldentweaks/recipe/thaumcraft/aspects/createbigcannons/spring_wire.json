@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:spring_wire"
+  },
+  "aspects": {
+    "accessories": 3,
+    "machina": 2
+  }
+}

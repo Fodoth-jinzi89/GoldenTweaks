@@ -1,0 +1,114 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgems:kyanite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF5999AF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.silentgems.kyanite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 7.7,
+      "armor/boots": 1.155,
+      "armor/chestplate": 3.08,
+      "armor/helmet": 1.155,
+      "armor/leggings": 2.31,
+      "armor_durability": 23.8,
+      "armor_toughness": 0.98,
+      "attack_damage": 3.92,
+      "charging_value": 1.29,
+      "durability": 728,
+      "enchantment_value": 22.5,
+      "harvest_speed": 6.16,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 7.0,
+      "magic_damage": 4.48,
+      "projectile_accuracy": 1.168,
+      "projectile_speed": 1.196,
+      "ranged_damage": 2.24,
+      "rarity": 45.2,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.68
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.56
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 336
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 7.0
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 3.08
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.8
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 14.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgems:power"
+        }
+      ]
+    }
+  }
+}

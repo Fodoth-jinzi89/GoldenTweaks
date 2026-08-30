@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF43BAD2",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.minecraft.prismarine_shard"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.278
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.568
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 127.8
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 5.68
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.982
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.698
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 10.65
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgems:neptunes_blessing"
+        }
+      ]
+    }
+  }
+}

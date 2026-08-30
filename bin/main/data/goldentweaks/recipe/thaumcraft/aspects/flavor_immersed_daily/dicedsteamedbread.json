@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:dicedsteamedbread"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

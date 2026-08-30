@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:wisp_essence_lucrum"
+  },
+  "aspects": {
+    "lucrum": 2
+  }
+}

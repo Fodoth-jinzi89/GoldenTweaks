@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:bronze_block_2x"
+  },
+  "aspects": {
+    "metallum": 7,
+    "dense": 4,
+    "mixtura": 4
+  }
+}

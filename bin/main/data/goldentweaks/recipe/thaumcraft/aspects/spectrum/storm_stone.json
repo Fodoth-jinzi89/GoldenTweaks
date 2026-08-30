@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:storm_stone"
+  },
+  "aspects": {
+    "saxum": 3,
+    "fulmen": 2,
+    "arche": 6
+  }
+}

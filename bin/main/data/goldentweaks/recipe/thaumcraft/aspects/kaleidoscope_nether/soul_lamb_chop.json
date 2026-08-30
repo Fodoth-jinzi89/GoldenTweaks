@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:soul_lamb_chop"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4,
+    "sano": 4,
+    "luxuria": 4,
+    "ira": 4
+  }
+}

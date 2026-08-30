@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:directional_synchronizer_slave"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

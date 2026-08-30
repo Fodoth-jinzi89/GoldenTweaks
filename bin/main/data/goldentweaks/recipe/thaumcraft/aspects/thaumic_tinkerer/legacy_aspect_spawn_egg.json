@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:legacy_aspect_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "herba": 3,
+    "messis": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 6
+  }
+}

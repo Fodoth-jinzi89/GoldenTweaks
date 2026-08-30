@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:taint_tendril"
+  },
+  "aspects": {
+    "vitium": 2,
+    "lucrum": 1,
+    "fames": 4
+  }
+}

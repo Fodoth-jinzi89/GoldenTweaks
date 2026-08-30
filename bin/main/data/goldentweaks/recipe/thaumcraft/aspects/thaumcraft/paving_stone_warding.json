@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:paving_stone_warding"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

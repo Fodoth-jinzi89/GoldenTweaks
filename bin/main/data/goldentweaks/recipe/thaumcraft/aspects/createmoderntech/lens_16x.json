@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmoderntech:lens_16x"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2
+  }
+}

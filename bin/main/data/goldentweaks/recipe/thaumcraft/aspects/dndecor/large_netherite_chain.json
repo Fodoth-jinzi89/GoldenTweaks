@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:large_netherite_chain"
+  },
+  "aspects": {
+    "metallum": 3,
+    "expand": 2,
+    "mixtura": 1
+  }
+}

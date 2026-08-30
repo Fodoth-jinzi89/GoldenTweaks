@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:mars_moth_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "space": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 6
+  }
+}

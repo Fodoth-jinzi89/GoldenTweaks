@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:partially_assembled_machine_gun_round"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3
+  }
+}

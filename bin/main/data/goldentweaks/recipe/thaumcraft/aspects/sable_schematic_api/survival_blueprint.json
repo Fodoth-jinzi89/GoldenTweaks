@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:survival_blueprint"
+  },
+  "aspects": {
+    "charta": 3,
+    "cognitio": 2
+  }
+}

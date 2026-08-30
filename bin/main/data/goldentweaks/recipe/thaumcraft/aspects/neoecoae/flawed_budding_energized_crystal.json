@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:flawed_budding_energized_crystal"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "spelunca": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:small_asurine_brick_slab"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

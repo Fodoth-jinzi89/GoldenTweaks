@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:molten_blaze_bucket"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3,
+    "lava": 2
+  }
+}

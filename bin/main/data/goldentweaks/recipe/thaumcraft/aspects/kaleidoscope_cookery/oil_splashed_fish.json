@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:oil_splashed_fish"
+  },
+  "aspects": {
+    "potentia": 3,
+    "victus": 3,
+    "fames": 6,
+    "ignis": 2,
+    "ira": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:inhabited_zombie"
+  },
+  "aspects": {
+    "bestia": 4,
+    "exanimis": 4,
+    "victus": 3
+  }
+}

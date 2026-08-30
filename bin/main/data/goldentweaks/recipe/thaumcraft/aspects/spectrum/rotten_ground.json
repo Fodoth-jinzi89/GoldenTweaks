@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:rotten_ground"
+  },
+  "aspects": {
+    "telum": 4,
+    "atrpotentia": 8,
+    "atrpraecantatic": 8
+  }
+}

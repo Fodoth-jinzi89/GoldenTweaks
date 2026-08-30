@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism:hdpe_stick"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD0D0C5",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.mekanism.hdpe_stick"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.218
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.039
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.087
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.065
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.24
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.305
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.142
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.153
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.131
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

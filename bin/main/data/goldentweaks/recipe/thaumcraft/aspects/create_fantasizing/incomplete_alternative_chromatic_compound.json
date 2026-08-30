@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:incomplete_alternative_chromatic_compound"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

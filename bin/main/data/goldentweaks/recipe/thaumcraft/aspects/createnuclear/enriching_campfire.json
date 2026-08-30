@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:enriching_campfire"
+  },
+  "aspects": {
+    "ignis": 3,
+    "favilla": 2
+  }
+}

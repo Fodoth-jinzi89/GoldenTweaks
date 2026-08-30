@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:stripped_palm_wood"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

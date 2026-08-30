@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:mini_abyss_blast"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

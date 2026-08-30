@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:magenta_asphalt"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

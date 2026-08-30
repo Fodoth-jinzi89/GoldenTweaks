@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:wand_rod_silverwood"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arbor": 3,
+    "metallum": 3,
+    "praecantaticherba": 2
+  }
+}

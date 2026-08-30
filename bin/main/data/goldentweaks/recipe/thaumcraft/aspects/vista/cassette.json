@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "vista:cassette"
+  },
+  "aspects": {
+    "sensus": 3,
+    "machina": 2,
+    "magnetis": 4
+  }
+}

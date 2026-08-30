@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:target_area"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

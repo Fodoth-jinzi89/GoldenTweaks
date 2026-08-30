@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:raw_aluminum_block"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

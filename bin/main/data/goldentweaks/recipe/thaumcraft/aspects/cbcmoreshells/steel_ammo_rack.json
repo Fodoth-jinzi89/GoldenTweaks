@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:steel_ammo_rack"
+  },
+  "aspects": {
+    "telum": 4,
+    "metallum": 3
+  }
+}

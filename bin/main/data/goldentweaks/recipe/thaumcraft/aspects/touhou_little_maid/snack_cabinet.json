@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:snack_cabinet"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

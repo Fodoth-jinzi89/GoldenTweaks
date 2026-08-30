@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:cyan_table_cloth"
+  },
+  "aspects": {
+    "machina": 3,
+    "pannus": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedauto:crafter"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "vas": 3,
+    "machina": 2,
+    "desidia": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:superheated_sodium_bucket"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 2
+  }
+}

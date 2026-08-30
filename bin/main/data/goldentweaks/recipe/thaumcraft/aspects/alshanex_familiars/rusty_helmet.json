@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:rusty_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics:levitite_blend_bucket"
+  },
+  "aspects": {
+    "laputa": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:fire_ale"
+  },
+  "aspects": {
+    "ignis": 3,
+    "luxuria": 4
+  }
+}

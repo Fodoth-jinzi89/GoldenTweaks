@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:bauble_amulet"
+  },
+  "aspects": {
+    "accessories": 3,
+    "lucrum": 2
+  }
+}

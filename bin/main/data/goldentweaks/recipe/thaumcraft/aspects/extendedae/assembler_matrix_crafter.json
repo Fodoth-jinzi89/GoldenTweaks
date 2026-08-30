@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:assembler_matrix_crafter"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 2
+  }
+}

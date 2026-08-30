@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:raw_coffee_bean"
+  },
+  "aspects": {
+    "dream": 1
+  }
+}

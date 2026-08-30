@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:hatred_wand"
+  },
+  "aspects": {
+    "alienis": 1,
+    "arbor": 2,
+    "pannus": 3
+  }
+}

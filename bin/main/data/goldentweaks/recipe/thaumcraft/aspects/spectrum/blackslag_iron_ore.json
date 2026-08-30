@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blackslag_iron_ore"
+  },
+  "aspects": {
+    "metallum": 3,
+    "spelunca": 1
+  }
+}

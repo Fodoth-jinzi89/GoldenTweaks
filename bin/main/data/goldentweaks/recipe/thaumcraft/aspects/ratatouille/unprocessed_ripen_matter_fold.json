@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:unprocessed_ripen_matter_fold"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4
+  }
+}

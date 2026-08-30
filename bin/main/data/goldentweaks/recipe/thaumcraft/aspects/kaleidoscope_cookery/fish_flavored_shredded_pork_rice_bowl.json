@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:fish_flavored_shredded_pork_rice_bowl"
+  },
+  "aspects": {
+    "telum": 4,
+    "gelum": 3,
+    "victus": 3,
+    "fames": 8
+  }
+}

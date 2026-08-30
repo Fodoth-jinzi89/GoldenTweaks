@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:gold_coin"
+  },
+  "aspects": {
+    "lucrum": 1,
+    "treasure": 8
+  }
+}

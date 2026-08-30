@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:aphe_loitering_rocket"
+  },
+  "aspects": {
+    "telum": 4,
+    "accessories": 3,
+    "explosion": 3
+  }
+}

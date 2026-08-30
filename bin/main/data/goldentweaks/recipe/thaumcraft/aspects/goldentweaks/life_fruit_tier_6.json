@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:life_fruit_tier_6"
+  },
+  "aspects": {
+    "metallum": 3,
+    "victus": 3,
+    "fames": 4,
+    "mixtura": 1
+  }
+}

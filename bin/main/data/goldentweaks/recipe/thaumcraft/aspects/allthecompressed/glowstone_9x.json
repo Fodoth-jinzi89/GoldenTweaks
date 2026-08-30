@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:glowstone_9x"
+  },
+  "aspects": {
+    "saxum": 8,
+    "dense": 18
+  }
+}

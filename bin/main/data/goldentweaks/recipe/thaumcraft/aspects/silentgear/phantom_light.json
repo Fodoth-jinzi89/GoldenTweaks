@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:phantom_light"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "spiritus": 2
+  }
+}

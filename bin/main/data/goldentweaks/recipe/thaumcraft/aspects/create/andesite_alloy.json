@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:andesite_alloy"
+  },
+  "aspects": {
+    "saxum": 3,
+    "mixtura": 4
+  }
+}

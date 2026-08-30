@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:cherry_window_pane"
+  },
+  "aspects": {
+    "arbor": 3,
+    "tempestas": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:glassweaver_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "victus": 3,
+    "vitreus": 3,
+    "fames": 4
+  }
+}

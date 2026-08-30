@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmetalogistics:station_chunk_loader"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

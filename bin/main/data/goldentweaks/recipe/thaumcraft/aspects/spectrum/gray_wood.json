@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:gray_wood"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

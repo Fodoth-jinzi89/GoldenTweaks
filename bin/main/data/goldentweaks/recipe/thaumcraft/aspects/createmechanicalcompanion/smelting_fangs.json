@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:smelting_fangs"
+  },
+  "aspects": {
+    "aer": 3,
+    "metallum": 3,
+    "motus": 3,
+    "machina": 2,
+    "fossil": 1
+  }
+}

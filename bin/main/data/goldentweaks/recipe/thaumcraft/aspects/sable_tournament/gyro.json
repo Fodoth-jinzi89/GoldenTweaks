@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_tournament:gyro"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "imperium": 4
+  }
+}

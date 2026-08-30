@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:greater_potion_pendant"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

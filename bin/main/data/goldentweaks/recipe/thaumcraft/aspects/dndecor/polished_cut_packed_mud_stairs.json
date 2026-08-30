@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:polished_cut_packed_mud_stairs"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "mornogol": 2
+  }
+}

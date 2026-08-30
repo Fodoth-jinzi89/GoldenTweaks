@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:plaslitherite_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "victus": 3,
+    "fames": 1,
+    "mixtura": 1
+  }
+}

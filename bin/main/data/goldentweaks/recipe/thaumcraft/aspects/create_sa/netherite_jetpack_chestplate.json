@@ -1,0 +1,16 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:netherite_jetpack_chestplate"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vacuos": 4,
+    "metallum": 3,
+    "volatus": 3,
+    "machina": 2,
+    "vas": 2,
+    "mixtura": 1,
+    "imperium": 1
+  }
+}

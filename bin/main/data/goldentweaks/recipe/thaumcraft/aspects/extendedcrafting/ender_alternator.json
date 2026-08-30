@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:ender_alternator"
+  },
+  "aspects": {
+    "potentia": 4,
+    "alienis": 3,
+    "machina": 3
+  }
+}

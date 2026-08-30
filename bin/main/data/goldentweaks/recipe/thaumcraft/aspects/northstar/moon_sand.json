@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:moon_sand"
+  },
+  "aspects": {
+    "space": 3,
+    "terra": 3,
+    "gravitas": 2,
+    "atrpotentia": 6,
+    "universes": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:unbored_medium_steel_cannon_layer"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3
+  }
+}

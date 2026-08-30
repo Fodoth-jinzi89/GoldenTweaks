@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:glowshroom_block"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

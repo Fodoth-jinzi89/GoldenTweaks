@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:protection_upgrade_orb"
+  },
+  "aspects": {
+    "machina": 2,
+    "alfirin": 6,
+    "auram": 2
+  }
+}

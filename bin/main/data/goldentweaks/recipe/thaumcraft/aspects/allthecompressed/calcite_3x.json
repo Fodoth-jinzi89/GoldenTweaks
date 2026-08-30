@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:calcite_3x"
+  },
+  "aspects": {
+    "saxum": 6,
+    "dense": 6
+  }
+}

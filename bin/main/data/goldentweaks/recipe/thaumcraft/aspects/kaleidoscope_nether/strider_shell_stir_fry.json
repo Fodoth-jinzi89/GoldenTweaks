@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:strider_shell_stir_fry"
+  },
+  "aspects": {
+    "telum": 4,
+    "sano": 4,
+    "luxuria": 6
+  }
+}

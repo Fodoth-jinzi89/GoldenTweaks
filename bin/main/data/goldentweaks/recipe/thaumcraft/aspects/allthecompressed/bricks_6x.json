@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:bricks_6x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 12
+  }
+}

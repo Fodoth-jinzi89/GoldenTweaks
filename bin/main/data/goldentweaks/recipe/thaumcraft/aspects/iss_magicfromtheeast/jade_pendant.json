@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:jade_pendant"
+  },
+  "aspects": {
+    "accessories": 3,
+    "imperium": 4
+  }
+}

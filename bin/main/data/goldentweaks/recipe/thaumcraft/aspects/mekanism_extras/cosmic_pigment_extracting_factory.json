@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_pigment_extracting_factory"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "metallum": 3
+  }
+}

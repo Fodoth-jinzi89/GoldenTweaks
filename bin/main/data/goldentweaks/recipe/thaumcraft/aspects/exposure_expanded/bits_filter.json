@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exposure_expanded:bits_filter"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:gleaming_star_candy"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "childish": 8
+  }
+}

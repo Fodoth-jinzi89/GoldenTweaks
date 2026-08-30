@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:excalibur_divine_gold"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

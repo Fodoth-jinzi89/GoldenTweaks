@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:crimson_spellweave_ingot"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arbor": 3
+  }
+}

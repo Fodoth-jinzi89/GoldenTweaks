@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:budding_lunar_sapphire_block"
+  },
+  "aspects": {
+    "space": 3,
+    "vitreus": 3,
+    "spelunca": 1
+  }
+}

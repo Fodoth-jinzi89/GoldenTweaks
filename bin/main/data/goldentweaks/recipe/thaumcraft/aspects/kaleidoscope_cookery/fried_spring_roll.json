@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:fried_spring_roll"
+  },
+  "aspects": {
+    "accessories": 3,
+    "expand": 8
+  }
+}

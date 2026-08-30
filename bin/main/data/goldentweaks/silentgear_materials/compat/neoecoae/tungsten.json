@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "neoecoae:tungsten_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF72705E",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.neoecoae.tungsten"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 18.24,
+      "armor/boots": 2.736,
+      "armor/chestplate": 7.296,
+      "armor/helmet": 2.736,
+      "armor/leggings": 5.472,
+      "armor_durability": 28.373,
+      "armor_toughness": 3.283,
+      "attack_damage": 2.918,
+      "charging_value": 0.752,
+      "draw_speed": 0.156,
+      "durability": 510.72,
+      "enchantment_value": 15.837,
+      "harvest_speed": 6.931,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.931,
+      "magic_damage": 2.481,
+      "projectile_accuracy": 1.071,
+      "projectile_speed": 1.085,
+      "ranged_damage": 1.277,
+      "rarity": 25.68,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:mossy_cobblestone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF797166",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.minecraft.mossy_cobblestone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.705,
+      "armor/boots": 0.706,
+      "armor/chestplate": 1.882,
+      "armor/helmet": 0.706,
+      "armor/leggings": 1.412,
+      "armor_durability": 3.981,
+      "armor_toughness": 0.579,
+      "attack_damage": 1.013,
+      "attack_speed": -0.205,
+      "charging_value": 0.293,
+      "draw_speed": -0.14,
+      "durability": 72.39,
+      "enchantment_value": 3.869,
+      "harvest_speed": 1.593,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 0.724,
+      "magic_damage": 0.507,
+      "projectile_accuracy": 0.73,
+      "projectile_speed": 0.68,
+      "ranged_damage": 1.303,
+      "rarity": 5.316,
+      "knockback_resistance": 0.072,
+      "repair_efficiency": 0.33,
+      "repair_value": 0.105,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:balance_pattern"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "pannus": 2,
+    "imperium": 6
+  }
+}

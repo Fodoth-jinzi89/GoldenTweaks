@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:whispy_circlet"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "evil": 4
+  }
+}

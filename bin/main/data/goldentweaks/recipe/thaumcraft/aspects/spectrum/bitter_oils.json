@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bitter_oils"
+  },
+  "aspects": {
+    "potentia": 3,
+    "ignis": 2,
+    "atrpraecantatic": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "patchouli:guide_book"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "history": 6
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:resonance_shard"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

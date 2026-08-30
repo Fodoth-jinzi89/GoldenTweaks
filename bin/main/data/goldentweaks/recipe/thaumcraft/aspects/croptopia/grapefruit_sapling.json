@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:grapefruit_sapling"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 1,
+    "messis": 2
+  }
+}

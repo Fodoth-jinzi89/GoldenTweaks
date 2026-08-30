@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:staff_rod_obsidian"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF4E3824",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraft.obsidian_staff_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.166
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.127
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 1.361
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 1.814
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.242
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 1.058
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.106
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

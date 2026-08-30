@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:incense_burner"
+  },
+  "aspects": {
+    "potentia": 3,
+    "ignis": 2,
+    "alfirin": 4,
+    "dragon": 1,
+    "anteanus": 1
+  }
+}

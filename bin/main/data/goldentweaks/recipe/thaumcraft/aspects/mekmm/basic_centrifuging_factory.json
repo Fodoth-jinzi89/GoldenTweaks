@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:basic_centrifuging_factory"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

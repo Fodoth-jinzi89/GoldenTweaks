@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create:carriage_contraption"
+  },
+  "aspects": {
+    "bestia": 4,
+    "machina": 3,
+    "victus": 3
+  }
+}

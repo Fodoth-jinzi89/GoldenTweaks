@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:cook_stool_warped"
+  },
+  "aspects": {
+    "arbor": 3,
+    "fabrico": 3,
+    "instrumentum": 3
+  }
+}

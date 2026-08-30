@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:le_fishe_au_chocolat"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6
+  }
+}

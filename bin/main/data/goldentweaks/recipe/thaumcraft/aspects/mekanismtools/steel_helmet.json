@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismtools:steel_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "metallum": 3
+  }
+}

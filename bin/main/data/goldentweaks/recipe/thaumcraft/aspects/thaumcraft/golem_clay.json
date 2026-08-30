@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:golem_clay"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

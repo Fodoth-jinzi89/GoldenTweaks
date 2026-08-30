@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "backpack_pixel:xpstorage"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

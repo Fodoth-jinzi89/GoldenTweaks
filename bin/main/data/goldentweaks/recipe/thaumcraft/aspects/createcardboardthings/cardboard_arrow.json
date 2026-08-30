@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createcardboardthings:cardboard_arrow"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 2
+  }
+}

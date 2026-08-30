@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:soul_farmland"
+  },
+  "aspects": {
+    "terminus": 3,
+    "exanimis": 2
+  }
+}

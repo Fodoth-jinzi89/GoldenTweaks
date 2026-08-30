@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:bloodprisoneras_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "corpus": 3,
+    "mixtura": 2
+  }
+}

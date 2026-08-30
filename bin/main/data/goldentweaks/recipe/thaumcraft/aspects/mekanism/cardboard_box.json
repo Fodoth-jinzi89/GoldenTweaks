@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:cardboard_box"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

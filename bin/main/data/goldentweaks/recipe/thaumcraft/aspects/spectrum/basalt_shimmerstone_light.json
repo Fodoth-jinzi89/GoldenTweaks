@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:basalt_shimmerstone_light"
+  },
+  "aspects": {
+    "saxum": 3,
+    "auram": 2,
+    "anteanus": 4
+  }
+}

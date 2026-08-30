@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:gold_fluid_barrel"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "mornogol": 1
+  }
+}

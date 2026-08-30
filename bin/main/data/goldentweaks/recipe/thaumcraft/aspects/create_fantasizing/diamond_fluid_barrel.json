@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:diamond_fluid_barrel"
+  },
+  "aspects": {
+    "machina": 3,
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:music_disc_heave_ho"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:silicon_block_5x"
+  },
+  "aspects": {
+    "substance": 10,
+    "dense": 10
+  }
+}

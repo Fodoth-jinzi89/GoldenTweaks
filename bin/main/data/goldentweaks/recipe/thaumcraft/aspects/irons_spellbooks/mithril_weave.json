@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:mithril_weave"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "auram": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:sliced_cheese_cocoa_toast"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 1,
+    "expand": 2
+  }
+}

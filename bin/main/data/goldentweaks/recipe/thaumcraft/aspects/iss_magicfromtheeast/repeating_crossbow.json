@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "iss_magicfromtheeast:repeating_crossbow"
+  },
+  "aspects": {
+    "telum": 4,
+    "metallum": 3
+  }
+}

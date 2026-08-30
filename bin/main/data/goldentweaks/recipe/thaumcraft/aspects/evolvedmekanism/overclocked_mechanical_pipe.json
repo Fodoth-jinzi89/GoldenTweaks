@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:overclocked_mechanical_pipe"
+  },
+  "aspects": {
+    "machina": 3,
+    "permutatio": 3,
+    "tempus": 3
+  }
+}

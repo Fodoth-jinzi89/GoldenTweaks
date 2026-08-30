@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:venus_deep_glowstone_ore"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3,
+    "space": 3,
+    "spelunca": 4
+  }
+}

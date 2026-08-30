@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "A": { "item": "ae2cs:link_crystal_block" },
+    "B": { "item": "neoecoae:superconducting_processor" },
+    "C": { "item": "ae2:blank_pattern" }
+  },
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aeallpattern:pattern_binder"
+  }
+}

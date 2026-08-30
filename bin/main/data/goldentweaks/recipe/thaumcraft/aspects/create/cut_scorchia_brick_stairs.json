@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:cut_scorchia_brick_stairs"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

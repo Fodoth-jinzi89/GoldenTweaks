@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:star_ghast_pasta"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6,
+    "sano": 4,
+    "luxuria": 6,
+    "evil": 4
+  }
+}

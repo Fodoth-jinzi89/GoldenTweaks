@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:focus_vis_shard"
+  },
+  "aspects": {
+    "potentia": 2,
+    "vitreus": 1,
+    "praecantatio": 1
+  }
+}

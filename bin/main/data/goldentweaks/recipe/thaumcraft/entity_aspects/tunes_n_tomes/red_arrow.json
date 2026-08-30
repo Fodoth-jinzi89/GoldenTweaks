@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "tunes_n_tomes:red_arrow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

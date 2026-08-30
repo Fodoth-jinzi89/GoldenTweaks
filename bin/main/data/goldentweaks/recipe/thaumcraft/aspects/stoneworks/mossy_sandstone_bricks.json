@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:mossy_sandstone_bricks"
+  },
+  "aspects": {
+    "herba": 3,
+    "saxum": 3,
+    "terra": 3
+  }
+}

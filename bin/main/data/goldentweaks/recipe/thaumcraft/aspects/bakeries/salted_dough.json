@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:salted_dough"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "expand": 2
+  }
+}

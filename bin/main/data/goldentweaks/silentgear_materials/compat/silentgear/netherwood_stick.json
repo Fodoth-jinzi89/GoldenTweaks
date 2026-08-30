@@ -1,0 +1,81 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:netherwood_stick"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF451114",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.silentgear.netherwood_stick"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.142
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.026
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.057
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.043
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.156
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.199
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.092
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.099
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.085
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

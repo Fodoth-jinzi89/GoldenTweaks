@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:godforged_pearl"
+  },
+  "aspects": {
+    "ignis": 3,
+    "praecantatio": 2,
+    "alfirin": 1
+  }
+}

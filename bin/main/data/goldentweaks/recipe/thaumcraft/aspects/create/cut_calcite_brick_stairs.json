@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:cut_calcite_brick_stairs"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

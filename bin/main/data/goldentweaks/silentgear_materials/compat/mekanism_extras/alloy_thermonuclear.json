@@ -1,0 +1,65 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "super_infused_alloy",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism_extras:alloy_thermonuclear"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD04647",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.mekanism_extras.alloy_thermonuclear"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 31.0,
+      "armor/boots": 4.65,
+      "armor/chestplate": 12.4,
+      "armor/helmet": 4.65,
+      "armor/leggings": 9.3,
+      "armor_durability": 41.334,
+      "armor_toughness": 8.021,
+      "attack_damage": 4.34,
+      "charging_value": 0.558,
+      "draw_speed": 0.335,
+      "durability": 744.0,
+      "enchantment_value": 14.92,
+      "harvest_speed": 13.02,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 11.78,
+      "magic_damage": 3.689,
+      "projectile_accuracy": 0.756,
+      "projectile_speed": 0.762,
+      "ranged_damage": 3.72,
+      "rarity": 29.25,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        }
+      ],
+      "attack_speed": 0.075,
+      "repair_efficiency": 0.125,
+      "repair_value": 0.102,
+      "block_reach": 0.344,
+      "attack_reach": 0.232,
+      "knockback_resistance": 0.075
+    }
+  }
+}

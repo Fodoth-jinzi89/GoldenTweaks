@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:dragonskin"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "dragon": 2
+  }
+}

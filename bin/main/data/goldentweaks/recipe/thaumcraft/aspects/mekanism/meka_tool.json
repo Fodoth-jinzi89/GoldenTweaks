@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:meka_tool"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

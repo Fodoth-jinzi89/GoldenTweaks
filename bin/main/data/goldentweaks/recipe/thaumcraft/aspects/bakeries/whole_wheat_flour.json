@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:whole_wheat_flour"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1
+  }
+}

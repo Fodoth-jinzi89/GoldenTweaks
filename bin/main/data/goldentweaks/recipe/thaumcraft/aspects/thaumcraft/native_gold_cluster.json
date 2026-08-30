@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:native_gold_cluster"
+  },
+  "aspects": {
+    "ordo": 1,
+    "metallum": 4,
+    "terra": 1,
+    "lucrum": 2
+  }
+}

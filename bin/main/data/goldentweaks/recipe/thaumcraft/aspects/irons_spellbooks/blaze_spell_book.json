@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:blaze_spell_book"
+  },
+  "aspects": {
+    "ardor": 4,
+    "praecantatio": 4,
+    "cognitio": 3,
+    "ignis": 3,
+    "history": 4
+  }
+}

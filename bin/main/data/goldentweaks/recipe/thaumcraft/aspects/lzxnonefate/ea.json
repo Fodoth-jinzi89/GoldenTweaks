@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "lzxnonefate:ea"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "mornogol": 64
+  }
+}

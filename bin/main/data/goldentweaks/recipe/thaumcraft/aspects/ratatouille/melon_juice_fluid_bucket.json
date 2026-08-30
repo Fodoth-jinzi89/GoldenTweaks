@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ratatouille:melon_juice_fluid_bucket"
+  },
+  "aspects": {
+    "aqua": 3,
+    "gelum": 3,
+    "victus": 3,
+    "fames": 4,
+    "machina": 2,
+    "sano": 6
+  }
+}

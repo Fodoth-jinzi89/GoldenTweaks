@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:barnacles"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

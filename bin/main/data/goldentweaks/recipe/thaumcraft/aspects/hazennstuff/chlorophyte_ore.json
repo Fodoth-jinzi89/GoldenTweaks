@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:chlorophyte_ore"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

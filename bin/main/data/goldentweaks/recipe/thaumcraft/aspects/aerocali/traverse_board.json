@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:traverse_board"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

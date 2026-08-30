@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:raw_stuffedgreenpepper"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2,
+    "vegetatio": 2,
+    "ira": 2
+  }
+}

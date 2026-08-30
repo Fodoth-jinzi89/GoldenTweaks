@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:pumpkin_soup"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6,
+    "luxuria": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:fishing_rod"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6
+  }
+}

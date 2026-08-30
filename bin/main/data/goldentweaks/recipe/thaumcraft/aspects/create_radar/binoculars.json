@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_radar:binoculars"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2,
+    "dream": 1,
+    "imperium": 1
+  }
+}

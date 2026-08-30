@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:preservation_block_detector"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

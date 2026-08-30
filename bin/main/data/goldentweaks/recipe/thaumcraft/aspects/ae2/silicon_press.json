@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:silicon_press"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

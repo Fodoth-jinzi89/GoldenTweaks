@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:budding_onyx"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "spelunca": 1,
+    "atrpraecantatic": 4
+  }
+}

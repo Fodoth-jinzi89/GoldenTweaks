@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blackslag_gold_ore"
+  },
+  "aspects": {
+    "metallum": 3,
+    "anteanus": 2,
+    "spelunca": 1
+  }
+}

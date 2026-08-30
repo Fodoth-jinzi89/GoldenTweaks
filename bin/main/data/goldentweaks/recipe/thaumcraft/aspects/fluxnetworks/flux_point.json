@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluxnetworks:flux_point"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "potentia": 2,
+    "atrpotentia": 4
+  }
+}

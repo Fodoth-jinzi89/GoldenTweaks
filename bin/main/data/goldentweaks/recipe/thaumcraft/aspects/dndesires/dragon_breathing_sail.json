@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndesires:dragon_breathing_sail"
+  },
+  "aspects": {
+    "aer": 3,
+    "motus": 3,
+    "machina": 2,
+    "dragon": 6,
+    "laputa": 1
+  }
+}

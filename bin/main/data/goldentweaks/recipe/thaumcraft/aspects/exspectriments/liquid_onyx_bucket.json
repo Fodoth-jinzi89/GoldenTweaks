@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exspectriments:liquid_onyx_bucket"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 2
+  }
+}

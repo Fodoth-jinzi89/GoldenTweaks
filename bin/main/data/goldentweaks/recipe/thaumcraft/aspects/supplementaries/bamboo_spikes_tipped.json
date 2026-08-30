@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:bamboo_spikes_tipped"
+  },
+  "aspects": {
+    "arbor": 3,
+    "evil": 4
+  }
+}

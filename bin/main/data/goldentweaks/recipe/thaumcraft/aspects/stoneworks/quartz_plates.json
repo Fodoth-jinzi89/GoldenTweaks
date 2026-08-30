@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:quartz_plates"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

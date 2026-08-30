@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_submarine:iron_pressurizer"
+  },
+  "aspects": {
+    "aqua": 3,
+    "fabrico": 3,
+    "metallum": 3,
+    "vitreus": 3,
+    "machina": 2
+  }
+}

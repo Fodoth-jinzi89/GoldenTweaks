@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:coffee_table"
+  },
+  "aspects": {
+    "machina": 3,
+    "victus": 3,
+    "fames": 1,
+    "dream": 1
+  }
+}

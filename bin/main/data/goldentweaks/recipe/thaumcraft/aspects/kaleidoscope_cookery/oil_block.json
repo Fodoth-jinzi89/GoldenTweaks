@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:oil_block"
+  },
+  "aspects": {
+    "potentia": 3,
+    "ignis": 2
+  }
+}

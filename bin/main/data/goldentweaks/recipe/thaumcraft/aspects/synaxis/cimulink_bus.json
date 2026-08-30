@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "synaxis:cimulink_bus"
+  },
+  "aspects": {
+    "sensus": 3,
+    "machina": 2
+  }
+}

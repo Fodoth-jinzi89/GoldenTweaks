@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:upgrade_solar"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

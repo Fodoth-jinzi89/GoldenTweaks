@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_redstone_ingot_bucket"
+  },
+  "aspects": {
+    "saxum": 3,
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:purple_block"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

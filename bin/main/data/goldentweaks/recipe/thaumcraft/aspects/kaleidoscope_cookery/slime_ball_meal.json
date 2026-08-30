@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:slime_ball_meal"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 8
+  }
+}

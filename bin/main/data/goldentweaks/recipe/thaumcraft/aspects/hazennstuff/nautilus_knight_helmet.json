@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:nautilus_knight_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "fossil": 4
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "textile",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "flavor_immersed_daily:rawpigskin"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFCD9C9C",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.flavor_immersed_daily.rawpigskin"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:lining": {
+      "armor_durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.24
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 0.84
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 1.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.084
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.168
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.048
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

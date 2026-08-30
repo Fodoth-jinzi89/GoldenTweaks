@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:elder_guardian_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

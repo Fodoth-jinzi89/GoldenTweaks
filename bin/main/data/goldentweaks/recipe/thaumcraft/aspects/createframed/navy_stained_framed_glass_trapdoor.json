@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createframed:navy_stained_framed_glass_trapdoor"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "vitreus": 3
+  }
+}

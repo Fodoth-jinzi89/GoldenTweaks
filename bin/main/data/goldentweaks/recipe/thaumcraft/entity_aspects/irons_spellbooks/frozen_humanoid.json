@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:frozen_humanoid"
+  },
+  "aspects": {
+    "bestia": 4,
+    "gelum": 3,
+    "victus": 3
+  }
+}

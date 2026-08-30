@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:auto_lander"
+  },
+  "aspects": {
+    "iter": 3,
+    "space": 3,
+    "universes": 1
+  }
+}

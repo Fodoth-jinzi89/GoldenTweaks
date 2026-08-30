@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:bell_pendant_lamp"
+  },
+  "aspects": {
+    "accessories": 3,
+    "fabrico": 3
+  }
+}

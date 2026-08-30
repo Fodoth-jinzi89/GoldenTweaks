@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:reactor_blueprint_item"
+  },
+  "aspects": {
+    "potentia": 4,
+    "charta": 3,
+    "machina": 3,
+    "vitium": 3,
+    "cognitio": 2,
+    "imperium": 1
+  }
+}

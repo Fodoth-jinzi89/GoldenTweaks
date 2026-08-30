@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:wide_tough_steel_dual_cannon_quickfiring_breech"
+  },
+  "aspects": {
+    "accessories": 3,
+    "machina": 3,
+    "metallum": 3
+  }
+}

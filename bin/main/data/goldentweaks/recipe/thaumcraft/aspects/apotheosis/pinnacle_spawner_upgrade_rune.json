@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:pinnacle_spawner_upgrade_rune"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "accessories": 3,
+    "machina": 2
+  }
+}

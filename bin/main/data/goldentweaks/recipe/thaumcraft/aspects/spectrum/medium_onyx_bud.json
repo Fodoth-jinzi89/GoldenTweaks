@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:medium_onyx_bud"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

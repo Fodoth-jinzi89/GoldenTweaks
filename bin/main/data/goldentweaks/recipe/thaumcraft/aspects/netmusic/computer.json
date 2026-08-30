@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "netmusic:computer"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

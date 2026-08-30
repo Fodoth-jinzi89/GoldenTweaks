@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:ultimate_singularity"
+  },
+  "aspects": {
+    "singularity": 6,
+    "terminus": 5,
+    "alienis": 3,
+    "atrsubstance": 2
+  }
+}

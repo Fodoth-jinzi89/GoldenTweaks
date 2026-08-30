@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "northstar:mercury_deep_stone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF3C3435",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.northstar.mercury_deep_stone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 17.302,
+      "armor/boots": 2.595,
+      "armor/chestplate": 6.921,
+      "armor/helmet": 2.595,
+      "armor/leggings": 5.191,
+      "armor_durability": 14.64,
+      "armor_toughness": 2.13,
+      "attack_damage": 3.727,
+      "attack_speed": -0.305,
+      "charging_value": 0.41,
+      "draw_speed": -0.22,
+      "durability": 266.19,
+      "enchantment_value": 6.194,
+      "harvest_speed": 5.856,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.662,
+      "magic_damage": 1.863,
+      "projectile_accuracy": 0.45,
+      "projectile_speed": 0.4,
+      "ranged_damage": 4.791,
+      "rarity": 11.518,
+      "knockback_resistance": 0.192,
+      "repair_efficiency": 0.53,
+      "repair_value": 0.205,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

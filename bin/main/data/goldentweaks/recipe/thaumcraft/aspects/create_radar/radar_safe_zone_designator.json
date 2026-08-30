@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_radar:radar_safe_zone_designator"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2
+  }
+}

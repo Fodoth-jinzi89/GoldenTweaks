@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipeorgans:hohlflute"
+  },
+  "aspects": {
+    "sonus": 4,
+    "aer": 2
+  }
+}

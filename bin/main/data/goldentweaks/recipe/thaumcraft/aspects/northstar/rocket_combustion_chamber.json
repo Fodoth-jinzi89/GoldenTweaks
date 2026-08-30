@@ -1,0 +1,15 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:rocket_combustion_chamber"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "iter": 3,
+    "space": 3,
+    "machina": 2,
+    "universes": 6,
+    "ira": 4
+  }
+}

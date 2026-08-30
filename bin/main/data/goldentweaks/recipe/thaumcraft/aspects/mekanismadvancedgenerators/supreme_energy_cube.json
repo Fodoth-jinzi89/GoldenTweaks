@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismadvancedgenerators:supreme_energy_cube"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

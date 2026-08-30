@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createprism:brass_clear_glass_casing"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "vitreus": 3
+  }
+}

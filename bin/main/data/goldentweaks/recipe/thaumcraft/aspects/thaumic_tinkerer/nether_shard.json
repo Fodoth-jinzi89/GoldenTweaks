@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:nether_shard"
+  },
+  "aspects": {
+    "infernus": 2,
+    "vitreus": 1,
+    "praecantatio": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:celestial_lens"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cosmic": 3,
+    "lux": 2,
+    "praecantatio": 2
+  }
+}

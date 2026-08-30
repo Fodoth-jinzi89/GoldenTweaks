@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:banana"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2
+  }
+}

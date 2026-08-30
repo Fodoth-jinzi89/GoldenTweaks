@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:lamb_and_radish_soup"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6
+  }
+}

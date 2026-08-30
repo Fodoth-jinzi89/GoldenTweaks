@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "hazennstuff:overgrown_bone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7F725C",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.hazennstuff.overgrown_bone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.276
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.05
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.11
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.083
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.304
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.386
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.179
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.193
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.166
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

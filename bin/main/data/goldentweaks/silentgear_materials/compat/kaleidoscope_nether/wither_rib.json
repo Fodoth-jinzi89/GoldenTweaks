@@ -1,0 +1,81 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kaleidoscope_nether:wither_rib"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF27282D",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.kaleidoscope_nether.wither_rib"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.12
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.022
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.048
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.036
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.132
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.168
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.078
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.084
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.072
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:blood_rune"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "corpus": 3,
+    "auram": 1
+  }
+}

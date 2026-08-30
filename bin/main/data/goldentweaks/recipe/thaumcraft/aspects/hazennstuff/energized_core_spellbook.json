@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:energized_core_spellbook"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "cognitio": 3,
+    "machina": 2,
+    "history": 4
+  }
+}

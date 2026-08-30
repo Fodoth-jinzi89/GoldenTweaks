@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bedrock_fishing_rod"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "victus": 3,
+    "fames": 6,
+    "pannus": 2,
+    "atrpraecantatic": 4,
+    "ira": 4
+  }
+}

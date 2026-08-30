@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:ender_chest_backpack"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "alienis": 3,
+    "vas": 3
+  }
+}

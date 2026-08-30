@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:tungsten_plating_slab"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3
+  }
+}

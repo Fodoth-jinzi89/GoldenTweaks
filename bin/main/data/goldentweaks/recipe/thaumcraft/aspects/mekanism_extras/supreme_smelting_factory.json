@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:supreme_smelting_factory"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

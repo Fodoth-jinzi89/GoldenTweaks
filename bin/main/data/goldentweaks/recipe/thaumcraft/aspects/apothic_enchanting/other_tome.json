@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:other_tome"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "cognitio": 3,
+    "history": 6
+  }
+}

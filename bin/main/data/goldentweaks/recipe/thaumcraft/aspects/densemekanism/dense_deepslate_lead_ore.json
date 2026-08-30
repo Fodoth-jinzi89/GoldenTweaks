@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "densemekanism:dense_deepslate_lead_ore"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3,
+    "profundum": 3,
+    "saxum": 3,
+    "spelunca": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:auto_smoking_upgrade"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

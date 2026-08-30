@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:primordial_mote"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "anteanus": 2
+  }
+}

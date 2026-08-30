@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:gunpowder_pinch"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

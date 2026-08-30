@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:glowing_mushroom"
+  },
+  "aspects": {
+    "fungus": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

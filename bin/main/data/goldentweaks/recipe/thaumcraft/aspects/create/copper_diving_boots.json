@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:copper_diving_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "metallum": 3
+  }
+}

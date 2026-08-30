@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:dense_washing_factory"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

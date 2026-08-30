@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:compressed_iron_block_2x"
+  },
+  "aspects": {
+    "metallum": 7,
+    "dense": 4
+  }
+}

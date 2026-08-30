@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:reactor_casing"
+  },
+  "aspects": {
+    "potentia": 4,
+    "fabrico": 3,
+    "machina": 3,
+    "vitium": 3
+  }
+}

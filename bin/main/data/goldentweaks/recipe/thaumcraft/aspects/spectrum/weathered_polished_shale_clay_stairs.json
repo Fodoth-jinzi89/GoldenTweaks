@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weathered_polished_shale_clay_stairs"
+  },
+  "aspects": {
+    "terra": 3,
+    "anteanus": 6
+  }
+}

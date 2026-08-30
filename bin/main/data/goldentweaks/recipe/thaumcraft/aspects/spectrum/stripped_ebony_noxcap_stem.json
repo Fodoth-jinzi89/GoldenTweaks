@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:stripped_ebony_noxcap_stem"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

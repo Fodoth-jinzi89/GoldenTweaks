@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:date"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1
+  }
+}

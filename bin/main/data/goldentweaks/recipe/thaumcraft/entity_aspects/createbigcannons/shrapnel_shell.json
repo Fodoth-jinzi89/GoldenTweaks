@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createbigcannons:shrapnel_shell"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

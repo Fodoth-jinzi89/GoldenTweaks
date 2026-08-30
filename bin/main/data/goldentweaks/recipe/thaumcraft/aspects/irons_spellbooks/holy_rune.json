@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:holy_rune"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "sano": 2,
+    "auram": 1
+  }
+}

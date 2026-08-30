@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:end_rod_seat"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "desidia": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "mekanism:flame"
+  },
+  "aspects": {
+    "bestia": 4,
+    "ignis": 3,
+    "victus": 3
+  }
+}

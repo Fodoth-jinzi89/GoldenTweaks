@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:pointed_crimsite"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2,
+    "universes": 6
+  }
+}

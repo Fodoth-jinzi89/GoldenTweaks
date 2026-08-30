@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:mnemonic_matrix"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

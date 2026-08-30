@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:bishop_of_deceit"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

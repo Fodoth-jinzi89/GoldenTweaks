@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:faded_koi"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

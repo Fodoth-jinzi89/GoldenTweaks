@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:flower_tea"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 4,
+    "vegetatio": 2,
+    "dream": 6
+  }
+}

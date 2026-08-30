@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismadvancedgenerators:ultimate_solar_panel"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "lux": 3,
+    "potentia": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "tunes_n_tomes:red_circle"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

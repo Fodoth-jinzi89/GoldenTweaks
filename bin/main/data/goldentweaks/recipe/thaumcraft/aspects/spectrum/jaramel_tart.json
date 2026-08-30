@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:jaramel_tart"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "childish": 4
+  }
+}

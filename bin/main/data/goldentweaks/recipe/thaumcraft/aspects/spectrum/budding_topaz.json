@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:budding_topaz"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "spelunca": 1
+  }
+}

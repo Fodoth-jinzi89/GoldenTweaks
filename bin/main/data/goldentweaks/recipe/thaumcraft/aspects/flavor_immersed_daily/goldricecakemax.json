@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:goldricecakemax"
+  },
+  "aspects": {
+    "gelum": 3,
+    "metallum": 3,
+    "victus": 3,
+    "fames": 8,
+    "superbia": 6
+  }
+}

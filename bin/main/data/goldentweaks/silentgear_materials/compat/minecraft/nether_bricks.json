@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:nether_bricks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF6D8370",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.minecraft.nether_bricks"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 4.856,
+      "armor/boots": 0.728,
+      "armor/chestplate": 1.942,
+      "armor/helmet": 0.728,
+      "armor/leggings": 1.457,
+      "armor_durability": 4.109,
+      "armor_toughness": 0.598,
+      "attack_damage": 1.046,
+      "attack_speed": -0.205,
+      "charging_value": 0.295,
+      "draw_speed": -0.14,
+      "durability": 74.7,
+      "enchantment_value": 3.896,
+      "harvest_speed": 1.643,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 0.747,
+      "magic_damage": 0.523,
+      "projectile_accuracy": 0.73,
+      "projectile_speed": 0.68,
+      "ranged_damage": 1.345,
+      "rarity": 5.39,
+      "knockback_resistance": 0.072,
+      "repair_efficiency": 0.33,
+      "repair_value": 0.105,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

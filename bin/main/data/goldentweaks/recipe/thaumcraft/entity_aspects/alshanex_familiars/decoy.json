@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "alshanex_familiars:decoy"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:flag_pink"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "imperium": 4
+  }
+}

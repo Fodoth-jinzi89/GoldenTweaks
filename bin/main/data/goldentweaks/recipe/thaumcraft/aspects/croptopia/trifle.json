@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:trifle"
+  },
+  "aspects": {
+    "telum": 4,
+    "luxuria": 4
+  }
+}

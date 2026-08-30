@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:friedchickencorn"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 3,
+    "fames": 6,
+    "messis": 2,
+    "expand": 4
+  }
+}

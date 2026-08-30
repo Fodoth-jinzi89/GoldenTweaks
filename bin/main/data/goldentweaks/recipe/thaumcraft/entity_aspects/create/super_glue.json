@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create:super_glue"
+  },
+  "aspects": {
+    "bestia": 4,
+    "adhaesio": 3,
+    "victus": 3
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:magma_cream_stir_fry_rice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6,
+    "sano": 4,
+    "luxuria": 4,
+    "ira": 4
+  }
+}

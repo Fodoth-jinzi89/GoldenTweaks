@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:magic_arrow"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

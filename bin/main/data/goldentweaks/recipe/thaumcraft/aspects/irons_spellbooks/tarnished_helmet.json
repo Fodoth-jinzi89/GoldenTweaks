@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:tarnished_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "accessories": 3,
+    "imperium": 6
+  }
+}

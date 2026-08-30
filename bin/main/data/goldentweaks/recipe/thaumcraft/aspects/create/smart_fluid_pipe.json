@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:smart_fluid_pipe"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "machina": 2
+  }
+}

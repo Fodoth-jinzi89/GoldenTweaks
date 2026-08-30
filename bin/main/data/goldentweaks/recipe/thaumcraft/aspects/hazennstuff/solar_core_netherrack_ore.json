@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:solar_core_netherrack_ore"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

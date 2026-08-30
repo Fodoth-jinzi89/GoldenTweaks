@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:maid_bed"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "pannus": 2,
+    "desidia": 8
+  }
+}

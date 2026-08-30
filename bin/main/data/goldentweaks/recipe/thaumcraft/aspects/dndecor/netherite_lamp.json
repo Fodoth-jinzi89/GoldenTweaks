@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:netherite_lamp"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "mixtura": 1
+  }
+}

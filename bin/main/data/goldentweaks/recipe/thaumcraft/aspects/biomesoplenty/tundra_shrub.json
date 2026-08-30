@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:tundra_shrub"
+  },
+  "aspects": {
+    "terra": 3,
+    "vegetatio": 2
+  }
+}

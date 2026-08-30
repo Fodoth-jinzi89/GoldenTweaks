@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:wisewood_slab"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

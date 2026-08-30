@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:cursed_bow"
+  },
+  "aspects": {
+    "telum": 4,
+    "evil": 6,
+    "atrpraecantatic": 2
+  }
+}

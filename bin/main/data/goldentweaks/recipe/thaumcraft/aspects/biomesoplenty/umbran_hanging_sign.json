@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:umbran_hanging_sign"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

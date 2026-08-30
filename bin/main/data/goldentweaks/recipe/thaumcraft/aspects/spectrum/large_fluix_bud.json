@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:large_fluix_bud"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

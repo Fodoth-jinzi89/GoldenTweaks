@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "simulated_addition:acacia_symmetric_sail"
+  },
+  "aspects": {
+    "aer": 3,
+    "arbor": 3,
+    "motus": 3,
+    "machina": 2,
+    "laputa": 2
+  }
+}

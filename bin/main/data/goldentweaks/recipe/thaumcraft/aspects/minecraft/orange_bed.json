@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:orange_bed"
+  },
+  "aspects": {
+    "sano": 6,
+    "desidia": 6,
+    "luxuria": 6
+  }
+}

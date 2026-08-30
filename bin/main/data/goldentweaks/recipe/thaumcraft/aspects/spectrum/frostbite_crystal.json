@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:frostbite_crystal"
+  },
+  "aspects": {
+    "gelum": 3,
+    "vitreus": 3
+  }
+}

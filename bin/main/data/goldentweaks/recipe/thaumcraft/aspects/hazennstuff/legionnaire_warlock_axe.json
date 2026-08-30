@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:legionnaire_warlock_axe"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "ira": 6
+  }
+}

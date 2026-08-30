@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:crystal_display"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "sensus": 2
+  }
+}

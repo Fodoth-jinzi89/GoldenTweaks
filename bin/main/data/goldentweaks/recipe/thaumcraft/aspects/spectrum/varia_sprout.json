@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:varia_sprout"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "auram": 6
+  }
+}

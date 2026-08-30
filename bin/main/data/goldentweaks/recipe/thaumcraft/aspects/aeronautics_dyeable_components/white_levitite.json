@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics_dyeable_components:white_levitite"
+  },
+  "aspects": {
+    "gravitas": 4,
+    "laputa": 8
+  }
+}

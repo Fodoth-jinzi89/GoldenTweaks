@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:watcher"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

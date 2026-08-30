@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:soul_touched_sculkshelf"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3,
+    "profundum": 3,
+    "auram": 8,
+    "history": 4
+  }
+}

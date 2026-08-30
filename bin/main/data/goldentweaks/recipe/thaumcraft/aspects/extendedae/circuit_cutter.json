@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:circuit_cutter"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 3
+  }
+}

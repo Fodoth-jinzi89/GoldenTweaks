@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "iss_magicfromtheeast:jade_sword"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

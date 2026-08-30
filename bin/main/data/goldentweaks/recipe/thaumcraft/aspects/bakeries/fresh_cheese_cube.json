@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:fresh_cheese_cube"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1
+  }
+}

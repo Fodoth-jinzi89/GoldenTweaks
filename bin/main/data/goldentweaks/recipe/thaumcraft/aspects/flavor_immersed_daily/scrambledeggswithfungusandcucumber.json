@@ -1,0 +1,16 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:scrambledeggswithfungusandcucumber"
+  },
+  "aspects": {
+    "fungus": 3,
+    "herba": 3,
+    "terra": 3,
+    "victus": 3,
+    "fames": 4,
+    "messis": 2,
+    "vegetatio": 2,
+    "sano": 2
+  }
+}

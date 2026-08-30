@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "northstar:mercury_roach"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

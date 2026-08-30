@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:lagoon_rod"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "limus": 2
+  }
+}

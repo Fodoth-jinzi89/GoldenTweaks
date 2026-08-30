@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:incomplete_heat_engine"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

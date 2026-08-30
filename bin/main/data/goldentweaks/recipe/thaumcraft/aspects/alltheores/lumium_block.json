@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:lumium_block"
+  },
+  "aspects": {
+    "metallum": 12,
+    "mixtura": 4
+  }
+}

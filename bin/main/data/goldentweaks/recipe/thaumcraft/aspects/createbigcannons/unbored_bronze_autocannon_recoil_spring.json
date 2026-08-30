@@ -1,0 +1,15 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:unbored_bronze_autocannon_recoil_spring"
+  },
+  "aspects": {
+    "telum": 4,
+    "accessories": 3,
+    "machina": 3,
+    "metallum": 3,
+    "potentia": 3,
+    "ignis": 2,
+    "mixtura": 6
+  }
+}

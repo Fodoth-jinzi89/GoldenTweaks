@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:crystal_fixer"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

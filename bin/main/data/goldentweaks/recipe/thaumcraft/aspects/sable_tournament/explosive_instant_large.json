@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_tournament:explosive_instant_large"
+  },
+  "aspects": {
+    "explosion": 4,
+    "destroy": 2
+  }
+}

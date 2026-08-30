@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:bronze_ingot"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

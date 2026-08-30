@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "spectrum:amethyst_sugar_stick"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF8C6BA2",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.spectrum.amethyst_sugar_stick"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.544
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.098
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.218
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.163
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.598
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.762
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.354
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.381
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.326
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

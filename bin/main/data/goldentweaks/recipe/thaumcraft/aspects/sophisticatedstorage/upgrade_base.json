@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:upgrade_base"
+  },
+  "aspects": {
+    "machina": 2,
+    "arche": 6
+  }
+}

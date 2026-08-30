@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:blue_cloth"
+  },
+  "aspects": {
+    "pannus": 2,
+    "textus": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:layered_deepslate"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3,
+    "spelunca": 4
+  }
+}

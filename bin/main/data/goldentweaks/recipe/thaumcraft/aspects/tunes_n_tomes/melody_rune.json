@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "tunes_n_tomes:melody_rune"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

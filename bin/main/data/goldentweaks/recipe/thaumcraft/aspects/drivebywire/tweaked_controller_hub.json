@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "drivebywire:tweaked_controller_hub"
+  },
+  "aspects": {
+    "machina": 3,
+    "imperium": 2
+  }
+}

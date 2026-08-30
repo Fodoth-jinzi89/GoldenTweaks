@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:ice_staff"
+  },
+  "aspects": {
+    "gelum": 3,
+    "instrumentum": 3
+  }
+}

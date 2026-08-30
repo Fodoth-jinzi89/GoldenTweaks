@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:brass_dust"
+  },
+  "aspects": {
+    "metallum": 2,
+    "mixtura": 4
+  }
+}

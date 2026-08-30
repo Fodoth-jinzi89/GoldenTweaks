@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:null_plant"
+  },
+  "aspects": {
+    "terra": 3,
+    "arche": 1
+  }
+}

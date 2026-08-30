@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:assembled_reinforced_reductive_medium_range_torpedo_component"
+  },
+  "aspects": {
+    "explosion": 4,
+    "telum": 4,
+    "machina": 2
+  }
+}

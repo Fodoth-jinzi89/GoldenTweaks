@@ -1,0 +1,63 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal_coating",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "igleelib:blazum_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFB15F1B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.igleelib.blazum_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:coating": {
+      "armor_durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.256
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 4.735
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.319
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.326
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.161
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.319
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.319
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

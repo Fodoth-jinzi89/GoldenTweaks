@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:power"
+  },
+  "aspects": {
+    "potentia": 3,
+    "desidia": 1
+  }
+}

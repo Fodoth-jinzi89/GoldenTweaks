@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:autocannon_breech_cast_mould"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3
+  }
+}

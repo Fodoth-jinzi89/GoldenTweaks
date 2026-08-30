@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:armorhanger"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

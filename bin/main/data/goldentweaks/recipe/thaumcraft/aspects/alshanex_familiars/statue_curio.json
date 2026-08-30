@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:statue_curio"
+  },
+  "aspects": {
+    "accessories": 3,
+    "potentia": 3,
+    "praecantatio": 2,
+    "alfirin": 1,
+    "invidia": 1,
+    "mornogol": 1
+  }
+}

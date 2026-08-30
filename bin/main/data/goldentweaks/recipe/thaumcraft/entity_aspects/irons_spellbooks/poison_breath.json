@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:poison_breath"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "venenum": 3
+  }
+}

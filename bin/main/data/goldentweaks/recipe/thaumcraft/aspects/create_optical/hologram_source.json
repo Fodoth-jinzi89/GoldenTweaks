@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_optical:hologram_source"
+  },
+  "aspects": {
+    "sensus": 4,
+    "arbor": 3,
+    "lux": 2,
+    "arche": 4
+  }
+}

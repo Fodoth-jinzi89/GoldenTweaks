@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:rainbow_birch_sapling"
+  },
+  "aspects": {
+    "telum": 4,
+    "arbor": 3,
+    "herba": 3
+  }
+}

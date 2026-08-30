@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:ancient_log_0_9x"
+  },
+  "aspects": {
+    "arbor": 8,
+    "dense": 18,
+    "history": 2
+  }
+}

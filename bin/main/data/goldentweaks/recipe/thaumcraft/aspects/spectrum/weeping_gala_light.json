@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weeping_gala_light"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "anteanus": 6
+  }
+}

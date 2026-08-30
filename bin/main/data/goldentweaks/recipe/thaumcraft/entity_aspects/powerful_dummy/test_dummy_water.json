@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "powerful_dummy:test_dummy_water"
+  },
+  "aspects": {
+    "humanus": 3,
+    "fabrico": 2
+  }
+}

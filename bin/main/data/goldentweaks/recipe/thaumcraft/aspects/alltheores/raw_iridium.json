@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:raw_iridium"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

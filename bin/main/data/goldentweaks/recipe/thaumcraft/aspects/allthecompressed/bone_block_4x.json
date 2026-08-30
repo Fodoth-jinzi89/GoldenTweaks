@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:bone_block_4x"
+  },
+  "aspects": {
+    "substance": 9,
+    "dense": 8,
+    "fossil": 6
+  }
+}

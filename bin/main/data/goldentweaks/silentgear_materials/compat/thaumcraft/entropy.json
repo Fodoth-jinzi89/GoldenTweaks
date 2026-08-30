@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:entropy_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF959595",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraft.entropy"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.212
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.538
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 121.212
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 5.387
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.829
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.559
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 10.101
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgems:cloaking"
+        }
+      ]
+    }
+  }
+}

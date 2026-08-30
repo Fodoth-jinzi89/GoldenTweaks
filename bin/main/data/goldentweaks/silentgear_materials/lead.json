@@ -1,0 +1,72 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism:ingot_lead"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/lead"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFC2CBB8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.mekanism.lead"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.8,
+      "armor/boots": 1.92,
+      "armor/chestplate": 5.12,
+      "armor/helmet": 1.92,
+      "armor/leggings": 3.84,
+      "armor_durability": 19.911,
+      "armor_toughness": 2.304,
+      "attack_damage": 2.048,
+      "charging_value": 0.707,
+      "draw_speed": 0.125,
+      "durability": 358.4,
+      "enchantment_value": 14.096,
+      "harvest_speed": 4.864,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 4.864,
+      "magic_damage": 1.741,
+      "projectile_accuracy": 1.05,
+      "projectile_speed": 1.06,
+      "ranged_damage": 0.896,
+      "rarity": 21.6,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

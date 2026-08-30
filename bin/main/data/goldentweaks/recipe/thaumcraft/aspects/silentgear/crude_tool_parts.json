@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:crude_tool_parts"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

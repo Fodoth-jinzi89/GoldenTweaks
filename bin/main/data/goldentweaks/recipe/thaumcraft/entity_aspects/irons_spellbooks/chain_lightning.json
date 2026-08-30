@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:chain_lightning"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "fulmen": 3
+  }
+}

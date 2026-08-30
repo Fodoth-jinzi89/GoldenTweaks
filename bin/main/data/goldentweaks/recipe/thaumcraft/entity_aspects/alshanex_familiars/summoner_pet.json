@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "alshanex_familiars:summoner_pet"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3,
+    "praecantatio": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:prismarine_pillar"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

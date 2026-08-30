@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:thruster"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

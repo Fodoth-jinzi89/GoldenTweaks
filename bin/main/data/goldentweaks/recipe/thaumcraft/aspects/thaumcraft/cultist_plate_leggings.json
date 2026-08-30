@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_plate_leggings"
+  },
+  "aspects": {
+    "metallum": 5,
+    "alienis": 1,
+    "evil": 4
+  }
+}

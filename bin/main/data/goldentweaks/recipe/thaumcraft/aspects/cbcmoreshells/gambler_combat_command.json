@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:gambler_combat_command"
+  },
+  "aspects": {
+    "machina": 3,
+    "telum": 2
+  }
+}

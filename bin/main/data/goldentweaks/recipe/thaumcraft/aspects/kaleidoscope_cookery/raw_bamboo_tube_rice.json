@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:raw_bamboo_tube_rice"
+  },
+  "aspects": {
+    "arbor": 3,
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

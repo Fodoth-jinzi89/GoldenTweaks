@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "naturescompass:naturescompass"
+  },
+  "aspects": {
+    "iter": 3
+  }
+}

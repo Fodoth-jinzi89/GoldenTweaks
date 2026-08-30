@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:sand_6x"
+  },
+  "aspects": {
+    "terra": 8,
+    "dense": 12,
+    "gravitas": 2
+  }
+}

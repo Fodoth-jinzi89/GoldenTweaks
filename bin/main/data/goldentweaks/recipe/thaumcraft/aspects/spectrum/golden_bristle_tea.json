@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:golden_bristle_tea"
+  },
+  "aspects": {
+    "metallum": 3,
+    "victus": 3,
+    "fames": 4,
+    "dream": 6
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:heart"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "praecantatio": 2
+  }
+}

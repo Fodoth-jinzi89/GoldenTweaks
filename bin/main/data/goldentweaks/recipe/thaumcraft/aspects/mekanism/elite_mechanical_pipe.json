@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:elite_mechanical_pipe"
+  },
+  "aspects": {
+    "machina": 3,
+    "permutatio": 3
+  }
+}

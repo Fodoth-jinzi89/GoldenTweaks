@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "amendments:dragon_charge"
+  },
+  "aspects": {
+    "substance": 2,
+    "dragon": 6
+  }
+}

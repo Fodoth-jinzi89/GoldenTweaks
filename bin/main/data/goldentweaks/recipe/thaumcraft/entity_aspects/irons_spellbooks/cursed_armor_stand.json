@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:cursed_armor_stand"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

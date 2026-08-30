@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:dormant_martian_seed_sequenced"
+  },
+  "aspects": {
+    "herba": 3,
+    "space": 3,
+    "messis": 2
+  }
+}

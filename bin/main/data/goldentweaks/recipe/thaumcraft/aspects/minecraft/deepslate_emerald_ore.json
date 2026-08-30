@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:deepslate_emerald_ore"
+  },
+  "aspects": {
+    "spelunca": 6,
+    "treasure": 6
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:ender_guardian_bullet"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

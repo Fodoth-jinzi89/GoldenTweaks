@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "protection_pixel:blooddialysisdevice"
+  },
+  "aspects": {
+    "corpus": 3,
+    "gelum": 3
+  }
+}

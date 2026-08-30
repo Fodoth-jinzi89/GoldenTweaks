@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:fried_ice_spider_egg"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 4
+  }
+}

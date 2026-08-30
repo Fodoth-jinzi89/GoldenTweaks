@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:large_industrial_cogwheel"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3,
+    "volatus": 2
+  }
+}

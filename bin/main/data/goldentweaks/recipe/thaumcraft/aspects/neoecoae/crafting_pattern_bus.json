@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:crafting_pattern_bus"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "metallum": 3,
+    "machina": 2
+  }
+}

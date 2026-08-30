@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createpropulsion:tempered_wing"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

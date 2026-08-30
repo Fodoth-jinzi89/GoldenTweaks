@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_jewelry:topaz"
+  },
+  "aspects": {
+    "accessories": 3,
+    "lucrum": 2,
+    "auram": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:drawneggplant"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "vegetatio": 2,
+    "sano": 1,
+    "childish": 1
+  }
+}

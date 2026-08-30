@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "rare_handle",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "avaritia_more_items:crystal_matrix_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7EB3A5",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.avaritia_more_items.crystal_matrix_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 1.2
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.216
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.48
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.36
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 1.32
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.68
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.78
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.84
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.72
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

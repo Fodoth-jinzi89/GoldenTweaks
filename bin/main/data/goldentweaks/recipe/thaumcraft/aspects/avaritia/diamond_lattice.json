@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:diamond_lattice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "vitreus": 3
+  }
+}

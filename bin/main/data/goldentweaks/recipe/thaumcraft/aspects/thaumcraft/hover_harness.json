@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:hover_harness"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

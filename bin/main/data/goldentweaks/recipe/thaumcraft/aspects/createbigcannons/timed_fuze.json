@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:timed_fuze"
+  },
+  "aspects": {
+    "telum": 4,
+    "machina": 3
+  }
+}

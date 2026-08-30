@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:small_red_dragonjag"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "dragon": 8
+  }
+}

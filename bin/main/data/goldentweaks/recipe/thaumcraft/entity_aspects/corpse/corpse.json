@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "corpse:corpse"
+  },
+  "aspects": {
+    "mortuus": 5,
+    "corpus": 4,
+    "spiritus": 2
+  }
+}

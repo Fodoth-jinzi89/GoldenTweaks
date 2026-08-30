@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:geode_shelf"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "arbor": 3,
+    "cognitio": 3,
+    "vas": 2,
+    "history": 1
+  }
+}

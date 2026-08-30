@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:antimatter_block_9x"
+  },
+  "aspects": {
+    "substance": 10,
+    "dense": 18,
+    "atrsubstance": 2,
+    "atrpotentia": 2
+  }
+}

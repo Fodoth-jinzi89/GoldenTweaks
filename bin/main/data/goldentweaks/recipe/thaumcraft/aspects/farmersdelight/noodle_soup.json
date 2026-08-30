@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:noodle_soup"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6,
+    "sano": 2
+  }
+}

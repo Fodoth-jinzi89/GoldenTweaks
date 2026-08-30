@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:mixed_gemstone_bricks"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "saxum": 3,
+    "vitreus": 3
+  }
+}

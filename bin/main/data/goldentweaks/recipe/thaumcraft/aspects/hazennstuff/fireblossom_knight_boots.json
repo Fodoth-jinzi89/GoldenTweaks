@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:fireblossom_knight_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "ignis": 3
+  }
+}

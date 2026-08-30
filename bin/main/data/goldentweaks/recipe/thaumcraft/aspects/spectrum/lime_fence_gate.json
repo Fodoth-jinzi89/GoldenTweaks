@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:lime_fence_gate"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

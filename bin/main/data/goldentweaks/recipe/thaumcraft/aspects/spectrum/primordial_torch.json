@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:primordial_torch"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "mornogol": 2,
+    "arche": 8,
+    "auram": 6
+  }
+}

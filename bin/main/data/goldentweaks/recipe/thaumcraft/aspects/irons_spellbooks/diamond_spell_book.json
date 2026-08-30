@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:diamond_spell_book"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "cognitio": 3,
+    "vitreus": 3,
+    "history": 4
+  }
+}

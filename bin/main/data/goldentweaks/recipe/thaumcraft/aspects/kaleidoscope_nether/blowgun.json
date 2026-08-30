@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:blowgun"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

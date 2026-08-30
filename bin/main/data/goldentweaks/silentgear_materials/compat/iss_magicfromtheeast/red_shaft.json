@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "iss_magicfromtheeast:red_shaft"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7B2E2B",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.iss_magicfromtheeast.red_shaft"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.132
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.099
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 1.481
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 1.974
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.329
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 1.151
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.115
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

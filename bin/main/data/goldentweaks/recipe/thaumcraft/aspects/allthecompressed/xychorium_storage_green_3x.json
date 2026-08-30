@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:xychorium_storage_green_3x"
+  },
+  "aspects": {
+    "substance": 6,
+    "dense": 6
+  }
+}

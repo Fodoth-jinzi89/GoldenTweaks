@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:charged_obsidian_totem"
+  },
+  "aspects": {
+    "potentia": 3,
+    "fulmen": 2,
+    "auram": 8
+  }
+}

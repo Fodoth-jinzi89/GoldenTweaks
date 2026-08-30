@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:incomplete_thermal_mechanism"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 3
+  }
+}

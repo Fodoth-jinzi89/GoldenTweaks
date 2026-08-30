@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:life_fruit_tier_4"
+  },
+  "aspects": {
+    "metallum": 3,
+    "victus": 3,
+    "fames": 4,
+    "superbia": 6,
+    "mornogol": 4
+  }
+}

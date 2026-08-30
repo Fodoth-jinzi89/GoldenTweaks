@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:white_resplendent_bed"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "pannus": 2,
+    "sano": 6,
+    "dragon": 4,
+    "desidia": 8,
+    "luxuria": 8
+  }
+}

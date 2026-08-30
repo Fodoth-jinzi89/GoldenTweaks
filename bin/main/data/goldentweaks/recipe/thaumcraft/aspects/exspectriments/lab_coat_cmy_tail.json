@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "exspectriments:lab_coat_cmy_tail"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

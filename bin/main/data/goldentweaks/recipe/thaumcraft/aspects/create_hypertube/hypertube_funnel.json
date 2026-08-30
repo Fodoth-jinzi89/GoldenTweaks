@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_hypertube:hypertube_funnel"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "machina": 2
+  }
+}

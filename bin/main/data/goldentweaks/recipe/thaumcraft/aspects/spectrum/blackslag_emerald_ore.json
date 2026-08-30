@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blackslag_emerald_ore"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "spelunca": 1,
+    "treasure": 6
+  }
+}

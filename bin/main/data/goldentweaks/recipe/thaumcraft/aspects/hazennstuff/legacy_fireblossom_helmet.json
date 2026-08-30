@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:legacy_fireblossom_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "ignis": 3
+  }
+}

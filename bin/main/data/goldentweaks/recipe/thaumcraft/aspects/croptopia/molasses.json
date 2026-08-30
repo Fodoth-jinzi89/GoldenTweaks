@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:molasses"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "luxuria": 2,
+    "childish": 1
+  }
+}

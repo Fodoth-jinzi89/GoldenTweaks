@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:small_stone_bricks"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "merequester:requester"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "machina": 3,
+    "permutatio": 3
+  }
+}

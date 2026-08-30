@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:friedspicychicken"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6,
+    "sano": 1,
+    "ira": 2
+  }
+}

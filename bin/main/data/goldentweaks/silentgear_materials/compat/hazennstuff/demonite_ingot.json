@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "hazennstuff:demonite_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF413F77",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.hazennstuff.demonite_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 33.44,
+      "armor/boots": 5.016,
+      "armor/chestplate": 13.376,
+      "armor/helmet": 5.016,
+      "armor/leggings": 10.032,
+      "armor_durability": 52.018,
+      "armor_toughness": 6.019,
+      "attack_damage": 5.35,
+      "charging_value": 0.879,
+      "draw_speed": 0.245,
+      "durability": 936.32,
+      "enchantment_value": 20.701,
+      "harvest_speed": 12.707,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 12.707,
+      "magic_damage": 4.548,
+      "projectile_accuracy": 1.13,
+      "projectile_speed": 1.156,
+      "ranged_damage": 2.341,
+      "rarity": 37.08,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

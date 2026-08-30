@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:logistical_sorter"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

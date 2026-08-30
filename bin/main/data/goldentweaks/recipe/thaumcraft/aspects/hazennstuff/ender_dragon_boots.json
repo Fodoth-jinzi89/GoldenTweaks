@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:ender_dragon_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "alienis": 3,
+    "dragon": 8
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:creative_current_source"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

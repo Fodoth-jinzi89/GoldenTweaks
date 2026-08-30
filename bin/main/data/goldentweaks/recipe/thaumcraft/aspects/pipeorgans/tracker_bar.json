@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipeorgans:tracker_bar"
+  },
+  "aspects": {
+    "machina": 3,
+    "orbita": 2
+  }
+}

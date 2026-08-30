@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:gold_gate"
+  },
+  "aspects": {
+    "metallum": 3,
+    "anteanus": 2,
+    "superbia": 8
+  }
+}

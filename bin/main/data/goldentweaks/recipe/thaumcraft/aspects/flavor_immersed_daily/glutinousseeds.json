@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:glutinousseeds"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "messis": 3,
+    "metallum": 3,
+    "victus": 3,
+    "fames": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createaddition:gold_spool"
+  },
+  "aspects": {
+    "metallum": 3,
+    "priscus": 2,
+    "mornogol": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:taint_fibres"
+  },
+  "aspects": {
+    "victus": 1,
+    "vitium": 2
+  }
+}

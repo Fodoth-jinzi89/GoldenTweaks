@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:netherrack_fluorite_ore"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

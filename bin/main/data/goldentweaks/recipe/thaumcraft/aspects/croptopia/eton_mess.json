@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:eton_mess"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "luxuria": 1
+  }
+}

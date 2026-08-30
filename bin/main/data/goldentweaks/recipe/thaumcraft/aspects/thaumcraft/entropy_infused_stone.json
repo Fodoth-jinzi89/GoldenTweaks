@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:entropy_infused_stone"
+  },
+  "aspects": {
+    "terra": 1,
+    "perditio": 3,
+    "vitreus": 2
+  }
+}

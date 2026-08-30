@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aero_reformation:ethereal_key"
+  },
+  "aspects": {
+    "alienis": 3,
+    "auram": 2,
+    "invidia": 1
+  }
+}

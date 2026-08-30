@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_submarine:barometer"
+  },
+  "aspects": {
+    "aqua": 3,
+    "fabrico": 3,
+    "machina": 2
+  }
+}

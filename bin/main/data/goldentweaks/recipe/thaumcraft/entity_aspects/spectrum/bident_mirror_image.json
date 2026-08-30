@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "spectrum:bident_mirror_image"
+  },
+  "aspects": {
+    "bestia": 4,
+    "praecantatio": 4,
+    "victus": 3
+  }
+}

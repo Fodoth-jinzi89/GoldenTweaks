@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:quantum_personal_chest"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "alienis": 3,
+    "vas": 2,
+    "invidia": 4
+  }
+}

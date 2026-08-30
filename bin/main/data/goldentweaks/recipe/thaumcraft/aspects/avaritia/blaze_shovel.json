@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:blaze_shovel"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3,
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:native_lead_cluster"
+  },
+  "aspects": {
+    "ordo": 3,
+    "metallum": 5,
+    "terra": 1
+  }
+}

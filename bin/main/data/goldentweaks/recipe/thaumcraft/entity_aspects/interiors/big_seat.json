@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "interiors:big_seat"
+  },
+  "aspects": {
+    "bestia": 4,
+    "aqua": 3,
+    "victus": 3
+  }
+}

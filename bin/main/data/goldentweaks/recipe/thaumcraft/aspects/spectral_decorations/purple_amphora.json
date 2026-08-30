@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:purple_amphora"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "mornogol": 6
+  }
+}

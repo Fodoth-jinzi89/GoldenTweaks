@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:ancient_stone_stairs"
+  },
+  "aspects": {
+    "saxum": 3,
+    "history": 2,
+    "anteanus": 8
+  }
+}

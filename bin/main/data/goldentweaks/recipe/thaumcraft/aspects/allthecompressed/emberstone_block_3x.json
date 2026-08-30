@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:emberstone_block_3x"
+  },
+  "aspects": {
+    "saxum": 8,
+    "dense": 6
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "interiors:kelp_chair"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "desidia": 4
+  }
+}

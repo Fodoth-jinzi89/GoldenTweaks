@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:spell_overlimit_core"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

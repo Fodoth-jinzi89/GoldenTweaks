@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:divination_heart"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

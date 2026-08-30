@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:zinc_clump"
+  },
+  "aspects": {
+    "metallum": 2
+  }
+}

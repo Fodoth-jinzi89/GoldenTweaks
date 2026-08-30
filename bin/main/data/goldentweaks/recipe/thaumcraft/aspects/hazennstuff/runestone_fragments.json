@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:runestone_fragments"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "saxum": 3
+  }
+}

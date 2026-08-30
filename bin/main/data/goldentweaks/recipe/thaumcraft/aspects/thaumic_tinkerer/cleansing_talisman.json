@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:cleansing_talisman"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "atrpotentia": 8
+  }
+}

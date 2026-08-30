@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:polar_bear_idol"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

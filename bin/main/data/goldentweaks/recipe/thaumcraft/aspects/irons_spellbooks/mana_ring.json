@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:mana_ring"
+  },
+  "aspects": {
+    "accessories": 3,
+    "praecantaticherba": 2,
+    "invidia": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedauto:packager"
+  },
+  "aspects": {
+    "machina": 3,
+    "permutatio": 3,
+    "vas": 3,
+    "desidia": 4
+  }
+}

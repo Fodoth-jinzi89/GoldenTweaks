@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createbigcannons:bag_of_grapeshot"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

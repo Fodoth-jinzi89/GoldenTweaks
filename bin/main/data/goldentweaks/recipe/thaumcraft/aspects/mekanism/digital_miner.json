@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:digital_miner"
+  },
+  "aspects": {
+    "perfodio": 4,
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:fir_leaves"
+  },
+  "aspects": {
+    "herba": 3,
+    "vegetatio": 2,
+    "fossil": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:beef_jerky"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6,
+    "luxuria": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:cursed_tombstone"
+  },
+  "aspects": {
+    "saxum": 3,
+    "evil": 6,
+    "atrpraecantatic": 2
+  }
+}

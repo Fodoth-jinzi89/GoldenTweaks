@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:wither_bone_soup"
+  },
+  "aspects": {
+    "mortuus": 3,
+    "victus": 3,
+    "fames": 6,
+    "sano": 8,
+    "luxuria": 6
+  }
+}

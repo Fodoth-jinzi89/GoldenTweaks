@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:villager_spell_book"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "cognitio": 3,
+    "sano": 4,
+    "history": 4
+  }
+}

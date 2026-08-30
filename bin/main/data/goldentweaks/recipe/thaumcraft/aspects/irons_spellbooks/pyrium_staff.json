@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:pyrium_staff"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "evil": 2
+  }
+}

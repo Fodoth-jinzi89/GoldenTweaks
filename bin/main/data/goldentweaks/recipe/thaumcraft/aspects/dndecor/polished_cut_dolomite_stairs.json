@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:polished_cut_dolomite_stairs"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "cataclysm:koboleton_bone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF847763",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.cataclysm.koboleton_bone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.548
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.099
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.219
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.164
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.603
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.767
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.356
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.384
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.329
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

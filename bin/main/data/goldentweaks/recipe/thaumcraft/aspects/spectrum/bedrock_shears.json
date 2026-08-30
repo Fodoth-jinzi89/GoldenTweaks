@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:bedrock_shears"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "pannus": 2,
+    "atrpraecantatic": 4,
+    "ira": 4
+  }
+}

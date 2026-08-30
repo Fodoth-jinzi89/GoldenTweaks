@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "extendedcrafting:ender_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF146356",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.extendedcrafting.ender_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 16.96,
+      "armor/boots": 2.544,
+      "armor/chestplate": 6.784,
+      "armor/helmet": 2.544,
+      "armor/leggings": 5.088,
+      "armor_durability": 26.382,
+      "armor_toughness": 3.053,
+      "attack_damage": 2.714,
+      "charging_value": 0.741,
+      "draw_speed": 0.149,
+      "durability": 474.88,
+      "enchantment_value": 15.427,
+      "harvest_speed": 6.445,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.445,
+      "magic_damage": 2.307,
+      "projectile_accuracy": 1.066,
+      "projectile_speed": 1.079,
+      "ranged_damage": 1.187,
+      "rarity": 24.72,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:terminus"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

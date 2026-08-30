@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:globe_sepia"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "arche": 6
+  }
+}

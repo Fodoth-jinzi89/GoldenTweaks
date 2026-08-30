@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:lightning_lance"
+  },
+  "aspects": {
+    "bestia": 4,
+    "fulmen": 3,
+    "victus": 3
+  }
+}

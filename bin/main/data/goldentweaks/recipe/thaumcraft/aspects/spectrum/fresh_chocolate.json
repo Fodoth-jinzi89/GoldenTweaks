@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:fresh_chocolate"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

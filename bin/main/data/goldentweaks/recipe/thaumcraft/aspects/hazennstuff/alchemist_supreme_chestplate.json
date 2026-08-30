@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:alchemist_supreme_chestplate"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vacuos": 4,
+    "vas": 2,
+    "superbia": 6,
+    "evil": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:leggings_tome"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "tutamen": 4,
+    "cognitio": 3,
+    "history": 6
+  }
+}

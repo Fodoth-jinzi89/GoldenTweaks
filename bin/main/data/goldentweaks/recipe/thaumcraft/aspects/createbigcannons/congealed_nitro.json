@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:congealed_nitro"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:pech_blast"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3
+  }
+}

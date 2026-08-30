@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismgenerators:gas_burning_generator"
+  },
+  "aspects": {
+    "potentia": 4,
+    "ignis": 3,
+    "machina": 3
+  }
+}

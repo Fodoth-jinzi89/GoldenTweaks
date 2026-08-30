@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:basic_mid_chemical_tank"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

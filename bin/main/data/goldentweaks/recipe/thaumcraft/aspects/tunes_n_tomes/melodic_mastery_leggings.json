@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "tunes_n_tomes:melodic_mastery_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "victus": 3,
+    "fames": 6
+  }
+}

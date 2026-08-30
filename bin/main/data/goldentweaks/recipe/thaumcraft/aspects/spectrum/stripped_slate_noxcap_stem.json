@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:stripped_slate_noxcap_stem"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

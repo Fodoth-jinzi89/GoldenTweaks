@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_leader_plate_chestplate"
+  },
+  "aspects": {
+    "metallum": 5,
+    "alienis": 2,
+    "evil": 4
+  }
+}

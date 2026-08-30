@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create:crafting_blueprint"
+  },
+  "aspects": {
+    "bestia": 4,
+    "metallum": 3,
+    "victus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:chemical_crystallizer"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

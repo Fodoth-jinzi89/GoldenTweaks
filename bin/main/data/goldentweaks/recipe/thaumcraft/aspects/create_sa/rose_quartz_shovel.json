@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:rose_quartz_shovel"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "vitreus": 3
+  }
+}

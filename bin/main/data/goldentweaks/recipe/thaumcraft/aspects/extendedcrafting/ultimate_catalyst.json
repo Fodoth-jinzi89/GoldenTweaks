@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedcrafting:ultimate_catalyst"
+  },
+  "aspects": {
+    "terminus": 5
+  }
+}

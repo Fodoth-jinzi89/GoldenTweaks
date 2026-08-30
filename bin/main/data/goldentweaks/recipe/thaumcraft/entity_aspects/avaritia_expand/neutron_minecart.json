@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "avaritia_expand:neutron_minecart"
+  },
+  "aspects": {
+    "metallum": 3,
+    "telum": 4,
+    "explosion": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:astraconic_weaver_boots"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

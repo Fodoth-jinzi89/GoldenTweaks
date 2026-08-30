@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:music_disc_maledictus"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

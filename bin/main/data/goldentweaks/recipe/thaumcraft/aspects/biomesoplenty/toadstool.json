@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:toadstool"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

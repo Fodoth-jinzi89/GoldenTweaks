@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:enderium_gear"
+  },
+  "aspects": {
+    "metallum": 3,
+    "machina": 2,
+    "mixtura": 1
+  }
+}

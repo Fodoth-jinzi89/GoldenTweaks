@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pyrite_plating"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "anteanus": 4
+  }
+}

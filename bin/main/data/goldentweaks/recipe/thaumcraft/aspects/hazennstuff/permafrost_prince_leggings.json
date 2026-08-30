@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:permafrost_prince_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "gelum": 3,
+    "victus": 3,
+    "fames": 4,
+    "imperium": 2
+  }
+}

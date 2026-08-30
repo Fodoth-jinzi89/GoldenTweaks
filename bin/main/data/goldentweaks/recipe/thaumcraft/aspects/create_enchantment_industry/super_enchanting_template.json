@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:super_enchanting_template"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "metallum": 3
+  }
+}

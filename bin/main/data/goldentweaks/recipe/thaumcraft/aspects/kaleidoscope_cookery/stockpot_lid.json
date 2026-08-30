@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:stockpot_lid"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4
+  }
+}

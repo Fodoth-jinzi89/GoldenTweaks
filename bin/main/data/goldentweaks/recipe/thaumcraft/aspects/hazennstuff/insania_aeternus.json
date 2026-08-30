@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:insania_aeternus"
+  },
+  "aspects": {
+    "praecantatio": 3,
+    "anteanus": 1
+  }
+}

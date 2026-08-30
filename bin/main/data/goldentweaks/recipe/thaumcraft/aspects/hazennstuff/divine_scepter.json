@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:divine_scepter"
+  },
+  "aspects": {
+    "praecantatio": 3,
+    "imperium": 1
+  }
+}

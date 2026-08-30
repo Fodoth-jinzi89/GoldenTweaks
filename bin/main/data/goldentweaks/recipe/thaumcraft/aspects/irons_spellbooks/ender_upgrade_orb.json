@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:ender_upgrade_orb"
+  },
+  "aspects": {
+    "alienis": 3,
+    "machina": 2,
+    "auram": 1
+  }
+}

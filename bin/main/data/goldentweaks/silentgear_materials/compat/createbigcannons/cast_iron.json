@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "createbigcannons:cast_iron_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF343537",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.createbigcannons.cast_iron"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 19.36,
+      "armor/boots": 2.904,
+      "armor/chestplate": 7.744,
+      "armor/helmet": 2.904,
+      "armor/leggings": 5.808,
+      "armor_durability": 30.116,
+      "armor_toughness": 3.485,
+      "attack_damage": 3.098,
+      "charging_value": 0.761,
+      "draw_speed": 0.163,
+      "durability": 542.08,
+      "enchantment_value": 16.195,
+      "harvest_speed": 7.357,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 7.357,
+      "magic_damage": 2.633,
+      "projectile_accuracy": 1.075,
+      "projectile_speed": 1.09,
+      "ranged_damage": 1.355,
+      "rarity": 26.52,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

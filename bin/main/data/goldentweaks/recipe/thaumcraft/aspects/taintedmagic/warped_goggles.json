@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:warped_goggles"
+  },
+  "aspects": {
+    "iter": 4,
+    "arbor": 3,
+    "alienis": 2,
+    "evil": 8
+  }
+}

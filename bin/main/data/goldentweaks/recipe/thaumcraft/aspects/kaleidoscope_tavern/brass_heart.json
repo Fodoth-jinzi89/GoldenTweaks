@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:brass_heart"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

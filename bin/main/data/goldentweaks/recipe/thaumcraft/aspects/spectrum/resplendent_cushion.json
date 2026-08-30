@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:resplendent_cushion"
+  },
+  "aspects": {
+    "pannus": 3,
+    "fabrico": 2,
+    "dragon": 6,
+    "anteanus": 4
+  }
+}

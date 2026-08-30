@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:jetpack"
+  },
+  "aspects": {
+    "volatus": 3,
+    "machina": 2
+  }
+}

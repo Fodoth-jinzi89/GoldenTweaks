@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:kelp_roll_slice"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

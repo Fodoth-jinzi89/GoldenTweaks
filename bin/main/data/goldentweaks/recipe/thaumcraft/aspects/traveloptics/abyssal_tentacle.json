@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:abyssal_tentacle"
+  },
+  "aspects": {
+    "profundum": 3,
+    "arche": 8
+  }
+}

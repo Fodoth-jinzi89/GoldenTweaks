@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:overgrown_bone"
+  },
+  "aspects": {
+    "mortuus": 3,
+    "fossil": 6
+  }
+}

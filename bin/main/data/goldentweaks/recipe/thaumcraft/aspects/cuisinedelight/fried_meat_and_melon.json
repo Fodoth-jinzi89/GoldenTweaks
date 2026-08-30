@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cuisinedelight:fried_meat_and_melon"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

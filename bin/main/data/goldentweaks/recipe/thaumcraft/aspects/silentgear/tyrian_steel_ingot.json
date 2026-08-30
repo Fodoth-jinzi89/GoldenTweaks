@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:tyrian_steel_ingot"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:cobbled_calcite_slab"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:invar_dust"
+  },
+  "aspects": {
+    "metallum": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:grass_block_8x"
+  },
+  "aspects": {
+    "herba": 10,
+    "dense": 16,
+    "vegetatio": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:template_board"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

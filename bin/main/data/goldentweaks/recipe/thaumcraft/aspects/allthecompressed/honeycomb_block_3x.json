@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:honeycomb_block_3x"
+  },
+  "aspects": {
+    "substance": 8,
+    "dense": 6,
+    "limus": 2
+  }
+}

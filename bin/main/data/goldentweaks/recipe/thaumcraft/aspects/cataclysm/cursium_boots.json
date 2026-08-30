@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:cursium_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "metallum": 3,
+    "evil": 1
+  }
+}

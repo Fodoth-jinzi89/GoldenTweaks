@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:lava_bomb"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "ignis": 3
+  }
+}

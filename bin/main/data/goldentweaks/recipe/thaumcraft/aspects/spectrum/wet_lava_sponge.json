@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:wet_lava_sponge"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "lava": 8
+  }
+}

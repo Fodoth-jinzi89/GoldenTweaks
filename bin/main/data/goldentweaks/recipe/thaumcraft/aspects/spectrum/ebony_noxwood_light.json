@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ebony_noxwood_light"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

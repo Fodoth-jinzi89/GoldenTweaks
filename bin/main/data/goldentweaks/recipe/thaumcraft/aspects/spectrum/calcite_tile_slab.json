@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:calcite_tile_slab"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

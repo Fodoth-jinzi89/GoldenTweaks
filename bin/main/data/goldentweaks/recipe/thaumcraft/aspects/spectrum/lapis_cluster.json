@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:lapis_cluster"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

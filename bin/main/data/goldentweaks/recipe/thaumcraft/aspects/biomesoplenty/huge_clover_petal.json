@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:huge_clover_petal"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

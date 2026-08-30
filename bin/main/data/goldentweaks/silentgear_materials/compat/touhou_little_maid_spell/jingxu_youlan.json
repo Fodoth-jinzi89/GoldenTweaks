@@ -1,0 +1,52 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "flower_feather",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "touhou_little_maid_spell:jingxu_youlan"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9FC0D9",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.touhou_little_maid_spell.jingxu_youlan"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:fletching": {
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.38
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.323
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.209
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

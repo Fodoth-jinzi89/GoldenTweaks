@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:peculiar_bell"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

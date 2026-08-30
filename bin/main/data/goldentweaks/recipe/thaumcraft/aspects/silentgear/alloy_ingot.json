@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:alloy_ingot"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:experience_axe"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "instrumentum": 3,
+    "potentia": 2,
+    "ira": 6
+  }
+}

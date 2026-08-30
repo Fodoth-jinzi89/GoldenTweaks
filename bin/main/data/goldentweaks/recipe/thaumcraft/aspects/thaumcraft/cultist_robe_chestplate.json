@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_robe_chestplate"
+  },
+  "aspects": {
+    "metallum": 3,
+    "pannus": 2,
+    "alienis": 1,
+    "evil": 4
+  }
+}

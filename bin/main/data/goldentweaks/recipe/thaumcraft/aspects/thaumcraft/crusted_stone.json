@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:crusted_stone"
+  },
+  "aspects": {
+    "lux": 1,
+    "terra": 1,
+    "alienis": 1,
+    "anteanus": 8
+  }
+}

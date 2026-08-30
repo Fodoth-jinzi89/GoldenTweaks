@@ -1,0 +1,68 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "extendedcrafting" },
+    { "type": "neoforge:mod_loaded", "modid": "traveloptics" },
+    { "type": "neoforge:mod_loaded", "modid": "spectrum" },
+    { "type": "neoforge:mod_loaded", "modid": "goldentweaks" },
+    { "type": "neoforge:mod_loaded", "modid": "thaumcraft" }
+  ],
+  "type": "thaumcraft:infusion_matrix",
+  "research": "GT_UITIMATE_INGOT",
+  "instability": 25,
+  "result": {
+    "id": "extendedcrafting:the_ultimate_ingot",
+    "count": 1
+  },
+  "aspects": {
+    "imperium": 256,
+    "tempus": 256,
+    "alfirin": 256,
+    "arche": 256,
+    "atrsubstance": 256,
+    "universes": 256,
+    "waters": 256,
+    "dragon": 256,
+    "gula": 256,
+    "laputa": 256,
+    "space": 256,
+    "dream": 256,
+    "childish": 256,
+    "treasure": 256
+  },
+  "catalyst": {
+    "id": "spectrum:spectral_shard",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "id": "traveloptics:evokated_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:celestial_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:cryo_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:eldritch_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:crimson_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:lightning_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:void_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:verdant_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:pyro_spellweave_ingot"
+    },
+    {
+      "id": "traveloptics:abyssal_spellweave_ingot"
+    }
+  ]
+}

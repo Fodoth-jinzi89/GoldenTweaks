@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:wither_totem"
+  },
+  "aspects": {
+    "terminus": 3,
+    "exanimis": 2
+  }
+}

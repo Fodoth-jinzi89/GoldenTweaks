@@ -1,0 +1,15 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:primordial_pearl"
+  },
+  "aspects": {
+    "aer": 16,
+    "terra": 16,
+    "ignis": 16,
+    "aqua": 16,
+    "ordo": 16,
+    "perditio": 16,
+    "arche": 8
+  }
+}

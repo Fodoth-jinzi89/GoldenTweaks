@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:incomplete_brass_affix_template"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

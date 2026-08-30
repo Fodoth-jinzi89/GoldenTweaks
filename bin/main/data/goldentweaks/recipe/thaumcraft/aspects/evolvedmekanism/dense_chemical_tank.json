@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:dense_chemical_tank"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 2
+  }
+}

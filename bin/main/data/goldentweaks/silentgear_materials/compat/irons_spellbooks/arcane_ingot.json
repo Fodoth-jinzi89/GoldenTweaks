@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9896D5",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.irons_spellbooks.arcane_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 27.52,
+      "armor/boots": 4.128,
+      "armor/chestplate": 11.008,
+      "armor/helmet": 4.128,
+      "armor/leggings": 8.256,
+      "armor_durability": 42.809,
+      "armor_toughness": 4.954,
+      "attack_damage": 4.403,
+      "charging_value": 0.829,
+      "draw_speed": 0.211,
+      "durability": 770.56,
+      "enchantment_value": 18.806,
+      "harvest_speed": 10.458,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 10.458,
+      "magic_damage": 3.743,
+      "projectile_accuracy": 1.107,
+      "projectile_speed": 1.128,
+      "ranged_damage": 1.926,
+      "rarity": 32.64,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

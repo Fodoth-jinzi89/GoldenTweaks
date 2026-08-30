@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:classic_blaze_enchanter"
+  },
+  "aspects": {
+    "ardor": 4,
+    "incantatio": 4,
+    "praecantatio": 4,
+    "ignis": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:goblet"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "luxuria": 8,
+    "invidia": 6
+  }
+}

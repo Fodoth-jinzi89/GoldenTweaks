@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:entro_block"
+  },
+  "aspects": {
+    "machina": 3,
+    "cognitio": 2
+  }
+}

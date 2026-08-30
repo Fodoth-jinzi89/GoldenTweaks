@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:gauge_dropper"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

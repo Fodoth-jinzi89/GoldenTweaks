@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:wisp_essence_atrpraecantatic"
+  },
+  "aspects": {
+    "atrpraecantatic": 2
+  }
+}

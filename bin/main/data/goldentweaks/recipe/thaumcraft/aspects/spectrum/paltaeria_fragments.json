@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:paltaeria_fragments"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

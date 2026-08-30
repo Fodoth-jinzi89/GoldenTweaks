@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:brown_pigment"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

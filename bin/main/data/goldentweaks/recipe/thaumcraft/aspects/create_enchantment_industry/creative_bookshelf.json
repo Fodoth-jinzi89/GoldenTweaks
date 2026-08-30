@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:creative_bookshelf"
+  },
+  "aspects": {
+    "arbor": 3,
+    "cognitio": 3,
+    "history": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:tainted_stone_bricks"
+  },
+  "aspects": {
+    "saxum": 3,
+    "atrpraecantatic": 2
+  }
+}

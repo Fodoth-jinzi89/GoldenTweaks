@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:brass_dash_bolt"
+  },
+  "aspects": {
+    "metallum": 3,
+    "favilla": 2,
+    "mixtura": 6
+  }
+}

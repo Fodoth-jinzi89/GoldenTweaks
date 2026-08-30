@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:war_flaming_lance"
+  },
+  "aspects": {
+    "praecantatio": 3
+  }
+}

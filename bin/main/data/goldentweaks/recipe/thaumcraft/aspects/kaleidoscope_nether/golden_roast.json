@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:golden_roast"
+  },
+  "aspects": {
+    "metallum": 3,
+    "sano": 4,
+    "luxuria": 4
+  }
+}

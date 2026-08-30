@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:deepslate_plate_stairs"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3,
+    "spelunca": 8
+  }
+}

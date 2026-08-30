@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:node_stabilizer_advanced"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

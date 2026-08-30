@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:primordial_nodule"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "anteanus": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "compactmachines:shrinking_module"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2,
+    "expand": 4
+  }
+}

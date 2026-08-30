@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:cooked_bacon"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

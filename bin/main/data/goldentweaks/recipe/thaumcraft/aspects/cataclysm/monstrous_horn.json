@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:monstrous_horn"
+  },
+  "aspects": {
+    "reliquiae": 3,
+    "evil": 1
+  }
+}

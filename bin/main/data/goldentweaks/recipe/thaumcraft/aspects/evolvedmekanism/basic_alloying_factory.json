@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:basic_alloying_factory"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2,
+    "mixtura": 6
+  }
+}

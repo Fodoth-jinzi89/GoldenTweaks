@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:gold_spell_book"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "cognitio": 3,
+    "gelum": 3,
+    "metallum": 3,
+    "history": 4
+  }
+}

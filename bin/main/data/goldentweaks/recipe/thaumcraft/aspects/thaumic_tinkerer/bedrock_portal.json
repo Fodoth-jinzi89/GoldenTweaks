@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:bedrock_portal"
+  },
+  "aspects": {
+    "alienis": 3,
+    "fabrico": 3,
+    "pannus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:ice_arrow"
+  },
+  "aspects": {
+    "telum": 4,
+    "gelum": 3
+  }
+}

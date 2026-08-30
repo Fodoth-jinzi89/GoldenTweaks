@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_trident"
+  },
+  "aspects": {
+    "terminus": 6,
+    "telum": 4,
+    "profundum": 3,
+    "aqua": 2,
+    "aestus": 8
+  }
+}

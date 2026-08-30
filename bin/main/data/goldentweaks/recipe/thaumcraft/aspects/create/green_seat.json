@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:green_seat"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "desidia": 1
+  }
+}

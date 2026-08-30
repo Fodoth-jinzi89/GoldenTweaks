@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:mangrove_planks_7x"
+  },
+  "aspects": {
+    "arbor": 8,
+    "dense": 14
+  }
+}

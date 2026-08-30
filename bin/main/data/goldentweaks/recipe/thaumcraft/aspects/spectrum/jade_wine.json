@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:jade_wine"
+  },
+  "aspects": {
+    "aqua": 2,
+    "fames": 4,
+    "luxuria": 8
+  }
+}

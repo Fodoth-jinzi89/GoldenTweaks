@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:fried_tofu_skin_rolls"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

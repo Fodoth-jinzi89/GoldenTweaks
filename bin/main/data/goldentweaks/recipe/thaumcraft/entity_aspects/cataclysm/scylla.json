@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:scylla"
+  },
+  "aspects": {
+    "bestia": 4,
+    "aqua": 3,
+    "victus": 3
+  }
+}

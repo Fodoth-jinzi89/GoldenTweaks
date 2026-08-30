@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:icy_iris"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

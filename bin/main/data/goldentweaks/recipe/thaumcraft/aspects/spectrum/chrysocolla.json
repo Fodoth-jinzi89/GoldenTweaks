@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:chrysocolla"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "luxuria": 8
+  }
+}

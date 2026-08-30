@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:cardboard_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "machina": 2
+  }
+}

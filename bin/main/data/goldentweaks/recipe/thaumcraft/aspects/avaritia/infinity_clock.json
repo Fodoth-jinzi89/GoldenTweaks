@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_clock"
+  },
+  "aspects": {
+    "terminus": 6,
+    "tempus": 3,
+    "alfirin": 2
+  }
+}

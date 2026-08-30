@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_ore_excavation_plus:burned_netherite_scrap"
+  },
+  "aspects": {
+    "metallum": 3,
+    "mixtura": 1
+  }
+}

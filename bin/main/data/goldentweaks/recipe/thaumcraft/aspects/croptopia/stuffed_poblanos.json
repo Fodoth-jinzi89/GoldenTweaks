@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:stuffed_poblanos"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "luxuria": 4,
+    "ira": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:baked_crepes"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "luxuria": 1,
+    "expand": 4
+  }
+}

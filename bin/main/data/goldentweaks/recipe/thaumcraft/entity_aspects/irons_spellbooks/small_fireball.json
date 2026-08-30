@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:small_fireball"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "ignis": 3
+  }
+}

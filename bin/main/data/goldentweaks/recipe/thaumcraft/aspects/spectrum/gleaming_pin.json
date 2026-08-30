@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:gleaming_pin"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

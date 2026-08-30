@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:life_fruit_tier_7"
+  },
+  "aspects": {
+    "arbor": 3,
+    "victus": 3,
+    "fames": 4
+  }
+}

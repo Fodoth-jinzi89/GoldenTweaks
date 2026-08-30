@@ -1,0 +1,117 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "otherworldly_wood",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "biomesoplenty:fir_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9A9078",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.biomesoplenty.fir_planks"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.216,
+      "armor/boots": 1.832,
+      "armor/chestplate": 4.886,
+      "armor/helmet": 1.832,
+      "armor/leggings": 3.665,
+      "armor_durability": 5.911,
+      "armor_toughness": 3.941,
+      "attack_damage": 2.167,
+      "attack_speed": 0.159,
+      "charging_value": 0.786,
+      "draw_speed": 0.198,
+      "durability": 118.218,
+      "enchantment_value": 14.305,
+      "harvest_speed": 7.093,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_wooden_tool",
+        "level_hint": "0",
+        "name": "wood"
+      },
+      "magic_armor": 5.517,
+      "magic_damage": 3.152,
+      "projectile_accuracy": 1.355,
+      "projectile_speed": 1.433,
+      "ranged_damage": 3.941,
+      "rarity": 23.762,
+      "repair_efficiency": 0.508,
+      "repair_value": 0.139,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flammable"
+        }
+      ],
+      "knockback_resistance": 0.129
+    },
+    "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.163
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.113
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:grip": {
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.072
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.163
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:organic"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

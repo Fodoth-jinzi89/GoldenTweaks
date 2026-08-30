@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createlazytick:clock"
+  },
+  "aspects": {
+    "tempus": 3,
+    "imperium": 1
+  }
+}

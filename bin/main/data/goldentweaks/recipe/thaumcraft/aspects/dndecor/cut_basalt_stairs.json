@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:cut_basalt_stairs"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

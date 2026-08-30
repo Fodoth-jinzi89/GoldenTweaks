@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:sugar_cookie"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "childish": 4
+  }
+}

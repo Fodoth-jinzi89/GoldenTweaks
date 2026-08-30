@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "alshanex_familiars:frostling_pet"
+  },
+  "aspects": {
+    "gelum": 3,
+    "bestia": 4,
+    "victus": 3,
+    "praecantatio": 3
+  }
+}

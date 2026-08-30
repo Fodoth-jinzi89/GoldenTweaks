@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:cable_energy_acceptor"
+  },
+  "aspects": {
+    "potentia": 3,
+    "machina": 2
+  }
+}

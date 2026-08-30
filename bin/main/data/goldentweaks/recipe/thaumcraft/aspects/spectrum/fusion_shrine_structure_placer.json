@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:fusion_shrine_structure_placer"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vitium": 2
+  }
+}

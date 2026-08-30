@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:wild_rice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

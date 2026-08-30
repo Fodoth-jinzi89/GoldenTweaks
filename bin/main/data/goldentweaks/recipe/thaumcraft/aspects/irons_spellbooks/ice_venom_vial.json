@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:ice_venom_vial"
+  },
+  "aspects": {
+    "gelum": 3,
+    "venenum": 2,
+    "evil": 2
+  }
+}

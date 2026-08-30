@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_enchantment_industry:apotheotic_affix_template"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2,
+    "arche": 4
+  }
+}

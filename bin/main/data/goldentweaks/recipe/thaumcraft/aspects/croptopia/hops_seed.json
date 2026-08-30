@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:hops_seed"
+  },
+  "aspects": {
+    "herba": 3,
+    "messis": 2,
+    "luxuria": 2
+  }
+}

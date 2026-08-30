@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismgenerators:fusion_reactor_controller"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3,
+    "vitium": 3,
+    "imperium": 6
+  }
+}

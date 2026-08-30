@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "alshanex_familiars:dragon_circle"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3,
+    "dragon": 4
+  }
+}

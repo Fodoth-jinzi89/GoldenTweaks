@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:fiery_shooting_star"
+  },
+  "aspects": {
+    "metallum": 3,
+    "auram": 4
+  }
+}

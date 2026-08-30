@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:quicksilver"
+  },
+  "aspects": {
+    "metallum": 3,
+    "venenum": 1,
+    "permutatio": 2
+  }
+}

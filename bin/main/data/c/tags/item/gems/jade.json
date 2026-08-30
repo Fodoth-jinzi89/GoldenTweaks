@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "iss_magicfromtheeast:jade",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maid_storage_manager:craft_guide"
+  },
+  "aspects": {
+    "cognitio": 4
+  }
+}

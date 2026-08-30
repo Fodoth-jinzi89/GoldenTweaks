@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:block_raw_osmium"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

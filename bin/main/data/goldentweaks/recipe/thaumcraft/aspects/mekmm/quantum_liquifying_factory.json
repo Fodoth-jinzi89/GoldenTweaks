@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:quantum_liquifying_factory"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

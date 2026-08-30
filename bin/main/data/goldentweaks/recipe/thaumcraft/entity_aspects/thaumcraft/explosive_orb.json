@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:explosive_orb"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "ignis": 3
+  }
+}

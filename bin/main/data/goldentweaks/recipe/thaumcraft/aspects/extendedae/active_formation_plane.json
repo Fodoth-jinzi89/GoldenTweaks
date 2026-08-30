@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:active_formation_plane"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

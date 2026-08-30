@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:focus_taint_swarm"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vitium": 3,
+    "tenebrae": 2
+  }
+}

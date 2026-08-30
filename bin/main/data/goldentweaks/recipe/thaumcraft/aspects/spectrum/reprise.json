@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:reprise"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "luxuria": 8
+  }
+}

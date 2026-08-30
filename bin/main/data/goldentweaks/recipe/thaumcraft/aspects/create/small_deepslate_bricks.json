@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:small_deepslate_bricks"
+  },
+  "aspects": {
+    "profundum": 3,
+    "saxum": 3,
+    "spelunca": 4
+  }
+}

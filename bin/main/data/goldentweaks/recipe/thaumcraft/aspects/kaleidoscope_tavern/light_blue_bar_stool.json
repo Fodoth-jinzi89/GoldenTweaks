@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:light_blue_bar_stool"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "instrumentum": 3
+  }
+}

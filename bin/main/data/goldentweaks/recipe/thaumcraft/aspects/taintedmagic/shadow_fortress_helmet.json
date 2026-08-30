@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:shadow_fortress_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vitium": 3,
+    "tenebrae": 2,
+    "evil": 8
+  }
+}

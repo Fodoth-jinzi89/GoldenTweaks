@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createdieselgenerators:wire_cutters"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

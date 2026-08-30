@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:incomplete_control_chip"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

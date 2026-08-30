@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:kindling_head"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "dragon": 4
+  }
+}

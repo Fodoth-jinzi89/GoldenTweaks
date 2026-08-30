@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sampleintegration:pattern_integrations"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

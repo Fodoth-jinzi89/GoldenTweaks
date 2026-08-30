@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoguanniao:large_bird_cage"
+  },
+  "aspects": {
+    "bestia": 3
+  }
+}

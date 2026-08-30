@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:black_tungsten_alloy_axe"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "mixtura": 8,
+    "ira": 8
+  }
+}

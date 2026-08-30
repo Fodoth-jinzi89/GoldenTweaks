@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:fan_haunting_catalyst"
+  },
+  "aspects": {
+    "aer": 3,
+    "metallum": 3,
+    "motus": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid_spell:spring_bloom_return"
+  },
+  "aspects": {
+    "accessories": 3,
+    "sano": 6
+  }
+}

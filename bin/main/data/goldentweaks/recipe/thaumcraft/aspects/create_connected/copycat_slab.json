@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:copycat_slab"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

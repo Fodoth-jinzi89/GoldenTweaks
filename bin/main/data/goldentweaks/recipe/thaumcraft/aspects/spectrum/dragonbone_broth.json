@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:dragonbone_broth"
+  },
+  "aspects": {
+    "mortuus": 3,
+    "victus": 3,
+    "fames": 4,
+    "dragon": 8
+  }
+}

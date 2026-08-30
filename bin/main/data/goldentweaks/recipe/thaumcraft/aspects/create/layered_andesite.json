@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:layered_andesite"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

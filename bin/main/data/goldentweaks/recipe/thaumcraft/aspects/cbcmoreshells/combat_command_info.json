@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:combat_command_info"
+  },
+  "aspects": {
+    "machina": 3,
+    "imperium": 2
+  }
+}

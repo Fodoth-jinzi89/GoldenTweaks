@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:ancient_rock_4x"
+  },
+  "aspects": {
+    "substance": 7,
+    "dense": 8,
+    "history": 2
+  }
+}

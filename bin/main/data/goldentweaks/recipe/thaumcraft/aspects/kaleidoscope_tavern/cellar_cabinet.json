@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:cellar_cabinet"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "fabrico": 3,
+    "vas": 2,
+    "luxuria": 6
+  }
+}

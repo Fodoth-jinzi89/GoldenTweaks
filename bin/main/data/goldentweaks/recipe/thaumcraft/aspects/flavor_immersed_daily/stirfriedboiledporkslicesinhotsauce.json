@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:stirfriedboiledporkslicesinhotsauce"
+  },
+  "aspects": {
+    "gelum": 3,
+    "potentia": 3,
+    "victus": 3,
+    "fames": 8,
+    "ignis": 2,
+    "sano": 2
+  }
+}

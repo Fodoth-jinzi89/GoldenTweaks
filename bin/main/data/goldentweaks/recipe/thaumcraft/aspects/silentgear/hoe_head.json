@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:hoe_head"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "meto": 2
+  }
+}

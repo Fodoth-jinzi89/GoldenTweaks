@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "spectrum:dragon_talon"
+  },
+  "aspects": {
+    "bestia": 4,
+    "dragon": 4,
+    "victus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:laser_beam"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

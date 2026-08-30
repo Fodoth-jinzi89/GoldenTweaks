@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appmek:chemical_p2p_tunnel"
+  },
+  "aspects": {
+    "machina": 3,
+    "permutatio": 2
+  }
+}

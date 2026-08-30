@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_leader_spawn_egg"
+  },
+  "aspects": {
+    "arbor": 3,
+    "bestia": 3,
+    "iter": 3,
+    "metallum": 3,
+    "victus": 3,
+    "vinculum": 3
+  }
+}

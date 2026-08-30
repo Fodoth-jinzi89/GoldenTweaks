@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_sa:blazing_shovel"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

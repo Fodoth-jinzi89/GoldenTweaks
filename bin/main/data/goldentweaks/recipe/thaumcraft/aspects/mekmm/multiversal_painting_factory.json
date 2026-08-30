@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:multiversal_painting_factory"
+  },
+  "aspects": {
+    "metallum": 3,
+    "sensus": 2
+  }
+}

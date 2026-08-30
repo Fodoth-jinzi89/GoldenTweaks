@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:flimsy_ender_lead"
+  },
+  "aspects": {
+    "alienis": 3,
+    "iter": 3,
+    "metallum": 3
+  }
+}

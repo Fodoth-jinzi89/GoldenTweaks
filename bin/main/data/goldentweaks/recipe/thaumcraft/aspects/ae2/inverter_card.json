@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2:inverter_card"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

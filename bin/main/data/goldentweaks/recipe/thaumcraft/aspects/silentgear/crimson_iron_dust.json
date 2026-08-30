@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:crimson_iron_dust"
+  },
+  "aspects": {
+    "arbor": 3,
+    "metallum": 3,
+    "magnetis": 1,
+    "ira": 4
+  }
+}

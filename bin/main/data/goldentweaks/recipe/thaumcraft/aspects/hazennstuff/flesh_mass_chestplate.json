@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:flesh_mass_chestplate"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "vacuos": 4,
+    "corpus": 3,
+    "vas": 2,
+    "evil": 1
+  }
+}

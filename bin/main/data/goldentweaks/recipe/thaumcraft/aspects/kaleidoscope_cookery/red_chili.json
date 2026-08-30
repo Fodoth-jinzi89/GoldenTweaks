@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:red_chili"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4,
+    "ira": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:netherite_monstrosity_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "metallum": 3,
+    "vinculum": 3
+  }
+}

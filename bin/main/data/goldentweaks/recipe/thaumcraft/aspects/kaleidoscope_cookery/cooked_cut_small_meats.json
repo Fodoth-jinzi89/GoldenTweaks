@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:cooked_cut_small_meats"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 8
+  }
+}

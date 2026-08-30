@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:frosted_stone_brick_wall"
+  },
+  "aspects": {
+    "gelum": 3,
+    "saxum": 3
+  }
+}

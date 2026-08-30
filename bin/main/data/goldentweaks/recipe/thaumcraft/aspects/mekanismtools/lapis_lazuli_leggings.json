@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanismtools:lapis_lazuli_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "victus": 3,
+    "vitreus": 3,
+    "fames": 6
+  }
+}

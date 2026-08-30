@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:cobbled_deepslate_8x"
+  },
+  "aspects": {
+    "saxum": 8,
+    "dense": 16,
+    "spelunca": 4
+  }
+}

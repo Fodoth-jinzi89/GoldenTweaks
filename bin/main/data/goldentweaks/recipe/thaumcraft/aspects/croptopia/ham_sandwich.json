@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:ham_sandwich"
+  },
+  "aspects": {
+    "terra": 3,
+    "victus": 3,
+    "fames": 6,
+    "luxuria": 2
+  }
+}

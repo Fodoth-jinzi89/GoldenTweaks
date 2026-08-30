@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:earth_crystal_cluster"
+  },
+  "aspects": {
+    "terra": 3,
+    "vitreus": 3
+  }
+}

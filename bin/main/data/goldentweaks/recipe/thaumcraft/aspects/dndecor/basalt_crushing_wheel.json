@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:basalt_crushing_wheel"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "motus": 3,
+    "perditio": 3,
+    "saxum": 3,
+    "machina": 2,
+    "volatus": 2
+  }
+}

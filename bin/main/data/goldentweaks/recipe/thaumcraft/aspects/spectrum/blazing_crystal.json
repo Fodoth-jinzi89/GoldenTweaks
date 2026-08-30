@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:blazing_crystal"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "lava": 8
+  }
+}

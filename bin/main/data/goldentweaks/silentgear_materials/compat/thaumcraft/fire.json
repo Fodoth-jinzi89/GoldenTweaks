@@ -1,0 +1,82 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "thaumcraft:fire_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF959595",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.thaumcraft.fire"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.08
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.48
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 108.0
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 4.8
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.52
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.28
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 9.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgems:power"
+        }
+      ]
+    }
+  }
+}

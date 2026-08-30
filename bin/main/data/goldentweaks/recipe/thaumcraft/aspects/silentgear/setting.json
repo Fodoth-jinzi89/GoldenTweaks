@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:setting"
+  },
+  "aspects": {
+    "accessories": 3,
+    "lucrum": 3,
+    "metallum": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createnuclear:irradiated_chicken"
+  },
+  "aspects": {
+    "bestia": 4,
+    "vitium": 4,
+    "potentia": 3,
+    "victus": 3
+  }
+}

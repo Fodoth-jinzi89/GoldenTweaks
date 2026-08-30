@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:cultist_portal_spawn_egg"
+  },
+  "aspects": {
+    "alienis": 3,
+    "arbor": 3,
+    "bestia": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 6
+  }
+}

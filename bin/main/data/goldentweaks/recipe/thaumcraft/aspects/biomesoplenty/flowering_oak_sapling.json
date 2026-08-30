@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:flowering_oak_sapling"
+  },
+  "aspects": {
+    "accessories": 3,
+    "arbor": 3,
+    "herba": 3,
+    "vegetatio": 2
+  }
+}

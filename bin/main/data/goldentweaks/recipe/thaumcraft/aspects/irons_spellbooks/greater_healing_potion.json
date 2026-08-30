@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:greater_healing_potion"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "sano": 8
+  }
+}

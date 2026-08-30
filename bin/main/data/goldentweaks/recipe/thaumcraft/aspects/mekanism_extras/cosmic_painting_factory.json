@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:cosmic_painting_factory"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "metallum": 3,
+    "sensus": 2
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "soft_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:hexite_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF1B0076",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.forbiddenmagic.hexite_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20,
+      "armor/boots": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 8.889,
+      "armor_toughness": 3.6,
+      "attack_damage": 2.0,
+      "charging_value": 0.767,
+      "draw_speed": 0.317,
+      "durability": 160,
+      "enchantment_value": 16.4,
+      "harvest_speed": 17.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 7.6,
+      "magic_damage": 1.7,
+      "projectile_accuracy": 1.178,
+      "projectile_speed": 1.213,
+      "ranged_damage": 3.2,
+      "rarity": 27.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "draw_speed": {
+        "operation": "ADD",
+        "value": 0.47
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 4.5
+      },
+      "projectile_speed": {
+        "operation": "ADD",
+        "value": 0.42
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

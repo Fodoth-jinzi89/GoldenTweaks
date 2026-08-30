@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_weaponry:crimson_paint_bucket"
+  },
+  "aspects": {
+    "arbor": 3,
+    "sensus": 2,
+    "evil": 4
+  }
+}

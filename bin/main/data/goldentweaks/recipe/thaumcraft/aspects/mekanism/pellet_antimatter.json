@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:pellet_antimatter"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2,
+    "atrsubstance": 2,
+    "atrpotentia": 2
+  }
+}

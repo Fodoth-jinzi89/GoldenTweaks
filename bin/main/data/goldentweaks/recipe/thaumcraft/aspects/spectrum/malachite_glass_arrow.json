@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:malachite_glass_arrow"
+  },
+  "aspects": {
+    "telum": 4,
+    "vitreus": 3,
+    "auram": 6
+  }
+}

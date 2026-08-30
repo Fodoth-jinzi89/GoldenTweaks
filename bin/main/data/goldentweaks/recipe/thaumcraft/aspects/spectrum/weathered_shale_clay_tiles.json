@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weathered_shale_clay_tiles"
+  },
+  "aspects": {
+    "terra": 3,
+    "anteanus": 6
+  }
+}

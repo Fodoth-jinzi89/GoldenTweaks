@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:meaty_stew"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 8
+  }
+}

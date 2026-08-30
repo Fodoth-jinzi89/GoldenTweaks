@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:marrow_head"
+  },
+  "aspects": {
+    "telum": 4,
+    "fossil": 6
+  }
+}

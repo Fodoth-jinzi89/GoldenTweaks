@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_aeronautics_toolgun:portable_structure_container"
+  },
+  "aspects": {
+    "machina": 3,
+    "vas": 3
+  }
+}

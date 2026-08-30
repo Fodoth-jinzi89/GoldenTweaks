@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "windtunnel:hologram_projector"
+  },
+  "aspects": {
+    "sensus": 4,
+    "arbor": 3,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

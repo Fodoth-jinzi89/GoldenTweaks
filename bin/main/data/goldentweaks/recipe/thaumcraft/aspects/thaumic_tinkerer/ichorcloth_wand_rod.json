@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumic_tinkerer:ichorcloth_wand_rod"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arbor": 3,
+    "metallum": 3,
+    "machina": 2,
+    "pannus": 2,
+    "arche": 6
+  }
+}

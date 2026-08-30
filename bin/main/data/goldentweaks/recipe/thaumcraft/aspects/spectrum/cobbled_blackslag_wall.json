@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:cobbled_blackslag_wall"
+  },
+  "aspects": {
+    "saxum": 3,
+    "spelunca": 2
+  }
+}

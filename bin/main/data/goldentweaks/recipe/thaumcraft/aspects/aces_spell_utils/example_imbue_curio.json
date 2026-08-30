@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_imbue_curio"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "accessories": 3,
+    "ignis": 3,
+    "machina": 2
+  }
+}

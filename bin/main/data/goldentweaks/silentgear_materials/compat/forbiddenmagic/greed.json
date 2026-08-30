@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:greed_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFB08700",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.forbiddenmagic.greed"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.16
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.96
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 216.0
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 9.6
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 5.04
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 4.56
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 18.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgems:power"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:crystal_matrix_spring"
+  },
+  "aspects": {
+    "vitreus": 5,
+    "accessories": 3,
+    "terminus": 6
+  }
+}

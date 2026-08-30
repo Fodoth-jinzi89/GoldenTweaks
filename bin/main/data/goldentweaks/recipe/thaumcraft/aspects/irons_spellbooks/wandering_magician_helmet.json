@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:wandering_magician_helmet"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tutamen": 4,
+    "accessories": 3
+  }
+}

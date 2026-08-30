@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:ominous_fire_orb"
+  },
+  "aspects": {
+    "telum": 4,
+    "ignis": 3
+  }
+}

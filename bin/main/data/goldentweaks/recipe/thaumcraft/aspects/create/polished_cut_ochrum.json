@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:polished_cut_ochrum"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

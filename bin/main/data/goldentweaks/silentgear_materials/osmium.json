@@ -1,0 +1,72 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "mekanism:ingot_osmium"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/osmium"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF92A6B8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.mekanism.osmium"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 26.68,
+      "armor/boots": 4.002,
+      "armor/chestplate": 10.672,
+      "armor/helmet": 4.002,
+      "armor/leggings": 8.004,
+      "armor_durability": 41.502,
+      "armor_toughness": 4.802,
+      "attack_damage": 4.269,
+      "charging_value": 0.822,
+      "draw_speed": 0.206,
+      "durability": 747.04,
+      "enchantment_value": 18.538,
+      "harvest_speed": 10.138,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 10.138,
+      "magic_damage": 3.628,
+      "projectile_accuracy": 1.104,
+      "projectile_speed": 1.125,
+      "ranged_damage": 1.868,
+      "rarity": 32.01,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

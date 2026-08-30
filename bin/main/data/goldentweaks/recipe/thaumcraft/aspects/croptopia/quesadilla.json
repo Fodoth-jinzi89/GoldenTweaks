@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:quesadilla"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "sano": 1,
+    "luxuria": 4,
+    "expand": 4
+  }
+}

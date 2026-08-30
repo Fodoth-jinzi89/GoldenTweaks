@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createaddition:barbed_wire"
+  },
+  "aspects": {
+    "machina": 2,
+    "pannus": 2,
+    "dream": 2
+  }
+}

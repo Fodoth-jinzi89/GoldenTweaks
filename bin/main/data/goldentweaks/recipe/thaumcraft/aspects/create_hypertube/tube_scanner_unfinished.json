@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_hypertube:tube_scanner_unfinished"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

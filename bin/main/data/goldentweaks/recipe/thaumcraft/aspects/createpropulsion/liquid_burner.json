@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createpropulsion:liquid_burner"
+  },
+  "aspects": {
+    "potentia": 3,
+    "ignis": 2,
+    "ira": 1
+  }
+}

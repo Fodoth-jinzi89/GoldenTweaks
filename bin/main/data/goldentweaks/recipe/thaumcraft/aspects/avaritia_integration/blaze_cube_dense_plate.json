@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:blaze_cube_dense_plate"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

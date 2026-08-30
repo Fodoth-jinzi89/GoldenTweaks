@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:copper_block_4x"
+  },
+  "aspects": {
+    "metallum": 9,
+    "dense": 8
+  }
+}

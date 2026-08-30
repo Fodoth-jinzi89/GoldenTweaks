@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "linearbearing:gyroscopic_gearbox"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

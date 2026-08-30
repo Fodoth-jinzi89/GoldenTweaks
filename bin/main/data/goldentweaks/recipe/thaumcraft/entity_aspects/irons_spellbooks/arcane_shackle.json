@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:arcane_shackle"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

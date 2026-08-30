@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createmechanicalcompanion:potato_cannon_illager"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

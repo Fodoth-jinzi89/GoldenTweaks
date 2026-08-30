@@ -1,0 +1,82 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "shard",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "taintedmagic:tainted_unbalanced_shard"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF592C6A",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.taintedmagic.tainted_unbalanced"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.622
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.721
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 162.225
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 7.21
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 3.785
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 3.425
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 13.518
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgems:cloaking"
+        }
+      ]
+    }
+  }
+}

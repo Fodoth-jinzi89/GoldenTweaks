@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:cracked_dragonbone"
+  },
+  "aspects": {
+    "mortuus": 3,
+    "dragon": 8,
+    "priscus": 4,
+    "fossil": 8
+  }
+}

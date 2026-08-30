@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:large_azurite_bud"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

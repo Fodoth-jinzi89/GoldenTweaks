@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:tungsten_block"
+  },
+  "aspects": {
+    "space": 3,
+    "machina": 2,
+    "universes": 6
+  }
+}

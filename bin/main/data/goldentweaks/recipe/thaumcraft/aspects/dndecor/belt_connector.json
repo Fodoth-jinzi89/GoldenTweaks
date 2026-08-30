@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "dndecor:belt_connector"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

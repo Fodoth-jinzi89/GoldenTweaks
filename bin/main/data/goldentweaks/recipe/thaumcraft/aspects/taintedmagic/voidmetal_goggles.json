@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:voidmetal_goggles"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "evil": 8
+  }
+}

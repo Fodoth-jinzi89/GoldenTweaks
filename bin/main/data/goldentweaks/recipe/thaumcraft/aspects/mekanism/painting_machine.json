@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:painting_machine"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "sensus": 2
+  }
+}

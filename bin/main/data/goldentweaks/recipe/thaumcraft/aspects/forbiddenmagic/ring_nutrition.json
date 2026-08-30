@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:ring_nutrition"
+  },
+  "aspects": {
+    "accessories": 3
+  }
+}

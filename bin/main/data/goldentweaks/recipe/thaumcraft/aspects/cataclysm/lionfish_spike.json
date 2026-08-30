@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cataclysm:lionfish_spike"
+  },
+  "aspects": {
+    "reliquiae": 3
+  }
+}

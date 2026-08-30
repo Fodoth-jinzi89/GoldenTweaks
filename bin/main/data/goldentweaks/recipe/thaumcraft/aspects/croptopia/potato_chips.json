@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:potato_chips"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "expand": 4
+  }
+}

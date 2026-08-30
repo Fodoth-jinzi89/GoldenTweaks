@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:orange_resplendent_block"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "dragon": 4
+  }
+}

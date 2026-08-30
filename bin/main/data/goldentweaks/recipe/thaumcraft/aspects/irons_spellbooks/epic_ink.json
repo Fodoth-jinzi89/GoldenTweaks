@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:epic_ink"
+  },
+  "aspects": {
+    "sensus": 3,
+    "history": 4
+  }
+}

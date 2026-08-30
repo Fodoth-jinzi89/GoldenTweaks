@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:lead_block"
+  },
+  "aspects": {
+    "metallum": 12
+  }
+}

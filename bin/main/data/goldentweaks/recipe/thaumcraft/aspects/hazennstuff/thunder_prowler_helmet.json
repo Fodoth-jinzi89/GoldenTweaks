@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:thunder_prowler_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "fulmen": 2,
+    "evil": 2
+  }
+}

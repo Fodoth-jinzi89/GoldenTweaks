@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:abstract"
+  },
+  "aspects": {
+    "praecantatio": 3,
+    "auram": 1
+  }
+}

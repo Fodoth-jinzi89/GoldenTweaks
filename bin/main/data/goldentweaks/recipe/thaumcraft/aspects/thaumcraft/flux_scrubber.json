@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:flux_scrubber"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "potentia": 2,
+    "evil": 4
+  }
+}

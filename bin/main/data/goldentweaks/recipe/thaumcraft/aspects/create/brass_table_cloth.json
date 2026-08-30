@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:brass_table_cloth"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "pannus": 2,
+    "mixtura": 6
+  }
+}

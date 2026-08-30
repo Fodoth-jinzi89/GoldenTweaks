@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_ingot"
+  },
+  "aspects": {
+    "terminus": 6,
+    "universes": 2,
+    "alfirin": 2
+  }
+}

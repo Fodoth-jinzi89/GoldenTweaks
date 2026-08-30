@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:blaze_sword"
+  },
+  "aspects": {
+    "ardor": 4,
+    "telum": 4,
+    "ignis": 3,
+    "mortuus": 3
+  }
+}

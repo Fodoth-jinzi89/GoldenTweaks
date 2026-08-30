@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:spike_fungus_block"
+  },
+  "aspects": {
+    "fungus": 3,
+    "universes": 6
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "wand_handle",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "forbiddenmagic:blood_staff_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF623362",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.forbiddenmagic.blood_staff_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.309
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.236
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.527
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 3.37
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.449
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 1.966
+      },
+      "repair_value": {
+        "operation": "ADD",
+        "value": 0.197
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

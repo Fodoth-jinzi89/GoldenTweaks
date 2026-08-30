@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createpropulsion:platinum_sheet"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:ender_dropper"
+  },
+  "aspects": {
+    "alienis": 3,
+    "atrpraecantatic": 6
+  }
+}

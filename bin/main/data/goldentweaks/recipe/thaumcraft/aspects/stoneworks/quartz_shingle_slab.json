@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:quartz_shingle_slab"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

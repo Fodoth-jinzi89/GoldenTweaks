@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:bauble_ring_iron"
+  },
+  "aspects": {
+    "accessories": 3,
+    "gelum": 3,
+    "metallum": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:chestnut_noxwood_lantern"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "arbor": 3,
+    "fabrico": 3,
+    "vas": 3
+  }
+}

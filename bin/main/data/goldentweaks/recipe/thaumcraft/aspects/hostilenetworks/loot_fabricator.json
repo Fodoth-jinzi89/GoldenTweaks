@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hostilenetworks:loot_fabricator"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "imperium": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "irons_spellbooks:fire_field"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "ignis": 3
+  }
+}

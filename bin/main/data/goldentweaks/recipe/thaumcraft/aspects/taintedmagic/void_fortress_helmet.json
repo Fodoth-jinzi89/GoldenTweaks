@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "taintedmagic:void_fortress_helmet"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "evil": 8
+  }
+}

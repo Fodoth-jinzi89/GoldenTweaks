@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:jade_block_6x"
+  },
+  "aspects": {
+    "substance": 10,
+    "dense": 12
+  }
+}

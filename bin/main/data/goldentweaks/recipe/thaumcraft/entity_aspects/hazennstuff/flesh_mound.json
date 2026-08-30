@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "hazennstuff:flesh_mound"
+  },
+  "aspects": {
+    "corpus": 4,
+    "victus": 2
+  }
+}

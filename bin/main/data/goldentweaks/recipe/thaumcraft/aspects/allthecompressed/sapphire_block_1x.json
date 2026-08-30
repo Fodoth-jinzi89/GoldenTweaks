@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:sapphire_block_1x"
+  },
+  "aspects": {
+    "vitreus": 6,
+    "dense": 2
+  }
+}

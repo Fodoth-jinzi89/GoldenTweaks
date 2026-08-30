@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:overclocked_rolling_mill_factory"
+  },
+  "aspects": {
+    "tempus": 3
+  }
+}

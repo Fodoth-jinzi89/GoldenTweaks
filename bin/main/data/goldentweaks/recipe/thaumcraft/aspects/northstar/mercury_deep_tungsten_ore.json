@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:mercury_deep_tungsten_ore"
+  },
+  "aspects": {
+    "profundum": 3,
+    "space": 3,
+    "spelunca": 4
+  }
+}

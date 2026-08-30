@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:stringy_cobweb"
+  },
+  "aspects": {
+    "accessories": 3,
+    "vinculum": 3
+  }
+}

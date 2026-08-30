@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:mushroom_rice"
+  },
+  "aspects": {
+    "fungus": 3,
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

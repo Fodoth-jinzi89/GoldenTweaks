@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:amethyst_sugar_stick"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "childish": 4
+  }
+}

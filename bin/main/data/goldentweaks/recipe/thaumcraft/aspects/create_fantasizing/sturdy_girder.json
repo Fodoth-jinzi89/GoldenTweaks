@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:sturdy_girder"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

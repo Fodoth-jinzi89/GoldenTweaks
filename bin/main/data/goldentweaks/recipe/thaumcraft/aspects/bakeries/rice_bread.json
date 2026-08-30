@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:rice_bread"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 6,
+    "sano": 2,
+    "expand": 1
+  }
+}

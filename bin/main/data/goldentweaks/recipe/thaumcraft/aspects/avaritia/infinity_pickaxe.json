@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:infinity_pickaxe"
+  },
+  "aspects": {
+    "terminus": 6,
+    "instrumentum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:golem_deco_fez"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

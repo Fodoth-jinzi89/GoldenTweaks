@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF83B8A8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.avaritia.crystal_matrix_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 68,
+      "armor/boots": 10.2,
+      "armor/chestplate": 27.2,
+      "armor/helmet": 10.2,
+      "armor/leggings": 20.4,
+      "armor_durability": 105.778,
+      "armor_toughness": 12.24,
+      "attack_damage": 10.88,
+      "charging_value": 1.167,
+      "draw_speed": 0.447,
+      "durability": 1904,
+      "enchantment_value": 31.76,
+      "harvest_speed": 25.84,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "magic_armor": 25.84,
+      "magic_damage": 9.248,
+      "projectile_accuracy": 1.264,
+      "projectile_speed": 1.317,
+      "ranged_damage": 4.76,
+      "rarity": 63.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

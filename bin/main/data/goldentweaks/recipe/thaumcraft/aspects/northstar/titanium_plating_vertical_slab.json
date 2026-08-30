@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "northstar:titanium_plating_vertical_slab"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "universes": 6
+  }
+}

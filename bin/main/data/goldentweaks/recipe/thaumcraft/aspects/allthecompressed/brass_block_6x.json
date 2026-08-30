@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:brass_block_6x"
+  },
+  "aspects": {
+    "metallum": 10,
+    "dense": 12,
+    "mixtura": 4
+  }
+}

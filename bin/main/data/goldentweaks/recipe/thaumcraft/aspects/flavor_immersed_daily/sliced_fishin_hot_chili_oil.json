@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:sliced_fishin_hot_chili_oil"
+  },
+  "aspects": {
+    "gelum": 3,
+    "potentia": 3,
+    "victus": 3,
+    "fames": 6,
+    "ignis": 2,
+    "sano": 2
+  }
+}

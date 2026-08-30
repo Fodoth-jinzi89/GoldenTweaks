@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "cataclysm:coral_bardiche"
+  },
+  "aspects": {
+    "bestia": 4,
+    "aqua": 3,
+    "victus": 3
+  }
+}

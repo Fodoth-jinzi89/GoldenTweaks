@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:lapis_block_2x"
+  },
+  "aspects": {
+    "vitreus": 7,
+    "dense": 4
+  }
+}

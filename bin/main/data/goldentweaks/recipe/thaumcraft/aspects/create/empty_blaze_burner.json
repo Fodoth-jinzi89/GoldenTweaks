@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:empty_blaze_burner"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3,
+    "ira": 6
+  }
+}

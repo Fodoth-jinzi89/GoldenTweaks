@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:iron_golem_head"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

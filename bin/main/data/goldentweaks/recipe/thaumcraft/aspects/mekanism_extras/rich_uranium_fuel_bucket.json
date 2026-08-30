@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism_extras:rich_uranium_fuel_bucket"
+  },
+  "aspects": {
+    "potentia": 4,
+    "aqua": 3,
+    "metallum": 3,
+    "vitium": 3,
+    "ignis": 2,
+    "machina": 2
+  }
+}

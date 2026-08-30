@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:golden_knife"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3,
+    "mornogol": 4
+  }
+}

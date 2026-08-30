@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apotheosis:frontier_spawner_upgrade_rune"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

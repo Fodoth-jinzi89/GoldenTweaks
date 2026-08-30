@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:scrambled_eggs"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "luxuria": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:sticker"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

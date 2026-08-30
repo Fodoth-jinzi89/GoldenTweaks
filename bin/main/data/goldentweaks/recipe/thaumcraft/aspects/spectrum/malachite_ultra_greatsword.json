@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:malachite_ultra_greatsword"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

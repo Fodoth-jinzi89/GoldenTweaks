@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:ultramarine_orb_elixir"
+  },
+  "aspects": {
+    "humanus": 3
+  }
+}

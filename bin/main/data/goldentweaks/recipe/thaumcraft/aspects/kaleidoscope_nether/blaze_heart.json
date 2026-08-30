@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:blaze_heart"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

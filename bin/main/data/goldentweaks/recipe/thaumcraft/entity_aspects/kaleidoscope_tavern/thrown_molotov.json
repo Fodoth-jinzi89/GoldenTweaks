@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "kaleidoscope_tavern:thrown_molotov"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

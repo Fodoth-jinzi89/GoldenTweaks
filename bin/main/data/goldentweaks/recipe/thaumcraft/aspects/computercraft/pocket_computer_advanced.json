@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "computercraft:pocket_computer_advanced"
+  },
+  "aspects": {
+    "machina": 3,
+    "arche": 2,
+    "invidia": 1
+  }
+}

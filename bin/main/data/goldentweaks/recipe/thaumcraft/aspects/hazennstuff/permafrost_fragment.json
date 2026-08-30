@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:permafrost_fragment"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

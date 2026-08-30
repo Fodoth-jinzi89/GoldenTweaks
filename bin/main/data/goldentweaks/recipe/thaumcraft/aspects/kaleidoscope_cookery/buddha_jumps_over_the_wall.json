@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:buddha_jumps_over_the_wall"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4
+  }
+}

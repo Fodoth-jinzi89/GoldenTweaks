@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:item_bowl_calcite"
+  },
+  "aspects": {
+    "telum": 4,
+    "saxum": 3,
+    "auram": 4
+  }
+}

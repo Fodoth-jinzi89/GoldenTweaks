@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_fantasizing:phantom_shaft"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

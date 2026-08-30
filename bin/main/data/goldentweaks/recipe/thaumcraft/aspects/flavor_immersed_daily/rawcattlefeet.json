@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:rawcattlefeet"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 4
+  }
+}

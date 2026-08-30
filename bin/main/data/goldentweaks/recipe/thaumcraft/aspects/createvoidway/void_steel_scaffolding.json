@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createvoidway:void_steel_scaffolding"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "atrpotentia": 2
+  }
+}

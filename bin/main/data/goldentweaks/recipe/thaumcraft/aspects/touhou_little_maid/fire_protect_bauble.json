@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_little_maid:fire_protect_bauble"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

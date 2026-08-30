@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:concentrated_upgrade_orb_ice"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 2
+  }
+}

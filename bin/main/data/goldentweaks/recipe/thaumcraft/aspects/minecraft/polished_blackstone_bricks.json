@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "minecraft:polished_blackstone_bricks"
+  },
+  "aspects": {
+    "atrpotentia": 4
+  }
+}

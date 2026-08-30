@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:bomb_blue"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "destroy": 2
+  }
+}

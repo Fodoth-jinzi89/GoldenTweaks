@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:large_crank_wheel"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_compact_transmission:four_speed_transmission"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

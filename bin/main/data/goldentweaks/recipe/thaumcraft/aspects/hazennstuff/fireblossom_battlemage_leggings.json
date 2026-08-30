@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:fireblossom_battlemage_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "ignis": 3,
+    "victus": 3,
+    "fames": 4
+  }
+}

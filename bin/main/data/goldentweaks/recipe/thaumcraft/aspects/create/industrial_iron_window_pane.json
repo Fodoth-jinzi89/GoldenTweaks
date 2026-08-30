@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:industrial_iron_window_pane"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

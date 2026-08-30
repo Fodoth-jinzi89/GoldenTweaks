@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae:pattern_modifier"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "stone",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "create:limestone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFBEBAAE",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.create.limestone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 6.76,
+      "armor/boots": 1.014,
+      "armor/chestplate": 2.704,
+      "armor/helmet": 1.014,
+      "armor/leggings": 2.028,
+      "armor_durability": 5.72,
+      "armor_toughness": 0.832,
+      "attack_damage": 1.456,
+      "attack_speed": -0.23,
+      "charging_value": 0.312,
+      "draw_speed": -0.16,
+      "durability": 104.0,
+      "enchantment_value": 4.248,
+      "harvest_speed": 2.288,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 1.04,
+      "magic_damage": 0.728,
+      "projectile_accuracy": 0.66,
+      "projectile_speed": 0.61,
+      "ranged_damage": 1.872,
+      "rarity": 6.328,
+      "knockback_resistance": 0.1,
+      "repair_efficiency": 0.38,
+      "repair_value": 0.13,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heavy"
+        }
+      ]
+    }
+  }
+}

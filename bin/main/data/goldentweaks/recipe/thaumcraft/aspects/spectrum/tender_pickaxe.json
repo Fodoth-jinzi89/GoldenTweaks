@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:tender_pickaxe"
+  },
+  "aspects": {
+    "alienis": 3,
+    "instrumentum": 3
+  }
+}

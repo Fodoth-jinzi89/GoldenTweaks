@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "createbigcannons:machine_gun_bullet"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

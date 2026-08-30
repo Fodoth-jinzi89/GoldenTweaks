@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:rock_crystal"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "tunes_n_tomes:bard_harp"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

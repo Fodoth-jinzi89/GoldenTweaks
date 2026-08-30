@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:dough_drop_soup"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 6
+  }
+}

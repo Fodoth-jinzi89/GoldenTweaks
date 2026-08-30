@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:polished_blackslag"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "spelunca": 2
+  }
+}

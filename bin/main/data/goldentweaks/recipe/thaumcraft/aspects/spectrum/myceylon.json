@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:myceylon"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:eggwrappedingravel"
+  },
+  "aspects": {
+    "terra": 3,
+    "victus": 3,
+    "fames": 1,
+    "gravitas": 2
+  }
+}

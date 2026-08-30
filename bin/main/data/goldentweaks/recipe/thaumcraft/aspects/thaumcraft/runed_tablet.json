@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:runed_tablet"
+  },
+  "aspects": {
+    "vinculum": 4,
+    "cognitio": 4,
+    "machina": 4,
+    "arche": 6
+  }
+}

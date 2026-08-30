@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:tea"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 1,
+    "luxuria": 4,
+    "dream": 1
+  }
+}

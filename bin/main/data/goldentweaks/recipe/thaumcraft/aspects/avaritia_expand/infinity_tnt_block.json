@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_expand:infinity_tnt_block"
+  },
+  "aspects": {
+    "terminus": 6,
+    "explosion": 4,
+    "destroy": 2
+  }
+}

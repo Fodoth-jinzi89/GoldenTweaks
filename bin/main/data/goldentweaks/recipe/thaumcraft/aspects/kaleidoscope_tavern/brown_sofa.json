@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:brown_sofa"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "pannus": 2
+  }
+}

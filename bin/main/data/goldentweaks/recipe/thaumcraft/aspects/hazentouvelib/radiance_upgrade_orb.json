@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazentouvelib:radiance_upgrade_orb"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:extended_ap_shot"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

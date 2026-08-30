@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:wild_beetroots"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

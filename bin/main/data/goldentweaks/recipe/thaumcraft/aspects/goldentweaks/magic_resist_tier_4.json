@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:magic_resist_tier_4"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "metallum": 3,
+    "superbia": 6,
+    "mornogol": 4
+  }
+}

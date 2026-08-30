@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alltheores:cinnabar_block"
+  },
+  "aspects": {
+    "substance": 8,
+    "venenum": 2,
+    "vitreus": 2,
+    "invidia": 1
+  }
+}

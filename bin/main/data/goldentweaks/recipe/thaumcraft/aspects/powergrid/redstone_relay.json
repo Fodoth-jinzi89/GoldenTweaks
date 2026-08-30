@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:redstone_relay"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3,
+    "saxum": 3,
+    "cognitio": 2
+  }
+}

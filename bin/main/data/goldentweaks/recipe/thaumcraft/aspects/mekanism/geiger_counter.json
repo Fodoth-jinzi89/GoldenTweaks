@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:geiger_counter"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

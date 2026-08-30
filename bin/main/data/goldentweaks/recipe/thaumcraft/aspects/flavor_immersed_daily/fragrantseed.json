@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:fragrantseed"
+  },
+  "aspects": {
+    "fungus": 3,
+    "herba": 3,
+    "messis": 3,
+    "machina": 2
+  }
+}

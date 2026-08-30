@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:orange_maple_leaves"
+  },
+  "aspects": {
+    "herba": 3,
+    "vegetatio": 2
+  }
+}

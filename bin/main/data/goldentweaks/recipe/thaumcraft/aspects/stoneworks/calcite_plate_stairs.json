@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:calcite_plate_stairs"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

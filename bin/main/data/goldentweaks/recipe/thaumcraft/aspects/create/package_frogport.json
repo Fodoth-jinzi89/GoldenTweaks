@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:package_frogport"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_compact_transmission:speed_compact_changer"
+  },
+  "aspects": {
+    "machina": 4,
+    "motus": 3
+  }
+}

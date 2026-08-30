@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:brass_dual_cannon_chamber"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "mixtura": 4
+  }
+}

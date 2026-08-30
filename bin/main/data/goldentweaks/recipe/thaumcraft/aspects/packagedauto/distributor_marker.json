@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "packagedauto:distributor_marker"
+  },
+  "aspects": {
+    "machina": 3,
+    "permutatio": 3,
+    "desidia": 4
+  }
+}

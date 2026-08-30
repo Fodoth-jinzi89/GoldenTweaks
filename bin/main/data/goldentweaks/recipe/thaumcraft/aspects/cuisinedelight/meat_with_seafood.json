@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cuisinedelight:meat_with_seafood"
+  },
+  "aspects": {
+    "corpus": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

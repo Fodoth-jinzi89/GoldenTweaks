@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "compactmachines:personal_shrinking_device"
+  },
+  "aspects": {
+    "gelum": 3,
+    "imperium": 2,
+    "expand": 4
+  }
+}

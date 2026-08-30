@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:hazmat_mask"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2,
+    "evil": 4
+  }
+}

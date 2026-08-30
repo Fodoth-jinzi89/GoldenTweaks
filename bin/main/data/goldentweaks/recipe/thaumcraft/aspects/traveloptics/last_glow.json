@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:last_glow"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arche": 8,
+    "ira": 4
+  }
+}

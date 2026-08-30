@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aerocali:navigation_element"
+  },
+  "aspects": {
+    "iter": 3
+  }
+}

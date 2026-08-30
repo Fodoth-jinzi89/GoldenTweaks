@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:order_infused_stone"
+  },
+  "aspects": {
+    "terra": 1,
+    "ordo": 3,
+    "vitreus": 2
+  }
+}

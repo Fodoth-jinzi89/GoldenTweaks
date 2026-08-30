@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekanism:basic_tier_installer"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

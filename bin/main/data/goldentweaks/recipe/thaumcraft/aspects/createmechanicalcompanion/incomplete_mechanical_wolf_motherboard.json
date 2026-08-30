@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmechanicalcompanion:incomplete_mechanical_wolf_motherboard"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

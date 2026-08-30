@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:firebrand"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

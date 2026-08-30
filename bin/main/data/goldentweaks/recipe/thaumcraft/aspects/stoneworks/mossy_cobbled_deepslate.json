@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:mossy_cobbled_deepslate"
+  },
+  "aspects": {
+    "herba": 3,
+    "profundum": 3,
+    "saxum": 3,
+    "spelunca": 8
+  }
+}

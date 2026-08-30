@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:powder_charge"
+  },
+  "aspects": {
+    "machina": 3,
+    "motus": 2
+  }
+}

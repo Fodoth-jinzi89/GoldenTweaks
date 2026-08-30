@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:white_petals"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

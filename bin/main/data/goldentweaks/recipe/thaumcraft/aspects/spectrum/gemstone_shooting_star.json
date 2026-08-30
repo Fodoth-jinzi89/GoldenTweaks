@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:gemstone_shooting_star"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "metallum": 3,
+    "saxum": 3,
+    "vitreus": 3,
+    "auram": 4
+  }
+}

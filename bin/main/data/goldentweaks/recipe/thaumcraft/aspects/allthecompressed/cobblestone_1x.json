@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "allthecompressed:cobblestone_1x"
+  },
+  "aspects": {
+    "saxum": 4,
+    "dense": 2
+  }
+}

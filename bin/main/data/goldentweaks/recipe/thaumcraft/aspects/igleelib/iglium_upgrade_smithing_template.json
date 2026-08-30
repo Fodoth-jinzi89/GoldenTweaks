@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "igleelib:iglium_upgrade_smithing_template"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 2,
+    "mixtura": 1
+  }
+}

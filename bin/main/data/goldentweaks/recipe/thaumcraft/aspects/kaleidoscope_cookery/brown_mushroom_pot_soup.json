@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:brown_mushroom_pot_soup"
+  },
+  "aspects": {
+    "fungus": 3,
+    "victus": 3,
+    "fames": 6
+  }
+}

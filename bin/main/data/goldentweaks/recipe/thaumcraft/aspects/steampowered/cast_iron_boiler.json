@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "steampowered:cast_iron_boiler"
+  },
+  "aspects": {
+    "metallum": 3,
+    "potentia": 3,
+    "ignis": 2,
+    "imperium": 4
+  }
+}

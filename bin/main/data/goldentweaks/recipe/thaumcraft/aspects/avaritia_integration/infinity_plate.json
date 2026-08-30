@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:infinity_plate"
+  },
+  "aspects": {
+    "terminus": 6,
+    "alfirin": 2
+  }
+}

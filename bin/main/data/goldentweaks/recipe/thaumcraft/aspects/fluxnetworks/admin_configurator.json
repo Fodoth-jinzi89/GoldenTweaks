@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluxnetworks:admin_configurator"
+  },
+  "aspects": {
+    "machina": 3,
+    "atrpotentia": 4
+  }
+}

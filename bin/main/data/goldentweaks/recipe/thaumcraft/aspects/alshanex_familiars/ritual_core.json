@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:ritual_core"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

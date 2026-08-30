@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraft:frost_shard"
+  },
+  "aspects": {
+    "bestia": 4,
+    "gelum": 3,
+    "victus": 3
+  }
+}

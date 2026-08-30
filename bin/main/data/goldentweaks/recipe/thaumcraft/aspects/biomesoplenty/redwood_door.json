@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "biomesoplenty:redwood_door"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

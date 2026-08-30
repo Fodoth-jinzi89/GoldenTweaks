@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:pure_copper"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mekmm:advanced_electrolysis_core"
+  },
+  "aspects": {
+    "machina": 2,
+    "fulmen": 2
+  }
+}

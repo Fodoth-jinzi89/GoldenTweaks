@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:blaze_axe"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3,
+    "instrumentum": 3,
+    "machina": 2,
+    "vegetatio": 2,
+    "ira": 8
+  }
+}

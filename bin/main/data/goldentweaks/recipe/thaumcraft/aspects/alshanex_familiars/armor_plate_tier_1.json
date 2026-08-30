@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "alshanex_familiars:armor_plate_tier_1"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "metallum": 3,
+    "praecantatio": 2
+  }
+}

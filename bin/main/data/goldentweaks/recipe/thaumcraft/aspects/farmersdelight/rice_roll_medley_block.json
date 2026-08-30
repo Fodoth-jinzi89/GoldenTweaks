@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:rice_roll_medley_block"
+  },
+  "aspects": {
+    "gelum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

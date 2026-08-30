@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createaddition:electrum_spool"
+  },
+  "aspects": {
+    "metallum": 3,
+    "mixtura": 6,
+    "mornogol": 1
+  }
+}

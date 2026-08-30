@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "stoneworks:purpur_shingle_slab"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

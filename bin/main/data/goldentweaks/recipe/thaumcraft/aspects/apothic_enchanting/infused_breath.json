@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_enchanting:infused_breath"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "dragon": 6
+  }
+}
