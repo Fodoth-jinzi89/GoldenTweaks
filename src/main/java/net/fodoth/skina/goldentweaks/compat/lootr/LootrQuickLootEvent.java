@@ -44,10 +44,16 @@ public final class LootrQuickLootEvent {
     /** 会话至少要持续的最小 tick 数，避免把短暂的点击误判为“已停止交互”。 */
     private static final long MIN_OPEN_TICKS = 10L;
 
+    /** 开箱动画完成所需的最小 tick 数，首次拾取要等盖子完全打开后再触发。 */
+    private static final long OPEN_ANIMATION_TICKS = 10L;
+
+    /** 取空容器后，等待物品飞出再关箱的延迟 tick 数。 */
+    private static final long CLOSE_DELAY_TICKS = 5L;
+
     /** 进行中的快速拾取会话，键为 (玩家 UUID, 容器坐标)。 */
     private static final Map<Key, Session> SESSIONS = new HashMap<>();
 
-    /** 右键 Lootr 容器：开始新会话并立即拾取一批，或刷新已有会话。 */
+    /** 右键 Lootr 容器：开始新会话，或刷新已有会话。 */
     @SubscribeEvent
     public static void onRightClick(PlayerInteractEvent.RightClickBlock event) {
         // 功能开关、主手、服务端检查
@@ -76,30 +82,30 @@ public final class LootrQuickLootEvent {
         if (session == null || session.container != container) {
             // 玩家换了一个容器：先收掉旧会话
             if (session != null) {
-                close(session, session.wasOpened);
+                close(session, session.emptied || session.wasOpened);
                 SESSIONS.remove(key);
             }
             session = new Session(container, player, now, isLooted(container));
             SESSIONS.put(key, session);
             open(container, lootr, player);
-            // 第一次右键也立即拾取一批；空容器则什么都不拿，等待停止交互后关闭
-            session.lastInput = now;
-            session.lastPickup = now;
-            handlePickup(key, session, container, lootr, player, event.getPos());
+            // 首次拾取由 onServerTick 在开箱动画播完后触发，这里不立即蹦物品
             return;
         }
 
-        // 持续右键：刷新输入时间，并按配置间隔拾取
+        // 持续右键：刷新输入时间
         session.lastInput = now;
-        if (session.lastPickup != Long.MIN_VALUE
-                && now - session.lastPickup < GoldenTweaksCommonConfig.LOOTR_HOLD_PICKUP_INTERVAL.get()) {
+        if (session.lastPickup == Long.MIN_VALUE) {
+            // 开箱动画尚未完成，等待 tick 触发首次拾取
+            return;
+        }
+        if (now - session.lastPickup < GoldenTweaksCommonConfig.LOOTR_HOLD_PICKUP_INTERVAL.get()) {
             return;
         }
         session.lastPickup = now;
-        handlePickup(key, session, container, lootr, player, event.getPos());
+        handlePickup(session, container, lootr, player, event.getPos());
     }
 
-    /** 服务端 tick：超时关闭会话；持续按住时按配置间隔自动拾取。 */
+    /** 服务端 tick：等待动画后首次拾取、按间隔自动拾取、超时/取空后关箱。 */
     @SubscribeEvent
     @SuppressWarnings("unchecked")
     public static void onServerTick(ServerTickEvent.Post event) {
@@ -110,20 +116,35 @@ public final class LootrQuickLootEvent {
             long sinceInput = now - session.lastInput;
             long sinceOpened = now - session.openedAt;
 
-            // 超过输入超时时间：关闭会话
-            if (sinceInput > Math.max(MIN_OPEN_TICKS, interval + 1L)
-                    && sinceOpened >= MIN_OPEN_TICKS) {
-                close(session, session.wasOpened);
+            // 已取空：延迟几 tick 让物品先飞出，再关箱
+            if (session.closeAt >= 0 && now >= session.closeAt) {
+                close(session, true);
                 SESSIONS.remove(entry.getKey());
                 continue;
             }
 
-            // 会话进行中且到达拾取间隔：自动拾取一批
-            if (sinceOpened >= MIN_OPEN_TICKS
-                    && sinceInput <= interval && now - session.lastPickup >= interval) {
+            // 首次拾取：等开箱动画播完再触发（无论玩家是否仍在输入）
+            if (session.lastPickup == Long.MIN_VALUE) {
+                if (now >= session.firstLootAt) {
+                    session.lastPickup = now;
+                    handlePickup(session, session.container,
+                            (ILootrBlockEntity) session.container, session.player, session.container.getBlockPos());
+                }
+                continue;
+            }
+
+            // 后续拾取：玩家仍在按住右键且到达拾取间隔
+            if (sinceInput <= interval && now - session.lastPickup >= interval) {
                 session.lastPickup = now;
-                handlePickup(entry.getKey(), session, session.container,
+                handlePickup(session, session.container,
                         (ILootrBlockEntity) session.container, session.player, session.container.getBlockPos());
+            }
+
+            // 输入超时：关闭会话（取空的会话由 closeAt 负责关闭）
+            // 只要不再持续右键就关闭，避免大间隔配置下点按后箱子长时间不关
+            if (sinceInput > MIN_OPEN_TICKS && sinceOpened >= MIN_OPEN_TICKS) {
+                close(session, session.emptied || session.wasOpened);
+                SESSIONS.remove(entry.getKey());
             }
         }
     }
@@ -133,16 +154,14 @@ public final class LootrQuickLootEvent {
         return container instanceof LootrOpenedStateAccess access && access.gt$isOpened();
     }
 
-    /** 拾取一批并处理“取完即关”。 */
-    private static void handlePickup(Key key, Session session, BlockEntity container,
+    /** 拾取一批；若本次取空容器，则标记已开启并延迟关箱。 */
+    private static void handlePickup(Session session, BlockEntity container,
                                      ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos) {
         LootResult result = loot(container, lootr, player, pos);
-        // 只有本次实际取到了物品并且取空了容器，才标记为已开启并立即关闭；
-        // 空容器（taken == 0）保持打开，等待玩家停止交互后再关闭。
         if (result.taken() > 0 && result.exhausted()) {
             markOpened(container, lootr, player, pos);
-            close(session, true);
-            SESSIONS.remove(key);
+            session.emptied = true;
+            session.closeAt = session.player.level().getGameTime() + CLOSE_DELAY_TICKS;
         }
     }
 
@@ -288,14 +307,18 @@ public final class LootrQuickLootEvent {
         final ServerPlayer player;
         final long openedAt;
         final boolean wasOpened;
+        final long firstLootAt;
         long lastInput;
         long lastPickup = Long.MIN_VALUE;
+        long closeAt = -1;
+        boolean emptied;
 
         Session(BlockEntity container, ServerPlayer player, long now, boolean wasOpened) {
             this.container = container;
             this.player = player;
             this.openedAt = now;
             this.wasOpened = wasOpened;
+            this.firstLootAt = now + OPEN_ANIMATION_TICKS;
             this.lastInput = now;
         }
     }
