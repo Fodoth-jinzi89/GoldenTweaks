@@ -84,6 +84,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("compactmachines");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.compactmachines")) {
+            return isModLoaded("compactmachines");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2peat")) {
             return isModLoaded("ae2peat");
         }
@@ -114,7 +118,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.extendedae_plus.JeiRuntimeCompatMixin")) {
-            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers");
+            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers")
+                    && checkIfPresent("me.shedaniel.rei.api.common.display.Display");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus")) {

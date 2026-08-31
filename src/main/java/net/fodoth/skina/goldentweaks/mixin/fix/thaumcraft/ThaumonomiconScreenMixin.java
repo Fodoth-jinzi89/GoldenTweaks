@@ -97,8 +97,6 @@ public abstract class ThaumonomiconScreenMixin {
     @Unique private static int gt$sourceCarouselPages = 1;
     @Unique private static Aspect gt$sourceAspect;
     @Unique private static long gt$sourceManualUntil;
-    @Unique private static int gt$sourceBoxX;
-    @Unique private static int gt$sourceBoxY;
     @Unique private static int gt$sourceBoxWidth;
     @Unique private static int gt$sourceBoxHeight;
     @Unique private static boolean gt$sourceBoxOpen;
@@ -112,7 +110,7 @@ public abstract class ThaumonomiconScreenMixin {
     @Shadow private int detailMouseY;
     @Shadow private int page;
     @Shadow protected abstract List<?> currentDetailPages();
-    @Shadow protected abstract void drawLargeAspectTag(GuiGraphics graphics, Aspect aspect, int amount, int x, int y);
+    @Shadow protected abstract void drawLargeAspectTag(GuiGraphics guiGraphics, Aspect aspect, int amount, int x, int y);
 
     @Redirect(
             method = "drawResearchNodes",
@@ -131,19 +129,19 @@ public abstract class ThaumonomiconScreenMixin {
             method = "drawResearchNodes",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;fill(IIIII)V", ordinal = 2)
     )
-    private void gt$hideIncompleteResearchBlackOverlay(GuiGraphics graphics, int x1, int y1, int x2, int y2, int color) {
+    private void gt$hideIncompleteResearchBlackOverlay(GuiGraphics graphics, int minX, int minY, int maxX, int maxY, int color) {
         // drawResearchNodes 里第 3 个 fill（19x19，颜色为纯黑 alpha）是 port.239 新增的
         // 未完成节点黑色半透明遮罩；闪烁到最低点时 alpha 最大，看起来每周期“变黑一次”。
         // 老版本 port.152 没有这个遮罩，配置开启时直接不画。
         if (GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()) {
             return;
         }
-        graphics.fill(x1, y1, x2, y2, color);
+        graphics.fill(minX, minY, maxX, maxY, color);
     }
 
     @Inject(method = "drawAspectKnowledgePage", at = @At("HEAD"), cancellable = true)
-    private void gt$drawAspectKnowledgePage(GuiGraphics graphics, ResearchAspectPageLayout.Page page,
-                                             int x, int y, int height, CallbackInfo ci) {
+    private void gt$drawAspectKnowledgePage(GuiGraphics guiGraphics, ResearchAspectPageLayout.Page page,
+                                            int x, int y, int width, CallbackInfo ci) {
         if (page == null) return;
         List<ResearchAspectPageLayout.Entry> entries = new ArrayList<>(page.entries());
         entries.sort(Comparator.comparingInt((ResearchAspectPageLayout.Entry e) -> gt$tier(e.aspect())).thenComparing(e -> e.aspect().tag()));
@@ -154,52 +152,52 @@ public abstract class ThaumonomiconScreenMixin {
             ResearchAspectPageLayout.Entry entry = entries.get(i);
             int col = i % 2, row = i / 2;
             int ex = x + col * 84, ey = y - 20 + row * KNOWLEDGE_ASPECT_ROW_STEP;
-            graphics.pose().pushPose();
-            graphics.pose().translate(ex + 16, ey + 16, 0);
-            graphics.pose().scale(KNOWLEDGE_ASPECT_SCALE, KNOWLEDGE_ASPECT_SCALE, 1.0F);
-            drawLargeAspectTag(graphics, entry.aspect(), entry.amount(), -16, -16);
-            graphics.pose().popPose();
-            graphics.pose().pushPose();
-            graphics.pose().translate(0.0F, 0.0F, 200.0F);
-            graphics.drawString(font, Integer.toString(gt$tier(entry.aspect())), ex + 2, ey + 2, 0xFFFFFF, true);
-            graphics.pose().popPose();
+            guiGraphics.pose().pushPose();
+            guiGraphics.pose().translate(ex + 16, ey + 16, 0);
+            guiGraphics.pose().scale(KNOWLEDGE_ASPECT_SCALE, KNOWLEDGE_ASPECT_SCALE, 1.0F);
+            drawLargeAspectTag(guiGraphics, entry.aspect(), entry.amount(), -16, -16);
+            guiGraphics.pose().popPose();
+            guiGraphics.pose().pushPose();
+            guiGraphics.pose().translate(0.0F, 0.0F, 200.0F);
+            guiGraphics.drawString(font, Integer.toString(gt$tier(entry.aspect())), ex + 2, ey + 2, 0xFFFFFF, true);
+            guiGraphics.pose().popPose();
             String name = entry.aspect().displayName().getString();
-            graphics.pose().pushPose();
-            graphics.pose().translate(ex + 16, ey + 36, 0);
-            graphics.pose().scale(KNOWLEDGE_MAIN_NAME_SCALE, KNOWLEDGE_MAIN_NAME_SCALE, 1.0F);
-            graphics.drawString(font, name, -font.width(name) / 2, 0, 0x507060, false);
-            graphics.pose().popPose();
+            guiGraphics.pose().pushPose();
+            guiGraphics.pose().translate(ex + 16, ey + 36, 0);
+            guiGraphics.pose().scale(KNOWLEDGE_MAIN_NAME_SCALE, KNOWLEDGE_MAIN_NAME_SCALE, 1.0F);
+            guiGraphics.drawString(font, name, -font.width(name) / 2, 0, 0x507060, false);
+            guiGraphics.pose().popPose();
             if (entry.primal()) {
                 String primal = Component.translatable("tc.aspect.primal").getString();
-                graphics.drawString(font, primal, ex + 56 - font.width(primal) / 2, ey + KNOWLEDGE_COMPONENT_SIZE - 5, 0x507060, false);
+                guiGraphics.drawString(font, primal, ex + 56 - font.width(primal) / 2, ey + KNOWLEDGE_COMPONENT_SIZE - 5, 0x507060, false);
             } else if (entry.components().size() >= 2) {
                 int componentY = ey + 16 - KNOWLEDGE_COMPONENT_SIZE / 2;
-                AspectGuiRenderer.draw(graphics, entry.components().get(0), ex + 36, componentY, KNOWLEDGE_COMPONENT_SIZE, 1.0F);
-                AspectGuiRenderer.draw(graphics, entry.components().get(1), ex + 64, componentY, KNOWLEDGE_COMPONENT_SIZE, 1.0F);
-                graphics.drawString(font, "+", ex + 56, ey + 14, 0xAAAAAA, false);
+                AspectGuiRenderer.draw(guiGraphics, entry.components().get(0), ex + 36, componentY, KNOWLEDGE_COMPONENT_SIZE, 1.0F);
+                AspectGuiRenderer.draw(guiGraphics, entry.components().get(1), ex + 64, componentY, KNOWLEDGE_COMPONENT_SIZE, 1.0F);
+                guiGraphics.drawString(font, "+", ex + 56, ey + 14, 0xAAAAAA, false);
                 if (this.detailMouseX >= ex + 36 && this.detailMouseX < ex + 36 + KNOWLEDGE_COMPONENT_SIZE
                         && this.detailMouseY >= componentY && this.detailMouseY < componentY + KNOWLEDGE_COMPONENT_SIZE) {
-                    this.gt$componentClickAspect = entry.components().get(0);
+                    this.gt$componentClickAspect = entry.components().getFirst();
                 } else if (this.detailMouseX >= ex + 64 && this.detailMouseX < ex + 64 + KNOWLEDGE_COMPONENT_SIZE
                         && this.detailMouseY >= componentY && this.detailMouseY < componentY + KNOWLEDGE_COMPONENT_SIZE) {
                     this.gt$componentClickAspect = entry.components().get(1);
                 }
-                graphics.pose().pushPose();
-                graphics.pose().translate(ex + 44, ey + KNOWLEDGE_COMPONENT_SIZE + 13, 0);
-                graphics.pose().scale(KNOWLEDGE_NAME_SCALE, KNOWLEDGE_NAME_SCALE, 1.0F);
-                graphics.drawString(font, entry.components().get(0).displayName().getString(), -font.width(entry.components().get(0).displayName().getString()) / 2, 0, 0x507060, false);
-                graphics.pose().popPose();
-                graphics.pose().pushPose();
-                graphics.pose().translate(ex + 72, ey + KNOWLEDGE_COMPONENT_SIZE + 13, 0);
-                graphics.pose().scale(KNOWLEDGE_NAME_SCALE, KNOWLEDGE_NAME_SCALE, 1.0F);
-                graphics.drawString(font, entry.components().get(1).displayName().getString(), -font.width(entry.components().get(1).displayName().getString()) / 2, 0, 0x507060, false);
-                graphics.pose().popPose();
+                guiGraphics.pose().pushPose();
+                guiGraphics.pose().translate(ex + 44, ey + KNOWLEDGE_COMPONENT_SIZE + 13, 0);
+                guiGraphics.pose().scale(KNOWLEDGE_NAME_SCALE, KNOWLEDGE_NAME_SCALE, 1.0F);
+                guiGraphics.drawString(font, entry.components().getFirst().displayName().getString(), -font.width(entry.components().getFirst().displayName().getString()) / 2, 0, 0x507060, false);
+                guiGraphics.pose().popPose();
+                guiGraphics.pose().pushPose();
+                guiGraphics.pose().translate(ex + 72, ey + KNOWLEDGE_COMPONENT_SIZE + 13, 0);
+                guiGraphics.pose().scale(KNOWLEDGE_NAME_SCALE, KNOWLEDGE_NAME_SCALE, 1.0F);
+                guiGraphics.drawString(font, entry.components().get(1).displayName().getString(), -font.width(entry.components().get(1).displayName().getString()) / 2, 0, 0x507060, false);
+                guiGraphics.pose().popPose();
             }
             if (this.detailMouseX >= ex + 2 && this.detailMouseX < ex + 30 && this.detailMouseY >= ey + 2 && this.detailMouseY < ey + 30) {
                 hovered = entry.aspect(); hoveredY = ey;
             }
         }
-        if (hovered != null) gt$drawScannedAspectSources(graphics, hovered, x, hoveredY, height);
+        if (hovered != null) gt$drawScannedAspectSources(guiGraphics, hovered, x, hoveredY, width);
         ci.cancel();
     }
 
@@ -222,8 +220,8 @@ public abstract class ThaumonomiconScreenMixin {
                 var method = pages.get(i).getClass().getDeclaredMethod("aspectPage");
                 method.setAccessible(true);
                 Object aspectPage = method.invoke(pages.get(i));
-                if (aspectPage instanceof ResearchAspectPageLayout.Page aspectKnowledge
-                        && aspectKnowledge.entries().stream().anyMatch(entry -> entry.aspect() == this.gt$componentClickAspect)) {
+                if (aspectPage instanceof ResearchAspectPageLayout.Page(List<ResearchAspectPageLayout.Entry> entries)
+                        && entries.stream().anyMatch(entry -> entry.aspect() == this.gt$componentClickAspect)) {
                     this.page = i - i % 2;
                     cir.setReturnValue(true);
                     return;
@@ -241,7 +239,7 @@ public abstract class ThaumonomiconScreenMixin {
         return max + 1;
     }
 
-    @Unique private void gt$drawScannedAspectSources(GuiGraphics graphics, Aspect aspect, int x, int y, int height) {
+    @Unique private void gt$drawScannedAspectSources(GuiGraphics graphics, Aspect aspect, int x, int y, int width) {
         Minecraft minecraft = Minecraft.getInstance();
         if (minecraft.player == null) return;
         gt$sourceBoxOpen = true;
@@ -270,24 +268,22 @@ public abstract class ThaumonomiconScreenMixin {
         int pageIndex = Math.min(gt$sourceCarouselPage, pages - 1), start = pageIndex * perPage, end = Math.min(start + perPage, all.size());
         int cols = 5, visible = end - start, rows = (visible + cols - 1) / cols;
         int usedCols = Math.min(cols, visible);
-        int px = x, py = Math.max(0, y - rows * 18 - 20);
+        int py = Math.max(0, y - rows * 18 - 20);
         int boxWidth = (int) Math.ceil((cols * 18 + 6) * 1.1F);
-        gt$sourceBoxX = px - 2;
-        gt$sourceBoxY = py - 7;
         gt$sourceBoxWidth = boxWidth + 2;
         gt$sourceBoxHeight = rows * 18 + 25;
-        graphics.fill(px - 2, py - 7, px + boxWidth, py + rows * 18 + 18, 0xD8000000);
-        graphics.renderOutline(px - 2, py - 7, boxWidth + 2, rows * 18 + 25, 0xFF5A4A3A);
+        graphics.fill(x - 2, py - 7, x + boxWidth, py + rows * 18 + 18, 0xD8000000);
+        graphics.renderOutline(x - 2, py - 7, boxWidth + 2, rows * 18 + 25, 0xFF5A4A3A);
         for (int i = start; i < end; i++) {
             ItemStack stack = all.get(i);
-            int itemX = px + ((boxWidth - usedCols * 18) / 2) + (i - start) % cols * 18;
+            int itemX = x + ((boxWidth - usedCols * 18) / 2) + (i - start) % cols * 18;
             int itemY = py + (i - start) / cols * 18;
             graphics.renderItem(stack, itemX, itemY);
             graphics.renderItemDecorations(Minecraft.getInstance().font, stack, itemX, itemY, Integer.toString(amounts.get(BuiltInRegistries.ITEM.getKey(stack.getItem()).toString())));
         }
         graphics.drawCenteredString(Minecraft.getInstance().font,
                 Component.translatable("gui.goldentweaks.thaumonomicon.aspect_sources.page", pageIndex + 1, pages, all.size()),
-                px + boxWidth / 2, py + rows * 18 + 3, 0xFFFFFF);
+                x + boxWidth / 2, py + rows * 18 + 3, 0xFFFFFF);
         graphics.pose().popPose();
     }
 
@@ -337,14 +333,14 @@ public abstract class ThaumonomiconScreenMixin {
             at = @At(
                     value = "INVOKE",
                     target = "Lnet/minecraft/client/gui/GuiGraphics;blit(Lnet/minecraft/resources/ResourceLocation;IIFFIIII)V",
-                    ordinal = 0
+                    ordinal = 1
             )
     )
-    private void gt$moveInfusionHaloLeft(GuiGraphics graphics, ResourceLocation texture, int x, int y,
-                                          float u, float v, int width, int height, int textureWidth, int textureHeight) {
+    private void gt$moveInfusionMatrixRight(GuiGraphics graphics, ResourceLocation p_283272_, int p_283605_, int p_281879_,
+                                            float p_282809_, float p_282942_, int p_281922_, int p_282385_, int p_282596_, int p_281699_) {
         graphics.pose().pushPose();
-        graphics.pose().translate(-2.0F, 0.0F, 0.0F);
-        graphics.blit(texture, x, y, u, v, width, height, textureWidth, textureHeight);
+        graphics.pose().translate(2.0F, 0.0F, 0.0F);
+        graphics.blit(p_283272_, p_283605_, p_281879_, p_282809_, p_282942_, p_281922_, p_282385_, p_282596_, p_281699_);
         graphics.pose().popPose();
     }
 
@@ -355,7 +351,7 @@ public abstract class ThaumonomiconScreenMixin {
                     target = "Lthaumcraft/client/gui/ThaumonomiconScreen;drawAspectCost(Lnet/minecraft/client/gui/GuiGraphics;Lthaumcraft/api/aspects/AspectList;III)V"
             )
     )
-    private void gt$drawInfusionAspectsLikeEmi(ThaumonomiconScreen screen, GuiGraphics graphics,
+    private void gt$drawInfusionAspectsLikeEmi(ThaumonomiconScreen screen, GuiGraphics guiGraphics,
                                                 AspectList aspects, int x, int y, int width) {
         List<Aspect> list = aspects.sortedByTag();
         if (list.isEmpty()) {
@@ -369,7 +365,7 @@ public abstract class ThaumonomiconScreenMixin {
             int start = (startRow + i) * INFUSION_ASPECTS_PER_ROW;
             int end = Math.min(start + INFUSION_ASPECTS_PER_ROW, list.size());
             int rowY = y - (shownRows - 1 - i) * ASPECT_ROW_GAP;
-            gt$drawAspectRow(graphics, aspects, list.subList(start, end), x, rowY, width, step);
+            gt$drawAspectRow(guiGraphics, aspects, list.subList(start, end), x, rowY, width, step);
         }
     }
 
@@ -380,8 +376,8 @@ public abstract class ThaumonomiconScreenMixin {
                     target = "Lthaumcraft/client/gui/ThaumonomiconScreen;drawCrucibleAspectCost(Lnet/minecraft/client/gui/GuiGraphics;Lthaumcraft/api/aspects/AspectList;II)V"
             )
     )
-    private void gt$drawCrucibleAspectsLikeEmi(ThaumonomiconScreen screen, GuiGraphics graphics,
-                                                AspectList aspects, int x, int y) {
+    private void gt$drawCrucibleAspectsLikeEmi(ThaumonomiconScreen screen, GuiGraphics guiGraphics,
+                                               AspectList aspects, int pageX, int pageY) {
         List<Aspect> list = aspects.sortedByTag();
         if (list.isEmpty()) {
             return;
@@ -394,8 +390,8 @@ public abstract class ThaumonomiconScreenMixin {
         int rowStart = 0;
         for (int row = 0; row < rows; row++) {
             int rowEnd = Math.min(rowStart + (row < 2 ? 3 : 2), visible.size());
-            int rowY = y + 128 + (row * 2 - (rows - 1)) * ASPECT_ROW_GAP / 2 - ASPECT_SIZE / 2;
-            gt$drawAspectRow(graphics, aspects, visible.subList(rowStart, rowEnd), x + 16, rowY, 80, 24);
+            int rowY = pageY + 128 + (row * 2 - (rows - 1)) * ASPECT_ROW_GAP / 2 - ASPECT_SIZE / 2;
+            gt$drawAspectRow(guiGraphics, aspects, visible.subList(rowStart, rowEnd), pageX + 16, rowY, 80, 24);
             rowStart = rowEnd;
         }
     }
@@ -430,11 +426,11 @@ public abstract class ThaumonomiconScreenMixin {
             method = "drawLargeAspectTag",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;drawString(Lnet/minecraft/client/gui/Font;Ljava/lang/String;IIIZ)I")
     )
-    private int gt$drawAspectAmountAboveIcon(GuiGraphics graphics, Font font, String amount,
-                                              int x, int y, int color, boolean shadow) {
+    private int gt$drawAspectAmountAboveIcon(GuiGraphics graphics, Font p_283343_, String p_281896_,
+                                             int p_283569_, int p_283418_, int p_281560_, boolean p_282130_) {
         graphics.pose().pushPose();
         graphics.pose().translate(0.0F, 0.0F, 200.0F);
-        int width = graphics.drawString(font, amount, x, y, color, true);
+        int width = graphics.drawString(p_283343_, p_281896_, p_283569_, p_283418_, p_281560_, true);
         graphics.pose().popPose();
         return width;
     }
@@ -497,7 +493,7 @@ public abstract class ThaumonomiconScreenMixin {
 
     @Unique
     private static int gt$aspectStep(int count, int width) {
-        return count <= 1 ? 0 : Math.max(13, Math.min(24, (width - ASPECT_SIZE) / (count - 1)));
+        return count <= 1 ? 0 : Math.clamp((width - ASPECT_SIZE) / (count - 1), 13, 24);
     }
 
     @Inject(method = "handleMapCategoryClick", at = @At("HEAD"), cancellable = true)

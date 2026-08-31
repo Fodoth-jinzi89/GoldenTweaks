@@ -8,5 +8,6 @@
   "machine.compactmachines.soaryn": "压缩空间机械（极巨）",
   "machine.compactmachines.farming": "压缩空间机械 (农耕)",
   "machine.goldentweaks.false_sky": "虚假之天",
-  "machine.goldentweaks.starry_sky_night": "星穹之夜"
+  "machine.goldentweaks.starry_sky_night": "星穹之夜",
+  "messages.compactmachines.teleport_oob": "一股异界之力阻止了你的传送。"
 }

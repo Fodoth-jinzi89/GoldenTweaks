@@ -8,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
@@ -29,11 +30,12 @@ import java.util.List;
 public class ThaumcraftOreFeatureMixin {
 
     @Inject(
-            method = "generateInfusedStone(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/ChunkPos;)Z",
+            method = "generateInfusedStone(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/ChunkPos;)Z",
             at = @At("HEAD"),
             cancellable = true
     )
-    private static void gt$generateInfusedStoneVeins(WorldGenLevel level, RandomSource random, ChunkPos chunkPos,
+    private static void gt$generateInfusedStoneVeins(WorldGenLevel level, ChunkGenerator generator,
+                                                     RandomSource random, ChunkPos chunkPos,
                                                      CallbackInfoReturnable<Boolean> cir) {
         if (!TCWorldgenConfig.generateInfusedStone()
                 || !level.getLevel().dimension().equals(Level.OVERWORLD)
@@ -68,10 +70,20 @@ public class ThaumcraftOreFeatureMixin {
                     OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES), infusedStone),
                     OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), infusedStone)
             ), 6);
-            generated |= Feature.ORE.place(configuration, level, level.getLevel().getChunkSource().getGenerator(),
-                    random, new BlockPos(x, minY + random.nextInt(span), z));
+            generated |= Feature.ORE.place(configuration, level, generator, random,
+                    new BlockPos(x, minY + random.nextInt(span), z));
         }
         cir.setReturnValue(generated);
+    }
+
+    @Inject(
+            method = "generateCrystals(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/ChunkPos;)Z",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private static void gt$disableCrystalGeneration(WorldGenLevel level, RandomSource random, ChunkPos chunkPos,
+                                                    CallbackInfoReturnable<Boolean> cir) {
+        cir.setReturnValue(false);
     }
 
     @Unique

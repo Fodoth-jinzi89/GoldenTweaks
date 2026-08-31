@@ -35,7 +35,7 @@ Z_AXIS_BLOCKS = {
 }
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-SOURCE = SCRIPT_DIR.parent / "floor.nbt"
+SOURCE = SCRIPT_DIR.parent.parent / "floor.nbt"
 
 
 def block_state(name: str) -> Compound:

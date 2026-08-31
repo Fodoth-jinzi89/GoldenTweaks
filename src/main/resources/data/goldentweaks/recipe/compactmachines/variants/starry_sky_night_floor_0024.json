@@ -31,91 +31,13 @@
     "components": {
       "compactmachines:machine_color": "#17172E",
       "compactmachines:room_template": "goldentweaks:starry_sky_night_floor_0024",
-      "minecraft:custom_name": {
-        "translate": "machine.goldentweaks.variant",
-        "italic": false
-      },
+      "minecraft:custom_name": "{\"translate\":\"machine.goldentweaks.variant\",\"italic\":false}",
       "minecraft:lore": [
-        {
-          "text": "",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "tooltip.goldentweaks.compactmachines.sky",
-              "color": "gold",
-              "italic": false
-            },
-            {
-              "translate": "item.thaumcraftcelestial.stellar_essence",
-              "color": "aqua",
-              "italic": false
-            }
-          ]
-        },
-        {
-          "text": "",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "tooltip.goldentweaks.compactmachines.corner",
-              "color": "gold",
-              "italic": false
-            },
-            {
-              "translate": "block.create.layered_deepslate",
-              "color": "aqua",
-              "italic": false
-            }
-          ]
-        },
-        {
-          "text": "",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "tooltip.goldentweaks.compactmachines.edge",
-              "color": "gold",
-              "italic": false
-            },
-            {
-              "translate": "block.minecraft.black_concrete",
-              "color": "aqua",
-              "italic": false
-            }
-          ]
-        },
-        {
-          "text": "",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "tooltip.goldentweaks.compactmachines.floor",
-              "color": "gold",
-              "italic": false
-            },
-            {
-              "translate": "block.minecraft.white_concrete",
-              "color": "aqua",
-              "italic": false
-            }
-          ]
-        },
-        {
-          "text": "",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "tooltip.goldentweaks.compactmachines.light",
-              "color": "gold",
-              "italic": false
-            },
-            {
-              "translate": "block.minecraft.glowstone",
-              "color": "aqua",
-              "italic": false
-            }
-          ]
-        }
+        "{\"text\":\"\",\"italic\":false,\"extra\":[{\"translate\":\"tooltip.goldentweaks.compactmachines.sky\",\"color\":\"gold\",\"italic\":false},{\"translate\":\"machine.goldentweaks.starry_sky_night\",\"color\":\"aqua\",\"italic\":false}]}",
+        "{\"text\":\"\",\"italic\":false,\"extra\":[{\"translate\":\"tooltip.goldentweaks.compactmachines.corner\",\"color\":\"gold\",\"italic\":false},{\"translate\":\"block.create.layered_deepslate\",\"color\":\"aqua\",\"italic\":false}]}",
+        "{\"text\":\"\",\"italic\":false,\"extra\":[{\"translate\":\"tooltip.goldentweaks.compactmachines.edge\",\"color\":\"gold\",\"italic\":false},{\"translate\":\"block.minecraft.black_concrete\",\"color\":\"aqua\",\"italic\":false}]}",
+        "{\"text\":\"\",\"italic\":false,\"extra\":[{\"translate\":\"tooltip.goldentweaks.compactmachines.floor\",\"color\":\"gold\",\"italic\":false},{\"translate\":\"block.minecraft.white_concrete\",\"color\":\"aqua\",\"italic\":false}]}",
+        "{\"text\":\"\",\"italic\":false,\"extra\":[{\"translate\":\"tooltip.goldentweaks.compactmachines.light\",\"color\":\"gold\",\"italic\":false},{\"translate\":\"block.minecraft.glowstone\",\"color\":\"aqua\",\"italic\":false}]}"
       ]
     }
   }

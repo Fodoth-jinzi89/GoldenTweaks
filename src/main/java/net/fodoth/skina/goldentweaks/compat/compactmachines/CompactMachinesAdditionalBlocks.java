@@ -23,6 +23,7 @@ public final class CompactMachinesAdditionalBlocks {
         return BlockBehaviour.Properties.of()
                 .mapColor(MapColor.NONE)
                 .strength(-1.0F, 3600000.0F)
+                .lightLevel(state -> 15)
                 .noLootTable()
                 .pushReaction(PushReaction.BLOCK);
     }

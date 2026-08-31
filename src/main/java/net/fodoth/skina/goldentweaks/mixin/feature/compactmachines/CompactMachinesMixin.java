@@ -28,7 +28,9 @@ public class CompactMachinesMixin {
             LevelAccessor level, AABB boundaries, MinecraftServer server, RoomTemplate template, UUID owner
     ) {
         if (template.internalDimensions().width() == 64 && template.internalDimensions().depth() == 64) {
-            BlockState wall = template.defaultMachineColor().rgb() == 0x87CEEB
+            BlockState wall = template.defaultMachineColor().red() == 0x87
+                    && template.defaultMachineColor().green() == 0xCE
+                    && template.defaultMachineColor().blue() == 0xEB
                     ? CompactMachinesAdditionalBlocks.SKY_BLOCK.get().defaultBlockState()
                     : CompactMachinesAdditionalBlocks.STARRY_BLOCK.get().defaultBlockState();
             CompactRoomGenerator.generateRoom(level, boundaries, wall);

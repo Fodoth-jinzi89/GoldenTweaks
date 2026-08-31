@@ -6,6 +6,7 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.snack_cabinet.avaritia.EndlessCakeMaidCompat;
 import net.fodoth.skina.goldentweaks.compat.snack_cabinet.flavor_immersed_daily.FidMaidCompat;
 import net.fodoth.skina.goldentweaks.compat.snack_cabinet.forbiddenmagic.ArcaneCakeMaidCompat;
+import net.neoforged.fml.ModList;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -30,9 +31,15 @@ public class MaidEdibleBlockManagerMixin {
             field.setAccessible(true);
             @SuppressWarnings("unchecked")
             List<IMaidEdibleBlock> list = (List<IMaidEdibleBlock>) field.get(null);
-            list.add(new EndlessCakeMaidCompat());
-            list.add(new FidMaidCompat());
-            list.add(new ArcaneCakeMaidCompat());
+            if (ModList.get().isLoaded("avaritia")) {
+                list.add(new EndlessCakeMaidCompat());
+            }
+            if (ModList.get().isLoaded("flavor_immersed_daily")) {
+                list.add(new FidMaidCompat());
+            }
+            if (ModList.get().isLoaded("forbiddenmagic")) {
+                list.add(new ArcaneCakeMaidCompat());
+            }
         } catch (Exception e) {
             GoldenTweaks.LOGGER.error("Failed to add maid edible blocks.", e);
         }
