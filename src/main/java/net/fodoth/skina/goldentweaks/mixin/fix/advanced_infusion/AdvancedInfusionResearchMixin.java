@@ -48,7 +48,7 @@ public abstract class AdvancedInfusionResearchMixin {
             } else if (recipe instanceof InfusionRecipe infusionRecipe) {
                 research = infusionRecipe.getResearch();
             }
-            return gt$disabledResearch.contains(research);
+            return research != null && gt$disabledResearch.contains(research);
         });
     }
 }
