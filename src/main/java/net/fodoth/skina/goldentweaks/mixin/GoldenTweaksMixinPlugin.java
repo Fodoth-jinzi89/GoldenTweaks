@@ -80,6 +80,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2cs") && isModLoaded("neoecoae") && isModLoaded("extendedae") && isModLoaded("ae2helpers") && isModLoaded("packagedauto");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.compactmachines")) {
+            return isModLoaded("compactmachines");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2peat")) {
             return isModLoaded("ae2peat");
         }

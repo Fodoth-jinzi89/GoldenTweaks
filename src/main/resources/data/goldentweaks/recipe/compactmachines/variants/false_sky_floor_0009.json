@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "compactmachines:new_machine",
+      "components": {
+        "compactmachines:room_template": "compactmachines:soaryn"
+      }
+    },
+    {
+      "item": "thaumcraftcelestial:solar_essence"
+    },
+    {
+      "item": "create:layered_deepslate"
+    },
+    {
+      "item": "stoneworks:deepslate_pavers"
+    },
+    {
+      "item": "minecraft:white_concrete"
+    },
+    {
+      "item": "supplementaries:blackstone_lamp"
+    }
+  ],
+  "result": {
+    "id": "compactmachines:new_machine",
+    "count": 1,
+    "components": {
+      "compactmachines:machine_color": "#87CEEB",
+      "compactmachines:room_template": "goldentweaks:false_sky_floor_0009",
+      "minecraft:custom_name": {
+        "translate": "machine.goldentweaks.variant",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.sky",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "item.thaumcraftcelestial.solar_essence",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.corner",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.create.layered_deepslate",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.edge",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.stoneworks.deepslate_pavers",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.floor",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.minecraft.white_concrete",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.light",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.supplementaries.blackstone_lamp",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

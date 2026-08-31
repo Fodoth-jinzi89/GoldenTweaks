@@ -5,6 +5,8 @@ import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.cataclysm.GTCataclysmCompat;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
+import net.fodoth.skina.goldentweaks.compat.compactmachines.CompactMachinesCompat;
+import net.fodoth.skina.goldentweaks.compat.compactmachines.CompactMachinesMobSpawnHandler;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.VillageGarbageStationAddition;
 import net.fodoth.skina.goldentweaks.compat.questshop.QSCompat;
 import net.fodoth.skina.goldentweaks.compat.fix.renderblender.RenderBlenderCosmicQueueFlushHandler;
@@ -84,6 +86,12 @@ public class GoldenTweaks {
 
             KaleidoCompat.register(modEventBus);
             NeoForge.EVENT_BUS.register(VillageGarbageStationAddition.class);
+        }
+
+        if (ModList.get().isLoaded("compactmachines")) {
+            LOGGER.info("Detected compactmachines, registering compatibility content");
+            CompactMachinesCompat.register(modEventBus);
+            NeoForge.EVENT_BUS.register(CompactMachinesMobSpawnHandler.class);
         }
 
         if (ModList.get().isLoaded("cataclysm")) {

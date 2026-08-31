@@ -119,14 +119,26 @@ public abstract class ThaumonomiconScreenMixin {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;renderOutline(IIIII)V")
     )
     private void gt$hideIncompleteResearchHighlight(GuiGraphics graphics, int x, int y, int width, int height, int color) {
-        // 老版本 port.152 的 drawResearchNodes 没有 renderOutline；
-        // port.239 里该方法唯一的 renderOutline（26x26）就是未完成/可解锁研究的黄色外框，
-        // 且颜色已从 0xE8A48E 改为 0xE8B84E，不能再用颜色判断。
-        if (GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()
-                && width == 26 && height == 26) {
+        // drawResearchNodes 里唯一的 renderOutline 就是未完成/可解锁研究的黄色外框，
+        // 配置开启时直接不画它，恢复 port.152 的行为。
+        if (GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()) {
             return;
         }
         graphics.renderOutline(x, y, width, height, color);
+    }
+
+    @Redirect(
+            method = "drawResearchNodes",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;fill(IIIII)V", ordinal = 2)
+    )
+    private void gt$hideIncompleteResearchBlackOverlay(GuiGraphics graphics, int x1, int y1, int x2, int y2, int color) {
+        // drawResearchNodes 里第 3 个 fill（19x19，颜色为纯黑 alpha）是 port.239 新增的
+        // 未完成节点黑色半透明遮罩；闪烁到最低点时 alpha 最大，看起来每周期“变黑一次”。
+        // 老版本 port.152 没有这个遮罩，配置开启时直接不画。
+        if (GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()) {
+            return;
+        }
+        graphics.fill(x1, y1, x2, y2, color);
     }
 
     @Inject(method = "drawAspectKnowledgePage", at = @At("HEAD"), cancellable = true)

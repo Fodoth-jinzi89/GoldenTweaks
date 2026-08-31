@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "compactmachines:new_machine",
+      "components": {
+        "compactmachines:room_template": "compactmachines:soaryn"
+      }
+    },
+    {
+      "item": "thaumcraftcelestial:solar_essence"
+    },
+    {
+      "item": "minecraft:black_concrete"
+    },
+    {
+      "item": "minecraft:black_concrete"
+    },
+    {
+      "item": "create:polished_cut_deepslate"
+    },
+    {
+      "item": "supplementaries:stone_lamp"
+    }
+  ],
+  "result": {
+    "id": "compactmachines:new_machine",
+    "count": 1,
+    "components": {
+      "compactmachines:machine_color": "#87CEEB",
+      "compactmachines:room_template": "goldentweaks:false_sky_floor_0038",
+      "minecraft:custom_name": {
+        "translate": "machine.goldentweaks.variant",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.sky",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "item.thaumcraftcelestial.solar_essence",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.corner",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.minecraft.black_concrete",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.edge",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.minecraft.black_concrete",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.floor",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.create.polished_cut_deepslate",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "tooltip.goldentweaks.compactmachines.light",
+              "color": "gold",
+              "italic": false
+            },
+            {
+              "translate": "block.supplementaries.stone_lamp",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

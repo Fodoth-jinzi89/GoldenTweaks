@@ -1,0 +1,14 @@
+{
+  "color": "#87CEEB",
+  "dimensions": {
+    "depth": 64,
+    "height": 64,
+    "width": 64
+  },
+  "structures": [
+    {
+      "template": "goldentweaks:compactmachines/floors/floor_0036",
+      "placement": "centered_floor"
+    }
+  ]
+}
