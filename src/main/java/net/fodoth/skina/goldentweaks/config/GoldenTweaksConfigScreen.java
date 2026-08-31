@@ -203,6 +203,10 @@ public class GoldenTweaksConfigScreen {
                     CATACLYSM_BALANCE, true);
 
             ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.disable_advanced_infusion_items",
+                    DISABLE_ADVANCED_INFUSION_ITEMS, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.remove_thaumonomicon_research_highlight",
                     REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT, true);
 

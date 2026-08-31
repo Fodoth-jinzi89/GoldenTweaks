@@ -48,6 +48,8 @@ public abstract class AspectSourceRecipeCategoryMixin {
         Component count = Component.literal(Integer.toString(sourceCount.intValue()));
         Component name = Component.literal(aspectName.getString());
         graphics.drawString(font, count, 34 - font.width(count), y, color, shadow);
-        return graphics.drawString(font, name, x, y, color, shadow);
+        // 原 x=64 会被 JEI 输出槽（64,5,18,18）的背景盖住，要素名改到槽右侧靠左对齐绘制。
+        int nameX = 82 + 9;
+        return graphics.drawString(font, name, nameX, y, color, shadow);
     }
 }

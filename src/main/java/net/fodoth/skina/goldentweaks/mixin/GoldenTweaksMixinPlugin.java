@@ -92,6 +92,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2peat");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.advanced_infusion")) {
+            return isModLoaded("advanced_infusion");
+        }
+
         if (mixinClassName.endsWith("fix.ae2helpers.WcwtEmiRecipeHandlerMixin")) {
             return isModLoaded("ae2helpers") && isModLoaded("wcwt") && isModLoaded("emi");
         }

@@ -56,6 +56,8 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.BooleanValue CATACLYSM_BALANCE;
 
+    public static final ModConfigSpec.BooleanValue DISABLE_ADVANCED_INFUSION_ITEMS;
+
     public static final ModConfigSpec.IntValue HAGGLER_MAX_DISCOUNT;
 
     public static final ModConfigSpec.DoubleValue HAGGLER_MAX_DISCOUNT_PERCENTAGE;
@@ -245,6 +247,11 @@ public final class GoldenTweaksCommonConfig {
 
         builder.pop();
 
+        DISABLE_ADVANCED_INFUSION_ITEMS = builder
+                .translation(key("balance.disable_advanced_infusion_items"))
+                .comment(comment("balance.disable_advanced_infusion_items"))
+                .define("disableAdvancedInfusionItems", true);
+
         builder.push("irons_jewelry");
 
         HAGGLER_MAX_DISCOUNT = builder
@@ -345,6 +352,10 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return CATACLYSM_BALANCE.get();
+    }
+
+    public static boolean disableAdvancedInfusionItems() {
+        return DISABLE_ADVANCED_INFUSION_ITEMS.get();
     }
 
     public static int getEmSolarMultiplier() {

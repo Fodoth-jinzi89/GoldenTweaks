@@ -19,6 +19,8 @@
   "config.goldentweaks.balance": "Balance",
   "config.goldentweaks.balance.cataclysm_balance": "Cataclysm Balance",
   "config.goldentweaks.balance.cataclysm_balance.comment": "Balanced Cataclysm Bosses.",
+  "config.goldentweaks.balance.disable_advanced_infusion_items": "Disable Practical Thaumaturgy Items",
+  "config.goldentweaks.balance.disable_advanced_infusion_items.comment": "Disables similar Practical Thaumaturgy items in favor of GoldenTweaks-maintained versions.",
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier": "Evolved Mekanism Solar Multiplier",
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Global multiplier for Evolved Mekanism solar generators. Affects all tiers' power output.",
   "config.goldentweaks.balance.haggler_max_discount": "Haggler Ring Max Discount Count",

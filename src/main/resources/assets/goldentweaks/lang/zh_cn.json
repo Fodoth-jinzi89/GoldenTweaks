@@ -19,6 +19,8 @@
   "config.goldentweaks.balance": "平衡",
   "config.goldentweaks.balance.cataclysm_balance": "灾变平衡",
   "config.goldentweaks.balance.cataclysm_balance.comment": "平衡灾变数值。",
+  "config.goldentweaks.balance.disable_advanced_infusion_items": "禁用实用神秘学物品",
+  "config.goldentweaks.balance.disable_advanced_infusion_items.comment": "禁用实用神秘学的类似物品以使用 GoldenTweaks 维护的版本",
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier": "Evolved Mekanism 太阳能倍率",
   "config.goldentweaks.balance.evolved_mekanism_solar_multiplier.comment": "Evolved Mekanism 太阳能发电机的全局倍率，影响所有等级的发电量。",
   "config.goldentweaks.balance.haggler_max_discount": "议价戒指最大折扣数",

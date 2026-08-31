@@ -67,6 +67,7 @@
     "fix.ae2peat.PatternEncodingAccessTermMenuBroadcastMixin",
     "fix.ae2.MEStorageMenuBroadcastMixin",
     "fix.ae2peat.PatternEncodingAccessTermMenuMixin",
+    "fix.advanced_infusion.AdvancedInfusionResearchMixin",
     "fix.ae2peat.accessor.PatternEncodingAccessTermMenuAccessor",
     "fix.ae2autopatternupload.RequestProvidersListC2SPacketMixin",
     "fix.ae2autopatternupload.UploadEncodedPatternC2SPacketMixin",
