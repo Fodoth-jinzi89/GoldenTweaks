@@ -1,0 +1,140 @@
+{
+  "itemGroup.advanced_infusion": "实用神秘学",
+  "block.advanced_infusion.advanced_infusion_controller": "高级注魔控制器",
+  "item.advanced_infusion.thaumic_resonance_core": "神秘共振核心",
+  "item.advanced_infusion.void_overclock_core": "虚空超频核心",
+  "item.advanced_infusion.primordial_infusion_core": "原初注魔核心",
+  "item.advanced_infusion.purifying_tear": "净化之泪",
+  "item.advanced_infusion.purifying_tear.used": "净化之泪抹去了你身上的扭曲。",
+  "container.advanced_infusion.advanced_infusion_controller": "高级注魔控制器",
+
+  "tc.research_category.ADVANCED_INFUSION": "实用神秘学（旧分类）",
+  "tc.research_category.PRACTICAL_THAUMATURGY": "实用神秘学",
+
+  "tc.research_name.ADVANCED_INFUSION.CONTROLLER": "自动注魔",
+  "tc.research_text.ADVANCED_INFUSION.CONTROLLER": "连法杖都懒得举了吗？",
+  "tc.research_name.ADVANCED_INFUSION.THAUMIUM_UPGRADE": "神秘共振",
+  "tc.research_text.ADVANCED_INFUSION.THAUMIUM_UPGRADE": "嫌仪式太慢？你真是无可救药。",
+  "tc.research_name.ADVANCED_INFUSION.VOID_UPGRADE": "虚空超频",
+  "tc.research_text.ADVANCED_INFUSION.VOID_UPGRADE": "再快一点……",
+  "tc.research_name.ADVANCED_INFUSION.PRIMORDIAL_UPGRADE": "原初瞬时",
+  "tc.research_text.ADVANCED_INFUSION.PRIMORDIAL_UPGRADE": "天堂制造？",
+
+  "research.advanced_infusion.controller.page": "你已经主持过足够多次注魔，甚至开始厌倦每一次仪式开始前那套千篇一律的程序：检查中央基座，摆放材料，确认源质供应，最后举起法杖，触碰符文矩阵。<BR>真正需要研究与技巧的，明明是仪式本身，以及那摇摇欲坠的平衡。可到了最后，竟然还要亲自走过去点一下。<BR>既然连神秘炼金塔都知道如何照料自己的坩埚，那么让一座已经准备妥当的注魔祭坛自行醒来，似乎也没有什么不可接受的。<BR>于是，你设计了一枚小巧的高级注魔控制器。将它放置于注魔矩阵相邻的任意一面，并让一名知晓此术的神秘使停留在十二格之内。控制器便会反复巡视祭坛，等待中央祭品、周围材料与仪式配方彼此吻合。<BR>一旦所有条件成立，它便会替你向矩阵下达开始的命令。",
+
+  "research.advanced_infusion.thaumium_upgrade.page": "神秘金属天生适合传导那些已经被束缚的魔力。以奥术工作台制成神秘共振核心，将其嵌入控制器的第一槽位，注魔矩阵便能以原本一半的间隔重复运转。<BR>后续的核心会吞没前一级核心作为自身的一部分。因此，若想让三枚核心最终同时存在于控制器之中，你需要亲手制造三枚神秘共振核心。<BR>有些东西无法被复制，只能被一层层继承。",
+
+  "research.advanced_infusion.void_upgrade.page": "虚空最擅长的并非毁灭，而是让某些东西从未发生过。<BR>注魔仪式的两个阶段之间，总存在一些毫无意义的空白。虚空金属能够将这些空白吞去，仿佛时间本身在那里少了一小截。<BR>以神秘共振核心为中心完成注魔后，得到的虚空超频核心只能被置入控制器的第二槽位。当第一槽位也装入核心，并完成相应研究后，祭坛便能以原本五倍的速度运转。",
+
+  "research.advanced_infusion.primordial_upgrade.page": "原初珍珠中纠缠的并非单纯的力量，而是尚未被决定的可能性。若可能性足够强大，连续发生的事情便不必再按照先后次序发生。<BR>以虚空超频核心为中心完成高阶注魔，将所得的原初注魔核心置入第三槽位。<BR>当三枚核心与对应的研究全部齐备，控制器便获得了某种近乎亵渎的能力：只要资源已经准备妥当，它不再等待当前阶段结束，而是直接将其结算为已经发生。<BR>至于中间究竟发生了什么……或许从来没有必要知道。",
+
+  "block.advanced_infusion.alchemical_furnace_augmenter": "荒古炼金炉增幅器",
+  "container.advanced_infusion.alchemical_furnace_augmenter": "荒古炼金炉增幅器",
+  "item.advanced_infusion.alchemical_cache_module": "荒古缓存模块",
+  "item.advanced_infusion.alchemical_overclock_module": "荒古超频模块",
+  "item.advanced_infusion.centivis_efficiency_module": "荒古能量效率模块",
+  "item.advanced_infusion.alchemical_batch_module": "荒古批处理模块",
+
+  "status.advanced_infusion.alchemical_augmenter.connected": "已连接：自动供料运行中",
+  "status.advanced_infusion.alchemical_augmenter.disconnected": "未连接：熔炉结构不完整",
+  "status.advanced_infusion.alchemical_augmenter.paused": "红石暂停：直接投掷仍会处理",
+
+  "tc.research_name.ADVANCED_INFUSION.ALCHEMICAL_AUGMENTER": "荒古炼金炉增幅器",
+  "tc.research_text.ADVANCED_INFUSION.ALCHEMICAL_AUGMENTER": "你竟然觉得一次只献上一件祭品太过屈尊。",
+
+  "research.advanced_infusion.alchemical_augmenter.page": "你已经把荒古炼金炉改造成了一间颇像样的工坊，却仍然无法忍受亲手向炉中投入材料这种琐事。<BR>增幅器只能安置于已经成型的炼金炉正上方那一格空隙，以悬垂的神秘金属笼罩炉口。它会接收带有要素的材料，再将相同的物品交由原本的炼金炉处理。<BR>前九个输入格始终开放。安装荒古缓存模块后，其余输入格也会被唤醒，同时将炼金炉安全储存的源质上限由500提升至1024。<BR>若在源质已经超过500时拆下模块，多出的源质不会凭空消失。增幅器只会安静地停止工作，等待你亲自处理。<BR>红石信号只能暂停内部供料。因此，若你亲手把什么东西扔进炉口，机器不会替你承担责任。",
+
+  "tc.research_name.ADVANCED_INFUSION.ALCHEMICAL_CACHE": "荒古缓存",
+  "tc.research_text.ADVANCED_INFUSION.ALCHEMICAL_CACHE": "你想让熔炉记住更多源质。遗忘得少一些，显然更方便。",
+
+  "research.advanced_infusion.alchemical_cache.page": "你将虚空罐与过滤器封入荒古缓存模块，为增幅器准备了一处足以容纳多余源质的隐秘之所。<BR>安装后，炼金炉的源质容量由500提升至1024，全部27个输入格也随之开放。<BR>若在源质超过原本上限时拆下模块，炼金过程不会强行继续。它会停在那里，耐心等待，直到你将多余的源质取走。<BR>你需要的只是一个更大的容器，而不是一台把炼金废料扔进虚空的机器。",
+
+  "tc.research_name.ADVANCED_INFUSION.ALCHEMICAL_OVERCLOCK": "荒古超频",
+  "tc.research_text.ADVANCED_INFUSION.ALCHEMICAL_OVERCLOCK": "冷却时间？它看起来像是在冒犯你。",
+
+  "research.advanced_infusion.alchemical_overclock.page": "超频模块会将炼金炉最终的处理冷却缩短至原本的一半，并向上取整。因此，即使是你，也无法将它压缩至一刻之下。<BR>它不会改变炼金炉的处理方式，也不会减少材料的消耗。你只是让炉火熄灭之后那段无所事事的等待变得更短。<BR>以你收集时钟的规模来看，这已经相当接近某种智慧。",
+
+  "tc.research_name.ADVANCED_INFUSION.CENTIVIS_EFFICIENCY": "荒古能量效率",
+  "tc.research_text.ADVANCED_INFUSION.CENTIVIS_EFFICIENCY": "你终于发现浪费炼金能量是一件昂贵的事。令人意外。",
+
+  "research.advanced_infusion.centivis_efficiency.page": "平衡碎片使效率模块能够在炼金炉进行原有计算的瞬间，暂时借用水、火、与混沌炼金能量。<BR>原本的炼金规则并未因此改变；物品是否能够被处理，依旧由炼金炉自身决定。只有在处理成功时，借出的能量才会发挥作用，使这三种要素的消耗分别减半并向上取整。<BR>若处理失败，所有借出的能量都会完整归还。",
+
+  "tc.research_name.ADVANCED_INFUSION.ALCHEMICAL_BATCH": "荒古批处理",
+  "tc.research_text.ADVANCED_INFUSION.ALCHEMICAL_BATCH": "一次一个从来无法满足你，对吗？",
+
+  "research.advanced_infusion.alchemical_batch.page": "批处理模块使增幅器能够对同一叠物品连续调用炼金炉本身的处理能力，直到处理失败，或达到预设的批量上限。<BR>它跳过的只有成功处理之间那段无意义的停顿。若第一件物品便无法处理，什么都不会被消耗，剩余的材料也会原封不动地留在原处。<BR>整批处理结束后，只会结算其中最长的一次冷却；若安装了超频模块，再由它将这段时间缩短。<BR>容器供料与直接投掷共用同一条路径。毕竟，将它们分开是格外愚蠢的行为。",
+
+  "block.advanced_infusion.aura_node_fabricator": "灵气节点制造机",
+  "item.advanced_infusion.aura_node_fabricator": "灵气节点制造机",
+  "container.advanced_infusion.aura_node_fabricator": "灵气节点制造机",
+
+  "block.advanced_infusion.research_note_automator": "自动研究笔记机",
+  "item.advanced_infusion.research_note_automator": "自动研究笔记机",
+  "container.advanced_infusion.research_note_automator": "自动研究笔记机",
+
+  "screen.advanced_infusion.research_note_automator.input_label": "输入",
+  "screen.advanced_infusion.research_note_automator.output_label": "输出",
+  "screen.advanced_infusion.research_note_automator.status.idle": "待机",
+  "screen.advanced_infusion.research_note_automator.status.unbound": "等待首次放置者留下印记",
+  "screen.advanced_infusion.research_note_automator.status.owner_offline": "所属研究者不在场",
+  "screen.advanced_infusion.research_note_automator.progress": "CV 进度：%s / %s",
+  "screen.advanced_infusion.research_note_automator.status.no_cv": "等待充能节点 CV",
+  "screen.advanced_infusion.research_note_automator.status.output_full": "输出槽已满",
+  "screen.advanced_infusion.research_note_automator.status.processing": "正在解析研究笔记",
+  "screen.advanced_infusion.research_note_automator.status.finishing": "最后的推演即将完成",
+  "screen.advanced_infusion.research_note_automator.status.completed": "研究笔记已完成",
+  "screen.advanced_infusion.research_note_automator.status.note_failed": "这份研究笔记无法完成",
+  "screen.advanced_infusion.research_note_automator.status.unknown_research": "研究笔记指向的研究不存在",
+
+  "screen.advanced_infusion.aura_node_fabricator.raw": "缓存源质：%s",
+  "screen.advanced_infusion.aura_node_fabricator.source": "源质来源：注魔网络",
+  "screen.advanced_infusion.aura_node_fabricator.capacity": "可转化容量：%s",
+
+  "screen.advanced_infusion.aura_node_fabricator.type.normal": "普",
+  "screen.advanced_infusion.aura_node_fabricator.type.normal.tooltip": "普通节点",
+  "screen.advanced_infusion.aura_node_fabricator.type.unstable": "不",
+  "screen.advanced_infusion.aura_node_fabricator.type.unstable.tooltip": "不稳定节点",
+  "screen.advanced_infusion.aura_node_fabricator.type.dark": "暗",
+  "screen.advanced_infusion.aura_node_fabricator.type.dark.tooltip": "暗节点",
+  "screen.advanced_infusion.aura_node_fabricator.type.tainted": "污",
+  "screen.advanced_infusion.aura_node_fabricator.type.tainted.tooltip": "污秽节点",
+  "screen.advanced_infusion.aura_node_fabricator.type.hungry": "饥",
+  "screen.advanced_infusion.aura_node_fabricator.type.hungry.tooltip": "饥饿节点",
+  "screen.advanced_infusion.aura_node_fabricator.type.pure": "纯",
+  "screen.advanced_infusion.aura_node_fabricator.type.pure.tooltip": "纯净节点",
+
+  "screen.advanced_infusion.aura_node_fabricator.modifier.none": "无",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.none.tooltip": "不使用修饰符",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.bright": "亮",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.bright.tooltip": "明亮修饰符",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.pale": "淡",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.pale.tooltip": "苍白修饰符",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.fading": "衰",
+  "screen.advanced_infusion.aura_node_fabricator.modifier.fading.tooltip": "衰退修饰符",
+
+  "screen.advanced_infusion.aura_node_fabricator.status.invalid_structure": "结构无效",
+  "screen.advanced_infusion.aura_node_fabricator.status.redstone_off": "红石信号断开：机枢沉寂",
+  "screen.advanced_infusion.aura_node_fabricator.status.blocked_target": "目标已被占用，或不属于此机枢",
+  "screen.advanced_infusion.aura_node_fabricator.status.no_cv": "等待炼金能量",
+  "screen.advanced_infusion.aura_node_fabricator.status.no_essentia": "等待源质供给",
+  "screen.advanced_infusion.aura_node_fabricator.status.ready": "就绪",
+  "screen.advanced_infusion.aura_node_fabricator.status.creating": "正在铸造节点",
+  "screen.advanced_infusion.aura_node_fabricator.status.locked": "选项已锁定",
+  "screen.advanced_infusion.aura_node_fabricator.status.energized_pause": "目标已充能：暂停",
+  "screen.advanced_infusion.aura_node_fabricator.status.overflow": "该要素的节点容量已耗尽",
+
+  "tc.research_name.ADVANCED_INFUSION.AURA_NODE_FABRICATOR": "灵气节点制造机",
+  "tc.research_text.ADVANCED_INFUSION.AURA_NODE_FABRICATOR": "把灵气拧成一根更长的线。",
+
+  "research.advanced_infusion.aura_node_fabricator.page": "将制造机安放于高级节点稳定器下方，让它成为稳定器与节点之间那枚不安分的机枢。机枢上方两格便是节点生成的位置；已有节点不会被覆盖。<BR>制造机会在十二格范围内寻找实现 IAspectSource 的源质容器、管道与储存器，并从中抽取源质。每抽取一点源质，便从附近的充能节点或安全的源质中继网络扣除一点 CV；十五点源质最终凝结为一百点节点容量。<BR>容量会分别记录于各个要素之中，实际数值仅受节点数据类型的上限约束，不会被一百点的辉光显示值截断。那不过是一层显示上的限制——毕竟，没有人希望一颗光球占满整个房间。<BR>接入红石信号后，机枢才会真正运转。信号断开，它便停止抽取与铸造，却会保留已经积存的源质与节点。<BR>节点类型与修饰符只能在首次生成之前改变。一旦节点诞生，选择便成为事实。",
+
+  "tc.research_name.ADVANCED_INFUSION.RESEARCH_NOTE_AUTOMATOR": "研究笔记处理机",
+  "tc.research_text.ADVANCED_INFUSION.RESEARCH_NOTE_AUTOMATOR": "把连线这种苦差事交给机器，但研究仍由你亲自解锁。",
+
+  "research.advanced_infusion.research_note_automator.page": "这台机枢在第一次落地时，便记住了放置者留下的灵魂印记。它拥有十二枚输入匣与十二枚输出匣。将从研究桌、未知研究或其他途径获得的未完成笔记送入其中，机枢便会替你重新描绘那些尚未闭合的灵性连线，再将完成的笔记送入另一侧。<BR>每一本笔记都会根据所属研究的复杂程度索取 CV：基础需求为一百点，每增加一级复杂度，再增加五十点。能量会从附近的充能节点一点一点流入，直到最后一条连线闭合。<BR>它不会凭空创造研究，也不会替任何人翻开一份尚未被理解的知识。解锁的那一刻，仍然必须由研究者亲自承担。<BR>十二枚输入匣与十二枚输出匣均可接驳漏斗及其他物品管道。你终于可以把知识的整理工作交给机器了。至于理解它——那仍然是你的麻烦。",
+
+  "tc.research_name.ADVANCED_INFUSION.PURIFYING_TEAR": "净化之泪",
+  "tc.research_text.ADVANCED_INFUSION.PURIFYING_TEAR": "把扭曲还给虚空，代价是一滴被祭坛记住的泪。",
+
+  "research.advanced_infusion.purifying_tear.page": "你已经窥见过元始珍珠中的某些秘密，也已经掌握了荒古炼金炉的力量。于是，一个近乎不负责任的念头开始在脑海中生长：既然原初之力能够将世界搅乱，那么它是否也能够将你身上的扭曲一并洗去？<BR>以元始珍珠为核心完成高阶注魔，你将得到一滴净化之泪。将它握在手中并右键使用，永久扭曲、临时扭曲、黏性扭曲，以及记录于灵魂之中的扭曲计数，都会在顷刻间归于空无，而泪水本身也随之消散。<BR>研究完成的瞬间同样会触发一次净化。毕竟，第一滴泪若只是留在桌上，未免太过浪费。<BR>但不要因此误以为你已经理解了净化。扭曲护符与装备所带来的额外扭曲依然存在；那是物品自身携带的力量，不属于你的灵魂。<BR>有些污秽能够被洗去，有些则必须由你亲自摘下。"
+}

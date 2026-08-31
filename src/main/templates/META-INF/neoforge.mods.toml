@@ -896,8 +896,8 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies."${mod_id}"]]
-modId = "aeallpattern"
+modId = "advanced_infusion"
 type = "optional"
-versionRange = "[0.1.5,0.2.0)"
+versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
