@@ -1,7 +1,14 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft.emi;
 
 import dev.emi.emi.api.recipe.EmiRecipe;
+import dev.emi.emi.api.recipe.EmiRecipeCategory;
+import dev.emi.emi.api.recipe.handler.EmiCraftContext;
 import dev.emi.emi.api.recipe.handler.StandardRecipeHandler;
+import dev.emi.emi.api.stack.EmiIngredient;
+import dev.emi.emi.api.stack.EmiStack;
+import dev.emi.emi.api.widget.WidgetHolder;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import thaumcraft.common.menu.ArcaneWorkbenchMenu;
 
@@ -44,6 +51,44 @@ public class ArcaneWorkbenchEmiRecipeHandler implements StandardRecipeHandler<Ar
     @Override
     public boolean supportsRecipe(EmiRecipe recipe) {
         return true;
+    }
+
+    @Override
+    public boolean canCraft(EmiRecipe recipe, EmiCraftContext<ArcaneWorkbenchMenu> context) {
+        return StandardRecipeHandler.super.canCraft(itemOnly(recipe), context);
+    }
+
+    @Override
+    public boolean craft(EmiRecipe recipe, EmiCraftContext<ArcaneWorkbenchMenu> context) {
+        return StandardRecipeHandler.super.craft(itemOnly(recipe), context);
+    }
+
+    private static EmiRecipe itemOnly(EmiRecipe recipe) {
+        boolean hasNonItemInput = recipe.getInputs().stream()
+                .anyMatch(input -> input.getEmiStacks().stream()
+                        .noneMatch(stack -> {
+                            ItemStack item = stack.getItemStack();
+                            return item != null && !item.isEmpty();
+                        }));
+        List<EmiIngredient> inputs = recipe.getInputs().stream()
+                .map(input -> input.getEmiStacks().stream().anyMatch(stack -> {
+                    ItemStack item = stack.getItemStack();
+                    return item != null && !item.isEmpty();
+                }) ? input : EmiStack.EMPTY)
+                .limit(9)
+                .toList();
+        if (!hasNonItemInput) {
+            return recipe;
+        }
+        return new EmiRecipe() {
+            @Override public EmiRecipeCategory getCategory() { return recipe.getCategory(); }
+            @Override public ResourceLocation getId() { return recipe.getId(); }
+            @Override public List<EmiIngredient> getInputs() { return inputs; }
+            @Override public List<EmiStack> getOutputs() { return recipe.getOutputs(); }
+            @Override public int getDisplayWidth() { return recipe.getDisplayWidth(); }
+            @Override public int getDisplayHeight() { return recipe.getDisplayHeight(); }
+            @Override public void addWidgets(WidgetHolder widgets) { recipe.addWidgets(widgets); }
+        };
     }
 
     private static List<Slot> slotRange(ArcaneWorkbenchMenu menu, int start, int end) {

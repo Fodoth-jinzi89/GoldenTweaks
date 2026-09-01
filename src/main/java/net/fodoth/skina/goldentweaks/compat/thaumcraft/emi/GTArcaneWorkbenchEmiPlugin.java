@@ -5,6 +5,7 @@ import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import net.neoforged.fml.ModList;
 import thaumcraft.common.registry.TCMenuTypes;
+import thaumicenergistics.init.ModMenuTypes;
 
 /**
  * GoldenTweaks 的 EMI 入口：为奥术工作台注册配方转移处理器，
@@ -22,5 +23,11 @@ public class GTArcaneWorkbenchEmiPlugin implements EmiPlugin {
                 TCMenuTypes.ARCANE_WORKBENCH.get(),
                 new ArcaneWorkbenchEmiRecipeHandler()
         );
+        if (ModList.get().isLoaded("thaumicenergistics")) {
+            registry.addRecipeHandler(
+                    ModMenuTypes.ARCANE_CRAFTING_TERMINAL.get(),
+                    new ArcaneTerminalEmiRecipeHandler()
+            );
+        }
     }
 }

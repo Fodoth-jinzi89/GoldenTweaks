@@ -51,6 +51,8 @@
   "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval.comment": "要素来源物品列表自动翻页的间隔时间，单位为毫秒。",
   "config.goldentweaks.batch_text_rendering": "批量文本渲染",
   "config.goldentweaks.batch_text_rendering.comment": "批量合并文本绘制调用以提高性能。",
+  "config.goldentweaks.search_trigger_threshold": "搜索触发阈值",
+  "config.goldentweaks.search_trigger_threshold.comment": "AE 终端在最后一次输入后等待多少 tick 再触发搜索。",
   "config.goldentweaks.category.balance": "平衡",
   "config.goldentweaks.category.building": "渲染",
   "config.goldentweaks.category.debug": "调试",

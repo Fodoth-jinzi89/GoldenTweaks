@@ -177,6 +177,10 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.batch_text_rendering",
                     BATCH_TEXT_RENDERING, true);
 
+            ConfigScreenHelper.addInt(misc, eb,
+                    "config.goldentweaks.search_trigger_threshold",
+                    SEARCH_TRIGGER_THRESHOLD, 10, 0, Integer.MAX_VALUE);
+
             ConfigScreenHelper.addEnum(misc, eb,
                     "config.goldentweaks.smart_culling",
                     SMART_CULLING, SmartCullingType.BASE, SmartCullingType.values());

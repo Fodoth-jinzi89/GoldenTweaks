@@ -104,8 +104,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2helpers") && isModLoaded("wcwt");
         }
 
-        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2.")) {
+        if (mixinClassName.endsWith("fix.ae2.MEStorageScreenSearchMixin")) {
             return isModLoaded("ae2");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2.")) {
+            return isModLoaded("ae2") && isModLoaded("emi");
         }
 
         if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
@@ -121,9 +125,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("ae2peat");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.aeronautics_curios_compat")) {
+            return isModLoaded("aeronautics_curios_compat");
+        }
+
         if (mixinClassName.endsWith("fix.extendedae_plus.JeiRuntimeCompatMixin")) {
-            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers")
-                    && checkIfPresent("me.shedaniel.rei.api.common.display.Display");
+            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus")) {

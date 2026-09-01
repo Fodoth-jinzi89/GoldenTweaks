@@ -18,9 +18,12 @@ public abstract class WcwtEmiRecipeHandlerMixin {
     @Inject(method = "craft(Ldev/emi/emi/api/recipe/EmiRecipe;Ldev/emi/emi/api/recipe/handler/EmiCraftContext;)Z", at = @At("HEAD"))
     private void gt$setPending(EmiRecipe recipe, EmiCraftContext<WirelessComprehensiveWorkTerminalMenu> context,
                                CallbackInfoReturnable<Boolean> cir) {
+        if (context.getType() != EmiCraftContext.Type.FILL_BUTTON) {
+            return;
+        }
         RecipeHolder<?> holder = recipe.getBackingRecipe();
         if (holder != null && holder.value() instanceof CraftingRecipe crafting) {
-            WcwtPendingHelper.setPending(context.getScreenHandler(), crafting);
+            WcwtPendingHelper.stagePending(context.getScreenHandler(), crafting);
         }
     }
 }

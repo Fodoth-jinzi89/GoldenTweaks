@@ -14,9 +14,11 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.client.gui.AspectGuiRenderer;
@@ -129,14 +131,38 @@ public abstract class ThaumonomiconScreenMixin {
             method = "drawResearchNodes",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;fill(IIIII)V", ordinal = 2)
     )
-    private void gt$hideIncompleteResearchBlackOverlay(GuiGraphics graphics, int minX, int minY, int maxX, int maxY, int color) {
-        // drawResearchNodes 里第 3 个 fill（19x19，颜色为纯黑 alpha）是 port.239 新增的
-        // 未完成节点黑色半透明遮罩；闪烁到最低点时 alpha 最大，看起来每周期“变黑一次”。
-        // 老版本 port.152 没有这个遮罩，配置开启时直接不画。
-        if (GoldenTweaksCommonConfig.REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT.get()) {
+    private void gt$removeIncompleteResearchBlackOverlay(GuiGraphics graphics, int minX, int minY,
+                                                           int maxX, int maxY, int color) {
+        // port.152 did not draw port.239's 19x19 black overlay over incomplete research icons.
+    }
+
+    @ModifyArgs(
+            method = "drawResearchNodes",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lthaumcraft/client/gui/ThaumonomiconScreen;drawTintedTexture(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;IIIIFFIIIIFFFF)V"
+            )
+    )
+    private void gt$restoreResearchNodePulse(Args args) {
+        float tint = args.get(12);
+        float alpha = args.get(15);
+        if (tint == 1.0F && alpha == 1.0F) {
             return;
         }
-        graphics.fill(minX, minY, maxX, maxY, color);
+        if (tint == 0.72F && alpha == 0.22F) {
+            args.set(12, 1.0F);
+            args.set(13, 1.0F);
+            args.set(14, 1.0F);
+            args.set(15, 0.42F);
+            return;
+        }
+
+        int ticks = Minecraft.getInstance().player == null ? 0 : Minecraft.getInstance().player.tickCount;
+        float oldTint = 0.82F + Mth.sin(ticks / 8.0F) * 0.18F;
+        args.set(12, oldTint);
+        args.set(13, oldTint);
+        args.set(14, oldTint);
+        args.set(15, 0.82F);
     }
 
     @Inject(method = "drawAspectKnowledgePage", at = @At("HEAD"), cancellable = true)

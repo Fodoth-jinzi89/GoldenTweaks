@@ -27,6 +27,7 @@ public final class GoldenTweaksClientConfig {
     public static final ModConfigSpec.BooleanValue FAST_MATH;
     public static final ModConfigSpec.BooleanValue TEX_BARRIER;
     public static final ModConfigSpec.BooleanValue BATCH_TEXT_RENDERING;
+    public static final ModConfigSpec.IntValue SEARCH_TRIGGER_THRESHOLD;
 
     public static final ModConfigSpec.EnumValue<SmartCullingType> SMART_CULLING;
 
@@ -90,6 +91,11 @@ public final class GoldenTweaksClientConfig {
                 .translation(key("batch_text_rendering"))
                 .comment(comment("batch_text_rendering"))
                 .define("batchTextRendering", true);
+
+        SEARCH_TRIGGER_THRESHOLD = builder
+                .translation(key("search_trigger_threshold"))
+                .comment(comment("search_trigger_threshold"))
+                .defineInRange("searchTriggerThreshold", 10, 0, Integer.MAX_VALUE);
 
         SMART_CULLING = builder
                 .translation(key("smart_culling"))

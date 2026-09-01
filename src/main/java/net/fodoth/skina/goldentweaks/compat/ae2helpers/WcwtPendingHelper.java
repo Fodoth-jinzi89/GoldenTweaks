@@ -9,6 +9,7 @@ import rearth.ae2helpers.client.AutoCraftingWatcher;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Shared bridge for ae2helpers' auto-import feature inside WCWT.
@@ -18,6 +19,9 @@ import java.util.Map;
  * pending-slot registration on the actual WCWT transfer path.
  */
 public final class WcwtPendingHelper {
+    private static Map<Integer, Ingredient> stagedPending = Map.of();
+    private static Set<Integer> stagedCraftable = Set.of();
+
     private WcwtPendingHelper() {
     }
 
@@ -39,5 +43,36 @@ public final class WcwtPendingHelper {
         }
 
         AutoCraftingWatcher.INSTANCE.setPending(pending, menu.findMissingIngredients(pending).craftableSlots());
+    }
+
+    public static void stagePending(CraftingTermMenu menu, CraftingRecipe recipe) {
+        stagedPending = Map.of();
+        stagedCraftable = Set.of();
+        if (!AutoCraftingWatcher.INSTANCE.isAutoInsertEnabled() || !recipe.canCraftInDimensions(3, 3)) {
+            return;
+        }
+
+        NonNullList<Ingredient> matrix = CraftingRecipeUtil.ensure3by3CraftingMatrix(recipe);
+        Map<Integer, Ingredient> pending = new HashMap<>();
+        for (int i = 0; i < matrix.size(); i++) {
+            Ingredient ingredient = matrix.get(i);
+            if (!ingredient.isEmpty()) {
+                pending.put(i, ingredient);
+            }
+        }
+
+        Set<Integer> craftable = menu.findMissingIngredients(pending).craftableSlots();
+        if (!craftable.isEmpty()) {
+            stagedPending = Map.copyOf(pending);
+            stagedCraftable = Set.copyOf(craftable);
+        }
+    }
+
+    public static void activateStaged() {
+        if (!stagedCraftable.isEmpty()) {
+            AutoCraftingWatcher.INSTANCE.setPending(stagedPending, stagedCraftable);
+        }
+        stagedPending = Map.of();
+        stagedCraftable = Set.of();
     }
 }
