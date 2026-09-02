@@ -1086,5 +1086,7 @@
   "config.goldentweaks.pickup.lootr_pickup_groups": "Lootr Pickup Groups",
   "config.goldentweaks.pickup.lootr_pickup_groups.comment": "Loot groups picked up per right click; 0 means unlimited.",
   "config.goldentweaks.pickup.lootr_hold_pickup_interval": "Lootr Hold Pickup Interval",
-  "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "Interval for continuous pickup while holding right click, in ticks; default 10 (0.5 seconds)."
+  "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "Interval for continuous pickup while holding right click, in ticks; default 10 (0.5 seconds).",
+  "goldentweaks.watut.screen_typing_text": " is typing",
+  "goldentweaks.watut.screen_typing_multiple_players": "Several people are typing"
 }

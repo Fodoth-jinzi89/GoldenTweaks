@@ -8,6 +8,8 @@ import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import thaumcraft.common.menu.ArcaneWorkbenchMenu;
@@ -74,7 +76,8 @@ public class ArcaneWorkbenchEmiRecipeHandler implements StandardRecipeHandler<Ar
                 .map(input -> input.getEmiStacks().stream().anyMatch(stack -> {
                     ItemStack item = stack.getItemStack();
                     return item != null && !item.isEmpty();
-                }) ? input : EmiStack.EMPTY)
+                }) || input.getEmiStacks().stream().anyMatch(stack -> stack.getKey() instanceof TagKey<?> tag
+                        && tag.isFor(BuiltInRegistries.ITEM.key())) ? input : EmiStack.EMPTY)
                 .limit(9)
                 .toList();
         if (!hasNonItemInput) {

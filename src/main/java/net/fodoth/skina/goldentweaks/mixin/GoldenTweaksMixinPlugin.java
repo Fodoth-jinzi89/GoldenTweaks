@@ -88,6 +88,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("compactmachines");
         }
 
+        if (mixinClassName.endsWith("fix.watut.PlayerStatusManagerClientMixin")) {
+            return isModLoaded("watut");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2peat")) {
             return isModLoaded("ae2peat");
         }

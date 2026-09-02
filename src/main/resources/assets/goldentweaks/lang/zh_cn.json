@@ -1087,4 +1087,6 @@
   "config.goldentweaks.pickup.lootr_pickup_groups.comment": "每次右键拾取的战利品组数，0 表示不限制。",
   "config.goldentweaks.pickup.lootr_hold_pickup_interval": "Lootr 长按拾取间隔",
   "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "长按右键连续拾取的间隔，单位为 tick，默认 10 tick（0.5 秒）。"
+  ,"goldentweaks.watut.screen_typing_text": " 正在输入"
+  ,"goldentweaks.watut.screen_typing_multiple_players": "多人正在输入"
 }

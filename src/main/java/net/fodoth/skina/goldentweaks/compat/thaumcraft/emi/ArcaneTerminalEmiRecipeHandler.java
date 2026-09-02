@@ -7,6 +7,8 @@ import dev.emi.emi.api.recipe.handler.StandardRecipeHandler;
 import dev.emi.emi.api.stack.EmiStack;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -38,11 +40,22 @@ public class ArcaneTerminalEmiRecipeHandler implements StandardRecipeHandler<Con
     public boolean craft(EmiRecipe recipe, EmiCraftContext<ContainerArcaneCraftingTerminal> context) {
         NonNullList<ItemStack> templates = NonNullList.withSize(9, ItemStack.EMPTY);
         for (int i = 0; i < Math.min(9, recipe.getInputs().size()); i++) {
-            ItemStack template = recipe.getInputs().get(i).getEmiStacks().stream()
+            final var input = recipe.getInputs().get(i);
+            ItemStack template = input.getEmiStacks().stream()
                     .map(EmiStack::getItemStack)
                     .filter(stack -> !stack.isEmpty())
                     .findFirst()
-                    .orElse(ItemStack.EMPTY);
+                    .orElseGet(() -> input.getEmiStacks().stream()
+                            .map(EmiStack::getKey)
+                            .filter(TagKey.class::isInstance)
+                            .map(TagKey.class::cast)
+                            .filter(tag -> tag.isFor(BuiltInRegistries.ITEM.key()))
+                            .map(tag -> BuiltInRegistries.ITEM.getTag((TagKey<net.minecraft.world.item.Item>) tag)
+                                    .flatMap(named -> named.stream().findFirst())
+                                    .map(holder -> new ItemStack(holder.value()))
+                                    .orElse(ItemStack.EMPTY))
+                            .findFirst()
+                            .orElse(ItemStack.EMPTY));
             templates.set(i, template);
         }
         PacketDistributor.sendToServer(new FillCraftingGridFromRecipePacket(
