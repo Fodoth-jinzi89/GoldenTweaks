@@ -253,6 +253,7 @@
     "fix.extendedae_plus.JeiRuntimeCompatMixin",
     "fix.extendedae_plus.PatternProviderScreenMixin",
     "fix.apothesis.ApothesisClientLanguageMixin",
+    "fix.buildingwands.ClientRenderMixin",
     "fix.cmpackagecouriers.CardboardPlaneItemRendererMixin",
     "fix.createsubmarine.DeepSeasWelcomeScreenMixin",
     "fix.emi.SlotWidgetMixin",

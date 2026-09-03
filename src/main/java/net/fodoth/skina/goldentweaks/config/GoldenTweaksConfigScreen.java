@@ -177,6 +177,10 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.batch_text_rendering",
                     BATCH_TEXT_RENDERING, true);
 
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.disable_building_wands_block_preview",
+                    DISABLE_BUILDING_WANDS_BLOCK_PREVIEW, true);
+
             ConfigScreenHelper.addInt(misc, eb,
                     "config.goldentweaks.search_trigger_threshold",
                     SEARCH_TRIGGER_THRESHOLD, 10, 0, Integer.MAX_VALUE);

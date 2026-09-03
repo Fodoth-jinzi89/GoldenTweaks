@@ -53,6 +53,8 @@
   "config.goldentweaks.batch_text_rendering.comment": "Batch text draw calls for performance.",
   "config.goldentweaks.search_trigger_threshold": "Search Trigger Threshold",
   "config.goldentweaks.search_trigger_threshold.comment": "Ticks to wait after the last input before updating an AE terminal search.",
+  "config.goldentweaks.disable_building_wands_block_preview": "Disable Building Wands Block Preview",
+  "config.goldentweaks.disable_building_wands_block_preview.comment": "Hides block models in Building Wands previews while keeping the white outlines visible.",
   "config.goldentweaks.category.balance": "Balance",
   "config.goldentweaks.category.building": "Building & Rendering",
   "config.goldentweaks.category.debug": "Debug",

@@ -27,6 +27,7 @@ public final class GoldenTweaksClientConfig {
     public static final ModConfigSpec.BooleanValue FAST_MATH;
     public static final ModConfigSpec.BooleanValue TEX_BARRIER;
     public static final ModConfigSpec.BooleanValue BATCH_TEXT_RENDERING;
+    public static final ModConfigSpec.BooleanValue DISABLE_BUILDING_WANDS_BLOCK_PREVIEW;
     public static final ModConfigSpec.IntValue SEARCH_TRIGGER_THRESHOLD;
 
     public static final ModConfigSpec.EnumValue<SmartCullingType> SMART_CULLING;
@@ -91,6 +92,11 @@ public final class GoldenTweaksClientConfig {
                 .translation(key("batch_text_rendering"))
                 .comment(comment("batch_text_rendering"))
                 .define("batchTextRendering", true);
+
+        DISABLE_BUILDING_WANDS_BLOCK_PREVIEW = builder
+                .translation(key("disable_building_wands_block_preview"))
+                .comment(comment("disable_building_wands_block_preview"))
+                .define("disableBuildingWandsBlockPreview", true);
 
         SEARCH_TRIGGER_THRESHOLD = builder
                 .translation(key("search_trigger_threshold"))
