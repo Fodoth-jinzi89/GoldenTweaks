@@ -18,7 +18,7 @@ public abstract class ThaumatoriumRendererMixin {
     @Redirect(method = "render(Lthaumcraft/common/blockentities/ThaumatoriumBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
             at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/vertex/PoseStack;translate(FFF)V"))
     private void gt$liftDisplayItem(PoseStack poseStack, float x, float y, float z) {
-        poseStack.translate(x, y + 2.0F / 16.0F, z);
+        poseStack.translate(x, y + 3.0F / 16.0F, z);
     }
 
     @Redirect(method = "render(Lthaumcraft/common/blockentities/ThaumatoriumBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
