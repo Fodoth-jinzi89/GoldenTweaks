@@ -1088,5 +1088,6 @@
   "config.goldentweaks.pickup.lootr_hold_pickup_interval": "Lootr Hold Pickup Interval",
   "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "Interval for continuous pickup while holding right click, in ticks; default 10 (0.5 seconds).",
   "goldentweaks.watut.screen_typing_text": " is typing",
-  "goldentweaks.watut.screen_typing_multiple_players": "Several people are typing"
+  "goldentweaks.watut.screen_typing_multiple_players": "Several people are typing",
+  "hostilenetworks.trivia.thaumcraft_wisp": "Formed from magic and aura.\\nDefeating one may yield Wisp Essence infused with an aspect."
 }

@@ -1089,4 +1089,5 @@
   "config.goldentweaks.pickup.lootr_hold_pickup_interval.comment": "长按右键连续拾取的间隔，单位为 tick，默认 10 tick（0.5 秒）。"
   ,"goldentweaks.watut.screen_typing_text": " 正在输入"
   ,"goldentweaks.watut.screen_typing_multiple_players": "多人正在输入"
+  ,"hostilenetworks.trivia.thaumcraft_wisp": "由魔法与灵气凝聚而成。\\n击败它，就可能得到蕴含要素的天域之华。"
 }

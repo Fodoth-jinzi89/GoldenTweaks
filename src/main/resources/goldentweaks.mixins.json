@@ -139,6 +139,7 @@
     "fix.sable.VoxelNeighborhoodStateMixin",
     "fix.silentgear.MaterialBookItemMixin",
     "fix.spectrum.CraftingTabletScreenHandlerMixin",
+    "fix.spectrum.BedrockAnvilScreenHandlerMixin",
     "fix.spectrum.EnderGlassBlockMixin",
     "fix.thaumcraft.ArcaneWorkbenchMenuMixin",
     "fix.thaumcraft.AspectSourceRecipeCategoryMixin",

@@ -1,0 +1,832 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "thaumcraft"
+        }
+    ],
+    "entity": "thaumcraft:wisp",
+    "variants": [],
+    "name_color": "#A96CFF",
+    "display": {},
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.thaumcraft_wisp",
+    "fabricator_drops": [
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "alienis"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "arbor"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "auram"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "corpus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "fungus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "magnetis"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "profundum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "spiritus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "vitium"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "adhaesio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "dense"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "dragon"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "exanimis"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "explosion"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "laputa"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "mixtura"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "praecantaticherba"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "priscus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "gula"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "infernus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 8,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "superbia"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "aestus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "ardor"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "bestia"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "fames"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "fulmen"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "gravitas"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "herba"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "iter"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "metallum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "mortuus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "praecantatio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "sano"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "tenebrae"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "vinculum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "volatus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "waters"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "alfirin"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "arche"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "atrpotentia"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "atrsubstance"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "limus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "space"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "spelunca"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 16,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "universes"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "favilla"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "gelum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "lux"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "motus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "permutatio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "potentia"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "tempestas"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "tempus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "vacuos"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "venenum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "victus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "vitreus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "destroy"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "lava"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "saxum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "substance"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 32,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "vegetatio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 64,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "aer"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 64,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "aqua"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 64,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "terra"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 64,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "ignis"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 64,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "ordo"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 64,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "perditio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "cognitio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "sensus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "atrpraecantatic"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "fossil"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "singularity"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "desidia"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 4,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "luxuria"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "humanus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "illecebra"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "reliquiae"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "sonus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "dream"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "expand"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 2,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "invidia"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "imperium"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "instrumentum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "lucrum"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "messis"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "perfodio"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "anteanus"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "childish"
+                }
+            }
+        },
+        {
+            "id": "thaumcraft:wisp_essence",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": {
+                    "Aspect": "history"
+                }
+            }
+        }
+    ]
+}
