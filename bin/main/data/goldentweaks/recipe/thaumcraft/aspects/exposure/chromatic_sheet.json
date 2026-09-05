@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "exposure:chromatic_sheet"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

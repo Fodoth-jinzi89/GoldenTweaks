@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alltheores:ruby"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

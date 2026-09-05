@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:golem_core_use"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

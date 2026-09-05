@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "minecraft:exposed_copper_trapdoor"
-  },
-  "aspects": {
-    "anteanus": 2
-  }
-}

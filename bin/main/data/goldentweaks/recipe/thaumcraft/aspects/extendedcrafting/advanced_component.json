@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedcrafting:advanced_component"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

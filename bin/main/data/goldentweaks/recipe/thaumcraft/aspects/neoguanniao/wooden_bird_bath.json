@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "neoguanniao:wooden_bird_bath"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

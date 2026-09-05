@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "synaxis:cimulink_mux2"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

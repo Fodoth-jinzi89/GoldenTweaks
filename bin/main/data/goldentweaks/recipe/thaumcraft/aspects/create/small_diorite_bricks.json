@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:small_diorite_bricks"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

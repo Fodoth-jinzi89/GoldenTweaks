@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "compactmachines:new_machine"
-  },
-  "aspects": {
-    "expand": 4
-  }
-}

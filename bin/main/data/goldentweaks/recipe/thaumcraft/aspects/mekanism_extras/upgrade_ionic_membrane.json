@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanism_extras:upgrade_ionic_membrane"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

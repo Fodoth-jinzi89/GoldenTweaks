@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:citrine_glass_pane"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

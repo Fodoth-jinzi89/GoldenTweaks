@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "evolvedmekanism:overclocked_crushing_factory"
-  },
-  "aspects": {
-    "tempus": 3
-  }
-}

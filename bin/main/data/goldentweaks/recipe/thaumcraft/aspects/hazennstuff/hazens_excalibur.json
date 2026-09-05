@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:hazens_excalibur"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

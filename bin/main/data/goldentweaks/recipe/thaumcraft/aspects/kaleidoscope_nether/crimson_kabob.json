@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "kaleidoscope_nether:crimson_kabob"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndecor:red_display_board"
-  },
-  "aspects": {
-    "sensus": 2
-  }
-}

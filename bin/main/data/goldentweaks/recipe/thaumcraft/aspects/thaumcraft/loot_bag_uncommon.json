@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:loot_bag_uncommon"
-  },
-  "aspects": {
-    "lucrum": 16
-  }
-}

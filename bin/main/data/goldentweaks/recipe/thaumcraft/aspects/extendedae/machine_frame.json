@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedae:machine_frame"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

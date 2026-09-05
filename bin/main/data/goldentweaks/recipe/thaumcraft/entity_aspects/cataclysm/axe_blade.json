@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "cataclysm:axe_blade"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

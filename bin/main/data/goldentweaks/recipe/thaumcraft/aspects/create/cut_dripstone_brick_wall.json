@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:cut_dripstone_brick_wall"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

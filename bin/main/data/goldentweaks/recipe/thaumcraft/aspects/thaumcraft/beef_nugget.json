@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:beef_nugget"
-  },
-  "aspects": {
-    "fames": 8
-  }
-}

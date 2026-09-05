@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndecor:cut_blackstone_bricks"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

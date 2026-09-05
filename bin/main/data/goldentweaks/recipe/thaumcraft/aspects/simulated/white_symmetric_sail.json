@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "simulated:white_symmetric_sail"
-  },
-  "aspects": {
-    "laputa": 2
-  }
-}

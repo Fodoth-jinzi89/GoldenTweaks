@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createnuclear:yellow_cloth"
-  },
-  "aspects": {
-    "pannus": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:shulker_green_head"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

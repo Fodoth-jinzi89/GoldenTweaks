@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "farmersdelight:red_mushroom_colony"
-  },
-  "aspects": {
-    "fungus": 3
-  }
-}

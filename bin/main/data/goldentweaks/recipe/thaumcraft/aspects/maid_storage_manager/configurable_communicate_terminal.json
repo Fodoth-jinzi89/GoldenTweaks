@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "maid_storage_manager:configurable_communicate_terminal"
-  },
-  "aspects": {
-    "cognitio": 3
-  }
-}

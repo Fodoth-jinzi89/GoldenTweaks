@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ftbquests:task_screen_configurator"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

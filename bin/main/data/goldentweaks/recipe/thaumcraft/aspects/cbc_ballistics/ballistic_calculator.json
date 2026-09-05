@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cbc_ballistics:ballistic_calculator"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:pus_bubble"
-  },
-  "aspects": {
-    "terra": 3
-  }
-}

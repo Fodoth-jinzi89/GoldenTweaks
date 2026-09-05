@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bakeries:drink_cup"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

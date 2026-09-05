@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "exspectriments:hostile_approximator"
-  },
-  "aspects": {
-    "cognitio": 3
-  }
-}

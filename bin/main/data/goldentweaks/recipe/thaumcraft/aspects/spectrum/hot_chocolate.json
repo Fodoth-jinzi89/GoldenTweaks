@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:hot_chocolate"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

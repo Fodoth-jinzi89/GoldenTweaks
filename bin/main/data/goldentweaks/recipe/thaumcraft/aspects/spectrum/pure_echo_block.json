@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:pure_echo_block"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:universe_spyhole"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:tuff_paver_slab"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

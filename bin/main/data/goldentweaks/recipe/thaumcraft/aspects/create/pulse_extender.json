@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:pulse_extender"
-  },
-  "aspects": {
-    "alienis": 3
-  }
-}

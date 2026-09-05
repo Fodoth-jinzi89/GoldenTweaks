@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndesires:layered_breccia"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

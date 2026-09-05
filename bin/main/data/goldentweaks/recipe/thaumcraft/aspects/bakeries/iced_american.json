@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bakeries:iced_american"
-  },
-  "aspects": {
-    "gelum": 3
-  }
-}

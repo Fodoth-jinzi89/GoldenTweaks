@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_spellbooks:disc_fragment_flame_still_burns"
-  },
-  "aspects": {
-    "ignis": 3
-  }
-}

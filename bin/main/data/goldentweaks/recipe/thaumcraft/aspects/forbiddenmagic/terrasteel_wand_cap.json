@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "forbiddenmagic:terrasteel_wand_cap"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

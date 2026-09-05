@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:greatwood_stairs"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

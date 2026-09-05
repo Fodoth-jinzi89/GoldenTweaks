@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createdieselgenerators:chip_wood_block"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

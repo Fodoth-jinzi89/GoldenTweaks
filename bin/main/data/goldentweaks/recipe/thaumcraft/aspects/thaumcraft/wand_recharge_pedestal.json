@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:wand_recharge_pedestal"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedcrafting:enhanced_ender_catalyst"
-  },
-  "aspects": {
-    "alienis": 3
-  }
-}

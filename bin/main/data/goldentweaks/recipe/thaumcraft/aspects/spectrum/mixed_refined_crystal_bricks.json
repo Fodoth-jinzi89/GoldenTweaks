@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:mixed_refined_crystal_bricks"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

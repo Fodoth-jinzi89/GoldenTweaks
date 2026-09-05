@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedae:ex_export_bus_part"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

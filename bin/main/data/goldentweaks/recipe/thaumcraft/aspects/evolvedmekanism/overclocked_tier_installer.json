@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "evolvedmekanism:overclocked_tier_installer"
-  },
-  "aspects": {
-    "tempus": 3
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "irons_spellbooks:burning_dash",
-    { "id": "hazennstuff:cinderous_step", "required": false }
-  ]
-}

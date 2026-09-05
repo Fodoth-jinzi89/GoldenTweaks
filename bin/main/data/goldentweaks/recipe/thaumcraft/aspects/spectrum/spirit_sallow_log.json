@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:spirit_sallow_log"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

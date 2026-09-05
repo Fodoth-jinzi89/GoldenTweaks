@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:cut_granite"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

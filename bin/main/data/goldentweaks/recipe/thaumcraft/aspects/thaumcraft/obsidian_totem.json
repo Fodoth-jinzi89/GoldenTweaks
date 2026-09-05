@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:obsidian_totem"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

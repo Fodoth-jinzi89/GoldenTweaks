@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ae2cs:resonating_seed"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

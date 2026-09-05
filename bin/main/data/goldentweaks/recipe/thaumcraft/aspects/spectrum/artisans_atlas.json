@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:artisans_atlas"
-  },
-  "aspects": {
-    "cognitio": 4
-  }
-}

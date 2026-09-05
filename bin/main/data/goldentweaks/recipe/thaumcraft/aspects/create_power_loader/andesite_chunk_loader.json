@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_power_loader:andesite_chunk_loader"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

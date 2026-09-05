@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:music_disc_discovery"
-  },
-  "aspects": {
-    "sonus": 4
-  }
-}

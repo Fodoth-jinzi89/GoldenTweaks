@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:chlorophyte_headgear"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:cobbled_granite_stairs"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

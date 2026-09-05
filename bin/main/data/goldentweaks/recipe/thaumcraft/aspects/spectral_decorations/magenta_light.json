@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectral_decorations:magenta_light"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "iss_magicfromtheeast:soul_skull"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

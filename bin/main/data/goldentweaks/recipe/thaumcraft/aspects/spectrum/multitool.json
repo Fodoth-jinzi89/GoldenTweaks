@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:multitool"
-  },
-  "aspects": {
-    "instrumentum": 3
-  }
-}

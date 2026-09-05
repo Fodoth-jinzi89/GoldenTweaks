@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "neoecoae:crafting_vent"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

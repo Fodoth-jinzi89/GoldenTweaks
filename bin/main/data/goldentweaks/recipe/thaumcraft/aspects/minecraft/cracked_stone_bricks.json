@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "minecraft:cracked_stone_bricks"
-  },
-  "aspects": {
-    "anteanus": 1
-  }
-}

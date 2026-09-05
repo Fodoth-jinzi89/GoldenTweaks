@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "apotheosis:spawner_rune"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

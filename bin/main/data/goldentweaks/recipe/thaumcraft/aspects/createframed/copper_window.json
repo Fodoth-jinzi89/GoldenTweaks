@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createframed:copper_window"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "northstar:plate_fungus"
-  },
-  "aspects": {
-    "fungus": 3
-  }
-}

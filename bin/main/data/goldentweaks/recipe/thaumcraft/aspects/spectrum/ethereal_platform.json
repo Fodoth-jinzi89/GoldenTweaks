@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:ethereal_platform"
-  },
-  "aspects": {
-    "alienis": 3
-  }
-}

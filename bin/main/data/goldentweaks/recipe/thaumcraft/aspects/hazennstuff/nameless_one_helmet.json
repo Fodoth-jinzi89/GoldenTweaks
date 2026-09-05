@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:nameless_one_helmet"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

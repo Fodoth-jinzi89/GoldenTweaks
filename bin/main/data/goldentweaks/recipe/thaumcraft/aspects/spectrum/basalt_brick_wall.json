@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:basalt_brick_wall"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

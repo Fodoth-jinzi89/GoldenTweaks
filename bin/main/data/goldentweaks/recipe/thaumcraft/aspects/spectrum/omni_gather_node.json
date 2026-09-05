@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:omni_gather_node"
-  },
-  "aspects": {
-    "auram": 6
-  }
-}

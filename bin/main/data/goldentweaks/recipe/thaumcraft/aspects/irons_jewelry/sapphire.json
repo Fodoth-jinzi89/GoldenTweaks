@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_jewelry:sapphire"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

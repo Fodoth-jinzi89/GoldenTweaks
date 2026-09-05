@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "aero_reformation:sensor_agency"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "northstar:polished_amethyst"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

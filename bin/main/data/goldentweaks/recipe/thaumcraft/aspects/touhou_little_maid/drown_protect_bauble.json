@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:drown_protect_bauble"
-  },
-  "aspects": {
-    "humanus": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bakeries:glass_cabinet_door"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

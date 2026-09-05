@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ae2:quartz_brick_stairs"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

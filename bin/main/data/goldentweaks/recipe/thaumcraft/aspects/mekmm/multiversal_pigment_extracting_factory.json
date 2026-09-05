@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekmm:multiversal_pigment_extracting_factory"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

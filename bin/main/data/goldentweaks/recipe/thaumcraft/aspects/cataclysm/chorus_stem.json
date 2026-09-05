@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cataclysm:chorus_stem"
-  },
-  "aspects": {
-    "reliquiae": 3
-  }
-}

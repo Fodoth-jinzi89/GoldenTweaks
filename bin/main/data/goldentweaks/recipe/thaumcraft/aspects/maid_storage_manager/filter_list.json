@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "maid_storage_manager:filter_list"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:citrine_pillar"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:polished_end_stone_slab"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

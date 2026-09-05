@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:palm_stairs"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

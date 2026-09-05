@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:warped_window"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

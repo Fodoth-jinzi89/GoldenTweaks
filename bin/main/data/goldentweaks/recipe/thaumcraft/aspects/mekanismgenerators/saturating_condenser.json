@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanismgenerators:saturating_condenser"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

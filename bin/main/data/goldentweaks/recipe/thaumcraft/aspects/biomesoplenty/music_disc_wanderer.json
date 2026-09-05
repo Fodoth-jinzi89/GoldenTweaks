@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:music_disc_wanderer"
-  },
-  "aspects": {
-    "sonus": 4
-  }
-}

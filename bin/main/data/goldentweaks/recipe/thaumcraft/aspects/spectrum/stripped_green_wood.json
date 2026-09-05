@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:stripped_green_wood"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

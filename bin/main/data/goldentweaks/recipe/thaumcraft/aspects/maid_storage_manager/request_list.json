@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "maid_storage_manager:request_list"
-  },
-  "aspects": {
-    "cognitio": 4
-  }
-}

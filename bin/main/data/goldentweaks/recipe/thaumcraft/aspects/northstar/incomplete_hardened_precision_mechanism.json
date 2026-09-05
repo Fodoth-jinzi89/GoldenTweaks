@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "northstar:incomplete_hardened_precision_mechanism"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

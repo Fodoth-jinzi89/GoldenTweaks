@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alltheores:lead_rod"
-  },
-  "aspects": {
-    "metallum": 2
-  }
-}

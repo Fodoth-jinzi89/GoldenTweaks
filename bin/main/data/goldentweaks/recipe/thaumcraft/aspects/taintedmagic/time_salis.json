@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "taintedmagic:time_salis"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:raw_dark_prismarine_wall"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:ionic_splitter_t1"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

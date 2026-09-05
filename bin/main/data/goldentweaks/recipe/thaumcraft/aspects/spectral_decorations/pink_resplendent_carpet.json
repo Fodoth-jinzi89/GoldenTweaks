@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectral_decorations:pink_resplendent_carpet"
-  },
-  "aspects": {
-    "pannus": 2
-  }
-}

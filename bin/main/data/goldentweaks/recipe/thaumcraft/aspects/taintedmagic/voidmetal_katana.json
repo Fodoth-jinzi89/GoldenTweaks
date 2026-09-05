@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "taintedmagic:voidmetal_katana"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

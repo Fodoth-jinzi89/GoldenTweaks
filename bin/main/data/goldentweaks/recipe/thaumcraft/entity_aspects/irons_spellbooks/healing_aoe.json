@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "irons_spellbooks:healing_aoe"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

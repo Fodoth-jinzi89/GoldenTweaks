@@ -1,8 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": { "id": "extendedcrafting:the_ultimate_block" },
-  "aspects": {
-    "perfictus": 81,
-    "metallum": 81
-  }
-}

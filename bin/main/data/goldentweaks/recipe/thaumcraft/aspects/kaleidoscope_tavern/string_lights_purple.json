@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "kaleidoscope_tavern:string_lights_purple"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

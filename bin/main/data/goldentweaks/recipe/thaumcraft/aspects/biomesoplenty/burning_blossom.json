@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:burning_blossom"
-  },
-  "aspects": {
-    "ignis": 3
-  }
-}

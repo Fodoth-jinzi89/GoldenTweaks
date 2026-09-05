@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "apotheosis_create:incomplete_epic_material"
-  },
-  "aspects": {
-    "praecantatio": 2
-  }
-}

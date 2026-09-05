@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:stratine_ore"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

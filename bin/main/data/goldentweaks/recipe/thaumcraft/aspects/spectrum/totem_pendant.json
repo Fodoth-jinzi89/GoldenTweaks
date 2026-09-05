@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:totem_pendant"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

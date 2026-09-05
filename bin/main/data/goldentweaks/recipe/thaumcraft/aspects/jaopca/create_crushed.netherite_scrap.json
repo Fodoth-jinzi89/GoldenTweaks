@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "jaopca:create_crushed.netherite_scrap"
-  },
-  "aspects": {
-    "mixtura": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:polished_calcite_wall"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

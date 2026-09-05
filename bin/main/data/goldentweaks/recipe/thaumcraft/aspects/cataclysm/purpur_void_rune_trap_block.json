@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cataclysm:purpur_void_rune_trap_block"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

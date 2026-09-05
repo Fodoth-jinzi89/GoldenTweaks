@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgear:sturdy_repair_kit"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:mixed_crystal_cluster"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

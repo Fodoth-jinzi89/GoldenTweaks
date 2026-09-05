@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:pure_diamond_block"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

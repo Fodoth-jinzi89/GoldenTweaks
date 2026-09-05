@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:tuff_shingles"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

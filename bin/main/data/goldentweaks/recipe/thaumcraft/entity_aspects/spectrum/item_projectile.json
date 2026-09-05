@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "spectrum:item_projectile"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

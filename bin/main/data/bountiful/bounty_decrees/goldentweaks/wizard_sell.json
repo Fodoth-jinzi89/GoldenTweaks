@@ -1,9 +1,0 @@
-{
-    "objectives": [
-        "golden_all_rews"
-    ],
-    "rewards": [
-        "wizard_sell"
-    ],
-    "linkedProfessions": []
-}

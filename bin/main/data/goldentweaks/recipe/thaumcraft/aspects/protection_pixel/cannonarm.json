@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "protection_pixel:cannonarm"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

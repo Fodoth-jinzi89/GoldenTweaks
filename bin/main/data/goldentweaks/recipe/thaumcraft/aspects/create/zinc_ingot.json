@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:zinc_ingot"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

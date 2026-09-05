@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedae:drive_upgrade"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

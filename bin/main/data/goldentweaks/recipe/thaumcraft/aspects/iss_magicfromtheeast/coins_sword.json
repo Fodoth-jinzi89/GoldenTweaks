@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "iss_magicfromtheeast:coins_sword"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

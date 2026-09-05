@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_spellbooks:tyros_statue"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

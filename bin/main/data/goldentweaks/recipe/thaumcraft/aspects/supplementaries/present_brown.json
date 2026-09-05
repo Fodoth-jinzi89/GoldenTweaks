@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:present_brown"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

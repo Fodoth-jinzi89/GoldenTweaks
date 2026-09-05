@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:mysterious_compass"
-  },
-  "aspects": {
-    "iter": 3
-  }
-}

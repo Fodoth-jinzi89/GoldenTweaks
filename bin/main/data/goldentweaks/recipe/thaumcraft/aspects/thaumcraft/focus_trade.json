@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:focus_trade"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

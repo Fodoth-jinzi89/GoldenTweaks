@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "evolvedmekanism:molten_flux_bucket"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

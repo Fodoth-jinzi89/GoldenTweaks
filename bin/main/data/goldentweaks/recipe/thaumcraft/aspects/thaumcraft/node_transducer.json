@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:node_transducer"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

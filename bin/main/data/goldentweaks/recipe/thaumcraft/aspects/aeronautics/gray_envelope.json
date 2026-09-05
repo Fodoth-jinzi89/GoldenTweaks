@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "aeronautics:gray_envelope"
-  },
-  "aspects": {
-    "laputa": 4
-  }
-}

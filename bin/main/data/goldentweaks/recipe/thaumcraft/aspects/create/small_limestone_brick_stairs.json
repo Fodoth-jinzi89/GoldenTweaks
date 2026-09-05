@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:small_limestone_brick_stairs"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

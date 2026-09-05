@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:crescent_clock"
-  },
-  "aspects": {
-    "tempus": 3
-  }
-}

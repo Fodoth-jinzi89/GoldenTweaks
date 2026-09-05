@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "spectrum:block_flooder_projectile"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

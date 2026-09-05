@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createmetalogistics:filter_requester"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

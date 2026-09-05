@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndecor:small_gabbro_brick_wall"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

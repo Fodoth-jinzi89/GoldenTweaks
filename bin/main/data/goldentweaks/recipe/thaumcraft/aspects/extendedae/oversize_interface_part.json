@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedae:oversize_interface_part"
-  },
-  "aspects": {
-    "cognitio": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alltheores:platinum_nugget"
-  },
-  "aspects": {
-    "metallum": 1
-  }
-}

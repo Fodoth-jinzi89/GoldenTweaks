@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createframed:tan_cardboard_window_pane"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

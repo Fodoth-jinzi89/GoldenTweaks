@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgear:katana_blade"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

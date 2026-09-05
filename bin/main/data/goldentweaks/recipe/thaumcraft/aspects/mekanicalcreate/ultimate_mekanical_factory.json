@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanicalcreate:ultimate_mekanical_factory"
-  },
-  "aspects": {
-    "terminus": 5
-  }
-}

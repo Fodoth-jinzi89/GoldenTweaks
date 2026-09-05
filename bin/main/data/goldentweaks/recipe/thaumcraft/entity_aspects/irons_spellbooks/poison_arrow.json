@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "irons_spellbooks:poison_arrow"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

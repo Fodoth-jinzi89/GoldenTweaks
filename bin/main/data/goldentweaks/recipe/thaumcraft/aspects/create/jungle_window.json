@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:jungle_window"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

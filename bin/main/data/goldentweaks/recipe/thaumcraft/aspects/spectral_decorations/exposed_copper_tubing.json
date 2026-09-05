@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectral_decorations:exposed_copper_tubing"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

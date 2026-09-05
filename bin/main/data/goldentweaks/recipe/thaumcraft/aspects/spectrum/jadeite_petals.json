@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:jadeite_petals"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

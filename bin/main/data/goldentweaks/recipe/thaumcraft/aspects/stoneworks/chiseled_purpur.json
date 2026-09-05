@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:chiseled_purpur"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:lunch_basket"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

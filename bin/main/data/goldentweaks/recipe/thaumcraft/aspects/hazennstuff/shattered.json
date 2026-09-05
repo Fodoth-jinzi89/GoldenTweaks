@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:shattered"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

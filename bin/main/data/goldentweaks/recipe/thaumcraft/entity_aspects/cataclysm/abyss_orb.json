@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "cataclysm:abyss_orb"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

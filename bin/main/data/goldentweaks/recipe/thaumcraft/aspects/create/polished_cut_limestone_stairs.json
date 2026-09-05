@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:polished_cut_limestone_stairs"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

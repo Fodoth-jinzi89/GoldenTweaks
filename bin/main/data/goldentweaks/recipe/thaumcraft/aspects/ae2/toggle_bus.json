@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ae2:toggle_bus"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:fire_pit"
-  },
-  "aspects": {
-    "ignis": 3
-  }
-}

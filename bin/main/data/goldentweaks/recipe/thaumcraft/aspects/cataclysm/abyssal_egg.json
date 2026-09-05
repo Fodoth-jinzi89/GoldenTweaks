@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cataclysm:abyssal_egg"
-  },
-  "aspects": {
-    "profundum": 3
-  }
-}

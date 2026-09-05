@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgems:deepslate_opal_ore"
-  },
-  "aspects": {
-    "spelunca": 6
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:pedestal_all_basic"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

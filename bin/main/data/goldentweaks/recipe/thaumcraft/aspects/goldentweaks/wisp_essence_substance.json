@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "goldentweaks:wisp_essence_substance"
-  },
-  "aspects": {
-    "substance": 2
-  }
-}

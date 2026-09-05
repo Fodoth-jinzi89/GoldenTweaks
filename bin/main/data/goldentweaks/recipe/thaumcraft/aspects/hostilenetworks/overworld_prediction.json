@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hostilenetworks:overworld_prediction"
-  },
-  "aspects": {
-    "cognitio": 4
-  }
-}

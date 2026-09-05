@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "goldentweaks:infusion_intercepter"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

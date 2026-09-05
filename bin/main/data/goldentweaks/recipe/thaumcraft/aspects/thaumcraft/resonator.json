@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:resonator"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

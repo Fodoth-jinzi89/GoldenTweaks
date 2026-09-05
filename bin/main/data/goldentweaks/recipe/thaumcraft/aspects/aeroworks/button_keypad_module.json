@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "aeroworks:button_keypad_module"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

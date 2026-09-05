@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "apotheosis:mysterious_scrap_metal"
-  },
-  "aspects": {
-    "praecantatio": 2
-  }
-}

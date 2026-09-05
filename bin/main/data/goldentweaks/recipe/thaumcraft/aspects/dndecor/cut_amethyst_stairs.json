@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndecor:cut_amethyst_stairs"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

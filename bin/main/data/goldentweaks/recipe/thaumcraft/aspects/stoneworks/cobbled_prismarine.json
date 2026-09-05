@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:cobbled_prismarine"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

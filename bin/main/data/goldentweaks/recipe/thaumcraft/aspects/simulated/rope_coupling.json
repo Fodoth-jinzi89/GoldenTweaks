@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "simulated:rope_coupling"
-  },
-  "aspects": {
-    "laputa": 2
-  }
-}

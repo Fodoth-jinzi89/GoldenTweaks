@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndecor:polished_cut_amethyst_wall"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

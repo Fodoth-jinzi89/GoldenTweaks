@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:maple_slab"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:confetti_popper"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

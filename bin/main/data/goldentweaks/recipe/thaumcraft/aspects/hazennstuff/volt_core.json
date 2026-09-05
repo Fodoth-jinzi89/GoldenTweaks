@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:volt_core"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

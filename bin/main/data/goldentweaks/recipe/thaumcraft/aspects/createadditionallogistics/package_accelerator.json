@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createadditionallogistics:package_accelerator"
-  },
-  "aspects": {
-    "vas": 3
-  }
-}

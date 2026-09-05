@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekmm:planting_station"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

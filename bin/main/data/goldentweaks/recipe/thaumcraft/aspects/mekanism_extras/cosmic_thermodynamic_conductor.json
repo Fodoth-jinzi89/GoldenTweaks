@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanism_extras:cosmic_thermodynamic_conductor"
-  },
-  "aspects": {
-    "cosmic": 6
-  }
-}

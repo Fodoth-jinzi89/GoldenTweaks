@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:amethyst_bricks"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

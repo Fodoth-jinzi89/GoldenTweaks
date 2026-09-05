@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bits_n_bobs:crimsite_tile_wall"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

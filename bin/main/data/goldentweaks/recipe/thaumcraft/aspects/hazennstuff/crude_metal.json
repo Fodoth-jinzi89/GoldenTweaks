@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:crude_metal"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

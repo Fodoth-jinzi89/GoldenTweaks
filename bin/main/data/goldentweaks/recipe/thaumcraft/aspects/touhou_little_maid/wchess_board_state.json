@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:wchess_board_state"
-  },
-  "aspects": {
-    "humanus": 3
-  }
-}

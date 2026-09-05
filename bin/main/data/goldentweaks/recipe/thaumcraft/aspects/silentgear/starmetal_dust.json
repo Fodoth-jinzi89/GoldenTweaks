@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgear:starmetal_dust"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createaddition:diamond_grit"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

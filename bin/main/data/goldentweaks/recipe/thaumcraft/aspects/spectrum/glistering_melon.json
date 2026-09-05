@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:glistering_melon"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

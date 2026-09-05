@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanism:upgrade_chemical"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanismadvancedgenerators:galactic_universal_cable"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

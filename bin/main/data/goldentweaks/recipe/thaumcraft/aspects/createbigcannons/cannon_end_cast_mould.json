@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createbigcannons:cannon_end_cast_mould"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

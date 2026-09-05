@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ae2:cyan_paint_ball"
-  },
-  "aspects": {
-    "sensus": 2
-  }
-}

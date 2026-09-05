@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "goldentweaks:item/sequenced_assembly/unprocessed_common_material"
-  }
-}

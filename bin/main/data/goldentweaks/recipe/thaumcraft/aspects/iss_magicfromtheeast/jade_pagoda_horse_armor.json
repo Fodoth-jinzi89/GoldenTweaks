@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "iss_magicfromtheeast:jade_pagoda_horse_armor"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

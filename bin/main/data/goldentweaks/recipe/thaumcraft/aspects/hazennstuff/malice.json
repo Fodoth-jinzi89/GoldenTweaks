@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:malice"
-  },
-  "aspects": {
-    "gelum": 3
-  }
-}

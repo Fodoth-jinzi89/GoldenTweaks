@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:hand_crank"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

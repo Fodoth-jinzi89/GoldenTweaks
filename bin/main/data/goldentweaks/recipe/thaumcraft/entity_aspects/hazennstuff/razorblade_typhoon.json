@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "hazennstuff:razorblade_typhoon"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

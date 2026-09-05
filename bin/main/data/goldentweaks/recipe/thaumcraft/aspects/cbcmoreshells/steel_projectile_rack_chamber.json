@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cbcmoreshells:steel_projectile_rack_chamber"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

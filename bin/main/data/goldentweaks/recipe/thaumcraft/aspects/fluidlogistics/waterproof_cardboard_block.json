@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "fluidlogistics:waterproof_cardboard_block"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

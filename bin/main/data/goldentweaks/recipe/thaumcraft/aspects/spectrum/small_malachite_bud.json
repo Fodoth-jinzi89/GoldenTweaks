@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:small_malachite_bud"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

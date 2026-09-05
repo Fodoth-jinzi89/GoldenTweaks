@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgems:ammolite_teleporter"
-  },
-  "aspects": {
-    "fossil": 4
-  }
-}

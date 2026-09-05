@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bits_n_bobs:cable_girder_strut"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgear:crushed_shulker_shell"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:polished_shale_clay_slab"
-  },
-  "aspects": {
-    "terra": 3
-  }
-}

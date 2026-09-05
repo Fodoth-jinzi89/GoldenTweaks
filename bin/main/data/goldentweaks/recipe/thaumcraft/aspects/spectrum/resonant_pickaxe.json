@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:resonant_pickaxe"
-  },
-  "aspects": {
-    "instrumentum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:preservation_stone"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:magic_tallow"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

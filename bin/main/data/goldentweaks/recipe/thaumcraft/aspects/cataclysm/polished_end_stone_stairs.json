@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cataclysm:polished_end_stone_stairs"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

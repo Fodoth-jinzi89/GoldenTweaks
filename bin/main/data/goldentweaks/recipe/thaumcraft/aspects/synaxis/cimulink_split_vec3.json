@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "synaxis:cimulink_split_vec3"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

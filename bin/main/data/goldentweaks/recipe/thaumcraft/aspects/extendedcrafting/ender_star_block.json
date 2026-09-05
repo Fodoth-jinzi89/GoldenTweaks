@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedcrafting:ender_star_block"
-  },
-  "aspects": {
-    "alienis": 3
-  }
-}

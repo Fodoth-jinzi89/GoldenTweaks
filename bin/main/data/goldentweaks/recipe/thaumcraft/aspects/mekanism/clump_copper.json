@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanism:clump_copper"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

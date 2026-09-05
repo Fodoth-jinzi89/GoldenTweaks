@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "sophisticatedbackpacks:stack_upgrade_tier_1"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

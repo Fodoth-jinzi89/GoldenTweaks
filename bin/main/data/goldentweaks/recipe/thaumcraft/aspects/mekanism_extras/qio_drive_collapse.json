@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekanism_extras:qio_drive_collapse"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

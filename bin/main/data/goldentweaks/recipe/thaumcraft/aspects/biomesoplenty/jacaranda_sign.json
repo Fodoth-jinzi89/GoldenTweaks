@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:jacaranda_sign"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgems:ammolite_block"
-  },
-  "aspects": {
-    "fossil": 4
-  }
-}

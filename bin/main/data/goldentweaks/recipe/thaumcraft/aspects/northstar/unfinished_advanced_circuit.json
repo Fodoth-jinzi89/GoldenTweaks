@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "northstar:unfinished_advanced_circuit"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

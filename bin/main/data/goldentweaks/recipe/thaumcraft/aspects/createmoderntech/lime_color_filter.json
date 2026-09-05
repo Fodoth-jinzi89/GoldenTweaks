@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createmoderntech:lime_color_filter"
-  },
-  "aspects": {
-    "sensus": 3
-  }
-}

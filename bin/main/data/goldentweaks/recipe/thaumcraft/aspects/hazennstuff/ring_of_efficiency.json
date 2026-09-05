@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:ring_of_efficiency"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

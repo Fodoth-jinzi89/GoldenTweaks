@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:blue_postbox"
-  },
-  "aspects": {
-    "vas": 3
-  }
-}

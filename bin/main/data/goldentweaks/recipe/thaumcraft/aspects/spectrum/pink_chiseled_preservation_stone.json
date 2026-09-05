@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:pink_chiseled_preservation_stone"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

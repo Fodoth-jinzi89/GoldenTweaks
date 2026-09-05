@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "farmersdelight:carrot_crate"
-  },
-  "aspects": {
-    "vas": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:glow_squid_idol"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

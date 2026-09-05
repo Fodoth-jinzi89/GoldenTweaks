@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alltheores:nickel_ingot"
-  },
-  "aspects": {
-    "metallum": 4
-  }
-}

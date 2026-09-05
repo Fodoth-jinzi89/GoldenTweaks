@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "packagedauto:volume_package"
-  },
-  "aspects": {
-    "vas": 3
-  }
-}

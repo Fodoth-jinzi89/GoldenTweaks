@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:obsidian_claymore"
-  },
-  "aspects": {
-    "terra": 3
-  }
-}

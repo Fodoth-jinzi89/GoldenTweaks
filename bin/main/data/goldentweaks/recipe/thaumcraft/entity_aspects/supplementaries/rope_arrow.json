@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "supplementaries:rope_arrow"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

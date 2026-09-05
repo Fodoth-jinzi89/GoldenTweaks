@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "goldentweaks:unprocessed_common_material"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

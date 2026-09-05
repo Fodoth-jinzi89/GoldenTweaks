@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "powergrid:punch_card"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

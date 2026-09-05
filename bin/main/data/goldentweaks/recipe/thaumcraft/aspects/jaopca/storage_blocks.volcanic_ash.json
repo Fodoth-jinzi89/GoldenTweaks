@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "jaopca:storage_blocks.volcanic_ash"
-  },
-  "aspects": {
-    "ira": 6
-  }
-}

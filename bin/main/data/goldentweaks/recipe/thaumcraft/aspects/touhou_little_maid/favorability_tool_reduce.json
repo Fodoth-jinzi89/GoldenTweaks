@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:favorability_tool_reduce"
-  },
-  "aspects": {
-    "instrumentum": 3
-  }
-}

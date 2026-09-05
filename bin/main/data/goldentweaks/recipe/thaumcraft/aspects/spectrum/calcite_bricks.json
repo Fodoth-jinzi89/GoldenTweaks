@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:calcite_bricks"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

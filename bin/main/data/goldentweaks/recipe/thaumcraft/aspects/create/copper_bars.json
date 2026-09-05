@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:copper_bars"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

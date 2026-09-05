@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "avaritia:full_matter_cluster"
-  },
-  "aspects": {
-    "terminus": 3
-  }
-}

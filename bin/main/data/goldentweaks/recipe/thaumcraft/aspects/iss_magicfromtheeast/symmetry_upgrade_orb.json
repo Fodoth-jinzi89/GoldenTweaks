@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "iss_magicfromtheeast:symmetry_upgrade_orb"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

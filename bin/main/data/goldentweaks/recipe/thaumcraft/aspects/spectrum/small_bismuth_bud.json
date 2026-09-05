@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:small_bismuth_bud"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "iss_magicfromtheeast:yin_yang_core"
-  },
-  "aspects": {
-    "machina": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndesires:brown_asphalt"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

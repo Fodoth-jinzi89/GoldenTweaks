@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:andesite_bars"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "evolvedmekanism:netherrack_osmium_ore"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

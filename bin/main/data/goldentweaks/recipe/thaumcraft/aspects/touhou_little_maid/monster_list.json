@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:monster_list"
-  },
-  "aspects": {
-    "humanus": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:ashen_tart"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

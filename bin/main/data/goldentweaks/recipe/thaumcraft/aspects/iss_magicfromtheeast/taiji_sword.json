@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "iss_magicfromtheeast:taiji_sword"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

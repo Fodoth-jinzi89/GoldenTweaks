@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:fissure_plum"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

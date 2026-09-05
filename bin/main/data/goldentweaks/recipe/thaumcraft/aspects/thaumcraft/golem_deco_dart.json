@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:golem_deco_dart"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

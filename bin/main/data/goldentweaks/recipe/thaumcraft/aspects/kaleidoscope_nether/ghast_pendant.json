@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "kaleidoscope_nether:ghast_pendant"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:chiseled_polished_calcite"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

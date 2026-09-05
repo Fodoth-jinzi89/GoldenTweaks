@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "densemekanism:dense_tin_ore"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

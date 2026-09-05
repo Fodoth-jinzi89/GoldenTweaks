@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "minecraft:dead_fire_coral_block"
-  },
-  "aspects": {
-    "ira": 8
-  }
-}

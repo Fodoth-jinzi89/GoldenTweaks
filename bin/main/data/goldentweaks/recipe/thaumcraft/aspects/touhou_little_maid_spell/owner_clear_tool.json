@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid_spell:owner_clear_tool"
-  },
-  "aspects": {
-    "instrumentum": 3
-  }
-}

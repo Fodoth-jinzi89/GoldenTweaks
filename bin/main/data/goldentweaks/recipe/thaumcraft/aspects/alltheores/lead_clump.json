@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alltheores:lead_clump"
-  },
-  "aspects": {
-    "metallum": 2
-  }
-}

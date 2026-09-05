@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "linearbearing:slippery_copycat"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "dndesires:cut_breccia_brick_wall"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

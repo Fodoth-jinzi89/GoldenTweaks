@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:copper_nugget"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

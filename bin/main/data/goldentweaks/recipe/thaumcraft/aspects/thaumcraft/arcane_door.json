@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:arcane_door"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "irons_spellbooks:sunbeam"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

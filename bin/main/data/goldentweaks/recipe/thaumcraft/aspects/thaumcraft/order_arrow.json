@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:order_arrow"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

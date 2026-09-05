@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:limestone_pillar"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedae:quartz_blend"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

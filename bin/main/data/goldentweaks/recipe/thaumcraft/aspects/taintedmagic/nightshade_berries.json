@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "taintedmagic:nightshade_berries"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "northstar:incomplete_titanium_ingot"
-  },
-  "aspects": {
-    "ignis": 3
-  }
-}

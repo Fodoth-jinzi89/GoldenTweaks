@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:entity_aspect",
-  "entity": {
-    "id": "iss_magicfromtheeast:spirit_shuriken"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

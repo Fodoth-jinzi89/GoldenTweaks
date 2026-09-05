@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "evolvedmekanism:dense_induction_provider"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

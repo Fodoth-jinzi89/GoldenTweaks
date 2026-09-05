@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "cbcmoreshells:sap_shell"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

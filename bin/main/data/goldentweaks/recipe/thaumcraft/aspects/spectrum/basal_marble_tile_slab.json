@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:basal_marble_tile_slab"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "farmersdelight:salmon_slice"
-  },
-  "aspects": {
-    "gelum": 3
-  }
-}

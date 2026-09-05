@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:stone_plates"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

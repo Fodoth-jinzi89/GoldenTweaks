@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "kaleidoscope_nether:strider_rock_shell"
-  },
-  "aspects": {
-    "telum": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:mycelium_guardian_helmet"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

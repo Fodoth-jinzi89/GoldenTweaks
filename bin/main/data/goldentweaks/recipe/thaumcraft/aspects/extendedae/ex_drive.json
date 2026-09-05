@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extendedae:ex_drive"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

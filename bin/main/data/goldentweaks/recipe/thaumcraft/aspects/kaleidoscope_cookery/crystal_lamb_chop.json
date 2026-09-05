@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "kaleidoscope_cookery:crystal_lamb_chop"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

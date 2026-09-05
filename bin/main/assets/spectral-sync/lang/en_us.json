@@ -1,7 +1,0 @@
-{
-  "item.spectral-sync.syncbook": "The Syncbook",
-  "book.spectrum.guidebook.syncbook.name": "The Syncbook",
-  "book.spectrum.guidebook.syncbook.page0.text": "The Syncbook is a item that allows you to share your spectrum progress with others.\\\nUse it to fill it with knowledge.",
-  "book.spectrum.guidebook.syncbook.page1.title": "But how do I use this",
-  "book.spectrum.guidebook.syncbook.page1.text": "The Syncbook will [#](449900)glow[#]() when it is holding spectrum progress. simply right-click to get the progress.\\\nOr if you want to overwrite the progress in the book you can [#](449900)Sneak and use[#]() to put your progress in the book"
-}

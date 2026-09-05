@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:hibernating_jade_vine_bulb"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

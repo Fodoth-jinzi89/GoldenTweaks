@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:empyreal_wood"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

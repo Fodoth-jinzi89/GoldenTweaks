@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "alltheores:silver_plate"
-  },
-  "aspects": {
-    "metallum": 2
-  }
-}

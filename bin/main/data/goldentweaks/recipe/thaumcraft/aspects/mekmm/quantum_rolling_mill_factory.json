@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "mekmm:quantum_rolling_mill_factory"
-  },
-  "aspects": {
-    "alienis": 3
-  }
-}

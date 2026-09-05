@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "northstar:tall_venus_mycelium"
-  },
-  "aspects": {
-    "space": 3
-  }
-}

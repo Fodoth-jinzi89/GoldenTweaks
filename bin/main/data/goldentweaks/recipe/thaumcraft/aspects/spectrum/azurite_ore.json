@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:azurite_ore"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

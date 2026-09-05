@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:azurite_bricks"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

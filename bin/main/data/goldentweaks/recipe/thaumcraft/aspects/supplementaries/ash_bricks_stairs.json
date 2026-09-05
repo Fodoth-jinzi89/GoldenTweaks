@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:ash_bricks_stairs"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

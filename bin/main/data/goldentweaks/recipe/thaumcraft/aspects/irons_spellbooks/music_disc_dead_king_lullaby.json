@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_spellbooks:music_disc_dead_king_lullaby"
-  },
-  "aspects": {
-    "sonus": 4
-  }
-}

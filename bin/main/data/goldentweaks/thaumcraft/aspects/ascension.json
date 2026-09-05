@@ -1,7 +1,0 @@
-{
-  "type": "goldentweaks:aspect",
-  "tag": "ascension",
-  "color": "0xefdffa",
-  "components": ["terminus", "imperium"],
-  "image": "goldentweaks:textures/aspects/ascension.png"
-}

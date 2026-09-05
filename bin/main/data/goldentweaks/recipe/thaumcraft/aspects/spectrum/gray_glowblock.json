@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:gray_glowblock"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

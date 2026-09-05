@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "minecraft:amethyst_block"
-  },
-  "aspects": {
-    "spelunca": 1
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "pipeorgans:dark_oak_boot"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

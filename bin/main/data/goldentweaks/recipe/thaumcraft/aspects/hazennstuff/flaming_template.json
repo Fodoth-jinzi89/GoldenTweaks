@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:flaming_template"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

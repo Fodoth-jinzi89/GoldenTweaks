@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:calcite_shingles"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:maid_beacon"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

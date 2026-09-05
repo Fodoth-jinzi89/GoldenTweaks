@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createmoderntech:audio_trigger"
-  },
-  "aspects": {
-    "sonus": 3
-  }
-}

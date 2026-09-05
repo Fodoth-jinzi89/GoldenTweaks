@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:nightfalls_blade"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

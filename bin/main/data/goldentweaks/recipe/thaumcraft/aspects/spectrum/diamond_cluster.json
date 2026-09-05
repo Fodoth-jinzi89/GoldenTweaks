@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:diamond_cluster"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

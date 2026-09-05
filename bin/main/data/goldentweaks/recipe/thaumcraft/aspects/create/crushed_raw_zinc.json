@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create:crushed_raw_zinc"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

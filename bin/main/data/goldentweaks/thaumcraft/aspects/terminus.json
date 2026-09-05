@@ -1,7 +1,0 @@
-{
-  "type": "goldentweaks:aspect",
-  "tag": "terminus",
-  "color": "0xb90000",
-  "components": ["lucrum", "alienis"],
-  "image": "goldentweaks:textures/aspects/terminus.png"
-}

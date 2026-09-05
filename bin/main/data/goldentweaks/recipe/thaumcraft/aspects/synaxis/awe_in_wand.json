@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "synaxis:awe_in_wand"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

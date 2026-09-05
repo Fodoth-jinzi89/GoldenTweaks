@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "touhou_little_maid:garage_kit"
-  },
-  "aspects": {
-    "humanus": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ae2:certus_quartz_crystal"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

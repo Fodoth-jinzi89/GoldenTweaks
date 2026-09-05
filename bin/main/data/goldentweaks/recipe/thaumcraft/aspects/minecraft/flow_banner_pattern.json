@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "minecraft:flow_banner_pattern"
-  },
-  "aspects": {
-    "imperium": 6
-  }
-}

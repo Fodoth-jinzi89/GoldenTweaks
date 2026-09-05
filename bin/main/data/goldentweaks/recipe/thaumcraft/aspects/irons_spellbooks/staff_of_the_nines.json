@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_spellbooks:staff_of_the_nines"
-  },
-  "aspects": {
-    "instrumentum": 3
-  }
-}

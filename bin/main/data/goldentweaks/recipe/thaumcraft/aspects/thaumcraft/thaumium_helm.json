@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:thaumium_helm"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

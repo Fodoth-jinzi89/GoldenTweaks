@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createpropulsion:glued_contraption_cloner"
-  },
-  "aspects": {
-    "adhaesio": 3
-  }
-}

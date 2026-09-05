@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "amendments:dye_bottle"
-  },
-  "aspects": {
-    "sensus": 2
-  }
-}

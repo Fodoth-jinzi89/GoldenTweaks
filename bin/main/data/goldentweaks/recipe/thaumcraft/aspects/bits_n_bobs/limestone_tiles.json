@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "bits_n_bobs:limestone_tiles"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "create_sa:blazing_pickaxe"
-  },
-  "aspects": {
-    "instrumentum": 3
-  }
-}

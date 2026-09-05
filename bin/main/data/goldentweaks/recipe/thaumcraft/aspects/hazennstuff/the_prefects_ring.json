@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:the_prefects_ring"
-  },
-  "aspects": {
-    "accessories": 3
-  }
-}

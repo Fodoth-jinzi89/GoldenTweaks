@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "stoneworks:chiseled_end_stone"
-  },
-  "aspects": {
-    "saxum": 3
-  }
-}

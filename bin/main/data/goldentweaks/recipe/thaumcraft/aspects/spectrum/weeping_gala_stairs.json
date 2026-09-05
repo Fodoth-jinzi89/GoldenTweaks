@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:weeping_gala_stairs"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

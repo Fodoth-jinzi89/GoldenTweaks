@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:ivory_noxwood_door"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}

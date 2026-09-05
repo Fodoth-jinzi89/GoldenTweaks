@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "ae2:cut_quartz_block"
-  },
-  "aspects": {
-    "vitreus": 3
-  }
-}

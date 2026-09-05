@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:vindicator_head"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

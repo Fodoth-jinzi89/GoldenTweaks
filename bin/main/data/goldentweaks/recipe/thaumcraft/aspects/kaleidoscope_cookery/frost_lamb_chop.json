@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "kaleidoscope_cookery:frost_lamb_chop"
-  },
-  "aspects": {
-    "gelum": 3
-  }
-}

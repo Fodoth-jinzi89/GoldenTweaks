@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "extra_copycats:copycat_collapsible_grid"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

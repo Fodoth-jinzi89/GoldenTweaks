@@ -1,3 +1,0 @@
-minecraft:book
-guideme:guide
-toxony:lost_journal

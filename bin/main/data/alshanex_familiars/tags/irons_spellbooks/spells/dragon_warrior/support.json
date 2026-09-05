@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "irons_spellbooks:evasion",
-    "irons_spellbooks:echoing_strikes",
-
-    { "id": "alshanex_familiars:end_mayhem", "required": false }
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:wisp_essence_humanus"
-  },
-  "aspects": {
-    "humanus": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "silentgear:coating"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

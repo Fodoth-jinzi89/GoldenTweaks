@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "tunes_n_tomes:melodic_mastery_helmet"
-  },
-  "aspects": {
-    "tutamen": 4
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "hazennstuff:blade_of_the_legate"
-  },
-  "aspects": {
-    "praecantatio": 3
-  }
-}

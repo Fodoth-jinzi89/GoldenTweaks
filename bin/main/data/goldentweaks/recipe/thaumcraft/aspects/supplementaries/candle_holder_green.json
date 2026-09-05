@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:candle_holder_green"
-  },
-  "aspects": {
-    "fabrico": 3
-  }
-}

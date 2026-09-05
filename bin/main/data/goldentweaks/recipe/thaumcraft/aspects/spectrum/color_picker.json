@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:color_picker"
-  },
-  "aspects": {
-    "sensus": 2
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "supplementaries:slice_map"
-  },
-  "aspects": {
-    "gelum": 3
-  }
-}

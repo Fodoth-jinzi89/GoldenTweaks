@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "backpack_pixel:decorativetemplate3"
-  },
-  "aspects": {
-    "machina": 3
-  }
-}

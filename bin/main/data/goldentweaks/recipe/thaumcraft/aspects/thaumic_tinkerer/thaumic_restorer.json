@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumic_tinkerer:thaumic_restorer"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

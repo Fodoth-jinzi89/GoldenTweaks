@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "biomesoplenty:mahogany_sign"
-  },
-  "aspects": {
-    "arbor": 3
-  }
-}
