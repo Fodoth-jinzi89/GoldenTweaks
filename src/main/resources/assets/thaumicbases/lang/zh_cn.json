@@ -668,8 +668,8 @@
   "tc.research_name.TB.Overchanter": "超吟附魔台",
   "tc.research_text.TB.Overchanter": "挑战极限",
   "tb.rec.overchanter.page.0": "神秘使通常会向普通物品注入魔法力量来改进它们。这个过程被称为附魔。你创造了超吟附魔台，可将物品上的附魔等级直接翻倍（原等级×2）。",
-  "tb.rec.overchanter.page.1": "将带有附魔的物品放入唯一的栏位，再用法杖点击附魔台两次即可开始。附魔台会吸收附近的 Auram 源质，并从附近玩家处消耗 30 级经验。",
-  "tb.rec.overchanter.page.2": "超吟附魔台可以在任何时候停止它的工作,但是吸收的经验与源质就会被浪费掉了.附魔台会在8格范围内吸收Auram源质,范围之内的源质之镜也能很好的工作.附魔台会忽略等级没有达到30级的玩家,因此即便是多人的等级和超过30附魔台也不会工作.任何物品只要具有附魔就可以使用超吟附魔台,但是没有附魔的物品放上去并不会产生什么卵用.",
+  "tb.rec.overchanter.page.1": "将带有附魔的物品放入唯一的栏位，再用法杖点击附魔台两次即可开始。附魔台会吸收附近的 Incantatio 源质，并从附近玩家处消耗 30 级经验。",
+  "tb.rec.overchanter.page.2": "超吟附魔台可以在任何时候停止它的工作,但是吸收的经验与源质就会被浪费掉了.附魔台会在8格范围内吸收Incantatio源质,范围之内的源质之镜也能很好的工作.附魔台会忽略等级没有达到30级的玩家,因此即便是多人的等级和超过30附魔台也不会工作.任何物品只要具有附魔就可以使用超吟附魔台,但是没有附魔的物品放上去并不会产生什么卵用.",
   "tc.research_name.TB.EntityDec": "实体粉碎机",
   "tc.research_text.TB.EntityDec": "活生生的知识",
   "tb.rec.eDec.page.0": "有时候神秘使会需要更多的知识来继续他的研究.当然,它可以探索这个世界或者使用解构工作台,但是还有其他方法吗?你已经成功创造了一个设备,它能够缓慢杀死它上面的生物,然后把得到的知识直接送入你的脑子中.成为它的'拥有者'也十分简单,只需要将他放入世界中然后点击它.然而知识传输是有距离限制的,如果距离太远,这些传送功率过大的知识有可能会损害你的心理健康.",
@@ -949,5 +949,7 @@
   "config.jade.plugin_thaumicbases.growth": "生长进度",
   "material.goldentweaks.compat.thaumicbases.thauminite_ingot": "秘晶锭",
   "material.goldentweaks.compat.thaumicbases.thaumium_wand_core": "神秘杖柄",
-  "material.goldentweaks.compat.thaumicbases.void_wand_core": "虚空杖柄"
+  "material.goldentweaks.compat.thaumicbases.void_wand_core": "虚空杖柄",
+  "item.thaumcraft.wand.rod.tbthaumium": "神秘杖柄",
+  "item.thaumcraft.wand.rod.tbvoid": "虚空杖柄"
 }

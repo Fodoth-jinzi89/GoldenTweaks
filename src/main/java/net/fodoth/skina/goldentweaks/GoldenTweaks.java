@@ -15,6 +15,7 @@ import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftRecipeLoader;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.BrainJarResearchEvent;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.ThaumometerStorageScanQueue;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAnimatedIconAnimator;
+import net.fodoth.skina.goldentweaks.compat.thaumicbases.ThaumicCropHarvestEvent;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
@@ -121,6 +122,10 @@ public class GoldenTweaks {
             LOGGER.info("Detected lootr, registering quick loot interaction");
             // 快速拾取：按住右键直接拿取 Lootr 容器内的战利品（见 compat/lootr/LootrQuickLootEvent）
             NeoForge.EVENT_BUS.register(LootrQuickLootEvent.class);
+        }
+
+        if (ModList.get().isLoaded("thaumicbases")) {
+            NeoForge.EVENT_BUS.register(ThaumicCropHarvestEvent.class);
         }
 
         modEventBus.addListener(this::onClientSetup);

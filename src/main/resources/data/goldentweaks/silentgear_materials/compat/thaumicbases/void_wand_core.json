@@ -1,7 +1,7 @@
 {
   "type": "silentgear:simple",
   "parent": "silentgear:empty",
-  "crafting": { "can_salvage": true, "categories": ["wand_handle", "advanced"], "gear_type_blacklist": [], "ingredient": { "item": "thaumicbases:void_wand_core" }, "part_substitutes": {} },
+  "crafting": { "can_salvage": true, "categories": ["super_wand_handle", "endgame"], "gear_type_blacklist": [], "ingredient": { "item": "thaumicbases:void_wand_core" }, "part_substitutes": {} },
   "display": { "color": "#FF281342", "main_texture_type": "LOW_CONTRAST", "name": { "translate": "material.goldentweaks.compat.thaumicbases.void_wand_core" }, "name_prefix": "" },
-  "properties": { "silentgear:rod": { "traits": [{ "conditions": [], "level": 4, "trait": "silentgear:void_ward" }] } }
+  "properties": { "silentgear:rod": { "block_reach": { "operation": "ADD", "value": 0.411 }, "attack_reach": { "operation": "ADD", "value": 0.308 }, "magic_damage": { "operation": "ADD", "value": 4.626 }, "enchantment_value": { "operation": "ADD", "value": 6.168 }, "charging_value": { "operation": "ADD", "value": 1.028 }, "rarity": { "operation": "ADD", "value": 3.598 }, "repair_value": { "operation": "ADD", "value": 0.36 }, "traits": [{ "conditions": [], "level": 3, "trait": "silentgear:lustrous" }, { "conditions": [], "level": 3, "trait": "silentgear:venom" }, { "conditions": [], "level": 3, "trait": "silentgear:cursed" }] } }
 }

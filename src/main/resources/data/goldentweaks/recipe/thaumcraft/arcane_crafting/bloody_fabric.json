@@ -1,0 +1,23 @@
+{
+  "type": "thaumcraft:arcane_crafting",
+  "mode": "shapeless",
+  "research": "TB.BloodyRobes",
+  "result": {
+    "id": "thaumicbases:bloody_fabric",
+    "count": 1
+  },
+  "aspects": {
+    "aqua": 5,
+    "entropy": 5
+  },
+  "ingredients": [
+    {
+      "id": "irons_spellbooks:blood_vial",
+      "count": 4
+    },
+    {
+      "id": "thaumcraft:enchanted_fabric",
+      "count": 1
+    }
+  ]
+}
