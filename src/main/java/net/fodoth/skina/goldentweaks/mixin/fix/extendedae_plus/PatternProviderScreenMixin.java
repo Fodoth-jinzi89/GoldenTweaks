@@ -47,6 +47,9 @@ public abstract class PatternProviderScreenMixin<C extends PatternProviderMenu> 
     @Unique
     private AETextField gt$pageInputField;
 
+    @Unique
+    private boolean gt$updatingPageInput;
+
     protected PatternProviderScreenMixin(C menu, Inventory playerInventory, Component title, ScreenStyle style) {
         super(menu, playerInventory, title, style);
     }
@@ -54,8 +57,7 @@ public abstract class PatternProviderScreenMixin<C extends PatternProviderMenu> 
     @Inject(method = "<init>", at = @At("RETURN"))
     private void gt$addPatternBetterPageControls(C menu, Inventory playerInventory, Component title,
                                                   ScreenStyle style, CallbackInfo ci) {
-        if (!((Object) this instanceof GuiExPatternProvider)
-                || !((Object) this instanceof IExPatternPage page)) {
+        if (!((Object) this instanceof IExPatternPage page)) {
             return;
         }
 
@@ -134,26 +136,32 @@ public abstract class PatternProviderScreenMixin<C extends PatternProviderMenu> 
         int pageCount = gt$getAvailablePageCount();
         int targetPage = Math.floorMod(page.eap$getCurrentPage() + delta, pageCount);
         page.eap$setCurrentPage(targetPage);
-        gt$pageInputField.setValue(Integer.toString(targetPage + 1));
+        gt$setPageInputValue(Integer.toString(targetPage + 1));
     }
 
     @Unique
     private void gt$setPageFromInput(IExPatternPage page, String value) {
-        String digits = value.replaceAll("[^0-9]", "");
-        if (!value.equals(digits)) {
-            gt$pageInputField.setValue(digits);
-        }
-        if (digits.isEmpty()) {
+        if (gt$updatingPageInput || value.isEmpty() || !value.chars().allMatch(Character::isDigit)) {
             return;
         }
 
         try {
-            int targetPage = Math.max(1, Math.min(Integer.parseInt(digits), gt$getAvailablePageCount()));
-            if (!digits.equals(Integer.toString(targetPage))) {
-                gt$pageInputField.setValue(Integer.toString(targetPage));
+            int targetPage = Math.max(1, Math.min(Integer.parseInt(value), gt$getAvailablePageCount()));
+            if (!value.equals(Integer.toString(targetPage))) {
+                gt$setPageInputValue(Integer.toString(targetPage));
             }
             page.eap$setCurrentPage(targetPage - 1);
         } catch (NumberFormatException ignored) {
+        }
+    }
+
+    @Unique
+    private void gt$setPageInputValue(String value) {
+        gt$updatingPageInput = true;
+        try {
+            gt$pageInputField.setValue(value);
+        } finally {
+            gt$updatingPageInput = false;
         }
     }
 }

@@ -1,0 +1,7 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": { "can_salvage": true, "categories": ["hard_metal", "advanced"], "gear_type_blacklist": [], "ingredient": { "item": "thaumicbases:thauminite_ingot" }, "part_substitutes": {} },
+  "display": { "color": "#FF6A6A6A", "main_texture_type": "HIGH_CONTRAST", "name": { "translate": "material.goldentweaks.compat.thaumicbases.thauminite_ingot" }, "name_prefix": "" },
+  "properties": { "silentgear:main": { "harvest_tier": { "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool", "level_hint": "5", "name": "netherite" } } }
+}

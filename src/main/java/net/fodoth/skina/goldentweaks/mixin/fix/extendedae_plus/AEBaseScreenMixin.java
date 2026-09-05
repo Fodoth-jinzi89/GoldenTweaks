@@ -6,7 +6,6 @@ import appeng.client.gui.style.ScreenStyle;
 import appeng.menu.AEBaseMenu;
 import com.extendedae_plus.api.IExPatternPage;
 import com.extendedae_plus.api.bridge.ExPatternProviderMenuPageBridge;
-import com.glodblock.github.extendedae.client.gui.GuiExPatternProvider;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -32,8 +31,7 @@ public abstract class AEBaseScreenMixin<T extends AEBaseMenu> extends AbstractCo
     @Inject(method = "render", at = @At("TAIL"))
     private void gt$renderPatternBetterPageNumber(GuiGraphics guiGraphics, int mouseX, int mouseY,
                                                    float partialTick, CallbackInfo ci) {
-        if (!((Object) this instanceof GuiExPatternProvider)
-                || !((Object) this instanceof IExPatternPage page)
+        if (!((Object) this instanceof IExPatternPage page)
                 || !(menu instanceof ExPatternProviderMenuPageBridge menuPage)) {
             return;
         }

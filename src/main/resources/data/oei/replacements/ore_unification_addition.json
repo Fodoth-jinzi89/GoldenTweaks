@@ -67,6 +67,13 @@
   },
   {
     "matchItems": [
+      "thaumicbases:thauminite_block",
+      "jaopca:storage_blocks.thauminite"
+    ],
+    "resultItems": "thaumicbases:thauminite_block"
+  },
+  {
+    "matchItems": [
       "jaopca:storage_blocks.ender_quartz",
       "ae2cs:ender_quartz_block"
     ],

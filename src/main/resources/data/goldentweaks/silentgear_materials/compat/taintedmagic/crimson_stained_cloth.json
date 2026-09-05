@@ -4,8 +4,8 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "rare_textile",
-      "endgame"
+      "textile",
+      "advanced"
     ],
     "gear_type_blacklist": [],
     "ingredient": {

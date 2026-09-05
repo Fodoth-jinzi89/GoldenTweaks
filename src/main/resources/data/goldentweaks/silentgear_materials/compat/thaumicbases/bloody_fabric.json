@@ -9,7 +9,7 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "irons_spellbooks:bloody_vellum"
+      "item": "thaumicbases:bloody_fabric"
     },
     "part_substitutes": {}
   },
@@ -17,7 +17,7 @@
     "color": "#FF802939",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.irons_spellbooks.bloody_vellum"
+      "translate": "material.goldentweaks.compat.thaumicbases.bloody_fabric"
     },
     "name_prefix": ""
   },
@@ -25,52 +25,42 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.452
+        "value": 0.64
       },
       "armor_toughness": {
         "operation": "ADD",
-        "value": 1.582
+        "value": 2.24
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 2.26
+        "value": 3.2
       },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
-          "trait": "silentgear:flexible"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:soft"
+          "level": 1,
+          "trait": "silentgear:silky"
         }
       ]
     },
     "silentgear:grip": {
       "attack_speed": {
         "operation": "ADD",
-        "value": 0.158
+        "value": 0.224
       },
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.316
+        "value": 0.448
       },
       "repair_value": {
         "operation": "ADD",
-        "value": 0.09
+        "value": 0.128
       },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
-          "trait": "silentgear:flexible"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "silentgear:soft"
+          "level": 1,
+          "trait": "silentgear:silky"
         }
       ]
     }

@@ -1,0 +1,129 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "exposure_expanded"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "vista"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "create_optical"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "exposure"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "aeroworks"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "myotus"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "neoecoae"
+    },
+	{
+      "type": "neoforge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "type": "extendedcrafting:shaped_table",
+  "ingredients": [
+    {
+      "item": "exposure_expanded:telescopic_lens"
+    },
+    {
+      "item": "vista:crystalline"
+    },
+    {
+      "item": "exposure_expanded:panoramic_lens"
+    },
+    {
+      "item": "ae2:black_lumen_paint_ball"
+    },
+    {
+      "item": "create_optical:mirror"
+    },
+    {
+      "item": "create_optical:rose_quartz_catalyst_coil"
+    },
+    {
+      "item": "spectrum:basalt_shimmerstone_light"
+    },
+    {
+      "item": "ae2:black_lumen_paint_ball"
+    },
+    {
+      "item": "exposure:interplanar_projector"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    },
+    {
+      "item": "northstar:hardened_precision_mechanism"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    },
+    {
+      "item": "aeroworks:button_keypad_module"
+    },
+    {
+      "item": "spectrum:black_pigment"
+    },
+    {
+      "item": "northstar:dry_plant_fiber"
+    },
+    {
+      "item": "myotus:compat_processor"
+    },
+    {
+      "item": "northstar:dry_plant_fiber"
+    },
+    {
+      "item": "spectrum:black_pigment"
+    },
+    {
+      "item": "neoecoae:aluminum_alloy_ingot"
+    },
+    {
+      "item": "thaumcraft:magic_mirror"
+    },
+    {
+      "item": "neoecoae:aluminum_alloy_ingot"
+    }
+  ],
+  "result": {
+    "id": "neoguanniao:nikon_d750"
+  }
+}

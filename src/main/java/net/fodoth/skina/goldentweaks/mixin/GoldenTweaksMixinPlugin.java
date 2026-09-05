@@ -120,6 +120,21 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2") && isModLoaded("emi");
         }
 
+        if (mixinClassName.endsWith("fix.thaumcraft.ThaumatoriumOutputMixin")) {
+            return isModLoaded("thaumcraft") && isModLoaded("ae2");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.renderblender.")) {
+            if (!isModLoaded("renderblender")) {
+                return false;
+            }
+            if (mixinClassName.endsWith("IrisCompatMixin")
+                    || mixinClassName.endsWith("CosmicRenderCallMixin")) {
+                return isModLoaded("iris");
+            }
+            return true;
+        }
+
         if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
             return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("neoecoae");
         }
@@ -213,6 +228,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumcraftcelestial")) {
             return isModLoaded("thaumcraftcelestial");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumicbases")) {
+            if (mixinClassName.endsWith("ThaumicCropFarmlandMixin")) {
+                return isModLoaded("thaumicbases") && isModLoaded("farmersdelight");
+            }
+            return isModLoaded("thaumicbases");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {

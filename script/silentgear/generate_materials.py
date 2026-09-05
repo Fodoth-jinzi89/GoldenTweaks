@@ -519,15 +519,17 @@ TEXTILE_DESIGN.update(textile_design("textile", [
      ("northstar:durable_fabric", "durable_fabric", None)]
      + [(f"minecraft:{color}_wool", f"wool/{color}", 0.0) for color in COLORS]
      + [(f"createnuclear:{color}_cloth", f"{color}_cloth", 0.0) for color in COLORS],
-    [("taintedmagic:shadow_imbued_cloth", "shadow_imbued_cloth", None),
-     ("thaumcraft:enchanted_fabric", "enchanted_fabric", None), ("mek_x_star:crushed_wool", "crushed_wool", None),
-     ("irons_spellbooks:bloody_vellum", "bloody_vellum", None),
+    [("thaumcraft:enchanted_fabric", "enchanted_fabric", None), ("mek_x_star:crushed_wool", "crushed_wool", None),
      ("minecraft:phantom_membrane", "phantom_membrane", None), ("irons_spellbooks:magic_cloth", "magic_cloth", None),
      ("mekanism:hdpe_sheet", "hdpe_sheet", None), ("silentgear:fluffy_fabric", "fluffy_fabric", None)],
+    [("taintedmagic:shadow_imbued_cloth", "shadow_imbued_cloth", None),
+     ("taintedmagic:crimson_stained_cloth", "crimson_stained_cloth", None),
+     ("irons_spellbooks:bloody_vellum", "bloody_vellum", None),
+     ("thaumicbases:bloody_fabric", "bloody_fabric", None)],
 ]))
 TEXTILE_DESIGN.update(textile_design("rare_textile", [
-    [("taintedmagic:crimson_stained_cloth", "crimson_stained_cloth", None),
-     ("irons_spellbooks:mithril_weave", "mithril_weave", None), ("hazennstuff:storm_weave", "storm_weave", None)],
+    [("irons_spellbooks:mithril_weave", "mithril_weave", None),
+     ("hazennstuff:storm_weave", "storm_weave", None)],
     [("thaumic_tinkerer:ichorcloth", "ichorcloth", None),
      ("hazennstuff:cloth_of_the_flamebearer", "cloth_of_the_flamebearer", None)],
 ]))
@@ -1659,7 +1661,7 @@ def apply_textile_design(data, entry):
     if design is None:
         return
     family, level, bias = design["family"], design["level"], design["bias"]
-    centers = {"textile": [0.16, 0.28, 0.46], "rare_textile": [0.72, 1.08]}[family]
+    centers = {"textile": [0.16, 0.28, 0.46, 0.64], "rare_textile": [0.72, 1.08]}[family]
     power = semantic_level_value(centers, level, bias)
     traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.2 + level * 0.2))[:3]
     if entry["id"] in TEXTILE_FOOD_IDS and not any(value["trait"] == "silentgear:yummy" for value in traits):
