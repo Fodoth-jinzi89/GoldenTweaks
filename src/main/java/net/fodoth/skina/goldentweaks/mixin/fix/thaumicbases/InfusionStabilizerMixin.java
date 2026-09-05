@@ -3,10 +3,9 @@ package net.fodoth.skina.goldentweaks.mixin.fix.thaumicbases;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -41,13 +40,15 @@ public abstract class InfusionStabilizerMixin {
             gt$id("tainted_crystal_block"), gt$id("tainted_crystal_slab")
     );
 
-    @Shadow
-    private Level level;
 
     @Inject(method = "isStabilizer", at = @At("HEAD"), cancellable = true)
     private void gt$recognizeThaumicBasesBlocks(BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
-        BlockState state = level.getBlockState(pos);
-        if (gt$STABILIZERS.contains(BuiltInRegistries.BLOCK.getKey(state.getBlock()))) {
+        var e = (BlockEntity)(Object)this;
+        BlockState state = null;
+        if (e.getLevel() != null) {
+            state = e.getLevel().getBlockState(pos);
+        }
+        if (state != null && gt$STABILIZERS.contains(BuiltInRegistries.BLOCK.getKey(state.getBlock()))) {
             cir.setReturnValue(true);
         }
     }
