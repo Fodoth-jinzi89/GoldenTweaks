@@ -11,6 +11,8 @@ import net.minecraft.world.level.ItemLike;
 import thaumcraft.api.ThaumcraftApi;
 
 import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -167,21 +169,33 @@ public class GTArcaneRecipe extends AbstractGTThaumcraftRecipe<GTArcaneRecipe> {
             return false;
         }
 
-        if (ingredients.size() > 9) {
-            GoldenTweaks.LOGGER.warn("Skipped Thaumcraft arcane recipe '{}': too many ingredients (max 9).", location);
-            return false;
-        }
-
-        Object[] recipe = new Object[ingredients.size()];
+        List<Object> recipeIngredients = new ArrayList<>();
         for (int i = 0; i < ingredients.size(); i++) {
             Object ingredient = ThaumcraftRecipeUtil.parseIngredient(ingredients.get(i), location, RECIPE_NAME, "ingredient");
             if (ingredient == null) {
                 return false;
             }
-            recipe[i] = ingredient;
+
+            if (ingredient instanceof ItemStack stack) {
+                int count = stack.getCount();
+                if (count <= 0 || recipeIngredients.size() + count > 9) {
+                    GoldenTweaks.LOGGER.warn("Skipped Thaumcraft arcane recipe '{}': too many ingredients (max 9).", location);
+                    return false;
+                }
+                stack.setCount(1);
+                for (int j = 0; j < count; j++) {
+                    recipeIngredients.add(stack.copy());
+                }
+            } else {
+                if (recipeIngredients.size() >= 9) {
+                    GoldenTweaks.LOGGER.warn("Skipped Thaumcraft arcane recipe '{}': too many ingredients (max 9).", location);
+                    return false;
+                }
+                recipeIngredients.add(ingredient);
+            }
         }
 
-        Object registered = registerShapeless(recipe);
+        Object registered = registerShapeless(recipeIngredients.toArray());
         GTResearchRecipePages.put(location, registered);
         return registered != null;
     }

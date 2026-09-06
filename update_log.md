@@ -1,5 +1,16 @@
 # GoldenTweaks Update Log
 
+## 2026.09.06 - v4.3
+
+### Thaumcraft
+- 修复奥术合成配方中带数量物品的解析：现在会按实际数量展开为最多 9 个配方槽位，避免数量信息被忽略
+  - [GTArcaneRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTArcaneRecipe.java)
+- 修正绯红织物配方要素，将错误的熵（entropy）改为正确的混沌（perditio）
+  - [bloody_fabric.json](src/main/resources/data/goldentweaks/recipe/thaumcraft/arcane_crafting/bloody_fabric.json)
+
+### 依赖
+- 更新 Thaumic Energistics 至 2.3.13-alpha
+
 ## 2026.08.27 - v4.2
 
 ### AE2 自动样板与整合
