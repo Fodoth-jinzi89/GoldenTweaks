@@ -219,7 +219,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.ftbultimine.VanillaCropLikeHandlerMixin")) {
-            return isModLoaded("ftbultimine") && isModLoaded("supplementaries");
+            return isModLoaded("ftbultimine") && isModLoaded("supplementaries") && isModLoaded("thaumicbases");
         }
 
         if (mixinClassName.endsWith("fix.thaumcraft.ThaumcraftOverworldBiomesMixin")) {

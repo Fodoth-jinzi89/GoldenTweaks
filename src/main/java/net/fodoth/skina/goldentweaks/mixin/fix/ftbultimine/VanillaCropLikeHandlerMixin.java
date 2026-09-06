@@ -23,7 +23,7 @@ public abstract class VanillaCropLikeHandlerMixin {
     private void gt$includeThaumicCrop(Level level, BlockPos pos, BlockState state,
                                         CallbackInfoReturnable<Boolean> cir) {
         if (state.getBlock() instanceof ThaumicCropBlock crop) {
-            cir.setReturnValue(state.getValue(crop.ageProperty()) < crop.matureAge());
+            cir.setReturnValue(state.getValue(crop.ageProperty()) >= crop.matureAge());
         }
     }
 
