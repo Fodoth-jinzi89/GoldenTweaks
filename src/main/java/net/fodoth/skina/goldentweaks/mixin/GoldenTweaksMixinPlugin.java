@@ -176,6 +176,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("toomanyrecipeviewers");
         }
 
+        // TMRV 的滚动网格/滑条与九宫格绘制：修复滚轮不滚动（被 EMI 当翻页）与滑条贴图错位
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.tmrv")) {
+            if (mixinClassName.endsWith("TmrvRecipeScreenScrollMixin")) {
+                return isModLoaded("emi") && isModLoaded("toomanyrecipeviewers");
+            }
+            return isModLoaded("toomanyrecipeviewers");
+        }
+
         if (mixinClassName.endsWith("shut.AEKeyLegacyComponentLoggerMixin")) {
             return isModLoaded("ae2") && isModLoaded("northstar");
         }
@@ -186,18 +194,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.mekanismextras")) {
             return isModLoaded("mekanism_extras") && isModLoaded("mekmm") && isModLoaded("emi");
-        }
-
-        if (mixinClassName.endsWith("fix.emi.ScexAspectJeiScrollMixin")) {
-            return isModLoaded("emi") && isModLoaded("scex_aspect_jei");
-        }
-
-        if (mixinClassName.endsWith("fix.emi.ScexAspectJeiRecipeScreenMixin")) {
-            return isModLoaded("emi") && isModLoaded("scex_aspect_jei");
-        }
-
-        if (mixinClassName.endsWith("fix.emi.ScexAspectJeiScrollStateMixin")) {
-            return isModLoaded("emi") && isModLoaded("scex_aspect_jei");
         }
 
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
