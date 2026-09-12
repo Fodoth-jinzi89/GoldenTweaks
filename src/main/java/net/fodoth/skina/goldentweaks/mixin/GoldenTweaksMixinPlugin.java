@@ -188,6 +188,18 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("mekanism_extras") && isModLoaded("mekmm") && isModLoaded("emi");
         }
 
+        if (mixinClassName.endsWith("fix.emi.ScexAspectJeiScrollMixin")) {
+            return isModLoaded("emi") && isModLoaded("scex_aspect_jei");
+        }
+
+        if (mixinClassName.endsWith("fix.emi.ScexAspectJeiRecipeScreenMixin")) {
+            return isModLoaded("emi") && isModLoaded("scex_aspect_jei");
+        }
+
+        if (mixinClassName.endsWith("fix.emi.ScexAspectJeiScrollStateMixin")) {
+            return isModLoaded("emi") && isModLoaded("scex_aspect_jei");
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
             return isModLoaded("ftbquests") && isModLoaded("ftbquestslangsplitter");
         }

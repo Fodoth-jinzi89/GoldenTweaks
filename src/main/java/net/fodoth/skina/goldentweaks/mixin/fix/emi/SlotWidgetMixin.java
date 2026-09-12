@@ -4,6 +4,7 @@ import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.widget.SlotWidget;
 import net.minecraft.client.gui.GuiGraphics;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -20,9 +21,12 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 public abstract class SlotWidgetMixin {
 
     /** 要素来源页输出槽（要素安瓿）的槽位位置。 */
+    @Unique
     private static final int PHIAL_SLOT_X = 64;
+    @Unique
     private static final int PHIAL_SLOT_Y = 5;
     /** 物品相对槽内居中位置的偏移。 */
+    @Unique
     private static final int ITEM_OFFSET = 1;
 
     @Accessor("x")

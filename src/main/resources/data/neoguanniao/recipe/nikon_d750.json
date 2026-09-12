@@ -58,71 +58,63 @@
     }
   ],
   "type": "extendedcrafting:shaped_table",
-  "ingredients": [
-    {
+  "pattern": [
+    " ABC ",
+    "DEFGD",
+    "HIJIK",
+    "LMNML",
+    " OPO "
+  ],
+  "key": {
+    "A": {
       "item": "exposure_expanded:telescopic_lens"
     },
-    {
+    "B": {
       "item": "vista:crystalline"
     },
-    {
+    "C": {
       "item": "exposure_expanded:panoramic_lens"
     },
-    {
+    "D": {
       "item": "ae2:black_lumen_paint_ball"
     },
-    {
+    "E": {
       "item": "create_optical:mirror"
     },
-    {
+    "F": {
       "item": "create_optical:rose_quartz_catalyst_coil"
     },
-    {
+    "G": {
       "item": "spectrum:basalt_shimmerstone_light"
     },
-    {
-      "item": "ae2:black_lumen_paint_ball"
-    },
-    {
+    "H": {
       "item": "exposure:interplanar_projector"
     },
-    {
+    "I": {
       "item": "mekanism:hdpe_sheet"
     },
-    {
+    "J": {
       "item": "northstar:hardened_precision_mechanism"
     },
-    {
-      "item": "mekanism:hdpe_sheet"
-    },
-    {
+    "K": {
       "item": "aeroworks:button_keypad_module"
     },
-    {
+    "L": {
       "item": "spectrum:black_pigment"
     },
-    {
+    "M": {
       "item": "northstar:dry_plant_fiber"
     },
-    {
+    "N": {
       "item": "myotus:compat_processor"
     },
-    {
-      "item": "northstar:dry_plant_fiber"
-    },
-    {
-      "item": "spectrum:black_pigment"
-    },
-    {
+    "O": {
       "item": "neoecoae:aluminum_alloy_ingot"
     },
-    {
+    "P": {
       "item": "thaumcraft:magic_mirror"
-    },
-    {
-      "item": "neoecoae:aluminum_alloy_ingot"
     }
-  ],
+  },
   "result": {
     "id": "neoguanniao:nikon_d750"
   }
