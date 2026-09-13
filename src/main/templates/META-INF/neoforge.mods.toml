@@ -2,6 +2,8 @@ modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
 
+# Required Notice: Copyright 2026 Fodoth_jinzi89
+
 [[mods]]
 modId = "${mod_id}"
 version = "${mod_version}"

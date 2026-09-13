@@ -158,7 +158,9 @@ src/main/java/net/fodoth/skina/goldentweaks/
 
 ## License
 
-GPL-3.0-only License
+PolyForm Noncommercial 1.0.0
+
+Source code may be used, modified, and redistributed for noncommercial purposes. Commercial distribution requires the author's permission.
 
 ---
 
@@ -316,4 +318,6 @@ src/main/java/net/fodoth/skina/goldentweaks/
 
 ## 许可证
 
-GPL-3.0-only License
+PolyForm Noncommercial 1.0.0
+
+源码可用于非商业用途（使用、修改、再分发）。商业分发需获得作者许可。
