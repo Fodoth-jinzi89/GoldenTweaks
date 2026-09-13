@@ -1,6 +1,5 @@
 package net.fodoth.skina.goldentweaks.mixin;
 
-import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
@@ -14,50 +13,12 @@ import org.objectweb.asm.tree.InsnNode;
 import java.util.List;
 import java.util.Set;
 
-import static net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER;
 import static net.fodoth.skina.goldentweaks.util.ModPresent.checkIfPresent;
 
 public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
-    private static final String PREFIX = "[" + GoldenTweaks.MODID + "] ";
-
-    private enum Mode {
-        VK,
-        COMPAT,
-        NONE
-    }
-
-    private static Mode MODE_CACHE = null;
-
     private static boolean isModLoaded(String modId) {
         return FMLLoader.getLoadingModList().getModFileById(modId) != null;
-    }
-
-    private Mode detectMode() {
-        if (MODE_CACHE != null) {
-            return MODE_CACHE;
-        }
-
-        boolean vkLike =
-                isModLoaded("sodium") ||
-                        checkIfPresent("org.lwjgl.vulkan.VK") ||
-                        isModLoaded("superresolution") ||
-                        isModLoaded("veil");
-
-        boolean compatLike =
-                isModLoaded("threatengl") ||
-                        isModLoaded("modernui");
-
-        if (vkLike) {
-            MODE_CACHE = Mode.VK;
-        } else if (compatLike) {
-            MODE_CACHE = Mode.COMPAT;
-        } else {
-            MODE_CACHE = Mode.NONE;
-        }
-
-        LOGGER.info(PREFIX + "mixin mode = {}", MODE_CACHE);
-        return MODE_CACHE;
     }
 
     @Override
@@ -249,29 +210,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("irons_jewelry");
         }
 
-        Mode mode = detectMode();
-
-        // VK 模式：直接屏蔽 GPUBooster 相关 mixin
-        // SR Veil 之类的模组有更好的渲染优化，由它们接管
-        if (mode == Mode.VK) {
-            if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.gpubooster")) {
-                LOGGER.warn(PREFIX + "skip (vk mode): {}", mixinClassName);
-                return false;
-            }
-            return true;
-        }
-
-        // COMPAT 模式：只禁 GL version patch
-        // TGL MUI 也会改 GL version，由它们改去
-        if (mode == Mode.COMPAT) {
-            if (mixinClassName.endsWith("SetGLVersionMixin")) {
-                LOGGER.warn(PREFIX + "skip SetGLVersionMixin (compat mode)");
-                return false;
-            }
-            return true;
-        }
-
-        // NONE：全部加载
         return true;
     }
 

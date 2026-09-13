@@ -7,7 +7,6 @@ src/main/java/net/fodoth/skina/goldentweaks/
 ├── config/       # Configuration
 ├── debug/        # Debug utilities
 ├── event/        # NeoForge events
-├── gpubooster/   # GPU/rendering optimizations
 ├── mixin/        # Mixin injections
 ├── network/      # Network packets
 └── util/         # Shared utilities

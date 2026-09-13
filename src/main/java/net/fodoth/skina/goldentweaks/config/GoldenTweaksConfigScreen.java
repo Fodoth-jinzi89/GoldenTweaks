@@ -1,10 +1,7 @@
 package net.fodoth.skina.goldentweaks.config;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.util.DSAMode;
-import net.fodoth.skina.goldentweaks.util.DSAVariant;
 import net.fodoth.skina.goldentweaks.util.EarthShockHarmMode;
-import net.fodoth.skina.goldentweaks.util.SmartCullingType;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 
@@ -130,30 +127,6 @@ public class GoldenTweaksConfigScreen {
 
 
             // =========================================================
-            // Building
-            // =========================================================
-            Object building = getOrCreateCategory.invoke(
-                    builder,
-                    Component.translatable("config.goldentweaks.category.building")
-            );
-
-            ConfigScreenHelper.addEnum(building, eb,
-                    "config.goldentweaks.dsa",
-                    DSA_MODE, DSAMode.ALL, DSAMode.values());
-
-            ConfigScreenHelper.addEnum(building, eb,
-                    "config.goldentweaks.dsa_variant",
-                    DSA_VARIANT, DSAVariant.CORE, DSAVariant.values());
-
-            ConfigScreenHelper.addBool(building, eb,
-                    "config.goldentweaks.vertex_format_cache",
-                    VERTEX_FORMAT_CACHE, false);
-
-            ConfigScreenHelper.addInt(building, eb,
-                    "config.goldentweaks.render_cycle_pool_size",
-                    RENDER_CYCLE_POOL_SIZE, 256, 128, 432);
-
-            // =========================================================
             // Misc
             // =========================================================
             Object misc = getOrCreateCategory.invoke(
@@ -162,32 +135,12 @@ public class GoldenTweaksConfigScreen {
             );
 
             ConfigScreenHelper.addBool(misc, eb,
-                    "config.goldentweaks.renderbuffer_depth",
-                    RENDERBUFFER_DEPTH, true);
-
-            ConfigScreenHelper.addBool(misc, eb,
-                    "config.goldentweaks.fast_math",
-                    FAST_MATH, true);
-
-            ConfigScreenHelper.addBool(misc, eb,
-                    "config.goldentweaks.tex_barrier",
-                    TEX_BARRIER, true);
-
-            ConfigScreenHelper.addBool(misc, eb,
-                    "config.goldentweaks.batch_text_rendering",
-                    BATCH_TEXT_RENDERING, true);
-
-            ConfigScreenHelper.addBool(misc, eb,
                     "config.goldentweaks.disable_building_wands_block_preview",
                     DISABLE_BUILDING_WANDS_BLOCK_PREVIEW, true);
 
             ConfigScreenHelper.addInt(misc, eb,
                     "config.goldentweaks.search_trigger_threshold",
                     SEARCH_TRIGGER_THRESHOLD, 10, 0, Integer.MAX_VALUE);
-
-            ConfigScreenHelper.addEnum(misc, eb,
-                    "config.goldentweaks.smart_culling",
-                    SMART_CULLING, SmartCullingType.BASE, SmartCullingType.values());
 
             // =========================================================
             // Balance

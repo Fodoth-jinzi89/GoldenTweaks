@@ -8,8 +8,7 @@
 
 A NeoForge optimization, compatibility fix, and mod integration tweak mod for Minecraft 1.21.1.
 
-GoldenTweaks started as a GPU-side rendering optimization mod and has since grown to cover:
-- Rendering & GPU performance optimizations
+GoldenTweaks covers:
 - Compatibility patches for 50+ problematic mods
 - Log spam suppression for 30+ noisy mods
 - Gameplay quality-of-life features
@@ -21,19 +20,13 @@ It is designed for large modpacks and long-term survival servers.
 
 ## Features
 
-### Rendering & GPU Booster
-- OpenGL optimization utilities (DSA, SIMD, Fast Math)
-- Smart frustum culling with configurable strategy
-- Reduced shader and buffer overhead
-- Automatically disables when incompatible mods (`Vulkan`, `SuperResolution`, `Veil`) are detected
-
 ### Compatibility Fixes — 50+ mods
 
 | Category | Mods Fixed |
 |---|---|
 | **Tech & Storage** | AE2, AE2Peat, AE2WTLib, Mekanism, Evolved Mekanism, Create, Create Diesel Generators, Create Enchantment Industry, Create Submarine, Fluid Logistics, Mekanism Weaponry, Advanced Loot Info |
 | **Magic** | Thaumcraft, Thaumic Tinkerer, Irons Spellbooks, Spectrum, Forbidden Magic, Apotheosis, Apotheosis Things, Apothic Enchanting, Eidolon Repraised, Alshanex Familiars |
-| **Rendering** | Flywheel, Geckolib, ModernUI, Veil, GPUBooster, Sable, CMPackageCouriers, Copycats |
+| **Rendering** | Flywheel, Geckolib, ModernUI, Veil, Sable, CMPackageCouriers, Copycats |
 | **QoL & UI** | EMI, JEI, Tipsmod, Quest Shop, Cloth Config, Config Tracker, Xaero's Minimap, Traveler's Titles, Bountiful, Lootr |
 | **Others** | Annus, RRLS, Tritium, CCB Tweaks, Silent Gear, NeoGuanNiao, Touhou Little Maid, Touhou Lost Maid, Maid Beacon, JAOPCA, Exspectriments, Aeronautics, Eccentric Tome, NoApothesisNames, Too Many Recipe Viewers, Pattern Schematics, LCMOS, Modonomicon, Placebo, Registrate |
 
@@ -136,7 +129,6 @@ GoldenTweaks provides a config screen (requires Cloth Config) with categories:
 | Category | Content |
 |---|---|
 | **调试 (Debug)** | GUI debugger, item info logging |
-| **性能 (Performance)** | GPU Booster toggles, smart culling type, fast math |
 | **机制 (Mechanics)** | Always-edible food, right-click pickup settings |
 | **平衡 (Balance)** | Solar panel multiplier, Mekanism Extras stacking |
 | **兼容 (Compatibility)** | Thaumcraft JEI aspect page limit, misc compat toggles |
@@ -151,17 +143,15 @@ src/main/java/net/fodoth/skina/goldentweaks/
 ├── config/       # NeoForge config spec & screen
 ├── debug/        # GUI inspector & debug utilities
 ├── event/        # NeoForge event handlers
-├── gpubooster/   # GPU-side rendering (DSA, SIMD, OpenGL, culling)
 ├── mixin/
 │   ├── balance/  # Numerical/mechanical balance tweaks
 │   ├── feature/  # New gameplay features
 │   ├── fix/      # Bug & crash fixes (per-mod packages)
 │   ├── shut/     # Log/spam suppression
-│   ├── gpubooster/  # Rendering performance mixins
 │   ├── optimization/ # General optimization mixins
 │   └── renderblender/ # Rendering layer patches
 ├── network/      # C2S / S2C custom packets
-└── util/         # Shared helpers & SIMD utilities
+└── util/         # Shared helpers
 ```
 
 ---
@@ -170,16 +160,13 @@ src/main/java/net/fodoth/skina/goldentweaks/
 
 GPL-3.0-only License
 
-Inherited from `GPUBooster`.
-
 ---
 
 # 中文
 
 适用于 Minecraft 1.21.1 的 NeoForge 优化、兼容修复与模组联动增强模组。
 
-GoldenTweaks 从 GPU 渲染优化起步，现已涵盖：
-- 渲染与 GPU 端性能优化
+GoldenTweaks 涵盖：
 - 50+ 模组的兼容性修复
 - 30+ 模组的日志刷屏抑制
 - 游戏体验增强（QoL）
@@ -191,19 +178,13 @@ GoldenTweaks 从 GPU 渲染优化起步，现已涵盖：
 
 ## 功能
 
-### 渲染与 GPU Booster
-- OpenGL 优化工具（DSA、SIMD、Fast Math）
-- 智能视锥剔除，策略可配置
-- 降低着色器与缓冲区开销
-- 当检测到不兼容模组（`Vulkan`、`SuperResolution`、`Veil`）时自动关闭
-
 ### 兼容性修复 — 50+ 模组
 
 | 分类 | 已修复模组 |
 |---|---|
 | **科技 & 存储** | AE2、AE2Peat、AE2WTLib、Mekanism、Evolved Mekanism、Create、Create Diesel Generators、Create Enchantment Industry、Create Submarine、Fluid Logistics、Mekanism Weaponry、Advanced Loot Info |
 | **魔法** | Thaumcraft、Thaumic Tinkerer、Irons Spellbooks、Spectrum、Forbidden Magic、Apotheosis、Apotheosis Things、Apothic Enchanting、Eidolon Repraised、Alshanex Familiars |
-| **渲染** | Flywheel、Geckolib、ModernUI、Veil、GPUBooster、Sable、CMPackageCouriers、Copycats |
+| **渲染** | Flywheel、Geckolib、ModernUI、Veil、Sable、CMPackageCouriers、Copycats |
 | **QoL & UI** | EMI、JEI、Tipsmod、Quest Shop、Cloth Config、Config Tracker、Xaero's Minimap、Traveler's Titles、Bountiful、Lootr |
 | **其他** | Annus、RRLS、Tritium、CCB Tweaks、Silent Gear、NeoGuanNiao、Touhou Little Maid、Touhou Lost Maid、Maid Beacon、JAOPCA、Exspectriments、Aeronautics、Eccentric Tome、NoApothesisNames、Too Many Recipe Viewers、Pattern Schematics、LCMOS、Modonomicon、Placebo、Registrate |
 
@@ -306,7 +287,6 @@ GoldenTweaks 提供游戏内配置界面（需要 Cloth Config），含以下分
 | 分类 | 内容 |
 |---|---|
 | **调试** | GUI 调试器、物品信息日志 |
-| **性能** | GPU Booster 开关、智能剔除类型、Fast Math |
 | **机制** | 始终可食用、右键拾取详细设置 |
 | **平衡** | 太阳能倍率、Mekanism Extras 堆叠升级 |
 | **兼容** | Thaumcraft JEI 要素页数限制、杂项兼容开关 |
@@ -321,17 +301,15 @@ src/main/java/net/fodoth/skina/goldentweaks/
 ├── config/       # NeoForge 配置规范与界面
 ├── debug/        # GUI 调试器
 ├── event/        # NeoForge 事件处理
-├── gpubooster/   # GPU 渲染优化（DSA、SIMD、OpenGL、剔除）
 ├── mixin/
 │   ├── balance/  # 数值/机制平衡调整
 │   ├── feature/  # 新增游戏功能
 │   ├── fix/      # Bug 与崩溃修复（按模组分包）
 │   ├── shut/     # 日志/刷屏抑制
-│   ├── gpubooster/  # 渲染性能 Mixin
 │   ├── optimization/ # 通用优化 Mixin
 │   └── renderblender/ # 渲染层补丁
 ├── network/      # 自定义网络包（C2S / S2C）
-└── util/         # 工具类与 SIMD 工具
+└── util/         # 工具类
 ```
 
 ---
@@ -339,5 +317,3 @@ src/main/java/net/fodoth/skina/goldentweaks/
 ## 许可证
 
 GPL-3.0-only License
-
-由 `GPU Booster` 继承。
