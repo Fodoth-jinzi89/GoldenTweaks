@@ -5,7 +5,7 @@
     "item": "evolvedmekanism:mold_wire"
   },
   "fluid_input": {
-    "fluid": "evolvedmekanism:molten_crystal_matrix",
+    "fluid": "avaritia_integration:molten_crystal_matrix",
     "amount": 45
   },
   "extra_input": {

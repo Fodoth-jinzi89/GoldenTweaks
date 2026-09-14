@@ -1,7 +1,7 @@
 {
   "type": "evolvedmekanism:melting",
   "input": {
-    "item": "avaritia:crystal_matrix_dust"
+    "item": "avaritia_integration:crystal_matrix_dust"
   },
   "output": {
     "id": "avaritia_integration:molten_crystal_matrix",

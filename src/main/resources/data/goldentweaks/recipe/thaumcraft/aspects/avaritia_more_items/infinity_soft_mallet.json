@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:infinity_soft_mallet"
+  },
+  "aspects": {
+    "terminus": 6
+  }
+}

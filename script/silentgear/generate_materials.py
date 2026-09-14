@@ -439,14 +439,12 @@ STONE_BUILTIN_PATHS = {
 
 
 def cord_design(family, levels):
-    return {
-        resource_id: {
-            "family": family, "level": level, "material": material,
-            "bias": round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
-        }
-        for level, entries in enumerate(levels, 1)
-        for resource_id, material in entries
-    }
+    result = {}
+    for level, entries in enumerate(levels, 1):
+        for resource_id, material, *fixed_bias in entries:
+            bias = fixed_bias[0] if fixed_bias else int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55
+            result[resource_id] = {"family": family, "level": level, "material": material, "bias": round(bias, 3)}
+    return result
 
 
 CORD_DESIGN = {}
@@ -476,13 +474,17 @@ CORD_DESIGN.update(cord_design("cord", [
      ("northstar:glowing_venus_vines", "glowing_venus_vines"), ("northstar:venus_vines", "venus_vines")],
 ]))
 CORD_DESIGN.update(cord_design("super_cord", [
-    [("avaritia_integration:blaze_cube_wire", "blaze_cube_wire")],
-    [("avaritia_integration:crystal_matrix_wire", "crystal_matrix_wire")],
+    [("avaritia_more_items:blaze_string", "blaze_string", 0.0)],
+    [("avaritia_more_items:crystal_matrix_string", "crystal_matrix_string", 0.0)],
 ]))
+# 等级 2 留空：那是旧 avaritia_integration:infinity_wire 的位置，改由等级 4 的无尽线承担。
+# 无尽线 = 夸克线 ×2、宇宙线 = 夸克线 ×4，所以 bias 固定为 0（否则哈希偏移会破坏倍率）。
 CORD_DESIGN.update(cord_design("god_cord", [
-    [("avaritia_integration:neutron_wire", "neutron_wire")],
-    [("avaritia_integration:infinity_wire", "infinity_wire")],
-    [("avaritia_more_items:quark_wire", "quark_wire")],
+    [("avaritia_more_items:neutron_string", "neutron_string", 0.0)],
+    [],
+    [("avaritia_more_items:quark_string", "quark_string", 0.0)],
+    [("avaritia_more_items:infinity_string", "infinity_string", 0.0)],
+    [("avaritia_more_items:cosmic_string", "cosmic_string", 0.0)],
 ]))
 CORD_BUILTIN_PATHS = {
     "minecraft:string": "string", "minecraft:vine": "vine", "silentgear:fluffy_string": "fluffy_string",
@@ -550,15 +552,16 @@ TEXTILE_FOOD_IDS = {
 
 
 def handle_design(family, levels):
-    return {
-        resource_id: {
-            "family": family, "level": level, "material": material,
-            "long": "long_rod" in resource_id or "staff_rod" in resource_id,
-            "bias": round(int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55, 3),
-        }
-        for level, entries in enumerate(levels, 1)
-        for resource_id, material in entries
-    }
+    result = {}
+    for level, entries in enumerate(levels, 1):
+        for resource_id, material, *fixed_bias in entries:
+            bias = fixed_bias[0] if fixed_bias else int(hashlib.sha256(resource_id.encode()).hexdigest()[:4], 16) / 65535 * 1.1 - 0.55
+            result[resource_id] = {
+                "family": family, "level": level, "material": material,
+                "long": "long_rod" in resource_id or "staff_rod" in resource_id,
+                "bias": round(bias, 3),
+            }
+    return result
 
 
 HANDLE_DESIGN = {}
@@ -584,10 +587,13 @@ HANDLE_DESIGN.update(handle_design("rare_handle", [
     [("avaritia_more_items:crystal_matrix_rod", "crystal_matrix_rod"),
      ("avaritia_more_items:crystal_matrix_long_rod", "crystal_matrix_long_rod")],
 ]))
+# 同上：等级 2 留空，无尽/宇宙柄 = 夸克柄 ×2 / ×4。
 HANDLE_DESIGN.update(handle_design("god_handle", [
-    [("avaritia_more_items:neutron_rod", "neutron_rod"), ("avaritia_more_items:neutron_long_rod", "neutron_long_rod")],
-    [("avaritia_integration:infinity_rod", "infinity_rod"), ("avaritia_integration:infinity_long_rod", "infinity_long_rod")],
-    [("avaritia_more_items:quark_rod", "quark_rod"), ("avaritia_more_items:quark_long_rod", "quark_long_rod")],
+    [("avaritia_more_items:neutron_rod", "neutron_rod", 0.0), ("avaritia_more_items:neutron_long_rod", "neutron_long_rod", 0.0)],
+    [],
+    [("avaritia_more_items:quark_rod", "quark_rod", 0.0), ("avaritia_more_items:quark_long_rod", "quark_long_rod", 0.0)],
+    [("avaritia_more_items:infinity_rod", "infinity_rod", 0.0), ("avaritia_more_items:infinity_long_rod", "infinity_long_rod", 0.0)],
+    [("avaritia_more_items:cosmic_rod", "cosmic_rod", 0.0), ("avaritia_more_items:cosmic_long_rod", "cosmic_long_rod", 0.0)],
 ]))
 
 WAND_HANDLE_DESIGN = {}
@@ -1624,7 +1630,8 @@ def cord_power(family, level, bias):
     centers = {
         "cord": [0.12, 0.2, 0.32, 0.48],
         "super_cord": [0.72, 1.05],
-        "god_cord": [1.5, 2.25, 3.25],
+        # 等级 2 留着旧无尽线档位不使用，等级 4/5 = 夸克线的 2/4 倍
+        "god_cord": [1.5, 2.25, 3.25, 6.5, 13.0],
     }[family]
     return semantic_level_value(centers, level, bias)
 
@@ -1691,7 +1698,7 @@ def apply_handle_design(data, entry):
     design = HANDLE_DESIGN.get(entry["id"])
     if design is None:
         return
-    centers = {"handle": [0.12, 0.22, 0.36, 0.55], "rare_handle": [0.85, 1.2], "god_handle": [1.7, 2.5, 3.6]}[design["family"]]
+    centers = {"handle": [0.12, 0.22, 0.36, 0.55], "rare_handle": [0.85, 1.2], "god_handle": [1.7, 2.5, 3.6, 7.2, 14.4]}[design["family"]]
     power = semantic_level_value(centers, design["level"], design["bias"]) * (1.08 if design["long"] else 1)
     traits = traits_for("纤维", entry["material"], entry["id"], min(1.0, 0.25 + design["level"] * 0.18))[:3]
     if design["long"] and not any(value["trait"] == "silentgear:heavy" for value in traits):

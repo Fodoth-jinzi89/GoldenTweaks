@@ -9,15 +9,15 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "avaritia_integration:infinity_rod"
+      "item": "avaritia_more_items:cosmic_long_rod"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF8C8C91",
+    "color": "#FF000035",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.avaritia_integration.infinity_rod"
+      "translate": "material.goldentweaks.compat.avaritia_more_items.cosmic_long_rod"
     },
     "name_prefix": ""
   },
@@ -25,49 +25,54 @@
     "silentgear:rod": {
       "harvest_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 2.76
+        "value": 13.219
       },
       "attack_speed": {
         "operation": "ADD",
-        "value": 0.497
+        "value": 1.244
       },
       "block_reach": {
         "operation": "ADD",
-        "value": 1.104
+        "value": 8.554
       },
       "attack_reach": {
         "operation": "ADD",
-        "value": 0.828
+        "value": 6.532
       },
       "durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 3.036
+        "value": 17.107
       },
       "attack_damage": {
         "operation": "ADD",
-        "value": 3.864
+        "value": 21.773
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 1.794
+        "value": 10.109
       },
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 1.932
+        "value": 8.554
       },
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 1.656
+        "value": 9.331
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 5,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:soft"
         }
       ]

@@ -9,15 +9,15 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "avaritia_more_items:quark_wire"
+      "item": "avaritia_more_items:cosmic_string"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FFCDB1D9",
+    "color": "#FF000033",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.avaritia_more_items.quark_wire"
+      "translate": "material.goldentweaks.compat.avaritia_more_items.cosmic_string"
     },
     "name_prefix": ""
   },
@@ -25,25 +25,25 @@
     "silentgear:cord": {
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 3.25
+        "value": 13.0
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 2.6
+        "value": 10.4
       },
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 2.275
+        "value": 9.1
       },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
+          "level": 5,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 4,
+          "level": 5,
           "trait": "silentgear:soft"
         }
       ]
@@ -51,21 +51,21 @@
     "silentgear:binding": {
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 2.925
+        "value": 11.7
       },
       "repair_value": {
         "operation": "ADD",
-        "value": 1.137
+        "value": 4.55
       },
       "traits": [
         {
           "conditions": [],
-          "level": 4,
+          "level": 5,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 4,
+          "level": 5,
           "trait": "silentgear:soft"
         }
       ]

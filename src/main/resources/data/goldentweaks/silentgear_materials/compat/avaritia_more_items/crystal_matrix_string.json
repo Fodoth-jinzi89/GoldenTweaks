@@ -9,15 +9,15 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "avaritia_integration:crystal_matrix_wire"
+      "item": "avaritia_more_items:crystal_matrix_string"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF82B9AC",
+    "color": "#FF8AC3B4",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.avaritia_integration.crystal_matrix_wire"
+      "translate": "material.goldentweaks.compat.avaritia_more_items.crystal_matrix_string"
     },
     "name_prefix": ""
   },

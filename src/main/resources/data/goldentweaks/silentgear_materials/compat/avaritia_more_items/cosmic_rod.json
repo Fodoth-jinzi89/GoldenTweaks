@@ -9,15 +9,15 @@
     ],
     "gear_type_blacklist": [],
     "ingredient": {
-      "item": "avaritia_integration:infinity_long_rod"
+      "item": "avaritia_more_items:cosmic_rod"
     },
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF8A8C93",
+    "color": "#FF000037",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
-      "translate": "material.goldentweaks.compat.avaritia_integration.infinity_long_rod"
+      "translate": "material.goldentweaks.compat.avaritia_more_items.cosmic_rod"
     },
     "name_prefix": ""
   },
@@ -25,54 +25,49 @@
     "silentgear:rod": {
       "harvest_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 2.465
+        "value": 14.4
       },
       "attack_speed": {
         "operation": "ADD",
-        "value": 0.232
+        "value": 2.592
       },
       "block_reach": {
         "operation": "ADD",
-        "value": 1.595
+        "value": 5.76
       },
       "attack_reach": {
         "operation": "ADD",
-        "value": 1.218
+        "value": 4.32
       },
       "durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 3.19
+        "value": 15.84
       },
       "attack_damage": {
         "operation": "ADD",
-        "value": 4.06
+        "value": 20.16
       },
       "projectile_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 1.885
+        "value": 9.36
       },
       "draw_speed": {
         "operation": "MULTIPLY_BASE",
-        "value": 1.595
+        "value": 10.08
       },
       "projectile_accuracy": {
         "operation": "MULTIPLY_BASE",
-        "value": 1.74
+        "value": 8.64
       },
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:heavy"
-        },
-        {
-          "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:flexible"
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:soft"
         }
       ]

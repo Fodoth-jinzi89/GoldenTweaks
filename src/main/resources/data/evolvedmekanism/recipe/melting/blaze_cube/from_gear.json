@@ -1,7 +1,7 @@
 {
   "type": "evolvedmekanism:melting",
   "input": {
-    "item": "avaritia:blaze_cube_gear"
+    "item": "avaritia_integration:blaze_cube_gear"
   },
   "output": {
     "id": "avaritia_integration:molten_blaze",
