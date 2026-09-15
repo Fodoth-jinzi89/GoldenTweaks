@@ -1,9 +1,9 @@
 name: Build and Publish Mod
 
+# 注意：本仓库不分发 libs/ 下的第三方模组 jar，因此 CI 无法编译本项目。
+# 正式发布请本地执行 ./gradlew build，然后把 build/libs/*.jar 手动上传到 Release。
+# 这里只保留手动触发，避免每次发 Release 都产生一次失败的构建。
 on:
-  release:
-    types: [published]
-
   workflow_dispatch:
 
 jobs:
