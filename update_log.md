@@ -1,5 +1,37 @@
 # GoldenTweaks Update Log
 
+## 2026.09.15 - v4.4
+
+### 移除
+- 移除 gpubooster（GPU 批渲染 / DSA 加速）模块：`gpubooster/` 全部实现、`mixin/gpubooster/` 下 11 个 mixin、`util/math/` 与 SIMD 工具类，以及对应配置项和语言键（共 36 个文件、约 4000 行）
+
+### Thaumcraft
+- 新增「宇宙」（universes）要素（物质 + 秩序）
+  - [universes.json](src/main/resources/data/goldentweaks/thaumcraft/aspects/universes.json)
+- 要素来源页面支持滚动浏览：改用 Too Many Recipe Viewers 的滚动实现（滚动条、滚动网格、九宫格贴图），修复要素列表无法滚动的问题
+  - [TmrvScrollBarWidgetMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/TmrvScrollBarWidgetMixin.java)
+  - [TmrvScrollGridWidgetMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/TmrvScrollGridWidgetMixin.java)
+  - [TmrvRecipeScreenScrollMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/TmrvRecipeScreenScrollMixin.java)
+  - [NineSliceTextureMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/NineSliceTextureMixin.java)
+- 修正要素槽位 Mixin 的 `@Unique` 声明
+  - [SlotWidgetMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/SlotWidgetMixin.java)
+
+### 模组兼容
+- 移除 Flavor Immersed Daily 的日志抑制（上游已不再刷屏）
+- 观鸟手册（NeoGuanNiao）：补充「鸟类摄影」词条内容，并调整相机配方数据
+
+### 联动数据
+- 同步 avaritia_more_items beta-1.0.1
+  - 4 个线材物品改名，新增 49 个物品要素
+  - Silent Gear 线/柄材料改用 avaritia_more_items 的 string/rod，并新增 cosmic（×4）、infinity（×2）档
+  - 修正 13 个 Evolved Mekanism 熔炼/固化配方的物品命名空间
+  - [generate_materials.py](script/silentgear/generate_materials.py)
+
+### 其它
+- 许可证更换为 PolyForm Noncommercial 1.0.0
+- 更新模组图标与模组列表描述
+- 仓库开源整理：不再随仓库分发第三方编译依赖与生成物，重写 README，补充 `libs/` 依赖清单
+
 ## 2026.09.06 - v4.3
 
 ### Thaumcraft
