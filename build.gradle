@@ -127,7 +127,6 @@ dependencies {
     compileOnly "maven.modrinth:gputape:1.2.1-1.21-1.21.1-fabric"
     compileOnly "maven.modrinth:cit-resewn:1.2.2+1.21"
     compileOnly "maven.modrinth:rrls:5.0.10+mc1.21.1-forge"
-    compileOnly "maven.modrinth:create:6.0.10+mc1.21.1"
     compileOnly "maven.modrinth:jei:YAcQ6elZ"
     compileOnly "maven.modrinth:annuus:fz24WWx1"
 
@@ -162,7 +161,6 @@ dependencies {
     compileOnly "maven.modrinth:prism-lib:kMcz2lDj"
     compileOnly "maven.modrinth:touhou-little-maid-beacon:1.0.1-bugfix"
     implementation "maven.modrinth:AANobbMI:S3DUMfBo"
-    compileOnly "maven.modrinth:advanced-loot-info:9jJT2Kmz"
 
 
     compileOnly fileTree(dir: 'libs/compileOnly', include: ['*.jar'])
