@@ -1,0 +1,26 @@
+{
+  "name": "book.neoguanniao.bird_guide.entry.bird_photography.name",
+  "description": "book.neoguanniao.bird_guide.entry.bird_photography.description",
+  "icon": {
+    "item": "neoguanniao:nikon_d750"
+  },
+  "category": "neoguanniao:intro",
+  "parents": [
+    {
+      "entry": "neoguanniao:intro/natural_spawning"
+    }
+  ],
+  "x": 4,
+  "y": 1,
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "text": "book.neoguanniao.bird_guide.entry.bird_photography.page1.text",
+      "title": "book.neoguanniao.bird_guide.entry.bird_photography.page1.name"
+    },
+    {
+      "type": "modonomicon:text",
+      "text": "book.neoguanniao.bird_guide.entry.bird_photography.page3.text"
+    }
+  ]
+}
