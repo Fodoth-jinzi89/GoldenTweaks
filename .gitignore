@@ -89,10 +89,14 @@ desktop.ini
 # =========================
 *.jar
 
-# 保留本地依赖与 Gradle Wrapper
-!libs/
-!libs/**
+# 保留 Gradle Wrapper（libs/ 下的第三方模组 jar 不随仓库分发，见 libs/README.md）
 !gradle/wrapper/gradle-wrapper.jar
+
+# =========================
+# 本地编译依赖（第三方模组 jar，不随仓库分发）
+# =========================
+libs/*
+!libs/README.md
 
 # =========================
 # Environment files
@@ -101,10 +105,24 @@ desktop.ini
 .env.*
 
 # =========================
-# Deep Code (contains API keys)
+# Python
 # =========================
-.deepcode/*
-!.deepcode/settings.json.example
+__pycache__/
+*.py[cod]
+
+# =========================
+# 本地工具/Agent 配置
+# =========================
+.deepcode/
+
+# =========================
+# 脚本生成物
+# =========================
+/要素列表.txt
+
+# =========================
+# 本地草稿
+# =========================
 /RenderBlender改进建议.txt
 /.mixin.out/
 /更新计划.txt
