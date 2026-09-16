@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.event;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.util.GTState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -11,6 +12,9 @@ public class CommonSetupEvent {
 
     @SubscribeEvent
     public static void onCommonSetup(FMLCommonSetupEvent event) {
+
+        GTState.setReady();
+
         event.enqueueWork(() -> {
 
             // Tritium

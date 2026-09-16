@@ -7,6 +7,8 @@ import net.fodoth.skina.goldentweaks.mixin.fix.aeronautics.accessor.AeroNeoForge
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
+import static net.fodoth.skina.goldentweaks.util.ModPresent.checkIfPresent;
+
 @Mixin(
         targets = "dev.eriksonn.aeronautics.neoforge.events.AeroNeoForgeCommonEvents$ModBusEvents",
         remap = false
@@ -24,6 +26,13 @@ public abstract class AeroNeoForgeCommonEventsLateMixin {
             Operation<Void> original
     ) {
         original.call();
+
+        // jeiCompat() touches Create's JEI category classes; without the JEI API on the
+        // classpath those cannot be loaded (modlauncher then fails hard while computing
+        // stack map frames). The API comes from JEI itself or from TMRV, so probe the class.
+        if (!checkIfPresent("mezz.jei.api.recipe.category.IRecipeCategory")) {
+            return;
+        }
 
         try {
             GoldenTweaks.LOGGER.warn(

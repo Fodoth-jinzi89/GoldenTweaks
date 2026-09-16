@@ -2,7 +2,6 @@ package net.fodoth.skina.goldentweaks.event;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksConfigScreen;
-import net.fodoth.skina.goldentweaks.util.GTState;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
@@ -16,8 +15,6 @@ public class ClientSetupEvent {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-
-        GTState.setReady();
 
         // Only register Cloth Config screen when Cloth Config exists
         if (ModList.get().isLoaded("cloth_config")) {
