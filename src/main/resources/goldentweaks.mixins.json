@@ -171,6 +171,7 @@
     "fix.thaumicbases.ThaumicCropFarmlandMixin",
     "fix.thaumicbases.WandRodCapacityMixin",
     "fix.thaumichorizons.SoulSieveBoostMixin",
+    "fix.thaumichorizons.SoulSieveReceiverMixin",
     "fix.tmrv.JEIPluginManagerMixin",
     "fix.tmrv.NineSliceTextureMixin",
     "fix.tmrv.StackHelperMixin",

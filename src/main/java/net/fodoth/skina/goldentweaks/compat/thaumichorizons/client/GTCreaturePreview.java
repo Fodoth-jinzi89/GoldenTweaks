@@ -6,6 +6,13 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
+
+import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
+import java.util.WeakHashMap;
 
 /**
  * Renders a creature that is stored inside a block the way NeoGuanNiao's small bird cage does it:
@@ -24,19 +31,71 @@ public final class GTCreaturePreview {
     private static final float MIN_SCALE = 0.2F;
     private static final float MAX_SCALE = 1.0F;
 
+    /** Last game tick each creature's animation clock was advanced for. */
+    private static final Map<Mob, Long> LAST_ANIMATION_TICK = new WeakHashMap<>();
+
+    /** Creatures that already had their leftover world state cleared once. */
+    private static final Set<Mob> PREPARED = Collections.newSetFromMap(new WeakHashMap<>());
+
     private GTCreaturePreview() {
     }
 
     /** Puts the creature into the same pose every frame and advances its idle animation. */
     public static void resetPose(Mob mob) {
+        if (PREPARED.add(mob)) {
+            clearWorldState(mob);
+        }
+
         mob.setYRot(0.0F);
         mob.setXRot(0.0F);
         mob.yRotO = 0.0F;
         mob.xRotO = 0.0F;
         mob.setYHeadRot(0.0F);
         mob.yHeadRotO = 0.0F;
-        mob.setDeltaMovement(0.0D, 0.0D, 0.0D);
+        mob.yBodyRot = 0.0F;
+        mob.yBodyRotO = 0.0F;
+
+        // A creature can be stored while it is still moving; the interpolation fields would then
+        // make the renderer lerp between the pose it had in the world and the pose it has in the
+        // display, which shows up as twitching. Pin them to the current position.
+        mob.xOld = mob.getX();
+        mob.yOld = mob.getY();
+        mob.zOld = mob.getZ();
+        mob.setDeltaMovement(Vec3.ZERO);
+
+        advanceAnimation(mob);
+    }
+
+    /**
+     * A creature that was captured straight out of the world still carries its motion, walk cycle and
+     * fall distance. Its block entity keeps ticking it, so those leftovers fight the display pose and
+     * the creature twitches (NeoGuanNiao's birds flap erratically). Creatures that went through a
+     * curing vat are rebuilt from clean data and do not have this problem.
+     */
+    private static void clearWorldState(Mob mob) {
+        mob.setNoAi(true);
         mob.setNoGravity(true);
+        mob.setDeltaMovement(Vec3.ZERO);
+        mob.walkAnimation.setSpeed(0.0F);
+        mob.fallDistance = 0.0F;
+        mob.hurtTime = 0;
+    }
+
+    /**
+     * Advances the creature's animation clock once per game tick instead of once per rendered frame.
+     * Renderers run much faster than 20 times per second, so bumping the counter in the render call
+     * makes animations (NeoGuanNiao's birds in particular) play several times too fast.
+     */
+    private static void advanceAnimation(Mob mob) {
+        Level level = mob.level();
+        long now = level == null ? 0L : level.getGameTime();
+        Long last = LAST_ANIMATION_TICK.get(mob);
+
+        if (last != null && last == now) {
+            return;
+        }
+
+        LAST_ANIMATION_TICK.put(mob, now);
         mob.tickCount++;
     }
 
