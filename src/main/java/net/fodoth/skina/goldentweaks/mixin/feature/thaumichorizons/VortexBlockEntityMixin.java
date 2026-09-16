@@ -2,6 +2,8 @@ package net.fodoth.skina.goldentweaks.mixin.feature.thaumichorizons;
 
 import com.kentington.thaumichorizons.common.planar.VortexBlockEntity;
 import net.fodoth.skina.goldentweaks.compat.thaumichorizons.GTRiftRecipe;
+import net.fodoth.skina.goldentweaks.compat.thaumichorizons.GTVortexOutputs;
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -21,13 +23,16 @@ import java.util.List;
 
 /**
  * Adds the JSON-driven rift crafting API ({@code goldentweaks:rift_crafting}) to Thaumic Horizons'
- * planar vortex.
+ * planar vortex and makes rift outputs drop into the world.
  * <p>
- * Thaumic Horizons resolves its rift recipes with a hard-coded chain at the end of
- * {@code craft}; anything it does not know is simply ignored. This mixin runs the same crafting
- * pass once more at the normal exit of {@code craft} and feeds every leftover offering that
- * matches a registered recipe through the vanilla helpers, so the outputs land in the vortex's
- * list exactly like the built-in recipes do.
+ * Thaumic Horizons resolves its rift recipes with a hard-coded chain at the end of {@code craft};
+ * anything it does not know is simply ignored. This mixin runs the same crafting pass once more at
+ * the normal exit of {@code craft} and feeds every leftover offering that matches a registered
+ * recipe through the vanilla helpers, so the outputs are produced exactly like the built-in ones.
+ * <p>
+ * Every queued output (built-in and JSON alike) is then dropped one block below the rift instead of
+ * waiting for a wand right-click. The dropped entities are registered with
+ * {@link GTVortexOutputs} so the rift's hungry field never swallows them again.
  */
 @Mixin(value = VortexBlockEntity.class, remap = false)
 public abstract class VortexBlockEntityMixin {
@@ -53,15 +58,18 @@ public abstract class VortexBlockEntityMixin {
 
     @Inject(method = "craft", at = @At("TAIL"))
     private void gt$craftJsonRecipes(ServerLevel level, CallbackInfo ci) {
-        if (GTRiftRecipe.isEmpty()) {
-            return;
+        if (!GTRiftRecipe.isEmpty()) {
+            gt$runJsonRecipes(level);
         }
 
+        gt$dropOutputs(level);
+    }
+
+    /** Turns offerings the built-in chain ignored into rift outputs. */
+    @Unique
+    private void gt$runJsonRecipes(ServerLevel level) {
         VortexBlockEntity vortex = (VortexBlockEntity) (Object) this;
         ListTag outputs = gt$outputs();
-        if (outputs.size() >= gt$MAX_OUTPUTS) {
-            return;
-        }
 
         List<ItemEntity> entities = new ArrayList<>();
         level.getEntities(
@@ -93,5 +101,40 @@ public abstract class VortexBlockEntityMixin {
             gt$consume(entity, stack);
             vortex.setChanged();
         }
+    }
+
+    /** Drops every queued output one block below the rift and clears the queue. */
+    @Unique
+    private void gt$dropOutputs(ServerLevel level) {
+        ListTag outputs = gt$outputs();
+        if (outputs.isEmpty()) {
+            return;
+        }
+
+        VortexBlockEntity vortex = (VortexBlockEntity) (Object) this;
+        BlockPos pos = vortex.getBlockPos();
+
+        for (int i = 0; i < outputs.size(); i++) {
+            ItemStack stack = ItemStack.parseOptional(level.registryAccess(), outputs.getCompound(i));
+            if (stack.isEmpty()) {
+                continue;
+            }
+
+            ItemEntity dropped = new ItemEntity(
+                    level,
+                    pos.getX() + 0.5D,
+                    pos.getY() - 0.5D,
+                    pos.getZ() + 0.5D,
+                    stack
+            );
+            dropped.setDefaultPickUpDelay();
+
+            if (level.addFreshEntity(dropped)) {
+                GTVortexOutputs.mark(dropped.getUUID());
+            }
+        }
+
+        outputs.clear();
+        vortex.setChanged();
     }
 }

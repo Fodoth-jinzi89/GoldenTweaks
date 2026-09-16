@@ -195,6 +195,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumcraft");
         }
 
+        if (mixinClassName.endsWith("fix.thaumcraft.AuraNodeHungryMixin")) {
+            return isModLoaded("thaumcraft");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumcraftcelestial")) {
             return isModLoaded("thaumcraftcelestial");
         }
@@ -207,6 +211,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.thaumichorizons")) {
+            return isModLoaded("thaumichorizons");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumichorizons")) {
             return isModLoaded("thaumichorizons");
         }
 

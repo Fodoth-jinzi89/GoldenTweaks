@@ -226,6 +226,14 @@ public class GoldenTweaksConfigScreen {
                     EARTH_SHOCK_HARM_MODE,
                     EarthShockHarmMode.OnlyLiving, EarthShockHarmMode.values());
 
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.hungry_node_breaks_blocks",
+                    HUNGRY_NODE_BREAKS_BLOCKS, false);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.horizons_vortex_breaks_blocks",
+                    HORIZONS_VORTEX_BREAKS_BLOCKS, false);
+
             // =========================================================
             // Debug
             // =========================================================

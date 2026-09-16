@@ -79,6 +79,10 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.EnumValue<EarthShockHarmMode> EARTH_SHOCK_HARM_MODE;
 
+    public static final ModConfigSpec.BooleanValue HUNGRY_NODE_BREAKS_BLOCKS;
+
+    public static final ModConfigSpec.BooleanValue HORIZONS_VORTEX_BREAKS_BLOCKS;
+
     static {
 
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -318,6 +322,16 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.thaumcraft.earth_shock_harm_mode"))
                 .defineEnum("earthShockHarmMode", EarthShockHarmMode.OnlyLiving);
 
+        HUNGRY_NODE_BREAKS_BLOCKS = builder
+                .translation(key("balance.thaumcraft.hungry_node_breaks_blocks"))
+                .comment(comment("balance.thaumcraft.hungry_node_breaks_blocks"))
+                .define("hungryNodeBreaksBlocks", false);
+
+        HORIZONS_VORTEX_BREAKS_BLOCKS = builder
+                .translation(key("balance.thaumcraft.horizons_vortex_breaks_blocks"))
+                .comment(comment("balance.thaumcraft.horizons_vortex_breaks_blocks"))
+                .define("horizonsVortexBreaksBlocks", false);
+
         builder.pop();
 
         builder.pop();
@@ -464,6 +478,24 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return EARTH_SHOCK_HARM_MODE.get();
+    }
+
+    public static boolean doesHungryNodeBreakBlocks() {
+
+        if (!GTState.isReady()) {
+            return false;
+        }
+
+        return HUNGRY_NODE_BREAKS_BLOCKS.get();
+    }
+
+    public static boolean doesHorizonsVortexBreakBlocks() {
+
+        if (!GTState.isReady()) {
+            return false;
+        }
+
+        return HORIZONS_VORTEX_BREAKS_BLOCKS.get();
     }
 
     private static String key(String path) {
