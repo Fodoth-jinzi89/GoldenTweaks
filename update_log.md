@@ -1,5 +1,31 @@
 # GoldenTweaks Update Log
 
+## 2026.09.16 - v4.5
+
+### Thaumcraft
+- 异界裂缝（神秘视界的平面漩涡）新增 JSON 配方 API `goldentweaks:rift_crafting`：支持物品与物品标签输入，附示例配方「凋零骷髅头颅 → 下界之星」；神秘视界自带的裂缝配方不受影响，两者不会互相拦截
+  - [GTRiftRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/GTRiftRecipe.java)
+  - [VortexBlockEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumichorizons/VortexBlockEntityMixin.java)
+  - [wither_skeleton_skull_to_nether_star.json](src/main/resources/data/goldentweaks/recipe/thaumichorizons/rift_crafting/wither_skeleton_skull_to_nether_star.json)
+- 新增「异界裂缝」配方查看页（JEI / EMI 双端）：同时列出神秘视界内置的裂缝链（元始珍珠、傀儡活化粉、僵尸脑、虚空种子、惰性法杖）与全部 JSON 配方；单个箭头居中，悬浮箭头显示裂缝说明，物品标签输入会展开成具体物品
+  - [GTRiftDisplayRecipes.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/GTRiftDisplayRecipes.java)
+  - [GTRiftEmiRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/GTRiftEmiRecipe.java)
+  - [GTRiftJeiCategory.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/GTRiftJeiCategory.java)
+- 注魔截流者支持神秘视界的改版符文矩阵：全自动绑定并启动注魔、主动搬运祭品、借入不稳定度并在结束时归还
+  - [GTHorizonsVatSupport.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/GTHorizonsVatSupport.java)
+  - [GTInfusionIntercepterBlockEntity.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTInfusionIntercepterBlockEntity.java)
+
+### 联动数据
+- 补齐神秘时代附属模组的物品与实体要素（thaumicbases、thaumichorizons、thaumicenergistics、advanced_infusion 等，新增 374 个数据文件）
+- 补齐新联动模组的物品要素（academy、ae2lt、aeallpattern、extendedae_plus、wands、wcwt，新增 356 个数据文件）
+- 禁忌魔法（forbiddenmagic）已有条目按等量追加补齐（vitium、tenebrae、praecantatio 等），不覆盖原有数值
+- 要素生成脚本新增合并模式：`python3 generate_aspect_batch.py <命名空间...>` 保留既有要素、只追加缺失项
+  - [generate_aspect_batch.py](script/resource_locations/generate_aspect_batch.py)
+
+### 其它
+- 新增神秘时代数据 API 文档（GitHub wiki，中英双语）：要素、物品/实体要素、奥术合成、坩埚、注魔、研究分类与条目、裂缝合成
+- 神秘视界「奥术针筒」效果汇总文档加入忽略列表
+
 ## 2026.09.15 - v4.4
 
 ### 移除
