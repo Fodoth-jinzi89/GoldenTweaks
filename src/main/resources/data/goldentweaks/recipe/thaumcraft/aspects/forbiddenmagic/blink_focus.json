@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:blink_focus"
   },
   "aspects": {
-    "sensus": 3
+    "sensus": 3,
+    "praecantatio": 4
   }
 }

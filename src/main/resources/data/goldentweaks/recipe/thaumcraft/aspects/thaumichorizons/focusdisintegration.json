@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:focusdisintegration"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

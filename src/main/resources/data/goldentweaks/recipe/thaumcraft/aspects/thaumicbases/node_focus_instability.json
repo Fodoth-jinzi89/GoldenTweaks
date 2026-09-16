@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:node_focus_instability"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

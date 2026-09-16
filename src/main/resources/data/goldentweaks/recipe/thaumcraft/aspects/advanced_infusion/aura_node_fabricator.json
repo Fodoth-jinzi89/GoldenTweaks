@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:aura_node_fabricator"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

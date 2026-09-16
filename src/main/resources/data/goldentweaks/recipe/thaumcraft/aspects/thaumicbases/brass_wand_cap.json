@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:brass_wand_cap"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "metallum": 3
+  }
+}

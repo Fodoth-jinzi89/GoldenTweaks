@@ -1,0 +1,41 @@
+{
+  "items": {
+    "thaumicenergistics:arcane_crafting_terminal": "Arcane Crafting Terminal",
+    "thaumicenergistics:coalescence_core": "Coalescence Core",
+    "thaumicenergistics:diffusion_core": "Diffusion Core",
+    "thaumicenergistics:essentia_cell_16k": "16k ME Essentia Storage Cell",
+    "thaumicenergistics:essentia_cell_1k": "1k ME Essentia Storage Cell",
+    "thaumicenergistics:essentia_cell_4k": "4k ME Essentia Storage Cell",
+    "thaumicenergistics:essentia_cell_64k": "64k ME Essentia Storage Cell",
+    "thaumicenergistics:essentia_cell_creative": "Creative ME Essentia Storage Cell",
+    "thaumicenergistics:essentia_export_bus": "Essentia Export Bus",
+    "thaumicenergistics:essentia_import_bus": "Essentia Import Bus",
+    "thaumicenergistics:essentia_level_emitter": "Essentia Level Emitter",
+    "thaumicenergistics:essentia_storage_bus": "Essentia Storage Bus",
+    "thaumicenergistics:essentia_terminal": "Essentia Terminal",
+    "thaumicenergistics:focus_aewrench": "Focus: AE Wrench",
+    "thaumicenergistics:golem_wifi_backpack": "Wireless Golem Backpack",
+    "thaumicenergistics:knowledge_core": "Knowledge Core",
+    "thaumicenergistics:storage_casing": "ME Essentia Storage Housing",
+    "thaumicenergistics:storage_component_16k": "16k ME Essentia Storage Component",
+    "thaumicenergistics:storage_component_1k": "1k ME Essentia Storage Component",
+    "thaumicenergistics:storage_component_4k": "4k ME Essentia Storage Component",
+    "thaumicenergistics:storage_component_64k": "64k ME Essentia Storage Component",
+    "thaumicenergistics:vis_interface": "Vis Interface",
+    "thaumicenergistics:wireless_connector": "Wireless Connector",
+    "thaumicenergistics:wireless_essentia_terminal": "Wireless Essentia Terminal"
+  },
+  "blocks": {
+    "thaumicenergistics:alkusure86fumo": "Alkusure86 Fumo",
+    "thaumicenergistics:arcane_assembler": "Arcane Assembler",
+    "thaumicenergistics:distillation_encoder": "Distillation Encoder",
+    "thaumicenergistics:essentia_cell_workbench": "Essentia Cell Workbench",
+    "thaumicenergistics:essentia_provider": "Essentia Provider",
+    "thaumicenergistics:essentia_provider_connection": "Wireless Essentia Receiver",
+    "thaumicenergistics:essentia_vibration_chamber": "Essentia Vibration Chamber",
+    "thaumicenergistics:infusion_monitor": "Infusion Monitor",
+    "thaumicenergistics:infusion_provider": "Infusion Provider",
+    "thaumicenergistics:knowledge_inscriber": "Knowledge Inscriber"
+  },
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:quicksilver_block"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

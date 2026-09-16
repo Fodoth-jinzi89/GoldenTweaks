@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:knowledge_inscriber"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

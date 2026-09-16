@@ -1,0 +1,22 @@
+{
+  "items": {
+    "advanced_infusion:alchemical_batch_module": "Alchemical Batch Module",
+    "advanced_infusion:alchemical_cache_module": "Alchemical Cache Module",
+    "advanced_infusion:alchemical_overclock_module": "Alchemical Overclock Module",
+    "advanced_infusion:aura_node_fabricator": "Aura Node Fabricator",
+    "advanced_infusion:centivis_efficiency_module": "Centivis Efficiency Module",
+    "advanced_infusion:primordial_infusion_core": "Primordial Infusion Core",
+    "advanced_infusion:purifying_tear": "Purifying Tear",
+    "advanced_infusion:purifying_tear.used": "The Purifying Tear washes the warp from you.",
+    "advanced_infusion:research_note_automator": "Research Note Automator",
+    "advanced_infusion:thaumic_resonance_core": "Thaumic Resonance Core",
+    "advanced_infusion:void_overclock_core": "Void Overclock Core"
+  },
+  "blocks": {
+    "advanced_infusion:advanced_infusion_controller": "Advanced Infusion Controller",
+    "advanced_infusion:alchemical_furnace_augmenter": "Alchemical Furnace Augmenter",
+    "advanced_infusion:aura_node_fabricator": "Aura Node Fabricator",
+    "advanced_infusion:research_note_automator": "Research Note Automator"
+  },
+  "entities": {}
+}

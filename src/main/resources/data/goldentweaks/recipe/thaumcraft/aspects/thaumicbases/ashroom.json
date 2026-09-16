@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:ashroom"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

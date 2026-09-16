@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:node_linker"
+  },
+  "aspects": {
+    "gelum": 3,
+    "iter": 3,
+    "sensus": 3
+  }
+}

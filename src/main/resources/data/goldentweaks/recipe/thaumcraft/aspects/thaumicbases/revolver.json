@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:revolver"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

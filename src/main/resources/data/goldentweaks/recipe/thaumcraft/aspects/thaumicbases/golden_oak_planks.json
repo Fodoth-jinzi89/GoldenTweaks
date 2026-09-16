@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:golden_oak_planks"
+  },
+  "aspects": {
+    "arbor": 3,
+    "metallum": 3
+  }
+}

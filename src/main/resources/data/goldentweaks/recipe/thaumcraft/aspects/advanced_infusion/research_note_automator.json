@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:research_note_automator"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "herba": 3,
+    "messis": 2
+  }
+}

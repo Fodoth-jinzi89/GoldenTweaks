@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:nodemonitor"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "sensus": 2
+  }
+}

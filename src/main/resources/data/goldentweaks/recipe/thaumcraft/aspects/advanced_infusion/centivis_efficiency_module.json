@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:centivis_efficiency_module"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

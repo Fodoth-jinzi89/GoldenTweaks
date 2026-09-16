@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:coalescence_core"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

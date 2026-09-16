@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:ukulele_confusion"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "vitium": 2
+  }
+}

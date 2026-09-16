@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:essentia_vibration_chamber"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

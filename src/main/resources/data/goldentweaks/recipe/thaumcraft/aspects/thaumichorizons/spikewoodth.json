@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:spikewoodth"
+  },
+  "aspects": {
+    "arbor": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:old_cobblestone_slab"
+  },
+  "aspects": {
+    "saxum": 3
+  }
+}

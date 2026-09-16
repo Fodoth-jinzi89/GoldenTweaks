@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:cloudth"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

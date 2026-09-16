@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 from pathlib import Path
@@ -931,11 +932,16 @@ def valid_entry(resource_location):
     return bool(VALID_PATH.fullmatch(path))
 
 
-def write_entry(root, resource_location, aspects, entity=False):
+def write_entry(root, resource_location, aspects, entity=False, merge=False):
     namespace, path = resource_location.split(":", 1)
     output = root / namespace / f"{path}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     target_key = "entity" if entity else "item"
+    if merge and output.exists():
+        existing = json.loads(output.read_text(encoding="utf-8")).get("aspects", {})
+        for aspect, amount in aspects.items():
+            existing.setdefault(aspect, amount)
+        aspects = existing
     data = {
         "type": f"goldentweaks:{'entity_aspect' if entity else 'item_aspect'}",
         target_key: {"id": resource_location},
@@ -945,14 +951,32 @@ def write_entry(root, resource_location, aspects, entity=False):
 
 
 def main():
-    files = sorted(INPUT_DIR.glob("*.json"))[BATCH_START:BATCH_START + BATCH_SIZE]
+    parser = argparse.ArgumentParser(
+        description="按语义规则生成物品/方块/实体要素数据。不带参数时按批次重算（会先清空该批次已有文件）。"
+    )
+    parser.add_argument(
+        "namespaces",
+        nargs="*",
+        help="只处理这些命名空间（合并模式：不删除已有文件，保留原有要素数值，只追加缺失要素）",
+    )
+    args = parser.parse_args()
+
+    if args.namespaces:
+        files = [INPUT_DIR / f"{namespace}.json" for namespace in args.namespaces]
+        missing = [path.name for path in files if not path.exists()]
+        if missing:
+            parser.error(f"缺少清单文件: {', '.join(missing)}")
+    else:
+        files = sorted(INPUT_DIR.glob("*.json"))[BATCH_START:BATCH_START + BATCH_SIZE]
+
     namespaces = [path.stem for path in files]
-    for namespace in namespaces:
-        for root in (ASPECT_DIR, ENTITY_ASPECT_DIR):
-            directory = root / namespace
-            if directory.exists():
-                for old_file in directory.rglob("*.json"):
-                    old_file.unlink()
+    if not args.namespaces:
+        for namespace in namespaces:
+            for root in (ASPECT_DIR, ENTITY_ASPECT_DIR):
+                directory = root / namespace
+                if directory.exists():
+                    for old_file in directory.rglob("*.json"):
+                        old_file.unlink()
 
     item_count = entity_count = skipped = 0
     for source in files:
@@ -966,17 +990,31 @@ def main():
                     skipped += 1
         for resource_location, (display, kind) in sorted(resources.items()):
             _, path = resource_location.split(":", 1)
-            write_entry(ASPECT_DIR, resource_location, semantic_aspects(source.stem, path, display, kind))
+            write_entry(
+                ASPECT_DIR,
+                resource_location,
+                semantic_aspects(source.stem, path, display, kind),
+                merge=bool(args.namespaces),
+            )
             item_count += 1
         for resource_location, display in sorted(data["entities"].items()):
             if not valid_entry(resource_location):
                 skipped += 1
                 continue
             _, path = resource_location.split(":", 1)
-            write_entry(ENTITY_ASPECT_DIR, resource_location, semantic_aspects(source.stem, path, display, "entity"), True)
+            write_entry(
+                ENTITY_ASPECT_DIR,
+                resource_location,
+                semantic_aspects(source.stem, path, display, "entity"),
+                True,
+                merge=bool(args.namespaces),
+            )
             entity_count += 1
 
-    print(f"批次 {BATCH_START + 1}-{BATCH_START + len(files)}: {', '.join(namespaces)}")
+    if args.namespaces:
+        print(f"合并模式 {', '.join(namespaces)}: ", end="")
+    else:
+        print(f"批次 {BATCH_START + 1}-{BATCH_START + len(files)}: {', '.join(namespaces)}")
     print(f"生成 {item_count} 个物品/方块要素、{entity_count} 个实体要素；跳过 {skipped} 个说明文本键。")
 
 

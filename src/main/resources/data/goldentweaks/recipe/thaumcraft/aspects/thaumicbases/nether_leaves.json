@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:nether_leaves"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

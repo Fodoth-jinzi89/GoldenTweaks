@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumichorizons:lostsoul"
+  },
+  "aspects": {
+    "bestia": 4,
+    "mortuus": 3,
+    "spiritus": 3,
+    "victus": 3
+  }
+}

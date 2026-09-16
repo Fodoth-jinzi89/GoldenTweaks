@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:lenscase"
+  },
+  "aspects": {
+    "sensus": 4,
+    "vacuos": 4,
+    "lux": 2,
+    "vas": 2
+  }
+}

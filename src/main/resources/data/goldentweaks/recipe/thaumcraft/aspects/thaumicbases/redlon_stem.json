@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:redlon_stem"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

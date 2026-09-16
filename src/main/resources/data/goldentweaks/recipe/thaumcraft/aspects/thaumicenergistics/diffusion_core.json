@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:diffusion_core"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 2,
+    "vitium": 2
+  }
+}

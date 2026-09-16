@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:essentia_cell_1k"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vacuos": 4,
+    "vas": 3
+  }
+}

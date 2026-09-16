@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:boatgreatwood"
+  },
+  "aspects": {
+    "arbor": 3,
+    "iter": 3,
+    "motus": 2
+  }
+}

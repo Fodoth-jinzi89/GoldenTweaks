@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:livingwood_wand_rod"
   },
   "aspects": {
-    "arbor": 3
+    "arbor": 3,
+    "praecantatio": 4
   }
 }

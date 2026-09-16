@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:focus_activation"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

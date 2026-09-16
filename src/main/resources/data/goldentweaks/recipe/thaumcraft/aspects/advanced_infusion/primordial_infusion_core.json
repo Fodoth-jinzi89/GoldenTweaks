@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:primordial_infusion_core"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "machina": 2,
+    "vitium": 2
+  }
+}

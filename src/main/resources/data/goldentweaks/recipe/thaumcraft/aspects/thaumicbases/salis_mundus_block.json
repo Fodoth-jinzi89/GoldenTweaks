@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:salis_mundus_block"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

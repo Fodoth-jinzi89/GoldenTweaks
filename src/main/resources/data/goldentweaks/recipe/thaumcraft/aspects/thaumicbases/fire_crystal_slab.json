@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:fire_crystal_slab"
+  },
+  "aspects": {
+    "ignis": 3,
+    "vitreus": 3
+  }
+}

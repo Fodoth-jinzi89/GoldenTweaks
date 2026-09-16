@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:infusion_monitor"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "cognitio": 3,
+    "sensus": 2,
+    "vitium": 2
+  }
+}

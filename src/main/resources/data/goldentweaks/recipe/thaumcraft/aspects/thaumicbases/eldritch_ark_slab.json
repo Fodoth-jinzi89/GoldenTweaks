@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:eldritch_ark_slab"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

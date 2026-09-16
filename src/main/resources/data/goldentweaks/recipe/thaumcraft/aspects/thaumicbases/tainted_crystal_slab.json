@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:tainted_crystal_slab"
+  },
+  "aspects": {
+    "vitium": 3,
+    "vitreus": 3,
+    "tenebrae": 2
+  }
+}

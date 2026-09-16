@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:old_diamond_slab"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

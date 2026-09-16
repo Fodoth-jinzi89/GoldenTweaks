@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:golden_oak_leaves"
+  },
+  "aspects": {
+    "arbor": 3,
+    "herba": 3,
+    "metallum": 3
+  }
+}

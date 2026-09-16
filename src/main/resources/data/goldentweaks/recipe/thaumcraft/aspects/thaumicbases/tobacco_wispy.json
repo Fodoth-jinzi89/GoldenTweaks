@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:tobacco_wispy"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

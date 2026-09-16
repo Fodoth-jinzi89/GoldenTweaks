@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:essentia_level_emitter"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

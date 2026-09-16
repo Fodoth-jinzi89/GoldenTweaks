@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:thauminite_shears"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

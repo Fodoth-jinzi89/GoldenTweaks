@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:silverwood_pipe"
+  },
+  "aspects": {
+    "arbor": 3,
+    "metallum": 3,
+    "permutatio": 3,
+    "machina": 2
+  }
+}

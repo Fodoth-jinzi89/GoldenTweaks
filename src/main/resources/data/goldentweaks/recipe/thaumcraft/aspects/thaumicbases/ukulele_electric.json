@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:ukulele_electric"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "machina": 3
+  }
+}

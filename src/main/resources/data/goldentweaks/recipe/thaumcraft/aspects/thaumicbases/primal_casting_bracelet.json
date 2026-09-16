@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:primal_casting_bracelet"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

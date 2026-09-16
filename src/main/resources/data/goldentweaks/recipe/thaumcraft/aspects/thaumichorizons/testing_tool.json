@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:testing_tool"
+  },
+  "aspects": {
+    "instrumentum": 3,
+    "metallum": 3
+  }
+}

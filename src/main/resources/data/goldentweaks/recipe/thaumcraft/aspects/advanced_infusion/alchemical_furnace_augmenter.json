@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:alchemical_furnace_augmenter"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "fabrico": 3,
+    "ignis": 3
+  }
+}

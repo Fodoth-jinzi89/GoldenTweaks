@@ -4,6 +4,7 @@
     "id": "forbiddenmagic:terrasteel_wand_cap"
   },
   "aspects": {
-    "metallum": 3
+    "metallum": 3,
+    "praecantatio": 4
   }
 }

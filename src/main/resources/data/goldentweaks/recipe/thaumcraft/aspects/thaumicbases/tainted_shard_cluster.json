@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:tainted_shard_cluster"
+  },
+  "aspects": {
+    "vitium": 3,
+    "vitreus": 3,
+    "tenebrae": 2
+  }
+}

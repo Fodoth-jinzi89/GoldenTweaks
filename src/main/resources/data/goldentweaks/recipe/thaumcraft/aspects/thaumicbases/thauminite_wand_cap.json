@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:thauminite_wand_cap"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:essentia_import_bus"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:aurelia_petal"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

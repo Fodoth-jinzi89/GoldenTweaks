@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:old_bricks_slab"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

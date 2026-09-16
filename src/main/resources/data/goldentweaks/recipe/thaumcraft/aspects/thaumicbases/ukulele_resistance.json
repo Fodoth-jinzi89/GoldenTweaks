@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:ukulele_resistance"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

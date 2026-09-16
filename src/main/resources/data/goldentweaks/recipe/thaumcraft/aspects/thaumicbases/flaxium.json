@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:flaxium"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:thaumium_spike"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

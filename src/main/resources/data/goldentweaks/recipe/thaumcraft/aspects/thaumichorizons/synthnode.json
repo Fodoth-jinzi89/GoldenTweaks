@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:synthnode"
+  },
+  "aspects": {
+    "alienis": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:bone_casting_bracelet"
+  },
+  "aspects": {
+    "metallum": 3,
+    "mortuus": 3
+  }
+}

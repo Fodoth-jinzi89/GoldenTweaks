@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:iron_spike"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

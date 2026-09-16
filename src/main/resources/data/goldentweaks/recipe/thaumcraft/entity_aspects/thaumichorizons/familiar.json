@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumichorizons:familiar"
+  },
+  "aspects": {
+    "bestia": 4,
+    "praecantatio": 3,
+    "victus": 3
+  }
+}

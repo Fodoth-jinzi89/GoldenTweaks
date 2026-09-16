@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:syringeblood"
+  },
+  "aspects": {
+    "accessories": 3,
+    "corpus": 3
+  }
+}

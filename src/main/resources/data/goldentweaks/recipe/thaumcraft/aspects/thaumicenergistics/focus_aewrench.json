@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:focus_aewrench"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "instrumentum": 3
+  }
+}

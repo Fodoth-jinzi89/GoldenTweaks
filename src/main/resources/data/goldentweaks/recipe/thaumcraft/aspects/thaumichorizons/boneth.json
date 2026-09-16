@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:boneth"
+  },
+  "aspects": {
+    "mortuus": 3
+  }
+}

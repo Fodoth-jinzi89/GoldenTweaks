@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:wireless_connector"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3,
+    "aer": 2,
+    "iter": 2
+  }
+}

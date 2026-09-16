@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:bloody_fabric"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "corpus": 3
+  }
+}

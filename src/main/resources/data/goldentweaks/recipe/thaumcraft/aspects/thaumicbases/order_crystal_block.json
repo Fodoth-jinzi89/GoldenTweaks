@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:order_crystal_block"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

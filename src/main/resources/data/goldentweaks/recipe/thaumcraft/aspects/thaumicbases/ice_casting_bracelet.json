@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:ice_casting_bracelet"
+  },
+  "aspects": {
+    "gelum": 3,
+    "metallum": 3
+  }
+}

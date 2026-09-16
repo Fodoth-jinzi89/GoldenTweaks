@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:tobacco_leaves"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

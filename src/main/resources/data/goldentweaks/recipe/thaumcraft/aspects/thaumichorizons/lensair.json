@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:lensair"
+  },
+  "aspects": {
+    "sensus": 4,
+    "lux": 2
+  }
+}

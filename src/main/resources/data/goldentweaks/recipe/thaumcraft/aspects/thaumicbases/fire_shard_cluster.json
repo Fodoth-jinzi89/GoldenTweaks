@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:fire_shard_cluster"
+  },
+  "aspects": {
+    "ignis": 3,
+    "vitreus": 3
+  }
+}

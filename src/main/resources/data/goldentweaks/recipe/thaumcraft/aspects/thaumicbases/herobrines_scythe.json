@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:herobrines_scythe"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

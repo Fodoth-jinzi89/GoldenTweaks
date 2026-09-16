@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:old_gravel"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

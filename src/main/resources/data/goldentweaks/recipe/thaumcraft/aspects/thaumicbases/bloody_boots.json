@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:bloody_boots"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tutamen": 4,
+    "corpus": 3
+  }
+}

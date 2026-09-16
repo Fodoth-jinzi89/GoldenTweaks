@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:focus_drain"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "aqua": 3,
+    "machina": 2
+  }
+}

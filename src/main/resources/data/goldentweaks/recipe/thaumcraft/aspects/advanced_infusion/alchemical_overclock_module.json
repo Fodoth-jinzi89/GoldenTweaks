@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:alchemical_overclock_module"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "tempus": 3
+  }
+}

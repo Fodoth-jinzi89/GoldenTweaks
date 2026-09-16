@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:void_wand_core"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

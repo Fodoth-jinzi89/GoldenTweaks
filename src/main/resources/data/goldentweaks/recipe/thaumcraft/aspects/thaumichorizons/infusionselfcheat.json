@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:infusionselfcheat"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "instrumentum": 3,
+    "metallum": 3,
+    "vitium": 2
+  }
+}

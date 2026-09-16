@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:tobacco_tainted"
+  },
+  "aspects": {
+    "vitium": 3,
+    "tenebrae": 2
+  }
+}

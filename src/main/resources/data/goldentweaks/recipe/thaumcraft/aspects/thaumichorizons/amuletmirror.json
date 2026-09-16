@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:amuletmirror"
+  },
+  "aspects": {
+    "sensus": 4,
+    "accessories": 3,
+    "lucrum": 2,
+    "lux": 2
+  }
+}

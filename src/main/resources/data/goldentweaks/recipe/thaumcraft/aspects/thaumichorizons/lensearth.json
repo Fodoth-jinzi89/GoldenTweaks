@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:lensearth"
+  },
+  "aspects": {
+    "sensus": 4,
+    "terra": 3,
+    "lux": 2
+  }
+}

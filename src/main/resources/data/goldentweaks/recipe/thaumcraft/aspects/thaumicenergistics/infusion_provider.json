@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:infusion_provider"
+  },
+  "aspects": {
+    "potentia": 4,
+    "praecantatio": 4,
+    "machina": 3,
+    "vitium": 2
+  }
+}

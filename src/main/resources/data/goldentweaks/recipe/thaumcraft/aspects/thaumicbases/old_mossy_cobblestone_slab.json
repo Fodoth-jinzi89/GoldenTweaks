@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:old_mossy_cobblestone_slab"
+  },
+  "aspects": {
+    "herba": 3,
+    "saxum": 3
+  }
+}

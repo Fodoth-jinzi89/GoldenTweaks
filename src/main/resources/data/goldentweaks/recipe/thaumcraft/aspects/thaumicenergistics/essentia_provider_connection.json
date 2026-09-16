@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:essentia_provider_connection"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 3,
+    "potentia": 3,
+    "aer": 2,
+    "iter": 2
+  }
+}

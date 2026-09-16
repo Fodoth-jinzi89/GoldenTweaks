@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:old_gold_slab"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

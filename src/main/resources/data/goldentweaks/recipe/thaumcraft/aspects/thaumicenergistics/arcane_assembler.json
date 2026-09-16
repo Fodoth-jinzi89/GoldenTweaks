@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:arcane_assembler"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

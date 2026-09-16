@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumichorizons:light"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

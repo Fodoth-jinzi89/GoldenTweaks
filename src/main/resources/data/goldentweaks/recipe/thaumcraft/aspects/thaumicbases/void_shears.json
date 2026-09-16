@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:void_shears"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

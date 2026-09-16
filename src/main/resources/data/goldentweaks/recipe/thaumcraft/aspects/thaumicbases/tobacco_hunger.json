@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:tobacco_hunger"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:rosehip_syrup"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

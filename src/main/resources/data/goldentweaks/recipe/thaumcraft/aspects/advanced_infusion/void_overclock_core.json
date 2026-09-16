@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "advanced_infusion:void_overclock_core"
+  },
+  "aspects": {
+    "tempus": 3,
+    "machina": 2
+  }
+}

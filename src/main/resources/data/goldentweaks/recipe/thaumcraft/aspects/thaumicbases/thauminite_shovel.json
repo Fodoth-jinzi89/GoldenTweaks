@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:thauminite_shovel"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "instrumentum": 3
+  }
+}

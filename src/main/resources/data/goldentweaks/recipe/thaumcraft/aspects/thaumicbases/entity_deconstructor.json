@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicbases:entity_deconstructor"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}
