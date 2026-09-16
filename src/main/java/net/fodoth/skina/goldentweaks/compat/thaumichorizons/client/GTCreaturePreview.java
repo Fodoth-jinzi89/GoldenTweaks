@@ -88,7 +88,7 @@ public final class GTCreaturePreview {
      */
     private static void advanceAnimation(Mob mob) {
         Level level = mob.level();
-        long now = level == null ? 0L : level.getGameTime();
+        long now = level.getGameTime();
         Long last = LAST_ANIMATION_TICK.get(mob);
 
         if (last != null && last == now) {
