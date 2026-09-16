@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:induction_factor"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

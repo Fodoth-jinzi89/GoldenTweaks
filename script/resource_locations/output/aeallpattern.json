@@ -1,0 +1,15 @@
+{
+  "items": {
+    "aeallpattern:aggregate_pattern": "Aggregate Pattern",
+    "aeallpattern:aggregate_pattern.named": "%s Aggregate Pattern",
+    "aeallpattern:aggregate_pattern.named_part": "%1$s Aggregate Pattern [%2$s/%3$s]",
+    "aeallpattern:aggregate_pattern.named_variant": "%1$s Aggregate Pattern (%2$s)",
+    "aeallpattern:all_pattern_generator": "All Pattern Generator",
+    "aeallpattern:pattern_binder": "All Pattern Binder"
+  },
+  "blocks": {
+    "aeallpattern:pattern_linker": "All Pattern Linker",
+    "aeallpattern:tianshu_pattern_selector": "Tianshu Pattern Router"
+  },
+  "entities": {}
+}

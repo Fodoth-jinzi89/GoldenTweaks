@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:storage_core"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "vas": 3,
+    "machina": 2
+  }
+}

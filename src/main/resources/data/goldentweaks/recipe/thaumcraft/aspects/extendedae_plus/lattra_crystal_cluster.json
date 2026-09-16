@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:lattra_crystal_cluster"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

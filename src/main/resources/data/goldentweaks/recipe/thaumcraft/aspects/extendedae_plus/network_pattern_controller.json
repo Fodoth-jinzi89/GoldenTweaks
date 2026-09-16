@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:network_pattern_controller"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3,
+    "potentia": 2
+  }
+}

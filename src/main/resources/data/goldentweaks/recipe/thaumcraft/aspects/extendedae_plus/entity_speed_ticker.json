@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:entity_speed_ticker"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

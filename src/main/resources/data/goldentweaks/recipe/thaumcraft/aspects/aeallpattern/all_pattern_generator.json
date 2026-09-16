@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeallpattern:all_pattern_generator"
+  },
+  "aspects": {
+    "potentia": 4,
+    "cognitio": 3,
+    "machina": 3
+  }
+}

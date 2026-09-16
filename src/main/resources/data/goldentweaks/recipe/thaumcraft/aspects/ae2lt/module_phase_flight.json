@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:module_phase_flight"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:mag_manip_escrow"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:ultimate_super_assembler_matrix_builder"
+  },
+  "aspects": {
+    "terminus": 5
+  }
+}

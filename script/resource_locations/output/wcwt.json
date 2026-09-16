@@ -1,0 +1,14 @@
+{
+  "items": {
+    "wcwt:advanced_coding_card": "Advanced Coding Card",
+    "wcwt:cosmetic_armor_card": "Cosmetic Armor Card",
+    "wcwt:curios_card": "Curios Card",
+    "wcwt:resonating_lightning_pattern_coding_card": "Resonating Overload Encoder Card",
+    "wcwt:tool_slots_box_card": "Network Tool Slot Box Card",
+    "wcwt:toolkit_card": "Toolkit Card",
+    "wcwt:wireless_comprehensive_work_terminal": "ME WCWT",
+    "wcwt:wireless_universal_comprehensive_work_terminal": "ME Wireless Comprehensive Non-Universal Terminal"
+  },
+  "blocks": {},
+  "entities": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:terminal_installer"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

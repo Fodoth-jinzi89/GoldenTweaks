@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:app_settings"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

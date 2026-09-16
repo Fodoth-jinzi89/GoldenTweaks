@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:imag_silicon_ingot"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:ability_interferer"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

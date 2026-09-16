@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "wcwt:wireless_comprehensive_work_terminal"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3,
+    "potentia": 3,
+    "aer": 2,
+    "iter": 2
+  }
+}

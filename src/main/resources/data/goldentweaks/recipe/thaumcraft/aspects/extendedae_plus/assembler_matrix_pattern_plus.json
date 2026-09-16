@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:assembler_matrix_pattern_plus"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 2
+  }
+}

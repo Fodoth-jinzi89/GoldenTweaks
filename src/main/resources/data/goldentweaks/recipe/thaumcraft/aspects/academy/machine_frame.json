@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:machine_frame"
+  },
+  "aspects": {
+    "machina": 3
+  }
+}

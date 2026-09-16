@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:super_assembler_matrix_frame"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

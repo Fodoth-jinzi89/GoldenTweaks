@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:windgen_fan_block"
+  },
+  "aspects": {
+    "potentia": 4,
+    "aer": 3,
+    "machina": 3,
+    "motus": 3
+  }
+}

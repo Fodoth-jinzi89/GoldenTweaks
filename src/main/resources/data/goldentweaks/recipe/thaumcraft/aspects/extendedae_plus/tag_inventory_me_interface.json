@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:tag_inventory_me_interface"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "cognitio": 3,
+    "vas": 3
+  }
+}

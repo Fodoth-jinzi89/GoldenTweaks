@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:extended_pattern_provider_expansion_card_plus"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3
+  }
+}

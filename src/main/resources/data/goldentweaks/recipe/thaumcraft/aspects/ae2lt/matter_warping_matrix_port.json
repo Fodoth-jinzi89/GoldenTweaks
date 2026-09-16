@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:matter_warping_matrix_port"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 2
+  }
+}

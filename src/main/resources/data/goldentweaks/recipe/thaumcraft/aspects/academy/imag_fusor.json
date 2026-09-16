@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:imag_fusor"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

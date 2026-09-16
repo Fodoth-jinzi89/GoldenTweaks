@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "wcwt:advanced_coding_card"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

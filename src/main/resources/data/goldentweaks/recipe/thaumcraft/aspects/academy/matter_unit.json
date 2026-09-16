@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:matter_unit"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

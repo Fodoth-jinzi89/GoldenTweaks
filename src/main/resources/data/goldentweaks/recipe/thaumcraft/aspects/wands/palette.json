@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "wands:palette"
+  },
+  "aspects": {
+    "sensus": 3
+  }
+}

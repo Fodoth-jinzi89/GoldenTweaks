@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:fish_dan_"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

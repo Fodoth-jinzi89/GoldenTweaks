@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:rf_output"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

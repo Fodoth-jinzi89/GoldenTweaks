@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:virtual_crafting_card"
+  },
+  "aspects": {
+    "metallum": 3,
+    "machina": 2
+  }
+}

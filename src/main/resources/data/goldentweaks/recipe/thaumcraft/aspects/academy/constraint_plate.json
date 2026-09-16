@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:constraint_plate"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

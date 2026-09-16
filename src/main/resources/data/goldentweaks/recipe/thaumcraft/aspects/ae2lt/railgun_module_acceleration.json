@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:railgun_module_acceleration"
+  },
+  "aspects": {
+    "telum": 4,
+    "potentia": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:media_only_my_railgun"
+  },
+  "aspects": {
+    "telum": 4,
+    "potentia": 3
+  }
+}

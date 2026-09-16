@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:overloaded_cable_magenta"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:infinity_core"
+  },
+  "aspects": {
+    "terminus": 6,
+    "vacuos": 4,
+    "accessories": 3,
+    "vas": 3,
+    "machina": 2
+  }
+}

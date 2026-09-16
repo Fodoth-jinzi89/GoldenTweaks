@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:16x_crafting_accelerator"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

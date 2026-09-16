@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:spatial_core"
+  },
+  "aspects": {
+    "alienis": 3,
+    "machina": 2
+  }
+}

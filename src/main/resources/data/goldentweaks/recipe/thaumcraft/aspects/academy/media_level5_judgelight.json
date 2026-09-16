@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:media_level5_judgelight"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

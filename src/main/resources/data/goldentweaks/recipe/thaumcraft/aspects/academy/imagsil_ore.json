@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:imagsil_ore"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "ae2lt:floating_matter"
+  },
+  "aspects": {
+    "bestia": 4,
+    "metallum": 3,
+    "victus": 3
+  }
+}

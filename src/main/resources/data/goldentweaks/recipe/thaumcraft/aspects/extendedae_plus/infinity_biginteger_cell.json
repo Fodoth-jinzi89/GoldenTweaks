@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:infinity_biginteger_cell"
+  },
+  "aspects": {
+    "terminus": 6,
+    "vacuos": 4,
+    "vas": 2
+  }
+}

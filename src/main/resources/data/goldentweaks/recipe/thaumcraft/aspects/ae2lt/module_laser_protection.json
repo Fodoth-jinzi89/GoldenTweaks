@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:module_laser_protection"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:factor_aerohand"
+  },
+  "aspects": {
+    "motus": 3,
+    "volatus": 2
+  }
+}

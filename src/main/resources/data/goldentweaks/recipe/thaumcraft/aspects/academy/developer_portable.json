@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:developer_portable"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 3
+  }
+}

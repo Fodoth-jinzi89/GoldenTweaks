@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeallpattern:aggregate_pattern"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

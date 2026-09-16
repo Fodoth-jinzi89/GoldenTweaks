@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "wands:diamond_wand"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vitreus": 3
+  }
+}

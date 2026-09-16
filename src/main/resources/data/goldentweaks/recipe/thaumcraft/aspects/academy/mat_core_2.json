@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:mat_core_2"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:crystal_pure"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

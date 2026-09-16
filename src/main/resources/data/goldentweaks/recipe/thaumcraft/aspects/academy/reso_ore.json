@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:reso_ore"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "wands:round_robin"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

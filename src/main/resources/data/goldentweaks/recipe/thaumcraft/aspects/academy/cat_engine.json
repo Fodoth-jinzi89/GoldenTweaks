@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:cat_engine"
+  },
+  "aspects": {
+    "machina": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

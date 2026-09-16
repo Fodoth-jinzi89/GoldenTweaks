@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:app_knowledge_record"
+  },
+  "aspects": {
+    "sonus": 4,
+    "machina": 3,
+    "potentia": 3
+  }
+}

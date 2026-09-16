@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:basic_core"
+  },
+  "aspects": {
+    "machina": 2
+  }
+}

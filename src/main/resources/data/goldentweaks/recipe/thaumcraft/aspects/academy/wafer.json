@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:wafer"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

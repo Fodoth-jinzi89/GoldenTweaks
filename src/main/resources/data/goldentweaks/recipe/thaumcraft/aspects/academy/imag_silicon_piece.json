@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:imag_silicon_piece"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

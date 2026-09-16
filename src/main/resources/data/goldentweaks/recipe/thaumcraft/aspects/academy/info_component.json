@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:info_component"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:matter_warping_matrix_glass"
+  },
+  "aspects": {
+    "iter": 4,
+    "vitreus": 3,
+    "alienis": 2
+  }
+}

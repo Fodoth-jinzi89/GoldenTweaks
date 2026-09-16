@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:mirror_pattern_provider"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cognitio": 3,
+    "machina": 3,
+    "lux": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:matter_warping_matrix_thermal_control_unit_t1"
+  },
+  "aspects": {
+    "iter": 4,
+    "ignis": 3,
+    "alienis": 2
+  }
+}

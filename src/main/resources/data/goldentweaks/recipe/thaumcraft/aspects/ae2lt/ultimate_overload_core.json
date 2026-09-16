@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:ultimate_overload_core"
+  },
+  "aspects": {
+    "terminus": 5,
+    "machina": 2
+  }
+}

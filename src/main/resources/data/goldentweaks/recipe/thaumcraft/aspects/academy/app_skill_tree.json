@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:app_skill_tree"
+  },
+  "aspects": {
+    "cognitio": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:tianshu_quantum_main_core"
+  },
+  "aspects": {
+    "alienis": 3,
+    "machina": 2
+  }
+}

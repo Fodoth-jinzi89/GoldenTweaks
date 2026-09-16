@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "wcwt:curios_card"
+  },
+  "aspects": {
+    "accessories": 3,
+    "machina": 2
+  }
+}

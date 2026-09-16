@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:crystal_catalyzer"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

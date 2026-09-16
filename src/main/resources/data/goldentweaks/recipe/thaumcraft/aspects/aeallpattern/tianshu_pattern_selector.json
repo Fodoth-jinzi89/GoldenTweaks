@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeallpattern:tianshu_pattern_selector"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3
+  }
+}

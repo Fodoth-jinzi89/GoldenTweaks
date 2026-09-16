@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "extendedae_plus:crystal_assembler_plus"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}
