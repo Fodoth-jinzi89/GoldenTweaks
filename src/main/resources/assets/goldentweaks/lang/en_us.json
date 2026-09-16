@@ -125,6 +125,8 @@
   "goldentweaks.rift_crafting.note.pocket_plane": "→ Pocket plane",
   "goldentweaks.rift_crafting.note.voidling_golem": "→ Voidling golem",
   "goldentweaks.rift_crafting.note.wisp": "→ Wisps",
+  "goldentweaks.rift_crafting.rift": "Rift: the offering is void-crafted inside the rift",
+  "emi.category.goldentweaks.rift_crafting": "Rift Crafting",
   "gui.goldentweaks.thaumonomicon.aspect_sources.page": "Page %s/%s, %s items",
   "tag.item.goldentweaks.traveloptics_spellweave_ingots": "Travel Optics Spellweave Ingots",
   "item.goldentweaks.armor_plate_tier_1": "Wooden Armor Plate",

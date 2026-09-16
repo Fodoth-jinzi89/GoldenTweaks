@@ -25,14 +25,17 @@ public final class GTRiftDisplayRecipes {
     public static final int WIDTH = 104;
     public static final int HEIGHT = 44;
     public static final int INPUT_X = 2;
-    public static final int RIFT_X = 42;
-    public static final int OUTPUT_X = 82;
-    public static final int ROW_Y = 4;
-    public static final int ARROW_INPUT_X = 22;
-    public static final int ARROW_RIFT_X = 62;
-    public static final int ARROW_Y = 8;
+    public static final int OUTPUT_X = 84;
+    public static final int ROW_Y = 9;
+    /** Single conversion arrow, centred between both slots. */
+    public static final int ARROW_X = 40;
+    public static final int ARROW_Y = 10;
+    public static final int ARROW_WIDTH = 24;
+    public static final int ARROW_HEIGHT = 17;
+    /** EMI animates widgets in milliseconds (see AnimatedTextureWidget). */
+    public static final int ARROW_DURATION = 1000;
     public static final int NOTE_X = 2;
-    public static final int NOTE_Y = 28;
+    public static final int NOTE_Y = 32;
 
     private static final String BUILT_IN = "builtin/";
 

@@ -27,8 +27,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * JEI category for rift crafting. The rift is drawn as its block icon in the middle of the page
- * instead of the question mark placeholder Create uses for its mysterious conversions.
+ * JEI category for rift crafting: one arrow in the middle of the page, mirroring Create's
+ * "mysterious conversion" layout. The rift itself is only the category icon / catalyst.
  */
 final class GTRiftJeiCategory implements IRecipeCategory<GTRiftDisplayRecipe> {
 
@@ -38,13 +38,11 @@ final class GTRiftJeiCategory implements IRecipeCategory<GTRiftDisplayRecipe> {
     private final IDrawable background;
     private final IDrawable icon;
     private final IDrawable arrow;
-    private final IDrawable rift;
 
     private GTRiftJeiCategory(IGuiHelper guiHelper) {
         this.background = guiHelper.createBlankDrawable(GTRiftDisplayRecipes.WIDTH, GTRiftDisplayRecipes.HEIGHT);
         this.icon = guiHelper.createDrawableItemStack(GTRiftDisplayRecipes.riftIcon());
         this.arrow = guiHelper.getRecipeArrow();
-        this.rift = guiHelper.createDrawableItemStack(GTRiftDisplayRecipes.riftIcon());
     }
 
     static void register(IRecipeCategoryRegistration registration) {
@@ -116,9 +114,7 @@ final class GTRiftJeiCategory implements IRecipeCategory<GTRiftDisplayRecipe> {
             double mouseX,
             double mouseY
     ) {
-        arrow.draw(guiGraphics, GTRiftDisplayRecipes.ARROW_INPUT_X, GTRiftDisplayRecipes.ARROW_Y);
-        arrow.draw(guiGraphics, GTRiftDisplayRecipes.ARROW_RIFT_X, GTRiftDisplayRecipes.ARROW_Y);
-        rift.draw(guiGraphics, GTRiftDisplayRecipes.RIFT_X, GTRiftDisplayRecipes.ROW_Y);
+        arrow.draw(guiGraphics, GTRiftDisplayRecipes.ARROW_X, GTRiftDisplayRecipes.ARROW_Y);
 
         if (recipe.hasNote()) {
             guiGraphics.drawString(
@@ -140,9 +136,11 @@ final class GTRiftJeiCategory implements IRecipeCategory<GTRiftDisplayRecipe> {
             double mouseX,
             double mouseY
     ) {
-        int x = GTRiftDisplayRecipes.RIFT_X;
-        int y = GTRiftDisplayRecipes.ROW_Y;
-        if (mouseX >= x && mouseX < x + 16 && mouseY >= y && mouseY < y + 16) {
+        int x = GTRiftDisplayRecipes.ARROW_X;
+        int y = GTRiftDisplayRecipes.ARROW_Y;
+        int width = GTRiftDisplayRecipes.ARROW_WIDTH;
+        int height = GTRiftDisplayRecipes.ARROW_HEIGHT;
+        if (mouseX >= x && mouseX < x + width && mouseY >= y && mouseY < y + height) {
             tooltip.add(Component.translatable("goldentweaks.rift_crafting.rift"));
         }
     }

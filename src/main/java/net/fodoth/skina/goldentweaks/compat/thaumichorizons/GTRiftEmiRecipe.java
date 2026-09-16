@@ -16,8 +16,8 @@ import net.minecraft.world.item.ItemStack;
 import java.util.List;
 
 /**
- * EMI recipe for one rift crafting row. The rift itself is drawn as its block icon instead of the
- * usual question mark placeholder.
+ * EMI recipe for one rift crafting row: offering, a single conversion arrow in the middle and the
+ * product. Hovering the arrow explains that the conversion happens in the rift.
  */
 final class GTRiftEmiRecipe implements EmiRecipe {
 
@@ -87,9 +87,7 @@ final class GTRiftEmiRecipe implements EmiRecipe {
     @Override
     public void addWidgets(WidgetHolder widgets) {
         widgets.addSlot(input, GTRiftDisplayRecipes.INPUT_X, GTRiftDisplayRecipes.ROW_Y);
-        widgets.addFillingArrow(GTRiftDisplayRecipes.ARROW_INPUT_X, GTRiftDisplayRecipes.ARROW_Y, 40);
-        drawRift(widgets);
-        widgets.addFillingArrow(GTRiftDisplayRecipes.ARROW_RIFT_X, GTRiftDisplayRecipes.ARROW_Y, 40);
+        addRiftArrow(widgets);
 
         if (recipe.hasOutput()) {
             widgets.addSlot(output, GTRiftDisplayRecipes.OUTPUT_X, GTRiftDisplayRecipes.ROW_Y);
@@ -100,12 +98,18 @@ final class GTRiftEmiRecipe implements EmiRecipe {
         }
     }
 
-    private void drawRift(WidgetHolder widgets) {
-        int x = GTRiftDisplayRecipes.RIFT_X;
-        int y = GTRiftDisplayRecipes.ROW_Y;
-        ItemStack icon = GTRiftDisplayRecipes.riftIcon();
+    /** One arrow in the middle of the page, carrying the rift tooltip. */
+    private void addRiftArrow(WidgetHolder widgets) {
+        int x = GTRiftDisplayRecipes.ARROW_X;
+        int y = GTRiftDisplayRecipes.ARROW_Y;
 
-        widgets.addDrawable(x, y, 16, 16, (graphics, mouseX, mouseY, delta) -> graphics.renderItem(icon, x, y));
-        widgets.addTooltipText(List.of(Component.translatable("goldentweaks.rift_crafting.rift")), x, y, 16, 16);
+        widgets.addFillingArrow(x, y, GTRiftDisplayRecipes.ARROW_DURATION);
+        widgets.addTooltipText(
+                List.of(Component.translatable("goldentweaks.rift_crafting.rift")),
+                x,
+                y,
+                GTRiftDisplayRecipes.ARROW_WIDTH,
+                GTRiftDisplayRecipes.ARROW_HEIGHT
+        );
     }
 }
