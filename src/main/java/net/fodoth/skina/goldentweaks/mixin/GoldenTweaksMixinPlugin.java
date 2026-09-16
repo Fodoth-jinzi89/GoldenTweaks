@@ -1,8 +1,10 @@
 package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
+import net.fodoth.skina.goldentweaks.compat.ae2autopatternupload.Ae2ApuASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
+import net.fodoth.skina.goldentweaks.compat.linearbearing.LinearbearingASM;
 import net.neoforged.fml.loading.FMLLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -61,6 +63,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2peat");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.hazennstuff")) {
+            return isModLoaded("hazennstuff");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.advanced_infusion")) {
             return isModLoaded("advanced_infusion");
         }
@@ -101,8 +107,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.ae2autopatternupload.ProviderSelectScreenMixin")
-                || mixinClassName.endsWith("fix.ae2autopatternupload.accessor.ProviderGroupAccessor")) {
+                || mixinClassName.endsWith("fix.ae2autopatternupload.accessor.ProviderGroupAccessor")
+                || mixinClassName.endsWith("fix.ae2autopatternupload.ProvidersListS2CPacketDummyMixin")) {
             return isModLoaded("ae2_auto_pattern_upload");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.linearbearing")) {
+            return isModLoaded("linearbearing");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2autopatternupload")) {
@@ -236,6 +247,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         ExspectrimentsASM.patch(targetClassName, targetClass);
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
+        LinearbearingASM.patch(targetClassName, targetClass);
+        Ae2ApuASM.patch(targetClassName, targetClass);
     }
 
     @Override

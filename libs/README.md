@@ -21,7 +21,7 @@
   `compileOnly/` 与 `implementation/` 时只保留 `implementation/` 那份（它已包含编译期可见性）。
 
 
-## compileOnly/ —— 140 个 jar（仅编译期可见）
+## compileOnly/ —— 141 个 jar（仅编译期可见）
 
 | 模组 | 版本 | 文件名 |
 |---|---|---|
@@ -124,6 +124,7 @@
 | kotlinx-serialization-json-jvm | `1.9.0` | `kotlinx-serialization-json-jvm-1.9.0.jar` |
 | kubejs-neoforge | `2101.7.2-build.368` | `kubejs-neoforge-2101.7.2-build.368.jar` |
 | L_Ender's Cataclysm | `1.21.1-3.27` | `[核心]L_Ender'sCataclysm1.21.1-3.27.jar` |
+| linearbearing | `1.3.5` | `linearbearing-1.3.5.jar` |
 | lootjs-neoforge | `1.21.1-3.7.0` | `lootjs-neoforge-1.21.1-3.7.0.jar` |
 | maid_storage_manager | `1.15.6` | `maid_storage_manager-1.15.6.jar` |
 | mekanicalcreate | `0.2.6-mc1.21.1-neoforge` | `mekanicalcreate-0.2.6-mc1.21.1-neoforge.jar` |
