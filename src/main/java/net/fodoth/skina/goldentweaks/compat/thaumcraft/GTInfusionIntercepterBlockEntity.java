@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.thaumichorizons.GTHorizonsVatSupport;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.common.util.FakePlayer;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import org.jetbrains.annotations.NotNull;
@@ -47,6 +49,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
     private static final int PEDESTAL_CHECK_INTERVAL = 20; // 1s
     private static final int CRAFT_TRIGGER_DELAY = 20; // 1s after item change
     private static final String RESEARCH_KEY = "ThaumcraftResearch";
+    private static final String HORIZONS_MODID = "thaumichorizons";
 
     private static volatile VarHandle MATRIX_INSTABILITY;
     private static volatile VarHandle MATRIX_RECIPE_ESSENTIA;
@@ -60,6 +63,10 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
     @Nullable private BlockPos boundMatrixPos;
     @Nullable private BlockPos boundPedestalPos;
     private boolean stabilityHasBeenAdded;
+
+    // Thaumic Horizons infusion vat
+    private int horizonsStabilityBorrowed;
+    private int horizonsStartCooldown;
 
     // Owner
     @Nullable private UUID ownerUuid;
@@ -222,6 +229,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         be.maintainMatrixBinding();
         be.maintainPedestalBinding();
         be.scanEssentiaSources();
+        be.tickHorizonsVat();
         be.checkPedestalAndTrigger();
         be.tickCraftTrigger();
         be.findAndFeedEssentia();
@@ -255,12 +263,35 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
     /* Matrix binding (scan y+3..10, bind nearest)             */
     /* ------------------------------------------------------ */
 
+    /**
+     * A bindable matrix is either the vanilla Runic Matrix or Thaumic Horizons' Modified Runic
+     * Matrix (the Infusion Vat starter).
+     */
+    private static boolean isMatrix(@Nullable BlockEntity blockEntity) {
+        if (blockEntity instanceof InfusionMatrixBlockEntity) return true;
+        if (!ModList.get().isLoaded(HORIZONS_MODID)) return false;
+        return GTHorizonsVatSupport.isVatMatrix(blockEntity);
+    }
+
+    /**
+     * @return the bound Thaumic Horizons matrix, or null while a vanilla Runic Matrix (or nothing)
+     *         is bound. Keeping this lookup lazy keeps Thaumic Horizons classes unloaded when the
+     *         mod is absent.
+     */
+    @Nullable
+    private BlockEntity horizonsMatrix() {
+        if (boundMatrixPos == null || level == null) return null;
+        if (!ModList.get().isLoaded(HORIZONS_MODID)) return null;
+        BlockEntity blockEntity = level.getBlockEntity(boundMatrixPos);
+        return GTHorizonsVatSupport.isVatMatrix(blockEntity) ? blockEntity : null;
+    }
+
     private void maintainMatrixBinding() {
         if (level == null) return;
 
         if (boundMatrixPos != null) {
             BlockEntity be = level.getBlockEntity(boundMatrixPos);
-            if (be instanceof InfusionMatrixBlockEntity) return;
+            if (isMatrix(be)) return;
             clearBinding();
         }
         scanForMatrix();
@@ -272,7 +303,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
 
         for (int dy = MATRIX_SCAN_MIN; dy <= MATRIX_SCAN_MAX; dy++) {
             BlockPos check = worldPosition.above(dy);
-            if (level.getBlockEntity(check) instanceof InfusionMatrixBlockEntity && dy < nearestDist) {
+            if (isMatrix(level.getBlockEntity(check)) && dy < nearestDist) {
                 nearest = check;
                 nearestDist = dy;
             }
@@ -307,6 +338,8 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
             InfusionMatrixBlockEntity matrix = getBoundMatrix();
             if (matrix != null) {
                 setMatrixInstability(matrix, getMatrixInstability(matrix) + STABILITY_AMOUNT);
+            } else {
+                restoreHorizonsStability();
             }
         }
         boundMatrixPos = null;
@@ -408,6 +441,23 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
      * Falls back to FakePlayer with cached research if owner is offline.
      */
     private void tryCraftingStart(InfusionMatrixBlockEntity matrix) {
+        Player player = resolveInfusionPlayer();
+        if (player != null) {
+            matrix.craftingStart(player);
+            return;
+        }
+
+        GoldenTweaks.LOGGER.warn(
+                "InfusionIntercepter at {}: cannot start infusion — owner offline and no cached research",
+                worldPosition);
+    }
+
+    /**
+     * Prefers the online owner and falls back to a FakePlayer carrying the cached research, so an
+     * intercepter can keep starting infusions while its owner is away.
+     */
+    @Nullable
+    private Player resolveInfusionPlayer() {
         // 1) Owner online → use directly
         Player owner = getOwnerPlayer();
         if (owner != null) {
@@ -416,8 +466,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
             if (data != null && level != null) {
                 cachedResearchData = researchOnly(data.serializeNBT(level.registryAccess()));
             }
-            matrix.craftingStart(owner);
-            return;
+            return owner;
         }
 
         // 2) Owner offline, cached research exists → FakePlayer
@@ -429,15 +478,12 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
                 if (fakeData != null) {
                     fakeData.deserializeNBT(sl.registryAccess(), cachedResearchData);
                 }
-                matrix.craftingStart(fake);
-                return;
+                return fake;
             }
         }
 
         // 3) Offline and no cache → cannot start
-        GoldenTweaks.LOGGER.warn(
-                "InfusionIntercepter at {}: cannot start infusion — owner offline and no cached research",
-                worldPosition);
+        return null;
     }
 
     @Nullable
@@ -499,6 +545,12 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
 
     private void findAndFeedEssentia() {
         if (level == null) return;
+
+        BlockEntity horizons = horizonsMatrix();
+        if (horizons != null) {
+            feedHorizonsVat(horizons);
+            return;
+        }
 
         InfusionMatrixBlockEntity matrix = getBoundMatrix();
         if (matrix == null || !matrix.crafting()) {
@@ -617,6 +669,12 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
     private void fastForwardItems() {
         if (level == null) return;
 
+        BlockEntity horizons = horizonsMatrix();
+        if (horizons != null) {
+            fastForwardHorizonsOfferings(horizons);
+            return;
+        }
+
         InfusionMatrixBlockEntity matrix = getBoundMatrix();
         if (matrix == null || !matrix.crafting()) return;
 
@@ -665,10 +723,108 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         InfusionMatrixBlockEntity matrix = getBoundMatrix();
         if (matrix != null) {
             setMatrixInstability(matrix, getMatrixInstability(matrix) + STABILITY_AMOUNT);
+        } else {
+            restoreHorizonsStability();
         }
         stabilityHasBeenAdded = false;
         boundMatrixPos = null;
         setChanged();
+    }
+
+    /** Hands back the instability borrowed from a Thaumic Horizons vat infusion, if any. */
+    private void restoreHorizonsStability() {
+        if (horizonsStabilityBorrowed <= 0) return;
+        if (boundMatrixPos != null && level != null && ModList.get().isLoaded(HORIZONS_MODID)) {
+            GTHorizonsVatSupport.restoreInstability(level.getBlockEntity(boundMatrixPos), horizonsStabilityBorrowed);
+        }
+        horizonsStabilityBorrowed = 0;
+    }
+
+    /* ------------------------------------------------------ */
+    /* Thaumic Horizons infusion vat                           */
+    /* ------------------------------------------------------ */
+
+    /**
+     * Automates an Infusion Vat driven by Thaumic Horizons' Modified Runic Matrix: starts the
+     * infusion for the owner as soon as the vat accepts it (the vat itself validates structure,
+     * subject, offerings and research), then {@link #feedHorizonsVat} and
+     * {@link #fastForwardHorizonsOfferings} take over the essentia and the offerings.
+     */
+    private void tickHorizonsVat() {
+        BlockEntity matrix = horizonsMatrix();
+        if (matrix == null) return;
+
+        if (horizonsStartCooldown > 0) {
+            horizonsStartCooldown--;
+            return;
+        }
+        horizonsStartCooldown = PEDESTAL_CHECK_INTERVAL;
+        if (GTHorizonsVatSupport.isInfusing(matrix)) return;
+
+        Player player = resolveInfusionPlayer();
+        if (player == null) return;
+
+        // The vat only lets a thaumaturge within 8 blocks start it (VatBlockEntity.stillValid),
+        // so put the off-line stand-in next to the matrix.
+        if (player instanceof FakePlayer fake && boundMatrixPos != null) {
+            fake.moveTo(boundMatrixPos.getX() + 0.5D, boundMatrixPos.getY() + 0.5D, boundMatrixPos.getZ() + 0.5D);
+        }
+
+        if (GTHorizonsVatSupport.startInfusion(matrix, player)) {
+            matrixBindParticles = 20;
+            // The vat stamps the recipe instability when the infusion starts, so borrow now.
+            horizonsStabilityBorrowed = GTHorizonsVatSupport.borrowInstability(matrix, STABILITY_AMOUNT);
+            stabilityHasBeenAdded = true;
+            setChanged();
+        }
+    }
+
+    /** Feeds the vat infusion: cached essentia first, then straight from the bound containers. */
+    private void feedHorizonsVat(BlockEntity matrix) {
+        if (level == null) return;
+        boolean changed = false;
+
+        if (!myAspects.isEmpty()) {
+            for (Aspect aspect : myAspects.aspects()) {
+                int held = myAspects.amount(aspect);
+                if (held <= 0) continue;
+                int accepted = GTHorizonsVatSupport.acceptEssentia(matrix, aspect, held);
+                if (accepted <= 0) continue;
+                int moved = GTHorizonsVatSupport.addEssentia(matrix, aspect, accepted);
+                if (moved <= 0) continue;
+                myAspects.remove(aspect, moved);
+                changed = true;
+            }
+        }
+
+        for (BlockPos sourcePos : getCachedSources()) {
+            BlockEntity sourceEntity = level.getBlockEntity(sourcePos);
+            if (!(sourceEntity instanceof IEssentiaTransport source)) continue;
+
+            Aspect type = source.getEssentiaType(Direction.UP);
+            int available = source.getEssentiaAmount(Direction.UP);
+            if (type == null || available <= 0) continue;
+
+            int accepted = GTHorizonsVatSupport.acceptEssentia(matrix, type, available);
+            if (accepted <= 0) continue;
+
+            currentSuction = type;
+            int taken = source.takeEssentia(type, accepted, Direction.UP);
+            if (taken <= 0) continue;
+
+            int moved = GTHorizonsVatSupport.addEssentia(matrix, type, taken);
+            if (moved < taken) myAspects.add(type, taken - moved);
+            changed = true;
+        }
+
+        if (myAspects.isEmpty()) currentSuction = null;
+        if (changed) setChanged();
+    }
+
+    /** Claims every offering the running vat infusion still waits for, in one go. */
+    private void fastForwardHorizonsOfferings(BlockEntity matrix) {
+        if (!GTHorizonsVatSupport.isInfusing(matrix) || GTHorizonsVatSupport.needsEssentia(matrix)) return;
+        if (GTHorizonsVatSupport.consumeOfferings(matrix) > 0) setChanged();
     }
 
     /* ------------------------------------------------------ */
@@ -746,6 +902,9 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         super.saveAdditional(tag, provider);
         if (!myAspects.isEmpty()) myAspects.writeToNBT(tag);
         tag.putBoolean("stabilityAdded", stabilityHasBeenAdded);
+        if (horizonsStabilityBorrowed > 0) {
+            tag.putInt("horizonsStability", horizonsStabilityBorrowed);
+        }
         if (boundMatrixPos != null) {
             tag.putInt("mx", boundMatrixPos.getX());
             tag.putInt("my", boundMatrixPos.getY());
@@ -773,6 +932,7 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         myAspects = new AspectList();
         myAspects.readFromNBT(tag);
         stabilityHasBeenAdded = tag.getBoolean("stabilityAdded");
+        horizonsStabilityBorrowed = tag.getInt("horizonsStability");
         if (tag.contains("mx")) {
             boundMatrixPos = new BlockPos(tag.getInt("mx"), tag.getInt("my"), tag.getInt("mz"));
         }
