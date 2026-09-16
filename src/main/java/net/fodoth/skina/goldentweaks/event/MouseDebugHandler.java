@@ -6,11 +6,12 @@ import net.fodoth.skina.goldentweaks.debug.GuiInspector;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.player.LocalPlayer;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.InputEvent;
 
-@EventBusSubscriber(modid = GoldenTweaks.MODID)
+@EventBusSubscriber(modid = GoldenTweaks.MODID, value = Dist.CLIENT)
 public class MouseDebugHandler {
 
     @SubscribeEvent
