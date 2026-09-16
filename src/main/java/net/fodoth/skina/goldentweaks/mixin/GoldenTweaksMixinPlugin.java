@@ -206,6 +206,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumicbases");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.thaumichorizons")) {
+            return isModLoaded("thaumichorizons");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
             return isModLoaded("irons_jewelry");
         }

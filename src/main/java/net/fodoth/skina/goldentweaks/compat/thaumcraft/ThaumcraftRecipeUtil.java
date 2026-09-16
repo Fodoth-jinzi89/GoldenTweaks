@@ -31,7 +31,7 @@ public class ThaumcraftRecipeUtil {
     private ThaumcraftRecipeUtil() {
     }
 
-    static void load(
+    public static void load(
             ResourceManager resourceManager,
             String recipePath,
             String recipeName,
@@ -86,7 +86,7 @@ public class ThaumcraftRecipeUtil {
     }
 
     @SuppressWarnings("BooleanMethodIsAlwaysInverted")
-    static boolean isType(JsonObject json, String type) {
+    public static boolean isType(JsonObject json, String type) {
         JsonElement element = json.get("type");
         return element != null
                 && element.isJsonPrimitive()
@@ -94,7 +94,7 @@ public class ThaumcraftRecipeUtil {
                 && type.equals(element.getAsString());
     }
 
-    static ItemStack parseStack(JsonObject json, String path) {
+    public static ItemStack parseStack(JsonObject json, String path) {
         try {
             JsonElement idElement = json.get("id");
             if (!isString(idElement)) {
@@ -120,7 +120,7 @@ public class ThaumcraftRecipeUtil {
         }
     }
 
-    static Object parseIngredient(JsonElement element, ResourceLocation location, String recipeName, String fieldName) {
+    public static Object parseIngredient(JsonElement element, ResourceLocation location, String recipeName, String fieldName) {
         if (!element.isJsonObject()) {
             GoldenTweaks.LOGGER.warn("Skipped Thaumcraft {} recipe '{}': {} must be an object.", recipeName, location, fieldName);
             return null;
@@ -223,7 +223,7 @@ public class ThaumcraftRecipeUtil {
         return element.getAsInt();
     }
 
-    static JsonObject getRequiredObject(JsonObject json, String key) {
+    public static JsonObject getRequiredObject(JsonObject json, String key) {
         JsonElement element = json.get(key);
         if (element == null || !element.isJsonObject()) {
             GoldenTweaks.LOGGER.warn("Missing or invalid object field '{}'.", key);
@@ -312,6 +312,7 @@ public class ThaumcraftRecipeUtil {
         collectIdMod(json.get("catalyst"), requiredMods);
         collectIngredientMods(json.get("key"), requiredMods);
         collectIngredientMods(json.get("ingredients"), requiredMods);
+        collectIngredientMods(json.get("input"), requiredMods);
 
         for (String modId : requiredMods) {
             if (!ModList.get().isLoaded(modId)) {

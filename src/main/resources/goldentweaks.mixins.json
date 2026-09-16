@@ -57,6 +57,7 @@
     "feature.thaumcraft.ThaumometerScanManagerMixin",
     "feature.thaumcraft.accessor.BrainJarBlockEntityAccessor",
     "feature.thaumcraft.accessor.ResearchNoteDataAccessor",
+    "feature.thaumichorizons.VortexBlockEntityMixin",
     "feature.touhou_little_maid.MaidEdibleBlockManagerMixin",
     "feature.touhoulostmaid.EntityMaidDieMixin",
     "feature.touhoulostmaid.ModMaidDeathEventMixin",

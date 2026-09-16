@@ -26,14 +26,14 @@ import java.util.List;
  * <p>That block is not a drop-in replacement for the vanilla Runic Matrix: it sits on top of an
  * Infusion Vat ({@link VatBlockEntity}) and starts a vat infusion when a wand right-clicks it.
  * The vat pulls its own offerings from the surrounding pedestals and draws essentia from its
- * internal tank, so this class only has to (1) recognise the matrix, (2) hand essentia to the
+ * internal tank, so this class only has to (1) recognize the matrix, (2) hand essentia to the
  * vat, (3) start the infusion for the owner and (4) fast-forward the offering phase.
  *
  * <p>Every Thaumic Horizons reference lives here so the intercepter keeps working when only
  * Thaumcraft is installed — callers must check {@code ModList.isLoaded("thaumichorizons")}
  * before touching this class. The {@code VatInfusion} internals are reached through
  * MethodHandles and every entry point degrades to a no-op if a handle is unavailable, which
- * leaves the vat's normal behaviour untouched.
+ * leaves the vat's normal behavior untouched.
  */
 public final class GTHorizonsVatSupport {
 
@@ -86,7 +86,7 @@ public final class GTHorizonsVatSupport {
 
     /**
      * Takes up to {@code amount} instability off the vat infusion (the vat rolls accidents once
-     * per cycle against that value), mirroring what the intercepter does to a vanilla matrix.
+     * per cycle against that value), mirroring what the interceptor does to a vanilla matrix.
      *
      * @return the amount actually borrowed, to be handed back by {@link #restoreInstability}
      */
@@ -96,7 +96,7 @@ public final class GTHorizonsVatSupport {
         if (infusion == null || handle == null) return 0;
 
         int current = (int) handle.get(infusion);
-        int borrowed = Math.min(amount, Math.max(0, current));
+        int borrowed = Math.clamp(current, 0, amount);
         if (borrowed > 0) handle.set(infusion, current - borrowed);
         return borrowed;
     }

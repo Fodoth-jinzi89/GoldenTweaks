@@ -1,6 +1,8 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
+import net.fodoth.skina.goldentweaks.compat.thaumichorizons.GTRiftRecipe;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 import net.neoforged.neoforge.event.server.ServerStartedEvent;
 
@@ -24,6 +26,10 @@ public class GTThaumcraftRecipeLoader {
         GTArcaneRecipe.load(resourceManager);
         // Recipe pages resolve the recipes registered immediately above.
         GTThaumcraftResearch.load(resourceManager);
+        // Thaumic Horizons rift crafting (planar vortex).
+        if (ModList.get().isLoaded("thaumichorizons")) {
+            GTRiftRecipe.load(resourceManager);
+        }
     }
 
     @SubscribeEvent
