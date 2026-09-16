@@ -74,7 +74,9 @@ public class ThaumcraftRecipeUtil {
                     GoldenTweaks.LOGGER.debug("Loaded Thaumcraft {} recipe '{}'.", recipeName, location);
                 } else {
                     skipped++;
-                    GoldenTweaks.LOGGER.warn("Skipped invalid Thaumcraft {} recipe '{}'.", recipeName, location);
+                    // 未通过解析器不代表数据有错：最常见的是 entry 引用的物品在本实例里不存在
+                    // （纯客户端/未装/版本改名/方块无对应物品）。具体原因由各解析器自己记日志。
+                    GoldenTweaks.LOGGER.debug("Skipped Thaumcraft {} recipe '{}'.", recipeName, location);
                 }
             } catch (Exception e) {
                 GoldenTweaks.LOGGER.warn("Failed to load Thaumcraft {} recipe '{}': {}", recipeName, location, e.getMessage());

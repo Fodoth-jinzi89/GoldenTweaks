@@ -169,7 +169,12 @@ public final class GTItemAspectEntry {
         ResourceLocation id = ResourceLocation.parse(itemId);
         Item item = BuiltInRegistries.ITEM.getOptional(id).orElse(null);
         if (item == null) {
-            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft item aspect entry: unknown item '{}'.", itemId);
+            // 不是数据错误：该 id 在本实例里没有对应物品（模组未装/纯客户端、版本改名，
+            // 或本来只有方块没有 BlockItem）。数据是跨整合包共用的，这里只在 debug 里说明。
+            GoldenTweaks.LOGGER.debug(
+                    "Thaumcraft item aspect entry skipped: item '{}' is not present in this instance.",
+                    itemId
+            );
             return null;
         }
 
