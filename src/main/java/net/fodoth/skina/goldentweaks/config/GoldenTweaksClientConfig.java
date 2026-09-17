@@ -11,7 +11,10 @@ public final class GoldenTweaksClientConfig {
 
     // Misc
     public static final ModConfigSpec.BooleanValue DISABLE_BUILDING_WANDS_BLOCK_PREVIEW;
-    public static final ModConfigSpec.IntValue SEARCH_TRIGGER_THRESHOLD;
+    /** 停止输入后等多少 tick 才开始搜索（AE 终端与 EMI 共用）。 */
+    public static final ModConfigSpec.IntValue SEARCH_START_DELAY_TICKS;
+    /** 两次搜索提交之间的最小间隔，用来把连续输入的负担摊开。 */
+    public static final ModConfigSpec.IntValue SEARCH_SPREAD_DURATION_TICKS;
 
     // Debug
     public static final ModConfigSpec.BooleanValue DEBUG_GUI_INSPECTOR;
@@ -31,10 +34,15 @@ public final class GoldenTweaksClientConfig {
                 .comment(comment("disable_building_wands_block_preview"))
                 .define("disableBuildingWandsBlockPreview", true);
 
-        SEARCH_TRIGGER_THRESHOLD = builder
-                .translation(key("search_trigger_threshold"))
-                .comment(comment("search_trigger_threshold"))
-                .defineInRange("searchTriggerThreshold", 10, 0, Integer.MAX_VALUE);
+        SEARCH_START_DELAY_TICKS = builder
+                .translation(key("search_start_delay"))
+                .comment(comment("search_start_delay"))
+                .defineInRange("searchStartDelay", 20, 0, Integer.MAX_VALUE);
+
+        SEARCH_SPREAD_DURATION_TICKS = builder
+                .translation(key("search_spread_duration"))
+                .comment(comment("search_spread_duration"))
+                .defineInRange("searchSpreadDuration", 20, 0, Integer.MAX_VALUE);
 
         builder.pop();
 

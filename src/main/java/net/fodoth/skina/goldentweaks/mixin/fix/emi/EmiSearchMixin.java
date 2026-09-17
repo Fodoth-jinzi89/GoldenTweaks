@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
- * 把 GT 的「搜索触发阈值」套到 EMI 搜索上（与 AE2 终端共用 {@code search_trigger_threshold}）。
+ * 把 GT 的搜索节流套到 EMI 上（与 AE2 终端共用 {@code searchStartDelay} / {@code searchSpreadDuration}）。
  *
  * <ul>
  *   <li>{@code search(String)}：节流点本身 —— 间隔不够就把这次查询攒住（{@link EmiSearchDebounce}）；</li>

@@ -5,100 +5,107 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.minecraft.Util;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
- * EMI 搜索的<b>节流</b>（前沿 + 尾沿）+ 兜底时钟，给 mixin / 客户端 tick 用（本身不是 mixin）。
+ * EMI 搜索的两个节流参数 + <b>后台执行</b>（给 mixin / 客户端 tick 用，本身不是 mixin）。
  *
- * <p>规则：两次真正执行搜索之间至少间隔 {@code SEARCH_TRIGGER_THRESHOLD} 个 tick（阈值 × 50ms）。</p>
- * <ul>
- *   <li><b>前沿</b>：距上次搜索已经隔够 ⇒ 立刻放行（第一下打字/停手后再打，跟版一样跟手）；</li>
- *   <li><b>尾沿</b>：间隔不够 ⇒ 只攒<b>最后一次</b>文本，由 {@link #tick()} 到点补跑，
- *       保证停手后一定能搜到最新文本。</li>
- * </ul>
+ * <ol>
+ *   <li><b>分担开始间隔</b>（{@code searchStartDelay}，默认 20 tick）：停止输入后等这么久才开始搜，
+ *       期间只记住最新文本，不打扰 EMI；</li>
+ *   <li><b>分担时长</b>（{@code searchSpreadDuration}，默认 20 tick）：两次真正提交搜索之间至少隔这么久，
+ *       把连续输入的负担摊到这段时间上（而不是每敲一字重启一次、也不在停手时一次砸下来）。</li>
+ * </ol>
  *
- * <p><b>{@link #tick()} 有三个独立来源</b>（同一份状态、幂等，谁在跑都行）：
- * 客户端 {@code ClientTickEvent.Post}（最可靠，不依赖任何 UI 路径）、EMI 搜索框的
- * {@code renderWidget}、以及 {@code EmiSearch.update()} 的头部。之前两次"延时后不搜索"都是
- * 因为只挂了一个可能不触发的时钟。</p>
+ * <p><b>后台执行</b>：EMI 的 {@code EmiSearch.search(String)} 虽然自己会起一个 daemon 线程去扫条目，
+ * 但它被调用的那一刻仍要在调用线程上做 {@code EmiScreenManager.getSearchSource()} 等准备工作 ——
+ * 由渲染线程调用时这些就落在主线程上，于是"搜索时整个客户端卡住"。这里把整个
+ * {@code EmiSearch.search(query)} 丢进单线程后台执行器（daemon），主线程只做两次时间比较，
+ * 所以搜索再慢也不卡画面（跟 EMI 自己的 reload/bake 一样都在后台）。</p>
  *
- * <p>前若干次节流/补跑会打 INFO 日志（带查询串），方便在客户端日志里确认这条链路是否真的在跑。</p>
+ * <p>两个参数都设 0 ⇒ 完全回到 EMI 原版行为（不做任何延迟，直接同步调用）。</p>
  */
 public final class EmiSearchDebounce {
 
-    private static final int LOG_LIMIT = 5;
+    private static final ExecutorService EXECUTOR = Executors.newSingleThreadExecutor(runnable -> {
+        Thread thread = new Thread(runnable, "GoldenTweaks-EMI-Search");
+        thread.setDaemon(true);
+        return thread;
+    });
 
     private static String pending;
 
-    private static long lastRunMillis;
+    private static long lastInputMillis;
 
-    private static boolean applying;
+    private static long lastSubmitMillis;
 
-    private static int delayedCount;
+    private static int loggedDelayed;
 
-    private static int appliedCount;
+    private static int loggedApplied;
 
     private EmiSearchDebounce() {
     }
 
     /**
-     * @return true 表示这次请求先攒着（稍后由 {@link #tick()} 用最新文本补跑）
+     * 由 {@code EmiSearch#search(String)} 头部调用（主线程）。
+     *
+     * @return true = 这次先攒着，等间隔到了由 {@link #tick()} 交给后台
      */
     public static boolean shouldDelay(String query) {
 
-        int threshold = GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get();
-
-        if (applying || threshold <= 0) {
+        if (GoldenTweaksClientConfig.SEARCH_START_DELAY_TICKS.get() <= 0
+                && GoldenTweaksClientConfig.SEARCH_SPREAD_DURATION_TICKS.get() <= 0) {
             return false;
         }
 
-        if (pending == null && Util.getMillis() - lastRunMillis >= intervalMillis(threshold)) {
-            lastRunMillis = Util.getMillis();
-            return false;
-        }
+        if (!query.equals(pending)) {
+            pending = query;
+            lastInputMillis = Util.getMillis();
 
-        pending = query;
-
-        if (delayedCount < LOG_LIMIT) {
-            delayedCount++;
-            GoldenTweaks.LOGGER.info("[EMI 节流] 攒下查询 '{}'（第 {} 次；阈值 {} tick）",
-                    query, delayedCount, threshold);
+            if (loggedDelayed < 5) {
+                loggedDelayed++;
+                GoldenTweaks.LOGGER.info("[EMI 节流] 记录输入 '{}'（第 {} 次）", query, loggedDelayed);
+            }
         }
         return true;
     }
 
-    /** 由客户端 tick / 搜索框渲染 / EmiSearch#update 调用：攒下的请求到点就补跑一次。 */
+    /** 由客户端 tick / EmiSearch#update / 搜索框 renderWidget 调用（主线程，幂等）。 */
     public static void tick() {
 
-        if (pending == null || applying) {
+        if (pending == null) {
             return;
         }
 
-        int threshold = GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get();
+        long now = Util.getMillis();
+        long startDelay = Math.max(0L, GoldenTweaksClientConfig.SEARCH_START_DELAY_TICKS.get()) * 50L;
 
-        if (threshold > 0 && Util.getMillis() - lastRunMillis < intervalMillis(threshold)) {
+        if (now - lastInputMillis < startDelay) {
+            return;
+        }
+
+        long spread = Math.max(0L, GoldenTweaksClientConfig.SEARCH_SPREAD_DURATION_TICKS.get()) * 50L;
+
+        if (now - lastSubmitMillis < spread) {
             return;
         }
 
         String query = pending;
         pending = null;
+        lastSubmitMillis = now;
 
-        if (appliedCount < LOG_LIMIT) {
-            appliedCount++;
-            GoldenTweaks.LOGGER.info("[EMI 节流] 补跑查询 '{}'（第 {} 次）", query, appliedCount);
+        if (loggedApplied < 5) {
+            loggedApplied++;
+            GoldenTweaks.LOGGER.info("[EMI 节流] 后台提交搜索 '{}'（第 {} 次）", query, loggedApplied);
         }
-        run(query);
-    }
 
-    private static long intervalMillis(int threshold) {
-        return Math.max(1L, threshold) * 50L;
-    }
-
-    private static void run(String query) {
-        lastRunMillis = Util.getMillis();
-        applying = true;
-        try {
-            EmiSearch.search(query);
-        } finally {
-            applying = false;
-        }
+        EXECUTOR.submit(() -> {
+            try {
+                EmiSearch.search(query);
+            } catch (Throwable t) {
+                GoldenTweaks.LOGGER.warn("[EMI 节流] 后台搜索 '{}' 失败", query, t);
+            }
+        });
     }
 }

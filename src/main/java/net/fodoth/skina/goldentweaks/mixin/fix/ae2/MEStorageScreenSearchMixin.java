@@ -34,7 +34,7 @@ public abstract class MEStorageScreenSearchMixin {
         if (gt$applyingSearch) {
             return;
         }
-        if (GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get() == 0) {
+        if (GoldenTweaksClientConfig.SEARCH_START_DELAY_TICKS.get() == 0) {
             return;
         }
         if (searchString.equals(repo.getSearchString()) || searchString.equals(gt$pendingSearch)) {
@@ -49,7 +49,7 @@ public abstract class MEStorageScreenSearchMixin {
     @Inject(method = "containerTick", at = @At("TAIL"))
     private void gt$applyDelayedSearch(CallbackInfo ci) {
         if (gt$pendingSearch == null
-                || gt$currentTick() - gt$lastInputTick < GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get()) {
+                || gt$currentTick() - gt$lastInputTick < GoldenTweaksClientConfig.SEARCH_START_DELAY_TICKS.get()) {
             return;
         }
         String searchString = gt$pendingSearch;
@@ -73,7 +73,7 @@ public abstract class MEStorageScreenSearchMixin {
             )
     )
     private void gt$delayExternalSearch(String searchString) {
-        if (GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get() == 0) {
+        if (GoldenTweaksClientConfig.SEARCH_START_DELAY_TICKS.get() == 0) {
             ItemListMod.setSearchText(searchString);
         }
     }

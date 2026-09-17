@@ -139,8 +139,12 @@ public class GoldenTweaksConfigScreen {
                     DISABLE_BUILDING_WANDS_BLOCK_PREVIEW, true);
 
             ConfigScreenHelper.addInt(misc, eb,
-                    "config.goldentweaks.search_trigger_threshold",
-                    SEARCH_TRIGGER_THRESHOLD, 10, 0, Integer.MAX_VALUE);
+                    "config.goldentweaks.search_start_delay",
+                    SEARCH_START_DELAY_TICKS, 20, 0, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addInt(misc, eb,
+                    "config.goldentweaks.search_spread_duration",
+                    SEARCH_SPREAD_DURATION_TICKS, 20, 0, Integer.MAX_VALUE);
 
             // =========================================================
             // Balance
