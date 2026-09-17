@@ -21,12 +21,13 @@
   `compileOnly/` 与 `implementation/` 时只保留 `implementation/` 那份（它已包含编译期可见性）。
 
 
-## compileOnly/ —— 142 个 jar（仅编译期可见）
+## compileOnly/ —— 143 个 jar（仅编译期可见）
 
 | 模组 | 版本 | 文件名 |
 |---|---|---|
 | AcademyCraft-neoforge | `1.21.1-0.0.8-rebuilt` | `AcademyCraft-neoforge-1.21.1-0.0.8-rebuilt.jar` |
 | AI-Improvements | `1.21-0.5.3` | `AI-Improvements-1.21-0.5.3.jar` |
+| watut | `1.2.7-neoforge-1.21.1` | `watut-1.2.7-neoforge-1.21.1.jar` |
 | AdvancedLootInfo-neoforge | `1.21.1-1.11.0` | `AdvancedLootInfo-neoforge-1.21.1-1.11.0.jar` |
 | ae2-pattern-encoding-access-terminal | `1.21.1-1.1.0-rc.4` | `ae2-pattern-encoding-access-terminal-1.21.1-1.1.0-rc.4.jar` |
 | AE2-QoL-Client | `mc1.21.1-2.0.1` | `AE2-QoL-Client-mc1.21.1-2.0.1.jar` |

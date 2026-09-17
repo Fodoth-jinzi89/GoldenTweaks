@@ -55,6 +55,27 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("watut");
         }
 
+        if (mixinClassName.endsWith("fix.watut.PacketNBTFromServerMixin")) {
+            return isModLoaded("watut");
+        }
+
+        if (mixinClassName.endsWith("fix.emi.ItemEmiStackTooltipMixin")
+                || mixinClassName.endsWith("fix.emi.EmiTagsRawValuesMixin")) {
+            return isModLoaded("emi");
+        }
+
+        if (mixinClassName.endsWith("fix.emi.EmiSearchWidgetMixin")) {
+            return isModLoaded("emi");
+        }
+
+        if (mixinClassName.endsWith("fix.oneenoughitem.UtilsMixin")) {
+            return isModLoaded("oneenoughitem");
+        }
+
+        if (mixinClassName.endsWith("fix.fidworkblock.ExampleModMixin")) {
+            return isModLoaded("fidworkblock");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.buildingwands")) {
             return isModLoaded("wands");
         }

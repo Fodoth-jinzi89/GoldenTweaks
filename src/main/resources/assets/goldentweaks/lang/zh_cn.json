@@ -54,7 +54,7 @@
   "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval": "魔导手册要素来源翻页间隔",
   "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval.comment": "要素来源物品列表自动翻页的间隔时间，单位为毫秒。",
   "config.goldentweaks.search_trigger_threshold": "搜索触发阈值",
-  "config.goldentweaks.search_trigger_threshold.comment": "AE 终端在最后一次输入后等待多少 tick 再触发搜索。",
+  "config.goldentweaks.search_trigger_threshold.comment": "AE 终端与 EMI 搜索在最后一次输入后等待多少 tick 再触发搜索（单位 tick，50ms/tick；0 = 不延迟）。",
   "config.goldentweaks.disable_building_wands_block_preview": "禁用建筑手杖方块预览",
   "config.goldentweaks.disable_building_wands_block_preview.comment": "隐藏建筑手杖预览中的方块模型，白色边框仍会显示。",
   "config.goldentweaks.category.balance": "平衡",
