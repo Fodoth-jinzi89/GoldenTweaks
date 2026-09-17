@@ -76,6 +76,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("fidworkblock");
         }
 
+        if (mixinClassName.endsWith("fix.krypton.MinecraftCompressDecoderMixin")) {
+            return isModLoaded("krypton");
+        }
+
+        if (mixinClassName.endsWith("fix.ftbquests.RewardTypesMixin")) {
+            return isModLoaded("ftbquests");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.buildingwands")) {
             return isModLoaded("wands");
         }
