@@ -9,20 +9,21 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * EMI 搜索节流：<b>停止输入 N tick 才开始搜</b> + 提交之间至少隔 M tick，且整个搜索在<b>后台线程</b>跑。
- *
- * <p>只有 {@code EmiSearch#update()}（方法体就是 {@code search(EmiScreenManager.search.getValue())}）
- * 被拦；{@code EmiSearch#search(String)} 之类的其它入口<b>一律不动</b>，
- * 所以本类即使判断出错，最坏结果也只是"没节流"，绝不会出现"搜不出来"。</p>
+ * EMI 搜索节流：<b>停止输入 N tick 才开始搜</b> + 两次提交至少隔 M tick，搜索本体在后台线程执行。
  *
  * <ul>
- *   <li>{@code searchStartDelay}：停止输入后等多少 tick 才开始搜（默认 20）；</li>
- *   <li>{@code searchSpreadDuration}：两次提交之间至少隔多少 tick（默认 20）；</li>
- *   <li>两者都 0 ⇒ 完全不介入（原版行为）。</li>
+ *   <li>{@code searchStartDelay}（默认 20 tick）：停止输入后等这么久才开始搜；</li>
+ *   <li>{@code searchSpreadDuration}（默认 20 tick）：两次提交之间的最小间隔；</li>
+ *   <li>两者都 0 ⇒ 完全不介入（EMI 原版行为）。</li>
  * </ul>
  *
- * <p>真正的搜索在单线程 daemon 执行器里调用 {@code EmiSearch.search(query)} —— 主线程只做毫秒比较，
- * 所以不会卡画面。异常吞成一条 WARN，不会变成崩溃。</p>
+ * <p><b>只有客户端主线程会进来</b>（mixin 侧用 {@code Minecraft#isSameThread()} 挡掉 EMI 自己的
+ * 重载线程/搜索线程 —— 它们内部也会调 {@code search}/{@code update}，不挡就会形成
+ * "提交搜索 → 搜索内部又触发 → 再提交" 的自激循环，结果是每秒重搜一次、结果永远出不来）。
+ * 另有一道保险：文本与上次已提交的相同 ⇒ 静默吞掉且不重新计时。</p>
+ *
+ * <p>搜索在单线程 daemon 执行器里调 {@code EmiSearch.search(query)}，主线程只做毫秒比较，
+ * 所以不会卡画面；后台执行抛异常时记一条 WARN（否则会静默失败），正常路径不打任何日志。</p>
  */
 public final class EmiSearchDebounce {
 
@@ -44,9 +45,7 @@ public final class EmiSearchDebounce {
     }
 
     /**
-     * 由 {@code EmiSearch#update()} 头部调用（主线程）。
-     *
-     * @return true = 这次 update 先拦下，稍后由 {@link #tick()} 在后台补跑
+     * @return true = 这次调用先拦下，稍后由 {@link #tick()} 在后台补跑
      */
     public static boolean shouldDelay(String query) {
 
@@ -62,13 +61,12 @@ public final class EmiSearchDebounce {
         }
 
         if (query.equals(lastSubmitted)) {
-            return true;   // 这个文本刚搜过：静默吞掉，也不重新计时（否则会变成每秒重搜一次）
+            return true;   // 刚搜过这个文本：静默吞掉，也不重新计时
         }
 
         if (!query.equals(pending)) {
             pending = query;
             lastInputMillis = Util.getMillis();
-            GoldenTweaks.LOGGER.debug("[EMI 节流] 记录输入 '{}'（{} tick 后开始搜）", query, start);
         }
         return true;
     }
@@ -94,8 +92,6 @@ public final class EmiSearchDebounce {
         pending = null;
         lastSubmitted = query;
         lastSubmitMillis = now;
-
-        GoldenTweaks.LOGGER.debug("[EMI 节流] 后台提交搜索 '{}'", query);
 
         EXECUTOR.submit(() -> {
             try {
