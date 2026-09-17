@@ -116,6 +116,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("linearbearing");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.lzxnonefate")) {
+            return isModLoaded("lzxnonefate");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2autopatternupload")) {
             return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("ae2peat");
         }

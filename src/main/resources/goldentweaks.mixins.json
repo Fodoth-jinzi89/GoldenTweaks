@@ -103,6 +103,7 @@
     "fix.irons_spellbooks.SpellUtilsMixin",
     "fix.jaopca.LocalizationRepoHandlerMixin",
     "fix.linearbearing.LinearBearingDummyMixin",
+    "fix.lzxnonefate.KeyEventMixin",
     "fix.lootr.LootrItemFrameMixin",
     "fix.lootr.LootrOpenedStateMixin",
     "fix.lootr.LootrOpenedStateTickMixin",

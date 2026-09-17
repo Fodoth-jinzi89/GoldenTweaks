@@ -1,0 +1,572 @@
+奥术针筒（Warded Syringe）与源质注射效果汇总
+==============================================================================
+整理日期：2026-09-16
+对象模组：Thaumic Horizons / 神秘视界  thaumichorizons-1.21.1-0.1.0-scex-dev.34.jar
+（位于 libs/implementation/，也存在于整合包 mods 目录）
+代码来源：反编译该 jar 的 com.kentington.thaumichorizons.common.blood.* 类，
+          再用 javap -c 读常量池，所以下面的权重数字都是字节码里的原始值。
+  BloodWeights.create()      -> 要素 -> (效果键, 权重) 的 TABLE
+  BloodFormula.calculate()   -> TABLE 如何折算成实际药水效果
+  BloodEffects.resolve()     -> 效果键 -> 真实药水效果（含模组自注册效果）
+  InjectionItem              -> 注射剂怎么用、效果怎么施加
+  BloodInfuserBlockEntity    -> 血清转化仪怎么吸源质、怎么产出
+
+【结论先说】
+1. 奥术针筒本身不能装源质，它只是抽血工具。源质是加在"血清转化仪（Seroconverter）"
+   里的，和"含血奥术针筒"一起作用，产物叫"注射剂（Injection）"。
+   所以"不同源质产生什么效果"真正的规则是注射剂配方规则。
+2. 最多放 8 点源质（可以是多种要素混搭），最终生效的效果个数 = (总点数+1)/2，最多 4 个：
+   也就是"每 2 点源质换 1 个效果"，这是硬规则，负效果也会占名额。
+3. 每个要素对多种药水效果各有一个"亲和权重"，把所有点数的贡献加起来，取分数最高的前几名。
+4. 分数还决定强度：等级 = 分数/30，持续时间 = 分数 x 100 tick（分数 x 5 秒）。
+5. 一共有 48 个要素可以注射，完整权重表见第四节。
+
+
+一、相关物品与方块
+------------------------------------------------------------------------------
+  item.thaumichorizons.syringeempty           奥术针筒       Warded Syringe   EmptySyringeItem，就是本问题里的物品：抽血用，不能装源质
+  item.thaumichorizons.syringeblood           含血奥术针筒   Blood Syringe    BloodItem，抽了自己血之后的样子，是血清转化仪的输入
+  item.thaumichorizons.syringeblood + PHIAL   爆裂安瓿       Blast Phial      同一个 BloodItem 带 PHIAL 数据组件时的形态，可投掷、可当弩箭
+  item.thaumichorizons.syringeinjection       注射剂         Injection        InjectionItem，真正"带着源质效果"的物品
+  item.thaumichorizons.syringeSample          血之样品       Blood Sample     BloodSampleItem，抽其它生物得到，用于复制/治愈之缸，不做注射
+  block.thaumichorizons.bloodinfuser          血液转化器     Seroconverter    BloodInfuserBlock/BlockEntity，装填源质的就是这台机器
+  item.thaumichorizons.injector               针筒发射器     Injector         改版十字弩，可发射注射剂 / 爆裂安瓿
+
+合成（AlchemyResearch 注册的奥术配方，供参考）：
+  奥术针筒  = 玻璃安瓿 + 铁粒（竖向 2 格），消耗 Aqua 1 + Ordo 1
+  爆裂安瓿x4 = 玻璃安瓿x4 + 火药 + 含血奥术针筒（无序配方），消耗 Ignis 1 + Aqua 1 + Perditio 1
+  针筒发射器 = 注魔配方（InfusionRecipe）
+
+
+二、完整流程
+------------------------------------------------------------------------------
+1) 手持奥术针筒右击（对着空气或自己）-> 变成"含血奥术针筒"，即抽出自己的血。
+   对着其它可取样生物右击 -> 得到"血之样品"，不是含血针筒。
+   可取样条件（BloodSampleItem.canSample）：是 Mob、存活、不带 UNDEAD 标签、
+   不是 NPC/商人，且生物分类为 CREATURE/AMBIENT/水生一类（MONSTER 怪物类不能取样）。
+2) 把含血奥术针筒（或爆裂安瓿）放进血清转化仪的输入槽，在界面里点选要素与数量，
+   总点数 <= 8；界面只允许选第四节表里的 48 个要素。
+3) 用要素管道/要素罐给机器输入源质。机器实现了 IEssentiaTransport + IAspectContainer，
+   会按所选要素一点一点地吸（每次 1 点，六面除上方外都能吸），吸满所选数量后才产出。
+4) 产出注射剂进入输出槽（槽 1~9）：
+   - 自己右击使用（按住 8 tick 的弓动画）-> 效果作用到自己；
+   - 直接左键打别的生物 -> 效果作用到目标；
+   - 放进针筒发射器当弩箭发射。
+   若输入的是爆裂安瓿，产出的注射剂会带 PHIAL 组件，变成可投掷的爆裂安瓿。
+
+机器模式（GUI 切换，setMode 只接受 0~2）：
+  mode 1 = 单次：产出 1 份后自动停机（mode 变回 0）。
+  mode 2 = 自动：只要有含血针筒、源质够、还有空输出槽，就持续产出。
+  mode 0 = 关闭。
+
+
+三、效果是怎么算出来的（BloodFormula.calculate 逐步还原）
+------------------------------------------------------------------------------
+输入：Map<要素, 数量>；每个要素数量 1..8，且总和 <= 8（MAX_SELECTION = 8）。
+不在权重表里的要素会被拒绝（抛 "has no blood infusion data"），所以做不出效果。
+
+第 1 步  累计亲和分数：
+    score[效果] = Σ ( 要素使用点数 x 该要素对该效果的权重 )
+    例：Lux 对 night 的权重是 8、对 blind 是 2。用 2 点 Lux -> night=16, blind=4。
+
+第 2 步  决定生效几个效果：
+    个数 = min( (总点数 + 1) / 2 , 候选效果种类数 )
+    1~2 点 -> 1 个；3~4 点 -> 2 个；5~6 点 -> 3 个；7~8 点 -> 4 个（上限 4）。
+    注意"候选效果种类数"也会卡上限：只用 1 种要素（如只用灵气）时最多只有它带的几种效果。
+
+第 3 步  排序取前 N 名：
+    先按 score 从大到小；score 相同时按效果键的字母序（代码是 comparingInt(value).reversed()
+    再 thenComparing(key)），所以并列时会优先取 fatigue、blind 这类字母靠前的键。
+
+第 4 步  每个效果折算数值：
+    等级 amplifier = score / 30   （整数除法；amp 0 即游戏里的 I 级，1 即 II 级）
+    持续时间 = score x 100 tick = score x 5 秒
+    例外：瞬间治疗(health) / 瞬间伤害(harm) 的持续时间固定写成 1 tick，
+          因为它们是瞬间效果，真正起作用的是等级；
+          施加时走 MobEffect.applyInstantenousEffect(..., amplifier, 1.0)。
+
+第 5 步  颜色：注射剂颜色 = 各要素自身颜色的加权平均（按点数加权），只影响外观。
+
+验证（模组自带研究文本的例子与代码完全一致）：
+  * 2 点 Lux：night = 2x8 = 16 -> 个数 (2+1)/2 = 1 -> 夜视 I 级，1600 tick = 80 秒。
+  * 3 点 Lux：night = 24、blind = 6 -> 个数 2 -> 夜视 I 级 120 秒 + 失明 I 级 30 秒。
+  * 3 点 Lux + 1 点 Perfodio（= Aspect.MINE 矿藏）：night=24、blind=6、haste=1x10=10
+    -> 个数 (4+1)/2 = 2 -> 取前 2 名 = 夜视(24) + 急迫(10)，失明被挤掉。
+    （这正是研究文本里"第四点用 Perfodio 就变成夜视+急迫"的说法。）
+
+
+四、要素 -> 效果权重总表（原始数据，48 个要素）
+------------------------------------------------------------------------------
+格式：序号. Aspect.枚举名  拉丁名  中文名 | 中文效果名(效果键)权重, ...（按权重降序）
+
+ 1. Aspect.AIR        aer           风         | 跳跃提升(jump)4, 迅捷(speed)3, 水下呼吸(water)3
+ 2. Aspect.EARTH      terra         地         | 急迫(haste)4, 缓慢(slow)3, 抗性提升(resist)2, 力量(strength)1
+ 3. Aspect.FIRE       ignis         火         | 抗火(fireres)6, 力量(strength)2, 夜视(night)1, 迅捷(speed)1
+ 4. Aspect.WATER      aqua          水         | 水下呼吸(water)3, 抗火(fireres)2, 急迫(haste)2, 迅捷(speed)2, 生命恢复(regen)1
+ 5. Aspect.ORDER      ordo          秩序       | 挖掘疲劳(fatigue)3, 抗性提升(resist)3, 生命提升(hboost)2, 缓慢(slow)2
+ 6. Aspect.ENTROPY    perditio      熵增/混沌  | 凋零(wither)3, 中毒(poison)2, 虚弱(weak)2, 瞬间伤害(harm)1, 饥饿(hunger)1, 反胃(nausea)1
+ 7. Aspect.VOID       vacuos        虚空       | 隐身(invis)4, 物件真空(vacuum)4, 饥饿(hunger)2
+ 8. Aspect.LIGHT      lux           光明       | 夜视(night)8, 失明(blind)2
+ 9. Aspect.WEATHER    tempestas     气候       | 静电震击(shock)8, 跳跃提升(jump)2, 失明(blind)1, 迅捷(speed)1
+10. Aspect.MOTION     motus         移动       | 跳跃提升(jump)5, 迅捷(speed)5
+11. Aspect.COLD       gelum         寒冰       | 挖掘疲劳(fatigue)2, 隐身(invis)2, 抗性提升(resist)2, 缓慢(slow)2, 虚弱(weak)2
+12. Aspect.CRYSTAL    vitreus       水晶       | 隐身(invis)6, 挖掘疲劳(fatigue)2, 力量(strength)2
+13. Aspect.LIFE       victus        生命       | 生命恢复(regen)6, 生命提升(hboost)2, 瞬间治疗(health)2
+14. Aspect.POISON     venenum       毒药       | 中毒(poison)6, 挖掘疲劳(fatigue)1, 饥饿(hunger)1, 反胃(nausea)1, 虚弱(weak)1
+15. Aspect.ENERGY     potentia      能量       | 静电震击(shock)3, 急迫(haste)2, 迅捷(speed)2, 跳跃提升(jump)1, 力量(strength)1, 灵气创生(visRegen)1
+16. Aspect.EXCHANGE   permutatio    交换       | 物件真空(vacuum)3, 急迫(haste)2, 迅捷(speed)2, 虚弱(weak)2, 跳跃提升(jump)1
+17. Aspect.METAL      metallum      金属       | 抗性提升(resist)4, 急迫(haste)2, 缓慢(slow)2, 力量(strength)2
+18. Aspect.DEATH      mortuus       死亡       | 瞬间伤害(harm)6, 饥饿(hunger)1, 反胃(nausea)1, 虚弱(weak)1, 凋零(wither)1
+19. Aspect.FLIGHT     volatus       飞行       | 跳跃提升(jump)8, 迅捷(speed)2
+20. Aspect.DARKNESS   tenebrae      黑暗       | 失明(blind)5, 隐身(invis)4, 夜视(night)1
+21. Aspect.SOUL       spiritus      灵魂       | 隐身(invis)3, 瞬间治疗(health)2, 夜视(night)2, 生命提升(hboost)1, 生命恢复(regen)1, 灵气创生(visRegen)1
+22. Aspect.HEAL       sano          治疗       | 瞬间治疗(health)6, 生命提升(hboost)2, 生命恢复(regen)2
+23. Aspect.TRAVEL     iter          旅行       | 迅捷(speed)8, 跳跃提升(jump)2
+24. Aspect.ELDRITCH   alienis       异域       | 失明(blind)2, 隐身(invis)2, 夜视(night)2, 咒流(visBoost)2, 灵气创生(visRegen)2
+25. Aspect.MAGIC      praecantatio  魔力       | 咒流(visBoost)5, 灵气创生(visRegen)5
+26. Aspect.AURA       auram         灵气       | 灵气创生(visRegen)10
+27. Aspect.TAINT      vitium        污染       | 腐毒(taint)6, 咒流(visBoost)2, 凋零(wither)2
+28. Aspect.SLIME      limus         史莱姆     | 缓慢(slow)4, 挖掘疲劳(fatigue)2, 反胃(nausea)2, 中毒(poison)2
+29. Aspect.PLANT      herba         植物       | 光合作用(synth)8, 饱和(satur)2
+30. Aspect.TREE       arbor         树木       | 光合作用(synth)6, 抗性提升(resist)2, 缓慢(slow)2
+31. Aspect.BEAST      bestia        野兽       | 力量(strength)5, 生命提升(hboost)1, 夜视(night)1, 生命恢复(regen)1, 迅捷(speed)1, 水下呼吸(water)1
+32. Aspect.FLESH      corpus        肉体       | 饱和(satur)6, 生命提升(hboost)2, 生命恢复(regen)2
+33. Aspect.UNDEAD     exanimis      亡灵       | 瞬间伤害(harm)6, 饥饿(hunger)2, 凋零(wither)2
+34. Aspect.MIND       cognitio      思维       | 咒流(visBoost)3, 灵气创生(visRegen)3, 夜视(night)2, 物件真空(vacuum)2
+35. Aspect.SENSES     sensus        感官       | 夜视(night)6, 隐身(invis)4
+36. Aspect.MAN        humanus       人类       | 生命提升(hboost)4, 瞬间治疗(health)3, 生命恢复(regen)3
+37. Aspect.CROP       messis        作物       | 饱和(satur)6, 光合作用(synth)4
+38. Aspect.MINE       perfodio      矿藏/挖掘  | 急迫(haste)10
+39. Aspect.TOOL       instrumentum  工具       | 急迫(haste)8, 抗性提升(resist)1, 迅捷(speed)1
+40. Aspect.HARVEST    meto          收获       | 饱和(satur)5, 急迫(haste)2, 光合作用(synth)2, 瞬间治疗(health)1
+41. Aspect.WEAPON     telum         武器       | 力量(strength)8, 急迫(haste)2
+42. Aspect.ARMOR      tutamen       装备/防护  | 抗性提升(resist)8, 抗火(fireres)2
+43. Aspect.HUNGER     fames         饥饿       | 饱和(satur)8, 物件真空(vacuum)1, 虚弱(weak)1
+44. Aspect.GREED      lucrum        贪婪       | 物件真空(vacuum)8, 饱和(satur)2
+45. Aspect.CRAFT      fabrico       合成       | 生命提升(hboost)4, 挖掘疲劳(fatigue)2, 瞬间治疗(health)2, 抗性提升(resist)2
+46. Aspect.CLOTH      pannus        布匹       | 抗性提升(resist)4, 失明(blind)2, 挖掘疲劳(fatigue)2, 虚弱(weak)2
+47. Aspect.MECHANISM  machina       机械       | 急迫(haste)4, 力量(strength)4, 迅捷(speed)2
+48. Aspect.TRAP       vinculum      陷阱       | 缓慢(slow)8, 挖掘疲劳(fatigue)2
+
+合计 48 个要素有注射数据，即本版本全部可注射的要素。
+（效果键旁的括号里是代码里的键名，对照 BloodWeights / BloodEffects 用。）
+
+
+五、按要素速查表
+------------------------------------------------------------------------------
+每个要素列出：效果 权重 -> 中文名（游戏内英文名，来源）
+末行"2 点单要素"= 只用该要素 2 点源质时必然得到的那个效果（权重最高者）。
+
+* aer / 风 / Aspect.AIR
+     权重 4   跳跃提升（Jump Boost，原版）  键=jump
+     权重 3   迅捷（Speed，原版）  键=speed
+     权重 3   水下呼吸（Water Breathing，原版）  键=water
+      2 点单要素 -> 跳跃提升（Jump Boost），I 级，持续 40 秒（score=8）
+
+* terra / 地 / Aspect.EARTH
+     权重 4   急迫（Haste，原版）  键=haste
+     权重 3   缓慢（Slowness，原版）  键=slow
+     权重 2   抗性提升（Resistance，原版）  键=resist
+     权重 1   力量（Strength，原版）  键=strength
+      2 点单要素 -> 急迫（Haste），I 级，持续 40 秒（score=8）
+
+* ignis / 火 / Aspect.FIRE
+     权重 6   抗火（Fire Resistance，原版）  键=fireres
+     权重 2   力量（Strength，原版）  键=strength
+     权重 1   夜视（Night Vision，原版）  键=night
+     权重 1   迅捷（Speed，原版）  键=speed
+      2 点单要素 -> 抗火（Fire Resistance），I 级，持续 60 秒（score=12）
+
+* aqua / 水 / Aspect.WATER
+     权重 3   水下呼吸（Water Breathing，原版）  键=water
+     权重 2   抗火（Fire Resistance，原版）  键=fireres
+     权重 2   急迫（Haste，原版）  键=haste
+     权重 2   迅捷（Speed，原版）  键=speed
+     权重 1   生命恢复（Regeneration，原版）  键=regen
+      2 点单要素 -> 水下呼吸（Water Breathing），I 级，持续 30 秒（score=6）
+
+* ordo / 秩序 / Aspect.ORDER
+     权重 3   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 3   抗性提升（Resistance，原版）  键=resist
+     权重 2   生命提升（Health Boost，原版）  键=hboost
+     权重 2   缓慢（Slowness，原版）  键=slow
+      2 点单要素 -> 挖掘疲劳（Mining Fatigue），I 级，持续 30 秒（score=6）
+
+* perditio / 熵增/混沌 / Aspect.ENTROPY
+     权重 3   凋零（Wither，原版）  键=wither
+     权重 2   中毒（Poison，原版）  键=poison
+     权重 2   虚弱（Weakness，原版）  键=weak
+     权重 1   瞬间伤害（Instant Damage，原版(瞬间)）  键=harm
+     权重 1   饥饿（Hunger，原版）  键=hunger
+     权重 1   反胃（Nausea，原版）  键=nausea
+      2 点单要素 -> 凋零（Wither），I 级，持续 30 秒（score=6）
+
+* vacuos / 虚空 / Aspect.VOID
+     权重 4   隐身（Invisibility，原版）  键=invis
+     权重 4   物件真空（Item Vacuum，本模组）  键=vacuum
+     权重 2   饥饿（Hunger，原版）  键=hunger
+      2 点单要素 -> 隐身（Invisibility），I 级，持续 40 秒（score=8）
+
+* lux / 光明 / Aspect.LIGHT
+     权重 8   夜视（Night Vision，原版）  键=night
+     权重 2   失明（Blindness，原版）  键=blind
+      2 点单要素 -> 夜视（Night Vision），I 级，持续 80 秒（score=16）
+
+* tempestas / 气候 / Aspect.WEATHER
+     权重 8   静电震击（Static Shock，本模组）  键=shock
+     权重 2   跳跃提升（Jump Boost，原版）  键=jump
+     权重 1   失明（Blindness，原版）  键=blind
+     权重 1   迅捷（Speed，原版）  键=speed
+      2 点单要素 -> 静电震击（Static Shock），I 级，持续 80 秒（score=16）
+
+* motus / 移动 / Aspect.MOTION
+     权重 5   跳跃提升（Jump Boost，原版）  键=jump
+     权重 5   迅捷（Speed，原版）  键=speed
+      2 点单要素 -> 跳跃提升（Jump Boost），I 级，持续 50 秒（score=10）
+
+* gelum / 寒冰 / Aspect.COLD
+     权重 2   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 2   隐身（Invisibility，原版）  键=invis
+     权重 2   抗性提升（Resistance，原版）  键=resist
+     权重 2   缓慢（Slowness，原版）  键=slow
+     权重 2   虚弱（Weakness，原版）  键=weak
+      2 点单要素 -> 挖掘疲劳（Mining Fatigue），I 级，持续 20 秒（score=4）
+
+* vitreus / 水晶 / Aspect.CRYSTAL
+     权重 6   隐身（Invisibility，原版）  键=invis
+     权重 2   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 2   力量（Strength，原版）  键=strength
+      2 点单要素 -> 隐身（Invisibility），I 级，持续 60 秒（score=12）
+
+* victus / 生命 / Aspect.LIFE
+     权重 6   生命恢复（Regeneration，原版）  键=regen
+     权重 2   生命提升（Health Boost，原版）  键=hboost
+     权重 2   瞬间治疗（Instant Health，原版(瞬间)）  键=health
+      2 点单要素 -> 生命恢复（Regeneration），I 级，持续 60 秒（score=12）
+
+* venenum / 毒药 / Aspect.POISON
+     权重 6   中毒（Poison，原版）  键=poison
+     权重 1   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 1   饥饿（Hunger，原版）  键=hunger
+     权重 1   反胃（Nausea，原版）  键=nausea
+     权重 1   虚弱（Weakness，原版）  键=weak
+      2 点单要素 -> 中毒（Poison），I 级，持续 60 秒（score=12）
+
+* potentia / 能量 / Aspect.ENERGY
+     权重 3   静电震击（Static Shock，本模组）  键=shock
+     权重 2   急迫（Haste，原版）  键=haste
+     权重 2   迅捷（Speed，原版）  键=speed
+     权重 1   跳跃提升（Jump Boost，原版）  键=jump
+     权重 1   力量（Strength，原版）  键=strength
+     权重 1   灵气创生（Vis Generation，本模组）  键=visRegen
+      2 点单要素 -> 静电震击（Static Shock），I 级，持续 30 秒（score=6）
+
+* permutatio / 交换 / Aspect.EXCHANGE
+     权重 3   物件真空（Item Vacuum，本模组）  键=vacuum
+     权重 2   急迫（Haste，原版）  键=haste
+     权重 2   迅捷（Speed，原版）  键=speed
+     权重 2   虚弱（Weakness，原版）  键=weak
+     权重 1   跳跃提升（Jump Boost，原版）  键=jump
+      2 点单要素 -> 物件真空（Item Vacuum），I 级，持续 30 秒（score=6）
+
+* metallum / 金属 / Aspect.METAL
+     权重 4   抗性提升（Resistance，原版）  键=resist
+     权重 2   急迫（Haste，原版）  键=haste
+     权重 2   缓慢（Slowness，原版）  键=slow
+     权重 2   力量（Strength，原版）  键=strength
+      2 点单要素 -> 抗性提升（Resistance），I 级，持续 40 秒（score=8）
+
+* mortuus / 死亡 / Aspect.DEATH
+     权重 6   瞬间伤害（Instant Damage，原版(瞬间)）  键=harm
+     权重 1   饥饿（Hunger，原版）  键=hunger
+     权重 1   反胃（Nausea，原版）  键=nausea
+     权重 1   虚弱（Weakness，原版）  键=weak
+     权重 1   凋零（Wither，原版）  键=wither
+      2 点单要素 -> 瞬间伤害（Instant Damage），I 级，瞬间生效（score=12）
+
+* volatus / 飞行 / Aspect.FLIGHT
+     权重 8   跳跃提升（Jump Boost，原版）  键=jump
+     权重 2   迅捷（Speed，原版）  键=speed
+      2 点单要素 -> 跳跃提升（Jump Boost），I 级，持续 80 秒（score=16）
+
+* tenebrae / 黑暗 / Aspect.DARKNESS
+     权重 5   失明（Blindness，原版）  键=blind
+     权重 4   隐身（Invisibility，原版）  键=invis
+     权重 1   夜视（Night Vision，原版）  键=night
+      2 点单要素 -> 失明（Blindness），I 级，持续 50 秒（score=10）
+
+* spiritus / 灵魂 / Aspect.SOUL
+     权重 3   隐身（Invisibility，原版）  键=invis
+     权重 2   瞬间治疗（Instant Health，原版(瞬间)）  键=health
+     权重 2   夜视（Night Vision，原版）  键=night
+     权重 1   生命提升（Health Boost，原版）  键=hboost
+     权重 1   生命恢复（Regeneration，原版）  键=regen
+     权重 1   灵气创生（Vis Generation，本模组）  键=visRegen
+      2 点单要素 -> 隐身（Invisibility），I 级，持续 30 秒（score=6）
+
+* sano / 治疗 / Aspect.HEAL
+     权重 6   瞬间治疗（Instant Health，原版(瞬间)）  键=health
+     权重 2   生命提升（Health Boost，原版）  键=hboost
+     权重 2   生命恢复（Regeneration，原版）  键=regen
+      2 点单要素 -> 瞬间治疗（Instant Health），I 级，瞬间生效（score=12）
+
+* iter / 旅行 / Aspect.TRAVEL
+     权重 8   迅捷（Speed，原版）  键=speed
+     权重 2   跳跃提升（Jump Boost，原版）  键=jump
+      2 点单要素 -> 迅捷（Speed），I 级，持续 80 秒（score=16）
+
+* alienis / 异域 / Aspect.ELDRITCH
+     权重 2   失明（Blindness，原版）  键=blind
+     权重 2   隐身（Invisibility，原版）  键=invis
+     权重 2   夜视（Night Vision，原版）  键=night
+     权重 2   咒流（Flux Flu (Vis Exhaustion)，神秘时代）  键=visBoost
+     权重 2   灵气创生（Vis Generation，本模组）  键=visRegen
+      2 点单要素 -> 失明（Blindness），I 级，持续 20 秒（score=4）
+
+* praecantatio / 魔力 / Aspect.MAGIC
+     权重 5   咒流（Flux Flu (Vis Exhaustion)，神秘时代）  键=visBoost
+     权重 5   灵气创生（Vis Generation，本模组）  键=visRegen
+      2 点单要素 -> 咒流（Flux Flu (Vis Exhaustion)），I 级，持续 50 秒（score=10）
+
+* auram / 灵气 / Aspect.AURA
+     权重 10  灵气创生（Vis Generation，本模组）  键=visRegen
+      2 点单要素 -> 灵气创生（Vis Generation），I 级，持续 100 秒（score=20）
+
+* vitium / 污染 / Aspect.TAINT
+     权重 6   腐毒（Flux Taint，神秘时代）  键=taint
+     权重 2   咒流（Flux Flu (Vis Exhaustion)，神秘时代）  键=visBoost
+     权重 2   凋零（Wither，原版）  键=wither
+      2 点单要素 -> 腐毒（Flux Taint），I 级，持续 60 秒（score=12）
+
+* limus / 史莱姆 / Aspect.SLIME
+     权重 4   缓慢（Slowness，原版）  键=slow
+     权重 2   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 2   反胃（Nausea，原版）  键=nausea
+     权重 2   中毒（Poison，原版）  键=poison
+      2 点单要素 -> 缓慢（Slowness），I 级，持续 40 秒（score=8）
+
+* herba / 植物 / Aspect.PLANT
+     权重 8   光合作用（Photosynthesis，本模组）  键=synth
+     权重 2   饱和（Saturation，原版）  键=satur
+      2 点单要素 -> 光合作用（Photosynthesis），I 级，持续 80 秒（score=16）
+
+* arbor / 树木 / Aspect.TREE
+     权重 6   光合作用（Photosynthesis，本模组）  键=synth
+     权重 2   抗性提升（Resistance，原版）  键=resist
+     权重 2   缓慢（Slowness，原版）  键=slow
+      2 点单要素 -> 光合作用（Photosynthesis），I 级，持续 60 秒（score=12）
+
+* bestia / 野兽 / Aspect.BEAST
+     权重 5   力量（Strength，原版）  键=strength
+     权重 1   生命提升（Health Boost，原版）  键=hboost
+     权重 1   夜视（Night Vision，原版）  键=night
+     权重 1   生命恢复（Regeneration，原版）  键=regen
+     权重 1   迅捷（Speed，原版）  键=speed
+     权重 1   水下呼吸（Water Breathing，原版）  键=water
+      2 点单要素 -> 力量（Strength），I 级，持续 50 秒（score=10）
+
+* corpus / 肉体 / Aspect.FLESH
+     权重 6   饱和（Saturation，原版）  键=satur
+     权重 2   生命提升（Health Boost，原版）  键=hboost
+     权重 2   生命恢复（Regeneration，原版）  键=regen
+      2 点单要素 -> 饱和（Saturation），I 级，持续 60 秒（score=12）
+
+* exanimis / 亡灵 / Aspect.UNDEAD
+     权重 6   瞬间伤害（Instant Damage，原版(瞬间)）  键=harm
+     权重 2   饥饿（Hunger，原版）  键=hunger
+     权重 2   凋零（Wither，原版）  键=wither
+      2 点单要素 -> 瞬间伤害（Instant Damage），I 级，瞬间生效（score=12）
+
+* cognitio / 思维 / Aspect.MIND
+     权重 3   咒流（Flux Flu (Vis Exhaustion)，神秘时代）  键=visBoost
+     权重 3   灵气创生（Vis Generation，本模组）  键=visRegen
+     权重 2   夜视（Night Vision，原版）  键=night
+     权重 2   物件真空（Item Vacuum，本模组）  键=vacuum
+      2 点单要素 -> 咒流（Flux Flu (Vis Exhaustion)），I 级，持续 30 秒（score=6）
+
+* sensus / 感官 / Aspect.SENSES
+     权重 6   夜视（Night Vision，原版）  键=night
+     权重 4   隐身（Invisibility，原版）  键=invis
+      2 点单要素 -> 夜视（Night Vision），I 级，持续 60 秒（score=12）
+
+* humanus / 人类 / Aspect.MAN
+     权重 4   生命提升（Health Boost，原版）  键=hboost
+     权重 3   瞬间治疗（Instant Health，原版(瞬间)）  键=health
+     权重 3   生命恢复（Regeneration，原版）  键=regen
+      2 点单要素 -> 生命提升（Health Boost），I 级，持续 40 秒（score=8）
+
+* messis / 作物 / Aspect.CROP
+     权重 6   饱和（Saturation，原版）  键=satur
+     权重 4   光合作用（Photosynthesis，本模组）  键=synth
+      2 点单要素 -> 饱和（Saturation），I 级，持续 60 秒（score=12）
+
+* perfodio / 矿藏/挖掘 / Aspect.MINE
+     权重 10  急迫（Haste，原版）  键=haste
+      2 点单要素 -> 急迫（Haste），I 级，持续 100 秒（score=20）
+
+* instrumentum / 工具 / Aspect.TOOL
+     权重 8   急迫（Haste，原版）  键=haste
+     权重 1   抗性提升（Resistance，原版）  键=resist
+     权重 1   迅捷（Speed，原版）  键=speed
+      2 点单要素 -> 急迫（Haste），I 级，持续 80 秒（score=16）
+
+* meto / 收获 / Aspect.HARVEST
+     权重 5   饱和（Saturation，原版）  键=satur
+     权重 2   急迫（Haste，原版）  键=haste
+     权重 2   光合作用（Photosynthesis，本模组）  键=synth
+     权重 1   瞬间治疗（Instant Health，原版(瞬间)）  键=health
+      2 点单要素 -> 饱和（Saturation），I 级，持续 50 秒（score=10）
+
+* telum / 武器 / Aspect.WEAPON
+     权重 8   力量（Strength，原版）  键=strength
+     权重 2   急迫（Haste，原版）  键=haste
+      2 点单要素 -> 力量（Strength），I 级，持续 80 秒（score=16）
+
+* tutamen / 装备/防护 / Aspect.ARMOR
+     权重 8   抗性提升（Resistance，原版）  键=resist
+     权重 2   抗火（Fire Resistance，原版）  键=fireres
+      2 点单要素 -> 抗性提升（Resistance），I 级，持续 80 秒（score=16）
+
+* fames / 饥饿 / Aspect.HUNGER
+     权重 8   饱和（Saturation，原版）  键=satur
+     权重 1   物件真空（Item Vacuum，本模组）  键=vacuum
+     权重 1   虚弱（Weakness，原版）  键=weak
+      2 点单要素 -> 饱和（Saturation），I 级，持续 80 秒（score=16）
+
+* lucrum / 贪婪 / Aspect.GREED
+     权重 8   物件真空（Item Vacuum，本模组）  键=vacuum
+     权重 2   饱和（Saturation，原版）  键=satur
+      2 点单要素 -> 物件真空（Item Vacuum），I 级，持续 80 秒（score=16）
+
+* fabrico / 合成 / Aspect.CRAFT
+     权重 4   生命提升（Health Boost，原版）  键=hboost
+     权重 2   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 2   瞬间治疗（Instant Health，原版(瞬间)）  键=health
+     权重 2   抗性提升（Resistance，原版）  键=resist
+      2 点单要素 -> 生命提升（Health Boost），I 级，持续 40 秒（score=8）
+
+* pannus / 布匹 / Aspect.CLOTH
+     权重 4   抗性提升（Resistance，原版）  键=resist
+     权重 2   失明（Blindness，原版）  键=blind
+     权重 2   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+     权重 2   虚弱（Weakness，原版）  键=weak
+      2 点单要素 -> 抗性提升（Resistance），I 级，持续 40 秒（score=8）
+
+* machina / 机械 / Aspect.MECHANISM
+     权重 4   急迫（Haste，原版）  键=haste
+     权重 4   力量（Strength，原版）  键=strength
+     权重 2   迅捷（Speed，原版）  键=speed
+      2 点单要素 -> 急迫（Haste），I 级，持续 40 秒（score=8）
+
+* vinculum / 陷阱 / Aspect.TRAP
+     权重 8   缓慢（Slowness，原版）  键=slow
+     权重 2   挖掘疲劳（Mining Fatigue，原版）  键=fatigue
+      2 点单要素 -> 缓慢（Slowness），I 级，持续 80 秒（score=16）
+
+
+六、模组新增 / 借用的 6 个特殊效果的实际效果（BloodEffects$InfusionEffect）
+------------------------------------------------------------------------------
+这些不是原版药水效果，光看名字不知道干什么，所以单独说明（等级 = amplifier）：
+
+1) visRegen 灵气创生（thaumichorizons:vis_regen，本模组注册，正面效果）
+   每隔 max(1, 20 - 3x等级) tick，在自己脚下生成 1 个随机元始要素的要素球
+   （AspectOrbEntity，从 6 个元始要素 Aer/Terra/Ignis/Aqua/Ordo/Perditio 里随机挑 1 个），
+   等于持续产出源质。等级 0 时约每秒 1 个；灵气 8 点（等级 II）时约每 0.7 秒 1 个。
+2) vacuum 物件真空（thaumichorizons:vacuum，本模组注册）
+   每 tick 把周围 min(64, 10 + 2x等级) 格内的掉落物往自己身上拉
+   （每 tick 减去 0.1 的归一化速度，单轴变化上限 ±0.35），并生成附魔粒子。
+   等级 0 时半径 10 格，等级 II 时 14 格。
+3) shock 静电震击（thaumichorizons:shock，本模组注册）
+   每 tick 对 10 格内的其它存活生物，按 (20 x (1+等级)) / 1000 的概率造成 1 点伤害
+   （伤害来源是自己时算玩家攻击，否则算魔法伤害），并播放闪电链特效与 zap 音效。
+   等级 0 = 每个目标每 tick 2% 概率，等级 II = 6%（平均每秒约 1.2 点伤害/目标）。
+4) synth 光合作用（thaumichorizons:synthesis，本模组注册）
+   每隔 max(1, 15 - 2x等级) tick，若是白天且头顶能看到天空：治疗 0.5 点生命；
+   如果是玩家，额外恢复 1 点饥饿值与 0.5 饱和度。等级 II 时间隔 11 tick，约每秒 0.9 点生命。
+5) taint 腐毒（借用神秘时代 thaumcraft:flux_taint）
+6) visBoost -> 实际是 咒流（借用神秘时代 thaumcraft:vis_exhaustion）
+   ！注意：权重表里的键是 "visBoost"，但 BloodEffects.resolve() 把 "visBoost" 映射到了
+   神秘时代的"咒流（Vis Exhaustion）"，而模组自己注册的"灵气增幅"（effect.thaumichorizons.vis_boost）
+   在 resolve() 里根本取不到（没有任何分支返回 VIS_BOOST）。
+   所以：异域/魔力/污染/思维/灵魂带 visBoost 的要素，实际给的是咒流而不是灵气增幅。
+   这属于上游遗留 / 疑似 bug，用之前自己确认一下。
+
+
+七、由公式推出的实用组合（示例，非猜测，按上面的规则手算）
+------------------------------------------------------------------------------
+* 2 点 LIGHT(光明)          -> 夜视 I，80 秒
+* 3 点 LIGHT + 1 点 MINE    -> 夜视 I 120 秒 + 急迫 I 50 秒（失明被挤掉）
+* 8 点 AURA(灵气)           -> 灵气创生 III，400 秒，约每 0.7 秒掉 1 个元始要素球（约 570 个）
+* 8 点 WEAPON(武器)         -> 力量 III 320 秒 + 急迫 I 80 秒
+* 8 点 ARMOR(装备/防护)     -> 抗性提升 III 320 秒 + 抗火 I 80 秒
+* 8 点 PLANT(植物)          -> 光合作用 III 320 秒 + 饱和 I 80 秒（白天露天每秒约 0.9 点治疗 + 回复饥饿）
+* 8 点 GREED(贪婪)          -> 物件真空 III 320 秒 + 饱和 I 80 秒（14 格半径吸掉落物）
+* 8 点 HUNGER(饥饿)         -> 饱和 III 320 秒 + 物件真空 I 40 秒 + 虚弱 I 40 秒
+* 8 点 MINE(矿藏/Perfodio)  -> 急迫 III 400 秒（权重 10，分数 80，等级 80/30=2）
+* 只想吃单一好效果：只放 2 点该要素，就一定会得到第五节"2 点单要素"那一行的效果。
+
+
+八、注意事项 / 坑
+------------------------------------------------------------------------------
+* 奥术针筒本身不存源质，别想把源质灌进针筒；针筒里只能装血。
+* 血清转化仪的输入槽必须是自己抽出来的"含血奥术针筒"（或爆裂安瓿）；
+  "血之样品"（动物血）只能拿去做复制/治愈之缸，不能做注射剂，
+  对应研究文本里"动物血不适合炼金处理"的说法。
+* 总点数上限 8、效果上限 4、"每 2 点换 1 个效果"是硬规则；
+  3 点以上一定会出现第二个效果（哪怕是负面效果），所以别乱混要素。
+* 同一个要素往往正负效果混杂（Lux 有夜视也有失明；Fames 有饱和也有饥饿；
+  Gelum 五种全是负面），控制手段就是"用别的要素的高分效果把负面效果挤出前 N 名"。
+* 效果键并列时按字母序取，不是按"你觉得哪个更好"，所以算的时候要按第 3 步的规则。
+* 要素名对照：研究文本里的旧式名字 Perfodio = Aspect.MINE（矿藏/挖掘），
+  Lux = LIGHT（光明），Aer/Terra/Ignis/Aqua/Ordo/Perditio = AIR/EARTH/FIRE/WATER/ORDER/ENTROPY。
+* 权重表之外的要素（例：磁力 magnetis、轨迹 orbita、容器 vas 等）选不了，也做不出注射剂。
+* 注射剂是一次性消耗品：finishUsingItem / hurtEnemy 后 count-1（创造模式不消耗），
+  手上只有 1 个时用完那一格就空了。
+* 爆裂安瓿用的是同一套公式和权重表，只是产物带 PHIAL 组件，变成可投掷版本。
+* 血清转化仪是"先吸满所选要素再产出"，中间没有进度损失；
+  单次模式在产出 1 份后会自动停机（mode 归 0），批量生产请用自动模式。
+
+
+九、效果键 -> 游戏内效果 对照表（BloodEffects.resolve 全部 28 个分支）
+------------------------------------------------------------------------------
+  speed       迅捷（Speed）  来源=原版  注册名=minecraft:speed
+  slow        缓慢（Slowness）  来源=原版  注册名=minecraft:slowness
+  haste       急迫（Haste）  来源=原版  注册名=minecraft:haste
+  fatigue     挖掘疲劳（Mining Fatigue）  来源=原版  注册名=minecraft:mining_fatigue
+  strength    力量（Strength）  来源=原版  注册名=minecraft:strength
+  health      瞬间治疗（Instant Health）  来源=原版(瞬间)  注册名=minecraft:instant_health
+  harm        瞬间伤害（Instant Damage）  来源=原版(瞬间)  注册名=minecraft:instant_damage
+  jump        跳跃提升（Jump Boost）  来源=原版  注册名=minecraft:jump_boost
+  nausea      反胃（Nausea）  来源=原版  注册名=minecraft:nausea
+  regen       生命恢复（Regeneration）  来源=原版  注册名=minecraft:regeneration
+  resist      抗性提升（Resistance）  来源=原版  注册名=minecraft:resistance
+  fireres     抗火（Fire Resistance）  来源=原版  注册名=minecraft:fire_resistance
+  water       水下呼吸（Water Breathing）  来源=原版  注册名=minecraft:water_breathing
+  invis       隐身（Invisibility）  来源=原版  注册名=minecraft:invisibility
+  blind       失明（Blindness）  来源=原版  注册名=minecraft:blindness
+  night       夜视（Night Vision）  来源=原版  注册名=minecraft:night_vision
+  hunger      饥饿（Hunger）  来源=原版  注册名=minecraft:hunger
+  weak        虚弱（Weakness）  来源=原版  注册名=minecraft:weakness
+  poison      中毒（Poison）  来源=原版  注册名=minecraft:poison
+  wither      凋零（Wither）  来源=原版  注册名=minecraft:wither
+  hboost      生命提升（Health Boost）  来源=原版  注册名=minecraft:health_boost
+  satur       饱和（Saturation）  来源=原版  注册名=minecraft:saturation
+  taint       腐毒（Flux Taint）  来源=神秘时代  注册名=thaumcraft:flux_taint
+  visBoost    咒流（Flux Flu (Vis Exhaustion)）  来源=神秘时代  注册名=thaumcraft:vis_exhaustion
+  visRegen    灵气创生（Vis Generation）  来源=本模组  注册名=thaumichorizons:vis_regen
+  vacuum      物件真空（Item Vacuum）  来源=本模组  注册名=thaumichorizons:vacuum
+  shock       静电震击（Static Shock）  来源=本模组  注册名=thaumichorizons:shock
+  synth       光合作用（Photosynthesis）  来源=本模组  注册名=thaumichorizons:synthesis
+
+【附录】数据出处（jar 内类与方法）
+------------------------------------------------------------------------------
+  BloodWeights.create()                 权重表 TABLE（第四节的数据）
+  BloodFormula.calculate()              分数/个数/等级/持续时间/颜色
+  BloodFormula$Effect / $Result         记录结构：key, amplifier, duration, color
+  BloodEffects.resolve(String)          效果键 -> 效果（第九节）
+  BloodEffects$InfusionEffect           4 个自注册效果的 tick 行为（第六节）
+  BloodInfuserBlockEntity               机器逻辑：selected/acquired、ready()、requested()、draw()、tick()
+  InjectionItem.create/apply/tooltip    注射剂物品与生效逻辑
+  EmptySyringeItem / BloodItem / BloodSampleItem   针筒与血的物品逻辑
+  AlchemyResearch                       奥术配方与研究条目（研究正文的出处）
+  assets/thaumichorizons/lang/zh_cn.json  中英名对照
