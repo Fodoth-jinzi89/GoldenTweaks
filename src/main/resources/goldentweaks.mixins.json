@@ -249,6 +249,7 @@
     "fix.emi.EmiSearchWidgetMixin",
     "fix.emi.EmiSearchMixin",
     "fix.krypton.MinecraftCompressDecoderMixin",
+    "fix.carryon.client.CarriedObjectRenderMixin",
     "fix.emi.EmiTagsRawValuesMixin",
     "fix.emi.SlotWidgetMixin",
     "fix.emilink.AENetworkCacheMixin",

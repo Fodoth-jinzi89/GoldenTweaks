@@ -40,12 +40,24 @@ public final class GTCreaturePreview {
     private GTCreaturePreview() {
     }
 
+    /** Creature box while it is being carried (Carry On). */
+    public static final float CARRY_TARGET_HEIGHT = 1.0F;
+
     /** Puts the creature into the same pose every frame and advances its idle animation. */
     public static void resetPose(Mob mob) {
         if (PREPARED.add(mob)) {
             clearWorldState(mob);
         }
 
+        pinPose(mob);
+        advanceAnimation(mob);
+    }
+
+    /**
+     * Pins the rotations and the interpolation fields to the current position. Safe for entities the game
+     * keeps ticking: it touches nothing but the render pose (no AI, no gravity, no motion).
+     */
+    private static void pinPose(Mob mob) {
         mob.setYRot(0.0F);
         mob.setXRot(0.0F);
         mob.yRotO = 0.0F;
@@ -61,9 +73,34 @@ public final class GTCreaturePreview {
         mob.xOld = mob.getX();
         mob.yOld = mob.getY();
         mob.zOld = mob.getZ();
-        mob.setDeltaMovement(Vec3.ZERO);
+    }
 
-        advanceAnimation(mob);
+    /**
+     * Renders a creature that the game already ticks normally, the same way {@link #render} does
+     * (fixed pose + size fitted to {@code targetHeight}), but without clearing its AI/gravity and without
+     * advancing its animation clock a second time - a live entity ticks on its own, so bumping the counter
+     * here again would make its animations run twice as fast.
+     *
+     * <p>Used for the entity Carry On holds: that one is a real entity in the world, so only the render
+     * pose may be touched.</p>
+     */
+    public static void renderLive(
+            Mob mob,
+            PoseStack pose,
+            MultiBufferSource buffer,
+            float partialTick,
+            int packedLight,
+            float targetHeight
+    ) {
+        pinPose(mob);
+
+        float scale = fitScale(mob, targetHeight);
+        EntityRenderer<?> renderer = Minecraft.getInstance().getEntityRenderDispatcher().getRenderer(mob);
+
+        pose.pushPose();
+        pose.scale(scale, scale, scale);
+        renderRaw(renderer, mob, 0.0F, partialTick, pose, buffer, packedLight);
+        pose.popPose();
     }
 
     /**

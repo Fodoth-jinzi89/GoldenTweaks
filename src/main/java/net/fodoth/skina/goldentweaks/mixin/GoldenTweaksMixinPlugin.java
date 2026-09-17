@@ -81,6 +81,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("krypton");
         }
 
+        if (mixinClassName.endsWith("fix.carryon.client.CarriedObjectRenderMixin")) {
+            return isModLoaded("carryon");
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.RewardTypesMixin")) {
             return isModLoaded("ftbquests");
         }
