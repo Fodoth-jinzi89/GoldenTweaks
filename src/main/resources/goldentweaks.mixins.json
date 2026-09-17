@@ -247,6 +247,7 @@
     "fix.emi.EmiStackListMixin",
     "fix.emi.ItemEmiStackTooltipMixin",
     "fix.emi.EmiSearchWidgetMixin",
+    "fix.emi.EmiSearchMixin",
     "fix.krypton.MinecraftCompressDecoderMixin",
     "fix.emi.EmiTagsRawValuesMixin",
     "fix.emi.SlotWidgetMixin",
