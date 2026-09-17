@@ -8,15 +8,16 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
- * 把 GT 的「搜索触发阈值」套到 EMI 的搜索上（与 AE2 终端共用
- * {@code GoldenTweaksConfig.search_trigger_threshold}，默认 10 tick = 0.5s）。
+ * 把 GT 的「搜索触发阈值」套到 EMI 搜索上（与 AE2 终端共用 {@code search_trigger_threshold}）。
  *
- * <p>EMI 搜索框的 responder 最终会调到 {@link EmiSearch#search(String)}；在这里把请求攒住，
- * 等停手满阈值再由渲染钩子补跑一次 —— 每敲一个字符就重排一次搜索（大包里本来就要几百 ms，
- * 而且它同时触发 EMI 自己的后缀数组搜索与各种搜索扩展）的问题就没了。</p>
+ * <ul>
+ *   <li>{@code search(String)}：节流点本身 —— 间隔不够就把这次查询攒住（{@link EmiSearchDebounce}）；</li>
+ *   <li>{@code update()}：<b>不拦</b>，只在头部顺带叫一次 {@code tick()}（EMI 自己在刷新时
+ *       会把攒下的查询补跑掉，等于多一个时钟）。</li>
+ * </ul>
  *
- * <p>只拦 {@code search}，<b>不碰</b> {@code update()}、也不碰输入框的 {@code setValue}：
- * 输入与光标实时更新，只有"跑搜索"这一步被推迟。阈值设 0 即完全回到 EMI 原版行为。</p>
+ * <p>输入框的 {@code setValue}/{@code insertText} 一律不碰（它们同时负责更新输入框显示，
+ * 拦了会让打字像卡住）。阈值 0 = 完全回到原版。</p>
  */
 @Mixin(value = EmiSearch.class, remap = false)
 public abstract class EmiSearchMixin {
@@ -27,5 +28,11 @@ public abstract class EmiSearchMixin {
         if (EmiSearchDebounce.shouldDelay(query)) {
             ci.cancel();
         }
+    }
+
+    @Inject(method = "update", at = @At("HEAD"))
+    private static void gt$tickOnUpdate(CallbackInfo ci) {
+
+        EmiSearchDebounce.tick();
     }
 }

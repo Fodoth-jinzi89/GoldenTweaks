@@ -54,7 +54,7 @@
   "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval": "Thaumonomicon Aspect Source Page Interval",
   "config.goldentweaks.balance.thaumcraft.thaumonomicon_aspect_source_page_interval.comment": "Automatic aspect source page interval in milliseconds.",
   "config.goldentweaks.search_trigger_threshold": "Search Trigger Threshold",
-  "config.goldentweaks.search_trigger_threshold.comment": "Ticks to wait after the last input before updating an AE terminal or EMI search (50ms per tick; 0 = no delay).",
+  "config.goldentweaks.search_trigger_threshold.comment": "Minimum interval between two searches in AE terminals and EMI (50ms per tick; 0 = no throttling, i.e. vanilla behaviour).",
   "config.goldentweaks.disable_building_wands_block_preview": "Disable Building Wands Block Preview",
   "config.goldentweaks.disable_building_wands_block_preview.comment": "Hides block models in Building Wands previews while keeping the white outlines visible.",
   "config.goldentweaks.category.balance": "Balance",
