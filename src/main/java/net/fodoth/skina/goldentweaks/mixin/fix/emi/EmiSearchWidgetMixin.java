@@ -4,6 +4,7 @@ import dev.emi.emi.screen.widget.EmiSearchWidget;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.minecraft.Util;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.EditBox;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,15 +16,22 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * {@code MEStorageScreenSearchMixin}）：输入后先攒着，等 {@code SEARCH_TRIGGER_THRESHOLD} 个 tick
  * 没有新输入再真正触发搜索，避免在一个 400+ 模组的包里每敲一个字就重排一次列表。
  *
+ * <p><b>为什么要 mixin 原版的 {@link EditBox} 而不是 {@code EmiSearchWidget}：</b>
+ * {@code EmiSearchWidget} 只重写了 {@code renderWidget}，文本赋值用的 {@code setValue(String)}
+ * 是它从 {@code EditBox} 继承的。Mixin 的 {@code @Inject} 只匹配**目标类自己声明**的方法，
+ * 打在 {@code EmiSearchWidget} 上会直接找不到目标（Critical injection failure），
+ * 所以这里挂在声明它的 {@code EditBox} 上，再用 {@code instanceof} 守卫成"只对 EMI 搜索框生效"。</p>
+ *
  * <ul>
  *   <li>阈值 0 = 不延迟，行为同原版 EMI。</li>
  *   <li>同值 {@code setValue} 放行（EMI 的 {@code EmiSearchWidget#update()} 靠 {@code setValue(getValue())}
  *       在数据重载后刷新搜索，不能拦）。</li>
  *   <li>计时用 {@link Util#getMillis()}（阈值 × 50ms），这样在没进世界、{@code level == null}
  *       的菜单界面里也照样生效。</li>
+ *   <li>非 EMI 的输入框只多一次 {@code instanceof} 判断。</li>
  * </ul>
  */
-@Mixin(value = EmiSearchWidget.class, remap = false)
+@Mixin(EditBox.class)
 public abstract class EmiSearchWidgetMixin {
 
     @Unique
@@ -38,11 +46,13 @@ public abstract class EmiSearchWidgetMixin {
     @Inject(method = "setValue", at = @At("HEAD"), cancellable = true)
     private void gt$delaySearch(String value, CallbackInfo ci) {
 
-        if (gt$applyingSearch || GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get() == 0) {
+        if (!(((Object) this) instanceof EmiSearchWidget self)) {
             return;
         }
 
-        EmiSearchWidget self = (EmiSearchWidget) (Object) this;
+        if (gt$applyingSearch || GoldenTweaksClientConfig.SEARCH_TRIGGER_THRESHOLD.get() == 0) {
+            return;
+        }
 
         if (value.equals(self.getValue())) {
             return;
@@ -62,7 +72,7 @@ public abstract class EmiSearchWidgetMixin {
     private void gt$applyDelayedSearch(GuiGraphics graphics, int mouseX, int mouseY, float partialTick,
                                        CallbackInfo ci) {
 
-        if (gt$pendingSearch == null) {
+        if (!(((Object) this) instanceof EmiSearchWidget self) || gt$pendingSearch == null) {
             return;
         }
 
@@ -76,7 +86,7 @@ public abstract class EmiSearchWidgetMixin {
         gt$pendingSearch = null;
         gt$applyingSearch = true;
         try {
-            ((EmiSearchWidget) (Object) this).setValue(value);
+            self.setValue(value);
         } finally {
             gt$applyingSearch = false;
         }
