@@ -63,6 +63,7 @@
     "feature.vanilla.ItemEntityCreativePickupMixin",
     "feature.vanilla.accessor.ItemEntityAccessor",
     "fix.advanced_infusion.AdvancedInfusionResearchMixin",
+    "compat.aiimprovements.ModifierLayerMixin",
     "fix.ae2.MEStorageMenuBroadcastMixin",
     "fix.ae2autopatternupload.RequestProvidersListC2SPacketMixin",
     "fix.ae2autopatternupload.UploadEncodedPatternC2SPacketMixin",

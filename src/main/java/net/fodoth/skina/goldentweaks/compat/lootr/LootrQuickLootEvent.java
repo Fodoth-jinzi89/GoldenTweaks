@@ -4,6 +4,7 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.util.ItemPickupUtil;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -50,6 +51,9 @@ public final class LootrQuickLootEvent {
     /** 取空容器后，等待物品飞出再关箱的延迟 tick 数。 */
     private static final long CLOSE_DELAY_TICKS = 5L;
 
+    /** 物品生成点距方块中心的距离：0.5 正好落在玩家点击的那个面的中心，多出的 0.1 让它出现在面外侧。 */
+    private static final double FACE_OFFSET = 0.6D;
+
     /** 进行中的快速拾取会话，键为 (玩家 UUID, 容器坐标)。 */
     private static final Map<Key, Session> SESSIONS = new HashMap<>();
 
@@ -85,7 +89,8 @@ public final class LootrQuickLootEvent {
                 close(session, session.emptied || session.wasOpened);
                 SESSIONS.remove(key);
             }
-            session = new Session(container, player, now, isLooted(container));
+            Direction face = event.getFace() != null ? event.getFace() : Direction.UP;
+            session = new Session(container, player, now, isLooted(container), face);
             SESSIONS.put(key, session);
             open(container, lootr, player);
             // 首次拾取由 onServerTick 在开箱动画播完后触发，这里不立即蹦物品
@@ -157,7 +162,7 @@ public final class LootrQuickLootEvent {
     /** 拾取一批；若本次取空容器，则标记已开启并延迟关箱。 */
     private static void handlePickup(Session session, BlockEntity container,
                                      ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos) {
-        LootResult result = loot(container, lootr, player, pos);
+        LootResult result = loot(container, lootr, player, pos, session.face);
         if (result.taken() > 0 && result.exhausted()) {
             markOpened(container, lootr, player, pos);
             session.emptied = true;
@@ -234,9 +239,15 @@ public final class LootrQuickLootEvent {
         level.playSound(null, pos, sound, SoundSource.BLOCKS, 0.5F, level.random.nextFloat() * 0.1F + 0.9F);
     }
 
-    /** 从 Lootr 容器取出至多一组物品，生成掉落物并吸入玩家。返回本次结果。 */
+    /**
+     * 从 Lootr 容器取出至多一组物品，生成掉落物并吸入玩家。返回本次结果。
+     * <p>
+     * 物品的生成点是「方块中心 + 玩家点击的那个面的法向 × {@link #FACE_OFFSET}」，
+     * 也就是从玩家实际点到的那一面飞出来，而不是固定从顶面飞。
+     */
     @SuppressWarnings("deprecation")
-    private static LootResult loot(BlockEntity container, ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos) {
+    private static LootResult loot(BlockEntity container, ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos,
+                                   Direction face) {
         ILootrInfoProvider provider;
         ILootrInventory inventory;
         try {
@@ -270,7 +281,11 @@ public final class LootrQuickLootEvent {
             if (stack.isEmpty()) {
                 continue;
             }
-            ItemEntity item = new ItemEntity(player.level(), pos.getX() + .5, pos.getY() + 1, pos.getZ() + .5, stack);
+            ItemEntity item = new ItemEntity(player.level(),
+                    pos.getX() + 0.5D + face.getStepX() * FACE_OFFSET,
+                    pos.getY() + 0.5D + face.getStepY() * FACE_OFFSET,
+                    pos.getZ() + 0.5D + face.getStepZ() * FACE_OFFSET,
+                    stack);
             player.level().addFreshEntity(item);
             if (GoldenTweaksCommonConfig.LOOTR_SHOW_FLYING_ITEMS.get()) {
                 ItemPickupUtil.pullToPlayer(player, item);
@@ -314,17 +329,20 @@ public final class LootrQuickLootEvent {
         final ServerPlayer player;
         final long openedAt;
         final boolean wasOpened;
+        /** 玩家点击的那个面；会话期间保持不变，用于决定物品从哪一面飞出。 */
+        final Direction face;
         final long firstLootAt;
         long lastInput;
         long lastPickup = Long.MIN_VALUE;
         long closeAt = -1;
         boolean emptied;
 
-        Session(BlockEntity container, ServerPlayer player, long now, boolean wasOpened) {
+        Session(BlockEntity container, ServerPlayer player, long now, boolean wasOpened, Direction face) {
             this.container = container;
             this.player = player;
             this.openedAt = now;
             this.wasOpened = wasOpened;
+            this.face = face;
             this.firstLootAt = now + OPEN_ANIMATION_TICKS;
             this.lastInput = now;
         }

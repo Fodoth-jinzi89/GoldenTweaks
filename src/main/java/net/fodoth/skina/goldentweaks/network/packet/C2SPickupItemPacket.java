@@ -15,8 +15,6 @@ import net.minecraft.world.entity.ExperienceOrb;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import org.jetbrains.annotations.NotNull;
 
-import static net.fodoth.skina.goldentweaks.network.handler.ClientClickHandler.getMaxReach;
-
 public record C2SPickupItemPacket(int entityId) implements CustomPacketPayload {
     public static final Type<C2SPickupItemPacket> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "pickup_item"));
     public static final StreamCodec<FriendlyByteBuf, C2SPickupItemPacket> STREAM_CODEC = StreamCodec.composite(ByteBufCodecs.VAR_INT, C2SPickupItemPacket::entityId, C2SPickupItemPacket::new);
@@ -34,14 +32,14 @@ public record C2SPickupItemPacket(int entityId) implements CustomPacketPayload {
                 var e = level.getEntity(pkt.entityId());
                 if (e instanceof ExperienceOrb orb) {
                     if (GoldenTweaksCommonConfig.ALLOW_EXPERIENCE_ORB_PICKUP.get()
-                            && sp.distanceTo(orb) <= getMaxReach(player)) {
+                            && sp.distanceTo(orb) <= ItemPickupUtil.getMaxReach(player)) {
                         orb.playerTouch(sp);
                     }
                 } else if (e instanceof ItemEntity item) {
                     int delay = ((ItemEntityAccessor) item).goldentweaks$getPickupDelay();
                     boolean canPickup = GoldenTweaksCommonConfig.ALLOW_INFINITE_DELAY.get()
                             || delay <= GoldenTweaksCommonConfig.PICKUP_DELAY_THRESHOLD.get();
-                    if (canPickup && sp.distanceTo(item) <= getMaxReach(player)) {
+                    if (canPickup && sp.distanceTo(item) <= ItemPickupUtil.getMaxReach(player)) {
                         ItemPickupUtil.pickup(sp, item);
                     }
                 }

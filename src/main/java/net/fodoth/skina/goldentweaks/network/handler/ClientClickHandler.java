@@ -4,12 +4,12 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPickupItemPacket;
 import net.fodoth.skina.goldentweaks.util.GetEntityHitResult;
+import net.fodoth.skina.goldentweaks.util.ItemPickupUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.ExperienceOrb;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
@@ -124,7 +124,7 @@ public final class ClientClickHandler {
         Vec3 eye = player.getEyePosition(pt);
         Vec3 look = player.getViewVector(pt);
 
-        double maxReach = getMaxReach(player);
+        double maxReach = ItemPickupUtil.getMaxReach(player);
 
         Vec3 reachEnd = eye.add(look.scale(maxReach));
 
@@ -163,16 +163,6 @@ public final class ClientClickHandler {
         player.swing(InteractionHand.MAIN_HAND);
 
         return true;
-    }
-
-    public static double getMaxReach(Player player) {
-        boolean extended =
-                player.isCreative() || player.isSpectator();
-
-        return GoldenTweaksCommonConfig.BASE_PICKUP_REACH.get()
-                + (extended
-                ? GoldenTweaksCommonConfig.EXTENDED_REACH_BONUS.get()
-                : 0.0D);
     }
 
     private ClientClickHandler() {

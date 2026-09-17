@@ -1,8 +1,7 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.Screen;
+import net.fodoth.skina.goldentweaks.network.handler.MaterialBookClientHandler;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
@@ -27,28 +26,15 @@ public record S2COpenMaterialBookPacket() implements CustomPacketPayload {
         return TYPE;
     }
 
+    /**
+     * S2C 处理器：实际界面逻辑在客户端专用的
+     * {@link MaterialBookClientHandler}，这里只是协议壳 + 主线程调度。
+     * <p>
+     * 注意不要在 common 侧直接写 {@code net.minecraft.client.*}：该 packet 类在服务端也会被加载
+     * （注册与发送都要它），一旦类里出现客户端类型，专用服务器上就会触发
+     * {@code NoClassDefFoundError}。
+     */
     public static void handle(S2COpenMaterialBookPacket payload, IPayloadContext context) {
-        context.enqueueWork(() -> {
-            try {
-                Class<?> clazz = Class.forName(
-                        "net.silentchaos512.gear.client.gui.book.MaterialBookScreen"
-                );
-
-                Object instance = clazz.getDeclaredConstructor().newInstance();
-
-                if (instance instanceof Screen screen) {
-                    Minecraft.getInstance().setScreen(screen);
-                } else {
-                    GoldenTweaks.LOGGER.warn(
-                            "MaterialBookScreen is not a Screen instance"
-                    );
-                }
-            } catch (Exception e) {
-                GoldenTweaks.LOGGER.warn(
-                        "Failed to open MaterialBookScreen",
-                        e
-                );
-            }
-        });
+        context.enqueueWork(MaterialBookClientHandler::openMaterialBook);
     }
 }
