@@ -134,7 +134,7 @@
 | MekanismGenerators | `1.21.1-10.7.19.85` | `[核心]MekanismGenerators-1.21.1-10.7.19.85.jar` |
 | modonomicon | `1.21.1-neoforge-1.120.3` | `modonomicon-1.21.1-neoforge-1.120.3.jar` |
 | neoecoae | `21.1.1` | `neoecoae-21.1.1.jar` |
-| neoguanniao | `2.9` | `neoguanniao-2.9.jar` |
+| neoguanniao | `3.5.1-1.21.1-neoforge` | `neoguanniao-3.5.1-1.21.1-neoforge.jar` |
 | Northstar | `0.6.4+1.21.1` | `Northstar-0.6.4+1.21.1.jar` |
 | OELib-neoforge | `1.21.1-0.2.3` | `[核心]OELib-neoforge-1.21.1-0.2.3.jar` |
 | oneenoughitem-neoforge | `1.21.1-1.0.8` | `[核心]oneenoughitem-neoforge-1.21.1-1.0.8.jar` |

@@ -1,18 +1,22 @@
 package net.fodoth.skina.goldentweaks.compat.thaumichorizons.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.neoguanniao.client.BirdAnimationBridge;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.Level;
+import net.neoforged.fml.ModList;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 import java.util.WeakHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Renders a creature that is stored inside a block the way NeoGuanNiao's small bird cage does it:
@@ -36,6 +40,9 @@ public final class GTCreaturePreview {
 
     /** Creatures that already had their leftover world state cleared once. */
     private static final Set<Mob> PREPARED = Collections.newSetFromMap(new WeakHashMap<>());
+
+    /** Whether a stored creature failing to tick was already reported. */
+    private static final AtomicBoolean TICK_FAILURES = new AtomicBoolean();
 
     private GTCreaturePreview() {
     }
@@ -76,13 +83,22 @@ public final class GTCreaturePreview {
     }
 
     /**
-     * Renders a creature that the game already ticks normally, the same way {@link #render} does
-     * (fixed pose + size fitted to {@code targetHeight}), but without clearing its AI/gravity and without
-     * advancing its animation clock a second time - a live entity ticks on its own, so bumping the counter
-     * here again would make its animations run twice as fast.
+     * Renders a creature another mod keeps <b>out of the level</b>, treated exactly like the jar/vat do it:
+     * the same one-time state clean-up, the same fixed pose, the same size fitting - plus the thing the jar
+     * gets for free: the creature is <b>ticked once per game tick</b>.
      *
-     * <p>Used for the entity Carry On holds: that one is a real entity in the world, so only the render
-     * pose may be touched.</p>
+     * <p>Why the clock matters: modded creatures can drive their animations through their own controllers
+     * instead of {@code Entity#tickCount}. NeoGuanNiao's birds are like that - {@code BirdTickController}
+     * owns the tickers (including the idle animation ticker) and the GeoLib animation is picked from that
+     * state. The jar's block entity ticks the creature it stores, so those controllers keep running. Carry On
+     * removes the creature from the level ({@code PickupHandler} uses a {@code RemovalReason}), so nothing
+     * ticks it and its controllers stay frozen at the state they had when it was picked up.</p>
+     *
+     * <p>A full {@code Mob#tick()} must <b>not</b> be used for this: the player holding the creature rides
+     * it, and ticking the entity drives that ride logic too (the player then shoots off in whatever
+     * direction is pressed). So the creature's animation clock is advanced narrowly instead - NeoGuanNiao
+     * birds get their own client-side controller tick, everything else gets the animation counter bumped -
+     * once per game tick, wrapped in a try/catch so a stored creature can never break rendering.</p>
      */
     public static void renderLive(
             Mob mob,
@@ -92,7 +108,12 @@ public final class GTCreaturePreview {
             int packedLight,
             float targetHeight
     ) {
+        if (PREPARED.add(mob)) {
+            clearWorldState(mob);
+        }
+
         pinPose(mob);
+        tickStoredMob(mob);
 
         float scale = fitScale(mob, targetHeight);
         EntityRenderer<?> renderer = Minecraft.getInstance().getEntityRenderDispatcher().getRenderer(mob);
@@ -116,6 +137,48 @@ public final class GTCreaturePreview {
         mob.walkAnimation.setSpeed(0.0F);
         mob.fallDistance = 0.0F;
         mob.hurtTime = 0;
+    }
+
+    /**
+     * Advances the animation clock of a creature that lives outside the level (stored by another mod) once
+     * per game tick, the way a jar's block entity keeps the creature it stores animating.
+     *
+     * <p>Guarded to one advance per game tick (the renderer runs far more often) and wrapped in a try/catch,
+     * because such a creature is no longer a normal level entity and must never break rendering.</p>
+     */
+    private static void tickStoredMob(Mob mob) {
+        Level level = mob.level();
+
+        if (level == null) {
+            return;
+        }
+
+        long now = level.getGameTime();
+        Long last = LAST_ANIMATION_TICK.get(mob);
+
+        if (last != null && last == now) {
+            return;
+        }
+
+        LAST_ANIMATION_TICK.put(mob, now);
+
+        try {
+            // NeoGuanNiao birds own their animation clock (BirdTickController/BirdTickTimer): advance its
+            // client half, which never touches AI/gravity/movement. Everything else uses the plain counter,
+            // the same way the jar/vat treated the creatures they store.
+            if (ModList.get().isLoaded("neoguanniao") && BirdAnimationBridge.tickClient(mob)) {
+                return;
+            }
+
+            mob.tickCount++;
+        } catch (Throwable t) {
+            if (TICK_FAILURES.compareAndSet(false, true)) {
+                GoldenTweaks.LOGGER.warn(
+                        "[生物预览] 存储中的生物 {} 动画钟推进失败，已退化为静态姿势（本条只打印一次）",
+                        mob.getType(), t
+                );
+            }
+        }
     }
 
     /**
