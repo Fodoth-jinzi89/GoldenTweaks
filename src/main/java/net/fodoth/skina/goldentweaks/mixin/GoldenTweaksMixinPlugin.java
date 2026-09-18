@@ -89,6 +89,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ramization");
         }
 
+        if (mixinClassName.endsWith("fix.supplementaries.ConfigButtonMixin")) {
+            return isModLoaded("supplementaries");
+        }
+
         if (mixinClassName.endsWith("fix.neoguanniao.client.BirdMovementControllerMixin")) {
             return isModLoaded("neoguanniao");
         }

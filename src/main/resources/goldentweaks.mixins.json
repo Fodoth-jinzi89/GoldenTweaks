@@ -251,6 +251,7 @@
     "fix.emi.EmiSearchMixin",
     "fix.krypton.MinecraftCompressDecoderMixin",
     "fix.carryon.client.CarriedObjectRenderMixin",
+    "fix.supplementaries.ConfigButtonMixin",
     "fix.neoguanniao.client.BirdMovementControllerMixin",
     "fix.emi.EmiTagsRawValuesMixin",
     "fix.emi.SlotWidgetMixin",
