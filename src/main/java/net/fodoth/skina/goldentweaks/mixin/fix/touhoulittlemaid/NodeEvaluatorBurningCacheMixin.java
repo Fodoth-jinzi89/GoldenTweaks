@@ -38,7 +38,7 @@ public abstract class NodeEvaluatorBurningCacheMixin {
     private static final AtomicBoolean LOGGED = new AtomicBoolean();
 
     @Inject(
-            method = "handler$*$touhou_little_maid$postIsBurningBlock",
+            method = "handler$bnj000$touhou_little_maid$postIsBurningBlock",
             at = @At("HEAD"),
             cancellable = true,
             require = 0
