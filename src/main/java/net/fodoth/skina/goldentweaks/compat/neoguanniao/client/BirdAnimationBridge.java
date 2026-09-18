@@ -1,45 +1,59 @@
 package net.fodoth.skina.goldentweaks.compat.neoguanniao.client;
 
+import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.neoguanniao.content.bird.core.AbstractBirdEntity;
 import net.minecraft.world.entity.Mob;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 /**
- * Soft bridge to NeoGuanNiao's own animation clock.
+ * Soft bridge to NeoGuanNiao's own preview animation driver.
  *
- * <p>That mod's birds do not animate off {@code Entity#tickCount}: they drive their model through
- * {@code BirdTickController} (which owns {@code BirdTickTimer} and, among others, a
- * {@code BirdIdleAnimationTicker}), and pick the GeoLib animation with
- * {@code AnimationState.setAndContinue(BirdAnimationController.pickIdleAnimation())}.</p>
+ * <p>A bird does not simply animate off {@code Entity#tickCount}: GeoLib's animation time, the client
+ * tickers ({@code BirdTickTimer}: idle / trust / curious / ...) and the behaviour state machine
+ * ({@code IDLE} / {@code CURIOUS} / {@code SLEEPING}, chosen in
+ * {@code AbstractBirdEntity#movementController} and normally driven by goals) all have to advance. Only
+ * the mod itself can do that correctly, so it exposes
+ * {@code AbstractBirdEntity#tickAnimationPreview(long)} - the very method its own bird cage preview uses.</p>
  *
- * <p>The clock has two halves and both are public, so a bird that another mod is holding outside the level
- * (Carry On) can keep animating without the entity being fully ticked - a full {@code Mob#tick()} would also
- * drive the ride/vehicle logic of the player holding it:</p>
- * <ul>
- *   <li>{@code BirdTickController#tickClient()} runs the timers
- *       ({@code BirdTickTimer}: idle / fly / eat / ... tickers);</li>
- *   <li>{@code BirdAnimationController#tick()} is the one that actually picks and pushes the GeoLib
- *       animation ({@code pickIdleAnimation()} / {@code shouldPlayFlyAnimation()} →
- *       {@code AnimationState.setAndContinue}).</li>
- * </ul>
+ * <p>Carry On takes the held creature out of the level ({@code PickupHandler} uses a
+ * {@code RemovalReason}), so nothing ticks it and its animation freezes. This bridge lets the render call
+ * drive it instead.</p>
+ *
+ * <p>{@code Entity#tick()} must <b>not</b> be used for this: the player holding a creature rides it, so a
+ * full tick drives the ride/vehicle logic too (the player then shoots off in whatever direction is
+ * pressed).</p>
  *
  * <p>This class must only be touched when {@code neoguanniao} is loaded (see
  * {@code GTCreaturePreview#tickStoredMob}); loading it pulls in the mod's classes.</p>
  */
 public final class BirdAnimationBridge {
 
+    /** One line per game session so a log tells whether this bridge is actually the one running. */
+    private static final AtomicBoolean LOGGED = new AtomicBoolean();
+
     private BirdAnimationBridge() {
     }
 
     /**
-     * @return true if the entity is a NeoGuanNiao bird and its client animation clock was advanced
+     * @param gameTime {@code mob.level().getGameTime()} of the calling client tick
+     * @return true if the entity is a NeoGuanNiao bird and its preview animation was advanced
      */
-    public static boolean tickClient(Mob mob) {
+    public static boolean tickPreview(Mob mob, long gameTime) {
         if (!(mob instanceof AbstractBirdEntity<?> bird)) {
             return false;
         }
 
-        bird.getTickController().tickClient();
-        bird.getBirdControllers().getBirdAnimationController().tick();
+        // De-duplicates per game tick on the mod's side as well (previewTickedAt), so calling this from
+        // several render passes is fine.
+        bird.tickAnimationPreview(gameTime);
+
+        if (LOGGED.compareAndSet(false, true)) {
+            GoldenTweaks.LOGGER.info(
+                    "[CarryOn 兼容] 已接管观鸟的抱持预览动画（tickAnimationPreview，本条只打印一次）"
+            );
+        }
+
         return true;
     }
 }

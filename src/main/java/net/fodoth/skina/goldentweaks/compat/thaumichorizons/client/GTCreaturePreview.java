@@ -83,16 +83,18 @@ public final class GTCreaturePreview {
     }
 
     /**
-     * Renders a creature another mod keeps <b>out of the level</b>, treated exactly like the jar/vat do it:
-     * the same one-time state clean-up, the same fixed pose, the same size fitting - plus the thing the jar
-     * gets for free: the creature is <b>ticked once per game tick</b>.
+     * Prepares a creature another mod keeps <b>out of the level</b> (Carry On holds it, the jar/vat store it)
+     * for drawing: the same one-time state clean-up and fixed pose as {@link #resetPose}, plus the thing the
+     * jar gets for free - an animation clock that keeps running once per game tick.
      *
      * <p>Why the clock matters: modded creatures can drive their animations through their own controllers
-     * instead of {@code Entity#tickCount}. NeoGuanNiao's birds are like that - {@code BirdTickController}
-     * owns the tickers (including the idle animation ticker) and the GeoLib animation is picked from that
-     * state. The jar's block entity ticks the creature it stores, so those controllers keep running. Carry On
-     * removes the creature from the level ({@code PickupHandler} uses a {@code RemovalReason}), so nothing
-     * ticks it and its controllers stay frozen at the state they had when it was picked up.</p>
+     * instead of {@code Entity#tickCount}. NeoGuanNiao's birds are like that - the GeoLib animation time,
+     * the client tickers (including the idle animation ticker) and the behaviour state machine all have to
+     * advance, which is what {@code AbstractBirdEntity#tickAnimationPreview(long)} does (the method the
+     * mod's own bird cage preview uses). The jar's block entity ticks the creature it stores, so its
+     * controllers keep running. Carry On removes the creature from the level ({@code PickupHandler} uses a
+     * {@code RemovalReason}), so nothing ticks it and its controllers stay frozen at the state they had
+     * when it was picked up.</p>
      *
      * <p>A full {@code Mob#tick()} must <b>not</b> be used for this: the player holding the creature rides
      * it, and ticking the entity drives that ride logic too (the player then shoots off in whatever
@@ -100,28 +102,13 @@ public final class GTCreaturePreview {
      * birds get their own client-side controller tick, everything else gets the animation counter bumped -
      * once per game tick, wrapped in a try/catch so a stored creature can never break rendering.</p>
      */
-    public static void renderLive(
-            Mob mob,
-            PoseStack pose,
-            MultiBufferSource buffer,
-            float partialTick,
-            int packedLight,
-            float targetHeight
-    ) {
+    public static void prepareStored(Mob mob) {
         if (PREPARED.add(mob)) {
             clearWorldState(mob);
         }
 
         pinPose(mob);
         tickStoredMob(mob);
-
-        float scale = fitScale(mob, targetHeight);
-        EntityRenderer<?> renderer = Minecraft.getInstance().getEntityRenderDispatcher().getRenderer(mob);
-
-        pose.pushPose();
-        pose.scale(scale, scale, scale);
-        renderRaw(renderer, mob, 0.0F, partialTick, pose, buffer, packedLight);
-        pose.popPose();
     }
 
     /**
@@ -163,10 +150,11 @@ public final class GTCreaturePreview {
         LAST_ANIMATION_TICK.put(mob, now);
 
         try {
-            // NeoGuanNiao birds own their animation clock (BirdTickController/BirdTickTimer): advance its
-            // client half, which never touches AI/gravity/movement. Everything else uses the plain counter,
-            // the same way the jar/vat treated the creatures they store.
-            if (ModList.get().isLoaded("neoguanniao") && BirdAnimationBridge.tickClient(mob)) {
+            // NeoGuanNiao birds need their own preview driver (GeoLib animation time + client tickers +
+            // behaviour state machine) - the same one the mod's bird cage uses. It never touches
+            // AI/gravity/movement, so it cannot drive a ride. Everything else uses the plain counter, the
+            // same way the jar/vat treated the creatures they store.
+            if (ModList.get().isLoaded("neoguanniao") && BirdAnimationBridge.tickPreview(mob, now)) {
                 return;
             }
 

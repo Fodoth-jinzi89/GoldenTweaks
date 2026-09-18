@@ -85,6 +85,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("carryon");
         }
 
+        if (mixinClassName.endsWith("fix.neoguanniao.client.BirdMovementControllerMixin")) {
+            return isModLoaded("neoguanniao");
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.RewardTypesMixin")) {
             return isModLoaded("ftbquests");
         }

@@ -3,7 +3,6 @@ package net.fodoth.skina.goldentweaks.mixin.fix.carryon.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.fodoth.skina.goldentweaks.compat.thaumichorizons.client.GTCreaturePreview;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
@@ -20,17 +19,26 @@ import tschipp.carryon.client.render.CarriedObjectRender;
  *
  * <p>Two call sites are redirected: {@code drawFirstPersonEntity} (what you see while carrying) and
  * {@code drawThirdPerson} (other players' carried entities). Everything else Carry On renders (blocks, hand
- * offsets, script transformations, shadow toggles) is left untouched - only the
- * {@code EntityRenderDispatcher#render} call is swapped.</p>
+ * offsets, script transformations, shadow toggles) is left untouched.</p>
  *
- * <p><b>The replacement has to reproduce exactly what the dispatcher did</b>, which is
- * {@code renderer.getRenderOffset(entity, partialTick)} added to the coordinates it was given, then a raw
- * {@code EntityRenderer#render}. The coordinates Carry On passes are already camera relative, so there is
- * <b>no</b> camera translation to redo here (doing that anyway pushes the entity out of view).</p>
+ * <p><b>The dispatcher call itself must be kept.</b> {@code EntityRenderDispatcher#render} is the only path
+ * entity model/texture mods such as EMF (Entity Model Features) and ETF (Entity Texture Features) hook, so
+ * rendering the entity through {@code EntityRenderer#render} directly makes EMF/ETF produce their default
+ * variant - a carried baby chicken then shows the adult model and flickers between the two variants because
+ * both passes draw the same entity. So instead of replacing the call, the pose is set up around it:</p>
  *
- * <p>Live entities use {@link GTCreaturePreview#renderLive} rather than {@code render} because Carry On's
- * entity really exists in the world: clearing its AI/gravity, or ticking its animation twice, would leak
- * into the actual entity.</p>
+ * <ol>
+ *   <li>translate by {@code position - camera} (exactly what the dispatcher would do),</li>
+ *   <li>scale about that origin,</li>
+ *   <li>call the dispatcher with the camera position, so its own
+ *       {@code position + renderOffset - camera} reduces to the renderer's offset alone - the entity stays
+ *       exactly where Carry On put it, only pose/size change, and EMF/ETF still see a dispatcher call.</li>
+ * </ol>
+ *
+ * <p>Live entities are prepared with {@link GTCreaturePreview#prepareStored} because Carry On's entity is
+ * out of the level (nothing ticks it) but still a real entity: only render pose and animation clock may be
+ * touched. A full {@code Mob#tick()} is never used - the player rides this entity, so ticking it would let
+ * the player be dragged around by it.</p>
  */
 @Mixin(value = CarriedObjectRender.class, remap = false)
 public class CarriedObjectRenderMixin {
@@ -46,7 +54,6 @@ public class CarriedObjectRenderMixin {
             ),
             remap = false
     )
-    @SuppressWarnings("unchecked")
     private static void gt$renderCarriedEntity(
             EntityRenderDispatcher dispatcher,
             Entity entity,
@@ -64,20 +71,18 @@ public class CarriedObjectRenderMixin {
             return;
         }
 
-        // Same maths as EntityRenderDispatcher#render: coordinates + the renderer's own offset.
-        // The dispatcher always hands out the renderer registered for this exact entity; the game itself
-        // uses raw generic calls here, so this cast is the same deal (see GTCreaturePreview#renderRaw).
-        EntityRenderer<Entity> renderer = (EntityRenderer<Entity>) dispatcher.getRenderer(entity);
-        Vec3 renderOffset = renderer.getRenderOffset(entity, partialTick);
+        GTCreaturePreview.prepareStored(mob);
+
+        float scale = GTCreaturePreview.fitScale(mob, GTCreaturePreview.CARRY_TARGET_HEIGHT);
+        Vec3 camera = dispatcher.camera.getPosition();
 
         pose.pushPose();
-        pose.translate(
-                x + renderOffset.x,
-                y + renderOffset.y,
-                z + renderOffset.z
-        );
-        GTCreaturePreview.renderLive(mob, pose, buffer, partialTick, packedLight,
-                GTCreaturePreview.CARRY_TARGET_HEIGHT);
+        // The dispatcher's own maths is "translate(position + renderOffset - camera)". Pre-applying
+        // "position - camera" and handing it the camera position leaves exactly the render offset for the
+        // dispatcher to apply, so the entity does not move; the scale in between is what makes it fit.
+        pose.translate(x - camera.x, y - camera.y, z - camera.z);
+        pose.scale(scale, scale, scale);
+        dispatcher.render(entity, camera.x, camera.y, camera.z, rotationYaw, partialTick, pose, buffer, packedLight);
         pose.popPose();
     }
 }
