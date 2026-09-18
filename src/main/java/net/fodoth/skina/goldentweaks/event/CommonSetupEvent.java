@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.event;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.touhoulittlemaid.TlmBurningCacheLogFilter;
 import net.fodoth.skina.goldentweaks.util.GTState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -14,6 +15,7 @@ public class CommonSetupEvent {
     public static void onCommonSetup(FMLCommonSetupEvent event) {
 
         GTState.setReady();
+        TlmBurningCacheLogFilter.installIfPresent();
 
         event.enqueueWork(() -> {
 

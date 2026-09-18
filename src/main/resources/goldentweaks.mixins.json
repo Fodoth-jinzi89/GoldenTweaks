@@ -110,7 +110,6 @@
     "fix.fidworkblock.ExampleModMixin",
     "fix.oneenoughitem.UtilsMixin",
     "fix.ramization.SmartGCSchedulerMixin",
-    "fix.touhoulittlemaid.NodeEvaluatorBurningCacheMixin",
     "fix.lootr.LootrOpenedStateMixin",
     "fix.lootr.LootrOpenedStateTickMixin",
     "fix.maid.MaidTrackerMixin",
