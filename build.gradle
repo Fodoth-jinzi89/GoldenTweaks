@@ -173,3 +173,5 @@ dependencies {
 kotlin {
     jvmToolchain(21)
 }
+
+apply from: rootProject.file('gradle/publish-platforms.gradle')
