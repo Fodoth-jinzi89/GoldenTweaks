@@ -1,5 +1,120 @@
 # GoldenTweaks Update Log
 
+## 2026.09.19 - v4.6
+
+### Thaumcraft
+- 新增「饕餮节点破坏方块」平衡开关（`hungryNodeBreaksBlocks`，默认关闭）：关闭时饥饿灵气节点只吸收灵气、保留音效与粒子，不再挖掘地形
+  - [AuraNodeHungryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/AuraNodeHungryMixin.java)
+  - [GoldenTweaksCommonConfig.java](src/main/java/net/fodoth/skina/goldentweaks/config/GoldenTweaksCommonConfig.java)
+- 新增「异界漩涡破坏方块」平衡开关（`horizonsVortexBreaksBlocks`，默认关闭）：关闭时漩涡只保留合成与视觉效果，不再吞噬地形
+  - [PlanarHazardsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumichorizons/PlanarHazardsMixin.java)
+- 异界漩涡的合成产物现在会自动掉落在漩涡下方一格，无需再用法杖右键取件；同时登记到 `GTVortexOutputs`，避免刚产出的成品被漩涡自身的饥饿场再次吞回
+  - [VortexBlockEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumichorizons/VortexBlockEntityMixin.java)
+  - [GTVortexOutputs.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/GTVortexOutputs.java)
+- 修复灵魂筛在 CentiVis 网络返回越界值（不在 `[0, 请求量]`）时抛异常并因重入标志无法清除而永久卡死的问题：返回值改为夹取到合法区间
+  - [SoulSieveBoostMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumichorizons/SoulSieveBoostMixin.java)
+- 修复灵魂筛上方没有灵魂收集器（灵魂收集器 / 脑罐）时每 tick 进度预算被置零、只吃灵魂沙却永不产出的问题
+  - [SoulSieveReceiverMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumichorizons/SoulSieveReceiverMixin.java)
+- 收容缸 / 治愈缸内的生物预览重写：固定朝向与插值字段消除抽搐，按目标高度自适应缩放（不再固定 0.25 导致大生物戳出缸外、小生物看不见），每游戏 tick 仅推进一次动画钟以保持待机动画
+  - [GTCreaturePreview.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumichorizons/client/GTCreaturePreview.java)
+  - [SoulJarRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumichorizons/client/SoulJarRendererMixin.java)
+  - [VatCreatureRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumichorizons/client/VatCreatureRendererMixin.java)
+- 新增神秘视界「奥术针筒」源质效果权重汇总文档
+  - [奥术针筒效果.txt](script/thaumcraft/奥术针筒效果.txt)
+
+### 模组兼容
+- 新增 EMI 搜索节流：停止输入 `searchStartDelay`（默认 20 tick）后才开始搜索、两次提交至少间隔 `searchSpreadDuration`（默认 20 tick），搜索本体在后台 daemon 线程执行
+  - [EmiSearchDebounce.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emi/EmiSearchDebounce.java)
+  - [EmiSearchMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiSearchMixin.java)
+  - [EmiSearchWidgetMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiSearchWidgetMixin.java)
+  - [EmiSearchTickHandler.java](src/main/java/net/fodoth/skina/goldentweaks/event/EmiSearchTickHandler.java)
+- AE2 终端搜索与 EMI 共用同一组节流配置：`searchTriggerThreshold` 重命名为 `searchStartDelay`（默认由 10 改为 20），并新增 `searchSpreadDuration`（默认 20）
+  - [GoldenTweaksClientConfig.java](src/main/java/net/fodoth/skina/goldentweaks/config/GoldenTweaksClientConfig.java)
+  - [MEStorageScreenSearchMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2/MEStorageScreenSearchMixin.java)
+- 修复 EMI 在没有世界时烘焙搜索索引刷屏 NPE（曾一次重载刷出上万条异常、日志涨到上百 MB）：无客户端世界时返回空 tooltip 与空标签列表
+  - [ItemEmiStackTooltipMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/ItemEmiStackTooltipMixin.java)
+  - [EmiTagsRawValuesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiTagsRawValuesMixin.java)
+- 修复 AE2 自动样板上传在专用服务器注册网络包时因链接客户端 `Screen` 导致整包注册失败的问题（ASM）
+  - [Ae2ApuASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2autopatternupload/Ae2ApuASM.java)
+  - [ProvidersListS2CPacketDummyMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2autopatternupload/ProvidersListS2CPacketDummyMixin.java)
+- 修复 linearbearing 在专用服务器因注册客户端监听器抛 `BootstrapMethodError` 导致整模组加载失败、服务器起不来的问题（ASM）
+  - [LinearbearingASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/linearbearing/LinearbearingASM.java)
+  - [LinearBearingDummyMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/linearbearing/LinearBearingDummyMixin.java)
+- 新增工具类，识别 NeoForge 在专用服务器上会剥离的包/类引用，供上述两个 ASM 判断使用
+  - [ClientDistRefs.java](src/main/java/net/fodoth/skina/goldentweaks/util/ClientDistRefs.java)
+- 修复 AI-Improvements 的 `ModifierLayer.handle` 未做 null 检查、目标集合里有 null 时服务端崩服的问题
+  - [ModifierLayerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/compat/aiimprovements/ModifierLayerMixin.java)
+- Carry On 抱持生物改用与收容缸同款的渲染方式（固定姿态 + 按持物框缩放 + 推进动画钟），消除搬运时的抽搐与大小错配，并保留 EMF/ETF 兼容
+  - [CarriedObjectRenderMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/carryon/client/CarriedObjectRenderMixin.java)
+  - [BirdAnimationBridge.java](src/main/java/net/fodoth/skina/goldentweaks/compat/neoguanniao/client/BirdAnimationBridge.java)
+- 修复观鸟手册（NeoGuanNiao）部分鸟（如八哥）没有对应动画时抱持会冻结在休息姿态的问题
+  - [BirdMovementControllerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/neoguanniao/client/BirdMovementControllerMixin.java)
+- 修复 FTB Quests 奖励类型注册非线程安全、并行构造扩展时抛 `ConcurrentModificationException` 导致客户端启动崩溃的问题
+  - [RewardTypesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ftbquests/RewardTypesMixin.java)
+- 修复 fidworkblock 教程书判重依赖不随存档持久化、每次登录重复发放的问题
+  - [ExampleModMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/fidworkblock/ExampleModMixin.java)
+- 修复 hazennstuff 的彩虹物品名在专用服务器读取客户端类导致崩服的问题（Meowmere、和谐吊坠、Spectrum）
+  - [SpectrumItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/hazennstuff/SpectrumItemMixin.java)
+  - [MeowmereItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/hazennstuff/MeowmereItemMixin.java)
+  - [PendantOfHarmonyCurioMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/hazennstuff/PendantOfHarmonyCurioMixin.java)
+- 修复 Krypton 自带解压实现无法处理 Velocity（Youer/Paper）服务端压缩流、配置阶段直接掉线的问题
+  - [MinecraftCompressDecoderMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/krypton/MinecraftCompressDecoderMixin.java)
+- 修复 lzxnonefate 在 `PlayerTickEvent.Post` 里 `instanceof LocalPlayer` 导致专用服务器每次玩家 tick 加载客户端类、玩家掉线的问题
+  - [FateEventMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/lzxnonefate/FateEventMixin.java)
+- 修复 oneenoughitem 客户端进服时数据同步早于注册表就绪、`isTagExists` 抛 NPE 导致同步中断的问题
+  - [UtilsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/oneenoughitem/UtilsMixin.java)
+- 移除 RAMization 在 `ServerTickEvent.Post` 里强制的 `System.gc()`，避免全量 GC 卡死服务端主线
+  - [SmartGCSchedulerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ramization/SmartGCSchedulerMixin.java)
+- 移除 Supplementaries 在主菜单/暂停界面左下角注册的设置按钮
+  - [ConfigButtonMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/supplementaries/ConfigButtonMixin.java)
+- 修复 WATUT 的 `watut:nbt_client` 载荷解码失败（NBT 被截断）会打断整条连接、玩家掉线的问题：给 STREAM_CODEC 包一层容错解码器
+  - [WatutNbtTolerantCodec.java](src/main/java/net/fodoth/skina/goldentweaks/compat/watut/WatutNbtTolerantCodec.java)
+  - [PacketNBTFromServerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/watut/PacketNBTFromServerMixin.java)
+- 继续抑制 All The Compatibility 的联网请求，并把客户端 tick 的版本检查取消逻辑拆到客户端专用类，避免服务端加载客户端类
+  - [ATCEventsClientMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/stop_mod_reposts/ATCEventsClientMixin.java)
+  - [ATCEventsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/stop_mod_reposts/ATCEventsMixin.java)
+- 修复 Aeronautics 延迟注册 JEI 兼容时，类路径上没有 JEI API 会加载 Create 的 JEI 分类类导致 modlauncher 计算栈帧失败的问题
+  - [AeroNeoForgeCommonEventsLateMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/aeronautics/AeroNeoForgeCommonEventsLateMixin.java)
+- 修复 Silent Gear 材料书界面逻辑留在 common 的 packet 类里、服务端加载时引用客户端类抛 `NoClassDefFoundError` 的问题
+  - [MaterialBookClientHandler.java](src/main/java/net/fodoth/skina/goldentweaks/network/handler/MaterialBookClientHandler.java)
+  - [S2COpenMaterialBookPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/S2COpenMaterialBookPacket.java)
+- Lootr 快速拾取：掉落物改为从玩家实际点击的那个面飞出，不再固定从顶面生成
+  - [LootrQuickLootEvent.java](src/main/java/net/fodoth/skina/goldentweaks/compat/lootr/LootrQuickLootEvent.java)
+
+### 日志清理
+- 新增女仆「火烧状态缓存」ERROR 的 log4j2 过滤器，按消息前缀精确屏蔽专用服务器上的无害报错
+  - [TlmBurningCacheLogFilter.java](src/main/java/net/fodoth/skina/goldentweaks/compat/touhoulittlemaid/TlmBurningCacheLogFilter.java)
+- 神秘时代物品要素数据引用的物品在本实例不存在时，日志由 WARN 降为 DEBUG（数据跨整合包共用，并非数据错误）
+  - [GTItemAspectEntry.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTItemAspectEntry.java)
+- 神秘时代配方解析未通过时由 WARN 降为 DEBUG，具体原因交由各解析器记录
+  - [ThaumcraftRecipeUtil.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ThaumcraftRecipeUtil.java)
+
+### 汉化
+- 新增神秘视界（Thaumic Horizons）完整简体中文翻译，涵盖物品、方块、法术核心、灌注与研究提示等
+  - [zh_cn.json](src/main/resources/assets/thaumichorizons/lang/zh_cn.json)
+- 补充新增配置项的中文文案，并将「异界裂缝」统一改称「异界漩涡」
+  - [zh_cn.json](src/main/resources/assets/goldentweaks/lang/zh_cn.json)
+- 同步补充英文文案（新增与重命名配置项的键及注释）
+  - [en_us.json](src/main/resources/assets/goldentweaks/lang/en_us.json)
+
+### 其它
+- 修复服务端无法拾取物品的问题：把拾取距离工具从客户端专用类移到 common 工具类，服务端包校验不再连带加载客户端类
+  - [ItemPickupUtil.java](src/main/java/net/fodoth/skina/goldentweaks/util/ItemPickupUtil.java)
+  - [ClientClickHandler.java](src/main/java/net/fodoth/skina/goldentweaks/network/handler/ClientClickHandler.java)
+  - [C2SPickupItemPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SPickupItemPacket.java)
+- 把配置就绪标记由客户端专用事件移到通用初始化事件，使新增的配置读取方法在双端都能正确就绪；客户端事件订阅标注为仅客户端
+  - [CommonSetupEvent.java](src/main/java/net/fodoth/skina/goldentweaks/event/CommonSetupEvent.java)
+  - [ClientSetupEvent.java](src/main/java/net/fodoth/skina/goldentweaks/event/ClientSetupEvent.java)
+- 更新 Mixin 配置与插件：注册本次新增的全部 Mixin、补齐「模组是否加载」门控，并在 preApply 阶段接入两个新增 ASM
+  - [GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)
+  - [goldentweaks.mixins.json](src/main/resources/goldentweaks.mixins.json)
+- 为模组元数据新增 `thaumichorizons` 可选依赖（AFTER / BOTH）
+  - [neoforge.mods.toml](src/main/templates/META-INF/neoforge.mods.toml)
+
+### 依赖
+- 新增 AI-Improvements、watut、linearbearing 编译依赖，并升级 neoguanniao 至 3.5.1
+  - [libs/README.md](libs/README.md)
+
 ## 2026.09.16 - v4.5
 
 ### Thaumcraft
