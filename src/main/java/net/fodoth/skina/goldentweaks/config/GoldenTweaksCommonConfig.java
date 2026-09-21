@@ -83,6 +83,13 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.BooleanValue HORIZONS_VORTEX_BREAKS_BLOCKS;
 
+    // =========================
+    // oei 兼容
+    // =========================
+    public static final ModConfigSpec.BooleanValue ORE_UNIFICATION_GUARD;
+
+    public static final ModConfigSpec.BooleanValue ORE_UNIFICATION_SELF_HEAL;
+
     static {
 
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -174,6 +181,24 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("pickup.lootr_hold_pickup_interval"))
                 .comment(comment("pickup.lootr_hold_pickup_interval"))
                 .defineInRange("lootrHoldPickupInterval", 5, 1, Integer.MAX_VALUE);
+
+        builder.pop();
+
+        // =========================
+        // oei 兼容 group
+        // =========================
+        builder.translation(key("oei"));
+        builder.push("oei");
+
+        ORE_UNIFICATION_GUARD = builder
+                .translation(key("oei.ore_unification_guard"))
+                .comment(comment("oei.ore_unification_guard"))
+                .define("oreUnificationGuard", true);
+
+        ORE_UNIFICATION_SELF_HEAL = builder
+                .translation(key("oei.ore_unification_self_heal"))
+                .comment(comment("oei.ore_unification_self_heal"))
+                .define("oreUnificationSelfHeal", true);
 
         builder.pop();
 
@@ -370,6 +395,14 @@ public final class GoldenTweaksCommonConfig {
 
     public static boolean disableAdvancedInfusionItems() {
         return DISABLE_ADVANCED_INFUSION_ITEMS.get();
+    }
+
+    public static boolean isOreUnificationGuardEnabled() {
+        return ORE_UNIFICATION_GUARD.get();
+    }
+
+    public static boolean isOreUnificationSelfHealEnabled() {
+        return ORE_UNIFICATION_SELF_HEAL.get();
     }
 
     public static int getEmSolarMultiplier() {
