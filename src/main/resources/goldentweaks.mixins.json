@@ -108,6 +108,7 @@
     "fix.lootr.LootrItemFrameMixin",
     "fix.ftbquests.RewardTypesMixin",
     "fix.fidworkblock.ExampleModMixin",
+    "fix.oneenoughitem.RawTagCaptureMixin",
     "fix.oneenoughitem.UtilsMixin",
     "fix.ramization.SmartGCSchedulerMixin",
     "fix.lootr.LootrOpenedStateMixin",

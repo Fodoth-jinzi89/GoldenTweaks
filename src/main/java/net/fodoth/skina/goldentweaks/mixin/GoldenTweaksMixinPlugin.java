@@ -69,7 +69,9 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("emi");
         }
 
-        if (mixinClassName.endsWith("fix.oneenoughitem.UtilsMixin")) {
+        if (mixinClassName.endsWith("fix.oneenoughitem.UtilsMixin")
+                || mixinClassName.endsWith("fix.oneenoughitem.RawTagCaptureMixin")
+                || mixinClassName.endsWith("shut.oei.OneenoughitemMixin")) {
             return isModLoaded("oneenoughitem");
         }
 

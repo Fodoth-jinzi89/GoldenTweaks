@@ -26,6 +26,7 @@ import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
 import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
 import net.fodoth.skina.goldentweaks.compat.lootr.LootrQuickLootEvent;
+import net.fodoth.skina.goldentweaks.compat.oei.OreUnificationGuard;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
@@ -122,6 +123,11 @@ public class GoldenTweaks {
             LOGGER.info("Detected lootr, registering quick loot interaction");
             // 快速拾取：按住右键直接拿取 Lootr 容器内的战利品（见 compat/lootr/LootrQuickLootEvent）
             NeoForge.EVENT_BUS.register(LootrQuickLootEvent.class);
+        }
+
+        if (ModList.get().isLoaded("oneenoughitem")) {
+            // 启动自检 OEI 统一规则是否生效，必要时触发一次重载自愈（见 compat/oei/OreUnificationGuard）
+            NeoForge.EVENT_BUS.register(OreUnificationGuard.class);
         }
 
         if (ModList.get().isLoaded("thaumicbases")) {
