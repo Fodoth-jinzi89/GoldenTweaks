@@ -1,5 +1,42 @@
 # GoldenTweaks Update Log
 
+## 2026.09.21 - v4.7
+
+### 模组兼容
+- 修复 OEI（One Enough Item）物品统一规则在服务端全部失效的问题：OELib 在数据包 reload 期间校验物品标签，而原版要等所有 reload listener 跑完才把 `tags/item` 绑定进注册表，于是全部 `#c:xxx` 规则被判定为 `deferred`；deferred 数据既不会重试、`getAllData()` 也读不到，表现为重复的矿物锭、配方补全异常
+  - 新增原始标签回退解析器：注册表未就绪时直接读取数据包原始 `tags/item` 并展开（含嵌套标签与 `replace` 语义），注册表可用时不介入
+  - [OeiRawTagResolver.java](src/main/java/net/fodoth/skina/goldentweaks/compat/oei/OeiRawTagResolver.java)
+  - 新增 `ResourceManager` 捕获 Mixin，在 reload prepare 阶段保存当前数据包资源管理器供回退解析使用
+  - [RawTagCaptureMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/oneenoughitem/RawTagCaptureMixin.java)
+  - `Utils#isTagExists` 与 `Utils#getItemsOfTag` 在注册表查询失败时回退到原始数据包，注册表可用时行为完全不变
+  - [UtilsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/oneenoughitem/UtilsMixin.java)
+  - [GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)
+- 新增物品统一自检与自愈：服务端启动后检查统一规则是否真正生效（无规则则跳过、有规则但运行时映射为空则报错），必要时自动触发一次资源重载让规则重新加载
+  - [OreUnificationGuard.java](src/main/java/net/fodoth/skina/goldentweaks/compat/oei/OreUnificationGuard.java)
+  - 新增配置 `oei.oreUnificationGuard`（启动自检，默认开启）与 `oei.oreUnificationSelfHeal`（自愈重载，默认开启）
+  - [GoldenTweaksCommonConfig.java](src/main/java/net/fodoth/skina/goldentweaks/config/GoldenTweaksCommonConfig.java)
+- OEI 日志从完全静音改为转发 + 节流：DEBUG/TRACE 丢弃、ERROR/FATAL 始终保留、INFO/WARN 去重并限配额，避免为压制刷屏而丢失有价值的告警
+  - [ThrottledForwardingLogger.java](src/main/java/net/fodoth/skina/goldentweaks/util/ThrottledForwardingLogger.java)
+  - [OneenoughitemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/oei/OneenoughitemMixin.java)
+
+### Thaumcraft
+- 修复专用服务器上客户端要素注册表少于服务端、研究台界面要素栏为空且点击要素命中错误要素的问题：客户端 `ResourceManager` 只暴露 `assets/`，不会加载 `data/<namespace>/thaumcraft/aspects/`，而研究台菜单按注册表索引同步要素池、加成与发现，索引错位即导致两侧要素栏清空
+  - 新增客户端要素注册：登录时用客户端自身数据包的 `SERVER_DATA` 视图重新加载，`TreeMap` 列举顺序与条件检查同服务端加载器完全一致，且注册时机（各模组构造完成之后）也与服务端相同
+  - [GTAspectClientRegistration.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTAspectClientRegistration.java)
+  - [GoldenTweaks.java](src/main/java/net/fodoth/skina/goldentweaks/GoldenTweaks.java)
+  - [GTAspectEntry.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectEntry.java)
+
+### 修复
+- 修复 `RawTagCaptureMixin` 注入描述符不匹配导致模组加载直接崩溃的问题（`InvalidInjectionException: Invalid descriptor`）：目标方法有返回值，handler 必须接收 `CallbackInfoReturnable`
+  - [RawTagCaptureMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/oneenoughitem/RawTagCaptureMixin.java)
+
+### 发布
+- 新增 CurseForge / Modrinth 上传任务与凭证加载逻辑，支持一条命令同时发布两个平台
+  - [publish-platforms.gradle](gradle/publish-platforms.gradle)
+- 补充 OEI 兼容相关的中英文配置文案
+  - [zh_cn.json](src/main/resources/assets/goldentweaks/lang/zh_cn.json)
+  - [en_us.json](src/main/resources/assets/goldentweaks/lang/en_us.json)
+
 ## 2026.09.19 - v4.6
 
 ### Thaumcraft

@@ -15,6 +15,7 @@ import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftRecipeLoader;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.BrainJarResearchEvent;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.ThaumometerStorageScanQueue;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAnimatedIconAnimator;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAspectClientRegistration;
 import net.fodoth.skina.goldentweaks.compat.thaumicbases.ThaumicCropHarvestEvent;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
@@ -144,6 +145,7 @@ public class GoldenTweaks {
         }
         if (ModList.get().isLoaded("thaumcraft")) {
             NeoForge.EVENT_BUS.register(GTAnimatedIconAnimator.class);
+            NeoForge.EVENT_BUS.register(GTAspectClientRegistration.class);
         }
         if (ModList.get().isLoaded("renderblender")) {
             LOGGER.info("Detected renderblender, registering compatibility content");

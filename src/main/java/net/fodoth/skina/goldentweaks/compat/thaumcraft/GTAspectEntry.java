@@ -238,7 +238,7 @@ public final class GTAspectEntry {
 
     // ---- Resource loading -------------------------------------------------
 
-    static void load(ResourceManager resourceManager) {
+    public static void load(ResourceManager resourceManager) {
         List<GTAspectEntry> entries = new ArrayList<>();
         ThaumcraftRecipeUtil.load(resourceManager, ENTRY_PATH, ENTRY_NAME, (json, location) -> {
             GTAspectEntry entry = fromJson(json);
