@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -59,6 +60,18 @@ public final class GTAspectEntry {
 
     /** Tags whose icons are drawn with the cosmic proxy item model (see {@code "cosmic": true}). */
     private static final Set<String> COSMIC_TAGS = new HashSet<>();
+
+    /**
+     * Composition overrides for aspects that ship with Thaumcraft itself; those have no JSON
+     * definition of their own, so rebalancing their recipe needs an entry here.
+     * See {@link #applyBuiltInCompositions()}.
+     */
+    private static final Map<String, String[]> BUILT_IN_COMPOSITIONS = Map.of(
+            "tempus", new String[]{"permutatio", "vacuos"},
+            "profundum", new String[]{"spelunca", "space"},
+            "gravitas", new String[]{"saxum", "motus"},
+            "imperium", new String[]{"humanus", "superbia"}
+    );
 
     private final String tag;
     private final int color;
@@ -238,7 +251,7 @@ public final class GTAspectEntry {
 
     // ---- Resource loading -------------------------------------------------
 
-    public static void load(ResourceManager resourceManager) {
+    static void load(ResourceManager resourceManager) {
         List<GTAspectEntry> entries = new ArrayList<>();
         ThaumcraftRecipeUtil.load(resourceManager, ENTRY_PATH, ENTRY_NAME, (json, location) -> {
             GTAspectEntry entry = fromJson(json);
@@ -249,6 +262,42 @@ public final class GTAspectEntry {
             return false;
         });
         registerAll(entries);
+        applyBuiltInCompositions();
+    }
+
+    /**
+     * Overrides the composition of aspects that ship with Thaumcraft and therefore have no JSON
+     * definition of their own. They cannot be recreated (their colour is final), but rebalancing
+     * their recipe is enough — aspect tiers are derived from {@code components} at runtime.
+     *
+     * <p>Runs after {@link #registerAll}, so the components defined by the mod's own JSON files
+     * are already registered. The replacement pairs are deliberately unique, so no aspect is
+     * reachable through two different combinations.</p>
+     */
+    private static void applyBuiltInCompositions() {
+        BUILT_IN_COMPOSITIONS.forEach((tag, componentTags) -> {
+            Aspect aspect = Aspect.get(tag);
+            if (aspect == null) {
+                return;
+            }
+
+            Aspect[] components = new Aspect[componentTags.length];
+            for (int i = 0; i < componentTags.length; i++) {
+                Aspect component = Aspect.get(componentTags[i]);
+                if (component == null) {
+                    GoldenTweaks.LOGGER.warn(
+                            "Cannot override the composition of Thaumcraft aspect '{}': unknown component '{}'.",
+                            tag,
+                            componentTags[i]
+                    );
+                    return;
+                }
+                components[i] = component;
+            }
+
+            aspect.setComponents(components);
+            GoldenTweaks.LOGGER.debug("Overrode the composition of Thaumcraft aspect '{}'.", tag);
+        });
     }
 
     private static void registerAll(List<GTAspectEntry> entries) {

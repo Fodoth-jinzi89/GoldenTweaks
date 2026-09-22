@@ -26,8 +26,12 @@ import java.util.List;
  *   <li>菜单槽 0：结果槽</li>
  *   <li>菜单槽 1：法杖槽</li>
  *   <li>菜单槽 2~10：3x3 合成网格（对应容器槽 0~8）</li>
- *   <li>菜单槽 11~46：玩家背包 + 快捷栏</li>
+ *   <li>菜单槽 11~19：充能槽（仅充能工作台可见，其余情况下位置为 -10000）</li>
+ *   <li>菜单槽 20~46：玩家背包；菜单槽 47~55：快捷栏</li>
  * </ul></p>
+ *
+ * <p>可取材范围必须正好是玩家背包 + 快捷栏（菜单槽 20~55）：漏掉快捷栏会让材料放在
+ * 快捷栏里的配方无法一键转移，把隐藏的充能槽算进去则会往看不见的槽位塞物品。</p>
  *
  * <p>转移/清空逻辑直接复用 EMI 内置的 {@code EmiRecipeFiller}（与原版工作台相同的
  * 默认实现），本类只需描述槽位关系。对任意配方均声明支持，因此奥术配方（经 EMI 的
@@ -37,7 +41,7 @@ public class ArcaneWorkbenchEmiRecipeHandler implements StandardRecipeHandler<Ar
 
     @Override
     public List<Slot> getInputSources(ArcaneWorkbenchMenu menu) {
-        return slotRange(menu, 11, 47);
+        return slotRange(menu, 20, 56);
     }
 
     @Override

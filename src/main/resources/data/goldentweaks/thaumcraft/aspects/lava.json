@@ -3,8 +3,8 @@
   "tag": "lava",
   "color": "#a43900",
   "components": [
-    "terra",
-    "ignis"
+    "ardor",
+    "aqua"
   ],
   "image": "goldentweaks:textures/aspects/lava.png"
 }

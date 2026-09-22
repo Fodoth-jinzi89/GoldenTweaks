@@ -83,7 +83,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("krypton");
         }
 
-        if (mixinClassName.endsWith("fix.carryon.client.CarriedObjectRenderMixin")) {
+        if (mixinClassName.endsWith("fix.carryon.client.CarriedObjectRenderMixin")
+                || mixinClassName.endsWith("fix.carryon.client.CarryRenderHelperMixin")) {
             return isModLoaded("carryon");
         }
 
@@ -202,6 +203,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.endsWith("fix.tmrv.JEIPluginManagerMixin")) {
             return isModLoaded("toomanyrecipeviewers");
+        }
+
+        if (mixinClassName.endsWith("fix.papi.ClientWorldLeaveCleanupMixin")) {
+            return isModLoaded("papi");
         }
 
         // TMRV 的滚动网格/滑条与九宫格绘制：修复滚轮不滚动（被 EMI 当翻页）与滑条贴图错位

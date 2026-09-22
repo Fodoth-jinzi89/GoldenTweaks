@@ -3,8 +3,8 @@
   "tag": "history",
   "color": "#a1a1a1",
   "components": [
-    "humanus",
-    "tempus"
+    "priscus",
+    "reliquiae"
   ],
   "image": "goldentweaks:textures/aspects/history.png"
 }

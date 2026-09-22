@@ -6,7 +6,6 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -25,20 +24,29 @@ import tschipp.carryon.client.render.CarriedObjectRender;
  * entity model/texture mods such as EMF (Entity Model Features) and ETF (Entity Texture Features) hook, so
  * rendering the entity through {@code EntityRenderer#render} directly makes EMF/ETF produce their default
  * variant - a carried baby chicken then shows the adult model and flickers between the two variants because
- * both passes draw the same entity. So instead of replacing the call, the pose is set up around it:</p>
+ * both passes draw the same entity. So instead of replacing the call, the pose is scaled around it:</p>
  *
  * <ol>
- *   <li>translate by {@code position - camera} (exactly what the dispatcher would do),</li>
- *   <li>scale about that origin,</li>
- *   <li>call the dispatcher with the camera position, so its own
- *       {@code position + renderOffset - camera} reduces to the renderer's offset alone - the entity stays
- *       exactly where Carry On put it, only pose/size change, and EMF/ETF still see a dispatcher call.</li>
+ *   <li>scale about the pose origin, which Carry On has already moved onto the creature (it passes
+ *       {@code 0, 0, 0} to the dispatcher and brings its own translation, in first person as well as in
+ *       third person),</li>
+ *   <li>call the dispatcher with Carry On's own arguments, so its {@code position + renderOffset} and
+ *       therefore the creature's place stay exactly as Carry On put them - only the size changes, and
+ *       EMF/ETF still see a dispatcher call.</li>
  * </ol>
+ *
+ * <p>Do <b>not</b> reintroduce a camera correction here: the dispatcher's {@code double x, y, z} are already
+ * camera relative, it does not subtract the camera itself. Mixing in {@code Camera#getPosition()} leaves a
+ * {@code camera * (scale - 1)} offset, which is invisible only while the scale happens to be exactly
+ * {@code 1.0} (anything shorter than the carry box) and throws everything taller - a carried villager, for
+ * instance - far off screen.</p>
  *
  * <p>Live entities are prepared with {@link GTCreaturePreview#prepareStored} because Carry On's entity is
  * out of the level (nothing ticks it) but still a real entity: only render pose and animation clock may be
- * touched. A full {@code Mob#tick()} is never used - the player rides this entity, so ticking it would let
- * the player be dragged around by it.</p>
+ * touched. That clock is per entity per game tick, so it only works while the stand-in entity is stable -
+ * see {@link net.fodoth.skina.goldentweaks.compat.carryon.client.CarryOnCarriedEntityCache}, which the
+ * {@code CarryRenderHelperMixin} hooks in. A full {@code Mob#tick()} is never used - the player rides this
+ * entity, so ticking it would let the player be dragged around by it.</p>
  */
 @Mixin(value = CarriedObjectRender.class, remap = false)
 public class CarriedObjectRenderMixin {
@@ -74,15 +82,12 @@ public class CarriedObjectRenderMixin {
         GTCreaturePreview.prepareStored(mob);
 
         float scale = GTCreaturePreview.fitScale(mob, GTCreaturePreview.CARRY_TARGET_HEIGHT);
-        Vec3 camera = dispatcher.camera.getPosition();
 
         pose.pushPose();
-        // The dispatcher's own maths is "translate(position + renderOffset - camera)". Pre-applying
-        // "position - camera" and handing it the camera position leaves exactly the render offset for the
-        // dispatcher to apply, so the entity does not move; the scale in between is what makes it fit.
-        pose.translate(x - camera.x, y - camera.y, z - camera.z);
+        // Carry On has already moved the pose onto the creature and passes 0, 0, 0 to the dispatcher, so
+        // scaling here is scaling about the creature's own origin; the dispatcher's own maths is left alone.
         pose.scale(scale, scale, scale);
-        dispatcher.render(entity, camera.x, camera.y, camera.z, rotationYaw, partialTick, pose, buffer, packedLight);
+        dispatcher.render(entity, x, y, z, rotationYaw, partialTick, pose, buffer, packedLight);
         pose.popPose();
     }
 }

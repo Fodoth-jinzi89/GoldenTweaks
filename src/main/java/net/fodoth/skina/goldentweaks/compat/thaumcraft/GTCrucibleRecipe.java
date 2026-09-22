@@ -55,7 +55,7 @@ public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecip
         }
     }
 
-    public static GTCrucibleRecipe fromJson(JsonObject json) {
+    public static GTCrucibleRecipe fromJson(JsonObject json, ResourceLocation location) {
         if (json == null || !ThaumcraftRecipeUtil.isType(json, TYPE)) {
             return null;
         }
@@ -81,8 +81,9 @@ public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecip
             return null;
         }
 
-        ResourceLocation source = ResourceLocation.fromNamespaceAndPath("goldentweaks", research);
-        Object catalyst = ThaumcraftRecipeUtil.parseIngredient(catalystObject, source, RECIPE_NAME, "catalyst");
+        // 日志用的 recipe id 必须是真实文件位置：research 是研究 key（大写），
+        // 拿它拼 ResourceLocation 会直接抛异常并让整个配方加载失败。
+        Object catalyst = ThaumcraftRecipeUtil.parseIngredient(catalystObject, location, RECIPE_NAME, "catalyst");
         if (catalyst == null) {
             return null;
         }
@@ -93,7 +94,7 @@ public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecip
 
     public static void load(ResourceManager resourceManager) {
         ThaumcraftRecipeUtil.load(resourceManager, RECIPE_PATH, RECIPE_NAME, (json, location) -> {
-            GTCrucibleRecipe recipe = fromJson(json);
+            GTCrucibleRecipe recipe = fromJson(json, location);
             Object registered = recipe == null ? null : recipe.register();
             GTResearchRecipePages.put(location, registered);
             return registered != null;

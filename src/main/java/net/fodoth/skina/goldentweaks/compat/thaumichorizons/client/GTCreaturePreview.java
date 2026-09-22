@@ -101,6 +101,11 @@ public final class GTCreaturePreview {
      * direction is pressed). So the creature's animation clock is advanced narrowly instead - NeoGuanNiao
      * birds get their own client-side controller tick, everything else gets the animation counter bumped -
      * once per game tick, wrapped in a try/catch so a stored creature can never break rendering.</p>
+     *
+     * <p>That "once per game tick" only holds while the caller keeps handing in the <b>same</b> entity: the
+     * guard is per entity. The jar/vat tick the creature they store, and Carry On's stand-in entity is kept
+     * stable by the cache its renderer is hooked to; a caller that rebuilds the entity every frame will run
+     * the clock every frame instead.</p>
      */
     public static void prepareStored(Mob mob) {
         if (PREPARED.add(mob)) {

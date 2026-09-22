@@ -21,7 +21,7 @@ everything through a config file.
 | Minecraft | 1.21.1 |
 | Loader | NeoForge 21.1.248+ |
 | Java | 21 |
-| Version | 4.7 |
+| Version | 4.7.1 |
 | Author | Fodoth_jinzi89 |
 | License | PolyForm Noncommercial 1.0.0 |
 

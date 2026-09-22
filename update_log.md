@@ -1,5 +1,16 @@
 # GoldenTweaks Update Log
 
+## 2026.09.22 - v4.7.1
+
+### Thaumcraft
+- 修复 JSON 坩埚配方在专用服务器上全部加载失败、并连带让引用它们的研究无法注册的问题：`GTCrucibleRecipe` 曾把「研究 key」（大写，如 `GT_SHARD_ALCHEMY`）拿去拼 `ResourceLocation` 只当日志标签用，而 `ResourceLocation` 不允许大写字符，异常直接把每个坩埚配方的加载整个抛掉。表现是 18 个坩埚配方全部 `skipped`、研究页里引用的 `goldentweaks:air_shard` 等解析失败、研究随之注册不上：客户端手册能显示但点击解锁报「已拒绝未知研究请求」，服务端 `/tc research` 也查不到，挂在同一研究下的配方全部不可用
+  - 改用配方文件的真实 `location` 作为解析/日志上下文（与 `GTArcaneRecipe`、`GTInfusionRecipe`、`GTRiftRecipe` 一致）
+  - [GTCrucibleRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTCrucibleRecipe.java)
+- 修复奥术工作台的 EMI 一键转移取材范围错误：`getInputSources` 用的是菜单槽 `11~46`，既漏掉快捷栏（`47~55`），又把隐藏的充能槽（`11~19`）算了进去，材料放在快捷栏里的配方无法一键转移进 3x3 合成格
+  - [ArcaneWorkbenchEmiRecipeHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/emi/ArcaneWorkbenchEmiRecipeHandler.java)
+- 优化奥术工作台首次打开时的卡顿：结果刷新会先做一次 `RecipeManager#getRecipeFor` 的全量原版配方扫描，而打开界面时（以及每次取走成品后）合成格是空的、不可能匹配任何配方；现在空网格直接跳过这次扫描，语义不变
+  - [ArcaneWorkbenchMenuMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ArcaneWorkbenchMenuMixin.java)
+
 ## 2026.09.21 - v4.7
 
 ### 模组兼容
