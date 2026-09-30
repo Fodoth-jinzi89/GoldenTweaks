@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:oritech_gems"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "vitreus": 3
+  }
+}

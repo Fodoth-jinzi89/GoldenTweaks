@@ -33,23 +33,16 @@
       "armor/helmet": 6.096,
       "armor/leggings": 12.192,
       "armor_durability": 63.218,
-      "armor_toughness": 7.315,
       "attack_damage": 6.502,
-      "charging_value": 0.939,
-      "draw_speed": 0.287,
+      "charging_value": 0.188,
       "durability": 1137.92,
-      "enchantment_value": 23.005,
+      "enchantment_value": 4.601,
       "harvest_speed": 15.443,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
         "level_hint": "4",
         "name": "netherite"
       },
-      "magic_armor": 15.443,
-      "magic_damage": 5.527,
-      "projectile_accuracy": 1.158,
-      "projectile_speed": 1.19,
-      "ranged_damage": 2.845,
       "rarity": 42.48,
       "traits": [
         {

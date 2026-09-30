@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeroworks:copper_yoke_module"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

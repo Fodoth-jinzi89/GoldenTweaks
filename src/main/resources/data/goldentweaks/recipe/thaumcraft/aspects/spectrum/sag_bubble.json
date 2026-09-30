@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:sag_bubble"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

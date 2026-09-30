@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:air_jet"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

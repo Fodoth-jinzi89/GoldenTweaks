@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:attunement_altar"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

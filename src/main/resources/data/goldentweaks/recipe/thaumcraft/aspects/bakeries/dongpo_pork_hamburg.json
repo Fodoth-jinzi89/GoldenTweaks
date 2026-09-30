@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:dongpo_pork_hamburg"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

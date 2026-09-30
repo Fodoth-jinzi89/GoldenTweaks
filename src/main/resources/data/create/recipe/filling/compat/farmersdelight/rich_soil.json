@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "farmersdelight:organic_compost"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "farmersdelight:rich_soil"
+    }
+  ]
+}

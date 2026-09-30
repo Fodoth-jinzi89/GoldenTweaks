@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:enchanter_spawn_egg"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "bestia": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 2
+  }
+}

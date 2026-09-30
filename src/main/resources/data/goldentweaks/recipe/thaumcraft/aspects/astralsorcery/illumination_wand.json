@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:illumination_wand"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

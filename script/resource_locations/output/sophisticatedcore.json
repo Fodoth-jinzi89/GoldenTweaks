@@ -1,10 +1,18 @@
 {
   "items": {
+    "sophisticatedcore:ender_linker": "Ender Linker",
+    "sophisticatedcore:ender_linker.tooltip.blank": "Right-click a compatible storage or craft with one",
+    "sophisticatedcore:ender_linker.tooltip.bound": "Right-click or craft with an unlinked compatible storage to add it",
+    "sophisticatedcore:ender_linker.tooltip.linker_pending": "Linked when crafted",
+    "sophisticatedcore:ender_linker.tooltip.linker_target": "Linked to: %s",
+    "sophisticatedcore:stack_upgrade_conversion.tooltip": "Right-click an installed Stack Upgrade to convert it",
     "sophisticatedcore:storage.tooltip.empty": "No Upgrades or Inventory Contents",
     "sophisticatedcore:storage.tooltip.energy": "%s FE",
     "sophisticatedcore:storage.tooltip.fluid": "%s mB %s",
     "sophisticatedcore:storage.tooltip.fluid_empty": "Empty tank",
     "sophisticatedcore:storage.tooltip.inventory": "Inventory",
+    "sophisticatedcore:storage.tooltip.linked_storage_endpoint": "Linked Storage Endpoint: %s",
+    "sophisticatedcore:storage.tooltip.linked_storage_group": "Linked Storage Group: %s",
     "sophisticatedcore:storage.tooltip.press_for_contents": "Press <%s> to View Contents",
     "sophisticatedcore:storage.tooltip.right_click_to_add_to_storage": "Right Click To Add",
     "sophisticatedcore:storage.tooltip.shift": "Left Shift",

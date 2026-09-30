@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:grappling_wand"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

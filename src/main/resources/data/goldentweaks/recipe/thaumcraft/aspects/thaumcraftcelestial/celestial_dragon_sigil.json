@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:celestial_dragon_sigil"
+  },
+  "aspects": {
+    "cosmic": 3,
+    "lucrum": 3,
+    "praecantatio": 2
+  }
+}

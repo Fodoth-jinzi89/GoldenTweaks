@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:blueprint_budget"
+  },
+  "aspects": {
+    "charta": 3,
+    "cognitio": 2
+  }
+}

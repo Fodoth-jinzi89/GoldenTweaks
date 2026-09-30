@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aces_spell_utils:example_impact_frame_white_aberration"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "astralsorcery:illumination_spark"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

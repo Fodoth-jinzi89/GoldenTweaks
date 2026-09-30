@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily:sweet_oil_dough"
+  },
+  "aspects": {
+    "potentia": 3,
+    "victus": 3,
+    "fames": 2,
+    "ignis": 2
+  }
+}

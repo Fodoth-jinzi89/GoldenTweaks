@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "thaumicbases:briar_seed_bag",
+    "thaumicbases:glieonia_seed",
+    "thaumicbases:knose_seed",
+    "thaumicbases:lazullia_seeds",
+    "thaumicbases:lucrite_seeds",
+    "thaumicbases:metalleat_seeds",
+    "thaumicbases:plax_seeds",
+    "thaumicbases:redlon_seeds",
+    "thaumicbases:sweed_seeds",
+    "thaumicbases:tobacco_seeds",
+    "thaumicbases:void_seed",
+    "thaumic_tinkerer:infused_seeds"
+  ]
+}

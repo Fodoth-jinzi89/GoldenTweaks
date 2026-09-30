@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:ceiling_tile_solar"
+  },
+  "aspects": {
+    "lux": 3,
+    "potentia": 3
+  }
+}

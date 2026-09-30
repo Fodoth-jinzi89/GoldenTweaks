@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:inert_blood_wand_rod"
+  },
+  "aspects": {
+    "corpus": 3,
+    "evil": 3,
+    "praecantatio": 2
+  }
+}

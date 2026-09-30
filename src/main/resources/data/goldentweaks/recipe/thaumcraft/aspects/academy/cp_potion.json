@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:cp_potion"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

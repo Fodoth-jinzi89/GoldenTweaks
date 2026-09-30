@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeroworks:copper_wheel_module"
+  },
+  "aspects": {
+    "metallum": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

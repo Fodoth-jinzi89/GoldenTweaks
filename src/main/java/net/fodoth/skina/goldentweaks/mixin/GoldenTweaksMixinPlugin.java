@@ -51,6 +51,20 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("compactmachines");
         }
 
+        // Mekanism solar/wind machines running inside Compact Machines dimensions
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.mekanism.")) {
+            if (mixinClassName.endsWith("MekMMSolarCheckMixin")
+                    || mixinClassName.endsWith("MekMMLargeSolarNeutronActivatorMixin")) {
+                return isModLoaded("mekmm") && isModLoaded("mekanism") && isModLoaded("compactmachines");
+            }
+            // Mekanism Advanced Generators ships its own solar panel copies in com.pocky.solarpanels
+            if (mixinClassName.endsWith("SolarPanelsSolarCheckMixin")
+                    || mixinClassName.endsWith("SolarPanelsSolarGeneratorMixin")) {
+                return isModLoaded("mekanismadvancedgenerators") && isModLoaded("compactmachines");
+            }
+            return isModLoaded("mekanism") && isModLoaded("mekanismgenerators") && isModLoaded("compactmachines");
+        }
+
         if (mixinClassName.endsWith("fix.watut.PlayerStatusManagerClientMixin")) {
             return isModLoaded("watut");
         }
@@ -64,9 +78,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("emi");
         }
 
-        if (mixinClassName.endsWith("fix.emi.EmiSearchWidgetMixin")
-                || mixinClassName.endsWith("fix.emi.EmiSearchMixin")) {
+        if (mixinClassName.endsWith("fix.emi.EmiSearchMixin")
+                || mixinClassName.endsWith("fix.emi.EmiSearchCompiledQueryMixin")) {
             return isModLoaded("emi");
+        }
+
+        // SilentGear 的预制工具（GearItem）从 EMI 索引中隐藏
+        if (mixinClassName.endsWith("fix.silentgear.SilentGearEmiHiderMixin")) {
+            return isModLoaded("silentgear") && isModLoaded("emi");
         }
 
         if (mixinClassName.endsWith("fix.oneenoughitem.UtilsMixin")
@@ -77,6 +96,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.endsWith("fix.fidworkblock.ExampleModMixin")) {
             return isModLoaded("fidworkblock");
+        }
+
+        if (mixinClassName.endsWith("fix.kaleidoscope.SoupBaseManagerMixin")) {
+            return isModLoaded("kaleidoscope_cookery");
+        }
+
+        if (mixinClassName.endsWith("fix.tradecycling.MerchantScreenTradeCyclingMixin")) {
+            return isModLoaded("trade_cycling");
         }
 
         if (mixinClassName.endsWith("fix.krypton.MinecraftCompressDecoderMixin")) {
@@ -92,8 +119,24 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ramization");
         }
 
+        // create_connected refreshes item visibility through the JEI runtime API, which TMRV locks too early
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.createconnected")) {
+            return isModLoaded("toomanyrecipeviewers")
+                    && checkIfPresent("com.hlysine.create_connected.compat.CreateConnectedJEI");
+        }
+
         if (mixinClassName.endsWith("fix.supplementaries.ConfigButtonMixin")) {
             return isModLoaded("supplementaries");
+        }
+
+        // Language Reload 的 separateTranslations 未初始化时，Entity.toString 在区块生成线程等
+        // 非客户端线程上会抛 NPE
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.languagereload")) {
+            return isModLoaded("languagereload");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.iceberg")) {
+            return isModLoaded("iceberg") && isModLoaded("emi");
         }
 
         if (mixinClassName.endsWith("fix.neoguanniao.client.BirdMovementControllerMixin")) {
@@ -120,6 +163,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("advanced_infusion");
         }
 
+        // Astral Sorcery 2.0.1 的 fillCreativeTab 被标 @OnlyIn(CLIENT)，专用服务器上会崩
+        if (mixinClassName.endsWith("fix.astralsorcery.CommonProxyCreativeTabMixin")) {
+            return isModLoaded("astralsorcery");
+        }
+
         if (mixinClassName.endsWith("fix.ae2helpers.WcwtEmiRecipeHandlerMixin")) {
             return isModLoaded("ae2helpers") && isModLoaded("wcwt") && isModLoaded("emi");
         }
@@ -132,7 +180,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2helpers") && isModLoaded("wcwt");
         }
 
-        if (mixinClassName.endsWith("fix.ae2.MEStorageScreenSearchMixin")) {
+        if (mixinClassName.endsWith("fix.ae2.NameSearchPredicateMixin")) {
             return isModLoaded("ae2");
         }
 
@@ -242,6 +290,16 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("carryon") && isModLoaded("carryonaerocompat");
         }
 
+        // c2me OpenCL 加速在屏幕底部显示的 "Compiling ..." 进度文本：吞掉写入，保持 PROGRESS_TEXT 为 null
+        if (mixinClassName.endsWith("shut.C2meOpenClProgressOverlayMixin")) {
+            return checkIfPresent("com.ishland.c2me.opts.accel.opencl.common.gen.OpenCLDevice");
+        }
+
+        // c2me 的“实验性版本”警告界面：启动时自动点掉
+        if (mixinClassName.endsWith("shut.C2meExperimentalWarningScreenMixin")) {
+            return checkIfPresent("com.ishland.c2me.base.common.client_warning.ModExperimentalWarningScreen");
+        }
+
         // 对于原版类的 mixin 应启用模组检查
         if (mixinClassName.contains("net.fodoth.skina.goldentweaks.mixin.shut.TouhouLostMaidLoggerMixin")) {
             return isModLoaded("touhou_lost_maid");
@@ -271,6 +329,23 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumcraft");
         }
 
+        if (mixinClassName.endsWith("fix.thaumcraft.AuraNodeBiomeConversionMixin")
+                || mixinClassName.endsWith("fix.thaumcraft.ThaumcraftBiomeMutationMixin")) {
+            return isModLoaded("thaumcraft");
+        }
+
+        // references Thaumic Bases' redlon stem block
+        if (mixinClassName.endsWith("fix.thaumcraft.CropUtilsMixin")) {
+            return isModLoaded("thaumcraft") && isModLoaded("thaumicbases");
+        }
+
+        if (mixinClassName.endsWith("feature.thaumcraft.ThaumcraftGolemEntityMixin")
+                || mixinClassName.endsWith("feature.thaumcraft.GolemConfigRuntimeMixin")
+                || mixinClassName.endsWith("feature.thaumcraft.GolemHarvestGoalMixin")
+                || mixinClassName.endsWith("feature.thaumcraft.GolemReturnHomeGoalMixin")) {
+            return isModLoaded("thaumcraft");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumcraftcelestial")) {
             return isModLoaded("thaumcraftcelestial");
         }
@@ -286,12 +361,45 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumichorizons");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumictinkerer")) {
+            return isModLoaded("thaumic_tinkerer");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thaumichorizons")) {
             return isModLoaded("thaumichorizons");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
             return isModLoaded("irons_jewelry");
+        }
+
+        // aeallpattern 的聚合样板展开缓存（匿名 LinkedHashMap 子类）上限过高，单独降档
+        if (mixinClassName.endsWith("fix.aeallpattern.AeAllPatternCacheCapMixin")) {
+            return checkIfPresent("io.github.langqi99.aeallpattern.aggregate.AggregatePatternExpander$1");
+        }
+
+        // 烘焙坊发酵罐只认本模组的全麦面粉，物品统一后需同时接受 OEI 替换后的物品
+        if (mixinClassName.endsWith("fix.bakeries.FermentationTankBlockMixin")) {
+            return isModLoaded("oneenoughitem")
+                    && checkIfPresent("com.renyigesai.bakeries.common.blocks.FermentationTankBlock");
+        }
+
+        // mekanicalcreate 的候选配方目录内层 HashMap 无上限，替换为有界 LRU
+        if (mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateCandidateCacheMixin")) {
+            return checkIfPresent("io.github.langqi99.mekanicalcreate.content.SimulationRecipeResolver");
+        }
+
+        // AcademyCraft 技能伤害按寂静装备「魔法攻击力」加成
+        if (mixinClassName.endsWith("feature.academy.AcademyDamageHelperMixin")) {
+            return isModLoaded("academy");
+        }
+
+        // zstdnet：端口标签重定位需要 mcwifipnp 的界面；聊天提示关闭只依赖 zstdnet
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.zstdnet.")) {
+            if (mixinClassName.endsWith("ZstdShareToLanPortLabelMixin")) {
+                return isModLoaded("zstdnet") && isModLoaded("mcwifipnp");
+            }
+            return isModLoaded("zstdnet");
         }
 
         return true;

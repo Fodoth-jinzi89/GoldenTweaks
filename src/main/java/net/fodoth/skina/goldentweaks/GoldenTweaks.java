@@ -17,9 +17,11 @@ import net.fodoth.skina.goldentweaks.compat.thaumcraft.ThaumometerStorageScanQue
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAnimatedIconAnimator;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTThaumcraftClientData;
 import net.fodoth.skina.goldentweaks.compat.thaumicbases.ThaumicCropHarvestEvent;
+import net.fodoth.skina.goldentweaks.compat.thaumicbases.GTThaumicBasesFurnaceCompat;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
+import net.fodoth.skina.goldentweaks.event.ClientWindowSizeGuard;
 import net.fodoth.skina.goldentweaks.event.ExspectrimentsClientCompatEvent;
 import net.fodoth.skina.goldentweaks.event.FamiliarProtectionEvent;
 import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
@@ -27,7 +29,9 @@ import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
 import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
 import net.fodoth.skina.goldentweaks.compat.lootr.LootrQuickLootEvent;
+import net.fodoth.skina.goldentweaks.compat.mcwifipnp.McWifiPnPZstdPortLayout;
 import net.fodoth.skina.goldentweaks.compat.oei.OreUnificationGuard;
+import net.fodoth.skina.goldentweaks.compat.ftbchunks.GTClaimProtection;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
@@ -131,14 +135,25 @@ public class GoldenTweaks {
             NeoForge.EVENT_BUS.register(OreUnificationGuard.class);
         }
 
+        if (ModList.get().isLoaded("ftbchunks")) {
+            LOGGER.info("Detected ftbchunks, enforcing claim protection for skill block breaking");
+            // 技能自行构造并发布 BreakEvent（绕过原版破坏流程）时，仍按 FTB Chunks 规则复核（见 compat/ftbchunks/GTClaimProtection）
+            NeoForge.EVENT_BUS.register(GTClaimProtection.class);
+        }
+
         if (ModList.get().isLoaded("thaumicbases")) {
             NeoForge.EVENT_BUS.register(ThaumicCropHarvestEvent.class);
+            // 进阶炼金炉的自动化：补上神秘基础学方块实体类型缺失的物品能力注册（见 compat/thaumicbases）
+            modEventBus.addListener(GTThaumicBasesFurnaceCompat::registerCapabilities);
         }
 
         modEventBus.addListener(this::onClientSetup);
     }
 
     private void onClientSetup(final FMLClientSetupEvent event) {
+        // 自定义早期窗口（Drippy 等）会锁死窗口尺寸，启动后按启动器的 --width/--height 纠正一次
+        NeoForge.EVENT_BUS.register(ClientWindowSizeGuard.class);
+
         if (ModList.get().isLoaded("createdieselgenerators")) {
             LOGGER.info("Detected createdieselgenerators, delayed init");
             event.enqueueWork(CDGSpriteShifts::init);
@@ -150,6 +165,12 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("renderblender")) {
             LOGGER.info("Detected renderblender, registering compatibility content");
             NeoForge.EVENT_BUS.register(RenderBlenderCosmicQueueFlushHandler.class);
+        }
+        if (ModList.get().isLoaded("mcwifipnp") && ModList.get().isLoaded("zstdnet")) {
+            LOGGER.info("Detected mcwifipnp + zstdnet, relocating the share-to-lan zstd port field");
+            // zstdnet 的 zstd 端口框会贴到 mcwifipnp 的第一标签页控件上且不随标签页切换，
+            // 这里把它移到所有设置项下方并只在第一个标签页显示（见 McWifiPnPZstdPortLayout）
+            NeoForge.EVENT_BUS.register(McWifiPnPZstdPortLayout.class);
         }
 
     }

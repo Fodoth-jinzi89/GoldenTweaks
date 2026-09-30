@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:cosmic_battle_axe"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "instrumentum": 3
+  }
+}

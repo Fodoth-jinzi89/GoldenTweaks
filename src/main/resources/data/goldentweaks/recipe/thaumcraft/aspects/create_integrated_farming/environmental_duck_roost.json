@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_integrated_farming:environmental_duck_roost"
+  },
+  "aspects": {
+    "messis": 3,
+    "metallum": 3,
+    "machina": 2
+  }
+}

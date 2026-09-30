@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "aces_spell_utils:test_boss"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

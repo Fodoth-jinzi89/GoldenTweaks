@@ -1,0 +1,121 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2lt:overload_crystal"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC16F98",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.ae2lt.overload_crystal"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 9.758,
+      "armor/boots": 1.464,
+      "armor/chestplate": 3.904,
+      "armor/helmet": 1.464,
+      "armor/leggings": 2.928,
+      "armor_durability": 15.081,
+      "armor_toughness": 1.242,
+      "attack_damage": 4.967,
+      "charging_value": 1.661,
+      "durability": 461.302,
+      "enchantment_value": 28.907,
+      "harvest_speed": 7.806,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 8.871,
+      "magic_damage": 5.677,
+      "rarity": 57.936,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:crackler"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.129
+      },
+      "charging_value": {
+        "operation": "ADD",
+        "value": 0.71
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 425.818
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 8.871
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 3.904
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 3.549
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 17.742
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:crackler"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lustrous"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgems:power"
+        }
+      ]
+    }
+  }
+}

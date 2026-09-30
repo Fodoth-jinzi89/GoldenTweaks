@@ -1,0 +1,71 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "ae2lt:overload_alloy"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFC5659F",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.ae2lt.overload_alloy"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 40.64,
+      "armor/boots": 6.096,
+      "armor/chestplate": 16.256,
+      "armor/helmet": 6.096,
+      "armor/leggings": 12.192,
+      "armor_durability": 63.218,
+      "attack_damage": 6.502,
+      "charging_value": 0.188,
+      "durability": 1137.92,
+      "enchantment_value": 4.601,
+      "harvest_speed": 15.443,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "rarity": 42.48,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:crackler"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:crackler"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:modular_display"
+  },
+  "aspects": {
+    "sensus": 2
+  }
+}

@@ -1,12 +1,22 @@
 {
   "items": {
+    "sable_schematic_api:blueprint_manuscript": "Blueprint Manuscript",
     "sable_schematic_api:blueprint_tool": "Sable Blueprint Tool",
+    "sable_schematic_api:camera": "Camera",
+    "sable_schematic_api:film": "Film",
+    "sable_schematic_api:honey_welder": "Honey Welder",
+    "sable_schematic_api:physics_manager": "Physics Structure Manager",
     "sable_schematic_api:survival_blueprint": "Survival Blueprint"
   },
   "blocks": {
     "sable_schematic_api:blueprint_budget": "Blueprint Budget",
     "sable_schematic_api:blueprint_cannon": "Blueprint Cannon",
-    "sable_schematic_api:blueprint_table": "Blueprint Table"
+    "sable_schematic_api:blueprint_table": "Blueprint Table",
+    "sable_schematic_api:film_printer": "Film Printer",
+    "sable_schematic_api:projector": "Film Projector",
+    "sable_schematic_api:projector_base": "Projector Base",
+    "sable_schematic_api:projector_screen": "Projector Screen",
+    "sable_schematic_api:projector_screen_locator": "Projector Screen Locator"
   },
   "entities": {}
 }

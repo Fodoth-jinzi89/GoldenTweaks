@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:dynamism_gem_day"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "vitreus": 3
+  }
+}

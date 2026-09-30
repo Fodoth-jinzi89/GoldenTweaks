@@ -1089,7 +1089,7 @@
   "trait.silentgear.eroded.desc": "工具受损时提升采掘速度并减少攻击伤害",
   "trait.silentgear.fiery": "盛焰",
   "trait.silentgear.fiery.desc": "依照装备种类加持火焰附加或火矢效果",
-  "trait.silentgear.fireproof": "防火",
+  "trait.silentgear.fireproof": "火焰摧毁免疫",
   "trait.silentgear.fireproof.desc": "掉落到火焰或熔岩中时不会被摧毁",
   "trait.silentgear.flame_ward": "火焰庇佑",
   "trait.silentgear.flame_ward.desc": "装备整套盔甲时提供抗火效果",

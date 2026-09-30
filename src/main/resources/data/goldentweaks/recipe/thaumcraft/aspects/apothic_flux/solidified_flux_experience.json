@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_flux:solidified_flux_experience"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "permutatio": 3,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "items": {
+    "apothic_flux:beehive_simulation_upgrade": "Beehive Simulation Upgrade",
+    "apothic_flux:compressed_solidified_flux_experience": "Compressed Solidified Flux Experience",
+    "apothic_flux:experience_bucket": "Experience Bucket",
+    "apothic_flux:solidified_flux_experience": "Solidified Flux Experience"
+  },
+  "blocks": {
+    "apothic_flux:exp_converter": "Experience Converter",
+    "apothic_flux:flux_anvil": "Flux Anvil",
+    "apothic_flux:flux_enchanting_table": "Flux Enchanting Table",
+    "apothic_flux:flux_spawner": "Flux Spawner",
+    "apothic_flux:flux_stats_bookshelf_tier_1": "Flux Adjustment Bookshelf (Tier 1)",
+    "apothic_flux:flux_stats_bookshelf_tier_2": "Flux Adjustment Bookshelf (Tier 2)",
+    "apothic_flux:flux_stats_bookshelf_tier_3": "Flux Adjustment Bookshelf (Tier 3)",
+    "apothic_flux:flux_stats_bookshelf_tier_4": "Flux Adjustment Bookshelf (Tier 4)",
+    "apothic_flux:ritual_core": "Ritual Core"
+  },
+  "entities": {}
+}

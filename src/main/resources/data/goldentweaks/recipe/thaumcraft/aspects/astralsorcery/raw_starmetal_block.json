@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:raw_starmetal_block"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

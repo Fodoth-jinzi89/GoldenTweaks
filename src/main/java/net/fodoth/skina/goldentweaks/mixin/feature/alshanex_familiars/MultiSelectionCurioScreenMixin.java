@@ -1,10 +1,9 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.alshanex_familiars;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.alshanex.familiarslib.data.PlayerFamiliarData;
+import net.alshanex.familiarslib.data.ClientFamiliarData;
 import net.alshanex.familiarslib.entity.AbstractSpellCastingPet;
 import net.alshanex.familiarslib.network.UpdateMultiSelectionCurioPacket;
-import net.alshanex.familiarslib.registry.AttachmentRegistry;
 import net.alshanex.familiarslib.screen.MultiSelectionCurioScreen;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GTMultiSelectionEntry;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.GoldenTweaksConsumableHelper;
@@ -93,10 +92,8 @@ public class MultiSelectionCurioScreenMixin {
             return;
         }
 
-        PlayerFamiliarData data =
-                minecraft.player.getData(
-                        AttachmentRegistry.PLAYER_FAMILIAR_DATA
-                );
+        ClientFamiliarData data =
+                ClientFamiliarData.get();
 
 
         Map<UUID, CompoundTag> familiars = data.getAllFamiliars();

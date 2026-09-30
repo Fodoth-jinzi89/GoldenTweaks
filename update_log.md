@@ -1,5 +1,104 @@
 # GoldenTweaks Update Log
 
+## 2026.09.30 - v4.7.2
+
+### EMI 搜索
+- 重写 EMI 搜索内核，取代 v4.6 引入的「输入去抖 + 后台节流」方案：原版每次搜索要做全量后缀数组排序（倍增算法，大整合包下秒级），新方案把索引换成 1~3 gram 倒排表、只与字符总数成正比且不排序，查询编译成位集表达式后用位运算求集合，不再物化候选列表、也不再对全表逐项扫描；正则项排在收窄后的候选集上最后执行
+  - 长度 ≤3 的 token 直接零误报命中，更长的按 posting 升序求交后 `String.contains` 校验（与 JEI 19+ 的 `BakedSubstringIndex` 同构）
+  - `EmiSearch.CompiledQuery` 构造时即编译出命中位集，`test` 改为按下标查位；索引外的 stack 返回 0 交回 EMI 原判定，且刻意不取消 `search`、不改 `stacks`，避免破坏 REMI 等挂钩方
+  - 常驻 daemon 线程 + 代次号协作取消取代原先按键触发的计时器，索引在求值途中被重建即放弃该次结果；构建失败记 ERROR 并回退原生搜索
+  - 装了 JustEnoughCharacters 时改用它注入 EMI 的拼音 Trie 解析 token，拼音搜索行为保持不变
+  - [GTEmiSearchEngine.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emi/GTEmiSearchEngine.java)、[GTEmiSubstringIndex.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emi/GTEmiSubstringIndex.java)、[GTBitSetHolder.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emi/GTBitSetHolder.java)、[EmiSearchMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiSearchMixin.java)、[EmiSearchCompiledQueryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiSearchCompiledQueryMixin.java)
+- 移除旧的去抖实现与配置：删除 `EmiSearchDebounce`、`EmiSearchTickHandler`、`EmiSearchWidgetMixin`，配置 `searchStartDelay`、`searchSpreadDuration` 一并删除；新增 `emiFastSearch`（默认开启）与 `emiSkipVanillaSearchIndex`（默认开启，跳过原版后缀数组的存储与排序）
+  - [GoldenTweaksClientConfig.java](src/main/java/net/fodoth/skina/goldentweaks/config/GoldenTweaksClientConfig.java)
+- 修复 EMI 隐藏物品时 `GearItem` 未生效的问题：EMI 独立于创造栏索引全部物品，在 `isHiddenFromRecipeViewers` 中一并隐藏 Silent Gear 的预制工具
+  - [SilentGearEmiHiderMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/silentgear/SilentGearEmiHiderMixin.java)
+
+### Thaumcraft
+- 新增「傀儡简化」模式（`simplifiedGolems`，默认开启）：开启后傀儡不再寻路，原地完成收获/伐木/钓鱼——`moveToward` 直接返回「已就位」、收获的「够得着」判定恒真、伐木不再要求站立点；回家不再寻路，改由 `customServerAiStep` 在傀儡停下后被推离时瞬移回原点；搜索间隔统一为 20 tick。用于规避移植版傀儡走不到目标卡死、聚集傀儡拿物品走不回原点放不进容器的问题
+  - [ThaumcraftGolemEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ThaumcraftGolemEntityMixin.java)、[GolemHarvestGoalMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/GolemHarvestGoalMixin.java)、[GolemReturnHomeGoalMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/GolemReturnHomeGoalMixin.java)、[GolemConfigRuntimeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/GolemConfigRuntimeMixin.java)、[GTGolemSimplify.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTGolemSimplify.java)
+- 新增「禁止腐化蔓延」（`disableTaintSpread`，默认开启）：运行期拦截把整列转成腐化之地的 `setColumn`，但腐化灵气节点自身的转化需要放行，故用旁路标记区分，世界生成用的另一重载不受影响；节点生物群系转化另加三个独立开关 `disablePureNodeBiomeConversion`（默认关）、`disableSinisterNodeBiomeConversion`（默认开）、`disableTaintedNodeBiomeConversion`（默认开）
+  - [ThaumcraftBiomeMutationMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftBiomeMutationMixin.java)、[AuraNodeBiomeConversionMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/AuraNodeBiomeConversionMixin.java)、[GTTaintConversionGuard.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTTaintConversionGuard.java)
+- 修复收获傀儡把瓜类藤蔓当作物摧毁、反而漏掉果实的问题：瓜藤（原版 `StemBlock`/`AttachedStemBlock` 及 id 以 `_stem` 结尾者）恒不可收获，果实恒可收获（新增方块标签 `goldentweaks:melon_fruits`），神秘基础学红莲只把 `ATTACHMENT` 状态算作果实
+  - [CropUtilsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/CropUtilsMixin.java)、[melon_fruits.json](src/main/resources/data/goldentweaks/tags/block/melon_fruits.json)
+- 修复物品要素标签缓存在客户端每个 tick 被清空的问题：失效入口由只挂 `bindRecipeManager` 改为同时挂 `refreshRecipeManager` 与 `clearServerRuntimeCaches`，且仅在配方管理器实例真正更换时清空
+  - [ItemAspectRegistryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ItemAspectRegistryMixin.java)
+- 稀有种族渲染器模型去重：`TCClientSetup` 为每种实体各注册一次通用渲染器（共 29 个实例），每个实例都会烘焙 28 个 `EntityModel`（约 9 MB/实例，合计约 260 MB），现让首个实例的模型存入静态数组供后续实例共享；TAINT_SHEEP 仍走 `SafeSheepModel` 以支持 OptiFine CEM/ETF
+  - [LegacyThaumcraftMobRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/LegacyThaumcraftMobRendererMixin.java)
+- 修复奥术工作台 EMI 一键转移的取材槽位假设错误：原按固定菜单槽区间筛选（假定充能槽总存在），但充能槽是条件添加的——普通台背包从槽 11 起、充能台从槽 20 起，硬编码会漏取材或越界；改为按槽位归属动态筛选，并给槽位区间加边界裁剪
+  - [ArcaneWorkbenchEmiRecipeHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/emi/ArcaneWorkbenchEmiRecipeHandler.java)
+- 神秘基础学（Thaumic Bases）进阶炼金炉补齐 `Capabilities.ItemHandler.BLOCK`：此前只有神秘时代本体炼金炉注册了物品能力，进阶炼金炉继承了容器逻辑却没有能力，管道/漏斗无法交互；新增面行为对齐 `WorldlyContainer` 的 `IItemHandler` 视图（底=燃料、侧=输入、顶=无），并新增配置 `furnaceFuelFirst`（默认开启）把燃料槽排到前面，让煤等可燃物落入燃料槽
+  - [GTThaumicBasesFurnaceCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumicbases/GTThaumicBasesFurnaceCompat.java)、[GTAlchemicalFurnaceItemHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumicbases/GTAlchemicalFurnaceItemHandler.java)
+
+### 模组兼容
+- Mekanism / Compact Machines：紧凑空间维度内没有天空与昼夜，太阳能、风力、中子活化器都无法工作；新增在紧凑空间内恒判太阳可见、亮度恒为 1，并按配置比例缩放输出，覆盖 Mekanism、MekMM、Mekanism Advanced Generators 三套机组；新增配置 `compactSpacePowerPercent`（默认 25，0~最大值）
+  - [GTMekanismCompactSpace.java](src/main/java/net/fodoth/skina/goldentweaks/compat/mekanism/GTMekanismCompactSpace.java)、[TileEntitySolarGeneratorMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/TileEntitySolarGeneratorMixin.java)、[SolarCheckMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/SolarCheckMixin.java)、[TileEntitySolarNeutronActivatorMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/TileEntitySolarNeutronActivatorMixin.java)、[MekMMSolarCheckMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/MekMMSolarCheckMixin.java)、[MekMMLargeSolarNeutronActivatorMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/MekMMLargeSolarNeutronActivatorMixin.java)、[TileEntityWindGeneratorMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/TileEntityWindGeneratorMixin.java)、[SolarPanelsSolarCheckMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/SolarPanelsSolarCheckMixin.java)、[SolarPanelsSolarGeneratorMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/mekanism/SolarPanelsSolarGeneratorMixin.java)
+- AE2 终端搜索优化：匹配时每次都重算 `AEKey#getDisplayName().getString().toLowerCase()`（重建可翻译组件、解析翻译、拼串、小写），改为弱键缓存；只重定向 `getDisplayName()`、保留原 `contains(term)` 方法体，不破坏 JustEnoughCharacters 注入的拼音匹配。同时移除旧的终端搜索去抖补丁 `MEStorageScreenSearchMixin`
+  - [GTAe2NameCache.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2/GTAe2NameCache.java)、[NameSearchPredicateMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2/NameSearchPredicateMixin.java)
+- emiLink 磁盘缓存加固：其缓存只在格式版本变化时失效，不感知模组/物品注册表变化，增删模组后物品 id 错位，甚至解压出超大数组导致 OOM；改为客户端启动时按「全部 modId@version 排序后的 SHA-1」指纹比对，不一致或缓存超过 16 MB 即删除 `emilink/cache.bin`
+  - [GTEmiLinkCacheGuard.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emilink/GTEmiLinkCacheGuard.java)、[ClientSetupEvent.java](src/main/java/net/fodoth/skina/goldentweaks/event/ClientSetupEvent.java)
+- AcademyCraft 技能绕过领地保护：其技能自行构造并发布 `BlockEvent.BreakEvent`，不走原版破坏流程，可在他人领地破坏方块；新增以最低优先级复核并取消的 FTB Chunks 保护，并登记 `ftbchunks` 可选依赖；新增配置 `skillBlockClaimProtection`（默认开启）
+  - [GTClaimProtection.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbchunks/GTClaimProtection.java)、[neoforge.mods.toml](src/main/templates/META-INF/neoforge.mods.toml)
+- AcademyCraft 技能增伤：取主/副手 Silent Gear 的最高 `magic_damage`，按档位放大技能最终伤害（用 `ThreadLocal` 防递归放大）；新增配置 `magicAttackDamage`（默认开启）、`magicAttackPerStep`（默认 5.0）、`magicAttackBonusPerStep`（默认 0.10）
+  - [GTAcademyMagicDamage.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTAcademyMagicDamage.java)、[GearMagicAttack.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GearMagicAttack.java)、[AcademyDamageHelperMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/academy/AcademyDamageHelperMixin.java)
+- mcwifipnp + zstdnet 端口标签重叠：zstdnet 会把端口框贴到含 `sharetolan` 的界面（含 mcwifipnp 的联机界面），与「监听端口号」输入框重叠且不随标签页切换；改为只在第一个标签页、移到设置项下方，并把端口标签绘制与 mcwifipnp 对齐。同时取消进入单人世界后聊天栏的两条 zstd 端口提示
+  - [McWifiPnPZstdPortLayout.java](src/main/java/net/fodoth/skina/goldentweaks/compat/mcwifipnp/McWifiPnPZstdPortLayout.java)、[ZstdShareToLanPortLabelMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/zstdnet/ZstdShareToLanPortLabelMixin.java)、[ZstdWorldJoinHintMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/zstdnet/ZstdWorldJoinHintMixin.java)
+- Silent Gear 预制工具不再出现在创造物品栏：清空 `GearItemSets#getIterator`，使（16 材料 × 35 套）预制工具不再被列出——装备应由部件合成
+  - [GearItemSetsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/silentgear/GearItemSetsMixin.java)
+- Alshanex Familiars API 迁移：随 familiarslib 新版把服务端 `PlayerFamiliarData` + attachment 改为 `FamiliarRoster.of(player)`，客户端选择界面改用 `ClientFamiliarData.get()`
+  - [FamiliarManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/alshanex_familiars/FamiliarManagerMixin.java)、[FamiliarSelectionScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/alshanex_familiars/FamiliarSelectionScreenMixin.java)、[MultiSelectionCurioScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/alshanex_familiars/MultiSelectionCurioScreenMixin.java)
+- Mekanical Create 候选配方缓存无上限：其 lambda 内层 `HashMap` 会累积数万条候选目录（堆转储约 95 MB），替换为 access-ordered、上限 128 的有界 LRU，保留记忆化收益同时限制常驻堆
+  - [BoundedCandidateMap.java](src/main/java/net/fodoth/skina/goldentweaks/compat/mekanicalcreate/BoundedCandidateMap.java)、[MekanicalCreateCandidateCacheMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mekanicalcreate/MekanicalCreateCandidateCacheMixin.java)
+- Astral Sorcery 专用服务器崩服修复：2.0.1 把 `CreativeTabItem#fillCreativeTab` 标成 `@OnlyIn(CLIENT)`，专用服务器上该方法会被 RuntimeDistCleaner 整个删除，但其 `CommonProxy#onBuildCreativeTabContents` 没有做 dist 守卫，而 `BuildCreativeModeTabContentsEvent` 在服务端也会触发（数据包重载、ComputerCraft 的 `onServerStarted`），遍历物品时抛 `NoSuchMethodError` 冲出事件导致崩服；专用服务器上取消该处理器，客户端保持原样（创意标签内容本就由客户端各自构建，服务端这份不参与同步）
+  - [CommonProxyCreativeTabMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/CommonProxyCreativeTabMixin.java)
+- 其它单项修复：
+  - AE2 All Pattern 聚合样板的两张缓存上限由 256 降为 64，限制常驻堆
+    - [AeAllPatternCacheCapMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/aeallpattern/AeAllPatternCacheCapMixin.java)
+  - Bakeries 发酵罐在物品统一后只认本模组全麦面粉、无法投料，改为同时接受统一后的物品
+    - [FermentationTankBlockMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/bakeries/FermentationTankBlockMixin.java)
+  - create_connected 运行期刷新物品可见性走 JEI API，被 TMRV（以 EMI 实现）提前锁定而抛异常刷屏，装 TMRV 时取消该刷新
+    - [CreateConnectedJEIMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createconnected/CreateConnectedJEIMixin.java)
+  - Kaleidoscope 汤底重复注册会抛异常中断同步队列，改为幂等跳过并保留先注册者
+    - [SoupBaseManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/kaleidoscope/SoupBaseManagerMixin.java)
+  - Language Reload 在 `separateTranslations` 未初始化时 `Entity.toString` 于非客户端线程（区块生成）抛 NPE，改为捕获后返回 `unknown`
+    - [EntityToStringMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/languagereload/EntityToStringMixin.java)
+  - Trade Cycling 切职业按钮「闪一下即永久消失」（`visible=false` 后不再渲染、也就无法重算可见性），改为每帧由界面重算
+    - [MerchantScreenTradeCyclingMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tradecycling/MerchantScreenTradeCyclingMixin.java)
+
+### 屏蔽
+- c2me 启动时的「实验性版本」警告屏改为自动关闭（在 `init` 尾部把自身 `onClose` 排到客户端线程执行）
+  - [C2meExperimentalWarningScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/C2meExperimentalWarningScreenMixin.java)
+- c2me OpenCL 编译时屏幕底部的「Compiling…」进度文本屏蔽：吞掉对全局 `PROGRESS_TEXT` 的写入使其保持 null（渲染早退，编译本身不受影响）
+  - [C2meOpenClProgressOverlayMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/C2meOpenClProgressOverlayMixin.java)
+
+### 窗口
+- 修复启动器 `--width/--height` 被忽略的问题：NeoForge 的早期窗口提供方（如 Drippy）先按 `fml.toml` 建窗再移交，启动器尺寸不生效；改为客户端首个 tick 读取进程命令行并纠正一次窗口尺寸（非全屏时）。新增配置 `windowFollowsLauncherSize`（默认开启）
+  - [ClientWindowSizeGuard.java](src/main/java/net/fodoth/skina/goldentweaks/event/ClientWindowSizeGuard.java)
+
+### 联动数据
+- 新增 52 个命名空间的 946 条物品要素与 8 个命名空间的 31 条实体要素（共 977 个 JSON），覆盖 Astral Sorcery、Spectrum、NeoECOAE、Power Grid、Flavor Immersed Daily、Supplementaries、Bakeries、Iron's Spellbooks、AcademyCraft 等
+- Silent Gear 新增 3 个联动命名空间共 29 个材料（ae2lt 21、academy 5、astralsorcery 3），并按生成器重做全部材料数值：硬金属移除魔法/远程/护甲韧性等属性、附魔与充能 ×0.2、挖掘等级统一为钻石级；软金属移除非核心属性、耐久 ×6、附魔与充能 ×1.8；宝石耐久 ×0.5，另含颜色与特性调整
+  - [generate_materials.py](script/silentgear/generate_materials.py)
+- Evolved Mekanism 熔炼/固化配方命名空间统一：输出/输入流体由 `avaritia_integration:molten_*`、`evolvedmekanism:molten_*` 改为 `avaritia_more_items:*`，加载条件相应改为 `avaritia_more_items` + `avaritia`
+- 新增标签与配方：`c:fruits/grapes`、`c:seeds`、`goldentweaks:melon_fruits`、`thaumcraft:harvest_*_crops`，并把约 38 个 thaumicbases / thaumcraftcelestial 方块加入 `minecraft:mineable/*`；新增 createpropulsion、Create 填充、ratatouille 等配方
+
+### 汉化
+- 新增 FTB Chunks 完整简体中文翻译
+  - [zh_cn.json](src/main/resources/assets/ftbchunks/lang/zh_cn.json)
+- 补充 GoldenTweaks 新增配置项的中英文文案，并同步 silentgear、spectral_decorations、tipsmod 的 zh_cn
+
+### 依赖
+- 更新一批编译依赖：AcademyCraft 0.0.28、Thaumcraft port.253、Thaumic Bases port.21、Thaumic Tinkerer port.64、Forbidden Magic / Tainted Magic port.33、Apotheosis 8.9.0、Spectrum 1.12.7、Supplementaries 3.9.9、NeoECOAE 21.2.0、Geckolib 4.9.3、Extended Crafting 7.0.9、Create Big Cannons 5.11.7、JAOPCA 5.0.14.23、Moonlight 3.7.0、Thaumic Horizons scex-dev.41 等，并新增 Trade Cycling、ItemPhysic Lite 等
+  - [libs/README.md](libs/README.md)
+
+### 文档与脚本
+- 新增《内存问题排查报告》《帧率与卡顿问题排查报告》《AcademyCraft 技能伤害汇总》三份分析文档
+- 新增方块逻辑树状图 `script/block/方块.html`，资源位置提取脚本新增 22 个模组的名称转储
+
+### 其它
+- 移除 Aeronautics 在缺少 JEI API 时的兼容绕过补丁（`AeroNeoForgeCommonEvents` 系列及 accessor），Mixin 插件中对应的门控一并删除
+- `.gitignore` 新增忽略 spark 堆快照（`script/spark/`、`*.sparkheap`）
+
 ## 2026.09.22 - v4.7.1
 
 ### Thaumcraft

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:fx_monitor_core"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 2,
+    "sensus": 2
+  }
+}

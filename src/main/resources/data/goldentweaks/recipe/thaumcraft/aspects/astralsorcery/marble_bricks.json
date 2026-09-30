@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:marble_bricks"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

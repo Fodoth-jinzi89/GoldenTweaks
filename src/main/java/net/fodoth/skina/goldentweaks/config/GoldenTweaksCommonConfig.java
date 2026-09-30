@@ -52,6 +52,8 @@ public final class GoldenTweaksCommonConfig {
     // =========================
     public static final ModConfigSpec.IntValue EVOLVED_MEKANISM_SOLAR_MULTIPLIER;
 
+    public static final ModConfigSpec.IntValue MEKANISM_COMPACT_SPACE_POWER_PERCENT;
+
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
 
     public static final ModConfigSpec.BooleanValue CATACLYSM_BALANCE;
@@ -82,6 +84,29 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.BooleanValue HUNGRY_NODE_BREAKS_BLOCKS;
 
     public static final ModConfigSpec.BooleanValue HORIZONS_VORTEX_BREAKS_BLOCKS;
+
+    public static final ModConfigSpec.BooleanValue SIMPLIFIED_GOLEMS;
+
+    public static final ModConfigSpec.BooleanValue DISABLE_TAINT_SPREAD;
+
+    public static final ModConfigSpec.BooleanValue DISABLE_PURE_NODE_BIOME_CONVERSION;
+
+    public static final ModConfigSpec.BooleanValue DISABLE_SINISTER_NODE_BIOME_CONVERSION;
+
+    public static final ModConfigSpec.BooleanValue DISABLE_TAINTED_NODE_BIOME_CONVERSION;
+
+    public static final ModConfigSpec.BooleanValue FURNACE_FUEL_FIRST;
+
+    // =========================
+    // academy 兼容
+    // =========================
+    public static final ModConfigSpec.BooleanValue ACADEMY_MAGIC_ATTACK_DAMAGE;
+
+    public static final ModConfigSpec.DoubleValue ACADEMY_MAGIC_ATTACK_PER_STEP;
+
+    public static final ModConfigSpec.DoubleValue ACADEMY_MAGIC_ATTACK_BONUS_PER_STEP;
+
+    public static final ModConfigSpec.BooleanValue ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION;
 
     // =========================
     // oei 兼容
@@ -255,6 +280,18 @@ public final class GoldenTweaksCommonConfig {
         builder.pop();
 
         // =========================
+        // mekanism compact space
+        // =========================
+        builder.push("mekanism");
+
+        MEKANISM_COMPACT_SPACE_POWER_PERCENT = builder
+                .translation(key("balance.mekanism.compact_space_power_percent"))
+                .comment(comment("balance.mekanism.compact_space_power_percent"))
+                .defineInRange("compactSpacePowerPercent", 25, 0, Integer.MAX_VALUE);
+
+        builder.pop();
+
+        // =========================
         // mekanism more machines
         // =========================
         builder.push("mekmm");
@@ -357,6 +394,70 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.thaumcraft.horizons_vortex_breaks_blocks"))
                 .define("horizonsVortexBreaksBlocks", false);
 
+        SIMPLIFIED_GOLEMS = builder
+                .translation(key("balance.thaumcraft.simplified_golems"))
+                .comment(comment("balance.thaumcraft.simplified_golems"))
+                .define("simplifiedGolems", true);
+
+        DISABLE_TAINT_SPREAD = builder
+                .translation(key("balance.thaumcraft.disable_taint_spread"))
+                .comment(comment("balance.thaumcraft.disable_taint_spread"))
+                .define("disableTaintSpread", true);
+
+        DISABLE_PURE_NODE_BIOME_CONVERSION = builder
+                .translation(key("balance.thaumcraft.disable_pure_node_biome_conversion"))
+                .comment(comment("balance.thaumcraft.disable_pure_node_biome_conversion"))
+                .define("disablePureNodeBiomeConversion", false);
+
+        DISABLE_SINISTER_NODE_BIOME_CONVERSION = builder
+                .translation(key("balance.thaumcraft.disable_sinister_node_biome_conversion"))
+                .comment(comment("balance.thaumcraft.disable_sinister_node_biome_conversion"))
+                .define("disableSinisterNodeBiomeConversion", true);
+
+        DISABLE_TAINTED_NODE_BIOME_CONVERSION = builder
+                .translation(key("balance.thaumcraft.disable_tainted_node_biome_conversion"))
+                .comment(comment("balance.thaumcraft.disable_tainted_node_biome_conversion"))
+                .define("disableTaintedNodeBiomeConversion", true);
+
+        builder.pop();
+
+        // =========================
+        // thaumic bases
+        // =========================
+        builder.push("thaumicbases");
+
+        FURNACE_FUEL_FIRST = builder
+                .translation(key("balance.thaumicbases.furnace_fuel_first"))
+                .comment(comment("balance.thaumicbases.furnace_fuel_first"))
+                .define("furnaceFuelFirst", true);
+
+        builder.pop();
+
+        // =========================
+        // academy
+        // =========================
+        builder.push("academy");
+
+        ACADEMY_MAGIC_ATTACK_DAMAGE = builder
+                .translation(key("balance.academy.magic_attack_damage"))
+                .comment(comment("balance.academy.magic_attack_damage"))
+                .define("magicAttackDamage", true);
+
+        ACADEMY_MAGIC_ATTACK_PER_STEP = builder
+                .translation(key("balance.academy.magic_attack_per_step"))
+                .comment(comment("balance.academy.magic_attack_per_step"))
+                .defineInRange("magicAttackPerStep", 5.0D, 0.1D, 10000.0D);
+
+        ACADEMY_MAGIC_ATTACK_BONUS_PER_STEP = builder
+                .translation(key("balance.academy.magic_attack_bonus_per_step"))
+                .comment(comment("balance.academy.magic_attack_bonus_per_step"))
+                .defineInRange("magicAttackBonusPerStep", 0.10D, 0.0D, 100.0D);
+
+        ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION = builder
+                .translation(key("balance.academy.skill_block_claim_protection"))
+                .comment(comment("balance.academy.skill_block_claim_protection"))
+                .define("skillBlockClaimProtection", true);
+
         builder.pop();
 
         builder.pop();
@@ -412,6 +513,19 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return EVOLVED_MEKANISM_SOLAR_MULTIPLIER.get();
+    }
+
+    public static int getMekanismCompactSpacePowerPercent() {
+
+        if (!GTState.isReady()) {
+            return 25;
+        }
+
+        return MEKANISM_COMPACT_SPACE_POWER_PERCENT.get();
+    }
+
+    public static float getMekanismCompactSpacePowerFraction() {
+        return getMekanismCompactSpacePowerPercent() / 100.0F;
     }
 
     public static int getIJHagglerMaxDiscount() {
@@ -529,6 +643,96 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return HORIZONS_VORTEX_BREAKS_BLOCKS.get();
+    }
+
+    public static boolean isSimplifiedGolems() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return SIMPLIFIED_GOLEMS.get();
+    }
+
+    public static boolean isTaintSpreadDisabled() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return DISABLE_TAINT_SPREAD.get();
+    }
+
+    public static boolean isPureNodeBiomeConversionDisabled() {
+
+        if (!GTState.isReady()) {
+            return false;
+        }
+
+        return DISABLE_PURE_NODE_BIOME_CONVERSION.get();
+    }
+
+    public static boolean isSinisterNodeBiomeConversionDisabled() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return DISABLE_SINISTER_NODE_BIOME_CONVERSION.get();
+    }
+
+    public static boolean isTaintedNodeBiomeConversionDisabled() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return DISABLE_TAINTED_NODE_BIOME_CONVERSION.get();
+    }
+
+    public static boolean isFurnaceFuelFirst() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return FURNACE_FUEL_FIRST.get();
+    }
+
+    public static boolean isAcademyMagicAttackDamageEnabled() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return ACADEMY_MAGIC_ATTACK_DAMAGE.get();
+    }
+
+    public static double getAcademyMagicAttackPerStep() {
+
+        if (!GTState.isReady()) {
+            return 5.0D;
+        }
+
+        return ACADEMY_MAGIC_ATTACK_PER_STEP.get();
+    }
+
+    public static double getAcademyMagicAttackBonusPerStep() {
+
+        if (!GTState.isReady()) {
+            return 0.10D;
+        }
+
+        return ACADEMY_MAGIC_ATTACK_BONUS_PER_STEP.get();
+    }
+
+    public static boolean isAcademySkillBlockClaimProtectionEnabled() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION.get();
     }
 
     private static String key(String path) {

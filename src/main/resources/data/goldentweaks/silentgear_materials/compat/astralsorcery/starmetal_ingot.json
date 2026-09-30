@@ -1,0 +1,88 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "soft_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "astralsorcery:starmetal_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF2E408C",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.astralsorcery.starmetal_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor_durability": 46.398,
+      "armor_toughness": 3.132,
+      "charging_value": 1.341,
+      "draw_speed": 0.282,
+      "durability": 835.2,
+      "enchantment_value": 28.022,
+      "magic_armor": 6.612,
+      "magic_damage": 1.479,
+      "projectile_accuracy": 1.155,
+      "projectile_speed": 1.186,
+      "ranged_damage": 2.784,
+      "rarity": 25.05,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "draw_speed": {
+        "operation": "ADD",
+        "value": 0.39
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.75
+      },
+      "projectile_speed": {
+        "operation": "ADD",
+        "value": 0.34
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

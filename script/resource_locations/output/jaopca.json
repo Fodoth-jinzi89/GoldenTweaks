@@ -1,6 +1,7 @@
 {
   "items": {
     "jaopca:create_crushed": "Crushed Raw %s",
+    "jaopca:createmetallurgy_dirty_dusts": "Dirty %s Dust",
     "jaopca:crossroads_clumps": "%s Clumps",
     "jaopca:crossroads_grits": "Raw %s Grit",
     "jaopca:dusts": "%s Dust",
@@ -18,6 +19,8 @@
     "jaopca:mekanism_shards": "%s Shard",
     "jaopca:modern_industrialization_crushed_dusts": "%s Crushed Dust",
     "jaopca:molten": "Molten %s Bucket",
+    "jaopca:neovitae_fragments": "%s Fragment",
+    "jaopca:neovitae_gravels": "%s Gravel",
     "jaopca:nuggets": "%s Nugget",
     "jaopca:oritech_clumps": "%s Clump",
     "jaopca:oritech_gems": "%s Gem",

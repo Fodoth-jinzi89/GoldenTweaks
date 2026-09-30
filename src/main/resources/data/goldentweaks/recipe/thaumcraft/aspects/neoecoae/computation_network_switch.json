@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:computation_network_switch"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

@@ -25,15 +25,15 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.46
+        "value": 0.474
       },
       "armor_toughness": {
         "operation": "ADD",
-        "value": 1.61
+        "value": 1.659
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 2.3
+        "value": 2.37
       },
       "traits": [
         {
@@ -51,15 +51,15 @@
     "silentgear:grip": {
       "attack_speed": {
         "operation": "ADD",
-        "value": 0.161
+        "value": 0.166
       },
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.322
+        "value": 0.332
       },
       "repair_value": {
         "operation": "ADD",
-        "value": 0.092
+        "value": 0.095
       },
       "traits": [
         {

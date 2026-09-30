@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "resourcethaumium_wand_core:name"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 2
+  }
+}

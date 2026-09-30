@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraftcelestial:dimmer_sister"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

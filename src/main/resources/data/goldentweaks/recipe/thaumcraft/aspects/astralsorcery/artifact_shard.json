@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:artifact_shard"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

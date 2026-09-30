@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:cosmic_shield"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "tutamen": 4
+  }
+}

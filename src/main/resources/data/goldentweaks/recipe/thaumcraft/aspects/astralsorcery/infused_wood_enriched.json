@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:infused_wood_enriched"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arbor": 3
+  }
+}

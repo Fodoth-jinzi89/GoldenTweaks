@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:mekanism_clumps"
+  },
+  "aspects": {
+    "metallum": 2,
+    "terra": 2
+  }
+}

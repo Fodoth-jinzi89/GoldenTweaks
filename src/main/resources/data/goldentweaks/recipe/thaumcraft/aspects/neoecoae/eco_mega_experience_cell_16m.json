@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:eco_mega_experience_cell_16m"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "cognitio": 3,
+    "vas": 3,
+    "potentia": 2
+  }
+}

@@ -1,5 +1,8 @@
 {
   "items": {
+    "thaumcraftcelestial:akaza_sigil": "Akaza Sigil",
+    "thaumcraftcelestial:akaza_spawn_egg": "Akaza Spawn Egg",
+    "thaumcraftcelestial:arcane_contemplator": "Arcane Contemplator",
     "thaumcraftcelestial:astral_alloy": "Astral Alloy",
     "thaumcraftcelestial:astral_blade": "Firmament Blade",
     "thaumcraftcelestial:astral_boots": "Astral Boots",
@@ -7,16 +10,45 @@
     "thaumcraftcelestial:astral_helmet": "Astral Helmet",
     "thaumcraftcelestial:astral_leggings": "Astral Leggings",
     "thaumcraftcelestial:astrolabe": "Astrolabe",
+    "thaumcraftcelestial:celestial_dragon_sigil": "Celestial Dragon Sigil",
+    "thaumcraftcelestial:celestial_dragon_spawn_egg": "Celestial Dragon Spawn Egg",
     "thaumcraftcelestial:celestial_lens": "Celestial Lens",
     "thaumcraftcelestial:celestial_record": "Celestial Record",
+    "thaumcraftcelestial:cosmic_axe": "Cosmic Axe",
+    "thaumcraftcelestial:cosmic_battle_axe": "Cosmic Battle Axe",
+    "thaumcraftcelestial:cosmic_blade": "Cosmic Blade",
+    "thaumcraftcelestial:cosmic_bow": "Cosmic Bow",
+    "thaumcraftcelestial:cosmic_dagger": "Cosmic Dagger",
+    "thaumcraftcelestial:cosmic_fishing_rod": "Cosmic Fishing Rod",
+    "thaumcraftcelestial:cosmic_halberd": "Cosmic Halberd",
+    "thaumcraftcelestial:cosmic_hoe": "Cosmic Hoe",
+    "thaumcraftcelestial:cosmic_key": "Cosmic Key",
+    "thaumcraftcelestial:cosmic_pickaxe": "Cosmic Pickaxe",
+    "thaumcraftcelestial:cosmic_shield": "Cosmic Shield",
+    "thaumcraftcelestial:cosmic_shovel": "Cosmic Shovel",
+    "thaumcraftcelestial:cosmic_sickle": "Cosmic Sickle",
+    "thaumcraftcelestial:cosmic_spear": "Cosmic Spear",
+    "thaumcraftcelestial:cosmic_staff": "Cosmic Staff",
+    "thaumcraftcelestial:cosmic_sword": "Cosmic Sword",
+    "thaumcraftcelestial:cosmic_wings": "Cosmic Wings",
+    "thaumcraftcelestial:deceptor_sigil": "Deceptor Sigil",
+    "thaumcraftcelestial:deceptor_spawn_egg": "Deceptor Spawn Egg",
+    "thaumcraftcelestial:dimmer_sister_sigil": "Dimmer Sister Sigil",
+    "thaumcraftcelestial:dimmer_sister_spawn_egg": "Dimmer Sister Spawn Egg",
+    "thaumcraftcelestial:enchanter_sigil": "Enchanter Sigil",
+    "thaumcraftcelestial:enchanter_spawn_egg": "Enchanter Spawn Egg",
     "thaumcraftcelestial:lunar_essence": "Lunar Essence",
     "thaumcraftcelestial:lunar_phase_instrument": "Lunar Phase Instrument",
     "thaumcraftcelestial:meteorite_fragment": "Meteorite Fragment",
+    "thaumcraftcelestial:music_disc_distant_sky": "Music Disc",
+    "thaumcraftcelestial:piglin_glutton_sigil": "Piglin Glutton Sigil",
+    "thaumcraftcelestial:piglin_glutton_spawn_egg": "Piglin Glutton Spawn Egg",
     "thaumcraftcelestial:solar_essence": "Solar Essence",
     "thaumcraftcelestial:stargazing_instrument": "Stargazing Instrument",
     "thaumcraftcelestial:stellar_essence": "Stellar Essence"
   },
   "blocks": {
+    "thaumcraftcelestial:arcane_contemplator": "Arcane Contemplator",
     "thaumcraftcelestial:astrolabe": "Astrolabe",
     "thaumcraftcelestial:celestial_lens": "Celestial Lens",
     "thaumcraftcelestial:lunar_phase_instrument": "Lunar Phase Instrument",
@@ -24,6 +56,12 @@
     "thaumcraftcelestial:stargazing_instrument": "Stargazing Instrument"
   },
   "entities": {
-    "thaumcraftcelestial:meteorite": "Falling Meteorite"
+    "thaumcraftcelestial:akaza": "Akaza",
+    "thaumcraftcelestial:celestial_dragon": "Celestial Dragon",
+    "thaumcraftcelestial:deceptor": "Deceptor",
+    "thaumcraftcelestial:dimmer_sister": "Dimmer Sister",
+    "thaumcraftcelestial:enchanter": "Enchanter",
+    "thaumcraftcelestial:meteorite": "Falling Meteorite",
+    "thaumcraftcelestial:piglin_glutton": "Piglin Glutton"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thaumcraftcelestial:celestial_dragon"
+  },
+  "aspects": {
+    "bestia": 4,
+    "dragon": 4,
+    "victus": 3
+  }
+}

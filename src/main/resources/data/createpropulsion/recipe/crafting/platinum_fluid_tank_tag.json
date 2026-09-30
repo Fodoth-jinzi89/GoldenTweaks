@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createpropulsion"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "C",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/platinum"
+    },
+    "C": {
+      "item": "create:fluid_tank"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:platinum_fluid_tank"
+  }
+}

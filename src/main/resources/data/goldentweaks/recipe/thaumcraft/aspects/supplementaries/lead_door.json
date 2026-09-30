@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:lead_door"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

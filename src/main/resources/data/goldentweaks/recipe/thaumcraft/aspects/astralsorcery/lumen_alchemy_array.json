@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:lumen_alchemy_array"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "potentia": 3
+  }
+}

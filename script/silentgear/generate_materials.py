@@ -169,6 +169,25 @@ COATING_DESIGN = metal_design("metal_coating", [
 for resource_id, design in COATING_DESIGN.items():
     METAL_DESIGN.setdefault(resource_id, design)["coating_level"] = design["level"]
 
+# 新增模组（AcademyCraft / ae2lt / AstralSorcery）金属：等级与模板材料对齐。
+METAL_DESIGN.update(metal_design("hard_metal", [
+    [], [], [], [("academy:constraint_ingot", "constraint_ingot")], [],
+    [("ae2lt:overload_alloy", "overload_alloy")],
+]))
+METAL_DESIGN.update(metal_design("soft_metal", [
+    [("academy:imag_silicon_ingot", "imag_silicon_ingot")], [],
+    [("astralsorcery:starmetal_ingot", "starmetal_ingot")],
+    [("ae2lt:firmament_alloy_ingot", "firmament_alloy_ingot")],
+]))
+# 语义偏移沿用模板材料，使新金属与模板数值一致（再按需施加倍率）。
+NEW_METAL_TEMPLATES = {
+    "academy:constraint_ingot": "mekanism:ingot_uranium",
+    "academy:imag_silicon_ingot": "silentgear:blaze_gold_ingot",
+    "astralsorcery:starmetal_ingot": "thaumcraft:void_metal_ingot",
+    "ae2lt:firmament_alloy_ingot": "forbiddenmagic:hexite_ingot",
+    "ae2lt:overload_alloy": "silentgear:crimson_steel_ingot",
+}
+
 # Semantic position inside a level. -1 leans toward the previous level's center,
 # +1 leans toward the next level's center. The generated value never crosses either center.
 METAL_SEMANTIC_BIAS = {
@@ -212,6 +231,8 @@ METAL_SEMANTIC_BIAS = {
     "thaumcraft:void_metal_ingot": 0.60,
     "thaumic_tinkerer:ichorium_ingot": 0.65, "thaumcraftcelestial:astral_alloy": 0.40,
 }
+for _resource_id, _template_id in NEW_METAL_TEMPLATES.items():
+    METAL_SEMANTIC_BIAS[_resource_id] = METAL_SEMANTIC_BIAS.get(_template_id, 0.0)
 COATING_SEMANTIC_BIAS = {
     "minecraft:netherite_ingot": 0.15, "createbigcannons:nethersteel_ingot": -0.25,
     "createvoidway:void_steel_ingot": 0.55, "igleelib:modium_ingot": -0.35,
@@ -304,6 +325,26 @@ GEM_DESIGN.update(gem_design("super_shard", [
     [("spectrum:downstone_fragments", "downstone_fragments")],
     [("taintedmagic:creation_shard", "creation")],
 ]))
+
+
+def gem_like(resource_id, material, template_id):
+    template = GEM_DESIGN[template_id]
+    GEM_DESIGN[resource_id] = {
+        "family": template["family"], "level": template["level"],
+        "material": material, "bias": template["bias"],
+    }
+
+
+# 新增模组宝石：等级与语义偏移对齐模板材料。
+for _resource_id, _material, _template_id in (
+    ("astralsorcery:aquamarine", "aquamarine", "silentgems:tanzanite"),
+    ("astralsorcery:resonating_gem", "resonating_gem", "spectrum:onyx_shard"),
+    ("academy:crystal_low", "crystal_low", "spectrum:shimmerstone_gem"),
+    ("academy:crystal_normal", "crystal_normal", "silentgems:alexandrite"),
+    ("academy:crystal_pure", "crystal_pure", "minecraft:diamond"),
+    ("ae2lt:overload_crystal", "overload_crystal", "ae2:fluix_crystal"),
+):
+    gem_like(_resource_id, _material, _template_id)
 
 GEM_BUILTIN_PATHS = {
     "minecraft:quartz": "quartz", "minecraft:amethyst_shard": "amethyst", "minecraft:redstone": "redstone",
@@ -503,6 +544,36 @@ def textile_design(family, levels):
 
 
 COLORS = ("white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black")
+
+# 新增模组线：各色 ME 过载线缆（含未染色款）与苍穹超导丝，等级与语义偏移对齐模板。
+OVERLOADED_CABLE_IDS = ["ae2lt:overloaded_cable"] + [f"ae2lt:overloaded_cable_{color}" for color in COLORS]
+CORD_DESIGN.update(cord_design("cord", [[], [], [], [
+    (resource_id, resource_id.split(":", 1)[1], CORD_DESIGN["ae2:fluix_smart_dense_cable"]["bias"])
+    for resource_id in OVERLOADED_CABLE_IDS
+]]))
+CORD_DESIGN.update(cord_design("super_cord", [[], [
+    ("ae2lt:firmament_superconducting_wire", "firmament_superconducting_wire",
+     CORD_DESIGN["avaritia_more_items:crystal_matrix_string"]["bias"]),
+]]))
+
+# 新增模组材料整体数值倍率（相对模板材料）。
+DESIGN_MULTIPLIERS = {
+    **{resource_id: 1.3 for resource_id in OVERLOADED_CABLE_IDS},
+    "ae2lt:overload_crystal": 1.3,
+    "ae2lt:firmament_superconducting_wire": 1.3,
+    "ae2lt:firmament_alloy_ingot": 1.3,
+}
+# 新增模组材料的语义 traits（置于自动推导 traits 之前）。
+EXTRA_TRAITS = {
+    **{resource_id: ["crackler"] for resource_id in OVERLOADED_CABLE_IDS},
+    "ae2lt:overload_crystal": ["crackler"],
+    "ae2lt:firmament_superconducting_wire": ["crackler"],
+    "ae2lt:overload_alloy": ["crackler"],
+    "ae2lt:firmament_alloy_ingot": ["stellar"],
+    "astralsorcery:starmetal_ingot": ["stellar"],
+    "astralsorcery:resonating_gem": ["stellar"],
+}
+
 TEXTILE_DESIGN = {}
 TEXTILE_DESIGN.update(textile_design("textile", [
     [("minecraft:leather", "leather", None), ("flavor_immersed_daily:flourskin", "flourskin", None),
@@ -1416,9 +1487,12 @@ def designed_main_properties(family, level, traits, semantic_bias=0.0):
         durability, melee, tools, ranged = armor * 24, armor * 0.14, armor * 0.42, armor * 0.12
     else:
         durability, melee, tools, ranged = armor * 8, armor * 0.10, armor * 0.85, armor * 0.16
-    harvest = min(4, max(1, level if family == "hard_metal" else level + 3 if family != "soft_metal" else level))
+    if family == "hard_metal":
+        harvest = 4 if level >= 6 else 3
+    else:
+        harvest = min(4, max(1, level + 3 if family != "soft_metal" else level))
     tier_name = ("stone", "iron", "diamond", "netherite")[harvest - 1]
-    return {
+    main = {
         "armor": armor, "armor/boots": round(armor * 0.15, 3), "armor/chestplate": round(armor * 0.4, 3),
         "armor/helmet": round(armor * 0.15, 3), "armor/leggings": round(armor * 0.3, 3),
         "armor_durability": round(durability / 18, 3), "armor_toughness": round(armor * 0.18, 3),
@@ -1430,6 +1504,23 @@ def designed_main_properties(family, level, traits, semantic_bias=0.0):
         "projectile_accuracy": round(1.0 + ranged / 18, 3), "projectile_speed": round(1.0 + ranged / 15, 3),
         "ranged_damage": round(ranged, 3), "rarity": round(12 + armor * 0.75, 3), "traits": traits,
     }
+    if family == "hard_metal":
+        # 硬金属：附魔能力/充能值 -80%；不再提供魔法伤害、范围伤害、拉弓速度、弹射物速度/精确度、盔甲韧性、魔法护甲。
+        for key in ("magic_damage", "ranged_damage", "draw_speed", "projectile_speed",
+                    "projectile_accuracy", "armor_toughness", "magic_armor"):
+            main.pop(key)
+        main["enchantment_value"] = round(main["enchantment_value"] * 0.2, 3)
+        main["charging_value"] = round(main["charging_value"] * 0.2, 3)
+    elif family == "soft_metal":
+        # 软金属：不再提供挖掘等级、挖掘速度、攻击伤害、护甲值；耐久/盔甲耐久 x6，附魔能力/充能值 x1.8。
+        for key in ("harvest_tier", "harvest_speed", "attack_damage", "armor",
+                    "armor/boots", "armor/chestplate", "armor/helmet", "armor/leggings"):
+            main.pop(key)
+        main["durability"] = round(main["durability"] * 6, 3)
+        main["armor_durability"] = round(main["armor_durability"] * 6, 3)
+        main["enchantment_value"] = round(main["enchantment_value"] * 1.8, 3)
+        main["charging_value"] = round(main["charging_value"] * 1.8, 3)
+    return main
 
 
 def infused_alloy_properties(family, level, traits, material):
@@ -1813,6 +1904,12 @@ def gem_main_properties(family, level, traits, bias):
         "projectile_accuracy": round(1.0 + power * 0.012, 3), "projectile_speed": round(1.0 + power * 0.014, 3),
         "ranged_damage": round(power * 0.16, 3), "rarity": round(20 + power * 1.8, 3), "traits": traits,
     }
+    if family == "gem":
+        # 宝石：耐久/盔甲耐久 -50%；不再提供范围伤害、弹射物速度、弹射物精确度。
+        for key in ("ranged_damage", "projectile_speed", "projectile_accuracy"):
+            main.pop(key)
+        main["durability"] = round(main["durability"] * 0.5, 3)
+        main["armor_durability"] = round(main["armor_durability"] * 0.5, 3)
     if pure:
         progress = power / 50
         main.update({
@@ -1978,6 +2075,31 @@ def apply_target_armor(data, material, profiles):
             main[key] = multiply_numbers(value, factor)
 
 
+def apply_material_multiplier(data, resource_id):
+    factor = DESIGN_MULTIPLIERS.get(resource_id)
+    if factor is None:
+        return
+    for properties in data["properties"].values():
+        for key, value in list(properties.items()):
+            if key not in {"traits", "harvest_tier"}:
+                properties[key] = multiply_numbers(value, factor)
+
+
+def apply_extra_traits(data, resource_id):
+    names = EXTRA_TRAITS.get(resource_id)
+    if not names:
+        return
+    design = METAL_DESIGN.get(resource_id) or GEM_DESIGN.get(resource_id) or CORD_DESIGN.get(resource_id)
+    level = max(1, min(5, design["level"])) if design else 1
+    for properties in data["properties"].values():
+        traits = properties.get("traits")
+        if not traits or any(not item["trait"].startswith("silentgear:") for item in traits):
+            continue
+        existing = {item["trait"].split(":", 1)[-1] for item in traits}
+        merged = [trait(name, level) for name in names if name not in existing]
+        properties["traits"] = (merged + traits)[:3]
+
+
 def make_material(category, entry, bounds, profiles, resolver):
     material = entry["material"]
     tier = strength(category, material, entry["id"])
@@ -2054,6 +2176,8 @@ def make_material(category, entry, bounds, profiles, resolver):
     apply_wand_handle_design(data, entry)
     apply_leaf_design(data, entry)
     apply_flower_feather_design(data, entry)
+    apply_material_multiplier(data, entry["id"])
+    apply_extra_traits(data, entry["id"])
     return data, tier
 
 
@@ -2232,7 +2356,9 @@ def main():
                     upper *= 0.5
                 if entry["material"] in WEAKER_INFUSED_ALLOYS:
                     lower *= 0.92
-                designed_values[entry["id"]] = (lower, main["armor"], upper)
+                reference = main["armor"] if "armor" in main else round(main["durability"] / 48, 3)
+                reference = round(reference / DESIGN_MULTIPLIERS.get(entry["id"], 1.0), 3)
+                designed_values[entry["id"]] = (lower, reference, upper)
 
     for path in OVERRIDE_OUTPUT.rglob("*.json"):
         if path.resolve() not in expected:

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:airy_light"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

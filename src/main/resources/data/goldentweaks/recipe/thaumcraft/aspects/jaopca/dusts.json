@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:dusts"
+  },
+  "aspects": {
+    "metallum": 2,
+    "terra": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:starlight_focus_rock_crystal"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "vitreus": 3
+  }
+}

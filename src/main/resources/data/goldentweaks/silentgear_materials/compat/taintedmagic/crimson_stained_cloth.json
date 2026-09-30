@@ -5,7 +5,7 @@
     "can_salvage": true,
     "categories": [
       "textile",
-      "advanced"
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -25,15 +25,15 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.831
+        "value": 0.64
       },
       "armor_toughness": {
         "operation": "ADD",
-        "value": 2.909
+        "value": 2.24
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 4.155
+        "value": 3.2
       },
       "traits": [
         {
@@ -48,7 +48,7 @@
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:lustrous"
         }
       ]
@@ -56,15 +56,15 @@
     "silentgear:grip": {
       "attack_speed": {
         "operation": "ADD",
-        "value": 0.291
+        "value": 0.224
       },
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.582
+        "value": 0.448
       },
       "repair_value": {
         "operation": "ADD",
-        "value": 0.166
+        "value": 0.128
       },
       "traits": [
         {
@@ -79,7 +79,7 @@
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 5,
           "trait": "silentgear:lustrous"
         }
       ]

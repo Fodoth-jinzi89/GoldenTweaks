@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "resourceaurelia_petal:name"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

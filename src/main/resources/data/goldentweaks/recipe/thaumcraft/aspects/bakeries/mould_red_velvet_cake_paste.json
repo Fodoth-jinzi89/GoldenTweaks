@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:mould_red_velvet_cake_paste"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "victus": 3,
+    "fames": 2,
+    "pannus": 2
+  }
+}

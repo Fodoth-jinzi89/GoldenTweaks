@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "thaumicbases:ashroom",
+    "thaumicbases:glieonia",
+    "thaumicbases:knose",
+    "thaumicbases:lazullia",
+    "thaumicbases:lucrite",
+    "thaumicbases:metalleat",
+    "thaumicbases:plax",
+    "thaumicbases:tobacco",
+    "thaumicbases:void_plant",
+    "thaumic_tinkerer:infused_grain"
+  ]
+}

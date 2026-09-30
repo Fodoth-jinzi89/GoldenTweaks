@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:cannon_boat"
+  },
+  "aspects": {
+    "iter": 3,
+    "machina": 3,
+    "motus": 2
+  }
+}

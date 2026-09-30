@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:clay_pot_milk_tea"
+  },
+  "aspects": {
+    "terra": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:rice_crop"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "messis": 3,
+    "victus": 3,
+    "fames": 2,
+    "machina": 2
+  }
+}

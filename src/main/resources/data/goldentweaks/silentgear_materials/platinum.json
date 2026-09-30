@@ -27,24 +27,12 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 12.76,
-      "armor/boots": 1.914,
-      "armor/chestplate": 5.104,
-      "armor/helmet": 1.914,
-      "armor/leggings": 3.828,
-      "armor_durability": 5.671,
+      "armor_durability": 34.026,
       "armor_toughness": 2.297,
-      "attack_damage": 1.276,
-      "charging_value": 0.706,
+      "charging_value": 1.271,
       "draw_speed": 0.22,
-      "durability": 102.08,
-      "enchantment_value": 14.083,
-      "harvest_speed": 10.846,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
-      },
+      "durability": 612.48,
+      "enchantment_value": 25.349,
       "magic_armor": 4.849,
       "magic_damage": 1.085,
       "projectile_accuracy": 1.113,

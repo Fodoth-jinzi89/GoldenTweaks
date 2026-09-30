@@ -138,14 +138,6 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.disable_building_wands_block_preview",
                     DISABLE_BUILDING_WANDS_BLOCK_PREVIEW, true);
 
-            ConfigScreenHelper.addInt(misc, eb,
-                    "config.goldentweaks.search_start_delay",
-                    SEARCH_START_DELAY_TICKS, 20, 0, Integer.MAX_VALUE);
-
-            ConfigScreenHelper.addInt(misc, eb,
-                    "config.goldentweaks.search_spread_duration",
-                    SEARCH_SPREAD_DURATION_TICKS, 20, 0, Integer.MAX_VALUE);
-
             // =========================================================
             // Balance
             // =========================================================
@@ -158,6 +150,11 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.evolved_mekanism_solar_multiplier",
                     EVOLVED_MEKANISM_SOLAR_MULTIPLIER,
                     1, 1, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mekanism.compact_space_power_percent",
+                    MEKANISM_COMPACT_SPACE_POWER_PERCENT,
+                    25, 0, Integer.MAX_VALUE);
 
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.recycler_factory_stack_upgrades",
@@ -237,6 +234,46 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.thaumcraft.horizons_vortex_breaks_blocks",
                     HORIZONS_VORTEX_BREAKS_BLOCKS, false);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.simplified_golems",
+                    SIMPLIFIED_GOLEMS, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.disable_taint_spread",
+                    DISABLE_TAINT_SPREAD, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.disable_pure_node_biome_conversion",
+                    DISABLE_PURE_NODE_BIOME_CONVERSION, false);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.disable_sinister_node_biome_conversion",
+                    DISABLE_SINISTER_NODE_BIOME_CONVERSION, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumcraft.disable_tainted_node_biome_conversion",
+                    DISABLE_TAINTED_NODE_BIOME_CONVERSION, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.thaumicbases.furnace_fuel_first",
+                    FURNACE_FUEL_FIRST, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.academy.magic_attack_damage",
+                    ACADEMY_MAGIC_ATTACK_DAMAGE, true);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.academy.magic_attack_per_step",
+                    ACADEMY_MAGIC_ATTACK_PER_STEP, 5.0D, 0.1D, 10000.0D);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.academy.magic_attack_bonus_per_step",
+                    ACADEMY_MAGIC_ATTACK_BONUS_PER_STEP, 0.10D, 0.0D, 100.0D);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.academy.skill_block_claim_protection",
+                    ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION, true);
 
             // =========================================================
             // Debug

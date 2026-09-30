@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_flux:experience_bucket"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "potentia": 2
+  }
+}

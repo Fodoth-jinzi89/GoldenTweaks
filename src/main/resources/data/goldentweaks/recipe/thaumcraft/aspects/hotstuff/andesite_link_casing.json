@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hotstuff:andesite_link_casing"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "saxum": 3,
+    "sensus": 3
+  }
+}

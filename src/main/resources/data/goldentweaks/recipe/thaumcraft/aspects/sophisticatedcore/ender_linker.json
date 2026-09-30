@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedcore:ender_linker"
+  },
+  "aspects": {
+    "alienis": 3,
+    "iter": 3,
+    "sensus": 3
+  }
+}

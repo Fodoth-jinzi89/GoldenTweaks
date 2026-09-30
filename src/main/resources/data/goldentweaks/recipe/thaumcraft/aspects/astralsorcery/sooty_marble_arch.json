@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:sooty_marble_arch"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

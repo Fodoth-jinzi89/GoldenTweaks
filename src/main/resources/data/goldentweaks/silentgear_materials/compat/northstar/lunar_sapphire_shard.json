@@ -28,11 +28,11 @@
       "armor/chestplate": 7.781,
       "armor/helmet": 2.918,
       "armor/leggings": 5.836,
-      "armor_durability": 60.126,
+      "armor_durability": 30.063,
       "armor_toughness": 2.476,
       "attack_damage": 9.903,
       "charging_value": 2.038,
-      "durability": 1839.136,
+      "durability": 919.568,
       "enchantment_value": 38.526,
       "harvest_speed": 15.562,
       "harvest_tier": {
@@ -42,9 +42,6 @@
       },
       "magic_armor": 17.684,
       "magic_damage": 11.318,
-      "projectile_accuracy": 1.424,
-      "projectile_speed": 1.495,
-      "ranged_damage": 5.659,
       "rarity": 83.662,
       "traits": [
         {

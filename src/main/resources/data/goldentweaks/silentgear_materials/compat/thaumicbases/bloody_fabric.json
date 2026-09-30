@@ -5,7 +5,7 @@
     "can_salvage": true,
     "categories": [
       "textile",
-      "advanced"
+      "intermediate"
     ],
     "gear_type_blacklist": [],
     "ingredient": {
@@ -14,7 +14,7 @@
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FF802939",
+    "color": "#FF626992",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.thaumicbases.bloody_fabric"
@@ -25,32 +25,42 @@
     "silentgear:lining": {
       "armor_durability": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.64
+        "value": 0.638
       },
       "armor_toughness": {
         "operation": "ADD",
-        "value": 2.24
+        "value": 2.233
       },
       "magic_armor": {
         "operation": "ADD",
-        "value": 3.2
+        "value": 3.19
       },
       "traits": [
         {
           "conditions": [],
           "level": 1,
           "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
         }
       ]
     },
     "silentgear:grip": {
       "attack_speed": {
         "operation": "ADD",
-        "value": 0.224
+        "value": 0.223
       },
       "repair_efficiency": {
         "operation": "MULTIPLY_BASE",
-        "value": 0.448
+        "value": 0.447
       },
       "repair_value": {
         "operation": "ADD",
@@ -61,6 +71,16 @@
           "conditions": [],
           "level": 1,
           "trait": "silentgear:silky"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
         }
       ]
     }

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createpropulsion"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "NGN"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/platinum"
+    },
+    "I": {
+      "item": "createpropulsion:ion_thruster"
+    },
+    "N": {
+      "item": "createpropulsion:platinum_nugget"
+    },
+    "G": {
+      "item": "simulated:gimbal_sensor"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:vector_thruster",
+    "count": 1
+  }
+}

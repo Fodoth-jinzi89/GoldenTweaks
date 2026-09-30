@@ -11,10 +11,12 @@ public final class GoldenTweaksClientConfig {
 
     // Misc
     public static final ModConfigSpec.BooleanValue DISABLE_BUILDING_WANDS_BLOCK_PREVIEW;
-    /** 停止输入后等多少 tick 才开始搜索（AE 终端与 EMI 共用）。 */
-    public static final ModConfigSpec.IntValue SEARCH_START_DELAY_TICKS;
-    /** 两次搜索提交之间的最小间隔，用来把连续输入的负担摊开。 */
-    public static final ModConfigSpec.IntValue SEARCH_SPREAD_DURATION_TICKS;
+    /** EMI 搜索内核：用 gram 倒排索引 + 位集求值替换 EMI 的「多重集合物化 + 全量逐项扫描」。 */
+    public static final ModConfigSpec.BooleanValue EMI_FAST_SEARCH;
+    /** 跳过 vanilla 后缀数组的存储与排序（秒级重载开销），仅在搜索内核启用时有意义。 */
+    public static final ModConfigSpec.BooleanValue EMI_SKIP_VANILLA_SEARCH_INDEX;
+    /** 启动后按启动器传入的 --width/--height 重设窗口尺寸。 */
+    public static final ModConfigSpec.BooleanValue WINDOW_FOLLOWS_LAUNCHER;
 
     // Debug
     public static final ModConfigSpec.BooleanValue DEBUG_GUI_INSPECTOR;
@@ -34,15 +36,20 @@ public final class GoldenTweaksClientConfig {
                 .comment(comment("disable_building_wands_block_preview"))
                 .define("disableBuildingWandsBlockPreview", true);
 
-        SEARCH_START_DELAY_TICKS = builder
-                .translation(key("search_start_delay"))
-                .comment(comment("search_start_delay"))
-                .defineInRange("searchStartDelay", 20, 0, Integer.MAX_VALUE);
+        EMI_FAST_SEARCH = builder
+                .translation(key("emi_fast_search"))
+                .comment(comment("emi_fast_search"))
+                .define("emiFastSearch", true);
 
-        SEARCH_SPREAD_DURATION_TICKS = builder
-                .translation(key("search_spread_duration"))
-                .comment(comment("search_spread_duration"))
-                .defineInRange("searchSpreadDuration", 20, 0, Integer.MAX_VALUE);
+        EMI_SKIP_VANILLA_SEARCH_INDEX = builder
+                .translation(key("emi_skip_vanilla_search_index"))
+                .comment(comment("emi_skip_vanilla_search_index"))
+                .define("emiSkipVanillaSearchIndex", true);
+
+        WINDOW_FOLLOWS_LAUNCHER = builder
+                .translation(key("window_follows_launcher"))
+                .comment(comment("window_follows_launcher"))
+                .define("windowFollowsLauncherSize", true);
 
         builder.pop();
 
@@ -75,6 +82,10 @@ public final class GoldenTweaksClientConfig {
     public static boolean doDebugGuiCopyToClipboard() {
         if (!GTState.isReady()) return false;
         return DEBUG_GUI_COPY_TO_CLIPBOARD.get();
+    }
+
+    public static boolean doFollowLauncherWindowSize() {
+        return WINDOW_FOLLOWS_LAUNCHER.get();
     }
 
     private static String key(String path) {

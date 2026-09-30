@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoguanniao:riven_plume_book"
+  },
+  "aspects": {
+    "cognitio": 3
+  }
+}

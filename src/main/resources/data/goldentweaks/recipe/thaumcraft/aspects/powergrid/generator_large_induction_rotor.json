@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:generator_large_induction_rotor"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "industrial_platform:platform_builder"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

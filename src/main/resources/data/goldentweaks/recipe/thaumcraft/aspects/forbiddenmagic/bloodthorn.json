@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:bloodthorn"
+  },
+  "aspects": {
+    "herba": 3,
+    "corpus": 3,
+    "vitium": 2,
+    "sonus": 4,
+    "aer": 2
+  }
+}

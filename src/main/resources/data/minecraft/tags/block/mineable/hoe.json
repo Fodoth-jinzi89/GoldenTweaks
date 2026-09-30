@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thaumicbases:golden_oak_leaves",
+    "thaumicbases:peaceful_leaves",
+    "thaumicbases:nether_leaves",
+    "thaumicbases:ender_leaves"
+  ]
+}

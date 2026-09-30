@@ -5,6 +5,7 @@
     "aeallpattern:aggregate_pattern.named_part": "%1$s Aggregate Pattern [%2$s/%3$s]",
     "aeallpattern:aggregate_pattern.named_variant": "%1$s Aggregate Pattern (%2$s)",
     "aeallpattern:all_pattern_generator": "All Pattern Generator",
+    "aeallpattern:guide": "AE All Pattern Guide",
     "aeallpattern:pattern_binder": "All Pattern Binder"
   },
   "blocks": {

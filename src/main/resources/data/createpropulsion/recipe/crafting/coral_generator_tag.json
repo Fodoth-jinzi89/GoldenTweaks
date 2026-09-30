@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createpropulsion"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+    "TWT",
+    "PSP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/platinum"
+    },
+    "S": {
+      "item": "simulated:docking_connector"
+    },
+    "T": {
+      "item": "create:sturdy_sheet"
+    },
+    "W": {
+      "item": "create:stockpile_switch"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:coral_generator",
+    "count": 1
+  }
+}

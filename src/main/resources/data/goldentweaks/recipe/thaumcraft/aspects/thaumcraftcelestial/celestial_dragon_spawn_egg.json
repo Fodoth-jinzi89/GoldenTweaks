@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:celestial_dragon_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "cosmic": 3,
+    "victus": 3,
+    "vinculum": 3,
+    "fames": 2,
+    "praecantatio": 2
+  }
+}

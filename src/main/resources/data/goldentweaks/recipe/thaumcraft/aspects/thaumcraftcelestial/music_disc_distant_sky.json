@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:music_disc_distant_sky"
+  },
+  "aspects": {
+    "sonus": 4
+  }
+}

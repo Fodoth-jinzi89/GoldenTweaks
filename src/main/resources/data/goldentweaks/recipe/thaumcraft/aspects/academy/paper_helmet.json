@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:paper_helmet"
+  },
+  "aspects": {
+    "tutamen": 4
+  }
+}

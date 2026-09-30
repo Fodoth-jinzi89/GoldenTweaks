@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:large_integrated_working_station_input_hatch"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 2
+  }
+}

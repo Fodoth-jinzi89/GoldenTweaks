@@ -1,0 +1,61 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "academy:constraint_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF77695A",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.academy.constraint_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 27.24,
+      "armor/boots": 4.086,
+      "armor/chestplate": 10.896,
+      "armor/helmet": 4.086,
+      "armor/leggings": 8.172,
+      "armor_durability": 42.373,
+      "attack_damage": 4.358,
+      "charging_value": 0.165,
+      "durability": 762.72,
+      "enchantment_value": 3.743,
+      "harvest_speed": 10.351,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "rarity": 32.43,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

@@ -3,6 +3,9 @@
   "blocks": {
     "hotstuff:analog_torsion_spring": "Analog Torsion Spring",
     "hotstuff:analog_torsion_spring.tooltip.summary": "Redstone signal strength controls the maximum angle as a fraction of the set angle. At max signal strength, acts exactly like a _Torsion Spring_",
+    "hotstuff:andesite_link_casing": "Andesite Link Casing",
+    "hotstuff:brass_link_casing": "Brass Link Casing",
+    "hotstuff:copycat_link_casing": "Copycat Link Casing",
     "hotstuff:copycat_sail": "Copycat Windmill Sail",
     "hotstuff:copycat_sail.tooltip.behaviour1": "Applies _held item_ as its _material_ if possible. _Click again_ to cycle _orientation_ or _powered_ state. Use a _Wrench_ to _reset_ the material.",
     "hotstuff:copycat_sail.tooltip.condition1": "When R-Clicked with a Block",

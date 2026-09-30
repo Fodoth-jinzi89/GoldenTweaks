@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:aquamarine_shale"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

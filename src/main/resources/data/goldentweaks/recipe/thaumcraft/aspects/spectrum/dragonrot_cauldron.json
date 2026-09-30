@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:dragonrot_cauldron"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

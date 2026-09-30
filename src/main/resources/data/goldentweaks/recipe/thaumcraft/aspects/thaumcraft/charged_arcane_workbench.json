@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:charged_arcane_workbench"
+  },
+  "aspects": {
+    "praecantatio": 6,
+    "fabrico": 3,
+    "machina": 3,
+    "potentia": 3
+  }
+}

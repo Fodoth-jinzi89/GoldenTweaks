@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluidlogistics:blaze_cooler"
+  },
+  "aspects": {
+    "ardor": 4,
+    "ignis": 3
+  }
+}

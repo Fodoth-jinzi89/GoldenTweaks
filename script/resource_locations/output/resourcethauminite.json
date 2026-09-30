@@ -1,0 +1,8 @@
+{
+  "items": {
+    "resourcethauminite:thauminite_ingot.name": "Thauminite Ingot",
+    "resourcethauminite:wand_cap_thauminite.name": "Thauminite Cap"
+  },
+  "blocks": {},
+  "entities": {}
+}

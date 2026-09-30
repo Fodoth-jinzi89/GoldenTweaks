@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:starmetal_ingot"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

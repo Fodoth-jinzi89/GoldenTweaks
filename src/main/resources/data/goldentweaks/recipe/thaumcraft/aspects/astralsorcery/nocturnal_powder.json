@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:nocturnal_powder"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

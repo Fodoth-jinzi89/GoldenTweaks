@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:ray_twister"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

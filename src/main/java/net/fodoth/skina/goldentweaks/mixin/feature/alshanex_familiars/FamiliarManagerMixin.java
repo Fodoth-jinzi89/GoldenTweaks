@@ -12,8 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import net.alshanex.familiarslib.data.PlayerFamiliarData;
-import net.alshanex.familiarslib.registry.AttachmentRegistry;
+import net.alshanex.familiarslib.data.FamiliarRoster;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -55,10 +54,9 @@ public class FamiliarManagerMixin {
     @Inject(method = "summonFamiliar", at = @At("TAIL"))
     private static void gt$onSummon(ServerPlayer player, UUID familiarId, CallbackInfo ci) {
 
-        PlayerFamiliarData data =
-                player.getData(AttachmentRegistry.PLAYER_FAMILIAR_DATA);
+        FamiliarRoster roster = FamiliarRoster.of(player);
 
-        CompoundTag nbt = data.getFamiliarData(familiarId);
+        CompoundTag nbt = roster.getFamiliarData(familiarId);
         if (nbt == null) return;
 
         ServerLevel level = player.serverLevel();
@@ -74,10 +72,9 @@ public class FamiliarManagerMixin {
     @Inject(method = "summonSpecificFamiliarAtPosition", at = @At("TAIL"))
     private static void gt$onSummonSpecific(ServerPlayer player, UUID familiarId, int positionIndex, CallbackInfo ci) {
 
-        PlayerFamiliarData data =
-                player.getData(AttachmentRegistry.PLAYER_FAMILIAR_DATA);
+        FamiliarRoster roster = FamiliarRoster.of(player);
 
-        CompoundTag nbt = data.getFamiliarData(familiarId);
+        CompoundTag nbt = roster.getFamiliarData(familiarId);
         if (nbt == null) return;
 
         ServerLevel level = player.serverLevel();
@@ -126,18 +123,17 @@ public class FamiliarManagerMixin {
         LivingEntity owner = familiar.getSummoner();
         if (!(owner instanceof ServerPlayer player)) return;
 
-        PlayerFamiliarData data =
-                player.getData(AttachmentRegistry.PLAYER_FAMILIAR_DATA);
+        FamiliarRoster roster = FamiliarRoster.of(player);
 
         UUID id = familiar.getUUID();
 
         if (FamiliarManager.isFamiliarDead(id)) return;
         if (familiar.getHealth() <= 0) return;
-        if (!data.hasFamiliar(id)) return;
+        if (!roster.hasFamiliar(id)) return;
 
         try {
             CompoundTag nbt = GoldenTweaksConsumableHelper.createFamiliarNBT(familiar);
-            data.addTamedFamiliar(id, nbt);
+            roster.addTamedFamiliar(id, nbt);
             GoldenTweaksConsumableHelper.saveData(familiar);
         } catch (Exception e) {
             GoldenTweaks.LOGGER.error("GT sync failed {}", id, e);

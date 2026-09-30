@@ -80,6 +80,7 @@
     "extendedae:mddyue": "MDDyue",
     "extendedae:oversize_interface": "ME Oversize Interface",
     "extendedae:silicon_block": "Block of Silicon",
+    "extendedae:vacuum_interface": "ME Vacuum Interface",
     "extendedae:wireless_connect": "ME Wireless Connector",
     "extendedae:wireless_hub": "ME Wireless Hub"
   },

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluidlogistics:fluid_inventory_access_port"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "aqua": 3,
+    "vas": 3,
+    "machina": 2
+  }
+}

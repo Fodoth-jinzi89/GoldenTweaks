@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.event;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.emilink.GTEmiLinkCacheGuard;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksConfigScreen;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,6 +16,9 @@ public class ClientSetupEvent {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
+
+        // emilink 缓存不感知模组变化，增删模组后必须失效（否则搜索/网络标记失灵，甚至加载时 OOM）
+        GTEmiLinkCacheGuard.onClientSetup();
 
         // Only register Cloth Config screen when Cloth Config exists
         if (ModList.get().isLoaded("cloth_config")) {

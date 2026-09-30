@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:egg_yolk_paste_bucket"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

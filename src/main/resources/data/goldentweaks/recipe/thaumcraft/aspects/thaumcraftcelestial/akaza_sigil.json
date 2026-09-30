@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:akaza_sigil"
+  },
+  "aspects": {
+    "lucrum": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:theurgy_alchemical_sulfurs"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

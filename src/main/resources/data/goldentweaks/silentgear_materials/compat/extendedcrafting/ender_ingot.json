@@ -29,23 +29,16 @@
       "armor/helmet": 2.544,
       "armor/leggings": 5.088,
       "armor_durability": 26.382,
-      "armor_toughness": 3.053,
       "attack_damage": 2.714,
-      "charging_value": 0.741,
-      "draw_speed": 0.149,
+      "charging_value": 0.148,
       "durability": 474.88,
-      "enchantment_value": 15.427,
+      "enchantment_value": 3.085,
       "harvest_speed": 6.445,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
-        "level_hint": "2",
-        "name": "iron"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 6.445,
-      "magic_damage": 2.307,
-      "projectile_accuracy": 1.066,
-      "projectile_speed": 1.079,
-      "ranged_damage": 1.187,
       "rarity": 24.72,
       "traits": [
         {

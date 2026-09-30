@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:orchid"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

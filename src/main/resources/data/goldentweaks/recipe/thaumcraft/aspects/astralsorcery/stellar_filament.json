@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:stellar_filament"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

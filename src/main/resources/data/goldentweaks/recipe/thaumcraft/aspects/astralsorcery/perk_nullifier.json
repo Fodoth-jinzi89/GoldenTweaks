@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:perk_nullifier"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:crypt_skull"
+  },
+  "aspects": {
+    "mortuus": 3
+  }
+}

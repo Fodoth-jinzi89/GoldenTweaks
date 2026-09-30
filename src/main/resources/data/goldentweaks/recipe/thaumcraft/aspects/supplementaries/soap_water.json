@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:soap_water"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

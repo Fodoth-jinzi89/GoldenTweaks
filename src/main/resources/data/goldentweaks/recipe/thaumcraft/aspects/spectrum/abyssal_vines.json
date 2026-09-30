@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:abyssal_vines"
+  },
+  "aspects": {
+    "profundum": 3
+  }
+}

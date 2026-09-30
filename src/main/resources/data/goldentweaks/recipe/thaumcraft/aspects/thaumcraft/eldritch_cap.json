@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:eldritch_cap"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

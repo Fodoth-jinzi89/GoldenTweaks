@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:teleporter"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 2
+  }
+}

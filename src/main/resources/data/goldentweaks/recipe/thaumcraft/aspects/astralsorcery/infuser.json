@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:infuser"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

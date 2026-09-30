@@ -29,23 +29,16 @@
       "armor/helmet": 4.338,
       "armor/leggings": 8.676,
       "armor_durability": 44.987,
-      "armor_toughness": 5.206,
       "attack_damage": 4.627,
-      "charging_value": 0.841,
-      "draw_speed": 0.219,
+      "charging_value": 0.168,
       "durability": 809.76,
-      "enchantment_value": 19.254,
+      "enchantment_value": 3.851,
       "harvest_speed": 10.99,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
-        "level_hint": "4",
-        "name": "netherite"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
       },
-      "magic_armor": 10.99,
-      "magic_damage": 3.933,
-      "projectile_accuracy": 1.112,
-      "projectile_speed": 1.135,
-      "ranged_damage": 2.024,
       "rarity": 33.69,
       "traits": [
         {

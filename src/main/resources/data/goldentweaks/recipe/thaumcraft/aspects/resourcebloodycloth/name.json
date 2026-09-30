@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "resourcebloodycloth:name"
+  },
+  "aspects": {
+    "incantatio": 4,
+    "praecantatio": 4,
+    "corpus": 3
+  }
+}

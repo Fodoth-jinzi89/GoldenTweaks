@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Java 方块 · 底层逻辑树状图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #1e1e1e;
+            font-family: 'Segoe UI', 'Fira Code', 'Courier New', monospace;
+            color: #d4d4d4;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tree-container {
+            max-width: 1400px;
+            width: 100%;
+            background: #252526;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+            padding: 2rem 1.5rem;
+            border: 1px solid #3c3c3c;
+        }
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 400;
+            color: #e0e0e0;
+            margin-bottom: 0.25rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 span {
+            background: #3a6b4b;
+            color: #b7f0b1;
+            font-size: 0.9rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .subhead {
+            color: #9a9a9a;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            border-left: 3px solid #4caf50;
+            padding-left: 1rem;
+        }
+        .tree {
+            list-style: none;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            position: relative;
+        }
+        .tree ul {
+            list-style: none;
+            margin-left: 1.8rem;
+            padding-left: 1rem;
+            border-left: 1px dashed #4a4a4a;
+        }
+        .tree li {
+            position: relative;
+            margin: 0.25rem 0;
+            padding-left: 1.2rem;
+        }
+        .tree li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #6a9955;
+            font-size: 0.9rem;
+            top: 0.1rem;
+            transition: transform 0.1s ease;
+        }
+        .tree li.collapsed::before {
+            content: "▸";
+            transform: rotate(0deg);
+        }
+        .tree li.expanded::before {
+            content: "▾";
+            transform: rotate(0deg);
+            color: #4ec9b0;
+        }
+        .tree li > span {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0.1rem 0.4rem;
+            border-radius: 6px;
+            transition: background 0.15s;
+            font-weight: 500;
+            color: #d7ba7d;
+        }
+        .tree li > span:hover {
+            background: #2d3a2d;
+        }
+        .tree .tag {
+            font-size: 0.75rem;
+            background: #2d2d2d;
+            color: #9cdcfe;
+            padding: 0.05rem 0.5rem;
+            border-radius: 12px;
+            margin-left: 0.7rem;
+            font-weight: 400;
+            border: 1px solid #3c3c3c;
+            letter-spacing: 0.3px;
+        }
+        .tree .layer-badge {
+            font-size: 0.7rem;
+            background: #1e3a2e;
+            color: #8fdf8f;
+            padding: 0.1rem 0.6rem;
+            border-radius: 16px;
+            margin-left: 0.8rem;
+            border: 1px solid #2e5a3e;
+            font-weight: 400;
+            vertical-align: middle;
+        }
+        .tree ul.collapsed {
+            display: none;
+        }
+        .tree li > ul {
+            transition: all 0.15s ease;
+        }
+        .tree li:not(.collapsed) > ul {
+            display: block;
+        }
+        .tree li.collapsed > ul {
+            display: none;
+        }
+        .tree .code-snippet {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.8rem;
+            background: #1a1f1a;
+            color: #b5cea8;
+            padding: 0.05rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid #2e3a2e;
+            margin-left: 0.4rem;
+            white-space: nowrap;
+            display: inline-block;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+        .tree .layer-title {
+            font-weight: 600;
+            color: #c586c0;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+        .tree .meta {
+            color: #7a7a7a;
+            font-size: 0.78rem;
+            margin-left: 0.5rem;
+            font-style: italic;
+        }
+        .tree .depth-marker {
+            color: #569cd6;
+            font-size: 0.7rem;
+            margin-left: 0.6rem;
+            opacity: 0.8;
+        }
+        .controls {
+            display: flex;
+            gap: 0.8rem;
+            justify-content: flex-end;
+            margin-bottom: 1.5rem;
+        }
+        .controls button {
+            background: #2d2d2d;
+            border: 1px solid #4a4a4a;
+            color: #ccc;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-family: inherit;
+        }
+        .controls button:hover {
+            background: #3e3e3e;
+            border-color: #6a9955;
+            color: white;
+        }
+        .footer-note {
+            margin-top: 2rem;
+            color: #6b6b6b;
+            font-size: 0.78rem;
+            text-align: center;
+            border-top: 1px solid #2f2f2f;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="tree-container">
+    <h1>🧱 方块 · 底层逻辑树 <span>MC Java Edition</span></h1>
+    <div class="subhead">从 JVM 内存对象到玩法交互 —— 每一层都展开了代码级的子结构，点击任意节点可折叠/展开</div>
+
+    <div class="controls">
+        <button id="expandAll">展开全部</button>
+        <button id="collapseAll">折叠全部</button>
+    </div>
+
+    <ul class="tree" id="treeRoot">
+        <!-- ================= 玩法层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">🎮 玩法层（玩家可感知）</span>
+            <span class="layer-badge">顶层</span>
+            <ul>
+                <li><span>交互 onUse / onBreak / onSteppedOn</span>
+                    <ul>
+                        <li><span>onUse</span> <span class="code-snippet">InteractionResult use(BlockState, Level, BlockPos, Player, InteractionHand, BlockHitResult)</span>
+                            <ul>
+                                <li>触发条件：右键点击方块</li>
+                                <li>返回值：SUCCESS / CONSUME / PASS</li>
+                                <li>典型：箱子打开、按钮按下、门旋转</li>
+                            </ul>
+                        </li>
+                        <li><span>onBreak</span> <span class="code-snippet">void onRemove(BlockState, Level, BlockPos, BlockState newState, boolean isMoving)</span>
+                            <ul>
+                                <li>掉落处理：<code>getDroppedStacks</code></li>
+                                <li>统计：玩家统计信息触发</li>
+                            </ul>
+                        </li>
+                        <li><span>onSteppedOn</span> <span class="code-snippet">void stepOn(Level, BlockPos, BlockState, Entity)</span>
+                            <ul>
+                                <li>典型：岩浆伤害、耕地踩踏、压力板激活</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span>掉落 getDroppedStacks</span>
+                    <ul>
+                        <li>工具条件：<code>requiresCorrectToolForDrops</code></li>
+                        <li>精准采集：<code>hasSilkTouch</code></li>
+                        <li>时运附魔：<code>BonusLevelDropProvider</code></li>
+                        <li>战利品表：<code>LootTable</code> 随机池</li>
+                    </ul>
+                </li>
+                <li><span>音效 SoundType</span>
+                    <ul>
+                        <li>破坏音：<code>breakSound</code></li>
+                        <li>放置音：<code>placeSound</code></li>
+                        <li>踩踏音：<code>stepSound</code></li>
+                        <li>材质映射：木头/石头/金属/草/沙…</li>
+                    </ul>
+                </li>
+                <li><span>红石导体</span>
+                    <ul>
+                        <li>是否传导：<code>isRedstoneConductor</code></li>
+                        <li>弱充能/强充能判定</li>
+                        <li>影响：箱子开合、红石灯亮灭</li>
+                    </ul>
+                </li>
+                <li><span>窒息 & 视野阻挡</span>
+                    <ul>
+                        <li>窒息：<code>isSuffocating</code></li>
+                        <li>视野：<code>isViewBlocking</code></li>
+                        <li>光照遮挡：<code>canOcclude</code> / <code>getLightBlock</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ================= 刻层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">⏱️ 刻层（随时间变化）</span>
+            <ul>
+                <li><span>randomTick（随机刻）</span> <span class="tag">每 Section 每刻随机 3 方块</span>
+                    <ul>
+                        <li>调用：<code>randomTick(BlockState, ServerLevel, BlockPos, RandomSource)</code></li>
+                        <li>典型行为：作物生长、冰融化、铜氧化、草蔓延</li>
+                        <li>触发条件：<code>isRandomlyTicking()</code> 为 true</li>
+                    </ul>
+                </li>
+                <li><span>tick（计划刻）</span> <span class="tag">精确延迟</span>
+                    <ul>
+                        <li>调用：<code>tick(BlockState, ServerLevel, BlockPos, RandomSource)</code></li>
+                        <li>调度：<code>scheduleTick</code> / <code>LevelTicks</code></li>
+                        <li>典型：液体流动、红石中继器延迟、门自动关闭</li>
+                        <li>数据结构：<code>LevelTicks</code> 按优先级队列</li>
+                    </ul>
+                </li>
+                <li><span>BlockEntity.tick</span> <span class="tag">每游戏刻</span>
+                    <ul>
+                        <li>调用：<code>BlockEntityTicker&lt;T&gt; ticker</code></li>
+                        <li>典型：熔炉燃烧、漏斗传输、信标效果、刷怪笼</li>
+                        <li>条件：<code>getTicker()</code> 返回非 null</li>
+                        <li>注意：仅在区块加载时执行</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ================= 行为层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">⚙️ 行为层 BlockBehaviour</span>
+            <ul>
+                <li><span>Properties（静态规则）</span>
+                    <ul>
+                        <li><span>物理属性</span>
+                            <ul>
+                                <li><code>friction</code> 摩擦力 (默认 0.6)</li>
+                                <li><code>speedFactor</code> 速度乘数</li>
+                                <li><code>jumpFactor</code> 跳跃乘数</li>
+                            </ul>
+                        </li>
+                        <li><span>挖掘属性</span>
+                            <ul>
+                                <li><code>destroyTime</code> 硬度</li>
+                                <li><code>explosionResistance</code> 爆炸抗性</li>
+                                <li><code>requiresCorrectToolForDrops</code> 工具需求</li>
+                            </ul>
+                        </li>
+                        <li><span>交互属性</span>
+                            <ul>
+                                <li><code>hasCollision</code> 碰撞</li>
+                                <li><code>canOcclude</code> 遮挡</li>
+                                <li><code>replaceable</code> 可替代（草/雪）</li>
+                                <li><code>isAir</code> / <code>isLiquid</code> 特殊标记</li>
+                            </ul>
+                        </li>
+                        <li><span>渲染属性</span>
+                            <ul>
+                                <li><code>renderShape</code> (MODEL/INVISIBLE/ENTITYBLOCK)</li>
+                                <li><code>noOcclusion</code> 不遮挡</li>
+                                <li><code>lightLevel</code> 发光等级</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span>neighborChanged（邻居更新）</span>
+                    <ul>
+                        <li>调用：<code>neighborChanged(BlockState, Level, BlockPos, Block, BlockPos, boolean)</code></li>
+                        <li>触发：红石信号变化、方块放置/破坏</li>
+                        <li>典型：红石灯亮灭、铁轨更新、活塞响应</li>
+                    </ul>
+                </li>
+                <li><span>BlockEntity（动态数据容器）</span>
+                    <ul>
+                        <li>持久化：<code>saveAdditional</code> / <code>loadAdditional</code></li>
+                        <li>网络同步：<code>getUpdateTag</code> / <code>getUpdatePacket</code></li>
+                        <li>数据槽：<code>Container</code> (箱子/熔炉)</li>
+                        <li>渲染接口：<code>BlockEntityRenderer</code></li>
+                    </ul>
+                </li>
+                <li><span>形状与碰撞</span>
+                    <ul>
+                        <li><code>getShape</code> / <code>getCollisionShape</code></li>
+                        <li><code>getVisualShape</code> 视觉形状</li>
+                        <li><code>isFaceSturdy</code> 面坚固度</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ================= 状态层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">🧩 状态层 BlockState（不可变）</span>
+            <ul>
+                <li><span>Property&lt;T&gt;（属性）</span>
+                    <ul>
+                        <li><code>facing</code> (Direction) 朝向</li>
+                        <li><code>powered</code> (Boolean) 充能</li>
+                        <li><code>waterlogged</code> (Boolean) 含水</li>
+                        <li><code>age</code> (Integer) 生长阶段</li>
+                        <li><code>half</code> (Enum) 上下半砖</li>
+                        <li><code>shape</code> (Enum) 楼梯/铁轨形状</li>
+                        <li>自定义属性：<code>BooleanProperty</code> / <code>EnumProperty</code> / <code>IntegerProperty</code></li>
+                    </ul>
+                </li>
+                <li><span>组合生成</span>
+                    <ul>
+                        <li>笛卡尔积：所有属性值组合</li>
+                        <li>启动时：<code>BlockStateDefinition</code> 生成全部合法状态</li>
+                        <li>不可变性：状态一旦创建永不改变，<code>setValue</code> 返回新实例</li>
+                        <li>缓存：<code>BlockState</code> 实例全局唯一</li>
+                    </ul>
+                </li>
+                <li><span>Block 实例无状态</span>
+                    <ul>
+                        <li>所有石头共享同一个 <code>Block</code> 对象</li>
+                        <li>状态查询：<code>defaultBlockState()</code></li>
+                        <li>注册表：<code>BLOCK_STATE_REGISTRY</code></li>
+                    </ul>
+                </li>
+                <li><span>状态切换</span>
+                    <ul>
+                        <li><code>setValue(Property, T)</code></li>
+                        <li><code>cycle(Property)</code> 循环切换</li>
+                        <li><code>getValue(Property)</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ================= 注册与 ID 层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">🆔 注册与 ID 层</span>
+            <ul>
+                <li><span>BLOCK_STATE_REGISTRY</span>
+                    <ul>
+                        <li>映射：<code>BlockState</code> ↔ 整数 ID</li>
+                        <li>用途：网络传输、存档存储</li>
+                        <li>上限：24 位 ID (16,777,216)</li>
+                        <li>全局静态：<code>Block.BLOCK_STATE_REGISTRY</code></li>
+                    </ul>
+                </li>
+                <li><span>Block 继承链</span>
+                    <ul>
+                        <li><code>Block</code> extends <code>BlockBehaviour</code></li>
+                        <li>实现 <code>ItemLike</code> 接口（关联物品）</li>
+                        <li>NeoForge：<code>IBlockExtension</code> 注入模组能力</li>
+                        <li>Fabric：<code>FabricBlockSettings</code> 扩展</li>
+                    </ul>
+                </li>
+                <li><span>注册流程</span>
+                    <ul>
+                        <li><code>Registry.register(BuiltInRegistries.BLOCK, ...)</code></li>
+                        <li>方块物品：<code>BlockItem</code> 自动注册</li>
+                        <li>数据包：<code>BlockState</code> 模型映射</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ================= 存储层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">💾 存储层（内存/磁盘）</span>
+            <ul>
+                <li><span>Chunk Column</span>
+                    <ul>
+                        <li>高度：<code>LevelHeightAccessor</code> (1.18+ 可变高度)</li>
+                        <li>Section 划分：16×16×16</li>
+                        <li>Section 数量：<code>getSectionsCount()</code></li>
+                    </ul>
+                </li>
+                <li><span>PalettedContainer&lt;BlockState, 4096&gt;</span> <span class="tag">调色板压缩</span>
+                    <ul>
+                        <li>位宽：1~8 bits（根据种类数量动态）</li>
+                        <li>调色板：<code>Palette&lt;BlockState&gt;</code></li>
+                        <li>单值优化：全部相同方块 → 只存一个 ID</li>
+                        <li>全局调色板：超过 256 种时回退到直接存储</li>
+                        <li>存储数组：<code>long[]</code> 打包数据</li>
+                    </ul>
+                </li>
+                <li><span>索引顺序</span>
+                    <ul>
+                        <li><code>Y × 256 + Z × 16 + X</code> (Y-major)</li>
+                        <li>原因：光照传播沿 Y 轴迭代，缓存友好</li>
+                        <li>局部坐标：0~15 每轴</li>
+                    </ul>
+                </li>
+                <li><span>磁盘序列化</span>
+                    <ul>
+                        <li>区块格式：<code>ChunkSerializer</code></li>
+                        <li>压缩：<code>RegionFile</code> 分区存储</li>
+                        <li>版本迁移：<code>DataFixerUpper</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ================= 渲染层 ================= -->
+        <li class="expanded">
+            <span class="layer-title">🎨 渲染层</span>
+            <ul>
+                <li><span>静态模型</span>
+                    <ul>
+                        <li><code>BakedModel</code> / <code>BlockStateModel</code></li>
+                        <li>模型加载：<code>ModelBakery</code></li>
+                        <li>JSON 模型：<code>assets/&lt;namespace&gt;/models/block/</code></li>
+                        <li>方块状态映射：<code>blockstates/</code> JSON</li>
+                    </ul>
+                </li>
+                <li><span>动态渲染 BlockEntityRenderer</span>
+                    <ul>
+                        <li>提交/渲染分离：
+                            <ul>
+                                <li><code>createRenderState</code> 创建状态对象</li>
+                                <li><code>extractRenderState</code> 提取动态数据</li>
+                                <li><code>submit</code> 提交到渲染队列</li>
+                            </ul>
+                        </li>
+                        <li>变换矩阵：<code>PoseStack.translate(0.5, 1.0, 0.5)</code></li>
+                        <li>典型：箱子、告示牌、旗帜、床</li>
+                    </ul>
+                </li>
+                <li><span>批量绘制 MultiDrawIndirect</span> <span class="tag">新快照</span>
+                    <ul>
+                        <li>打包多个绘制调用 → 单次 GPU 提交</li>
+                        <li>减少 CPU 开销，复杂场景性能提升</li>
+                        <li>适用：大量区块加载、密集方块</li>
+                    </ul>
+                </li>
+                <li><span>渲染层（RenderType）</span>
+                    <ul>
+                        <li><code>solid</code> / <code>cutout</code> / <code>cutout_mipped</code> / <code>translucent</code></li>
+                        <li>决定透明度、剔除、排序</li>
+                    </ul>
+                </li>
+                <li><span>光照与 AO</span>
+                    <ul>
+                        <li>平滑光照：<code>AmbientOcclusion</code></li>
+                        <li>亮度缓存：<code>LightEngine</code></li>
+                        <li>方块发光：<code>getLightEmission</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="footer-note">
+        ⚡ 从 PalettedContainer 到 onUse —— 方块逻辑的完整纵向切面 · 点击任意节点折叠/展开
+    </div>
+</div>
+
+<script>
+    (function() {
+        const tree = document.getElementById('treeRoot');
+
+        // 为所有包含 ul 的 li 添加可折叠功能（但保留根节点默认展开）
+        function initCollapsible() {
+            const allLi = tree.querySelectorAll('li');
+            allLi.forEach(li => {
+                const hasUl = li.querySelector(':scope > ul');
+                if (hasUl) {
+                    // 如果还没有绑定过事件
+                    if (!li.dataset.bound) {
+                        const span = li.querySelector(':scope > span');
+                        if (span) {
+                            span.style.cursor = 'pointer';
+                            span.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                                // 切换折叠状态
+                                li.classList.toggle('collapsed');
+                                li.classList.toggle('expanded');
+                            });
+                        }
+                        // 初始状态：如果类中没有 collapsed 或 expanded，默认展开
+                        if (!li.classList.contains('collapsed') && !li.classList.contains('expanded')) {
+                            li.classList.add('expanded');
+                        }
+                        li.dataset.bound = 'true';
+                    }
+                    // 子级 ul 默认显示（但由父级 class 控制）
+                }
+            });
+        }
+
+        // 展开所有
+        function expandAll() {
+            const allLi = tree.querySelectorAll('li');
+            allLi.forEach(li => {
+                li.classList.remove('collapsed');
+                li.classList.add('expanded');
+            });
+        }
+
+        // 折叠所有（但保留根节点下的第一层为展开？或者全部折叠）
+        function collapseAll() {
+            const allLi = tree.querySelectorAll('li');
+            allLi.forEach(li => {
+                // 如果有子级 ul 则折叠
+                if (li.querySelector(':scope > ul')) {
+                    li.classList.remove('expanded');
+                    li.classList.add('collapsed');
+                }
+            });
+            // 让根节点下的第一层层标题也折叠？更符合直觉：根 ul 下的 li 折叠
+            // 但根 ul 本身是 treeRoot，它的直接 li 是层节点，它们折叠后子级隐藏。
+            // 但最外层 li 折叠后整个层都不可见，用户可能想看到层标题
+            // 所以我们可以让根 li 不折叠？但用户要折叠全部，那就全部折叠掉，但根节点保留可见？
+            // 根 ul 是 #treeRoot，它的 li 是各个层。如果折叠它们，层内容隐藏，但层标题可见。
+            // 这没问题。
+        }
+
+        // 更细：默认全部展开（已经都在初始状态里加了 expanded，但确保）
+        function initDefault() {
+            // 所有有子 ul 的 li 默认展开（class 已经有 expanded）
+            const allLi = tree.querySelectorAll('li');
+            allLi.forEach(li => {
+                if (li.querySelector(':scope > ul')) {
+                    if (!li.classList.contains('collapsed') && !li.classList.contains('expanded')) {
+                        li.classList.add('expanded');
+                    }
+                }
+            });
+        }
+
+        // 绑定按钮
+        document.getElementById('expandAll').addEventListener('click', expandAll);
+        document.getElementById('collapseAll').addEventListener('click', collapseAll);
+
+        // 初始化
+        initCollapsible();
+        initDefault();
+
+        // 额外优化：点击文字时阻止冒泡已经做了，防止双重触发
+        // 如果用户点击 li 本身（而不是 span），不触发折叠，避免误触。
+    })();
+</script>
+</body>
+</html>

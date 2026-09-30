@@ -4,10 +4,14 @@
     "item": "avaritia:infinity"
   },
   "output": {
-    "id": "evolvedmekanism:molten_infinity",
+    "id": "avaritia_more_items:infinity",
     "amount": 810
   },
   "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_more_items"
+    },
     {
       "type": "neoforge:mod_loaded",
       "modid": "avaritia"

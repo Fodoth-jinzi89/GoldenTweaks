@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:creative_essentia_reservoir"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 3
+  }
+}

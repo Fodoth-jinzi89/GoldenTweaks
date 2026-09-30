@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:drop_item_magnet"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

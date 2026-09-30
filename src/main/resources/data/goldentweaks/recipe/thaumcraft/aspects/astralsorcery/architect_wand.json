@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:architect_wand"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

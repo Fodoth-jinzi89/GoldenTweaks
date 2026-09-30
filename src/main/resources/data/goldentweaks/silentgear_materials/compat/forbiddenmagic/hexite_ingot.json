@@ -23,24 +23,12 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 20,
-      "armor/boots": 3.0,
-      "armor/chestplate": 8.0,
-      "armor/helmet": 3.0,
-      "armor/leggings": 6.0,
-      "armor_durability": 8.889,
+      "armor_durability": 53.334,
       "armor_toughness": 3.6,
-      "attack_damage": 2.0,
-      "charging_value": 0.767,
+      "charging_value": 1.381,
       "draw_speed": 0.317,
-      "durability": 160,
-      "enchantment_value": 16.4,
-      "harvest_speed": 17.0,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
-        "level_hint": "4",
-        "name": "netherite"
-      },
+      "durability": 960,
+      "enchantment_value": 29.52,
       "magic_armor": 7.6,
       "magic_damage": 1.7,
       "projectile_accuracy": 1.178,

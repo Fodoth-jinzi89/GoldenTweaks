@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:physics_manager"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

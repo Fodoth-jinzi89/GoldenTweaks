@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics_utility_objects:brass_hydraulic_hinge_head"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

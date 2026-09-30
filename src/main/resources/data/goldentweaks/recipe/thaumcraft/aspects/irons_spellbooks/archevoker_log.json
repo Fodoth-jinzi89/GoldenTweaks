@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:archevoker_log"
+  },
+  "aspects": {
+    "cognitio": 4,
+    "arbor": 3
+  }
+}

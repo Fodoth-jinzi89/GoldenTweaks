@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "windtunnel:holo_glasses"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:paper_cup_cake_paste"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

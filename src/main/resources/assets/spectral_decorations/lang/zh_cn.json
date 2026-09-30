@@ -211,6 +211,19 @@
   "book.spectral_decorations.guidebook.spectral_decorations.name": "附属模组：美化装潢",
   "book.spectral_decorations.guidebook.spectral_decorations.description": "把整个光谱世界扔进彩虹颜料里",
   "book.spectral_decorations.guidebook.spectral_decorations.about.title": "光谱世界：美化装潢",
-  "book.spectral_decorations.guidebook.spectral_decorations.about.text": "*由 brothers_trouble 制作全套贴图*\\\n\\\n增加了大量装饰，并让各种方块、物品与装备都可以染色。"
-
+  "book.spectral_decorations.guidebook.spectral_decorations.about.text": "*由 brothers_trouble 制作全套贴图*\\\n\\\n增加了大量装饰，并让各种方块、物品与装备都可以染色。",
+  "recipeGroup.spectrum.metal_decorations": "金属装饰",
+  "block.spectral_decorations.iron_tubing": "铁管",
+  "block.spectral_decorations.gold_tubing": "金管",
+  "block.spectral_decorations.copper_tubing": "铜管",
+  "block.spectral_decorations.exposed_copper_tubing": "斑驳的铜管",
+  "block.spectral_decorations.weathered_copper_tubing": "锈蚀的铜管",
+  "block.spectral_decorations.oxidized_copper_tubing": "氧化的铜管",
+  "block.spectral_decorations.waxed_copper_tubing": "涂蜡的铜管",
+  "block.spectral_decorations.waxed_exposed_copper_tubing": "涂蜡的斑驳铜管",
+  "block.spectral_decorations.waxed_weathered_copper_tubing": "涂蜡的锈蚀铜管",
+  "block.spectral_decorations.waxed_oxidized_copper_tubing": "涂蜡的氧化铜管",
+  "book.spectral_decorations.guidebook.metal_decorations.about.text": "在捣鼓了那么多宝石之后，我差点忘了再看看其他类型的方块。金属方块也值得拥有一些有趣的形状和尺寸！这些怎么样？\\\n\\\n给铜制品涂蜡可以阻止它们氧化，正如预期的那样。",
+  "book.spectral_decorations.guidebook.metal_decorations.recipe.title": "合成",
+  "book.spectral_decorations.guidebook.metal_decorations.recipe.text": "它们都可以使用金属方块在切石机中合成。"
 }

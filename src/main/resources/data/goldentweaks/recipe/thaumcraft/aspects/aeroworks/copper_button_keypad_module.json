@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeroworks:copper_button_keypad_module"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3
+  }
+}

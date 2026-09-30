@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectral_decorations:kindling_plushie"
+  },
+  "aspects": {
+    "fabrico": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:neovitae_gravels"
+  },
+  "aspects": {
+    "terra": 3
+  }
+}

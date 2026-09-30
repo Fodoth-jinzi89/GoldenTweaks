@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:jade_vine_roots"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

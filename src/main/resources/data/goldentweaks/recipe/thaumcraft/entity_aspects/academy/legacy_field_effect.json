@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "academy:legacy_field_effect"
+  },
+  "aspects": {
+    "praecantatio": 4
+  }
+}

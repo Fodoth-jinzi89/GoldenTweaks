@@ -1,21 +1,42 @@
 {
   "items": {
+    "create_aeronautics_automated_logistics:advanced_transponder": "Advanced Transponder",
     "create_aeronautics_automated_logistics:airship_station": "Airship Station",
-    "create_aeronautics_automated_logistics:ship_transponder": "Ship Transponder"
+    "create_aeronautics_automated_logistics:logistics_terminal": "Logistics Terminal",
+    "create_aeronautics_automated_logistics:ship_transponder": "Vehicle Transponder",
+    "create_aeronautics_automated_logistics:train_station": "Simurail Station"
   },
   "blocks": {
+    "create_aeronautics_automated_logistics:advanced_transponder": "Advanced Transponder",
+    "create_aeronautics_automated_logistics:advanced_transponder.tooltip.behaviour1": "Front: dock. Back: lift. Left: north/south. Right: east/west. Top and bottom do not output.",
+    "create_aeronautics_automated_logistics:advanced_transponder.tooltip.behaviour2": "Lift outputs 0-15. N/S and E/W output 0 when idle, 1-7 for north/west, and 8-15 for south/east.",
+    "create_aeronautics_automated_logistics:advanced_transponder.tooltip.condition1": "Port Layout",
+    "create_aeronautics_automated_logistics:advanced_transponder.tooltip.condition2": "Drive Intent",
+    "create_aeronautics_automated_logistics:advanced_transponder.tooltip.summary": "Runs vehicle routes and exposes four horizontal redstone output ports for dock and drive intent.",
     "create_aeronautics_automated_logistics:airship_station": "Airship Station",
     "create_aeronautics_automated_logistics:airship_station.tooltip.behaviour1": "Outputs redstone while dock automation is active for this station.",
     "create_aeronautics_automated_logistics:airship_station.tooltip.behaviour2": "Link a station dock if this station should support docking waits and dock automation.",
     "create_aeronautics_automated_logistics:airship_station.tooltip.condition1": "Redstone Output",
     "create_aeronautics_automated_logistics:airship_station.tooltip.condition2": "Docking",
     "create_aeronautics_automated_logistics:airship_station.tooltip.summary": "Select a nearby ship, preview its recorded routes, and run or stop that ship from the station.",
-    "create_aeronautics_automated_logistics:ship_transponder": "Ship Transponder",
-    "create_aeronautics_automated_logistics:ship_transponder.tooltip.behaviour1": "Outputs redstone while dock automation is active for this ship.",
-    "create_aeronautics_automated_logistics:ship_transponder.tooltip.behaviour2": "Link a ship dock to support docking waits and docked automation.",
+    "create_aeronautics_automated_logistics:logistics_terminal": "Logistics Terminal",
+    "create_aeronautics_automated_logistics:logistics_terminal.tooltip.behaviour1": "Shows a permission-aware network view with route lines, station names, and live vehicle markers.",
+    "create_aeronautics_automated_logistics:logistics_terminal.tooltip.behaviour2": "Designed for zooming, panning, and following important stations or vehicles.",
+    "create_aeronautics_automated_logistics:logistics_terminal.tooltip.condition1": "Visibility",
+    "create_aeronautics_automated_logistics:logistics_terminal.tooltip.condition2": "Navigation",
+    "create_aeronautics_automated_logistics:logistics_terminal.tooltip.summary": "Opens a top-down logistics view for stations, routes, and active vehicles.",
+    "create_aeronautics_automated_logistics:ship_transponder": "Vehicle Transponder",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.behaviour1": "Outputs redstone while dock automation is active for this vehicle.",
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.behaviour2": "Link a vehicle dock to support docking waits and docked automation.",
     "create_aeronautics_automated_logistics:ship_transponder.tooltip.condition1": "Redstone Output",
     "create_aeronautics_automated_logistics:ship_transponder.tooltip.condition2": "Docking",
-    "create_aeronautics_automated_logistics:ship_transponder.tooltip.summary": "Owns this ship's stops, records new route segments, and runs the ship's route plan."
+    "create_aeronautics_automated_logistics:ship_transponder.tooltip.summary": "Owns this vehicle's stops, records new route segments, and runs the vehicle's route plan.",
+    "create_aeronautics_automated_logistics:train_station": "Simurail Station",
+    "create_aeronautics_automated_logistics:train_station.tooltip.behaviour1": "Outputs redstone while dock automation is active for this station.",
+    "create_aeronautics_automated_logistics:train_station.tooltip.behaviour2": "Link a station dock if this station should support docking waits and dock automation.",
+    "create_aeronautics_automated_logistics:train_station.tooltip.condition1": "Redstone Output",
+    "create_aeronautics_automated_logistics:train_station.tooltip.condition2": "Docking",
+    "create_aeronautics_automated_logistics:train_station.tooltip.summary": "Select a nearby Simurail train, preview its recorded routes, and run or stop that train from the station."
   },
   "entities": {}
 }

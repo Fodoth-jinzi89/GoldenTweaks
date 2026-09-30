@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:cosmic_sickle"
+  },
+  "aspects": {
+    "cosmic": 6
+  }
+}

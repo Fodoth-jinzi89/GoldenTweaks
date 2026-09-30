@@ -4,13 +4,17 @@
     "item": "avaritia:crystal_matrix_ingot"
   },
   "output": {
-    "id": "avaritia_integration:molten_crystal_matrix",
+    "id": "avaritia_more_items:molten_crystal_matrix",
     "amount": 90
   },
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "avaritia_integration"
+      "modid": "avaritia_more_items"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
     }
   ]
 }

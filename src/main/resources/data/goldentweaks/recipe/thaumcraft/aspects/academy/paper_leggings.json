@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "academy:paper_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "victus": 3,
+    "fames": 2
+  }
+}

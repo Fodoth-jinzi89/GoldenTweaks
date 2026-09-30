@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:lumen_crystal_cluster"
+  },
+  "aspects": {
+    "potentia": 3,
+    "vitreus": 3
+  }
+}

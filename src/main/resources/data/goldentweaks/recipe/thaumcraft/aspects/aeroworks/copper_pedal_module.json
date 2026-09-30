@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeroworks:copper_pedal_module"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

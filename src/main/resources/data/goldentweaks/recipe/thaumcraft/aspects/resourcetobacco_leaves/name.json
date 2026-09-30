@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "resourcetobacco_leaves:name"
+  },
+  "aspects": {
+    "herba": 3
+  }
+}

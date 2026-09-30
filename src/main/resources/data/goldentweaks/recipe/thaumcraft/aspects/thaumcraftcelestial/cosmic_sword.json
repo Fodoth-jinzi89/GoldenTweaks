@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraftcelestial:cosmic_sword"
+  },
+  "aspects": {
+    "cosmic": 6,
+    "telum": 4
+  }
+}

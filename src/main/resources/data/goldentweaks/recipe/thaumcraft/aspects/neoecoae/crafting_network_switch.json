@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:crafting_network_switch"
+  },
+  "aspects": {
+    "metallum": 3,
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

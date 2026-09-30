@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:portable_saw"
+  },
+  "aspects": {
+    "instrumentum": 4,
+    "fabrico": 3,
+    "machina": 3,
+    "perditio": 3
+  }
+}

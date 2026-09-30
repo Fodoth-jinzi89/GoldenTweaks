@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumcraft:greatwood_heart_aura_node"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "arbor": 2
+  }
+}

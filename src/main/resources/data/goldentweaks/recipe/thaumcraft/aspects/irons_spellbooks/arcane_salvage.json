@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:arcane_salvage"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "perditio": 3
+  }
+}

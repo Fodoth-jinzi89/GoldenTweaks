@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:film_printer"
+  },
+  "aspects": {
+    "sensus": 4,
+    "charta": 3,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

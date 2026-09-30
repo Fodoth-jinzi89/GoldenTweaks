@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:lumen_array"
+  },
+  "aspects": {
+    "potentia": 3
+  }
+}

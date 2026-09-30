@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "jaopca:tiny_dusts"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

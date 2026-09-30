@@ -23,24 +23,12 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 17.4,
-      "armor/boots": 2.61,
-      "armor/chestplate": 6.96,
-      "armor/helmet": 2.61,
-      "armor/leggings": 5.22,
-      "armor_durability": 7.733,
+      "armor_durability": 46.398,
       "armor_toughness": 3.132,
-      "attack_damage": 1.74,
-      "charging_value": 0.745,
+      "charging_value": 1.341,
       "draw_speed": 0.282,
-      "durability": 139.2,
-      "enchantment_value": 15.568,
-      "harvest_speed": 14.79,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
-        "level_hint": "3",
-        "name": "diamond"
-      },
+      "durability": 835.2,
+      "enchantment_value": 28.022,
       "magic_armor": 6.612,
       "magic_damage": 1.479,
       "projectile_accuracy": 1.155,

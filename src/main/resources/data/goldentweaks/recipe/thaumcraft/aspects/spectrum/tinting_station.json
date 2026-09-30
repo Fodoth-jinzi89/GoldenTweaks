@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:tinting_station"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

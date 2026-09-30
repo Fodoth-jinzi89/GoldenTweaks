@@ -1,0 +1,11 @@
+{
+  "items": {
+    "industrial_platform:fill_adjuster": "Fill Adjuster"
+  },
+  "blocks": {
+    "industrial_platform:fluid_pool": "Fluid Pool",
+    "industrial_platform:industrial_platform": "Industrial Platform",
+    "industrial_platform:platform_builder": "Platform Building Station"
+  },
+  "entities": {}
+}

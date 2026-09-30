@@ -917,3 +917,10 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "ftbchunks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"

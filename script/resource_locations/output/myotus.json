@@ -1,7 +1,14 @@
 {
   "items": {
-    "myotus:diamond_upgrade_card": "Diamond Upgrade Card"
+    "myotus:charged_ender_pearl": "Charged Ender Pearl",
+    "myotus:compat_press": "Inscriber Compat Press",
+    "myotus:compat_processor": "Compat Processor",
+    "myotus:myotus_upgrade_card": "Myotus Upgrade Card",
+    "myotus:printed_compat_processor": "Printed Compat Processor"
   },
-  "blocks": {},
+  "blocks": {
+    "myotus:charged_ender_pearl_block": "Charged Ender Pearl Block",
+    "myotus:ender_pearl_block": "Ender Pearl Block"
+  },
   "entities": {}
 }

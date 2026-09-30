@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoguanniao:hunting_return_book"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "metallum": 3
+  }
+}

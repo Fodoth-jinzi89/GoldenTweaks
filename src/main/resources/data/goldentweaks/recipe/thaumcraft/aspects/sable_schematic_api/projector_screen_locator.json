@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:projector_screen_locator"
+  },
+  "aspects": {
+    "sensus": 4,
+    "cognitio": 2,
+    "lux": 2
+  }
+}

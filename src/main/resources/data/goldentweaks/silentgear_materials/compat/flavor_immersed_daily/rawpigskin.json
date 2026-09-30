@@ -14,7 +14,7 @@
     "part_substitutes": {}
   },
   "display": {
-    "color": "#FFCD9C9C",
+    "color": "#FFD38C8D",
     "main_texture_type": "LOW_CONTRAST",
     "name": {
       "translate": "material.goldentweaks.compat.flavor_immersed_daily.rawpigskin"

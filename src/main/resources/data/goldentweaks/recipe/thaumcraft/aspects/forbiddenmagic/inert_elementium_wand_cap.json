@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:inert_elementium_wand_cap"
+  },
+  "aspects": {
+    "praecantatio": 2,
+    "vitium": 2
+  }
+}

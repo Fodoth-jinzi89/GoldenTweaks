@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:attuned_celestial_crystal"
+  },
+  "aspects": {
+    "cosmic": 3,
+    "vitreus": 3,
+    "praecantatio": 2
+  }
+}

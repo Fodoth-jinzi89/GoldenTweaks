@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "rcg_lib:item_block"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

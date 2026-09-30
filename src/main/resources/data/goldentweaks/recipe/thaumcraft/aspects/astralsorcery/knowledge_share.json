@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:knowledge_share"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

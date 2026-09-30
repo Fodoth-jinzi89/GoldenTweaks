@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:transformer_medium"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 3
+  }
+}

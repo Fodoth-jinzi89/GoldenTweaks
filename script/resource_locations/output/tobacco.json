@@ -1,0 +1,15 @@
+{
+  "items": {
+    "tobacco:tobacco_eldritch.name": "Eldrich Tobacco Pile",
+    "tobacco:tobacco_fighting.name": "Angry Tobacco Pile",
+    "tobacco:tobacco_hunger.name": "Saturating Tobacco Pile",
+    "tobacco:tobacco_knowledge.name": "Wisdom Tobacco Pile",
+    "tobacco:tobacco_mining.name": "Miner's Tobacco Pile",
+    "tobacco:tobacco_pile.name": "Tobacco Pile",
+    "tobacco:tobacco_sanity.name": "Relaxing Tobacco Pile",
+    "tobacco:tobacco_tainted.name": "Tainted Tobacco Pile",
+    "tobacco:tobacco_wispy.name": "Wispy Tobacco Pile"
+  },
+  "blocks": {},
+  "entities": {}
+}

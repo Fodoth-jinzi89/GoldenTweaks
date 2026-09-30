@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "apothic_flux:flux_spawner"
+  },
+  "aspects": {
+    "bestia": 3,
+    "permutatio": 3,
+    "vinculum": 3,
+    "potentia": 2
+  }
+}

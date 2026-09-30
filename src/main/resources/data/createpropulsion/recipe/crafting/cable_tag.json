@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createpropulsion"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PR",
+    "DN"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/platinum"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "D": {
+      "item": "minecraft:black_dye"
+    },
+    "N": {
+      "item": "createpropulsion:platinum_nugget"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:cable",
+    "count": 4
+  }
+}

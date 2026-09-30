@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:honey_welder"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}
