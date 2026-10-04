@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:grapple_hook"
+  },
+  "aspects": {
+    "instrumentum": 3
+  }
+}

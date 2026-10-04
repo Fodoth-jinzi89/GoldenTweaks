@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:useless_coil_tier_8"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 3,
+    "potentia": 3,
+    "ignis": 2
+  }
+}

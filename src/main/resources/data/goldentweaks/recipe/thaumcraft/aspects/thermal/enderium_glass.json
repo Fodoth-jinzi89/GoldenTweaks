@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:enderium_glass"
+  },
+  "aspects": {
+    "alienis": 3,
+    "metallum": 3,
+    "vitreus": 3
+  }
+}

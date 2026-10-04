@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:device_tree_extractor"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 3,
+    "terra": 3,
+    "perfodio": 2,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:diving_fabric"
+  },
+  "aspects": {
+    "pannus": 2
+  }
+}

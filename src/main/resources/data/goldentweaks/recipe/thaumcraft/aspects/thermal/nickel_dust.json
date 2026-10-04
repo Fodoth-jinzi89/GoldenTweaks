@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:nickel_dust"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

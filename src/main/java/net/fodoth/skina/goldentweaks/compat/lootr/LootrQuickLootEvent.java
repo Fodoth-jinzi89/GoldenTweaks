@@ -1,7 +1,8 @@
 package net.fodoth.skina.goldentweaks.compat.lootr;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
+import net.fodoth.skina.goldentweaks.network.PickupSettings;
+import net.fodoth.skina.goldentweaks.network.PickupSettingsManager;
 import net.fodoth.skina.goldentweaks.util.ItemPickupUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -60,9 +61,8 @@ public final class LootrQuickLootEvent {
     /** 右键 Lootr 容器：开始新会话，或刷新已有会话。 */
     @SubscribeEvent
     public static void onRightClick(PlayerInteractEvent.RightClickBlock event) {
-        // 功能开关、主手、服务端检查
-        if (!GoldenTweaksCommonConfig.LOOTR_QUICK_LOOT.get()
-                || event.getHand() != InteractionHand.MAIN_HAND
+        // 主手、服务端检查
+        if (event.getHand() != InteractionHand.MAIN_HAND
                 || event.getLevel().isClientSide()) {
             return;
         }
@@ -72,6 +72,13 @@ public final class LootrQuickLootEvent {
         if (!(container instanceof ILootrBlockEntity lootr)
                 || !(container instanceof LootrOpenedStateAccess)
                 || !(event.getEntity() instanceof ServerPlayer player)) {
+            return;
+        }
+
+        // Lootr 快速拾取独立于总开关，只由玩家自己的「Lootr 右键快速拾取」设定决定；
+        // 未启用则不拦截，交给原版打开界面
+        PickupSettings settings = PickupSettingsManager.get(player.getUUID());
+        if (!settings.lootrQuickLoot()) {
             return;
         }
 
@@ -90,9 +97,9 @@ public final class LootrQuickLootEvent {
                 SESSIONS.remove(key);
             }
             Direction face = event.getFace() != null ? event.getFace() : Direction.UP;
-            session = new Session(container, player, now, isLooted(container), face);
+            session = new Session(container, player, now, isLooted(container), face, settings);
             SESSIONS.put(key, session);
-            open(container, lootr, player);
+            open(container, lootr, player, settings.lootrPlayOpenAnimation());
             // 首次拾取由 onServerTick 在开箱动画播完后触发，这里不立即蹦物品
             return;
         }
@@ -103,7 +110,7 @@ public final class LootrQuickLootEvent {
             // 开箱动画尚未完成，等待 tick 触发首次拾取
             return;
         }
-        if (now - session.lastPickup < GoldenTweaksCommonConfig.LOOTR_HOLD_PICKUP_INTERVAL.get()) {
+        if (now - session.lastPickup < session.settings.lootrHoldPickupInterval()) {
             return;
         }
         session.lastPickup = now;
@@ -114,9 +121,9 @@ public final class LootrQuickLootEvent {
     @SubscribeEvent
     @SuppressWarnings("unchecked")
     public static void onServerTick(ServerTickEvent.Post event) {
-        long interval = Math.max(5L, GoldenTweaksCommonConfig.LOOTR_HOLD_PICKUP_INTERVAL.get());
         for (Map.Entry<Key, Session> entry : SESSIONS.entrySet().toArray(Map.Entry[]::new)) {
             Session session = entry.getValue();
+            long interval = Math.max(5L, session.settings.lootrHoldPickupInterval());
             long now = session.player.level().getGameTime();
             long sinceInput = now - session.lastInput;
             long sinceOpened = now - session.openedAt;
@@ -162,7 +169,7 @@ public final class LootrQuickLootEvent {
     /** 拾取一批；若本次取空容器，则标记已开启并延迟关箱。 */
     private static void handlePickup(Session session, BlockEntity container,
                                      ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos) {
-        LootResult result = loot(container, lootr, player, pos, session.face);
+        LootResult result = loot(container, lootr, player, pos, session.face, session.settings);
         if (result.taken() > 0 && result.exhausted()) {
             markOpened(container, lootr, player, pos);
             session.emptied = true;
@@ -171,18 +178,18 @@ public final class LootrQuickLootEvent {
     }
 
     /** 打开容器：先清掉客户端“已开启”外观，再播放开盖动画。 */
-    private static void open(BlockEntity container, ILootrBlockEntity lootr, ServerPlayer player) {
+    private static void open(BlockEntity container, ILootrBlockEntity lootr, ServerPlayer player, boolean animate) {
         // 重置客户端“已开启”外观，确保以普通贴图播放开盖动画
         lootr.performClose(player);
         // 开盖动画期间不要把 Lootr 标记为已开启，取完全部物品后再标记
         lootr.setHasBeenOpened(false);
-        playAnimation(container, player.level(), true);
+        playAnimation(container, player.level(), true, animate);
     }
 
     /** 关闭容器：播放关盖动画，并按是否已清空来恢复“已开启”外观。 */
     private static void close(Session session, boolean opened) {
         ILootrBlockEntity lootr = (ILootrBlockEntity) session.container;
-        playAnimation(session.container, session.player.level(), false);
+        playAnimation(session.container, session.player.level(), false, session.settings.lootrPlayOpenAnimation());
         if (opened) {
             lootr.performOpen(session.player);
         } else {
@@ -211,7 +218,10 @@ public final class LootrQuickLootEvent {
      * 快速拾取没有打开容器菜单，vanilla 的 openers recheck 会在约 20 tick 后自动关盖。
      * 这里直接给客户端发方块事件（箱子/潜影盒）或改方块状态（桶）来控制动画。
      */
-    private static void playAnimation(BlockEntity container, Level level, boolean open) {
+    private static void playAnimation(BlockEntity container, Level level, boolean open, boolean animate) {
+        if (!animate) {
+            return;
+        }
         BlockPos pos = container.getBlockPos();
         BlockState state = level.getBlockState(pos);
         SoundEvent sound;
@@ -247,7 +257,7 @@ public final class LootrQuickLootEvent {
      */
     @SuppressWarnings("deprecation")
     private static LootResult loot(BlockEntity container, ILootrBlockEntity lootr, ServerPlayer player, BlockPos pos,
-                                   Direction face) {
+                                   Direction face, PickupSettings settings) {
         ILootrInfoProvider provider;
         ILootrInventory inventory;
         try {
@@ -268,8 +278,8 @@ public final class LootrQuickLootEvent {
             return new LootResult(0, false);
         }
 
-        int limit = GoldenTweaksCommonConfig.LOOTR_PICKUP_GROUPS.get();
-        int interval = GoldenTweaksCommonConfig.LOOTR_HOLD_PICKUP_INTERVAL.get();
+        int limit = settings.lootrPickupGroups();
+        int interval = settings.lootrHoldPickupInterval();
         // 拾取间隔越短，一次拿取的数量越少，避免“手速过快瞬间清空容器”
         if (limit != 0 && interval < 5) {
             limit = Math.min(64, limit * ((5 + interval - 1) / interval));
@@ -287,7 +297,7 @@ public final class LootrQuickLootEvent {
                     pos.getZ() + 0.5D + face.getStepZ() * FACE_OFFSET,
                     stack);
             player.level().addFreshEntity(item);
-            if (GoldenTweaksCommonConfig.LOOTR_SHOW_FLYING_ITEMS.get()) {
+            if (settings.lootrShowFlyingItems()) {
                 ItemPickupUtil.pullToPlayer(player, item);
             } else {
                 ItemPickupUtil.pickup(player, item);
@@ -331,18 +341,22 @@ public final class LootrQuickLootEvent {
         final boolean wasOpened;
         /** 玩家点击的那个面；会话期间保持不变，用于决定物品从哪一面飞出。 */
         final Direction face;
+        /** 本次会话使用的拾取设定（会话开始时的快照，各玩家独立）。 */
+        final PickupSettings settings;
         final long firstLootAt;
         long lastInput;
         long lastPickup = Long.MIN_VALUE;
         long closeAt = -1;
         boolean emptied;
 
-        Session(BlockEntity container, ServerPlayer player, long now, boolean wasOpened, Direction face) {
+        Session(BlockEntity container, ServerPlayer player, long now, boolean wasOpened, Direction face,
+                PickupSettings settings) {
             this.container = container;
             this.player = player;
             this.openedAt = now;
             this.wasOpened = wasOpened;
             this.face = face;
+            this.settings = settings;
             this.firstLootAt = now + OPEN_ANIMATION_TICKS;
             this.lastInput = now;
         }

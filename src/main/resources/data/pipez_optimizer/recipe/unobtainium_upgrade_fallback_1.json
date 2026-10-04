@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "allthemodium"
+      }
+    },
+	{
+        "type": "neoforge:mod_loaded",
+        "modid": "apotheosis"
+    },
+	{
+        "type": "neoforge:mod_loaded",
+        "modid": "silentgear"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "B": {
+      "item": "silentgear:tyrian_steel_block"
+    },
+    "C": {
+      "item": "pipez_optimizer:vibranium_upgrade"
+    }
+  },
+  "result": {
+    "id": "pipez_optimizer:unobtainium_upgrade",
+    "count": 1
+  }
+}

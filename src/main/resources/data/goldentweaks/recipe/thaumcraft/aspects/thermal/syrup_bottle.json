@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:syrup_bottle"
+  },
+  "aspects": {
+    "victus": 2
+  }
+}

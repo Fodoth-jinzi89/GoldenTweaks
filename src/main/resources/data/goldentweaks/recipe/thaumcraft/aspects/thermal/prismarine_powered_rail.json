@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:prismarine_powered_rail"
+  },
+  "aspects": {
+    "iter": 3,
+    "potentia": 3,
+    "machina": 2
+  }
+}

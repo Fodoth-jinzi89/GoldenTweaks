@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:gold_plate"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

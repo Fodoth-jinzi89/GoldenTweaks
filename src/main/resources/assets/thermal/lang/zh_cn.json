@@ -1,0 +1,38 @@
+{
+  "fluid_type.thermal.aerotheum": "飞扬之清风",
+  "fluid_type.thermal.cryotheum": "极寒之凛冰",
+  "fluid_type.thermal.coal": "液化煤炭",
+  "item.thermal.coal_bucket": "液化煤炭桶",
+  "item.thermal.biomass": "生物质",
+  "item.thermal.bioblend": "生物调和燃料",
+
+  "entity.thermal.nuke_grenade": "核能手榴弹",
+  "entity.thermal.nuke_tnt": "核能炸弹",
+  "item.thermal.fortune_cookie": "幸运饼干",
+  "effect.thermal.fortune_revealed": "好运显现",
+  "info.thermal.fortune_cookie_luck.0": "幸运女神正在向你微笑。",
+  "info.thermal.fortune_cookie_luck.1": "你的幸运数字是……",
+  "info.thermal.fortune_cookie_luck.2": "运气好，胜过本事高。",
+  "info.thermal.fortune_cookie_luck.3": "要么去做，要么不做，没有试一试。",
+  "info.thermal.fortune_cookie_luck.4": "谁需要脑子或颜值？你有运气就够了！",
+  "info.thermal.fortune_cookie_bad_luck.0": "救命！我被困在幸运饼干工厂里了。",
+  "info.thermal.fortune_cookie_bad_luck.1": "情况会好转的——不过是对别人而言。",
+  "info.thermal.fortune_cookie_bad_luck.2": "我相信你——虽然别人都不信。",
+  "info.thermal.fortune_cookie_bad_luck.3": "命运眷顾你，运气可就不一定了。",
+  "info.thermal.fortune_cookie_bad_luck.4": "希望你聪明又漂亮吧——反正你肯定没运气。",
+
+  "item.thermal.grapple_hook": "抓钩",
+  "item.thermal.flux_grapple": "通量抓钩",
+  "item.thermal.flux_grapple.desc": "电力驱动的抓钩，可拉拽玩家。",
+  "item.thermal.reach_range_augment": "范围拓展",
+  "item.thermal.reach_range_augment.keyword": "组件 抓钩 工具",
+  "info.thermal.augment.type.Reach": "范围",
+  "item.thermal.dynamo_throttle_augment.keyword": "组件 能源炉",
+
+  "death.attack.basalz_projectile": "%1$s的世界天翻地覆！",
+  "death.attack.blitz_projectile": "%1$s得到了悲惨的教训！",
+  "death.attack.blizz_projectile": "%1$s邂逅了冷酷的命运！",
+  "subtitles.thermal.entity.basalz.roam": "岩石人：游荡",
+  "subtitles.thermal.entity.blitz.roam": "狂风人：游荡",
+  "subtitles.thermal.entity.blizz.roam": "暴雪人：游荡"
+}

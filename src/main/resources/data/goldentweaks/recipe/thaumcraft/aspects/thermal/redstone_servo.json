@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:redstone_servo"
+  },
+  "aspects": {
+    "machina": 3,
+    "saxum": 3,
+    "cognitio": 2,
+    "permutatio": 2,
+    "potentia": 2
+  }
+}

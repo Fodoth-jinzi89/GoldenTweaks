@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:useless_gear_tier_5"
+  },
+  "aspects": {
+    "metallum": 3,
+    "machina": 2,
+    "potentia": 2
+  }
+}

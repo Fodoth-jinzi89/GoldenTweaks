@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:deep_aquachow"
+  },
+  "aspects": {
+    "profundum": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

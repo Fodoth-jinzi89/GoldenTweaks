@@ -12,6 +12,7 @@ import com.extendedae_plus.api.IExPatternPage;
 import com.extendedae_plus.api.bridge.ExPatternProviderMenuPageBridge;
 import com.glodblock.github.extendedae.client.button.ActionEPPButton;
 import com.glodblock.github.extendedae.client.gui.GuiExPatternProvider;
+import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus.accessor.VerticalButtonBarAccessor;
 import net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus.accessor.WidgetContainerAccessor;
 import net.minecraft.client.gui.components.AbstractWidget;
@@ -30,13 +31,11 @@ import java.util.Map;
 @Mixin(targets = "appeng.client.gui.implementations.PatternProviderScreen", priority = 800)
 public abstract class PatternProviderScreenMixin<C extends PatternProviderMenu> extends AEBaseScreen<C> {
 
+    /** extendedae_plus' own multiply/divide buttons, hidden in favour of patternbetter's "balance" bar. */
     @Unique
-    private static final String[] GT$EAEP_SCALING_BUTTON_FIELDS = {
+    private static final String[] GT$EAEP_SCALING_BUTTONS = {
             "x2Button", "divideBy2Button", "x5Button", "divideBy5Button"
     };
-
-    @Unique
-    private Field[] gt$eaepScalingButtonFields;
 
     @Unique
     private ActionEPPButton gt$nextPage;
@@ -49,6 +48,12 @@ public abstract class PatternProviderScreenMixin<C extends PatternProviderMenu> 
 
     @Unique
     private boolean gt$updatingPageInput;
+
+    @Unique
+    private boolean gt$loggedRightBar;
+
+    @Unique
+    private boolean gt$loggedHidden;
 
     protected PatternProviderScreenMixin(C menu, Inventory playerInventory, Component title, ScreenStyle style) {
         super(menu, playerInventory, title, style);
@@ -75,53 +80,86 @@ public abstract class PatternProviderScreenMixin<C extends PatternProviderMenu> 
         gt$pageInputField.setValue("1");
     }
 
+    /**
+     * Positions patternbetter's right-hand button bar ({@code rightBar}, the "balance"/multiply strip) so its first
+     * button sits 2px below the upgrade sidebar.
+     */
     @Inject(method = "updateBeforeRender", at = @At("HEAD"))
-    private void gt$movePatternScalingButtonsBelowUpgrades(CallbackInfo ci) {
+    private void gt$moveRightBarBelowUpgrades(CallbackInfo ci) {
         Map<String, ICompositeWidget> compositeWidgets =
                 ((WidgetContainerAccessor) (Object) widgets).gt$getCompositeWidgets();
         var rightBar = compositeWidgets.get("rightBar");
-        if (rightBar instanceof VerticalButtonBar buttonBar) {
-            Point position = ((VerticalButtonBarAccessor) buttonBar).gt$getPosition();
-            var upgrades = compositeWidgets.get("upgrades");
-            int y = upgrades != null
-                    ? upgrades.getBounds().getY() + upgrades.getBounds().getHeight() - 31
-                    : position.getY();
-            buttonBar.setPosition(new Point(position.getX(), y));
+        var upgrades = compositeWidgets.get("upgrades");
+        if (!(rightBar instanceof VerticalButtonBar buttonBar) || upgrades == null) {
+            if (!gt$loggedRightBar) {
+                gt$loggedRightBar = true;
+                GoldenTweaks.LOGGER.info("[GT/btn] rightBar={} upgrades={} ids={}",
+                        rightBar, upgrades, compositeWidgets.keySet());
+            }
+            return;
+        }
+
+        Point position = ((VerticalButtonBarAccessor) buttonBar).gt$getPosition();
+        int y = upgrades.getBounds().getY() + upgrades.getBounds().getHeight() - 62;
+        buttonBar.setPosition(new Point(position.getX(), y));
+        if (!gt$loggedRightBar) {
+            gt$loggedRightBar = true;
+            GoldenTweaks.LOGGER.info("[GT/btn] rightBar -> y={} (upgrades bottom={}) x={}",
+                    y, upgrades.getBounds().getY() + upgrades.getBounds().getHeight(), position.getX());
         }
     }
 
     @Inject(method = "updateBeforeRender", at = @At("TAIL"))
-    private void gt$hideExtendedAEPlusScalingButtons(CallbackInfo ci) {
-        if ((Object) this instanceof GuiExPatternProvider) {
-            int pageCount = gt$getAvailablePageCount();
-            if (gt$previousPage != null && gt$nextPage != null) {
-                gt$previousPage.active = pageCount > 1;
-                gt$nextPage.active = pageCount > 1;
-                gt$previousPage.visible = true;
-                gt$nextPage.visible = true;
-            }
-            if (gt$pageInputField != null) {
-                gt$pageInputField.visible = true;
-            }
-
-            try {
-                if (gt$eaepScalingButtonFields == null) {
-                    Field[] fields = new Field[GT$EAEP_SCALING_BUTTON_FIELDS.length];
-                    for (int i = 0; i < GT$EAEP_SCALING_BUTTON_FIELDS.length; i++) {
-                        Field field = getClass().getDeclaredField(GT$EAEP_SCALING_BUTTON_FIELDS[i]);
-                        field.setAccessible(true);
-                        fields[i] = field;
-                    }
-                    gt$eaepScalingButtonFields = fields;
-                }
-                for (Field field : gt$eaepScalingButtonFields) {
-                    if (field.get(this) instanceof AbstractWidget button) {
-                        button.visible = false;
-                    }
-                }
-            } catch (ReflectiveOperationException ignored) {
+    private void gt$hideExtendedAePlusScalingButtons(CallbackInfo ci) {
+        if (!((Object) this instanceof GuiExPatternProvider)) {
+            return;
+        }
+        StringBuilder found = new StringBuilder();
+        for (String name : GT$EAEP_SCALING_BUTTONS) {
+            AbstractWidget widget = gt$findWidget(name);
+            found.append(name).append('=').append(widget != null).append(' ');
+            if (widget != null) {
+                widget.visible = false;
             }
         }
+        if (!gt$loggedHidden) {
+            gt$loggedHidden = true;
+            GoldenTweaks.LOGGER.info("[GT/btn] hide extendedae_plus scaling buttons: {}", found);
+        }
+    }
+
+    @Inject(method = "updateBeforeRender", at = @At("TAIL"))
+    private void gt$updatePageControls(CallbackInfo ci) {
+        if (!((Object) this instanceof GuiExPatternProvider)) {
+            return;
+        }
+        int pageCount = gt$getAvailablePageCount();
+        if (gt$previousPage != null && gt$nextPage != null) {
+            gt$previousPage.active = pageCount > 1;
+            gt$nextPage.active = pageCount > 1;
+            gt$previousPage.visible = true;
+            gt$nextPage.visible = true;
+        }
+        if (gt$pageInputField != null) {
+            gt$pageInputField.visible = true;
+        }
+    }
+
+    @Unique
+    private AbstractWidget gt$findWidget(String name) {
+        for (Class<?> type = getClass(); type != null && type != Object.class; type = type.getSuperclass()) {
+            try {
+                Field field = type.getDeclaredField(name);
+                field.setAccessible(true);
+                Object value = field.get(this);
+                return value instanceof AbstractWidget widget ? widget : null;
+            } catch (NoSuchFieldException ignored) {
+                // keep walking up
+            } catch (ReflectiveOperationException ignored) {
+                return null;
+            }
+        }
+        return null;
     }
 
     @Unique

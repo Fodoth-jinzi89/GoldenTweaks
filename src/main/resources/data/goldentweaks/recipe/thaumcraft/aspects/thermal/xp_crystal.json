@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:xp_crystal"
+  },
+  "aspects": {
+    "potentia": 3,
+    "vitreus": 3
+  }
+}

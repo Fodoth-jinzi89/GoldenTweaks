@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:bitumen_block"
+  },
+  "aspects": {
+    "limus": 2
+  }
+}

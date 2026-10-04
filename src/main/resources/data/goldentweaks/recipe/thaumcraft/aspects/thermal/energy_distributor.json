@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:energy_distributor"
+  },
+  "aspects": {
+    "potentia": 4,
+    "cognitio": 3,
+    "machina": 3,
+    "permutatio": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "items": {
+    "pipez:advanced_upgrade": "Advanced Pipe Upgrade",
+    "pipez:basic_upgrade": "Basic Pipe Upgrade",
+    "pipez:filter_destination_tool": "Filter Destination Tool",
+    "pipez:improved_upgrade": "Improved Pipe Upgrade",
+    "pipez:infinity_upgrade": "Infinity Pipe Upgrade",
+    "pipez:ultimate_upgrade": "Ultimate Pipe Upgrade",
+    "pipez:wrench": "Pipe Wrench"
+  },
+  "blocks": {
+    "pipez:energy_pipe": "Energy Pipe",
+    "pipez:fluid_pipe": "Fluid Pipe",
+    "pipez:gas_pipe": "Gas Pipe",
+    "pipez:item_pipe": "Item Pipe",
+    "pipez:universal_pipe": "Universal Pipe"
+  },
+  "entities": {}
+}

@@ -11,6 +11,6 @@
     "minecraft:lava_cauldron",
     "minecraft:smoker",
     "minecraft:blast_furnace",
-    "flavor_immersed_daily:dryer"
+    "fidworkblock:dryer"
   ]
 }

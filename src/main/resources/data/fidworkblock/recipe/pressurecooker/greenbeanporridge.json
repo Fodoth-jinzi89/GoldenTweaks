@@ -2,7 +2,7 @@
   "type": "fidworkblock:cooking",
   "appliance": "pressurecooker",
   "ingredients": [
-    { "item": "flavor_immersed_daily:mungbean_0" },
+    { "item": "flavor_immersed_daily:mungbeanplant" },
     { "item": "flavor_immersed_daily:tidywater" },
     { "item": "flavor_immersed_daily:slicedlemon" }
   ],

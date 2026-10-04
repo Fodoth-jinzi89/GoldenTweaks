@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:energy_duct_superconducting_empty"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3,
+    "metallum": 3,
+    "permutatio": 3
+  }
+}

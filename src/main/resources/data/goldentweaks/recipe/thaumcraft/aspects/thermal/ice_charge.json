@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:ice_charge"
+  },
+  "aspects": {
+    "gelum": 3,
+    "potentia": 3
+  }
+}

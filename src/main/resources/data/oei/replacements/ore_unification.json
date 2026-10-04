@@ -1339,6 +1339,270 @@
   },
   {
     "matchItems": [
+      "#c:ores/signalum"
+    ],
+    "resultItems": "alltheores:signalum_ore"
+  },
+  {
+    "matchItems": [
+      "#c:ores/deepslate_signalum"
+    ],
+    "resultItems": "alltheores:deepslate_signalum_ore"
+  },
+  {
+    "matchItems": [
+      "#c:raw_materials/signalum"
+    ],
+    "resultItems": "alltheores:raw_signalum"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/raw_signalum"
+    ],
+    "resultItems": "alltheores:raw_signalum_block"
+  },
+  {
+    "matchItems": [
+      "#c:ingots/signalum"
+    ],
+    "resultItems": "alltheores:signalum_ingot"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/signalum"
+    ],
+    "resultItems": "alltheores:signalum_nugget"
+  },
+  {
+    "matchItems": [
+      "#c:dusts/signalum"
+    ],
+    "resultItems": "alltheores:signalum_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/signalum"
+    ],
+    "resultItems": "alltheores:signalum_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/signalum"
+    ],
+    "resultItems": "alltheores:signalum_rod"
+  },
+  {
+    "matchItems": [
+      "#c:gears/signalum"
+    ],
+    "resultItems": "alltheores:signalum_gear"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/signalum"
+    ],
+    "resultItems": "alltheores:signalum_block"
+  },
+  {
+    "matchItems": [
+      "#c:ores/lumium"
+    ],
+    "resultItems": "alltheores:lumium_ore"
+  },
+  {
+    "matchItems": [
+      "#c:ores/deepslate_lumium"
+    ],
+    "resultItems": "alltheores:deepslate_lumium_ore"
+  },
+  {
+    "matchItems": [
+      "#c:raw_materials/lumium"
+    ],
+    "resultItems": "alltheores:raw_lumium"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/raw_lumium"
+    ],
+    "resultItems": "alltheores:raw_lumium_block"
+  },
+  {
+    "matchItems": [
+      "#c:ingots/lumium"
+    ],
+    "resultItems": "alltheores:lumium_ingot"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/lumium"
+    ],
+    "resultItems": "alltheores:lumium_nugget"
+  },
+  {
+    "matchItems": [
+      "#c:dusts/lumium"
+    ],
+    "resultItems": "alltheores:lumium_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/lumium"
+    ],
+    "resultItems": "alltheores:lumium_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/lumium"
+    ],
+    "resultItems": "alltheores:lumium_rod"
+  },
+  {
+    "matchItems": [
+      "#c:gears/lumium"
+    ],
+    "resultItems": "alltheores:lumium_gear"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/lumium"
+    ],
+    "resultItems": "alltheores:lumium_block"
+  },
+  {
+    "matchItems": [
+      "#c:ores/enderium"
+    ],
+    "resultItems": "alltheores:enderium_ore"
+  },
+  {
+    "matchItems": [
+      "#c:ores/deepslate_enderium"
+    ],
+    "resultItems": "alltheores:deepslate_enderium_ore"
+  },
+  {
+    "matchItems": [
+      "#c:raw_materials/enderium"
+    ],
+    "resultItems": "alltheores:raw_enderium"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/raw_enderium"
+    ],
+    "resultItems": "alltheores:raw_enderium_block"
+  },
+  {
+    "matchItems": [
+      "#c:ingots/enderium"
+    ],
+    "resultItems": "alltheores:enderium_ingot"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/enderium"
+    ],
+    "resultItems": "alltheores:enderium_nugget"
+  },
+  {
+    "matchItems": [
+      "#c:dusts/enderium"
+    ],
+    "resultItems": "alltheores:enderium_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/enderium"
+    ],
+    "resultItems": "alltheores:enderium_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/enderium"
+    ],
+    "resultItems": "alltheores:enderium_rod"
+  },
+  {
+    "matchItems": [
+      "#c:gears/enderium"
+    ],
+    "resultItems": "alltheores:enderium_gear"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/enderium"
+    ],
+    "resultItems": "alltheores:enderium_block"
+  },
+  {
+    "matchItems": [
+      "#c:ores/invar"
+    ],
+    "resultItems": "alltheores:invar_ore"
+  },
+  {
+    "matchItems": [
+      "#c:ores/deepslate_invar"
+    ],
+    "resultItems": "alltheores:deepslate_invar_ore"
+  },
+  {
+    "matchItems": [
+      "#c:raw_materials/invar"
+    ],
+    "resultItems": "alltheores:raw_invar"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/raw_invar"
+    ],
+    "resultItems": "alltheores:raw_invar_block"
+  },
+  {
+    "matchItems": [
+      "#c:ingots/invar"
+    ],
+    "resultItems": "alltheores:invar_ingot"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/invar"
+    ],
+    "resultItems": "alltheores:invar_nugget"
+  },
+  {
+    "matchItems": [
+      "#c:dusts/invar"
+    ],
+    "resultItems": "alltheores:invar_dust"
+  },
+  {
+    "matchItems": [
+      "#c:plates/invar"
+    ],
+    "resultItems": "alltheores:invar_plate"
+  },
+  {
+    "matchItems": [
+      "#c:rods/invar"
+    ],
+    "resultItems": "alltheores:invar_rod"
+  },
+  {
+    "matchItems": [
+      "#c:gears/invar"
+    ],
+    "resultItems": "alltheores:invar_gear"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/invar"
+    ],
+    "resultItems": "alltheores:invar_block"
+  },
+  {
+    "matchItems": [
       "#c:gems/fluorite"
     ],
     "resultItems": "alltheores:fluorite"

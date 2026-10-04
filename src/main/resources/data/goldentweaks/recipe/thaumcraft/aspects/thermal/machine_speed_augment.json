@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:machine_speed_augment"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 3,
+    "permutatio": 3,
+    "potentia": 3,
+    "sensus": 3,
+    "cognitio": 2
+  }
+}

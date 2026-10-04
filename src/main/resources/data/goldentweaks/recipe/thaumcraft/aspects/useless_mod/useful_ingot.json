@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:useful_ingot"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "metallum": 3
+  }
+}

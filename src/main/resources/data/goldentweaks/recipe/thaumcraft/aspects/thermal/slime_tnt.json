@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:slime_tnt"
+  },
+  "aspects": {
+    "explosion": 4,
+    "telum": 2
+  }
+}

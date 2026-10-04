@@ -21,7 +21,7 @@
   `compileOnly/` 与 `implementation/` 时只保留 `implementation/` 那份（它已包含编译期可见性）。
 
 
-## compileOnly/ —— 149 个 jar（仅编译期可见）
+## compileOnly/ —— 150 个 jar（仅编译期可见）
 
 | 模组 | 版本 | 文件名 |
 |---|---|---|
@@ -56,6 +56,7 @@
 | CarryOnAeroCompat | `1.21.1-1.1.1` | `CarryOnAeroCompat-1.21.1-1.1.1.jar` |
 | CBC-Military-Supplement | `2.1.4-1.21.1` | `[S]-cbcmoreshells-2.1.4-neoforge-1.21.1.jar` |
 | ccbtweaks | `1.0.0-b.28` | `[C]-ccbtweaks-1.0.0-b.28-neoforge-1.21.1.jar` |
+| IMBlocker | `5.6.1` | `[C]-IMBlocker-5.6.1-neoforge-1.21.1.jar` |
 | certain_questing_additions-neoforge | `1.2.0.4+mc1.21.1` | `certain_questing_additions-neoforge-1.2.0.4+mc1.21.1.jar` |
 | cfwinfo | `1.9.1` | `[S]-cfwinfo-1.9.1-neoforge-1.21.1.jar` |
 | cmpackagecouriers-neoforge | `2.2.4` | `cmpackagecouriers-neoforge-2.2.4.jar` |

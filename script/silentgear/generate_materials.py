@@ -171,7 +171,7 @@ for resource_id, design in COATING_DESIGN.items():
 
 # 新增模组（AcademyCraft / ae2lt / AstralSorcery）金属：等级与模板材料对齐。
 METAL_DESIGN.update(metal_design("hard_metal", [
-    [], [], [], [("academy:constraint_ingot", "constraint_ingot")], [],
+    [], [], [], [("academy:constraint_ingot", "constraint_ingot"), ("appflux:harden_insulating_resin", "harden_insulating_resin")], [],
     [("ae2lt:overload_alloy", "overload_alloy")],
 ]))
 METAL_DESIGN.update(metal_design("soft_metal", [
@@ -186,6 +186,7 @@ NEW_METAL_TEMPLATES = {
     "astralsorcery:starmetal_ingot": "thaumcraft:void_metal_ingot",
     "ae2lt:firmament_alloy_ingot": "forbiddenmagic:hexite_ingot",
     "ae2lt:overload_alloy": "silentgear:crimson_steel_ingot",
+    "appflux:harden_insulating_resin": "mekanism:ingot_uranium",
 }
 
 # Semantic position inside a level. -1 leans toward the previous level's center,
@@ -343,6 +344,8 @@ for _resource_id, _material, _template_id in (
     ("academy:crystal_normal", "crystal_normal", "silentgems:alexandrite"),
     ("academy:crystal_pure", "crystal_pure", "minecraft:diamond"),
     ("ae2lt:overload_crystal", "overload_crystal", "ae2:fluix_crystal"),
+    ("appflux:redstone_crystal", "redstone_crystal", "ae2:fluix_crystal"),
+    ("appflux:charged_redstone", "charged_redstone", "appflux:redstone_crystal"),
 ):
     gem_like(_resource_id, _material, _template_id)
 
@@ -562,6 +565,9 @@ DESIGN_MULTIPLIERS = {
     "ae2lt:overload_crystal": 1.3,
     "ae2lt:firmament_superconducting_wire": 1.3,
     "ae2lt:firmament_alloy_ingot": 1.3,
+    "appflux:redstone_crystal": 1.10,
+    "appflux:charged_redstone": 1.21,
+    "appflux:harden_insulating_resin": 1.10,
 }
 # 新增模组材料的语义 traits（置于自动推导 traits 之前）。
 EXTRA_TRAITS = {
@@ -2207,6 +2213,8 @@ def main():
                 material = LEAF_DESIGN[entry["id"]]["material"]
             if entry["id"] in FLOWER_FEATHER_DESIGN:
                 material = FLOWER_FEATHER_DESIGN[entry["id"]]["material"]
+            if entry["id"] in GEM_DESIGN:
+                material = GEM_DESIGN[entry["id"]]["material"]
             entry["material"] = material
             if material in GEM_OVERRIDES:
                 category = "宝石"

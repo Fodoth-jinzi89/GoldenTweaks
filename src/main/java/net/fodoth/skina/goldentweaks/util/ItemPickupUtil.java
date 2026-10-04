@@ -1,8 +1,8 @@
 package net.fodoth.skina.goldentweaks.util;
 
-import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
@@ -16,22 +16,45 @@ public final class ItemPickupUtil {
     }
 
     /**
-     * 拾取判定用的最大距离（创造/旁观者额外加成）。
+     * 玩家主背包（快捷栏 + 背包）的槽位数。
      * <p>
-     * 客户端射线（挑要发哪个实体）和服务端校验（防作弊复核）都要用，所以放在 common 工具里。
-     * 它原先住在客户端专用的 {@code ClientClickHandler} 里，服务端包处理器一调用就会连带加载那个类，
-     * 抛出 {@code NoClassDefFoundError: net/minecraft/client/player/LocalPlayer}，表现就是
-     * “服务端里捡不起物品”。
+     * {@link Inventory#getContainerSize()} 返回的是「主背包 + 盔甲 + 副手」的总数（41），
+     * 不能直接拿来判断背包是否放得下——否则空着的盔甲/副手槽会被误判成有空位。
+     * 拾取只会进入主背包与快捷栏，因此这里只统计前 36 格。
      */
-    public static double getMaxReach(Player player) {
+    private static final int MAIN_INVENTORY_SIZE = 36;
 
-        boolean extended =
-                player.isCreative() || player.isSpectator();
+    /**
+     * 玩家背包能否容纳整组物品：主背包有空槽，或存在可叠加且未满的同种物品。
+     * <p>
+     * 客户端（要不要发拾取请求）与服务端（要不要执行）都用于「背包已满时能否右键拾取」的判定，
+     * 所以放在 common 工具里。只统计主背包与快捷栏，不含盔甲与副手。
+     */
+    public static boolean canFit(Player player, ItemStack stack) {
 
-        return GoldenTweaksCommonConfig.BASE_PICKUP_REACH.get()
-                + (extended
-                ? GoldenTweaksCommonConfig.EXTENDED_REACH_BONUS.get()
-                : 0.0D);
+        if (stack.isEmpty()) {
+            return true;
+        }
+
+        Inventory inventory = player.getInventory();
+
+        // getFreeSlot 只扫描主背包（items），因此不会把盔甲/副手的空槽算进来
+        if (inventory.getFreeSlot() != -1) {
+            return true;
+        }
+
+        int max = stack.getMaxStackSize();
+        int slots = Math.min(inventory.getContainerSize(), MAIN_INVENTORY_SIZE);
+
+        for (int slot = 0; slot < slots; slot++) {
+            ItemStack existing = inventory.getItem(slot);
+            if (existing.getCount() < Math.min(max, existing.getMaxStackSize())
+                    && ItemStack.isSameItemSameComponents(existing, stack)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public static void pickup(Player player, ItemEntity item) {

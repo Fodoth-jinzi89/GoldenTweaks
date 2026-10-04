@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:lightning_tnt_minecart"
+  },
+  "aspects": {
+    "explosion": 4,
+    "iter": 3,
+    "metallum": 3,
+    "potentia": 3,
+    "motus": 2,
+    "telum": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:frost_melon_slice"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

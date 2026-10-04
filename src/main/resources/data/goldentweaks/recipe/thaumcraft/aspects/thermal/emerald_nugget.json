@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:emerald_nugget"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

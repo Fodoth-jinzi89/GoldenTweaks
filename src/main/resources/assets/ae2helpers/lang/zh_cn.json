@@ -15,7 +15,7 @@
   "ae2helpers.crafthelper.disabled": "已禁用",
   "ae2helpers.crafthelper.tooltip": "自动将通过物品管理器发起合成的物品移入合成网格",
 
-  "ae2helpers.importcard.pattern": "ME 样板供应器（仅侧面）",
+  "ae2helpers.importcard.pattern": "ME 样板供应器",
   "ae2helpers.importcard.screen.title": "导入卡配置",
   "ae2helpers.importcard.resultsonly": "仅导入合成结果",
   "ae2helpers.importcard.resultsonly.tooltip": "启用后，仅导入当前合成样板预期产出的物品。\n禁用后，将导入目标机器中的所有物品。",

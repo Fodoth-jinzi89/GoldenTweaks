@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:energy_cell_frame"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vacuos": 4,
+    "machina": 3,
+    "permutatio": 3,
+    "saxum": 3,
+    "cognitio": 2
+  }
+}

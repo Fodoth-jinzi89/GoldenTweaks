@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:enderium_coin"
+  },
+  "aspects": {
+    "alienis": 3,
+    "lucrum": 3,
+    "metallum": 3
+  }
+}

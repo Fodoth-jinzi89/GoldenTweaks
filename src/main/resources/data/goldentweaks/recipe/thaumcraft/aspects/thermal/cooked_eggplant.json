@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:cooked_eggplant"
+  },
+  "aspects": {
+    "victus": 3,
+    "fames": 2
+  }
+}

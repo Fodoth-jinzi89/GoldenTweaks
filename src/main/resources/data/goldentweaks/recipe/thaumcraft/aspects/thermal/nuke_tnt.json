@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:nuke_tnt"
+  },
+  "aspects": {
+    "explosion": 4,
+    "potentia": 4,
+    "vitium": 3,
+    "telum": 2
+  }
+}

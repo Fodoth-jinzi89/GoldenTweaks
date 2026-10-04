@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:sapphire_block"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "limus": 2
+  }
+}

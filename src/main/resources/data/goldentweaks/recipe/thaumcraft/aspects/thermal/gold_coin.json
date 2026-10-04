@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:gold_coin"
+  },
+  "aspects": {
+    "lucrum": 3,
+    "metallum": 3
+  }
+}

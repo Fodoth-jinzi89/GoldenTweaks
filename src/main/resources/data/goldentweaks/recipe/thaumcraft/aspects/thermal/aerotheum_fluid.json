@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:aerotheum_fluid"
+  },
+  "aspects": {
+    "aer": 3,
+    "aqua": 3,
+    "motus": 3,
+    "machina": 2,
+    "volatus": 2
+  }
+}

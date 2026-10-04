@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "enderio_evolution"
+      }
+    },
+	{
+        "type": "neoforge:mod_loaded",
+        "modid": "apotheosis"
+    },
+	{
+        "type": "neoforge:mod_loaded",
+        "modid": "extendedcrafting"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "apotheosis:godforged_pearl"
+    },
+    "B": {
+      "item": "extendedcrafting:nether_star_block"
+    },
+    "C": {
+      "item": "pipez_optimizer:unobtainium_upgrade"
+    }
+  },
+  "result": {
+    "id": "pipez_optimizer:stellar_upgrade",
+    "count": 1
+  }
+}

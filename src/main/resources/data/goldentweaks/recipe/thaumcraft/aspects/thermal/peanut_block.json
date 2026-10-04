@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:peanut_block"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

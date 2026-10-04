@@ -3,6 +3,7 @@ package net.fodoth.skina.goldentweaks;
 import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.cataclysm.GTCataclysmCompat;
+import net.fodoth.skina.goldentweaks.compat.appflux.AppliedFluxCompat;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.compactmachines.CompactMachinesCompat;
@@ -21,14 +22,17 @@ import net.fodoth.skina.goldentweaks.compat.thaumicbases.GTThaumicBasesFurnaceCo
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
+import net.fodoth.skina.goldentweaks.compat.astralsorcery.GTFocalPointColumnRenderer;
 import net.fodoth.skina.goldentweaks.event.ClientWindowSizeGuard;
 import net.fodoth.skina.goldentweaks.event.ExspectrimentsClientCompatEvent;
 import net.fodoth.skina.goldentweaks.event.FamiliarProtectionEvent;
 import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
+import net.fodoth.skina.goldentweaks.compat.flavorimmerseddaily.FidAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
 import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
 import net.fodoth.skina.goldentweaks.compat.lootr.LootrQuickLootEvent;
+import net.fodoth.skina.goldentweaks.compat.traveloptics.TravelOpticsSummonProtection;
 import net.fodoth.skina.goldentweaks.compat.mcwifipnp.McWifiPnPZstdPortLayout;
 import net.fodoth.skina.goldentweaks.compat.oei.OreUnificationGuard;
 import net.fodoth.skina.goldentweaks.compat.ftbchunks.GTClaimProtection;
@@ -86,6 +90,11 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("exspectriments")) {
             LOGGER.info("Detected exspectriments, registering compatibility content");
             modEventBus.register(ExspectrimentsClientCompatEvent.class);
+        }
+
+        if (ModList.get().isLoaded("traveloptics")) {
+            LOGGER.info("Detected traveloptics, protecting summons from friendly fire");
+            NeoForge.EVENT_BUS.register(TravelOpticsSummonProtection.class);
         }
 
         if (ModList.get().isLoaded("kaleidoscope_cookery")) {
@@ -147,6 +156,17 @@ public class GoldenTweaks {
             modEventBus.addListener(GTThaumicBasesFurnaceCompat::registerCapabilities);
         }
 
+        if (ModList.get().isLoaded("flavor_immersed_daily")) {
+            LOGGER.info("Detected flavor_immersed_daily, restoring the teapot cover item removed upstream");
+            // 该模组 2026.9.26 起删除了 teapotcover，这里按原命名空间补回，fidworkblock 茶壶才能加盖
+            FidAdditionalItems.register(modEventBus);
+        }
+
+        if (ModList.get().isLoaded("appflux") && ModList.get().isLoaded("ae2helpers")) {
+            LOGGER.info("Detected appflux + ae2helpers, merging the result-import card into the upgrade sidebar");
+            modEventBus.addListener(AppliedFluxCompat::onCommonSetup);
+        }
+
         modEventBus.addListener(this::onClientSetup);
     }
 
@@ -169,8 +189,15 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("mcwifipnp") && ModList.get().isLoaded("zstdnet")) {
             LOGGER.info("Detected mcwifipnp + zstdnet, relocating the share-to-lan zstd port field");
             // zstdnet 的 zstd 端口框会贴到 mcwifipnp 的第一标签页控件上且不随标签页切换，
-            // 这里把它移到所有设置项下方并只在第一个标签页显示（见 McWifiPnPZstdPortLayout）
+            // 这里把它移到所有设置项下方且只在第一个标签页显示（见 McWifiPnPZstdPortLayout）
             NeoForge.EVENT_BUS.register(McWifiPnPZstdPortLayout.class);
+        }
+
+        if (ModList.get().isLoaded("astralsorcery")) {
+            LOGGER.info("Detected astralsorcery, drawing focal point light columns with a vanilla render type");
+            // AS 2.0.1 的降星点光柱走自定义 core shader + 自定义 RenderType，在部分整合包里画不出像素
+            // （对象生成/alpha 都正常，就是没有可见结果），这里用原版渲染类型自绘一根（见 GTFocalPointColumnRenderer）
+            NeoForge.EVENT_BUS.register(GTFocalPointColumnRenderer.class);
         }
 
     }

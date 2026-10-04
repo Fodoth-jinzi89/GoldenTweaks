@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
 import net.fodoth.skina.goldentweaks.compat.ae2autopatternupload.Ae2ApuASM;
+import net.fodoth.skina.goldentweaks.compat.appliedkjs.AppliedKjsASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import net.fodoth.skina.goldentweaks.compat.linearbearing.LinearbearingASM;
@@ -51,6 +52,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("compactmachines");
         }
 
+        // Create 搅拌机（机械搅拌器）自动执行无序合成配方时，DummyCraftingContainer 未提供
+        // 宽/高/物品，asCraftInput() 会返回空输入，getRemainingItems 因此丢失合成余留物
+        // （例如全矿矿物模组的矿锤会被整把消耗，而不是仅损耗 1 点耐久）
+        if (mixinClassName.endsWith("fix.create.BasinRecipeMixin")) {
+            return isModLoaded("create");
+        }
+
         // Mekanism solar/wind machines running inside Compact Machines dimensions
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.mekanism.")) {
             if (mixinClassName.endsWith("MekMMSolarCheckMixin")
@@ -63,6 +71,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                 return isModLoaded("mekanismadvancedgenerators") && isModLoaded("compactmachines");
             }
             return isModLoaded("mekanism") && isModLoaded("mekanismgenerators") && isModLoaded("compactmachines");
+        }
+
+        // evolvedmekanism 的高级工厂槽位容量对齐 mekanism_extras（突破 64 堆叠上限）
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mekanism")) {
+            return isModLoaded("mekanism");
         }
 
         if (mixinClassName.endsWith("fix.watut.PlayerStatusManagerClientMixin")) {
@@ -83,6 +96,17 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("emi");
         }
 
+        // wcwt 的配方页「填充物品」按钮由 EMI 的 recipe decorator 注入，
+        // 而 EMI 在正式客户端默认不应用 decorator，需要 wcwt 存在时恢复
+        if (mixinClassName.endsWith("fix.emi.EmiRecipeDecoratorsMixin")) {
+            return isModLoaded("emi") && isModLoaded("wcwt");
+        }
+
+        // wcwt 的「填充物品」锤子按钮落点：EMI 三按钮竖向排列时不应另开一列
+        if (mixinClassName.endsWith("fix.wcwt.WcwtEmiPullButtonPositionMixin")) {
+            return isModLoaded("emi") && isModLoaded("wcwt");
+        }
+
         // SilentGear 的预制工具（GearItem）从 EMI 索引中隐藏
         if (mixinClassName.endsWith("fix.silentgear.SilentGearEmiHiderMixin")) {
             return isModLoaded("silentgear") && isModLoaded("emi");
@@ -95,6 +119,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.fidworkblock.ExampleModMixin")) {
+            return isModLoaded("fidworkblock");
+        }
+
+        // 砧板旧存档物品栏只有 1 格，载入后补足 3 格，避免读取第 1/2 格越界崩溃
+        if (mixinClassName.endsWith("fix.fidworkblock.ChoppingboardBlockEntityMixin")) {
             return isModLoaded("fidworkblock");
         }
 
@@ -147,6 +176,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ftbquests");
         }
 
+        // 任务书章节图片：解锁后立即显示、渲染真实物品（默认 tooltip + R/U 查配方）、子任务跟随根任务完成
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ftbquests")) {
+            return isModLoaded("ftbquests");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.buildingwands")) {
             return isModLoaded("wands");
         }
@@ -163,8 +197,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("advanced_infusion");
         }
 
-        // Astral Sorcery 2.0.1 的 fillCreativeTab 被标 @OnlyIn(CLIENT)，专用服务器上会崩
-        if (mixinClassName.endsWith("fix.astralsorcery.CommonProxyCreativeTabMixin")) {
+        // Astral Sorcery 2.0.1：创意标签在专用服务器上会崩，降星点 tick 会 CME，新生成区块的降星点需要补激活
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.astralsorcery")) {
             return isModLoaded("astralsorcery");
         }
 
@@ -178,6 +212,21 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2helpers.")) {
             return isModLoaded("ae2helpers") && isModLoaded("wcwt");
+        }
+
+        // AppliedFlux 的感应卡侧栏与 ae2helpers 的导入卡：把导入槽并入感应卡侧栏
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.appflux.")) {
+            return isModLoaded("appflux") && isModLoaded("ae2helpers");
+        }
+
+        // extendedae_plus 给样板供应器的 AppliedFlux 升级栏少分配 1 格，这里补上
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.extendedaeplusslots.")) {
+            return isModLoaded("extendedae_plus") && isModLoaded("appflux") && isModLoaded("ae2helpers");
+        }
+
+        // GoldenTweaks 接管的「合成结果导入卡」逻辑（方块形 + 面板形）
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2helpersblock.")) {
+            return isModLoaded("ae2helpers") && isModLoaded("appflux");
         }
 
         if (mixinClassName.endsWith("fix.ae2.NameSearchPredicateMixin")) {
@@ -243,6 +292,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.endsWith("fix.ae2cs.AECSAdditionalModelsMixin")) {
             return checkIfPresent("io.github.lounode.ae2cs.common.init.client.AECSAdditionalModels");
+        }
+
+        // ae2cs 熵变反应室加速卡过多时卡住：钳制有效速度倍率
+        if (mixinClassName.endsWith("fix.ae2cs.EntropyReactionChamberSpeedMixin")) {
+            return isModLoaded("ae2cs");
         }
 
         if (mixinClassName.endsWith("fix.fancymenu.MainThreadTaskExecutorMixin")) {
@@ -369,6 +423,23 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumichorizons");
         }
 
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.thermal")) {
+            return isModLoaded("thermal");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.patchouli")) {
+            return isModLoaded("patchouli");
+        }
+
+        // Polymorph 的 JEI 插件引用打包内 JEI 19.x 不存在的 IRecipeTransferListener，加载即抛
+        // NoClassDefFoundError。保留插件并让其在 JEI 19.x 上工作（转移后选中配方）。
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.polymorph")) {
+            if (mixinClassName.endsWith("RecipeTransferUtilMixin")) {
+                return isModLoaded("polymorph") && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
+            }
+            return isModLoaded("polymorph");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
             return isModLoaded("irons_jewelry");
         }
@@ -394,12 +465,32 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("academy");
         }
 
+        // AcademyCraft 音效未成功注册时 AbilityLoopSoundManager.tick 访问未绑定 Holder 会崩溃
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.academy")) {
+            return isModLoaded("academy");
+        }
+
         // zstdnet：端口标签重定位需要 mcwifipnp 的界面；聊天提示关闭只依赖 zstdnet
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.zstdnet.")) {
             if (mixinClassName.endsWith("ZstdShareToLanPortLabelMixin")) {
                 return isModLoaded("zstdnet") && isModLoaded("mcwifipnp");
             }
             return isModLoaded("zstdnet");
+        }
+
+        // applied_kjs 的 AppliedKJSServerState 共享 HashMap/HashSet 被区块加载线程与 tick 线程并发访问会 CME
+        if (mixinClassName.endsWith("fix.appliedkjs.AppliedKjsServerStateDummyMixin")) {
+            return isModLoaded("applied_kjs");
+        }
+
+        // 女仆核心：禁用首次进入世界的教程自动弹窗
+        if (mixinClassName.endsWith("fix.maidsoulcore.NoviceTutorialAutoPopupMixin")) {
+            return isModLoaded("maidsoulcore");
+        }
+
+        // 女仆核心 AUI 控制台输入法：把 ApricityUI 界面加入 IMBlocker 的白名单
+        if (mixinClassName.endsWith("fix.imblocker.IMBlockerConfigMixin")) {
+            return isModLoaded("imblocker");
         }
 
         return true;
@@ -415,6 +506,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                          String mixinClassName, IMixinInfo mixinInfo) {
 
         ExspectrimentsASM.patch(targetClassName, targetClass);
+        AppliedKjsASM.patch(targetClassName, targetClass);
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
         LinearbearingASM.patch(targetClassName, targetClass);
         Ae2ApuASM.patch(targetClassName, targetClass);

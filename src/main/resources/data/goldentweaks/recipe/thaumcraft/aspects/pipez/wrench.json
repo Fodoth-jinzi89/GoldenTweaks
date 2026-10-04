@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipez:wrench"
+  },
+  "aspects": {
+    "permutatio": 4,
+    "instrumentum": 3,
+    "machina": 3
+  }
+}

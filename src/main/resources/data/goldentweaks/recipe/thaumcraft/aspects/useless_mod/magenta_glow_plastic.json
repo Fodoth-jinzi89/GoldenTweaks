@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:magenta_glow_plastic"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "limus": 2
+  }
+}

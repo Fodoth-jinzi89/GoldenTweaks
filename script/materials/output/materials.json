@@ -1,13 +1,13 @@
 {
   "meta": {
-    "source_json_count": 250,
-    "scanned_entries": 24305,
-    "木头_count": 76,
-    "岩石_count": 140,
-    "纤维_count": 9,
-    "宝石_count": 104,
+    "source_json_count": 288,
+    "scanned_entries": 27110,
+    "木头_count": 90,
+    "岩石_count": 143,
+    "纤维_count": 10,
+    "宝石_count": 123,
     "金属_count": 28,
-    "有机物_count": 307
+    "有机物_count": 328
   },
   "木头": [
     {
@@ -158,6 +158,13 @@
       "merged_count": 5
     },
     {
+      "id": "thaumicbases:ender_log",
+      "name": "Ender Tree Log",
+      "source_type": "blocks",
+      "material": "ender",
+      "merged_count": 2
+    },
+    {
       "id": "supplementaries:fine_wood",
       "name": "Fine Wood",
       "source_type": "blocks",
@@ -193,6 +200,13 @@
       "merged_count": 1
     },
     {
+      "id": "thaumicbases:golden_oak_log",
+      "name": "Golden Oak Log",
+      "source_type": "blocks",
+      "material": "golden_oak",
+      "merged_count": 2
+    },
+    {
       "id": "spectrum:gray_log",
       "name": "Gray Log",
       "source_type": "blocks",
@@ -219,6 +233,55 @@
       "source_type": "blocks",
       "material": "hellbark",
       "merged_count": 5
+    },
+    {
+      "id": "astralsorcery:infused_wood",
+      "name": "Infused Wood",
+      "source_type": "blocks",
+      "material": "infused",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:infused_wood_planks",
+      "name": "Infused Wood Planks",
+      "source_type": "blocks",
+      "material": "infused_wood",
+      "merged_count": 3
+    },
+    {
+      "id": "astralsorcery:infused_wood_arch",
+      "name": "Infused Wood Arch",
+      "source_type": "blocks",
+      "material": "infused_wood_arch",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:infused_wood_column",
+      "name": "Infused Wood Column",
+      "source_type": "blocks",
+      "material": "infused_wood_column",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:infused_wood_engraved",
+      "name": "Engraved Infused Wood",
+      "source_type": "blocks",
+      "material": "infused_wood_engraved",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:infused_wood_enriched",
+      "name": "Enriched Infused Wood",
+      "source_type": "blocks",
+      "material": "infused_wood_enriched",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:infused_wood_infused",
+      "name": "Vibrant Infused Wood",
+      "source_type": "blocks",
+      "material": "infused_wood_infused",
+      "merged_count": 1
     },
     {
       "id": "spectrum:ivory_noxcap_stem",
@@ -268,6 +331,13 @@
       "source_type": "blocks",
       "material": "lime",
       "merged_count": 5
+    },
+    {
+      "id": "thaumicbases:nether_log",
+      "name": "Nether Tree Log",
+      "source_type": "blocks",
+      "material": "log",
+      "merged_count": 1
     },
     {
       "id": "createbigcannons:log_cannon_chamber",
@@ -340,6 +410,13 @@
       "merged_count": 5
     },
     {
+      "id": "thaumicbases:peaceful_log",
+      "name": "Peaceful Tree Log",
+      "source_type": "blocks",
+      "material": "peaceful",
+      "merged_count": 2
+    },
+    {
       "id": "biomesoplenty:pine_log",
       "name": "Pine Log",
       "source_type": "blocks",
@@ -352,6 +429,13 @@
       "source_type": "blocks",
       "material": "pink",
       "merged_count": 5
+    },
+    {
+      "id": "thaumicbases:nether_planks",
+      "name": "Nether Wood Planks",
+      "source_type": "blocks",
+      "material": "planks",
+      "merged_count": 1
     },
     {
       "id": "northstar:plate_fungus_stem_block",
@@ -375,10 +459,24 @@
       "merged_count": 5
     },
     {
+      "id": "thaumicbases:redlon_stem",
+      "name": "Redlon Stem",
+      "source_type": "blocks",
+      "material": "redlon",
+      "merged_count": 1
+    },
+    {
       "id": "biomesoplenty:redwood_log",
       "name": "Redwood Log",
       "source_type": "blocks",
       "material": "redwood",
+      "merged_count": 5
+    },
+    {
+      "id": "thermal:rubberwood_log",
+      "name": "Rubberwood Log",
+      "source_type": "blocks",
+      "material": "rubberwood",
       "merged_count": 5
     },
     {
@@ -570,7 +668,7 @@
       "name": "Block of Andesite Alloy",
       "source_type": "blocks",
       "material": "andesite",
-      "merged_count": 126
+      "merged_count": 128
     },
     {
       "id": "thaumcraft:arcane_stone",
@@ -661,7 +759,14 @@
       "name": "Clay Golem",
       "source_type": "items",
       "material": "clay",
-      "merged_count": 3
+      "merged_count": 4
+    },
+    {
+      "id": "academy:etched_cobblestone",
+      "name": "Etched Cobblestone",
+      "source_type": "items",
+      "material": "cobblestone",
+      "merged_count": 5
     },
     {
       "id": "thaumcraft:crusted_stone",
@@ -696,7 +801,7 @@
       "name": "Deepslate Pavers",
       "source_type": "blocks",
       "material": "deepslate",
-      "merged_count": 87
+      "merged_count": 90
     },
     {
       "id": "spectrum:dike_chiseled_preservation_stone",
@@ -766,7 +871,7 @@
       "name": "Block of Flint",
       "source_type": "blocks",
       "material": "flint",
-      "merged_count": 1
+      "merged_count": 2
     },
     {
       "id": "cataclysm:frosted_stone_bricks",
@@ -881,11 +986,11 @@
       "merged_count": 1
     },
     {
-      "id": "spectrum:basal_marble",
-      "name": "Basal Marble",
+      "id": "astralsorcery:marble_arch",
+      "name": "Marble Arch",
       "source_type": "blocks",
       "material": "marble",
-      "merged_count": 17
+      "merged_count": 35
     },
     {
       "id": "northstar:mars_deep_stone",
@@ -1053,7 +1158,14 @@
       "name": "Refined Obsidian",
       "source_type": "blocks",
       "material": "obsidian",
-      "merged_count": 34
+      "merged_count": 37
+    },
+    {
+      "id": "thermal:oil_sand",
+      "name": "Bituminous Sand",
+      "source_type": "blocks",
+      "material": "oil_sand",
+      "merged_count": 1
     },
     {
       "id": "spectrum:orange_chiseled_preservation_stone",
@@ -1130,7 +1242,7 @@
       "name": "Red Sand Paper",
       "source_type": "items",
       "material": "red_sand",
-      "merged_count": 1
+      "merged_count": 2
     },
     {
       "id": "spectrum:redstone_sand",
@@ -1378,6 +1490,13 @@
       "merged_count": 10
     },
     {
+      "id": "wands:stone_wand",
+      "name": "Stone Wand",
+      "source_type": "items",
+      "material": "stone_wand",
+      "merged_count": 1
+    },
+    {
       "id": "spectrum:storm_stone",
       "name": "Storm Stone",
       "source_type": "items",
@@ -1548,18 +1667,18 @@
       "merged_count": 1
     },
     {
-      "id": "touhou_little_maid:nimble_fabric",
-      "name": "§6Nimble Fabric",
+      "id": "thaumicbases:bloody_fabric",
+      "name": "Bloody Enchanted Fabric",
       "source_type": "items",
       "material": "fabric",
-      "merged_count": 4
+      "merged_count": 8
     },
     {
       "id": "supplementaries:flax",
       "name": "Flax",
       "source_type": "items",
       "material": "flax",
-      "merged_count": 6
+      "merged_count": 10
     },
     {
       "id": "create:rope",
@@ -1580,7 +1699,14 @@
       "name": "Red String",
       "source_type": "items",
       "material": "string",
-      "merged_count": 21
+      "merged_count": 27
+    },
+    {
+      "id": "ae2lt:matter_warping_matrix_thread_unit_t1",
+      "name": "Tianshu Matter Warping Matrix Thread Unit T1",
+      "source_type": "blocks",
+      "material": "thread",
+      "merged_count": 2
     },
     {
       "id": "mek_x_star:crushed_wool",
@@ -1606,11 +1732,18 @@
       "merged_count": 58
     },
     {
-      "id": "create_dragons_plus:dyenamics_aquamarine_dye_bucket",
-      "name": "Dyenamics Aquamarine Dye Bucket",
+      "id": "thermal:apatite_dust",
+      "name": "Apatite Dust",
+      "source_type": "items",
+      "material": "apatite",
+      "merged_count": 5
+    },
+    {
+      "id": "astralsorcery:aquamarine",
+      "name": "Aquamarine",
       "source_type": "items",
       "material": "aquamarine",
-      "merged_count": 2
+      "merged_count": 4
     },
     {
       "id": "alshanex_familiars:archmage_shard",
@@ -1620,10 +1753,31 @@
       "merged_count": 1
     },
     {
+      "id": "astralsorcery:artifact_shard",
+      "name": "Artifact Shard",
+      "source_type": "items",
+      "material": "artifact",
+      "merged_count": 1
+    },
+    {
       "id": "waystones:attuned_shard",
       "name": "Attuned Shard",
       "source_type": "items",
       "material": "attuned",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:attuned_celestial_crystal",
+      "name": "Attuned Celestial Crystal",
+      "source_type": "items",
+      "material": "attuned_celestial",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:attuned_rock_crystal",
+      "name": "Attuned Rock Crystal",
+      "source_type": "items",
+      "material": "attuned_rock",
       "merged_count": 1
     },
     {
@@ -1662,11 +1816,11 @@
       "merged_count": 1
     },
     {
-      "id": "traveloptics:celestial_shard",
-      "name": "Celestial Shard",
+      "id": "astralsorcery:celestial_crystal",
+      "name": "Celestial Crystal",
       "source_type": "items",
       "material": "celestial",
-      "merged_count": 1
+      "merged_count": 2
     },
     {
       "id": "neoecoae:chipped_budding_energized_crystal",
@@ -1687,6 +1841,13 @@
       "name": "Cleric Shard",
       "source_type": "items",
       "material": "cleric",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2lt:cracked_budding_overload_crystal",
+      "name": "Cracked Budding Overload Crystal",
+      "source_type": "blocks",
+      "material": "cracked_budding_overload",
       "merged_count": 1
     },
     {
@@ -1718,6 +1879,13 @@
       "merged_count": 1
     },
     {
+      "id": "ae2lt:damaged_budding_overload_crystal",
+      "name": "Damaged Budding Overload Crystal",
+      "source_type": "blocks",
+      "material": "damaged_budding_overload",
+      "merged_count": 1
+    },
+    {
       "id": "irons_spellbooks:dead_king_phylactery_shard",
       "name": "Dead King Phylactery Shard",
       "source_type": "items",
@@ -1729,7 +1897,7 @@
       "name": "Diamond Shard",
       "source_type": "items",
       "material": "diamond",
-      "merged_count": 45
+      "merged_count": 54
     },
     {
       "id": "waystones:dormant_shard",
@@ -1774,11 +1942,18 @@
       "merged_count": 2
     },
     {
-      "id": "kaleidoscope_tavern:emerald",
-      "name": "Emerald",
-      "source_type": "blocks",
+      "id": "ae2lt:electro_chime_crystal",
+      "name": "Electro-Chime Crystal",
+      "source_type": "items",
+      "material": "electro_chime",
+      "merged_count": 1
+    },
+    {
+      "id": "appflux:emerald_dust",
+      "name": "Emerald Dust",
+      "source_type": "items",
       "material": "emerald",
-      "merged_count": 18
+      "merged_count": 24
     },
     {
       "id": "mekmm:empty_crystal",
@@ -1851,10 +2026,24 @@
       "merged_count": 1
     },
     {
+      "id": "ae2lt:flawed_budding_overload_crystal",
+      "name": "Flawed Budding Overload Crystal",
+      "source_type": "blocks",
+      "material": "flawed_budding_overload",
+      "merged_count": 1
+    },
+    {
       "id": "neoecoae:flawless_budding_energized_crystal",
       "name": "Flawless Budding Energized Crystal",
       "source_type": "blocks",
       "material": "flawless_budding_energized",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2lt:flawless_budding_overload_crystal",
+      "name": "Flawless Budding Overload Crystal",
+      "source_type": "blocks",
+      "material": "flawless_budding_overload",
       "merged_count": 1
     },
     {
@@ -1946,7 +2135,7 @@
       "name": "Polished Jadestone",
       "source_type": "blocks",
       "material": "jade",
-      "merged_count": 23
+      "merged_count": 25
     },
     {
       "id": "spectrum:knowledge_gem",
@@ -1956,11 +2145,18 @@
       "merged_count": 1
     },
     {
-      "id": "dndesires:lapis_lazuli_shard",
-      "name": "Lapis Lazuli Shard",
+      "id": "thermal:lapis_dust",
+      "name": "Lapis Dust",
       "source_type": "items",
       "material": "lapis",
-      "merged_count": 26
+      "merged_count": 33
+    },
+    {
+      "id": "extendedae_plus:lattra_crystal",
+      "name": "Lattra Crystal",
+      "source_type": "items",
+      "material": "lattra",
+      "merged_count": 1
     },
     {
       "id": "alshanex_familiars:life_gem",
@@ -1984,6 +2180,13 @@
       "merged_count": 1
     },
     {
+      "id": "astralsorcery:lumen_crystal",
+      "name": "Lumen Crystal",
+      "source_type": "items",
+      "material": "lumen",
+      "merged_count": 1
+    },
+    {
       "id": "apotheosis:luminous_crystal_shard",
       "name": "Luminous Crystal Shard",
       "source_type": "items",
@@ -1998,8 +2201,8 @@
       "merged_count": 1
     },
     {
-      "id": "spectrum:malachite_block",
-      "name": "Block of Malachite",
+      "id": "spectrum:malachite_ore",
+      "name": "Malachite Ore",
       "source_type": "blocks",
       "material": "malachite",
       "merged_count": 17
@@ -2054,10 +2257,24 @@
       "merged_count": 1
     },
     {
+      "id": "ae2lt:overload_crystal",
+      "name": "Overload Crystal",
+      "source_type": "items",
+      "material": "overload",
+      "merged_count": 1
+    },
+    {
       "id": "spectrum:paltaeria_gem",
       "name": "Paltaeria Gem",
       "source_type": "items",
       "material": "paltaeria",
+      "merged_count": 1
+    },
+    {
+      "id": "ae2lt:perfect_electro_chime_crystal",
+      "name": "Perfect Electro-Chime Crystal",
+      "source_type": "items",
+      "material": "perfect_electro_chime",
       "merged_count": 1
     },
     {
@@ -2180,11 +2397,25 @@
       "merged_count": 1
     },
     {
-      "id": "ae2:quartz_block",
-      "name": "Certus Quartz Block",
-      "source_type": "blocks",
+      "id": "thermal:quartz_dust",
+      "name": "Quartz Dust",
+      "source_type": "items",
       "material": "quartz",
-      "merged_count": 143
+      "merged_count": 149
+    },
+    {
+      "id": "appflux:redstone_crystal",
+      "name": "Redstone Crystal",
+      "source_type": "items",
+      "material": "redstone",
+      "merged_count": 1
+    },
+    {
+      "id": "academy:reso_crystal",
+      "name": "Resonant Crystal",
+      "source_type": "items",
+      "material": "reso",
+      "merged_count": 1
     },
     {
       "id": "spectrum:resonance_shard",
@@ -2194,25 +2425,32 @@
       "merged_count": 1
     },
     {
-      "id": "touhou_little_maid_spell:rock_crystal",
+      "id": "astralsorcery:resonating_gem",
+      "name": "Resonating Gem",
+      "source_type": "items",
+      "material": "resonating",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:rock_crystal",
       "name": "Rock Crystal",
       "source_type": "items",
       "material": "rock",
-      "merged_count": 2
+      "merged_count": 3
     },
     {
       "id": "alltheores:ruby_dust",
       "name": "Ruby Dust",
       "source_type": "items",
       "material": "ruby",
-      "merged_count": 10
+      "merged_count": 18
     },
     {
       "id": "alltheores:sapphire_dust",
       "name": "Sapphire Dust",
       "source_type": "items",
       "material": "sapphire",
-      "merged_count": 18
+      "merged_count": 26
     },
     {
       "id": "alshanex_familiars:scorcher_shard",
@@ -2247,6 +2485,20 @@
       "name": "Spectral Shard",
       "source_type": "items",
       "material": "spectral",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:starlight_focus_celestial_crystal",
+      "name": "Starlight Focus Crystal",
+      "source_type": "blocks",
+      "material": "starlight_focus_celestial",
+      "merged_count": 1
+    },
+    {
+      "id": "astralsorcery:starlight_focus_rock_crystal",
+      "name": "Starlight Focus Crystal",
+      "source_type": "blocks",
+      "material": "starlight_focus_rock",
       "merged_count": 1
     },
     {
@@ -2318,6 +2570,13 @@
       "source_type": "items",
       "material": "wrath",
       "merged_count": 1
+    },
+    {
+      "id": "thermal:xp_crystal",
+      "name": "Insightful Crystal",
+      "source_type": "items",
+      "material": "xp",
+      "merged_count": 1
     }
   ],
   "金属": [
@@ -2340,7 +2599,7 @@
       "name": "Bronze Ingot",
       "source_type": "items",
       "material": "bronze",
-      "merged_count": 11
+      "merged_count": 17
     },
     {
       "id": "createbigcannons:cast_iron_ingot",
@@ -2354,42 +2613,42 @@
       "name": "Constantan Ingot",
       "source_type": "items",
       "material": "constantan",
-      "merged_count": 7
+      "merged_count": 13
     },
     {
       "id": "alltheores:copper_nugget",
       "name": "Copper Nugget",
       "source_type": "items",
       "material": "copper",
-      "merged_count": 23
+      "merged_count": 28
     },
     {
       "id": "alltheores:electrum_ingot",
       "name": "Electrum Ingot",
       "source_type": "items",
       "material": "electrum",
-      "merged_count": 12
+      "merged_count": 18
     },
     {
       "id": "alltheores:enderium_ingot",
       "name": "Enderium Ingot",
       "source_type": "items",
       "material": "enderium",
-      "merged_count": 7
+      "merged_count": 13
     },
     {
       "id": "alltheores:gold_dust",
       "name": "Gold Dust",
       "source_type": "items",
       "material": "gold",
-      "merged_count": 20
+      "merged_count": 24
     },
     {
       "id": "alltheores:invar_ingot",
       "name": "Invar Ingot",
       "source_type": "items",
       "material": "invar",
-      "merged_count": 7
+      "merged_count": 13
     },
     {
       "id": "alltheores:iridium_ingot",
@@ -2403,21 +2662,21 @@
       "name": "Iron Nugget",
       "source_type": "items",
       "material": "iron",
-      "merged_count": 28
+      "merged_count": 33
     },
     {
       "id": "alltheores:lead_ingot",
       "name": "Lead Ingot",
       "source_type": "items",
       "material": "lead",
-      "merged_count": 33
+      "merged_count": 42
     },
     {
       "id": "alltheores:lumium_ingot",
       "name": "Lumium Ingot",
       "source_type": "items",
       "material": "lumium",
-      "merged_count": 7
+      "merged_count": 13
     },
     {
       "id": "irons_spellbooks:mithril_ingot",
@@ -2427,18 +2686,18 @@
       "merged_count": 4
     },
     {
-      "id": "alltheores:netherite_dust",
-      "name": "Netherite Dust",
+      "id": "thermal:netherite_nugget",
+      "name": "Netherite Nugget",
       "source_type": "items",
       "material": "netherite",
-      "merged_count": 4
+      "merged_count": 8
     },
     {
       "id": "alltheores:nickel_ingot",
       "name": "Nickel Ingot",
       "source_type": "items",
       "material": "nickel",
-      "merged_count": 17
+      "merged_count": 26
     },
     {
       "id": "alltheores:osmium_ingot",
@@ -2466,14 +2725,14 @@
       "name": "Signalum Ingot",
       "source_type": "items",
       "material": "signalum",
-      "merged_count": 7
+      "merged_count": 13
     },
     {
       "id": "alltheores:silver_ingot",
       "name": "Silver Ingot",
       "source_type": "items",
       "material": "silver",
-      "merged_count": 18
+      "merged_count": 27
     },
     {
       "id": "alltheores:steel_ingot",
@@ -2487,7 +2746,7 @@
       "name": "Tin Ingot",
       "source_type": "items",
       "material": "tin",
-      "merged_count": 27
+      "merged_count": 36
     },
     {
       "id": "northstar:titanium_ingot",
@@ -2520,6 +2779,13 @@
   ],
   "有机物": [
     {
+      "id": "thaumicbases:nether_leaves",
+      "name": "Nether Tree Leaves",
+      "source_type": "blocks",
+      "material": "",
+      "merged_count": 2
+    },
+    {
       "id": "croptopia:almond_crop",
       "name": "Almond Crop",
       "source_type": "blocks",
@@ -2531,6 +2797,13 @@
       "name": "Aloe Leaf",
       "source_type": "items",
       "material": "aloe",
+      "merged_count": 1
+    },
+    {
+      "id": "thermal:amaranth_seeds",
+      "name": "Amaranth Seeds",
+      "source_type": "items",
+      "material": "amaranth",
       "merged_count": 1
     },
     {
@@ -2601,7 +2874,7 @@
       "name": "Raw Bamboo Tube Rice",
       "source_type": "items",
       "material": "bamboo",
-      "merged_count": 13
+      "merged_count": 16
     },
     {
       "id": "croptopia:banana_crop",
@@ -2615,7 +2888,7 @@
       "name": "Barley Crop",
       "source_type": "blocks",
       "material": "barley",
-      "merged_count": 5
+      "merged_count": 10
     },
     {
       "id": "croptopia:basil_crop",
@@ -2629,7 +2902,7 @@
       "name": "Soy Bean",
       "source_type": "items",
       "material": "bean",
-      "merged_count": 24
+      "merged_count": 27
     },
     {
       "id": "croptopia:beef_stew",
@@ -2643,6 +2916,13 @@
       "name": "Beetroot Salad",
       "source_type": "items",
       "material": "beetroot",
+      "merged_count": 1
+    },
+    {
+      "id": "thermal:bell_pepper_seeds",
+      "name": "Bell Pepper Seeds",
+      "source_type": "items",
+      "material": "bell_pepper",
       "merged_count": 1
     },
     {
@@ -2685,7 +2965,7 @@
       "name": "Nephrite Blossom Leaves",
       "source_type": "blocks",
       "material": "blossom",
-      "merged_count": 21
+      "merged_count": 22
     },
     {
       "id": "spectrum:blue_leaves",
@@ -2706,7 +2986,7 @@
       "name": "Bone Ash",
       "source_type": "items",
       "material": "bone",
-      "merged_count": 34
+      "merged_count": 36
     },
     {
       "id": "biomesoplenty:bramble_leaves",
@@ -2755,7 +3035,7 @@
       "name": "Tiny Cactus",
       "source_type": "blocks",
       "material": "cactus",
-      "merged_count": 3
+      "merged_count": 4
     },
     {
       "id": "croptopia:cantaloupe_crop",
@@ -2783,7 +3063,7 @@
       "name": "Carrot Chunks",
       "source_type": "items",
       "material": "carrot",
-      "merged_count": 4
+      "merged_count": 7
     },
     {
       "id": "croptopia:cashew_crop",
@@ -2825,7 +3105,7 @@
       "name": "Orlean-Style Grilled Chicken Leg",
       "source_type": "items",
       "material": "chicken",
-      "merged_count": 100
+      "merged_count": 102
     },
     {
       "id": "croptopia:chile_pepper_crop",
@@ -2902,7 +3182,7 @@
       "name": "Coffee Crop",
       "source_type": "blocks",
       "material": "coffee",
-      "merged_count": 18
+      "merged_count": 23
     },
     {
       "id": "northstar:coiler_leaves",
@@ -2923,7 +3203,7 @@
       "name": "Corn Crop",
       "source_type": "blocks",
       "material": "corn",
-      "merged_count": 14
+      "merged_count": 18
     },
     {
       "id": "flavor_immersed_daily:cowpeabeanseed",
@@ -3010,6 +3290,13 @@
       "merged_count": 3
     },
     {
+      "id": "kaleidoscope_cookery:dried_tea_leaves",
+      "name": "Dried Tea Leaves",
+      "source_type": "items",
+      "material": "dried_tea",
+      "merged_count": 1
+    },
+    {
       "id": "flavor_immersed_daily:duriansapling",
       "name": "Durian Sapling",
       "source_type": "items",
@@ -3028,14 +3315,14 @@
       "name": "Raw Egg Tart",
       "source_type": "items",
       "material": "egg",
-      "merged_count": 188
+      "merged_count": 201
     },
     {
       "id": "croptopia:eggplant_crop",
       "name": "Eggplant Crop",
       "source_type": "blocks",
       "material": "eggplant",
-      "merged_count": 2
+      "merged_count": 3
     },
     {
       "id": "croptopia:elderberry_crop",
@@ -3052,11 +3339,18 @@
       "merged_count": 2
     },
     {
+      "id": "thaumicbases:ender_leaves",
+      "name": "Ender Tree Leaves",
+      "source_type": "blocks",
+      "material": "ender",
+      "merged_count": 2
+    },
+    {
       "id": "neoguanniao:bird_feather",
       "name": "Bird Feather",
       "source_type": "items",
       "material": "feather",
-      "merged_count": 25
+      "merged_count": 26
     },
     {
       "id": "flavor_immersed_daily:fennelseedstates",
@@ -3080,11 +3374,11 @@
       "merged_count": 2
     },
     {
-      "id": "farmersdelight:fish_stew",
-      "name": "Fish Stew",
+      "id": "extendedae_plus:fish_dan_",
+      "name": "Fish Dan Doll",
       "source_type": "items",
       "material": "fish",
-      "merged_count": 17
+      "merged_count": 19
     },
     {
       "id": "touhou_little_maid_spell:floating_fox_leaf",
@@ -3098,7 +3392,7 @@
       "name": "Flower Roll",
       "source_type": "items",
       "material": "flower",
-      "merged_count": 11
+      "merged_count": 12
     },
     {
       "id": "biomesoplenty:flowering_oak_leaves",
@@ -3106,6 +3400,13 @@
       "source_type": "blocks",
       "material": "flowering_oak",
       "merged_count": 2
+    },
+    {
+      "id": "kaleidoscope_cookery:fresh_tea_leaves",
+      "name": "Fresh Tea Leaves",
+      "source_type": "items",
+      "material": "fresh_tea",
+      "merged_count": 1
     },
     {
       "id": "hazennstuff:frostbite_birch_sapling",
@@ -3119,7 +3420,7 @@
       "name": "Black Fungus",
       "source_type": "items",
       "material": "fungus",
-      "merged_count": 20
+      "merged_count": 21
     },
     {
       "id": "croptopia:garlic_crop",
@@ -3148,6 +3449,13 @@
       "source_type": "blocks",
       "material": "gold_grape",
       "merged_count": 1
+    },
+    {
+      "id": "thaumicbases:golden_oak_leaves",
+      "name": "Golden Oak Leaves",
+      "source_type": "blocks",
+      "material": "golden_oak",
+      "merged_count": 2
     },
     {
       "id": "croptopia:grape_crop",
@@ -3190,6 +3498,13 @@
       "source_type": "blocks",
       "material": "green",
       "merged_count": 2
+    },
+    {
+      "id": "thermal:green_bean_seeds",
+      "name": "Green Bean Seeds",
+      "source_type": "items",
+      "material": "green_bean",
+      "merged_count": 1
     },
     {
       "id": "croptopia:greenbean_crop",
@@ -3266,7 +3581,7 @@
       "name": "Honey",
       "source_type": "blocks",
       "material": "honey",
-      "merged_count": 24
+      "merged_count": 25
     },
     {
       "id": "croptopia:honeydew_crop",
@@ -3294,7 +3609,7 @@
       "name": "Hops Crop",
       "source_type": "blocks",
       "material": "hops",
-      "merged_count": 2
+      "merged_count": 3
     },
     {
       "id": "kaleidoscope_tavern:ice_grape_crop",
@@ -3374,6 +3689,13 @@
       "merged_count": 3
     },
     {
+      "id": "thaumicbases:lazullia_seeds",
+      "name": "Lazullia Seeds",
+      "source_type": "items",
+      "material": "lazullia",
+      "merged_count": 1
+    },
+    {
       "id": "croptopia:leek_crop",
       "name": "Leek Crop",
       "source_type": "blocks",
@@ -3442,6 +3764,13 @@
       "source_type": "items",
       "material": "loquatleave",
       "merged_count": 2
+    },
+    {
+      "id": "thaumicbases:lucrite_seeds",
+      "name": "Lucrite Seeds",
+      "source_type": "items",
+      "material": "lucrite",
+      "merged_count": 1
     },
     {
       "id": "flavor_immersed_daily:lycheesapling",
@@ -3532,14 +3861,21 @@
       "name": "Raw Piglin Meat",
       "source_type": "items",
       "material": "meat",
-      "merged_count": 46
+      "merged_count": 49
     },
     {
-      "id": "spectrum:glistering_melon_seeds",
-      "name": "Glistering Melon Seeds",
+      "id": "thermal:frost_melon_seeds",
+      "name": "Frost Melon Seeds",
       "source_type": "items",
       "material": "melon",
-      "merged_count": 32
+      "merged_count": 35
+    },
+    {
+      "id": "thaumicbases:metalleat_seeds",
+      "name": "Metalleat Seeds",
+      "source_type": "items",
+      "material": "metalleat",
+      "merged_count": 1
     },
     {
       "id": "flavor_immersed_daily:millet",
@@ -3588,7 +3924,7 @@
       "name": "Fragrant Mushroom Seed",
       "source_type": "items",
       "material": "mushroom",
-      "merged_count": 24
+      "merged_count": 34
     },
     {
       "id": "croptopia:mustard_crop",
@@ -3610,6 +3946,13 @@
       "source_type": "items",
       "material": "mutton",
       "merged_count": 8
+    },
+    {
+      "id": "resourcetobacco_leaves:name",
+      "name": "Tobacco Leaves Pile",
+      "source_type": "items",
+      "material": "name",
+      "merged_count": 1
     },
     {
       "id": "croptopia:nectarine_crop",
@@ -3672,7 +4015,7 @@
       "name": "Onion Crop",
       "source_type": "blocks",
       "material": "onion",
-      "merged_count": 15
+      "merged_count": 19
     },
     {
       "id": "croptopia:orange_crop",
@@ -3752,6 +4095,13 @@
       "merged_count": 1
     },
     {
+      "id": "thaumicbases:peaceful_leaves",
+      "name": "Peaceful Tree Leaves",
+      "source_type": "blocks",
+      "material": "peaceful",
+      "merged_count": 2
+    },
+    {
       "id": "croptopia:peach_crop",
       "name": "Peach Crop",
       "source_type": "blocks",
@@ -3763,7 +4113,7 @@
       "name": "Peanut Crop",
       "source_type": "blocks",
       "material": "peanut",
-      "merged_count": 2
+      "merged_count": 3
     },
     {
       "id": "croptopia:pear_crop",
@@ -3843,6 +4193,13 @@
       "merged_count": 2
     },
     {
+      "id": "thaumicbases:plax_seeds",
+      "name": "Plax Seeds",
+      "source_type": "items",
+      "material": "plax",
+      "merged_count": 1
+    },
+    {
       "id": "croptopia:plum_crop",
       "name": "Plum Crop",
       "source_type": "blocks",
@@ -3861,14 +4218,14 @@
       "name": "Raw Pork Belly",
       "source_type": "items",
       "material": "pork",
-      "merged_count": 42
+      "merged_count": 43
     },
     {
-      "id": "flavor_immersed_daily:dicedpotato",
-      "name": "potato chunks",
+      "id": "thermal:rf_potato",
+      "name": "Capacitato",
       "source_type": "items",
       "material": "potato",
-      "merged_count": 32
+      "merged_count": 33
     },
     {
       "id": "spectrum:potted_black_sapling",
@@ -4081,6 +4438,13 @@
       "merged_count": 1
     },
     {
+      "id": "thermal:potted_rubberwood_sapling",
+      "name": "Potted Rubberwood Sapling",
+      "source_type": "blocks",
+      "material": "potted_rubberwood",
+      "merged_count": 1
+    },
+    {
       "id": "biomesoplenty:potted_snowblossom_sapling",
       "name": "Potted Snowblossom Sapling",
       "source_type": "blocks",
@@ -4127,7 +4491,7 @@
       "name": "Roasted Pumpkin Seeds",
       "source_type": "items",
       "material": "pumpkin",
-      "merged_count": 18
+      "merged_count": 19
     },
     {
       "id": "spectrum:purple_leaves",
@@ -4141,7 +4505,7 @@
       "name": "Radish Crop",
       "source_type": "blocks",
       "material": "radish",
-      "merged_count": 3
+      "merged_count": 4
     },
     {
       "id": "biomesoplenty:rainbow_birch_leaves",
@@ -4193,6 +4557,13 @@
       "merged_count": 2
     },
     {
+      "id": "thaumicbases:redlon_seeds",
+      "name": "Redlon Seeds",
+      "source_type": "items",
+      "material": "redlon",
+      "merged_count": 1
+    },
+    {
       "id": "flavor_immersed_daily:redtealeaves",
       "name": "Red Tea Leaves",
       "source_type": "items",
@@ -4218,7 +4589,7 @@
       "name": "Rice Crop",
       "source_type": "blocks",
       "material": "rice",
-      "merged_count": 79
+      "merged_count": 83
     },
     {
       "id": "forbiddenmagic:riding_crop",
@@ -4242,11 +4613,25 @@
       "merged_count": 8
     },
     {
+      "id": "thermal:rubberwood_leaves",
+      "name": "Rubberwood Leaves",
+      "source_type": "blocks",
+      "material": "rubberwood",
+      "merged_count": 2
+    },
+    {
       "id": "croptopia:rutabaga_crop",
       "name": "Rutabaga Crop",
       "source_type": "blocks",
       "material": "rutabaga",
       "merged_count": 2
+    },
+    {
+      "id": "thermal:sadiroot_seeds",
+      "name": "Sadiroot Seeds",
+      "source_type": "items",
+      "material": "sadiroot",
+      "merged_count": 1
     },
     {
       "id": "spectrum:sag_leaf",
@@ -4295,7 +4680,7 @@
       "name": "Slime Boots",
       "source_type": "items",
       "material": "slime",
-      "merged_count": 14
+      "merged_count": 17
     },
     {
       "id": "biomesoplenty:snowblossom_leaves",
@@ -4330,7 +4715,7 @@
       "name": "Spinach Crop",
       "source_type": "blocks",
       "material": "spinach",
-      "merged_count": 3
+      "merged_count": 4
     },
     {
       "id": "spectrum:spirit_sallow_leaves",
@@ -4365,7 +4750,21 @@
       "name": "Strawberry Crop",
       "source_type": "blocks",
       "material": "strawberry",
-      "merged_count": 2
+      "merged_count": 3
+    },
+    {
+      "id": "thermal:sugar_cane_block",
+      "name": "Block of Sugar Cane",
+      "source_type": "blocks",
+      "material": "sugar_cane",
+      "merged_count": 1
+    },
+    {
+      "id": "thaumicbases:sweed_seeds",
+      "name": "Sweed Seeds",
+      "source_type": "items",
+      "material": "sweed",
+      "merged_count": 1
     },
     {
       "id": "flavor_immersed_daily:sweetgreenpepperseed",
@@ -4421,7 +4820,7 @@
       "name": "Tea Crop",
       "source_type": "blocks",
       "material": "tea",
-      "merged_count": 3
+      "merged_count": 4
     },
     {
       "id": "flavor_immersed_daily:tidyreedleaf",
@@ -4429,6 +4828,13 @@
       "source_type": "items",
       "material": "tidyreed",
       "merged_count": 1
+    },
+    {
+      "id": "thaumicbases:tobacco_leaves",
+      "name": "Tobacco Leaves Pile",
+      "source_type": "items",
+      "material": "tobacco",
+      "merged_count": 2
     },
     {
       "id": "croptopia:tomatillo_crop",
@@ -4442,7 +4848,7 @@
       "name": "Tomato Crop",
       "source_type": "blocks",
       "material": "tomato",
-      "merged_count": 27
+      "merged_count": 31
     },
     {
       "id": "croptopia:turmeric_crop",

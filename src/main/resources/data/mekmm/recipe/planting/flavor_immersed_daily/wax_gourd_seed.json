@@ -8,7 +8,7 @@
   "type": "mekmm:planting",
   "item_input": {
     "count": 1,
-    "item": "flavor_immersed_daily:wax_gourd_seed"
+    "item": "flavor_immersed_daily:wax_gourd_seed_block"
   },
   "chemical_input": {
     "amount": 1,

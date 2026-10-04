@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:beekeeper_leggings"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "victus": 3,
+    "fames": 2,
+    "pannus": 2
+  }
+}

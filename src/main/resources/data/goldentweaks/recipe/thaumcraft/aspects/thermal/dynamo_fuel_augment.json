@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:dynamo_fuel_augment"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 3,
+    "potentia": 3,
+    "cognitio": 2,
+    "ignis": 2
+  }
+}

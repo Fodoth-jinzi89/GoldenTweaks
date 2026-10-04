@@ -2,7 +2,8 @@
   {
     "matchItems": [
       "supplementaries:flax_seeds",
-      "silentgear:flax_seeds"
+      "silentgear:flax_seeds",
+      "thermal:flax_seeds"
     ],
     "resultItems": "supplementaries:flax_seeds"
   },
@@ -37,10 +38,10 @@
   },
   {
     "matchItems": [
-      "flavor_immersed_daily:peanut_0",
+      "flavor_immersed_daily:peanut",
       "croptopia:peanut_seed"
     ],
-    "resultItems": "flavor_immersed_daily:peanut_0"
+    "resultItems": "flavor_immersed_daily:peanut"
   },
   {
     "matchItems": [
@@ -158,10 +159,10 @@
   },
       {
     "matchItems": [
-      "flavor_immersed_daily:nutmeg",
+      "flavor_immersed_daily:nutmegseed",
       "croptopia:nutmeg"
     ],
-    "resultItems": "flavor_immersed_daily:nutmeg"
+    "resultItems": "flavor_immersed_daily:nutmegseed"
   },
   {
     "matchItems": [
@@ -191,7 +192,8 @@
       "ltc2:pepper_sweet",
       "minecolonies:bell_pepper",
       "pamhc2crops:bellpepperitem",
-      "croptopia:bellpepper"
+      "croptopia:bellpepper",
+      "thermal:bell_pepper"
     ],
     "resultItems": "croptopia:bellpepper"
   },
@@ -351,7 +353,8 @@
       "trailandtales_delight:cheese_slice",
       "vanillacookbook:cheese",
       "vintagedelight:cheese_slice",
-      "croptopia:cheese"
+      "croptopia:cheese",
+      "thermal:cheese_wedge"
     ],
     "resultItems": "croptopia:cheese"
   },
@@ -465,31 +468,33 @@
       "farmersrespite:strong_coffee",
       "manors_bounty:coffee",
       "rusticdelight:coffee",
-      "croptopia:coffee"
+      "croptopia:coffee",
+      "thermal:coffee"
     ],
     "resultItems": "croptopia:coffee"
   },
   {
     "matchItems": [
-      "bakeries:coffee_bean",
       "braziliandelight:coffee_beans",
       "farmersrespite:coffee_beans",
-      "flavor_immersed_daily:coffeebean",
+      "flavor_immersed_daily:coffeebeanseed",
       "herbalbrews:coffee_beans",
       "kawaiidishes:roasted_coffee_beans",
       "pamhc2crops:coffeebeanitem",
       "productivetrees:coffee_bean",
-      "youkaishomecoming:coffee_beans",
-      "croptopia:coffee_beans"
+      "youkaishomecoming:coffee_beans"
     ],
-    "resultItems": "flavor_immersed_daily:coffeebean"
+    "resultItems": "flavor_immersed_daily:coffeebeanseed"
   },
   {
     "matchItems": [
       "braziliandelight:coffee_seeds",
       "pamhc2crops:coffeebeanseeditem",
       "croptopia:coffee_seed",
-	  "flavor_immersed_daily:coffeebeanseed"
+      "flavor_immersed_daily:coffeebeanseed",
+      "croptopia:coffee_beans",
+      "bakeries:coffee_bean",
+      "thermal:coffee_seeds"
     ],
     "resultItems": "flavor_immersed_daily:coffeebeanseed"
   },
@@ -538,13 +543,13 @@
       "enhancedfarming:corn_seeds",
       "extradelight:corn_seeds",
       "farm_and_charm:kernels",
-      "flavor_immersed_daily:corn_0",
+      "flavor_immersed_daily:cornseed",
       "manors_bounty:corn_seed",
       "pamhc2crops:cornseeditem",
       "simplefarming:corn_seeds",
       "croptopia:corn_seed"
     ],
-    "resultItems": "flavor_immersed_daily:corn_0"
+    "resultItems": "flavor_immersed_daily:cornseed"
   },
   {
     "matchItems": [
@@ -589,7 +594,7 @@
     "matchItems": [
       "culturaldelights:cucumber_seeds",
       "enhancedfarming:cucumber_seeds",
-      "flavor_immersed_daily:cucumber_seed",
+      "flavor_immersed_daily:cucumberseeds",
       "pamhc2crops:cucumberseeditem",
       "pizzacraft:cucumber_seeds",
       "simplefarming:cucumber_seeds",
@@ -598,7 +603,7 @@
       "youkaishomecoming:cucumber_seeds",
       "croptopia:cucumber_seed"
     ],
-    "resultItems": "flavor_immersed_daily:cucumber_seed"
+    "resultItems": "flavor_immersed_daily:cucumberseeds"
   },
   {
     "matchItems": [
@@ -653,14 +658,14 @@
       "culturaldelights:eggplant_seeds",
       "dumplings_delight:eggplant_seeds",
       "enhancedfarming:aubergine_seeds",
-      "flavor_immersed_daily:aubergineseed",
+      "flavor_immersed_daily:aubergineseedblock",
       "flavor_immersed_daily:aubergineseedblock",
       "pamhc2crops:eggplantseeditem",
       "sakura:eggplant_seeds",
       "simplefarming:eggplant_seeds",
       "croptopia:eggplant_seed"
     ],
-    "resultItems": "flavor_immersed_daily:aubergineseed"
+    "resultItems": "flavor_immersed_daily:aubergineseedblock"
   },
   {
     "matchItems": [
@@ -703,7 +708,8 @@
       "refurbished_furniture:wheat_flour",
       "sakura:flour",
       "croptopia:flour",
-	  "kaleidoscope_cookery:flour"
+	  "kaleidoscope_cookery:flour",
+      "thermal:flour"
     ],
     "resultItems": "flavor_immersed_daily:wheatflour"
   },
@@ -833,11 +839,11 @@
   },
   {
     "matchItems": [
-      "flavor_immersed_daily:mungbean_0",
+      "flavor_immersed_daily:mungbeanplant",
       "gan_delight_reborn:mung_bean",
       "croptopia:greenbean_seed"
     ],
-    "resultItems": "flavor_immersed_daily:mungbean_0"
+    "resultItems": "flavor_immersed_daily:mungbeanplant"
   },
   {
     "matchItems": [
@@ -1077,7 +1083,8 @@
       "pamhc2crops:onionseeditem",
       "sakura:onion_seeds",
       "simplefarming:onion_seeds",
-      "croptopia:onion_seed"
+      "croptopia:onion_seed",
+      "thermal:onion_seeds"
     ],
     "resultItems": "flavor_immersed_daily:onionseed"
   },
@@ -1172,24 +1179,24 @@
   },
   {
     "matchItems": [
-      "flavor_immersed_daily:peanut_0",
+      "flavor_immersed_daily:peanut",
       "croptopia:peanut_seed"
     ],
-    "resultItems": "flavor_immersed_daily:peanut_0"
+    "resultItems": "flavor_immersed_daily:peanut"
   },
   {
     "matchItems": [
-      "flavor_immersed_daily:broccoliseed",
+      "flavor_immersed_daily:broccoilseed",
       "croptopia:broccoli_seed"
     ],
-    "resultItems": "flavor_immersed_daily:broccoliseed"
+    "resultItems": "flavor_immersed_daily:broccoilseed"
   },
   {
     "matchItems": [
-      "flavor_immersed_daily:broccoli",
+      "flavor_immersed_daily:broccoil",
       "croptopia:broccoli"
     ],
-    "resultItems": "flavor_immersed_daily:broccoli"
+    "resultItems": "flavor_immersed_daily:broccoil"
   },
   {
     "matchItems": [
@@ -1342,7 +1349,8 @@
       "pamhc2crops:radishitem",
       "simplefarming:radish",
       "croptopia:radish",
-	  "flavor_immersed_daily:radish"
+	  "flavor_immersed_daily:radish",
+      "thermal:radish"
     ],
     "resultItems": "flavor_immersed_daily:radish"
   },
@@ -1411,7 +1419,8 @@
       "croptopia:rice_seed",
 	  "kaleidoscope_cookery:wild_rice",
 	  "farmersdelight:rice",
-	  "flavor_immersed_daily:paddygrain"
+	  "flavor_immersed_daily:paddygrain",
+      "thermal:rice"
     ],
     "resultItems": "flavor_immersed_daily:paddygrain"
   },
@@ -1429,7 +1438,8 @@
       "farmersdelight:rice_panicle",
 	  "flavor_immersed_daily:paddyseeds",
 	  "kaleidoscope_cookery:rice",
-	  "croptopia:rice"
+	  "croptopia:rice",
+      "thermal:rice_seeds"
     ],
     "resultItems": "flavor_immersed_daily:paddyseeds"
   },
@@ -1519,9 +1529,9 @@
       "youkaishomecoming:soybean",
       "croptopia:soybean",
 	  "croptopia:soybean_seed",
-	  "flavor_immersed_daily:soybean_0"
+	  "flavor_immersed_daily:soy_bean_seed"
     ],
-    "resultItems": "flavor_immersed_daily:soybean_0"
+    "resultItems": "flavor_immersed_daily:soy_bean_seed"
   },
   {
     "matchItems": [
@@ -1529,7 +1539,8 @@
       "flavor_immersed_daily:spinach",
       "pamhc2crops:spinachitem",
       "simplefarming:spinach",
-      "croptopia:spinach"
+      "croptopia:spinach",
+      "thermal:spinach"
     ],
     "resultItems": "flavor_immersed_daily:spinach"
   },
@@ -1538,7 +1549,8 @@
       "flavor_immersed_daily:spinach_seed",
       "pamhc2crops:spinachseeditem",
       "simplefarming:spinach_seeds",
-      "croptopia:spinach_seed"
+      "croptopia:spinach_seed",
+      "thermal:spinach_seeds"
     ],
     "resultItems": "flavor_immersed_daily:spinach_seed"
   },
@@ -1617,14 +1629,16 @@
       "youkaishomecoming:green_tea_leaves",
       "youkaishomecoming:tea_leaves",
       "croptopia:tea_leaves",
-	  "flavor_immersed_daily:greentealeaves"
+	  "flavor_immersed_daily:greentealeaves",
+      "thermal:tea"
     ],
     "resultItems": "flavor_immersed_daily:greentealeaves"
   },
   {
     "matchItems": [
       "croptopia:tea_seed",
-	  "flavor_immersed_daily:greentealeavesseed"
+	  "flavor_immersed_daily:greentealeavesseed",
+      "thermal:tea_seeds"
     ],
     "resultItems": "flavor_immersed_daily:greentealeavesseed"
   },
@@ -1783,9 +1797,8 @@
       "enhancedfarming:baked_egg",
       "extradelight:boiled_egg",
       "farmersplus:boiled_egg",
-      "flavor_immersed_daily:boilegg",
-      "flavor_immersed_daily:omelette",
       "flavor_immersed_daily:shelledboiledegg",
+      "flavor_immersed_daily:omelette",
       "kaleidoscope_cookery:fried_egg",
       "mynethersdelight:boiled_egg",
       "pamhc2foodcore:boiledeggitem",
@@ -1905,7 +1918,8 @@
       "pamhc2foodextended:ketchupitem",
       "pizzacraft:tomato_sauce",
       "sakura:tomato_sauce",
-	  "farmersdelight:tomato_sauce"
+	  "farmersdelight:tomato_sauce",
+      "thermal:tomato_sauce"
     ],
     "resultItems": "farmersdelight:tomato_sauce"
   },
@@ -1942,7 +1956,8 @@
       "pizzacraft:dough",
       "refurbished_furniture:dough",
       "sakura:dough",
-	  "farmersdelight:wheat_dough"
+	  "farmersdelight:wheat_dough",
+      "thermal:dough"
     ],
     "resultItems": "flavor_immersed_daily:dough"
   },
@@ -1971,10 +1986,10 @@
   },
   {
     "matchItems": [
-      "flavor_immersed_daily:cassava_2",
+      "flavor_immersed_daily:cassava",
       "simplefarming:cassava"
     ],
-    "resultItems": "flavor_immersed_daily:cassava_2"
+    "resultItems": "flavor_immersed_daily:cassava"
   },
   {
     "matchItems": [
@@ -2016,9 +2031,9 @@
   {
     "matchItems": [
       "chang_sheng_jue:gu_sui",
-      "flavor_immersed_daily:milletgrain"
+      "flavor_immersed_daily:millet_grain"
     ],
-    "resultItems": "flavor_immersed_daily:milletgrain"
+    "resultItems": "flavor_immersed_daily:millet_grain"
   },
   {
     "matchItems": [
@@ -2420,5 +2435,59 @@
       "productivetrees:pomegranate"
     ],
     "resultItems": "pamhc2trees:pomegranateitem"
+  },
+  {
+    "matchItems": [
+      "thermal:amaranth"
+    ],
+    "resultItems": "spectrum:amaranth"
+  },
+  {
+    "matchItems": [
+      "thermal:amaranth_seeds"
+    ],
+    "resultItems": "spectrum:amaranth_grains"
+  },
+  {
+    "matchItems": [
+      "thermal:bell_pepper_seeds"
+    ],
+    "resultItems": "croptopia:bellpepper_seed"
+  },
+  {
+    "matchItems": [
+      "thermal:green_bean"
+    ],
+    "resultItems": "flavor_immersed_daily:kidneybean"
+  },
+  {
+    "matchItems": [
+      "thermal:hops"
+    ],
+    "resultItems": "croptopia:hops"
+  },
+  {
+    "matchItems": [
+      "thermal:hops_seeds"
+    ],
+    "resultItems": "croptopia:hops_seed"
+  },
+  {
+    "matchItems": [
+      "thermal:corn_seeds"
+    ],
+    "resultItems": "flavor_immersed_daily:cornseed"
+  },
+  {
+    "matchItems": [
+      "thermal:eggplant_seeds"
+    ],
+    "resultItems": "croptopia:eggplant_seed"
+  },
+  {
+    "matchItems": [
+      "thermal:green_bean_seeds"
+    ],
+    "resultItems": "flavor_immersed_daily:kidneybeanseed"
   }
 ]

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:device_potion_diffuser"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 3,
+    "aqua": 2,
+    "potentia": 2,
+    "praecantatio": 2
+  }
+}

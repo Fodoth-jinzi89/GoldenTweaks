@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:refined_biofuel_bucket"
+  },
+  "aspects": {
+    "herba": 3,
+    "potentia": 3,
+    "ignis": 2
+  }
+}

@@ -3,7 +3,6 @@
   "values": [
     "flavor_immersed_daily:waxgroudpaste",
     "flavor_immersed_daily:redbeanpaste",
-    "flavor_immersed_daily:greenbeanpaste",
     "flavor_immersed_daily:meatandeggpaste",
     "flavor_immersed_daily:meatpaste",
     "flavor_immersed_daily:vegetablepaste",
@@ -13,8 +12,7 @@
     "flavor_immersed_daily:meatandvegetablestuffing",
     "flavor_immersed_daily:eggstuffing",
     "flavor_immersed_daily:sesameandpeanutballs",
-    "flavor_immersed_daily:seasameglutinousriceballs",
-    "flavor_immersed_daily:less_common_fillings",
+    "flavor_immersed_daily:sesameglutinousriceballs",
     "flavor_immersed_daily:salteggyolk"
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:potion_quiver"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "aqua": 2,
+    "machina": 2,
+    "permutatio": 2
+  }
+}

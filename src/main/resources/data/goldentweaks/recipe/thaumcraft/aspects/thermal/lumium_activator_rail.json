@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:lumium_activator_rail"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3,
+    "machina": 2
+  }
+}

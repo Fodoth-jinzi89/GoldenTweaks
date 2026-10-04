@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:fire_grenade"
+  },
+  "aspects": {
+    "explosion": 4,
+    "ignis": 3,
+    "telum": 2
+  }
+}

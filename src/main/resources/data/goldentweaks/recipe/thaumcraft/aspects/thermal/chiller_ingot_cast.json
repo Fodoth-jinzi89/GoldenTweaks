@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:chiller_ingot_cast"
+  },
+  "aspects": {
+    "metallum": 2
+  }
+}

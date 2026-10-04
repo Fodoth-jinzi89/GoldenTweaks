@@ -1,4 +1,4 @@
-[ 
+[
   {
     "matchItems": [
       "silentgems:peridot_block",
@@ -17,7 +17,8 @@
   {
     "matchItems": [
       "silentgems:sapphire_block",
-      "alltheores:sapphire_block"
+      "alltheores:sapphire_block",
+      "thermal:sapphire_block"
     ],
     "resultItems": "alltheores:sapphire_block"
   },
@@ -25,14 +26,16 @@
     "matchItems": [
       "irons_jewelry:sapphire",
       "silentgems:sapphire",
-      "alltheores:sapphire"
+      "alltheores:sapphire",
+      "thermal:sapphire"
     ],
     "resultItems": "alltheores:sapphire"
   },
   {
     "matchItems": [
       "silentgems:ruby_block",
-      "alltheores:ruby_block"
+      "alltheores:ruby_block",
+      "thermal:ruby_block"
     ],
     "resultItems": "alltheores:ruby_block"
   },
@@ -40,7 +43,8 @@
     "matchItems": [
       "irons_jewelry:ruby",
       "silentgems:ruby",
-      "alltheores:ruby"
+      "alltheores:ruby",
+      "thermal:ruby"
     ],
     "resultItems": "alltheores:ruby"
   },
@@ -124,8 +128,144 @@
   {
     "matchItems": [
       "alltheores:netherite_dust",
-      "mekanism:dust_netherite"
+      "mekanism:dust_netherite",
+      "thermal:netherite_dust"
     ],
     "resultItems": "mekanism:dust_netherite"
+  },
+  {
+    "matchItems": [
+      "thermal:charcoal_block"
+    ],
+    "resultItems": "mekanism:block_charcoal"
+  },
+  {
+    "matchItems": [
+      "thermal:cinnabar"
+    ],
+    "resultItems": "alltheores:cinnabar"
+  },
+  {
+    "matchItems": [
+      "thermal:cinnabar_dust"
+    ],
+    "resultItems": "alltheores:cinnabar_dust"
+  },
+  {
+    "matchItems": [
+      "thermal:cinnabar_block"
+    ],
+    "resultItems": "alltheores:cinnabar_block"
+  },
+  {
+    "matchItems": [
+      "thermal:sulfur",
+      "thermal:sulfur_dust",
+      "mekanism:dust_sulfur"
+    ],
+    "resultItems": "alltheores:sulfur"
+  },
+  {
+    "matchItems": [
+      "thermal:sulfur_block"
+    ],
+    "resultItems": "alltheores:sulfur_block"
+  },
+  {
+    "matchItems": [
+      "thermal:sulfur_ore"
+    ],
+    "resultItems": "alltheores:sulfur_ore"
+  },
+  {
+    "matchItems": [
+      "thermal:deepslate_sulfur_ore"
+    ],
+    "resultItems": "alltheores:deepslate_sulfur_ore"
+  },
+  {
+    "matchItems": [
+      "thermal:sawdust",
+      "mekanism:sawdust"
+    ],
+    "resultItems": "createdieselgenerators:wood_chip"
+  },
+  {
+    "matchItems": [
+      "thermal:sawdust_block"
+    ],
+    "resultItems": "createdieselgenerators:chip_wood_block"
+  },
+  {
+    "matchItems": [
+      "thermal:ruby_dust"
+    ],
+    "resultItems": "alltheores:ruby_dust"
+  },
+  {
+    "matchItems": [
+      "thermal:ruby_ore"
+    ],
+    "resultItems": "alltheores:ruby_ore"
+  },
+  {
+    "matchItems": [
+      "thermal:deepslate_ruby_ore"
+    ],
+    "resultItems": "alltheores:deepslate_ruby_ore"
+  },
+  {
+    "matchItems": [
+      "thermal:sapphire_dust"
+    ],
+    "resultItems": "alltheores:sapphire_dust"
+  },
+  {
+    "matchItems": [
+      "thermal:sapphire_ore"
+    ],
+    "resultItems": "alltheores:sapphire_ore"
+  },
+  {
+    "matchItems": [
+      "thermal:deepslate_sapphire_ore"
+    ],
+    "resultItems": "alltheores:deepslate_sapphire_ore"
+  },
+  {
+    "matchItems": [
+      "thermal:diamond_dust",
+      "mekanism:dust_diamond",
+      "create_ore_excavation_plus:raw_diamond_dust",
+      "createaddition:diamond_grit"
+    ],
+    "resultItems": "alltheores:diamond_dust"
+  },
+  {
+    "matchItems": [
+      "thermal:emerald_dust",
+      "mekanism:dust_emerald",
+      "create_ore_excavation_plus:raw_emerald_dust"
+    ],
+    "resultItems": "mekanism:dust_emerald"
+  },
+  {
+    "matchItems": [
+      "thermal:lapis_dust"
+    ],
+    "resultItems": "mekanism:dust_lapis_lazuli"
+  },
+  {
+    "matchItems": [
+      "thermal:quartz_dust",
+      "mekanism:dust_quartz"
+    ],
+    "resultItems": "ae2cs:nether_quartz_dust"
+  },
+  {
+    "matchItems": [
+      "thermal:ender_pearl_dust"
+    ],
+    "resultItems": "ae2:ender_dust"
   }
 ]

@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:cured_rubber"
+  },
+  "aspects": {
+    "limus": 2
+  }
+}

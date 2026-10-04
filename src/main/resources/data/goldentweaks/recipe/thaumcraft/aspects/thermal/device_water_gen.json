@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:device_water_gen"
+  },
+  "aspects": {
+    "potentia": 4,
+    "gelum": 3,
+    "machina": 3
+  }
+}

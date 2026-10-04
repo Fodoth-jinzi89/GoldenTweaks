@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:device_rock_gen"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 3,
+    "potentia": 2
+  }
+}

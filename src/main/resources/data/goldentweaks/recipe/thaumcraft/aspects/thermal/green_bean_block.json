@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:green_bean_block"
+  },
+  "aspects": {
+    "vas": 3,
+    "victus": 3,
+    "fames": 2
+  }
+}

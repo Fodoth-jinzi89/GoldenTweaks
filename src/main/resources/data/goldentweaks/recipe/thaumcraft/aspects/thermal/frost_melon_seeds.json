@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:frost_melon_seeds"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "messis": 2
+  }
+}

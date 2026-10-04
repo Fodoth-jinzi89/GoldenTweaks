@@ -1,0 +1,13 @@
+{
+  "items": {
+    "moreanimation:expression_item": "Animation Control Terminal",
+    "moreanimation:hand": "Hand",
+    "moreanimation:jade_foot": "Jade Foot",
+    "moreanimation:tail": "Winefox Tail",
+    "moreanimation:tnt_food": "Edible TNT",
+    "moreanimation:winefox_ear": "Winefox Ear",
+    "moreanimation:winefox_head": "Winefox Head"
+  },
+  "blocks": {},
+  "entities": {}
+}

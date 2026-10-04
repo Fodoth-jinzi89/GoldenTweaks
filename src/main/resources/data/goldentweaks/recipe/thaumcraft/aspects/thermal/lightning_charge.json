@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:lightning_charge"
+  },
+  "aspects": {
+    "potentia": 3
+  }
+}

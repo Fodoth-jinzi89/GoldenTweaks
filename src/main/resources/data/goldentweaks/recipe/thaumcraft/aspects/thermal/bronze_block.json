@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:bronze_block"
+  },
+  "aspects": {
+    "mixtura": 4,
+    "metallum": 3
+  }
+}

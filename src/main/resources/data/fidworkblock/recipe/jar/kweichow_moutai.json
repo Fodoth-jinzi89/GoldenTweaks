@@ -3,7 +3,7 @@
   "appliance": "jar",
   "ingredients": [
     { "item": "minecraft:wheat" },
-    { "item": "flavor_immersed_daily:kaolianggarin" },
+    { "item": "flavor_immersed_daily:kaolianggrain" },
     { "item": "minecraft:potato" },
     { "item": "flavor_immersed_daily:tidywater" }
   ],

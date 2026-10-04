@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:device_composter"
+  },
+  "aspects": {
+    "gelum": 3,
+    "herba": 3,
+    "machina": 3,
+    "messis": 2,
+    "potentia": 2
+  }
+}

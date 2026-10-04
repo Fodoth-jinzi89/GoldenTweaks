@@ -1,0 +1,10 @@
+{
+  "items": {
+    "pipez_optimizer:atm_upgrade": "Allthemodium Pipe Upgrade",
+    "pipez_optimizer:stellar_upgrade": "Stellar Alloy Pipe Upgrade",
+    "pipez_optimizer:unobtainium_upgrade": "Unobtainium Pipe Upgrade",
+    "pipez_optimizer:vibranium_upgrade": "Vibranium Pipe Upgrade"
+  },
+  "blocks": {},
+  "entities": {}
+}

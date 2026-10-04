@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:coal_bucket"
+  },
+  "aspects": {
+    "ignis": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:invar_nugget"
+  },
+  "aspects": {
+    "mixtura": 4,
+    "metallum": 3
+  }
+}

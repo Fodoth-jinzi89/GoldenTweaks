@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "flavor_immersed_daily:lychee",
-    "flavor_immersed_daily:oldlychee",
-    "flavor_immersed_daily:lycheemeat"
+    "flavor_immersed_daily:lychee"
   ]
 }

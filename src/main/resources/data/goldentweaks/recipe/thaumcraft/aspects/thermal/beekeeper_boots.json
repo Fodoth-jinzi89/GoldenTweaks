@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:beekeeper_boots"
+  },
+  "aspects": {
+    "tutamen": 4,
+    "pannus": 2
+  }
+}

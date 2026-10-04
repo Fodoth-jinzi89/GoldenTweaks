@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:machine_brewer"
+  },
+  "aspects": {
+    "praecantatio": 4,
+    "machina": 3,
+    "aqua": 2,
+    "fames": 2,
+    "potentia": 2
+  }
+}

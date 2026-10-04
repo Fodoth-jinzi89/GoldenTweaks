@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:cryotheum_bucket"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

@@ -10,36 +10,10 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec SPEC;
 
     // =========================
-    // pickup 系统
-    // =========================
-    public static final ModConfigSpec.DoubleValue BASE_PICKUP_REACH;
-    public static final ModConfigSpec.DoubleValue EXTENDED_REACH_BONUS;
-    public static final ModConfigSpec.DoubleValue SEARCH_BOX_INFLATE;
-    public static final ModConfigSpec.DoubleValue TRACE_BIAS;
-
-    public static final ModConfigSpec.IntValue MAX_TARGETS;
-    public static final ModConfigSpec.IntValue CONTINUOUS_PICKUP_INTERVAL;
-
-    public static final ModConfigSpec.BooleanValue ALLOW_THROUGH_WALLS;
-    public static final ModConfigSpec.BooleanValue ALLOW_SNEAK_PICKUP;
-    public static final ModConfigSpec.BooleanValue BLOCK_USE;
-    public static final ModConfigSpec.BooleanValue ALLOW_CONTINUOUS_PICKUP;
-    public static final ModConfigSpec.BooleanValue ALLOW_EXPERIENCE_ORB_PICKUP;
-
-    public static final ModConfigSpec.IntValue PICKUP_DELAY_THRESHOLD;
-    public static final ModConfigSpec.BooleanValue ALLOW_INFINITE_DELAY;
-    public static final ModConfigSpec.BooleanValue LOOTR_PLAY_OPEN_ANIMATION;
-    public static final ModConfigSpec.BooleanValue LOOTR_SHOW_FLYING_ITEMS;
-    public static final ModConfigSpec.IntValue LOOTR_PICKUP_GROUPS;
-    public static final ModConfigSpec.IntValue LOOTR_HOLD_PICKUP_INTERVAL;
-
-
-    // =========================
     // feature 系统
     // =========================
     public static final ModConfigSpec.BooleanValue ALWAYS_EDIBLE_FOOD;
 
-    public static final ModConfigSpec.BooleanValue LOOTR_QUICK_LOOT;
     public static final ModConfigSpec.BooleanValue REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT;
 
     public static final ModConfigSpec.BooleanValue LOST_MAID_DROP;
@@ -55,6 +29,8 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.IntValue MEKANISM_COMPACT_SPACE_POWER_PERCENT;
 
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
+
+    public static final ModConfigSpec.IntValue ENTROPY_REACTION_MAX_SPEED_MULTIPLIER;
 
     public static final ModConfigSpec.BooleanValue CATACLYSM_BALANCE;
 
@@ -120,96 +96,6 @@ public final class GoldenTweaksCommonConfig {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         // =========================
-        // pickup group
-        // =========================
-        builder.translation(key("pickup"));
-        builder.push("pickup");
-
-        BASE_PICKUP_REACH = builder
-                .translation(key("pickup.base_pickup_reach"))
-                .comment(comment("pickup.base_pickup_reach"))
-                .defineInRange("basePickupReach", 5.0D, 1.0D, 128.0D);
-
-        EXTENDED_REACH_BONUS = builder
-                .translation(key("pickup.extended_reach_bonus"))
-                .comment(comment("pickup.extended_reach_bonus"))
-                .defineInRange("extendedReachBonus", 17.0D, 0.0D, 128.0D);
-
-        SEARCH_BOX_INFLATE = builder
-                .translation(key("pickup.search_box_inflate"))
-                .comment(comment("pickup.search_box_inflate"))
-                .defineInRange("searchBoxInflate", 1.2D, 0.0D, 16.0D);
-
-        TRACE_BIAS = builder
-                .translation(key("pickup.trace_bias"))
-                .comment(comment("pickup.trace_bias"))
-                .defineInRange("traceBias", 1.0D, 0.0D, 64.0D);
-
-        MAX_TARGETS = builder
-                .translation(key("pickup.max_targets"))
-                .comment(comment("pickup.max_targets"))
-                .defineInRange("maxTargets", 64, 1, 1024);
-
-        ALLOW_THROUGH_WALLS = builder
-                .translation(key("pickup.allow_through_walls"))
-                .comment(comment("pickup.allow_through_walls"))
-                .define("allowThroughWalls", false);
-
-        ALLOW_SNEAK_PICKUP = builder
-                .translation(key("pickup.allow_sneak_pickup"))
-                .comment(comment("pickup.allow_sneak_pickup"))
-                .define("allowSneakPickup", false);
-
-        BLOCK_USE = builder
-                .translation(key("pickup.block_use"))
-                .comment(comment("pickup.block_use"))
-                .define("blockUse", true);
-
-        ALLOW_CONTINUOUS_PICKUP = builder
-                .translation(key("pickup.allow_continuous_pickup"))
-                .comment(comment("pickup.allow_continuous_pickup"))
-                .define("allowContinuousPickup", true);
-
-        ALLOW_EXPERIENCE_ORB_PICKUP = builder
-                .translation(key("pickup.allow_experience_orb_pickup"))
-                .comment(comment("pickup.allow_experience_orb_pickup"))
-                .define("allowExperienceOrbPickup", true);
-
-        CONTINUOUS_PICKUP_INTERVAL = builder
-                .translation(key("pickup.continuous_pickup_interval"))
-                .comment(comment("pickup.continuous_pickup_interval"))
-                .defineInRange("continuousPickupInterval", 2, 1, Integer.MAX_VALUE);
-
-        PICKUP_DELAY_THRESHOLD = builder
-                .translation(key("pickup.pickup_delay_threshold"))
-                .comment(comment("pickup.pickup_delay_threshold"))
-                .defineInRange("pickupDelayThreshold", 32766, 0, 32766);
-
-        ALLOW_INFINITE_DELAY = builder
-                .translation(key("pickup.allow_infinite_delay"))
-                .comment(comment("pickup.allow_infinite_delay"))
-                .define("allowInfiniteDelay", false);
-
-        LOOTR_PLAY_OPEN_ANIMATION = builder
-                .translation(key("pickup.lootr_play_open_animation"))
-                .comment(comment("pickup.lootr_play_open_animation"))
-                .define("lootrPlayOpenAnimation", true);
-        LOOTR_SHOW_FLYING_ITEMS = builder
-                .translation(key("pickup.lootr_show_flying_items"))
-                .comment(comment("pickup.lootr_show_flying_items"))
-                .define("lootrShowFlyingItems", true);
-        LOOTR_PICKUP_GROUPS = builder
-                .translation(key("pickup.lootr_pickup_groups"))
-                .comment(comment("pickup.lootr_pickup_groups"))
-                .defineInRange("lootrPickupGroups", 0, 0, 64);
-        LOOTR_HOLD_PICKUP_INTERVAL = builder
-                .translation(key("pickup.lootr_hold_pickup_interval"))
-                .comment(comment("pickup.lootr_hold_pickup_interval"))
-                .defineInRange("lootrHoldPickupInterval", 5, 1, Integer.MAX_VALUE);
-
-        builder.pop();
-
-        // =========================
         // oei 兼容 group
         // =========================
         builder.translation(key("oei"));
@@ -237,11 +123,6 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("feature.always_edible_food"))
                 .comment(comment("feature.always_edible_food"))
                 .define("alwaysEdibleFood", true);
-
-        LOOTR_QUICK_LOOT = builder
-                .translation(key("pickup.lootr_quick_loot"))
-                .comment(comment("pickup.lootr_quick_loot"))
-                .define("lootrQuickLoot", true);
 
         LOST_MAID_DROP = builder
                 .translation(key("feature.lost_maid_drop"))
@@ -300,6 +181,18 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.recycler_factory_stack_upgrades"))
                 .comment(comment("balance.recycler_factory_stack_upgrades"))
                 .define("recyclerFactoryStackUpgrades", true);
+
+        builder.pop();
+
+        // =========================
+        // ae2cs
+        // =========================
+        builder.push("ae2cs");
+
+        ENTROPY_REACTION_MAX_SPEED_MULTIPLIER = builder
+                .translation(key("balance.ae2cs.max_speed_multiplier"))
+                .comment(comment("balance.ae2cs.max_speed_multiplier"))
+                .defineInRange("maxSpeedMultiplier", 2, 1, 16);
 
         builder.pop();
 
@@ -481,6 +374,15 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return RECYCLER_FACTORY_STACK_UPGRADES.get();
+    }
+
+    public static int getEntropyReactionMaxSpeedMultiplier() {
+
+        if (!GTState.isReady()) {
+            return 2;
+        }
+
+        return ENTROPY_REACTION_MAX_SPEED_MULTIPLIER.get();
     }
 
 

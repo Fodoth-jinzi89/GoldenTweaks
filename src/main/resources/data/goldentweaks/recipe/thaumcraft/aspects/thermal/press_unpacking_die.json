@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:press_unpacking_die"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "machina": 2
+  }
+}

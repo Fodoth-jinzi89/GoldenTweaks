@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:latex_bucket"
+  },
+  "aspects": {
+    "limus": 2
+  }
+}

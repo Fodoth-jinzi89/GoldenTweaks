@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:niter_dust"
+  },
+  "aspects": {
+    "ignis": 2,
+    "perditio": 2
+  }
+}

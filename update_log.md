@@ -1,5 +1,76 @@
 # GoldenTweaks Update Log
 
+## 2026.10.04 - v4.7.3
+
+### 右键拾取
+- 右键拾取改为「客户端配置 + 逐玩家同步」：拾取距离与各项许可（站立 / 潜行 / 满包 / 经验球拾取、延迟阈值，以及 Lootr 快速拾取的组数与长按间隔）改由客户端按各自配置算出，经新增的 `C2SUpdatePickupSettingsPacket` 同步给服务端，服务端只按该玩家裁剪后的设定执行；未同步过设定的玩家沿用 `PickupSettings.DEFAULT`（拾取关闭），行为与旧版默认一致。整块拾取配置从通用配置迁移到客户端配置
+  - [PickupSettings.java](src/main/java/net/fodoth/skina/goldentweaks/network/PickupSettings.java)、[PickupSettingsManager.java](src/main/java/net/fodoth/skina/goldentweaks/network/PickupSettingsManager.java)、[C2SUpdatePickupSettingsPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SUpdatePickupSettingsPacket.java)、[C2SPickupItemPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SPickupItemPacket.java)、[ClientClickHandler.java](src/main/java/net/fodoth/skina/goldentweaks/network/handler/ClientClickHandler.java)、[GoldenTweaksClientConfig.java](src/main/java/net/fodoth/skina/goldentweaks/config/GoldenTweaksClientConfig.java)
+- 满包判定改为只统计主背包 36 格，不再把盔甲与副手算进去；非创造模式满包时把多余物品飞向玩家，创造模式满包则不再拦下
+  - [ItemPickupUtil.java](src/main/java/net/fodoth/skina/goldentweaks/util/ItemPickupUtil.java)
+- Lootr 快速拾取改用该玩家同步来的设定，不再读全局配置
+  - [LootrQuickLootEvent.java](src/main/java/net/fodoth/skina/goldentweaks/compat/lootr/LootrQuickLootEvent.java)
+
+### 模组兼容
+- Astral Sorcery：修复降星点光柱在 Sodium / Iris / Veil 等环境下画不出像素的问题——新增用原版闪电渲染自绘的光柱叠加层（`astralsorceryFocalColumn`，默认开启），并抬高光束 alpha、把 FOV alpha 改成恒等映射、给星盘角度可见度加下限；去掉发现降星点的 ±6° 角度限制；新生成区块登记后立即激活节点；`getNodes` 返回快照修区块卸载期的 `ConcurrentModificationException` 崩服；专用服务器取消 `@OnlyIn(CLIENT)` 的创意标签构建，修 `NoSuchMethodError` 崩服
+  - [GTFocalPointColumnRenderer.java](src/main/java/net/fodoth/skina/goldentweaks/compat/astralsorcery/GTFocalPointColumnRenderer.java)、[FocalBeamAlphaBoostMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/FocalBeamAlphaBoostMixin.java)、[FocalLightBeamFovAlphaMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/FocalLightBeamFovAlphaMixin.java)、[AstrolabeAngleComponentVisibilityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/AstrolabeAngleComponentVisibilityMixin.java)、[FocalPointManagerDiscoveryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/FocalPointManagerDiscoveryMixin.java)、[FocalPointManagerAddNodeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/FocalPointManagerAddNodeMixin.java)、[FocalPointSyncDataGetNodesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/FocalPointSyncDataGetNodesMixin.java)、[CommonProxyCreativeTabMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/astralsorcery/CommonProxyCreativeTabMixin.java)
+- AcademyCraft 技能/机器循环音效在音效事件尚未绑定 Holder 时 `tick` 抛异常崩溃，改为该帧整体跳过
+  - [AcademySoundGuard.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/AcademySoundGuard.java)、[AbilityLoopSoundManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/AbilityLoopSoundManagerMixin.java)、[MachineLoopSoundManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MachineLoopSoundManagerMixin.java)
+- AppliedFlux / ae2helpers 结果导入卡：自行实现其导入逻辑（方块与面板版、按方向配置、指数退避、预期产物跟踪、掉落处理），把升级卡并入标准升级侧栏、移除单独绘制的面板，并把 ExtendedAE+ 样板供应器升级槽各加 2 格容纳感应 / 虚拟完成 / 频道 / 结果导入卡；样板供应器界面新增翻页按钮与页码输入框，右侧按钮栏对齐到升级侧栏下方
+  - [AppliedFluxCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/appflux/AppliedFluxCompat.java)、[IGTImportUpgradeHost.java](src/main/java/net/fodoth/skina/goldentweaks/compat/appflux/IGTImportUpgradeHost.java)、[BlockPatternProviderImportMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2helpersblock/BlockPatternProviderImportMixin.java)、[UpgradeSlotCompatMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/extendedaeplusslots/UpgradeSlotCompatMixin.java)、[PatternProviderMenuMergeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/appflux/PatternProviderMenuMergeMixin.java)、[PatternProviderScreenMergeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/appflux/PatternProviderScreenMergeMixin.java)、[PatternProviderScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/extendedae_plus/PatternProviderScreenMixin.java)
+- Mekanism 工厂槽位不再被默认堆叠上限卡死：超频及以上等级的输入/输出槽按等级放大容量（`8 << (step-1)`），与 Mekanism Extras 行为对齐，并给槽位接口加上限倍率
+  - [IGTFactorySlotLimit.java](src/main/java/net/fodoth/skina/goldentweaks/compat/mekanism/IGTFactorySlotLimit.java)、[BasicInventorySlotLimitMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/mekanism/BasicInventorySlotLimitMixin.java)、[TileEntityFactorySlotLimitMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/mekanism/TileEntityFactorySlotLimitMixin.java)
+- FTB Quests 任务书章节图片重做：贴图路径可反查成具体物品/流体并以真实 `ItemStack` 渲染（修「方块变灰」与非等比缩放），图片可悬停、可 R/U 查配方，图片编辑界面新增「配方 id / 用途 id」两项并随存盘与网络同步；未解锁图片不绘制、解锁即时出现；「产线搭建」章节组根任务打钩后自动完成整章
+  - [GTItemTextureIndex.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/client/GTItemTextureIndex.java)、[GTQuestImageItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/client/GTQuestImageItems.java)、[GTQuestImageHover.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/client/GTQuestImageHover.java)、[GTQuestImageRecipeBinding.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/client/GTQuestImageRecipeBinding.java)、[GTFtbQuestEmiPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ftbquests/client/GTFtbQuestEmiPlugin.java)、[QuestBookRecipeKeyHandler.java](src/main/java/net/fodoth/skina/goldentweaks/event/QuestBookRecipeKeyHandler.java)、[ChapterImageRecipeBindingMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/ftbquests/ChapterImageRecipeBindingMixin.java)、[ChapterImageRecipeBindingConfigMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/ftbquests/ChapterImageRecipeBindingConfigMixin.java)、[ChapterImageButtonItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/ftbquests/ChapterImageButtonItemMixin.java)、[QuestPanelImageWidgetsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/ftbquests/QuestPanelImageWidgetsMixin.java)、[QuestDependantAutoCompleteMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/ftbquests/QuestDependantAutoCompleteMixin.java)
+- applied_kjs：其服务端状态用无参 `HashMap`/`HashSet`，异步区块加载线程与服务器 tick 并发访问会抛 `ConcurrentModificationException`，改用 `ConcurrentHashMap` 与并发集合
+  - [AppliedKjsASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/appliedkjs/AppliedKjsASM.java)、[AppliedKjsServerStateDummyMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/appliedkjs/AppliedKjsServerStateDummyMixin.java)
+- Thermal JEI 界面适配资源包：机器 JEI 部件改用 JEI 标准绘制器（箭头 / 火焰 / 格子），配方背景换成本模组贴图（去掉灰色面板、保留格子边框），新增 17 张 Thermal 分类背景贴图
+  - [GTBlankDrawable.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/client/GTBlankDrawable.java)、[DrawablesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thermal/DrawablesMixin.java)、[ThermalRecipeCategoryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thermal/ThermalRecipeCategoryMixin.java)
+- Traveloptics：召唤物不再伤害或锁定召唤者及其生物，无主召唤物进世界即清除，并剥离灾变命名空间的血量/攻击修正器数值缩放
+  - [TravelOpticsSummonProtection.java](src/main/java/net/fodoth/skina/goldentweaks/compat/traveloptics/TravelOpticsSummonProtection.java)、[SummonedOwnerCaptureMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/traveloptics/SummonedOwnerCaptureMixin.java)
+- AE2CS 熵变反应室加速卡过多会「卡住不产出」，改为把加速倍率钳制到配置上限 `balance.ae2cs.maxSpeedMultiplier`（默认 2，范围 1~16，调到 16 等于关闭限制）
+  - [EntropyReactionChamberSpeedMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2cs/EntropyReactionChamberSpeedMixin.java)
+- Create 盆配方在容器不足 3×3 时的 `CraftingInput` 转换错误，改用真实 `CraftingInput.of` 构建
+  - [BasinRecipeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/BasinRecipeMixin.java)
+- EMI 配方页的装饰按钮（如 wcwt「填充物品」）默认被关闭，现强制开启 `showRecipeDecorators`；并修正 wcwt 锤子按钮落到 EMI 右侧按钮列顶部而非另起一列
+  - [EmiRecipeDecoratorsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiRecipeDecoratorsMixin.java)、[WcwtEmiPullButtonPositionMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/wcwt/WcwtEmiPullButtonPositionMixin.java)
+- 女仆核心首次进世界的自动教程弹窗可关闭（`disableMaidSoulTutorialPopup`，默认开启该修复）；把 ApricityUI 控制台界面加入 IMBlocker 白名单，使其中文输入法可用（`fixMaidSoulAuiIme`，默认开启）
+  - [NoviceTutorialAutoPopupMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maidsoulcore/NoviceTutorialAutoPopupMixin.java)、[IMBlockerConfigMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/imblocker/IMBlockerConfigMixin.java)
+- Patchouli：进度同步触发重载时注册表缺少 `minecraft:item`，`deserializeStack` 抛异常导致整本书加载失败，改为返回空气
+  - [ItemStackUtilMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/patchouli/ItemStackUtilMixin.java)
+- Polymorph：绕开 TMRV 的 JEI 19.x stub 缺 `IRecipeTransferListener` 导致的插件崩溃，并补回「转移配方后选中该配方」的行为
+  - [PolymorphJeiPluginMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/polymorph/PolymorphJeiPluginMixin.java)、[RecipeTransferUtilMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/polymorph/RecipeTransferUtilMixin.java)
+- 烟火凡人心 / fidworkblock：补注册茶壶盖物品（含模型、贴图与合成配方）；砧板方块实体读取旧存档时把不足 3 格的物品栏补足，修 `Slot 1 not in valid range` 崩溃
+  - [FidAdditionalItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/flavorimmerseddaily/FidAdditionalItems.java)、[ChoppingboardBlockEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/fidworkblock/ChoppingboardBlockEntityMixin.java)
+
+### Thaumcraft
+- 研究笔记「挖空」校验改为拒绝会把目标要素拆成多个连通分量的挖空，修某些研究（如「贸易」）因笔记无解而无法完成
+  - [ResearchNoteDataIsolationMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ResearchNoteDataIsolationMixin.java)
+- 源质罐子的 cosmic 叠加渲染整体加兜底：渲染器内抛出的任何异常都会经 `BlockEntityRenderDispatcher` 包装成 `ReportedException` 直接崩游戏，现捕获后回到原版渲染并只记一次日志
+  - [JarBlockEntityRendererMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/JarBlockEntityRendererMixin.java)
+
+### 联动数据
+- OEI 物品统一扩充：矿物统一改用 `script/oei/ore_unification.py` 重生成（24 种金属 × 矿/深层/粗矿/锭/粒/粉/板/杆/齿轮/块等，规范提供方 `alltheores`，并对铅/锡/铀/锇/钢改指 `mekanism`、铜/铁/金/黄铜板材改指 `create`），另补 38 条手工条目（peridot/sapphire/ruby、thaumium/thauminite 块、neoecoae↔northstar 钨、以及一批 thermal 粉末与方块）；食物统一补约 200 条，规范提供方以 `flavor_immersed_daily`、`croptopia`、`kaleidoscope_cookery`、`farmersdelight` 为主，盐统一到 `alltheores:salt`
+  - [ore_unification.json](src/main/resources/data/oei/replacements/ore_unification.json)、[ore_unification_addition.json](src/main/resources/data/oei/replacements/ore_unification_addition.json)、[food_unification.json](src/main/resources/data/oei/replacements/food_unification.json)、[ore_unification.py](script/oei/ore_unification.py)
+- 新增热力系列（Thermal）、AppliedFlux、pipez、useless_mod 的物品要素（分别约 627 / 44 / 12 / 136 条）与 Thermal 的 23 条实体要素；新增 appflux 的 3 个 Silent Gear 材料
+- 新增标签 `c:obsidian`、`c:sand`，northstar 的 2 个 Create 混合配方，pipez_optimizer 的 8 个升级回退配方与 4 个物品的汉化、贴图
+- Silent Gear 材料生成器扩展（木头 90 / 岩石 143 / 纤维 10 / 宝石 123 / 金属 28 / 有机物 328），要素生成脚本新增 appflux、pipez、thermal、useless_mod 命名空间规则与 thermal 实体要素，资源位置提取新增 8 个命名空间的名称转储
+  - [generate_materials.py](script/silentgear/generate_materials.py)、[generate_aspect_batch.py](script/resource_locations/generate_aspect_batch.py)
+
+### 汉化
+- 新增 Astral Sorcery 完整简体中文翻译（物品 / 方块 / 实体、JEI 分类、星芒宝典正文、星座与星能力、附魔与药水等级等）
+  - [zh_cn.json](src/main/resources/assets/astralsorcery/lang/zh_cn.json)
+- 新增 Thermal 中文补充（流体、实体、文案与音效字幕）与 pipez_optimizer 中文
+- 补充 GoldenTweaks 新增配置项的中英文文案（星辉光柱、女仆核心、AE2CS、拾取迁移等）
+
+### 依赖
+- 元数据新增可选依赖：`thermal` 系列（foundation / expansion / dynamics / innovation / locomotion / cultivation）、`astralsorcery`、`pipez_optimizer`
+  - [neoforge.mods.toml](src/main/templates/META-INF/neoforge.mods.toml)
+
+### 其它
+- 重写 README（中英双语）：补充设计原则、功能概览、配置、实现方式、项目结构、数据与脚本、已知限制等章节，并更新依赖与代码规模统计
+- 注册与门控随新增内容更新：`GoldenTweaks.java` 按模组检测注册新增内容（烟火凡人心茶壶盖、AppliedFlux 兼容、星辉光柱渲染器），Mixin 插件补齐全部新 Mixin 的模组门控并接入 applied_kjs 的 ASM，`goldentweaks.mixins.json` 登记新增条目
+  - [GoldenTweaks.java](src/main/java/net/fodoth/skina/goldentweaks/GoldenTweaks.java)、[GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)、[goldentweaks.mixins.json](src/main/resources/goldentweaks.mixins.json)
+
 ## 2026.09.30 - v4.7.2
 
 ### EMI 搜索

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:item_duct_energy_opaque_vacuum"
+  },
+  "aspects": {
+    "mixtura": 4,
+    "potentia": 4,
+    "machina": 3,
+    "metallum": 3,
+    "permutatio": 2
+  }
+}

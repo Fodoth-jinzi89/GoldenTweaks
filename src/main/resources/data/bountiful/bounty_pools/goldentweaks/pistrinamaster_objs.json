@@ -720,18 +720,6 @@
             "weightMult": 0.0022534788079097107,
             "effectiveValue": 1200
         },
-        "multijam": {
-            "type": "item",
-            "content": "flavor_immersed_daily:multijam",
-            "rarity": "UNCOMMON",
-            "amount": {
-                "min": 16,
-                "max": 32
-            },
-            "unitWorth": 200,
-            "weightMult": 0.009013915231638843,
-            "effectiveValue": 4800
-        },
         "strawberryjuice": {
             "type": "item",
             "content": "flavor_immersed_daily:strawberryjuice",

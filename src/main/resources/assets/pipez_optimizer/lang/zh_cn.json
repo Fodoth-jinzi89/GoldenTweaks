@@ -1,0 +1,22 @@
+{
+    "item.pipez_optimizer.atm_upgrade": "绯红管道升级",
+    "item.pipez_optimizer.vibranium_upgrade": "蔚蓝管道升级",
+    "item.pipez_optimizer.unobtainium_upgrade": "幻紫管道升级",
+    "item.pipez_optimizer.stellar_upgrade": "群星管道升级",
+
+    "tooltip.pipez_optimizer.hold_shift": "§8按住 §e[Shift] §8查看完整数值",
+    "tooltip.pipez_optimizer.rate.item.prefix": "[物品管道]",
+    "tooltip.pipez_optimizer.rate.item": "%1$s 物品 / %2$s Tick",
+    "tooltip.pipez_optimizer.rate.fluid.prefix": "[流体管道]",
+    "tooltip.pipez_optimizer.rate.fluid": "%1$s mB / %2$s Tick",
+    "tooltip.pipez_optimizer.rate.energy.prefix": "[能量管道]",
+    "tooltip.pipez_optimizer.rate.energy": "%1$s FE / %2$s Tick",
+    "tooltip.pipez_optimizer.rate.gas.prefix": "[化学品管道]",
+    "tooltip.pipez_optimizer.rate.gas": "%1$s mB / %2$s Tick",
+
+    "gui.pipez_optimizer.extract_freq": "抽取频率:",
+    "gui.pipez_optimizer.smart_sleep": "智能休眠",
+    "tooltip.pipez_optimizer.smart_sleep": "§a【智能休眠】§r\n开启后，管道会在无传输需求时自动进入休眠，§e降低卡顿§r。\n§c关闭后§r，该连接永不休眠：严格按所设频率重试，无退避惩罚（频率设为 1 即每刻运行）。",
+    "gui.pipez_optimizer.transfer_correction": "传输修正",
+    "tooltip.pipez_optimizer.transfer_correction": "§c【强制突破传输限制】§r\n开启后将强制向理论最大速率靠拢，单Tick最多执行 §e1000次§r 循环抽取。\n§8仅在连接某些劣质容器导致传输极慢时开启。\n§8若无异常请保持关闭，以免引发严重卡顿。"
+}

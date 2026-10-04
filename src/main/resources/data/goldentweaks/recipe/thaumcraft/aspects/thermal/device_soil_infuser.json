@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:device_soil_infuser"
+  },
+  "aspects": {
+    "gelum": 3,
+    "machina": 3,
+    "potentia": 3,
+    "ignis": 2
+  }
+}

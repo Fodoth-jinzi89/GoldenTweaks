@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipez:energy_pipe"
+  },
+  "aspects": {
+    "permutatio": 4,
+    "potentia": 4,
+    "machina": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:glowstone_tnt"
+  },
+  "aspects": {
+    "explosion": 4,
+    "saxum": 3,
+    "telum": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:passive_crafting_hatch"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 3,
+    "metallum": 3
+  }
+}

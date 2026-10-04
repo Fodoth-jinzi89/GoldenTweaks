@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:glowstone_mushroom_spores"
+  },
+  "aspects": {
+    "fungus": 3,
+    "saxum": 3,
+    "terra": 3,
+    "perfodio": 2
+  }
+}

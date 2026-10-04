@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:fluid_cell_frame"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "aqua": 3,
+    "machina": 2,
+    "permutatio": 2,
+    "vas": 2
+  }
+}

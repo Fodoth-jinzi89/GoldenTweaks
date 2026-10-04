@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appflux:core_16m"
+  },
+  "aspects": {
+    "potentia": 4,
+    "vacuos": 4,
+    "machina": 3,
+    "vas": 3
+  }
+}

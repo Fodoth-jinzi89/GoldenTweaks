@@ -8,7 +8,7 @@
   "type": "mekmm:planting",
   "item_input": {
     "count": 1,
-    "item": "flavor_immersed_daily:cowpeabean"
+    "item": "flavor_immersed_daily:cowpeabeanseed"
   },
   "chemical_input": {
     "amount": 1,

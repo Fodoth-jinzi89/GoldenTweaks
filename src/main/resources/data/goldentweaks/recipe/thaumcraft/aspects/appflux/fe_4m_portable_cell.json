@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appflux:fe_4m_portable_cell"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "fabrico": 3,
+    "machina": 3,
+    "potentia": 3,
+    "vas": 2
+  }
+}

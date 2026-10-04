@@ -1,0 +1,37 @@
+{
+  "items": {
+    "maidmarriage:birth_tool": "Birth Tool",
+    "maidmarriage:engagement_ring": "Engagement Ring",
+    "maidmarriage:engagement_ring.desc": "This ring has witnessed the proposal. After the vows, it can become a true vow ring.",
+    "maidmarriage:engagement_ring.pair": "Proposal Engraving: %s ♡ %s",
+    "maidmarriage:family_tree_tool": "Family Tree Tool",
+    "maidmarriage:flower_test_kit": "Flower Test Kit",
+    "maidmarriage:growth_tool": "Maid Growth Tool",
+    "maidmarriage:heart_pact_guide": "Heart Pact Guide",
+    "maidmarriage:longing_tester": "Longing Test Tool",
+    "maidmarriage:marriage_consent_form": "Marriage Consent Form",
+    "maidmarriage:marriage_consent_form.bound_maid": "Bound Maid: %s",
+    "maidmarriage:marriage_consent_form.bound_pair": "Transfer Record: %s → %s",
+    "maidmarriage:marriage_consent_form.bound_target": "Bound Target: %s",
+    "maidmarriage:pregnancy_settlement_tool": "Pregnancy Settlement Test Tool",
+    "maidmarriage:pregnancy_test_tool": "Pregnancy Test Tool",
+    "maidmarriage:proposal_ring": "Proposal Ring",
+    "maidmarriage:rainbow_bouquet": "Rainbow Bouquet",
+    "maidmarriage:sauce_duck": "Sauce Duck",
+    "maidmarriage:special_milk_bucket": "Special Milk",
+    "maidmarriage:spirit_farewell_letter.page1": "Dad,\nIf you are reading this letter, I must have already gone somewhere far away. Please do not keep blaming yourself. I did not come to this home so you would learn loss. I came here because I was truly loved.",
+    "maidmarriage:spirit_farewell_letter.page2": "I will remember Mom's arms, and the sound of you calling my name. Please live well for me too. Even if remembering me hurts, walk toward tomorrow after the tears. Goodbye, Dad.",
+    "maidmarriage:spirit_farewell_letter.title": "Echo Letter",
+    "maidmarriage:sunflower_hairpin": "Golden Dandelion Hairpin",
+    "maidmarriage:vow_ring": "Vow Ring",
+    "maidmarriage:vow_ring.desc": "It forges a lifelong promise into warmth at your fingertip, and seals two hearts into an eternal star.",
+    "maidmarriage:vow_ring.pair": "Engraving: %s ♡ %s",
+    "maidmarriage:wedding_dress": "Cherry Blossom Wedding Dress",
+    "maidmarriage:yes_pillow": "YES Pillow"
+  },
+  "blocks": {},
+  "entities": {
+    "maidmarriage:maid_child": "Little Maid",
+    "maidmarriage:maid_spirit": "Little Maid Spirit"
+  }
+}

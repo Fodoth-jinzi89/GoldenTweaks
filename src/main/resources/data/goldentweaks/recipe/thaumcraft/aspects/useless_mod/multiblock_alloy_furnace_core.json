@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:multiblock_alloy_furnace_core"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 3,
+    "potentia": 2
+  }
+}

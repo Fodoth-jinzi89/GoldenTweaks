@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipez:fluid_pipe"
+  },
+  "aspects": {
+    "permutatio": 4,
+    "aqua": 3,
+    "machina": 3
+  }
+}

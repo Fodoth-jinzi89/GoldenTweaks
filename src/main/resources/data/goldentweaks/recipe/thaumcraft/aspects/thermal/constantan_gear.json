@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:constantan_gear"
+  },
+  "aspects": {
+    "mixtura": 4,
+    "metallum": 3
+  }
+}

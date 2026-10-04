@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.network;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPickupItemPacket;
+import net.fodoth.skina.goldentweaks.network.packet.C2SUpdatePickupSettingsPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CConsumableSyncPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2COpenMaterialBookPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CProviderIconsPacket;
@@ -17,12 +18,18 @@ public class ModNetworking {
     @SubscribeEvent
     public static void register(RegisterPayloadHandlersEvent event) {
 
-        PayloadRegistrar registrar = event.registrar("1");
+        PayloadRegistrar registrar = event.registrar("2");
 
         registrar.playToServer(
                 C2SPickupItemPacket.TYPE,
                 C2SPickupItemPacket.STREAM_CODEC,
                 C2SPickupItemPacket::handle
+        );
+
+        registrar.playToServer(
+                C2SUpdatePickupSettingsPacket.TYPE,
+                C2SUpdatePickupSettingsPacket.STREAM_CODEC,
+                C2SUpdatePickupSettingsPacket::handle
         );
 
         registrar.playToClient(

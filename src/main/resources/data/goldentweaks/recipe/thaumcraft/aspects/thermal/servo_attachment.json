@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:servo_attachment"
+  },
+  "aspects": {
+    "machina": 3,
+    "cognitio": 2,
+    "permutatio": 2
+  }
+}

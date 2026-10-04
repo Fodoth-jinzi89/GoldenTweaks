@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:blizz_powder"
+  },
+  "aspects": {
+    "gelum": 3
+  }
+}

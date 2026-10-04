@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:metal_mold_gear"
+  },
+  "aspects": {
+    "metallum": 3,
+    "fabrico": 2,
+    "machina": 2
+  }
+}

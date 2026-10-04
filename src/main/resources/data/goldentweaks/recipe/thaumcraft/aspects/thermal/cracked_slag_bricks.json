@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:cracked_slag_bricks"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

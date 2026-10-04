@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:emerald_dust"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appflux:energy_processor"
+  },
+  "aspects": {
+    "potentia": 4,
+    "cognitio": 3,
+    "machina": 3
+  }
+}

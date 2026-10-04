@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:item_cell"
+  },
+  "aspects": {
+    "vacuos": 4,
+    "machina": 2,
+    "permutatio": 2,
+    "vas": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:aerotheum_bucket"
+  },
+  "aspects": {
+    "aer": 3,
+    "motus": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appflux:part_flux_accessor"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "potentia": 3
+  }
+}

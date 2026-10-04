@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:energy_duct"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3,
+    "permutatio": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thermal:blitz_projectile"
+  },
+  "aspects": {
+    "telum": 4,
+    "fulmen": 3
+  }
+}

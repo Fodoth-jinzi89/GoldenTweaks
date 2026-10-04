@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:slime_mushroom"
+  },
+  "aspects": {
+    "fungus": 3
+  }
+}

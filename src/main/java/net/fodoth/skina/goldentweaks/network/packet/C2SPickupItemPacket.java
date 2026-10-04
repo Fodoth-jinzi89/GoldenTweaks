@@ -1,8 +1,9 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.mixin.feature.vanilla.accessor.ItemEntityAccessor;
+import net.fodoth.skina.goldentweaks.network.PickupSettings;
+import net.fodoth.skina.goldentweaks.network.PickupSettingsManager;
 import net.fodoth.skina.goldentweaks.util.ItemPickupUtil;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -28,18 +29,37 @@ public record C2SPickupItemPacket(int entityId) implements CustomPacketPayload {
         ctx.enqueueWork(() -> {
             var player = ctx.player();
             if (player instanceof ServerPlayer sp) {
+                // 使用该玩家同步过来的设定（已裁剪到合理范围），各玩家配置独立
+                PickupSettings settings = PickupSettingsManager.get(sp.getUUID());
+                // 总开关未开启时不处理任何拾取请求
+                if (!settings.enablePickup()) {
+                    return;
+                }
+                // 潜行与非潜行分别控制是否可以右键拾取
+                boolean sneakAllowed = sp.isShiftKeyDown()
+                        ? settings.allowSneakPickup()
+                        : settings.allowStandingPickup();
+                if (!sneakAllowed) {
+                    return;
+                }
                 var level = sp.level();
                 var e = level.getEntity(pkt.entityId());
                 if (e instanceof ExperienceOrb orb) {
-                    if (GoldenTweaksCommonConfig.ALLOW_EXPERIENCE_ORB_PICKUP.get()
-                            && sp.distanceTo(orb) <= ItemPickupUtil.getMaxReach(player)) {
+                    if (settings.allowExperienceOrbPickup()
+                            && sp.distanceTo(orb) <= settings.maxReach()) {
                         orb.playerTouch(sp);
                     }
                 } else if (e instanceof ItemEntity item) {
+                    // 背包放不下且未开启「背包已满时能够右键拾取」时不拾取（创造模式不受限）
+                    if (!settings.allowFullInventoryPickup()
+                            && !sp.getAbilities().instabuild
+                            && !ItemPickupUtil.canFit(sp, item.getItem())) {
+                        return;
+                    }
                     int delay = ((ItemEntityAccessor) item).goldentweaks$getPickupDelay();
-                    boolean canPickup = GoldenTweaksCommonConfig.ALLOW_INFINITE_DELAY.get()
-                            || delay <= GoldenTweaksCommonConfig.PICKUP_DELAY_THRESHOLD.get();
-                    if (canPickup && sp.distanceTo(item) <= ItemPickupUtil.getMaxReach(player)) {
+                    boolean canPickup = settings.allowInfiniteDelay()
+                            || delay <= settings.pickupDelayThreshold();
+                    if (canPickup && sp.distanceTo(item) <= settings.maxReach()) {
                         ItemPickupUtil.pickup(sp, item);
                     }
                 }

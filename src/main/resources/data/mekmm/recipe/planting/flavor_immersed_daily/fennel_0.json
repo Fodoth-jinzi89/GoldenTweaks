@@ -8,7 +8,7 @@
   "type": "mekmm:planting",
   "item_input": {
     "count": 1,
-    "item": "flavor_immersed_daily:fennel_0"
+    "item": "flavor_immersed_daily:fennelseedstates"
   },
   "chemical_input": {
     "amount": 1,

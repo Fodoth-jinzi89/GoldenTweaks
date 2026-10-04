@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:useless_glass_tier_2"
+  },
+  "aspects": {
+    "vitreus": 3,
+    "potentia": 2
+  }
+}

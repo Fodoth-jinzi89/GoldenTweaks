@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:redstone_tnt_minecart"
+  },
+  "aspects": {
+    "explosion": 4,
+    "iter": 3,
+    "saxum": 3,
+    "cognitio": 2,
+    "motus": 2,
+    "potentia": 2
+  }
+}

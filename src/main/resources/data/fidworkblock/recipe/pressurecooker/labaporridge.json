@@ -2,9 +2,9 @@
   "type": "fidworkblock:cooking",
   "appliance": "pressurecooker",
   "ingredients": [
-    { "item": "flavor_immersed_daily:kaolianggarin" },
+    { "item": "flavor_immersed_daily:kaolianggrain" },
     { "item": "flavor_immersed_daily:tidywater" },
-    { "item": "flavor_immersed_daily:peanut_0" }
+    { "item": "flavor_immersed_daily:peanut" }
   ],
   "result": {
     "id": "flavor_immersed_daily:labaporridge",

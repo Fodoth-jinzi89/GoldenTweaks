@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:item_retriever_resonant"
+  },
+  "aspects": {
+    "machina": 2,
+    "permutatio": 2
+  }
+}

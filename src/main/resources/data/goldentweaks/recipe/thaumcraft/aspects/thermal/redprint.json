@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:redprint"
+  },
+  "aspects": {
+    "machina": 2,
+    "permutatio": 2
+  }
+}

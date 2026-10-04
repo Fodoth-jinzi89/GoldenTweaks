@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:nickel_ingot"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

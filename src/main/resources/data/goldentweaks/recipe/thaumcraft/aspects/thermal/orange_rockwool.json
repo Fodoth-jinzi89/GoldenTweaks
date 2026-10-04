@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:orange_rockwool"
+  },
+  "aspects": {
+    "pannus": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipez:ultimate_upgrade"
+  },
+  "aspects": {
+    "terminus": 5,
+    "permutatio": 4,
+    "machina": 3,
+    "cognitio": 2
+  }
+}

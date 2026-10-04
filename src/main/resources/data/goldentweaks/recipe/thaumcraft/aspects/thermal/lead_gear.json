@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:lead_gear"
+  },
+  "aspects": {
+    "iter": 3,
+    "metallum": 3
+  }
+}

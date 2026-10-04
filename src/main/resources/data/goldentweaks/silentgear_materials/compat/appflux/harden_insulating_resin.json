@@ -1,0 +1,61 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "hard_metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "appflux:harden_insulating_resin"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF7EAA88",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.appflux.harden_insulating_resin"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 29.964,
+      "armor/boots": 4.495,
+      "armor/chestplate": 11.986,
+      "armor/helmet": 4.495,
+      "armor/leggings": 8.989,
+      "armor_durability": 46.61,
+      "attack_damage": 4.794,
+      "charging_value": 0.182,
+      "durability": 838.992,
+      "enchantment_value": 4.117,
+      "harvest_speed": 11.386,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "rarity": 35.673,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

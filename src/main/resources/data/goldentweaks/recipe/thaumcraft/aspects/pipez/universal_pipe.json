@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipez:universal_pipe"
+  },
+  "aspects": {
+    "permutatio": 4,
+    "machina": 3,
+    "cognitio": 2
+  }
+}

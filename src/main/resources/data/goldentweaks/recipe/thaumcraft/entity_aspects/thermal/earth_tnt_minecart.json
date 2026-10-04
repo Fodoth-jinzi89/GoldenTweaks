@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thermal:earth_tnt_minecart"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "terra": 3
+  }
+}

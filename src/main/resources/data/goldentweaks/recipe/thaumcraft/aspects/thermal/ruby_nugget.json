@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:ruby_nugget"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

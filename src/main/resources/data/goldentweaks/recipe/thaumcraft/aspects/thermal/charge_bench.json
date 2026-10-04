@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:charge_bench"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "potentia": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:teleport_block_3"
+  },
+  "aspects": {
+    "iter": 4,
+    "alienis": 3
+  }
+}

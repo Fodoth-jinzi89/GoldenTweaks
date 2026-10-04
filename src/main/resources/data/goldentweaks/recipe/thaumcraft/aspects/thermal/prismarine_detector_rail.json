@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:prismarine_detector_rail"
+  },
+  "aspects": {
+    "iter": 3,
+    "sensus": 3,
+    "machina": 2
+  }
+}

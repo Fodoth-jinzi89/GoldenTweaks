@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:flux_magnet"
+  },
+  "aspects": {
+    "permutatio": 3,
+    "potentia": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "pipez:advanced_upgrade"
+  },
+  "aspects": {
+    "permutatio": 4,
+    "machina": 3,
+    "cognitio": 2
+  }
+}

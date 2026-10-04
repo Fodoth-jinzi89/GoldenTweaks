@@ -23,7 +23,11 @@ ORES = [
     "tungsten",
     "mithril",
     "constantan",
-    "brass"
+    "brass",
+    "signalum",
+    "lumium",
+    "enderium",
+    "invar"
 ]
 
 GEMS = [

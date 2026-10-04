@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:gunpowder_block"
+  },
+  "aspects": {
+    "telum": 4,
+    "ignis": 2,
+    "perditio": 2
+  }
+}

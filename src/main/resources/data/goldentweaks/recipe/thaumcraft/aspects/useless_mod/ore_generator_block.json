@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "useless_mod:ore_generator_block"
+  },
+  "aspects": {
+    "potentia": 4,
+    "machina": 3
+  }
+}

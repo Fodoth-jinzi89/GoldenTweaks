@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:rich_slag"
+  },
+  "aspects": {
+    "substance": 2
+  }
+}

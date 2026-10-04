@@ -1,0 +1,14 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:rf_coil"
+  },
+  "aspects": {
+    "machina": 3,
+    "permutatio": 3,
+    "potentia": 3,
+    "saxum": 3,
+    "cognitio": 2,
+    "ignis": 2
+  }
+}

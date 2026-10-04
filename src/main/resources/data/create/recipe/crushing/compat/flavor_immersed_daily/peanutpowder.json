@@ -11,7 +11,7 @@
       "type": "neoforge:compound",
       "ingredients": [
         {
-          "item": "flavor_immersed_daily:peanut_0"
+          "item": "flavor_immersed_daily:peanut"
         }
       ]
     }

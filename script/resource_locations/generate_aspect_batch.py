@@ -334,6 +334,13 @@ def semantic_aspects(namespace, path, display, kind):
             add(aspects, "vas", 3)
         if "glue" in name:
             add(aspects, "adhaesio", 3)
+        if namespace == "thermal":
+            if "blizz" in name:
+                add(aspects, "gelum", 3)
+            if "basalz" in name:
+                add(aspects, "ignis", 3)
+            if "blitz" in name:
+                add(aspects, "fulmen", 3)
         return dict(sorted(aspects.items(), key=lambda entry: (-entry[1], entry[0]))[:MAX_ASPECTS])
 
     if any(word in name for word in ("sword", "gun", "rifle", "warhead", "weapon", "bow", "arrow")):
@@ -610,6 +617,140 @@ def semantic_aspects(namespace, path, display, kind):
         add(aspects, "profundum", 3)
     if any(word in name for word in ("mushroom", "fungus")):
         add(aspects, "fungus", 3)
+
+    if namespace == "pipez":
+        if "pipe" in name:
+            add(aspects, "permutatio", 4)
+            add(aspects, "machina", 3)
+        if "energy" in name:
+            add(aspects, "potentia", 3)
+        if any(word in name for word in ("fluid", "gas")):
+            add(aspects, "aqua", 3)
+        if "universal" in name:
+            add(aspects, "permutatio", 2)
+            add(aspects, "cognitio", 2)
+        if any(word in name for word in ("upgrade", "filter")):
+            add(aspects, "machina", 3)
+            add(aspects, "cognitio", 2)
+
+    if namespace == "thermal":
+        if any(word in name for word in ("machine_", "device_", "dynamo_", "apparatus", "charger")):
+            add(aspects, "machina", 3)
+            add(aspects, "potentia", 2)
+        if any(word in name for word in ("duct", "servo", "retriever", "redprint", "distributor", "buffer", "strongbox", "satchel", "reservoir", "quiver", "cell", "frame")):
+            add(aspects, "permutatio", 2)
+            add(aspects, "machina", 2)
+        if any(word in name for word in ("augment", "attachment", "upgrade", "coil")):
+            add(aspects, "machina", 2)
+            add(aspects, "cognitio", 2)
+        if "_coin" in name:
+            add(aspects, "lucrum", 3)
+        if any(word in name for word in ("signalum", "lumium", "enderium", "invar", "electrum", "constantan", "bronze", "steel")) \
+                and any(word in name for word in ("ingot", "nugget", "dust", "plate", "gear", "rod", "block")):
+            add(aspects, "mixtura", 4)
+        if "ore" in name:
+            add(aspects, "terra", 3)
+            add(aspects, "perfodio", 2)
+        if any(word in name for word in ("grenade", "tnt")):
+            add(aspects, "explosion", 4)
+            add(aspects, "telum", 2)
+        if "rockwool" in name:
+            add(aspects, "pannus", 3)
+        if any(word in name for word in ("phytosoil", "phytogro", "compost", "bioblend", "biomass")):
+            add(aspects, "herba", 3)
+            add(aspects, "messis", 2)
+        if any(word in name for word in ("xp_crystal", "xp_storage", "flux_", "rf_coil", "rf_potato", "energy_cell")):
+            add(aspects, "potentia", 3)
+        if any(word in name for word in ("gunpowder", "sulfur", "niter")):
+            add(aspects, "ignis", 2)
+            add(aspects, "perditio", 2)
+        if any(word in name for word in ("beekeeper", "diving", "hazmat")):
+            add(aspects, "pannus", 2)
+        if any(word in name for word in ("basalz", "blaze")):
+            add(aspects, "ignis", 3)
+        if "blizz" in name or "cryotheum" in name:
+            add(aspects, "gelum", 3)
+        if "blitz" in name:
+            add(aspects, "fulmen", 3)
+        if "aerotheum" in name:
+            add(aspects, "aer", 3)
+        if any(word in name for word in ("apatite", "cinnabar", "ruby", "sapphire")):
+            add(aspects, "vitreus", 3)
+            if "cinnabar" in name:
+                add(aspects, "venenum", 2)
+        if any(word in name for word in ("coal", "charcoal", "coke")):
+            add(aspects, "ignis", 3)
+        if any(word in name for word in ("rubber", "latex", "rosin", "resin", "sap", "tar", "bitumen")):
+            add(aspects, "limus", 2)
+        if "rail" in name:
+            add(aspects, "iter", 3)
+            add(aspects, "machina", 2)
+        if "cast" in name:
+            add(aspects, "metallum", 2)
+        if any(word in name for word in ("detonator", "lightning", "charge")):
+            add(aspects, "potentia", 3)
+        if any(word in name for word in ("junk_net", "grapple", "hook", "wrench")):
+            add(aspects, "instrumentum", 3)
+        if "syrup" in name:
+            add(aspects, "victus", 2)
+        if "sugar_cane" in name:
+            add(aspects, "herba", 3)
+        if any(word in name for word in ("florb", "potion")):
+            add(aspects, "aqua", 2)
+            add(aspects, "praecantatio", 2)
+        if "slot_seal" in name or "upgrade_augment" in name:
+            add(aspects, "vinculum", 2)
+        if "block" not in name and any(word in name for word in (
+                "amaranth", "radish", "spinach", "green_bean", "sadiroot", "hops", "rice", "onion",
+                "strawberry", "bell_pepper", "eggplant", "tomato", "coffee", "peanut", "barley",
+                "corn", "flax", "tea", "sushi", "maki", "stew", "salad", "sandwich", "jelly",
+                "pie", "cooked_", "cookie", "aquachow", "cheese")):
+            add(aspects, "victus", 3)
+            add(aspects, "fames", 2)
+        if name.endswith("_seeds") or name.endswith("_seed"):
+            add(aspects, "herba", 3)
+            add(aspects, "messis", 2)
+
+    if namespace == "useless_mod":
+        if any(word in name for word in ("ingot", "gear", "coil", "mold", "wire", "plate", "rod")):
+            add(aspects, "metallum", 3)
+        if any(word in name for word in ("gear", "coil")):
+            add(aspects, "machina", 2)
+        if any(word in name for word in ("coil", "wire")):
+            add(aspects, "potentia", 3)
+        if "mold" in name:
+            add(aspects, "fabrico", 2)
+        if "plastic" in name:
+            add(aspects, "limus", 2)
+            add(aspects, "fabrico", 2)
+        if "glass" in name:
+            add(aspects, "vitreus", 3)
+        if "compact" in name:
+            add(aspects, "dense", 3)
+        if any(word in name for word in ("furnace", "generator", "hatch", "hub", "assembly", "casing")):
+            add(aspects, "machina", 3)
+        if any(word in name for word in ("furnace", "generator")):
+            add(aspects, "potentia", 2)
+        if "teleport" in name:
+            add(aspects, "alienis", 3)
+            add(aspects, "iter", 3)
+        if any(word in name for word in ("pattern", "blueprint", "ritual")):
+            add(aspects, "cognitio", 3)
+        if "doll" in name:
+            add(aspects, "humanus", 2)
+            add(aspects, "fabrico", 2)
+        if "supervisor" in name:
+            add(aspects, "machina", 3)
+            add(aspects, "cognitio", 3)
+        if any(word in name for word in ("useful_ingot", "possible_useful_ingot")):
+            add(aspects, "lucrum", 3)
+        if "endless_beaf" in name:
+            add(aspects, "instrumentum", 3)
+            add(aspects, "corpus", 2)
+        if any(word in name for word in ("gift", "package")):
+            add(aspects, "vas", 3)
+        if "tier" in name:
+            add(aspects, "potentia", 2)
 
     if namespace == "biomesoplenty" and not aspects:
         if any(word in name for word in ("leaves", "sapling", "grass", "flower", "bush", "bramble", "barley", "clover", "cattail", "reed", "sprout", "blossom", "fern", "ivy", "vine", "root")):
@@ -911,7 +1052,11 @@ def semantic_aspects(namespace, path, display, kind):
         else:
             add(aspects, "metallum", 3)
 
-    if namespace.startswith("ae2") and not aspects:
+    if namespace == "appflux" and (
+        "fe_" in name or any(word in name for word in ("energy", "flux", "charged", "cell", "processor", "induction"))
+    ):
+        add(aspects, "potentia", 3)
+    if (namespace.startswith("ae2") or namespace == "appflux") and not aspects:
         add(aspects, "machina", 3)
         add(aspects, "ordo", 2)
     elif namespace.startswith("aero") and not aspects:

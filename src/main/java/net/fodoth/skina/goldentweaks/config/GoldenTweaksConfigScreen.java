@@ -45,6 +45,10 @@ public class GoldenTweaksConfigScreen {
                     Component.translatable("config.goldentweaks.pickup")
             );
 
+            ConfigScreenHelper.addBool(pickup, eb,
+                    "config.goldentweaks.pickup.enable",
+                    ENABLE_PICKUP, false);
+
             ConfigScreenHelper.addDouble(pickup, eb,
                     "config.goldentweaks.pickup.base_pickup_reach",
                     BASE_PICKUP_REACH, 5.0, 1.0, 128.0);
@@ -70,8 +74,16 @@ public class GoldenTweaksConfigScreen {
                     ALLOW_THROUGH_WALLS, false);
 
             ConfigScreenHelper.addBool(pickup, eb,
+                    "config.goldentweaks.pickup.allow_standing_pickup",
+                    ALLOW_STANDING_PICKUP, true);
+
+            ConfigScreenHelper.addBool(pickup, eb,
                     "config.goldentweaks.pickup.allow_sneak_pickup",
                     ALLOW_SNEAK_PICKUP, false);
+
+            ConfigScreenHelper.addBool(pickup, eb,
+                    "config.goldentweaks.pickup.allow_full_inventory_pickup",
+                    ALLOW_FULL_INVENTORY_PICKUP, false);
 
             ConfigScreenHelper.addBool(pickup, eb,
                     "config.goldentweaks.pickup.block_use",
@@ -99,7 +111,7 @@ public class GoldenTweaksConfigScreen {
 
             ConfigScreenHelper.addBool(pickup, eb,
                     "config.goldentweaks.pickup.lootr_quick_loot",
-                    LOOTR_QUICK_LOOT, true);
+                    LOOTR_QUICK_LOOT, false);
             ConfigScreenHelper.addBool(pickup, eb, "config.goldentweaks.pickup.lootr_play_open_animation", LOOTR_PLAY_OPEN_ANIMATION, true);
             ConfigScreenHelper.addBool(pickup, eb, "config.goldentweaks.pickup.lootr_show_flying_items", LOOTR_SHOW_FLYING_ITEMS, true);
             ConfigScreenHelper.addInt(pickup, eb, "config.goldentweaks.pickup.lootr_pickup_groups", LOOTR_PICKUP_GROUPS, 0, 0, 64);
@@ -138,6 +150,14 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.disable_building_wands_block_preview",
                     DISABLE_BUILDING_WANDS_BLOCK_PREVIEW, true);
 
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.disable_maid_soul_tutorial_popup",
+                    DISABLE_MAID_SOUL_TUTORIAL_POPUP, true);
+
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.fix_maid_soul_aui_ime",
+                    FIX_MAID_SOUL_AUI_IME, true);
+
             // =========================================================
             // Balance
             // =========================================================
@@ -159,6 +179,11 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.recycler_factory_stack_upgrades",
                     RECYCLER_FACTORY_STACK_UPGRADES, true);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.ae2cs.max_speed_multiplier",
+                    ENTROPY_REACTION_MAX_SPEED_MULTIPLIER,
+                    2, 1, 16);
 
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.cataclysm_balance",

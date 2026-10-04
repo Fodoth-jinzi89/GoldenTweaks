@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appflux:emerald_dust"
+  },
+  "aspects": {
+    "vitreus": 3
+  }
+}

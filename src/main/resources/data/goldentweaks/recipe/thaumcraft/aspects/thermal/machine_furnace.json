@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:machine_furnace"
+  },
+  "aspects": {
+    "ignis": 3,
+    "machina": 3,
+    "saxum": 3,
+    "cognitio": 2,
+    "potentia": 2
+  }
+}

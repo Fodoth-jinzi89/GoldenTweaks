@@ -62,7 +62,7 @@
         },
         "compressed_solidified_flux_experience": {
             "type": "item",
-            "content": "apothicenchantingaddition:compressed_solidified_flux_experience",
+            "content": "apothic_flux:compressed_solidified_flux_experience",
             "rarity": "COMMON",
             "amount": {
                 "min": 32,
@@ -1314,7 +1314,7 @@
         "ancientreforging",
         "apotheosis",
         "apothic_enchanting",
-        "apothicenchantingaddition",
+        "apothic_flux",
         "backpack_pixel",
         "biomesoplenty",
         "cataclysm",

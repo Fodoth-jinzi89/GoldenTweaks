@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "appflux:insulating_resin"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

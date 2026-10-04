@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thermal:basalz_projectile"
+  },
+  "aspects": {
+    "telum": 4
+  }
+}

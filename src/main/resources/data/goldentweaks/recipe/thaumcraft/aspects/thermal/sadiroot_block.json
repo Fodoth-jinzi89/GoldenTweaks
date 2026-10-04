@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:sadiroot_block"
+  },
+  "aspects": {
+    "vas": 3
+  }
+}

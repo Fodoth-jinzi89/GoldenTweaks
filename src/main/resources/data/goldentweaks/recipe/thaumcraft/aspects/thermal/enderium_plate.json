@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:enderium_plate"
+  },
+  "aspects": {
+    "mixtura": 4,
+    "alienis": 3,
+    "metallum": 3
+  }
+}

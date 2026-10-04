@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:stuffed_pumpkin"
+  },
+  "aspects": {
+    "aqua": 3,
+    "machina": 2
+  }
+}

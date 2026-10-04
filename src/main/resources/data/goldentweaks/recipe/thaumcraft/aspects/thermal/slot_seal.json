@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:slot_seal"
+  },
+  "aspects": {
+    "vinculum": 2
+  }
+}

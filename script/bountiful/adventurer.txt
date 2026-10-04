@@ -3,7 +3,7 @@ item supplementaries:quiver 1 1 100 0.1
 item minecraft:crossbow 1 1 100 0.1
 item kaleidoscope_nether:blowgun 1 1 100 0.1
 item supplementaries:ropearrow 32 64 25 0.1
-item apothicenchantingaddition:compressed_solidified_flux_experience 32 64 10 0.1
+item apothic_flux:compressed_solidified_flux_experience 32 64 10 0.1
 item apotheosis:common_material 32 64 5 0.1
 item apotheosis:uncommon_material 32 64 20 0.1
 item apotheosis:rare_material 32 64 50 0.1

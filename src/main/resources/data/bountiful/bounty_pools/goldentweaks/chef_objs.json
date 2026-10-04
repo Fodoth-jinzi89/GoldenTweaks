@@ -4812,18 +4812,6 @@
             "weightMult": 0.0023788284269997025,
             "effectiveValue": 5760
         },
-        "chinesecabbageinsoup": {
-            "type": "item",
-            "content": "flavor_immersed_daily:chinesecabbageinsoup",
-            "rarity": "UNCOMMON",
-            "amount": {
-                "min": 8,
-                "max": 16
-            },
-            "unitWorth": 240,
-            "weightMult": 0.0011894142134998512,
-            "effectiveValue": 2880
-        },
         "pleurotuseryngiiwithsaltandpepper": {
             "type": "item",
             "content": "flavor_immersed_daily:pleurotuseryngiiwithsaltandpepper",
@@ -5631,30 +5619,6 @@
         "hamburgerbread": {
             "type": "item",
             "content": "flavor_immersed_daily:hamburgerbread",
-            "rarity": "UNCOMMON",
-            "amount": {
-                "min": 6,
-                "max": 12
-            },
-            "unitWorth": 480,
-            "weightMult": 0.001784121320249777,
-            "effectiveValue": 4320
-        },
-        "yunyiselfsdelight": {
-            "type": "item",
-            "content": "flavor_immersed_daily:yunyiselfsdelight",
-            "rarity": "UNCOMMON",
-            "amount": {
-                "min": 4,
-                "max": 8
-            },
-            "unitWorth": 960,
-            "weightMult": 0.0023788284269997025,
-            "effectiveValue": 5760
-        },
-        "pancake_roll": {
-            "type": "item",
-            "content": "flavor_immersed_daily:pancake_roll",
             "rarity": "UNCOMMON",
             "amount": {
                 "min": 6,

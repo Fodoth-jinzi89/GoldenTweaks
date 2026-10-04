@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:dual_filter_augment"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "sensus": 3,
+    "cognitio": 2,
+    "machina": 2
+  }
+}

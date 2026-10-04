@@ -1,0 +1,9 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:raw_nickel_block"
+  },
+  "aspects": {
+    "metallum": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:lead_coin"
+  },
+  "aspects": {
+    "iter": 3,
+    "lucrum": 3,
+    "metallum": 3
+  }
+}

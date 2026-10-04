@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "thermal:lightning_tnt_minecart"
+  },
+  "aspects": {
+    "telum": 4,
+    "explosion": 3,
+    "fulmen": 3,
+    "metallum": 3
+  }
+}
