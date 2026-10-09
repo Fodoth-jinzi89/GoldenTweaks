@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#forge:milk"
+    "#c:milk",
+    {
+      "id": "flavor_immersed_daily:milkbottle",
+      "required": false
+    }
   ]
 }

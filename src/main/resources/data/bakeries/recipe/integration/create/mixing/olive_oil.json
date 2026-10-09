@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "croptopia"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "bakeries:olive"
+    },
+    {
+      "item": "bakeries:olive"
+    },
+    {
+      "item": "bakeries:olive"
+    },
+    {
+      "item": "bakeries:olive"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "results": [
+    {
+      "id": "bakeries:olive_oil"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
+import net.fodoth.skina.goldentweaks.compat.polymorph.PolymorphArcaneCompat;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.ArcaneCraftingCache;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
@@ -22,8 +23,21 @@ import thaumcraft.common.lib.crafting.ThaumcraftCraftingManager;
 @Mixin(value = ThaumcraftCraftingManager.class, remap = false)
 public abstract class ThaumcraftCraftingManagerMixin {
 
+    /**
+     * 先看「多态合成」的当前选择，再看奥术配方缓存。
+     *
+     * <p>Polymorph 已为该玩家选好的奥术配方（{@code getSelectedRecipe}，仍匹配当前网格时）
+     * 优先于缓存返回：一次读取加一次校验，不做全量扫描，因此不会破坏缓存。
+     * 候选项的重建与选择同步发生在 {@code ArcaneWorkbenchMenu.refreshResult} 里
+     * （见 {@code ArcaneWorkbenchMenuMixin}）。</p>
+     */
     @Inject(method = "findMatchingArcaneRecipeEntry", at = @At("HEAD"), cancellable = true)
     private static void gt$arcaneRecipeCacheHit(Container workbench, Player player, CallbackInfoReturnable<IArcaneRecipe> cir) {
+        IArcaneRecipe selected = PolymorphArcaneCompat.selected(player, workbench);
+        if (selected != null) {
+            cir.setReturnValue(selected);
+            return;
+        }
         IArcaneRecipe cached = ArcaneCraftingCache.find(workbench, player);
         if (cached != null) {
             cir.setReturnValue(cached);

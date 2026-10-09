@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "flavor_immersed_daily:wildtuberplants",
+    "flavor_immersed_daily:wildgrainplant",
+    "flavor_immersed_daily:wildflowerandleaf",
+    "flavor_immersed_daily:wildseedplant",
+    "flavor_immersed_daily:wildmushroomplant"
+  ]
+}

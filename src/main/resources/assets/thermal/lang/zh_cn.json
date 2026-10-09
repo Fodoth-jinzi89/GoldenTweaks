@@ -2,7 +2,13 @@
   "fluid_type.thermal.aerotheum": "飞扬之清风",
   "fluid_type.thermal.cryotheum": "极寒之凛冰",
   "fluid_type.thermal.coal": "液化煤炭",
+  "fluid_type.thermal.redstone": "不稳定熔融红石",
+  "fluid_type.thermal.glowstone": "充能熔融荧石",
+  "fluid_type.thermal.ender": "谐振熔融末影珍珠",
   "item.thermal.coal_bucket": "液化煤炭桶",
+  "item.thermal.redstone_bucket": "不稳定熔融红石桶",
+  "item.thermal.glowstone_bucket": "充能熔融荧石桶",
+  "item.thermal.ender_bucket": "谐振熔融末影珍珠桶",
   "item.thermal.biomass": "生物质",
   "item.thermal.bioblend": "生物调和燃料",
 

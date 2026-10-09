@@ -13,7 +13,9 @@ import thaumcraft.api.crafting.IArcaneRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchCategoryList;
+import thaumcraft.api.research.ResearchItem;
 
+import java.util.Arrays;
 import java.util.Set;
 
 @Mixin(value = AdvancedInfusionResearch.class, remap = false)
@@ -26,7 +28,8 @@ public abstract class AdvancedInfusionResearchMixin {
             "ADVANCED_INFUSION.VOID_UPGRADE",
             "ADVANCED_INFUSION.PRIMORDIAL_UPGRADE",
             "ADVANCED_INFUSION.PURIFYING_TEAR",
-            "ADVANCED_INFUSION.AURA_NODE_FABRICATOR"
+            "ADVANCED_INFUSION.AURA_NODE_FABRICATOR",
+            "ADVANCED_INFUSION.RESEARCH_NOTE_AUTOMATOR"
     );
 
     @Inject(method = "register", at = @At("RETURN"))
@@ -38,6 +41,18 @@ public abstract class AdvancedInfusionResearchMixin {
         ResearchCategoryList category = ResearchCategories.getResearchList("PRACTICAL_THAUMATURGY");
         if (category != null) {
             category.research.keySet().removeAll(gt$disabledResearch);
+            for (ResearchItem research : category.research.values()) {
+                String[] parents = research.parents;
+                if (parents == null) {
+                    continue;
+                }
+                String[] remaining = Arrays.stream(parents)
+                        .filter(parent -> !"ADVANCED_INFUSION.CONTROLLER".equals(parent))
+                        .toArray(String[]::new);
+                if (remaining.length != parents.length) {
+                    research.setParents(remaining);
+                }
+            }
             ResearchCache.clear();
         }
 

@@ -23,6 +23,9 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.util.GTState;
 import net.minecraft.client.searchtree.SuffixArray;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.fml.ModList;
 
 import java.lang.invoke.MethodHandle;
@@ -121,6 +124,21 @@ public final class GTEmiSearchEngine {
 
     private static volatile boolean loggedExternal;
 
+    /** 本轮 bake 是否由本内核接管 tooltip。接管后 tooltip 只进我们自己的 gram 索引，不再投喂 JEChars/原版后缀数组。 */
+    private static volatile boolean tooltipHook;
+
+    /** 是否把 tooltip 索引推迟到阶段 2（后台）构建；推迟期间 `$` 类查询暂不命中。 */
+    private static volatile boolean deferTooltips;
+
+    private static volatile boolean warnedTooltipPending;
+
+    /** 阶段 1 顺手记下的 tooltip 行（未推迟时使用）。 */
+    private static final List<String> TOOLTIP_LINES = new ArrayList<>();
+    private static final List<EmiStack> TOOLTIP_STACKS = new ArrayList<>();
+
+    /** 推迟构建时只记 stack，阶段 2 再去生成 tooltip。 */
+    private static final List<EmiStack> DEFERRED_TOOLTIP_STACKS = new ArrayList<>();
+
     private static volatile MethodHandle remiBuildStacks;
     private static volatile MethodHandle remiAppendGroups;
     private static volatile boolean remiBridgeReady;
@@ -162,6 +180,10 @@ public final class GTEmiSearchEngine {
         skipVanillaIndex = enabled && !externalMode
                 && (!GTState.isReady() || GoldenTweaksClientConfig.EMI_SKIP_VANILLA_SEARCH_INDEX.get());
 
+        tooltipHook = enabled;
+        deferTooltips = enabled
+                && (!GTState.isReady() || GoldenTweaksClientConfig.EMI_DEFER_SEARCH_INDEX.get());
+
         if (externalMode && !loggedExternal) {
             loggedExternal = true;
             GoldenTweaks.LOGGER.info(
@@ -169,8 +191,17 @@ public final class GTEmiSearchEngine {
             );
         }
 
+        if (deferTooltips) {
+            GoldenTweaks.LOGGER.info(
+                    "GoldenTweaks: tooltip 索引推迟到重载之后的后台线程构建；完成前 `$` 类搜索暂不命中 tooltip"
+            );
+        }
+
         CAPTURED_KEYS.clear();
         CAPTURED_STACKS.clear();
+        TOOLTIP_LINES.clear();
+        TOOLTIP_STACKS.clear();
+        DEFERRED_TOOLTIP_STACKS.clear();
     }
 
     /** 截获 EMI 原本要写进后缀数组的 (条目, 字符串)；必要时再原样写回，保证关闭本内核时行为不变。 */
@@ -199,6 +230,52 @@ public final class GTEmiSearchEngine {
         return null;
     }
 
+    /**
+     * 接管 {@code EmiSearch#bake()} 里的 {@code stack.getTooltipText()}。
+     *
+     * <p>返回空表是<b>有意</b>的：EMI 那一段是
+     * {@code for (int i = 1; i < tooltip.size(); i++) tooltips.add(...)}；
+     * 返回空表 ⇒ tooltip 既不进原版后缀数组、也不进 JECharacters 的 PinIn trie
+     * （后者是那 19.5 s 的主要来源之一）。tooltip 改由我们自己的 gram 索引承接，
+     * 见 {@link #buildTooltipIndex}。</p>
+     *
+     * <p>推迟模式下连 tooltip 都不生成，只记下 stack，交给阶段 2 在后台生成。</p>
+     */
+    public static List<Component> captureTooltip(EmiStack stack) {
+
+        if (!tooltipHook) {
+            return stack.getTooltipText();
+        }
+
+        if (deferTooltips) {
+            DEFERRED_TOOLTIP_STACKS.add(stack);
+            return List.of();
+        }
+
+        try {
+            List<Component> lines = stack.getTooltipText();
+            for (int i = 1; i < lines.size(); i++) {
+                Component line = lines.get(i);
+                if (line != null) {
+                    TOOLTIP_LINES.add(line.getString().toLowerCase());
+                    TOOLTIP_STACKS.add(stack);
+                }
+            }
+        } catch (Throwable throwable) {
+            GoldenTweaks.LOGGER.error("GoldenTweaks: 生成 tooltip 失败 " + stack, throwable);
+        }
+        return List.of();
+    }
+
+    /**
+     * 接管 {@code bake()} 里那次 {@code getItemStack()}。它只用来判断附魔书，
+     * 却会给每个 stack 造一个 {@code ItemStack}（27.9k 次）。非附魔书直接返回 {@code EMPTY}
+     * —— {@code EMPTY.getItem()} 是 AIR ≠ ENCHANTED_BOOK，语义不变。
+     */
+    public static ItemStack itemStackForBookCheck(EmiStack stack) {
+        return stack.getKey() == Items.ENCHANTED_BOOK ? stack.getItemStack() : ItemStack.EMPTY;
+    }
+
     public static void finishBake(boolean enabled) {
 
         capturing = false;
@@ -210,18 +287,26 @@ public final class GTEmiSearchEngine {
                 return;
             }
 
-            Index built = build(externalMode);
+            Index built = build(externalMode, deferTooltips);
             index = built;
             engineActive = true;
             invalidate();
 
+            String tooltipSummary = built.tooltips == null ? "推迟到阶段 2" : built.tooltips.keyCount() + " 项";
+
             if (built.external) {
-                GoldenTweaks.LOGGER.info("GoldenTweaks: EMI 搜索内核已接管（token 解析走外部拼音索引），{} 个 stack", built.size);
+                GoldenTweaks.LOGGER.info("GoldenTweaks: EMI 搜索内核已接管（token 解析走外部拼音索引），{} 个 stack，tooltip {}",
+                        built.size, tooltipSummary);
             } else {
                 GoldenTweaks.LOGGER.info(
-                        "GoldenTweaks: EMI 搜索索引已重建 —— {} 个 stack；名称 {} 项 / tooltip {} 项 / mod {} 项 / 别名 {} 项",
-                        built.size, built.names.keyCount(), built.tooltips.keyCount(), built.mods.keyCount(), built.aliases.keyCount()
+                        "GoldenTweaks: EMI 搜索索引已重建 —— {} 个 stack；名称 {} 项 / tooltip {} / mod {} 项 / 别名 {} 项",
+                        built.size, built.names.keyCount(), tooltipSummary,
+                        built.mods.keyCount(), built.aliases.keyCount()
                 );
+            }
+
+            if (built.tooltips == null) {
+                startDeferredTooltipBake(built);
             }
         } catch (Throwable throwable) {
             index = null;
@@ -237,7 +322,7 @@ public final class GTEmiSearchEngine {
         }
     }
 
-    private static Index build(boolean external) {
+    private static Index build(boolean external, boolean deferTooltips) {
 
         EmiStack[] stacks = EmiStackList.stacks.toArray(new EmiStack[0]);
 
@@ -253,17 +338,87 @@ public final class GTEmiSearchEngine {
             }
         }
 
+        GTEmiSubstringIndex tooltips = deferTooltips ? null : buildTooltipIndex(byIdentity);
+
         if (external) {
-            // token 解析直接查 EMI 那几张表（JECharacters 已把名称/提示等换成拼音 Trie）
-            return new Index(stacks, byIdentity, byValue, true, null, null, null, null);
+            // 名称 / id / mod / 别名 直接查 EMI 那几张表（JECharacters 已把它们换成拼音 Trie）
+            return new Index(stacks, byIdentity, byValue, true, null, tooltips, null, null);
         }
 
         // 别名索引里存的是 stack.copy()，与原对象只有值相等关系，必须按值回落到下标
         return new Index(stacks, byIdentity, null, false,
                 buildIndex(EmiSearch.names, byIdentity, null),
-                buildIndex(EmiSearch.tooltips, byIdentity, null),
+                tooltips,
                 buildIndex(EmiSearch.mods, byIdentity, null),
                 buildIndex(EmiSearch.aliases, byIdentity, byValue));
+    }
+
+    /** tooltip 索引统一由我们自己建（不再投喂 JEChars），数据来自 {@link #captureTooltip} 记下的行。 */
+    private static GTEmiSubstringIndex buildTooltipIndex(Object2IntMap<EmiStack> byIdentity) {
+
+        GTEmiSubstringIndex.Builder builder = GTEmiSubstringIndex.builder();
+
+        for (int i = 0; i < TOOLTIP_LINES.size(); i++) {
+            String line = TOOLTIP_LINES.get(i);
+            int stackIndex = byIdentity.getInt(TOOLTIP_STACKS.get(i));
+            if (stackIndex >= 0 && !line.isEmpty()) {
+                builder.put(line, stackIndex);
+            }
+        }
+
+        return builder.build();
+    }
+
+    /**
+     * 阶段 2：在后台线程生成 tooltip 并建好 tooltip 索引，不阻塞 EMI 的重载。
+     *
+     * <p>只写我们自己的结构，<b>绝不触碰</b> JECharacters 的 {@code FakeArray}（线程安全）。
+     * 完成后 swap 进 {@link Index#tooltips} 并 bump 代次，之后 `$` 类搜索自动变完整。</p>
+     */
+    private static void startDeferredTooltipBake(Index target) {
+
+        List<EmiStack> stacks = List.copyOf(DEFERRED_TOOLTIP_STACKS);
+
+        Thread thread = new Thread(() -> {
+
+            long started = System.currentTimeMillis();
+
+            try {
+                GTEmiSubstringIndex.Builder builder = GTEmiSubstringIndex.builder();
+
+                for (EmiStack stack : stacks) {
+                    int stackIndex = target.byIdentity.getInt(stack);
+                    if (stackIndex < 0) {
+                        continue;
+                    }
+                    List<Component> lines = stack.getTooltipText();
+                    if (lines == null) {
+                        continue;
+                    }
+                    for (int i = 1; i < lines.size(); i++) {
+                        Component line = lines.get(i);
+                        if (line != null) {
+                            String text = line.getString().toLowerCase();
+                            if (!text.isEmpty()) {
+                                builder.put(text, stackIndex);
+                            }
+                        }
+                    }
+                }
+
+                GTEmiSubstringIndex built = builder.build();
+                target.tooltips = built;
+                invalidate();
+
+                GoldenTweaks.LOGGER.info("GoldenTweaks: tooltip 索引已在后台建好（{} 项，{} ms），搜索已完整",
+                        built.keyCount(), System.currentTimeMillis() - started);
+            } catch (Throwable throwable) {
+                GoldenTweaks.LOGGER.error("GoldenTweaks: 后台构建 tooltip 索引失败，`$` 类搜索将不可用", throwable);
+            }
+        }, "goldentweaks-emi-tooltips");
+
+        thread.setDaemon(true);
+        thread.start();
     }
 
     private static GTEmiSubstringIndex buildIndex(SuffixArray<?> array, Object2IntMap<EmiStack> byIdentity,
@@ -302,6 +457,17 @@ public final class GTEmiSearchEngine {
     public static boolean submit(String query) {
 
         if (query == null || !engineActive || index == null) {
+            return false;
+        }
+
+        // 先确认我们真的能为这个查询算出位集。算不出（标签类、取反的正则等走不了位集的）就
+        // <b>不</b>取消 EMI 的搜索，让它按原样跑 —— 宁可慢，也绝不能出现「输入什么都没反应」。
+        try {
+            if (bitsFor(query) == null) {
+                return false;
+            }
+        } catch (Throwable throwable) {
+            GoldenTweaks.LOGGER.error("GoldenTweaks: EMI 查询 \"{}\" 预计算失败，交回 EMI 原生搜索", query, throwable);
             return false;
         }
 
@@ -380,6 +546,7 @@ public final class GTEmiSearchEngine {
 
         long[] bits = compiled instanceof GTBitSetHolder holder ? holder.gt$bits() : null;
         if (bits == null) {
+            GoldenTweaks.LOGGER.warn("GoldenTweaks: 查询 \"{}\" 位集缺失，本次不发布结果", query);
             return;
         }
 
@@ -783,7 +950,7 @@ public final class GTEmiSearchEngine {
 
         switch (leaf.kind) {
             case KIND_NAME -> resolve(out, index, leaf.pattern, index.names, EmiSearch.names);
-            case KIND_TOOLTIP -> resolve(out, index, leaf.pattern, index.tooltips, EmiSearch.tooltips);
+            case KIND_TOOLTIP -> resolveTooltip(out, index, leaf.pattern);
             case KIND_MOD -> resolve(out, index, leaf.pattern, index.mods, EmiSearch.mods);
             case KIND_ALIAS -> resolveAlias(out, index, leaf.pattern);
             case KIND_TAG -> {
@@ -825,6 +992,26 @@ public final class GTEmiSearchEngine {
         }
 
         gram.forEachMatch(token, out::set);
+    }
+
+    /**
+     * tooltip 只走我们自己的 gram 索引（不再投喂 JEChars）。
+     *
+     * <p>阶段 2 还没建好时按「不命中」处理并提示一次 —— 绝不能算成「全中」，
+     * 那会让最初几秒的搜索结果变多且全是错的。</p>
+     */
+    private static void resolveTooltip(Bits out, Index index, String token) {
+
+        GTEmiSubstringIndex tooltips = index.tooltips;
+        if (tooltips == null) {
+            if (!warnedTooltipPending) {
+                warnedTooltipPending = true;
+                GoldenTweaks.LOGGER.info("GoldenTweaks: tooltip 索引尚未建好，本次 `$` 搜索不包含 tooltip 匹配");
+            }
+            return;
+        }
+
+        tooltips.forEachMatch(token, out::set);
     }
 
     /** 别名表存的是 {@code stack.copy()}，与原对象只有值相等关系，所以外部模式下要额外按值回落。 */
@@ -986,7 +1173,8 @@ public final class GTEmiSearchEngine {
         /** true = token 解析走 EMI 自己的表（可能是 JECharacters 的拼音 Trie）。 */
         final boolean external;
         final GTEmiSubstringIndex names;
-        final GTEmiSubstringIndex tooltips;
+        /** tooltip 索引：始终是本内核的 gram 索引；阶段 2 才建好时为 null（见 {@link #deferTooltips}）。 */
+        volatile GTEmiSubstringIndex tooltips;
         final GTEmiSubstringIndex mods;
         final GTEmiSubstringIndex aliases;
 

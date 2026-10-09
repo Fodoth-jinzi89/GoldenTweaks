@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createoreexcavation:raw_diamond"
+    },
+    {
+      "fluid": "minecraft:lava",
+      "type": "fluid_stack",
+      "nbt": {},
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "create_ore_excavation_plus:heated_raw_diamond",
+      "chance": 0.25
+    },
+    {
+      "id": "alltheores:diamond_dust",
+      "chance": 0.75
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

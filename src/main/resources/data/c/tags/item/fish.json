@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#forge:afish",
-    "#forge:fishmeat",
-    "#forge:raw_fishes"
+    "#c:afish",
+    "#c:fishmeat",
+    "#c:raw_fishes"
   ]
 }

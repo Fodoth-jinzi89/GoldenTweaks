@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 2",
+    "1 "
+  ],
+  "key": {
+    "1": {
+      "item": "flavor_immersed_daily:peanutjam"
+    },
+    "2": {
+      "tag": "c:celery"
+    }
+  },
+  "result": {
+    "id": "croptopia:peanut_butter_with_celery",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

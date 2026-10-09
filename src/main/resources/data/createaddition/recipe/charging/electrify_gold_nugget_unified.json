@@ -1,0 +1,21 @@
+{
+  "type": "createaddition:charging",
+  "energy": 4000,
+  "ingredients": [
+    {
+      "item": "minecraft:gold_nugget"
+    }
+  ],
+  "max_charge_rate": 360,
+  "results": [
+    {
+      "id": "alltheores:electrum_nugget"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

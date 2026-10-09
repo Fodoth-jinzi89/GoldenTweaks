@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "flavor_immersed_daily:cinnamon",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cinnamon_sapling",
+      "required": false
+    }
+  ]
+}

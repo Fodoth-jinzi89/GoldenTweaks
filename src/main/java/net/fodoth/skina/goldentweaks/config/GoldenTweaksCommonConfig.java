@@ -28,6 +28,10 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.IntValue MEKANISM_COMPACT_SPACE_POWER_PERCENT;
 
+    public static final ModConfigSpec.IntValue MEKANISM_TRANSPORTER_TRANSIT_CAP;
+
+    public static final ModConfigSpec.IntValue MEKANISM_TRANSPORTER_FLOWING_CAP;
+
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
 
     public static final ModConfigSpec.IntValue ENTROPY_REACTION_MAX_SPEED_MULTIPLIER;
@@ -39,8 +43,6 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.IntValue HAGGLER_MAX_DISCOUNT;
 
     public static final ModConfigSpec.DoubleValue HAGGLER_MAX_DISCOUNT_PERCENTAGE;
-
-    public static final ModConfigSpec.IntValue TC_JEI_ASPECT_MAX_PAGE;
 
     public static final ModConfigSpec.IntValue ARCANE_CRAFTING_CACHE_SIZE;
     public static final ModConfigSpec.IntValue THAUMONOMICON_ASPECT_SOURCE_ITEMS_PER_FRAME;
@@ -170,6 +172,16 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("balance.mekanism.compact_space_power_percent"))
                 .defineInRange("compactSpacePowerPercent", 25, 0, Integer.MAX_VALUE);
 
+        MEKANISM_TRANSPORTER_TRANSIT_CAP = builder
+                .translation(key("balance.mekanism.transporter_transit_cap"))
+                .comment(comment("balance.mekanism.transporter_transit_cap"))
+                .defineInRange("transporterTransitCap", 256, 0, Integer.MAX_VALUE);
+
+        MEKANISM_TRANSPORTER_FLOWING_CAP = builder
+                .translation(key("balance.mekanism.transporter_flowing_cap"))
+                .comment(comment("balance.mekanism.transporter_flowing_cap"))
+                .defineInRange("transporterFlowingCap", 1024, 0, Integer.MAX_VALUE);
+
         builder.pop();
 
         // =========================
@@ -226,11 +238,6 @@ public final class GoldenTweaksCommonConfig {
         builder.pop();
 
         builder.push("thaumcraft");
-
-        TC_JEI_ASPECT_MAX_PAGE = builder
-                .translation(key("balance.tc_jei_aspect_max_page"))
-                .comment(comment("balance.tc_jei_aspect_max_page"))
-                .defineInRange("TCJEIAspectMaxPage", 10, 0, Integer.MAX_VALUE);
 
         ARCANE_CRAFTING_CACHE_SIZE = builder
                 .translation(key("balance.thaumcraft.arcane_crafting_cache_size"))
@@ -430,6 +437,24 @@ public final class GoldenTweaksCommonConfig {
         return getMekanismCompactSpacePowerPercent() / 100.0F;
     }
 
+    public static int getMekanismTransporterTransitCap() {
+
+        if (!GTState.isReady()) {
+            return 256;
+        }
+
+        return MEKANISM_TRANSPORTER_TRANSIT_CAP.get();
+    }
+
+    public static int getMekanismTransporterFlowingCap() {
+
+        if (!GTState.isReady()) {
+            return 1024;
+        }
+
+        return MEKANISM_TRANSPORTER_FLOWING_CAP.get();
+    }
+
     public static int getIJHagglerMaxDiscount() {
 
         if (!GTState.isReady()) {
@@ -446,15 +471,6 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return HAGGLER_MAX_DISCOUNT_PERCENTAGE.get();
-    }
-
-    public static int getTCJEIAspectMaxPage() {
-
-        if (!GTState.isReady()) {
-            return 10;
-        }
-
-        return TC_JEI_ASPECT_MAX_PAGE.get();
     }
 
     public static int getArcaneCraftingCacheSize() {

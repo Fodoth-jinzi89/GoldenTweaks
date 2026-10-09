@@ -5,10 +5,7 @@
     "id": "forbiddenmagic:taint_shard",
     "count": 1
   },
-  "catalyst": {
-    "type": "item",
-    "id": "ae2cs:fluix_crystal_seed"
-  },
+  "catalyst": "ae2cs:fluix_crystal_seed",
   "aspects": {
     "vitium": 3
   }

@@ -80,6 +80,16 @@ public final class GTHorizonsVatSupport {
         return vat != null && vat.startInfusion(player);
     }
 
+    /**
+     * Mirrors the vat's own {@code stillValid}: {@code VatInfusion.start} refuses to begin unless the
+     * thaumaturge it is started for is within eight blocks of the controller, so callers that drive
+     * the vat on someone else's behalf have to check this before handing the player over.
+     */
+    public static boolean stillValid(@Nullable BlockEntity matrix, Player player) {
+        VatBlockEntity vat = vat(matrix);
+        return vat != null && vat.stillValid(player);
+    }
+
     /* ------------------------------------------------------ */
     /* Instability borrowing                                   */
     /* ------------------------------------------------------ */

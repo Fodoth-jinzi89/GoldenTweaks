@@ -1,15 +1,25 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
+import net.fodoth.skina.goldentweaks.compat.polymorph.PolymorphArcaneCompat;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.minecraft.world.Container;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.crafting.CraftingInput;
 import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.RecipeInput;
+import net.minecraft.world.item.crafting.RecipeManager;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.Level;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.common.lib.crafting.ThaumcraftCraftingManager;
 import thaumcraft.common.menu.ArcaneWorkbenchMenu;
 
 import java.util.Optional;
@@ -35,6 +45,10 @@ public abstract class ArcaneWorkbenchMenuMixin {
     @Final
     private Container workbench;
 
+    @Shadow
+    @Final
+    private Player player;
+
     @Inject(method = "findVanillaRecipe", at = @At("HEAD"), cancellable = true)
     private void gt$disableVanillaCrafting(CallbackInfoReturnable<Optional<RecipeHolder<CraftingRecipe>>> cir) {
         if (!GoldenTweaksCommonConfig.isArcaneWorkbenchVanillaCrafting()) {
@@ -53,5 +67,41 @@ public abstract class ArcaneWorkbenchMenuMixin {
             }
         }
         cir.setReturnValue(Optional.empty());
+    }
+
+    /**
+     * 进入奥术分支前，把当前网格的所有可选奥术配方交给 Polymorph 重建选择列表。
+     *
+     * <p>挂在 {@code findMatchingArcaneRecipeAspects} 的调用上：只有原版配方没有命中、
+     * 真正要算奥术配方时才会走到这里，避免每次预览都做额外的事。</p>
+     */
+    @Redirect(
+            method = "refreshResult",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lthaumcraft/common/lib/crafting/ThaumcraftCraftingManager;findMatchingArcaneRecipeAspects(Lnet/minecraft/world/Container;Lnet/minecraft/world/entity/player/Player;)Lthaumcraft/api/aspects/AspectList;"
+            )
+    )
+    private AspectList gt$polymorphArcaneRefresh(Container workbench, Player player) {
+        PolymorphArcaneCompat.refresh(player, workbench);
+        return ThaumcraftCraftingManager.findMatchingArcaneRecipeAspects(workbench, player);
+    }
+
+    /**
+     * 原版合成路径也交给 Polymorph：工作台里同时匹配多个原版配方时，玩家可以选择用哪个。
+     * 原版配方本身就在 {@code RecipeManager} 中，因此直接走 Polymorph 的原生选择流程。
+     */
+    @SuppressWarnings("unchecked")
+    @Redirect(
+            method = "findVanillaRecipe",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/world/item/crafting/RecipeManager;getRecipeFor(Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/item/crafting/RecipeInput;Lnet/minecraft/world/level/Level;)Ljava/util/Optional;"
+            )
+    )
+    private Optional<RecipeHolder<CraftingRecipe>> gt$polymorphVanillaRecipe(
+            RecipeManager recipeManager, RecipeType<?> type, RecipeInput input, Level level) {
+        return PolymorphArcaneCompat.selectVanilla(this.player, recipeManager,
+                (RecipeType<CraftingRecipe>) type, (CraftingInput) input, level);
     }
 }

@@ -49,7 +49,6 @@
 | ApothicEnchanting | `1.6.2` | `ApothicEnchanting-1.21.1-1.6.2.jar` |
 | architectury | `13.0.11` | `[S]-architectury-13.0.11-neoforge-1.21.1.jar` |
 | avaritia_integration | `1.0` | `avaritia_integration-1.0.jar` |
-| avaritia_more_items | `1.21.1-NeoForge-beta-1.0.1` | `avaritia_more_items-1.21.1-NeoForge-beta-1.0.1.jar` |
 | BiomesOPlenty-neoforge | `1.21.1-21.1.0.13` | `[核心]BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar` |
 | BuildingWands-neoforge | `MC1.21.1-3.0.5` | `BuildingWands-neoforge-MC1.21.1-3.0.5.jar` |
 | carryon-neoforge | `1.21.1-2.2.6.13` | `carryon-neoforge-1.21.1-2.2.6.13.jar` |
@@ -93,7 +92,7 @@
 | FarmersDelight | `1.3.4` | `FarmersDelight-1.21.1-1.3.4.jar` |
 | fastquit | `3.0.0+1.20.6_mapped_moj_1.21.1` | `fastquit-3.0.0+1.20.6_mapped_moj_1.21.1.jar` |
 | fidworkblock | `1.0.0` | `fidworkblock-1.0.0.jar` |
-| flavor_immersed_daily | `1.21.1-neoforge-2026.9.26` | `flavor_immersed_daily-1.21.1-neoforge-2026.9.26.jar` |
+| flavor_immersed_daily | `1.21.1-neoforge-2026.10.2` | `flavor_immersed_daily-1.21.1-neoforge-2026.10.2.jar` |
 | fluidlogistics | `1.3.0` | `fluidlogistics-1.3.0-mc1.21.1.jar` |
 | flywheel-neoforge | `1.21.1-1.0.6` | `flywheel-neoforge-1.21.1-1.0.6.jar` |
 | Fractal | `1.8.0+1.21.1-neoforge` | `Fractal-1.8.0+1.21.1-neoforge.jar` |
@@ -155,6 +154,8 @@
 | silent-lib | `1.21.1-neoforge-10.6.0` | `[库]silent-lib-1.21.1-neoforge-10.6.0.jar` |
 | silentgems | `1.21.1-neoforge-5.1.3` | `[核心]silentgems-1.21.1-neoforge-5.1.3.jar` |
 | solcarrot | `1.21.1-1.16.6` | `solcarrot-1.21.1-1.16.6.jar` |
+| sophisticatedcore | `1.5.2` | `[S]-sophisticatedcore-1.5.2-neoforge-1.21.1.jar` |
+| sophisticatedstorage | `1.5.87` | `[S]-sophisticatedstorage-1.5.87-neoforge-1.21.1.jar` |
 | spectrum | `1.12.7-1.21.1-neo` | `[S]-spectrum-1.12.7-neo-neoforge-1.21.1.jar` |
 | stabilized | `1.0.1` | `[S]-stabilized-1.0.1-neoforge-1.21.1.jar` |
 | supplementaries-neoforge | `1.21.1-3.9.9` | `supplementaries-1.21.1-3.9.9-neoforge.jar` |
@@ -180,6 +181,7 @@
 | advanced_infusion | `0.1.0` | `advanced_infusion-0.1.0.jar` |
 | appliedenergistics2 | `19.2.17` | `[核心]appliedenergistics2-19.2.17.jar` |
 | attributefix-neoforge | `1.21.1-21.1.3` | `[基础]attributefix-neoforge-1.21.1-21.1.3.jar` |
+| avaritia_more_items | `1.21.1-NeoForge-beta-1.0.5` | `[S]-avaritia_more_items-beta-1.0.5-neoforge-1.21.1.jar` |
 | bookshelf-neoforge | `1.21.1-21.1.81` | `[库]bookshelf-neoforge-1.21.1-21.1.81.jar` |
 | bountiful-neoforge | `8.0.0-beta.2` | `bountiful-neoforge-8.0.0-beta.2.jar` |
 | create | `1.21.1-6.0.10` | `[核心]create-1.21.1-6.0.10.jar` |

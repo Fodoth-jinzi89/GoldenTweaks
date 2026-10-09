@@ -1,0 +1,16 @@
+{
+  "type": "kaleidoscope_tavern:pressing_tub",
+  "fluid": "kaleidoscope_tavern:gold_grape_juice",
+  "ingredient": {
+    "item": "kaleidoscope_tavern:gold_grape"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

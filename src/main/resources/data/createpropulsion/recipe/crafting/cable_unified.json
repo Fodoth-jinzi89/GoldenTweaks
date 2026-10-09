@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PR",
+    "DN"
+  ],
+  "key": {
+    "P": {
+      "item": "alltheores:platinum_plate"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "D": {
+      "item": "minecraft:black_dye"
+    },
+    "N": {
+      "item": "alltheores:platinum_nugget"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:cable",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

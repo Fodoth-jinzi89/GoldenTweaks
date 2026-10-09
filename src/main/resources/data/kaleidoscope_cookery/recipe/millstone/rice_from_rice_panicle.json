@@ -1,16 +1,19 @@
 {
-   "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "flavor_immersed_daily"
-    }
-  ],
   "type": "kaleidoscope_cookery:millstone",
   "ingredient": {
-    "item": "flavor_immersed_daily:paddyseeds"
+    "item": "kaleidoscope_cookery:rice_panicle"
   },
   "result": {
-    "count": 2,
-    "id": "flavor_immersed_daily:paddygrain"
-  }
+    "count": 3,
+    "id": "kaleidoscope_cookery:rice"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
 }

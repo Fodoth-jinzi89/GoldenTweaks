@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentgems:raw_silver"
+  },
+  "result": {
+    "count": 1,
+    "id": "silentgems:silver_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

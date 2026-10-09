@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:barrel"
+    },
+    "Y": {
+      "item": "alltheores:zinc_ingot"
+    }
+  },
+  "pattern": [
+    " Y ",
+    " X ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ratatouille:compost_tower"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

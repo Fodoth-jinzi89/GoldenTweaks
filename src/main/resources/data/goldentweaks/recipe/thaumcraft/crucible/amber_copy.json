@@ -5,10 +5,7 @@
     "id": "thaumcraft:amber",
     "count": 2
   },
-  "catalyst": {
-    "type": "item",
-    "id": "thaumcraft:amber"
-  },
+  "catalyst": "thaumcraft:amber",
   "aspects": {
     "vinculum": 2,
     "vitreus": 2

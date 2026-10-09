@@ -1,0 +1,30 @@
+{
+  "type": "mekanism:sawing",
+  "input": {
+    "ingredient": {
+      "item": "spectrum:gray_pressure_plate"
+    }
+  },
+  "mainOutput": {
+    "item": "spectrum:gray_planks"
+  },
+  "secondaryChance": 0.25,
+  "secondaryOutput": {
+    "count": 2.0,
+    "item": "createdieselgenerators:wood_chip"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mekanism"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdieselgenerators"
+    }
+  ]
+}

@@ -12,6 +12,22 @@
     "thaumicbases:sweed_seeds",
     "thaumicbases:tobacco_seeds",
     "thaumicbases:void_seed",
-    "thaumic_tinkerer:infused_seeds"
+    "thaumic_tinkerer:infused_seeds",
+    {
+      "id": "flavor_immersed_daily:kiwifruitsleavesapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:paddygrain",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:peanut",
+      "required": false
+    },
+    {
+      "id": "spectrum:amaranth_grains",
+      "required": false
+    }
   ]
 }

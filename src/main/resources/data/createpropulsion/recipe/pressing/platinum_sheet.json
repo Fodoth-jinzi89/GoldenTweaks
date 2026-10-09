@@ -1,0 +1,22 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createpropulsion:platinum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "createpropulsion:platinum_sheet"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

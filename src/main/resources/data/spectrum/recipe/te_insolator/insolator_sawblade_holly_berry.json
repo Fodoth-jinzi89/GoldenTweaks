@@ -1,0 +1,27 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "spectrum:sawblade_holly_berry"
+  },
+  "result": [
+    {
+      "item": "spectrum:sawblade_holly_berry",
+      "chance": 4.0
+    },
+    {
+      "item": "spectrum:prickly_bayleaf",
+      "chance": 2.0
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "water_mod": 0.5
+}

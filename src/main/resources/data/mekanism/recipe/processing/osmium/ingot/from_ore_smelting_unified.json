@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.6,
+  "ingredient": [
+    {
+      "item": "alltheores:osmium_ore"
+    },
+    {
+      "item": "alltheores:osmium_ore"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:ingot_osmium"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

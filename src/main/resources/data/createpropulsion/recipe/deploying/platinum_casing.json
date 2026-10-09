@@ -1,0 +1,25 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create:industrial_iron_block"
+    },
+    {
+      "item": "createpropulsion:platinum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "createpropulsion:platinum_casing"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

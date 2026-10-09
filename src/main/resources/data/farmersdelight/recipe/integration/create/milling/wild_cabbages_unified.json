@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "farmersdelight:wild_cabbages"
+    }
+  ],
+  "results": [
+    {
+      "id": "flavor_immersed_daily:cabbageseed",
+      "count": 1
+    },
+    {
+      "id": "minecraft:yellow_dye",
+      "count": 1
+    }
+  ],
+  "processing_time": 50
+}

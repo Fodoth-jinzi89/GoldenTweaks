@@ -470,20 +470,35 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         }
 
         // 2) Owner offline, cached research exists → FakePlayer
-        if (cachedResearchData != null && ownerName != null && level instanceof ServerLevel sl) {
-            GameProfile profile = new GameProfile(ownerUuid, ownerName);
-            FakePlayer fake = FakePlayerFactory.get(sl, profile);
-            if (fake != null) {
-                PlayerProgressData fakeData = PlayerProgressData.get(fake);
-                if (fakeData != null) {
-                    fakeData.deserializeNBT(sl.registryAccess(), cachedResearchData);
-                }
-                return fake;
-            }
+        FakePlayer fake = fakeStandIn();
+        if (fake != null) {
+            return fake;
         }
 
         // 3) Offline and no cache → cannot start
         return null;
+    }
+
+    /**
+     * A FakePlayer carrying the owner's identity and cached research, used whenever the real owner
+     * cannot be the one to start the infusion (off-line, or on-line but outside the vat's range).
+     */
+    @Nullable
+    private FakePlayer fakeStandIn() {
+        if (cachedResearchData == null || ownerName == null || !(level instanceof ServerLevel sl)) {
+            return null;
+        }
+
+        GameProfile profile = new GameProfile(ownerUuid, ownerName);
+        FakePlayer fake = FakePlayerFactory.get(sl, profile);
+        if (fake == null) {
+            return null;
+        }
+        PlayerProgressData fakeData = PlayerProgressData.get(fake);
+        if (fakeData != null) {
+            fakeData.deserializeNBT(sl.registryAccess(), cachedResearchData);
+        }
+        return fake;
     }
 
     @Nullable
@@ -764,8 +779,14 @@ public class GTInfusionIntercepterBlockEntity extends BlockEntity
         Player player = resolveInfusionPlayer();
         if (player == null) return;
 
-        // The vat only lets a thaumaturge within 8 blocks start it (VatBlockEntity.stillValid),
-        // so put the off-line stand-in next to the matrix.
+        // The vat only lets a thaumaturge within 8 blocks start it (VatBlockEntity.stillValid). An
+        // on-line owner standing anywhere else would otherwise never start it, so fall back to a
+        // stand-in that carries the owner's identity and research and put it next to the matrix.
+        if (!(player instanceof FakePlayer) && !GTHorizonsVatSupport.stillValid(matrix, player)) {
+            player = fakeStandIn();
+            if (player == null) return;
+        }
+
         if (player instanceof FakePlayer fake && boundMatrixPos != null) {
             fake.moveTo(boundMatrixPos.getX() + 0.5D, boundMatrixPos.getY() + 0.5D, boundMatrixPos.getZ() + 0.5D);
         }

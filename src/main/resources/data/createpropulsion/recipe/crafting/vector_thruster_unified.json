@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "NGN"
+  ],
+  "key": {
+    "P": {
+      "item": "alltheores:platinum_plate"
+    },
+    "I": {
+      "item": "createpropulsion:ion_thruster"
+    },
+    "N": {
+      "item": "alltheores:platinum_nugget"
+    },
+    "G": {
+      "item": "simulated:gimbal_sensor"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:vector_thruster",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

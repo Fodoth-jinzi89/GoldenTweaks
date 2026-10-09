@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alltheores:deepslate_aluminum_ore",
+      "required": false
+    }
+  ]
+}

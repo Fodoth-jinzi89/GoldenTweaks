@@ -5,10 +5,7 @@
     "id": "thaumcraft:fire_shard",
     "count": 1
   },
-  "catalyst": {
-    "type": "item",
-    "id": "ae2cs:nether_quartz_seed"
-  },
+  "catalyst": "ae2cs:nether_quartz_seed",
   "aspects": {
     "ignis": 2,
     "praecantatio": 1

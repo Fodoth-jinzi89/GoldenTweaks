@@ -1551,5 +1551,6 @@
   "gui.flavor_immersed_daily.firecracker.color": "Color: %s",
   "gui.flavor_immersed_daily.firecracker.fade_color": "Fade Color: %s",
   "gui.flavor_immersed_daily.firecracker.done": "Done",
-  "tooltip.flavor_immersed_daily.sapling_harvest": "§eWhen the fruit tree matures, use a stick to right-click the trunk to shake down fruit"
+  "tooltip.flavor_immersed_daily.sapling_harvest": "§eWhen the fruit tree matures, use a stick to right-click the trunk to shake down fruit",
+  "emi.category.flavor_immersed_daily.mooncake_mold": "Mooncake Mold"
 }

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:rawsoybeanmilk"
+    },
+    {
+      "item": "flavor_immersed_daily:rawsoybeanmilk"
+    },
+    {
+      "item": "flavor_immersed_daily:rawsoybeanmilk"
+    },
+    {
+      "item": "flavor_immersed_daily:landplaster"
+    }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily:toufu",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

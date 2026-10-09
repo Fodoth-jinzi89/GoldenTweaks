@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "bakeries:bottle_cream"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "flavor_immersed_daily:butter"
+    }
+  ]
+}

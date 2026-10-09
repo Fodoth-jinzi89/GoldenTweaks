@@ -1,0 +1,27 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "silentgems:ruby_glowrose"
+  },
+  "result": [
+    {
+      "item": "silentgems:ruby_glowrose",
+      "chance": 2.0
+    },
+    {
+      "item": "silentgems:ruby",
+      "chance": 1.0
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgems"
+    }
+  ],
+  "water_mod": 0.5
+}

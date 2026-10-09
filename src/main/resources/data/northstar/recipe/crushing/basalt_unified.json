@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "processing_time": 1000,
+  "results": [
+    {
+      "count": 2,
+      "id": "alltheores:salt"
+    },
+    {
+      "chance": 0.75,
+      "id": "alltheores:salt"
+    },
+    {
+      "chance": 0.25,
+      "id": "alltheores:salt"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

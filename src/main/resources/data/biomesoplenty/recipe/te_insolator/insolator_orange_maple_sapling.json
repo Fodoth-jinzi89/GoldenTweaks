@@ -1,0 +1,27 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "biomesoplenty:orange_maple_sapling"
+  },
+  "result": [
+    {
+      "item": "biomesoplenty:maple_log",
+      "chance": 6.0
+    },
+    {
+      "item": "biomesoplenty:orange_maple_sapling",
+      "chance": 3.0
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "water_mod": 0.5
+}

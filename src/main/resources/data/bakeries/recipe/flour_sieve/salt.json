@@ -1,0 +1,19 @@
+{
+  "type": "bakeries:flour_sieve",
+  "ingredient": {
+    "item": "bakeries:raw_salt_block"
+  },
+  "output": {
+    "count": 9,
+    "id": "bakeries:salt"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

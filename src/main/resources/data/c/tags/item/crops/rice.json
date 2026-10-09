@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "flavor_immersed_daily:paddygrain"
+    "flavor_immersed_daily:paddygrain",
+    {
+      "id": "flavor_immersed_daily:paddyseeds",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:tomato"
+    },
+    {
+      "item": "flavor_immersed_daily:tomato"
+    },
+    {
+      "item": "flavor_immersed_daily:tomato"
+    },
+    {
+      "item": "flavor_immersed_daily:tomato"
+    },
+    {
+      "item": "flavor_immersed_daily:tomato"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaleidoscope_cookery:tomato_platter"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

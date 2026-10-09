@@ -1,0 +1,36 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:tea_seed"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "results": [
+    {
+      "id": "croptopia:tea_leaves",
+      "Count": 2
+    },
+    {
+      "id": "croptopia:tea_seed"
+    }
+  ],
+  "time": 640,
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "croptopia:tea_crop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

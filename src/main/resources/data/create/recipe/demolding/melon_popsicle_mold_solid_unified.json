@@ -1,0 +1,22 @@
+{
+  "type": "ratatouille:demolding",
+  "ingredients": [
+    {
+      "item": "ratatouille:melon_popsicle_mold_solid"
+    }
+  ],
+  "results": [
+    {
+      "id": "flavor_immersed_daily:watermelonpopsicle"
+    },
+    {
+      "id": "ratatouille:popsicle_mold"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

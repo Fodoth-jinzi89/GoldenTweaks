@@ -5,10 +5,7 @@
     "id": "thaumcraftcelestial:meteorite_fragment",
     "count": 1
   },
-  "catalyst": {
-    "type": "item",
-    "id": "spectrum:star_fragment"
-  },
+  "catalyst": "spectrum:star_fragment",
   "aspects": {
     "cosmic": 2,
     "vitreus": 1

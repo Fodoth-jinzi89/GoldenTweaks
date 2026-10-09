@@ -1,0 +1,24 @@
+{
+  "type": "createaddition:charging",
+  "energy": 324000,
+  "ingredients": [
+    {
+      "item": "minecraft:gold_block"
+    }
+  ],
+  "max_charge_rate": 360,
+  "results": [
+    {
+      "id": "createaddition:electrum_block"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "quicksilver",
+  "ingredient": {
+    "item": "alltheores:cinnabar_ore"
+  },
+  "result": {
+    "id": "thaumcraft:quicksilver"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

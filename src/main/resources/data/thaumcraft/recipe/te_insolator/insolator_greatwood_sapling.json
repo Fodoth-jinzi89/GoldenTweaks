@@ -1,0 +1,31 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "thaumcraft:greatwood_sapling"
+  },
+  "result": [
+    {
+      "item": "thaumcraft:greatwood_log",
+      "chance": 6.0
+    },
+    {
+      "item": "thaumcraft:greatwood_leaves",
+      "chance": 4.0
+    },
+    {
+      "item": "thaumcraft:greatwood_sapling",
+      "chance": 1.1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "water_mod": 0.5
+}

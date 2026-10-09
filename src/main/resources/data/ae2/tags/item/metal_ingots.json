@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alltheores:aluminum_ingot",
+      "required": false
+    }
+  ]
+}

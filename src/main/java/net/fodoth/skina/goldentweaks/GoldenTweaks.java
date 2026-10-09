@@ -4,6 +4,7 @@ import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.cataclysm.GTCataclysmCompat;
 import net.fodoth.skina.goldentweaks.compat.appflux.AppliedFluxCompat;
+import net.fodoth.skina.goldentweaks.compat.maidsoulcore.MaidLogSuppressor;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.compactmachines.CompactMachinesCompat;
@@ -30,6 +31,7 @@ import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.flavorimmerseddaily.FidAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
+import net.fodoth.skina.goldentweaks.compat.sophisticatedstorage.SSCreateCompat;
 import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
 import net.fodoth.skina.goldentweaks.compat.lootr.LootrQuickLootEvent;
 import net.fodoth.skina.goldentweaks.compat.traveloptics.TravelOpticsSummonProtection;
@@ -64,12 +66,25 @@ public class GoldenTweaks {
                 GoldenTweaksCommonConfig.SPEC
         );
 
+        try {
+            Class.forName("com.github.luben.zstd.ZstdOutputStream");
+            LOGGER.info("[GT-PROBE] ZstdOutputStream loaded OK");
+        } catch (Throwable t) {
+            LOGGER.error("[GT-PROBE] ZstdOutputStream failed to load", t);
+        }
+
         if (ModList.get().isLoaded("create")) {
             LOGGER.info("Detected Create, registering Registrate");
 
             GTCreateCompat.registrate()
                     .registerEventListeners(modEventBus);
             GTCreateItems.register();
+        }
+
+        if (ModList.get().isLoaded("create") && ModList.get().isLoaded("sophisticatedstorage")) {
+            LOGGER.info("Detected create + sophisticatedstorage, registering contraption storage for SS containers");
+            // 精致存储容器在移动结构上的挂载：补可打开的菜单（含非 9 的倍数槽位）与客户端渲染同步
+            SSCreateCompat.register(modEventBus);
         }
 
         if (ModList.get().isLoaded("apotheosis_things")) {
@@ -173,6 +188,11 @@ public class GoldenTweaks {
     private void onClientSetup(final FMLClientSetupEvent event) {
         // 自定义早期窗口（Drippy 等）会锁死窗口尺寸，启动后按启动器的 --width/--height 纠正一次
         NeoForge.EVENT_BUS.register(ClientWindowSizeGuard.class);
+
+        if (ModList.get().isLoaded("maidsoulcore")) {
+            // 按客户端配置压制女仆核心 / ApricityUI 的日志（见 MaidLogSuppressor）
+            MaidLogSuppressor.installIfPresent();
+        }
 
         if (ModList.get().isLoaded("createdieselgenerators")) {
             LOGGER.info("Detected createdieselgenerators, delayed init");

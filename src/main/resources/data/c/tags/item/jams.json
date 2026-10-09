@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "extradelight:rabbit_ragu",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:apricotjam",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:blueberryjam",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cherryjam",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:grapejam",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:honeypeachjam",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:strawberryjam",
+      "required": false
+    }
+  ]
+}

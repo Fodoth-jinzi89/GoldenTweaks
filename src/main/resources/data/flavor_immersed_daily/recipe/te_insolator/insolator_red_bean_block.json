@@ -1,0 +1,23 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "flavor_immersed_daily:red_bean_block"
+  },
+  "result": [
+    {
+      "item": "flavor_immersed_daily:red_bean_block",
+      "chance": 4.0
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "water_mod": 0.5
+}

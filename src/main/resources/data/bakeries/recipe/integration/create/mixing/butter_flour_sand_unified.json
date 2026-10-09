@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:butter"
+    },
+    {
+      "tag": "c:butter"
+    },
+    {
+      "tag": "c:salt"
+    }
+  ],
+  "results": [
+    {
+      "id": "bakeries:butter_flour_sand"
+    }
+  ]
+}

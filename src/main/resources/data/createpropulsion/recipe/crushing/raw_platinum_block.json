@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createpropulsion:raw_platinum_block"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "id": "create:crushed_raw_platinum"
+    },
+    {
+      "chance": 0.75,
+      "count": 32,
+      "id": "create:experience_nugget"
+    }
+  ],
+  "processingTime": 250,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

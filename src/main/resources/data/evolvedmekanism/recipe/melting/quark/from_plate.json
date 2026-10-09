@@ -1,0 +1,16 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "avaritia_more_items:quark_plate"
+  },
+  "output": {
+    "id": "avaritia_more_items:quark",
+    "amount": 90
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_more_items"
+    }
+  ]
+}

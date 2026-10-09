@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "croptopia:olive"
+    },
+    "b": {
+      "item": "croptopia:olive_oil"
+    },
+    "c": {
+      "tag": "c:crops/tomato"
+    },
+    "d": {
+      "item": "bakeries:salted_dough"
+    }
+  },
+  "result": {
+    "id": "bakeries:focaccia_dough",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "croptopia"
+    }
+  ]
+}

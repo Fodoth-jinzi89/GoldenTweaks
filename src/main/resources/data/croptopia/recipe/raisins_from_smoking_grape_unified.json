@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "flavor_immersed_daily:grape"
+  },
+  "result": {
+    "count": 1,
+    "id": "croptopia:raisins"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

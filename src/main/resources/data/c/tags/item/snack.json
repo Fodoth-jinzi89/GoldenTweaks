@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:barbecue",
-    "#forge:fried"
+    "#c:barbecue",
+    "#c:fried"
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      {
+        "item": "flavor_immersed_daily:tomato"
+      },
+      {
+        "item": "farmersdelight:rotten_tomato"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "flavor_immersed_daily:tomatoseed"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

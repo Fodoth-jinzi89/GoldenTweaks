@@ -1,0 +1,21 @@
+{
+  "type": "createaddition:charging",
+  "energy": 36000,
+  "ingredients": [
+    {
+      "item": "create:golden_sheet"
+    }
+  ],
+  "max_charge_rate": 360,
+  "results": [
+    {
+      "id": "alltheores:electrum_plate"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

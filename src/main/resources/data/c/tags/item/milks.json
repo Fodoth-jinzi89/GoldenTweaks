@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "flavor_immersed_daily:milkbottle",
-    "minecraft:milk_bucket"
+    "minecraft:milk_bucket",
+    {
+      "id": "flavor_immersed_daily:soyamilk",
+      "required": false
+    }
   ]
 }

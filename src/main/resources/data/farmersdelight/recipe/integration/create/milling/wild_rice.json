@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "farmersdelight:wild_rice"
+    }
+  ],
+  "results": [
+    {
+      "id": "farmersdelight:rice",
+      "count": 1
+    },
+    {
+      "id": "farmersdelight:straw",
+      "count": 1,
+      "chance": 0.5
+    }
+  ],
+  "processing_time": 50
+}

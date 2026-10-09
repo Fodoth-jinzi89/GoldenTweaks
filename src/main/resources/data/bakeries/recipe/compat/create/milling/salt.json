@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "bakeries:raw_salt_block"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "id": "bakeries:salt",
+      "count": 9
+    }
+  ]
+}

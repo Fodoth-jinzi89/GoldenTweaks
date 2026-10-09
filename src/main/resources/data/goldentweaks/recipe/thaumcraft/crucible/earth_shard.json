@@ -5,10 +5,7 @@
     "id": "thaumcraft:earth_shard",
     "count": 1
   },
-  "catalyst": {
-    "type": "item",
-    "id": "ae2cs:nether_quartz_seed"
-  },
+  "catalyst": "ae2cs:nether_quartz_seed",
   "aspects": {
     "terra": 2,
     "praecantatio": 1

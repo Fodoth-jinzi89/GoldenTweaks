@@ -1,0 +1,32 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "neoecoae:tungsten_ore"
+    }
+  ],
+  "processing_time": 450,
+  "results": [
+    {
+      "id": "northstar:crushed_raw_tungsten"
+    },
+    {
+      "chance": 0.75,
+      "id": "northstar:crushed_raw_tungsten"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "id": "northstar:mercury_stone"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "flavor_immersed_daily:cabbage",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cutcabbage",
+      "required": false
+    }
+  ]
+}

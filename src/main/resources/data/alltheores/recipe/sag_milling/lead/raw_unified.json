@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "tag": "c:raw_materials/lead"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "mekanism:dust_lead"
+      }
+    },
+    {
+      "chance": 0.25,
+      "item": {
+        "count": 1,
+        "id": "mekanism:dust_lead"
+      }
+    },
+    {
+      "chance": 0.45,
+      "item": {
+        "count": 1,
+        "id": "alltheores:silver_dust"
+      }
+    }
+  ]
+}

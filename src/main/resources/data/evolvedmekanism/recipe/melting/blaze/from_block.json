@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:never"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "tag": "c:storage_blocks/blaze"
+  },
+  "output": {
+    "id": "evolvedmekanism:molten_blaze",
+    "amount": 810
+  }
+}

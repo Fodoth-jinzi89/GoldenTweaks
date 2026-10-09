@@ -1,13 +1,18 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.emi;
 
+import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.search.EmiSearch;
 import net.fodoth.skina.goldentweaks.compat.emi.GTEmiSearchEngine;
 import net.minecraft.client.searchtree.SuffixArray;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import java.util.List;
 
 /**
  * EMI 搜索内核的接入点，见 {@link GTEmiSearchEngine}。
@@ -53,6 +58,28 @@ public abstract class EmiSearchMixin {
         if (!GTEmiSearchEngine.skipVanillaIndex()) {
             array.generate();
         }
+    }
+
+    /**
+     * 接管 tooltip 的<b>生成与投喂</b>：EMI 原本在这一步给每个 stack 生成完整 tooltip，再逐行写进
+     * 后缀数组（装了 JECharacters 时是写进它的 PinIn trie）。两者合计是 `Baking search` 那 19.5 s 的主体。
+     *
+     * <p>改成由本内核接管：tooltip 只进我们自己的 gram 索引，且可以推迟到重载之后的后台线程，
+     * 见 {@link GTEmiSearchEngine#captureTooltip}。</p>
+     */
+    @Redirect(method = "bake",
+            at = @At(value = "INVOKE",
+                    target = "Ldev/emi/emi/api/stack/EmiStack;getTooltipText()Ljava/util/List;"))
+    private static List<Component> gt$captureTooltip(EmiStack stack) {
+        return GTEmiSearchEngine.captureTooltip(stack);
+    }
+
+    /** 那次 {@code getItemStack()} 只为判断附魔书，却给每个 stack 造一个 ItemStack。 */
+    @Redirect(method = "bake",
+            at = @At(value = "INVOKE",
+                    target = "Ldev/emi/emi/api/stack/EmiStack;getItemStack()Lnet/minecraft/world/item/ItemStack;"))
+    private static ItemStack gt$itemStackForBookCheck(EmiStack stack) {
+        return GTEmiSearchEngine.itemStackForBookCheck(stack);
     }
 
     @Inject(method = "bake", at = @At("TAIL"))

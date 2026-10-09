@@ -1,0 +1,31 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "spectrum:brown_sapling"
+  },
+  "result": [
+    {
+      "item": "spectrum:brown_log",
+      "chance": 6.0
+    },
+    {
+      "item": "spectrum:brown_pigment",
+      "chance": 4.0
+    },
+    {
+      "item": "spectrum:brown_sapling",
+      "chance": 1.1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "water_mod": 0.5
+}

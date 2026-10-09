@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    },
+    {
+      "item": "flavor_immersed_daily:wheatflour"
+    }
+  ],
+  "result": {
+    "id": "bakeries:flour_bag",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

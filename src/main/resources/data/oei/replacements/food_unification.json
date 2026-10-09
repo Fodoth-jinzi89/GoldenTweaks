@@ -1220,8 +1220,7 @@
     "matchItems": [
       "pamhc2crops:peanutseeditem",
       "simplefarming:peanut_seeds",
-      "thermal:peanut_seeds",
-      "croptopia:peanut_seed"
+      "thermal:peanut_seeds"
     ],
     "resultItems": "croptopia:peanut_seed"
   },

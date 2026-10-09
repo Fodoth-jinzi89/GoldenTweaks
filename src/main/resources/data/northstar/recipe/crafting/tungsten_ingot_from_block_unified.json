@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "neoecoae:tungsten_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "neoecoae:tungsten_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "alltheores"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "neoecoae"
+        }
+      ]
+    }
+  ]
+}

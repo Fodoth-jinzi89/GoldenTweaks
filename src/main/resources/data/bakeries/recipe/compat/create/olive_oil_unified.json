@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "croptopia"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "croptopia:olive"
+    },
+    {
+      "item": "croptopia:olive"
+    },
+    {
+      "item": "croptopia:olive"
+    },
+    {
+      "item": "croptopia:olive"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "croptopia:olive_oil"
+    }
+  ]
+}

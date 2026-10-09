@@ -2302,5 +2302,6 @@
   "gui.flavor_immersed_daily.firecracker.fade_color": "渐变色: %s",
   "gui.flavor_immersed_daily.firecracker.done": "完成",
   "tooltip.flavor_immersed_daily.sapling_harvest": "§e果树成熟后，使用木棍右键树干可以震落树上的果子",
-  "tooltip.flavor_immersed_daily.crop_type.trellis": "爬架作物，种植在作物搭架底部。"
+  "tooltip.flavor_immersed_daily.crop_type.trellis": "爬架作物，种植在作物搭架底部。",
+  "emi.category.flavor_immersed_daily.mooncake_mold": "月饼模具"
 }

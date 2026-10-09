@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "simplefarming"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pamhc2crops"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "pamhc2crops:ryeitem"
+        }
+      ]
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "create:wheat_flour"
+    },
+    {
+      "chance": 0.25,
+      "count": 2,
+      "id": "create:wheat_flour"
+    },
+    {
+      "chance": 0.25,
+      "id": "pamhc2crops:ryeseeditem"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "biomesoplenty:dead_sapling"
+  },
+  "result": [
+    {
+      "item": "biomesoplenty:dead_log",
+      "chance": 6.0
+    },
+    {
+      "item": "biomesoplenty:dead_sapling",
+      "chance": 3.0
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "water_mod": 0.5
+}

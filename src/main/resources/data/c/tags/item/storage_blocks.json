@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "neoecoae:raw_tungsten_block",
+      "required": false
+    },
+    {
+      "id": "neoecoae:tungsten_block",
+      "required": false
+    }
+  ]
+}

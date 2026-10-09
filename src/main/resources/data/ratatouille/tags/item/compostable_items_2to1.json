@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "flavor_immersed_daily:bananasapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cinnamon_sapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:coconutsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:dragonfruitseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:nutmegseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:plumsapling",
+      "required": false
+    }
+  ]
+}

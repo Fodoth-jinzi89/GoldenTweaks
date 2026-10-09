@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "irons_spellbooks:nature_focus"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazennstuff:lemon"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "spectrum:quitoxic_reeds"
+  },
+  "result": [
+    {
+      "item": "spectrum:quitoxic_reeds",
+      "chance": 4.0
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "water_mod": 0.5
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "kaleidoscope_cookery:flour"
+    },
+    {
+      "item": "kaleidoscope_cookery:flour"
+    },
+    {
+      "item": "kaleidoscope_cookery:flour"
+    },
+    {
+      "item": "kaleidoscope_cookery:flour"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "kaleidoscope_cookery:raw_dough"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

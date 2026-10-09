@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "flavor_immersed_daily:zucchini",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:zucchiniseed",
+      "required": false
+    }
+  ]
+}

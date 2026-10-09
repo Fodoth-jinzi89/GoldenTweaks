@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "createbigcannons:bronze_ingot",
+  "ingredients": [
+    {
+      "item": "createbigcannons:bronze_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "createbigcannons:bronze_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "avaritia_more_items:cosmic_rod"
+  },
+  "output": {
+    "id": "avaritia_more_items:cosmic",
+    "amount": 45
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia_more_items"
+    }
+  ]
+}

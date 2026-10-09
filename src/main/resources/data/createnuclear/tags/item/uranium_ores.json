@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alltheores:uranium_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createoreexcavation:raw_emerald"
+    },
+    {
+      "fluid": "minecraft:lava",
+      "type": "fluid_stack",
+      "nbt": {},
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "create_ore_excavation_plus:heated_raw_emerald",
+      "chance": 0.25
+    },
+    {
+      "id": "mekanism:dust_emerald",
+      "chance": 0.75
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

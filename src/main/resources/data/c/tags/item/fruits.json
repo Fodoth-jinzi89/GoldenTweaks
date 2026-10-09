@@ -34,6 +34,10 @@
     "flavor_immersed_daily:coconut",
     "flavor_immersed_daily:cherry",
     "flavor_immersed_daily:nectarine",
-    "flavor_immersed_daily:dicedhamimelon"
+    "flavor_immersed_daily:dicedhamimelon",
+    {
+      "id": "flavor_immersed_daily:walnut",
+      "required": false
+    }
   ]
 }

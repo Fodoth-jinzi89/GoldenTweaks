@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "spectrum:pure_zinc"
+  },
+  "result": {
+    "id": "alltheores:zinc_ingot"
+  },
+  "experience": 0.5,
+  "cookingtime": 100,
+  "neoforge:conditions": [
+    {
+      "type": "spectrum:integration_pack_active",
+      "integration_pack": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

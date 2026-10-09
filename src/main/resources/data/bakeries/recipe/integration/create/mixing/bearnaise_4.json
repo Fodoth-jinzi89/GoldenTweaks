@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "croptopia"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "bakeries:olive_oil",
+      "components": {
+        "damage": 3
+      },
+      "strict": true
+    },
+    {
+      "item": "bakeries:raw_egg_yolk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "results": [
+    {
+      "id": "bakeries:bearnaise"
+    },
+    {
+      "id": "bakeries:olive_oil",
+      "components": {
+        "damage": 4
+      }
+    }
+  ]
+}

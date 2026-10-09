@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "croptopia:food_press"
+    },
+    {
+      "tag": "c:soybeans"
+    },
+    {
+      "tag": "c:water_bottles"
+    }
+  ],
+  "result": {
+    "id": "croptopia:soy_sauce",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

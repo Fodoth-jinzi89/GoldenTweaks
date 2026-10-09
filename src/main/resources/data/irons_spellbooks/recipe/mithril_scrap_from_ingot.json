@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "irons_spellbooks:mithril_ingot"
+  },
+  "result": {
+    "id": "irons_spellbooks:mithril_scrap",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

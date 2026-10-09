@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 15,
+    "chemical": "mekanism:brine"
+  },
+  "output": {
+    "count": 1,
+    "id": "alltheores:salt"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

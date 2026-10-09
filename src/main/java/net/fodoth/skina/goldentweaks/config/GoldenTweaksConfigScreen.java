@@ -158,6 +158,22 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.fix_maid_soul_aui_ime",
                     FIX_MAID_SOUL_AUI_IME, true);
 
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.block_maid_hotkeys_in_gui",
+                    BLOCK_MAID_HOTKEYS_IN_GUI, true);
+
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.enable_maid_llm",
+                    ENABLE_MAID_LLM, false);
+
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.suppress_maid_logs",
+                    SUPPRESS_MAID_LOGS, true);
+
+            ConfigScreenHelper.addBool(misc, eb,
+                    "config.goldentweaks.optimize_error_block",
+                    OPTIMIZE_ERROR_BLOCK, true);
+
             // =========================================================
             // Balance
             // =========================================================
@@ -175,6 +191,16 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.mekanism.compact_space_power_percent",
                     MEKANISM_COMPACT_SPACE_POWER_PERCENT,
                     25, 0, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mekanism.transporter_transit_cap",
+                    MEKANISM_TRANSPORTER_TRANSIT_CAP,
+                    256, 0, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mekanism.transporter_flowing_cap",
+                    MEKANISM_TRANSPORTER_FLOWING_CAP,
+                    1024, 0, Integer.MAX_VALUE);
 
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.recycler_factory_stack_upgrades",
@@ -206,11 +232,6 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.haggler_max_discount_percentage",
                     HAGGLER_MAX_DISCOUNT_PERCENTAGE,
                     0.5D, 0.0D, 1.0D);
-
-            ConfigScreenHelper.addInt(balance, eb,
-                    "config.goldentweaks.balance.tc_jei_aspect_max_page",
-                    TC_JEI_ASPECT_MAX_PAGE,
-                    10, 0, Integer.MAX_VALUE);
 
             ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.thaumcraft.arcane_crafting_cache_size",

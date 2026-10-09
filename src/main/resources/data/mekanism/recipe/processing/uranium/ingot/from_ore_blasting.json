@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.6,
+  "ingredient": [
+    {
+      "item": "mekanism:uranium_ore"
+    },
+    {
+      "item": "mekanism:deepslate_uranium_ore"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:ingot_uranium"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      }
+    }
+  ]
+}

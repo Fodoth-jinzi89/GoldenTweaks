@@ -1351,5 +1351,11 @@
   "potion.potency.7": "VII",
   "potion.potency.8": "VIII",
   "potion.potency.9": "IX",
-  "potion.potency.10": "X"
+  "potion.potency.10": "X",
+  "block.irons_spellbooks.cooked_ice_spider_egg": "熟冰霜蜘蛛卵",
+  "item.irons_spellbooks.cooked_ice_spider_egg": "熟冰霜蜘蛛卵",
+  "item.irons_spellbooks.prepared_ice_spider_egg": "加工过的冰霜蜘蛛卵",
+  "emi.category.irons_spellbooks.scroll_forge": "卷轴撰写台",
+  "emi.category.irons_spellbooks.arcane_anvil": "奥术铁砧",
+  "emi.category.irons_spellbooks.alchemist_cauldron": "炼金锅"
 }

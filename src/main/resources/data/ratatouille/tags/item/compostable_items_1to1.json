@@ -1,0 +1,121 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "croptopia:coffee",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:aubergine",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:broccoilseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cabbageseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cauliflower_seed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:celeryseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:chineseyam",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cinnamon",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cinnamon_sapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:coffeebeanseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:corn",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cornseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:garlic",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:garlicseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:ginger",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:greentealeaves",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:greentealeavesseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:kidneybean",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:nutmegseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:oat",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:oatseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:omelette",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:paddyseeds",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:peanut",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:soy_bean_seed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:spinach_seed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:sweetpotato",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:zucchiniseed",
+      "required": false
+    },
+    {
+      "id": "spectrum:amaranth",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:paddyseeds"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "flavor_immersed_daily:paddygrain"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "farmersdelight:straw"
+      }
+    }
+  ],
+  "tool": [
+    {
+      "type": "farmersdelight:item_ability",
+      "action": "knife_dig"
+    },
+    {
+      "tag": "c:tools/knife"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

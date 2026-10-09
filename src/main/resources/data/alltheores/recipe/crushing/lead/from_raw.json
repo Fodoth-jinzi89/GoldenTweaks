@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "mekanism"
+      }
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:raw_materials/lead"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "alltheores:lead_dust"
+      }
+    },
+    {
+      "chance": 0.45,
+      "result": {
+        "count": 1,
+        "id": "alltheores:silver_dust"
+      }
+    }
+  ]
+}

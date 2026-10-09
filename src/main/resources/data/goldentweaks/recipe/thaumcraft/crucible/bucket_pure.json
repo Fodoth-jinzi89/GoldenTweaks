@@ -5,10 +5,7 @@
     "id": "thaumcraft:bucket_pure",
     "count": 1
   },
-  "catalyst": {
-    "type": "item",
-    "id": "minecraft:bucket"
-  },
+  "catalyst": "minecraft:bucket",
   "aspects": {
     "auram": 8,
     "cognitio": 8,

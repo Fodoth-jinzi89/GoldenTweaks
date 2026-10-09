@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:ingots/copper"
+    },
+    "h": {
+      "tag": "alltheores:ore_hammers"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ha ",
+    "a  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:copper_sheet"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

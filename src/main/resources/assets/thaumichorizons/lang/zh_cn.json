@@ -712,5 +712,6 @@
   "item.thaumichorizons.suicidepill": "自尽注射剂",
   "item.thaumichorizons.golemancy_bell_th": "傀儡使铃铛(TC)",
   "death.attack.suicide": "%1$s 结束了自己的测试",
-  "effect.thaumichorizons.vis_boost": "灵气增幅"
+  "effect.thaumichorizons.vis_boost": "灵气增幅",
+  "biome.thaumichorizons.pocket_plane": "口袋位面"
 }

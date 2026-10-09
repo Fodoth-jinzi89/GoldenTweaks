@@ -34,6 +34,7 @@ public final class ThaumicCropHarvestEvent {
                 Block.popResource(level, pos, drop);
             }
         }
+        state.spawnAfterBreak(level, pos, event.getItemStack(), true);
         level.setBlock(pos, crop.stateForAge(0), Block.UPDATE_ALL);
         event.setCanceled(true);
         event.setCancellationResult(InteractionResult.SUCCESS);

@@ -12,11 +12,8 @@ import net.weibai.renderblender.client.shader.AvaritiaShaders;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
-import java.util.Arrays;
 
 /**
  * 第一人称手持物品的 cosmic 层延迟重绘时改用无深度测试的渲染类型。
@@ -42,17 +39,6 @@ public class CosmicRenderLayerDepthMixin {
         if (AvaritiaShaders.cosmicTime == null) {
             ci.cancel();
         }
-    }
-
-    @ModifyArg(
-            method = "renderCosmicLayer(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
-            at = @At(value = "INVOKE",
-                    target = "Lcom/mojang/blaze3d/shaders/AbstractUniform;set([F)V",
-                    ordinal = 0),
-            index = 0
-    )
-    private float[] gt$padCosmicBackgroundColors(float[] colors) {
-        return colors.length < 16 ? Arrays.copyOf(colors, 16) : colors;
     }
 
     @Redirect(

@@ -1,0 +1,21 @@
+{
+  "type": "createaddition:charging",
+  "energy": 18000,
+  "ingredients": [
+    {
+      "item": "alltheores:gold_rod"
+    }
+  ],
+  "max_charge_rate": 360,
+  "results": [
+    {
+      "id": "alltheores:electrum_rod"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

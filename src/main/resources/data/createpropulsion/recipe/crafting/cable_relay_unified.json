@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NCN",
+    "CDC",
+    "NCN"
+  ],
+  "key": {
+    "N": {
+      "item": "alltheores:platinum_nugget"
+    },
+    "C": {
+      "item": "createpropulsion:cable"
+    },
+    "D": {
+      "item": "createpropulsion:platinum_casing"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:cable_relay",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

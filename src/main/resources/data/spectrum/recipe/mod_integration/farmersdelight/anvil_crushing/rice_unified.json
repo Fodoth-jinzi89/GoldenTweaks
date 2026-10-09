@@ -1,0 +1,26 @@
+{
+  "type": "spectrum:anvil_crushing",
+  "ingredient": [
+    {
+      "item": "flavor_immersed_daily:paddyseeds"
+    }
+  ],
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 0.25,
+  "result": {
+    "id": "flavor_immersed_daily:paddygrain"
+  },
+  "particleEffectIdentifier": "enchanted_hit",
+  "particleCount": 10,
+  "soundEventIdentifier": "block.moss.break",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

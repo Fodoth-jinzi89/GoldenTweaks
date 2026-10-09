@@ -1,0 +1,25 @@
+{
+  "type": "ratatouille:demolding",
+  "ingredients": [
+    {
+      "item": "ratatouille:chocolate_mold_solid"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:bar_of_chocolate"
+    },
+    {
+      "id": "ratatouille:chocolate_mold"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "flavor_immersed_daily"
+      }
+    }
+  ]
+}

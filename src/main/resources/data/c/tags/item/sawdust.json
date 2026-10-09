@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "createdieselgenerators:wood_chip",
+      "required": false
+    }
+  ]
+}

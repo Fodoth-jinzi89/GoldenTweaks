@@ -1,0 +1,73 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "flavor_immersed_daily:applesapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:apricotsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:bananasapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:carambolasapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cherrysapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:cinnamon_sapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:coconutsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:dragonfruitseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:honeypeachsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:lemonsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:mangosapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:nectarinesapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:nutmegseed",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:orangesapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:pearsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:plumsapling",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:walnutsapling",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "northstar:mars_tulip_seeds"
+  },
+  "result": [
+    {
+      "item": "northstar:mars_tulip_flower",
+      "chance": 3.0
+    },
+    {
+      "item": "northstar:mars_tulip_seeds",
+      "chance": 1.1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "water_mod": 0.5
+}

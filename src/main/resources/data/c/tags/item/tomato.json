@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "flavor_immersed_daily:tomato",
-    "flavor_immersed_daily:dicedtomato"
+    "flavor_immersed_daily:dicedtomato",
+    {
+      "id": "flavor_immersed_daily:tomatoseed",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "croptopia:flourable"
+    },
+    {
+      "tag": "croptopia:flourable"
+    }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily:wheatflour",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

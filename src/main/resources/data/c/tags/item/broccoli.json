@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "flavor_immersed_daily:broccoil",
+      "required": false
+    },
+    {
+      "id": "flavor_immersed_daily:broccoilseed",
+      "required": false
+    }
+  ]
+}

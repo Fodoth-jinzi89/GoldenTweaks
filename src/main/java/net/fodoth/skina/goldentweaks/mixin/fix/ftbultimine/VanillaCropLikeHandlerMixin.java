@@ -35,6 +35,7 @@ public abstract class VanillaCropLikeHandlerMixin {
         for (var drop : Block.getDrops(state, server, pos, null, player, net.minecraft.world.item.ItemStack.EMPTY)) {
             if (!drop.isEmpty() && !drop.is(state.getBlock().asItem())) collector.add(drop);
         }
+        state.spawnAfterBreak(server, pos, net.minecraft.world.item.ItemStack.EMPTY, true);
         server.setBlock(pos, crop.stateForAge(0), Block.UPDATE_ALL);
         cir.setReturnValue(true);
     }

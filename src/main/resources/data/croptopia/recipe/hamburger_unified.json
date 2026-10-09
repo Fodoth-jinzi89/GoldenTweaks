@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "croptopia:frying_pan"
+    },
+    {
+      "item": "minecraft:beef"
+    }
+  ],
+  "result": {
+    "id": "flavor_immersed_daily:hamburgerbread",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

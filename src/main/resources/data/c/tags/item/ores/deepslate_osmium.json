@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alltheores:deepslate_osmium_ore",
+      "required": false
+    }
+  ]
+}

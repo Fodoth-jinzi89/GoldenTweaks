@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:lemon"
+    },
+    {
+      "item": "hazennstuff:deus_essence"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "hazennstuff:divine_lemon"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "ratatouille:squeezing",
+  "ingredients": [
+    {
+      "item": "ratatouille:salty_dough"
+    }
+  ],
+  "results": [
+    {
+      "id": "farmersdelight:raw_pasta"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "bakeries"
+      }
+    }
+  ]
+}

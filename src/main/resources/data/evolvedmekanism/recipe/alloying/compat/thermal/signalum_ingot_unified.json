@@ -1,0 +1,28 @@
+{
+  "type": "evolvedmekanism:alloying",
+  "extra_input": {
+    "tag": "c:ingots/silver"
+  },
+  "second_extra_input": {
+    "amount": 4,
+    "tag": "c:dusts/redstone"
+  },
+  "main_input": {
+    "amount": 3,
+    "tag": "c:ingots/copper"
+  },
+  "output": {
+    "id": "alltheores:signalum_ingot",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ]
+}

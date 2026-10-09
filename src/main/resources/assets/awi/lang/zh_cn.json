@@ -1,0 +1,20 @@
+{
+  "dimension.minecraft.overworld": "主世界",
+  "dimension.minecraft.the_nether": "下界",
+  "dimension.minecraft.the_end": "末地",
+  "dimension.spectrum.deeper_down": "深域",
+  "dimension.spectrum.the_conservatory": "温室",
+  "dimension.thaumcraft.outer_lands": "外域",
+  "dimension.thaumichorizons.pocket_plane": "口袋位面",
+  "dimension.thaumic_tinkerer.bedrock": "基岩",
+  "dimension.compactmachines.compact_world": "压缩空间",
+  "dimension.irons_spellbooks.pocket_dimension": "口袋维度",
+  "dimension.northstar.mercury": "水星",
+  "dimension.northstar.mercury_orbit": "水星轨道",
+  "dimension.northstar.venus": "金星",
+  "dimension.northstar.venus_orbit": "金星轨道",
+  "dimension.northstar.mars": "火星",
+  "dimension.northstar.mars_orbit": "火星轨道",
+  "dimension.northstar.moon": "月球",
+  "dimension.northstar.earth_orbit": "地球轨道"
+}
