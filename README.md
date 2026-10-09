@@ -23,7 +23,7 @@ feature; its main purpose is to make existing mods behave correctly together.
 | Minecraft | 1.21.1 |
 | Loader | NeoForge 21.1.248+ |
 | Java | 21 |
-| Version | 4.7.3 |
+| Version | 4.7.4 |
 | Author | Fodoth_jinzi89 |
 | License | PolyForm Noncommercial 1.0.0 |
 
@@ -305,7 +305,7 @@ GoldenTweaks 是一层「补丁」：它本身不重做玩法。它关注让不�
 | Minecraft | 1.21.1 |
 | 加载器 | NeoForge 21.1.248+ |
 | Java | 21 |
-| 版本 | 4.7.3 |
+| 版本 | 4.7.4 |
 | 作者 | Fodoth_jinzi89 |
 | 许可证 | PolyForm Noncommercial 1.0.0 |
 

@@ -1,11 +1,13 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.vanilla;
 
+import net.minecraft.client.StringSplitter;
 import net.minecraft.client.gui.Font;
 import net.minecraft.locale.Language;
 import net.minecraft.network.chat.FormattedText;
 import net.minecraft.network.chat.Style;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.util.StringDecomposer;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,7 +22,8 @@ import com.ibm.icu.text.BreakIterator;
 @Mixin(Font.class)
 public abstract class SemanticFontWrapMixin {
     @Shadow
-    public abstract int width(String text);
+    @Final
+    private StringSplitter splitter;
 
     @Inject(method = "split", at = @At("HEAD"), cancellable = true)
     private void goldenTweaks$semanticWrap(FormattedText text, int maxWidth, CallbackInfoReturnable<List<FormattedCharSequence>> cir) {
@@ -70,7 +73,10 @@ public abstract class SemanticFontWrapMixin {
         int lastBreak = breaker.first();
         int boundary;
         while ((boundary = breaker.next()) != BreakIterator.DONE) {
-            if (width(paragraph.substring(lineStart, boundary)) > maxWidth && lastBreak > lineStart) {
+            // 直接用 StringSplitter 量宽（与原版 split 同一条路径），不走 Font.width(String)：
+            // 后者会被 AcceleratedRendering 缓存进非线程安全的 Object2IntOpenHashMap，
+            // 而 TMRV 会在工作线程上构造 EMI 信息配方并调用 split，跨线程写入导致 rehash 越界崩溃。
+            if (this.splitter.stringWidth(paragraph.substring(lineStart, boundary)) > maxWidth && lastBreak > lineStart) {
                 lines.add(goldenTweaks$slice(value, styles, start + lineStart, start + lastBreak));
                 lineStart = lastBreak;
             }

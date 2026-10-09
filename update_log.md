@@ -1,5 +1,128 @@
 # GoldenTweaks Update Log
 
+## 2026.10.09 - v4.7.4
+
+### 精致存储 × 机械动力
+- 新增精致存储（Sophisticated Storage）在机械动力装置（contraption）上的完整支持：为全部存储方块注册自有的挂载存储类型 `sophisticated_storage`，以离世界的「影子」`StorageBlockEntity` 承载方块 NBT，使物品、升级与设置在移动中依旧可用；服务端作为 `renderInfo` 的唯一写入方，经新增的 `S2CSsStorageRenderPacket` 推送给客户端并让装置结构缓存失效，修掉物品显示闪烁；`SsContraptionTickHandler` 还在每个容器的实时世界坐标处运行精致存储的服务端 tick（漏斗 / 拾取 / 磁铁升级）
+  - [SophisticatedStorageMountedStorage.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SophisticatedStorageMountedStorage.java)、[SophisticatedStorageMountedStorageType.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SophisticatedStorageMountedStorageType.java)、[SSCreateCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SSCreateCompat.java)、[SsContraptionTickHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsContraptionTickHandler.java)、[S2CSsStorageRenderPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/S2CSsStorageRenderPacket.java)
+- 装置上的容器可用原生外观的存储 / 设置界面（升级栏、设置页、限定桶 1~4 格布局）；「返回存储」改走自有的 `C2SOpenSsContraptionStoragePacket` 重新打开挂载存储菜单，不再用精致存储的世界坐标载荷
+  - [SsStorageMenu.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsStorageMenu.java)、[SsStorageMenus.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsStorageMenus.java)、[SsStorageSettingsMenu.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsStorageSettingsMenu.java)、[SsStorageScreen.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/client/SsStorageScreen.java)、[SsStorageSettingsScreen.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/client/SsStorageSettingsScreen.java)、[C2SOpenSsContraptionStoragePacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SOpenSsContraptionStoragePacket.java)
+- 装置上右键沿用精致存储方块语义（安装升级、等级升级、向限定桶存入并做射线命中槽位计算），左键可从限定桶取出（机械动力本身缺失的路径），走新增的 `C2SSsContraptionAttackPacket`
+  - [SsContraptionInteraction.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsContraptionInteraction.java)、[SsContraptionAttackHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/client/SsContraptionAttackHandler.java)、[C2SSsContraptionAttackPacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SSsContraptionAttackPacket.java)
+- 装置上应用精致存储等级升级物品：定位目标方块、迁移 wrapper NBT、调整容量、替换装置方块并重建挂载存储
+  - [SsTierUpgrade.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsTierUpgrade.java)、[TierUpgradeAccessor.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/compat/sophisticatedstorage/TierUpgradeAccessor.java)、[TierUpgradeDefinitionAccessor.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/compat/sophisticatedstorage/TierUpgradeDefinitionAccessor.java)
+- 配套修复：接线盒护目镜对木质类型物品显示字面 `%s`，改用 `ItemStack.getHoverName()`；连续分离歧管 `reset()` 后 `axis`/`normalAxis` 的空指针崩服；装置通用容器菜单把非 9 倍数槽位补齐到 9 才能打开（如限定桶）；精致存储界面纳入 EMI 排除区域，避免侧栏 / 搜索 / 配方视图遮挡升级栏与设置页
+  - [ChuteGoggleItemNameMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/ChuteGoggleItemNameMixin.java)、[ContinuousSeparationManifoldMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/ContinuousSeparationManifoldMixin.java)、[MountedStorageMenusMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/MountedStorageMenusMixin.java)、[MountedStorageManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/MountedStorageManagerMixin.java)、[AbstractContraptionEntityInteractionMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/create/AbstractContraptionEntityInteractionMixin.java)、[BackToStorageTabMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/compat/sophisticatedstorage/BackToStorageTabMixin.java)、[SsStorageEmiPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/client/SsStorageEmiPlugin.java)
+
+### AE2 / EMI 合成计划界面
+- 让 EMI 在 AE2 的 `CraftConfirmScreen` 与 neoecoae 的 `ECOCraftConfirmScreen` 上可用：`CraftConfirmMenu` 没有槽位，EMI 原本识别不到屏幕；补上通用屏幕边界与 stack provider，恢复侧栏 / 搜索与悬停计划项的 R/U/A
+  - [GTAe2CraftConfirmEmiPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2/GTAe2CraftConfirmEmiPlugin.java)、[GTAe2EmiStacks.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2/GTAe2EmiStacks.java)
+- 「收藏缺失」按钮改用共用实现：把 `missingAmount > 0` 的计划项加入 EMI 收藏并重建侧栏，替代 AEQC / neoecoae 原先调用本包缺失的 JEI 内部类
+  - [GTAe2CraftConfirmBookmark.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ae2/GTAe2CraftConfirmBookmark.java)、[BookmarkMissingButtonMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/aeqc/BookmarkMissingButtonMixin.java)、[ECOCraftConfirmScreenBookmarkMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/neoecoae/ECOCraftConfirmScreenBookmarkMixin.java)
+
+### Polymorph 奥术配方
+- 把 Thaumcraft 的 `IArcaneRecipe`（不在 `RecipeManager` 中）包装成原版 `Recipe` 交给 Polymorph 列出 / 选择，合成 id 形如 `goldentweaks:arcane/<index>`，按研究解锁与网格匹配过滤；奥术工作台与神秘能源（Thaumic Energistics）奥术合成终端都接入选择组件，选择结果经自有的 `C2SSelectArcaneRecipePacket` 回传服务端（Polymorph 自己的包无法解析非 `RecipeManager` 的 id）
+  - [PolymorphArcaneCompat.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/PolymorphArcaneCompat.java)、[GTArcaneRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/GTArcaneRecipe.java)、[GTArcaneRecipes.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/GTArcaneRecipes.java)、[PolymorphArcaneImpl.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/PolymorphArcaneImpl.java)、[GTArcaneRecipesWidget.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/client/GTArcaneRecipesWidget.java)、[GTWorkbenchPolymorphClient.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/client/GTWorkbenchPolymorphClient.java)、[GTTerminalPolymorphClient.java](src/main/java/net/fodoth/skina/goldentweaks/compat/polymorph/client/GTTerminalPolymorphClient.java)、[ArcaneWorkbenchMenuMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ArcaneWorkbenchMenuMixin.java)、[ArcaneCraftingTerminalMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumicenergistics/ArcaneCraftingTerminalMixin.java)、[C2SSelectArcaneRecipePacket.java](src/main/java/net/fodoth/skina/goldentweaks/network/packet/C2SSelectArcaneRecipePacket.java)
+
+### 性能优化
+- EMI 搜索索引第二阶段（工具提示 gram 索引）改为后台守护线程延迟构建，进世界不再卡主线程；`$` 类工具提示搜索在构建完成前暂不完整。另接入 JustEnoughCharacters 外部索引识别与 REMI 展示管线桥接，并保留跳过原生索引的路径；新增 `emiDeferSearchIndex`（默认开）
+  - [GTEmiSearchEngine.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emi/GTEmiSearchEngine.java)
+- EMI 创造模式标签内容构建由一次性主线程（约 2.65s 卡顿）拆分为逐标签的后台构建，保留原内容与顺序（模组变体、神秘使法杖仍正确索引）；新增 `emiDeferCreativeGroups`（默认开）
+  - [GTEmiCreativeRegroup.java](src/main/java/net/fodoth/skina/goldentweaks/compat/emi/GTEmiCreativeRegroup.java)、[EmiStackListMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiStackListMixin.java)
+- JEI 要素扫描跳过无自定义组件的默认 `ItemStack` 的 `getUidForStack`（每个约 350µs，整轮约 22s），并去掉一次被丢弃的探测调用；新增 `jeiAspectScanSkipUid`（默认开）
+  - [GTJeiAspectScan.java](src/main/java/net/fodoth/skina/goldentweaks/compat/jei/GTJeiAspectScan.java)、[ThaumcraftJeiPluginFastScanMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftJeiPluginFastScanMixin.java)、[AspectCatalogMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/scexaspect/AspectCatalogMixin.java)
+- Mekanical Create 两组模拟室配方目录（约 11s）改为进入世界即后台预热，EMI 重载与之重叠；未就绪时短暂等待再回退行内计算，不会显示空配方；新增 `mekanicalcreateDeferRecipes`（默认开）
+  - [GTMekanicalDeferredRecipes.java](src/main/java/net/fodoth/skina/goldentweaks/compat/mekanicalcreate/GTMekanicalDeferredRecipes.java)、[EmiReloadPrewarmMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mekanicalcreate/EmiReloadPrewarmMixin.java)、[MekanicalCreateDeferredRecipesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mekanicalcreate/MekanicalCreateDeferredRecipesMixin.java)
+
+### 字体与渲染
+- 语义换行改用 `StringSplitter` 量宽（与原生 `split` 同一条路径），不再走 `Font.width(String)`：后者会被 AcceleratedRendering 写入非线程安全的 `Object2IntOpenHashMap`，而 TMRV 会在工作线程上构造 EMI 信息配方并调用 `split`，跨线程写入导致 rehash 越界崩溃
+  - [SemanticFontWrapMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/vanilla/SemanticFontWrapMixin.java)
+- ModernUI：向不可变定长缓冲 map 写入抛 `UnsupportedOperationException`，改为吞掉，首次 SDF 类型创建不再报错
+  - [ModernUITextRenderTypeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/modernui/ModernUITextRenderTypeMixin.java)
+- RenderBlender：第一人称延迟 cosmic 层改用无深度渲染类型（修 Iris z 压缩遮挡），着色器未初始化时跳过绘制
+  - [CosmicRenderLayerDepthMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/renderblender/CosmicRenderLayerDepthMixin.java)
+- Sable：单方块子层渲染调用 `BakedModel.getModelData`，让逐方块模型数据（如精致存储的显示物品）生效
+  - [SingleBlockSubLevelModelDataMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/sable/SingleBlockSubLevelModelDataMixin.java)
+
+### 模组兼容
+- ae2cs：输入端口与侧配置 wrapper 的模拟分支未遵循 `SidePolicy.allowExtract()`，与机械动力溜槽组合会被无限取出刷物品；改为抽取恒为空 / 按策略判定
+  - [AECsInputPortExtractMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2cs/AECsInputPortExtractMixin.java)、[AECsSideConfigExtractMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2cs/AECsSideConfigExtractMixin.java)
+- 生物群系改造（BOP）异常方块：开启「优化错误方块」后只在原版模型方块间变化，且每 200 tick（10s）才切换一次，而非每 tick
+  - [AnomalyBlockEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/biomesoplenty/AnomalyBlockEntityMixin.java)
+- CoFH Core：工具提示同级列表 `removeIf` 遇到不可变列表（如 AE2 样板界面）抛 `UnsupportedOperationException` 崩渲染线程，改为 try/catch 兜底
+  - [CoreClientEventsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/cofh_core/CoreClientEventsMixin.java)
+- EMI：抑制常驻的红色「reload worry」警告行；`EmiTags.getRawValues`/`getIngredient` 无世界时补空值保护；`TooltipQuery#getText` 空值安全，修「钻石」等搜索触发的 NPE；特定输出槽物品（神秘要素源、scex 要素、学园都市熔炉）上移左移 1px 对齐
+  - [EmiReloadWorryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiReloadWorryMixin.java)、[EmiTagsRawValuesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/EmiTagsRawValuesMixin.java)、[TooltipQueryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/TooltipQueryMixin.java)、[SlotWidgetMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi/SlotWidgetMixin.java)
+- EMI Ores：`BiomeEmiStack` 在离开世界后搜索索引烘焙期间 `level == null` 抛 NPE，返回占位 id
+  - [BiomeEmiStackNullLevelMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/emi_ores/BiomeEmiStackNullLevelMixin.java)
+- FTB 任务书：强制关闭 FTB 界面加速渲染，回到原版路径，修方块光照丢失、物品溢出与编辑框 / 文字毛边
+  - [FtbAccelerationDisableMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ftbquests/FtbAccelerationDisableMixin.java)
+- FTB Ultimine：加入 ThaumicBases 的 `ThaumicCropBlock`，并排除 Supplementaries 亚麻上半格
+  - [VanillaCropLikeHandlerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ftbultimine/VanillaCropLikeHandlerMixin.java)
+- 通用机械（Mekanism）：物流管道单方块在途物品数设上限，超出即拒收，避免失控寻路 / OOM；流转物品预测集合同样设限
+  - [LogisticalTransporterTransitCapMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mekanism/LogisticalTransporterTransitCapMixin.java)、[TransporterManagerFlowingCapMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mekanism/TransporterManagerFlowingCapMixin.java)
+- PackagedAuto：子类型数据列表中允许空数据组件（裸 `packagedauto:package`），修 JEI UID 生成时的 NPE
+  - [PackageItemSubtypeInterpreterMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/packagedauto/PackageItemSubtypeInterpreterMixin.java)
+- Ponder for Kaleidoscope Cookery：把旧的三参 `RecipeItem.RecipeRecord` 构造重定向到四参构造（KC 1.5.1），修 `NoSuchMethodError`
+  - [RecipeItemScenesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ponderforkc/RecipeItemScenesMixin.java)
+- REMI：酿造台界面打开时隐藏 REMI 额外的 `WORKSTATION` 侧栏，避免遮挡原版 GUI
+  - [RemiBrewingWorkstationSidebarMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/remi/RemiBrewingWorkstationSidebarMixin.java)
+- Silent Gear：单个无法解码的材料 / 部件 / 特性改为记日志跳过，不再中断资源重载导致世界加载失败
+  - [SilentGearDecodeGuardMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/silentgear/SilentGearDecodeGuardMixin.java)
+- 机械动力：蒸汽动力（Steam Powered）齿轮方块改用自己的烘焙模型渲染，恢复方块形态下缺失的轮子
+  - [SteampoweredCogwheelVisualMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/steampowered/SteampoweredCogwheelVisualMixin.java)
+- ThaumicBases：蘑菇作物要素球改以底面中心为原点，不再贴在方块角
+  - [AshroomCropOrbMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumicbases/AshroomCropOrbMixin.java)
+- 神秘能源（Thaumic Energistics）：单元升级处理器实现 `IItemHandlerModifiable`，修 `ClassCastException` 掉线；元素单元工作台客户端从同步的槽 0 单元重建升级栏，使升级可见
+  - [EssentiaCellUpgradeHandlerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumicenergistics/EssentiaCellUpgradeHandlerMixin.java)、[EssentiaCellWorkbenchMenuMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumicenergistics/EssentiaCellWorkbenchMenuMixin.java)
+- Thaumic Horizons：注魔罐可损坏材料（剪刀）按物品而非严格默认组件匹配，正确搭建的罐注魔能够启动
+  - [LegacyInfusionIngredientsMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumichorizons/LegacyInfusionIngredientsMixin.java)
+- Advanced Infusion：开启 `disableAdvancedInfusionItems` 时一并剥离重复研究条目、断开父级链接并移除对应的奥术 / 注魔配方
+  - [AdvancedInfusionResearchMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/advanced_infusion/AdvancedInfusionResearchMixin.java)
+- Thermal：交换流体进度箭头的背景 / 填充贴图，使流体配方与普通配方显示一致
+  - [DrawablesMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thermal/DrawablesMixin.java)
+- TMRV：同步注册 ingredient 并强制 `thaumcraft` 插件为 `NORMAL`，使其分类真正加载（原本被一个无关的 `thaumcraft:outer_lands` EMI 分类判为命名空间重复）；让 `setPlugin` 幂等，星辉重复的光流明配方不再被判为损坏而丢弃
+  - [JEIPluginManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/JEIPluginManagerMixin.java)、[TmrvRecipeSetPluginMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/TmrvRecipeSetPluginMixin.java)
+- LDLib2：专用服务器上抹掉 `ItemSlot` 的客户端专用方法（名字以 `xei` 开头或引用 `net/minecraft/client/*`），修 `Renderable` 的 `NoClassDefFoundError` 及连带的模组类加载失败
+  - [Ldlib2ASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/ldlib2/Ldlib2ASM.java)、[ItemSlotDummyMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ldlib2/ItemSlotDummyMixin.java)
+- 心契誓约 / ApricityUI：LLM 连接关闭时不再发起网络请求、不进入思考核心、不再刷「思考核心处理失败」聊天，改为提示去 GoldenTweaks 设置开启（`enableMaidLlm`，默认关）；K/V 控制台热键在 GUI 打开时忽略；GUI 打开时屏蔽女仆热键（`blockMaidHotkeysInGui`，默认开）；心契誓约 / ApricityUI 日志按开关抑制（`suppressMaidLogs`，默认开）
+  - [MaidLogSuppressor.java](src/main/java/net/fodoth/skina/goldentweaks/compat/maidsoulcore/MaidLogSuppressor.java)、[OpenAiCompatibleClientMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maidsoulcore/OpenAiCompatibleClientMixin.java)、[MaidSoulOwnerChatPacketMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maidsoulcore/MaidSoulOwnerChatPacketMixin.java)、[MaidSoulRuntimeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maidsoulcore/MaidSoulRuntimeMixin.java)、[AuiConsoleKeyHandlerClientInputMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maidsoulcore/AuiConsoleKeyHandlerClientInputMixin.java)、[KeyMappingMaidHotkeyScreenGuardMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/maid/KeyMappingMaidHotkeyScreenGuardMixin.java)
+- 东方小女仆：恢复失落的女仆时清除 `IS_LOST_MAID`、标记可驯服并重置任务；生成前修复缺失 / 损坏的 Owner UUID，避免放置时 NPE；精致存储方块实体被识别为可开的箱子
+  - [AbstractStoreMaidItemUnLostMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/touhoulostmaid/AbstractStoreMaidItemUnLostMixin.java)、[AbstractStoreMaidItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/touhoulittlemaid/AbstractStoreMaidItemMixin.java)、[SophisticatedStorageChestType.java](src/main/java/net/fodoth/skina/goldentweaks/compat/touhoulittlemaid/SophisticatedStorageChestType.java)
+
+### Thaumcraft
+- 注魔拦截器重做：绑定最近的符文矩阵（y+3..10）与基座（y+1..8），从缓存的 13×13×3 源扫描取要素，一次性快进剩余基座材料、注入 20 稳定度，并支持 Thaumic Horizons 注魔罐；所有者离线或超出注魔罐 8 格范围时，用携带所有者研究 NBT 的 `FakePlayer` 启动注魔，实现无人值守 / 离线注魔
+  - [GTInfusionIntercepterBlockEntity.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTInfusionIntercepterBlockEntity.java)
+- 奥术工作台菜单配置化禁用原版合成、跳过空网格查询并接入 Polymorph 选择；`findMatchingArcaneRecipeEntry` 加奥术配方缓存与选择（命中缓存优先，未命中再全量扫描并回填）
+  - [ArcaneWorkbenchMenuMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ArcaneWorkbenchMenuMixin.java)、[ThaumcraftCraftingManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/ThaumcraftCraftingManagerMixin.java)
+
+### 联动数据
+- OEI 矿物统一用 `script/oei/ore_unification.py` 重生成（224 条，24 种金属 × 矿 / 深层矿 / 粗矿 / 粗矿块 / 锭 / 粒 / 粉 / 板 / 杆 / 齿轮 / 储块 + 萤石），规范提供方默认 `alltheores`，并对钒、铅 / 锡 / 铀 / 锇 / 钢、铜 / 铁 / 金 / 黄铜板材、钨、秘银分别改指原版 / `mekanism` / `create` / `neoecoae` / `irons_spellbooks`·`hazennstuff`；另补 38 条手写条目
+  - [ore_unification.json](src/main/resources/data/oei/replacements/ore_unification.json)、[ore_unification_addition.json](src/main/resources/data/oei/replacements/ore_unification_addition.json)、[ore_unification.py](script/oei/ore_unification.py)
+- 食物统一扩充到约 264 条，规范提供方以 `flavor_immersed_daily`、`croptopia`、`kaleidoscope_cookery`、`farmersdelight` 为主，盐统一到 `alltheores:salt`
+  - [food_unification.json](src/main/resources/data/oei/replacements/food_unification.json)
+- 新增 `script/oei/gen_food_compat.py`：扫描模组 jar 中引用统一物品的配方，生成 `_unified` 配方与 `alltheores` 缺失时的原版回退配方，并把缺失的统一产物补进相关物品标签
+- 新增 `script/mekmm/sync_planting_insolator.py`：把 MekMM 种植站（`mekmm:planting`）配方与热力 `te_insolator` 双向同步，重生成约 296 个 `te_insolator` 目录（横跨约 20 个命名空间，如 spectrum / croptopia / biomesoplenty / northstar 等）
+- 新增大量配方：northstar（约 251，Create 粉碎 / 熔炼 / 鼓风 / 冲洗 / 压片 / 序列组装等）、thermal（约 110，储块 / 粉尘 / 齿轮 / earth_charge·fire_charge）、silentgems（约 59）、silentgear、mekmm（约 344，种植 / 辊压 / 车削 / 回收等）、powergrid、ratatouille、thaumcraft，均带 `_unified` 变体
+- 新增标签 `c:obsidian`、`c:sand`、ratatouille 堆肥标签与 Thaumcraft 作物采集标签
+- 新增 `script/worldfix/remove_runaway_transporters.py`：一次性地区文件修复脚本，移除超大精致存储桶与失控的通用机械物流管道列（默认 dry-run，`--apply` 写 `.bak`）
+- 新增 `script/ssh/` 免密 SSH 部署脚本
+
+### 汉化
+- 新增 Astral Sorcery 完整简体中文翻译（约 877 条：物品 / 方块 / 实体、JEI 分类、星芒宝典正文、星座与星能力、附魔与药水等级等）
+  - [zh_cn.json](src/main/resources/assets/astralsorcery/lang/zh_cn.json)
+- 新增 Thermal 中文补充（约 39 条：流体、实体、文案与音效字幕）与 pipez_optimizer 中文（约 18 条）
+- 补充 GoldenTweaks 新增配置项的中英文文案（EMI 索引延迟、JEI 要素扫描、Mekanical Create、女仆日志 / 热键 / LLM 等）
+
+### 依赖
+- 元数据新增可选依赖：`thermal` 系列（foundation / expansion / dynamics / innovation / locomotion / cultivation）、`astralsorcery`、`pipez_optimizer`
+  - [neoforge.mods.toml](src/main/templates/META-INF/neoforge.mods.toml)
+
+### 其它
+- 注册与门控随新增内容更新：`GoldenTweaks.java` 按模组检测注册新增内容，Mixin 插件补齐全部新 Mixin 的模组门控并接入 ldlib2 的 ASM，`goldentweaks.mixins.json` 登记新增条目（`mixins` 266 条 / `client` 159 条）
+  - [GoldenTweaks.java](src/main/java/net/fodoth/skina/goldentweaks/GoldenTweaks.java)、[GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)、[goldentweaks.mixins.json](src/main/resources/goldentweaks.mixins.json)
+- 移除 fidworkblock 的示例 / 砧板 Mixin 与旧的 `ThaumcraftJeiPluginMixin`（由新的快速扫描 Mixin 取代）
+
 ## 2026.10.04 - v4.7.3
 
 ### 右键拾取
