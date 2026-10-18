@@ -1,5 +1,50 @@
 # GoldenTweaks Update Log
 
+## 2026.10.18 - v4.7.5
+
+### 依赖与构建
+- 编译依赖改为以 `libs/` 本地 jar 为唯一来源：`build.gradle` 只保留 `icu4j`、`ponder`（提供 `net.createmod.catnip`）、`glsl-processor` 三个纯库，以及整合包里也没有的 `optitritium` / `rrls` / `raritycore`；其余模组一律通过 `fileTree` 从 `libs/compileOnly`、`libs/implementation` 取。模组版本以整合包实例 `mods/` 为准，更新模组只需替换 `libs/` 里的 jar，不再改 `build.gradle`
+  - [build.gradle](build.gradle)、[libs/README.md](libs/README.md)
+- 刷新 `libs/README.md` 清单（compileOnly 195 个 / implementation 44 个），补入从整合包内嵌 jar 取出的 `veil`、`xaerolib`，并把 `touhou_little_maid` 从 compileOnly 提升到 implementation；一批模组版本跟进（spectrum 1.12.9、create_submarine 3.4.1、supplementaries 4.0.2、neoecoae 21.2.6、kaleidoscopecookery 1.6.0、ExtendedAE 2.2.41、placebo 9.9.4 等）
+
+### 深海（Create Submarine）
+- 适配 create_submarine 3.4.1：旧的「欢迎 / 更新」界面 Mixin 删除，改为四个按类存在性门控的界面禁用 Mixin——更新提示（`DeepSeasUpdateScreen`）、进入主菜单时的光敏性安全须知（`DeepSeasSafetyScreen`）、首次进主菜单的水压模型选择（`PressureModelScreen`，不再询问、保持配置默认值），以及主界面 / 暂停界面 Create 菜单按钮下方的「深海设置」按钮（`DeepSeasMenuButton`）
+  - [DeepSeasUpdateScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createsubmarine/DeepSeasUpdateScreenMixin.java)、[DeepSeasSafetyScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createsubmarine/DeepSeasSafetyScreenMixin.java)、[PressureModelScreenMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createsubmarine/PressureModelScreenMixin.java)、[DeepSeasMenuButtonMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createsubmarine/DeepSeasMenuButtonMixin.java)
+
+### 东方小女仆 / 迷失女仆
+- 祭坛（spawn_box / reborn_maid）现场召唤的无主女仆不再被迷失模组判为迷失：在祭坛把女仆加入世界的一小段时间内置位守卫标记，让迷失模组的加入世界事件跳过判定，女仆保持普通状态、可直接用驯服物品驯服；胶片复原带出的迷失状态也一并解除
+  - [AltarSummonGuard.java](src/main/java/net/fodoth/skina/goldentweaks/compat/touhoulostmaid/AltarSummonGuard.java)、[AltarRecipeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/touhoulostmaid/AltarRecipeMixin.java)、[ModEntityJoinLevelEventMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/touhoulostmaid/ModEntityJoinLevelEventMixin.java)
+
+### 模组兼容
+- 通用机械（Mekanism）聚变反应堆：`maxWater` / `maxSteam` 只在「燃烧速率变化」时才重算，刚成型或重新加载后一直为 0，水插不进去（上游 mekanism/Mekanism#8281，临时办法是手动改一次速率）；改为多方块成型时与每次速率应用后强制重算容量
+  - [FusionReactorWaterCapacityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/mek/FusionReactorWaterCapacityMixin.java)
+- Thermal × Sodium：`UnderlayBakedModel` 的底纹缓存与 `ReconfigurableBakedModel` 的侧面缓存都是无锁静态 map，Sodium 多线程区块烘焙并发 put 命中扩容会写坏开地址哈希表并抛 `ArrayIndexOutOfBoundsException`（「Encountered exception while building chunk meshes」崩溃）；给各缓存的读写加实例 monitor
+  - [UnderlayBakedModelMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thermal/UnderlayBakedModelMixin.java)、[ReconfigurableBakedModelMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thermal/ReconfigurableBakedModelMixin.java)
+- Sodium × Spectrum：Sodium 渲染方块实体时会把破坏进度裂纹一并套到方块实体几何上，结晶器上方的「魔法阵」被挖时也被盖裂纹（原版只给方块模型铺裂纹）；对结晶器跳过这层裂纹装饰，用原始 buffer 正常渲染（Sodium 缺失或方法改名时静默回退）
+  - [SodiumCrystallarieumBreakingOverlayMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/sodium/SodiumCrystallarieumBreakingOverlayMixin.java)
+- neoecoae 21.2.6：`ECOCraftConfirmScreen` 包名由 `client` 迁到 `client.gui.crafting`，合成计划界面「收藏缺失」Mixin 跟进
+  - [ECOCraftConfirmScreenBookmarkMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/neoecoae/ECOCraftConfirmScreenBookmarkMixin.java)
+
+### 稳健性（避免未装模组时类加载失败）
+- FTB 任务书 R/U 查配方处理器改为在客户端启动且 EMI + FTB Quests 均存在时手动注册，不再用 `@EventBusSubscriber`：注解扫描会解析引用 EMI 的方法签名，未装 EMI 时启动阶段抛 `NoClassDefFoundError`
+  - [QuestBookRecipeKeyHandler.java](src/main/java/net/fodoth/skina/goldentweaks/event/QuestBookRecipeKeyHandler.java)、[GoldenTweaks.java](src/main/java/net/fodoth/skina/goldentweaks/GoldenTweaks.java)
+- `S2CConsumableSyncPacket`（及其 codec 引用 familiarslib / irons_spellbooks 类型）仅在 `alshanex_familiars` 存在时注册
+  - [ModNetworking.java](src/main/java/net/fodoth/skina/goldentweaks/network/ModNetworking.java)
+- traveloptics 召唤物保护要求 `traveloptics` + `irons_spellbooks` + `familiarslib` 三者同时存在；`ModMaidDeathEventMixin` 经 `FamiliarCompat` 间接解析召唤者，避免字节码直接引用 familiarslib 类型
+  - [GoldenTweaks.java](src/main/java/net/fodoth/skina/goldentweaks/GoldenTweaks.java)、[ModMaidDeathEventMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/touhoulostmaid/ModMaidDeathEventMixin.java)
+- 精致存储装置的 tick / 交互 / 界面注册补上 `create` + `sophisticatedstorage` 存在性检查
+  - [SsContraptionTickHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/SsContraptionTickHandler.java)、[SsContraptionAttackHandler.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/client/SsContraptionAttackHandler.java)、[SsStorageClientEvents.java](src/main/java/net/fodoth/skina/goldentweaks/compat/sophisticatedstorage/client/SsStorageClientEvents.java)
+- Mixin 插件新增门控：traveloptics / irons_spellbooks / alshanex_familiars 三依赖联动、`irons_spellbooks` + additional_attributes、sodium、create_submarine 各界面与 mek 聚变
+  - [GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)
+
+### 联动数据
+- Spectrum 1.12.9 结晶器（crystallarieum）配方字段改名适配（`fluid_medium`→`fluid`、`additional_recipe_manager_results`→`additional_recipe_viewer_results`、`catalysts`→`additives`），覆盖 20 个配方
+  - [data/spectrum/recipe/crystallarieum/](src/main/resources/data/spectrum/recipe/crystallarieum)
+
+### 其它
+- 移除不再需要的 `AliOptionalItemPoolMixin`（moonlight `OptionalItemPool` 旧类名重定向）与旧版深海的 `DeepSeasWelcomeScreenMixin`
+  - [goldentweaks.mixins.json](src/main/resources/goldentweaks.mixins.json)
+
 ## 2026.10.09 - v4.7.4
 
 ### 精致存储 × 机械动力

@@ -41,6 +41,28 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return false;
         }
 
+        // 这些 mixin 注入 iron's spellbooks 的召唤物目标逻辑，并引用 alshanex 魔宠 / familiarslib 的类型。
+        // 只要 iron 存在这些 mixin 就会尝试应用，缺 familiarslib 时会在应用阶段抛 NoClassDefFoundError，
+        // 因此三个依赖必须同时存在。
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.traveloptics")) {
+            return isModLoaded("traveloptics")
+                    && isModLoaded("irons_spellbooks")
+                    && isModLoaded("familiarslib");
+        }
+
+        // additional_attributes 的 SpellUtils 覆盖仅在 iron's spellbooks 存在时才有意义
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.irons_spellbooks")) {
+            return isModLoaded("irons_spellbooks")
+                    && checkIfPresent("de.cadentem.additional_attributes.compat.irons_spellbooks.SpellUtils");
+        }
+
+        // alshanex 魔宠相关 mixin 需要 familiarslib，属性桥接还需要 iron's spellbooks 的属性注册表
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.alshanex_familiars")) {
+            return isModLoaded("alshanex_familiars")
+                    && isModLoaded("familiarslib")
+                    && isModLoaded("irons_spellbooks");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.ae_better_villagers")) {
             return isModLoaded("ae2cs") && isModLoaded("neoecoae") && isModLoaded("extendedae") && isModLoaded("ae2helpers") && isModLoaded("packagedauto");
         }
@@ -302,6 +324,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumcraft") && isModLoaded("ae2");
         }
 
+        // Sodium 渲染方块实体时会把破坏裂纹一并套到方块实体几何上，结晶器上方的「魔法阵」正是方块实体渲染的，
+        // 于是被挖时也被盖裂纹（原版本只给方块模型铺裂纹）。对结晶器跳过该装饰。
+        if (mixinClassName.endsWith("fix.sodium.SodiumCrystallarieumBreakingOverlayMixin")) {
+            return isModLoaded("sodium")
+                    && checkIfPresent("net.caffeinemc.mods.sodium.client.render.SodiumWorldRenderer");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.renderblender.")) {
             if (!isModLoaded("renderblender")) {
                 return false;
@@ -354,6 +383,26 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.endsWith("fix.neoecoae.NEExtraModelsMixin")) {
             return checkIfPresent("cn.dancingsnow.neoecoae.client.all.NEExtraModels");
+        }
+
+        // 深海任务界面在 create_submarine 更新后由 WelcomeScreen 改名为 UpdateScreen
+        if (mixinClassName.endsWith("fix.createsubmarine.DeepSeasUpdateScreenMixin")) {
+            return checkIfPresent("com.maxenonyme.createsubmarine.submarine.client.DeepSeasUpdateScreen");
+        }
+
+        // 深海：进入主菜单时的光敏性安全须知界面
+        if (mixinClassName.endsWith("fix.createsubmarine.DeepSeasSafetyScreenMixin")) {
+            return checkIfPresent("com.maxenonyme.createsubmarine.submarine.client.DeepSeasSafetyScreen");
+        }
+
+        // 深海：首次进入主菜单时的水压模型选择界面（不询问，保持配置默认值）
+        if (mixinClassName.endsWith("fix.createsubmarine.PressureModelScreenMixin")) {
+            return checkIfPresent("com.maxenonyme.createsubmarine.submarine.client.PressureModelScreen");
+        }
+
+        // 深海：主界面/暂停界面上 Create 菜单按钮下方那颗「深海设置」按钮
+        if (mixinClassName.endsWith("fix.createsubmarine.DeepSeasMenuButtonMixin")) {
+            return checkIfPresent("com.maxenonyme.createsubmarine.submarine.client.DeepSeasMenuButton");
         }
 
         if (mixinClassName.endsWith("fix.ae2cs.AECSAdditionalModelsMixin")) {
@@ -432,6 +481,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // （Kaleidoscope Cookery 1.5.1 已加 flexRecipe 参数），按 W 思索菜谱会 NoSuchMethodError 崩溃
         if (mixinClassName.endsWith("fix.ponderforkc.RecipeItemScenesMixin")) {
             return isModLoaded("ponderforkc");
+        }
+
+        // 聚变反应堆的储罐容量只在「燃烧速率变化」时重算，刚成型 / 重新加载后 maxWater 保持 0，
+        // 水进不去（上游 mekanism/Mekanism#8281）。成型与速率应用后强制重算一次。
+        if (mixinClassName.endsWith("fix.mek.FusionReactorWaterCapacityMixin")) {
+            return isModLoaded("mekanism") && isModLoaded("mekanismgenerators");
         }
 
         // 物流管道在途 stack / 流向预测缓存上限：防止超大堆叠容器把管道 tick 拖成无限计算并 OOM

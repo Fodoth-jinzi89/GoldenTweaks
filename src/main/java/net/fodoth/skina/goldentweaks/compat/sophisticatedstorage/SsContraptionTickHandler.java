@@ -12,6 +12,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -26,6 +27,9 @@ public class SsContraptionTickHandler {
 
     @SubscribeEvent
     public static void onServerTick(ServerTickEvent.Post event) {
+        if (!ModList.get().isLoaded("create") || !ModList.get().isLoaded("sophisticatedstorage")) {
+            return;
+        }
         for (ServerLevel level : event.getServer().getAllLevels()) {
             Map<Integer, WeakReference<AbstractContraptionEntity>> contraptions =
                     ContraptionHandler.loadedContraptions.get(level);

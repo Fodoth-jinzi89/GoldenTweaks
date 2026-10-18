@@ -98,71 +98,18 @@ dependencies {
     // NeoForge's Minecraft dependency already ships ICU4J; keep this compile-only
     // so the mixin links against the same runtime copy without embedding the full jar.
     compileOnly "com.ibm.icu:icu4j:73.2"
-    compileOnly "maven.modrinth:create:6.0.10+mc1.21.1"
+
+    // Plain libraries: no standalone mod jar exists for these, so they stay on Maven.
     compileOnlyApi "net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1"
-    compileOnly "maven.modrinth:create-stuff-additions:2.1.0.e"
-    compileOnly "maven.modrinth:veil:4.0.0"
-    compileOnly "maven.modrinth:eccentric-tome:1.21.1"
-    compileOnly "maven.modrinth:playeranimator:2.0.4+1.21.1-forge"
-    compileOnly "curse.maven:alltheleaks-1091339:7955700"
     compileOnlyApi "io.github.ocelot:glsl-processor:0.2.3"
-    compileOnly "maven.modrinth:xaerolib:forge-1.16.5-1.1.15"
-    compileOnly "maven.modrinth:iris:1.8.12+1.21.1-neoforge"
-    compileOnly "maven.modrinth:create-dreams-and-desires:2.3a-BETA"
-    compileOnly "maven.modrinth:colorwheel:qIo72EWB"
-    compileOnly "maven.modrinth:vista_tv:1.21.1-4.3.1"
-    compileOnly "maven.modrinth:raritycore:1211.13.1"
-    compileOnly "maven.modrinth:maids-return:0.0.2"
-    implementation "maven.modrinth:touhou-little-maid:1.5.3-neoforge+mc1.21.1"
-    compileOnly "curse.maven:hostile-neural-networks-552574:6751495"
-    compileOnly "curse.maven:placebo-283644:6926281"
-    compileOnly "maven.modrinth:click2pick:IBBn27z1"
+
+    // Mods that are in neither libs/ nor the modpack instance.
     compileOnly "maven.modrinth:optitritium:vGs5rSd0"
-    compileOnly "curse.maven:mekanism-weaponry-1127676:7124299"
-    compileOnly "maven.modrinth:moonlight:1.21.1-3.0.7"
-
-    compileOnly "maven.modrinth:advanced-loot-info:9jJT2Kmz"
-    implementation "maven.modrinth:emi:1.1.24+1.21.1+neoforge"
-    compileOnly "maven.modrinth:toadlib:1.4.3-1.21-1.21.1-fabric"
-    compileOnly "maven.modrinth:gputape:1.2.1-1.21-1.21.1-fabric"
-    compileOnly "maven.modrinth:cit-resewn:1.2.2+1.21"
     compileOnly "maven.modrinth:rrls:5.0.10+mc1.21.1-forge"
-    compileOnly "maven.modrinth:jei:YAcQ6elZ"
-    compileOnly "maven.modrinth:annuus:fz24WWx1"
+    compileOnly "maven.modrinth:raritycore:1211.13.1"
 
-
-    compileOnly "maven.modrinth:mekanism:5KzzycBT"
-    compileOnly "maven.modrinth:mekanismmoremachine:1.21.1-1.3.3"
-    compileOnly "maven.modrinth:mekanism_extra:1.21.1-1.4.0"
-    compileOnly "maven.modrinth:iglee-library:5mObcFWo"
-    compileOnly "maven.modrinth:evolved-mekanism:3vuQZTlx"
-
-
-    compileOnly "maven.modrinth:all-the-compatibility:v.3.9.1"
-    compileOnly "maven.modrinth:modonomicon:1.21.1-1.120.1"
-    compileOnly "maven.modrinth:justenoughcharacters:4.5.23"
-    compileOnly "maven.modrinth:modern-ui:3.12.0.2"
-    compileOnly "maven.modrinth:silent-lib:10.6.0"
-    compileOnly "maven.modrinth:silent-gear:4.2.1.1"
-    compileOnly "maven.modrinth:ae2:19.2.17"
-    compileOnly "maven.modrinth:guideme:21.1.15"
-    compileOnly "maven.modrinth:ldlib:mc1.21.1-2.2.9-neoforge"
-    compileOnly "curse.maven:avaritia-integration-1347675:7849138"
-
-    compileOnly "maven.modrinth:irons-spells-n-spellbooks:1.21.1-3.15.6"
-    compileOnly "maven.modrinth:additional-attributes:ZQ340JcB"
-
-    implementation "maven.modrinth:cloth-config:15.0.140+neoforge"
-
-    compileOnly "maven.modrinth:connector:1i8teo7m"
-    compileOnly "maven.modrinth:connector-extras:dgLCqZyo"
-    compileOnly "maven.modrinth:iceberg:IMssx9du"
-    compileOnly "maven.modrinth:legendary-tooltips:BabRJO04"
-    compileOnly "maven.modrinth:prism-lib:kMcz2lDj"
-    compileOnly "maven.modrinth:touhou-little-maid-beacon:1.0.1-bugfix"
-    implementation "maven.modrinth:AANobbMI:S3DUMfBo"
-
-
+    // Everything else is compiled against the local jars, which are kept in sync with
+    // the modpack instance under .minecraft/versions/<profile>/mods (see libs/README.md).
     compileOnly fileTree(dir: 'libs/compileOnly', include: ['*.jar'])
 
     runtimeOnly fileTree(dir: 'libs/runtimeOnly', include: ['*.jar'])

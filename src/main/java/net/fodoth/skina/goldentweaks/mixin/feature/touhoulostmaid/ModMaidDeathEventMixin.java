@@ -10,9 +10,9 @@ import com.github.tartaricacid.touhoulittlemaid.api.task.IMaidTask;
 import com.github.tartaricacid.touhoulittlemaid.entity.passive.EntityMaid;
 import com.github.tartaricacid.touhoulittlemaid.entity.task.TaskIdle;
 import com.github.tartaricacid.touhoulittlemaid.entity.task.TaskManager;
-import net.alshanex.familiarslib.entity.AbstractSpellCastingPet;
 import net.fodoth.skina.goldentweaks.compat.touhoulittlemaid.GoldenTweaksLostMaidData;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
+import net.fodoth.skina.goldentweaks.util.FamiliarCompat;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
@@ -26,7 +26,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Optional;
-import java.util.UUID;
 
 @Mixin(ModMaidDeathEvent.class)
 public class ModMaidDeathEventMixin {
@@ -84,12 +83,12 @@ public class ModMaidDeathEventMixin {
 
         if (attacker == null) return null;
 
-        if (ModList.get().isLoaded("alshanex_familiars")
-                && attacker instanceof AbstractSpellCastingPet pet) {
+        if (ModList.get().isLoaded("alshanex_familiars")) {
 
-            UUID uuid = pet.getOwnerUUID();
-            if (uuid != null) {
-                return pet.level().getPlayerByUUID(uuid);
+            // 经 FamiliarCompat 间接解析，避免本 mixin 字节码直接引用 familiarslib 类型
+            // （未装该模组时类解析会抛 NoClassDefFoundError）
+            if (FamiliarCompat.getOwner(attacker) instanceof Player player) {
+                return player;
             }
         }
 

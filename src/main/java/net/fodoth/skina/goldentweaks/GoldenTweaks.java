@@ -28,6 +28,7 @@ import net.fodoth.skina.goldentweaks.event.ClientWindowSizeGuard;
 import net.fodoth.skina.goldentweaks.event.ExspectrimentsClientCompatEvent;
 import net.fodoth.skina.goldentweaks.event.FamiliarProtectionEvent;
 import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
+import net.fodoth.skina.goldentweaks.event.QuestBookRecipeKeyHandler;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.flavorimmerseddaily.FidAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
@@ -107,7 +108,9 @@ public class GoldenTweaks {
             modEventBus.register(ExspectrimentsClientCompatEvent.class);
         }
 
-        if (ModList.get().isLoaded("traveloptics")) {
+        if (ModList.get().isLoaded("traveloptics")
+                && ModList.get().isLoaded("irons_spellbooks")
+                && ModList.get().isLoaded("familiarslib")) {
             LOGGER.info("Detected traveloptics, protecting summons from friendly fire");
             NeoForge.EVENT_BUS.register(TravelOpticsSummonProtection.class);
         }
@@ -188,6 +191,12 @@ public class GoldenTweaks {
     private void onClientSetup(final FMLClientSetupEvent event) {
         // 自定义早期窗口（Drippy 等）会锁死窗口尺寸，启动后按启动器的 --width/--height 纠正一次
         NeoForge.EVENT_BUS.register(ClientWindowSizeGuard.class);
+
+        if (ModList.get().isLoaded("emi") && ModList.get().isLoaded("ftbquests")) {
+            // 任务书 R/U 查配方：方法签名引用 EMI 类型，只能在 EMI + FTB Quests 都存在时加载该类，
+            // 否则注解扫描/类加载会在未装 EMI 时抛 NoClassDefFoundError
+            NeoForge.EVENT_BUS.register(QuestBookRecipeKeyHandler.class);
+        }
 
         if (ModList.get().isLoaded("maidsoulcore")) {
             // 按客户端配置压制女仆核心 / ApricityUI 的日志（见 MaidLogSuppressor）

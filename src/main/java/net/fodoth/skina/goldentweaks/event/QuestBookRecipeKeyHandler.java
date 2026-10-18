@@ -7,16 +7,13 @@ import dev.emi.emi.config.EmiConfig;
 import dev.emi.emi.runtime.EmiHistory;
 import dev.ftb.mods.ftblibrary.ui.IScreenWrapper;
 import dev.ftb.mods.ftblibrary.util.client.PositionedIngredient;
-import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.client.GTQuestImageHover;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ScreenEvent;
 import net.neoforged.neoforge.fluids.FluidStack;
 
@@ -31,8 +28,11 @@ import net.neoforged.neoforge.fluids.FluidStack;
  * {@code getGui().getIngredientUnderMouse()}，命中 EMI 的「查看配方 / 查看用途」绑定就直接调
  * {@link EmiApi#displayRecipes} / {@link EmiApi#displayUses}。任务条目、奖励图标、章节图片等
  * 所有走 {@code PositionedIngredient} 的控件因此都能 R/U。</p>
+ *
+ * <p>本类的方法签名引用 EMI 类型，因此<strong>不能</strong>用 {@code @EventBusSubscriber} 自动注册：
+ * 注解扫描会解析这些签名，未安装 EMI 时会在启动阶段抛 {@code NoClassDefFoundError}。
+ * 改由 {@link net.fodoth.skina.goldentweaks.GoldenTweaks} 在客户端启动且 EMI + FTB Quests 均存在时手动注册。</p>
  */
-@EventBusSubscriber(modid = GoldenTweaks.MODID, value = Dist.CLIENT)
 public final class QuestBookRecipeKeyHandler {
 
     private QuestBookRecipeKeyHandler() {

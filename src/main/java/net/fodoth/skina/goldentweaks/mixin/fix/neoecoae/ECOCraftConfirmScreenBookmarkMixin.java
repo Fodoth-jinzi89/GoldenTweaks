@@ -5,7 +5,7 @@ import appeng.menu.me.crafting.CraftConfirmMenu;
 import appeng.menu.me.crafting.CraftingPlanSummary;
 import appeng.menu.me.crafting.CraftingPlanSummaryEntry;
 import cn.dancingsnow.neoecoae.api.me.menu.ECOCraftConfirmMenuMode;
-import cn.dancingsnow.neoecoae.client.ECOCraftConfirmScreen;
+import cn.dancingsnow.neoecoae.client.gui.crafting.ECOCraftConfirmScreen;
 import cn.dancingsnow.neoecoae.crafting.planner.snapshot.CraftingGraphSnapshot;
 import cn.dancingsnow.neoecoae.crafting.planner.snapshot.CraftingGraphSnapshot.MaterialNode;
 import dev.emi.emi.api.stack.EmiStack;

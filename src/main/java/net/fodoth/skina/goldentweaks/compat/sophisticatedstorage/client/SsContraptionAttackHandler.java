@@ -18,6 +18,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.InputEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -30,6 +31,9 @@ public class SsContraptionAttackHandler {
     @SubscribeEvent
     public static void onAttack(InputEvent.InteractionKeyMappingTriggered event) {
         if (!event.isAttack()) {
+            return;
+        }
+        if (!ModList.get().isLoaded("create") || !ModList.get().isLoaded("sophisticatedstorage")) {
             return;
         }
         Minecraft minecraft = Minecraft.getInstance();

@@ -11,6 +11,7 @@ import net.fodoth.skina.goldentweaks.network.packet.S2COpenMaterialBookPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CSsStorageRenderPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CProviderIconsPacket;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
@@ -66,11 +67,15 @@ public class ModNetworking {
                 S2CSsStorageRenderPacket::handle
         );
 
-        registrar.playToClient(
-                S2CConsumableSyncPacket.TYPE,
-                S2CConsumableSyncPacket.STREAM_CODEC,
-                S2CConsumableSyncPacket::handle
-        );
+        // 该包（及其 codec）引用 familiarslib / iron's spellbooks 的类型，仅在 alshanex 魔宠存在时注册，
+        // 避免未装这些模组时类加载链路抛 NoClassDefFoundError
+        if (ModList.get().isLoaded("alshanex_familiars")) {
+            registrar.playToClient(
+                    S2CConsumableSyncPacket.TYPE,
+                    S2CConsumableSyncPacket.STREAM_CODEC,
+                    S2CConsumableSyncPacket::handle
+            );
+        }
 
         registrar.playToClient(
                 S2CProviderIconsPacket.TYPE,
