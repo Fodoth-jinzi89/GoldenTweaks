@@ -1,0 +1,19 @@
+{
+  "item.thermal.upgrade_augment_4": "Crimson Integral Components",
+  "item.thermal.upgrade_augment_4.desc": "Improves base attributes. Other augments may be more effective as a result.",
+  "item.thermal.upgrade_augment_4.keyword": "augment kit upgrade",
+  "item.thermal.upgrade_augment_5": "Azure Integral Components",
+  "item.thermal.upgrade_augment_5.desc": "Improves base attributes. Other augments may be more effective as a result.",
+  "item.thermal.upgrade_augment_5.keyword": "augment kit upgrade",
+  "item.thermal.upgrade_augment_6": "Violet Integral Components",
+  "item.thermal.upgrade_augment_6.desc": "Improves base attributes. Other augments may be more effective as a result.",
+  "item.thermal.upgrade_augment_6.keyword": "augment kit upgrade",
+  "item.thermal.crystallarieum_growing_augment": "Augment: Ink-Crystal Cultivator",
+  "item.thermal.crystallarieum_growing_augment.keyword": "augment machine crystallizer spectrum crystallarieum crystal",
+  "info.thermal.augment.crystallarieum.0": "Crystallizer: Specialization",
+  "info.thermal.augment.crystallarieum.a.0": "Lets the Crystallizer also grow Spectrum crystals.",
+  "info.thermal.augment.crystallarieum.a.1": "No ink is consumed at all.",
+  "info.thermal.augment.crystallarieum.b.0": "The growth fluid must be present in the input tank (it is not used up).",
+  "info.thermal.augment.crystallarieum.b.1": "Additives are consumed at their usual rate and speed growth up.",
+  "info.thermal.augment.crystallarieum.c.0": "Ink is ignored entirely, so ink-related boosts do not apply either."
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "maidmarriage:maid_spirit"
+  },
+  "aspects": {
+    "humanus": 4,
+    "victus": 3
+  }
+}

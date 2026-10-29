@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:uumatter_bucket"
+  },
+  "aspects": {
+    "alienis": 1,
+    "permutatio": 3,
+    "praecantatio": 3,
+    "vacuos": 2
+  }
+}

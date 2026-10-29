@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:mining_factory"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 3
+  }
+}

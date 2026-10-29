@@ -53,6 +53,7 @@
   "advancement.createnuclear.uranium_rod.desc": "在动力合成器中放置浓缩黄饼以制作你的第一个铀棒",
   "advancement.createnuclear.yellowcake": "黄饼是怎样炼成的",
   "advancement.createnuclear.yellowcake.desc": "通过挤压来制作黄饼",
+  "biome.createnuclear.irradiated_land": "废土",
   "block.createnuclear.autunite": "钙铀云母",
   "block.createnuclear.autunite_pillar": "钙铀云母柱",
   "block.createnuclear.cut_autunite": "切制钙铀云母",

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:roast_duck_tongue"
+  },
+  "aspects": {
+    "bestia": 1,
+    "fames": 2,
+    "ignis": 1
+  }
+}

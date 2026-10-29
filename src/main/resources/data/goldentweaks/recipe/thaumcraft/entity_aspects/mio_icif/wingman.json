@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "mio_icif:wingman"
+  },
+  "aspects": {
+    "aer": 1,
+    "cognitio": 2,
+    "machina": 3,
+    "volatus": 3
+  }
+}

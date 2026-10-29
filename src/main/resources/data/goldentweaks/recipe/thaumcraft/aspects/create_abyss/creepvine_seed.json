@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_abyss:creepvine_seed"
+  },
+  "aspects": {
+    "aqua": 1,
+    "herba": 2
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "offroad:wheel_mount"
+  },
+  "aspects": {
+    "machina": 2,
+    "metallum": 1
+  }
+}

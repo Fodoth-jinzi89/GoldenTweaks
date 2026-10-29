@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:block_electric_light"
+  },
+  "aspects": {
+    "lux": 3,
+    "machina": 1,
+    "potentia": 1
+  }
+}

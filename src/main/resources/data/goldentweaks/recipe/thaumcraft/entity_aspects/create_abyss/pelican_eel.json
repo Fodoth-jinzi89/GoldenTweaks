@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create_abyss:pelican_eel"
+  },
+  "aspects": {
+    "aqua": 3,
+    "bestia": 4,
+    "victus": 3
+  }
+}

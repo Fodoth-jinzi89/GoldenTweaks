@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "offroad:borehead_contraption_entity"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

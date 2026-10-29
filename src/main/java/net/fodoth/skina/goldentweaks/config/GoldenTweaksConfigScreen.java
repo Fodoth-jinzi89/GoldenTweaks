@@ -321,6 +321,39 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.academy.skill_block_claim_protection",
                     ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION, true);
 
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.astralsorcery.perk_point_cap",
+                    ASTRAL_SORCERY_PERK_POINT_CAP,
+                    364, 1, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.astralsorcery.smooth_perk_curve",
+                    ASTRAL_SORCERY_SMOOTH_PERK_CURVE, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.createoreexcavation.encourage_vein_sharing",
+                    ORE_VEIN_SHARING, true);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.createoreexcavation.vein_speed_bonus",
+                    ORE_VEIN_SPEED_BONUS, 0.20D, 0.0D, 1.0D);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.createoreexcavation.vein_yield_bonus",
+                    ORE_VEIN_YIELD_BONUS, 0.20D, 0.0D, 1.0D);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.createoreexcavation.vein_speed_floor",
+                    ORE_VEIN_SPEED_FLOOR, 0.50D, 0.0D, 1.0D);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.createoreexcavation.vein_double_output_cap",
+                    ORE_VEIN_DOUBLE_OUTPUT_CAP, 1.00D, 0.0D, 1.0D);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.createoreexcavation.vein_finder_radius",
+                    ORE_VEIN_FINDER_RADIUS, 2500, 0, 10000);
+
             // =========================================================
             // Debug
             // =========================================================

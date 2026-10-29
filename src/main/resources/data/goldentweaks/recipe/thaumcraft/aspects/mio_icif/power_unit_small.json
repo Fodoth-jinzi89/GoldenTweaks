@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:power_unit_small"
+  },
+  "aspects": {
+    "machina": 2,
+    "metallum": 2,
+    "ordo": 1,
+    "potentia": 3
+  }
+}

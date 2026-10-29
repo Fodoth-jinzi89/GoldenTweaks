@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:petrotheum_dust"
+  },
+  "aspects": {
+    "terra": 3,
+    "motus": 2
+  }
+}

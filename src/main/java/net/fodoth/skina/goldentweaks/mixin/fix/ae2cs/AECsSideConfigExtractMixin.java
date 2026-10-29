@@ -26,7 +26,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 }, remap = false)
 public abstract class AECsSideConfigExtractMixin {
 
-    @Shadow
+    // val$policy 是匿名类捕获的合成字段，名字不带映射，必须显式关掉 remap，
+    // 否则 Mixin 在 prepareConfigs 阶段以 "Found a remappable @Shadow annotation" 报错
+    @Shadow(remap = false)
     @Final
     private SidePolicy val$policy;
 

@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:guide"
+  },
+  "aspects": {
+    "charta": 2,
+    "cognitio": 3,
+    "fabrico": 1,
+    "humanus": 1
+  }
+}

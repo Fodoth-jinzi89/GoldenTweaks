@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:wedding_dress"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

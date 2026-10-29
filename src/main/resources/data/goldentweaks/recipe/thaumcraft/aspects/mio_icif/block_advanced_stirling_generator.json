@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:block_advanced_stirling_generator"
+  },
+  "aspects": {
+    "ignis": 1,
+    "machina": 3,
+    "motus": 1,
+    "potentia": 3
+  }
+}

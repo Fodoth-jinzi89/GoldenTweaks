@@ -6,6 +6,12 @@ from pathlib import Path
 INPUT_DIR = "recipes"
 OUTPUT_DIR = "create_recipes"
 
+# 跳过列表：按产物物品 ID 跳过，命中的研钵配方不会生成粉碎/研磨配方
+# flavor_immersed_daily:saltpiece —— 禁用“圆石磨成盐”
+SKIP_RESULTS = {
+    "flavor_immersed_daily:saltpiece",
+}
+
 
 def wrap_ingredient(ingredient):
     return {
@@ -22,6 +28,10 @@ def convert_recipe(recipe):
         return None
 
     result = recipe["result"]
+
+    # 命中跳过列表的产物不生成配方
+    if result["id"] in SKIP_RESULTS:
+        return None
 
     result_entry = {
         "id": result["id"]

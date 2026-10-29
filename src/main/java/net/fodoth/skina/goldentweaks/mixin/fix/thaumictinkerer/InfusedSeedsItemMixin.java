@@ -1,13 +1,16 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumictinkerer;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import thaumic.tinkerer.common.event.TTWorldActions;
 import thaumic.tinkerer.common.item.InfusedSeedsItem;
 import thaumic.tinkerer.common.registry.TTBlocks;
 
@@ -16,7 +19,7 @@ import thaumic.tinkerer.common.registry.TTBlocks;
  * clicked block into infused farmland. Let rich soil farmland work as soil too, without replacing it.
  * <p>
  * The first {@code BlockState#getBlock} call in {@code useOn} is the "is this valid soil?" gate, and the first
- * {@code Level#setBlock} call is the farmland rewrite that follows it.
+ * {@code TTWorldActions#setBlock} call is the farmland rewrite that follows it.
  */
 @Mixin(value = InfusedSeedsItem.class, remap = false)
 public abstract class InfusedSeedsItemMixin {
@@ -37,16 +40,16 @@ public abstract class InfusedSeedsItemMixin {
             method = "useOn",
             at = @At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/world/level/Level;setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z",
+                    target = "Lthaumic/tinkerer/common/event/TTWorldActions;setBlock(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/Direction;)Z",
                     ordinal = 0
             )
     )
-    private static boolean goldentweaks$keepRichSoilFarmland(Level level, BlockPos pos, BlockState state, int flags) {
+    private static boolean goldentweaks$keepRichSoilFarmland(Level level, BlockPos pos, BlockState state, Entity entity, Direction face) {
         if (goldentweaks$isRichSoilFarmland(level.getBlockState(pos))) {
             // Rich soil farmland is strictly better than infused farmland - do not overwrite it.
             return true;
         }
-        return level.setBlock(pos, state, flags);
+        return TTWorldActions.setBlock(level, pos, state, entity, face);
     }
 
     private static boolean goldentweaks$isRichSoilFarmland(BlockState state) {

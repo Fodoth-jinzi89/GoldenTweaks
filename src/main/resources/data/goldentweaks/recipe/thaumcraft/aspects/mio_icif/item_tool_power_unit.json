@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_tool_power_unit"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "instrumentum": 2,
+    "machina": 1,
+    "metallum": 2
+  }
+}

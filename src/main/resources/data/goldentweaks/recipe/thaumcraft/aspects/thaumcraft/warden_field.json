@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:warden_field"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

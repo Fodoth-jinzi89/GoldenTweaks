@@ -23,20 +23,22 @@
   `glsl-processor` 这几个纯库，以及整合包里也没有的 `optitritium`/`rrls`/`raritycore`；
   其余模组一律通过 `fileTree` 从本目录取。模组版本以整合包实例的 `mods/` 目录为准，
   更新模组时把新 jar 换进来、`build.gradle` 不用动。
+- 换完 jar 后跑一次 `script/mixin-requirements.ps1 -Write`，重算 `MixinRequirements`：
+  某个 mixin 自身引用了缺失模组的类时会被跳过，否则会把启动崩成 `MixinTransformerError`。
 
 
 ## compileOnly/ —— 195 个 jar（仅编译期可见）
 
 | 模组 | 版本 | 文件名 |
 |---|---|---|
-| AcademyCraft-neoforge | `0.0.28-scex-machineui` | `AcademyCraft-neoforge-1.21.1-0.0.28-scex-machineui.jar` |
+| AcademyCraft-neoforge | `0.0.33-scex-combat-hud` | `AcademyCraft-neoforge-1.21.1-0.0.33-scex-combat-hud.jar` |
 | AI-Improvements | `1.21-0.5.3` | `AI-Improvements-1.21-0.5.3.jar` |
 | watut | `1.2.7-neoforge-1.21.1` | `watut-1.2.7-neoforge-1.21.1.jar` |
 | AdvancedLootInfo-neoforge | `2.5.0` | `AdvancedLootInfo-neoforge-1.21.1-2.5.0.jar` |
 | ae2-pattern-encoding-access-terminal | `1.21.1-1.1.0-rc.4` | `ae2-pattern-encoding-access-terminal-1.21.1-1.1.0-rc.4.jar` |
 | AE2-QoL-Client | `2.0.2` | `[C]-aeqc-2.0.2-neoforge-1.21.1.jar` |
 | ae2_auto_pattern_upload | `2.0.0` | `ae2_auto_pattern_upload-2.0.0.jar` |
-| ae2cs | `1.2.1` | `[S]-ae2cs-1.2.1-neoforge-1.21.1.jar` |
+| ae2cs | `1.2.1-scex.1` | `[S]-ae2cs-1.21.1-1.2.1.jar` |
 | ae2helpers | `1.0.1` | `ae2helpers-1.0.1.jar` |
 | ae_better_villagers | `1.15.1.b` | `ae_better_villagers-1.15.1.b.jar` |
 | aeallpattern | `0.2.6` | `[S]-aeallpattern-0.2.6-neoforge-1.21.1.jar` |
@@ -52,6 +54,7 @@
 | ApothicAttributes | `2.11.0` | `ApothicAttributes-1.21.1-2.11.0.jar` |
 | ApothicEnchanting | `1.6.4` | `ApothicEnchanting-1.21.1-1.6.4.jar` |
 | architectury | `13.0.11` | `[S]-architectury-13.0.11-neoforge-1.21.1.jar` |
+| AstralSorcery | `2.0.2` | `[S]-AstralSorcery-2.0.2.39.jar` |
 | avaritia_integration | `1.0` | `avaritia_integration-1.0.jar` |
 | BiomesOPlenty-neoforge | `1.21.1-21.1.0.13` | `[核心]BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar` |
 | BuildingWands-neoforge | `MC1.21.1-3.0.5` | `BuildingWands-neoforge-MC1.21.1-3.0.5.jar` |
@@ -60,14 +63,15 @@
 | CBC-Military-Supplement | `3.0.6-1.21.1` | `CBC-Military-Supplement-1.21.1-3.0.7.jar` |
 | ccbtweaks | `1.0.0-b.28` | `[C]-ccbtweaks-1.0.0-b.28-neoforge-1.21.1.jar` |
 | IMBlocker | `5.6.2.1` | `IMBlocker-5.6.2.1-neoforge+1.20.6-1.21.8.jar` |
-| certain_questing_additions-neoforge | `1.2.0.4+mc1.21.1` | `certain_questing_additions-neoforge-1.2.0.4+mc1.21.1.jar` |
+| certain_questing_additions-neoforge | `1.2.0.5+mc1.21.1` | `certain_questing_additions-neoforge-1.2.0.5+mc1.21.1.jar` |
 | cfwinfo | `1.9.1` | `[S]-cfwinfo-1.9.1-neoforge-1.21.1.jar` |
 | cmpackagecouriers-neoforge | `2.2.4` | `cmpackagecouriers-neoforge-2.2.4.jar` |
 | cmverticaladditions-neoforge | `1.0.0` | `cmverticaladditions-neoforge-1.0.0.jar` |
+| cofh_core | `11.0.2-scex.dev.30` | `cofh_core-11.0.2-scex.dev.30.jar` |
 | compactmachines-core-api | `7.0.81` | `compactmachines-core-api-7.0.81.jar` |
 | compactmachines-neoforge | `7.0.81` | `compactmachines-neoforge-7.0.81.jar` |
 | continuity | `3.0.0+0.0.1+1.21.1.neoforge-all` | `[库]continuity-3.0.0+0.0.1+1.21.1.neoforge-all.jar` |
-| copycats | `3.0.4+mc.1.21.1-neoforge` | `copycats-3.0.4+mc.1.21.1-neoforge.jar` |
+| copycats | `3.0.9+mc.1.21.1-neoforge` | `copycats-3.0.9+mc.1.21.1-neoforge.jar` |
 | cosmeticarmorreworkedforked-neoforge | `1.21.1-0.0.4` | `cosmeticarmorreworkedforked-neoforge-1.21.1-0.0.4.jar` |
 | cosmeticcorpsecompat | `1.21.1-NeoForge-4.0.1` | `cosmeticcorpsecompat-1.21.1-NeoForge-4.0.1.jar` |
 | create-apothic-enchanting | `0.1.0` | `create-apothic-enchanting-0.1.0.jar` |
@@ -89,7 +93,7 @@
 | emilink | `21.1.16` | `emilink-21.1.16.jar` |
 | exspectriments | `0.3.0_mapped_moj_1.21.1` | `exspectriments-0.3.0_mapped_moj_1.21.1.jar` |
 | ExtendedAE | `1.21-2.2.41-neoforge` | `ExtendedAE-1.21-2.2.41-neoforge.jar` |
-| extendedae_plus | `1.6.1` | `extendedae_plus-1.6.1.jar` |
+| extendedae_plus | `1.6.3-scex.jeicompat.1` | `extendedae_plus-1.6.3-scex.jeicompat.1.jar` |
 | ExtendedCrafting | `7.0.9` | `ExtendedCrafting-1.21.1-7.0.9.jar` |
 | familiarslib | `1.21.1-1.8` | `familiarslib-1.21.1-1.8.jar` |
 | fancymenu_neoforge | `3.9.14` | `fancymenu_neoforge_3.9.14_MC_1.21.1.jar` |
@@ -128,7 +132,7 @@
 | kotlinx-coroutines-jdk8 | `1.10.2` | `kotlinx-coroutines-jdk8-1.10.2.jar` |
 | kotlinx-serialization-core-jvm | `1.9.0` | `kotlinx-serialization-core-jvm-1.9.0.jar` |
 | kotlinx-serialization-json-jvm | `1.9.0` | `kotlinx-serialization-json-jvm-1.9.0.jar` |
-| kubejs-neoforge | `2101.7.2-build.368` | `kubejs-neoforge-2101.7.2-build.368.jar` |
+| kubejs-neoforge | `2101.7.2-build.374` | `kubejs-neoforge-2101.7.2-build.374.jar` |
 
 | linearbearing | `1.3.5` | `linearbearing-1.3.5.jar` |
 | lootjs-neoforge | `1.21.1-3.7.0` | `lootjs-neoforge-1.21.1-3.7.0.jar` |
@@ -137,8 +141,8 @@
 | Mekanism | `1.21.1-10.7.19.85` | `[核心]Mekanism-1.21.1-10.7.19.85.jar` |
 | MekanismGenerators | `1.21.1-10.7.19.85` | `[核心]MekanismGenerators-1.21.1-10.7.19.85.jar` |
 | modonomicon | `1.120.7` | `modonomicon-1.21.1-neoforge-1.120.7.jar` |
-| neoecoae | `21.2.6` | `neoecoae-21.2.6.jar` |
-| neoguanniao | `3.6` | `[S]-neoguanniao-3.6-neoforge-1.21.1.jar` |
+| neoecoae | `21.2.10` | `neoecoae-21.2.10.jar` |
+| neoguanniao | `3.6` | `neoguanniao-3.6-1.21.1-neoforge.jar` |
 | Northstar | `0.6.6+1.21.1` | `Northstar-0.6.6+1.21.1.jar` |
 | OELib-neoforge | `1.21.1-0.2.3` | `[核心]OELib-neoforge-1.21.1-0.2.3.jar` |
 | oneenoughitem-neoforge | `1.21.1-1.0.8` | `[核心]oneenoughitem-neoforge-1.21.1-1.0.8.jar` |
@@ -158,14 +162,21 @@
 | silent-lib | `1.21.1-neoforge-10.6.0` | `[库]silent-lib-1.21.1-neoforge-10.6.0.jar` |
 | silentgems | `1.21.1-neoforge-5.1.3` | `[核心]silentgems-1.21.1-neoforge-5.1.3.jar` |
 | solcarrot | `1.21.1-1.16.6` | `solcarrot-1.21.1-1.16.6.jar` |
-| sophisticatedcore | `1.5.2` | `[S]-sophisticatedcore-1.5.2-neoforge-1.21.1.jar` |
-| sophisticatedstorage | `1.5.87` | `[S]-sophisticatedstorage-1.5.87-neoforge-1.21.1.jar` |
+| sophisticatedcore | `1.5.14` | `[S]-sophisticatedcore-1.5.14-neoforge-1.21.1.jar` |
+| sophisticatedstorage | `1.6.7` | `[S]-sophisticatedstorage-1.21.1-1.6.7.2184.jar` |
 | spectrum | `1.12.9-1.21.1-neo` | `spectrum-1.12.9-1.21.1-neo.jar` |
 | stabilized | `1.0.1` | `[S]-stabilized-1.0.1-neoforge-1.21.1.jar` |
 | supplementaries-neoforge | `1.21.1-4.0.2` | `supplementaries-1.21.1-4.0.2-neoforge.jar` |
 | thedarkcolour.kfflang | `5.11.0` | `thedarkcolour.kfflang-5.11.0.jar` |
 | thedarkcolour.kfflib | `5.11.0` | `thedarkcolour.kfflib-5.11.0.jar` |
 | thedarkcolour.kffmod | `5.11.0` | `thedarkcolour.kffmod-5.11.0.jar` |
+| thermal | `11.0.7-scex.dev.30` | `thermal-11.0.7-scex.dev.30.jar` |
+| thermal_cultivation | `11.0.2-scex.dev.26` | `thermal_cultivation-11.0.2-scex.dev.26.jar` |
+| thermal_dynamics | `11.0.1-scex.dev.30` | `thermal_dynamics-11.0.1-scex.dev.30.jar` |
+| thermal_expansion | `11.0.2-scex.dev.30` | `thermal_expansion-11.0.2-scex.dev.30.jar` |
+| thermal_foundation | `11.0.7-scex.dev.26` | `thermal_foundation-11.0.7-scex.dev.26.jar` |
+| thermal_innovation | `11.0.1-scex.dev.26` | `thermal_innovation-11.0.1-scex.dev.26.jar` |
+| thermal_locomotion | `11.0.1-scex.dev.26` | `thermal_locomotion-11.0.1-scex.dev.26.jar` |
 | touhou_little_maid_spell | `1.21.1-1.8.1-neoforge` | `touhou_little_maid_spell-1.21.1-1.8.1-neoforge.jar` |
 | touhou_lost_maid | `0.0.2` | `touhou_lost_maid-0.0.2.jar` |
 | tracks_plus | `1.0.6b7` | `tracks_plus-1.0.6b7.jar` |
@@ -173,17 +184,17 @@
 | trade_cycling | `1.21.1-1.0.23` | `trade-cycling-neoforge-1.21.1-1.0.23.jar` |
 | TravelersTitles | `1.21.1-NeoForge-5.1.3` | `TravelersTitles-1.21.1-NeoForge-5.1.3.jar` |
 | traveloptics | `4.4.0.1-1.21.1` | `traveloptics-4.4.0.1-1.21.1.jar` |
-| wcwt（ME 综合工作终端） | `1.3.10` | `wcwt-1.3.10.jar` |
+| wcwt（ME 综合工作终端） | `1.3.10-scex.legacycompat.1` | `wcwt-1.3.10-scex.legacycompat.1.jar` |
 | yammo | `1.0.6` | `yammo-1.0.6.jar` |
 | itemphysiclite | `1.6.13` | `ItemPhysicLite_NEOFORGE_v1.6.13_mc1.21.1.jar` |
 | moonlight | `1.21.1-3.7.2` | `moonlight-1.21.1-3.7.2-neoforge.jar` |
 | create_stuff_additions | `2.1.4` | `[S]-create_sa-2.1.4-neoforge-1.21.1.jar` |
 | eccentric_tome | `1.21.1-1.2.0` | `[S]-eccentrictome-1.2.0-neoforge-1.21.1.jar` |
-| alltheleaks | `1.1.8+1.21.1-neoforge` | `[C]-alltheleaks-1.1.8-neoforge-1.21.1.jar` |
+| alltheleaks | `1.1.12+1.21.1-neoforge` | `[C]-alltheleaks-1.1.12+1.21.1-neoforge.jar` |
 | create_dreams_and_desires | `2.3a-BETA` | `[S]-dndesires-2.3a-BETA-neoforge-1.21.1.jar` |
 | vista | `1.21.1-5.5.7` | `[S]-vista-5.5.7-neoforge-1.21.1.jar` |
 | modernui | `3.13.0.1` | `[C]-modernui-3.13.0.1-neoforge-1.21.1.jar` |
-| ldlib2 | `2.2.29` | `[S]-ldlib2-2.2.29-neoforge-1.21.1.jar` |
+| ldlib2 | `2.2.42` | `[S]-ldlib2-2.2.42-neoforge-1.21.1.jar` |
 | additional_attributes | `1.2.2` | `[S]-additional_attributes-1.2.2-neoforge-1.21.jar` |
 | connector | `2.0.0-beta.17` | `[S]-connector-2.0.0-beta.17-neoforge-1.21.1.jar` |
 | connectorextras | `1.12.1` | `[S]-connectorextras-1.12.1-neoforge-1.21.1.jar` |
@@ -206,9 +217,9 @@
 | 模组 | 版本 | 文件名 |
 |---|---|---|
 | advanced_infusion | `0.1.0` | `advanced_infusion-0.1.0.jar` |
-| appliedenergistics2 | `19.2.17` | `[核心]appliedenergistics2-19.2.17.jar` |
+| appliedenergistics2 | `19.2.18` | `[核心]appliedenergistics2-19.2.18.jar` |
 | attributefix-neoforge | `1.21.1-21.1.3` | `[基础]attributefix-neoforge-1.21.1-21.1.3.jar` |
-| avaritia_more_items | `1.21.1-NeoForge-beta-1.0.6` | `[S]-avaritia_more_items-beta-1.0.6-neoforge-1.21.1.jar` |
+| avaritia_more_items | `1.21.1-NeoForge-beta-1.0.7` | `avaritia_more_items-1.21.1-NeoForge-beta-1.0.7.jar` |
 | bookshelf-neoforge | `1.21.1-21.1.81` | `[库]bookshelf-neoforge-1.21.1-21.1.81.jar` |
 | bountiful-neoforge | `8.0.0-beta.2` | `bountiful-neoforge-8.0.0-beta.2.jar` |
 | create | `1.21.1-6.0.10` | `[核心]create-1.21.1-6.0.10.jar` |
@@ -230,19 +241,19 @@
 | L_Ender's Cataclysm | `3.33` | `L_Ender's Cataclysm 1.21.1-3.33.jar` |
 | lionfishapi | `3.1` | `[S]-lionfishapi-3.1-neoforge-1.21.1.jar` |
 | lootr-neoforge | `1.21.1-1.11.38.127` | `lootr-neoforge-1.21.1-1.11.38.127.jar` |
-| nodalmechanics | `1.0.0-port.6` | `nodalmechanics-1.0.0-port.6.jar` |
+| nodalmechanics | `1.0.0-port.7` | `nodalmechanics-1.0.0-port.7.jar` |
 | prickle-neoforge | `1.21.1-21.1.11` | `[库]prickle-neoforge-1.21.1-21.1.11.jar` |
-| Re-Avaritia-neoforge | `1.4.2` | `Re-Avaritia-neoforge-1.21.1-1.4.2-release.jar` |
+| avaritia | `1.3.9.9` | `[S]-avaritia-1.3.9.9-neoforge-1.21.1.jar` |
 | renderblender | `1.0.0` | `renderblender-1.0.0.jar` |
 | sable-neoforge | `2.0.5` | `[S]-sable-2.0.5-neoforge-1.21.1.jar` |
-| scex-thaumcraft-aspects-jei | `1.21.1-1.0.0-rc5` | `scex-thaumcraft-aspects-jei-1.21.1-1.0.0-rc5.jar` |
+| scex-thaumcraft-aspects-jei | `1.21.1-1.0.0-rc7` | `scex-thaumcraft-aspects-jei-1.21.1-1.0.0-rc7.jar` |
 | sodium-neoforge | `0.8.13+mc1.21.1` | `sodium-neoforge-0.8.13+mc1.21.1.jar` |
-| taintedmagic | `1.0.0-port.33` | `taintedmagic-1.0.0-port.33.jar` |
-| thaumcraft | `0.2.2.95-port.253` | `thaumcraft-0.2.2.95-port.253.jar` |
+| taintedmagic | `1.0.0-port.35` | `taintedmagic-1.0.0-port.35.jar` |
+| thaumcraft | `0.2.2.107-port.278-scex.compat.1` | `thaumcraft-0.2.2.107-port.278-scex.compat.1.jar` |
 | thaumcraftcelestial | `1.0.0-port.24` | `thaumcraftcelestial-1.0.0-port.24.jar` |
-| thaumic_tinkerer | `1.0.0-port.64` | `thaumic_tinkerer-1.0.0-port.64.jar` |
+| thaumic_tinkerer | `1.0.0-port.65` | `thaumic_tinkerer-1.0.0-port.65.jar` |
 | thaumicbases | `2.1.189.32-port.21` | `thaumicbases-2.1.189.32-port.21.jar` |
-| ThaumicEnergistics | `1.21.1-neoforge-2.3.15-alpha` | `ThaumicEnergistics-1.21.1-neoforge-2.3.15-alpha.jar` |
+| ThaumicEnergistics | `1.21.1-neoforge-2.6.4-alpha` | `ThaumicEnergistics-1.21.1-neoforge-2.6.4-alpha.jar` |
 | thaumichorizons | `1.21.1-0.1.0-scex-dev.41` | `thaumichorizons-1.21.1-0.1.0-scex-dev.41.jar` |
 | toomanyrecipeviewers | `0.9.0+mc.21.1` | `toomanyrecipeviewers-0.9.0+mc.21.1.jar` |
 | worldedit-mod | `7.3.8` | `[基础]worldedit-mod-7.3.8.jar` |

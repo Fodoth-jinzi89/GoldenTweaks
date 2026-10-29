@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "createaddition:gold_goblet"
-  },
-  "aspects": {
-    "metallum": 3
-  }
-}

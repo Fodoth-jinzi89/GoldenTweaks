@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:harvester"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3
+  }
+}

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "create_abyss:magmatic_snail"
+  },
+  "aspects": {
+    "aqua": 3,
+    "bestia": 4,
+    "victus": 3
+  }
+}

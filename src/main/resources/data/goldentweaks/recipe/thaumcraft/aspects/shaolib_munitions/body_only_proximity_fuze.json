@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "shaolib_munitions:body_only_proximity_fuze"
+  },
+  "aspects": {
+    "metallum": 2,
+    "telum": 3
+  }
+}

@@ -1,5 +1,6 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.minecraft.resources.ResourceLocation;
@@ -76,14 +77,16 @@ public class GTCrucibleRecipe extends AbstractGTThaumcraftRecipe<GTCrucibleRecip
             return null;
         }
 
-        JsonObject catalystObject = ThaumcraftRecipeUtil.getRequiredObject(json, "catalyst");
-        if (catalystObject == null) {
+        // catalyst 允许两种写法：直接一个物品 id，或 {"type": "item"/"tag"/"string", ...}
+        JsonElement catalystElement = json.get("catalyst");
+        if (catalystElement == null) {
+            GoldenTweaks.LOGGER.warn("Invalid Thaumcraft crucible recipe '{}': missing 'catalyst'.", research);
             return null;
         }
 
         // 日志用的 recipe id 必须是真实文件位置：research 是研究 key（大写），
         // 拿它拼 ResourceLocation 会直接抛异常并让整个配方加载失败。
-        Object catalyst = ThaumcraftRecipeUtil.parseIngredient(catalystObject, location, RECIPE_NAME, "catalyst");
+        Object catalyst = ThaumcraftRecipeUtil.parseIngredient(catalystElement, location, RECIPE_NAME, "catalyst");
         if (catalyst == null) {
             return null;
         }

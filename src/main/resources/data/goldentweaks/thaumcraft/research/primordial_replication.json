@@ -18,7 +18,7 @@
     "substance": 1
   },
   "parents": [
-    "PRIMPEARL"
+    "ENTEROUTER"
   ],
   "concealed": true,
   "pages": [
@@ -26,6 +26,10 @@
     {
       "type": "goldentweaks:infusion",
       "recipe_id": "goldentweaks:primordial_pearl"
+    },
+    {
+      "type": "goldentweaks:infusion",
+      "recipe_id": "goldentweaks:primordial_nodule"
     }
   ]
 }

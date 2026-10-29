@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "astralsorcery:structure_marker"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "instrumentum": 1
+  }
+}

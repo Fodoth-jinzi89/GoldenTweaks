@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:guava_juice"
+  },
+  "aspects": {
+    "fames": 1,
+    "herba": 2
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:tall_pink_dragonjag"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

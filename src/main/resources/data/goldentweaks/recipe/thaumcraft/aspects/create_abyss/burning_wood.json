@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_abyss:burning_wood"
+  },
+  "aspects": {
+    "ignis": 3,
+    "saxum": 2
+  }
+}

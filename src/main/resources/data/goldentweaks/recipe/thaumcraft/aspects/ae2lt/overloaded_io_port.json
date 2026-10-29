@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ae2lt:overloaded_io_port"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 3
+  }
+}

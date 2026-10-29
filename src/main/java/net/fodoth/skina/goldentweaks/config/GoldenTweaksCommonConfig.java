@@ -87,6 +87,28 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.BooleanValue ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION;
 
     // =========================
+    // astralsorcery 平衡
+    // =========================
+    public static final ModConfigSpec.IntValue ASTRAL_SORCERY_PERK_POINT_CAP;
+
+    public static final ModConfigSpec.BooleanValue ASTRAL_SORCERY_SMOOTH_PERK_CURVE;
+
+    // =========================
+    // create ore excavation 平衡
+    // =========================
+    public static final ModConfigSpec.BooleanValue ORE_VEIN_SHARING;
+
+    public static final ModConfigSpec.DoubleValue ORE_VEIN_SPEED_BONUS;
+
+    public static final ModConfigSpec.DoubleValue ORE_VEIN_YIELD_BONUS;
+
+    public static final ModConfigSpec.DoubleValue ORE_VEIN_SPEED_FLOOR;
+
+    public static final ModConfigSpec.DoubleValue ORE_VEIN_DOUBLE_OUTPUT_CAP;
+
+    public static final ModConfigSpec.IntValue ORE_VEIN_FINDER_RADIUS;
+
+    // =========================
     // oei 兼容
     // =========================
     public static final ModConfigSpec.BooleanValue ORE_UNIFICATION_GUARD;
@@ -357,6 +379,60 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.academy.skill_block_claim_protection"))
                 .comment(comment("balance.academy.skill_block_claim_protection"))
                 .define("skillBlockClaimProtection", true);
+
+        builder.pop();
+
+        // =========================
+        // astralsorcery
+        // =========================
+        builder.push("astralsorcery");
+
+        ASTRAL_SORCERY_PERK_POINT_CAP = builder
+                .translation(key("balance.astralsorcery.perk_point_cap"))
+                .comment(comment("balance.astralsorcery.perk_point_cap"))
+                .defineInRange("perkPointCap", 364, 1, Integer.MAX_VALUE);
+
+        ASTRAL_SORCERY_SMOOTH_PERK_CURVE = builder
+                .translation(key("balance.astralsorcery.smooth_perk_curve"))
+                .comment(comment("balance.astralsorcery.smooth_perk_curve"))
+                .define("smoothPerkCurve", true);
+
+        builder.pop();
+
+        // =========================
+        // create ore excavation
+        // =========================
+        builder.push("createoreexcavation");
+
+        ORE_VEIN_SHARING = builder
+                .translation(key("balance.createoreexcavation.encourage_vein_sharing"))
+                .comment(comment("balance.createoreexcavation.encourage_vein_sharing"))
+                .define("encourageVeinSharing", true);
+
+        ORE_VEIN_SPEED_BONUS = builder
+                .translation(key("balance.createoreexcavation.vein_speed_bonus"))
+                .comment(comment("balance.createoreexcavation.vein_speed_bonus"))
+                .defineInRange("veinSpeedBonus", 0.20D, 0.0D, 1.0D);
+
+        ORE_VEIN_YIELD_BONUS = builder
+                .translation(key("balance.createoreexcavation.vein_yield_bonus"))
+                .comment(comment("balance.createoreexcavation.vein_yield_bonus"))
+                .defineInRange("veinYieldBonus", 0.20D, 0.0D, 1.0D);
+
+        ORE_VEIN_SPEED_FLOOR = builder
+                .translation(key("balance.createoreexcavation.vein_speed_floor"))
+                .comment(comment("balance.createoreexcavation.vein_speed_floor"))
+                .defineInRange("veinSpeedFloor", 0.50D, 0.0D, 1.0D);
+
+        ORE_VEIN_DOUBLE_OUTPUT_CAP = builder
+                .translation(key("balance.createoreexcavation.vein_double_output_cap"))
+                .comment(comment("balance.createoreexcavation.vein_double_output_cap"))
+                .defineInRange("veinDoubleOutputCap", 1.00D, 0.0D, 1.0D);
+
+        ORE_VEIN_FINDER_RADIUS = builder
+                .translation(key("balance.createoreexcavation.vein_finder_radius"))
+                .comment(comment("balance.createoreexcavation.vein_finder_radius"))
+                .defineInRange("veinFinderRadius", 2500, 0, 10000);
 
         builder.pop();
 
@@ -651,6 +727,78 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return ACADEMY_SKILL_BLOCK_CLAIM_PROTECTION.get();
+    }
+
+    public static int getAstralSorceryPerkPointCap() {
+
+        if (!GTState.isReady()) {
+            return 364;
+        }
+
+        return ASTRAL_SORCERY_PERK_POINT_CAP.get();
+    }
+
+    public static boolean isAstralSorcerySmoothPerkCurve() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return ASTRAL_SORCERY_SMOOTH_PERK_CURVE.get();
+    }
+
+    public static boolean isOreVeinSharingEnabled() {
+
+        if (!GTState.isReady()) {
+            return true;
+        }
+
+        return ORE_VEIN_SHARING.get();
+    }
+
+    public static double getOreVeinSpeedBonus() {
+
+        if (!GTState.isReady()) {
+            return 0.20D;
+        }
+
+        return ORE_VEIN_SPEED_BONUS.get();
+    }
+
+    public static double getOreVeinYieldBonus() {
+
+        if (!GTState.isReady()) {
+            return 0.20D;
+        }
+
+        return ORE_VEIN_YIELD_BONUS.get();
+    }
+
+    public static double getOreVeinSpeedFloor() {
+
+        if (!GTState.isReady()) {
+            return 0.50D;
+        }
+
+        return ORE_VEIN_SPEED_FLOOR.get();
+    }
+
+    public static double getOreVeinDoubleOutputCap() {
+
+        if (!GTState.isReady()) {
+            return 1.00D;
+        }
+
+        return ORE_VEIN_DOUBLE_OUTPUT_CAP.get();
+    }
+
+    public static int getVeinFinderRadius() {
+
+        if (!GTState.isReady()) {
+            return 2500;
+        }
+
+        return ORE_VEIN_FINDER_RADIUS.get();
     }
 
     private static String key(String path) {

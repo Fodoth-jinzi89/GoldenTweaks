@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:uav"
+  },
+  "aspects": {
+    "aer": 3,
+    "machina": 3,
+    "volatus": 2
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "thaumcraft:infusion_matrix",
+  "research": "GT_PRIMORDIAL_REPLICATION",
+  "instability": 9,
+  "result": {
+    "id": "taintedmagic:primordial_nodule",
+    "count": 1
+  },
+  "aspects": {
+    "anteanus": 32,
+    "history": 32,
+    "reliquiae": 32,
+    "atrpraecantatic": 32
+  },
+  "catalyst": {
+    "id": "thaumcraft:primal_charm",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "id": "silentgems:pearl"
+    },
+    {
+      "id": "silentgems:pearl"
+    },
+    {
+      "id": "silentgems:pearl"
+    },
+    {
+      "id": "silentgems:pearl"
+    }
+  ]
+}

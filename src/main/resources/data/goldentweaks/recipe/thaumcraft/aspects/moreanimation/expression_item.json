@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "moreanimation:expression_item"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

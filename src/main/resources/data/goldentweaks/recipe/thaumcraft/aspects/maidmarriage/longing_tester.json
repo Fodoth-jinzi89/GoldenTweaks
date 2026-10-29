@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:longing_tester"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

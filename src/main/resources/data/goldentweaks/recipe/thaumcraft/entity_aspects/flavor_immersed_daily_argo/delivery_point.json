@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:delivery_point"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "machina": 1
+  }
+}

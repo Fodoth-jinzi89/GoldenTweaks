@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_high_seas:cyan_sail"
+  },
+  "aspects": {
+    "aer": 2,
+    "pannus": 3
+  }
+}

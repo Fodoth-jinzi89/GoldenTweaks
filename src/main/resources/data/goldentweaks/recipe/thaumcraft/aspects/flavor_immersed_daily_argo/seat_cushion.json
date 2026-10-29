@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:seat_cushion"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "pannus": 2
+  }
+}

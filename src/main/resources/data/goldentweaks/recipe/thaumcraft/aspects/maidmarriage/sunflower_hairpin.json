@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:sunflower_hairpin"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

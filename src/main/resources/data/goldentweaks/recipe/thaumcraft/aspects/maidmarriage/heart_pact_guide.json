@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:heart_pact_guide"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

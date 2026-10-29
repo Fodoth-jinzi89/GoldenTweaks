@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_tool_nano_bow"
+  },
+  "aspects": {
+    "machina": 1,
+    "metallum": 2,
+    "potentia": 1,
+    "telum": 3
+  }
+}

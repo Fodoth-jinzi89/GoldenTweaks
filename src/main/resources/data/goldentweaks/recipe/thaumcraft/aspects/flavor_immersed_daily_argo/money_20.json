@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:money_20"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "lucrum": 2
+  }
+}

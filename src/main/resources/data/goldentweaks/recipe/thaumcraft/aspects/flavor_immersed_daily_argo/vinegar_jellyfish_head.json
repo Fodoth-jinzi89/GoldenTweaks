@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:vinegar_jellyfish_head"
+  },
+  "aspects": {
+    "bestia": 1,
+    "fames": 2,
+    "ignis": 1
+  }
+}

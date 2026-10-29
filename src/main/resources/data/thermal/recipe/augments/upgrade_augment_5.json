@@ -1,0 +1,64 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthecompressed"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgems"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_foundation"
+    }
+  ],
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABBCBBA",
+    "BDDEDDB",
+    "BDFEFDB",
+    "CEEGEEC",
+    "BDFEFDB",
+    "BDDEDDB",
+    "ABBCBBA"
+  ],
+  "key": {
+    "A": {
+      "item": "allthecompressed:lapis_block_1x"
+    },
+    "B": {
+      "item": "silentgear:azure_electrum_ingot"
+    },
+    "C": {
+      "item": "silentgems:aquamarine_block"
+    },
+    "D": {
+      "item": "silentgems:kyanite_glass"
+    },
+    "E": {
+      "item": "thermal:sapphire_gear"
+    },
+    "F": {
+      "item": "minecraft:blue_ice"
+    },
+    "G": {
+      "item": "thermal:upgrade_augment_4"
+    }
+  },
+  "result": {
+    "id": "thermal:upgrade_augment_5"
+  }
+}

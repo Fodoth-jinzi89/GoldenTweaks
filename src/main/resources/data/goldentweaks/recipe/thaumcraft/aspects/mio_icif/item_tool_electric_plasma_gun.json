@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_tool_electric_plasma_gun"
+  },
+  "aspects": {
+    "metallum": 2,
+    "potentia": 2,
+    "praecantatio": 1,
+    "telum": 3
+  }
+}

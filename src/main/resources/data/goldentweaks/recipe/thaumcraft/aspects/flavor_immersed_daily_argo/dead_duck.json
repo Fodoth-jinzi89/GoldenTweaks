@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:dead_duck"
+  },
+  "aspects": {
+    "bestia": 2,
+    "mortuus": 2,
+    "victus": 2
+  }
+}

@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_tool_rocket_launcher"
+  },
+  "aspects": {
+    "ardor": 2,
+    "metallum": 2,
+    "telum": 3,
+    "volatus": 1
+  }
+}

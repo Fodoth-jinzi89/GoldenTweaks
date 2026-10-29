@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_tool_bronze_hoe"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "instrumentum": 2,
+    "machina": 1,
+    "metallum": 2
+  }
+}

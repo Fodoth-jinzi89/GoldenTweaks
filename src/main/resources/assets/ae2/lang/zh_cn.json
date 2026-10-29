@@ -968,6 +968,7 @@
   "key.ae2.portable_fluid_cell": "打开便携流体元件",
   "key.ae2.portable_item_cell": "打开便携物品元件",
   "key.ae2.wireless_terminal": "打开无线终端",
+  "key.ae2.wireless_thaumicenergistics_arcane_terminal": "打开无线奥术合成终端",
   "key.toggle_focus.desc": "开关搜索框自动聚焦",
   "stat.ae2.items_extracted": "物品已取出ME存储",
   "stat.ae2.items_inserted": "物品已存入ME存储",

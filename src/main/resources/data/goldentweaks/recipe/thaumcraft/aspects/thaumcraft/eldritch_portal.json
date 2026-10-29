@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "thaumcraft:eldritch_portal"
-  },
-  "aspects": {
-    "alienis": 3
-  }
-}

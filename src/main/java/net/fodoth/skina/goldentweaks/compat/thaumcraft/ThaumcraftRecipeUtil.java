@@ -123,6 +123,27 @@ public class ThaumcraftRecipeUtil {
     }
 
     public static Object parseIngredient(JsonElement element, ResourceLocation location, String recipeName, String fieldName) {
+        if (element == null) {
+            GoldenTweaks.LOGGER.warn("Skipped Thaumcraft {} recipe '{}': missing {}.", recipeName, location, fieldName);
+            return null;
+        }
+
+        // 简写形式：直接写物品 id（坩埚配方里的 catalyst 都是这种）。
+        if (isString(element)) {
+            String itemId = element.getAsString();
+            Item item;
+            try {
+                item = BuiltInRegistries.ITEM.getOptional(ResourceLocation.parse(itemId)).orElse(null);
+            } catch (Exception e) {
+                item = null;
+            }
+            if (item == null) {
+                GoldenTweaks.LOGGER.warn("Skipped Thaumcraft {} recipe '{}': unknown {} item '{}'.", recipeName, location, fieldName, itemId);
+                return null;
+            }
+            return new ItemStack(item);
+        }
+
         if (!element.isJsonObject()) {
             GoldenTweaks.LOGGER.warn("Skipped Thaumcraft {} recipe '{}': {} must be an object.", recipeName, location, fieldName);
             return null;

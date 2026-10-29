@@ -261,8 +261,24 @@ public final class GTAspectEntry {
             }
             return false;
         });
+        ensureOptionalAspects();
         registerAll(entries);
         applyBuiltInCompositions();
+    }
+
+    /**
+     * The port keeps the extension aspects (sonus, tempus, vas and 14 others) out of the main
+     * registry unless its {@code extensions.modern_aspects} module is enabled, and
+     * {@link Aspect#get(String)} does not see them either way. GoldenTweaks' aspect tree and its
+     * item / entity aspect data are built on top of them, so pull them in here when the pack left
+     * the module off; harmless when it is already on.
+     */
+    private static void ensureOptionalAspects() {
+        for (Aspect optional : Aspect.optionalAspects()) {
+            if (Aspect.get(optional.getTag()) == null) {
+                Aspect.register(optional);
+            }
+        }
     }
 
     /**

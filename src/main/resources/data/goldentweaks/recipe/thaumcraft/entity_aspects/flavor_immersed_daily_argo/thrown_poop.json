@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:thrown_poop"
+  },
+  "aspects": {
+    "corpus": 1,
+    "perditio": 2
+  }
+}

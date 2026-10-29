@@ -3,6 +3,11 @@ package net.fodoth.skina.goldentweaks;
 import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.cataclysm.GTCataclysmCompat;
+import net.fodoth.skina.goldentweaks.compat.academy.AcademyStormWingFallImmunity;
+import net.fodoth.skina.goldentweaks.compat.academy.GMMediaPlayerState;
+import net.fodoth.skina.goldentweaks.compat.academy.GTRailgunDestruction;
+import net.fodoth.skina.goldentweaks.compat.academy.GTThermalCoinRailgun;
+import net.fodoth.skina.goldentweaks.compat.academy.network.GTMediaUnloadPacket;
 import net.fodoth.skina.goldentweaks.compat.appflux.AppliedFluxCompat;
 import net.fodoth.skina.goldentweaks.compat.maidsoulcore.MaidLogSuppressor;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
@@ -18,6 +23,7 @@ import net.fodoth.skina.goldentweaks.compat.thaumcraft.BrainJarResearchEvent;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.ThaumometerStorageScanQueue;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTAnimatedIconAnimator;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTThaumcraftClientData;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.client.GTWardedGlassRenderer;
 import net.fodoth.skina.goldentweaks.compat.thaumicbases.ThaumicCropHarvestEvent;
 import net.fodoth.skina.goldentweaks.compat.thaumicbases.GTThaumicBasesFurnaceCompat;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
@@ -31,7 +37,11 @@ import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.event.QuestBookRecipeKeyHandler;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.flavorimmerseddaily.FidAdditionalItems;
+import net.fodoth.skina.goldentweaks.compat.thermal.ThermalAdditionalItems;
+import net.fodoth.skina.goldentweaks.compat.thermal.ThermalCrystallarieumAugment;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
+import net.fodoth.skina.goldentweaks.compat.createoreexcavation.GTCreateOreExcavationItems;
+import net.fodoth.skina.goldentweaks.compat.createoreexcavation.GTCreateOreExcavationTooltip;
 import net.fodoth.skina.goldentweaks.compat.sophisticatedstorage.SSCreateCompat;
 import net.fodoth.skina.goldentweaks.event.SalvageCharmEvent;
 import net.fodoth.skina.goldentweaks.compat.lootr.LootrQuickLootEvent;
@@ -46,6 +56,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import org.slf4j.Logger;
 
 @Mod(GoldenTweaks.MODID)
@@ -162,10 +174,31 @@ public class GoldenTweaks {
             NeoForge.EVENT_BUS.register(OreUnificationGuard.class);
         }
 
+        if (ModList.get().isLoaded("createoreexcavation")) {
+            LOGGER.info("Detected createoreexcavation, registering the golden vein finder and vein sharing tooltips");
+            // 黄金探矿杖 + 钻井物品上的矿脉分享说明（见 compat/createoreexcavation）
+            GTCreateOreExcavationItems.register(modEventBus);
+            NeoForge.EVENT_BUS.register(GTCreateOreExcavationTooltip.class);
+        }
+
         if (ModList.get().isLoaded("ftbchunks")) {
             LOGGER.info("Detected ftbchunks, enforcing claim protection for skill block breaking");
             // 技能自行构造并发布 BreakEvent（绕过原版破坏流程）时，仍按 FTB Chunks 规则复核（见 compat/ftbchunks/GTClaimProtection）
             NeoForge.EVENT_BUS.register(GTClaimProtection.class);
+        }
+
+        if (ModList.get().isLoaded("academy")) {
+            LOGGER.info("Detected academy, granting fall immunity after storm_wing is unlocked");
+            // 风暴之翼解锁后免疫坠落伤害（见 compat/academy/AcademyStormWingFallImmunity）
+            NeoForge.EVENT_BUS.register(AcademyStormWingFallImmunity.class);
+            // 超电磁炮的方块破坏分摊到多 tick 执行（见 compat/academy/GTRailgunDestruction）
+            NeoForge.EVENT_BUS.register(GTRailgunDestruction.class);
+        }
+
+        if (ModList.get().isLoaded("academy") && ModList.get().isLoaded("thermal")) {
+            LOGGER.info("Detected academy + thermal, allowing thermal coins to be fired by the railgun");
+            // 热力硬币也能像学院币一样右键抛出并被超电磁炮发射（见 compat/academy/GTThermalCoinRailgun）
+            NeoForge.EVENT_BUS.register(GTThermalCoinRailgun.class);
         }
 
         if (ModList.get().isLoaded("thaumicbases")) {
@@ -180,9 +213,26 @@ public class GoldenTweaks {
             FidAdditionalItems.register(modEventBus);
         }
 
+        if (ModList.get().isLoaded("thermal")) {
+            LOGGER.info("Detected thermal, registering the additional integral components");
+            // 整合组件原本只有 1~3 级，这里补上 4~6 级（见 compat/thermal/ThermalAdditionalItems）
+            ThermalAdditionalItems.register(modEventBus);
+        }
+
+        if (ModList.get().isLoaded("thermal") && ModList.get().isLoaded("spectrum")) {
+            LOGGER.info("Detected thermal + spectrum, registering the crystallarieum specialization augment");
+            // 结晶器的「专业化升级：光谱墨法结晶」，装上后结晶器可运行光谱的结晶配方（见 compat/thermal/ThermalCrystallarieumAugment）
+            ThermalCrystallarieumAugment.register(modEventBus);
+        }
+
         if (ModList.get().isLoaded("appflux") && ModList.get().isLoaded("ae2helpers")) {
             LOGGER.info("Detected appflux + ae2helpers, merging the result-import card into the upgrade sidebar");
             modEventBus.addListener(AppliedFluxCompat::onCommonSetup);
+        }
+
+        if (ModList.get().isLoaded("academy")) {
+            // 媒体播放器：删除曲目（从服务端 loadedMedia 移除）的网络包
+            modEventBus.addListener(this::registerPayloads);
         }
 
         modEventBus.addListener(this::onClientSetup);
@@ -210,6 +260,9 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("thaumcraft")) {
             NeoForge.EVENT_BUS.register(GTAnimatedIconAnimator.class);
             NeoForge.EVENT_BUS.register(GTThaumcraftClientData.class);
+            // port.278 起守卫者玻璃改成烘焙模型（连接纹理走 ModelData，物品那一趟直接返回空），
+            // 这里按旧版自绘连接纹理面，见 GTWardedGlassRenderer + WardedGlassBakedModelMixin
+            NeoForge.EVENT_BUS.register(GTWardedGlassRenderer.class);
         }
         if (ModList.get().isLoaded("renderblender")) {
             LOGGER.info("Detected renderblender, registering compatibility content");
@@ -229,5 +282,15 @@ public class GoldenTweaks {
             NeoForge.EVENT_BUS.register(GTFocalPointColumnRenderer.class);
         }
 
+        if (ModList.get().isLoaded("academy")) {
+            // 媒体播放器：播放模式（单曲/列表/随机）与「删除歌曲」状态，以及列表/随机模式的自动切歌
+            NeoForge.EVENT_BUS.register(GMMediaPlayerState.class);
+        }
+
+    }
+
+    private void registerPayloads(final RegisterPayloadHandlersEvent event) {
+        PayloadRegistrar registrar = event.registrar("1");
+        registrar.playToServer(GTMediaUnloadPacket.TYPE, GTMediaUnloadPacket.STREAM_CODEC, GTMediaUnloadPacket::handle);
     }
 }

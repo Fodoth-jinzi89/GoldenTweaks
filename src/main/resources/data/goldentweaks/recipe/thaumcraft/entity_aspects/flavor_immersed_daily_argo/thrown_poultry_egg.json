@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:thrown_poultry_egg"
+  },
+  "aspects": {
+    "bestia": 1,
+    "victus": 1
+  }
+}

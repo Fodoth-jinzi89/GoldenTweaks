@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:pipe_item_transport"
+  },
+  "aspects": {
+    "aqua": 1,
+    "fabrico": 2,
+    "iter": 1,
+    "metallum": 2
+  }
+}

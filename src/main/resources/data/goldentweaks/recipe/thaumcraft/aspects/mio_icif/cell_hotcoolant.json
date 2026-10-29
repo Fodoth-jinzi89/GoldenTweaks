@@ -1,0 +1,14 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:cell_hotcoolant"
+  },
+  "aspects": {
+    "aqua": 1,
+    "fabrico": 1,
+    "metallum": 2,
+    "vacuos": 3,
+    "vas": 3
+  }
+}

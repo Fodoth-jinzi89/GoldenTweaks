@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:methane_tank"
+  },
+  "aspects": {
+    "fames": 1,
+    "herba": 2,
+    "permutatio": 1
+  }
+}

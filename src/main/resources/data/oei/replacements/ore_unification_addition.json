@@ -161,7 +161,8 @@
     "matchItems": [
       "thermal:sulfur",
       "thermal:sulfur_dust",
-      "mekanism:dust_sulfur"
+      "mekanism:dust_sulfur",
+      "mio_icif:resource/item_sulfur_dust"
     ],
     "resultItems": "alltheores:sulfur"
   },
@@ -237,7 +238,9 @@
       "thermal:diamond_dust",
       "mekanism:dust_diamond",
       "create_ore_excavation_plus:raw_diamond_dust",
-      "createaddition:diamond_grit"
+      "createaddition:diamond_grit",
+      "appflux:diamond_dust",
+      "mio_icif:resource/item_diamond_dust"
     ],
     "resultItems": "alltheores:diamond_dust"
   },
@@ -245,13 +248,16 @@
     "matchItems": [
       "thermal:emerald_dust",
       "mekanism:dust_emerald",
-      "create_ore_excavation_plus:raw_emerald_dust"
+      "create_ore_excavation_plus:raw_emerald_dust",
+      "appflux:emerald_dust",
+      "mio_icif:resource/item_emerald_dust"
     ],
     "resultItems": "mekanism:dust_emerald"
   },
   {
     "matchItems": [
-      "thermal:lapis_dust"
+      "thermal:lapis_dust",
+      "mio_icif:resource/item_lapi_dust"
     ],
     "resultItems": "mekanism:dust_lapis_lazuli"
   },
@@ -267,5 +273,42 @@
       "thermal:ender_pearl_dust"
     ],
     "resultItems": "ae2:ender_dust"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_titanium_ingot"
+    ],
+    "resultItems": "northstar:titanium_ingot"
+  },
+  {
+    "matchItems": [
+      "mio_icif:block_titanium"
+    ],
+    "resultItems": "northstar:titanium_block"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_raw_titanium_ore"
+    ],
+    "resultItems": "northstar:raw_titanium_ore"
+  },
+  {
+    "matchItems": [
+      "create:powdered_obsidian",
+      "mio_icif:resource/item_obsidian_dust"
+    ],
+    "resultItems": "mekanism:dust_obsidian"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_coal_dust"
+    ],
+    "resultItems": "mekanism:dust_coal"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_charcoal_dust"
+    ],
+    "resultItems": "mekanism:dust_charcoal"
   }
 ]

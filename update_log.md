@@ -1,5 +1,94 @@
 # GoldenTweaks Update Log
 
+## 2026.10.29 - v4.7.6
+
+### 学园都市（AcademyCraft）
+- 电磁炮（railgun）接入热力硬币并支持倍率：15 种金属硬币各带倍率（铁 1.0、金 2.0、铜 0.8、下界合金 8.0、锡 1.2、铅 1.4、银 1.5、镍 2.4、信素 6.0、流明 6.0、末影 10.0、青铜 1.6、琥珀金 2.5、殷钢 2.7、康铜 1.7），伤害 / 破坏范围 / 光束半径与射程随倍率缩放、破坏不产生掉落，大范围破坏分摊到多个 tick（新增 `GTRailgunDestruction`，每 tick 约 10ms 预算）
+  - [GTThermalRailgunCoins.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTThermalRailgunCoins.java)、[GTRailgunDestruction.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTRailgunDestruction.java)、[GTRailgunDestroyer.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTRailgunDestroyer.java)、[RailgunEffectAmmoMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/academy/RailgunEffectAmmoMixin.java)
+- 硬币可抛出且保留来源：右键抛出与 `academy:coin` 同等参数、带来源变体的 `CoinEntity`，飞行贴图与落地返还都用对应金属硬币
+  - [GTThermalCoinRailgun.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTThermalCoinRailgun.java)、[GTCoinVariant.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTCoinVariant.java)、[CoinEntityVariantMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/academy/CoinEntityVariantMixin.java)、[CoinRendererVariantMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/academy/CoinRendererVariantMixin.java)
+- 电磁炮光束粗细随硬币倍率缩放
+  - [GTBeamScale.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GTBeamScale.java)、[RailgunBeamScaleMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/academy/RailgunBeamScaleMixin.java)、[RailgunBeamRendererVariantMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/academy/RailgunBeamRendererVariantMixin.java)
+- 媒体播放器增强：单曲 / 列表 / 随机循环、隐藏曲目与删除、自然结束自动推进、HUD 进度条与「已用 / 总时长」、音量改走 RECORDS 滑块、内置曲目时长按真实 ogg 长度修正；关闭任意界面不再解除暂停；删除内置曲目经新增的 `GTMediaUnloadPacket` 同步
+  - [GMMediaPlayerState.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/GMMediaPlayerState.java)、[GTMediaUnloadPacket.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/network/GTMediaUnloadPacket.java)、[MediaPlayerAppGuiMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaPlayerAppGuiMixin.java)、[MediaPlayerFinishMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaPlayerFinishMixin.java)、[MediaPlayerHudOverlayMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaPlayerHudOverlayMixin.java)、[MediaPlayerManagerLoopMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaPlayerManagerLoopMixin.java)、[MediaSoundLoopMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaSoundLoopMixin.java)、[MediaSoundSourceMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaSoundSourceMixin.java)、[MediaTrackRegistryMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/MediaTrackRegistryMixin.java)、[SoundEngineResumeMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/SoundEngineResumeMixin.java)
+- 其他：充能槽看门狗（服务端未确认时解除卡死）、纸钻创造模式不再返还 64 纸、念力传送拾取改走 `ItemPickupUtil`（触发拾取事件与满包处理）、风暴之翼充能时不飞且激活后改原版飞行可控、跟随视觉（风暴之翼 / 护盾 / 融毁光束）不再受网络位置插值抖动、终端安装器提示显示实际绑定热键、风暴之翼免疫摔落伤害
+  - [KeyInputHandlerChargingWatchdogMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/KeyInputHandlerChargingWatchdogMixin.java)、[PaperDrillCreativePaperMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/PaperDrillCreativePaperMixin.java)、[PsychoTransmissionPickupMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/PsychoTransmissionPickupMixin.java)、[StormWingEffectMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/StormWingEffectMixin.java)、[PlayerFollowVisualSmoothMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/PlayerFollowVisualSmoothMixin.java)、[TerminalInstallerTooltipMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/academy/TerminalInstallerTooltipMixin.java)、[AcademyStormWingFallImmunity.java](src/main/java/net/fodoth/skina/goldentweaks/compat/academy/AcademyStormWingFallImmunity.java)
+
+### 热力 × Spectrum 结晶器
+- 让热力结晶器（Crystallizer）能跑 Spectrum 的结晶生长配方：新增「墨水结晶培育」增幅（`thermal:crystallarieum_growing_augment`）作为启用条件，装上后结晶器接受 Spectrum 的种子 / 流体，并按 Spectrum 规则运行——每秒按概率消耗增补剂、增补剂提供生长加速、墨水完全跳过；JEI 新增 `goldentweaks:crystallarieum_crystallizer` 分类（150×97）
+  - [ThermalCrystallarieumAugment.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/ThermalCrystallarieumAugment.java)、[SpectrumCrystallizerRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/SpectrumCrystallizerRecipe.java)、[SpectrumCrystallarieumRecipes.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/SpectrumCrystallarieumRecipes.java)、[MachineCrystallizerSpectrumMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thermal/MachineCrystallizerSpectrumMixin.java)、[MachineSpectrumAdditiveMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thermal/MachineSpectrumAdditiveMixin.java)、[CrystallizerRecipeManagerSpectrumMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thermal/CrystallizerRecipeManagerSpectrumMixin.java)、[GTCrystallarieumJeiPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/GTCrystallarieumJeiPlugin.java)、[CrystallarieumAugmentItem.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/CrystallarieumAugmentItem.java)
+- 新增热力物品：`upgrade_augment_4/5/6`（基础容量 16 / 64 / 256）与结晶增产增幅，含模型 / 贴图 / 配方 / 中英文案
+  - [ThermalAdditionalItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thermal/ThermalAdditionalItems.java)
+- 热力机器低于 1 tick 的超频改为并行处理（每 tick 处理多个配方）
+  - [MachineParallelOverclockMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thermal/MachineParallelOverclockMixin.java)、[Reconfigurable4WayBlockEntityInvoker.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thermal/Reconfigurable4WayBlockEntityInvoker.java)
+- 增幅提示不再叠加热力通用增幅数据块（结晶增幅自绘提示）
+  - [ThermalAugmentTooltipMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thermal/ThermalAugmentTooltipMixin.java)
+
+### 星辉 / 创造探矿
+- 星辉：技能点升级曲线改为单调幂曲线（`0.99·k^1.5`，每级至少 1 点），并把技能点上限提到配置值（默认 364，可点满整棵树），替代原版 `150 + 100·floor(1.2^k)`（满级约 2.6e12 点）
+  - [GTPerkLevelCurve.java](src/main/java/net/fodoth/skina/goldentweaks/compat/astralsorcery/GTPerkLevelCurve.java)、[PerkLevelCurveMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/astralsorcery/PerkLevelCurveMixin.java)、[PerkLevelCapMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/astralsorcery/PerkLevelCapMixin.java)
+- 创造探矿（Create Ore Excavation）：新增「黄金探矿杖」`goldentweaks:golden_vein_finder`——右键报告配置半径内全部矿脉的精确坐标（20s 冷却），携带矿脉图鉴时批量写入图鉴；新增「共享矿脉」平衡：同一矿脉（区块）上的不同玩家贡献者带来速度加成与双倍产出概率（均可配置）
+  - [GoldenVeinFinderItem.java](src/main/java/net/fodoth/skina/goldentweaks/compat/createoreexcavation/GoldenVeinFinderItem.java)、[GTCreateOreExcavationItems.java](src/main/java/net/fodoth/skina/goldentweaks/compat/createoreexcavation/GTCreateOreExcavationItems.java)、[GTVeinSharing.java](src/main/java/net/fodoth/skina/goldentweaks/compat/createoreexcavation/GTVeinSharing.java)、[ExcavatingBlockEntityVeinSharingMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/createoreexcavation/ExcavatingBlockEntityVeinSharingMixin.java)、[MultiBlockItemOwnerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/createoreexcavation/MultiBlockItemOwnerMixin.java)、[OreVeinAtlasItemSilentAddMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/balance/createoreexcavation/OreVeinAtlasItemSilentAddMixin.java)、[GTCreateOreExcavationTooltip.java](src/main/java/net/fodoth/skina/goldentweaks/compat/createoreexcavation/GTCreateOreExcavationTooltip.java)
+
+### 神秘时代
+- 整合包未开启扩展要素模块时，主动注册 18 个扩展要素（sonus / tempus / vas 等），使 GoldenTweaks 的要素树与物品 / 实体要素数据可用（模块已开启时无影响）
+  - [GTAspectEntry.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTAspectEntry.java)
+- 坩埚配方 `catalyst` 支持简写（直接写物品 id），并把缺失 / 未知催化剂的配方改为记日志跳过，不再拖垮整批配方加载
+  - [GTCrucibleRecipe.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/GTCrucibleRecipe.java)、[ThaumcraftRecipeUtil.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/ThaumcraftRecipeUtil.java)
+- 铯量计扫描容器时，把逐项的研究同步与聊天消息合并为「容器扫完一次发送」，不再每项一条刷屏 / 卡顿
+  - [ThaumometerScanManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/feature/thaumcraft/ThaumometerScanManagerMixin.java)
+- 恢复 port.278 之前的守御玻璃渲染：方块面交给自绘渲染器（每 10 tick 重扫 28×20、47 张贴图、按 RenderType 批处理、无剔除 / 全亮 / 半透明），物品与粒子仍走内层模型
+  - [GTWardedGlassRenderer.java](src/main/java/net/fodoth/skina/goldentweaks/compat/thaumcraft/client/GTWardedGlassRenderer.java)、[WardedGlassBakedModelMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/WardedGlassBakedModelMixin.java)、[BakedModelWrapperAccessor.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumcraft/accessor/BakedModelWrapperAccessor.java)
+- TMRV：把 `thaumcraft` 与 `goldentweaks:crystallarieum_crystallizer` 插件强制为完整加载（避免被同命名空间下无关的 EMI 分类判为 `DUPLICATE_NAMESPACE` 而跳过 `registerRecipes`），并改为同步注册 ingredient
+  - [JEIPluginManagerMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/tmrv/JEIPluginManagerMixin.java)
+
+### 其他兼容修复
+- ae2cs：侧配置 wrapper 的 `@Shadow` 合成捕获字段显式 `remap = false`，修 Mixin `prepareConfigs` 阶段的 "Found a remappable @Shadow annotation" 报错
+  - [AECsSideConfigExtractMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/ae2cs/AECsSideConfigExtractMixin.java)
+- 神秘能源：奥术合成终端适配 2.6.4（改注入 `ArcaneTerminalRecipeState#resolve`）并接入 Polymorph，`require = 0` 保证上游再重构时安全失效
+  - [ArcaneCraftingTerminalMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumicenergistics/ArcaneCraftingTerminalMixin.java)
+- 神秘工匠（Thaumic Tinkerer）：注魔种子可种在 Farmer's Delight 的沃土耕地上而不覆盖它（改重定向 `TTWorldActions#setBlock`）
+  - [InfusedSeedsItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/thaumictinkerer/InfusedSeedsItemMixin.java)
+- 灾变（Cataclysm）3.33：运行时 ASM 补回被上游删掉的 `ModParticle.SANDSTORM` 字段，修 traveloptics 引用的 `NoSuchFieldError`
+  - [CataclysmParticleCompatASM.java](src/main/java/net/fodoth/skina/goldentweaks/compat/cataclysm/CataclysmParticleCompatASM.java)、[ModParticleSandstormCompatMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/cataclysm/ModParticleSandstormCompatMixin.java)
+- 生物群系改造（BOP）异常方块优化（开启后只在原版模型方块间、每 200 tick 才切换一次）
+  - [AnomalyBlockEntityMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/biomesoplenty/AnomalyBlockEntityMixin.java)
+- Forbidden Magic：苦痛项圈每次命中最多 +10 vis（原来一次重击可瞬间充满）；补 `curioTick` 向手持法杖注入 vis、并可像护身符一样从继电器充能
+  - [SubjugationCollarItemMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/forbiddenmagic/SubjugationCollarItemMixin.java)、[ForbiddenEventsPainCollarMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/forbiddenmagic/ForbiddenEventsPainCollarMixin.java)
+- Avaritia More Items：装了神秘能源时跳过其重复的要素 `ContainerItemStrategy`（修启动期 `IllegalArgumentException`）
+  - [AvaritiaMoreItemsEssentiaStrategyMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/avaritia_more_items/AvaritiaMoreItemsEssentiaStrategyMixin.java)
+- Create Cardboard Things：服务器配置尚未加载时返回配置默认值（修标题界面音效事件触发的 `IllegalStateException`）
+  - [CardboardConfigMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createcardboardthings/CardboardConfigMixin.java)
+- Create Mechanical Companion：狼头 link 放在任意头部饰品槽都能识别（修狼反复生成/消失）
+  - [CustomWolfHeadSlotMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createmechanicalcompanion/CustomWolfHeadSlotMixin.java)
+- 酸力检索器（pipezretriever）：把取/检索按钮移到界面右侧并支持中文标签
+  - [ExtractScreenRetrieveButtonMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/pipezretriever/ExtractScreenRetrieveButtonMixin.java)
+- Spectrum：分裂伤害处理里武器为空时的 NPE 兜底
+  - [SpectrumEventListenersMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/spectrum/SpectrumEventListenersMixin.java)
+- Apotheosis：规则确实没有可用词缀时把 "no affixes available" 由 ERROR 降为 debug
+  - [AffixLootRuleLogMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/shut/AffixLootRuleLogMixin.java)
+- 深海：护目镜深度提示
+  - [GogglesDepthTooltipMixin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/fix/createsubmarine/GogglesDepthTooltipMixin.java)
+
+### 联动数据
+- 要素（aspect）数据改用新的 PowerShell 生成器重做：新增 `script/aspect/gen-aspects.ps1`（从模组 jar 的语言文件枚举物品 / 方块 / 实体 id 并按规则生成要素）与 `script/aspect/check-aspect-coverage.ps1`（校验失效条目与缺失命名空间）；据此清理约 610 条已失效条目，并补齐 `ae2lt`（约 260 条）、`create_abyss`、`create_high_seas`、`offroad`、`maidmarriage`、`mio_icif`、`moreanimation`、`pipez_optimizer`、`shaolib_munitions`、`flavor_immersed_daily_argo`、`mesplicedterminal` 等命名空间（含对应实体要素）
+  - [gen-aspects.ps1](script/aspect/gen-aspects.ps1)、[check-aspect-coverage.ps1](script/aspect/check-aspect-coverage.ps1)
+- 新增热力配方（增幅 / 机器压板 / 零件齿轮 / 储块 / 熔炼 / earth_charge·fire_charge 等，均带 `_unified` 变体），aeronautics 的 Create 混合配方，Bountiful 赏金池（约 72 个按职业的 `*_objs` / `*_sell`，含黄金进度），以及新的 OEI 统一替换与标签
+- 新增 `script/mixin-requirements.ps1`：生成 `MixinRequirements.java`（mixin → 其字节码实际引用的模组），供 `GoldenTweaksMixinPlugin` 在模组缺失时跳过该 mixin，避免启动期 `MixinTransformerError`
+
+### 汉化
+- 新增 AE2 完整简体中文（约 700 条）、Create Nuclear（约 250 条）、Fluid Logistics（约 120 条）、Synaxis（约 906 行）与 maidmarriage 中文
+- 热力新增中英文案（`upgrade_augment_4/5/6`、结晶增产增幅、增幅提示），GoldenTweaks 新增黄金探矿杖与共享矿脉配置的中英文案
+
+### 依赖
+- 元数据新增可选依赖：`createoreexcavation`、`spectrum`、`astralsorcery`（`thermal` 系列此前已加入）
+  - [neoforge.mods.toml](src/main/templates/META-INF/neoforge.mods.toml)
+
+### 其它
+- mixin 门控随新增内容更新：学园都市（feature/fix.academy）、热力 × Spectrum（thermal + thermal_expansion + spectrum）、星辉、创造探矿、灾变 × traveloptics、生物群系改造等；`goldentweaks.mixins.json` 登记新增条目（`mixins` 294 / `client` 183）
+  - [GoldenTweaksMixinPlugin.java](src/main/java/net/fodoth/skina/goldentweaks/mixin/GoldenTweaksMixinPlugin.java)、[goldentweaks.mixins.json](src/main/resources/goldentweaks.mixins.json)
+- 移除 v4.7.5 引入的两处热力 × Sodium 同步缓存 Mixin（`fix/thermal/UnderlayBakedModelMixin`、`fix/thermal/ReconfigurableBakedModelMixin`）
+
 ## 2026.10.18 - v4.7.5
 
 ### 依赖与构建

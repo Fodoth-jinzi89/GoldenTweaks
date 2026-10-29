@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:rotor_adviron"
+  },
+  "aspects": {
+    "aer": 1,
+    "machina": 2,
+    "metallum": 2,
+    "motus": 3
+  }
+}

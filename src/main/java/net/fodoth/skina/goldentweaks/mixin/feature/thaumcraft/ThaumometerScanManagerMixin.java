@@ -117,24 +117,12 @@ public abstract class ThaumometerScanManagerMixin {
     }
 
     @Redirect(
-            method = "completeScan",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lthaumcraft/common/network/TCNetwork;sendScanSync(Lnet/minecraft/server/level/ServerPlayer;)V"
-            )
-    )
-    private static void gt$deferScanSync(ServerPlayer player) {
-        if (!ThaumometerStorageScanQueue.isBatching()) {
-            TCNetwork.sendScanSync(player);
-        }
-    }
-
-    @Redirect(
-            method = "completeScan",
+            method = "completeScan(Lnet/minecraft/world/entity/player/Player;Lthaumcraft/common/research/ThaumometerScanManager$ScanTarget;)Z",
             at = @At(
                     value = "INVOKE",
                     target = "Lthaumcraft/common/network/TCNetwork;sendResearchSync(Lnet/minecraft/server/level/ServerPlayer;Z)V"
-            )
+            ),
+            require = 0
     )
     private static void gt$deferResearchSync(ServerPlayer player, boolean fullSync) {
         if (!ThaumometerStorageScanQueue.isBatching()) {
@@ -143,11 +131,12 @@ public abstract class ThaumometerScanManagerMixin {
     }
 
     @Redirect(
-            method = "completeScan",
+            method = "completeScan(Lnet/minecraft/world/entity/player/Player;Lthaumcraft/common/research/ThaumometerScanManager$ScanTarget;)Z",
             at = @At(
                     value = "INVOKE",
                     target = "Lnet/minecraft/world/entity/player/Player;displayClientMessage(Lnet/minecraft/network/chat/Component;Z)V"
-            )
+            ),
+            require = 0
     )
     private static void gt$deferScanMessage(Player player, net.minecraft.network.chat.Component message, boolean actionBar) {
         if (!ThaumometerStorageScanQueue.isBatching()) {

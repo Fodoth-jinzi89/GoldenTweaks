@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_geomagnetic_detector"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "instrumentum": 2,
+    "metallum": 2,
+    "potentia": 1
+  }
+}

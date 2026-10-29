@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:falling_fruit"
+  },
+  "aspects": {
+    "herba": 3,
+    "victus": 1
+  }
+}

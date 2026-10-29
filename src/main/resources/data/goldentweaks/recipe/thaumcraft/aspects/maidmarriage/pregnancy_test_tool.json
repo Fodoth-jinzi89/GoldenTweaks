@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:pregnancy_test_tool"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

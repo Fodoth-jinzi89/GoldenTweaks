@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:coolant_bucket"
+  },
+  "aspects": {
+    "aqua": 2,
+    "permutatio": 2,
+    "potentia": 1
+  }
+}

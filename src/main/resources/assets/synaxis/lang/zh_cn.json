@@ -867,6 +867,7 @@
   "item.synaxis.cimulink_connector.tooltip": "",
   "item.synaxis.controller_wire_cable.tooltip": "点击控制椅/Tweakerminal，可选择频道并绑定到远处的红石输出面上",
   "key.categories.synaxis": "Synaxis",
+  "key.synaxis.awe_in_wand.menu": "魔杖菜单",
   "key.synaxis.engage_gizmo.open": "打开 Engage Gizmo",
   "key.synaxis.camera.link_last": "重连上一个摄像机",
   "message.synaxis.camera.no_previous": "没有上一次连接的摄像机",

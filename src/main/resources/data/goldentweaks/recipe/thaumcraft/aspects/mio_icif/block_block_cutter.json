@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:block_block_cutter"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 2,
+    "motus": 1,
+    "potentia": 2
+  }
+}

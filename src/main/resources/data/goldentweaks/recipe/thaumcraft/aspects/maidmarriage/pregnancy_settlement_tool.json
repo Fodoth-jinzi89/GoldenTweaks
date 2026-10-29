@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:pregnancy_settlement_tool"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

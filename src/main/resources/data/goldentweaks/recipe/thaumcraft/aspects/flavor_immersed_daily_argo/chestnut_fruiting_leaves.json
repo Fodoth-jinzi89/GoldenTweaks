@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:chestnut_fruiting_leaves"
+  },
+  "aspects": {
+    "arbor": 2,
+    "herba": 1
+  }
+}

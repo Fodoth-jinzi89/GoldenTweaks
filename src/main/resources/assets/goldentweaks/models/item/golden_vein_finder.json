@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "goldentweaks:item/golden_vein_finder"
+  }
+}

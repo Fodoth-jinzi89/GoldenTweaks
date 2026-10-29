@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:special_milk_bucket"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

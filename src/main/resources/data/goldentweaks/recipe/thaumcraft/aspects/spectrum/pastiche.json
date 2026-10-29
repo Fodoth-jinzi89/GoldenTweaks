@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "spectrum:pastiche"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

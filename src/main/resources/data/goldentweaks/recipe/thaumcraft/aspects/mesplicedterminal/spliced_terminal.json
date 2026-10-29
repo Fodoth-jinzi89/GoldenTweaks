@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mesplicedterminal:spliced_terminal"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 3
+  }
+}

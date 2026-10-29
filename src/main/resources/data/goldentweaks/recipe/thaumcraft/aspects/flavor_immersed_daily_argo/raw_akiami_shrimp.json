@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:raw_akiami_shrimp"
+  },
+  "aspects": {
+    "aqua": 1,
+    "bestia": 2,
+    "victus": 2
+  }
+}

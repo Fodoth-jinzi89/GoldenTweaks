@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:warded_glass",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:warded_proxy",
+      "required": false
+    }
+  ]
+}

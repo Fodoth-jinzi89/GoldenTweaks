@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "mio_icif:armory_piece"
+  },
+  "aspects": {
+    "machina": 2,
+    "praecantatio": 1,
+    "telum": 3,
+    "volatus": 2
+  }
+}

@@ -4692,18 +4692,6 @@
             "weightMult": 3053.781453948976,
             "effectiveValue": 7000
         },
-        "waterproof_cardboard_block": {
-            "type": "item",
-            "content": "fluidlogistics:waterproof_cardboard_block",
-            "rarity": "COMMON",
-            "amount": {
-                "min": 48,
-                "max": 64
-            },
-            "unitWorth": 20,
-            "weightMult": 488.6050326318361,
-            "effectiveValue": 1120
-        },
         "horizontal_multi_fluid_tank": {
             "type": "item",
             "content": "fluidlogistics:horizontal_multi_fluid_tank",

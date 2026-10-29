@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:item_electric_first_aid_life_support"
+  },
+  "aspects": {
+    "potentia": 2,
+    "praecantatio": 2,
+    "tutamen": 2,
+    "volatus": 1
+  }
+}

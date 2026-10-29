@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:block_rubber_sapling"
+  },
+  "aspects": {
+    "aqua": 1,
+    "arbor": 3,
+    "herba": 2
+  }
+}

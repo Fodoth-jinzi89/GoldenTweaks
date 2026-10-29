@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "irons_spellbooks:eldritch_manuscript_desc"
-  },
-  "aspects": {
-    "praecantatio": 4
-  }
-}

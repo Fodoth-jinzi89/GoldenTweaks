@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_abyss:music_disc_seafoam"
+  },
+  "aspects": {
+    "pannus": 1,
+    "sonus": 3
+  }
+}

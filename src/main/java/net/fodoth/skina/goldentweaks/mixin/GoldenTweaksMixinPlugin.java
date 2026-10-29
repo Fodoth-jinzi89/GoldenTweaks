@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
+import net.fodoth.skina.goldentweaks.compat.cataclysm.CataclysmParticleCompatASM;
 import net.fodoth.skina.goldentweaks.compat.ae2autopatternupload.Ae2ApuASM;
 import net.fodoth.skina.goldentweaks.compat.appliedkjs.AppliedKjsASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
@@ -25,8 +26,39 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         return FMLLoader.getLoadingModList().getModFileById(modId) != null;
     }
 
+    /**
+     * A mixin class that links a class from an absent mod cannot be resolved by the mixin
+     * transformer; the resulting {@code NoClassDefFoundError} is rethrown as a
+     * {@code MixinTransformerError} and aborts startup. {@link MixinRequirements} records those
+     * per-mixin dependencies so the mixin is skipped instead.
+     */
+    private static boolean requirementsMet(String mixinClassName) {
+        String[] required = MixinRequirements.BY_MIXIN.get(mixinClassName);
+        if (required == null) {
+            return true;
+        }
+        for (String modId : required) {
+            if (!isModPresent(modId)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static boolean isModPresent(String modId) {
+        // JEI 的类也可能由 TMRV 这类替代实现提供，不能只看 jei 这个 modId
+        if ("jei".equals(modId)) {
+            return isModLoaded("jei") || isModLoaded("toomanyrecipeviewers");
+        }
+        return isModLoaded(modId);
+    }
+
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+
+        if (!requirementsMet(mixinClassName)) {
+            return false;
+        }
 
         // 万法皆通 mixin 写错
         if (mixinClassName.contains("com.github.yimeng261.maidspell.mixin.tlm.MaidFeedOwnerTaskMixin")) {
@@ -39,6 +71,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.contains("io.redspace.ironsjewelry.mixin.VillagerMixin")) {
             return false;
+        }
+
+        // traveloptics 4.x 编译期直接引用灾变的 ModParticle.SANDSTORM，
+        // 而灾变 3.33 移除了该粒子（注册与字段一并删除），运行时字段解析失败会抛 NoSuchFieldError。
+        // 这里给灾变 ModParticle 补回该字段（别名到一个仍存在的粒子）作为兜底。
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.cataclysm")) {
+            return isModLoaded("cataclysm") && isModLoaded("traveloptics");
         }
 
         // 这些 mixin 注入 iron's spellbooks 的召唤物目标逻辑，并引用 alshanex 魔宠 / familiarslib 的类型。
@@ -148,6 +187,16 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // evolvedmekanism 的高级工厂槽位容量对齐 mekanism_extras（突破 64 堆叠上限）
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mekanism")) {
             return isModLoaded("mekanism");
+        }
+
+        // 星辉魔法星能力点数上限：默认抬到图谱全部节点数
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.astralsorcery")) {
+            return isModLoaded("astralsorcery");
+        }
+
+        // Create Ore Excavation 矿脉分享：补记矿机所有者，并按同矿脉不同玩家数给予加速/双倍产出
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.createoreexcavation")) {
+            return isModLoaded("createoreexcavation");
         }
 
         if (mixinClassName.endsWith("fix.watut.PlayerStatusManagerClientMixin")) {
@@ -265,6 +314,23 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("advanced_infusion");
         }
 
+        // createcardboardthings 把配置注册为服务端配置，客户端音效事件在进世界前就读它
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.createcardboardthings")) {
+            return isModLoaded("createcardboardthings");
+        }
+
+        // 动力狼连接器戴在非首个 head 槽时，动力狼的归属校验只查 head 第 0 格，导致狼不断生成消失
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.createmechanicalcompanion")) {
+            return isModLoaded("createmechanicalcompanion") && isModLoaded("curios");
+        }
+
+        // avaritia_more_items 与 ThaumicEnergistics 会为同一个源质 AEKeyType 各注册一份
+        // ContainerItemStrategy，AE2 对重复键直接抛异常；TE 在场时保留 TE 自己的实现
+        if (mixinClassName.endsWith("fix.avaritia_more_items.AvaritiaMoreItemsEssentiaStrategyMixin")) {
+            return checkIfPresent("net.weibai.avaritia_more_items.compat.ae2.ThaumicEnergisticsCompat")
+                    && isModLoaded("thaumicenergistics");
+        }
+
         // Astral Sorcery 2.0.1：创意标签在专用服务器上会崩，降星点 tick 会 CME，新生成区块的降星点需要补激活
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.astralsorcery")) {
             return isModLoaded("astralsorcery");
@@ -342,6 +408,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return true;
         }
 
+        // 源质罐子的 cosmic 叠加层直接引用 renderblender 的 IrisCompat，而它挂在
+        // JarBlockEntityRenderer 上 —— 这个类会在 EntityRenderersEvent.RegisterRenderers
+        // 分发时加载，缺 renderblender 时不跳过就会以 NoClassDefFoundError 变成
+        // MixinTransformerError，直接崩在启动阶段
+        if (mixinClassName.endsWith("fix.thaumcraft.JarBlockEntityRendererMixin")) {
+            return isModLoaded("thaumcraft") && isModLoaded("renderblender");
+        }
+
         if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
             return isModLoaded("ae2_auto_pattern_upload") && isModLoaded("neoecoae");
         }
@@ -403,6 +477,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // 深海：主界面/暂停界面上 Create 菜单按钮下方那颗「深海设置」按钮
         if (mixinClassName.endsWith("fix.createsubmarine.DeepSeasMenuButtonMixin")) {
             return checkIfPresent("com.maxenonyme.createsubmarine.submarine.client.DeepSeasMenuButton");
+        }
+
+        // 深海：戴 Create 护目镜时船壳方块上多出来的「基础深度」提示
+        if (mixinClassName.endsWith("fix.createsubmarine.GogglesDepthTooltipMixin")) {
+            return checkIfPresent(
+                    "com.maxenonyme.createsubmarine.submarine.client.CreateSubmarineClientEvents");
         }
 
         if (mixinClassName.endsWith("fix.ae2cs.AECSAdditionalModelsMixin")) {
@@ -615,6 +695,20 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thermal");
         }
 
+        // 结晶器的「光谱墨法结晶」专业化升级：目标来自 thermal_expansion / thermal 本体，且引用光谱的配方类
+        if (mixinClassName.endsWith("feature.thermal.MachineCrystallizerSpectrumMixin")
+                || mixinClassName.endsWith("feature.thermal.CrystallizerRecipeManagerSpectrumMixin")
+                || mixinClassName.endsWith("feature.thermal.MachineSpectrumAdditiveMixin")
+                || mixinClassName.endsWith("feature.thermal.ThermalAugmentTooltipMixin")
+                || mixinClassName.endsWith("feature.thermal.accessor.AugmentableBlockEntityInvoker")) {
+            return isModLoaded("thermal") && isModLoaded("thermal_expansion") && isModLoaded("spectrum");
+        }
+
+        // Thermal 机器超频到 1 tick 以下转并行：目标 MachineBlockEntity 来自 thermal 本体
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.thermal")) {
+            return isModLoaded("thermal");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.patchouli")) {
             return isModLoaded("patchouli");
         }
@@ -657,8 +751,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("emi");
         }
 
-        // AcademyCraft 技能伤害按寂静装备「魔法攻击力」加成
-        if (mixinClassName.endsWith("feature.academy.AcademyDamageHelperMixin")) {
+        // AcademyCraft：技能伤害加成、热力硬币弹药兼容等
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.academy")) {
             return isModLoaded("academy");
         }
 
@@ -712,6 +806,16 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("remi") && isModLoaded("emi");
         }
 
+        // pipezretriever 在 Pipez 抽取界面上方加的 Extract/Retrieve 模式按钮：右移贴住右边框并汉化
+        if (mixinClassName.endsWith("fix.pipezretriever.ExtractScreenRetrieveButtonMixin")) {
+            return isModLoaded("pipezretriever") && isModLoaded("pipez");
+        }
+
+        // Apotheosis 的词缀掉落规则找不到可用词缀时原版直接打 ERROR 刷屏，这里降级为 debug（见 shut/AffixLootRuleLogMixin）
+        if (mixinClassName.endsWith("shut.AffixLootRuleLogMixin")) {
+            return isModLoaded("apotheosis");
+        }
+
         return true;
     }
 
@@ -727,6 +831,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         ExspectrimentsASM.patch(targetClassName, targetClass);
         AppliedKjsASM.patch(targetClassName, targetClass);
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
+        CataclysmParticleCompatASM.patch(targetClassName, targetClass);
         LinearbearingASM.patch(targetClassName, targetClass);
         Ae2ApuASM.patch(targetClassName, targetClass);
         Ldlib2ASM.patch(targetClassName, targetClass);

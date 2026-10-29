@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:petrotheum_bucket"
+  },
+  "aspects": {
+    "terra": 3,
+    "motus": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/electrum"
+    },
+    "B": {
+      "tag": "c:gears/electrum"
+    },
+    "C": {
+      "item": "spectrum:crystallarieum"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "thermal:crystallarieum_growing_augment"
+  }
+}

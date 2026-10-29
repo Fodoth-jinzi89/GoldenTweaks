@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:prawn"
+  },
+  "aspects": {
+    "aqua": 3,
+    "bestia": 4,
+    "victus": 3
+  }
+}

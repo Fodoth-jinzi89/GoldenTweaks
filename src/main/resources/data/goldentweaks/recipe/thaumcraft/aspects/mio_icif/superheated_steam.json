@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:superheated_steam"
+  },
+  "aspects": {
+    "aqua": 2,
+    "ignis": 3,
+    "potentia": 2
+  }
+}

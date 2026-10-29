@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.crafting.IArcaneRecipe;
 import thaumcraft.common.lib.crafting.ThaumcraftCraftingManager;
 import thaumcraft.common.menu.ArcaneWorkbenchMenu;
 
@@ -72,19 +72,19 @@ public abstract class ArcaneWorkbenchMenuMixin {
     /**
      * 进入奥术分支前，把当前网格的所有可选奥术配方交给 Polymorph 重建选择列表。
      *
-     * <p>挂在 {@code findMatchingArcaneRecipeAspects} 的调用上：只有原版配方没有命中、
+     * <p>挂在 {@code findMatchingArcaneRecipeEntry} 的调用上：只有原版配方没有命中、
      * 真正要算奥术配方时才会走到这里，避免每次预览都做额外的事。</p>
      */
     @Redirect(
             method = "refreshResult",
             at = @At(
                     value = "INVOKE",
-                    target = "Lthaumcraft/common/lib/crafting/ThaumcraftCraftingManager;findMatchingArcaneRecipeAspects(Lnet/minecraft/world/Container;Lnet/minecraft/world/entity/player/Player;)Lthaumcraft/api/aspects/AspectList;"
+                    target = "Lthaumcraft/common/lib/crafting/ThaumcraftCraftingManager;findMatchingArcaneRecipeEntry(Lnet/minecraft/world/Container;Lnet/minecraft/world/entity/player/Player;)Lthaumcraft/api/crafting/IArcaneRecipe;"
             )
     )
-    private AspectList gt$polymorphArcaneRefresh(Container workbench, Player player) {
+    private IArcaneRecipe gt$polymorphArcaneRefresh(Container workbench, Player player) {
         PolymorphArcaneCompat.refresh(player, workbench);
-        return ThaumcraftCraftingManager.findMatchingArcaneRecipeAspects(workbench, player);
+        return ThaumcraftCraftingManager.findMatchingArcaneRecipeEntry(workbench, player);
     }
 
     /**

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidmarriage:marriage_consent_form"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

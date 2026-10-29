@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_high_seas:rudder"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 2
+  }
+}

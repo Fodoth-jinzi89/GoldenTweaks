@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:sardine_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "fames": 1,
+    "victus": 3,
+    "vinculum": 3
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:integrated_working_station_module_ae2cs"
+  },
+  "aspects": {
+    "machina": 2,
+    "cognitio": 1
+  }
+}

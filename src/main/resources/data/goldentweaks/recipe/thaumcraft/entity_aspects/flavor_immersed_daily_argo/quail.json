@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:entity_aspect",
+  "entity": {
+    "id": "flavor_immersed_daily_argo:quail"
+  },
+  "aspects": {
+    "bestia": 4,
+    "victus": 3,
+    "volatus": 2
+  }
+}
