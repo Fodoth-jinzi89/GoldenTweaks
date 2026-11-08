@@ -416,11 +416,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("ae2") && isModLoaded("emi");
         }
 
-        // neoecoae 的「收藏缺失」按钮走 JEI 内部类，纯 EMI 下不可用，改接 EMI 收藏夹
-        if (mixinClassName.endsWith("fix.neoecoae.ECOCraftConfirmScreenBookmarkMixin")) {
-            return isModLoaded("neoecoae") && isModLoaded("emi");
-        }
-
         // AEQC 的「收藏缺失项」按钮同样走 JEI 内部类，纯 EMI 下不可用，改接 EMI 收藏夹
         if (mixinClassName.endsWith("fix.aeqc.BookmarkMissingButtonMixin")) {
             return isModLoaded("aeqc") && isModLoaded("emi");
@@ -493,10 +488,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus")) {
             return isModLoaded("extendedae_plus") && isModLoaded("extendedae") && isModLoaded("patternbetter");
-        }
-
-        if (mixinClassName.endsWith("fix.neoecoae.NEExtraModelsMixin")) {
-            return checkIfPresent("cn.dancingsnow.neoecoae.client.all.NEExtraModels");
         }
 
         // 深海任务界面在 create_submarine 更新后由 WelcomeScreen 改名为 UpdateScreen

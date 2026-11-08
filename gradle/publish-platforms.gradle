@@ -1,18 +1,12 @@
 // ============================================================================
-// 发布到 CurseForge / Modrinth 的复用任务
+// 发布到 CurseForge 的复用任务
 //
 // 凭证来源：环境变量优先，其次仓库根目录的 publish-credentials.properties
 //   CURSEFORGE_API_KEY     / curseforge_api_key
 //   CURSEFORGE_PROJECT_ID  / curseforge_project_id   （默认 1697081）
-//   MODRINTH_TOKEN         / modrinth_token
-//   MODRINTH_PROJECT_ID    / modrinth_project_id     （留空则按 slug 自动匹配）
-//   MODRINTH_PROJECT_SLUG  / modrinth_project_slug   （默认 goldentweaks）
 //
 // 用法：
-//   gradlew publishPlatforms     同时上传两个平台
-//   gradlew publishModrinth      只传 Modrinth
-//   gradlew publishCurseForge    只传 CurseForge
-//   gradlew modrinthProjects     列出 token 账号下的项目（用于查找草稿项目的 ID）
+//   gradlew publishCurseForge    上传到 CurseForge
 //
 // 上传的 jar 取自 jar 任务的产物，更新日志取自 update_log.md 顶部当前版本段落。
 // ============================================================================
@@ -25,8 +19,6 @@ import java.net.http.HttpResponse
 import java.nio.charset.StandardCharsets
 import java.time.Duration
 
-def modId = project.findProperty('mod_id')
-def modVersion = project.findProperty('mod_version')
 def gameVersion = project.findProperty('minecraft_version') ?: '1.21.1'
 def userAgent = 'GoldenTweaks-Publisher/1.0 (github.com/Fodoth-jinzi89/GoldenTweaks)'
 
@@ -49,9 +41,6 @@ def loadCredentials = {
     return [
             curseforgeApiKey   : pick('CURSEFORGE_API_KEY', 'curseforge_api_key'),
             curseforgeProjectId: pick('CURSEFORGE_PROJECT_ID', 'curseforge_project_id') ?: '1697081',
-            modrinthToken      : pick('MODRINTH_TOKEN', 'modrinth_token'),
-            modrinthProjectId  : pick('MODRINTH_PROJECT_ID', 'modrinth_project_id'),
-            modrinthProjectSlug: pick('MODRINTH_PROJECT_SLUG', 'modrinth_project_slug') ?: modId,
     ]
 }
 
@@ -126,96 +115,6 @@ def buildMultipart = { String boundary, List<Map> parts ->
     return out.toByteArray()
 }
 
-def fetchModrinthProjects = { HttpClient client, String token ->
-    def userRequest = HttpRequest.newBuilder(URI.create('https://api.modrinth.com/v2/user'))
-            .header('User-Agent', userAgent)
-            .header('Authorization', token)
-            .GET()
-            .build()
-    def userResponse = client.send(userRequest, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8))
-    if (!(userResponse.statusCode() in 200..299)) {
-        throw new GradleException("Modrinth 校验 token 失败（${userResponse.statusCode()}）：${userResponse.body()}")
-    }
-    def userId = new JsonSlurper().parseText(userResponse.body()).id
-
-    def listRequest = HttpRequest.newBuilder(URI.create("https://api.modrinth.com/v2/user/${userId}/projects"))
-            .header('User-Agent', userAgent)
-            .header('Authorization', token)
-            .GET()
-            .build()
-    def listResponse = client.send(listRequest, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8))
-    if (!(listResponse.statusCode() in 200..299)) {
-        throw new GradleException("Modrinth 获取项目列表失败（${listResponse.statusCode()}）：${listResponse.body()}")
-    }
-    return new JsonSlurper().parseText(listResponse.body())
-}
-
-def resolveModrinthProjectId = { HttpClient client, String token, String configuredId, String slug ->
-    if (configuredId != null && !configuredId.isEmpty()) {
-        return configuredId
-    }
-    def projects = fetchModrinthProjects(client, token)
-    def match = projects.find { it.slug == slug }
-    if (match == null) {
-        def listing = projects.collect { project -> "  - ${project.slug} (${project.id})".toString() }.join('\n')
-        throw new GradleException("Modrinth 账号下找不到 slug 为 '${slug}' 的项目，请在 publish-credentials.properties 里设置 modrinth_project_id。\n当前账号项目：\n${listing}")
-    }
-    return match.id
-}
-
-tasks.register('modrinthProjects') {
-    group = 'publishing'
-    description = '列出 Modrinth token 账号下的全部项目（用于查找草稿项目的 ID）'
-    doLast {
-        def credentials = loadCredentials()
-        def token = mustHave(credentials.modrinthToken, "缺少 Modrinth token，请填写 publish-credentials.properties 的 modrinth_token 或设置环境变量 MODRINTH_TOKEN")
-        def projects = fetchModrinthProjects(newHttpClient(), token)
-        projects.each { project ->
-            logger.lifecycle("${project.slug}  id=${project.id}  title=${project.title}  status=${project.status ?: 'unknown'}")
-        }
-    }
-}
-
-tasks.register('publishModrinth') {
-    group = 'publishing'
-    description = '把当前版本的 jar 上传到 Modrinth'
-    dependsOn tasks.named('jar')
-    doLast {
-        def credentials = loadCredentials()
-        def token = mustHave(credentials.modrinthToken, "缺少 Modrinth token，请填写 publish-credentials.properties 的 modrinth_token 或设置环境变量 MODRINTH_TOKEN")
-        def client = newHttpClient()
-        def projectId = resolveModrinthProjectId(client, token, credentials.modrinthProjectId, credentials.modrinthProjectSlug)
-        def jar = jarFile()
-
-        def payload = [
-                name          : "GoldenTweaks ${modVersion}",
-                version_number: modVersion,
-                changelog     : releaseChangelog(),
-                dependencies  : [],
-                game_versions : [gameVersion],
-                version_type  : 'release',
-                loaders       : ['neoforge'],
-                featured      : false,
-                project_id    : projectId,
-                file_parts    : [jar.name],
-                primary_file  : jar.name,
-        ]
-
-        def boundary = "----GoldenTweaks${System.currentTimeMillis()}"
-        def body = buildMultipart(boundary, [
-                [name: 'data', content: JsonOutput.toJson(payload).getBytes(StandardCharsets.UTF_8), contentType: 'application/json'],
-                [name: jar.name, filename: jar.name, content: jar.bytes, contentType: 'application/java-archive'],
-        ])
-
-        def response = sendForm(client, 'POST', 'https://api.modrinth.com/v2/version', [Authorization: token], body, boundary)
-        if (!(response.statusCode() in 200..299)) {
-            throw new GradleException("Modrinth 上传失败（${response.statusCode()}）：${response.body()}")
-        }
-        def result = new JsonSlurper().parseText(response.body())
-        logger.lifecycle("Modrinth 上传成功：${result.version_number} -> https://modrinth.com/mod/${credentials.modrinthProjectSlug}/version/${result.version_number}")
-    }
-}
-
 tasks.register('publishCurseForge') {
     group = 'publishing'
     description = '把当前版本的 jar 上传到 CurseForge'
@@ -260,6 +159,6 @@ tasks.register('publishCurseForge') {
 
 tasks.register('publishPlatforms') {
     group = 'publishing'
-    description = '把当前版本的 jar 同时上传到 CurseForge 与 Modrinth'
-    dependsOn 'publishCurseForge', 'publishModrinth'
+    description = '把当前版本的 jar 上传到 CurseForge'
+    dependsOn 'publishCurseForge'
 }

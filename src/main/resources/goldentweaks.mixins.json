@@ -442,8 +442,6 @@
     "fix.mioicif.MioIcifEmiRecipeMixin",
     "fix.mioicif.MioIcifFutureMachineImeMixin",
     "fix.modernui.ModernUITextRenderTypeMixin",
-    "fix.neoecoae.ECOCraftConfirmScreenBookmarkMixin",
-    "fix.neoecoae.NEExtraModelsMixin",
     "fix.neoforge.ClientExtensionsManagerMixin",
     "fix.papi.ClientWorldLeaveCleanupMixin",
     "fix.pattern_schematics.PatternSchematicHandlerMixin",

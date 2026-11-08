@@ -1,5 +1,15 @@
 # GoldenTweaks Update Log
 
+## 2026.11.08 - v4.7.7
+
+### 许可证合规
+- 移除 `NEExtraModelsMixin`：NeoECO 上游已通过 `ECOCellModelRegistrar` 与客户端初始化完成延迟模型注册，本模组无需再注入。
+- 移除 `ECOCraftConfirmScreenBookmarkMixin`：EMI 收藏夹支持已提交上游 [DancingSnow0517/NeoECOAEExtension#157](https://github.com/DancingSnow0517/NeoECOAEExtension/pull/157)。在包含该改动的上游版本发布前，纯 EMI 环境下合成报告的「收藏缺失」按钮会暂时不可用；JEI 环境不受影响。
+- 本版本不再包含 issue #3 指出的两个 GPL 衍生文件。
+
+### 发布
+- 移除 Modrinth 发布任务与凭证配置，后续仅通过 CurseForge 发布。
+
 ## 2026.10.29 - v4.7.6
 
 ### 学园都市（AcademyCraft）

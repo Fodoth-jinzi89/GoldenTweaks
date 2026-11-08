@@ -123,7 +123,6 @@ final class MixinRequirements {
             Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.modernui.EmojiFontMixin", new String[] { "modernui" }),
             Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.modernui.ModernUITextRenderTypeMixin", new String[] { "modernui" }),
             Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.modonomicon.BookUnlockStateManagerMixin", new String[] { "modonomicon" }),
-            Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.neoecoae.ECOCraftConfirmScreenBookmarkMixin", new String[] { "ae2" }),
             Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.neoguanniao.client.BirdMovementControllerMixin", new String[] { "geckolib" }),
             Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.pattern_schematics.PatternSchematicHandlerMixin", new String[] { "create_pattern_schematics" }),
             Map.entry("net.fodoth.skina.goldentweaks.mixin.fix.placebo.DynamicHolderMixin", new String[] { "placebo" }),
