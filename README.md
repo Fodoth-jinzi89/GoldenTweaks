@@ -66,7 +66,7 @@ patch is never applied against a mod that is not installed.
 
 | Area | Examples of what is fixed |
 |---|---|
-| Tech & storage | AE2 (terminal search name cache, facades), AE2 Peat, AE2WTLib, AE2 auto pattern upload, ExtendedAE Plus, NeoECOAE, pipez_optimizer, Mekanism (energy-port safety, multiblock data, compact-space power), Mekanism Extras, Evolved Mekanism chemixer, Mekanism Weaponry, Create (symmetry wand, sequencer, sound scapes, JEI subtypes), Create Diesel Generators, Create Enchantment Industry, Create Submarine, Aeronautics, Copycats, Ponder |
+| Tech & storage | AE2 (terminal search name cache, facades), AE2 Peat, AE2WTLib, AE2 auto pattern upload, ExtendedAE Plus, pipez_optimizer, Mekanism (energy-port safety, multiblock data, compact-space power), Mekanism Extras, Evolved Mekanism chemixer, Mekanism Weaponry, Create (symmetry wand, sequencer, sound scapes, JEI subtypes), Create Diesel Generators, Create Enchantment Industry, Create Submarine, Aeronautics, Copycats, Ponder |
 | Magic | Thaumcraft (aspect registry, crucible/infusion/arcane categories, research categories, ore features, overworld biome generation, thaumatorium, jars, taint spread, golem behaviour), Thaumic Tinkerer, Thaumic Bases (alchemical furnace), Thaumcraft Celestial, Astral Sorcery, Irons Spellbooks, Spectrum, Apotheosis / Apotheosis Things / Apothic Enchanting, Forbidden Magic, Eidolon, Alshanex Familiars, AcademyCraft, Traveloptics summons |
 | Rendering | Flywheel, Geckolib, ModernUI (emoji font & text render type), Veil, Sable, RenderBlender (cosmic render queue), Iris, Ponder, CMD/PackageCouriers, Astral Sorcery (focal-point column & beam), Thermal (recipe-category backgrounds) |
 | QoL & UI | EMI (hidden/duplicate stacks, search kernel), JEI, TMRV (RecipeViewers scroll behaviour), Bountiful, Lootr, Quest Shop localization, FTB Quests (chapter-image items, R/U), FTB Ultimine, Tipsmod, Waystones/Traveler's Titles, Xaero, Building Wands, Carry On, Patchouli |
@@ -229,7 +229,7 @@ src/main/java/net/fodoth/skina/goldentweaks/
 ├── GoldenTweaks.java     # mod entry point, mod-presence bootstrap
 ├── compat/               # per-mod integration: items, blocks, recipes, events, ASM helpers
 │   ├── ae2autopatternupload/  alshanex_familiars/  astralsorcery/  cataclysm/  compactmachines/
-│   ├── create/  ftbquests/  kaleidoscope/  lootr/  mekanism/  neoecoae/  oei/
+│   ├── create/  ftbquests/  kaleidoscope/  lootr/  mekanism/  oei/
 │   ├── questshop/  renderblender/  snack_cabinet/  thaumcraft/  thaumicbases/  thermal/  ...
 ├── config/               # config specs + Cloth Config screen
 ├── debug/                # GUI inspector
@@ -344,7 +344,7 @@ GoldenTweaks 的开发遵循几个原则：
 
 | 领域 | 修复内容举例 |
 |---|---|
-| 科技与存储 | AE2（终端搜索名称缓存、伪装板）、AE2 Peat、AE2WTLib、AE2 自动样板上传、ExtendedAE Plus、NeoECOAE、pipez_optimizer、Mekanism（能量端口安全、多方块数据、紧凑空间供电）、Mekanism Extras、Evolved Mekanism 化学混合器、Mekanism Weaponry、Create（对称之杖、序列组装、音景、JEI 子类型）、Create 柴油发电机、Create 附魔工业、Create 潜艇、航空学、Copycats、Ponder |
+| 科技与存储 | AE2（终端搜索名称缓存、伪装板）、AE2 Peat、AE2WTLib、AE2 自动样板上传、ExtendedAE Plus、pipez_optimizer、Mekanism（能量端口安全、多方块数据、紧凑空间供电）、Mekanism Extras、Evolved Mekanism 化学混合器、Mekanism Weaponry、Create（对称之杖、序列组装、音景、JEI 子类型）、Create 柴油发电机、Create 附魔工业、Create 潜艇、航空学、Copycats、Ponder |
 | 魔法 | 神秘时代（要素注册、坩埚/注魔/奥术分类、研究分类、矿石特征、主世界群系生成、神秘炼药炉、罐子、腐化蔓延、傀儡行为）、神秘工匠、神秘基础学（炼金炉）、天象神秘学、星辉魔法、Iron's Spellbooks、Spectrum、Apotheosis 系列、禁忌魔法、Eidolon、Alshanex Familiars、AcademyCraft、Traveloptics 召唤物 |
 | 渲染 | Flywheel、Geckolib、ModernUI（emoji 字体与文本渲染类型）、Veil、Sable、RenderBlender（宇宙渲染队列）、Iris、Ponder、CMPackageCouriers、星辉魔法（降星点光柱与光束）、Thermal（配方分类背景） |
 | 体验与界面 | EMI（隐藏/重复堆叠、搜索内核）、JEI、TMRV（配方界面滚动）、Bountiful、Lootr、任务商店本地化、FTB Quests（章节图片物品、R/U）、FTB Ultimine、Tipsmod、旅行者标题/路标石、Xaero、建筑魔杖、Carry On、Patchouli |
@@ -487,7 +487,7 @@ src/main/java/net/fodoth/skina/goldentweaks/
 ├── GoldenTweaks.java     # 模组入口，按已装模组做注册
 ├── compat/               # 各模组联动：物品、方块、配方、事件、ASM 辅助
 │   ├── ae2autopatternupload/  alshanex_familiars/  astralsorcery/  cataclysm/  compactmachines/
-│   ├── create/  ftbquests/  kaleidoscope/  lootr/  mekanism/  neoecoae/  oei/
+│   ├── create/  ftbquests/  kaleidoscope/  lootr/  mekanism/  oei/
 │   ├── questshop/  renderblender/  snack_cabinet/  thaumcraft/  thaumicbases/  thermal/  ...
 ├── config/               # 配置规范与 Cloth Config 界面
 ├── debug/                # GUI 调试器
