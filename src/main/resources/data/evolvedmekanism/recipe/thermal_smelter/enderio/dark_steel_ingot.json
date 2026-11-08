@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:obsidians"
+    },
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:dusts/coal"
+    }
+  ],
+  "result": [
+    {
+      "item": "enderio:dark_steel_ingot"
+    }
+  ]
+}

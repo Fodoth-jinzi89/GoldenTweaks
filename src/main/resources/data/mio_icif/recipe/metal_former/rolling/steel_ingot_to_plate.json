@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oneenoughitem"
+    }
+  ],
+  "type": "mio_icif:metal_former_rolling",
+  "ingredient": {
+    "tag": "c:ingots/steel"
+  },
+  "processingtime": 200,
+  "result": {
+    "count": 1,
+    "id": "alltheores:steel_plate"
+  }
+}

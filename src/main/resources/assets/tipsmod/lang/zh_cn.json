@@ -272,9 +272,9 @@
 
   "tip.tipsmod.mekanism.solar_system.text": "§a瓜聚变§r可作为早期稳定能源来源，一套完全循环的瓜聚变并不简单！",
 
-  "tip.tipsmod.mekanism.fusion_reactor.text": "§a裂变反应堆§r提供极高能源输出和材料生产，但需要维持稳定。",
+  "tip.tipsmod.mekanism.fusion_reactor.text": "§a聚变反应堆§r以氘氚燃料为能量来源，发电极高且没有污染和风险！",
 
-  "tip.tipsmod.mekanism.fission_reactor.text": "§a聚变反应堆§r以氘氚燃料为能量来源，发电极高且没有污染和风险！",
+  "tip.tipsmod.mekanism.fission_reactor.text": "§a裂变反应堆§r提供极高能源输出和材料生产，但需要维持稳定。",
 
   "tip.tipsmod.mekanism.radiation_system.text": "§c辐射§r会持续影响玩家与环境，需要防护装备或屏蔽单元。",
 
@@ -294,6 +294,206 @@
 
   "tip.tipsmod.mekanism.item_filter.text": "通过§a物流分类机§r可以控制物流管道与机器输入输出行为。",
 
-  "tip.tipsmod.mekanism.round_robin.text": "§a物流管道§r默认最近优先，这可能会导致速度损失。"
+  "tip.tipsmod.mekanism.round_robin.text": "§a物流管道§r默认最近优先，这可能会导致速度损失。",
+
+  "tip.tipsmod.thaumcraft.wand_basics.text": "§a铁杖端木质法杖§r每种要素最多储存 §d25§r 点，平均魔力消耗为 §d110%§r，即实际比 EMI 显示多耗 §c10%§r 要素。击杀生物或种植始源蘑菇掉落的§a要素球§r可为其补充要素。",
+
+  "tip.tipsmod.thaumcraft.research_table.text": "将§a两个台桌§r并排放置，用§a笔与墨§r右键即可组成§a研究台§r。从魔导手册抄写研究时，§6GoldenTweaks§r 会自动取用 §d5×5×5§r 范围内研究台上的笔与墨，但你仍需随身携带§a纸§r。",
+
+  "tip.tipsmod.thaumcraft.scanning.text": "手持§a魔导透镜§r长按右键（建议§9潜行§r）扫描方块、物品与生物，可获取§b要素§r知识。只有当目标所含§a新要素§r的组成要素都已认识时，才能发现这个新要素。",
+
+  "tip.tipsmod.thaumcraft.aspect_page.text": "§6GoldenTweaks§r 改写了魔导手册的§b要素详情页§r：要素按等阶排列，鼠标悬浮图标可查看已扫描的含该要素物品，并按含量§b降序§r排列。",
+
+  "tip.tipsmod.thaumcraft.magic_transformation.text": "用§a法杖§r右键§a书架§r、§a台桌§r或§a炼药锅§r，可将其转化为§b神秘时代专属方块§r。§a奥术工作台§r同时还是§a神秘巫师§r村民的工作站点。",
+
+  "tip.tipsmod.thaumcraft.revealing_goggles.text": "§a揭示之护目镜§r可装备在§a饰品栏§r，提供常驻的§b神秘视野§r与§b夜视§r效果。如果你缺一顶头盔，也可以合成§a揭示之头盔§r。",
+
+  "tip.tipsmod.thaumcraft.cauldron.text": "空手§9潜行右键§r可以清空§a坩埚§r中的水与源质，但会释放大量§c咒波§r。把坩埚四周堵起来做成§b无咒波坩埚§r，就能避免这个问题。",
+
+  "tip.tipsmod.thaumcraft.distillation.text": "在§a炼金炉§r上方叠放§a要素蒸馏器§r即可组成§b蒸馏塔§r，用§a要素罐子§r右键蒸馏器提取源质。§6GoldenTweaks§r 使炼金炉支持§a侧面输入原料§r、§a底面输入燃料§r的自动化。",
+
+  "tip.tipsmod.thaumcraft.infusion_altar.text": "注魔时以§b中心对称§r方式摆放§a注魔稳定物§r（如油脂蜡烛）和§a周边物品§r，可显著§b降低风险§r；危险级注魔甚至需要 §d13×13§r 的蜡烛阵。",
+
+  "tip.tipsmod.thaumcraft.charging_node.text": "把含高级要素的节点放在§a节点稳定器§r上，上方放§a节点换能器§r并通入§b红石信号§r，即可将其转化为§a充能节点§r，为工作台上的法杖充能。§c拆除稳定器或换能器会引发爆炸§r。",
+
+  "tip.tipsmod.thaumcraft.brain_in_jar.text": "扫描§a僵尸之脑§r解锁§b缸中之脑§r的研究后，再完成§6金子修改§r页面的研究，就能让缸中之脑消耗§b经验§r自动破解研究笔记。",
+
+  "tip.tipsmod.thaumcraft.warp_levels.text": "当§a扭曲值§r（永久+粘性）超过 §d25§r 后，可能在随机时间解锁§b邪术学§r；超过 §d50§r 后则可能解锁§b邪术启示录§r。扭曲越高，负面效果也越疯狂。",
+
+  "tip.tipsmod.thaumcraft.warp_bath.text": "把§a净化浴盐§r丢入水中会生成§a净化之水§r，在其中泡澡可获得§b扭曲守护§r效果。扭曲值越高，守护的持续时间越短。",
+
+  "tip.tipsmod.thaumcraft.outer_lands.text": "在§a邪术方尖碑§r下的§a拱顶石§r上放 §d4§r 个§a邪术之眼§r，用法杖右键并消耗每种 §d100§r 点 vis，即可开启§b外域§r传送门。贴着§b左侧墙壁§r走更容易找到石板与 BOSS 房间。",
+
+  "tip.tipsmod.thaumcraft.enchanting_table.text": "§a渗透附魔台§r可以§b自选附魔§r，兼容原版、神秘与光谱的附魔；但需要 §d6§r 根两格高的§a黑曜石图腾§r柱并各放一个§a闪耀之光§r，注魔危险度也很高。",
+
+  "tip.tipsmod.thaumcraft.essentia_relay.text": "§a要素中继接口§r只占用 §d1§r 个频道：上方放§a魔力中继器§r，用§a内存卡§r潜行右键接口，再右键§b奥术合成终端§r，就能为终端里的法杖提供灵气。",
+
+  "tip.tipsmod.thaumcraft.essentia_provider.text": "把§a源质供应器§r贴在§a神秘炼金塔§r的输入口或§a注魔截流者§r下方，即可自动从 AE 网络抽取源质。当前版本§c不要制作蕴魔观测器§r，可能导致崩服。",
+
+  "tip.tipsmod.thaumcraft.corrupt_tree.text": "§a腐化之树§r不会传播腐化，反而能抵御腐化，是§b可再生§r获取§5污染§r源质的好办法；也可以用§a种植站§r自动种植。",
+
+  "tip.tipsmod.thaumcraft.arcane_restorer.text": "§a奥法修复台§r消耗§9工具§r要素修复物品，几乎所有物品都能修，尤其适合无法附§a经验修补§r的装备。",
+
+  "tip.tipsmod.thaumcraft.primordial_shards.text": "§a元始要素碎片§r共有 §d6§r 种，挖掘地下生成的§a蕴魔石§r即可掉落，并受§b时运§r影响。如果你实在找不到某种碎片，可以之后使用金子修改页面的§a碎片炼金术§r研究。",
+
+  "tip.tipsmod.thaumcraft.wand_upgrade.text": "解锁注魔后，用§a神秘杖端§r与§a银树杖柄§r可以把法杖升级到 §d100§r 点 vis 容量。想获得足够的§b魔力减免§r直接制作该法杖，还需要§a揭示之护目镜§r、§a神秘使法袍§r与§a神秘使护腿§r。",
+
+  "tip.tipsmod.thaumcraft.core_inlay.text": "把§a魔力充能中继器§r放在§6核心镶饰台§r上并放入§a法杖核心§r，即可消耗§b经验§r为核心增幅，所需 vis 由相连的§a充能节点§r提供。",
+
+  "tip.tipsmod.thaumcraft.golem_alchemy.text": "给傀儡装配§a炼金核心§r即可搬运源质，§b力量§r越高单次搬运越多。§6GoldenTweaks§r 使傀儡无需寻路也能工作，记得把傀儡绑定到蒸馏器的§b输出口§r。",
+
+  "tip.tipsmod.thaumcraft.infernal_furnace.text": "§a炼狱熔炉§r无需燃料即可自动熔炼矿物与肉类，还常有额外产出，但需要§a法杖§r激活。产物从正面喷出，可以用§a饕餮箱子§r接收。",
+
+  "tip.tipsmod.thaumcraft.alchemy_tower.text": "§a神秘炼金塔§r能自动执行任意炼金配方（如平衡碎片、神秘锭），产物从前方输出口自动输出；至少需要一把§a宏伟之木法杖§r提供 vis 才能激活。",
+
+  "tip.tipsmod.thaumcraft.custom_node.text": "§6节点力学§r允许自定义节点：用§a节点基体§r与 §d1~8§r 个装满的§a要素安瓿§r在奥术工作台合成，再与 §d2§r 个世界盐注魔。每点要素消耗 §d150§r 源质，转化为 §d15§r 点节点要素。",
+
+  "tip.tipsmod.thaumcraft.node_control.text": "§a节点连接器§r可以安全地完成§b节点吞噬§r；§a节点调节器§r能调整节点的各项属性，但需要先制作对应的§a调节核心§r。",
+
+  "tip.tipsmod.thaumcraft.super_chanting.text": "在本整合包中，§a超吟附魔台§r改用§b附魔§r要素，效果为§e翻倍附魔等级§r。烧炼§a魔力布匹§r即可获得附魔要素。",
+
+  "tip.tipsmod.thaumcraft.animated_workbench.text": "§a活化工具台§r类似§a机械手§r，但§b不消耗应力§r；右键打开配置界面，还能设置§b红石驱动§r。",
+
+  "tip.tipsmod.thaumcraft.defense_charm.text": "§6防身护身符§r潜行右键激活后装备在项链栏，可自动清除负面效果，连顽固的§e扭曲负面效果§r也能清除。",
+
+  "tip.tipsmod.thaumcraft.super_glow.text": "随身携带§6超能闪耀之光§r会自动照亮身边，夜晚还会在你走过的路上留下一条§b光之尾迹§r。",
+
+  "tip.tipsmod.thaumcraft.magic_crops.text": "§6神秘基础学§r的魔法种子能高效再生各种资源，§6GoldenTweaks§r 兼容了§a右键收获§r。部分植物不吃骨粉与催生灯，但§a催熟素§r对它们有效。",
+
+  "tip.tipsmod.thaumcraft.rose_seed.text": "§6神秘玫瑰芽§r产出含各种要素的§a知识碎片§r（需在土壤下方放置对应魔晶块）；§6始源蘑菇§r掉落的§a灵气球§r是前期给法杖充能最实用的手段。",
+
+  "tip.tipsmod.thaumcraft.echo_metal.text": "§a秘晶锭§r是比§a神秘锭§r更强也更难制作的§b魔法金属§r，同时也是一种优秀的§b硬金属§r材料。",
+
+  "tip.tipsmod.thaumcraft.ancient_blocks.text": "§a邪术方舟§r、§a旧式砖块§r、§a水银块§r等§b远古方块§r及其台阶版本都能提供少量§b注魔稳定度§r，可以用来替代部分蜡烛。",
+
+  "tip.tipsmod.thaumcraft.tainted_metal.text": "§a暗影金属§r比§a神秘锭§r与§a虚空锭§r性能更优、耐久更高，可用来升级§a虚空护甲§r，也是一种§b寂静装备材料§r。",
+
+  "tip.tipsmod.thaumcraft.blood_dagger.text": "§a采血匕首§r攻击敌人时会自动填充背包中的§a玻璃安瓿§r，得到§a瓶装血腥血液§r，可用于制作血腥布匹与能让护甲自动修复的§a虚空结晶§r。",
+
+  "tip.tipsmod.thaumcraft.star_instruments.text": "§6观星仪§r、§6天象透镜§r、§6月相仪§r与§6星盘§r需要放在 §d100§r 格以上、直面天空的位置。§6GoldenTweaks§r 简化了交互，用§a催化剂§r右键即可直接收取产物。",
+
+  "tip.tipsmod.thaumcraft.healing_vat.text": "向§a治愈之缸§r注入源质即可治疗生物：§bVictus§r恢复生命，§bSano§r快速治疗并清除负面效果，§bFames§r恢复饱食度，§bMortuus§r与§bExanimis§r则治疗亡灵。",
+
+  "tip.tipsmod.thaumcraft.essence_disk.text": "把装有§a源质访问卡§r的§a输入/输出总线§r对准§b源质罐子§r，即可输入或输出源质；网络中的源质可以用§a存储磁盘§r统一存储。",
+
+  "tip.tipsmod.spectrum.cmy_gems.text": "§a紫水晶§r分布在§b地底§r，§a黄水晶§r分布在§b河流湖泊§r，§a托帕石§r分布在§b高山§r。找齐这三种宝石晶，才能开启§6光谱世界§r的旅程。",
+
+  "tip.tipsmod.spectrum.onyx_fusion.text": "在§a融合圣坛§r中放入§a一桶岩浆§r与三种宝石晶各一组，仅在§b新月午夜§r的极短时间内才能合成§a缟玛瑙§r。放个§a磁铁升级桶§r在旁边，等进度跳完再来取即可。",
+
+  "tip.tipsmod.spectrum.sapling_pigments.text": "破坏§a彩色树叶§r可以获得§b颜料§r，受§b时运§r加成。前中期可以制作 §d11§r 种彩色树苗，用§a种植站§r或§a颜料提取器§r配合§a粉碎轮§r就能自动化颜料。",
+
+  "tip.tipsmod.spectrum.pigment_extractor.text": "§a颜料提取器§r放入§a树苗§r，从侧面输入§a肥料§r就会快速产出§b颜料§r，产物从下方提取。§a植本质§r的肥力比骨粉更强，还有小概率返还树苗。",
+
+  "tip.tipsmod.spectrum.decoheres.text": "把§a褪解微生物§r放在§a树叶§r上，片刻后树叶会被腐蚀，挖掘即可获得§a植本质§r；用§a玻璃瓶§r收集腐蚀树叶还能得到额外微生物。微生物§c不会在领地内蔓延§r。",
+
+  "tip.tipsmod.spectrum.midnight_solution.text": "进行§a午夜溶液§r实验时务必§c远离家园§r，并用玻璃铺出大片平台，§c不要在空中或海上§r进行。实验产物要尽快塞进背包以防降解；溶液还能用来处死怪物获取§a午夜残片§r。",
+
+  "tip.tipsmod.spectrum.jade_vine.text": "用§a灵魂灌注台§r复活§a玉藤球茎§r，种在离地 §d3§r 格的§a木栅栏§r上：它只在§b月光§r下生长，§c阳光下会枯萎§r。§b满月之夜§r用§a玻璃瓶§r收集成熟玉藤，可获得§a望舒琼浆§r。",
+
+  "tip.tipsmod.spectrum.blood_orchid.text": "用§a灵魂灌注台§r复活§a血兰§r后种在土地上，就可以反复掰取花瓣。把任意§b花§r扔进§a液态水晶§r还能得到§a共振铃兰§r，基岩之下也能采集到。",
+
+  "tip.tipsmod.spectrum.little_dragon.text": "把§e小火龙的记忆§r放在§a炽热水晶§r上即可孵化§a小火龙§r，用§a玉藤花瓣§r或§a翡翠莲花花瓣§r喂食可驯服。驯服后可骑乘滑翔；§a龙翎§r投入§a液态水晶§r能得到§a粗蕴血石§r。",
+
+  "tip.tipsmod.spectrum.bismuth.text": "找到岩壁上的§a铋晶簇§r，用§a精准采集镐§r挖下并放在§a金属块§r上培养，成长会消耗金属块。长成后就能制作§b结晶器§r，用它培养更多铋。",
+
+  "tip.tipsmod.spectrum.crystallizer.text": "§b结晶器§r要从上方投入§a晶种§r和§a催化剂§r，并通过§a绘彩网络墨水节点§r输入§b墨水§r，晶种才会长成晶簇；催化剂或墨水任一不足都会暂停生长。本整合包中它的速度是原来的 §d10§r 倍。",
+
+  "tip.tipsmod.spectrum.malachite.text": "§a孔雀石§r的矿石偶尔能在§e基岩之下§r找到，但主要靠§b结晶器§r培养。本整合包统一了它与同级别材料的§b催化剂§r和§b生长时间§r。",
+
+  "tip.tipsmod.spectrum.liquid_crystal.text": "§a液态水晶§r可以用§b药水工作站§r便捷制作，与水或岩浆的§e源头§r混合会有意外效果。它还能用来§b钓鱼§r，能钓到光谱特有的鱼种。",
+
+  "tip.tipsmod.spectrum.storm_stone.text": "雷雨天时，§a闪电§r击中§a避雷针§r会在周围生成§a风暴之石§r，提前在平整的地面布好避雷针即可稳定收集。之后也能用风暴之石再次§e召唤雷雨§r。",
+
+  "tip.tipsmod.spectrum.meteorite.text": "夜晚偶尔会有§6流星§r落在基地附近，落地时有“嘭”的声响与粒子尾迹。§a左键§r可以敲开它，或 §9Shift+右键§r 拾起，用§a铁砧§r粉碎能得到更多§b流星碎片§r。",
+
+  "tip.tipsmod.spectrum.knowledge_gem.text": "§a黑洞箱§r能同时收集§a物品§r与§a经验球§r，并把经验存入§a知识宝石§r，还支持§b过滤§r。知识宝石可以存储大量经验，附魔后容量更高，主要用于给§a附魔基座§r供能。",
+
+  "tip.tipsmod.spectrum.enchanting_pedestal.text": "§a附魔基座§r可以§b自选附魔§r，光谱专属附魔也只能通过它获得，并会随进度逐步解锁。提交§a七彩碎片§r后还能解放§b冲突附魔§r与§b超限附魔§r。",
+
+  "tip.tipsmod.spectrum.canvas.text": "§a附魔画布§r可以右键工具§e提取附魔§r，再右键§c同种工具§r应用，非常适合刷§a多功能工具§r这类廉价装备。制作它需要§a幻翼膜§r。",
+
+  "tip.tipsmod.spectrum.picker.text": "§a拾色器§r能把§a颜料§r转化为§b墨水§r，用§a墨水瓶§r提取。现在结晶器需要§a绘彩网络墨水节点§r连接拾色器供墨，§c不能再直接投入墨水瓶§r了。",
+
+  "tip.tipsmod.spectrum.bedrock_below.text": "用§a毁蚀之瓶§r腐蚀主世界底层的§a基岩§r，即可打开通往§b基岩之下§r的入口。新维度里有新的晶洞与§a月长石§r，刚进去眼睛可能不适应黑暗，向下挖一段就会好转。",
+
+  "tip.tipsmod.spectrum.nightdew_bud.text": "收获§a夜露嫩芽§r时有§c极低概率§r掉落§a夜露花蕾§r；周围§b睡觉的生物§r越多概率越高，一般靠§a狐狸§r来提高产量。",
+
+  "tip.tipsmod.spectrum.purple_sugarcane.text": "§a奇毒苇§r生成在§b红树林沼泽§r等沼泽中，需要种在§b水下§r，生长还会消耗周围的§a黏土§r。也可以用§a种植站§r自动化种植。",
+
+  "tip.tipsmod.spectrum.ender_effulgence.text": "击杀手持§a末影辐光§r的§a末影人§r即可掉落；末影人有时会把它放在地上，一块突兀的§b圆石§r可能就是它。它可用于制作§a共享石碑§r等物品。",
+
+  "tip.tipsmod.spectrum.ruins_puzzle.text": "§a颜色混合遗迹§r生成在主世界§e地下§r，可用§a指南针§r寻找。把对应的 §d6§r 种宝石晶粉末右键放入§b孢子花下面的物品基座§r即可开门，内部箱子还能拿到§a苋米§r。",
+
+  "tip.tipsmod.spectrum.potion_workshop.text": "§a药水工作站§r能更便捷地制作光谱的§b液体与药水§r，支持从上方输入、下方输出。加入§a催化剂§r可以改变药水性质，完成进度小挑战还能解锁新的催化剂槽。",
+
+  "tip.tipsmod.spectrum.crimson_floating.text": "§a绯红悬浮方块§r和沙子一样受重力影响，§9Shift+右键§r可以把空中的悬浮方块收回手中。它也能代替§a铁砧§r，只是效率很低；§b魔宠学家§r需要它制作绯红等级的强化物。",
+
+  "tip.tipsmod.spectrum.verdigris_fragment.text": "§a苍绿碎片§r在§e末地外岛§r附近比较常见，与绯红碎片相反，它自带§b反重力§r，携带太多可能会飘起来。也可以通过§b序列组装§r制作。",
+
+  "tip.tipsmod.spectrum.floating_block.text": "让§a苍绿方块§r与§a绯红方块§r§b相撞§r可以获得§a悬浮方块§r，用它就能搭一个简单的§b飞行器§r。§b魔宠学家§r需要它制作幻紫等级强化物，可用§a成型面板§r或§a方块放置器§r自动化。",
+
+  "tip.tipsmod.spectrum.dragon_bone.text": "在§e龙腐沼地§r用§a白炽醇合物§r炸碎§b巨大骨块§r，再用§b下界合金及以上§r的镐子挖掘，即可获得§a龙骨碎片§r；被爆炸杀死的§a骨骸§r也会掉落。",
+
+  "tip.tipsmod.spectrum.humming_stone.text": "把 §d10§r 个以上§a嗡鸣石方块§r摆在一起并依次§a敲击§r，它们就会破碎并掉落§a嗡鸣石碎片§r。",
+
+  "tip.tipsmod.spectrum.deepstone_shard.text": "§a深域石碎片§r可在§e基岩之下§r的§a挖掘场§r获得，是后期物品的重要材料；也可以用§a强化深板岩§r复制。",
+
+  "tip.tipsmod.spectrum.bedrock_anvil.text": "§a基岩铁砧§r没有修复惩罚，而且§6GoldenTweaks§r 为它增加了§b隐藏附魔§r功能：把§a翡翠花瓣§r与物品一起在铁砧上合成即可切换附魔隐藏。",
+
+  "tip.tipsmod.spectrum.luck_candy.text": "制作§a星糖§r时会根据玩家的§b幸运值§r产出不同颜色：运气为负时偏向§6甜腻星糖§r，为 §d0§r 时偏向§6醇和星糖§r，幸运越高则越容易得到§6闪耀、附魔与瑰丽星糖§r。",
+
+  "tip.tipsmod.spectrum.brewing_barrel.text": "§a酿造桶§r可以酿造饮品：放入物品与液体，用§b彩色木板§r封口，等待一段§c现实时间§r后开封即可。过量放入原料或延长酿造时间都能提高§a酒精度§r。",
+
+  "tip.tipsmod.spectrum.azurite.text": "§a石青矿簇§r只生成在§b靠近基岩的岩层§r，走到上方会看到§9蓝色粒子升空§r的提示。它非常稀有，后期可以用§b结晶室§r复制。",
+
+  "tip.tipsmod.spectrum.azure_shield.text": "§a蔚蓝护盾§r类似神秘的§b符文护盾§r，可以抵消一部分伤害；拥有它才能进入第二个遗迹§b蔚蓝力场遗迹§r，别忘了把尽头的§a玉藤球茎§r和§a液态水晶§r带走。",
+
+  "tip.tipsmod.spectrum.cleanser.text": "§a祛消解之瓶§r可以清理§a微生物§r过度蔓延造成的灾难，对§a午夜溶液§r产生的§a黑暗物质§r与§a幽匿块§r同样有效，会把被腐蚀的方块变回§a泥土§r。",
+
+  "tip.tipsmod.spectrum.midnight_fragment.text": "被§a午夜溶液§r杀死的生物会掉落§a午夜残片§r。用它给刷怪塔处死时，务必确保溶液不会碰到其它地方；也可以用§b药水工作站§r更便宜地制作。",
+
+  "tip.tipsmod.spectrum.multi_tool.text": "§a多功能工具§r集镐、锹、斧于一体，造价非常便宜，大前期就能做一把。配合§a附魔画布§r转移附魔，换工具时也不心疼。",
+
+  "tip.tipsmod.spectrum.lava_fishing.text": "用§a熔融钓竿§r可以在§a熔岩§r中钓鱼，§a液态水晶§r与§a泥浆§r里也可以。除了物品，有时还能钓上§b活体生物§r。",
+
+  "tip.tipsmod.spectrum.mother_rock.text": "§a母岩§r可以催生对应的宝石晶簇：紫水晶、托帕石与黄水晶的母岩来自主世界晶洞，月长石母岩来自基岩之下晶洞，缟玛瑙母岩则在§a灵魂灌注台§r制作。晶簇用§a粉碎轮§r处理即可自动化。",
+
+  "tip.tipsmod.spectrum.onyx_pedestal.text": "得到§a缟玛瑙§r后，用它升级你的§a七彩基座§r并同步升级多方块结构，才能解锁更高级的合成。",
+
+  "tip.tipsmod.spectrum.mermaid_gem.text": "§a美人鱼宝石§r的植株生长在§b深海§r，成熟后会把小宝石吐出来，所以坐船时可能在水面上捡到。用§b带磁铁升级的桶§r可以自动收集。",
+
+  "tip.tipsmod.spectrum.clover.text": "§a三叶草§r生成在§b平原§r，用 §6APT§r 可以制作§a四叶草§r；用§a种植站§r种植三叶草也有极小概率产出四叶草。",
+
+  "tip.tipsmod.spectrum.sparkstone.text": "§a火花石§r可以在任意高度发现，也能直接制作；把§a铁矿石§r与§a火把§r放进搅拌盆混合即可自动化生产。",
+
+  "tip.tipsmod.spectrum.ancient_plants.text": "§a远古植物§r需要靠§a嗅探兽§r挖掘获得：§a夜露嫩芽§r可以像垂泪藤一样种植，§a乳脂木枝§r则是乳脂树的树苗。乳脂树掉落的§a乳脂§r记得及时收集，避免掉落物堆积。",
+
+  "tip.tipsmod.spectrum.jade_crossbreed.text": "在§a灵魂灌注台§r上可以杂交两种球茎，获得§a玉藤球茎§r；用 §6EMI§r 的§b配方树§r功能还能直接查看秘方内容。",
+
+  "tip.tipsmod.spectrum.ominous_sapling.text": "§a不祥树苗§r目前还没有做完，种下也§c不会生长§r；可以把它在任务提交出去，换取一些它本应长成的木材。",
+
+  "tip.tipsmod.spectrum.tea_recipes.text": "在任务提交各种§a茶§r可以兑换食谱，§e地底之城§r里也能找到；冲泡时加入§b奶§r还会得到不同风味。",
+
+  "tip.tipsmod.spectrum.preenchanted_tools.text": "§a预附魔工具§r自带抢夺、时运等实用附魔，价格便宜，特别适合运气不好、迟迟刷不到好附魔的玩家过渡使用。",
+
+  "tip.tipsmod.spectrum.bedrock_suit.text": "§a基岩套§r非常强大、坚硬，而且拥有§b无限耐久§r，是光谱后期值得追求的一套装备。",
+
+  "tip.tipsmod.spectrum.moonstone_core.text": "§e地底之城§r里由大量§a保护石§r构成的§a种子库§r会被§a哨戒炮塔§r严密守护，击杀炮塔即可获得§a月石核心§r，也可以自己制作。",
+
+  "tip.tipsmod.spectrum.underground_city.text": "§e地底之城§r是基岩之下的大型结构，§a教堂§r里能找到最初的§a雕纹月长石岩石§r，§a种子库§r里还有§a白炽醇合物§r与地图。",
+
+  "tip.tipsmod.spectrum.moonstone_pedestal.text": "§a月长石基座§r是七彩基座的完全体；需要先在地底之城的教堂里找到§a雕纹月长石岩石§r才能完整搭建，之后就能自己制作这种方块了。",
+
+  "tip.tipsmod.spectrum.knowledge_sharing.text": "§a知识共享§r物品可以右键记录你的研究知识，丢给伙伴后让其右键即可分享；也可以用§a融合圣坛§r进行光谱原生的知识同步。",
+
+  "tip.tipsmod.spectrum.forest_manor.text": "§a林下庄园§r生成在§e基岩之下§r，共有 §d3§r 层，结构复杂；可以在§a种子库§r找到它的地图，或用指南针寻找。里面能获得§a以太恩赐甘露手套§r等强力装备。",
+
+  "tip.tipsmod.spectrum.abandoned_cathedral.text": "把§a月石核心§r嵌入§a神秘护身符§r可以制作通往§e被遗弃的大教堂§r的指南针。虽然模组作者还没做完这里，但完成任务依然会给你一份奖励。",
+
+  "tip.tipsmod.spectrum.stardust.text": "§a流星碎片§r可以用§a下界之星§r复制，适合大量消耗；§a星尘§r还能进一步加工成§a微星尘§r，别忘了这条产线。",
+
+  "tip.tipsmod.spectrum.pigment_reserve.text": "后期 §d16§r 种彩色树苗都可以制作，记得把§e颜料储备§r填满；白色颜料需要先用§a月长石§r制作白色树苗。",
+
+  "tip.tipsmod.spectrum.overcharged_ore.text": "§a绯红宝石§r生成在§a下界§r，挖掘时有小概率直接掉落完整宝石，也能用§b序列组装§r制作。它带有加强重力的魔能，携带太多会跳不起来，建议放进背包。"
 
 }

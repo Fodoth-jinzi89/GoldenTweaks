@@ -8,6 +8,10 @@ import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
 
 /**
  * 矢量操作·风暴之翼（storm_wing）解锁后，玩家免疫坠落伤害。
+ *
+ * <p>注意：这里用 {@code getLearnedSkills().contains(...)} 而不是 {@code hasLearnedSkill(...)}——
+ * 后者在开发者模式（{@code devMode}）下恒返回 {@code true}，而 {@code /aim reset} 不会清除 devMode，
+ * 会导致重置后仍然免疫坠落伤害。</p>
  */
 public final class AcademyStormWingFallImmunity {
 
@@ -27,7 +31,7 @@ public final class AcademyStormWingFallImmunity {
         }
 
         PlayerAbilityData data = player.getData(AcademyAttachments.PLAYER_ABILITY);
-        if (data != null && data.hasLearnedSkill(STORM_WING)) {
+        if (data != null && data.getLearnedSkills().contains(STORM_WING)) {
             event.setCanceled(true);
         }
     }

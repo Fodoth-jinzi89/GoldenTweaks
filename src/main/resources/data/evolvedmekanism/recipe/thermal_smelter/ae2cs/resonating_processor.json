@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2cs"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "item": "ae2cs:resonating_circuit_print"
+    },
+    {
+      "item": "ae2:printed_silicon"
+    }
+  ],
+  "result": [
+    {
+      "item": "ae2cs:resonating_processor"
+    }
+  ]
+}

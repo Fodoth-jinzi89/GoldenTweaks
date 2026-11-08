@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "tag": "c:ingots/copper_alloy"
+    },
+    {
+      "tag": "c:ingots/iron"
+    }
+  ],
+  "result": [
+    {
+      "item": "enderio:conductive_alloy_ingot"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:tag_non_empty",
+      "tag": "c:ingots/nickel"
+    },
+    {
+      "type": "neoforge:tag_non_empty",
+      "tag": "c:ingots/copper"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:ingots/nickel"
+    },
+    {
+      "tag": "c:gems/coal"
+    }
+  ],
+  "result": [
+    {
+      "item": "alltheores:constantan_ingot",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "fluid": "thermal:resin",
+      "amount": 100
+    }
+  ],
+  "result": [
+    {
+      "item": "mio_icif:resource/item_harz"
+    }
+  ]
+}

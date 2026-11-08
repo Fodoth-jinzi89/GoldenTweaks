@@ -27,7 +27,7 @@
   某个 mixin 自身引用了缺失模组的类时会被跳过，否则会把启动崩成 `MixinTransformerError`。
 
 
-## compileOnly/ —— 195 个 jar（仅编译期可见）
+## compileOnly/ —— 197 个 jar（仅编译期可见）
 
 | 模组 | 版本 | 文件名 |
 |---|---|---|
@@ -39,6 +39,7 @@
 | AE2-QoL-Client | `2.0.2` | `[C]-aeqc-2.0.2-neoforge-1.21.1.jar` |
 | ae2_auto_pattern_upload | `2.0.0` | `ae2_auto_pattern_upload-2.0.0.jar` |
 | ae2cs | `1.2.1-scex.1` | `[S]-ae2cs-1.21.1-1.2.1.jar` |
+| ae2fct（AE2 流体合成终端） | `19.1.1` | `[S]-ae2fct-19.1.1-neoforge-1.21.1.jar` |
 | ae2helpers | `1.0.1` | `ae2helpers-1.0.1.jar` |
 | ae_better_villagers | `1.15.1.b` | `ae_better_villagers-1.15.1.b.jar` |
 | aeallpattern | `0.2.6` | `[S]-aeallpattern-0.2.6-neoforge-1.21.1.jar` |
@@ -100,7 +101,7 @@
 | FarmersDelight | `1.3.4` | `FarmersDelight-1.21.1-1.3.4.jar` |
 | fastquit | `3.0.0+1.20.6_mapped_moj_1.21.1` | `fastquit-3.0.0+1.20.6_mapped_moj_1.21.1.jar` |
 | fidworkblock | `1.0.0` | `fidworkblock-1.0.0.jar` |
-| flavor_immersed_daily | `1.21.1-neoforge-2026.10.13` | `flavor_immersed_daily-1.21.1-neoforge-2026.10.13.jar` |
+| flavor_immersed_daily | `1.21.1-neoforge-2026.11.7` | `flavor_immersed_daily-1.21.1-neoforge-2026.11.7.jar` |
 | fluidlogistics | `1.3.1` | `fluidlogistics-1.3.1-mc1.21.1.jar` |
 | flywheel-neoforge | `1.21.1-1.0.6` | `flywheel-neoforge-1.21.1-1.0.6.jar` |
 | Fractal | `1.8.0+1.21.1-neoforge` | `Fractal-1.8.0+1.21.1-neoforge.jar` |
@@ -207,6 +208,7 @@
 | igleelib | `1.21.1-1.2.7` | `[S]-igleelib-1.2.7-neoforge-1.21.1.jar` |
 | evolvedmekanism | `1.2.1-fix3` | `[S]-evolvedmekanism-1.2.1-fix3-neoforge-1.21.1.jar` |
 | mekanism_weaponry | `2.1.5` | `[S]-mekanism_weaponry-2.1.5-neoforge-1.21.1.jar` |
+| mio_icif | `0.1.10.22` | `[S]-mio_icif-0.1.10.22-neoforge-1.21.1.jar` |
 | citresewn | `1.2.2+1.21` | `[C]-citresewn-1.2.2-fabric-1.21.1.jar` |
 | colorwheel | `1.3.0+mc1.21.1` | `[C]-colorwheel-1.3.0-neoforge-1.21.1.jar` |
 | veil | `1.21.1-4.3.2` | `veil-neoforge-1.21.1-4.3.2.jar`（从整合包 sable 的内嵌 jar 中取出） |

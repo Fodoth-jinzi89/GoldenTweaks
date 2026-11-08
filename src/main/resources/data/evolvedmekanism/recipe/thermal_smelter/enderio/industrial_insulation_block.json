@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool"
+    },
+    {
+      "tag": "c:dusts/lapis"
+    },
+    {
+      "tag": "enderio:insulation_metals"
+    }
+  ],
+  "result": [
+    {
+      "item": "enderio:industrial_insulation_block"
+    }
+  ]
+}

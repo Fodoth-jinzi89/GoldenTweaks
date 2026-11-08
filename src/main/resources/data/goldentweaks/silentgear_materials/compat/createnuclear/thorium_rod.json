@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "handle",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "createnuclear:thorium_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF379A9A",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.goldentweaks.compat.createnuclear.thorium_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.326
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.059
+      },
+      "block_reach": {
+        "operation": "ADD",
+        "value": 0.13
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.098
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.359
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.456
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.212
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.228
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.196
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

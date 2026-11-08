@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>动能发电机 · 三种型号</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1160px; aspect-ratio:4 / 3; max-width:100%; max-height:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:14px 22px 13px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:24px; font-weight:800; color:var(--gold); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:6px 11px; text-align:center; min-width:104px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:14px; font-weight:800; color:var(--ok);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:10px 12px; min-height:0;}
+  table{width:100%; height:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:11.5px; font-weight:800;
+           letter-spacing:.02em; padding:8px 5px; border:1px solid #111;}
+  tbody td{padding:6px 8px; border:1px solid var(--line); font-size:13.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:28px; height:28px; margin:0 auto; line-height:28px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:14px; text-shadow:1px 1px 0 #000;}
+  .mode{font-weight:800; font-size:13.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:10.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:14px; color:#ededed;}
+  .volt{display:inline-block; padding:2px 8px; font-weight:800; font-family:"Consolas",monospace;
+        font-size:12.5px; border:2px solid; }
+  .mv{background:#123a5a; border-color:#2f7bbf #06121c #06121c #2f7bbf; color:#bfe6ff;}
+  .hv{background:#5a3a12; border-color:#bf8a2f #1c1206 #1c1206 #bf8a2f; color:#ffe0b0;}
+  .ev{background:#4a1250; border-color:#a72fbf #14061c #14061c #a72fbf; color:#f2c6ff;}
+  .out{font-family:"Consolas",monospace; font-weight:800; color:#ffd27a;}
+  .out s{display:block; color:#9fe0ff; font-weight:700; text-decoration:none; font-size:11.5px;}
+  .r100{color:var(--ok); font-weight:800;}
+  .r10{color:#ffb454; font-weight:800;}
+  .na{color:#7a7a7a; font-weight:700;}
+  .notes{background:#1b1d21; background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:12px; line-height:1.9; text-shadow:1px 1px 0 #000;
+         display:flex; flex-wrap:wrap; column-gap:24px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes .k{white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="title">
+      <h1>动能发电机 · 三种型号<small>KINETIC GENERATORS — KU → EU</small></h1>
+      <div class="stats">
+        <div class="stat"><b>KU → EU</b><span>输送方向</span></div>
+        <div class="stat"><b>正面</b><span>接收 KU</span></div>
+        <div class="stat"><b>3</b><span>型号</span></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:50px"><col style="width:250px"><col style="width:112px"><col style="width:120px">
+          <col style="width:118px"><col style="width:124px"><col style="width:78px"><col style="width:78px"><col style="width:170px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">发电机</th><th class="c">电压等级</th><th class="c">最大输出</th>
+            <th class="c">储能</th><th class="c">KU → EU 比率</th><th class="c">天然源</th><th class="c">其他源</th>
+            <th class="c">满输出用 KU/t</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">0</div></td>
+            <td><div class="mode">动能发电机<i>Kinetic Generator</i></div></td>
+            <td class="c"><span class="volt mv">MV · 128</span></td>
+            <td class="c"><span class="out">4096 EU/t</span></td>
+            <td class="n">100 000</td>
+            <td class="c"><span class="out">4 KU = 1 EU<s>0.25 EU/KU</s></span></td>
+            <td class="c"><span class="na">—</span></td>
+            <td class="c"><span class="na">—</span></td>
+            <td class="c"><span class="out">16384<s>固定</s></span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">涡轮增压动能发电机<i>Turbocharged Kinetic Generator</i></div></td>
+            <td class="c"><span class="volt hv">HV · 512</span></td>
+            <td class="c"><span class="out">2048 EU/t</span></td>
+            <td class="n">200 000</td>
+            <td class="c"><span class="out">0.85 EU/KU</span></td>
+            <td class="c"><span class="r100">100%</span></td>
+            <td class="c"><span class="r10">10%</span></td>
+            <td class="c"><span class="out">2410<s>人工 24095</s></span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">双涡轮增压动能发电机<i>Twin-turbocharged Kinetic Generator</i></div></td>
+            <td class="c"><span class="volt ev">EV · 2048</span></td>
+            <td class="c"><span class="out">8192 EU/t</span></td>
+            <td class="n">400 000</td>
+            <td class="c"><span class="out">1.2 EU/KU</span></td>
+            <td class="c"><span class="r100">100%</span></td>
+            <td class="c"><span class="r10">10%</span></td>
+            <td class="c"><span class="out">6827<s>人工 68267</s></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <span class="k"><i>◆</i> 三种均从<em>正面</em>接收前面方块提供的 KU，向电缆输出 EU（不消耗 EU）</span>
+      <span class="k"><i>◆</i> 涡轮 / 双涡轮：风、水动能发生机的 KU 按 <em>100%</em>，其他来源按 <em>10%</em></span>
+      <span class="k"><i>◆</i> 基础动能发电机不分来源，固定 <em>4 KU = 1 EU</em>（效率最低但输出上限最高）</span>
+      <span class="k"><i>◆</i>“满输出用 KU/t” = 最大输出 ÷ (比率 × 来源系数)，人工源需约 10× 的 KU</span>
+    </div>
+  </div>
+</body>
+</html>

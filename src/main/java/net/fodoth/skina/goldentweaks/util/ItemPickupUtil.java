@@ -5,6 +5,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.util.TriState;
 import net.neoforged.neoforge.event.EventHooks;
@@ -55,6 +56,27 @@ public final class ItemPickupUtil {
         }
 
         return false;
+    }
+
+    /**
+     * 把一份掉落物作为 {@link ItemEntity} 生成到指定位置，并立即走统一的拾取流程。
+     * <p>
+     * 供「自动收集」类附魔复用——光谱的「自动收集」（物品栏插入）原本直接
+     * {@code Inventory.add}，灾变的「时空」词缀原本只把掉落物传送到玩家身边，两者都绕过了
+     * 拾取事件、统计与满包处理。这里先生成掉落物再交给 {@link #pickup}，与右键 / 快捷拾取
+     * 共用同一套口径；背包放不下时由 {@link #pickup} 内的 {@link #pullToPlayer} 让余量飞向玩家。
+     */
+    public static void collect(Player player, ItemStack stack, Level level, Vec3 pos) {
+
+        if (stack.isEmpty()) {
+            return;
+        }
+
+        ItemEntity item = new ItemEntity(level, pos.x, pos.y, pos.z, stack);
+
+        level.addFreshEntity(item);
+
+        pickup(player, item);
     }
 
     public static void pickup(Player player, ItemEntity item) {

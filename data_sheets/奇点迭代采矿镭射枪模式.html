@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>采矿镭射枪 · 模式一览</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center;
+    padding:24px;
+  }
+  /* ---- 4:3 Minecraft-style window (dark GUI) ---- */
+  .window{
+    width:1160px; aspect-ratio:4 / 3; max-width:100%; max-height:100%;
+    background:var(--panel);
+    display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden;
+    text-shadow:1px 1px 0 #000;
+  }
+  /* ---- title bar (deepslate) ---- */
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:14px 22px 13px;
+    color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{
+    font-size:25px; font-weight:800; letter-spacing:.02em; color:var(--gold);
+    text-shadow:2px 2px 0 #000;
+  }
+  .title h1 small{
+    display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.26em;
+    color:#b9b9b9; text-shadow:1px 1px 0 #000;
+  }
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{
+    background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a;
+    padding:6px 11px; text-align:center; min-width:96px;
+    color:#e6e6e6; text-shadow:1px 1px 0 #000;
+  }
+  .stat b{display:block; font-size:15px; font-weight:800; color:#8dff6a; letter-spacing:.01em;}
+  .stat span{font-size:10px; letter-spacing:.1em; color:#a6a6a6;}
+
+  /* ---- table ---- */
+  .wrap{padding:10px 12px; min-height:0;}
+  table{width:100%; height:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{
+    background:#3f3f3f;
+    box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+    color:#ececec; text-shadow:1px 1px 0 #000;
+    font-size:11.5px; font-weight:800; letter-spacing:.03em;
+    padding:7px 6px; border:1px solid #111;
+  }
+  tbody td{
+    padding:4px 9px; border:1px solid var(--line); font-size:13.5px; color:var(--ink);
+    text-shadow:1px 1px 0 #000; vertical-align:middle;
+  }
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;}
+  .l{text-align:left;}
+
+  /* index slot */
+  .slot{
+    width:28px; height:28px; margin:0 auto; line-height:28px; text-align:center;
+    background:#1c1c1c;
+    box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a;
+    color:var(--gold); font-weight:800; font-size:14px;
+    text-shadow:1px 1px 0 #000;
+  }
+  .mode{font-weight:800; font-size:14px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:10.5px; font-weight:600;
+          color:#9a9a9a; text-shadow:1px 1px 0 #000; margin-top:1px; letter-spacing:.02em;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas","DejaVu Sans Mono",monospace;
+       font-size:15px; letter-spacing:-.01em; color:#ededed;}
+  td.n.off{color:#6e6e6e; font-weight:700;}
+  .fn{color:#cfcfcf; font-size:13px;}
+  .fn b{color:#7db8ff;}
+
+  .chip{
+    display:inline-block; min-width:52px; padding:2px 8px; text-align:center;
+    font-weight:800; font-family:"Consolas",monospace; font-size:13px;
+    border:2px solid; text-shadow:1px 1px 0 rgba(0,0,0,.5);
+  }
+  .chip.z{background:#383838; border-color:#565656 #0d0d0d #0d0d0d #565656; color:#8f8f8f;}
+  .chip.e{background:#a83325; border-color:#e0664f #4a1008 #4a1008 #e0664f; color:#fff;}
+  .chip.nuke{background:#d81f1f; border-color:#ff6a6a #5c0000 #5c0000 #ff6a6a; color:#fff;
+             text-shadow:1px 1px 0 #4a0000;}
+
+  /* ---- notes ---- */
+  .notes{
+    background:#1b1d21;
+    background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+    border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+    padding:10px 20px 12px;
+    color:#c6c6c6; font-size:12px; line-height:1.9; text-shadow:1px 1px 0 #000;
+    display:flex; flex-wrap:wrap; column-gap:26px;
+  }
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:#8dff6a; font-style:normal; font-weight:700;}
+  .notes .k{white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="title">
+      <h1>采矿镭射枪 · 模式一览<small>MINING LASER — SINGULARITY ITERATION</small></h1>
+      <div class="stats">
+        <div class="stat"><b>300 000 EU</b><span>能量上限</span></div>
+        <div class="stat"><b>10 tick</b><span>射速</span></div>
+        <div class="stat"><b>10</b><span>模式</span></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:196px"><col style="width:92px"><col style="width:74px">
+          <col style="width:86px"><col style="width:74px"><col style="width:92px"><col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th>
+            <th class="l">模式</th>
+            <th class="c">耗能/发</th>
+            <th class="c">射程</th>
+            <th class="c">每发挖方块</th>
+            <th class="c">实体伤害</th>
+            <th class="c">爆炸威力</th>
+            <th class="l">功能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">0</div></td>
+            <td><div class="mode">采矿模式<i>Mining</i></div></td>
+            <td class="n">1250</td><td class="n">64</td><td class="n">8</td><td class="n">8</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">单发镭射，可穿透连挖最多 <b>8 格</b></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">低焦模式<i>Low Focus</i></div></td>
+            <td class="n">100</td><td class="n">16</td><td class="n">1</td><td class="n">2</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">最省电，单格精准挖掘、短射程</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">远距模式<i>Long Range</i></div></td>
+            <td class="n">5000</td><td class="n">128</td><td class="n">16</td><td class="n">12</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">最远 <b>128 格</b>、单发挖得最多</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">水平模式<i>Horizontal</i></div></td>
+            <td class="n">3000</td><td class="n">64</td><td class="n">8</td><td class="n">8</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">强制水平射出（无视俯仰角），贴地平线挖掘</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">战斗模式<i>Combat</i></div></td>
+            <td class="n">10000</td><td class="n">64</td><td class="n off">0</td><td class="n">20</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">不破坏方块，纯打实体，伤害最高</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">超级热线模式<i>Super Heat</i></div></td>
+            <td class="n">2500</td><td class="n">64</td><td class="n">8</td><td class="n">8</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">挖方块<b>自动熔炼</b>，如铁矿石 → 铁锭</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">6</div></td>
+            <td><div class="mode">散射模式<i>Scatter</i></div></td>
+            <td class="n">10000</td><td class="n">32</td><td class="n">3</td><td class="n">4</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">一次发 <b>9 发</b>，按 3×3 角度扇形散布</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">7</div></td>
+            <td><div class="mode">爆破模式<i>Explosive</i></div></td>
+            <td class="n">5000</td><td class="n">64</td><td class="n off">0</td><td class="n">8</td>
+            <td class="c"><span class="chip e">2</span></td>
+            <td class="fn">命中方块/实体时产生威力 <b>2</b> 的爆炸</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">8</div></td>
+            <td><div class="mode">3×3 模式<i>3×3</i></div></td>
+            <td class="n">10000</td><td class="n">64</td><td class="n">1</td><td class="n">4</td>
+            <td class="c"><span class="chip z">0</span></td>
+            <td class="fn">一次发 <b>9 发</b>平行排列，一发削掉一个 3×3 面</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">9</div></td>
+            <td><div class="mode">超高能爆破<i>Ultra-High-Energy Blast</i></div></td>
+            <td class="n">100000</td><td class="n">64</td><td class="n off">0</td><td class="n">20</td>
+            <td class="c"><span class="chip nuke">18.57</span></td>
+            <td class="fn">超大当量核爆（效果震撼），需服务端开启</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <span class="k"><i>◆</i> 潜行+右键开/关，工具模式键切换模式</span>
+      <span class="k"><i>◆</i> 挖掘仅对<em>钻石镐能正确掉落</em>的方块生效，并触发 BlockEvent.BreakEvent</span>
+      <span class="k"><i>◆</i>“每发挖方块”为穿透数量，<em>0</em> 表示不破坏方块</span>
+      <span class="k"><i>◆</i> 超高能爆破需服务端开启 <em>enableLaserNuclearExplosive</em></span>
+    </div>
+  </div>
+</body>
+</html>

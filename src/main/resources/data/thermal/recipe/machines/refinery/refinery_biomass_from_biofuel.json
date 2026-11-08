@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "northstar:biofuel",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "fluid": "mio_icif:biomass",
+      "amount": 1000
+    }
+  ],
+  "energy": 10000
+}

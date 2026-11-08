@@ -193,6 +193,16 @@ public class GoldenTweaksConfigScreen {
                     25, 0, Integer.MAX_VALUE);
 
             ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.compact_space_solar_percent",
+                    MIO_ICIF_COMPACT_SPACE_SOLAR_PERCENT,
+                    100, 0, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.compact_space_wind_percent",
+                    MIO_ICIF_COMPACT_SPACE_WIND_PERCENT,
+                    100, 0, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.mekanism.transporter_transit_cap",
                     MEKANISM_TRANSPORTER_TRANSIT_CAP,
                     256, 0, Integer.MAX_VALUE);

@@ -44,18 +44,6 @@ public abstract class InfusionRecipeCategoryMixin {
             method = "draw",
             at = @At(
                     value = "INVOKE",
-                    target = "Lthaumcraft/integration/jei/JeiCategoryDrawing;drawOutputHalo(Lnet/minecraft/client/gui/GuiGraphics;II)V"
-            ),
-            index = 1
-    )
-    private int gt$moveOutputHaloRight(int x) {
-        return x + 2;
-    }
-
-    @ModifyArg(
-            method = "draw",
-            at = @At(
-                    value = "INVOKE",
                     target = "Lthaumcraft/integration/jei/JeiCategoryDrawing;drawInfusionAltarBody(Lnet/minecraft/client/gui/GuiGraphics;II)V"
             ),
             index = 1

@@ -32,6 +32,10 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.IntValue MEKANISM_TRANSPORTER_FLOWING_CAP;
 
+    public static final ModConfigSpec.IntValue MIO_ICIF_COMPACT_SPACE_SOLAR_PERCENT;
+
+    public static final ModConfigSpec.IntValue MIO_ICIF_COMPACT_SPACE_WIND_PERCENT;
+
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
 
     public static final ModConfigSpec.IntValue ENTROPY_REACTION_MAX_SPEED_MULTIPLIER;
@@ -203,6 +207,23 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.mekanism.transporter_flowing_cap"))
                 .comment(comment("balance.mekanism.transporter_flowing_cap"))
                 .defineInRange("transporterFlowingCap", 1024, 0, Integer.MAX_VALUE);
+
+        builder.pop();
+
+        // =========================
+        // mio_icif compact space
+        // =========================
+        builder.push("mio_icif");
+
+        MIO_ICIF_COMPACT_SPACE_SOLAR_PERCENT = builder
+                .translation(key("balance.mio_icif.compact_space_solar_percent"))
+                .comment(comment("balance.mio_icif.compact_space_solar_percent"))
+                .defineInRange("compactSpaceSolarPercent", 100, 0, Integer.MAX_VALUE);
+
+        MIO_ICIF_COMPACT_SPACE_WIND_PERCENT = builder
+                .translation(key("balance.mio_icif.compact_space_wind_percent"))
+                .comment(comment("balance.mio_icif.compact_space_wind_percent"))
+                .defineInRange("compactSpaceWindPercent", 100, 0, Integer.MAX_VALUE);
 
         builder.pop();
 
@@ -529,6 +550,32 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return MEKANISM_TRANSPORTER_FLOWING_CAP.get();
+    }
+
+    public static int getMioIcifCompactSpaceSolarPercent() {
+
+        if (!GTState.isReady()) {
+            return 100;
+        }
+
+        return MIO_ICIF_COMPACT_SPACE_SOLAR_PERCENT.get();
+    }
+
+    public static float getMioIcifCompactSpaceSolarFraction() {
+        return getMioIcifCompactSpaceSolarPercent() / 100.0F;
+    }
+
+    public static int getMioIcifCompactSpaceWindPercent() {
+
+        if (!GTState.isReady()) {
+            return 100;
+        }
+
+        return MIO_ICIF_COMPACT_SPACE_WIND_PERCENT.get();
+    }
+
+    public static float getMioIcifCompactSpaceWindFraction() {
+        return getMioIcifCompactSpaceWindPercent() / 100.0F;
     }
 
     public static int getIJHagglerMaxDiscount() {

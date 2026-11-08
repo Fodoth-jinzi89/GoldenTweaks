@@ -2,9 +2,11 @@ package net.fodoth.skina.goldentweaks.mixin;
 
 import net.fodoth.skina.goldentweaks.compat.carryon.CarryOnAeroCompatASM;
 import net.fodoth.skina.goldentweaks.compat.cataclysm.CataclysmParticleCompatASM;
+import net.fodoth.skina.goldentweaks.compat.cqa.CqaClientIconASM;
 import net.fodoth.skina.goldentweaks.compat.ae2autopatternupload.Ae2ApuASM;
 import net.fodoth.skina.goldentweaks.compat.appliedkjs.AppliedKjsASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
+import net.fodoth.skina.goldentweaks.compat.flavorimmerseddailyargo.ClientOnlyItemASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import net.fodoth.skina.goldentweaks.compat.linearbearing.LinearbearingASM;
 import net.fodoth.skina.goldentweaks.compat.ldlib2.Ldlib2ASM;
@@ -114,6 +116,14 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("compactmachines");
         }
 
+        // Create 的排液/注液 JEI 页用 ItemHelper.sameItem 判断容器「有没有变化」，而它只比较物品类型、
+        // 忽略数据组件：「同一物品 + 流体组件」的容器（mio_icif 单元等）会被判成没变化 ——
+        // 排液页于是把注满的容器当成产物，注液页则整条配方被跳过
+        if (mixinClassName.endsWith("fix.create.ItemDrainCategorySameItemMixin")
+                || mixinClassName.endsWith("fix.create.SpoutCategorySameItemMixin")) {
+            return isModLoaded("create");
+        }
+
         // Create 搅拌机（机械搅拌器）自动执行无序合成配方时，DummyCraftingContainer 未提供
         // 宽/高/物品，asCraftInput() 会返回空输入，getRemainingItems 因此丢失合成余留物
         // （例如全矿矿物模组的矿锤会被整把消耗，而不是仅损耗 1 点耐久）
@@ -184,6 +194,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("mekanism") && isModLoaded("mekanismgenerators") && isModLoaded("compactmachines");
         }
 
+        // mio_icif solar/wind machines running inside Compact Machines dimensions
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.mioicif.")) {
+            return isModLoaded("mio_icif") && isModLoaded("compactmachines");
+        }
+
         // evolvedmekanism 的高级工厂槽位容量对齐 mekanism_extras（突破 64 堆叠上限）
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mekanism")) {
             return isModLoaded("mekanism");
@@ -197,6 +212,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // Create Ore Excavation 矿脉分享：补记矿机所有者，并按同矿脉不同玩家数给予加速/双倍产出
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.createoreexcavation")) {
             return isModLoaded("createoreexcavation");
+        }
+
+        // mio_icif 高炉平衡：基础高炉缓冲与时长、电力纳米高炉统一 20t
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mioicif")) {
+            return isModLoaded("mio_icif");
         }
 
         if (mixinClassName.endsWith("fix.watut.PlayerStatusManagerClientMixin")) {
@@ -231,6 +251,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // wcwt 的「填充物品」锤子按钮落点：EMI 三按钮竖向排列时不应另开一列
         if (mixinClassName.endsWith("fix.wcwt.WcwtEmiPullButtonPositionMixin")) {
             return isModLoaded("emi") && isModLoaded("wcwt");
+        }
+
+        // wcwt 的快捷栏 HUD 在第一个客户端 tick 就读取尚未加载的客户端配置，抛
+        // IllegalStateException 崩掉整个客户端；未加载时回退到配置默认值
+        if (mixinClassName.endsWith("fix.wcwt.WcwtClientConfigMixin")) {
+            return isModLoaded("wcwt");
         }
 
         // SilentGear 的预制工具（GearItem）从 EMI 索引中隐藏
@@ -289,6 +315,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("neoguanniao");
         }
 
+        // ftbxmodcompat 的任务配方：单个任务含多个输入格时 taskIterator.next() 越界抛
+        // NoSuchElementException，被 TMRV 记成上万行 broken recipe 刷屏（客户端 JEI 集成）
+        if (mixinClassName.endsWith("fix.ftbxmodcompat.FtbxQuestCategoryMixin")) {
+            return isModLoaded("ftbxmodcompat")
+                    && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.RewardTypesMixin")) {
             return isModLoaded("ftbquests");
         }
@@ -304,6 +337,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2peat")) {
             return isModLoaded("ae2peat");
+        }
+
+        // ae2fct 自带的 EMI 流体查询 mixin（emi.EmiApiAccessor / emi.EmiScreenManagerMixin）会链接失败：
+        // 它给 EmiApi 的私有静态方法生成的重定向名没有真的注入，点虚拟流体物品时抛 NoSuchMethodError。
+        // 实例包已停用那两个 mixin，这里由 GT 用 EMI 公开 API 重新实现同一功能
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ae2fct.")) {
+            return isModLoaded("ae2fct") && isModLoaded("ae2") && isModLoaded("emi");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.hazennstuff")) {
@@ -545,7 +585,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("thaumcraft") && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
         }
 
-        if (mixinClassName.endsWith("fix.scexaspect.AspectCatalogMixin")) {
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.scexaspect.")) {
+            // 「要素来源」补注册那条要直接调 JEI 的 IRecipeRegistration#addRecipes（TMRV 也算 jei）
+            if (mixinClassName.endsWith("fix.scexaspect.AspectIntegrationSourcesMixin")) {
+                return isModLoaded("scex_aspect_jei") && isModLoaded("thaumcraft")
+                        && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
+            }
             return isModLoaded("scex_aspect_jei") && isModLoaded("thaumcraft");
         }
 
@@ -578,6 +623,25 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("mekanism_extras") && isModLoaded("mekmm") && isModLoaded("emi");
         }
 
+        // mio_icif 压缩机菜单：漏在界面外的扩展槽没有被算进机器格，导致菜单下标 7（背包第一格）
+        // 被当成机器槽、升级槽起始下标错位（菜单逻辑在服务端执行，且不依赖 EMI，单独放行）
+        if (mixinClassName.endsWith("fix.mioicif.MioIcifCompressorMenuMixin")
+                || mixinClassName.endsWith("fix.mioicif.MioIcifBaseMenuSlotFixMixin")) {
+            return isModLoaded("mio_icif");
+        }
+
+        // mio_icif 的 EMI 配方页只对粉碎机/混合机用了配方输入数量，压缩机等 N 合 1 的配方全显示成 1
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.mioicif")) {
+            if (mixinClassName.endsWith("MioIcifEmiRecipeMixin")) {
+                return isModLoaded("mio_icif") && isModLoaded("emi");
+            }
+            // 采矿镭射枪：按 FTB Chunks 领地规则阻止弹体破坏方块
+            if (mixinClassName.endsWith("MioIcifLaserMinerClaimMixin")) {
+                return isModLoaded("mio_icif") && isModLoaded("ftbchunks");
+            }
+            return isModLoaded("mio_icif");
+        }
+
         if (mixinClassName.endsWith("fix.ftbquests.TranslationManagerDummyMixin")) {
             return isModLoaded("ftbquests") && isModLoaded("ftbquestslangsplitter");
         }
@@ -585,6 +649,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         if (mixinClassName.endsWith("fix.ftbquests.ChapterImageConfigGroupDummyMixin")) {
             return checkIfPresent("dev.ftb.mods.ftbquests.client.gui.quests.ChapterImageButton$3")
                     && checkIfPresent("ru.hollowhorizon.additions.questing.mixins.ChapterImageConfigGroupMixin");
+        }
+
+        // Certain Questing Additions 的 IconMixin 把「实体图标」回调挂到了 Icon.getIcon 上，
+        // 而回调里的客户端渲染类在专用服务器上不存在，解析一次图标就崩服（见 CqaClientIconASM）
+        if (mixinClassName.endsWith("fix.cqa.EntityIconDummyMixin")) {
+            return isModLoaded("certain_questing_additions");
         }
 
         // AcceleratedRendering 的 FTB Library 界面批处理会打乱任务书/配置编辑界面的渲染次序、
@@ -629,6 +699,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.flavorimmerseddaily")) {
             return isModLoaded("flavor_immersed_daily");
+        }
+
+        // flavor_immersed_daily_argo 的「开界面」物品在专用服务器上加载 Screen 崩服（见 ClientOnlyItemASM）
+        if (mixinClassName.endsWith("fix.flavorimmerseddailyargo.ClientOnlyItemDummyMixin")) {
+            return isModLoaded("flavor_immersed_daily_argo");
         }
 
         if (mixinClassName.endsWith("fix.ftbultimine.VanillaCropLikeHandlerMixin")) {
@@ -816,6 +891,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("apotheosis");
         }
 
+        // tipsmod 的提示文本使用 § 颜色码；原版换行会把断点处的样式当作后续文本的基准样式，
+        // 高亮词被拆开时下一行的 §r 会重置回高亮色，导致整行都被染色
+        if (mixinClassName.endsWith("fix.tipsmod.TipRendererLegacyWrapMixin")) {
+            return isModLoaded("tipsmod");
+        }
+
         return true;
     }
 
@@ -832,6 +913,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         AppliedKjsASM.patch(targetClassName, targetClass);
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
         CataclysmParticleCompatASM.patch(targetClassName, targetClass);
+        CqaClientIconASM.patch(targetClassName, targetClass);
+        ClientOnlyItemASM.patch(targetClassName, targetClass);
         LinearbearingASM.patch(targetClassName, targetClass);
         Ae2ApuASM.patch(targetClassName, targetClass);
         Ldlib2ASM.patch(targetClassName, targetClass);

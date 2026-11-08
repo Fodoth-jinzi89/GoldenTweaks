@@ -1,0 +1,22 @@
+{
+  "removed": [
+    {
+      "type": "item",
+      "id": "mio_icif:cell/item_cell_empty",
+      "componentChanges": {
+        "minecraft:custom_data": {
+          "fluid": "mio_icif:air",
+          "amount": 1000
+        }
+      }
+    }
+  ],
+  "added": [
+    {
+      "stack": {
+        "type": "item",
+        "id": "mio_icif:cell/item_cell_air"
+      }
+    }
+  ]
+}

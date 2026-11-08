@@ -49,6 +49,7 @@ import net.fodoth.skina.goldentweaks.compat.traveloptics.TravelOpticsSummonProte
 import net.fodoth.skina.goldentweaks.compat.mcwifipnp.McWifiPnPZstdPortLayout;
 import net.fodoth.skina.goldentweaks.compat.oei.OreUnificationGuard;
 import net.fodoth.skina.goldentweaks.compat.ftbchunks.GTClaimProtection;
+import net.fodoth.skina.goldentweaks.compat.ftblibrary.client.GTFtbSidebarBlacklist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
@@ -251,6 +252,11 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("maidsoulcore")) {
             // 按客户端配置压制女仆核心 / ApricityUI 的日志（见 MaidLogSuppressor）
             MaidLogSuppressor.installIfPresent();
+        }
+
+        if (ModList.get().isLoaded("ftblibrary")) {
+            // 期货机界面左上角已有自己的页签，FTB 侧边栏按钮叠在上面，登记进屏幕黑名单
+            GTFtbSidebarBlacklist.install();
         }
 
         if (ModList.get().isLoaded("createdieselgenerators")) {

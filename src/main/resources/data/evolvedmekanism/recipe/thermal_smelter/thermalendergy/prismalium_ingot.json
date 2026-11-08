@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermalendergy"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:ingots/nickel",
+      "count": 2
+    },
+    {
+      "tag": "c:dusts/prismarine",
+      "count": 3
+    },
+    {
+      "tag": "c:gems/prismarine"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermalendergy:prismalium_ingot",
+      "count": 2
+    }
+  ]
+}

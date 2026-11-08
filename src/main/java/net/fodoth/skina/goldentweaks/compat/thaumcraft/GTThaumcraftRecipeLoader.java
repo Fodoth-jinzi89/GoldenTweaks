@@ -21,7 +21,7 @@ public class GTThaumcraftRecipeLoader {
         GTAspectPhials.bind();
         // Categories must be registered before research entries reference them.
         GTThaumcraftCategory.load(resourceManager);
-        GTResearchRecipePages.clear();
+        GTResearchRecipePages.unregisterAll();
         GTInfusionRecipe.load(resourceManager);
         GTCrucibleRecipe.load(resourceManager);
         GTArcaneRecipe.load(resourceManager);
@@ -59,7 +59,7 @@ public class GTThaumcraftRecipeLoader {
         GTAspectPhials.bind();
 
         GTThaumcraftCategory.load(resourceManager);
-        GTResearchRecipePages.clear();
+        GTResearchRecipePages.unregisterAll();
         GTInfusionRecipe.load(resourceManager);
         GTCrucibleRecipe.load(resourceManager);
         GTArcaneRecipe.load(resourceManager);

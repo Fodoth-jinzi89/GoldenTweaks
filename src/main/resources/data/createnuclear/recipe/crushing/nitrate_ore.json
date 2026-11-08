@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createnuclear:nitrate_ore"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "chance": 0.6,
+      "count": 2,
+      "id": "createnuclear:nitrate"
+    },
+    {
+      "chance": 0.4,
+      "count": 2,
+      "id": "createnuclear:lead_nugget"
+    }
+  ]
+}

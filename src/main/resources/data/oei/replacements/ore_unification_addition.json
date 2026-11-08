@@ -270,7 +270,8 @@
   },
   {
     "matchItems": [
-      "thermal:ender_pearl_dust"
+      "thermal:ender_pearl_dust",
+      "mio_icif:resource/item_ender_pearl_dust"
     ],
     "resultItems": "ae2:ender_dust"
   },
@@ -288,9 +289,69 @@
   },
   {
     "matchItems": [
+      "mio_icif:resource/item_titanium_nugget"
+    ],
+    "resultItems": "northstar:titanium_nugget"
+  },
+  {
+    "matchItems": [
       "mio_icif:resource/item_raw_titanium_ore"
     ],
     "resultItems": "northstar:raw_titanium_ore"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_titanium_plate"
+    ],
+    "resultItems": "northstar:titanium_sheet"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_lapi_plate"
+    ],
+    "resultItems": "ccbr:lapis_sheet"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_obsidian_plate"
+    ],
+    "resultItems": "create:sturdy_sheet"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_lithium_dust"
+    ],
+    "resultItems": "mekanism:dust_lithium"
+  },
+  {
+    "matchItems": [
+      "mekanism:dust_fluorite"
+    ],
+    "resultItems": "alltheores:fluorite_dust"
+  },
+  {
+    "matchItems": [
+      "thermal:diamond_gear"
+    ],
+    "resultItems": "alltheores:diamond_gear"
+  },
+  {
+    "matchItems": [
+      "thermal:netherite_gear"
+    ],
+    "resultItems": "alltheores:netherite_gear"
+  },
+  {
+    "matchItems": [
+      "thermal:netherite_plate"
+    ],
+    "resultItems": "alltheores:netherite_plate"
+  },
+  {
+    "matchItems": [
+      "neoecoae:aluminum_block"
+    ],
+    "resultItems": "alltheores:aluminum_block"
   },
   {
     "matchItems": [
@@ -301,6 +362,7 @@
   },
   {
     "matchItems": [
+      "createnuclear:coal_dust",
       "mio_icif:resource/item_coal_dust"
     ],
     "resultItems": "mekanism:dust_coal"
@@ -310,5 +372,59 @@
       "mio_icif:resource/item_charcoal_dust"
     ],
     "resultItems": "mekanism:dust_charcoal"
+  },
+  {
+    "matchItems": [
+      "mio_icif:resource/item_thorium_dust"
+    ],
+    "resultItems": "createnuclear:thorium_dust"
+  },
+  {
+    "matchItems": [
+      "jaopca:raw_storage_blocks.thorium"
+    ],
+    "resultItems": "createnuclear:raw_thorium_block"
+  },
+  {
+    "matchItems": [
+      "thermal:carrot_block"
+    ],
+    "resultItems": "farmersdelight:carrot_crate"
+  },
+  {
+    "matchItems": [
+      "thermal:onion_block"
+    ],
+    "resultItems": "farmersdelight:onion_crate"
+  },
+  {
+    "matchItems": [
+      "thermal:potato_block"
+    ],
+    "resultItems": "farmersdelight:potato_crate"
+  },
+  {
+    "matchItems": [
+      "thermal:rice_block"
+    ],
+    "resultItems": "farmersdelight:rice_bag"
+  },
+  {
+    "matchItems": [
+      "thermal:tomato_block"
+    ],
+    "resultItems": "farmersdelight:tomato_crate"
+  },
+  {
+    "matchItems": [
+      "thermal:flax"
+    ],
+    "resultItems": "supplementaries:flax"
+  },
+  {
+    "matchItems": [
+      "thermal:flax_block"
+    ],
+    "resultItems": "supplementaries:flax_block"
   }
 ]

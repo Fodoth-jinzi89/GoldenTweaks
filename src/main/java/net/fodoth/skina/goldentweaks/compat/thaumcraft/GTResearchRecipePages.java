@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
 import net.minecraft.resources.ResourceLocation;
+import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.IArcaneRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
@@ -17,7 +18,16 @@ final class GTResearchRecipePages {
     private GTResearchRecipePages() {
     }
 
-    static void clear() {
+    /**
+     * 摘下上一次注册的配方对象。{@code ThaumcraftApi} 的配方表是静态 {@code CopyOnWriteArrayList}，
+     * 只增不删；集成服务端每读一次档都会重新执行整套加载，不先摘掉旧对象的话，同一配方会在
+     * JEI/EMI 里随读档次数成倍增加。
+     */
+    static void unregisterAll() {
+        if (RECIPES.isEmpty()) {
+            return;
+        }
+        ThaumcraftApi.getCraftingRecipes().removeAll(RECIPES.values());
         RECIPES.clear();
     }
 

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModGraph · 模块架构图</title>
+<style>
+  :root {
+    --bg: #0d1016;
+    --panel: #141922;
+    --border: #232b38;
+    --text: #e6e9ef;
+    --muted: #8892a6;
+    --dim: #5b6478;
+    --l0: #4f8cff;
+    --l1: #a78bfa;
+    --l2: #3ddc97;
+    --l3: #ffb020;
+    --l4: #f472b6;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    min-height: 100vh;
+    padding: 32px 24px 64px;
+  }
+
+  header {
+    max-width: 1680px;
+    margin: 0 auto 20px;
+  }
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .3px;
+  }
+  header h1 span { color: var(--l0); }
+  header p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  header code {
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 12px;
+    background: #1b212c;
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 4px;
+    color: #b9c2d4;
+  }
+
+  /* ---------- 图例 ---------- */
+  .legend {
+    max-width: 1680px;
+    margin: 0 auto 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    padding: 12px 16px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .legend .item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+  }
+  .legend .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+  }
+  .legend .line {
+    width: 26px;
+    height: 2px;
+    background: #46506a;
+    border-radius: 2px;
+  }
+  .legend .line.dashed {
+    background: repeating-linear-gradient(
+      to right, #46506a 0 5px, transparent 5px 9px
+    );
+    height: 2px;
+  }
+
+  /* ---------- 舞台 ---------- */
+  .stage-wrap {
+    max-width: 1680px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background:
+      radial-gradient(circle at 1px 1px, #1b2029 1px, transparent 0) 0 0 / 26px 26px,
+      #0f131a;
+  }
+  .stage-wrap::-webkit-scrollbar { height: 10px; }
+  .stage-wrap::-webkit-scrollbar-thumb {
+    background: #2a3240; border-radius: 5px;
+  }
+
+  .stage {
+    position: relative;
+    width: 1680px;
+    height: 1120px;
+  }
+
+  #svg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* ---------- 层标签 ---------- */
+  .layer-label {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--dim);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+  }
+  .layer-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--border), transparent);
+    min-width: 200px;
+  }
+  .layer-label .tag {
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 10px;
+    letter-spacing: .5px;
+    background: #1b212c;
+    border: 1px solid var(--border);
+  }
+  .layer-label.l0 .tag { color: var(--l0); border-color: rgba(79,140,255,.35); }
+  .layer-label.l1 .tag { color: var(--l1); border-color: rgba(167,139,250,.35); }
+  .layer-label.l2 .tag { color: var(--l2); border-color: rgba(61,220,151,.35); }
+  .layer-label.l3 .tag { color: var(--l3); border-color: rgba(255,176,32,.35); }
+  .layer-label.l4 .tag { color: var(--l4); border-color: rgba(244,114,182,.35); }
+
+  /* ---------- 节点 ---------- */
+  .node {
+    position: absolute;
+    width: 200px;
+    height: 84px;
+    padding: 11px 13px 10px 15px;
+    background: linear-gradient(160deg, #1a2029 0%, #161b24 100%);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    z-index: 2;
+    transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    cursor: default;
+    user-select: none;
+    overflow: hidden;
+  }
+  .node::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--c);
+    opacity: .85;
+  }
+  .node:hover {
+    transform: translateY(-2px);
+    border-color: var(--c);
+    box-shadow: 0 8px 22px rgba(0,0,0,.5), 0 0 0 1px var(--c) inset;
+  }
+  .node__title {
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #eef1f7;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .node__title .sub {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--dim);
+    margin-left: 5px;
+    font-family: ui-monospace, Consolas, monospace;
+  }
+  .node__desc {
+    font-size: 11.5px;
+    line-height: 1.55;
+    color: var(--muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .node__kind {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    font-size: 9.5px;
+    letter-spacing: .6px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(255,255,255,.045);
+    color: var(--dim);
+    border: 1px solid rgba(255,255,255,.06);
+  }
+
+  /* 层级色 */
+  .node.l0 { --c: var(--l0); }
+  .node.l1 { --c: var(--l1); }
+  .node.l2 { --c: var(--l2); }
+  .node.l3 { --c: var(--l3); }
+  .node.l4 { --c: var(--l4); }
+
+  /* 特殊样式 */
+  .node.textnode { border-style: dashed; }
+  .node.backupmgr { border-color: rgba(61,220,151,.4); }
+
+  /* ---------- 底部说明 ---------- */
+  footer {
+    max-width: 1680px;
+    margin: 22px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .note {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--muted);
+  }
+  .note b { color: var(--text); font-weight: 600; }
+  .note .k {
+    display: inline-block;
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 11px;
+    background: #1b212c;
+    border: 1px solid var(--border);
+    padding: 0 5px;
+    border-radius: 3px;
+    color: #b9c2d4;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <h1>ModGraph · <span>模块架构图</span></h1>
+    <p>
+      一张静态节点图，梳理 ModGraph 的全部模块、职责与调用关系。
+      从用户交互 → 节点组件 → 核心逻辑 → 后端服务 → 数据与外部，共 5 层、22 个模块。
+      实线表示调用/数据流，虚线表示跳转/外链。
+    </p>
+  </header>
+
+  <div class="legend">
+    <div class="item"><span class="dot" style="background:var(--l0)"></span>L0 · 用户交互层</div>
+    <div class="item"><span class="dot" style="background:var(--l1)"></span>L1 · 节点组件层</div>
+    <div class="item"><span class="dot" style="background:var(--l2)"></span>L2 · 核心逻辑层</div>
+    <div class="item"><span class="dot" style="background:var(--l3)"></span>L3 · 后端服务层</div>
+    <div class="item"><span class="dot" style="background:var(--l4)"></span>L4 · 数据与外部</div>
+    <div class="item"><span class="line"></span>调用 / 数据流</div>
+    <div class="item"><span class="line dashed"></span>跳转 / 外链</div>
+  </div>
+
+  <div class="stage-wrap">
+    <div class="stage" id="stage">
+      <svg id="svg" width="1680" height="1120"></svg>
+    </div>
+  </div>
+
+  <footer>
+    <div class="note">
+      <b>核心数据流</b><br>
+      <span class="k">scan_mods</span> 遍历 mods 文件夹 →
+      <span class="k">buildGraph</span> 生成节点与边 →
+      <span class="k">layoutGraph</span> 用 dagre 排布 →
+      画布渲染出依赖网络。
+    </div>
+    <div class="note">
+      <b>删除语义</b><br>
+      边方向为 <span class="k">前置 → 依赖方</span>，
+      <span class="k">cascadeDelete</span> 沿此方向 BFS，
+      一次删除节点及其全部下游；文字注释节点永不级联。
+    </div>
+    <div class="note">
+      <b>安全回滚</b><br>
+      任何删除 / 版本变更前，
+      <span class="k">create_backup</span> 先把 mods 打包成 7z，
+      备份历史可随时回滚到任意快照。
+    </div>
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+ *  节点定义
+ *  坐标 = 节点左上角；节点宽 200、高 84
+ * ============================================================ */
+const NODE_W = 200, NODE_H = 84;
+
+const NODES = {
+  /* ---------- L0 用户交互层 ---------- */
+  toolbar:   { x: 230,  y: 60,  l: 0, kind: 'UI',   title: '工具栏', sub: 'Toolbar',
+               desc: '扫描 / 备份 / 注释 / 重新布局 / 导出工程 / 统计徽章' },
+  canvas:    { x: 570,  y: 60,  l: 0, kind: 'UI',   title: '画布', sub: 'Canvas',
+               desc: 'ReactFlow 承载节点与连线，支持缩放、拖拽、选择' },
+  sidepanel: { x: 910,  y: 60,  l: 0, kind: 'UI',   title: '侧栏', sub: 'SidePanel',
+               desc: '版本选择列表 与 7z 备份历史，支持一键回滚' },
+  ctxmenu:   { x: 1250, y: 60,  l: 0, kind: 'UI',   title: '右键菜单', sub: 'ContextMenu',
+               desc: '节点与画布的上下文操作：改版本 / 删下游 / 加注释' },
+
+  /* ---------- L1 节点组件层 ---------- */
+  modnode:   { x: 340,  y: 270, l: 1, kind: '组件', title: '模组节点', sub: 'ModNode',
+               desc: '64×64 图标 + 依赖数徽章 + 缺失前置标记，悬停展开详情' },
+  textnode:  { x: 740,  y: 270, l: 1, kind: '组件', title: '文字注释', sub: 'TextNode',
+               desc: '纯画布标注，双击编辑，不参与依赖图，不影响 mods 文件夹' },
+  hovercard: { x: 1140, y: 270, l: 1, kind: '组件', title: '悬浮卡', sub: 'HoverCard',
+               desc: '图标侧面展开：简介 / 版本 / 外链 / 改版与移除按钮' },
+
+  /* ---------- L2 核心逻辑层 ---------- */
+  buildgraph:    { x: 100,  y: 480, l: 2, kind: '逻辑', title: '构建依赖图', sub: 'buildGraph',
+                   desc: '把扫描结果转成节点与边，方向：前置 → 依赖方' },
+  layoutgraph:   { x: 420,  y: 480, l: 2, kind: '逻辑', title: '自动布局', sub: 'layoutGraph',
+                   desc: '基于 dagre 计算每个节点的坐标，支持上下 / 左右' },
+  cascadedelete: { x: 740,  y: 480, l: 2, kind: '逻辑', title: '级联删除', sub: 'cascadeDelete',
+                   desc: '沿 source→target BFS 收集全部下游，一次移除' },
+  versionmgr:    { x: 1060, y: 480, l: 2, kind: '逻辑', title: '版本管理', sub: 'VersionMgr',
+                   desc: '切换模组版本，自动递归下载必需前置' },
+  backupmgr:     { x: 1380, y: 480, l: 2, kind: '逻辑', title: '备份管理', sub: 'BackupMgr',
+                   desc: '创建 7z 快照、列出历史、执行回滚' },
+
+  /* ---------- L3 后端服务层 ---------- */
+  scanmods:     { x: 100,  y: 700, l: 3, kind: '后端', title: '扫描', sub: 'scan_mods',
+                  desc: '遍历 mods 文件夹，解析 jar 内的 toml / json 元数据' },
+  createbackup: { x: 420,  y: 700, l: 3, kind: '后端', title: '创建备份', sub: 'create_backup',
+                  desc: '将当前 mods 目录打包为带时间戳的 7z 文件' },
+  listbackups:  { x: 740,  y: 700, l: 3, kind: '后端', title: '备份列表', sub: 'list_backups',
+                  desc: '读取备份目录，返回文件名、大小、模组数量' },
+  installdeps:  { x: 1060, y: 700, l: 3, kind: '后端', title: '下载依赖', sub: 'install_with_deps',
+                  desc: '解析依赖树，递归下载前置并写入 mods 文件夹' },
+  getversions:  { x: 1380, y: 700, l: 3, kind: '后端', title: '版本查询', sub: 'modrinth_versions',
+                  desc: '按 loader 与游戏版本拉取可用版本列表' },
+
+  /* ---------- L4 数据与外部 ---------- */
+  modsdir:     { x: 100,  y: 920, l: 4, kind: '数据', title: 'mods 文件夹', sub: 'modsDir',
+                 desc: '模组 .jar 存放处，扫描的输入与安装的输出' },
+  backupdir:   { x: 420,  y: 920, l: 4, kind: '数据', title: '7z 备份目录', sub: 'backupDir',
+                 desc: '版本快照存储，支持任意时间点回滚' },
+  modrinthapi: { x: 740,  y: 920, l: 4, kind: '外部', title: 'Modrinth API', sub: 'api.modrinth.com',
+                 desc: '提供版本列表、依赖树与下载链接' },
+  mcmodsite:   { x: 1060, y: 920, l: 4, kind: '外部', title: 'MC百科', sub: 'mcmod.cn',
+                 desc: '中文模组资料页，节点悬浮卡可一键跳转' },
+  curseforge:  { x: 1380, y: 920, l: 4, kind: '外部', title: 'CurseForge', sub: 'curseforge.com',
+                 desc: '模组发布页，提供另一路下载与资料入口' },
+};
+
+/* ============================================================
+ *  连线定义
+ *  from / to 节点 id；solid = true 实线，false 虚线；label 可省略
+ * ============================================================ */
+const LINKS = [
+  /* --- L0 → 逻辑 / 后端 --- */
+  ['toolbar',    'scanmods',     true,  '触发扫描'],
+  ['toolbar',    'createbackup', true,  '创建备份'],
+  ['toolbar',    'backupmgr',    true,  '备份历史'],
+  ['toolbar',    'textnode',     true,  '添加注释'],
+  ['canvas',     'buildgraph',   true,  '渲染'],
+  ['canvas',     'layoutgraph',  true,  '排布'],
+  ['sidepanel',  'versionmgr',   true,  '版本选择'],
+  ['sidepanel',  'backupmgr',    true,  '回滚'],
+  ['ctxmenu',    'cascadedelete',true,  '删除下游'],
+  ['ctxmenu',    'versionmgr',   true,  '更改版本'],
+
+  /* --- L1 → 逻辑 / 外部 --- */
+  ['modnode',    'hovercard',    true,  '悬停展开'],
+  ['modnode',    'cascadedelete',true,  '删除触发'],
+  ['hovercard',  'versionmgr',   true,  '改版'],
+  ['hovercard',  'installdeps',  true,  '安装前置'],
+  ['hovercard',  'modrinthapi',  false, '跳转'],
+  ['hovercard',  'mcmodsite',    false, '跳转'],
+  ['hovercard',  'curseforge',   false, '跳转'],
+
+  /* --- L2 → 后端 --- */
+  ['buildgraph', 'scanmods',     true,  '读取'],
+  ['versionmgr', 'getversions',  true,  '查询'],
+  ['versionmgr', 'installdeps',  true,  '下载'],
+  ['backupmgr',  'createbackup', true,  '创建'],
+  ['backupmgr',  'listbackups',  true,  '列出'],
+
+  /* --- L3 → 数据 / 外部 --- */
+  ['scanmods',     'modsdir',     true, '遍历'],
+  ['createbackup', 'modsdir',     true, '读取'],
+  ['createbackup', 'backupdir',   true, '写入'],
+  ['listbackups',  'backupdir',   true, '读取'],
+  ['installdeps',  'modsdir',     true, '写入'],
+  ['installdeps',  'modrinthapi', true, '下载'],
+  ['getversions',  'modrinthapi', true, '请求'],
+];
+
+/* ============================================================
+ *  渲染
+ * ============================================================ */
+const LAYERS = [
+  { y: 60,  cls: 'l0', tag: 'L0', name: '用户交互层' },
+  { y: 270, cls: 'l1', tag: 'L1', name: '节点组件层' },
+  { y: 480, cls: 'l2', tag: 'L2', name: '核心逻辑层' },
+  { y: 700, cls: 'l3', tag: 'L3', name: '后端服务层' },
+  { y: 920, cls: 'l4', tag: 'L4', name: '数据与外部' },
+];
+
+const LAYER_COLOR = {
+  0: '#4f8cff',
+  1: '#a78bfa',
+  2: '#3ddc97',
+  3: '#ffb020',
+  4: '#f472b6',
+};
+
+const stage = document.getElementById('stage');
+const svg = document.getElementById('svg');
+
+/* ---------- 层标签 ---------- */
+for (const L of LAYERS) {
+  const el = document.createElement('div');
+  el.className = 'layer-label ' + L.cls;
+  el.style.left = '100px';
+  el.style.top = (L.y - 30) + 'px';
+  el.style.width = '1480px';
+  el.innerHTML = `<span class="tag">${L.tag}</span>${L.name}`;
+  stage.appendChild(el);
+}
+
+/* ---------- 节点 ---------- */
+for (const [id, n] of Object.entries(NODES)) {
+  const el = document.createElement('div');
+  el.className = `node l${n.l}` + (id === 'textnode' ? ' textnode' : '');
+  el.style.left = n.x + 'px';
+  el.style.top = n.y + 'px';
+  el.dataset.id = id;
+  el.innerHTML = `
+    <div class="node__kind">${n.kind}</div>
+    <div class="node__title">${n.title}<span class="sub">${n.sub}</span></div>
+    <div class="node__desc">${n.desc}</div>
+  `;
+  stage.appendChild(el);
+}
+
+/* ---------- 连线 ---------- */
+const NS = 'http://www.w3.org/2000/svg';
+
+function centerBottom(n) {
+  return { x: n.x + NODE_W / 2, y: n.y + NODE_H };
+}
+function centerTop(n) {
+  return { x: n.x + NODE_W / 2, y: n.y };
+}
+
+function makePath(a, b) {
+  const dy = Math.max(34, Math.abs(b.y - a.y) * 0.45);
+  return `M ${a.x} ${a.y} C ${a.x} ${a.y + dy}, ${b.x} ${b.y - dy}, ${b.x} ${b.y}`;
+}
+
+for (const [fromId, toId, solid, label] of LINKS) {
+  const from = NODES[fromId];
+  const to = NODES[toId];
+  if (!from || !to) continue;
+
+  const a = centerBottom(from);
+  const b = centerTop(to);
+
+  const path = document.createElementNS(NS, 'path');
+  path.setAttribute('d', makePath(a, b));
+  path.setAttribute('fill', 'none');
+
+  const color = LAYER_COLOR[from.l];
+
+  if (solid) {
+    path.setAttribute('stroke', color);
+    path.setAttribute('stroke-opacity', '0.42');
+    path.setAttribute('stroke-width', '1.6');
+  } else {
+    path.setAttribute('stroke', color);
+    path.setAttribute('stroke-opacity', '0.32');
+    path.setAttribute('stroke-width', '1.4');
+    path.setAttribute('stroke-dasharray', '5 5');
+  }
+
+  path.setAttribute('stroke-linecap', 'round');
+  svg.appendChild(path);
+
+  /* --- 箭头 --- */
+  const angle = Math.atan2(b.y - a.y, b.x - a.x);
+  const size = 6;
+  const arrow = document.createElementNS(NS, 'path');
+  const p1 = { x: b.x, y: b.y };
+  const p2 = {
+    x: b.x - size * Math.cos(angle - Math.PI / 7),
+    y: b.y - size * Math.sin(angle - Math.PI / 7),
+  };
+  const p3 = {
+    x: b.x - size * Math.cos(angle + Math.PI / 7),
+    y: b.y - size * Math.sin(angle + Math.PI / 7),
+  };
+  arrow.setAttribute(
+    'd',
+    `M ${p1.x} ${p1.y} L ${p2.x} ${p2.y} L ${p3.x} ${p3.y} Z`
+  );
+  arrow.setAttribute('fill', color);
+  arrow.setAttribute('fill-opacity', solid ? '0.7' : '0.5');
+  svg.appendChild(arrow);
+
+  /* --- 悬停提示 --- */
+  const title = document.createElementNS(NS, 'title');
+  title.textContent = `${from.title} → ${to.title}：${label}`;
+  path.appendChild(title);
+
+  /* --- 可选：连线标签（仅对跨层关键线显示） --- */
+  if (solid && Math.abs(to.l - from.l) >= 2 && label) {
+    const mx = (a.x + b.x) / 2;
+    const my = (a.y + b.y) / 2;
+    const t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', mx);
+    t.setAttribute('y', my - 4);
+    t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('font-size', '10');
+    t.setAttribute('fill', color);
+    t.setAttribute('fill-opacity', '0.65');
+    t.setAttribute('font-family', 'system-ui, sans-serif');
+    t.textContent = label;
+    svg.appendChild(t);
+  }
+}
+</script>
+</body>
+</html>

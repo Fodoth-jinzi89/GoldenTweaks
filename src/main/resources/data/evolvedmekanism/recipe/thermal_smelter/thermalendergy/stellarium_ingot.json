@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermalendergy"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:nether_stars"
+    },
+    {
+      "tag": "c:ingots/netherite",
+      "count": 4
+    },
+    {
+      "item": "minecraft:clay_ball",
+      "count": 4
+    }
+  ],
+  "result": [
+    {
+      "item": "thermalendergy:stellarium_ingot",
+      "count": 4
+    }
+  ]
+}

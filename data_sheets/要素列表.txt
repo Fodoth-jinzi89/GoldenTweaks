@@ -1,0 +1,129 @@
+要素来源
+1阶
+风（Aer）原始要素 甘蔗
+水（Aqua）原始要素 甘蔗
+地（Terra）原始要素 圆石
+火（Ignis）原始要素 煤炭
+秩序（Ordo）原始要素 木齿轮
+熵增（Perditio）原始要素 圆石
+
+2阶
+余烬（Favilla）= 火（Ignis）+地（Terra） 营火
+寒冰（Gelum）= 火（Ignis）+熵增（Perditio） 雪球
+光明（Lux）= 风（Aer）+火（Ignis） 火把
+移动（Motus）= 风（Aer）+秩序（Ordo） 橡木门
+贸易（Permutatio）= 熵增（Perditio）+秩序（Ordo） 水银花
+能量（Potentia）= 秩序（Ordo）+火（Ignis） 煤炭
+气候（Tempestas）= 风（Aer）+水（Aqua） 旋风棒
+虚空（Vacuos）= 风（Aer）+熵增（Perditio） 碗
+毒药（Venenum）= 水（Aqua）+熵增（Perditio） 毒马铃薯、蜘蛛眼
+生命（Victus）= 水（Aqua）+地（Terra） 花
+水晶（Vitreus）= 地（Terra）+秩序（Ordo） 玻璃
+毁灭（Destroy）= 水（Aqua）+火（Ignis）
+岩石（Saxum）= 地（Terra）+熵增（Perditio）
+物质（Substance）= 水（Aqua）+秩序（Ordo）
+植被（Vegetatio）= 风（Aer）+地（Terra）
+
+3阶
+灼热（Aestus）= 水（Aqua）+移动（Motus） 干海带
+炽烈（Ardor）= 火（Ignis）+能量（Potentia） 烈焰粉
+野兽（Bestia）= 移动（Motus）+生命（Victus） 线
+饥饿（Fames）= 生命（Victus）+虚空（Vacuos） 西瓜片
+雷霆（Fulmen）= 能量（Potentia）+风（Aer） 铜粉
+重力（Gravitas）= 岩石（Saxum）+移动（Motus） 硅
+植物（Herba）= 生命（Victus）+地（Terra） 甘蔗
+旅行（Iter）= 移动（Motus）+地（Terra） 末影珍珠
+金属（Metallum）= 地（Terra）+水晶（Vitreus） 铁锭
+死亡（Mortuus）= 生命（Victus）+熵增（Perditio） 骨头
+魔力（Praecantatio）= 虚空（Vacuos）+能量（Potentia） 下界疣
+治疗（Sano）= 生命（Victus）+秩序（Ordo） 柠檬
+时间（Tempus）= 贸易（Permutatio）+虚空（Vacuos） 氧化的铜块、钟
+黑暗（Tenebrae）= 虚空（Vacuos）+光明（Lux） 末地石、蘑菇、黑曜石
+陷阱（Vinculum）= 移动（Motus）+熵增（Perditio） 灵魂沙
+飞行（Volatus）= 风（Aer）+移动（Motus） 羽毛
+水域（Waters）= 水（Aqua）+植被（Vegetatio）
+暗能量（Atrpotentia）= 熵增（Perditio）+能量（Potentia）
+反物质（Atrsubstance）= 熵增（Perditio）+物质（Substance）
+黏液（Limus）= 生命（Victus）+水（Aqua） 生物质、粘液球、鸡蛋
+空间（Space）= 物质（Substance）+虚空（Vacuos）
+邃窟（Spelunca）= 地（Terra）+虚空（Vacuos）
+宇宙（Universes）= 物质（Substance）+秩序（Ordo）
+
+4阶
+异域（Alienis）= 虚空（Vacuos）+黑暗（Tenebrae） 末影珍珠
+树木（Arbor）= 风（Aer）+植物（Herba） 原木
+灵气（Auram）= 魔力（Praecantatio）+风（Aer） 世界盐、蕴魔种子
+肉体（Corpus）= 死亡（Mortuus）+野兽（Bestia） 肉类
+真菌（Fungus）= 植物（Herba）+黑暗（Tenebrae） 绯红菌、诡异菌
+磁力（Magnetis）= 金属（Metallum）+移动（Motus） 铜粉
+深渊（Profundum）= 邃窟（Spelunca）+空间（Space） 回响碎片
+灵魂（Spiritus）= 生命（Victus）+死亡（Mortuus） 灵魂沙
+污染（Vitium）= 魔力（Praecantatio）+熵增（Perditio） 腐化果实
+黏附（Adhaesio）= 黏液（Limus）+陷阱（Vinculum） 生物质、蜜啤
+不朽（Alfirin）= 时间（Tempus）+生命（Victus）
+率启（Arche）= 黑暗（Tenebrae）+光明（Lux）
+致密（Dense）= 重力（Gravitas）+能量（Potentia）
+龙（Dragon）= 魔力（Praecantatio）+野兽（Bestia）
+不死（Exanimis）= 移动（Motus）+死亡（Mortuus） 僵尸之脑
+爆炸（Explosion）= 炽烈（Ardor）+余烬（Favilla）
+飞岛（Laputa）= 地（Terra）+飞行（Volatus）
+熔岩（Lava）= 炽烈（Ardor）+水（Aqua）
+合金（Mixtura）= 火（Ignis）+金属（Metallum）
+魔法植物（Praecantaticherba）= 魔力（Praecantatio）+植物（Herba）
+遗蜕（Priscus）= 野兽（Bestia）+时间（Tempus）
+饕餮（Gula）= 饥饿（Fames）+虚空（Vacuos） 曲奇
+下界（Infernus）= 火（Ignis）+魔力（Praecantatio） 下界疣
+傲慢（Superbia）= 飞行（Volatus）+虚空（Vacuos） 下界之星、金护甲
+
+5阶
+思维（Cognitio）= 火（Ignis）+灵魂（Spiritus） 书
+感官（Sensus）= 风（Aer）+灵魂（Spiritus） 染料
+黑魔法（Atrpraecantatic）= 魔力（Praecantatio）+污染（Vitium）
+化石（Fossil）= 龙（Dragon）+时间（Tempus）
+奇点（Singularity）= 重力（Gravitas）+致密（Dense）
+怠惰（Desidia）= 陷阱（Vinculum）+灵魂（Spiritus）
+欲望（Luxuria）= 肉体（Corpus）+饥饿（Fames）
+
+6阶
+人类（Humanus）= 野兽（Bestia）+思维（Cognitio） 肉块、腐肉
+诱惑（Illecebra）= 感官（Sensus）+陷阱（Vinculum） 发光浆果、甜浆果
+遗物（Reliquiae）= 思维（Cognitio）+地（Terra） 刷子
+声响（Sonus）= 风（Aer）+感官（Sensus） 回响碎片
+梦想（Dream）= 思维（Cognitio）+秩序（Ordo）
+膨胀（Expand）= 奇点（Singularity）+爆炸（Explosion）
+妒忌（Invidia）= 感官（Sensus）+饥饿（Fames） 末影之眼
+
+7阶
+统御（Imperium）= 人类（Humanus）+傲慢（Superbia） 旗帜图案
+工具（Instrumentum）= 人类（Humanus）+秩序（Ordo） 燧石
+贪婪（Lucrum）= 人类（Humanus）+饥饿（Fames） 金锭
+作物（Messis）= 植物（Herba）+人类（Humanus） 小麦
+矿藏（Perfodio）= 人类（Humanus）+地（Terra） 镐
+往古（Anteanus）= 人类（Humanus）+时间（Tempus）
+童趣（Childish）= 人类（Humanus）+梦想（Dream）
+历史（History）= 遗蜕（Priscus）+遗物（Reliquiae）
+
+8阶
+合成（Fabrico）= 人类（Humanus）+工具（Instrumentum） 工作台
+机械（Machina）= 移动（Motus）+工具（Instrumentum） 活板门
+收获（Meto）= 作物（Messis）+工具（Instrumentum） 锄
+布匹（Pannus）= 工具（Instrumentum）+野兽（Bestia） 线
+武器（Telum）= 工具（Instrumentum）+火（Ignis） 箭
+装备（Tutamen）= 工具（Instrumentum）+地（Terra） 皮革
+终结（Terminus）= 贪婪（Lucrum）+异域（Alienis） 水晶矩阵锭
+邪恶（Evil）= 污染（Vitium）+贪婪（Lucrum）
+乌鲁克（Mornogol）= 遗物（Reliquiae）+往古（Anteanus）
+
+9阶
+轨迹（Orbita）= 旅行（Iter）+机械（Machina） 铁轨
+织构（Textus）= 布匹（Pannus）+合成（Fabrico） 地毯
+容器（Vas）= 虚空（Vacuos）+合成（Fabrico） 箱子
+飞升（Ascension）= 终结（Terminus）+统御（Imperium） 无尽催化剂
+饰品（Accessories）= 装备（Tutamen）+武器（Telum）
+纸张（Charta）= 植物（Herba）+合成（Fabrico）
+附魔（Incantatio）= 魔力（Praecantatio）+武器（Telum）
+财富（Treasure）= 贪婪（Lucrum）+武器（Telum）
+暴怒（Ira）= 武器（Telum）+火（Ignis） 火焰弹
+
+10阶
+完美（Perfictus）= 虚空（Vacuos）+飞升（Ascension） 超级锭

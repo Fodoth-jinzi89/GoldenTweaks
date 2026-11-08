@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ratatouille"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "ratatouille:bio_gas",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "fluid": "mio_icif:biogas",
+      "amount": 1000
+    }
+  ],
+  "energy": 10000
+}

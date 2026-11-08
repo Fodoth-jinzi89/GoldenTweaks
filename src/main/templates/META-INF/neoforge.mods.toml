@@ -1029,3 +1029,10 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "mio_icif"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"

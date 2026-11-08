@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal_expansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermalendergy"
+    }
+  ],
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "c:ingots/gold",
+      "count": 2
+    },
+    {
+      "item": "minecraft:chorus_fruit",
+      "count": 4
+    },
+    {
+      "tag": "c:gems/amethyst",
+      "count": 4
+    }
+  ],
+  "result": [
+    {
+      "item": "thermalendergy:melodium_ingot",
+      "count": 2
+    }
+  ]
+}

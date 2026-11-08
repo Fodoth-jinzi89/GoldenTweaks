@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>风力动能发生机 · 转子</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1160px; aspect-ratio:4 / 3; max-width:100%; max-height:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:14px 22px 13px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:24px; font-weight:800; color:var(--gold); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:6px 11px; text-align:center; min-width:104px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:13px; font-weight:800; color:var(--ok);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:10px 12px; min-height:0;}
+  table{width:100%; height:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:12px; font-weight:800;
+           letter-spacing:.03em; padding:8px 6px; border:1px solid #111;}
+  tbody td{padding:5px 9px; border:1px solid var(--line); font-size:13.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:28px; height:28px; margin:0 auto; line-height:28px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:14px; text-shadow:1px 1px 0 #000;}
+  .mode{font-weight:800; font-size:13.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:10.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:14px; color:#ededed;}
+  td.n b{color:#7db8ff;}
+  .out{font-family:"Consolas",monospace; font-weight:800; font-size:13.5px; color:#ffd27a;}
+  .yes{color:var(--ok); font-weight:800;}
+  .no{color:var(--red); font-weight:800;}
+  .notes{background:#1b1d21; background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:12px; line-height:1.9; text-shadow:1px 1px 0 #000;
+         display:flex; flex-wrap:wrap; column-gap:24px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes .k{white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="title">
+      <h1>风力动能发生机 · 转子一览<small>WIND KINETIC GENERATOR — ROTORS</small></h1>
+      <div class="stats">
+        <div class="stat"><b>风力 × 效率 × 10</b><span>输出公式 (KU/t)</span></div>
+        <div class="stat"><b>32 tick</b><span>损耗间隔</span></div>
+        <div class="stat"><b>7</b><span>转子</span></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:212px"><col style="width:70px"><col style="width:74px">
+          <col style="width:92px"><col style="width:92px"><col style="width:158px"><col style="width:112px"><col style="width:74px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">转子</th><th class="c">直径</th><th class="c">效率</th>
+            <th class="c">启动风力</th><th class="c">安全上限</th>
+            <th class="c">安全输出 (KU/t)</th><th class="c">耐久 (≈运行)</th><th class="c">水用</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">0</div></td>
+            <td><div class="mode">木转子<i>Wooden Rotor</i></div></td>
+            <td class="n">5</td><td class="n">25%</td><td class="n">10</td><td class="n">60</td>
+            <td class="c"><span class="out">25 – 150</span></td>
+            <td class="c"><b>10800</b> ≈ 4.8 h</td>
+            <td class="c"><span class="no">✗</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">青铜转子<i>Bronze Rotor</i></div></td>
+            <td class="n">7</td><td class="n">50%</td><td class="n">14</td><td class="n">75</td>
+            <td class="c"><span class="out">70 – 375</span></td>
+            <td class="c"><b>86400</b> ≈ 38 h</td>
+            <td class="c"><span class="yes">✓</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">铁转子<i>Iron Rotor</i></div></td>
+            <td class="n">7</td><td class="n">50%</td><td class="n">14</td><td class="n">75</td>
+            <td class="c"><span class="out">70 – 375</span></td>
+            <td class="c"><b>86400</b> ≈ 38 h</td>
+            <td class="c"><span class="yes">✓</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">钢转子<i>Steel Rotor</i></div></td>
+            <td class="n">9</td><td class="n">75%</td><td class="n">17</td><td class="n">90</td>
+            <td class="c"><span class="out">128 – 675</span></td>
+            <td class="c"><b>172800</b> ≈ 77 h</td>
+            <td class="c"><span class="yes">✓</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">钛铁合金转子<i>Titanium-Iron Rotor</i></div></td>
+            <td class="n">9</td><td class="n"><b>91%</b></td><td class="n">12</td><td class="n">100</td>
+            <td class="c"><span class="out">109 – 910</span></td>
+            <td class="c"><b>192800</b> ≈ 86 h</td>
+            <td class="c"><span class="yes">✓</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">碳转子<i>Carbon Rotor</i></div></td>
+            <td class="n">11</td><td class="n">100%</td><td class="n">20</td><td class="n">110</td>
+            <td class="c"><span class="out">200 – 1100</span></td>
+            <td class="c"><b>604800</b> ≈ 269 h</td>
+            <td class="c"><span class="yes">✓</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">6</div></td>
+            <td><div class="mode">超级铱合金转子<i>Super Iridium Alloy Rotor</i></div></td>
+            <td class="n">11</td><td class="n">100%</td><td class="n">18</td><td class="n"><b>155</b></td>
+            <td class="c"><span class="out">180 – 1550</span></td>
+            <td class="c"><b>≈ ∞</b></td>
+            <td class="c"><span class="yes">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <span class="k"><i>◆</i> 输出 = <em>风力 × 效率 × 10</em> (KU/t)，只从背面输出</span>
+      <span class="k"><i>◆</i> 风力低于“启动风力”不转；高于“安全上限”输出继续涨，但<em>磨损变 4×</em></span>
+      <span class="k"><i>◆</i> 直径决定所需净空(2×直径+1 的圆盘)与抗遮挡能力；前方方块会削减风力</span>
+      <span class="k"><i>◆</i> 损耗每 32 tick 计 1 点；耐久为计点值，≈运行时长按不超速估算</span>
+    </div>
+  </div>
+</body>
+</html>

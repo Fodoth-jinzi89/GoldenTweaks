@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+  "type": "mio_icif:compressor",
+  "count": 1,
+  "energypertick": 25,
+  "ingredient": {
+    "item": "alltheores:iridium_dust"
+  },
+  "processingtime": 200,
+  "result": {
+    "count": 1,
+    "id": "mio_icif:resource/item_iridium"
+  }
+}

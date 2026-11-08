@@ -841,12 +841,6 @@
   },
   {
     "matchItems": [
-      "#c:plates/iridium"
-    ],
-    "resultItems": "alltheores:iridium_plate"
-  },
-  {
-    "matchItems": [
       "#c:rods/iridium"
     ],
     "resultItems": "alltheores:iridium_rod"
