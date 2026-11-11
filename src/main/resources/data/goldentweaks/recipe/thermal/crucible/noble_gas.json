@@ -1,0 +1,13 @@
+{
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:noble_gas"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:noble_gas",
+      "amount": 1000
+    }
+  ],
+  "energy": 50000
+}

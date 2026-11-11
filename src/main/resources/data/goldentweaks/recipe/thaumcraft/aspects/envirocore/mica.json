@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:mica"
+  },
+  "aspects": {
+    "saxum": 2,
+    "terra": 1,
+    "vitreus": 1
+  }
+}

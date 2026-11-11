@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "item": "evolvedmekanism:mold_plate"
+    },
+    {
+      "fluid": "goldentweaks:hdpe",
+      "amount": 144
+    }
+  ],
+  "result": [
+    {
+      "item": "mekanism:hdpe_sheet"
+    }
+  ],
+  "energy": 14400
+}

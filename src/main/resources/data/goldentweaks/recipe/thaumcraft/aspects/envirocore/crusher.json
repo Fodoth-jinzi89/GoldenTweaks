@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:crusher"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 3,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  200,
+                           "chemical":  "goldentweaks:bromine"
+                       },
+    "duration":  400,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  100,
+                        "fluid":  "goldentweaks:benzene"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "alltheores:iron_dust"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "alltheores:dirty_iron_dust"
+                    },
+    "chemical_output":  {
+                            "amount":  100,
+                            "id":  "goldentweaks:p_dibromobenzene"
+                        }
+}

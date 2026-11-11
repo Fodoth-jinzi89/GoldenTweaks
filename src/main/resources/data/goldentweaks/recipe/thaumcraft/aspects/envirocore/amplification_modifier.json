@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:amplification_modifier"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 2,
+    "potentia": 1
+  }
+}

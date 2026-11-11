@@ -83,6 +83,7 @@ final class GTRiftJeiCategory implements IRecipeCategory<GTRiftDisplayRecipe> {
     }
 
     @Override
+    @SuppressWarnings("removal")
     public IDrawable getBackground() {
         return background;
     }

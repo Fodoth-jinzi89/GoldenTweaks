@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:noble_gas",
+  "loader": "neoforge:fluid_container"
+}

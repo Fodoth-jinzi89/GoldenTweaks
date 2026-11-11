@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "goldentweaks:cracked_refined_oil"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "goldentweaks:cracked_refined_oil"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:cracked_refined_oil"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:cracked_refined_oil"
+  }
+}

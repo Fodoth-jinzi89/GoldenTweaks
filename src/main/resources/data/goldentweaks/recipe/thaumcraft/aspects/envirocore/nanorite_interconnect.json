@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:nanorite_interconnect"
+  },
+  "aspects": {
+    "machina": 1,
+    "metallum": 2,
+    "potentia": 2
+  }
+}

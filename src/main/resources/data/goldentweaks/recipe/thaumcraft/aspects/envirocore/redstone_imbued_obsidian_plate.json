@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:redstone_imbued_obsidian_plate"
+  },
+  "aspects": {
+    "metallum": 1,
+    "saxum": 2,
+    "tenebrae": 2
+  }
+}

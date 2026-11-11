@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:solidifying",
+  "duration": 60,
+  "item_input": {
+    "item": "evolvedmekanism:mold_nugget"
+  },
+  "fluid_input": {
+    "fluid": "goldentweaks:lldpe",
+    "amount": 16
+  },
+  "extra_input": {
+    "fluid": "minecraft:water",
+    "amount": 16
+  },
+  "output": {
+    "item": "goldentweaks:lldpe_nugget"
+  },
+  "keep_item": true
+}

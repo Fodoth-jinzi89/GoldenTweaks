@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:ldpe_ball"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:ldpe",
+      "amount": 48
+    }
+  ],
+  "energy": 4800
+}

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:fluid_output"
+  },
+  "aspects": {
+    "iter": 1,
+    "machina": 2,
+    "potentia": 2
+  }
+}

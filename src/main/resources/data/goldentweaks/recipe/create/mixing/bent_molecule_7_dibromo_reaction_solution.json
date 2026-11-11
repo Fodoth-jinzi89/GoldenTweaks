@@ -1,0 +1,30 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:bent_molecule_2_methoxy"
+                        },
+                        {
+                            "item":  "goldentweaks:bent_molecule_2_methoxy"
+                        },
+                        {
+                            "item":  "goldentweaks:bent_molecule_3_dibromo"
+                        },
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  1000,
+                            "fluid":  "goldentweaks:tetrahydrofuran"
+                        },
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  100,
+                            "fluid":  "goldentweaks:butyllithium"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "amount":  800,
+                        "id":  "goldentweaks:bent_molecule_7_dibromo_reaction_solution"
+                    }
+                ]
+}

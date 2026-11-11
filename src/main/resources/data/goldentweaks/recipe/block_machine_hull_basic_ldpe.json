@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "B B",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/iron"
+    },
+    "B": {
+      "item": "goldentweaks:ldpe_plate"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "mio_icif:producer/block_machine_hull_basic"
+  }
+}

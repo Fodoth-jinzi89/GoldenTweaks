@@ -1,0 +1,19 @@
+{
+    "type":  "thermal:brewer",
+    "ingredients":  [
+                        {
+                            "item":  "thermal:apatite_dust"
+                        },
+                        {
+                            "fluid":  "mekanism:sulfuric_acid",
+                            "amount":  1000
+                        }
+                    ],
+    "result":  [
+                   {
+                       "fluid":  "goldentweaks:phosphoric_acid",
+                       "amount":  1000
+                   }
+               ],
+    "energy":  30000
+}

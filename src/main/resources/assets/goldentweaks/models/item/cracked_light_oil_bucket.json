@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:cracked_light_oil",
+  "loader": "neoforge:fluid_container"
+}

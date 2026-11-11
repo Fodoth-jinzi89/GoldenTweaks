@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>石油钻机 · 普通 vs 维度</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1160px; aspect-ratio:4 / 3; max-width:100%; max-height:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:14px 22px 13px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:24px; font-weight:800; color:var(--gold); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:6px 11px; text-align:center; min-width:104px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:14px; font-weight:800; color:var(--ok);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:10px 12px; min-height:0;}
+  table{width:100%; height:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:11.5px; font-weight:800;
+           letter-spacing:.02em; padding:8px 5px; border:1px solid #111;}
+  tbody td{padding:6px 8px; border:1px solid var(--line); font-size:13.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:28px; height:28px; margin:0 auto; line-height:28px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:14px; text-shadow:1px 1px 0 #000;}
+  .mode{font-weight:800; font-size:13.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:10.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:14px; color:#ededed;}
+  .volt{display:inline-block; padding:2px 8px; font-weight:800; font-family:"Consolas",monospace;
+        font-size:12.5px; border:2px solid; }
+  .mv{background:#123a5a; border-color:#2f7bbf #06121c #06121c #2f7bbf; color:#bfe6ff;}
+  .hv{background:#5a3a12; border-color:#bf8a2f #1c1206 #1c1206 #bf8a2f; color:#ffe0b0;}
+  .ev{background:#4a1250; border-color:#a72fbf #14061c #14061c #a72fbf; color:#f2c6ff;}
+  .out{font-family:"Consolas",monospace; font-weight:800; color:#ffd27a;}
+  .out s{display:block; color:#9fe0ff; font-weight:700; text-decoration:none; font-size:11.5px;}
+  .r100{color:var(--ok); font-weight:800;}
+  .r10{color:#ffb454; font-weight:800;}
+  .na{color:#7a7a7a; font-weight:700;}
+  .pair{display:block; font-size:11.5px; line-height:1.55; color:#c9c9c9;}
+  .pair b{font-family:"Consolas",monospace; font-weight:800;}
+  .pair .hi{color:var(--ok);} .pair .lo{color:#ffb454;}
+  .notes{background:#1b1d21; background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:12px; line-height:1.9; text-shadow:1px 1px 0 #000;
+         display:flex; flex-wrap:wrap; column-gap:24px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes .k{white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="title">
+      <h1>石油钻机 · 普通 vs 维度<small>OIL RIG / DIMENSION OIL RIG</small></h1>
+      <div class="stats">
+        <div class="stat"><b>HV → EV</b><span>电压等级</span></div>
+        <div class="stat"><b>45 / 20</b><span>钻探间隔 tick</span></div>
+        <div class="stat"><b>多方块</b><span>结构类型</span></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:46px"><col style="width:214px"><col style="width:96px"><col style="width:100px">
+          <col style="width:96px"><col style="width:104px"><col style="width:150px"><col style="width:190px"><col style="width:134px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">钻机</th><th class="c">电压等级</th><th class="c">内部储能</th>
+            <th class="c">钻探间隔</th><th class="c">单次产出</th><th class="c">每次能耗<br>命中 / 干孔</th>
+            <th class="c">命中概率<br>矿石·岩浆 / 黑曜石 / 沙·沙砾 / 其他</th><th class="c">钻探方式</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">0</div></td>
+            <td><div class="mode">石油钻机<i>Oil Rig Core</i></div></td>
+            <td class="c"><span class="volt hv">HV · 512</span></td>
+            <td class="n">50 000</td>
+            <td class="c"><span class="out">45 t<s>2.25 s</s></span></td>
+            <td class="c"><span class="out">100 mB<s>原油</s></span></td>
+            <td class="c"><span class="out">1 000<s>干孔 500</s></span></td>
+            <td class="c"><span class="pair">矿石·岩浆 <b class="hi">80%</b> ｜ 黑曜石 <b class="hi">95%</b><br>沙·沙砾 <b class="lo">10%</b> ｜ 其他 <b class="lo">20%</b></span></td>
+            <td class="c"><span class="out">45 柱<s>8 方向 × 距离 1~5 + 中心</s></span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">维度石油钻机<i>Dimension Oil Rig Core</i></div></td>
+            <td class="c"><span class="volt ev">EV · 2048</span></td>
+            <td class="n">200 000</td>
+            <td class="c"><span class="out">20 t<s>1 s</s></span></td>
+            <td class="c"><span class="out">200 mB<s>原油</s></span></td>
+            <td class="c"><span class="out">2 000<s>干孔 1 000</s></span></td>
+            <td class="c"><span class="pair">矿石·岩浆 <b class="hi">80%</b> ｜ 黑曜石 <b class="hi">95%</b><br>沙·沙砾 <b class="lo">10%</b> ｜ 其他 <b class="lo">20%</b></span></td>
+            <td class="c"><span class="out">螺旋扫描<s>4 方向逐圈外扩</s></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <span class="k"><i>◆</i> 模块：<em>输入</em> 50 000 EU / 最大 512 EU/t · <em>输出</em> 储罐 128 000 mB · 面板=状态 · 基座=填充</span>
+      <span class="k"><i>◆</i> 结构：核心居中，<em>10 个模块位</em>（水平 8 + 上方 +1/+2）、<em>11 个框架位</em>（钛钻框架），无朝向；至少 1 输入 + 1 输出</span>
+      <span class="k"><i>◆</i> 维度钻机 = 普通外形 <em>+ 核心下方一格 16 模块环 + 更多框架</em></span>
+      <span class="k"><i>◆</i> 钻探：从核心下方 <em>y-2</em> 起向下钻到基岩；钻过的方块被挖掉；结构自检 25 / 30 tick</span>
+      <span class="k"><i>◆</i> 命中才产原油并扣能耗，干孔只扣一半能耗；<em>输出罐满则暂停</em>（不耗电）；总能量不足 1000 / 2000 EU 停机</span>
+      <span class="k"><i>◆</i> 普通钻机 45 柱钻完显示「该区域已采完」；维度钻机为 4 方向逐圈外扩的扫描式</span>
+    </div>
+  </div>
+</body>
+</html>

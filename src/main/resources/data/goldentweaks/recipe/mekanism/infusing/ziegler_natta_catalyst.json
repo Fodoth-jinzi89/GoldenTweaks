@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:triethylaluminium"
+  },
+  "output": {
+    "amount": 20,
+    "id": "goldentweaks:ziegler_natta_catalyst"
+  },
+  "right_input": {
+    "amount": 20,
+    "chemical": "goldentweaks:titanium_tetrachloride"
+  }
+}

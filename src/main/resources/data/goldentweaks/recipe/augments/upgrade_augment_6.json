@@ -1,0 +1,76 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgems"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "dndecor"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "neoecoae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AABBCBBAA",
+    "ABBCDCBBA",
+    "BBEEFEEBB",
+    "BCEGHGECB",
+    "CDFHIHFDC",
+    "BCEGHGECB",
+    "BBEEFEEBB",
+    "ABBCDCBBA",
+    "AABBCBBAA"
+  ],
+  "key": {
+    "A": {
+      "item": "silentgear:azure_silver_block"
+    },
+    "B": {
+      "item": "silentgear:tyrian_steel_ingot"
+    },
+    "C": {
+      "item": "silentgems:ammolite_glass"
+    },
+    "D": {
+      "item": "silentgems:alexandrite_block"
+    },
+    "E": {
+      "item": "dndecor:purple_large_industrial_cogwheel"
+    },
+    "F": {
+      "item": "neoecoae:energized_fluix_crystal_block"
+    },
+    "G": {
+      "item": "mekanism:pellet_antimatter"
+    },
+    "H": {
+      "item": "minecraft:budding_amethyst"
+    },
+    "I": {
+      "item": "goldentweaks:upgrade_augment_5"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:upgrade_augment_6"
+  }
+}

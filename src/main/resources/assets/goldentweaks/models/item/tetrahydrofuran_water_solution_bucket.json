@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:tetrahydrofuran_water_solution",
+  "loader": "neoforge:fluid_container"
+}

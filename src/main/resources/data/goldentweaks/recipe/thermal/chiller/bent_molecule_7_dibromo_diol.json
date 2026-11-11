@@ -1,0 +1,13 @@
+{
+    "type":  "thermal:chiller",
+    "ingredient":  {
+                       "fluid":  "goldentweaks:bent_molecule_7_dibromo_reaction_solution",
+                       "amount":  1000
+                   },
+    "result":  [
+                   {
+                       "item":  "goldentweaks:bent_molecule_7_dibromo_diol"
+                   }
+               ],
+    "energy":  500000
+}

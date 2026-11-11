@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "item": "evolvedmekanism:mold_rod"
+    },
+    {
+      "fluid": "goldentweaks:hdpe",
+      "amount": 72
+    }
+  ],
+  "result": [
+    {
+      "item": "mekanism:hdpe_stick"
+    }
+  ],
+  "energy": 7200
+}

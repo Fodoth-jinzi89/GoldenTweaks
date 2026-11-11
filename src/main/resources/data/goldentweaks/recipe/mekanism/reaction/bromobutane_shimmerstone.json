@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  100,
+                           "chemical":  "goldentweaks:bromine"
+                       },
+    "duration":  600,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  100,
+                        "fluid":  "goldentweaks:butane"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "spectrum:shimmerstone_gem"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "mio_icif:resource/item_sunnarium_small"
+                    },
+    "chemical_output":  {
+                            "amount":  200,
+                            "id":  "goldentweaks:bromobutane"
+                        }
+}

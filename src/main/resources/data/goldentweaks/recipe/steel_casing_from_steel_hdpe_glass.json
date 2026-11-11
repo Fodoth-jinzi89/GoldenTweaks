@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:ingot_steel"
+    },
+    "B": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "C": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "mekanism:steel_casing"
+  }
+}

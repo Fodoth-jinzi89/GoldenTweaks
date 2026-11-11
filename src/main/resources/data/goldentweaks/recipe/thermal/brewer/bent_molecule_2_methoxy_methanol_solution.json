@@ -1,0 +1,19 @@
+{
+    "type":  "thermal:brewer",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:iodobenzene_diacetate"
+                        },
+                        {
+                            "fluid":  "goldentweaks:p_bromobiphenol_methanol_solution",
+                            "amount":  1000
+                        }
+                    ],
+    "result":  [
+                   {
+                       "fluid":  "goldentweaks:bent_molecule_2_methoxy_methanol_solution",
+                       "amount":  1000
+                   }
+               ],
+    "energy":  50000
+}

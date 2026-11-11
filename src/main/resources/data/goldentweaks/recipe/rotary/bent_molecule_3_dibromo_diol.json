@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "goldentweaks:bent_molecule_3_dibromo_diol"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "goldentweaks:bent_molecule_3_dibromo_diol"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:bent_molecule_3_dibromo_diol"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:bent_molecule_3_dibromo_diol"
+  }
+}

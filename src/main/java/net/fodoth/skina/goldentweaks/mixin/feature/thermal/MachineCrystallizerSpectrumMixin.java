@@ -37,7 +37,7 @@ public abstract class MachineCrystallizerSpectrumMixin {
         }
 
         if (!(inventory instanceof AugmentableBlockEntityInvoker augmentable)
-                || !ThermalCrystallarieumAugment.isInstalled(augmentable.gt$getAugmentsAsList())) {
+                || !ThermalCrystallarieumAugment.isActive(augmentable.gt$getAugmentsAsList())) {
             return null;
         }
         return SpectrumCrystallizerRecipe.findFor(inventory, manager);

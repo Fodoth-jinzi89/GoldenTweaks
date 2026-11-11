@@ -10,6 +10,7 @@ import net.fodoth.skina.goldentweaks.compat.academy.GTThermalCoinRailgun;
 import net.fodoth.skina.goldentweaks.compat.academy.network.GTMediaUnloadPacket;
 import net.fodoth.skina.goldentweaks.compat.appflux.AppliedFluxCompat;
 import net.fodoth.skina.goldentweaks.compat.maidsoulcore.MaidLogSuppressor;
+import net.fodoth.skina.goldentweaks.compat.mekanism.GTMekanismChemicals;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.compactmachines.CompactMachinesCompat;
@@ -28,6 +29,11 @@ import net.fodoth.skina.goldentweaks.compat.thaumicbases.ThaumicCropHarvestEvent
 import net.fodoth.skina.goldentweaks.compat.thaumicbases.GTThaumicBasesFurnaceCompat;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
+import net.fodoth.skina.goldentweaks.content.craftsmen.GTCraftsmenCreativeTabs;
+import net.fodoth.skina.goldentweaks.content.craftsmen.GTCraftsmenItems;
+import net.fodoth.skina.goldentweaks.content.reactors.GTReactorCreativeTabs;
+import net.fodoth.skina.goldentweaks.content.reactors.GTReactorFluids;
+import net.fodoth.skina.goldentweaks.content.reactors.GTReactorItems;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalCreativeTabs;
 import net.fodoth.skina.goldentweaks.compat.astralsorcery.GTFocalPointColumnRenderer;
 import net.fodoth.skina.goldentweaks.event.ClientWindowSizeGuard;
@@ -37,6 +43,8 @@ import net.fodoth.skina.goldentweaks.event.InvertedFamiliarSpellbookEvent;
 import net.fodoth.skina.goldentweaks.event.QuestBookRecipeKeyHandler;
 import net.fodoth.skina.goldentweaks.compat.alshanex_familiars.AFAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.flavorimmerseddaily.FidAdditionalItems;
+import net.fodoth.skina.goldentweaks.compat.thermal.GTThermalFantasyCreativeTab;
+import net.fodoth.skina.goldentweaks.compat.thermal.GTThermalFantasyItems;
 import net.fodoth.skina.goldentweaks.compat.thermal.ThermalAdditionalItems;
 import net.fodoth.skina.goldentweaks.compat.thermal.ThermalCrystallarieumAugment;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateCompat;
@@ -79,6 +87,17 @@ public class GoldenTweaks {
                 ModConfig.Type.COMMON,
                 GoldenTweaksCommonConfig.SPEC
         );
+
+        GTReactorFluids.register(modEventBus);
+        GTReactorItems.register(modEventBus);
+        GTReactorCreativeTabs.register(modEventBus);
+        GTCraftsmenItems.register(modEventBus);
+        GTCraftsmenCreativeTabs.register(modEventBus);
+
+        if (ModList.get().isLoaded("mekanism")) {
+            LOGGER.info("Detected mekanism, registering the reactor chemicals");
+            GTMekanismChemicals.register(modEventBus);
+        }
 
         try {
             Class.forName("com.github.luben.zstd.ZstdOutputStream");
@@ -215,9 +234,12 @@ public class GoldenTweaks {
         }
 
         if (ModList.get().isLoaded("thermal")) {
-            LOGGER.info("Detected thermal, registering the additional integral components");
+            LOGGER.info("Detected thermal, registering the additional integral components and the Thermal Fantasy tab");
             // 整合组件原本只有 1~3 级，这里补上 4~6 级（见 compat/thermal/ThermalAdditionalItems）
             ThermalAdditionalItems.register(modEventBus);
+            // 「金子修改：热力幻梦」创造栏与专属物品（见 compat/thermal/GTThermalFantasy*）
+            GTThermalFantasyItems.register(modEventBus);
+            GTThermalFantasyCreativeTab.register(modEventBus);
         }
 
         if (ModList.get().isLoaded("thermal") && ModList.get().isLoaded("spectrum")) {

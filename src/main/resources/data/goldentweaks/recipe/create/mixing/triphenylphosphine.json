@@ -1,0 +1,23 @@
+{
+    "type":  "create:mixing",
+    "heat_requirement":  "heated",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:phosphorus"
+                        },
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  1000,
+                            "fluid":  "goldentweaks:benzene"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "goldentweaks:triphenylphosphine"
+                    },
+                    {
+                        "id":  "goldentweaks:phosphorus",
+                        "chance":  0.66
+                    }
+                ]
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "mekanism:hdpe_sheet",
+      "count": 1
+    },
+    {
+      "item": "thermal:press_unpacking_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "goldentweaks:hdpe_nugget",
+      "count": 9
+    }
+  ],
+  "energy": 500
+}

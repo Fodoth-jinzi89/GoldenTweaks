@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:chemical/gaseous_crystal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:chemical/midnight_gas"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:chemical/dragonrot_biogas"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:item/powder/powder_mask"
+    }
+  ]
+}

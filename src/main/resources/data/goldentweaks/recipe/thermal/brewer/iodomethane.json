@@ -1,0 +1,19 @@
+{
+    "type":  "thermal:brewer",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:iodine"
+                        },
+                        {
+                            "fluid":  "goldentweaks:methanol",
+                            "amount":  1000
+                        }
+                    ],
+    "result":  [
+                   {
+                       "fluid":  "goldentweaks:iodomethane",
+                       "amount":  1000
+                   }
+               ],
+    "energy":  25000
+}

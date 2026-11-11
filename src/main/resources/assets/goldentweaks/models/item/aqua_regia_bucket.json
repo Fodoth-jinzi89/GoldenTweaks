@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:aqua_regia",
+  "loader": "neoforge:fluid_container"
+}

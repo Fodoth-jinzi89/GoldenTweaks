@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1,
+      "fluid": "goldentweaks:zirconocene_dichloride"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "goldentweaks:methylaluminoxane"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:metallocene_catalyst"
+    }
+  ]
+}

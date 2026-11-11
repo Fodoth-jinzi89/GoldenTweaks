@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "item": "goldentweaks:bis_pinacolato_diboron"
+  },
+  "output": {
+    "amount": 1000,
+    "id": "goldentweaks:bis_pinacolato_diboron"
+  }
+}

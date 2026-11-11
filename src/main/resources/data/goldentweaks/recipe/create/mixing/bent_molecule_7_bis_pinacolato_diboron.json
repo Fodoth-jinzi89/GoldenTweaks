@@ -1,0 +1,43 @@
+{
+    "type":  "create:mixing",
+    "heat_requirement":  "superheated",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:bis_pinacolato_diboron"
+                        },
+                        {
+                            "item":  "goldentweaks:bis_pinacolato_diboron"
+                        },
+                        {
+                            "item":  "goldentweaks:bent_molecule_7_dibromo"
+                        },
+                        {
+                            "item":  "goldentweaks:palladium_acetate"
+                        },
+                        {
+                            "item":  "goldentweaks:organophosphine_ligand"
+                        },
+                        {
+                            "item":  "goldentweaks:sodium_acetate"
+                        },
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  1000,
+                            "fluid":  "goldentweaks:dioxane"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "goldentweaks:bent_molecule_7_bis_pinacolato_diboron",
+                        "chance":  0.5
+                    },
+                    {
+                        "id":  "goldentweaks:palladium_acetate",
+                        "chance":  0.95
+                    },
+                    {
+                        "id":  "goldentweaks:organophosphine_ligand",
+                        "chance":  0.9
+                    }
+                ]
+}

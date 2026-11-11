@@ -1,0 +1,21 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "mekanism:hydrogen"
+                       },
+    "duration":  6400,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  1000,
+                        "fluid":  "goldentweaks:fluoroboric_acid"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "goldentweaks:triphenylphosphine"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "goldentweaks:organophosphine_ligand"
+                    }
+}

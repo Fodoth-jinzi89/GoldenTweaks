@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "item": "thermal:chiller_ball_cast"
+    },
+    {
+      "fluid": "goldentweaks:spp",
+      "amount": 48
+    }
+  ],
+  "result": [
+    {
+      "item": "goldentweaks:spp_ball"
+    }
+  ],
+  "energy": 4800
+}

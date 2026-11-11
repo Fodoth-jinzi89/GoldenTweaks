@@ -1,0 +1,21 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:cracked_refined_oil",
+    "amount": 500
+  },
+  "result": [
+    {
+      "item": "alltheores:sulfur"
+    },
+    {
+      "fluid": "goldentweaks:propylene",
+      "amount": 300
+    },
+    {
+      "fluid": "goldentweaks:hexane",
+      "amount": 100
+    }
+  ],
+  "energy": 10000
+}

@@ -1,0 +1,15 @@
+{
+    "type":  "mekanism:chemical_infusing",
+    "left_input":  {
+                       "amount":  1,
+                       "chemical":  "goldentweaks:potassium"
+                   },
+    "output":  {
+                   "amount":  1,
+                   "id":  "goldentweaks:potassium_acetate"
+               },
+    "right_input":  {
+                        "amount":  1,
+                        "chemical":  "goldentweaks:acetic_acid"
+                    }
+}

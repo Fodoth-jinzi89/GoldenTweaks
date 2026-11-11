@@ -1,0 +1,14 @@
+{
+  "type": "thermal:chiller",
+  "ingredient": {
+    "fluid": "spectrum:midnight_solution",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "spectrum:midnight_chip",
+      "count": 8
+    }
+  ],
+  "energy": 3000
+}

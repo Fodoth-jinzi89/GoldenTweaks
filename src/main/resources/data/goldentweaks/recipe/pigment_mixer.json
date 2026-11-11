@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mekanism:hdpe_stick"
+    },
+    "A": {
+      "tag": "mekanism:alloys/reinforced"
+    },
+    "C": {
+      "tag": "c:circuits/elite"
+    },
+    "X": {
+      "item": "mekanism:steel_casing"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "#X#",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:pigment_mixer"
+  }
+}

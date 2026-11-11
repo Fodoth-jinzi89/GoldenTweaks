@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:tetrabutylammonium_bromide",
+  "loader": "neoforge:fluid_container"
+}

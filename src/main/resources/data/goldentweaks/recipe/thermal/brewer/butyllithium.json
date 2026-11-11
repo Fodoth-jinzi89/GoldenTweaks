@@ -1,0 +1,19 @@
+{
+    "type":  "thermal:brewer",
+    "ingredients":  [
+                        {
+                            "item":  "mekanism:dust_lithium"
+                        },
+                        {
+                            "fluid":  "goldentweaks:butane",
+                            "amount":  1000
+                        }
+                    ],
+    "result":  [
+                   {
+                       "fluid":  "goldentweaks:butyllithium",
+                       "amount":  1000
+                   }
+               ],
+    "energy":  50000
+}

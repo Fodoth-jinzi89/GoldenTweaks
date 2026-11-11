@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:butene"
+  },
+  "duration": 3000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "mekanism:ethene"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:ziegler_natta_catalyst"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:ziegler_natta_catalyst"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:lldpe"
+  }
+}

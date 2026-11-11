@@ -1,0 +1,37 @@
+thermal:machine_refinery RF l -> s+l+l
+10000 RF 裂化精炼油 500mB -> alltheores:sulfur + 丙烯 300mB + 己烷 100mB（属于炼化配方）
+5000 RF thermal:coal 100mB -> thermal:tar + 煤焦油 75mB （属于炼化配方）
+10000 RF 裂化煤焦油 500mB -> alltheores:sulfur + 环戊二烯 100mB + 苯同系物 600mB（属于炼化配方）
+
+mekanism:pressurized_reaction_chamber ticks g+l+s -> s+g
+400 mekanism:hydrogen 300mB + mekanism:ethene 600mB + alltheores:aluminum_dust 2 -> goldentweaks:triethylaluminium 200mB
+3000 丁烯 1mB + 乙烯 1000mB + goldentweaks:ziegler_natta_catalyst -> goldentweaks:ziegler_natta_catalyst + goldentweaks:lldpe 100mB
+3000 乙烯 1mB + 丙烯 1000mB + goldentweaks:ziegler_natta_catalyst -> goldentweaks:ziegler_natta_catalyst + 无规共聚丙烯 100mB
+400 四氯化锆 100mB + 环戊二烯 100mB + alltheores:nickel_dust -> alltheores:dirty_nickel_dust + 二氯二茂锆 100mB
+4000 氮 1000mB + 三甲基铝 1000mB + flavor_immersed_daily:sorbet -> 甲基铝氧烷（s）+ 氮 950mB
+6400 丙烯 1000mB + 甲基铝氧烷 100mB + 茂金属催化剂 -> 茂金属催化剂 + 间规聚丙烯 100mB
+
+mekanism:chemical_infuser g+g -> g
+goldentweaks:triethylaluminium 1mB + goldentweaks:titanium_tetrachloride 20mB -> goldentweaks:ziegler_natta_catalyst 20mB
+mekanism:oxygen 1mB + mekanism:ethene 1000mB -> goldentweaks:ldpe 100mB
+goldentweaks:ziegler_natta_catalyst 1mB + mekanism:ethene 1000mB -> goldentweaks:hdpe 100mB
+goldentweaks:ziegler_natta_catalyst 1mB + 丙烯 1000mB -> 等规聚丙烯 100mB
+丁醇 1mB + 硫酸 1mB -> 丁烯 1mB
+
+create:mixing nl+ns -> ml + ms
+己烷 1000mB + 乙烯 1000mB + goldentweaks:ziegler_natta_catalyst 1 -> goldentweaks:ziegler_natta_catalyst 1(95%) + goldentweaks:uhmwpe 1mB + 己烷 950mB
+mekanism:hydrogen_chloride 3000mB + 铝粉 -> 三氯化铝（s）
+mekanism:hydrogen_chloride 4000mB + 锆粉 -> 四氯化锆（s）
+mekanism:hydrogen_chloride 4000mB + mio_icif:resource/item_titanium_dust -> northstar:titanium_tetrachloride 1000mB
+碘甲烷 3000mB + 三氯化铝（s）-> 三甲基铝 1000mB
+二氯二茂锆 1mB + 甲基铝氧烷 2000mB -> 茂金属催化剂（s）超级加热
+
+thermal:machine_brewer RF l+s -> l
+100000 RF spectrum:midnight_solution 1000mB + #minecraft:signs  -> 浓缩锆 1000mB
+
+thermal:machine_chiller RF l+s -> s
+125000RF 浓缩锆 1000mB -> 锆粉(80%) 属于组件：骤冷析晶程序
+
+
+
+

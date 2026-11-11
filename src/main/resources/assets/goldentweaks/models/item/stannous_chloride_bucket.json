@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:stannous_chloride",
+  "loader": "neoforge:fluid_container"
+}

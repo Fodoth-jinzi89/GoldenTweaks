@@ -1,0 +1,15 @@
+{
+    "type":  "mekanism:separating",
+    "input":  {
+                  "amount":  10,
+                  "fluid":  "goldentweaks:rock_salt_water"
+              },
+    "left_chemical_output":  {
+                                 "amount":  1,
+                                 "id":  "goldentweaks:potassium"
+                             },
+    "right_chemical_output":  {
+                                  "amount":  1,
+                                  "id":  "mekanism:chlorine"
+                              }
+}

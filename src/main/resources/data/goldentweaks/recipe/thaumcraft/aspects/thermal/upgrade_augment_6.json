@@ -1,7 +1,7 @@
 {
   "type": "goldentweaks:item_aspect",
   "item": {
-    "id": "thermal:upgrade_augment_6"
+    "id": "goldentweaks:upgrade_augment_6"
   },
   "aspects": {
     "fabrico": 3,

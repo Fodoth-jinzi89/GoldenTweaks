@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:rcpp_nugget"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:rcpp",
+      "amount": 16
+    }
+  ],
+  "energy": 1600
+}

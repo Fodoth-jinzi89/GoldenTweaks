@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:pladium_frame"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "machina": 1,
+    "metallum": 2
+  }
+}

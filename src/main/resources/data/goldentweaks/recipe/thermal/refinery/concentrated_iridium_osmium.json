@@ -1,0 +1,22 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:concentrated_iridium_osmium",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "goldentweaks:nano_activated_particles",
+      "chance": 0.1
+    },
+    {
+      "fluid": "goldentweaks:concentrated_iridium",
+      "amount": 100
+    },
+    {
+      "fluid": "goldentweaks:concentrated_osmium",
+      "amount": 900
+    }
+  ],
+  "energy": 250000
+}

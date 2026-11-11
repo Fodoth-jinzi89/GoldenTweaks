@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:uhmwpe_rod"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:uhmwpe",
+      "amount": 72
+    }
+  ],
+  "energy": 7200
+}

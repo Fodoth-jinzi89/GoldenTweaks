@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:argon"
+  },
+  "duration": 6000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "mekanism:hydrogen_chloride"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "mekanism:dust_tin"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:stannous_chloride"
+  },
+  "chemical_output": {
+    "amount": 800,
+    "id": "goldentweaks:argon"
+  }
+}

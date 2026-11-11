@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:creative_energy_source"
+  },
+  "aspects": {
+    "auram": 1,
+    "machina": 2,
+    "potentia": 4
+  }
+}

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:null_io"
+  },
+  "aspects": {
+    "iter": 1,
+    "machina": 2,
+    "potentia": 2
+  }
+}

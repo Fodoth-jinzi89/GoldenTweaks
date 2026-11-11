@@ -1,0 +1,14 @@
+{
+  "type": "thermal:chiller",
+  "ingredient": {
+    "fluid": "goldentweaks:concentrated_iridium",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "alltheores:iridium_dust",
+      "chance": 0.8
+    }
+  ],
+  "energy": 125000
+}

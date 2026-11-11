@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:hdpe_nugget"
+  },
+  "output": {
+    "id": "goldentweaks:hdpe",
+    "amount": 16
+  }
+}

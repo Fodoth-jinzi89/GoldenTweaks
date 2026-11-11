@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:solidifying",
+  "duration": 30,
+  "item_input": {
+    "item": "evolvedmekanism:mold_wire"
+  },
+  "fluid_input": {
+    "fluid": "goldentweaks:uhmwpe",
+    "amount": 18
+  },
+  "extra_input": {
+    "fluid": "minecraft:water",
+    "amount": 18
+  },
+  "output": {
+    "item": "goldentweaks:uhmwpe_fiber"
+  },
+  "keep_item": true
+}

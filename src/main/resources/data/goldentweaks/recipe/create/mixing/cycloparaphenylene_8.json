@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "goldentweaks:cycloparaphenylene_8_hexamethoxy"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 4000,
+      "fluid": "goldentweaks:tetrachlorostannate_ii_acid"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:tetrahydrofuran"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:cycloparaphenylene_8",
+      "chance": 0.25
+    },
+    {
+      "id": "goldentweaks:tin_dioxide",
+      "count": 4
+    },
+    {
+      "amount": 900,
+      "id": "goldentweaks:tetrahydrofuran"
+    }
+  ]
+}

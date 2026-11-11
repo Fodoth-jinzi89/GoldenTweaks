@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:butyllithium",
+  "loader": "neoforge:fluid_container"
+}

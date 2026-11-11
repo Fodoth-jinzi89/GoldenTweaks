@@ -35,7 +35,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $script:Ns = $Namespace
 
 # namespace dependent fallback for ids that no rule matches
-if ($Namespace -match '^(create|offroad|pipez|shaolib|mespliced|neoecoae|ae2lt|thermal|cofh|mio_icif)') {
+if ($Namespace -match '^(create|offroad|pipez|shaolib|mespliced|neoecoae|ae2lt|thermal|cofh|mio_icif|envirotech|envirocore|valkyrielib)') {
     $script:Fallback = @{ machina = 2; metallum = 2; fabrico = 1 }
 } elseif ($Namespace -match 'maid|animation|touhou') {
     $script:Fallback = @{ pannus = 2; corpus = 1 }
@@ -126,6 +126,36 @@ function Get-ItemAspects([string]$path) {
     if ($script:Ns -eq 'neoecoae') {
         if ($path -match 'storage_cell$|_cell_(16m|64m|256m|4g)$|_cell_housing$') { return @{ vacuos = 4; vas = 3 } }
         if ($path -match '^integrated_working_station_module_') { return @{ machina = 2; cognitio = 1 } }
+    }
+    if ($script:Ns -eq 'envirotech') {
+        if ($path -match 'void_miner_ccu') { return @{ machina = 3; potentia = 2; cognitio = 2; metallum = 1 } }
+    }
+    if ($script:Ns -eq 'envirocore') {
+        if ($path -match 'void_miner') { return @{ machina = 3; potentia = 2; cognitio = 2 } }
+        if ($path -match '_modifier$') { return @{ machina = 2; cognitio = 2; potentia = 1 } }
+        if ($path -match 'workstation$|assembler$|crystallizer$|solar_distiller$|crusher$|_fab$|laser_core$|laser_lens_holder$|lens_grinder$|memory_programmer$') { return @{ machina = 3; potentia = 2; cognitio = 1 } }
+        if ($path -match '_input$|_output$|^null_io$|voltage') { return @{ machina = 2; potentia = 2; iter = 1 } }
+        if ($path -match '^(flash_memory|volatile_memory|cpu|ram|module)$') { return @{ cognitio = 3; machina = 2; potentia = 1 } }
+        if ($path -match '^(lens|crystal_lens|laser_diode)$') { return @{ vitreus = 2; lux = 2; ordo = 1 } }
+        if ($path -match 'structure_panel') { return @{ vitreus = 2; fabrico = 2; ordo = 1 } }
+        if ($path -match 'creative_energy_source') { return @{ potentia = 4; machina = 2; auram = 1 } }
+        if ($path -match 'distilled_water_bucket') { return @{ aqua = 3; vacuos = 2; vas = 2 } }
+        if ($path -match 'rgb_controller') { return @{ lux = 3; machina = 1; potentia = 1 } }
+        if ($path -match 'redstone_connector') { return @{ potentia = 3; metallum = 1; ordo = 1 } }
+        if ($path -match 'obsidian_plate') { return @{ saxum = 2; tenebrae = 2; metallum = 1 } }
+        if ($path -eq 'mica') { return @{ saxum = 2; vitreus = 1; terra = 1 } }
+        if ($path -match '_crystal$') { return @{ vitreus = 2; praecantatio = 2; ordo = 1 } }
+        if ($path -match '_powder$') { return @{ perditio = 2; terra = 2; metallum = 1 } }
+        if ($path -match '_boule$') { return @{ vitreus = 2; metallum = 2; ordo = 1 } }
+        if ($path -match '_wafer$') { return @{ vitreus = 2; machina = 2; cognitio = 1 } }
+        if ($path -match '_interconnect$') { return @{ metallum = 2; potentia = 2; machina = 1 } }
+        if ($path -match '_frame$') { return @{ fabrico = 2; metallum = 2; machina = 1 } }
+        if ($path -match 'brick|cobble|polished|tile|slab|stairs|wall') { return @{ saxum = 2; terra = 1; ordo = 1 } }
+        if ($path -match '^(litherite|erodium|kyronite|pladium|ionite|aethium|nanorite|xerothium|aeronite|parathium|millirite|microthium)$') { return @{ saxum = 2; terra = 2; ordo = 1 } }
+    }
+    if ($script:Ns -eq 'valkyrielib') {
+        if ($path -eq 'guide') { return @{ cognitio = 3; charta = 2; humanus = 1 } }
+        if ($path -eq 'info_tablet') { return @{ cognitio = 3; vitreus = 2; machina = 1 } }
     }
     if ($script:Ns -eq 'mio_icif') {
         # fluids (with or without bucket form)

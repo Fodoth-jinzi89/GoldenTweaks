@@ -1,0 +1,39 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "goldentweaks:bent_molecule_7_bis_pinacolato_diboron"
+    },
+    {
+      "item": "goldentweaks:potassium_hydroxide"
+    },
+    {
+      "item": "goldentweaks:tetrakis_triphenylphosphine_palladium"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:p_dibromobenzene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:tetrahydrofuran_water_solution"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:cycloparaphenylene_8_hexamethoxy",
+      "chance": 0.9
+    },
+    {
+      "id": "goldentweaks:tetrakis_triphenylphosphine_palladium",
+      "chance": 0.9
+    },
+    {
+      "amount": 900,
+      "id": "goldentweaks:tetrahydrofuran_water_solution"
+    }
+  ]
+}

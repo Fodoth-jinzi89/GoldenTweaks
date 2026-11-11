@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:litherite_wafer"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 2,
+    "vitreus": 2
+  }
+}

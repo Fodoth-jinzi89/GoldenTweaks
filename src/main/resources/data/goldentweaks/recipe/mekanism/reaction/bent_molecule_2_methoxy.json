@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "goldentweaks:ethyl_acetate"
+                       },
+    "duration":  6400,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  1000,
+                        "fluid":  "goldentweaks:bent_molecule_2_methoxy_methanol_solution"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "alltheores:salt"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "goldentweaks:bent_molecule_2_methoxy"
+                    },
+    "chemical_output":  {
+                            "amount":  900,
+                            "id":  "goldentweaks:ethyl_acetate"
+                        }
+}

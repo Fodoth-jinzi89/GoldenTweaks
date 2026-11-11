@@ -1,0 +1,15 @@
+{
+    "type":  "mekanism:chemical_infusing",
+    "left_input":  {
+                       "amount":  1,
+                       "chemical":  "mekanism:sulfuric_acid"
+                   },
+    "output":  {
+                   "amount":  1,
+                   "id":  "goldentweaks:tetrahydrofuran"
+               },
+    "right_input":  {
+                        "amount":  1,
+                        "chemical":  "goldentweaks:butanediol"
+                    }
+}

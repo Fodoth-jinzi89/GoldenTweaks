@@ -131,6 +131,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("create");
         }
 
+        // 工作盆里的固体粉末改用单层 powder 遮罩渲染
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.compat.create.")) {
+            return isModLoaded("create");
+        }
+
         // Create 6.0.10 连续碰撞：实体包围盒中心与装置碰撞箱中心完全重合（零分离退化）时
         // ContinuousSeparationManifold.axis / normalAxis 保持 null，collideMany 读取时 NPE 崩溃
         if (mixinClassName.endsWith("fix.create.ContinuousSeparationManifoldMixin")) {
@@ -371,6 +376,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                     && isModLoaded("thaumicenergistics");
         }
 
+        // Architectury 的事件监听器列表在分发过程中被注册/注销会抛 ConcurrentModificationException，
+        // 把 EventImpl 的列表替换成迭代时取快照的实现
+        if (mixinClassName.endsWith("fix.architectury.ArchitecturyEventListMixin")) {
+            return isModLoaded("architectury")
+                    && checkIfPresent("dev.architectury.event.EventFactory$EventImpl");
+        }
+
         // Astral Sorcery 2.0.1：创意标签在专用服务器上会崩，降星点 tick 会 CME，新生成区块的降星点需要补激活
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.astralsorcery")) {
             return isModLoaded("astralsorcery");
@@ -483,7 +495,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("fix.extendedae_plus.JeiRuntimeCompatMixin")) {
-            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers");
+            return isModLoaded("extendedae_plus") && isModLoaded("toomanyrecipeviewers") && isModLoaded("emi");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.extendedae_plus")) {
@@ -581,6 +593,10 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             if (mixinClassName.endsWith("fix.scexaspect.AspectIntegrationSourcesMixin")) {
                 return isModLoaded("scex_aspect_jei") && isModLoaded("thaumcraft")
                         && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
+            }
+            // 目标是 TMRV 的 TMRVRecipe（EMI 侧渲染 JEI 配方才有的成本提示），改动点直接引用 EMI 的 EmiRecipeCategory
+            if (mixinClassName.endsWith("fix.scexaspect.AspectSourceRecipeCostMixin")) {
+                return isModLoaded("scex_aspect_jei") && isModLoaded("toomanyrecipeviewers") && isModLoaded("emi");
             }
             return isModLoaded("scex_aspect_jei") && isModLoaded("thaumcraft");
         }
@@ -697,12 +713,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("flavor_immersed_daily_argo");
         }
 
-        if (mixinClassName.endsWith("fix.ftbultimine.VanillaCropLikeHandlerMixin")) {
-            return isModLoaded("ftbultimine") && isModLoaded("supplementaries") && isModLoaded("thaumicbases");
+        // 田鼠吃奇点迭代的富铀作物后获得辐射：同时链接 FID Argo 与 mio_icif 的类
+        if (mixinClassName.endsWith("fix.flavorimmerseddailyargo.MouseUraniumRadiationMixin")) {
+            return isModLoaded("flavor_immersed_daily_argo") && isModLoaded("mio_icif");
         }
 
-        if (mixinClassName.endsWith("fix.thaumcraft.ThaumcraftOverworldBiomesMixin")) {
-            return isModLoaded("thaumcraft");
+        if (mixinClassName.endsWith("fix.ftbultimine.VanillaCropLikeHandlerMixin")) {
+            return isModLoaded("ftbultimine") && isModLoaded("supplementaries") && isModLoaded("thaumicbases");
         }
 
         if (mixinClassName.endsWith("fix.thaumcraft.AuraNodeHungryMixin")) {
@@ -720,6 +737,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         if (mixinClassName.endsWith("feature.thaumcraft.ThaumcraftGolemEntityMixin")
+                || mixinClassName.endsWith("feature.thaumcraft.GolemPathingMixin")
                 || mixinClassName.endsWith("feature.thaumcraft.GolemConfigRuntimeMixin")
                 || mixinClassName.endsWith("feature.thaumcraft.GolemHarvestGoalMixin")
                 || mixinClassName.endsWith("feature.thaumcraft.GolemReturnHomeGoalMixin")) {
@@ -764,13 +782,27 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // 结晶器的「光谱墨法结晶」专业化升级：目标来自 thermal_expansion / thermal 本体，且引用光谱的配方类
         if (mixinClassName.endsWith("feature.thermal.MachineCrystallizerSpectrumMixin")
                 || mixinClassName.endsWith("feature.thermal.CrystallizerRecipeManagerSpectrumMixin")
-                || mixinClassName.endsWith("feature.thermal.MachineSpectrumAdditiveMixin")
-                || mixinClassName.endsWith("feature.thermal.ThermalAugmentTooltipMixin")
-                || mixinClassName.endsWith("feature.thermal.accessor.AugmentableBlockEntityInvoker")) {
+                || mixinClassName.endsWith("feature.thermal.MachineSpectrumAdditiveMixin")) {
             return isModLoaded("thermal") && isModLoaded("thermal_expansion") && isModLoaded("spectrum");
         }
 
-        // Thermal 机器超频到 1 tick 以下转并行：目标 MachineBlockEntity 来自 thermal 本体
+        // 流体精炼机的「塔板分馏提取」专业化升级：目标 MachineRefineryBlockEntity 来自 thermal_expansion
+        if (mixinClassName.endsWith("feature.thermal.MachineRefineryDistillationMixin")) {
+            return isModLoaded("thermal") && isModLoaded("thermal_expansion");
+        }
+
+        // 急速冷冻机的「骤冷析晶程序」专业化升级：目标 MachineChillerBlockEntity 来自 thermal_expansion
+        if (mixinClassName.endsWith("feature.thermal.MachineChillerRareMetalMixin")) {
+            return isModLoaded("thermal") && isModLoaded("thermal_expansion");
+        }
+
+        // 熔岩炉的「地核能量熔融」专业化升级：目标 MachineCrucibleBlockEntity 来自 thermal_expansion
+        if (mixinClassName.endsWith("feature.thermal.MachineCrucibleLavaMixin")) {
+            return isModLoaded("thermal") && isModLoaded("thermal_expansion");
+        }
+
+        // Thermal 机器超频到 1 tick 以下转并行：目标 MachineBlockEntity 来自 thermal 本体；
+        // 专业化提示改写与升级读取 accessor 也只依赖 thermal 本体
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.thermal")) {
             return isModLoaded("thermal");
         }

@@ -1,0 +1,23 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:rock_salt"
+                        },
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  1000,
+                            "fluid":  "minecraft:water"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "amount":  1000,
+                        "id":  "goldentweaks:rock_salt_water"
+                    },
+                    {
+                        "id":  "goldentweaks:rock_salt",
+                        "chance":  0.9
+                    }
+                ]
+}

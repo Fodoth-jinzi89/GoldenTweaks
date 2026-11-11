@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "valkyrielib:info_tablet"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 1,
+    "vitreus": 2
+  }
+}

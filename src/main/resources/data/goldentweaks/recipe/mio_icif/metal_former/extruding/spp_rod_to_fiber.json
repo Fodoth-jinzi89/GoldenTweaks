@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mio_icif:metal_former_extruding",
+  "ingredient": {
+    "item": "goldentweaks:spp_rod"
+  },
+  "processingtime": 200,
+  "result": {
+    "count": 4,
+    "id": "goldentweaks:spp_fiber"
+  }
+}

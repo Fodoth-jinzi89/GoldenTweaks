@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:nitrogen"
+  },
+  "duration": 4000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:trimethylaluminum"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "flavor_immersed_daily:sorbet"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:methylaluminoxane"
+  },
+  "chemical_output": {
+    "amount": 950,
+    "id": "goldentweaks:nitrogen"
+  }
+}

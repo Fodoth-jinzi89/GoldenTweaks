@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "goldentweaks:p_dibromobenzene"
+                       },
+    "duration":  6400,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  1000,
+                        "fluid":  "goldentweaks:butyllithium"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "flavor_immersed_daily:tidywater"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "goldentweaks:bent_molecule_3_dibromo_diol"
+                    },
+    "chemical_output":  {
+                            "amount":  1000,
+                            "id":  "goldentweaks:butane"
+                        }
+}

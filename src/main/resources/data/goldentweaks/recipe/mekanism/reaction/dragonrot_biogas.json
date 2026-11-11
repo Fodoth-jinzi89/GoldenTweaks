@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:concentrated_iridium_osmium"
+  },
+  "duration": 300,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 100,
+    "fluid": "spectrum:dragonrot"
+  },
+  "item_input": {
+    "count": 32,
+    "item": "spectrum:bone_ash"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "spectrum:dragonbone_chunk"
+  },
+  "chemical_output": {
+    "amount": 1000,
+    "id": "goldentweaks:dragonrot_biogas"
+  }
+}

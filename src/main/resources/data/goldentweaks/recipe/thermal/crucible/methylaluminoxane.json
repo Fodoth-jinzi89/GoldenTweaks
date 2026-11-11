@@ -1,0 +1,13 @@
+{
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:methylaluminoxane"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:methylaluminoxane",
+      "amount": 1000
+    }
+  ],
+  "energy": 5000
+}

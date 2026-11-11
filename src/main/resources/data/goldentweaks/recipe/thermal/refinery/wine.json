@@ -1,0 +1,21 @@
+{
+    "type":  "thermal:refinery",
+    "ingredient":  {
+                       "fluid":  "goldentweaks:wine",
+                       "amount":  1000
+                   },
+    "result":  [
+                   {
+                       "item":  "thermal:phytogro"
+                   },
+                   {
+                       "fluid":  "goldentweaks:methanol",
+                       "amount":  500
+                   },
+                   {
+                       "fluid":  "createdieselgenerators:ethanol",
+                       "amount":  500
+                   }
+               ],
+    "energy":  75000
+}

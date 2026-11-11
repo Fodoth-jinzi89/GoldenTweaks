@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:redstone_connector"
+  },
+  "aspects": {
+    "metallum": 1,
+    "ordo": 1,
+    "potentia": 3
+  }
+}

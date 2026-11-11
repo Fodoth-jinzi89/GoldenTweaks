@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:pladium_boule"
+  },
+  "aspects": {
+    "metallum": 2,
+    "ordo": 1,
+    "vitreus": 2
+  }
+}

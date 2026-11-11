@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 100,
+    "chemical": "goldentweaks:zirconium_tetrachloride"
+  },
+  "duration": 400,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 100,
+    "fluid": "goldentweaks:cyclopentadiene"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "alltheores:nickel_dust"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "alltheores:dirty_nickel_dust"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:zirconocene_dichloride"
+  }
+}

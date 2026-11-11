@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:hexane"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "mekanism:ethene"
+    },
+    {
+      "item": "goldentweaks:ziegler_natta_catalyst"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:ziegler_natta_catalyst",
+      "chance": 0.95
+    },
+    {
+      "amount": 1,
+      "id": "goldentweaks:uhmwpe"
+    },
+    {
+      "amount": 950,
+      "id": "goldentweaks:hexane"
+    }
+  ]
+}

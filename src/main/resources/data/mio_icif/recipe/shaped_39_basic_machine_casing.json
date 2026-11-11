@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "B": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "mio_icif:producer/block_machine_hull_basic"
+  }
+}

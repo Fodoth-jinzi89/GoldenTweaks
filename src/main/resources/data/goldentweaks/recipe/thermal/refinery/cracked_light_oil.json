@@ -1,0 +1,21 @@
+{
+    "type":  "thermal:refinery",
+    "ingredient":  {
+                       "fluid":  "goldentweaks:cracked_light_oil",
+                       "amount":  500
+                   },
+    "result":  [
+                   {
+                       "item":  "alltheores:sulfur"
+                   },
+                   {
+                       "fluid":  "thermal:refined_fuel",
+                       "amount":  1000
+                   },
+                   {
+                       "fluid":  "northstar:methane",
+                       "amount":  500
+                   }
+               ],
+    "energy":  10000
+}

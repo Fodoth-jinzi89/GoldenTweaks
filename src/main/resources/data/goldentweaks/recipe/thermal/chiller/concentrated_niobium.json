@@ -1,0 +1,14 @@
+{
+  "type": "thermal:chiller",
+  "ingredient": {
+    "fluid": "goldentweaks:concentrated_niobium",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "mio_icif:resource/item_niobium_dust",
+      "chance": 0.8
+    }
+  ],
+  "energy": 125000
+}

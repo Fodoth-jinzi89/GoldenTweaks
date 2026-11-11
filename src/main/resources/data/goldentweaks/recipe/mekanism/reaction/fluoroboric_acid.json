@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  250,
+                           "chemical":  "mekanism:hydrogen"
+                       },
+    "duration":  640,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  250,
+                        "fluid":  "goldentweaks:boric_acid"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "alltheores:fluorite_dust"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "createnuclear:nitrate"
+                    },
+    "chemical_output":  {
+                            "amount":  250,
+                            "id":  "goldentweaks:fluoroboric_acid"
+                        }
+}

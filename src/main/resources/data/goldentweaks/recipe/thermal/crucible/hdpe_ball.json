@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "mekanism:hdpe_pellet"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:hdpe",
+      "amount": 48
+    }
+  ],
+  "energy": 4800
+}

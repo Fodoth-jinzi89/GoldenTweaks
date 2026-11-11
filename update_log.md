@@ -1,5 +1,51 @@
 # GoldenTweaks Update Log
 
+## 2026.11.11 - v4.7.8
+
+### 聚合物与化工产线
+- 新增 `content/reactors`：88 种化学物质统一由 `GTReactorMaterial` 定义（苯 / 苯酚 / 碘 / 溴 / 对二溴苯 / 碘苯 / 丁烷 / 丁基锂 / 甲醇 / 乙醇 / 乙酸 / 乙二醇 / 四氢呋喃 / 二氧六环 / 环氧乙烷 / 氢氧化钾 / 氢氧化钠 / 硼酸 / 磷酸 / 氟硼酸 / 王水 / 浓缩铂·钯·铱·锇·铌 / 四氯化钛 / 齐格勒-纳塔催化剂 / LDPE·HDPE·LLDPE·IPP·SPP·UHMWPE 等），每种同时注册为 Mekanism 化学物质（按材质着色）与对应流体 / 方块 / 桶
+- 新增 `content/craftsmen`：LDPE / LLDPE / UHMWPE / IPP / SPP / RCPP 六种聚合物的板 / 棒 / 纤维 / 球 / 粒，以及对应创造栏
+- 配套配方：Create 粉碎 / 混合、造粒（Create Diesel Generators）、旋转 / 氧化 / 结晶 / 电解（奇点迭代）、Mekanism / MekMM / EvolvedMekanism、Thermal（离心 / 冷凝 / 压板 / 熔化 / 固化）；另补 `steel_casing`、基础 / 进阶层级安装器、基础机器外壳等
+- 新增 `gt_tag_overrides` 数据包（`WaterTagOverride`）：createnuclear 与 FID-Argo 会把自己的流体合并进 `minecraft:water`，导致 EMI 里用水标签的配方多出液氮与水车水；1.21.1 标签不支持移除条目，这里用最高优先级数据包以 `replace` 还原原版内容
+
+### 热力「幻梦」专业化升级
+- 新增 5 个专业化组件与通用基板 `specialization_upgrade_base`：
+  - 塔板分馏提取：只跑浓缩金属分馏，耗能 25%、产出 200%
+  - 精密炼化分馏：只跑油类炼化，耗能 200%、产出 400%
+  - 冷冻空气分馏：只跑空气组分分馏
+  - 地核能量熔融：只跑产出熔岩的配方，耗能 10%、产出 200%
+  - 骤冷析晶程序：只跑浓缩金属冷却结晶，耗能 25%、产出 200%
+- 同一台机器只让升级槽里最先出现的专业化组件生效（`ThermalSpecializations`）
+- 组件提示回到 1.12.2 风格的分色短句（绿 / 黄 / 红），并跳过现代 Thermal 的机制式提示（`ThermalAugmentTooltipMixin`）
+- 新增 4 个 JEI 专业化分类与「金子修改：热力幻梦」创造栏
+
+### 奇点迭代（Singularity Iteration）
+- 电解机：新增 4× 黏土粉 → 1× 脏铝粉配方；配方 `group` 支持 `input_count=N` 与 `no_energy`（只消耗 EU、不产化学能）；化学能缓存（400 EU）满后不再停机，超出部分直接丢弃；补充电解机 JEI 分类
+- 武装库 / 全息投影展示台：放宽为接受任意非空物品（护甲槽仍按装备槽匹配），不再需要连接器套件
+- 富集种子可种在 Farmer's Delight 的沃土 / 沃土耕地；FID-Argo 的田鼠吃到富铀作物会获得 3 分钟辐射
+- 新增石油钻机数据对比表（`data_sheets/奇点迭代_石油钻机_对比.html`）
+
+### TMRV / JEI
+- 修复 TMRV 配方页「左 / 右键点击流体储罐或物品槽查看配方无效」：宿主控件 `TMRVRecipeWidget` 会把按下事件吞掉（派发鼠标时用 `mouseReleased`，而原版 `AbstractWidget.mouseReleased` 对左键返回 true），现在不再吞事件，把点击交还 EMI 的 SlotWidget
+- 给两个缺 `emi` 守卫的 mixin（`fix.extendedae_plus.JeiRuntimeCompatMixin`、`fix.scexaspect.AspectSourceRecipeCostMixin`）补守卫
+
+### 神秘时代 0.3.0 兼容
+- 适配 `ResearchTableMenu` 新构造器 `(int, Inventory, Container, List<Aspect>, Player)`
+- 移除已失效 mixin：`LegacyThaumcraftMobRendererMixin`（0.3.0 重写渲染器）、`ThaumonomiconScreenMixin`（屏幕重写）、`ThaumcraftOverworldBiomesMixin`（上游已改为有界选择）
+- 魔导手册恢复旧版体验：
+  - 分类标签分页（每页 18 个，两侧 « / » 箭头）
+  - 要素知识页每页 10 个、两列 + 等级徽标排布
+  - 要素来源浮窗完整自实现（逐帧扫描、去重排序、5×5 分页、自动轮播、滚轮翻页）
+  - 要素耗费：奥术 / 注魔 2 行 × 7，坩埚每页 8（3/3/2），均带轮播
+- 显存优化：按 `ModelLayerLocation` 缓存 `ModelPart`，29 个实体渲染器不再各烤一套模型
+
+### 其他修复
+- Mekanism：移除「乙烯 + 氧」底物反应以及 HDPE 棒 / 板、控制电路、颜料混合机的原配方，改用棒材产线
+- 新增物品发光渲染（`GuiGraphicsItemGlowMixin` / `GTItemGlowRenderer`）
+- 神秘视界（Thaumic Horizons）裂隙合成 JEI 分类
+- `SnapshotArrayList`：迭代时返回快照，修并发迭代异常
+- scex 要素来源配方：关闭 EMI 的「每批材料」悬停提示，避免上千输入逐帧构建材料树
+
 ## 2026.11.08 - v4.7.7
 
 ### 许可证合规

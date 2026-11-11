@@ -1,0 +1,26 @@
+{
+    "type":  "create:mixing",
+    "heat_requirement":  "superheated",
+    "ingredients":  [
+                        {
+                            "item":  "goldentweaks:triphenylphosphine"
+                        },
+                        {
+                            "item":  "goldentweaks:triphenylphosphine"
+                        },
+                        {
+                            "item":  "goldentweaks:triphenylphosphine"
+                        },
+                        {
+                            "item":  "goldentweaks:triphenylphosphine"
+                        },
+                        {
+                            "item":  "goldentweaks:palladium_powder"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "goldentweaks:tetrakis_triphenylphosphine_palladium"
+                    }
+                ]
+}

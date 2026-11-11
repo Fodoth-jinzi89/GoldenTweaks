@@ -1,0 +1,102 @@
+thermal:machine_refinery RF l -> s+l+l
+100000 RF thermal:creosote 1000mB -> thermal:tar + goldentweaks:benzene 500mB + goldentweaks:phenol 500mB
+75000 RF goldentweaks:wine 1000mB -> thermal:phytogro + goldentweaks:methanol 500mB + createdieselgenerators:ethanol 500mB
+10000 RF goldentweaks:cracked_light_oil 500mB -> alltheores:sulfur + thermal:refined_fuel 1000mB + northstar:methane 500mB
+10000 RF goldentweaks:cracked_heavy_oil 500mB -> alltheores:sulfur + thermal:refined_fuel 1000mB + goldentweaks:butane 500mB
+25000 RF mio_icif:air 1000mB -> goldentweaks:noble_gas 1(10%) + createnuclear:nitrogen 600mB + mekanism:oxygen 300mB
+125000 RF goldentweaks:concentrated_platinum 1000mB -> alltheores:platinum_dust(90%) + goldentweaks:concentrated_palladium_niobium 600mB + goldentweaks:concentrated_iridium_osmium 400mB
+250000 RF goldentweaks:concentrated_palladium_niobium 1000mB -> goldentweaks:nano_activated_particles(10%) + goldentweaks:concentrated_palladium 200mB + goldentweaks:concentrated_niobium 800mB
+250000 RF goldentweaks:concentrated_iridium_osmium 1000mB -> goldentweaks:nano_activated_particles(10%) + goldentweaks:concentrated_iridium 100mB + goldentweaks:concentrated_osmium 900mB
+500000 RF goldentweaks:noble_gas 1000mB -> goldentweaks:carbon_dioxide 900mB + goldentweaks:argon 100mB
+
+mekanism:pressurized_reaction_chamber ticks g+l+s -> s+g
+200 mekanism:brine 1000mB + minecraft:lava 100mB + minecraft:cocoa_beans -> ratatouille:mature_matter + goldentweaks:bromine 100mB
+200 mekanism:brine 1000mB + minecraft:lava 100mB + minecraft:dried_kelp -> ratatouille:ripen_matter + goldentweaks:iodine 100mB
+2000 mekanism:hydrogen 1000mB + mekanism:brine 1000mB + alltheores:salt -> goldentweaks:sodium_hydride + mekanism:chlorine 1000mB
+400 goldentweaks:bromine 200mB + goldentweaks:benzene 100mB + alltheores:iron_dust -> alltheores:dirty_iron_dust + goldentweaks:p_dibromobenzene 100mB
+200 mekanism:oxygen 100mB + createdieselgenerators:ethanol 100mB + alltheores:copper_dust -> alltheores:dirty_copper_dust + goldentweaks:acetic_acid 100mB
+600 goldentweaks:boric_acid 100mB + goldentweaks:ethylene_glycol 200mB + alltheores:copper_dust -> alltheores:dirty_copper_dust + goldentweaks:bis_pinacolato_diboron 100mB
+2000 goldentweaks:acetic_acid 1000mB + goldentweaks:iodobenzene 1000mB + alltheores:salt -> goldentweaks:iodobenzene_diacetate + mekanism:hydrogen 1000mB
+400 mekanism:hydrogen 1000mB + thermal:light_oil 500mB + alltheores:nickel_dust -> alltheores:dirty_nickel_dust + goldentweaks:cracked_light_oil 750mB
+400 mekanism:hydrogen 1000mB + thermal:heavy_oil 500mB + alltheores:nickel_dust -> alltheores:dirty_nickel_dust + goldentweaks:cracked_heavy_oil 750mB
+6400 goldentweaks:p_dibromobenzene 1000mB + goldentweaks:butyllithium 1000mB + flavor_immersed_daily:tidywater -> goldentweaks:bent_molecule_3_dibromo_diol + goldentweaks:butane 1000mB
+6400 goldentweaks:iodomethane 1000mB + goldentweaks:bent_molecule_3_dibromo_diol 1000mB + goldentweaks:sodium_hydride -> goldentweaks:bent_molecule_3_dibromo + mekanism:hydrogen 1000mB
+6400 goldentweaks:p_dibromobenzene 1000mB + goldentweaks:phenol 1000mB + mekanism:dust_lithium -> goldentweaks:p_bromobiphenol + mekanism:hydrogen 1000mB
+6400 goldentweaks:ethyl_acetate 1000mB + goldentweaks:bent_molecule_2_methoxy_methanol_solution 1000mB + alltheores:salt -> goldentweaks:bent_molecule_2_methoxy + goldentweaks:ethyl_acetate 900mB
+12800 goldentweaks:iodomethane 1000mB + goldentweaks:bent_molecule_7_dibromo_diol 1000mB + goldentweaks:sodium_hydride -> goldentweaks:bent_molecule_7_dibromo + mekanism:hydrogen 1000mB
+640 mekanism:hydrogen 250mB + goldentweaks:boric_acid 250mB + alltheores:fluorite_dust -> createnuclear:nitrate + goldentweaks:fluoroboric_acid 250mB
+6400 mekanism:hydrogen 1000mB + goldentweaks:fluoroboric_acid 1000mB + goldentweaks:triphenylphosphine -> goldentweaks:organophosphine_ligand
+1200 goldentweaks:bromine 100mB + goldentweaks:butane 100mB + minecraft:glowstone_dust -> mekanism:nugget_refined_glowstone + goldentweaks:bromobutane 50mB
+600 goldentweaks:bromine 100mB + goldentweaks:butane 100mB + spectrum:shimmerstone_gem -> mio_icif:resource/item_sunnarium_small + goldentweaks:bromobutane 200mB
+6000 goldentweaks:argon 1000mB + mekanism:hydrogen_chloride 1000mB + mekanism:dust_tin -> goldentweaks:stannous_chloride + goldentweaks:argon 800mB
+300 goldentweaks:concentrated_iridium_osmium 1mB + spectrum:dragonrot 100mB + spectrum:bone_ash 32 -> spectrum:dragonbone_chunk + goldentweaks:dragonrot_biogas 1000mB
+2000 mekanism:hydrogen 1000mB + mekanism:hydrogen_chloride 1000mB + goldentweaks:tin_dioxide -> flavor_immersed_daily:tidywater 2 + goldentweaks:tetrachlorostannate_ii_acid 1000mB
+3200 mekanism:bio 1000mB + goldentweaks:tetrahydrofuran 500mB + goldentweaks:nano_activated_particles 8 -> mio_icif:resource/item_nano_living_metal + mekanism:nuclear_waste 500mB
+
+thermal:machine_brewer RF l+s -> l
+50000 RF goldentweaks:butane 1000mB + mekanism:dust_lithium -> goldentweaks:butyllithium 1000mB
+25000 RF goldentweaks:methanol 1000mB + goldentweaks:iodine -> goldentweaks:iodomethane 1000mB
+10000 RF minecraft:water 1000mB + croptopia:hops -> goldentweaks:wine 1000mB
+10000 RF minecraft:water 1000mB + mio_icif:normal/item_hops -> goldentweaks:wine 1000mB
+15000 RF goldentweaks:methanol 1000mB + goldentweaks:p_bromobiphenol -> goldentweaks:p_bromobiphenol_methanol_solution 1000mB
+50000 RF goldentweaks:p_bromobiphenol_methanol_solution 1000mB + goldentweaks:iodobenzene_diacetate -> goldentweaks:bent_molecule_2_methoxy_methanol_solution 1000mB
+30000 RF mekanism:sulfuric_acid 1000mB + thermal:apatite_dust -> goldentweaks:phosphoric_acid 1000mB
+100000 RF goldentweaks:aqua_regia 1000mB + alltheores:dirty_platinum_dust -> goldentweaks:concentrated_platinum 1000mB
+5000 RF goldentweaks:concentrated_palladium 1mB + spectrum:midnight_chip -> spectrum:midnight_solution 1000mB
+
+thermal:machine_chiller RF l+s -> s
+500000RF goldentweaks:bent_molecule_7_dibromo_reaction_solution 1000mB -> goldentweaks:bent_molecule_7_dibromo_diol
+3000RF spectrum:midnight_solution 1000mB -> spectrum:midnight_chip 8
+125000RF goldentweaks:concentrated_palladium 1000mB -> goldentweaks:palladium_powder(80%)
+125000RF goldentweaks:concentrated_niobium 1000mB -> mio_icif:resource/item_niobium_dust(80%)
+125000RF goldentweaks:concentrated_osmium 1000mB -> mekanism:dust_osmium(80%)
+125000RF goldentweaks:concentrated_iridium 1000mB -> alltheores:iridium_dust(80%)
+
+mekanism:chemical_infuser g+g -> g
+goldentweaks:ethanol 1mB + goldentweaks:acetic_acid 1mB -> goldentweaks:ethyl_acetate 1mB
+goldentweaks:butane 1mB + mekanism:oxygen 1mB -> goldentweaks:butanediol 1mB
+mekanism:ethene 1mB + mekanism:oxygen 1mB -> goldentweaks:ethylene_oxide 1mB
+goldentweaks:ethylene_oxide 1mB + mekanism:water_vapor 1mB -> goldentweaks:ethylene_glycol 1mB
+goldentweaks:ethylene_glycol 1mB + mekanism:sulfuric_acid 1mB -> goldentweaks:dioxane 1mB
+mekanism:sulfuric_acid 1mB + goldentweaks:butanediol 1mB -> goldentweaks:tetrahydrofuran 1mB
+goldentweaks:potassium 1mB + mekanism:water_vapor 1mB -> goldentweaks:potassium_hydroxide 1mB
+mekanism:sodium 1mB + mekanism:water_vapor 1mB -> goldentweaks:sodium_hydroxide 1mB
+goldentweaks:potassium 1mB + goldentweaks:acetic_acid 1mB -> goldentweaks:potassium_acetate 1mB
+mekanism:sodium 1mB + goldentweaks:acetic_acid 1mB -> goldentweaks:sodium_acetate 1mB
+goldentweaks:nitrogen 1mB + mekanism:hydrogen 3mB -> goldentweaks:ammonia 1mB
+goldentweaks:ammonia 4mB + goldentweaks:bromobutane 1mB -> goldentweaks:tetrabutylammonium_bromide 1mB
+goldentweaks:ammonia 1mB + mekanism:oxygen 1mB -> goldentweaks:nitric_acid 1mB
+goldentweaks:nitric_acid 1mB + mekanism:hydrogen_chloride 3mB -> goldentweaks:aqua_regia 1mB
+goldentweaks:stannous_chloride 1mB + mekanism:hydrogen_chloride 2mB -> goldentweaks:tetrachlorostannate_ii_acid 1mB
+goldentweaks:concentrated_platinum 1mB + goldentweaks:gaseous_crystal 10mB -> goldentweaks:gaseous_crystal 1000mB
+
+create:mixing nl+ns -> ml + ms
+goldentweaks:bent_molecule_2_methoxy 2 + goldentweaks:bent_molecule_3_dibromo 1 + goldentweaks:tetrahydrofuran 1000mB + goldentweaks:butyllithium 100mB -> goldentweaks:bent_molecule_7_dibromo_reaction_solution 800mB
+goldentweaks:bis_pinacolato_diboron 2 + goldentweaks:bent_molecule_7_dibromo 1 + goldentweaks:palladium_acetate 1 + goldentweaks:organophosphine_ligand 1 + goldentweaks:sodium_acetate 1 + goldentweaks:dioxane 1000mB -> goldentweaks:bent_molecule_7_bis_pinacolato_diboron 1(50%) + goldentweaks:palladium_acetate 1(95%) + goldentweaks:organophosphine_ligand 1(90%) super_heat
+goldentweaks:bis_pinacolato_diboron 2 + goldentweaks:bent_molecule_7_dibromo 1 + goldentweaks:palladium_acetate 1 + goldentweaks:organophosphine_ligand 1 + goldentweaks:potassium_acetate 1 + goldentweaks:dioxane 1000mB -> goldentweaks:bent_molecule_7_bis_pinacolato_diboron 1(75%) + goldentweaks:palladium_acetate 1(95%) + goldentweaks:organophosphine_ligand 1(90%) super_heat
+goldentweaks:tetrahydrofuran 1000mB + minecraft:water 100mB + goldentweaks:tetrabutylammonium_bromide 1-> goldentweaks:tetrahydrofuran_water_solution 1000mB
+goldentweaks:bent_molecule_7_bis_pinacolato_diboron 1 + goldentweaks:potassium_hydroxide 1 + goldentweaks:tetrakis_triphenylphosphine_palladium 1  + goldentweaks:p_dibromobenzene 1000mB + goldentweaks:tetrahydrofuran_water_solution 1000mB  -> goldentweaks:cycloparaphenylene_8_hexamethoxy 1(90%) + goldentweaks:tetrakis_triphenylphosphine_palladium 1(90%) + goldentweaks:tetrahydrofuran_water_solution 900mB super_heat
+goldentweaks:bent_molecule_7_bis_pinacolato_diboron 1 + goldentweaks:sodium_hydroxide 1 + goldentweaks:tetrakis_triphenylphosphine_palladium 1  + goldentweaks:p_dibromobenzene 1000mB + goldentweaks:tetrahydrofuran_water_solution 1000mB  -> goldentweaks:cycloparaphenylene_8_hexamethoxy 1(80%) + goldentweaks:tetrakis_triphenylphosphine_palladium 1(90%) + goldentweaks:tetrahydrofuran_water_solution 900mB super_heat
+alltheores:salt 1 + minecraft:cobblestone 1 -> biomesoplenty:dried_salt 1 heat
+goldentweaks:rock_salt 1 + minecraft:water 1000mB -> goldentweaks:rock_salt_water 1000mB + goldentweaks:rock_salt 1(90%)
+goldentweaks:borax 1 + minecraft:water 1000mB -> goldentweaks:boric_acid 1000mB + goldentweaks:borax 1(90%) heat
+goldentweaks:phosphorus 1 + goldentweaks:benzene 1000mB -> goldentweaks:triphenylphosphine 1 + goldentweaks:phosphorus 1(66%)  heat
+goldentweaks:triphenylphosphine 4 + goldentweaks:palladium_powder 1 -> goldentweaks:tetrakis_triphenylphosphine_palladium 1 super_heat
+goldentweaks:cycloparaphenylene_8_hexamethoxy + goldentweaks:tetrachlorostannate_ii_acid 4000mB + goldentweaks:tetrahydrofuran 1000mB -> goldentweaks:cycloparaphenylene_8 1(25%) + goldentweaks:tin_dioxide 4 + goldentweaks:tetrahydrofuran 900mB
+goldentweaks:acetic_acid 1000mB + goldentweaks:palladium_powder 1 -> goldentweaks:palladium_acetate 1 + goldentweaks:palladium_powder 1(50%)
+
+mekanism:separating g -> g+g
+goldentweaks:rock_salt_water 10mB -> goldentweaks:potassium 1mB + mekanism:chlorine 1mB
+
+thermal:machine_smelter s+s+s -> s
+thermal:apatite_dust 2 + ae2cs:nether_quartz_dust 6 + thermal:coal_coke 10 -> thermal:rich_slag 6 + goldentweaks:phosphorus 4
+
+create:crushing ns -> ms
+biomesoplenty:dried_salt -> goldentweaks:rock_salt(50%) + goldentweaks:borax(25%)
+
+thermal:machine_crucible RF s -> l
+50000 RF goldentweaks:noble_gas -> goldentweaks:noble_gas 1000mB
+
+
+
+

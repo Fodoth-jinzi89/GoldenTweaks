@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "mekanism:hydrogen"
+  },
+  "duration": 2000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "mekanism:hydrogen_chloride"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:tin_dioxide"
+  },
+  "item_output": {
+    "count": 2,
+    "id": "flavor_immersed_daily:tidywater"
+  },
+  "chemical_output": {
+    "amount": 1000,
+    "id": "goldentweaks:tetrachlorostannate_ii_acid"
+  }
+}

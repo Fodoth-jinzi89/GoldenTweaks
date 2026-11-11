@@ -1,0 +1,21 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:cracked_coal_tar",
+    "amount": 500
+  },
+  "result": [
+    {
+      "item": "alltheores:sulfur"
+    },
+    {
+      "fluid": "goldentweaks:cyclopentadiene",
+      "amount": 100
+    },
+    {
+      "fluid": "goldentweaks:benzene_homologs",
+      "amount": 600
+    }
+  ],
+  "energy": 10000
+}

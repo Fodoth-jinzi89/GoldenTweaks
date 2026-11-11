@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:concentrated_palladium_niobium",
+  "loader": "neoforge:fluid_container"
+}

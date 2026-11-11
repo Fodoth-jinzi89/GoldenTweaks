@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:zirconium_tetrachloride",
+  "loader": "neoforge:fluid_container"
+}

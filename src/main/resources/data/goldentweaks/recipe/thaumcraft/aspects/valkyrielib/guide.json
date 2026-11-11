@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "valkyrielib:guide"
+  },
+  "aspects": {
+    "charta": 2,
+    "cognitio": 3,
+    "humanus": 1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:bis_pinacolato_diboron",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "spectrum:liquid_crystal"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "spectrum:liquid_crystal"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:gaseous_crystal"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:gaseous_crystal"
+  }
+}

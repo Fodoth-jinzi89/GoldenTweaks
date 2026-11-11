@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "B B",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "alltheores:osmium_plate"
+    },
+    "B": {
+      "item": "goldentweaks:ipp_plate"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "mekanism:steel_casing"
+  }
+}

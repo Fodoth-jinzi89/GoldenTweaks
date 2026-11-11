@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "mekanism:bio"
+  },
+  "duration": 3200,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 500,
+    "fluid": "goldentweaks:tetrahydrofuran"
+  },
+  "item_input": {
+    "count": 8,
+    "item": "goldentweaks:nano_activated_particles"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "mio_icif:resource/item_nano_living_metal"
+  },
+  "chemical_output": {
+    "amount": 500,
+    "id": "mekanism:nuclear_waste"
+  }
+}

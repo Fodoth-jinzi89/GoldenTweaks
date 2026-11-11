@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "evolvedmekanism:solidifying",
+  "duration": 60,
+  "item_input": {
+    "item": "thermal:chiller_ball_cast"
+  },
+  "fluid_input": {
+    "fluid": "goldentweaks:uhmwpe",
+    "amount": 48
+  },
+  "extra_input": {
+    "fluid": "minecraft:water",
+    "amount": 48
+  },
+  "output": {
+    "item": "goldentweaks:uhmwpe_ball"
+  },
+  "keep_item": true
+}

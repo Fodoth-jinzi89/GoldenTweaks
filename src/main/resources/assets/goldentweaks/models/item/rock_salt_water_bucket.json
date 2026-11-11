@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:rock_salt_water",
+  "loader": "neoforge:fluid_container"
+}

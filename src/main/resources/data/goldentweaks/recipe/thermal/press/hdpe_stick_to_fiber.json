@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "mekanism:hdpe_stick"
+    },
+    {
+      "item": "evolvedmekanism:mold_wire"
+    }
+  ],
+  "result": [
+    {
+      "item": "goldentweaks:hdpe_fiber",
+      "count": 4
+    }
+  ],
+  "energy": 500
+}

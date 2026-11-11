@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:butane"
+  },
+  "output": {
+    "amount": 1,
+    "id": "goldentweaks:butanol"
+  },
+  "right_input": {
+    "amount": 1,
+    "chemical": "mekanism:oxygen"
+  }
+}

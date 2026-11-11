@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:distilled_water_bucket"
+  },
+  "aspects": {
+    "aqua": 3,
+    "vacuos": 2,
+    "vas": 2
+  }
+}

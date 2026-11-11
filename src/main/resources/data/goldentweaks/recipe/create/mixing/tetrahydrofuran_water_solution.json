@@ -1,0 +1,24 @@
+{
+    "type":  "create:mixing",
+    "ingredients":  [
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  1000,
+                            "fluid":  "goldentweaks:tetrahydrofuran"
+                        },
+                        {
+                            "type":  "neoforge:single",
+                            "amount":  100,
+                            "fluid":  "minecraft:water"
+                        },
+                        {
+                            "item":  "goldentweaks:tetrabutylammonium_bromide"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "amount":  1000,
+                        "id":  "goldentweaks:tetrahydrofuran_water_solution"
+                    }
+                ]
+}

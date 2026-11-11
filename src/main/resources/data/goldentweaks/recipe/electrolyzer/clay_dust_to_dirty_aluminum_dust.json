@@ -1,0 +1,11 @@
+{
+  "type": "mio_icif:electrolyzer",
+  "group": "input_count=4,no_energy",
+  "ingredient": {
+    "item": "mio_icif:resource/item_clay_dust"
+  },
+  "result": {
+    "id": "alltheores:dirty_aluminum_dust",
+    "count": 1
+  }
+}

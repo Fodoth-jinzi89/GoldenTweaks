@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirotech:ionite_void_miner_ccu"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 3,
+    "metallum": 1,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:ziegler_natta_catalyst"
+  },
+  "output": {
+    "amount": 100,
+    "id": "goldentweaks:ipp"
+  },
+  "right_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:propylene"
+  }
+}

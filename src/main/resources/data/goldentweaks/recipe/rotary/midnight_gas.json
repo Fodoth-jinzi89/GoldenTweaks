@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "spectrum:midnight_solution"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "spectrum:midnight_solution"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:midnight_gas"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:midnight_gas"
+  }
+}

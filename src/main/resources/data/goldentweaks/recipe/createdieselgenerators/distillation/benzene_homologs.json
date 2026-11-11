@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdieselgenerators"
+    }
+  ],
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_tag",
+      "fluid_tag": "goldentweaks:benzene_homologs",
+      "amount": 1000
+    }
+  ],
+  "heat_requirement": "superheated",
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "goldentweaks:phenol",
+      "amount": 100
+    },
+    {
+      "id": "goldentweaks:o_xylene",
+      "amount": 20
+    },
+    {
+      "id": "goldentweaks:m_xylene",
+      "amount": 20
+    },
+    {
+      "id": "goldentweaks:p_xylene",
+      "amount": 20
+    },
+    {
+      "id": "goldentweaks:toluene",
+      "amount": 200
+    },
+    {
+      "id": "goldentweaks:benzene",
+      "amount": 700
+    }
+  ]
+}

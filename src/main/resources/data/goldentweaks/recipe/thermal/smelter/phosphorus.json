@@ -1,0 +1,28 @@
+{
+    "type":  "thermal:smelter",
+    "ingredients":  [
+                        {
+                            "item":  "thermal:apatite_dust",
+                            "count":  2
+                        },
+                        {
+                            "item":  "ae2cs:nether_quartz_dust",
+                            "count":  6
+                        },
+                        {
+                            "item":  "thermal:coal_coke",
+                            "count":  10
+                        }
+                    ],
+    "result":  [
+                   {
+                       "item":  "thermal:rich_slag",
+                       "count":  6
+                   },
+                   {
+                       "item":  "goldentweaks:phosphorus",
+                       "count":  4
+                   }
+               ],
+    "energy":  20000
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "evolvedmekanism:mold_nugget",
+    "evolvedmekanism:mold_plate",
+    "evolvedmekanism:mold_rod",
+    "evolvedmekanism:mold_wire"
+  ]
+}

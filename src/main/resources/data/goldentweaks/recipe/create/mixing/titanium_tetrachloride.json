@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 4000,
+      "fluid": "mekanism:hydrogen_chloride"
+    },
+    {
+      "item": "mio_icif:resource/item_titanium_dust"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "northstar:titanium_tetrachloride"
+    }
+  ]
+}

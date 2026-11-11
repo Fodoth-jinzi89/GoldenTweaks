@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 3000,
+      "fluid": "goldentweaks:iodomethane"
+    },
+    {
+      "item": "goldentweaks:aluminum_trichloride"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:trimethylaluminum"
+    }
+  ]
+}

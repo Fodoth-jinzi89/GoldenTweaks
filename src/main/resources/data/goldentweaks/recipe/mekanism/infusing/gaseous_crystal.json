@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:concentrated_platinum"
+  },
+  "output": {
+    "amount": 1000,
+    "id": "goldentweaks:gaseous_crystal"
+  },
+  "right_input": {
+    "amount": 10,
+    "chemical": "goldentweaks:gaseous_crystal"
+  }
+}

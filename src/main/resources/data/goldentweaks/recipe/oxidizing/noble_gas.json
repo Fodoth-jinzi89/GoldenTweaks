@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "item": "goldentweaks:noble_gas"
+  },
+  "output": {
+    "amount": 1000,
+    "id": "goldentweaks:noble_gas"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "evolvedmekanism:solidifying",
+  "duration": 60,
+  "item_input": {
+    "item": "evolvedmekanism:mold_plate"
+  },
+  "fluid_input": {
+    "fluid": "goldentweaks:hdpe",
+    "amount": 144
+  },
+  "extra_input": {
+    "fluid": "minecraft:water",
+    "amount": 144
+  },
+  "output": {
+    "item": "mekanism:hdpe_sheet"
+  },
+  "keep_item": true
+}

@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "goldentweaks:acetic_acid"
+                       },
+    "duration":  2000,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  1000,
+                        "fluid":  "goldentweaks:iodobenzene"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "alltheores:salt"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "goldentweaks:iodobenzene_diacetate"
+                    },
+    "chemical_output":  {
+                            "amount":  1000,
+                            "id":  "mekanism:hydrogen"
+                        }
+}

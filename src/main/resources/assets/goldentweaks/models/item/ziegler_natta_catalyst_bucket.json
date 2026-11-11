@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:ziegler_natta_catalyst",
+  "loader": "neoforge:fluid_container"
+}

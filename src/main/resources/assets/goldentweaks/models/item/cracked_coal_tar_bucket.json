@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:cracked_coal_tar",
+  "loader": "neoforge:fluid_container"
+}

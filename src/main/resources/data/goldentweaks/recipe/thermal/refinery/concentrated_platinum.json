@@ -1,0 +1,22 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:concentrated_platinum",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "alltheores:platinum_dust",
+      "chance": 0.9
+    },
+    {
+      "fluid": "goldentweaks:concentrated_palladium_niobium",
+      "amount": 600
+    },
+    {
+      "fluid": "goldentweaks:concentrated_iridium_osmium",
+      "amount": 400
+    }
+  ],
+  "energy": 125000
+}

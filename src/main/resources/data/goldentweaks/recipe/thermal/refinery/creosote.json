@@ -1,0 +1,21 @@
+{
+    "type":  "thermal:refinery",
+    "ingredient":  {
+                       "fluid":  "thermal:creosote",
+                       "amount":  1000
+                   },
+    "result":  [
+                   {
+                       "item":  "thermal:tar"
+                   },
+                   {
+                       "fluid":  "goldentweaks:benzene",
+                       "amount":  500
+                   },
+                   {
+                       "fluid":  "goldentweaks:phenol",
+                       "amount":  500
+                   }
+               ],
+    "energy":  10000
+}

@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "mekanism:hydrogen"
+                       },
+    "duration":  2000,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  1000,
+                        "fluid":  "mekanism:brine"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "alltheores:salt"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "goldentweaks:sodium_hydride"
+                    },
+    "chemical_output":  {
+                            "amount":  1000,
+                            "id":  "mekanism:chlorine"
+                        }
+}

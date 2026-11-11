@@ -9,7 +9,7 @@ import thaumcraft.common.menu.ResearchTableMenu;
 public class ResearchTableMenuMixin {
 
     @ModifyConstant(
-            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V",
+            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Ljava/util/List;Lnet/minecraft/world/entity/player/Player;)V",
             constant = @Constant(intValue = 14)
     )
     private int gt$toolsX(int value) {
@@ -17,7 +17,7 @@ public class ResearchTableMenuMixin {
     }
 
     @ModifyConstant(
-            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V",
+            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Ljava/util/List;Lnet/minecraft/world/entity/player/Player;)V",
             constant = @Constant(intValue = 70)
     )
     private int gt$notesX(int value) {
@@ -25,7 +25,7 @@ public class ResearchTableMenuMixin {
     }
 
     @ModifyConstant(
-            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V",
+            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Ljava/util/List;Lnet/minecraft/world/entity/player/Player;)V",
             constant = @Constant(intValue = 48)
     )
     private int gt$inventoryX(int value) {
@@ -33,7 +33,7 @@ public class ResearchTableMenuMixin {
     }
 
     @ModifyConstant(
-            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V",
+            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Ljava/util/List;Lnet/minecraft/world/entity/player/Player;)V",
             constant = @Constant(intValue = 175)
     )
     private int gt$inventoryY(int value) {
@@ -41,7 +41,7 @@ public class ResearchTableMenuMixin {
     }
 
     @ModifyConstant(
-            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V",
+            method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Ljava/util/List;Lnet/minecraft/world/entity/player/Player;)V",
             constant = @Constant(intValue = 233)
     )
     private int gt$hotbarY(int value) {

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:rcpp_ball"
+  },
+  "output": {
+    "id": "goldentweaks:rcpp",
+    "amount": 48
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:ipp_rod"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:ipp",
+      "amount": 72
+    }
+  ],
+  "energy": 7200
+}

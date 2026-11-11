@@ -1,0 +1,19 @@
+{
+  "type": "thermal:brewer",
+  "ingredients": [
+    {
+      "item": "spectrum:midnight_chip"
+    },
+    {
+      "fluid": "goldentweaks:concentrated_palladium",
+      "amount": 1
+    }
+  ],
+  "result": [
+    {
+      "fluid": "spectrum:midnight_solution",
+      "amount": 1000
+    }
+  ],
+  "energy": 5000
+}

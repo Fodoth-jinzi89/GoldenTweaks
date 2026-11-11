@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:ionite_brick_small_slab"
+  },
+  "aspects": {
+    "ordo": 1,
+    "saxum": 2,
+    "terra": 1
+  }
+}

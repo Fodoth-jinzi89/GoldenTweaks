@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "goldentweaks:iodomethane"
+                       },
+    "duration":  12800,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  1000,
+                        "fluid":  "goldentweaks:bent_molecule_7_dibromo_diol"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "goldentweaks:sodium_hydride"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "goldentweaks:bent_molecule_7_dibromo"
+                    },
+    "chemical_output":  {
+                            "amount":  1000,
+                            "id":  "mekanism:hydrogen"
+                        }
+}

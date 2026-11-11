@@ -251,12 +251,12 @@
 | scex-thaumcraft-aspects-jei | `1.21.1-1.0.0-rc7` | `scex-thaumcraft-aspects-jei-1.21.1-1.0.0-rc7.jar` |
 | sodium-neoforge | `0.8.13+mc1.21.1` | `sodium-neoforge-0.8.13+mc1.21.1.jar` |
 | taintedmagic | `1.0.0-port.35` | `taintedmagic-1.0.0-port.35.jar` |
-| thaumcraft | `0.2.2.107-port.278-scex.compat.1` | `thaumcraft-0.2.2.107-port.278-scex.compat.1.jar` |
+| thaumcraft | `0.3.0-port.280-scex.compat.1` | `thaumcraft-0.3.0-port.280-scex.compat.1.jar` |
 | thaumcraftcelestial | `1.0.0-port.24` | `thaumcraftcelestial-1.0.0-port.24.jar` |
 | thaumic_tinkerer | `1.0.0-port.65` | `thaumic_tinkerer-1.0.0-port.65.jar` |
 | thaumicbases | `2.1.189.32-port.21` | `thaumicbases-2.1.189.32-port.21.jar` |
 | ThaumicEnergistics | `1.21.1-neoforge-2.6.4-alpha` | `ThaumicEnergistics-1.21.1-neoforge-2.6.4-alpha.jar` |
-| thaumichorizons | `1.21.1-0.1.0-scex-dev.41` | `thaumichorizons-1.21.1-0.1.0-scex-dev.41.jar` |
+| thaumichorizons | `1.21.1-0.1.0-scex-dev.43` | `thaumichorizons-1.21.1-0.1.0-scex-dev.43.jar` |
 | toomanyrecipeviewers | `0.9.0+mc.21.1` | `toomanyrecipeviewers-0.9.0+mc.21.1.jar` |
 | worldedit-mod | `7.3.8` | `[基础]worldedit-mod-7.3.8.jar` |
 | yeetusexperimentus-neoforge | `87.0.0` | `yeetusexperimentus-neoforge-87.0.0.jar` |

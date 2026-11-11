@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:m_xylene",
+  "loader": "neoforge:fluid_container"
+}

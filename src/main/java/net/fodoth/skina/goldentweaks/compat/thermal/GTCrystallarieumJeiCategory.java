@@ -22,7 +22,7 @@ import java.util.List;
  * 光谱结晶配方「转换到热力结晶器」的 JEI 页：晶种 + 培养液（+ 可选添加剂）→ 结晶簇方块。
  *
  * <p>原版那套墨水与生长阶段在转换里都不存在（不消耗墨水、培养液只需存在），页面上用几行短注释标明；
- * 真正能否运行取决于是否装了「组件：墨晶培育器」，见 {@code ThermalCrystallarieumAugment}。</p>
+ * 真正能否运行取决于是否装了「组件：光谱墨法结晶」，见 {@code ThermalCrystallarieumAugment}。</p>
  *
  * <p>这个类只在客户端加载（{@code IRecipeCategory} 的方法签名带 {@code GuiGraphics}），
  * 所以只有 {@code registerCategories} 会碰它。</p>

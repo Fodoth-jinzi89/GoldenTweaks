@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "envirocore:rgb_controller"
+  },
+  "aspects": {
+    "lux": 3,
+    "machina": 1,
+    "potentia": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "type":  "mekanism:chemical_infusing",
+    "left_input":  {
+                       "amount":  1,
+                       "chemical":  "goldentweaks:ethylene_oxide"
+                   },
+    "output":  {
+                   "amount":  1,
+                   "id":  "goldentweaks:ethylene_glycol"
+               },
+    "right_input":  {
+                        "amount":  1,
+                        "chemical":  "mekanism:water_vapor"
+                    }
+}

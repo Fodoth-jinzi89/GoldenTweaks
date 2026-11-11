@@ -1,0 +1,22 @@
+{
+    "type":  "thermal:refinery",
+    "ingredient":  {
+                       "fluid":  "mio_icif:air",
+                       "amount":  1000
+                   },
+    "result":  [
+                   {
+                       "item":  "goldentweaks:noble_gas",
+                       "chance":  0.1
+                   },
+                   {
+                       "fluid":  "createnuclear:nitrogen",
+                       "amount":  600
+                   },
+                   {
+                       "fluid":  "mekanism:oxygen",
+                       "amount":  300
+                   }
+               ],
+    "energy":  25000
+}

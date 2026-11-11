@@ -1,0 +1,22 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:concentrated_palladium_niobium",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "goldentweaks:nano_activated_particles",
+      "chance": 0.1
+    },
+    {
+      "fluid": "goldentweaks:concentrated_palladium",
+      "amount": 200
+    },
+    {
+      "fluid": "goldentweaks:concentrated_niobium",
+      "amount": 800
+    }
+  ],
+  "energy": 250000
+}

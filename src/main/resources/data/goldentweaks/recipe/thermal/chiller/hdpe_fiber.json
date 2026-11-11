@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "item": "evolvedmekanism:mold_wire"
+    },
+    {
+      "fluid": "goldentweaks:hdpe",
+      "amount": 18
+    }
+  ],
+  "result": [
+    {
+      "item": "goldentweaks:hdpe_fiber"
+    }
+  ],
+  "energy": 1800
+}

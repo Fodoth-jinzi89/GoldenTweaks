@@ -1,0 +1,19 @@
+{
+    "type":  "create:crushing",
+    "ingredients":  [
+                        {
+                            "item":  "biomesoplenty:dried_salt"
+                        }
+                    ],
+    "processing_time":  400,
+    "results":  [
+                    {
+                        "id":  "goldentweaks:rock_salt",
+                        "chance":  0.5
+                    },
+                    {
+                        "id":  "goldentweaks:borax",
+                        "chance":  0.25
+                    }
+                ]
+}

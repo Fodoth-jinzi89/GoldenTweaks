@@ -1,0 +1,17 @@
+{
+    "type":  "create:mixing",
+    "heat_requirement":  "heated",
+    "ingredients":  [
+                        {
+                            "item":  "alltheores:salt"
+                        },
+                        {
+                            "item":  "minecraft:cobblestone"
+                        }
+                    ],
+    "results":  [
+                    {
+                        "id":  "biomesoplenty:dried_salt"
+                    }
+                ]
+}

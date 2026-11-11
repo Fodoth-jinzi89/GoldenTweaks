@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "northstar:titanium_tetrachloride"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "northstar:titanium_tetrachloride"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:titanium_tetrachloride"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:titanium_tetrachloride"
+  }
+}

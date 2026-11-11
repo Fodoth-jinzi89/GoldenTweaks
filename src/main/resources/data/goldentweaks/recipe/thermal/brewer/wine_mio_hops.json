@@ -1,0 +1,19 @@
+{
+    "type":  "thermal:brewer",
+    "ingredients":  [
+                        {
+                            "item":  "mio_icif:normal/item_hops"
+                        },
+                        {
+                            "fluid":  "minecraft:water",
+                            "amount":  1000
+                        }
+                    ],
+    "result":  [
+                   {
+                       "fluid":  "goldentweaks:wine",
+                       "amount":  1000
+                   }
+               ],
+    "energy":  10000
+}

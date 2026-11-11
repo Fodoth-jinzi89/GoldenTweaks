@@ -1,0 +1,14 @@
+{
+  "type": "thermal:chiller",
+  "ingredient": {
+    "fluid": "goldentweaks:concentrated_zirconium",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "goldentweaks:zirconium_powder",
+      "chance": 0.8
+    }
+  ],
+  "energy": 125000
+}

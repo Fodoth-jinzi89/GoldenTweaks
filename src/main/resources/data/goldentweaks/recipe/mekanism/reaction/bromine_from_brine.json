@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  1000,
+                           "chemical":  "mekanism:brine"
+                       },
+    "duration":  200,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  100,
+                        "fluid":  "minecraft:lava"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "minecraft:cocoa_beans"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "ratatouille:mature_matter"
+                    },
+    "chemical_output":  {
+                            "amount":  100,
+                            "id":  "goldentweaks:bromine"
+                        }
+}

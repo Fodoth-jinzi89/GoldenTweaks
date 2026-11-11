@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:acetic_acid"
+    },
+    {
+      "item": "goldentweaks:palladium_powder"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:palladium_acetate"
+    },
+    {
+      "id": "goldentweaks:palladium_powder",
+      "chance": 0.5
+    }
+  ]
+}

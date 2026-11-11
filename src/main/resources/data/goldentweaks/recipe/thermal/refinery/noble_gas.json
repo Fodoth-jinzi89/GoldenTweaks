@@ -1,0 +1,18 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:noble_gas",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:carbon_dioxide",
+      "amount": 900
+    },
+    {
+      "fluid": "goldentweaks:argon",
+      "amount": 100
+    }
+  ],
+  "energy": 500000
+}

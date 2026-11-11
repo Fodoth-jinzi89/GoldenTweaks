@@ -1,0 +1,25 @@
+{
+    "type":  "mekanism:reaction",
+    "chemical_input":  {
+                           "amount":  100,
+                           "chemical":  "goldentweaks:bromine"
+                       },
+    "duration":  1200,
+    "energy_required":  200,
+    "fluid_input":  {
+                        "amount":  100,
+                        "fluid":  "goldentweaks:butane"
+                    },
+    "item_input":  {
+                       "count":  1,
+                       "item":  "minecraft:glowstone_dust"
+                   },
+    "item_output":  {
+                        "count":  1,
+                        "id":  "mekanism:nugget_refined_glowstone"
+                    },
+    "chemical_output":  {
+                            "amount":  50,
+                            "id":  "goldentweaks:bromobutane"
+                        }
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "goldentweaks:ldpe_ball",
+      "count": 3
+    },
+    {
+      "item": "evolvedmekanism:mold_plate"
+    }
+  ],
+  "result": [
+    {
+      "item": "goldentweaks:ldpe_plate",
+      "count": 1
+    }
+  ],
+  "energy": 500
+}

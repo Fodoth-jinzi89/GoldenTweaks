@@ -37,7 +37,9 @@ public class GTCrystallarieumJeiPlugin implements IModPlugin {
 
     @Override
     public @NotNull ResourceLocation getPluginUid() {
-        return ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "crystallarieum_crystallizer");
+        // 不要用 goldentweaks 命名空间：本模组已有原生 EMI 分类，TMRV 会把同命名空间的 JEI 插件
+        // 判为 DUPLICATE_NAMESPACE 并只做 partial load（跳过配方注册），页面就会是空的。
+        return ResourceLocation.fromNamespaceAndPath("goldentweaks_jei", "crystallarieum_crystallizer");
     }
 
     @Override

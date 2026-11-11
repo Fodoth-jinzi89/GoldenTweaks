@@ -1,0 +1,17 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "thermal:coal",
+    "amount": 100
+  },
+  "result": [
+    {
+      "item": "thermal:tar"
+    },
+    {
+      "fluid": "goldentweaks:coal_tar",
+      "amount": 75
+    }
+  ],
+  "energy": 5000
+}
