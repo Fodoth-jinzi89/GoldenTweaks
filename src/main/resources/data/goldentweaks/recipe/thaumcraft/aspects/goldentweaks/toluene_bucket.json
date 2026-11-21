@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:toluene_bucket"
+  },
+  "aspects": {
+    "permutatio": 14,
+    "ignis": 10,
+    "tenebrae": 6
+  }
+}

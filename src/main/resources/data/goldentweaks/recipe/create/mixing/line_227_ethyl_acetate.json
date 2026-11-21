@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdieselgenerators"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:pvac"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "createdieselgenerators:ethanol"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:ethyl_acetate"
+    },
+    {
+      "amount": 1000,
+      "id": "goldentweaks:pva"
+    }
+  ]
+}

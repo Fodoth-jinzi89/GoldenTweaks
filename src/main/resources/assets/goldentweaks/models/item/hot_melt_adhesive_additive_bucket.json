@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:hot_melt_adhesive_additive",
+  "loader": "neoforge:fluid_container"
+}

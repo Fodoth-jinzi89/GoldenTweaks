@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:polystyrene_ball"
+  },
+  "aspects": {
+    "limus": 14,
+    "motus": 10,
+    "machina": 6,
+    "alkimia": 3
+  }
+}

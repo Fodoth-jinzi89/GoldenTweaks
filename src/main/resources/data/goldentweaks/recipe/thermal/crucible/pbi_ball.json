@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:pbi_ball"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:pbi",
+      "amount": 16
+    }
+  ],
+  "energy": 1600
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:vinyl_chloride_bucket"
+  },
+  "aspects": {
+    "aqua": 7,
+    "potentia": 10,
+    "aer": 5,
+    "alkimia": 8
+  }
+}

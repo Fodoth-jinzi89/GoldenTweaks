@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:aluminum_trichloride_bucket"
+  },
+  "aspects": {
+    "machina": 11,
+    "ordo": 7,
+    "metallum": 3
+  }
+}

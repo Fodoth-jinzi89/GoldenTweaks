@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:zirconium_tetrachloride"
+  },
+  "aspects": {
+    "ordo": 9,
+    "metallum": 5,
+    "potentia": 16,
+    "terra": 12
+  }
+}

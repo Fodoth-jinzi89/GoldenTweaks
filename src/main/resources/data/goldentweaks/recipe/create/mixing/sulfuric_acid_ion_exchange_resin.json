@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "mekanism:sulfuric_acid"
+    },
+    {
+      "item": "mio_icif:resource/item_harz"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:sulfuric_acid_ion_exchange_resin"
+    }
+  ]
+}

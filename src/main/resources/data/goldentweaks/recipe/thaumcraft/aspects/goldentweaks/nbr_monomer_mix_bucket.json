@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:nbr_monomer_mix_bucket"
+  },
+  "aspects": {
+    "aqua": 6,
+    "potentia": 8,
+    "alkimia": 6
+  }
+}

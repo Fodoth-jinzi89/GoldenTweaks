@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:phenylhydrazine",
+  "loader": "neoforge:fluid_container"
+}

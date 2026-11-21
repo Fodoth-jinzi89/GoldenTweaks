@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "goldentweaks:gt_port_item_input_ulv",
+    "goldentweaks:gt_port_item_input_lv",
+    "goldentweaks:gt_port_item_input_mv",
+    "goldentweaks:gt_port_item_input_hv",
+    "goldentweaks:gt_port_item_input_ev",
+    "goldentweaks:gt_port_item_input_iv",
+    "goldentweaks:gt_port_item_input_luv",
+    "goldentweaks:gt_port_item_input_zpm",
+    "goldentweaks:gt_port_item_input_uv"
+  ]
+}

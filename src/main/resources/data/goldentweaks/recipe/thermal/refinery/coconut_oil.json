@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:coconut_oil",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "item": "goldentweaks:stearic_acid",
+      "chance": 0.1
+    },
+    {
+      "fluid": "spectrum:liquid_crystal",
+      "amount": 900
+    },
+    {
+      "fluid": "goldentweaks:lauric_acid",
+      "amount": 100
+    }
+  ],
+  "energy": 100000
+}

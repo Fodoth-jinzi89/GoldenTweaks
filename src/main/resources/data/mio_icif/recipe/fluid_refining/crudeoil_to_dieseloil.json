@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mio_icif:fluid_refining",
+  "input_fluid": "mio_icif:crudeoil",
+  "output_fluid": {
+    "id": "mio_icif:dieseloil",
+    "amount": 100
+  },
+  "processingtime": 10,
+  "energypertick": 8
+}

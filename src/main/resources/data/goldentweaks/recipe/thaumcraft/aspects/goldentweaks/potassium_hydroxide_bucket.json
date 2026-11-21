@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:potassium_hydroxide_bucket"
+  },
+  "aspects": {
+    "permutatio": 15,
+    "aqua": 11,
+    "ignis": 7,
+    "ordo": 3
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "goldentweaks:item/multiblock/control_circuit_base",
+    "layer1": "goldentweaks:item/multiblock/cc_parallel_1"
+  }
+}

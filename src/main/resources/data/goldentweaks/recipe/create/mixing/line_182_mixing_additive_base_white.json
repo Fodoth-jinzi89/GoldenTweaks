@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:mixing_additive_base"
+    },
+    {
+      "item": "mio_icif:resource/item_silicondioxide_dust"
+    },
+    {
+      "item": "mio_icif:resource/item_silicondioxide_dust"
+    },
+    {
+      "item": "mio_icif:resource/item_silicondioxide_dust"
+    },
+    {
+      "item": "mio_icif:resource/item_silicondioxide_dust"
+    },
+    {
+      "item": "mio_icif:resource/item_silicondioxide_dust"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:mixing_additive_base_white"
+    }
+  ]
+}

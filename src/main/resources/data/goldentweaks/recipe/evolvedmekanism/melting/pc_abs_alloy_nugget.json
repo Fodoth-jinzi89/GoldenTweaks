@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:pc_abs_alloy_nugget"
+  },
+  "output": {
+    "id": "goldentweaks:pc_abs_alloy",
+    "amount": 16
+  }
+}

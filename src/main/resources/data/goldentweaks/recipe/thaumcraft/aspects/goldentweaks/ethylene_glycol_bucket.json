@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:ethylene_glycol_bucket"
+  },
+  "aspects": {
+    "alkimia": 10,
+    "aqua": 6,
+    "potentia": 2,
+    "permutatio": 13
+  }
+}

@@ -9,7 +9,25 @@ public final class GoldenTweaksClientConfig {
 
     public static final ModConfigSpec SPEC;
 
+    public static final ModConfigSpec.IntValue DANGO_ISLAND_X;
+    public static final ModConfigSpec.IntValue DANGO_ISLAND_Y;
+    public static final ModConfigSpec.EnumValue<HudAlignment> DANGO_ISLAND_ALIGNMENT;
+    public static final ModConfigSpec.BooleanValue DANGO_STOP_ON_WORLD_LEAVE;
+
     // Misc
+    public static final int GLSL_DEFAULT_CACHE_LIMIT = 64;
+    public static final int YSM_CONSTANT_CACHE_LIMIT = 32768;
+    public static final int YSM_VECTOR_CACHE_LIMIT = 16384;
+    public static final int YSM_LINEAR_FRAME_CACHE_LIMIT = 8192;
+    public static final int YSM_SPLINE_FRAME_CACHE_LIMIT = 4096;
+    public static final int YSM_STEP_FRAME_CACHE_LIMIT = 4096;
+    public static final int GLSL_TRANSLATION_CACHE_LIMIT = 2;
+    public static final int MODEL_MESH_CACHE_INITIAL_CAPACITY = 0;
+    public static final int MAID_ANIMATION_CONSTANT_CACHE_LIMIT = 32768;
+    public static final int MAID_ANIMATION_VECTOR_CACHE_LIMIT = 32768;
+    public static final int MAID_ANIMATION_LINEAR_CACHE_LIMIT = 32768;
+    public static final int MAID_ANIMATION_CATMULL_CACHE_LIMIT = 16384;
+    public static final int MAID_ANIMATION_TRANSITION_CACHE_LIMIT = 8192;
     public static final ModConfigSpec.BooleanValue DISABLE_BUILDING_WANDS_BLOCK_PREVIEW;
     /** EMI 搜索内核：用 gram 倒排索引 + 位集求值替换 EMI 的「多重集合物化 + 全量逐项扫描」。 */
     public static final ModConfigSpec.BooleanValue EMI_FAST_SEARCH;
@@ -44,6 +62,10 @@ public final class GoldenTweaksClientConfig {
     public static final ModConfigSpec.BooleanValue DEBUG_GUI_INSPECTOR;
     public static final ModConfigSpec.BooleanValue DEBUG_GUI_COPY_TO_CLIPBOARD;
 
+    // Multiblock
+    /** 多方块结构投影显示多久后自动消失（毫秒）。0 表示不自动消失。 */
+    public static final ModConfigSpec.IntValue MULTIBLOCK_PROJECTION_DURATION_MS;
+
     // Pickup
     public static final ModConfigSpec.BooleanValue ENABLE_PICKUP;
     public static final ModConfigSpec.DoubleValue BASE_PICKUP_REACH;
@@ -69,6 +91,18 @@ public final class GoldenTweaksClientConfig {
 
     static {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
+
+        builder.translation(key("category.dangomusic"));
+        builder.push("dangomusic");
+        DANGO_STOP_ON_WORLD_LEAVE = builder.translation(key("dango_stop_on_world_leave"))
+                .comment(comment("dango_stop_on_world_leave")).define("stopOnWorldLeave", true);
+        DANGO_ISLAND_X = builder.translation(key("dango_island_x"))
+                .comment(comment("dango_island_x")).defineInRange("islandX", 0, -32768, 32768);
+        DANGO_ISLAND_Y = builder.translation(key("dango_island_y"))
+                .comment(comment("dango_island_y")).defineInRange("islandY", 18, -32768, 32768);
+        DANGO_ISLAND_ALIGNMENT = builder.translation(key("dango_island_alignment"))
+                .comment(comment("dango_island_alignment")).defineEnum("islandAlignment", HudAlignment.TOP_CENTER);
+        builder.pop();
 
         /*
          * Misc
@@ -284,6 +318,21 @@ public final class GoldenTweaksClientConfig {
                 .translation(key("pickup.lootr_hold_pickup_interval"))
                 .comment(comment("pickup.lootr_hold_pickup_interval"))
                 .defineInRange("lootrHoldPickupInterval", 5, 1, Integer.MAX_VALUE);
+
+        builder.pop();
+
+        /*
+         * Multiblock
+         *
+         * 多方块结构投影相关的客户端设定。
+         */
+        builder.translation(key("category.multiblock"));
+        builder.push("multiblock");
+
+        MULTIBLOCK_PROJECTION_DURATION_MS = builder
+                .translation(key("multiblock.projection_duration_ms"))
+                .comment(comment("multiblock.projection_duration_ms"))
+                .defineInRange("projectionDurationMs", 10000, 0, 300000);
 
         builder.pop();
 

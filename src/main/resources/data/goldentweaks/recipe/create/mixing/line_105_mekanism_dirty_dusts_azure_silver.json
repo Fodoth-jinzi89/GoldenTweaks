@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "jaopca"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:terephthalic_acid"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:p_phenylenediamine"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    },
+    {
+      "item": "silentgear:azure_silver_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "jaopca:mekanism_dirty_dusts.azure_silver"
+    },
+    {
+      "id": "goldentweaks:slaked_lime"
+    },
+    {
+      "id": "goldentweaks:terephthalic_acid_phenylenediamine_salt"
+    }
+  ]
+}

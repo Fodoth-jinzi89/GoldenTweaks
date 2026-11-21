@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:polystyrene_active_chain",
+  "loader": "neoforge:fluid_container"
+}

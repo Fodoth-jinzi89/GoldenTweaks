@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:n_cyclohexyl_2_benzothiazole_sulfenamide_bucket"
+  },
+  "aspects": {
+    "aqua": 6,
+    "potentia": 8,
+    "alkimia": 6
+  }
+}

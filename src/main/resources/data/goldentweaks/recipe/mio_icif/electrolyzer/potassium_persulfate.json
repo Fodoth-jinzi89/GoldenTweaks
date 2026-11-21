@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mio_icif:electrolyzer",
+  "ingredient": {
+    "item": "goldentweaks:potassium_bisulfate"
+  },
+  "result": {
+    "id": "goldentweaks:potassium_persulfate",
+    "count": 1
+  },
+  "group": "input_count=2",
+  "processingtime": 200,
+  "energyPerTick": 100
+}

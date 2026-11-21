@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:4_4_diaminodiphenyl_ether"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:pyromellitic_dianhydride"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "goldentweaks:pi"
+    },
+    {
+      "id": "goldentweaks:slaked_lime",
+      "count": 2
+    }
+  ]
+}

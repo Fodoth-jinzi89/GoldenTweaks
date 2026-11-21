@@ -1,0 +1,50 @@
+{
+  "type": "goldentweaks:chemical_reaction",
+  "mode": 3,
+  "inputs": [
+    {
+      "item": "minecraft:egg",
+      "count": 2
+    },
+    {
+      "item": "minecraft:coal",
+      "count": 3
+    },
+    {
+      "item": "minecraft:slime_ball",
+      "count": 4
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 1000
+    }
+  ],
+  "outputs": [
+    {
+      "item": "minecraft:stick",
+      "count": 4
+    },
+    {
+      "item": "minecraft:shulker_shell",
+      "count": 3
+    },
+    {
+      "item": "minecraft:kelp",
+      "count": 2
+    },
+    {
+      "fluid": "create:honey",
+      "amount": 1000
+    },
+    {
+      "fluid": "create:milk",
+      "amount": 1000
+    }
+  ],
+  "processing_time": 64,
+  "energy_per_tick": 128
+}

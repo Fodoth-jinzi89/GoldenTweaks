@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "envirocore"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "envirocore:nanorite_powder"
+  },
+  "result": {
+    "id": "envirocore:nanorite_crystal",
+    "count": 1
+  }
+}

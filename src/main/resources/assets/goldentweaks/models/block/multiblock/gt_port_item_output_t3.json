@@ -1,0 +1,7 @@
+{
+  "parent": "goldentweaks:block/multiblock/gt_port_base",
+  "textures": {
+    "icon": "avaritia_more_items:block/multiblock_port/input/item",
+    "ring": "avaritia_more_items:block/multiblock_port/level/output/3"
+  }
+}

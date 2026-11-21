@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:pyromellitic_dianhydride",
+  "loader": "neoforge:fluid_container"
+}

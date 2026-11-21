@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:trimethyl_borate"
+    },
+    {
+      "item": "goldentweaks:sodium_hydride",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:sodium_borohydride"
+    },
+    {
+      "id": "goldentweaks:sodium_methoxide",
+      "count": 3
+    }
+  ]
+}

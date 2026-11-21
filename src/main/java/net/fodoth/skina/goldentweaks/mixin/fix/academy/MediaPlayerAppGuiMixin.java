@@ -195,9 +195,9 @@ public class MediaPlayerAppGuiMixin {
             at = @At(value = "INVOKE",
                     target = "Lnet/minecraft/client/gui/GuiGraphics;drawString(Lnet/minecraft/client/gui/Font;Ljava/lang/String;III)I"))
     private static int gt$raiseHint(GuiGraphics graphics, Font font, String text, int x, int y, int color) {
-        if (text != null
-                && (text.equals(Component.translatable("ac.media.select_hint").getString())
-                || text.equals(Component.translatable("ac.media.load_hint").getString()))) {
+        if (text != null && !text.isEmpty()
+                && (Component.translatable("ac.media.select_hint").getString().startsWith(text)
+                || Component.translatable("ac.media.load_hint").getString().startsWith(text))) {
             y -= 9;
         }
         return graphics.drawString(font, text, x, y, color);

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:sichuan_boiled_pork_slices"
+  },
+  "aspects": {
+    "fames": 3,
+    "herba": 1,
+    "victus": 2
+  }
+}

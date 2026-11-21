@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:salt_bucket"
+  },
+  "aspects": {
+    "aqua": 3,
+    "terra": 1,
+    "vas": 2
+  }
+}

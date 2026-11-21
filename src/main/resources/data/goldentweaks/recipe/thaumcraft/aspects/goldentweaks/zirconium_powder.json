@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:zirconium_powder"
+  },
+  "aspects": {
+    "metallum": 12,
+    "potentia": 8,
+    "terra": 4,
+    "machina": 15
+  }
+}

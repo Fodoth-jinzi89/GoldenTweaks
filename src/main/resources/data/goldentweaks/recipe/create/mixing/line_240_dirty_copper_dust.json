@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "envirocore"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "envirocore:silicon_powder"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "goldentweaks:chloromethane"
+    },
+    {
+      "item": "alltheores:copper_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "alltheores:dirty_copper_dust"
+    },
+    {
+      "amount": 2000,
+      "id": "goldentweaks:dimethyldichlorosilane"
+    }
+  ]
+}

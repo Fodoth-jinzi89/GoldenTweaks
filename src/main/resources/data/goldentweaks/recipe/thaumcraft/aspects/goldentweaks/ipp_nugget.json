@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:ipp_nugget"
+  },
+  "aspects": {
+    "limus": 15,
+    "machina": 11,
+    "fabrico": 7,
+    "ordo": 3
+  }
+}

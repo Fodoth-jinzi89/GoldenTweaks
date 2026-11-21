@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:dibutyltin_dilaurate",
+  "loader": "neoforge:fluid_container"
+}

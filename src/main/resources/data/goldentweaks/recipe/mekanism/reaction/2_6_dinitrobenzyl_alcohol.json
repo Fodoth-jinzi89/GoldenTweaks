@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 4000,
+    "chemical": "goldentweaks:2_6_dinitrobenzaldehyde"
+  },
+  "duration": 12800,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:methanol"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:sodium_borohydride"
+  },
+  "chemical_output": {
+    "amount": 4000,
+    "id": "goldentweaks:2_6_dinitrobenzyl_alcohol"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:sodium_tetrahydroxyborate"
+  }
+}

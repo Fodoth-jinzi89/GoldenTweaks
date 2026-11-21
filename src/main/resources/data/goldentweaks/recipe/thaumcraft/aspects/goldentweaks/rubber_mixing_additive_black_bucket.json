@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:rubber_mixing_additive_black_bucket"
+  },
+  "aspects": {
+    "aqua": 6,
+    "potentia": 8,
+    "alkimia": 6
+  }
+}

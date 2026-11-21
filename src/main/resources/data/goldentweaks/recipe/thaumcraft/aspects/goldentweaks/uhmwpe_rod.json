@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:uhmwpe_rod"
+  },
+  "aspects": {
+    "motus": 16,
+    "instrumentum": 12,
+    "machina": 8,
+    "ordo": 4
+  }
+}

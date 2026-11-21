@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ratatouille"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "goldentweaks:fructose"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:gamma_valerolactone"
+    },
+    {
+      "item": "ratatouille:boil_stone"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:difructose_anhydride"
+    },
+    {
+      "amount": 950,
+      "id": "goldentweaks:gamma_valerolactone"
+    }
+  ]
+}

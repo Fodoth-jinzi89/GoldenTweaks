@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "goldentweaks:raw_epdm"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "goldentweaks:raw_epdm"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:raw_epdm"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:raw_epdm"
+  }
+}

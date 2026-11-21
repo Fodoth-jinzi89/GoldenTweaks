@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:emulsion_sbr_white_rod"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:emulsion_sbr_white",
+      "amount": 72
+    }
+  ],
+  "energy": 7200
+}

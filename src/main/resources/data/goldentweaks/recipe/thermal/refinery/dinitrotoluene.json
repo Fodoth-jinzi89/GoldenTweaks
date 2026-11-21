@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:dinitrotoluene",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "amount": 500,
+      "fluid": "goldentweaks:2_4_dinitrotoluene"
+    },
+    {
+      "amount": 500,
+      "fluid": "goldentweaks:2_6_dinitrotoluene"
+    }
+  ],
+  "energy": 50000
+}

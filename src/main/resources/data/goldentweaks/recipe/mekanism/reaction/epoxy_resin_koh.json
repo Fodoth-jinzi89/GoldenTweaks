@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:epichlorohydrin"
+  },
+  "duration": 6400,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:bisphenol_a"
+  },
+  "item_input": {
+    "count": 2,
+    "item": "goldentweaks:potassium_hydroxide"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:epoxy_resin"
+  },
+  "item_output": {
+    "count": 2,
+    "id": "goldentweaks:rock_salt"
+  }
+}

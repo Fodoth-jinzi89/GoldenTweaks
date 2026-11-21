@@ -5,6 +5,7 @@ import net.fodoth.skina.goldentweaks.compat.academy.GTAcademyMagicDamage;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -21,13 +22,13 @@ public class AcademyDamageHelperMixin {
     private static final ThreadLocal<Boolean> gt$scaling = new ThreadLocal<>();
 
     @Inject(method = "hurt", at = @At("HEAD"), cancellable = true)
-    private static void gt$scaleMagicAttackDamage(ServerPlayer attacker, Entity target, DamageSource source, float amount,
+    private static void gt$scaleMagicAttackDamage(LivingEntity attacker, Entity target, DamageSource source, float amount,
                                                   CallbackInfoReturnable<Boolean> cir) {
-        if (attacker == null || Boolean.TRUE.equals(gt$scaling.get())) {
+        if (!(attacker instanceof ServerPlayer player) || Boolean.TRUE.equals(gt$scaling.get())) {
             return;
         }
 
-        float scaled = GTAcademyMagicDamage.scaleDamage(attacker, amount);
+        float scaled = GTAcademyMagicDamage.scaleDamage(player, amount);
         if (scaled == amount) {
             return;
         }

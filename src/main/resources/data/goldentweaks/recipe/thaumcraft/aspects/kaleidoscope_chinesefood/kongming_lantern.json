@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:kongming_lantern"
+  },
+  "aspects": {
+    "aer": 2,
+    "ignis": 2,
+    "lux": 3
+  }
+}

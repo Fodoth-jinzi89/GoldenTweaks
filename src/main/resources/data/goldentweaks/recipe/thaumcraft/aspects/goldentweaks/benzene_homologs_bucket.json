@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:benzene_homologs_bucket"
+  },
+  "aspects": {
+    "alkimia": 13,
+    "potentia": 9,
+    "permutatio": 5,
+    "ignis": 16,
+    "tenebrae": 12
+  }
+}

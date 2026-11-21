@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:mooncake_mold"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "instrumentum": 1,
+    "victus": 1
+  }
+}

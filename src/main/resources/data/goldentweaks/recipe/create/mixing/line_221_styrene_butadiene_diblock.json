@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:polystyrene_active_chain"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:butadiene"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:styrene_butadiene_diblock"
+    }
+  ]
+}

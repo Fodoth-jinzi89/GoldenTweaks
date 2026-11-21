@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:benzenediazonium_salt_solution"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "mekanism:hydrogen_chloride"
+    },
+    {
+      "item": "alltheores:tin_dust"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:phenylhydrazine"
+    },
+    {
+      "amount": 1000,
+      "id": "mekanism:brine"
+    },
+    {
+      "id": "goldentweaks:stannous_chloride"
+    }
+  ]
+}

@@ -130,12 +130,24 @@ public class GoldenTweaksConfigScreen {
                     ALWAYS_EDIBLE_FOOD, true);
 
             ConfigScreenHelper.addBool(feature, eb,
+                    "config.goldentweaks.feature.generate_aerofreight_list",
+                    GENERATE_AEROFREIGHT_LIST, true);
+
+            ConfigScreenHelper.addBool(feature, eb,
+                    "config.goldentweaks.feature.disable_yue_linglan_structure_trail",
+                    DISABLE_YUE_LINGLAN_STRUCTURE_TRAIL, true);
+
+            ConfigScreenHelper.addBool(feature, eb,
                     "config.goldentweaks.feature.lost_maid_drop",
                     LOST_MAID_DROP, true);
 
             ConfigScreenHelper.addDouble(feature, eb,
                     "config.goldentweaks.feature.lost_maid_drop_chance",
                     LOST_MAID_DROP_CHANCE, 0.05D, 0.0D, 1.0D);
+
+            ConfigScreenHelper.addInt(feature, eb,
+                    "config.goldentweaks.feature.chemical_reactor_batch_min_ticks",
+                    CHEMICAL_REACTOR_BATCH_MIN_TICKS, 128, 1, 72000);
 
 
             // =========================================================
@@ -175,6 +187,30 @@ public class GoldenTweaksConfigScreen {
                     OPTIMIZE_ERROR_BLOCK, true);
 
             // =========================================================
+            // Dango Music
+            // =========================================================
+            Object dangoMusic = getOrCreateCategory.invoke(
+                    builder, Component.translatable("config.goldentweaks.category.dangomusic"));
+            ConfigScreenHelper.addBool(dangoMusic, eb,
+                    "config.goldentweaks.dango_stop_on_world_leave", DANGO_STOP_ON_WORLD_LEAVE, true);
+            ConfigScreenHelper.addInt(dangoMusic, eb,
+                    "config.goldentweaks.dango_island_x", DANGO_ISLAND_X, 0, -32768, 32768);
+            ConfigScreenHelper.addInt(dangoMusic, eb,
+                    "config.goldentweaks.dango_island_y", DANGO_ISLAND_Y, 18, -32768, 32768);
+            ConfigScreenHelper.addEnum(dangoMusic, eb,
+                    "config.goldentweaks.dango_island_alignment", DANGO_ISLAND_ALIGNMENT,
+                    HudAlignment.TOP_CENTER, HudAlignment.values());
+
+            // =========================================================
+            // Multiblock
+            // =========================================================
+            Object multiblock = getOrCreateCategory.invoke(
+                    builder, Component.translatable("config.goldentweaks.category.multiblock"));
+            ConfigScreenHelper.addInt(multiblock, eb,
+                    "config.goldentweaks.multiblock.projection_duration_ms",
+                    MULTIBLOCK_PROJECTION_DURATION_MS, 10000, 0, 300000);
+
+            // =========================================================
             // Balance
             // =========================================================
             Object balance = getOrCreateCategory.invoke(
@@ -186,6 +222,14 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.evolved_mekanism_solar_multiplier",
                     EVOLVED_MEKANISM_SOLAR_MULTIPLIER,
                     1, 1, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.argo_aquatic_spawn_chance",
+                    ARGO_AQUATIC_SPAWN_CHANCE, 0.1D, 0.0D, 1.0D);
+
+            ConfigScreenHelper.addDouble(balance, eb,
+                    "config.goldentweaks.balance.vanilla_fish_spawn_chance",
+                    VANILLA_FISH_SPAWN_CHANCE, 0.1D, 0.0D, 1.0D);
 
             ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.mekanism.compact_space_power_percent",
@@ -201,6 +245,18 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.balance.mio_icif.compact_space_wind_percent",
                     MIO_ICIF_COMPACT_SPACE_WIND_PERCENT,
                     100, 0, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.oil_rig_infinite",
+                    MIO_ICIF_OIL_RIG_INFINITE, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.tesla_coil_hostile_only",
+                    MIO_ICIF_TESLA_COIL_HOSTILE_ONLY, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.tesla_coil_wear_armor",
+                    MIO_ICIF_TESLA_COIL_WEAR_ARMOR, true);
 
             ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.mekanism.transporter_transit_cap",

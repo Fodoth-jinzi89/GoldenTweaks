@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "goldentweaks:item/craftsmen/ldpe_fiber_coil",
+    "layer1": "goldentweaks:item/craftsmen/ldpe_fiber_string"
+  }
+}

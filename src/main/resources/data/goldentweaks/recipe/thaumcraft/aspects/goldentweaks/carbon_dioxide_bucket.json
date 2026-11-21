@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:carbon_dioxide_bucket"
+  },
+  "aspects": {
+    "tenebrae": 16,
+    "volatus": 12
+  }
+}

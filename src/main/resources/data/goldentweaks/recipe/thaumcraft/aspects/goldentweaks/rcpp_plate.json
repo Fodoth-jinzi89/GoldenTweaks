@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:rcpp_plate"
+  },
+  "aspects": {
+    "potentia": 6,
+    "ordo": 2,
+    "machina": 13,
+    "limus": 9
+  }
+}

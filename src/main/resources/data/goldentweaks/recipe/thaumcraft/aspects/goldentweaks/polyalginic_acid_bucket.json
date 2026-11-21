@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:polyalginic_acid_bucket"
+  },
+  "aspects": {
+    "limus": 10,
+    "machina": 8,
+    "ordo": 5
+  }
+}

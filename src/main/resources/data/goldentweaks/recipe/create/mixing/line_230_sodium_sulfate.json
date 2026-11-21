@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:m_benzenedisulfonic_acid"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:sodium_sulfate",
+      "count": 2
+    },
+    {
+      "amount": 1000,
+      "id": "goldentweaks:resorcinol"
+    }
+  ]
+}

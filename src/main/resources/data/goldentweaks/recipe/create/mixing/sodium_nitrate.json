@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "goldentweaks:nitrogen_dioxide"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "minecraft:water"
+    },
+    {
+      "id": "goldentweaks:sodium_nitrate"
+    },
+    {
+      "id": "goldentweaks:sodium_nitrite"
+    }
+  ]
+}

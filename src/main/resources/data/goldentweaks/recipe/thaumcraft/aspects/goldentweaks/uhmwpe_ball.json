@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:uhmwpe_ball"
+  },
+  "aspects": {
+    "fabrico": 13,
+    "limus": 9,
+    "motus": 5,
+    "machina": 16
+  }
+}

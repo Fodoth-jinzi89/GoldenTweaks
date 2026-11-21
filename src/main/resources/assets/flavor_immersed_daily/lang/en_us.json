@@ -1382,5 +1382,19 @@
   "tooltip.flavor_immersed_daily.mooncake_mold.stored_filling": "Filling: %s x%s",
   "tooltip.flavor_immersed_daily.raddles": "Right-click the underside of a block to hang it; the four characters on the board can be edited.",
   "tooltip.flavor_immersed_daily.raddles.answer": "Other players can right-click to answer; a correct answer wins one reward (once per player per board).",
-  "tooltip.flavor_immersed_daily.raddles.owner": "The placer can set the riddle and its answer, and store up to 16 slots of rewards."
+  "tooltip.flavor_immersed_daily.raddles.owner": "The placer can set the riddle and its answer, and store up to 16 slots of rewards.",
+  "effect.flavor_immersed_daily.ember_burn": "Ember Burn",
+  "effect.flavor_immersed_daily.ember_burn.description": "Attack damage and movement speed are reduced by 50%. Incoming damage ignores armor damage reduction. Burn for 10 seconds after the effect ends. The player\u0027s view is continuously obscured by flames.",
+  "effect.flavor_immersed_daily.eternal_ember": "Eternal Ember",
+  "effect.flavor_immersed_daily.eternal_ember.description": "Negates the next melee attack against you, then is consumed. If your current health is greater than the attacker\u0027s, inflict Ember Burn on them for 10 seconds (200 ticks).",
+  "effect.flavor_immersed_daily.exotic_exile": "Exotic Exile",
+  "effect.flavor_immersed_daily.exotic_exile.description": "On activation, record your maximum health, lose half that amount of health, and gain the same amount of Absorption. Health cannot exceed half the recorded maximum while active. When Absorption is depleted, exile the attacker to a random safe location within 10 blocks (configurable). After a successful exile, gain immunity to damage with no source entity until this effect ends (configurable).",
+  "effect.flavor_immersed_daily.fivefold_evolution": "Fivefold Evolution",
+  "effect.flavor_immersed_daily.fivefold_evolution.description": "Block and reflect attacks in sequence. Each success advances to the next stage; the effect ends after five successes.\n① Block one melee attack from another entity.\n② Block one melee attack within the first 20 seconds after gaining this effect.\n③ Block a melee attack from an undead creature.\n④ Block a projectile and reflect damage back to its shooter.\n⑤ Block one melee attack from another entity.",
+  "effect.flavor_immersed_daily.fragrant_legacy": "Fragrant Legacy",
+  "effect.flavor_immersed_daily.fragrant_legacy.description": "After the holder actually takes damage, grant Absorption to the nearest other player within 8 blocks of the injured holder. The amount is 33% of the injured holder\u0027s maximum health, rounded down. Consumed on success; retained if no other player is nearby.",
+  "rei.flavor_immersed_daily.appraisal_random": "Randomly draws 1–3 items; slots show possible outcomes, not guaranteed counts",
+  "rei.flavor_immersed_daily.crop_choices": "Choose one conversion output",
+  "rei.flavor_immersed_daily.draw_chance": "%s: %s%% per draw",
+  "rei.flavor_immersed_daily.mooncake_chain": "Press the raw mooncake first; cooking is a separate step"
 }

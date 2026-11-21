@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "C C",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "goldentweaks:lldpe_plate"
+    },
+    "B": {
+      "tag": "c:circuits/advanced"
+    },
+    "C": {
+      "item": "goldentweaks:lldpe_rod"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "mio_icif:oilrig/block_oil_rig_base"
+  }
+}

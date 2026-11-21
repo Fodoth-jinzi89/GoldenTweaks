@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:pva",
+  "loader": "neoforge:fluid_container"
+}

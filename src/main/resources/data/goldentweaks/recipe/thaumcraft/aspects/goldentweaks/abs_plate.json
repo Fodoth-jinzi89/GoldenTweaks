@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:abs_plate"
+  },
+  "aspects": {
+    "fabrico": 8,
+    "potentia": 4,
+    "ordo": 15
+  }
+}

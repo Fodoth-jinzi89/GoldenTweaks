@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:ethylbenzene",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:styrene",
+      "amount": 500
+    },
+    {
+      "fluid": "northstar:liquid_hydrogen",
+      "amount": 500
+    }
+  ],
+  "energy": 5000
+}

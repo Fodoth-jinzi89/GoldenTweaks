@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "envirocore"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "envirocore:ionite_crystal"
+  },
+  "output": {
+    "count": 1,
+    "id": "envirocore:ionite_powder"
+  }
+}

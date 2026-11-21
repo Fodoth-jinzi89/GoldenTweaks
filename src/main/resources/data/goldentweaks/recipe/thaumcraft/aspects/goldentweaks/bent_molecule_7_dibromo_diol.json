@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:bent_molecule_7_dibromo_diol"
+  },
+  "aspects": {
+    "potentia": 8,
+    "permutatio": 4,
+    "alkimia": 15
+  }
+}

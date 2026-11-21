@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:polystyrene_active_chain_bucket"
+  },
+  "aspects": {
+    "aqua": 6,
+    "potentia": 8,
+    "alkimia": 6
+  }
+}

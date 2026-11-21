@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createnuclear"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:butyl_rubber_monomer_mix"
+  },
+  "duration": 6400,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "createnuclear:nitrogen"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:ziegler_natta_catalyst"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:raw_butyl_rubber"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:ziegler_natta_catalyst"
+  }
+}

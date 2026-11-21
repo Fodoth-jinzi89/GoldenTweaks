@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "alltheores:steel_plate"
+    },
+    "B": {
+      "item": "goldentweaks:ipp_plate"
+    },
+    "C": {
+      "item": "mio_icif:producer/block_machine_hull_basic"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "mio_icif:producer/block_machine_hull_advanced"
+  }
+}

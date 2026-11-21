@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:toughened_polyethylene",
+  "loader": "neoforge:fluid_container"
+}

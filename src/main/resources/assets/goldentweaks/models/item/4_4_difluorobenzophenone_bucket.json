@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:4_4_difluorobenzophenone",
+  "loader": "neoforge:fluid_container"
+}

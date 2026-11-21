@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:hydrogen_sulfide_bucket"
+  },
+  "aspects": {
+    "aqua": 6,
+    "potentia": 8,
+    "alkimia": 6
+  }
+}

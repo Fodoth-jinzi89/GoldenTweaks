@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:natural_rubber_white_ball"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:natural_rubber_white",
+      "amount": 48
+    }
+  ],
+  "energy": 4800
+}

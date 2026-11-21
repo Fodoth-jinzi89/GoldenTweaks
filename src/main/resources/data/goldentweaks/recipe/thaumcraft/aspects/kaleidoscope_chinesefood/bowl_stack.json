@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:bowl_stack"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "fames": 1,
+    "vas": 1
+  }
+}

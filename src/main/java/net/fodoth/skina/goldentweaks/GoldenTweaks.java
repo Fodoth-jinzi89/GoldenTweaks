@@ -3,6 +3,8 @@ package net.fodoth.skina.goldentweaks;
 import com.jesz.createdieselgenerators.CDGSpriteShifts;
 import com.mojang.logging.LogUtils;
 import net.fodoth.skina.goldentweaks.compat.cataclysm.GTCataclysmCompat;
+import net.fodoth.skina.goldentweaks.compat.createaerofreight.GTBountifulRewardPools;
+import net.fodoth.skina.goldentweaks.compat.createaerofreight.GTEditorTransfer;
 import net.fodoth.skina.goldentweaks.compat.academy.AcademyStormWingFallImmunity;
 import net.fodoth.skina.goldentweaks.compat.academy.GMMediaPlayerState;
 import net.fodoth.skina.goldentweaks.compat.academy.GTRailgunDestruction;
@@ -11,6 +13,7 @@ import net.fodoth.skina.goldentweaks.compat.academy.network.GTMediaUnloadPacket;
 import net.fodoth.skina.goldentweaks.compat.appflux.AppliedFluxCompat;
 import net.fodoth.skina.goldentweaks.compat.maidsoulcore.MaidLogSuppressor;
 import net.fodoth.skina.goldentweaks.compat.mekanism.GTMekanismChemicals;
+import net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifDieselGeneratorCompat;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
 import net.fodoth.skina.goldentweaks.compat.compactmachines.CompactMachinesCompat;
@@ -29,6 +32,10 @@ import net.fodoth.skina.goldentweaks.compat.thaumicbases.ThaumicCropHarvestEvent
 import net.fodoth.skina.goldentweaks.compat.thaumicbases.GTThaumicBasesFurnaceCompat;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
+import net.fodoth.skina.goldentweaks.content.GoldenDandelion;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTPortCapabilities;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockCreativeTabs;
 import net.fodoth.skina.goldentweaks.content.craftsmen.GTCraftsmenCreativeTabs;
 import net.fodoth.skina.goldentweaks.content.craftsmen.GTCraftsmenItems;
 import net.fodoth.skina.goldentweaks.content.reactors.GTReactorCreativeTabs;
@@ -88,7 +95,18 @@ public class GoldenTweaks {
                 GoldenTweaksCommonConfig.SPEC
         );
 
+        GoldenDandelion.register(modEventBus);
+        GTMultiblockBlocks.register(modEventBus);
+        // Ports only exist with avaritia_more_items; their capability registration follows suit.
+        if (ModList.get().isLoaded("avaritia_more_items")) {
+            modEventBus.addListener(GTPortCapabilities::register);
+        }
+        GTMultiblockCreativeTabs.register(modEventBus);
         GTReactorFluids.register(modEventBus);
+        if (ModList.get().isLoaded("create_aerofreight")) {
+            NeoForge.EVENT_BUS.register(GTBountifulRewardPools.class);
+            modEventBus.addListener(GTEditorTransfer::register);
+        }
         GTReactorItems.register(modEventBus);
         GTReactorCreativeTabs.register(modEventBus);
         GTCraftsmenItems.register(modEventBus);
@@ -199,6 +217,12 @@ public class GoldenTweaks {
             // 黄金探矿杖 + 钻井物品上的矿脉分享说明（见 compat/createoreexcavation）
             GTCreateOreExcavationItems.register(modEventBus);
             NeoForge.EVENT_BUS.register(GTCreateOreExcavationTooltip.class);
+        }
+
+        if (ModList.get().isLoaded("mio_icif")) {
+            LOGGER.info("Detected mio_icif, allowing the diesel generator to accept piped fuel");
+            // 柴油发电机自带燃料罐，但模组没有注册流体能力，只能靠桶输入（见 compat/mioicif）
+            modEventBus.addListener(GTMioIcifDieselGeneratorCompat::registerCapabilities);
         }
 
         if (ModList.get().isLoaded("ftbchunks")) {

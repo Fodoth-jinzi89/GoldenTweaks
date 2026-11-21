@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:sodium_azide"
+  },
+  "aspects": {
+    "fabrico": 5,
+    "potentia": 9,
+    "ordo": 6,
+    "alkimia": 5
+  }
+}

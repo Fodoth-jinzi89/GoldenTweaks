@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:pc_abs_alloy_rod"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:pc_abs_alloy",
+      "amount": 72
+    }
+  ],
+  "energy": 7200
+}

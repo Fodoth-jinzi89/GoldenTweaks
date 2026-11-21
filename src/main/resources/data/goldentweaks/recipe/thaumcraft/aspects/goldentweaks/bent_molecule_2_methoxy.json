@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:bent_molecule_2_methoxy"
+  },
+  "aspects": {
+    "alkimia": 6,
+    "aqua": 2,
+    "potentia": 13,
+    "permutatio": 9
+  }
+}

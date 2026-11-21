@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:brewer",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:coconut"
+    },
+    {
+      "fluid": "spectrum:liquid_crystal",
+      "amount": 1000
+    }
+  ],
+  "result": [
+    {
+      "fluid": "goldentweaks:coconut_oil",
+      "amount": 1000
+    }
+  ],
+  "energy": 5000
+}

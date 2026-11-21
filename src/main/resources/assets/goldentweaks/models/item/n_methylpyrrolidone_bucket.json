@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:n_methylpyrrolidone",
+  "loader": "neoforge:fluid_container"
+}

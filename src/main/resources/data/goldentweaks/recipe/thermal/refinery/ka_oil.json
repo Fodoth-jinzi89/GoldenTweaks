@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:ka_oil",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:cyclohexanone",
+      "amount": 500
+    },
+    {
+      "fluid": "goldentweaks:cyclohexanol",
+      "amount": 500
+    }
+  ],
+  "energy": 50000
+}

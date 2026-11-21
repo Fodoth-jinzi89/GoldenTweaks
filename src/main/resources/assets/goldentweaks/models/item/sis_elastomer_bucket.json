@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:sis_elastomer",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:ppe_hips_alloy_nugget"
+  },
+  "output": {
+    "id": "goldentweaks:ppe_hips_alloy",
+    "amount": 16
+  }
+}

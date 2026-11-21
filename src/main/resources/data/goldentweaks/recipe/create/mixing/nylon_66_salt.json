@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "jaopca"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "silentgear"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:adipic_acid"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:hexamethylenediamine"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    },
+    {
+      "item": "silentgear:crimson_iron_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "jaopca:mekanism_dirty_dusts.crimson_iron"
+    },
+    {
+      "id": "goldentweaks:slaked_lime"
+    },
+    {
+      "id": "goldentweaks:nylon_66_salt"
+    }
+  ]
+}

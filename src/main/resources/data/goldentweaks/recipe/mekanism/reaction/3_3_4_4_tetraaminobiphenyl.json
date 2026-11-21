@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 2000,
+    "chemical": "goldentweaks:ammonia"
+  },
+  "duration": 6400,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:3_3_dichlorobenzidine"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:cuprous_chloride"
+  },
+  "chemical_output": {
+    "amount": 1000,
+    "id": "goldentweaks:3_3_4_4_tetraaminobiphenyl"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:cuprous_chloride"
+  }
+}

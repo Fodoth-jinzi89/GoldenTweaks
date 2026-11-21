@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:dibutyltin_dichloride"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "item": "goldentweaks:potassium_hydroxide"
+    },
+    {
+      "item": "goldentweaks:potassium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:rock_salt_water"
+    },
+    {
+      "id": "goldentweaks:dibutyltin_oxide"
+    },
+    {
+      "id": "goldentweaks:rock_salt"
+    }
+  ]
+}

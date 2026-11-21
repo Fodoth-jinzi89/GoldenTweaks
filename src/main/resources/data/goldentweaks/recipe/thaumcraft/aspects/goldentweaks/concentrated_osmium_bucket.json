@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:concentrated_osmium_bucket"
+  },
+  "aspects": {
+    "ordo": 4,
+    "metallum": 15,
+    "potentia": 11,
+    "terra": 7,
+    "machina": 3
+  }
+}

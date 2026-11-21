@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdieselgenerators"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    }
+  ],
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "item": "flavor_immersed_daily:corn"
+    },
+    {
+      "type": "fluid_stack",
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "goldentweaks:lactic_acid",
+      "amount": 1000
+    }
+  ]
+}

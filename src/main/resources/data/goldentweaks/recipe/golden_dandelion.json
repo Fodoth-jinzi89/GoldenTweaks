@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "GPG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "P": {
+      "item": "minecraft:dandelion"
+    }
+  },
+  "result": {
+    "id": "goldentweaks:golden_dandelion",
+    "count": 1
+  }
+}

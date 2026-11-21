@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:isophthalic_acid",
+  "loader": "neoforge:fluid_container"
+}

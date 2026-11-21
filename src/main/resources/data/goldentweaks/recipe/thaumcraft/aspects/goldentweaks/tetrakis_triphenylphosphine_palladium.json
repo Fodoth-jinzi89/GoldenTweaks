@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:tetrakis_triphenylphosphine_palladium"
+  },
+  "aspects": {
+    "machina": 9,
+    "alkimia": 5,
+    "potentia": 16,
+    "metallum": 12
+  }
+}

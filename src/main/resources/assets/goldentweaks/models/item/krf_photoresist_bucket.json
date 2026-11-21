@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:krf_photoresist",
+  "loader": "neoforge:fluid_container"
+}

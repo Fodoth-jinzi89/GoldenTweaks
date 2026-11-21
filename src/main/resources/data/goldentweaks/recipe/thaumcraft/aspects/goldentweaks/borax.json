@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:borax"
+  },
+  "aspects": {
+    "terra": 2,
+    "permutatio": 13,
+    "aqua": 9
+  }
+}

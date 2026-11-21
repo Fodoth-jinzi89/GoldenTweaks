@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "envirocore"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "envirocore:erodium_powder"
+  },
+  "result": {
+    "id": "envirocore:erodium_crystal",
+    "count": 1
+  }
+}

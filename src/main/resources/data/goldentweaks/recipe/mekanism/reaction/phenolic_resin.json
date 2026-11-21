@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:formaldehyde"
+  },
+  "duration": 6400,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:phenol"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:sulfuric_acid_ion_exchange_resin"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:phenolic_resin"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "mio_icif:resource/item_harz"
+  }
+}

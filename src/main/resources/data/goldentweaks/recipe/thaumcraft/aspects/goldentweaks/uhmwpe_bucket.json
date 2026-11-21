@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:uhmwpe_bucket"
+  },
+  "aspects": {
+    "limus": 9,
+    "machina": 5,
+    "ordo": 16,
+    "fabrico": 12
+  }
+}

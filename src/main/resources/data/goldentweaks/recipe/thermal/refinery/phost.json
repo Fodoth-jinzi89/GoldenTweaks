@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:polyhydroxystyrene_toluene_solution",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "amount": 100,
+      "fluid": "goldentweaks:phost"
+    },
+    {
+      "amount": 950,
+      "fluid": "goldentweaks:toluene"
+    }
+  ],
+  "energy": 50000
+}

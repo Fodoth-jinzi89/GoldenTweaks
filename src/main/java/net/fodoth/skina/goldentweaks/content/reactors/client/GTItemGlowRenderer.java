@@ -82,12 +82,23 @@ public final class GTItemGlowRenderer {
         }
     }
 
+    /** 黄瓶物品共用的光环颜色，与 bottle_yellow / bottle_highlight_yellow 贴图一致。 */
+    private static final int YELLOW_HALO = 0xF5D86A;
+
+    /** 使用黄瓶、带黄色光环的物品。 */
+    private static final GTReactorSolid[] YELLOW_HALO_SOLIDS = {
+            GTReactorSolid.CYCLOPARAPHENYLENE_8,
+            GTReactorSolid.G_I_LINE_PHOTORESIST,
+            GTReactorSolid.ISOPRENE_CROSSLINKED_PHOTORESIST,
+            GTReactorSolid.KRF_PHOTORESIST,
+            GTReactorSolid.NANO_ACTIVATED_PARTICLES,
+    };
+
     private static int glowRgb(ItemStack stack) {
-        if (stack.is(GTReactorItems.item(GTReactorSolid.CYCLOPARAPHENYLENE_8).get())) {
-            return GTReactorSolid.CYCLOPARAPHENYLENE_8.color();
-        }
-        if (stack.is(GTReactorItems.item(GTReactorSolid.NANO_ACTIVATED_PARTICLES).get())) {
-            return GTReactorSolid.NANO_ACTIVATED_PARTICLES.color();
+        for (GTReactorSolid solid : YELLOW_HALO_SOLIDS) {
+            if (stack.is(GTReactorItems.item(solid).get())) {
+                return YELLOW_HALO;
+            }
         }
         return -1;
     }

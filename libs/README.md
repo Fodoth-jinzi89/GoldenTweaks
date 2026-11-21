@@ -27,11 +27,13 @@
   某个 mixin 自身引用了缺失模组的类时会被跳过，否则会把启动崩成 `MixinTransformerError`。
 
 
-## compileOnly/ —— 197 个 jar（仅编译期可见）
+## compileOnly/ —— 204 个 jar（仅编译期可见）
 
 | 模组 | 版本 | 文件名 |
 |---|---|---|
-| AcademyCraft-neoforge | `0.0.33-scex-combat-hud` | `AcademyCraft-neoforge-1.21.1-0.0.33-scex-combat-hud.jar` |
+| DangoMusic | `1.7.5+1.21.1-neoforge` | `DangoMusic-1.7.5+1.21.1-neoforge.jar` |
+| CreateAeroFreight | `1.0.2` | `CreateAeroFreight-1.0.2.jar` |
+| AcademyCraft-neoforge | `0.0.34-scex-modern` | `AcademyCraft-neoforge-1.21.1-0.0.34-scex-modern.jar` |
 | AI-Improvements | `1.21-0.5.3` | `AI-Improvements-1.21-0.5.3.jar` |
 | watut | `1.2.7-neoforge-1.21.1` | `watut-1.2.7-neoforge-1.21.1.jar` |
 | AdvancedLootInfo-neoforge | `2.5.0` | `AdvancedLootInfo-neoforge-1.21.1-2.5.0.jar` |
@@ -83,6 +85,7 @@
 | create_ratatouille | `1.4.0` | `[S]-ratatouille-1.4.0-neoforge-1.21.1.jar` |
 | create_submarine | `3.4.1` | `ALPHA-2 create_submarine-3.4.1.jar` |
 | createbigcannons | `5.11.7` | `[S]-createbigcannons-5.11.7-neoforge-1.21.1.jar` |
+| createnuclear | `2.0.0` | `[S]-createnuclear-2.0.0-neoforge-1.21.1.jar` |
 | createdieselgenerators | `1.21.1-1.3.12` | `createdieselgenerators-1.21.1-1.3.12.jar` |
 | CreateDragonsPlus | `1.11.9` | `CreateDragonsPlus-1.11.9.jar` |
 | createvoidway | `0.2.4+mc1.21.1` | `createvoidway-0.2.4+mc1.21.1.jar` |
@@ -101,7 +104,8 @@
 | FarmersDelight | `1.3.4` | `FarmersDelight-1.21.1-1.3.4.jar` |
 | fastquit | `3.0.0+1.20.6_mapped_moj_1.21.1` | `fastquit-3.0.0+1.20.6_mapped_moj_1.21.1.jar` |
 | fidworkblock | `1.0.0` | `fidworkblock-1.0.0.jar` |
-| flavor_immersed_daily | `1.21.1-neoforge-2026.11.7` | `flavor_immersed_daily-1.21.1-neoforge-2026.11.7.jar` |
+| flavor_immersed_daily | `1.21.1-neoforge-2026.11.14` | `flavor_immersed_daily-1.21.1-neoforge-2026.11.14 (1).jar` |
+| flavor_immersed_daily_argo | `1.21.1-neoforge-2026.11.14` | `flavor_immersed_daily_argo-1.21.1-neoforge-2026.11.14.jar` |
 | fluidlogistics | `1.3.1` | `fluidlogistics-1.3.1-mc1.21.1.jar` |
 | flywheel-neoforge | `1.21.1-1.0.6` | `flywheel-neoforge-1.21.1-1.0.6.jar` |
 | Fractal | `1.8.0+1.21.1-neoforge` | `Fractal-1.8.0+1.21.1-neoforge.jar` |
@@ -221,7 +225,7 @@
 | advanced_infusion | `0.1.0` | `advanced_infusion-0.1.0.jar` |
 | appliedenergistics2 | `19.2.18` | `[核心]appliedenergistics2-19.2.18.jar` |
 | attributefix-neoforge | `1.21.1-21.1.3` | `[基础]attributefix-neoforge-1.21.1-21.1.3.jar` |
-| avaritia_more_items | `1.21.1-NeoForge-beta-1.0.7` | `avaritia_more_items-1.21.1-NeoForge-beta-1.0.7.jar` |
+| avaritia_more_items | `1.21.1-NeoForge-beta-1.0.9` | `avaritia_more_items-1.21.1-NeoForge-beta-1.0.9.jar` |
 | bookshelf-neoforge | `1.21.1-21.1.81` | `[库]bookshelf-neoforge-1.21.1-21.1.81.jar` |
 | bountiful-neoforge | `8.0.0-beta.2` | `bountiful-neoforge-8.0.0-beta.2.jar` |
 | create | `1.21.1-6.0.10` | `[核心]create-1.21.1-6.0.10.jar` |
@@ -245,7 +249,7 @@
 | lootr-neoforge | `1.21.1-1.11.38.127` | `lootr-neoforge-1.21.1-1.11.38.127.jar` |
 | nodalmechanics | `1.0.0-port.7` | `nodalmechanics-1.0.0-port.7.jar` |
 | prickle-neoforge | `1.21.1-21.1.11` | `[库]prickle-neoforge-1.21.1-21.1.11.jar` |
-| avaritia | `1.3.9.9` | `[S]-avaritia-1.3.9.9-neoforge-1.21.1.jar` |
+| avaritia（Re-Avaritia） | `1.4.4` | `Re-Avaritia-neoforge-1.21.1-1.4.4-release.jar` |
 | renderblender | `1.0.0` | `renderblender-1.0.0.jar` |
 | sable-neoforge | `2.0.5` | `[S]-sable-2.0.5-neoforge-1.21.1.jar` |
 | scex-thaumcraft-aspects-jei | `1.21.1-1.0.0-rc7` | `scex-thaumcraft-aspects-jei-1.21.1-1.0.0-rc7.jar` |

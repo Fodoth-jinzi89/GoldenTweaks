@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_twilight:frozen_bun"
+  },
+  "aspects": {
+    "fames": 2,
+    "gelum": 3,
+    "victus": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:sodium"
+  },
+  "aspects": {
+    "aqua": 8,
+    "ignis": 4,
+    "ordo": 15
+  }
+}

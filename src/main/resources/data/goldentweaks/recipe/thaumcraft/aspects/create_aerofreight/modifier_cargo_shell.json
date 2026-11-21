@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_aerofreight:modifier_cargo_shell"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "fabrico": 1,
+    "machina": 2
+  }
+}

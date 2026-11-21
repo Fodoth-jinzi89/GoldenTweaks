@@ -11,6 +11,7 @@ import thaumcraft.client.renderers.entity.mob.MobRenderStyles;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.lang.ref.WeakReference;
 
 /**
  * 缓存 {@code MobRenderStyles.create} 里烘培的 {@code ModelPart}，恢复旧版的显存优化。
@@ -27,6 +28,9 @@ public abstract class MobRenderStylesModelCacheMixin {
     @Unique
     private static final Map<ModelLayerLocation, ModelPart> gt$sharedParts = new HashMap<>();
 
+    @Unique
+    private static WeakReference<EntityRendererProvider.Context> gt$context = new WeakReference<>(null);
+
     @Redirect(
             method = "create",
             at = @At(
@@ -34,7 +38,11 @@ public abstract class MobRenderStylesModelCacheMixin {
                     target = "Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;bakeLayer(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;"
             )
     )
-    private static ModelPart gt$sharedBakeLayer(EntityRendererProvider.Context context, ModelLayerLocation layer) {
+    private static synchronized ModelPart gt$sharedBakeLayer(EntityRendererProvider.Context context, ModelLayerLocation layer) {
+        if (gt$context.get() != context) {
+            gt$sharedParts.clear();
+            gt$context = new WeakReference<>(context);
+        }
         return gt$sharedParts.computeIfAbsent(layer, context::bakeLayer);
     }
 }

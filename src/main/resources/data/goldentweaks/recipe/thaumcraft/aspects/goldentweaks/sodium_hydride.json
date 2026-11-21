@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:sodium_hydride"
+  },
+  "aspects": {
+    "ordo": 4,
+    "terra": 15,
+    "permutatio": 11,
+    "aqua": 7,
+    "ignis": 3
+  }
+}

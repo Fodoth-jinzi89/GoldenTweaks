@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:separating",
+  "input": {
+    "amount": 1,
+    "fluid": "goldentweaks:butanediol"
+  },
+  "left_chemical_output": {
+    "amount": 2,
+    "id": "mekanism:hydrogen"
+  },
+  "right_chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:gamma_butyrolactone"
+  }
+}

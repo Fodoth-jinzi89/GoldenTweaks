@@ -3,13 +3,21 @@ package net.fodoth.skina.goldentweaks.network;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.network.packet.C2SSelectArcaneRecipePacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SOpenSsContraptionStoragePacket;
+import net.fodoth.skina.goldentweaks.network.packet.C2SMachineNamePacket;
+import net.fodoth.skina.goldentweaks.network.packet.C2SMachineOverclockPacket;
+import net.fodoth.skina.goldentweaks.network.packet.C2SMachineParallelPacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPickupItemPacket;
+import net.fodoth.skina.goldentweaks.network.packet.C2SPortTextPacket;
+import net.fodoth.skina.goldentweaks.network.packet.C2SPortTogglePacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SSsContraptionAttackPacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SUpdatePickupSettingsPacket;
+import net.fodoth.skina.goldentweaks.network.packet.S2CReactionProductsPacket;
+import net.fodoth.skina.goldentweaks.network.packet.S2CRecipeLockPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CConsumableSyncPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2COpenMaterialBookPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CSsStorageRenderPacket;
 import net.fodoth.skina.goldentweaks.network.packet.S2CProviderIconsPacket;
+import net.fodoth.skina.goldentweaks.network.packet.S2CShowMultiblockProjectionPacket;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -81,6 +89,54 @@ public class ModNetworking {
                 S2CProviderIconsPacket.TYPE,
                 S2CProviderIconsPacket.STREAM_CODEC,
                 S2CProviderIconsPacket::handle
+        );
+
+        registrar.playToClient(
+                S2CShowMultiblockProjectionPacket.TYPE,
+                S2CShowMultiblockProjectionPacket.STREAM_CODEC,
+                S2CShowMultiblockProjectionPacket::handle
+        );
+
+        registrar.playToClient(
+                S2CReactionProductsPacket.TYPE,
+                S2CReactionProductsPacket.STREAM_CODEC,
+                S2CReactionProductsPacket::handle
+        );
+
+        registrar.playToClient(
+                S2CRecipeLockPacket.TYPE,
+                S2CRecipeLockPacket.STREAM_CODEC,
+                S2CRecipeLockPacket::handle
+        );
+
+        registrar.playToServer(
+                C2SPortTextPacket.TYPE,
+                C2SPortTextPacket.STREAM_CODEC,
+                C2SPortTextPacket::handle
+        );
+
+        registrar.playToServer(
+                C2SPortTogglePacket.TYPE,
+                C2SPortTogglePacket.STREAM_CODEC,
+                C2SPortTogglePacket::handle
+        );
+
+        registrar.playToServer(
+                C2SMachineNamePacket.TYPE,
+                C2SMachineNamePacket.STREAM_CODEC,
+                C2SMachineNamePacket::handle
+        );
+
+        registrar.playToServer(
+                C2SMachineOverclockPacket.TYPE,
+                C2SMachineOverclockPacket.STREAM_CODEC,
+                C2SMachineOverclockPacket::handle
+        );
+
+        registrar.playToServer(
+                C2SMachineParallelPacket.TYPE,
+                C2SMachineParallelPacket.STREAM_CODEC,
+                C2SMachineParallelPacket::handle
         );
     }
 }

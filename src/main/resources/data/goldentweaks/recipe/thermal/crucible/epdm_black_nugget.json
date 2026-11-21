@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:epdm_black_nugget"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:epdm_black",
+      "amount": 16
+    }
+  ],
+  "energy": 1600
+}

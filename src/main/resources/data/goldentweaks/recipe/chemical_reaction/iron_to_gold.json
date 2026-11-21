@@ -1,0 +1,26 @@
+{
+  "type": "goldentweaks:chemical_reaction",
+  "mode": 1,
+  "inputs": [
+    {
+      "item": "minecraft:iron_ingot",
+      "count": 4
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "outputs": [
+    {
+      "item": "minecraft:gold_ingot",
+      "count": 1
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 500
+    }
+  ],
+  "processing_time": 16,
+  "energy_per_tick": 32
+}

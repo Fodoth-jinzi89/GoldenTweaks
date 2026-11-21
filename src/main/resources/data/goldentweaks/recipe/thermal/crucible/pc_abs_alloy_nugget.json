@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:pc_abs_alloy_nugget"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:pc_abs_alloy",
+      "amount": 16
+    }
+  ],
+  "energy": 1600
+}

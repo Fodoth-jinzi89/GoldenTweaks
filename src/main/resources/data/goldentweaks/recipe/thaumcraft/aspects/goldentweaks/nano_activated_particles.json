@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:nano_activated_particles"
+  },
+  "aspects": {
+    "potentia": 15,
+    "permutatio": 11,
+    "alkimia": 7,
+    "aqua": 3
+  }
+}

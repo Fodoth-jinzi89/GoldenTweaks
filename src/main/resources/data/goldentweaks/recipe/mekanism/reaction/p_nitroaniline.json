@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "flavor_immersed_daily"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 2000,
+    "chemical": "goldentweaks:ammonia"
+  },
+  "duration": 12000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:p_nitrochlorobenzene"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "flavor_immersed_daily:tidywater"
+  },
+  "chemical_output": {
+    "amount": 1000,
+    "id": "goldentweaks:p_nitroaniline"
+  },
+  "item_output": {
+    "count": 2,
+    "id": "goldentweaks:ammonium_chloride"
+  }
+}

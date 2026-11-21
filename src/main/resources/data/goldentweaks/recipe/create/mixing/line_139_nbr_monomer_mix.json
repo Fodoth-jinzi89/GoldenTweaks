@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 700,
+      "fluid": "goldentweaks:butadiene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 300,
+      "fluid": "goldentweaks:acrylonitrile"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:nbr_monomer_mix"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:pbi_fiber"
+  },
+  "aspects": {
+    "pannus": 10,
+    "machina": 5,
+    "fabrico": 16,
+    "motus": 13
+  }
+}

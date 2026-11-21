@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:nbr_monomer_mix"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "item": "thaumcraft:sanity_soap"
+    },
+    {
+      "item": "goldentweaks:potassium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 2000,
+      "id": "goldentweaks:nbr_latex"
+    },
+    {
+      "id": "thaumcraft:sanity_soap",
+      "chance": 0.99
+    }
+  ]
+}

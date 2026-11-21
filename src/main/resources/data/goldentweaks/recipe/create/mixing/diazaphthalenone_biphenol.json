@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "mekanism:sulfuric_acid"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:phenol"
+    },
+    {
+      "item": "goldentweaks:diazaphthalenone"
+    }
+  ],
+  "results": [
+    {
+      "amount": 800,
+      "id": "mekanism:sulfuric_acid"
+    },
+    {
+      "id": "goldentweaks:diazaphthalenone_biphenol",
+      "chance": 0.8
+    }
+  ]
+}

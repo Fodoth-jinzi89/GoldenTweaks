@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:pvc_nugget"
+  },
+  "aspects": {
+    "ordo": 11,
+    "limus": 7,
+    "machina": 3,
+    "alkimia": 3
+  }
+}

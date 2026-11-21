@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 4000,
+      "fluid": "goldentweaks:4_methoxyacetophenone"
+    },
+    {
+      "item": "goldentweaks:sodium_borohydride"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 4000,
+      "id": "goldentweaks:1_4_methoxyphenyl_ethanol"
+    },
+    {
+      "id": "goldentweaks:sodium_tetrahydroxyborate"
+    }
+  ]
+}

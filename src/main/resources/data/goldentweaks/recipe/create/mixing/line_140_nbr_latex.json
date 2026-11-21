@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supplementaries"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:nbr_monomer_mix"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "item": "supplementaries:soap"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:nbr_latex"
+    },
+    {
+      "id": "supplementaries:soap",
+      "chance": 0.99
+    }
+  ]
+}

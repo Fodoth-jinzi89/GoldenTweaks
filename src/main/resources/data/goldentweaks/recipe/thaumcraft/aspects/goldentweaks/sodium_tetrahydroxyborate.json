@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:sodium_tetrahydroxyborate"
+  },
+  "aspects": {
+    "fabrico": 5,
+    "potentia": 7,
+    "ordo": 6,
+    "alkimia": 4
+  }
+}

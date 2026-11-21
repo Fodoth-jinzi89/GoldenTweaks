@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:concentrated_iridium_bucket"
+  },
+  "aspects": {
+    "ordo": 14,
+    "metallum": 10,
+    "potentia": 6
+  }
+}

@@ -1654,5 +1654,19 @@
   "tooltip.flavor_immersed_daily.mooncake_mold.stored_filling": "馅料：%s x%s",
   "tooltip.flavor_immersed_daily.raddles": "§c§l右键方块底面悬挂，可编辑牌面文字",
   "tooltip.flavor_immersed_daily.raddles.answer": "§7其他玩家右键可答题，答对可领取一件奖励（每人每牌仅一次）",
-  "tooltip.flavor_immersed_daily.raddles.owner": "§7放置者可设置谜面与谜底，并放入最多16格奖励物品"
+  "tooltip.flavor_immersed_daily.raddles.owner": "§7放置者可设置谜面与谜底，并放入最多16格奖励物品",
+  "effect.flavor_immersed_daily.ember_burn": "焚烬",
+  "effect.flavor_immersed_daily.ember_burn.description": "攻击伤害降低50%，移动速度降低50%，受到的伤害无视护甲减伤。效果结束后燃烧10秒；玩家视野持续被火焰遮挡。",
+  "effect.flavor_immersed_daily.eternal_ember": "火种永存",
+  "effect.flavor_immersed_daily.eternal_ember.description": "免疫下一次受到的近战攻击，触发后清除。若自身当前生命值高于攻击者，则给予对方200游戏刻（10秒）的焚烬效果。",
+  "effect.flavor_immersed_daily.exotic_exile": "异域放逐",
+  "effect.flavor_immersed_daily.exotic_exile.description": "获得时记录最大生命值x，扣除0.5x点生命，并获得0.5x点伤害吸收。效果持续期间生命值不能超过0.5x；伤害吸收耗尽时，将攻击者随机放逐至周围10格内的安全位置（范围可配置）。放逐成功后，直到效果结束免疫无实体来源的伤害（可配置关闭）。",
+  "effect.flavor_immersed_daily.fivefold_evolution": "五元归衍",
+  "effect.flavor_immersed_daily.fivefold_evolution.description": "依次抵挡并反弹攻击，每次成功进入下一阶段，五次后消失。\n①抵挡一次其他实体的近战攻击。\n②获得效果后前20秒内抵挡一次近战攻击。\n③抵挡亡灵生物的近战攻击。\n④抵挡弹射物并向射手反弹。\n⑤抵挡一次其他实体的近战攻击。",
+  "effect.flavor_immersed_daily.fragrant_legacy": "芳馨永存",
+  "effect.flavor_immersed_daily.fragrant_legacy.description": "持有者实际受到伤害后，为受伤者8格内最近的其他玩家增加伤害吸收，数值为受伤者最大生命值的33%（向下取整）。成功后清除本效果；附近没有其他玩家时保留效果。",
+  "rei.flavor_immersed_daily.appraisal_random": "随机抽取1～3次，槽位为可能产物，并非全部必得",
+  "rei.flavor_immersed_daily.crop_choices": "选择一种转换产物",
+  "rei.flavor_immersed_daily.draw_chance": "%s：每次抽取概率%s%%",
+  "rei.flavor_immersed_daily.mooncake_chain": "先用模具压出生月饼；熟制是独立步骤"
 }

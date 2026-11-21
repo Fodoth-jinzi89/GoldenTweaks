@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:dichloropropanol"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 900,
+      "id": "goldentweaks:epichlorohydrin"
+    },
+    {
+      "amount": 1000,
+      "id": "mekanism:brine"
+    }
+  ]
+}

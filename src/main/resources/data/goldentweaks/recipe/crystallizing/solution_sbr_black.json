@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:solution_sbr_black"
+  },
+  "output": {
+    "count": 1,
+    "id": "goldentweaks:solution_sbr_black"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "goldentweaks:diazaphthalenone_biphenol"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "goldentweaks:diazaphthalenone_biphenol"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:diazaphthalenone_biphenol"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:diazaphthalenone_biphenol"
+  }
+}

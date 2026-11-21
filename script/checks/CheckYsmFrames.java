@@ -1,0 +1,22 @@
+import java.util.*;import java.util.concurrent.*;import java.lang.reflect.*;import java.nio.file.*;import java.util.jar.*;import org.objectweb.asm.*;import org.objectweb.asm.tree.*;import org.joml.Vector3f;
+import net.fodoth.skina.goldentweaks.compat.yesstevemodel.GTYsmLinearFrames;
+public class CheckYsmFrames {
+ static Constructor<?> scalar,vector,frame;static Class<?> expr;static void ok(boolean b,String s){if(!b)throw new AssertionError(s);}
+ static Object vec(float x)throws Exception{return vector.newInstance(scalar.newInstance(x),scalar.newInstance(2f),scalar.newInstance(3f));}
+ static Object make(float start,float duration,float x)throws Exception{return frame.newInstance(start,duration,vec(x),vec(x+1),vec(x+2));}
+ public static void main(String[]a)throws Exception{
+  String p="com.elfmcys.yesstevemodel.";expr=Class.forName(p+"o0oOo00o0oOOOOOo00o0O0oo");Class<?> vc=Class.forName(p+"O0o00O0oO000O0oOOO0OoOoo"),fc=Class.forName(p+"oOOo0ooOOoo0ooOo0o0O0o00");scalar=Class.forName(p+"o000OOo0ooo00o0OOOOOOO0O").getConstructor(float.class);vector=vc.getConstructor(expr,expr,expr);frame=fc.getConstructor(float.class,float.class,vc,vc,vc);
+  Object first=GTYsmLinearFrames.share(make(1,2,3));for(int i=0;i<100000;i++)ok(GTYsmLinearFrames.share(make(1,2,3))==first,"sharing");
+  Method eval=Arrays.stream(fc.getMethods()).filter(m->m.getReturnType()==Vector3f.class).findFirst().orElseThrow();
+  Object original=make(1,2,3);for(float t:new float[]{0f,.25f,.5f,.75f,1f}){Vector3f x=(Vector3f)eval.invoke(original,null,t),y=(Vector3f)eval.invoke(first,null,t);ok(x.equals(y),"interpolation "+t);y.x=999;ok(((Vector3f)eval.invoke(first,null,t)).equals(x),"result isolation");}
+  ok(GTYsmLinearFrames.share(make(0f,2,3))!=GTYsmLinearFrames.share(make(-0f,2,3)),"start signed zero");ok(GTYsmLinearFrames.share(make(1,0f,3))!=GTYsmLinearFrames.share(make(1,-0f,3)),"duration signed zero");
+  for(int i=0;i<3;i++){Object[] vs={vec(1),vec(2),vec(3)};Object dynamic=Proxy.newProxyInstance(expr.getClassLoader(),new Class<?>[]{expr},(o,m,v)->7f);vs[i]=vector.newInstance(dynamic,scalar.newInstance(2f),scalar.newInstance(3f));Object f=frame.newInstance(1f,2f,vs[0],vs[1],vs[2]);ok(GTYsmLinearFrames.share(f)==f,"dynamic vector slot "+i);}
+  for(float x:new float[]{Float.NaN,Float.intBitsToFloat(0x7fc00123)}){Object f=make(x,1,3);ok(GTYsmLinearFrames.share(f)==f,"NaN bypass");}
+  for(Class<?> c=fc;c!=Object.class;c=c.getSuperclass())for(var f:c.getDeclaredFields())if(!Modifier.isStatic(f.getModifiers()))ok(Modifier.isFinal(f.getModifiers()),"immutable hierarchy");
+  var pool=Executors.newFixedThreadPool(8);var jobs=new ArrayList<Future<?>>();for(int i=0;i<8;i++)jobs.add(pool.submit(()->{try{for(int k=0;k<5000;k++)ok(GTYsmLinearFrames.share(make(1,2,3))==first,"concurrent");}catch(Exception e){throw new RuntimeException(e);}}));for(var job:jobs)job.get();pool.shutdown();
+  for(int i=0;i<10000;i++)GTYsmLinearFrames.share(make(i+100,2,3));var field=GTYsmLinearFrames.class.getDeclaredField("FRAMES");field.setAccessible(true);ok(((Map<?,?>)field.get(null)).size()==8192,"cap");Object f=make(999999,2,3);ok(GTYsmLinearFrames.share(f)==f,"full fallback");ok(GTYsmLinearFrames.share(null)==null,"null");
+  var mixin=new ClassNode();new ClassReader(Files.readAllBytes(Path.of(a[1]))).accept(mixin,0);var hook=mixin.methods.stream().filter(m->m.name.equals("gt$shareLinearFrame")).findFirst().orElseThrow();var ann=hook.visibleAnnotations.stream().filter(n->n.desc.endsWith("/Inject;")).findFirst().orElseThrow();String selector=null;for(int i=0;i<ann.values.size();i+=2)if(ann.values.get(i).equals("method"))selector=(String)((List<?>)ann.values.get(i+1)).getFirst();
+  try(var jar=new JarFile(a[0])){var target=new ClassNode();new ClassReader(jar.getInputStream(jar.getJarEntry("com/elfmcys/yesstevemodel/OO0o0ooO0oOoOO00o0O0OOo0.class"))).accept(target,0);String s=selector;var m=target.methods.stream().filter(n->(n.name+n.desc).equals(s)).findFirst().orElseThrow();int sites=0;for(var n:m.instructions)if(n instanceof TypeInsnNode type&&type.getOpcode()==Opcodes.NEW&&type.desc.equals(fc.getName().replace('.','/')))sites++;ok(sites==1,"compiled exact selector single NEW");}
+  System.out.println("PASS: real YSM100k linear sharing/interpolation/fresh results, signed times, dynamic three vector slots, NaN bypass, immutable hierarchy, 8threads,8192cap,compiled selector/single upstream NEW");
+ }
+}

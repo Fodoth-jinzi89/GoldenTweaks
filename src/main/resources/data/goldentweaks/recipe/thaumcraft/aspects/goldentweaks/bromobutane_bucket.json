@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:bromobutane_bucket"
+  },
+  "aspects": {
+    "tenebrae": 4,
+    "volatus": 15
+  }
+}

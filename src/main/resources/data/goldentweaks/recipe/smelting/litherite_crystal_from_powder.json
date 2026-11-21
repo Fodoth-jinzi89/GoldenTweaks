@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "envirocore"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "envirocore:litherite_powder"
+  },
+  "result": {
+    "id": "envirocore:litherite_crystal",
+    "count": 1
+  }
+}

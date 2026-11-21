@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:ppesk_nugget"
+  },
+  "output": {
+    "id": "goldentweaks:ppesk",
+    "amount": 16
+  }
+}

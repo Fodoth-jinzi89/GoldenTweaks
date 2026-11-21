@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * （{@link UraniumRichCrop}）被啃后，理应让老鼠沾染辐射——这里在 {@code Mouse#startEating} 正常结束时
  * 判断被吃掉的方块，若是富铀作物就给老鼠挂上 3 分钟的 {@code mio_icif:radiation}。
  *
- * <p>FID Argo 不在编译期依赖里，因此用 {@code targets} 字符串指定混入目标，处理代码里只引用原版的
+ * <p>用 {@code targets} 字符串指定可选模组的混入目标，处理代码里只引用原版的
  * {@link LivingEntity}（老鼠是 Animal）。选择 {@code TAIL}（成功路径的最后一个 return）而不是
  * {@code HEAD}，可避免未成熟/非服务端提前 return 的分支误判；此时方块已回退一级年龄，但仍是同一个
  * 富铀作物方块。</p>

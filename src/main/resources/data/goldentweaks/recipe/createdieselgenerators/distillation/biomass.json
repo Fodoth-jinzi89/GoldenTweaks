@@ -1,0 +1,56 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdieselgenerators"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    }
+  ],
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "mio_icif:biomass"
+    }
+  ],
+  "heat_requirement": "heated",
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "goldentweaks:acetic_acid",
+      "amount": 100
+    },
+    {
+      "id": "createdieselgenerators:ethanol",
+      "amount": 200
+    },
+    {
+      "id": "goldentweaks:methanol",
+      "amount": 200
+    },
+    {
+      "id": "goldentweaks:acetone",
+      "amount": 200
+    },
+    {
+      "id": "goldentweaks:ammonia",
+      "amount": 100
+    },
+    {
+      "id": "northstar:methane",
+      "amount": 400
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:methylaluminoxane"
+  },
+  "aspects": {
+    "metallum": 8,
+    "praecantatio": 4,
+    "machina": 15
+  }
+}

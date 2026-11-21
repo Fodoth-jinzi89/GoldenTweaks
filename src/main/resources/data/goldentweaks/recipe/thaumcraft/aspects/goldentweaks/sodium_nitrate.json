@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:sodium_nitrate"
+  },
+  "aspects": {
+    "fabrico": 6,
+    "machina": 4,
+    "ordo": 8
+  }
+}

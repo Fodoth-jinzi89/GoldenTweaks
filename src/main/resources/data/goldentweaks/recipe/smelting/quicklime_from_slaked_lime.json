@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "goldentweaks:slaked_lime"
+  },
+  "result": {
+    "id": "goldentweaks:quicklime",
+    "count": 1
+  }
+}

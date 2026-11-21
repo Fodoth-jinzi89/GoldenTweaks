@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:triphenylphosphine"
+  },
+  "aspects": {
+    "potentia": 2,
+    "permutatio": 13,
+    "alkimia": 9
+  }
+}

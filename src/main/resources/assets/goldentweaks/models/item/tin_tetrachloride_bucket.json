@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:tin_tetrachloride",
+  "loader": "neoforge:fluid_container"
+}

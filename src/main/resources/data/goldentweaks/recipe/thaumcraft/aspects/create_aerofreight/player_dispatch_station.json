@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_aerofreight:player_dispatch_station"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 3,
+    "motus": 1
+  }
+}

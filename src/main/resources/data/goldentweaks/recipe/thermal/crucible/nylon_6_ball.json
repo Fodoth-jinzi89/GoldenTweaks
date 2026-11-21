@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:nylon_6_ball"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:nylon_6",
+      "amount": 48
+    }
+  ],
+  "energy": 4800
+}

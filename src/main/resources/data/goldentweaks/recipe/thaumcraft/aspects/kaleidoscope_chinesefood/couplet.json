@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:couplet"
+  },
+  "aspects": {
+    "charta": 3,
+    "humanus": 2,
+    "lux": 2
+  }
+}

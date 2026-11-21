@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:cracked_coal_tar_bucket"
+  },
+  "aspects": {
+    "limus": 4,
+    "ignis": 15,
+    "tenebrae": 11,
+    "terra": 7,
+    "permutatio": 3
+  }
+}

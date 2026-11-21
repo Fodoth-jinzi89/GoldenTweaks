@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:2_6_dinitrostyrene_mixture",
+  "loader": "neoforge:fluid_container"
+}

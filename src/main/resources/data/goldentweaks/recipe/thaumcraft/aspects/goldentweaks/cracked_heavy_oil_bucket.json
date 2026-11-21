@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:cracked_heavy_oil_bucket"
+  },
+  "aspects": {
+    "ignis": 2,
+    "tenebrae": 13,
+    "terra": 9
+  }
+}

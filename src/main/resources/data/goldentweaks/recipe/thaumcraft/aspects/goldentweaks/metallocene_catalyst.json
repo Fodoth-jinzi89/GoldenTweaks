@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:metallocene_catalyst"
+  },
+  "aspects": {
+    "machina": 14,
+    "alkimia": 10,
+    "potentia": 6
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:pvc_fiber"
+  },
+  "aspects": {
+    "pannus": 9,
+    "machina": 5,
+    "fabrico": 16,
+    "motus": 12,
+    "alkimia": 3
+  }
+}

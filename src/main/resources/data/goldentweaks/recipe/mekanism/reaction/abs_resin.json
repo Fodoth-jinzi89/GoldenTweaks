@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 2750,
+    "chemical": "goldentweaks:styrene"
+  },
+  "duration": 12800,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1250,
+    "fluid": "goldentweaks:acrylonitrile"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:butadiene_latex"
+  },
+  "chemical_output": {
+    "amount": 500,
+    "id": "goldentweaks:abs"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdieselgenerators"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:fruit_juice"
+    }
+  ],
+  "heat_requirement": "heated",
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "goldentweaks:fructose",
+      "amount": 200
+    },
+    {
+      "id": "mio_icif:biomass",
+      "amount": 400
+    },
+    {
+      "id": "mio_icif:distilledwater",
+      "amount": 600
+    }
+  ]
+}

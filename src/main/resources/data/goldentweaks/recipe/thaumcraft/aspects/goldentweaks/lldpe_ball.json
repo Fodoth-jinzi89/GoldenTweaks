@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:lldpe_ball"
+  },
+  "aspects": {
+    "limus": 7,
+    "motus": 3,
+    "machina": 14,
+    "fabrico": 10
+  }
+}

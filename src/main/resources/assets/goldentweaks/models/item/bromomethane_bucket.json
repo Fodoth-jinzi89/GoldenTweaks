@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:bromomethane",
+  "loader": "neoforge:fluid_container"
+}

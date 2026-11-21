@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:raw_butyl_rubber",
+  "loader": "neoforge:fluid_container"
+}

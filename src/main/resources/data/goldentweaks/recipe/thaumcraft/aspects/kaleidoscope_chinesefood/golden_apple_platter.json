@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:golden_apple_platter"
+  },
+  "aspects": {
+    "fames": 3,
+    "lucrum": 1,
+    "praecantatio": 2
+  }
+}

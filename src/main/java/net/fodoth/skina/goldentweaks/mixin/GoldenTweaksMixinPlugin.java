@@ -6,10 +6,12 @@ import net.fodoth.skina.goldentweaks.compat.cqa.CqaClientIconASM;
 import net.fodoth.skina.goldentweaks.compat.ae2autopatternupload.Ae2ApuASM;
 import net.fodoth.skina.goldentweaks.compat.appliedkjs.AppliedKjsASM;
 import net.fodoth.skina.goldentweaks.compat.exspectriments.ExspectrimentsASM;
-import net.fodoth.skina.goldentweaks.compat.flavorimmerseddailyargo.ClientOnlyItemASM;
 import net.fodoth.skina.goldentweaks.compat.ftbquests.FTBQuestsLangSplitterASM;
 import net.fodoth.skina.goldentweaks.compat.linearbearing.LinearbearingASM;
 import net.fodoth.skina.goldentweaks.compat.ldlib2.Ldlib2ASM;
+import net.fodoth.skina.goldentweaks.compat.citresewn.CITLazyCacheASM;
+import net.fodoth.skina.goldentweaks.compat.acceleratedrendering.GTModelCacheASM;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.fml.loading.FMLLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -57,6 +59,84 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+
+        if (mixinClassName.contains(".fix.yesstevemodel.")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("yes_steve_model") && checkIfPresent(targetClassName);
+        }
+
+        if (mixinClassName.contains(".fix.geckolib.")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("geckolib") && checkIfPresent(targetClassName);
+        }
+
+        if (mixinClassName.endsWith("fix.modernfix.IngredientMixin")) {
+            return isModLoaded("modernfix");
+        }
+
+        if (mixinClassName.endsWith("fix.colorwheel.ClrwlTransformPatcherMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("colorwheel") && isModLoaded("iris")
+                    && checkIfPresent(targetClassName);
+        }
+
+        if (mixinClassName.endsWith("fix.continuity.ModelWrappingHandlerMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("continuity") && checkIfPresent(targetClassName);
+        }
+
+        if (mixinClassName.endsWith("keyframe.bone.BoneKeyFrameProcessorMixin")
+                || mixinClassName.endsWith("touhoulittlemaid.client.resource.GeckoModelLoaderMixin")
+                || mixinClassName.endsWith("keyframe.bone.EasingTypeMixin")
+                || mixinClassName.endsWith("keyframe.BoneAnimationMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("touhou_little_maid");
+        }
+
+        if (mixinClassName.endsWith("fix.iris.TransformPatcherMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("iris");
+        }
+        if (mixinClassName.endsWith("fix.fancymenu.ClientResourceIndexBuilderMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("fancymenu") && checkIfPresent(targetClassName);
+        }
+
+        if (mixinClassName.endsWith("fix.acceleratedrendering.SimpleBakedModelMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("acceleratedrendering");
+        }
+
+        if (mixinClassName.endsWith("fix.citresewn.ItemStackMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("citresewn")
+                    && isModLoaded("citresewn_defaults");
+        }
+
+        if (mixinClassName.endsWith("fix.flavorimmerseddailyargo.AutomaticProductDiscoveryMixin")) {
+            return isModLoaded("flavor_immersed_daily_argo");
+        }
+
+        if (mixinClassName.endsWith("fix.emi.ListEmiIngredientAccessor")
+                || mixinClassName.endsWith("fix.emi.ListEmiIngredientMixin")) {
+            return isModLoaded("emi");
+        }
+
+        if (mixinClassName.endsWith("fix.awi.JeiCompatibilityMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("awi") && isModLoaded("emi")
+                    && isModLoaded("toomanyrecipeviewers");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.touhoulittlemaidspell.")) {
+            return isModLoaded("touhou_little_maid_spell");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.gravitation.")) {
+            return isModLoaded("simulated") && isModLoaded("gravitation");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.createaerofreight.PackingMachineJeiPluginMixin")) {
+            return isModLoaded("create_aerofreight") && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.createaerofreight.")) {
+            return isModLoaded("create_aerofreight");
+        }
+
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.feature.dangomusic.")) {
+            return isModLoaded("dangomusic");
+        }
 
         if (!requirementsMet(mixinClassName)) {
             return false;
@@ -219,6 +299,11 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("createoreexcavation");
         }
 
+        // OEI 统一后的产物与配方结果比较：让 SI 机器把两者视为同一物品
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mioicif.oei")) {
+            return isModLoaded("mio_icif") && isModLoaded("oneenoughitem");
+        }
+
         // mio_icif 高炉平衡：基础高炉缓冲与时长、电力纳米高炉统一 20t
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mioicif")) {
             return isModLoaded("mio_icif");
@@ -275,7 +360,8 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("oneenoughitem");
         }
 
-        if (mixinClassName.endsWith("fix.kaleidoscope.SoupBaseManagerMixin")) {
+        if (mixinClassName.endsWith("fix.kaleidoscope.SoupBaseManagerMixin")
+                || mixinClassName.endsWith("fix.kaleidoscope.FruitBasketBlockEntityMixin")) {
             return isModLoaded("kaleidoscope_cookery");
         }
 
@@ -376,6 +462,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
                     && isModLoaded("thaumicenergistics");
         }
 
+        // 我们的自底向上多方块结构：AMI 的 multiblock_patterns 是 [深度][高度][宽度] 且高度自上而下，
+        // 无法直接手写校对，所以由 GTMultiblockStructures 解析后注入 AMI 的图案表
+        if (mixinClassName.endsWith("fix.avaritia_more_items.GTMultiblockPatternsMixin")) {
+            return checkIfPresent("net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.pattern.AMiBlockPatternReloadListener");
+        }
+
         // Architectury 的事件监听器列表在分发过程中被注册/注销会抛 ConcurrentModificationException，
         // 把 EventImpl 的列表替换成迭代时取快照的实现
         if (mixinClassName.endsWith("fix.architectury.ArchitecturyEventListMixin")) {
@@ -442,6 +534,13 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         if (mixinClassName.endsWith("fix.sodium.SodiumCrystallarieumBreakingOverlayMixin")) {
             return isModLoaded("sodium")
                     && checkIfPresent("net.caffeinemc.mods.sodium.client.render.SodiumWorldRenderer");
+        }
+
+        // Sodium draws chunks with its own renderer, so the port casing substitution needs a second
+        // hook there; without Sodium the vanilla hooks handle it and this one is skipped.
+        if (mixinClassName.endsWith("fix.sodium.SodiumPortHousingMixin")) {
+            return isModLoaded("sodium")
+                    && checkIfPresent("net.caffeinemc.mods.sodium.client.render.chunk.compile.pipeline.BlockRenderer");
         }
 
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.renderblender.")) {
@@ -708,8 +807,7 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("flavor_immersed_daily");
         }
 
-        // flavor_immersed_daily_argo 的「开界面」物品在专用服务器上加载 Screen 崩服（见 ClientOnlyItemASM）
-        if (mixinClassName.endsWith("fix.flavorimmerseddailyargo.ClientOnlyItemDummyMixin")) {
+        if (mixinClassName.endsWith("balance.flavorimmerseddailyargo.AnimalSpawningMixin")) {
             return isModLoaded("flavor_immersed_daily_argo");
         }
 
@@ -836,7 +934,23 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         }
 
         // mekanicalcreate 的候选配方目录内层 HashMap 无上限，替换为有界 LRU
-        if (mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateCandidateCacheMixin")) {
+        if (mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateCandidateCacheMixin")
+                || mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateCandidateIndexMixin")) {
+            return checkIfPresent("io.github.langqi99.mekanicalcreate.content.SimulationRecipeResolver");
+        }
+
+        // mekanicalcreate 的全物品去重是 O(n²)，换成哈希集合
+        if (mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateDistinctStacksMixin")) {
+            return checkIfPresent("io.github.langqi99.mekanicalcreate.content.SimulationRecipeResolver");
+        }
+
+        // mekanicalcreate 的展示原料多重集比较是 O(n²)，大标签改用计数表
+        if (mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateIngredientMatchMixin")) {
+            return checkIfPresent("io.github.langqi99.mekanicalcreate.content.SimulationRecipeResolver");
+        }
+
+        // mekanicalcreate 的逐 tick 充电模拟上限 100 万次，改一次性充满
+        if (mixinClassName.endsWith("fix.mekanicalcreate.MekanicalCreateChargeLoopMixin")) {
             return checkIfPresent("io.github.langqi99.mekanicalcreate.content.SimulationRecipeResolver");
         }
 
@@ -937,7 +1051,6 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         CarryOnAeroCompatASM.patch(targetClassName, targetClass);
         CataclysmParticleCompatASM.patch(targetClassName, targetClass);
         CqaClientIconASM.patch(targetClassName, targetClass);
-        ClientOnlyItemASM.patch(targetClassName, targetClass);
         LinearbearingASM.patch(targetClassName, targetClass);
         Ae2ApuASM.patch(targetClassName, targetClass);
         Ldlib2ASM.patch(targetClassName, targetClass);
@@ -946,6 +1059,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
     @Override
     public void postApply(String targetClassName, ClassNode targetClass,
                           String mixinClassName, IMixinInfo mixinInfo) {
+        if (mixinClassName.endsWith("fix.acceleratedrendering.SimpleBakedModelMixin")) {
+            GTModelCacheASM.patch(targetClass);
+        }
+        if (mixinClassName.endsWith("fix.citresewn.ItemStackMixin")) {
+            CITLazyCacheASM.patch(targetClass);
+        }
         if (mixinClassName.endsWith("fix.ae2autopatternupload.AEBaseScreenMixin")) {
             targetClass.methods.stream()
                     .filter(method -> method.name.equals("ae2apu$attachButton")

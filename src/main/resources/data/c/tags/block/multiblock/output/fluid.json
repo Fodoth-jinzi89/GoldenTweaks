@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "goldentweaks:gt_port_fluid_output_ulv",
+    "goldentweaks:gt_port_fluid_output_lv",
+    "goldentweaks:gt_port_fluid_output_mv",
+    "goldentweaks:gt_port_fluid_output_hv",
+    "goldentweaks:gt_port_fluid_output_ev",
+    "goldentweaks:gt_port_fluid_output_iv",
+    "goldentweaks:gt_port_fluid_output_luv",
+    "goldentweaks:gt_port_fluid_output_zpm",
+    "goldentweaks:gt_port_fluid_output_uv"
+  ]
+}

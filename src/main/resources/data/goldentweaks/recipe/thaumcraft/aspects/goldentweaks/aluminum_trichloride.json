@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:aluminum_trichloride"
+  },
+  "aspects": {
+    "potentia": 5,
+    "terra": 16,
+    "machina": 12
+  }
+}

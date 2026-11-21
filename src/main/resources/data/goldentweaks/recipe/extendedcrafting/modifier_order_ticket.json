@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "extendedcrafting" },
+    { "type": "neoforge:mod_loaded", "modid": "spectrum" },
+    { "type": "neoforge:mod_loaded", "modid": "envirocore" },
+    { "type": "neoforge:mod_loaded", "modid": "bakeries" },
+    { "type": "neoforge:mod_loaded", "modid": "create_aerofreight" }
+  ],
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "  A  ",
+    " BCB ",
+    "ADEDA",
+    " BCB ",
+    "  A  "
+  ],
+  "key": {
+    "A": {
+      "item": "goldentweaks:pu_ball"
+    },
+    "B": {
+      "item": "goldentweaks:solution_sbr_white_rod"
+    },
+    "C": {
+      "item": "spectrum:jade_vine_petals"
+    },
+    "D": {
+      "item": "envirocore:kyronite_powder"
+    },
+    "E": {
+      "item": "bakeries:silicone_paper"
+    }
+  },
+  "result": {
+    "id": "create_aerofreight:modifier_order_ticket"
+  }
+}

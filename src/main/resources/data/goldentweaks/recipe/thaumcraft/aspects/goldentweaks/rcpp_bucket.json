@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:rcpp_bucket"
+  },
+  "aspects": {
+    "limus": 4,
+    "machina": 15,
+    "ordo": 11,
+    "fabrico": 7,
+    "potentia": 3
+  }
+}

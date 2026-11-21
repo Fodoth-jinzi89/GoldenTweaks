@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:acetic_anhydride",
+  "loader": "neoforge:fluid_container"
+}

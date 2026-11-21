@@ -1,0 +1,1476 @@
+{
+  "variants": {
+    "facing=north,mirrored=false,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll1"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll1"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll2"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll2"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll3"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll3"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3"
+    },
+    "facing=north,mirrored=false,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3"
+    },
+    "facing=north,mirrored=false,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3"
+    },
+    "facing=north,mirrored=false,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3"
+    },
+    "facing=north,mirrored=false,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3"
+    },
+    "facing=north,mirrored=true,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3"
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=false,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 90
+    },
+    "facing=east,mirrored=true,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 90
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=false,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 180
+    },
+    "facing=south,mirrored=true,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 180
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=false,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 270
+    },
+    "facing=west,mirrored=true,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "y": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=false,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 270
+    },
+    "facing=up,mirrored=true,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 270
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=false,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=0,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=0,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=1,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=1,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll1",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=2,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=2,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll2",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_off_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_idle_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=3,formed=true": {
+      "model": "goldentweaks:block/multiblock/controller_working_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=false,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=false,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 90
+    },
+    "facing=down,mirrored=true,running=true,crafting=true,roll=3,formed=false": {
+      "model": "goldentweaks:block/multiblock/controller_unconstructed_mirrored_roll3",
+      "x": 90
+    }
+  }
+}

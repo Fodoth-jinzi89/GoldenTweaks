@@ -73,7 +73,7 @@ public abstract class RailgunEffectAmmoMixin implements GTRailgunDestroyer {
     }
 
     @Shadow
-    private static void destroyLine(ServerLevel level, ServerPlayer player, Vec3 origin, Vec3 direction,
+    private static void destroyLine(ServerLevel level, LivingEntity player, Vec3 origin, Vec3 direction,
                                     double maxDistance, double energy) {
         throw new AssertionError();
     }
@@ -99,7 +99,7 @@ public abstract class RailgunEffectAmmoMixin implements GTRailgunDestroyer {
     }
 
     @Inject(method = "tryRelease", at = @At("HEAD"))
-    private static void gt$resetAmmo(ServerPlayer player, PlayerAbilityData data, int ticks, CallbackInfoReturnable<Boolean> cir) {
+    private void gt$resetAmmo(ServerPlayer player, PlayerAbilityData data, int ticks, CallbackInfoReturnable<Boolean> cir) {
         // 默认（铁锭等 ITEM 来源）不使用任何硬币倍率
         gt$ammoMultiplier = 1.0D;
     }

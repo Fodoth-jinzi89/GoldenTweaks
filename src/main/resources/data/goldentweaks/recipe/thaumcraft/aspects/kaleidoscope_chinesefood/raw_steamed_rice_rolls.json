@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:raw_steamed_rice_rolls"
+  },
+  "aspects": {
+    "aqua": 1,
+    "fames": 2,
+    "herba": 2
+  }
+}

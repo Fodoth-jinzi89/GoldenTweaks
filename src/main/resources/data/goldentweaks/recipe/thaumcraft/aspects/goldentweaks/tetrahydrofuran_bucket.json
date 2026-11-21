@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:tetrahydrofuran_bucket"
+  },
+  "aspects": {
+    "potentia": 16,
+    "permutatio": 12,
+    "alkimia": 8,
+    "aqua": 4
+  }
+}

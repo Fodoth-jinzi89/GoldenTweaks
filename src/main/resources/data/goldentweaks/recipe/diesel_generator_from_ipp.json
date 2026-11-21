@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "AEA"
+  ],
+  "key": {
+    "A": {
+      "item": "goldentweaks:ipp_plate"
+    },
+    "B": {
+      "tag": "c:circuits/advanced"
+    },
+    "C": {
+      "item": "goldentweaks:ipp_rod"
+    },
+    "D": {
+      "item": "mio_icif:producer/block_machine_hull_advanced"
+    },
+    "E": {
+      "item": "mio_icif:normal/item_crystal_lev0"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "mio_icif:generator/block_diesel_generator"
+  }
+}

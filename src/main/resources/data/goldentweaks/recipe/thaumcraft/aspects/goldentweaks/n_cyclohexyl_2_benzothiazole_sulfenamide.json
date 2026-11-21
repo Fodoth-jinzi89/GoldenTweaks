@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:n_cyclohexyl_2_benzothiazole_sulfenamide"
+  },
+  "aspects": {
+    "fabrico": 6,
+    "machina": 4,
+    "ordo": 8
+  }
+}

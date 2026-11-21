@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:sbr_latex"
+    },
+    {
+      "item": "goldentweaks:potassium_persulfate"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "goldentweaks:raw_emulsion_sbr"
+    },
+    {
+      "id": "goldentweaks:potassium_persulfate",
+      "chance": 0.95
+    },
+    {
+      "amount": 1000,
+      "id": "minecraft:water"
+    }
+  ]
+}

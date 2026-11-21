@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:4_6_diaminoresorcinol"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:terephthalic_acid"
+    },
+    {
+      "item": "goldentweaks:polyphosphoric_acid"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "goldentweaks:pbo"
+    },
+    {
+      "amount": 1000,
+      "id": "goldentweaks:phosphoric_acid"
+    }
+  ]
+}

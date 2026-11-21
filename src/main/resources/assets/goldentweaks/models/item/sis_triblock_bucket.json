@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:sis_triblock",
+  "loader": "neoforge:fluid_container"
+}

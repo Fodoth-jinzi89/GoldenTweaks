@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:butadiene"
+  },
+  "right_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:isoprene"
+  },
+  "output": {
+    "amount": 1000,
+    "id": "goldentweaks:butyl_rubber_monomer_mix"
+  }
+}

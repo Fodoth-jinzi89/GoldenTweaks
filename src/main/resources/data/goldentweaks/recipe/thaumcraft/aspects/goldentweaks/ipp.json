@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:ipp"
+  },
+  "aspects": {
+    "potentia": 16,
+    "limus": 12,
+    "machina": 8,
+    "ordo": 4,
+    "fabrico": 15
+  }
+}

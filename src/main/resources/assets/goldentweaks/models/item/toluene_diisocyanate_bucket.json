@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:toluene_diisocyanate",
+  "loader": "neoforge:fluid_container"
+}

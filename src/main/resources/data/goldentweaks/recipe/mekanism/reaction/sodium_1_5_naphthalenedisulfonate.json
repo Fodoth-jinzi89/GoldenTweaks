@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "goldentweaks:naphthalene"
+  },
+  "duration": 6000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 2000,
+    "fluid": "mekanism:sulfuric_acid"
+  },
+  "item_input": {
+    "count": 2,
+    "item": "goldentweaks:sodium_hydroxide"
+  },
+  "chemical_output": {
+    "amount": 2000,
+    "id": "mekanism:water_vapor"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:sodium_1_5_naphthalenedisulfonate"
+  }
+}

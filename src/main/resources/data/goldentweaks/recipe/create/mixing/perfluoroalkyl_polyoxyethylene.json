@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:ptfe"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "goldentweaks:ethylene_oxide"
+    },
+    {
+      "item": "alltheores:uranium_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "alltheores:dirty_uranium_dust"
+    },
+    {
+      "amount": 1000,
+      "id": "goldentweaks:perfluoroalkyl_polyoxyethylene"
+    }
+  ]
+}

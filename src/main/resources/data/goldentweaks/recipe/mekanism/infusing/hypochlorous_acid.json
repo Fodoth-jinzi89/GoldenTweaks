@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 1,
+    "chemical": "mekanism:chlorine"
+  },
+  "right_input": {
+    "amount": 1,
+    "chemical": "mekanism:water_vapor"
+  },
+  "output": {
+    "amount": 1,
+    "id": "goldentweaks:hypochlorous_acid"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "mekanism:hydrogen_chloride"
+  },
+  "duration": 1200,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "goldentweaks:glycerol"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:sulfuric_acid_ion_exchange_resin"
+  },
+  "chemical_output": {
+    "amount": 1000,
+    "id": "goldentweaks:dichloropropanol"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "mio_icif:resource/item_harz"
+  }
+}

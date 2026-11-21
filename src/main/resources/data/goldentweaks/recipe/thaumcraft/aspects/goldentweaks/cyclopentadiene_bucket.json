@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:cyclopentadiene_bucket"
+  },
+  "aspects": {
+    "permutatio": 14,
+    "ignis": 10,
+    "tenebrae": 6
+  }
+}

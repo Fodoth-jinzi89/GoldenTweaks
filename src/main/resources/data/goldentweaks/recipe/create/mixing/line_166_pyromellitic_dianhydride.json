@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:pyromellitic_acid"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:pyromellitic_dianhydride"
+    },
+    {
+      "id": "goldentweaks:slaked_lime",
+      "count": 2
+    }
+  ]
+}

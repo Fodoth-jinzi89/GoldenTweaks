@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:acetic_acid_bucket"
+  },
+  "aspects": {
+    "ignis": 5,
+    "perditio": 16,
+    "vitium": 12
+  }
+}

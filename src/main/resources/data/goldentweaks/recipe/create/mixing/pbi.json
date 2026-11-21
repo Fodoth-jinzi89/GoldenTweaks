@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:3_3_4_4_tetraaminobiphenyl"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:isophthalic_acid"
+    },
+    {
+      "item": "goldentweaks:polyphosphoric_acid"
+    }
+  ],
+  "results": [
+    {
+      "amount": 950,
+      "id": "goldentweaks:phosphoric_acid"
+    },
+    {
+      "amount": 100,
+      "id": "goldentweaks:pbi"
+    }
+  ]
+}

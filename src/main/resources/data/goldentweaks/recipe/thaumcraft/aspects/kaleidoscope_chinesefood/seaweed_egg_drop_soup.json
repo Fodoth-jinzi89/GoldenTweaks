@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:seaweed_egg_drop_soup"
+  },
+  "aspects": {
+    "fames": 3,
+    "herba": 1,
+    "victus": 2
+  }
+}

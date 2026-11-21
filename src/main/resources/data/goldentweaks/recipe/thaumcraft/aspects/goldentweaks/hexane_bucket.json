@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:hexane_bucket"
+  },
+  "aspects": {
+    "permutatio": 8,
+    "alkimia": 4,
+    "aqua": 15
+  }
+}

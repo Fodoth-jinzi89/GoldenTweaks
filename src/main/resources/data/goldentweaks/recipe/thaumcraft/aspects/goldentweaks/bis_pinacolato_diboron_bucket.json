@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:bis_pinacolato_diboron_bucket"
+  },
+  "aspects": {
+    "alkimia": 5,
+    "aqua": 16,
+    "potentia": 12
+  }
+}

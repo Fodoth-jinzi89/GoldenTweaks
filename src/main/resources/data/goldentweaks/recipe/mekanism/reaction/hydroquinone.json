@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "jaopca"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 100,
+    "chemical": "goldentweaks:hydrogen_peroxide"
+  },
+  "duration": 600,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 100,
+    "fluid": "goldentweaks:phenol"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "mio_icif:resource/item_titanium_dust"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:hydroquinone"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "jaopca:mekanism_dirty_dusts.titanium"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "item": "evolvedmekanism:mold_rod"
+    },
+    {
+      "fluid": "goldentweaks:butyl_rubber_white",
+      "amount": 72
+    }
+  ],
+  "result": [
+    {
+      "item": "goldentweaks:butyl_rubber_white_rod"
+    }
+  ],
+  "energy": 7200
+}

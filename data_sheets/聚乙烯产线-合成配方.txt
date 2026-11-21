@@ -10,6 +10,8 @@ mekanism:pressurized_reaction_chamber ticks g+l+s -> s+g
 400 四氯化锆 100mB + 环戊二烯 100mB + alltheores:nickel_dust -> alltheores:dirty_nickel_dust + 二氯二茂锆 100mB
 4000 氮 1000mB + 三甲基铝 1000mB + flavor_immersed_daily:sorbet -> 甲基铝氧烷（s）+ 氮 950mB
 6400 丙烯 1000mB + 甲基铝氧烷 100mB + 茂金属催化剂 -> 茂金属催化剂 + 间规聚丙烯 100mB
+400 氧 1000mB + 乙烯 1000mB + 铁粉 -> 污浊铁粉 + 环氧乙烷 1000mB
+400 氧 1000mB + 丙烯 1000mB + 铁粉 -> 污浊铁粉 + 环氧丙烷 1000mB
 
 mekanism:chemical_infuser g+g -> g
 goldentweaks:triethylaluminium 1mB + goldentweaks:titanium_tetrachloride 20mB -> goldentweaks:ziegler_natta_catalyst 20mB
@@ -17,6 +19,7 @@ mekanism:oxygen 1mB + mekanism:ethene 1000mB -> goldentweaks:ldpe 100mB
 goldentweaks:ziegler_natta_catalyst 1mB + mekanism:ethene 1000mB -> goldentweaks:hdpe 100mB
 goldentweaks:ziegler_natta_catalyst 1mB + 丙烯 1000mB -> 等规聚丙烯 100mB
 丁醇 1mB + 硫酸 1mB -> 丁烯 1mB
+删除配方：goldentweaks:mekanism/infusing/ethylene_oxide
 
 create:mixing nl+ns -> ml + ms
 己烷 1000mB + 乙烯 1000mB + goldentweaks:ziegler_natta_catalyst 1 -> goldentweaks:ziegler_natta_catalyst 1(95%) + goldentweaks:uhmwpe 1mB + 己烷 950mB

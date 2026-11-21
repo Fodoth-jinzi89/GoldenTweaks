@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:yellow_croaker_bucket"
+  },
+  "aspects": {
+    "aqua": 3,
+    "bestia": 1,
+    "vas": 2
+  }
+}

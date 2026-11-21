@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:rcpp_ball"
+  },
+  "aspects": {
+    "motus": 3,
+    "machina": 14,
+    "fabrico": 10,
+    "limus": 6
+  }
+}

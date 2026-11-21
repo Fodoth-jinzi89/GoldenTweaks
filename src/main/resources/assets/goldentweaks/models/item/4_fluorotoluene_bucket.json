@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:4_fluorotoluene",
+  "loader": "neoforge:fluid_container"
+}

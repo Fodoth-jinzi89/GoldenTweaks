@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:salt"
+  },
+  "aspects": {
+    "fames": 1,
+    "perditio": 1,
+    "terra": 2
+  }
+}

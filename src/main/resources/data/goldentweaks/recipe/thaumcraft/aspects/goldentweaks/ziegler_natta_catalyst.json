@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:ziegler_natta_catalyst"
+  },
+  "aspects": {
+    "alkimia": 2,
+    "potentia": 13,
+    "metallum": 9
+  }
+}

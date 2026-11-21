@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:noble_gas_bucket"
+  },
+  "aspects": {
+    "volatus": 4,
+    "tenebrae": 15
+  }
+}

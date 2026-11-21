@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "northstar"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "BBB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "northstar:titanium_sheet"
+    },
+    "B": {
+      "item": "goldentweaks:spp_plate"
+    }
+  },
+  "result": {
+    "count": 8,
+    "id": "mio_icif:build/block_scaffold_titanium"
+  }
+}

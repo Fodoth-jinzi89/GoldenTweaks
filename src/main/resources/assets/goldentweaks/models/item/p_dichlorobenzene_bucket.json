@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:p_dichlorobenzene",
+  "loader": "neoforge:fluid_container"
+}

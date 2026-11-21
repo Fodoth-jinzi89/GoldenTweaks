@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "alltheores:copper_dust"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "mekanism:chlorine"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:cuprous_chloride"
+    }
+  ]
+}

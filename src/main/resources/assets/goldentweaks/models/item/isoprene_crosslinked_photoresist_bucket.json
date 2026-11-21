@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:isoprene_crosslinked_photoresist",
+  "loader": "neoforge:fluid_container"
+}

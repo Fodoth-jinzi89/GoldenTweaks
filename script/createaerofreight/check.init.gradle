@@ -1,0 +1,18 @@
+allprojects {
+    afterEvaluate {
+        tasks.register('compileAeroFreightCheck', JavaCompile) {
+            dependsOn tasks.named('classes')
+            source = files('script/createaerofreight/RewardPoolCheck.java')
+            classpath = sourceSets.main.runtimeClasspath + sourceSets.main.compileClasspath
+            destinationDirectory = layout.buildDirectory.dir('aerofreight-check')
+            javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
+        }
+        tasks.register('checkAeroFreightRewards', JavaExec) {
+            dependsOn tasks.named('compileAeroFreightCheck')
+            classpath = files(layout.buildDirectory.dir('aerofreight-check')) + sourceSets.main.runtimeClasspath + sourceSets.main.compileClasspath
+            javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+            mainClass = 'net.fodoth.skina.goldentweaks.compat.createaerofreight.RewardPoolCheck'
+            if (project.hasProperty('introductionRoot')) args project.hasProperty('generateGeneral') ? '--generate-general' : '--inspect-introductions', project.property('introductionRoot')
+        }
+    }
+}

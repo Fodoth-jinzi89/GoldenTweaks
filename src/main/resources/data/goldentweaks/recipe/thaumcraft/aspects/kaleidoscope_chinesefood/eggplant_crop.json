@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:eggplant_crop"
+  },
+  "aspects": {
+    "herba": 2,
+    "messis": 2,
+    "terra": 1
+  }
+}

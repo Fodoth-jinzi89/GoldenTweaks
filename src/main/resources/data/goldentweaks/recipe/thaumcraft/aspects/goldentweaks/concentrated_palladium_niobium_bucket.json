@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:concentrated_palladium_niobium_bucket"
+  },
+  "aspects": {
+    "machina": 11,
+    "ordo": 7,
+    "metallum": 3
+  }
+}

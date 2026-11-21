@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:fluoroboric_acid_bucket"
+  },
+  "aspects": {
+    "ignis": 15,
+    "perditio": 11,
+    "vitium": 7,
+    "alkimia": 3
+  }
+}

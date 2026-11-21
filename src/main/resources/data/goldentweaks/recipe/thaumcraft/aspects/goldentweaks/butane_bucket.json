@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:butane_bucket"
+  },
+  "aspects": {
+    "lux": 6,
+    "motus": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "goldentweaks:epdm_monomer_mix"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "goldentweaks:cyclohexane"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:epdm_monomer_cyclohexane_solution"
+    }
+  ]
+}

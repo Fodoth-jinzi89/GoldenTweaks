@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:cyclohexanone_oxime",
+  "loader": "neoforge:fluid_container"
+}

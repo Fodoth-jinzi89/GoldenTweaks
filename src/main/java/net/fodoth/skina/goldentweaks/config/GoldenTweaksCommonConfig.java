@@ -13,17 +13,33 @@ public final class GoldenTweaksCommonConfig {
     // feature 系统
     // =========================
     public static final ModConfigSpec.BooleanValue ALWAYS_EDIBLE_FOOD;
+    public static final ModConfigSpec.BooleanValue GENERATE_AEROFREIGHT_LIST;
 
     public static final ModConfigSpec.BooleanValue REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT;
 
     public static final ModConfigSpec.BooleanValue LOST_MAID_DROP;
 
+    public static final ModConfigSpec.BooleanValue DISABLE_YUE_LINGLAN_STRUCTURE_TRAIL;
+
     public static final ModConfigSpec.DoubleValue LOST_MAID_DROP_CHANCE;
+
+    /**
+     * Shortest run a batched reaction may take, in ticks.
+     *
+     * <p>Batch mode scales a fast recipe up until it lasts at least this long, so the machine is not
+     * torn down and restarted every fraction of a second. Anything at or above this length runs
+     * unchanged. Six point four seconds is the default.</p>
+     */
+    public static final ModConfigSpec.IntValue CHEMICAL_REACTOR_BATCH_MIN_TICKS;
 
 
     // =========================
     // balance 系统
     // =========================
+    public static final ModConfigSpec.DoubleValue ARGO_AQUATIC_SPAWN_CHANCE;
+
+    public static final ModConfigSpec.DoubleValue VANILLA_FISH_SPAWN_CHANCE;
+
     public static final ModConfigSpec.IntValue EVOLVED_MEKANISM_SOLAR_MULTIPLIER;
 
     public static final ModConfigSpec.IntValue MEKANISM_COMPACT_SPACE_POWER_PERCENT;
@@ -35,6 +51,12 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.IntValue MIO_ICIF_COMPACT_SPACE_SOLAR_PERCENT;
 
     public static final ModConfigSpec.IntValue MIO_ICIF_COMPACT_SPACE_WIND_PERCENT;
+
+    public static final ModConfigSpec.BooleanValue MIO_ICIF_OIL_RIG_INFINITE;
+
+    public static final ModConfigSpec.BooleanValue MIO_ICIF_TESLA_COIL_HOSTILE_ONLY;
+
+    public static final ModConfigSpec.BooleanValue MIO_ICIF_TESLA_COIL_WEAR_ARMOR;
 
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
 
@@ -152,6 +174,16 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("feature.always_edible_food"))
                 .define("alwaysEdibleFood", true);
 
+        GENERATE_AEROFREIGHT_LIST = builder
+                .translation(key("feature.generate_aerofreight_list"))
+                .comment("Regenerate AeroFreight Bountiful rewards and reset all pool weights to 1.0 on each world start.")
+                .define("generateAeroFreightList", true);
+
+        DISABLE_YUE_LINGLAN_STRUCTURE_TRAIL = builder
+                .translation(key("feature.disable_yue_linglan_structure_trail"))
+                .comment(comment("feature.disable_yue_linglan_structure_trail"))
+                .define("disableYueLinglanStructureTrail", true);
+
         LOST_MAID_DROP = builder
                 .translation(key("feature.lost_maid_drop"))
                 .comment(comment("feature.lost_maid_drop"))
@@ -162,6 +194,12 @@ public final class GoldenTweaksCommonConfig {
                 .comment(comment("feature.lost_maid_drop_chance"))
                 .defineInRange("lostMaidDropChance", 0.05D, 0.0D, 1.0D);
 
+        // 128 ticks is 6.4 seconds at 20 ticks per second.
+        CHEMICAL_REACTOR_BATCH_MIN_TICKS = builder
+                .translation(key("feature.chemical_reactor_batch_min_ticks"))
+                .comment(comment("feature.chemical_reactor_batch_min_ticks"))
+                .defineInRange("chemicalReactorBatchMinTicks", 128, 1, 72000);
+
 
         builder.pop();
 
@@ -170,6 +208,16 @@ public final class GoldenTweaksCommonConfig {
         // =========================
         builder.translation(key("balance"));
         builder.push("balance");
+
+        ARGO_AQUATIC_SPAWN_CHANCE = builder
+                .translation(key("balance.argo_aquatic_spawn_chance"))
+                .comment(comment("balance.argo_aquatic_spawn_chance"))
+                .defineInRange("argoAquaticSpawnChance", 0.1D, 0.0D, 1.0D);
+
+        VANILLA_FISH_SPAWN_CHANCE = builder
+                .translation(key("balance.vanilla_fish_spawn_chance"))
+                .comment(comment("balance.vanilla_fish_spawn_chance"))
+                .defineInRange("vanillaFishSpawnChance", 0.1D, 0.0D, 1.0D);
 
         REMOVE_THAUMONOMICON_RESEARCH_HIGHLIGHT = builder
                 .translation(key("balance.remove_thaumonomicon_research_highlight"))
@@ -224,6 +272,21 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.mio_icif.compact_space_wind_percent"))
                 .comment(comment("balance.mio_icif.compact_space_wind_percent"))
                 .defineInRange("compactSpaceWindPercent", 100, 0, Integer.MAX_VALUE);
+
+        MIO_ICIF_OIL_RIG_INFINITE = builder
+                .translation(key("balance.mio_icif.oil_rig_infinite"))
+                .comment(comment("balance.mio_icif.oil_rig_infinite"))
+                .define("oilRigInfinite", true);
+
+        MIO_ICIF_TESLA_COIL_HOSTILE_ONLY = builder
+                .translation(key("balance.mio_icif.tesla_coil_hostile_only"))
+                .comment(comment("balance.mio_icif.tesla_coil_hostile_only"))
+                .define("teslaCoilHostileOnly", true);
+
+        MIO_ICIF_TESLA_COIL_WEAR_ARMOR = builder
+                .translation(key("balance.mio_icif.tesla_coil_wear_armor"))
+                .comment(comment("balance.mio_icif.tesla_coil_wear_armor"))
+                .define("teslaCoilWearArmor", true);
 
         builder.pop();
 
@@ -578,6 +641,18 @@ public final class GoldenTweaksCommonConfig {
         return getMioIcifCompactSpaceWindPercent() / 100.0F;
     }
 
+    public static boolean isMioIcifOilRigInfinite() {
+        return GTState.isReady() ? MIO_ICIF_OIL_RIG_INFINITE.get() : true;
+    }
+
+    public static boolean isMioIcifTeslaCoilHostileOnly() {
+        return GTState.isReady() ? MIO_ICIF_TESLA_COIL_HOSTILE_ONLY.get() : true;
+    }
+
+    public static boolean isMioIcifTeslaCoilWearArmor() {
+        return GTState.isReady() ? MIO_ICIF_TESLA_COIL_WEAR_ARMOR.get() : true;
+    }
+
     public static int getIJHagglerMaxDiscount() {
 
         if (!GTState.isReady()) {
@@ -846,6 +921,14 @@ public final class GoldenTweaksCommonConfig {
         }
 
         return ORE_VEIN_FINDER_RADIUS.get();
+    }
+
+    public static double getArgoAquaticSpawnChance() {
+        return GTState.isReady() ? ARGO_AQUATIC_SPAWN_CHANCE.get() : 0.1D;
+    }
+
+    public static double getVanillaFishSpawnChance() {
+        return GTState.isReady() ? VANILLA_FISH_SPAWN_CHANCE.get() : 0.1D;
     }
 
     private static String key(String path) {

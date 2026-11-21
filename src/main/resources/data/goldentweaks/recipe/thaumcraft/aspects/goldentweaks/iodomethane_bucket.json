@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:iodomethane_bucket"
+  },
+  "aspects": {
+    "aer": 8,
+    "potentia": 4
+  }
+}

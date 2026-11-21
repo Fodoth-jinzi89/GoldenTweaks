@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_aerofreight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "goldentweaks:pan_ball"
+    },
+    "B": {
+      "item": "goldentweaks:butyl_rubber_white_rod"
+    },
+    "C": {
+      "item": "create:cardboard"
+    }
+  },
+  "result": {
+    "id": "create_aerofreight:custom_order_ticket"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 100,
+    "chemical": "mekanism:hydrogen"
+  },
+  "duration": 600,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 100,
+    "fluid": "mio_icif:biomass"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "alltheores:nickel_dust"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:gamma_valerolactone"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "alltheores:dirty_nickel_dust"
+  }
+}

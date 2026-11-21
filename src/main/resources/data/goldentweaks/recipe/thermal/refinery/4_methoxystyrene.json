@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:1_4_methoxyphenyl_ethanol",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "amount": 1000,
+      "fluid": "goldentweaks:4_methoxystyrene"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "energy": 50000
+}

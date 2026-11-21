@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:ammonia_bucket"
+  },
+  "aspects": {
+    "tenebrae": 10,
+    "volatus": 6
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:sbr_monomer_hexane_solution",
+  "loader": "neoforge:fluid_container"
+}

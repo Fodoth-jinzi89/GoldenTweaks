@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spectrum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:brewer",
+  "ingredients": [
+    {
+      "tag": "c:fruits"
+    },
+    {
+      "fluid": "spectrum:liquid_crystal",
+      "amount": 100
+    }
+  ],
+  "result": [
+    {
+      "fluid": "goldentweaks:fruit_juice",
+      "amount": 1000
+    }
+  ],
+  "energy": 5000
+}

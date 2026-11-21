@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:hydroquinone_sodium_salt_solution"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:4_4_difluorobenzophenone"
+    }
+  ],
+  "results": [
+    {
+      "amount": 950,
+      "id": "goldentweaks:diphenyl_sulfone"
+    },
+    {
+      "id": "goldentweaks:peek",
+      "chance": 0.1
+    },
+    {
+      "id": "goldentweaks:sodium_hydroxide"
+    }
+  ]
+}

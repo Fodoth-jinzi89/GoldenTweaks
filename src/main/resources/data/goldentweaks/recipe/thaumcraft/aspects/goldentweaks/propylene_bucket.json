@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:propylene_bucket"
+  },
+  "aspects": {
+    "potentia": 11,
+    "aer": 7
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:diazaphthalenone_biphenol",
+  "loader": "neoforge:fluid_container"
+}

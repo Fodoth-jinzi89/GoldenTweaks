@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:zirconocene_dichloride_bucket"
+  },
+  "aspects": {
+    "potentia": 15,
+    "metallum": 11,
+    "praecantatio": 7,
+    "machina": 3
+  }
+}

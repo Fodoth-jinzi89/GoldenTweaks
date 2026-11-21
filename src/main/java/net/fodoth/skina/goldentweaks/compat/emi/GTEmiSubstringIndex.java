@@ -1,6 +1,8 @@
 package net.fodoth.skina.goldentweaks.compat.emi;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
+import it.unimi.dsi.fastutil.ints.IntArrays;
+import it.unimi.dsi.fastutil.objects.ObjectOpenCustomHashSet;
 import it.unimi.dsi.fastutil.longs.Long2IntOpenHashMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
@@ -199,8 +201,9 @@ public final class GTEmiSubstringIndex {
             }
 
             Long2ObjectOpenHashMap<int[]> grams = new Long2ObjectOpenHashMap<>(mutable.size());
+            ObjectOpenCustomHashSet<int[]> sharedPostings = new ObjectOpenCustomHashSet<>(IntArrays.HASH_STRATEGY);
             for (Long2ObjectMap.Entry<IntArrayList> e : mutable.long2ObjectEntrySet()) {
-                grams.put(e.getLongKey(), e.getValue().toIntArray());
+                grams.put(e.getLongKey(), sharedPostings.addOrGet(e.getValue().toIntArray()));
             }
 
             return new GTEmiSubstringIndex(keyArray, stackArray, grams);

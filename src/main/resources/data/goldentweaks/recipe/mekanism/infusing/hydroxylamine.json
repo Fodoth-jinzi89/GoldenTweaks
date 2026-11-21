@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:chemical_infusing",
+  "left_input": {
+    "amount": 2,
+    "chemical": "goldentweaks:nitric_oxide"
+  },
+  "right_input": {
+    "amount": 6,
+    "chemical": "mekanism:hydrogen"
+  },
+  "output": {
+    "amount": 2,
+    "id": "goldentweaks:hydroxylamine"
+  }
+}

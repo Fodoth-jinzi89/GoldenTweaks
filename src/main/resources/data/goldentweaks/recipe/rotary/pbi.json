@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "goldentweaks:pbi"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "goldentweaks:pbi"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:pbi"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:pbi"
+  }
+}

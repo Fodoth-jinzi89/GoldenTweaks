@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:triethylaluminium_bucket"
+  },
+  "aspects": {
+    "alkimia": 2,
+    "potentia": 13,
+    "metallum": 9
+  }
+}

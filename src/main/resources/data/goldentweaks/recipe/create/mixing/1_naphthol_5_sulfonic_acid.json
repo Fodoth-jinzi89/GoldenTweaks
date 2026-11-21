@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "goldentweaks:sodium_1_5_naphthalenedisulfonate"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "goldentweaks:sodium_sulfite"
+    },
+    {
+      "amount": 1000,
+      "id": "goldentweaks:1_naphthol_5_sulfonic_acid"
+    }
+  ]
+}

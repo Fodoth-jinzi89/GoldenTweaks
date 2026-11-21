@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:lldpe_bucket"
+  },
+  "aspects": {
+    "machina": 7,
+    "ordo": 3,
+    "fabrico": 14,
+    "potentia": 10,
+    "limus": 6
+  }
+}

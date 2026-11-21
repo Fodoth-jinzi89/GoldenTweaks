@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:butadiene_rubber_black_nugget"
+  },
+  "output": {
+    "id": "goldentweaks:butadiene_rubber_black",
+    "amount": 16
+  }
+}

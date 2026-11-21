@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:mixing_additive_base_white",
+  "loader": "neoforge:fluid_container"
+}

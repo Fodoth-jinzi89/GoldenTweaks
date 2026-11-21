@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:p_phenylenediamine",
+  "loader": "neoforge:fluid_container"
+}

@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:sbr_monomer_hexane_solution"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1,
+      "fluid": "goldentweaks:butyllithium"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "goldentweaks:raw_solution_sbr"
+    },
+    {
+      "amount": 450,
+      "id": "goldentweaks:hexane"
+    }
+  ]
+}

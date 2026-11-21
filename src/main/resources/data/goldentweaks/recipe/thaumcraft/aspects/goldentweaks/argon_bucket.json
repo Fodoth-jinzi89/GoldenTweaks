@@ -1,0 +1,10 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:argon_bucket"
+  },
+  "aspects": {
+    "tenebrae": 13,
+    "volatus": 9
+  }
+}

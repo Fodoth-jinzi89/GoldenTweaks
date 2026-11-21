@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:lldpe_nugget"
+  },
+  "aspects": {
+    "machina": 2,
+    "fabrico": 13,
+    "ordo": 9
+  }
+}

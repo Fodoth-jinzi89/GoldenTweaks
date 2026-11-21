@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:ethylene_oxide_bucket"
+  },
+  "aspects": {
+    "aqua": 9,
+    "potentia": 5,
+    "permutatio": 16,
+    "alkimia": 12
+  }
+}

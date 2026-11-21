@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:palladium_acetate"
+  },
+  "aspects": {
+    "potentia": 10,
+    "metallum": 6,
+    "praecantatio": 2,
+    "machina": 13,
+    "alkimia": 9
+  }
+}

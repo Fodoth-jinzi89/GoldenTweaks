@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "goldentweaks:nitrochlorobenzene_mixture",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "amount": 500,
+      "fluid": "goldentweaks:p_nitrochlorobenzene"
+    },
+    {
+      "amount": 500,
+      "fluid": "goldentweaks:o_nitrochlorobenzene"
+    }
+  ],
+  "energy": 50000
+}

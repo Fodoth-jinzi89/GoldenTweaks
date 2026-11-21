@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "goldentweaks:item/powder/bottle",
+    "layer1": "goldentweaks:item/powder/medicine",
+    "layer2": "goldentweaks:item/powder/bottle_highlight"
+  }
+}

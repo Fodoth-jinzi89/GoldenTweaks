@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:epdm_white_ball"
+  },
+  "output": {
+    "id": "goldentweaks:epdm_white",
+    "amount": 48
+  }
+}

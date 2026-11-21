@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:natural_rubber_white_plate"
+  },
+  "output": {
+    "id": "goldentweaks:natural_rubber_white",
+    "amount": 144
+  }
+}

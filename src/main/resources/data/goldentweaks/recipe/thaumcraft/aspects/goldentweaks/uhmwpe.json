@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:uhmwpe"
+  },
+  "aspects": {
+    "fabrico": 13,
+    "potentia": 9,
+    "limus": 5,
+    "machina": 16,
+    "ordo": 12
+  }
+}

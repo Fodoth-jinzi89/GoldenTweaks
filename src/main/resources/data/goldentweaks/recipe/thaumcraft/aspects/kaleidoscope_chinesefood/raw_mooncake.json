@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:raw_mooncake"
+  },
+  "aspects": {
+    "fames": 2,
+    "herba": 1,
+    "victus": 2
+  }
+}

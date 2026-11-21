@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:tetrachlorostannate_ii_acid_bucket"
+  },
+  "aspects": {
+    "aqua": 12,
+    "ignis": 8,
+    "perditio": 4,
+    "vitium": 15
+  }
+}

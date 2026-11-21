@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:raw_nbr"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1,
+      "fluid": "goldentweaks:mixing_additive_base"
+    },
+    {
+      "item": "goldentweaks:zinc_oxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:nbr_white"
+    },
+    {
+      "id": "alltheores:zinc_dust"
+    }
+  ]
+}

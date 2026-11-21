@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:hdpe"
+  },
+  "aspects": {
+    "limus": 14,
+    "machina": 10,
+    "ordo": 6
+  }
+}

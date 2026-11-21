@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:tin_dioxide"
+  },
+  "aspects": {
+    "metallum": 2,
+    "potentia": 13,
+    "terra": 9
+  }
+}

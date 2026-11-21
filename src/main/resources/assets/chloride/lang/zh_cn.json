@@ -1,0 +1,13 @@
+{
+  "chloride.settings.coming_soon": "即将推出！",
+  "chloride.settings.chloride": "Chloride 设置",
+  "chloride.settings.textrue": "TexTrue 风格设置",
+  "chloride.settings.populi": "Populi 设置",
+  "chloride.world.void_horizon.title": "虚空地平线高度",
+  "chloride.world.void_horizon.desc": "开始渲染黑色虚空平面的 Y 坐标。\n63 保持原版效果；设为 -64 可移除海平面以下（例如超平坦世界）天空下半部分的黑色区域。",
+  "chloride.world.void_horizon.vanilla": "原版",
+  "chloride.world.far_skybox.title": "远景天空盒",
+  "chloride.world.far_skybox.desc": "防止在极低渲染距离下天空盒被裁切。\n强制使用原版在 32 区块渲染距离下的天空远裁剪面。",
+  "chloride.particles.list": "粒子列表",
+  "chloride.particles.list.search": "搜索粒子……"
+}

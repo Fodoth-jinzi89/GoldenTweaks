@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:1_4_methoxyphenyl_ethanol",
+  "loader": "neoforge:fluid_container"
+}

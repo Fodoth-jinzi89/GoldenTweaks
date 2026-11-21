@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:tetrabutylammonium_bromide_bucket"
+  },
+  "aspects": {
+    "permutatio": 2,
+    "alkimia": 13,
+    "aqua": 9
+  }
+}

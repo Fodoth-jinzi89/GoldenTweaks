@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:pps_fiber"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:pps",
+      "amount": 18
+    }
+  ],
+  "energy": 1800
+}

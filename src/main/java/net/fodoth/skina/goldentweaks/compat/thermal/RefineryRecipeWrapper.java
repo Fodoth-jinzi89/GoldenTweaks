@@ -33,7 +33,11 @@ public final class RefineryRecipeWrapper implements IMachineRecipe {
             ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "cracked_light_oil"),
             ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "cracked_refined_oil"),
             ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "coal_tar"),
-            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "cracked_coal_tar")
+            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "cracked_coal_tar"),
+            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "nitrochlorobenzene_mixture"),
+            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "dinitrotoluene"),
+            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "1_4_methoxyphenyl_ethanol"),
+            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "polyhydroxystyrene_toluene_solution")
     );
 
     private static final TagKey<Fluid> CRUDE_OIL_TAG =

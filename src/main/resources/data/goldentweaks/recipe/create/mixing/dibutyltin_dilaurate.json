@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 2000,
+      "fluid": "goldentweaks:lauric_acid"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:toluene"
+    },
+    {
+      "item": "goldentweaks:dibutyltin_oxide"
+    },
+    {
+      "item": "goldentweaks:quicklime"
+    }
+  ],
+  "results": [
+    {
+      "amount": 950,
+      "id": "goldentweaks:toluene"
+    },
+    {
+      "id": "goldentweaks:dibutyltin_dilaurate"
+    },
+    {
+      "id": "goldentweaks:slaked_lime"
+    }
+  ]
+}

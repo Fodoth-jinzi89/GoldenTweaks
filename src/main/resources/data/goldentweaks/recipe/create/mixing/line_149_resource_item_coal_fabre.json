@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "goldentweaks:pan_fiber"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:argon"
+    }
+  ],
+  "results": [
+    {
+      "id": "mio_icif:resource/item_coal_fabre",
+      "count": 64
+    },
+    {
+      "amount": 1000,
+      "id": "goldentweaks:argon"
+    }
+  ]
+}

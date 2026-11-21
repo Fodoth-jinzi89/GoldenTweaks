@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:epr_monomer_toluene_solution",
+  "loader": "neoforge:fluid_container"
+}

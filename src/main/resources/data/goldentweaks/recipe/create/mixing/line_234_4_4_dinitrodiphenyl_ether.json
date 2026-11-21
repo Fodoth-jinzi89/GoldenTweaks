@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:p_nitrophenol"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:p_nitrochlorobenzene"
+    },
+    {
+      "item": "goldentweaks:sodium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:4_4_dinitrodiphenyl_ether"
+    },
+    {
+      "id": "alltheores:salt"
+    },
+    {
+      "amount": 1000,
+      "id": "minecraft:water"
+    }
+  ]
+}

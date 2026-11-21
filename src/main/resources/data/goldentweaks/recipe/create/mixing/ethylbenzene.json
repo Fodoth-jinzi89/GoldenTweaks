@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "mekanism:ethene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:benzene"
+    },
+    {
+      "item": "goldentweaks:aluminum_trichloride"
+    }
+  ],
+  "results": [
+    {
+      "amount": 900,
+      "id": "goldentweaks:ethylbenzene"
+    },
+    {
+      "id": "goldentweaks:aluminum_trichloride",
+      "chance": 0.9
+    }
+  ]
+}

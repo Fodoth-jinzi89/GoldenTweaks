@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:epr_white_plate"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:epr_white",
+      "amount": 144
+    }
+  ],
+  "energy": 14400
+}

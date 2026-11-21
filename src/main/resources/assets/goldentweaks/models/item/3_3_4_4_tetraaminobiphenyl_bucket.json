@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:3_3_4_4_tetraaminobiphenyl",
+  "loader": "neoforge:fluid_container"
+}

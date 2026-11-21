@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * 把 mekanicalcreate 那两趟「模拟室配方目录」预计算（实测 11.1 秒）从重载关键路径上**提前**跑掉。
+ * 把 mekanicalcreate「模拟室配方目录」的预计算从重载关键路径上**提前**跑掉。
  *
  * <h2>为什么不能"算完再补进去"</h2>
  * <p>TMRV 的 {@code RecipeManager#addRecipes} 在装载结束后抛
@@ -23,10 +23,12 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * <h2>现在的做法：提前预热 + 必须兑现</h2>
  * <ol>
  *   <li>一进入世界（EMI 重载刚起步、标签同步时）就在后台开始算 —— 这段时间工作量大（插件注册、
- *       物品索引、搜索索引……），这 11 秒基本被完全重叠掉；</li>
- *   <li>{@code registerRecipes} 调到 {@code getDisplayRecipes} 时若已算好就直接给出（秒过，配方正常显示）；</li>
- *   <li>万一还没算完，就<b>等</b>它（{@link #await}，有上限），超时则调用方自己算 ——
- *       <b>任何情况下首次进世界都不会出现"配方为空"</b>。</li>
+ *       物品索引、搜索索引……），这几十秒基本被完全重叠掉；</li>
+ *   <li>只完整枚举流体目录（{@code allowFluidProcessing=true}）；物品目录是它的子集，
+ *       由插件侧按进程类型派生，省掉第二趟全量枚举；</li>
+ *   <li>{@code registerRecipes} 调到 {@code getDisplayRecipes} 时若已算好就直接给出（秒过）；</li>
+ *   <li>万一还没算完，就<b>等</b>它（{@link #await}，上限 5 分钟），超时则调用方自己算 ——
+ *       等待期间不会重复做同一趟计算。</li>
  * </ol>
  */
 public final class GTMekanicalDeferredRecipes {
@@ -34,12 +36,13 @@ public final class GTMekanicalDeferredRecipes {
     /** 正在后台预热；同一份 {@code RecipeManager} 只做一次。 */
     private static final AtomicBoolean RUNNING = new AtomicBoolean();
 
-    /** 预热任务；完成时结果已进缓存。 */
-    private static volatile CompletableFuture<Object[]> job;
+    /** 预热任务（只算流体目录）；完成时结果已进缓存。 */
+    private static volatile CompletableFuture<List<?>> job;
 
-    /** 结果所属的配方管理器与两趟结果（[0] = item，[1] = fluid）。 */
+    /** 结果所属的配方管理器与两趟结果。 */
     private static volatile RecipeManager cachedManager;
-    private static volatile Object[] cachedResults;
+    private static volatile List<?> cachedFluidRecipes;
+    private static volatile List<?> cachedItemRecipes;
 
     private GTMekanicalDeferredRecipes() {
     }
@@ -48,7 +51,7 @@ public final class GTMekanicalDeferredRecipes {
         return GoldenTweaksClientConfig.MEKANICALCREATE_DEFER_RECIPES.get();
     }
 
-    /** EMI 重载起步时调用：尽量早地把两趟计算丢到后台。 */
+    /** EMI 重载起步时调用：尽量早地把计算丢到后台。 */
     public static void prewarm() {
 
         if (!enabled()) {
@@ -72,7 +75,7 @@ public final class GTMekanicalDeferredRecipes {
             return ready;
         }
 
-        CompletableFuture<Object[]> running = job;
+        CompletableFuture<List<?>> running = job;
         if (running != null) {
             try {
                 running.get(timeoutMs, TimeUnit.MILLISECONDS);
@@ -89,21 +92,35 @@ public final class GTMekanicalDeferredRecipes {
     @SuppressWarnings("unchecked")
     public static <T> List<T> cached(Level level, boolean allowFluidProcessing) {
 
-        Object[] results = cachedResults;
-        if (results == null || level == null || level.getRecipeManager() != cachedManager) {
+        if (level == null || level.getRecipeManager() != cachedManager) {
             return null;
         }
 
-        return (List<T>) results[allowFluidProcessing ? 1 : 0];
+        List<?> results = allowFluidProcessing ? cachedFluidRecipes : cachedItemRecipes;
+        return (List<T>) results;
+    }
+
+    /** 由插件侧从流体目录派生物品目录后回填，避免再跑一趟 {@code getDisplayRecipes(false)}。 */
+    public static void storeItemResults(Level level, List<?> items) {
+
+        if (level == null || level.getRecipeManager() != cachedManager) {
+            return;
+        }
+
+        cachedItemRecipes = items;
+
+        GoldenTweaks.LOGGER.info(
+                "GoldenTweaks: mekanicalcreate 物品配方已从流体目录派生（{} 条）", items.size()
+        );
     }
 
     private static void startIfNeeded(Level level) {
 
-        if (level == null || cached(level, false) != null || !RUNNING.compareAndSet(false, true)) {
+        if (level == null || cached(level, true) != null || !RUNNING.compareAndSet(false, true)) {
             return;
         }
 
-        CompletableFuture<Object[]> future = new CompletableFuture<>();
+        CompletableFuture<List<?>> future = new CompletableFuture<>();
         job = future;
 
         Thread thread = new Thread(() -> {
@@ -111,19 +128,18 @@ public final class GTMekanicalDeferredRecipes {
             long started = System.currentTimeMillis();
 
             try {
-                List<?> itemRecipes = compute(level, false);
                 List<?> fluidRecipes = compute(level, true);
 
-                Object[] results = new Object[]{itemRecipes, fluidRecipes};
-                cachedResults = results;
+                cachedFluidRecipes = fluidRecipes;
+                cachedItemRecipes = null;
                 cachedManager = level.getRecipeManager();
 
                 GoldenTweaks.LOGGER.info(
-                        "GoldenTweaks: mekanicalcreate 配方已预热完成（{} + {} 条，{} ms）",
-                        itemRecipes.size(), fluidRecipes.size(), System.currentTimeMillis() - started
+                        "GoldenTweaks: mekanicalcreate 流体配方已预热完成（{} 条，{} ms），物品目录按需派生",
+                        fluidRecipes.size(), System.currentTimeMillis() - started
                 );
 
-                future.complete(results);
+                future.complete(fluidRecipes);
             } catch (Throwable throwable) {
                 GoldenTweaks.LOGGER.error("GoldenTweaks: 预热 mekanicalcreate 配方失败，将退回原路径现算", throwable);
                 future.complete(null);

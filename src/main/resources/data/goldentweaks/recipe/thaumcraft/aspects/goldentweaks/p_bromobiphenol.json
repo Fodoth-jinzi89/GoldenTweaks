@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:p_bromobiphenol"
+  },
+  "aspects": {
+    "tenebrae": 10,
+    "alkimia": 6,
+    "potentia": 2,
+    "permutatio": 13,
+    "ignis": 9
+  }
+}

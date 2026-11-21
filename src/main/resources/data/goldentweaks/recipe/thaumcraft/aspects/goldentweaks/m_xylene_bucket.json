@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:m_xylene_bucket"
+  },
+  "aspects": {
+    "ignis": 12,
+    "tenebrae": 8,
+    "alkimia": 4,
+    "potentia": 15
+  }
+}

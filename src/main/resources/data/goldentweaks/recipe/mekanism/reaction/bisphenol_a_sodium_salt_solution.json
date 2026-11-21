@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 500,
+    "chemical": "goldentweaks:bisphenol_a"
+  },
+  "duration": 1200,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 1000,
+    "fluid": "minecraft:water"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:sodium_hydroxide"
+  },
+  "chemical_output": {
+    "amount": 1000,
+    "id": "goldentweaks:bisphenol_a_sodium_salt_solution"
+  }
+}

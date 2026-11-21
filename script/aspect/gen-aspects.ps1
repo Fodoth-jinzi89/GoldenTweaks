@@ -35,7 +35,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $script:Ns = $Namespace
 
 # namespace dependent fallback for ids that no rule matches
-if ($Namespace -match '^(create|offroad|pipez|shaolib|mespliced|neoecoae|ae2lt|thermal|cofh|mio_icif|envirotech|envirocore|valkyrielib)') {
+if ($Namespace -match '^(create|offroad|pipez|shaolib|mespliced|neoecoae|ae2lt|thermal|cofh|mio_icif|envirotech|envirocore|valkyrielib|avaritia_more_items|create_aerofreight)') {
     $script:Fallback = @{ machina = 2; metallum = 2; fabrico = 1 }
 } elseif ($Namespace -match 'maid|animation|touhou') {
     $script:Fallback = @{ pannus = 2; corpus = 1 }
@@ -152,6 +152,57 @@ function Get-ItemAspects([string]$path) {
         if ($path -match '_frame$') { return @{ fabrico = 2; metallum = 2; machina = 1 } }
         if ($path -match 'brick|cobble|polished|tile|slab|stairs|wall') { return @{ saxum = 2; terra = 1; ordo = 1 } }
         if ($path -match '^(litherite|erodium|kyronite|pladium|ionite|aethium|nanorite|xerothium|aeronite|parathium|millirite|microthium)$') { return @{ saxum = 2; terra = 2; ordo = 1 } }
+    }
+    if ($script:Ns -eq 'avaritia_more_items') {
+        if ($path -match '^multiblock_energy_(?:input|output)_(\d+)$') { $t = [int]$Matches[1]; return @{ machina = 3; potentia = 2; metallum = 2; terminus = $t } }
+        if ($path -match '^multiblock_fluid_(?:input|output)_(\d+)$') { $t = [int]$Matches[1]; return @{ machina = 3; aqua = 2; vas = 2; terminus = $t } }
+        if ($path -match '^multiblock_item_(?:input|output)_(\d+)$') { $t = [int]$Matches[1]; return @{ machina = 3; iter = 2; vas = 2; terminus = $t } }
+        if ($path -eq 'machine_shell') { return @{ machina = 3; metallum = 3; fabrico = 2; terminus = 2 } }
+        if ($path -eq 'craft_editor_desk') { return @{ metallum = 3; cognitio = 2; terminus = 2 } }
+        if ($path -eq 'two_tier_workbench') { return @{ fabrico = 3; metallum = 3; terminus = 2 } }
+        if ($path -eq 'photolithography_machine') { return @{ machina = 4; potentia = 3; vitreus = 2; cognitio = 2; terminus = 4 } }
+        if ($path -eq 'wrench') { return @{ instrumentum = 3; metallum = 3; terminus = 1 } }
+        if ($path -eq 'multiblock_hammer') { return @{ instrumentum = 3; metallum = 3; fabrico = 2; terminus = 2 } }
+    }
+    if ($script:Ns -eq 'create_aerofreight') {
+        if ($path -match '^modifier_') { return @{ machina = 2; cognitio = 2; fabrico = 1 } }
+        if ($path -match '^cargo_container|^packed_cargo') { return @{ vas = 3; machina = 2; iter = 2 } }
+        if ($path -match '^cargo_shell') { return @{ machina = 2; metallum = 3; fabrico = 1 } }
+        if ($path -eq 'cargo_frame') { return @{ fabrico = 2; metallum = 3; machina = 1 } }
+        if ($path -match 'dispatch_station|freight_platform') { return @{ machina = 3; cognitio = 2; motus = 1 } }
+        if ($path -eq 'freight_docking_interface') { return @{ machina = 3; motus = 2; iter = 1 } }
+        if ($path -match 'order_machine|packing_machine') { return @{ machina = 3; cognitio = 2; fabrico = 1 } }
+        if ($path -eq 'freight_compass') { return @{ machina = 2; cognitio = 2; iter = 2 } }
+        if ($path -eq 'freight_manifest') { return @{ cognitio = 3; charta = 2; humanus = 1 } }
+        if ($path -eq 'friendship_card') { return @{ humanus = 3; cognitio = 2; charta = 1 } }
+        if ($path -match 'order_ticket') { return @{ cognitio = 2; charta = 2 } }
+        if ($path -eq 'order_refresh_debug_tool') { return @{ cognitio = 3; machina = 2; instrumentum = 2 } }
+    }
+    if ($script:Ns -eq 'kaleidoscope_chinesefood') {
+        if ($path -match '^freezer') { return @{ machina = 3; gelum = 3; fabrico = 1 } }
+        if ($path -match '^(couplet|fu_character|horizontal_scroll)$') { return @{ charta = 3; lux = 2; humanus = 2 } }
+        if ($path -eq 'firecracker') { return @{ ignis = 3; potentia = 2; sonus = 2 } }
+        if ($path -eq 'kongming_lantern') { return @{ lux = 3; ignis = 2; aer = 2 } }
+        if ($path -eq 'straw_bed') { return @{ arbor = 2; pannus = 2; fabrico = 1 } }
+        if ($path -eq 'pickle_jar') { return @{ vas = 3; aqua = 2; fames = 1 } }
+        if ($path -eq 'mooncake_mold') { return @{ fabrico = 2; instrumentum = 1; victus = 1 } }
+        if ($path -eq 'bowl_stack') { return @{ fabrico = 2; vas = 1; fames = 1 } }
+        if ($path -eq 'salt') { return @{ terra = 2; perditio = 1; fames = 1 } }
+        if ($path -eq 'salt_bucket') { return @{ aqua = 3; vas = 2; terra = 1 } }
+        if ($path -eq 'corn_ristra') { return @{ messis = 2; herba = 2; fames = 1 } }
+        if ($path -eq 'eggplant_crop') { return @{ herba = 2; messis = 2; terra = 1 } }
+        if ($path -eq 'eggplant_seed') { return @{ herba = 2; victus = 1; terra = 1 } }
+        if ($path -match 'spawn_egg$') { return @{ bestia = 3; victus = 3; vinculum = 3; fames = 1 } }
+        if ($path -eq 'yellow_croaker_bucket') { return @{ aqua = 3; vas = 2; bestia = 1 } }
+        if ($path -match '^yellow_croaker') { return @{ bestia = 3; victus = 2; aqua = 2 } }
+        if ($path -match 'tea') { return @{ fames = 2; herba = 2; aqua = 1 } }
+        if ($path -match 'platter') { return @{ fames = 3; praecantatio = 2; lucrum = 1 } }
+        if ($path -match '^raw_') { return @{ fames = 2; victus = 2; herba = 1 } }
+        return @{ fames = 3; victus = 2; herba = 1 }
+    }
+    if ($script:Ns -eq 'kaleidoscope_cookery' -or $script:Ns -eq 'kaleidoscope_twilight') {
+        if ($path -match '^stripped_bamboo') { return @{ arbor = 3; fabrico = 2 } }
+        if ($path -eq 'frozen_bun') { return @{ gelum = 3; fames = 2; victus = 2 } }
     }
     if ($script:Ns -eq 'valkyrielib') {
         if ($path -eq 'guide') { return @{ cognitio = 3; charta = 2; humanus = 1 } }

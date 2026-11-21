@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:firecracker"
+  },
+  "aspects": {
+    "ignis": 3,
+    "potentia": 2,
+    "sonus": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:bent_molecule_2_methoxy_methanol_solution_bucket"
+  },
+  "aspects": {
+    "aqua": 2,
+    "potentia": 13,
+    "permutatio": 9
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:p_xylene"
+    },
+    {
+      "item": "goldentweaks:potassium_dichromate"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:terephthalic_acid"
+    },
+    {
+      "id": "goldentweaks:potassium_dichromate",
+      "chance": 0.98
+    }
+  ]
+}

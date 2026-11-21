@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "goldentweaks:block/multiblock/gt_port_fluid_input_t6"
+    },
+    "facing=east": {
+      "model": "goldentweaks:block/multiblock/gt_port_fluid_input_t6",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "goldentweaks:block/multiblock/gt_port_fluid_input_t6",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "goldentweaks:block/multiblock/gt_port_fluid_input_t6",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "goldentweaks:block/multiblock/gt_port_fluid_input_t6",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "goldentweaks:block/multiblock/gt_port_fluid_input_t6",
+      "x": 90
+    }
+  }
+}

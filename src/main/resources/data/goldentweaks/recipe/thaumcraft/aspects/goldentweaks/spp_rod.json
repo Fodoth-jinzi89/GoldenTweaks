@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:spp_rod"
+  },
+  "aspects": {
+    "machina": 11,
+    "ordo": 7,
+    "motus": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:methanol_bucket"
+  },
+  "aspects": {
+    "permutatio": 12,
+    "alkimia": 8,
+    "aqua": 4,
+    "potentia": 15
+  }
+}

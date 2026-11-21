@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:benzene_bucket"
+  },
+  "aspects": {
+    "alkimia": 3,
+    "potentia": 14,
+    "permutatio": 10,
+    "ignis": 6
+  }
+}

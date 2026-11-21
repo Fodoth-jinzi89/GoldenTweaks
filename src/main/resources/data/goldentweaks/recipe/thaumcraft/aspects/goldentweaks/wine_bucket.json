@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:wine_bucket"
+  },
+  "aspects": {
+    "alkimia": 7,
+    "aqua": 3,
+    "potentia": 14,
+    "permutatio": 10
+  }
+}

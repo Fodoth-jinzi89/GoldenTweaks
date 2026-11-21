@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:epr_white_rod"
+  },
+  "aspects": {
+    "machina": 12,
+    "ordo": 8,
+    "motus": 4,
+    "instrumentum": 15
+  }
+}

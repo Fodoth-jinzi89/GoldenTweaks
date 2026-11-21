@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "chemical_input": {
+    "amount": 1000,
+    "chemical": "mekanism:hydrogen"
+  },
+  "duration": 2000,
+  "energy_required": 200,
+  "fluid_input": {
+    "amount": 100,
+    "fluid": "goldentweaks:dinitrotoluene"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "goldentweaks:palladium_powder"
+  },
+  "chemical_output": {
+    "amount": 100,
+    "id": "goldentweaks:toluenediamine"
+  },
+  "item_output": {
+    "count": 1,
+    "id": "goldentweaks:palladium_powder"
+  }
+}

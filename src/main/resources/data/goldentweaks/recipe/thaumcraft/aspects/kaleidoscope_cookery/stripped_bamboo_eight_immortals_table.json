@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_cookery:stripped_bamboo_eight_immortals_table"
+  },
+  "aspects": {
+    "arbor": 3,
+    "fabrico": 2
+  }
+}

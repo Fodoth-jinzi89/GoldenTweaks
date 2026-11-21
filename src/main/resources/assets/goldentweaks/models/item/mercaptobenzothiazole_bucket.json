@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:mercaptobenzothiazole",
+  "loader": "neoforge:fluid_container"
+}

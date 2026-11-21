@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:aqua_regia_bucket"
+  },
+  "aspects": {
+    "vitium": 11,
+    "alkimia": 7,
+    "aqua": 3
+  }
+}

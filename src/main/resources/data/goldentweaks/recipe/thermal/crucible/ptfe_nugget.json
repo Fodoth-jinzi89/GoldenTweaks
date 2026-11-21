@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:ptfe_nugget"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:ptfe",
+      "amount": 16
+    }
+  ],
+  "energy": 1600
+}

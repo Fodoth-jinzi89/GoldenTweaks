@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "envirocore"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "value": [
+      {
+        "item": "envirocore:ionite_crystal"
+      }
+    ],
+    "count": 1
+  },
+  "result": [
+    {
+      "item": "envirocore:ionite_powder",
+      "count": 1
+    }
+  ],
+  "experience": 0.0
+}

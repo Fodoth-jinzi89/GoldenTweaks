@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "evolvedmekanism"
+    }
+  ],
+  "type": "evolvedmekanism:melting",
+  "input": {
+    "item": "goldentweaks:nylon_6_nugget"
+  },
+  "output": {
+    "id": "goldentweaks:nylon_6",
+    "amount": 16
+  }
+}

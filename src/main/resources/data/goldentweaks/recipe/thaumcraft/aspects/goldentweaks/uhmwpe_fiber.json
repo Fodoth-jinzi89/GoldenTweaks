@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:uhmwpe_fiber"
+  },
+  "aspects": {
+    "machina": 11,
+    "fabrico": 7,
+    "motus": 3
+  }
+}

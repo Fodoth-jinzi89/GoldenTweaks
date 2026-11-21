@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_aerofreight:cargo_container_yellow"
+  },
+  "aspects": {
+    "iter": 2,
+    "machina": 2,
+    "vas": 3
+  }
+}

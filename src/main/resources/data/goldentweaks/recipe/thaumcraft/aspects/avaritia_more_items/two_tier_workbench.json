@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:two_tier_workbench"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "metallum": 3,
+    "terminus": 2
+  }
+}

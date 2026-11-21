@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "kaleidoscope_cookery"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:mixing_additive_base"
+    },
+    {
+      "item": "mio_icif:resource/item_harz"
+    },
+    {
+      "item": "kaleidoscope_cookery:oil"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 50,
+      "fluid": "thermal:refined_fuel"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "goldentweaks:hot_melt_adhesive_additive"
+    }
+  ]
+}

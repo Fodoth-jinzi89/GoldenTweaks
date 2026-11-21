@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "goldentweaks:phost"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 150,
+      "fluid": "goldentweaks:2_6_dinitrobenzyl_tosylate"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1,
+      "fluid": "goldentweaks:krf_photoresist_additive"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "goldentweaks:krf_photoresist"
+    }
+  ]
+}

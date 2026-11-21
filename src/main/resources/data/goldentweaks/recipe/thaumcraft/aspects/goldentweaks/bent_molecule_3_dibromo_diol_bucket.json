@@ -1,0 +1,11 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:bent_molecule_3_dibromo_diol_bucket"
+  },
+  "aspects": {
+    "alkimia": 8,
+    "aqua": 4,
+    "potentia": 15
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "goldentweaks:pvac"
+  },
+  "aspects": {
+    "fabrico": 3,
+    "potentia": 14,
+    "limus": 10,
+    "machina": 6
+  }
+}

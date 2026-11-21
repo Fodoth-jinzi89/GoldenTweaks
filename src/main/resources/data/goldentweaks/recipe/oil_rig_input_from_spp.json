@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mio_icif"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "goldentweaks:spp_plate"
+    },
+    "B": {
+      "item": "mio_icif:wiring/cable/block_gold_cable"
+    },
+    "C": {
+      "item": "mio_icif:oilrig/block_oil_rig_base"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "mio_icif:oilrig/block_oil_rig_input"
+  }
+}

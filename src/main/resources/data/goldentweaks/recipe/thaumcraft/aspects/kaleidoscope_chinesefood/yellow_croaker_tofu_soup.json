@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_chinesefood:yellow_croaker_tofu_soup"
+  },
+  "aspects": {
+    "aqua": 2,
+    "bestia": 3,
+    "victus": 2
+  }
+}

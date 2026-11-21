@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:rotary",
+  "fluid_input": {
+    "amount": 1,
+    "fluid": "goldentweaks:polyether_polyol"
+  },
+  "fluid_output": {
+    "amount": 1,
+    "id": "goldentweaks:polyether_polyol"
+  },
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "goldentweaks:polyether_polyol"
+  },
+  "chemical_output": {
+    "amount": 1,
+    "id": "goldentweaks:polyether_polyol"
+  }
+}

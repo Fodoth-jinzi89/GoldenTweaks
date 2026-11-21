@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "goldentweaks:butyl_rubber_white_plate"
+  },
+  "result": [
+    {
+      "fluid": "goldentweaks:butyl_rubber_white",
+      "amount": 144
+    }
+  ],
+  "energy": 14400
+}

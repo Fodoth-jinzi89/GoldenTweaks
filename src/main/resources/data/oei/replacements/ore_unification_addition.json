@@ -264,7 +264,8 @@
   {
     "matchItems": [
       "thermal:quartz_dust",
-      "mekanism:dust_quartz"
+      "mekanism:dust_quartz",
+      "envirocore:quartz_powder"
     ],
     "resultItems": "ae2cs:nether_quartz_dust"
   },
@@ -369,9 +370,16 @@
   },
   {
     "matchItems": [
-      "mio_icif:resource/item_charcoal_dust"
+      "mio_icif:resource/item_charcoal_dust",
+      "envirocore:charcoal_powder"
     ],
     "resultItems": "mekanism:dust_charcoal"
+  },
+  {
+    "matchItems": [
+      "envirocore:carbon_powder"
+    ],
+    "resultItems": "goldentweaks:carbon"
   },
   {
     "matchItems": [

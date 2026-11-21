@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "goldentweaks:chlorodifluoromethane",
+  "loader": "neoforge:fluid_container"
+}
