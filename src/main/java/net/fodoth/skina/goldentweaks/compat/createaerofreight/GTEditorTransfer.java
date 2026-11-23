@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.ByteArrayOutputStream;
 import java.util.Arrays;
@@ -53,7 +54,7 @@ public final class GTEditorTransfer {
             buffer.writeNbt(payload.snapshot());
             byte[] data = new byte[buffer.readableBytes()];
             buffer.readBytes(data);
-            send(data, part -> PacketDistributor.sendToServer(part));
+            send(data, PacketDistributor::sendToServer);
         } finally {
             buffer.release();
         }
@@ -126,7 +127,7 @@ public final class GTEditorTransfer {
     public record Part(UUID id, int index, boolean last, byte[] data) implements CustomPacketPayload {
         public static final Type<Part> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("goldentweaks", "aerofreight_editor_part"));
         public static final StreamCodec<FriendlyByteBuf, Part> CODEC = new StreamCodec<>() {
-            public Part decode(FriendlyByteBuf buffer) {
+            public @NotNull Part decode(FriendlyByteBuf buffer) {
                 return new Part(buffer.readUUID(), buffer.readVarInt(), buffer.readBoolean(), buffer.readByteArray(PART_BYTES));
             }
             public void encode(FriendlyByteBuf buffer, Part part) {
@@ -136,6 +137,6 @@ public final class GTEditorTransfer {
                 buffer.writeByteArray(part.data());
             }
         };
-        public Type<? extends CustomPacketPayload> type() { return TYPE; }
+        public @NotNull Type<? extends CustomPacketPayload> type() { return TYPE; }
     }
 }

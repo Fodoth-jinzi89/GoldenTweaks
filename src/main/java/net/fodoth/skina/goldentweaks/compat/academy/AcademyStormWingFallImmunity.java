@@ -31,7 +31,7 @@ public final class AcademyStormWingFallImmunity {
         }
 
         PlayerAbilityData data = player.getData(AcademyAttachments.PLAYER_ABILITY);
-        if (data != null && data.getLearnedSkills().contains(STORM_WING)) {
+        if (data.getLearnedSkills().contains(STORM_WING)) {
             event.setCanceled(true);
         }
     }

@@ -46,7 +46,7 @@ public final class GTMappingStrings {
                     String text = names[i];
                     if (text == null) continue;
                     String shared = strings.putIfAbsent(text, text);
-                    if (shared != null && shared != text) {
+                    if (shared != null && !shared.equals(text)) {
                         names[i] = shared;
                         replaced++;
                     }
@@ -59,7 +59,7 @@ public final class GTMappingStrings {
                         Object value = field.get(current);
                         if (value instanceof String text) {
                             String shared = strings.putIfAbsent(text, text);
-                            if (shared != null && shared != text) {
+                            if (shared != null && !shared.equals(text)) {
                                 field.set(current, shared);
                                 replaced++;
                             }

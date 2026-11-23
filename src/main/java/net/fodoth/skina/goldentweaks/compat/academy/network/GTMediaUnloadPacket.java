@@ -6,10 +6,10 @@ import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.network.protocol.common.custom.CustomPacketPayload.Type;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * 客户端请求把某个曲目从玩家的「已加载媒体」里移除（媒体播放器界面的「删除歌曲」按钮使用）。
@@ -19,14 +19,14 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
  */
 public record GTMediaUnloadPacket(String trackId) implements CustomPacketPayload {
 
-    public static final Type<GTMediaUnloadPacket> TYPE = new Type(
+    public static final Type<GTMediaUnloadPacket> TYPE = new Type<>(
             ResourceLocation.fromNamespaceAndPath("goldentweaks", "media_unload"));
 
     public static final StreamCodec<ByteBuf, GTMediaUnloadPacket> STREAM_CODEC = StreamCodec.composite(
             ByteBufCodecs.stringUtf8(64), GTMediaUnloadPacket::trackId, GTMediaUnloadPacket::new);
 
     @Override
-    public Type<? extends CustomPacketPayload> type() {
+    public @NotNull Type<? extends CustomPacketPayload> type() {
         return TYPE;
     }
 

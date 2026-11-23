@@ -1,8 +1,11 @@
 package net.fodoth.skina.goldentweaks.compat.jade;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTPortTier;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMenu;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactorStatus;
 import net.fodoth.skina.goldentweaks.util.GTDurationFormat;
 import net.minecraft.ChatFormatting;
@@ -10,9 +13,11 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.fml.ModList;
 import org.jetbrains.annotations.Nullable;
 import snownee.jade.api.BlockAccessor;
 import snownee.jade.api.IBlockComponentProvider;
@@ -26,6 +31,10 @@ import snownee.jade.api.ui.ProgressStyle;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Font;
+import net.minecraft.nbt.Tag;
 
 /**
  * Draws the kettle's tooltip panel.
@@ -54,7 +63,7 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
     private static final int BAR_TEXT = 0xFFFFFFFE;
 
     /** How many products are listed before the rest are summarised. */
-    private static final int MAX_PRODUCTS = 3;
+    private static final int MAX_PRODUCTS = 6;
 
 
     @Override
@@ -94,10 +103,11 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
         if (energyTier > 0) {
             // The label stays green; only the tier is coloured, so a glance at the hue says which
             // class of hatch the machine is built from without reading the letters.
+            GTPortTier tier = GTPortTier.byLevel(energyTier);
             tooltip.add(Component.translatable("gui.goldentweaks.jade.energy_tier.label")
                     .withStyle(ChatFormatting.GREEN)
-                    .append(Component.literal(tierName(energyTier))
-                            .withStyle(tierColour(energyTier))));
+                    .append(Component.literal(tier.code())
+                            .withStyle(Style.EMPTY.withColor(tier.colour()))));
         }
 
         // Only while a craft runs: an idle machine draws the hatch rate at most, and stating a power
@@ -144,42 +154,6 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
         return Component.translatable(labelKey).withStyle(ChatFormatting.GREEN)
                 .append(Component.literal(GTEnergyFormat.formatWithUnit(value, "FE/t"))
                         .withStyle(ChatFormatting.AQUA));
-    }
-
-    /** The tier codes a player knows, in level order. */
-    private static final String[] TIER_CODES = {
-            "ULV", "LV", "MV", "HV", "EV", "IV", "LuV", "ZPM", "UV"
-    };
-
-    /** The one-based level as the shorthand written on the hatches. */
-    private static String tierName(int level) {
-        int index = Math.max(0, Math.min(TIER_CODES.length - 1, level - 1));
-        return TIER_CODES[index];
-    }
-
-    /**
-     * The colour each tier is drawn in, in the same order as {@link #TIER_CODES}.
-     *
-     * <p>Not a rainbow for its own sake: ULV through UV is a ladder of increasing power, and the
-     * hues walk from red up to dark green so the line reads as a position on that ladder rather
-     * than as a name that has to be spelled out.</p>
-     */
-    private static final ChatFormatting[] TIER_COLOURS = {
-            ChatFormatting.RED,          // ULV
-            ChatFormatting.DARK_GRAY,    // LV
-            ChatFormatting.GOLD,         // MV
-            ChatFormatting.YELLOW,       // HV
-            ChatFormatting.GRAY,         // EV
-            ChatFormatting.DARK_BLUE,    // IV
-            ChatFormatting.LIGHT_PURPLE, // LuV
-            ChatFormatting.AQUA,         // ZPM
-            ChatFormatting.DARK_GREEN    // UV
-    };
-
-    /** The colour of a one-based tier level. */
-    private static ChatFormatting tierColour(int level) {
-        int index = Math.max(0, Math.min(TIER_COLOURS.length - 1, level - 1));
-        return TIER_COLOURS[index];
     }
 
     private static GTReactorStatus statusOf(CompoundTag root) {
@@ -341,8 +315,8 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
         return Component.empty().append(label).append(" ".repeat(spaces));
     }
 
-    private static net.minecraft.client.gui.Font font() {
-        return net.minecraft.client.Minecraft.getInstance().font;
+    private static Font font() {
+        return Minecraft.getInstance().font;
     }
 
     /**
@@ -353,7 +327,7 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
      */
     private static void appendProducts(ITooltip tooltip, CompoundTag root) {
         ListTag products = root.getList(GTReactorJadeProvider.PRODUCTS,
-                net.minecraft.nbt.Tag.TAG_COMPOUND);
+                Tag.TAG_COMPOUND);
         if (products.isEmpty()) {
             return;
         }
@@ -364,26 +338,15 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
         List<IElement> row = new ArrayList<>();
         int shown = 0;
         for (int index = 0; index < products.size() && shown < MAX_PRODUCTS; index++) {
-            CompoundTag entry = products.getCompound(index);
-            String kind = entry.getString(GTReactorJadeProvider.PRODUCT_KIND);
-
-            // A kind with no icon is still worth naming: a chemical or an AE key gets its own text
-            // row rather than being dropped, since the amount is what the player reads this for.
-            if (GTReactorJadeProvider.KIND_NAMED.equals(kind)) {
-                // No icon exists for this kind, so the amount is the only thing there is to say.
-                tooltip.add(Component.literal(entry.getString(GTReactorJadeProvider.PRODUCT_NAME)
-                        + "  " + entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT))
-                        .withStyle(ChatFormatting.WHITE));
-                shown++;
-                continue;
-            }
-
-            IElement icon = iconOf(entry);
+            IElement icon = iconOf(products.getCompound(index));
             if (icon == null) {
+                // Nothing to draw: an id this client cannot resolve, or a kind that needs EMI when it
+                // is not installed. The row is skipped rather than replaced with text, because the
+                // panel is read as a set of slots and a lone name among them reads as an error.
                 continue;
             }
-            // The icon alone: a stack's own corner already prints its amount, and repeating it as a
-            // "xN" beside the icon said the same thing twice.
+            // The icon alone: every kind that has one also carries its own amount badge, so a
+            // second copy of the number beside it would say the same thing twice.
             row.add(icon);
             row.add(IElementHelper.get().spacer(4, 0));
             shown++;
@@ -421,11 +384,40 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
             return IElementHelper.get().fluid(JadeFluidObject.of(
                     fluid, entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT)));
         }
+        if (GTReactorJadeProvider.KIND_NAMED.equals(kind)) {
+            return emiIconOf(entry, id, entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT));
+        }
         var item = BuiltInRegistries.ITEM.getOptional(id).orElse(null);
         if (item == null) {
             return null;
         }
         return IElementHelper.get().item(
                 new ItemStack(item, entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT)));
+    }
+
+    @Nullable
+    private static IElement emiIconOf(CompoundTag entry, ResourceLocation id, long amount) {
+        if (!ModList.get().isLoaded("emi")) {
+            return null;
+        }
+        GTReactionStack.Kind kind = realKindOf(entry);
+        GTReactionStack stack = new GTReactionStack(kind, id, amount, Optional.empty());
+        var level = Minecraft.getInstance().level;
+        var ingredient = GTReactionStacks.toEmiIngredient(
+                stack, level == null ? null : level.registryAccess());
+        return ingredient == null ? null : new GTEmiJadeElement(ingredient, 1.0F);
+    }
+
+    /** The kind the server recorded for an entry with no Jade-native element. */
+    private static GTReactionStack.Kind realKindOf(CompoundTag entry) {
+        String name = entry.getString(GTReactorJadeProvider.PRODUCT_REAL_KIND);
+        for (GTReactionStack.Kind kind : GTReactionStack.Kind.values()) {
+            if (kind.name().equals(name)) {
+                return kind;
+            }
+        }
+        // Written by an older build that sent only the display name; a chemical is the better guess
+        // because it is what most recipes of this kind produce.
+        return GTReactionStack.Kind.CHEMICAL;
     }
 }

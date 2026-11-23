@@ -6,6 +6,8 @@ import mekanism.api.MekanismAPI;
 import mekanism.api.chemical.Chemical;
 import mekanism.api.chemical.ChemicalStack;
 import mekanism.client.recipe_viewer.emi.MekanismEmiHelper;
+import dev.emi.emi.api.stack.EmiStack;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.recipe.client.GTEssentiaEmiStack;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.ae2.GTAe2EmiStacks;
 import net.minecraft.core.Holder;
@@ -98,6 +100,16 @@ public final class GTReactionStacks {
                 yield chemical == null || chemical.isEmpty()
                         ? null
                         : MekanismEmiHelper.INSTANCE.createEmiStack(chemical.getChemicalHolder(), chemical.getAmount());
+            }
+            // Essentia: scex registers the aspect as a real viewer ingredient, so prefer that —
+            // it answers hover, search and recipe lookups, which a hand-drawn stack cannot. The
+            // hand-drawn one stays as the fallback for a pack without scex.
+            case ESSENTIA -> {
+                EmiStack registered = GTEssentiaEmiStack.registered(
+                        stack.essentiaTag(), stack.amount());
+                yield registered != null
+                        ? registered
+                        : new GTEssentiaEmiStack(stack.essentiaTag(), stack.amount());
             }
             case AE -> {
                 GenericStack generic = registries == null ? null : toGenericStack(stack, registries);

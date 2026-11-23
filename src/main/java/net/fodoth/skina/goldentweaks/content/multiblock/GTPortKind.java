@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.content.multiblock;
 
 import net.minecraft.resources.ResourceLocation;
-import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * What a port carries, and which icon and storage it uses.
@@ -14,7 +14,22 @@ public enum GTPortKind {
 
     ITEM("item"),
     FLUID("fluid"),
-    ENERGY("energy");
+    ENERGY("energy"),
+    /**
+     * A Mekanism chemical hopper.
+     *
+     * <p>Its own kind rather than a variant of {@link #FLUID}: chemicals are a separate registry
+     * with a separate capability, and the two cannot share a handler. The art calls it a hopper
+     * because the name is about the part, not the contents.</p>
+     */
+    CHEMICAL("chemical"),
+    /**
+     * A Thaumcraft essentia tank.
+     *
+     * <p>Also its own kind: essentia is addressed by {@code Aspect} and carried through Thaumcraft's
+     * own transport interface, which shares nothing with fluids beyond the idea of a tank.</p>
+     */
+    ESSENTIA("essentia");
 
     /** Id fragment used in block ids and texture paths. */
     private final String id;
@@ -27,9 +42,18 @@ public enum GTPortKind {
         return this.id;
     }
 
+    /** Whether this kind is one of ours, rather than one AMI also ships art for. */
+    public boolean isExtended() {
+        return this == CHEMICAL || this == ESSENTIA;
+    }
+
     /** Icon texture AMI ships for this kind, or {@code null} if this kind has none. */
-    @Nullable
-    public ResourceLocation icon() {
+    public @NotNull ResourceLocation icon() {
+        if (isExtended()) {
+            // Our own sheet, in arts/multiblock/port.
+            return ResourceLocation.fromNamespaceAndPath("goldentweaks",
+                    "block/multiblock/port/input_" + this.id);
+        }
         return ResourceLocation.fromNamespaceAndPath("avaritia_more_items",
                 "block/multiblock_port/input/" + this.id);
     }

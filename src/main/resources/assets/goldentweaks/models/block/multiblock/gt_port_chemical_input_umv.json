@@ -1,0 +1,7 @@
+{
+  "parent": "goldentweaks:block/multiblock/gt_port_base",
+  "textures": {
+    "icon": "goldentweaks:block/multiblock/port/input_chemical",
+    "ring": "goldentweaks:block/multiblock/port/level/input"
+  }
+}

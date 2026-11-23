@@ -121,15 +121,13 @@ public final class GTFocalPointColumnRenderer {
     /** 两个互相垂直的竖直四边形，正反两面各发一次（原版 `lightning` 渲染类型开了背面剔除）。 */
     private static void drawColumn(VertexConsumer vb, Matrix4f matrix, float x, float z, int y0, int y1, int alpha) {
         float radius = COLUMN_RADIUS;
-        float fy0 = y0;
-        float fy1 = y1;
 
         // X 方向的面
-        quad(vb, matrix, x - radius, fy0, z, x + radius, fy0, z, x + radius, fy1, z, x - radius, fy1, z, alpha);
-        quad(vb, matrix, x + radius, fy0, z, x - radius, fy0, z, x - radius, fy1, z, x + radius, fy1, z, alpha);
+        quad(vb, matrix, x - radius, (float) y0, z, x + radius, (float) y0, z, x + radius, (float) y1, z, x - radius, (float) y1, z, alpha);
+        quad(vb, matrix, x + radius, (float) y0, z, x - radius, (float) y0, z, x - radius, (float) y1, z, x + radius, (float) y1, z, alpha);
         // Z 方向的面
-        quad(vb, matrix, x, fy0, z - radius, x, fy0, z + radius, x, fy1, z + radius, x, fy1, z - radius, alpha);
-        quad(vb, matrix, x, fy0, z + radius, x, fy0, z - radius, x, fy1, z - radius, x, fy1, z + radius, alpha);
+        quad(vb, matrix, x, (float) y0, z - radius, x, (float) y0, z + radius, x, (float) y1, z + radius, x, (float) y1, z - radius, alpha);
+        quad(vb, matrix, x, (float) y0, z + radius, x, (float) y0, z - radius, x, (float) y1, z - radius, x, (float) y1, z + radius, alpha);
     }
 
     private static void quad(VertexConsumer vb, Matrix4f matrix,

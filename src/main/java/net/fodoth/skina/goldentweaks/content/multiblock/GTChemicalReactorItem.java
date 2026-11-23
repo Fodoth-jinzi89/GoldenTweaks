@@ -10,6 +10,8 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.Block;
 
 import java.util.List;
+import net.neoforged.fml.loading.FMLEnvironment;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * The kettle's item, carrying the summary the block itself cannot show.
@@ -42,6 +44,7 @@ public class GTChemicalReactorItem extends BlockItem {
     private static final String STRUCT_HEADER = "tooltip.goldentweaks.chemical_reactor.structure";
     private static final String CONTROLLER_LABEL = "tooltip.goldentweaks.chemical_reactor.controller.label";
     private static final String CONTROLLER_VALUE = "tooltip.goldentweaks.chemical_reactor.controller.value";
+    /** {@code ：任意%s} — the casing the machine is built from fills the blank. */
     private static final String FREE_NOTE = "tooltip.goldentweaks.chemical_reactor.structure.any";
 
     private static final String BOOST = "tooltip.goldentweaks.chemical_reactor.boost";
@@ -70,23 +73,40 @@ public class GTChemicalReactorItem extends BlockItem {
     private record Part(int minimum, String nameKey) {
     }
 
-    private static final List<Part> PARTS = List.of(
+    /** The shell key this item's tooltip names; set per machine through the constructor. */
+    private final String casingKey;
+
+    private static final String DEFAULT_CASING = "block.goldentweaks.shell_pe";
+
+    private static List<Part> partsFor(String casingKey) {
+        return List.of(
             // The block's own name: it says exactly what the structure line needs, so there is no
             // second spelling of "PE casing" to keep in step.
-            new Part(MIN_SHELLS, "block.goldentweaks.shell_pe"),
+            new Part(MIN_SHELLS, casingKey),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.input_bus"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.fluid_input"),
+            new Part(0, "tooltip.goldentweaks.chemical_reactor.part.chemical_input"),
+            new Part(0, "tooltip.goldentweaks.chemical_reactor.part.essentia_input"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.output_bus"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.fluid_output"),
+            new Part(0, "tooltip.goldentweaks.chemical_reactor.part.chemical_output"),
+            new Part(0, "tooltip.goldentweaks.chemical_reactor.part.essentia_output"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.energy_input"));
+    }
 
     public GTChemicalReactorItem(Block block, Item.Properties properties) {
+        this(block, properties, DEFAULT_CASING);
+    }
+
+    /** The same item, naming the casing this particular machine is built from. */
+    public GTChemicalReactorItem(Block block, Item.Properties properties, String casingKey) {
         super(block, properties);
+        this.casingKey = casingKey;
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltip,
-                                TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltip,
+                                @NotNull TooltipFlag flag) {
         tooltip.add(row(KIND_LABEL, ChatFormatting.WHITE, KIND_VALUE, ChatFormatting.YELLOW));
 
         tooltip.add(Component.translatable(CONTROLS_HEADER).withStyle(ChatFormatting.WHITE));
@@ -99,7 +119,7 @@ public class GTChemicalReactorItem extends BlockItem {
                 .append(Component.translatable(CIRCUITS_PARALLEL).withStyle(ChatFormatting.GREEN)));
 
         if (shiftDown()) {
-            addStructure(tooltip);
+            addStructure(tooltip, this.casingKey);
         } else {
             tooltip.add(Component.translatable(SHIFT_PROMPT).withStyle(ChatFormatting.DARK_GRAY)
                     .append(Component.translatable(SHIFT_KEY).withStyle(ChatFormatting.WHITE))
@@ -114,18 +134,18 @@ public class GTChemicalReactorItem extends BlockItem {
      * concept anyway, so the check is guarded rather than assumed.</p>
      */
     private static boolean shiftDown() {
-        return net.neoforged.fml.loading.FMLEnvironment.dist.isClient()
+        return FMLEnvironment.dist.isClient()
                 && net.minecraft.client.gui.screens.Screen.hasShiftDown();
     }
 
     /** The breakdown behind the Shift prompt. */
-    private static void addStructure(List<Component> tooltip) {
+    private static void addStructure(List<Component> tooltip, String casingKey) {
         tooltip.add(sizeLine());
         tooltip.add(Component.translatable(STRUCT_HEADER).withStyle(ChatFormatting.WHITE));
         tooltip.add(controllerLine());
 
-        for (Part part : PARTS) {
-            tooltip.add(partLine(part));
+        for (Part part : partsFor(casingKey)) {
+            tooltip.add(partLine(part, casingKey));
         }
         tooltip.add(Component.translatable(BOOST).withStyle(ChatFormatting.BLUE));
         tooltip.add(Component.translatable(HINT).withStyle(ChatFormatting.GREEN));
@@ -168,15 +188,25 @@ public class GTChemicalReactorItem extends BlockItem {
                         .withStyle(ChatFormatting.DARK_GRAY));
     }
 
-    /** One {@code 8+ 聚乙烯机壳} line, with the "any casing" note on the optional parts. */
-    private static Component partLine(Part part) {
+    /**
+     * One line of the structure list.
+     *
+     * <p>The optional parts carry an "or any casing" note, and that note names this machine's own
+     * casing — the same key the casing line above it uses. Writing the name out in the language
+     * file instead is what made an advanced machine's list end with a polyethylene note.</p>
+     *
+     * @param casingKey the translation key of the casing this machine is built from
+     */
+    private static Component partLine(Part part, String casingKey) {
         Component line = Component.literal(INDENT + part.minimum() + "+").withStyle(ChatFormatting.GOLD)
                 .append(Component.literal(" "))
                 .append(Component.translatable(part.nameKey()).withStyle(ChatFormatting.WHITE));
         if (part.minimum() == 0) {
             // Only the ports are interchangeable with a casing; the casing line has no note.
             line = line.copy()
-                    .append(Component.translatable(FREE_NOTE).withStyle(ChatFormatting.DARK_GRAY));
+                    .append(Component.translatable(FREE_NOTE,
+                                    Component.translatable(casingKey))
+                            .withStyle(ChatFormatting.DARK_GRAY));
         }
         return line;
     }

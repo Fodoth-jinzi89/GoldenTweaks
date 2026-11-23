@@ -1,10 +1,14 @@
 package net.fodoth.skina.goldentweaks.content.multiblock;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.weibai.avaritia_more_items.common.capability.AMICapabilities;
-import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.PortMode;
+import mekanism.api.chemical.IChemicalHandler;
+import thaumcraft.api.aspects.EssentiaCapabilities;
+import thaumcraft.api.aspects.IEssentiaTransport;
+import static mekanism.common.capabilities.Capabilities.CHEMICAL;
 
 /**
  * Exposes this mod's port storage to both AMI and the rest of the world.
@@ -26,6 +30,7 @@ public final class GTPortCapabilities {
 
     public static void register(RegisterCapabilitiesEvent event) {
         // AMI's own keys: this is what the multiblock matcher and recipe code query.
+        assert GTMultiblockBlocks.PORT_ENTITY != null;
         event.registerBlockEntity(AMICapabilities.ITEM.block(),
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
                         port.kind() == GTPortKind.ITEM
@@ -53,7 +58,45 @@ public final class GTPortCapabilities {
                         port.kind() == GTPortKind.ENERGY
                                 ? port.energyStorage() : null);
 
+        // Chemicals and essentia are answered through their own mods' capabilities, and only when
+        // those mods are present.
+        if (ModList.get().isLoaded("mekanism")) {
+            MekanismChemicals.register(event);
+        }
+        if (ModList.get().isLoaded("thaumcraft")) {
+            ThaumcraftEssentia.register(event);
+        }
+
         GoldenTweaks.LOGGER.debug("[GT] registered port capabilities for {} kinds",
                 GTPortKind.values().length);
+    }
+
+    /**
+     * The chemical capability, resolved in its own class.
+     *
+     * <p>{@code Capabilities.CHEMICAL} lives in Mekanism, so the reference has to sit behind the
+     * mod check above. A nested class is resolved lazily, which is what makes that possible
+     * without a reflective lookup.</p>
+     */
+    private static final class MekanismChemicals {
+        private static void register(RegisterCapabilitiesEvent event) {
+            event.registerBlockEntity(
+                    CHEMICAL.block(),
+                    GTMultiblockBlocks.PORT_ENTITY.get(),
+                    (port, side) -> port.kind() == GTPortKind.CHEMICAL
+                            ? (IChemicalHandler) port.chemicalStorage() : null);
+        }
+    }
+
+    /** The essentia capability, resolved in its own class for the same reason. */
+    private static final class ThaumcraftEssentia {
+        private static void register(RegisterCapabilitiesEvent event) {
+            event.registerBlockEntity(
+                    EssentiaCapabilities.TRANSPORT,
+                    GTMultiblockBlocks.PORT_ENTITY.get(),
+                    (port, side) -> port.kind() == GTPortKind.ESSENTIA
+                            ? (IEssentiaTransport) port.essentiaTransportObject()
+                            : null);
+        }
     }
 }

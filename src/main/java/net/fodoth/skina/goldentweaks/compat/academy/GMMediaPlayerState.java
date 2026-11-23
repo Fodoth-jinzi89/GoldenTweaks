@@ -116,7 +116,7 @@ public final class GMMediaPlayerState {
                 }
             }
             if (candidates.isEmpty()) {
-                return list.get(0).trackId();
+                return list.getFirst().trackId();
             }
             return candidates.get(ThreadLocalRandom.current().nextInt(candidates.size()));
         }
@@ -127,7 +127,7 @@ public final class GMMediaPlayerState {
                 break;
             }
         }
-        return index < 0 ? list.get(0).trackId() : list.get((index + 1) % list.size()).trackId();
+        return index < 0 ? list.getFirst().trackId() : list.get((index + 1) % list.size()).trackId();
     }
 
     @SubscribeEvent

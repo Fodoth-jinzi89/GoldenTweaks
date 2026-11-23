@@ -43,6 +43,8 @@ public class GTAe2CraftConfirmEmiPlugin implements EmiPlugin {
         }
         registry.addGenericScreenBoundsProvider(GTAe2CraftConfirmEmiPlugin::craftConfirmBounds);
         registry.addGenericStackProvider(GTAe2CraftConfirmEmiPlugin::craftConfirmStack);
+        // Teaches AE2 itself what an aspect is, so one can be dropped on a pattern terminal.
+        GTAe2EssentiaConverter.register();
     }
 
     private static boolean isCraftConfirm(AEBaseScreen<?> screen) {

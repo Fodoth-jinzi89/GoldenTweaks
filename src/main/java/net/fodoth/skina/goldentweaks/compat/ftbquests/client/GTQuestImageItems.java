@@ -157,9 +157,6 @@ public final class GTQuestImageItems {
             } catch (Throwable ignored) {
                 continue;
             }
-            if (extensions == null) {
-                continue;
-            }
 
             if (wanted.equals(extensions.getStillTexture()) || wanted.equals(extensions.getFlowingTexture())) {
                 FluidStack stack = new FluidStack(fluid, 1000);

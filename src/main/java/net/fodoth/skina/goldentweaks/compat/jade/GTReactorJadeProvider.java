@@ -3,7 +3,6 @@ package net.fodoth.skina.goldentweaks.compat.jade;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlockEntity;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -50,9 +49,15 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
     static final String KIND_ITEM = "item";
     static final String KIND_FLUID = "fluid";
     static final String KIND_NAMED = "named";
-    /** Display name for kinds the client cannot resolve on its own. */
-    static final String PRODUCT_NAME = "Name";
-    /** Registry id of the item or fluid. */
+    /**
+     * The real kind of a {@link #KIND_NAMED} entry.
+     *
+     * <p>Sent because the client has to rebuild the stack to draw it through EMI, and a chemical and
+     * an aspect are not interchangeable there: one resolves through Mekanism's registry, the other
+     * through scex. {@code KIND_NAMED} only says "Jade has no element for this".</p>
+     */
+    static final String PRODUCT_REAL_KIND = "RealKind";
+    /** Registry id of the item, fluid, chemical or aspect. */
     static final String PRODUCT_ID = "Id";
     /** Count for an item, millibuckets for a fluid. */
     static final String PRODUCT_COUNT = "Count";
@@ -116,13 +121,12 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
                     entry.putInt(PRODUCT_COUNT, (int) Math.min(Integer.MAX_VALUE, stack.amount()));
                 }
                 default -> {
-                    // Chemicals and AE keys have no icon the tooltip can draw, so they are listed as
-                    // a name and an amount instead. The name is resolved here, on the server, where
-                    // the registry that owns it is definitely present.
+                    // Chemicals and aspects have no icon Jade can build, but both have one in EMI, so
+                    // the id and its real kind are sent and the client draws them through it.
                     entry.putString(PRODUCT_KIND, KIND_NAMED);
+                    entry.putString(PRODUCT_REAL_KIND, stack.kind().name());
                     entry.putString(PRODUCT_ID, stack.id().toString());
                     entry.putInt(PRODUCT_COUNT, (int) Math.min(Integer.MAX_VALUE, stack.amount()));
-                    entry.putString(PRODUCT_NAME, displayNameOf(stack));
                 }
             }
             if (listed) {
@@ -132,22 +136,5 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
         root.put(PRODUCTS, products);
 
         tag.put(ROOT, root);
-    }
-
-    /**
-     * The readable name of a chemical or AE key.
-     *
-     * <p>Resolved on the server so the client never has to reach a registry that may not be there.
-     * Falls back to the id's path when the owning mod cannot name it, which still tells the player
-     * which product it is instead of dropping the line.</p>
-     */
-    private static String displayNameOf(GTReactionStack stack) {
-        if (stack.kind() == GTReactionStack.Kind.CHEMICAL) {
-            var chemical = GTReactionStacks.toChemicalStack(stack);
-            if (chemical != null && !chemical.isEmpty()) {
-                return chemical.getTextComponent().getString();
-            }
-        }
-        return stack.id().getPath();
     }
 }

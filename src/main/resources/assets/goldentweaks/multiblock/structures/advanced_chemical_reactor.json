@@ -1,0 +1,32 @@
+{
+  "layers": [
+    [
+      "xxx",
+      "xxx",
+      "xxx"
+    ],
+    [
+      "xxx",
+      "xox",
+      "xax"
+    ],
+    [
+      "xxx",
+      "xxx",
+      "xxx"
+    ],
+    [
+      "xxo",
+      "xxx",
+      "oxx"
+    ]
+  ],
+  "keys": {
+    "a": {
+      "block": "goldentweaks:advanced_chemical_plant_controller"
+    },
+    "x": "#goldentweaks:multiblock/advanced_casing"
+  },
+  "master": "a",
+  "any": "o"
+}

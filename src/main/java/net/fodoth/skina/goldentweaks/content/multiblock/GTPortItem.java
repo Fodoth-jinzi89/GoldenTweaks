@@ -3,11 +3,13 @@ package net.fodoth.skina.goldentweaks.content.multiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.PortMode;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Locale;
@@ -24,19 +26,6 @@ import java.util.Locale;
  * fields for the same reason, and an item has no block state to read them back from.</p>
  */
 public class GTPortItem extends BlockItem {
-
-    /** Colours by tier, in level order, matching the machine's own energy-tier line. */
-    private static final ChatFormatting[] TIER_COLOURS = {
-            ChatFormatting.RED,          // ULV
-            ChatFormatting.DARK_GRAY,    // LV
-            ChatFormatting.GOLD,         // MV
-            ChatFormatting.YELLOW,       // HV
-            ChatFormatting.GRAY,         // EV
-            ChatFormatting.DARK_BLUE,    // IV
-            ChatFormatting.LIGHT_PURPLE, // LuV
-            ChatFormatting.AQUA,         // ZPM
-            ChatFormatting.DARK_GREEN    // UV
-    };
 
     private static final String CONTROLS_HEADER = "tooltip.goldentweaks.port.controls";
     /** The stacking switch is an item/fluid concept; an energy port has no cells to span. */
@@ -62,8 +51,8 @@ public class GTPortItem extends BlockItem {
      * every language. The tier code is written here, the rest comes from the translation.</p>
      */
     @Override
-    public Component getName(ItemStack stack) {
-        return Component.literal(this.tier.code()).withStyle(colour())
+    public @NotNull Component getName(@NotNull ItemStack stack) {
+        return Component.literal(this.tier.code()).withStyle(Style.EMPTY.withColor(this.tier.colour()))
                 .append(Component.translatable(suffixKey()).withStyle(ChatFormatting.WHITE));
     }
 
@@ -73,14 +62,9 @@ public class GTPortItem extends BlockItem {
                 + this.mode.name().toLowerCase(Locale.ROOT);
     }
 
-    private ChatFormatting colour() {
-        int index = Math.max(0, Math.min(TIER_COLOURS.length - 1, this.tier.level() - 1));
-        return TIER_COLOURS[index];
-    }
-
     @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltip,
-                                TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltip,
+                                @NotNull TooltipFlag flag) {
         tooltip.add(capacityLine());
         if (this.kind == GTPortKind.ENERGY) {
             tooltip.add(rateLine());
@@ -116,9 +100,9 @@ public class GTPortItem extends BlockItem {
         String label = output
                 ? "tooltip.goldentweaks.port.max_output"
                 : "tooltip.goldentweaks.port.max_input";
-        int rate = output
-                ? GTPortEnergyTiers.outputTransfer(this.tier.ami())
-                : GTPortEnergyTiers.transfer(this.tier.ami());
+        var rate = output
+                ? GTPortEnergyTiers.outputTransferExact(this.tier.level())
+                : GTPortEnergyTiers.transferExact(this.tier.level());
         return row(label, GTEnergyFormat.formatWithUnit(rate, "FE/t"));
     }
 
@@ -131,8 +115,12 @@ public class GTPortItem extends BlockItem {
                     (long) this.tier.fluidTanks() * this.tier.tankCapacity(), "mB");
             case ENERGY -> GTEnergyFormat.formatWithUnit(
                     this.mode == PortMode.OUTPUT
-                            ? GTPortEnergyTiers.outputCapacity(this.tier.ami())
-                            : GTPortEnergyTiers.capacity(this.tier.ami()), "FE");
+                            ? GTPortEnergyTiers.outputCapacityExact(this.tier.level())
+                            : GTPortEnergyTiers.capacityExact(this.tier.level()), "FE");
+            case CHEMICAL -> GTEnergyFormat.formatWithUnit(
+                    (long) this.tier.chemicalTanks() * this.tier.chemicalTankCapacity(), "");
+            case ESSENTIA -> GTEnergyFormat.formatWithUnit(
+                    (long) this.tier.essentiaTanks() * this.tier.essentiaTankCapacity(), "");
         };
     }
 
@@ -142,6 +130,8 @@ public class GTPortItem extends BlockItem {
             case ITEM -> this.tier.itemSlots();
             case FLUID -> this.tier.fluidTanks();
             case ENERGY -> 0;
+            case CHEMICAL -> this.tier.chemicalTanks();
+            case ESSENTIA -> this.tier.essentiaTanks();
         };
     }
 

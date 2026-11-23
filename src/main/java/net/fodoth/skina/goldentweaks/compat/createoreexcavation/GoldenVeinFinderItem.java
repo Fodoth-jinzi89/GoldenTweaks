@@ -26,6 +26,7 @@ import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -53,7 +54,7 @@ public class GoldenVeinFinderItem extends Item {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand hand) {
 
         ItemStack stack = player.getItemInHand(hand);
         if (!level.isClientSide) {
@@ -63,7 +64,7 @@ public class GoldenVeinFinderItem extends Item {
     }
 
     @Override
-    public InteractionResult useOn(UseOnContext context) {
+    public @NotNull InteractionResult useOn(UseOnContext context) {
 
         Player player = context.getPlayer();
         if (player != null && !context.getLevel().isClientSide) {

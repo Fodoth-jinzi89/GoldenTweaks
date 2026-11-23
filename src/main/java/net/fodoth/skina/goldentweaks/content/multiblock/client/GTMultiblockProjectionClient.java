@@ -3,6 +3,7 @@ package net.fodoth.skina.goldentweaks.content.multiblock.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorOrientation;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockBuilder;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockPattern;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
 import net.minecraft.client.Minecraft;
@@ -18,6 +19,7 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -136,7 +138,6 @@ public final class GTMultiblockProjectionClient {
                 layout.height() - 1 - master.layer(),
                 layout.depth() - 1 - master.row());
 
-        ItemStack casing = new ItemStack(GTMultiblockBlocks.SHELL_PE_ITEM.get());
         ItemRenderer itemRenderer = minecraft.getItemRenderer();
         MultiBufferSource.BufferSource buffers = minecraft.renderBuffers().bufferSource();
         PoseStack pose = event.getPoseStack();
@@ -147,7 +148,12 @@ public final class GTMultiblockProjectionClient {
                     if (column == master.column() && layer == master.layer() && row == master.row()) {
                         continue;
                     }
-                    if (layout.isWildcard(layout.symbolAt(column, layer, row))) {
+                    char symbol = layout.symbolAt(column, layer, row);
+                    // Each cell previews with what its own letter means. A cell that accepts a port
+                    // or a casing is shown as the casing: the preview is there to say "something
+                    // goes here", and the port is the player's choice to make.
+                    Block ghost = GTMultiblockBuilder.casingFor(layout, symbol);
+                    if (ghost == null) {
                         continue;
                     }
                     BlockPos pos = GTChemicalReactorOrientation.cell(
@@ -163,7 +169,7 @@ public final class GTMultiblockProjectionClient {
                             pos.getZ() + 0.5D - camera.z);
                     pose.scale(PROJECTION_SCALE, PROJECTION_SCALE, PROJECTION_SCALE);
                     int light = LevelRenderer.getLightColor(level, pos);
-                    itemRenderer.renderStatic(casing, ItemDisplayContext.NONE, light,
+                    itemRenderer.renderStatic(new ItemStack(ghost), ItemDisplayContext.NONE, light,
                             OverlayTexture.NO_OVERLAY, pose, buffers, level, 0);
                     pose.popPose();
                 }

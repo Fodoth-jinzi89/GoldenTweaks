@@ -13,6 +13,7 @@ import net.fodoth.skina.goldentweaks.network.packet.C2SMachineNamePacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SMachineOverclockPacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SMachineParallelPacket;
 import net.fodoth.skina.goldentweaks.util.GTDurationFormat;
+import net.fodoth.skina.goldentweaks.util.GTNumberInput;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
@@ -25,9 +26,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.network.PacketDistributor;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import net.minecraft.Util;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectNames;
 
 /**
  * Screen of the basic chemical reaction kettle.
@@ -43,8 +47,17 @@ import java.util.List;
  */
 public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalReactorMenu> {
 
-    private static final ResourceLocation TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "textures/gui/gt_multiblock_machine.png");
+    /**
+     * The panel sheet this window draws from.
+     *
+     * <p>A method rather than a constant so a second machine can substitute its own art without
+     * duplicating the thousand lines of layout below: every coordinate is the same, only the
+     * pixels differ.</p>
+     */
+    protected ResourceLocation texture() {
+        return ResourceLocation.fromNamespaceAndPath(
+                GoldenTweaks.MODID, "textures/gui/gt_multiblock_machine.png");
+    }
 
     private static final int PANEL_WIDTH = 210;
     private static final int PANEL_HEIGHT = 178;
@@ -52,7 +65,6 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
     private static final int TITLE_X = 15;
     private static final int TITLE_Y = 16;
     private static final int TITLE_WIDTH = 179;
-    private static final int TITLE_HEIGHT = 9;
 
     /** Gap left between the end of a scrolling text and its next copy. */
     private static final int MARQUEE_GAP = 24;
@@ -125,7 +137,6 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
     private static final int SIDE_X = 177;
     private static final int SIDE_WIDTH = 22;
     private static final int SIDE_HEIGHT = 11;
-    private static final int SIDE_STEP = 14;
     private static final int SIDE_REFRESH_Y = 95;
     private static final int SIDE_RUNNING_Y = 109;
     private static final int SIDE_DISMANTLE_Y = 123;
@@ -180,7 +191,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
      */
     private static final int SIDEBAR_TEXT_X = SIDEBAR_SLOT_EXPANDED_X + SIDEBAR_SLOT_SIZE + 2;
     private static final int SIDEBAR_TEXT_Y = SIDEBAR_SLOT_EXPANDED_Y + 1;
-    /** The two lines stop above the artwork's input band, which starts at {@link #SIDEBAR_FIELD_Y}. */
+    /* The two lines stop above the artwork's input band, which starts at {@link #SIDEBAR_FIELD_Y}. */
     /** Line pitch at {@link #SIDEBAR_TEXT_SCALE}: the font is nine units tall, so ten clears it. */
     private static final int SIDEBAR_TEXT_LINE_HEIGHT = 10;
     /** Smaller than a list row: the pane is a side note and this has to fit beside the icon. */
@@ -209,8 +220,8 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
     private static final int SIDEBAR_FIELD_TEXT_COLOUR = 0xFFFFFF;
     /** Matches the port window: dimmer while the box is not the one being edited. */
     private static final int SIDEBAR_FIELD_INACTIVE_COLOUR = 0x8A8A8A;
-    /** Longest accepted text; an integer never needs more than this. */
-    private static final int SIDEBAR_FIELD_LIMIT = 11;
+    /** Longest accepted text; enough for a full {@code int} with its grouping separators. */
+    private static final int SIDEBAR_FIELD_LIMIT = 15;
 
     private static final int WIDGET_LOCK = 0;
     private static final int WIDGET_DESTROY = 1;
@@ -331,7 +342,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 stored = ceiling;
             }
         }
-        String shown = String.valueOf(stored);
+        String shown = GTNumberInput.group(stored);
         if (!shown.equals(pane.field.getValue())) {
             pane.field.setValue(shown);
         }
@@ -351,7 +362,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         box.setBordered(false);
         box.setTextColor(SIDEBAR_FIELD_TEXT_COLOUR);
         box.setTextColorUneditable(SIDEBAR_FIELD_INACTIVE_COLOUR);
-        box.setValue(String.valueOf(initial));
+        box.setValue(GTNumberInput.group(initial));
         // Typing only updates the box; the server hears about it on commit.
         box.setResponder(value -> {
         });
@@ -392,16 +403,14 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
      * it is clamped rather than rejected, so the box always shows what will actually be stored. A
      * value the box and the machine disagree on is exactly what made the control look dead.</p>
      */
+    @SuppressWarnings("unused")
     private void commitPane(Pane pane, int stored, int fallback) {
         if (pane.field == null) {
             return;
         }
         int typed;
-        try {
-            typed = Integer.parseInt(pane.field.getValue().trim());
-        } catch (NumberFormatException unparseable) {
-            typed = fallback;
-        }
+        Integer parsed = GTNumberInput.parseInt(pane.field.getValue());
+        typed = parsed == null ? fallback : parsed;
         if (typed < fallback) {
             typed = fallback;
         }
@@ -415,7 +424,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
             }
         }
 
-        String normalised = String.valueOf(typed);
+        String normalised = GTNumberInput.group(typed);
         if (!normalised.equals(pane.field.getValue())) {
             pane.field.setValue(normalised);
         }
@@ -438,7 +447,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
 
     @Override
     protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
-        graphics.blit(TEXTURE, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight);
+        graphics.blit(texture(), this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight);
 
         renderEnergyTrough(graphics);
         renderAddonButtons(graphics);
@@ -673,7 +682,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
             return;
         }
         int width = ENERGY_FIRST_CELL_WIDTH + (cells - 1) * ENERGY_CELL_STEP;
-        graphics.blit(TEXTURE, this.leftPos + ENERGY_X, this.topPos + ENERGY_Y,
+        graphics.blit(texture(), this.leftPos + ENERGY_X, this.topPos + ENERGY_Y,
                 ENERGY_SPRITE_U, ENERGY_SPRITE_V, width, ENERGY_HEIGHT);
     }
 
@@ -682,13 +691,13 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
             int x = this.leftPos + ADDON_X + index * ADDON_STEP;
             int y = this.topPos + ADDON_Y;
             int backgroundU = this.held[index] ? ADDON_SPRITE_PRESSED_U : ADDON_SPRITE_U;
-            graphics.blit(TEXTURE, x, y, backgroundU, ADDON_SPRITE_V, ADDON_WIDTH, ADDON_HEIGHT);
+            graphics.blit(texture(), x, y, backgroundU, ADDON_SPRITE_V, ADDON_WIDTH, ADDON_HEIGHT);
 
             if (index == WIDGET_ISOLATE) {
                 // Its two icons live on their own sprite row and differ by column, not by the
                 // pressed/resting pair the other three use.
                 int iconU = this.menu.isIsolateInput() ? ADDON_ICON_U_ISOLATE_ON : ADDON_ICON_U_ISOLATE_OFF;
-                graphics.blit(TEXTURE, x, y, iconU, ADDON_ICON_V_ISOLATE, ADDON_WIDTH, ADDON_HEIGHT);
+                graphics.blit(texture(), x, y, iconU, ADDON_ICON_V_ISOLATE, ADDON_WIDTH, ADDON_HEIGHT);
                 continue;
             }
 
@@ -703,7 +712,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 default -> ADDON_ICON_V_BATCH;
             };
             int iconU = alternate ? ADDON_SPRITE_PRESSED_U : ADDON_SPRITE_U;
-            graphics.blit(TEXTURE, x, y, iconU, iconV, ADDON_WIDTH, ADDON_HEIGHT);
+            graphics.blit(texture(), x, y, iconU, iconV, ADDON_WIDTH, ADDON_HEIGHT);
         }
     }
 
@@ -722,12 +731,12 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         int x = this.leftPos + SIDE_X;
         int top = this.topPos + y;
         int backgroundU = this.held[widget] ? SIDE_SPRITE_PRESSED_U : SIDE_SPRITE_U;
-        graphics.blit(TEXTURE, x, top, backgroundU, SIDE_SPRITE_V, SIDE_WIDTH, SIDE_HEIGHT);
-        graphics.blit(TEXTURE, x, top, iconColumn * SIDE_WIDTH, iconV, SIDE_WIDTH, SIDE_HEIGHT);
+        graphics.blit(texture(), x, top, backgroundU, SIDE_SPRITE_V, SIDE_WIDTH, SIDE_HEIGHT);
+        graphics.blit(texture(), x, top, iconColumn * SIDE_WIDTH, iconV, SIDE_WIDTH, SIDE_HEIGHT);
     }
 
     @Override
-    protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
+    protected void renderLabels(@NotNull GuiGraphics graphics, int mouseX, int mouseY) {
         // The name is an editable box now, so it is drawn by the widget pass rather than here.
         // Painting it here as well would show the old name underneath the field being typed into.
         renderStatusLine(graphics);
@@ -766,7 +775,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
      */
     private static int marqueeOffset(int cycle) {
         long lapMillis = Math.max(1L, Math.round(cycle / MARQUEE_PIXELS_PER_SECOND * 1000.0D));
-        long phase = net.minecraft.Util.getMillis() % (MARQUEE_PAUSE_MILLIS + lapMillis);
+        long phase = Util.getMillis() % (MARQUEE_PAUSE_MILLIS + lapMillis);
         if (phase < MARQUEE_PAUSE_MILLIS) {
             return 0;
         }
@@ -931,6 +940,9 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         Component name = switch (stack.kind()) {
             case ITEM -> stack.toItemStack().getHoverName();
             case FLUID -> stack.toFluidStack().getHoverName();
+            // Essentia's own name is a Thaumcraft string, not a translation key this build owns, so
+            // it is read through the aspect when the mod is there and the tag is the fallback.
+            case ESSENTIA -> essentiaName(stack);
             // Chemicals and AE keys carry no portable display name here, so the id is the honest
             // fallback instead of an empty label.
             case CHEMICAL, AE -> Component.literal(stack.id().getPath());
@@ -940,6 +952,25 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         return stack.kind() == GTReactionStack.Kind.ITEM
                 ? Component.literal("").append(name).append(" × " + size)
                 : Component.literal("").append(name).append(" " + size + " mB");
+    }
+
+    /**
+     * An essentia entry's display name.
+     *
+     * <p>Guarded: {@code Aspect} is a Thaumcraft class, and this screen loads whether or not the
+     * mod is installed. Without it the raw tag is shown, which is still unambiguous.</p>
+     */
+    private static Component essentiaName(GTReactionStack stack) {
+        String tag = stack.essentiaTag();
+        if (tag == null) {
+            return Component.literal(stack.id().getPath());
+        }
+        try {
+            var aspect = GTAspectNames.of(tag);
+            return aspect == null ? Component.literal(tag) : aspect;
+        } catch (NoClassDefFoundError absent) {
+            return Component.literal(tag);
+        }
     }
 
     /** Production rate in the unit the machine already uses: per second. */
@@ -998,9 +1029,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         int markerHeight = Math.max(8, barHeight * visibleRows / rowCount);
         int travel = barHeight - markerHeight;
         int maxScroll = rowCount - visibleRows;
-        int markerY = barY + (maxScroll <= 0
-                ? 0
-                : (int) Math.round(travel * (Math.round(this.scrollTarget)) / (double) maxScroll));
+        int markerY = barY + (int) Math.round(travel * Math.round(this.scrollTarget) / (double) maxScroll);
         graphics.fill(barX, markerY, barX + 2, markerY + markerHeight, 0xFFC6C6C6);
     }
 
@@ -1020,7 +1049,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         int rowCount = this.products().size();
         int visibleRows = Math.max(1, LIST_HEIGHT / ROW_HEIGHT);
         double max = Math.max(0, rowCount - visibleRows);
-        this.scrollTarget = Math.max(0.0D, Math.min(max, this.scrollTarget));
+        this.scrollTarget = Math.clamp(this.scrollTarget, 0.0D, max);
         this.scrollCurrent += (this.scrollTarget - this.scrollCurrent) * 0.35D;
         return this.scrollCurrent;
     }
@@ -1049,7 +1078,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
      * slots at all.</p>
      */
     @Override
-    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+    public void render(@NotNull GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         if (this.nameField != null && !this.nameField.isFocused()) {
             String shown = this.menu.getDisplayName().getString();
             if (!shown.equals(this.nameField.getValue())) {
@@ -1154,7 +1183,11 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 ? "gui.goldentweaks.chemical_reactor.lock.on"
                 : "gui.goldentweaks.chemical_reactor.lock.off");
 
-        ResourceLocation pinned = GTRecipeLocks.get(this.menu.getMachinePos().asLong());
+        BlockPos machinePos = this.menu.getMachinePos();
+        ResourceLocation pinned = null;
+        if (machinePos != null) {
+            pinned = GTRecipeLocks.get(machinePos.asLong());
+        }
         if (pinned == null) {
             return state;
         }
@@ -1205,7 +1238,7 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 && this.nameField != null && this.nameField.isFocused()) {
             commitName();
             // Through the screen: it owns the focus pointer, and clearing only the field leaves it
-            // pointing here, which makes the field unclickable afterwards.
+            // pointing here, which makes the field unclickable afterward.
             this.setFocused(null);
             return true;
         }

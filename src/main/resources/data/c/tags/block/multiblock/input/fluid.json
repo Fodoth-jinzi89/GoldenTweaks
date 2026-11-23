@@ -9,6 +9,12 @@
     "goldentweaks:gt_port_fluid_input_iv",
     "goldentweaks:gt_port_fluid_input_luv",
     "goldentweaks:gt_port_fluid_input_zpm",
-    "goldentweaks:gt_port_fluid_input_uv"
+    "goldentweaks:gt_port_fluid_input_uv",
+    "goldentweaks:gt_port_fluid_input_uhv",
+    "goldentweaks:gt_port_fluid_input_uev",
+    "goldentweaks:gt_port_fluid_input_uiv",
+    "goldentweaks:gt_port_fluid_input_umv",
+    "goldentweaks:gt_port_fluid_input_uxv",
+    "goldentweaks:gt_port_fluid_input_max"
   ]
 }

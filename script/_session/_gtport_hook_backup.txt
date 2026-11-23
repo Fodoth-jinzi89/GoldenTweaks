@@ -1,0 +1,23 @@
+    /**
+     * Tells the renderer which casing to draw.
+     *
+     * <p>NeoForge drives {@code BakedModel#getModelData} from here. A block that does not override
+     * this contributes {@code ModelData.EMPTY} and the model's own hook is never consulted, which
+     * is why the casing never reached the renderer.</p>
+     *
+     * <p>Without a block entity, or before a machine has claimed the port, there is nothing to say
+     * and the model draws its own plate.</p>
+     */
+    @Override
+    public ModelData getModelData(BlockAndTintGetter level, BlockPos pos,
+                                  BlockState state, ModelData data) {
+        if (!(level.getBlockEntity(pos) instanceof GTPortBlockEntity port)
+                || port.casing() == null) {
+            return data;
+        }
+        return BuiltInRegistries.BLOCK.getOptional(port.casing())
+                .map(Block::defaultBlockState)
+                .map(casing -> data.derive().with(CASING_MODEL, casing).build())
+                .orElse(data);
+    }
+

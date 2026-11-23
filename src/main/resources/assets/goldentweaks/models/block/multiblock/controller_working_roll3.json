@@ -5,7 +5,6 @@
     "shell": "goldentweaks:block/shell_pe",
     "overlay": "goldentweaks:block/multiblock/controller_working",
     "particle": "goldentweaks:block/shell_pe",
-    "name": "goldentweaks:block/multiblock/controller_name",
     "arrow": "goldentweaks:block/multiblock/controller_arrow"
   },
   "elements": [

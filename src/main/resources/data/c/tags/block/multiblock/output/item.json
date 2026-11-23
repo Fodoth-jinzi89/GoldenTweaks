@@ -9,6 +9,12 @@
     "goldentweaks:gt_port_item_output_iv",
     "goldentweaks:gt_port_item_output_luv",
     "goldentweaks:gt_port_item_output_zpm",
-    "goldentweaks:gt_port_item_output_uv"
+    "goldentweaks:gt_port_item_output_uv",
+    "goldentweaks:gt_port_item_output_uhv",
+    "goldentweaks:gt_port_item_output_uev",
+    "goldentweaks:gt_port_item_output_uiv",
+    "goldentweaks:gt_port_item_output_umv",
+    "goldentweaks:gt_port_item_output_uxv",
+    "goldentweaks:gt_port_item_output_max"
   ]
 }

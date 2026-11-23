@@ -1,5 +1,34 @@
 # GoldenTweaks Update Log
 
+## 2026.11.23 - v4.7.9
+
+### 进阶化学反应釜
+- 新增 `advanced_chemical_plant_controller` 多方块：用聚丙烯机壳搭建，自带结构投影与独立界面，配方类型为 `goldentweaks:advanced_chemical_reaction`
+- 配方查询先取进阶配方、再回退基础配方，旧结构升级后原有配方继续可用；进阶界面、JEI / EMI 分类一并适配
+- 新增 `shell_pp` 聚丙烯机壳（方块 / 物品 / 创造栏）
+- 机壳连接纹理统一走 `GTPortCasingBehaviour`：机壳墙、端口面板、机器底板按各自声明的机壳自动连纹，新增一种机壳只需一张 `_ctm` 图与一条注册
+
+### 端口体系
+- 新增两种端口，仅在对应模组存在时注册，缺失时不会留下空方块：
+  - 化学料斗（Mekanism）：每罐容量为同级流体仓的 1/10
+  - 源质罐（Thaumcraft）：罐数与物品槽一致，每罐容量为 `64×等级`
+- 物品 / 流体 / 能源端口由 ULV–UV 扩展到 ULV–MAX 共 15 级；新增等级在结构扫描中按 AMI 的 IX 处理，可正常参与多方块组装
+- 容量随等级成长：物品槽 `等级²`、单槽上限 `64×等级`、流体每罐 8000 mB 起逐级翻倍；主动搬运量按等级给出每档数值，MAX 为无上限
+- 每级独立配色（含 UMV 棕、UXV 青），MAX 环带彩虹动画，Jade 同步使用同一套颜色
+- 主动端口支持源质 / 化学的抽取与推送，并识别挂了源质访问卡的 Thaumic Energistics ME 接口；`PortAspectContainerMixin` 让源质端口实体自身实现 `IAspectContainer`，ME 存储总线与导入导出可直接识别
+- 端口界面重做：「单格 / 堆叠」切换、「主动模式」切换（能源端口占用第一位），优先级输入支持 `1.6k` / `16M` 与千分位（`GTNumberInput`）
+- `GTEnergyFormat` 改用 BigInteger，支持超出 Y 的量级（如 `1.2e30`）
+
+### 源质与配方查看
+- 新增要素图标 / 名称（`GTAspectIcons` / `GTAspectNames`）与 EMI 源质堆栈
+- 经 TMRV + scex 反射桥把要素接入 EMI 的搜索与配方查询
+- AE2 的 EMI 桥新增源质转换器：要素可从配方页拖入样板终端，落到 Thaumic Energistics 的 `AEssentiaKey`
+- Jade 支持绘制 EMI 化学品 / 要素图标
+- 移除已失效的 `EssentiaCellUpgradeHandlerMixin`
+
+### 其他
+- 多方块 id 改由方块自身提供，移除对 AMI 端口常量（`CHEMICAL_REACTOR_HOST` / `CHEMICAL_REACTOR_STRUCTURE`）的硬编码
+
 ## 2026.11.11 - v4.7.8
 
 ### 聚合物与化工产线

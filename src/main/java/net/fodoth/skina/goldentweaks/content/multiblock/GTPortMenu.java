@@ -17,8 +17,10 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Container for one of this mod's ports.
@@ -293,15 +295,17 @@ public class GTPortMenu extends AbstractContainerMenu {
     public int totalCells() {
         return switch (this.kind) {
             case ITEM -> this.port == null ? 0 : this.port.itemHandler() == null
-                    ? 0 : this.port.itemHandler().getSlots();
+                    ? 0 : Objects.requireNonNull(this.port.itemHandler()).getSlots();
             case FLUID -> this.port == null ? 0 : this.port.fluidHandler() == null
-                    ? 0 : this.port.fluidHandler().getTanks();
+                    ? 0 : Objects.requireNonNull(this.port.fluidHandler()).getTanks();
             case ENERGY -> 0;
+            case CHEMICAL -> this.port == null ? 0 : this.port.chemicalTankCount();
+            case ESSENTIA -> this.port == null ? 0 : this.port.essentiaTankCount();
         };
     }
 
     @Override
-    public boolean stillValid(Player player) {
+    public boolean stillValid(@NotNull Player player) {
         return this.port != null && this.port.getLevel() != null
                 && player.distanceToSqr(
                         this.port.getBlockPos().getX() + 0.5D,
@@ -310,7 +314,7 @@ public class GTPortMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public ItemStack quickMoveStack(Player player, int index) {
+    public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
         Slot slot = this.slots.get(index);
         if (!slot.hasItem()) {
             return ItemStack.EMPTY;

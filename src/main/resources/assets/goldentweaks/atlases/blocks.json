@@ -15,6 +15,10 @@
     {
       "type": "minecraft:single",
       "resource": "goldentweaks:item/powder/powder_mask"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:block/shell_pp_ctm"
     }
   ]
 }

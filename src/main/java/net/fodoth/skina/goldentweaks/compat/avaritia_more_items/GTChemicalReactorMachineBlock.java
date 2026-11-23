@@ -25,6 +25,13 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.abstracts.AbstractMultiblockBlock;
 import net.weibai.avaritia_more_items.common.init.AMITags;
+import org.jetbrains.annotations.NotNull;
+import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTCasingProvider;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.Nullable;
+import java.util.function.BiFunction;
+import java.util.function.Supplier;
 
 /**
  * Basic chemical reaction kettle, hosted by {@code avaritia_more_items}' multiblock framework.
@@ -45,7 +52,8 @@ import net.weibai.avaritia_more_items.common.init.AMITags;
  * AbstractConnectBlock.updateFormation} reads and writes that exact property, and looking a
  * distinct instance up by identity would fail.</p>
  */
-public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChemicalReactorMachineBlockEntity> {
+public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChemicalReactorMachineBlockEntity>
+        implements GTCasingProvider {
 
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
@@ -83,8 +91,50 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
 
     public static final BooleanProperty FORMED = AbstractMultiblockBlock.FORMED;
 
-    public GTChemicalReactorMachineBlock(Properties properties) {
+    /**
+     * The structure this machine assembles, relative to {@code data/<namespace>/multiblock}.
+     *
+     * <p>Carried by the block rather than looked up from a table of block ids to structure ids:
+     * the tile already answers {@link GTChemicalReactorMachineBlockEntity#getMachineId()}, and a
+     * second table would be one more thing to keep in step. The projector, the rotate helper and
+     * the build pass all read this one field, so a second machine costs a constructor argument and
+     * nothing else.</p>
+     */
+    private final String structurePath;
+
+    /**
+     * Builds the block entity for a placed host.
+     *
+     * <p>Carried by the block for the same reason as {@link #structurePath}: an entity type has to
+     * match the block it sits in, and both machines share this block class, so the difference has
+     * to come from the registration rather than from a branch here. With the factory in hand this
+     * class needs no knowledge of any particular machine.</p>
+     */
+    private final BiFunction<BlockPos, BlockState, GTChemicalReactorMachineBlockEntity> tileFactory;
+
+    /**
+     * The casing this machine is built from and draws its base plate with.
+     *
+     * <p>Supplied at registration for the same reason as the structure and the tile factory: both
+     * machines share this class, so anything that differs between them has to arrive as a constructor
+     * argument. It is also what lets the base plate join the connected texture of the casing wall
+     * around it.</p>
+     */
+    private final Supplier<? extends Block> casing;
+
+    /**
+     * @param structurePath the structure file name, e.g. {@code chemical_reactor}
+     * @param tileFactory   constructs this machine's block entity
+     * @param casing        the casing this machine is built from
+     */
+    public GTChemicalReactorMachineBlock(Properties properties, String structurePath,
+                                         BiFunction<BlockPos, BlockState,
+                                                 GTChemicalReactorMachineBlockEntity> tileFactory,
+                                         Supplier<? extends Block> casing) {
         super(properties);
+        this.structurePath = structurePath;
+        this.tileFactory = tileFactory;
+        this.casing = casing;
         registerDefaultState(defaultBlockState()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(MIRRORED, false)
@@ -92,6 +142,29 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
                 .setValue(CRAFTING, false)
                 .setValue(ROLL, 0)
                 .setValue(FORMED, false));
+    }
+
+    /**
+     * The casing this machine's base plate draws.
+     *
+     * <p>Its front is an overlay on a casing plate, so the plate connects with the wall around it. The
+     * casing comes from the registration, which is what keeps this class free of any particular
+     * machine.</p>
+     */
+    @Override
+    public Block gtCasing(BlockState state) {
+        return this.casing.get();
+    }
+
+    /**
+     * Resolves the structure file this host projects and builds.
+     *
+     * <p>Returns {@code null} when the namespace-qualified id cannot be formed, which only happens
+     * for a path that is not a valid resource location.</p>
+     */
+    @Nullable
+    public ResourceLocation structureId() {
+        return ResourceLocation.tryBuild(GoldenTweaks.MODID, this.structurePath);
     }
 
     @Override
@@ -141,7 +214,7 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
     }
 
     @Override
-    public BlockState rotate(BlockState state, Rotation rotation) {
+    public @NotNull BlockState rotate(BlockState state, Rotation rotation) {
         Direction facing = rotation.rotate(state.getValue(FACING));
         int roll = state.getValue(ROLL);
         if (state.getValue(FACING).getAxis().isVertical()) {
@@ -162,7 +235,7 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
     }
 
     @Override
-    public BlockState mirror(BlockState state, Mirror mirror) {
+    public @NotNull BlockState mirror(@NotNull BlockState state, @NotNull Mirror mirror) {
         if (mirror == Mirror.NONE) {
             return state;
         }
@@ -199,13 +272,20 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
      * once the check actually passes.</p>
      */
     @Override
-    public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState,
+    public void onPlace(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState oldState,
                         boolean movedByPiston) {
     }
 
+    /**
+     * The entity for this block, built by the factory this machine was registered with.
+     *
+     * <p>An entity's registered type must match the block it sits in, and vanilla throws on
+     * construction when it does not — so the factory has to be the one belonging to this machine,
+     * which is why it comes from the registration.</p>
+     */
     @Override
-    protected GTChemicalReactorMachineBlockEntity machineTile(BlockPos pos, BlockState state) {
-        return new GTChemicalReactorMachineBlockEntity(pos, state);
+    protected GTChemicalReactorMachineBlockEntity machineTile(@NotNull BlockPos pos, @NotNull BlockState state) {
+        return this.tileFactory.apply(pos, state);
     }
 
     /**
@@ -217,8 +297,8 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
      * assembling.</p>
      */
     @Override
-    public ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
-                                           Player player, InteractionHand hand, BlockHitResult hitResult) {
+    public @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack stack, @NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos,
+                                                    Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hitResult) {
         if (player.isShiftKeyDown() && stack.is(AMITags.Items.Tools.wrench)) {
             if (!level.isClientSide) {
                 BlockState rolled = cycledRoll(state);
@@ -243,8 +323,8 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
      * opening packet for the menu factory to read back.</p>
      */
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
-                                               Player player, BlockHitResult hitResult) {
+    protected @NotNull InteractionResult useWithoutItem(@NotNull BlockState state, Level level, @NotNull BlockPos pos,
+                                                        @NotNull Player player, @NotNull BlockHitResult hitResult) {
         if (level.isClientSide) {
             return InteractionResult.SUCCESS;
         }
@@ -259,7 +339,7 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
      * Remember the anvil name that was on the placed item, so the GUI title can show it.
      */
     @Override
-    public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+    public void setPlacedBy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, LivingEntity placer, @NotNull ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
         if (!level.isClientSide && stack.has(DataComponents.CUSTOM_NAME)
                 && level.getBlockEntity(pos) instanceof GTChemicalReactorMachineBlockEntity tile) {
@@ -277,7 +357,7 @@ public class GTChemicalReactorMachineBlock extends AbstractMultiblockBlock<GTChe
      * AMI's own {@code drops()} call.</p>
      */
     @Override
-    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState,
+    public void onRemove(BlockState state, @NotNull Level level, @NotNull BlockPos pos, BlockState newState,
                          boolean movedByPiston) {
         // Unfreeze the ports before this tile stops existing. Breaking the controller is the one
         // teardown that does not go through the machine's own dismantle path, so without this the

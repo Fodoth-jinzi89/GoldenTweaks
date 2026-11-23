@@ -37,10 +37,7 @@ public final class GTChemicalReactionLayout {
     /** Scrollbar column, immediately right of each grid. */
     public static final int SCROLLBAR_WIDTH = 10;
     public static final int INPUT_SCROLLBAR_X = INPUT_X + GRID_WIDTH + 2;
-    public static final int OUTPUT_SCROLLBAR_X = OUTPUT_X + GRID_WIDTH + 2;
 
-    /** Arrow, centred between the two grids and on the grid's own vertical centre. */
-    public static final int ARROW_WIDTH = 24;
     public static final int ARROW_HEIGHT = 17;
     public static final int ARROW_X = INPUT_SCROLLBAR_X + SCROLLBAR_WIDTH + 4;
     public static final int ARROW_Y = GRID_Y + (GRID_HEIGHT - ARROW_HEIGHT) / 2;

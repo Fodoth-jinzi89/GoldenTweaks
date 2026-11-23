@@ -6,8 +6,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.predicate.BlockStatePredicate;
-
 import com.google.gson.JsonParseException;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -74,11 +72,11 @@ public final class GTMultiblockPattern {
     }
 
     public int width() {
-        return layers.get(0).get(0).length();
+        return layers.getFirst().getFirst().length();
     }
 
     public int depth() {
-        return layers.get(0).size();
+        return layers.getFirst().size();
     }
 
     public int height() {
@@ -267,7 +265,7 @@ public final class GTMultiblockPattern {
 
             if (depth < 0) {
                 depth = rows.size();
-                width = rows.get(0).length();
+                width = rows.getFirst().length();
             }
             if (rows.size() != depth) {
                 throw new JsonParseException(

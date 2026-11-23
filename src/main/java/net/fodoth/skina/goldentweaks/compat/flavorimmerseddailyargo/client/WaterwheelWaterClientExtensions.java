@@ -14,6 +14,7 @@ import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtension
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * flavor_immersed_daily_argo 的 waterwheel_water 流体只注册了 FluidType，没有注册客户端扩展，
@@ -53,12 +54,12 @@ public final class WaterwheelWaterClientExtensions {
         private static final int DEFAULT_TINT = 0xFF3F76E4;
 
         @Override
-        public ResourceLocation getStillTexture() {
+        public @NotNull ResourceLocation getStillTexture() {
             return STILL;
         }
 
         @Override
-        public ResourceLocation getFlowingTexture() {
+        public @NotNull ResourceLocation getFlowingTexture() {
             return FLOWING;
         }
 
@@ -73,7 +74,7 @@ public final class WaterwheelWaterClientExtensions {
         }
 
         @Override
-        public int getTintColor(FluidState state, BlockAndTintGetter getter, BlockPos pos) {
+        public int getTintColor(@NotNull FluidState state, @NotNull BlockAndTintGetter getter, @NotNull BlockPos pos) {
             return BiomeColors.getAverageWaterColor(getter, pos) | 0xFF000000;
         }
     }

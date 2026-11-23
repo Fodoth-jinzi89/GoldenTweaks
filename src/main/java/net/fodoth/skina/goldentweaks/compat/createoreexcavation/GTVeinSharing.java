@@ -54,7 +54,7 @@ public final class GTVeinSharing {
         }
 
         double multiplier = 1.0D - GoldenTweaksCommonConfig.getOreVeinSpeedBonus() * steps;
-        return Math.max(GoldenTweaksCommonConfig.getOreVeinSpeedFloor(), Math.min(1.0D, multiplier));
+        return Math.clamp(multiplier, 1.0D, GoldenTweaksCommonConfig.getOreVeinSpeedFloor());
     }
 
     /**

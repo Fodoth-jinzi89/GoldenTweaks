@@ -99,7 +99,8 @@
             16,
             16
           ],
-          "texture": "#icon"
+          "texture": "#icon",
+          "tintindex": 1
         }
       }
     },
@@ -122,7 +123,8 @@
             16,
             16
           ],
-          "texture": "#ring"
+          "texture": "#ring",
+          "tintindex": 0
         }
       }
     }

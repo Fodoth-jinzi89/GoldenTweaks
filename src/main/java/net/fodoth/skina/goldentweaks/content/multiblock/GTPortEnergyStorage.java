@@ -3,6 +3,8 @@ package net.fodoth.skina.goldentweaks.content.multiblock;
 import net.minecraft.nbt.CompoundTag;
 import net.neoforged.neoforge.energy.IEnergyStorage;
 
+import java.math.BigInteger;
+
 /**
  * Energy store behind an energy port.
  *
@@ -21,13 +23,21 @@ public class GTPortEnergyStorage implements IEnergyStorage {
 
     private static final String TAG_ENERGY = "Energy";
 
-    private final int capacity;
-    private final int transfer;
+    /**
+     * Held as {@code BigInteger} even though the API speaks {@code int}.
+     *
+     * <p>The upper tiers hold far more than an {@code int}, and then more than a {@code long}, so
+     * neither width is a safe container: clamping on the way in would cap a MAX hatch at two
+     * billion FE, and a long would only postpone the same problem by thirty tiers. The API
+     * conversions saturate at the boundary; the store itself has no ceiling.</p>
+     */
+    private final BigInteger capacity;
+    private final BigInteger transfer;
     private Runnable changedHook = () -> {
     };
-    private int energy;
+    private BigInteger energy = BigInteger.ZERO;
 
-    public GTPortEnergyStorage(int capacity, int transfer) {
+    public GTPortEnergyStorage(BigInteger capacity, BigInteger transfer) {
         this.capacity = capacity;
         this.transfer = transfer;
     }
@@ -41,15 +51,16 @@ public class GTPortEnergyStorage implements IEnergyStorage {
         if (toReceive <= 0) {
             return 0;
         }
-        int accepted = Math.min(Math.min(toReceive, this.transfer), this.capacity - this.energy);
-        if (accepted <= 0) {
+        BigInteger room = this.capacity.subtract(this.energy);
+        BigInteger accepted = BigInteger.valueOf(toReceive).min(this.transfer).min(room);
+        if (accepted.signum() <= 0) {
             return 0;
         }
         if (!simulate) {
-            this.energy += accepted;
+            this.energy = this.energy.add(accepted);
             this.changedHook.run();
         }
-        return accepted;
+        return accepted.intValueExact();
     }
 
     @Override
@@ -57,26 +68,42 @@ public class GTPortEnergyStorage implements IEnergyStorage {
         if (toExtract <= 0) {
             return 0;
         }
-        int taken = Math.min(toExtract, this.energy);
-        if (taken <= 0) {
+        BigInteger taken = BigInteger.valueOf(toExtract).min(this.energy);
+        if (taken.signum() <= 0) {
             return 0;
         }
         if (!simulate) {
-            this.energy -= taken;
+            this.energy = this.energy.subtract(taken);
             this.changedHook.run();
         }
-        return taken;
+        return taken.intValue();
     }
 
     @Override
     public int getEnergyStored() {
-        return this.energy;
+        return saturated(this.energy);
     }
 
     @Override
     public int getMaxEnergyStored() {
+        return saturated(this.capacity);
+    }
+
+    /** The exact stored amount, for the port's own display. */
+    public BigInteger storedExact() {
+        return this.energy;
+    }
+
+    /** The exact capacity, for the port's own display. */
+    public BigInteger capacityExact() {
         return this.capacity;
     }
+
+    private static int saturated(BigInteger value) {
+        return value.min(INT_MAX).max(BigInteger.ZERO).intValue();
+    }
+
+    private static final BigInteger INT_MAX = BigInteger.valueOf(Integer.MAX_VALUE);
 
     @Override
     public boolean canExtract() {
@@ -89,12 +116,29 @@ public class GTPortEnergyStorage implements IEnergyStorage {
     }
 
     public void save(CompoundTag tag) {
-        tag.putInt(TAG_ENERGY, this.energy);
+        // Written as a string: NBT's largest integer is a long, and the whole point of this store
+        // is that its contents can exceed one.
+        tag.putString(TAG_ENERGY, this.energy.toString());
     }
 
     public void load(CompoundTag tag) {
         // Clamped rather than trusted: the tier can shrink between sessions, and a stale value
         // larger than the new capacity would let the gauge show more than it can hold.
-        this.energy = Math.max(0, Math.min(this.capacity, tag.getInt(TAG_ENERGY)));
+        // Three shapes in the wild: the original int, the short-lived long, and the string this
+        // writes now. Accepted in that order rather than assuming a fresh save.
+        BigInteger stored;
+        int type = tag.contains(TAG_ENERGY) ? tag.getTagType(TAG_ENERGY) : 0;
+        if (type == 8) {
+            try {
+                stored = new BigInteger(tag.getString(TAG_ENERGY));
+            } catch (NumberFormatException malformed) {
+                stored = BigInteger.ZERO;
+            }
+        } else if (type == 3 || type == 4) {
+            stored = BigInteger.valueOf(tag.getLong(TAG_ENERGY));
+        } else {
+            stored = BigInteger.ZERO;
+        }
+        this.energy = stored.max(BigInteger.ZERO).min(this.capacity);
     }
 }

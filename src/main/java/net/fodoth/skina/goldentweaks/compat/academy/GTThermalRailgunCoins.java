@@ -6,6 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 /**
  * 热力（Thermal）硬币作为学院超电磁炮（{@code railgun}）弹药时的兼容数据。
@@ -62,7 +63,7 @@ public final class GTThermalRailgunCoins {
             return ItemStack.EMPTY;
         }
         Item item = BuiltInRegistries.ITEM.get(id);
-        return item == null || item == net.minecraft.world.item.Items.AIR ? ItemStack.EMPTY : new ItemStack(item);
+        return item == Items.AIR ? ItemStack.EMPTY : new ItemStack(item);
     }
 
     /** 飞行硬币的贴图：热力硬币用「单枚」帧（各种金属不同颜色），学院币保持原贴图。 */
@@ -82,7 +83,7 @@ public final class GTThermalRailgunCoins {
 
     private static String idOf(Item item) {
         ResourceLocation id = BuiltInRegistries.ITEM.getKey(item);
-        return id == null ? "" : id.toString();
+        return id.toString();
     }
 
     private GTThermalRailgunCoins() {

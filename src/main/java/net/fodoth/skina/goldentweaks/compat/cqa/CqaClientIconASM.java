@@ -97,34 +97,43 @@ public final class CqaClientIconASM {
 
         for (AbstractInsnNode insn = method.instructions.getFirst(); insn != null; insn = insn.getNext()) {
 
-            if (insn instanceof TypeInsnNode type) {
-                if (ClientDistRefs.isStripped(type.desc)) {
-                    return true;
-                }
-            } else if (insn instanceof FieldInsnNode field) {
-                if (ClientDistRefs.isStripped(field.owner) || ClientDistRefs.descriptorHasStripped(field.desc)) {
-                    return true;
-                }
-            } else if (insn instanceof MethodInsnNode call) {
-                if (ClientDistRefs.isStripped(call.owner) || ClientDistRefs.descriptorHasStripped(call.desc)) {
-                    return true;
-                }
-            } else if (insn instanceof MultiANewArrayInsnNode array) {
-                if (ClientDistRefs.descriptorHasStripped(array.desc)) {
-                    return true;
-                }
-            } else if (insn instanceof LdcInsnNode ldc) {
-                if (constantReferencesStripped(ldc.cst)) {
-                    return true;
-                }
-            } else if (insn instanceof InvokeDynamicInsnNode indy) {
-                if (constantReferencesStripped(indy.bsm)) {
-                    return true;
-                }
-                for (Object arg : indy.bsmArgs) {
-                    if (constantReferencesStripped(arg)) {
+            switch (insn) {
+                case TypeInsnNode type -> {
+                    if (ClientDistRefs.isStripped(type.desc)) {
                         return true;
                     }
+                }
+                case FieldInsnNode field -> {
+                    if (ClientDistRefs.isStripped(field.owner) || ClientDistRefs.descriptorHasStripped(field.desc)) {
+                        return true;
+                    }
+                }
+                case MethodInsnNode call -> {
+                    if (ClientDistRefs.isStripped(call.owner) || ClientDistRefs.descriptorHasStripped(call.desc)) {
+                        return true;
+                    }
+                }
+                case MultiANewArrayInsnNode array -> {
+                    if (ClientDistRefs.descriptorHasStripped(array.desc)) {
+                        return true;
+                    }
+                }
+                case LdcInsnNode ldc -> {
+                    if (constantReferencesStripped(ldc.cst)) {
+                        return true;
+                    }
+                }
+                case InvokeDynamicInsnNode indy -> {
+                    if (constantReferencesStripped(indy.bsm)) {
+                        return true;
+                    }
+                    for (Object arg : indy.bsmArgs) {
+                        if (constantReferencesStripped(arg)) {
+                            return true;
+                        }
+                    }
+                }
+                default -> {
                 }
             }
         }

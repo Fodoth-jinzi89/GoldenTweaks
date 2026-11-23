@@ -7,6 +7,7 @@ import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipe;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
@@ -33,9 +34,19 @@ import java.util.List;
  */
 public class GTChemicalReactionEmiRecipe implements EmiRecipe {
 
-    public static final EmiRecipeCategory CATEGORY = new EmiRecipeCategory(
-            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, GTChemicalReactionRecipe.ID),
-            EmiStack.of(new net.minecraft.world.item.ItemStack(GTChemicalReactorMultiblock.MACHINE_ITEM.get())));
+    /** The basic kettle's page. */
+    public static final EmiRecipeCategory CATEGORY = category("chemical_reaction",
+            GTChemicalReactorMultiblock.MACHINE_ITEM.get());
+
+    /** The advanced kettle's page: same layout, its own entry in the sidebar. */
+    public static final EmiRecipeCategory ADVANCED_CATEGORY = category("advanced_chemical_reaction",
+            GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get());
+
+    private static EmiRecipeCategory category(String path, net.minecraft.world.item.Item icon) {
+        return new EmiRecipeCategory(
+                ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, path),
+                EmiStack.of(new net.minecraft.world.item.ItemStack(icon)));
+    }
 
     /** Arrow animation: one cycle per recipe duration, but never shorter than readable. */
     private static final int MIN_ARROW_MILLIS = 500;
@@ -43,13 +54,26 @@ public class GTChemicalReactionEmiRecipe implements EmiRecipe {
 
     private final ResourceLocation id;
     private final GTChemicalReactionRecipe recipe;
+    private final EmiRecipeCategory category;
     private final List<EmiIngredient> inputs;
     private final List<EmiIngredient> outputs;
+    /** The data-pack entries behind the grids, kept for the amount badges. */
+    private final List<GTReactionStack> inputStacks;
+    private final List<GTReactionStack> outputStacks;
 
     public GTChemicalReactionEmiRecipe(
             ResourceLocation id, GTChemicalReactionRecipe recipe, @Nullable HolderLookup.Provider registries) {
+        this(id, recipe, registries, CATEGORY);
+    }
+
+    public GTChemicalReactionEmiRecipe(
+            ResourceLocation id, GTChemicalReactionRecipe recipe,
+            @Nullable HolderLookup.Provider registries, EmiRecipeCategory category) {
         this.id = id;
         this.recipe = recipe;
+        this.category = category;
+        this.inputStacks = recipe.inputs();
+        this.outputStacks = recipe.outputs();
         this.inputs = convert(recipe.inputs(), registries);
         this.outputs = convert(recipe.outputs(), registries);
     }
@@ -68,7 +92,7 @@ public class GTChemicalReactionEmiRecipe implements EmiRecipe {
 
     @Override
     public EmiRecipeCategory getCategory() {
-        return CATEGORY;
+        return this.category;
     }
 
     @Override
@@ -116,9 +140,11 @@ public class GTChemicalReactionEmiRecipe implements EmiRecipe {
     public void addWidgets(WidgetHolder widgets) {
         // Each grid registers its own slots with the holder, so EMI owns them and hover / R/U work.
         widgets.add(new GTChemicalReactionPagedGrid(
-                this.inputs, GTChemicalReactionLayout.INPUT_X, GTChemicalReactionLayout.GRID_Y, widgets));
+                this.inputs, this.inputStacks,
+                GTChemicalReactionLayout.INPUT_X, GTChemicalReactionLayout.GRID_Y, widgets));
         widgets.add(new GTChemicalReactionPagedGrid(
-                this.outputs, GTChemicalReactionLayout.OUTPUT_X, GTChemicalReactionLayout.GRID_Y, widgets));
+                this.outputs, this.outputStacks,
+                GTChemicalReactionLayout.OUTPUT_X, GTChemicalReactionLayout.GRID_Y, widgets));
 
         widgets.addFillingArrow(
                 GTChemicalReactionLayout.ARROW_X, GTChemicalReactionLayout.ARROW_Y, arrowMillis());

@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Basic chemical reaction kettle used when {@code avaritia_more_items} is absent.
@@ -69,7 +70,7 @@ public class GTChemicalReactorBlock extends Block {
     }
 
     @Override
-    protected BlockState rotate(BlockState state, Rotation rotation) {
+    protected @NotNull BlockState rotate(BlockState state, @NotNull Rotation rotation) {
         int roll = state.getValue(ROLL);
         if (state.getValue(FACING).getAxis().isVertical()) {
             // A vertical front spins in place under a structural rotation.
@@ -84,7 +85,7 @@ public class GTChemicalReactorBlock extends Block {
     }
 
     @Override
-    protected BlockState mirror(BlockState state, Mirror mirror) {
+    protected @NotNull BlockState mirror(@NotNull BlockState state, @NotNull Mirror mirror) {
         if (mirror == Mirror.NONE) {
             return state;
         }

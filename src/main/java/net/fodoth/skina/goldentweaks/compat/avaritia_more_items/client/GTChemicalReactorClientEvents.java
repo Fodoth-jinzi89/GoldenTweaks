@@ -7,6 +7,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 
 /**
  * Binds the kettle's screen to its menu type.
@@ -23,5 +24,9 @@ public class GTChemicalReactorClientEvents {
             return;
         }
         event.register(GTChemicalReactorMultiblock.MENU.get(), GTChemicalReactorScreen::new);
+        // The advanced kettle shares the window class, so it shares the EMI bounds provider too:
+        // that one is registered against the screen class, and a subclass matches it.
+        event.register(GTAdvancedChemicalReactorMultiblock.MENU.get(),
+                GTAdvancedChemicalReactorScreen::new);
     }
 }

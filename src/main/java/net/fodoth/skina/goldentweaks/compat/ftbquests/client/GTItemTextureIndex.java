@@ -58,9 +58,6 @@ public final class GTItemTextureIndex {
 
         Minecraft minecraft = Minecraft.getInstance();
         ItemRenderer renderer = minecraft.getItemRenderer();
-        if (renderer == null) {
-            return result;
-        }
 
         RandomSource random = RandomSource.create();
         for (Item item : BuiltInRegistries.ITEM) {
@@ -73,9 +70,6 @@ public final class GTItemTextureIndex {
             try {
                 model = renderer.getModel(stack, minecraft.level, minecraft.player, 0);
             } catch (Throwable ignored) {
-                continue;
-            }
-            if (model == null) {
                 continue;
             }
 

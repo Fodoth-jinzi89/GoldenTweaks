@@ -1,0 +1,20 @@
+{
+  "type": "goldentweaks:advanced_chemical_reaction",
+  "inputs": [
+    { "item": "minecraft:gold_ingot", "count": 5 },
+    { "item": "minecraft:iron_ingot", "count": 4 },
+    { "essentia": "thaumcraft:aer", "amount": 6 },
+    { "essentia": "thaumcraft:aqua", "amount": 7 },
+    { "chemical": "mekanism:bio", "amount": 10 },
+    { "chemical": "mekanism:diamond", "amount": 10 }
+  ],
+  "outputs": [
+    { "item": "minecraft:netherite_ingot", "count": 1 },
+    { "essentia": "thaumcraft:ordo", "amount": 6 },
+    { "essentia": "thaumcraft:terra", "amount": 4 },
+    { "chemical": "mekanism:redstone", "amount": 10 },
+    { "chemical": "mekanism:sulfuric_acid", "amount": 20 }
+  ],
+  "processing_time": 28,
+  "energy_per_tick": 120
+}

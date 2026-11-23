@@ -37,7 +37,7 @@ public final class GTRewardSelection {
     }
 
     public static <T> List<T> page(List<T> entries, int capacity, long milliseconds) {
-        int visible = Math.min(6, Math.max(0, capacity));
+        int visible = Math.clamp(capacity, 0, 6);
         if (visible == 0 || entries.isEmpty()) return List.of();
         int pages = (entries.size() + visible - 1) / visible;
         int start = (int)Math.floorMod(milliseconds / 2000, pages) * visible;

@@ -24,6 +24,8 @@ public record C2SPortTogglePacket(BlockPos pos, Target target) implements Custom
     public enum Target {
         /** Whether the port takes part in the machine. */
         ENABLED,
+        /** Whether each entry occupies one cell or spans as many as it needs. */
+        STACK_MODE,
         /** Whether the port also reaches through its own face. */
         ACTIVE
     }
@@ -60,6 +62,7 @@ public record C2SPortTogglePacket(BlockPos pos, Target target) implements Custom
             if (player.level().getBlockEntity(pkt.pos()) instanceof GTPortBlockEntity port) {
                 switch (pkt.target()) {
                     case ENABLED -> port.setEnabled(!port.isEnabled());
+                    case STACK_MODE -> port.toggleSingleCell();
                     case ACTIVE -> port.toggleActive();
                 }
             }

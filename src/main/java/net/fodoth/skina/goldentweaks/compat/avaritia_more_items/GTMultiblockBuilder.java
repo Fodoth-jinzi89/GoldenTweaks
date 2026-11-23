@@ -11,10 +11,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Builds a multiblock shape out of the blocks a player is carrying.
@@ -136,13 +136,59 @@ public final class GTMultiblockBuilder {
     }
 
     /**
+     * The block a single structure cell stands for.
+     *
+     * <p>Resolved per symbol rather than once for the whole structure: a shape may name several
+     * casing symbols, and each cell should preview with what its own letter means.</p>
+     *
+     * <p>A tag resolves to its first member that is not a port. The casing tag deliberately also
+     * contains the ports tag, so a cell accepting either is legal; drawing a port as shell filler
+     * would mislead, and a port is placed by the player with a function in mind.</p>
+     *
+     * @return the block, or {@code null} when the symbol has no usable member
+     */
+    @Nullable
+    public static Block casingFor(GTMultiblockPattern layout, char symbol) {
+        if (layout.isWildcard(symbol)) {
+            return null;
+        }
+        String key = layout.keyAt(symbol);
+        if (key == null) {
+            return null;
+        }
+        if (!key.startsWith("#")) {
+            ResourceLocation id = ResourceLocation.tryParse(key);
+            return id == null ? null : BuiltInRegistries.BLOCK.get(id);
+        }
+
+        TagKey<Block> tag = TagKey.create(Registries.BLOCK, ResourceLocation.parse(key.substring(1)));
+        if (tag.equals(PORTS)) {
+            return null;
+        }
+        var holders = BuiltInRegistries.BLOCK.getTag(tag);
+        if (holders.isEmpty()) {
+            return null;
+        }
+        for (var holder : holders.get()) {
+            Block candidate = holder.value();
+            if (!candidate.defaultBlockState().is(PORTS)) {
+                return candidate;
+            }
+        }
+        return null;
+    }
+
+    /**
      * The block used as casing, resolved from whatever the structure calls its casing.
      *
      * <p>The casing tag includes the ports tag, so taking "the first block in the tag" could pick a
      * port block and build the whole shell out of it. Members that belong to the ports tag are
      * therefore skipped, and the first remaining block wins.</p>
+     *
+     * <p>Shared with the projection, which draws its ghost blocks from the same answer: a preview
+     * that disagreed with what the builder would place would be worse than no preview.</p>
      */
-    private static Block casingBlock(GTMultiblockPattern layout) {
+    public static Block casingBlock(GTMultiblockPattern layout) {
         for (char symbol : layout.symbols()) {
             String key = layout.keyAt(symbol);
             if (key == null || !key.startsWith("#")) {

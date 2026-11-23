@@ -10,12 +10,14 @@ import java.util.Map;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipes;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlock;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -50,6 +52,10 @@ public final class GTMultiblockBlocks {
     public static final DeferredBlock<GTShellBlock> SHELL_PE =
             BLOCKS.register("shell_pe", () -> new GTShellBlock(properties()));
 
+    /** The polypropylene shell: the same part, one material tier up. */
+    public static final DeferredBlock<GTShellBlock> SHELL_PP =
+            BLOCKS.register("shell_pp", () -> new GTShellBlock(properties()));
+
     public static final DeferredBlock<GTFacingBlock> INPUT_BUS =
             BLOCKS.register("input_bus", () -> new GTFacingBlock(properties()));
 
@@ -62,8 +68,39 @@ public final class GTMultiblockBlocks {
     public static final DeferredBlock<GTFacingBlock> INPUT_CATALYST =
             BLOCKS.register("input_catalyst", () -> new GTFacingBlock(properties()));
 
+    /**
+     * Every casing a port can show, in the order the block state's {@code casing} index refers to.
+     *
+     * <p>Index 0 is the default, so a port no machine has claimed needs no state change. The list is
+     * ordered rather than a set because the state stores an index, and a state property can only hold
+     * a bounded value.</p>
+     *
+     * <p>Adding a casing means appending here and giving it a connected-texture sheet; the port
+     * models are not touched.</p>
+     */
+    public static final java.util.List<DeferredBlock<GTShellBlock>> CASINGS = java.util.List.of(
+            SHELL_PE, SHELL_PP);
+
+    /** The index of a casing in {@link #CASINGS}, or 0 when it is not one of them. */
+    public static int casingIndex(Block casing) {
+        for (int index = 0; index < CASINGS.size(); index++) {
+            if (CASINGS.get(index).get() == casing) {
+                return index;
+            }
+        }
+        return 0;
+    }
+
+    /** The casing at an index, clamped into the list. */
+    public static Block casingAt(int index) {
+        return CASINGS.get(Math.clamp(index, 0, CASINGS.size() - 1)).get();
+    }
+
     public static final DeferredItem<BlockItem> SHELL_PE_ITEM =
             ITEMS.register("shell_pe", () -> new BlockItem(SHELL_PE.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> SHELL_PP_ITEM =
+            ITEMS.register("shell_pp", () -> new BlockItem(SHELL_PP.get(), new Item.Properties()));
 
     public static final DeferredItem<BlockItem> INPUT_BUS_ITEM =
             ITEMS.register("input_bus", () -> new BlockItem(INPUT_BUS.get(), new Item.Properties()));
@@ -115,8 +152,12 @@ public final class GTMultiblockBlocks {
      * reaching it without the mod present throws. Everything here is therefore kept behind the
      * same check that guards the capability registration.</p>
      */
+    @SuppressWarnings("ConstantConditions")
     private static void declarePorts() {
         for (GTPortKind kind : GTPortKind.values()) {
+            if (!kindAvailable(kind)) {
+                continue;
+            }
             // One block and one item per tier: a tier in the block state would be invisible once the
             // part is an item, and the inventory has to name a ULV bus differently from a UV one.
             Map<PortMode, Map<GTPortTier, DeferredBlock<GTPortBlock>>> modes =
@@ -145,6 +186,7 @@ public final class GTMultiblockBlocks {
             PORT_ITEMS.put(kind, items);
         }
 
+
         PORT_ENTITY = BLOCK_ENTITIES.register("gt_port",
                 () -> BlockEntityType.Builder.of(GTPortBlockEntity::new,
                                 PORT_BLOCKS.values().stream()
@@ -153,6 +195,21 @@ public final class GTMultiblockBlocks {
                                         .map(DeferredBlock::get)
                                         .toArray(net.minecraft.world.level.block.Block[]::new))
                         .build(null));
+    }
+
+    /**
+     * Whether a port kind's backing mod is installed.
+     *
+     * <p>The two extended kinds hold Mekanism chemicals and Thaumcraft essentia, so registering
+     * them without their mod would put a block in the game whose storage is always empty — and
+     * whose compat class cannot even be loaded. Skipped rather than shipped broken.</p>
+     */
+    private static boolean kindAvailable(GTPortKind kind) {
+        return switch (kind) {
+            case CHEMICAL -> ModList.get().isLoaded("mekanism");
+            case ESSENTIA -> ModList.get().isLoaded("thaumcraft");
+            default -> true;
+        };
     }
 
     /**
@@ -176,14 +233,6 @@ public final class GTMultiblockBlocks {
     /** Same base with the parallel-lines icon layered on top. */
     public static final DeferredItem<Item> CONTROL_CIRCUIT_PARALLEL_1 =
             ITEMS.register("control_circuit_parallel_1", () -> new Item(new Item.Properties()));
-
-    /** Id of the reaction kettle, shared by the AMI host and the plain fallback. */
-    public static final ResourceLocation CHEMICAL_REACTOR_HOST =
-            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "chemical_plant_controller");
-
-    /** Structure file backing the reaction kettle, relative to {@code data/<namespace>/multiblock}. */
-    public static final ResourceLocation CHEMICAL_REACTOR_STRUCTURE =
-            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "chemical_reactor");
 
     private GTMultiblockBlocks() {
     }
@@ -224,11 +273,15 @@ public final class GTMultiblockBlocks {
         return state.setValue(rollProperty, (roll + 1) % QUARTER_TURNS);
     }
 
-    /** The structure a host block projects, or {@code null} if this state is not a multiblock host. */
+    /**
+     * The structure a host block projects, or {@code null} if this state is not a multiblock host.
+     *
+     * <p>Answered by the block, which carries the id it was registered with — so a new machine
+     * declares its own structure and nothing here has to know it exists.</p>
+     */
     @Nullable
     public static ResourceLocation structureForHost(BlockState state) {
-        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
-        return CHEMICAL_REACTOR_HOST.equals(id) ? CHEMICAL_REACTOR_STRUCTURE : null;
+        return state.getBlock() instanceof GTChemicalReactorMachineBlock host ? host.structureId() : null;
     }
 
     /** Current orientation of a host block, read from the blockstate. */
@@ -291,6 +344,7 @@ public final class GTMultiblockBlocks {
             BLOCK_ENTITIES.register(eventBus);
             GTPortMenu.MENU_TYPES.register(eventBus);
             GTChemicalReactorMultiblock.register(eventBus);
+            GTAdvancedChemicalReactorMultiblock.register(eventBus);
             // The kettle's recipes implement an AMI interface, so they are only registered when
             // the host itself is.
             GTChemicalReactionRecipes.register(eventBus);

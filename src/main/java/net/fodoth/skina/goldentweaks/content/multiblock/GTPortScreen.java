@@ -6,11 +6,13 @@ import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPortTextPacket;
 import net.fodoth.skina.goldentweaks.network.packet.C2SPortTogglePacket;
+import net.fodoth.skina.goldentweaks.util.GTNumberInput;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -23,11 +25,25 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 import dev.emi.emi.api.EmiApi;
 import dev.emi.emi.api.stack.EmiIngredient;
+import dev.emi.emi.api.stack.EmiStack;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.recipe.client.GTAspectEmiStacks;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
+import dev.emi.emi.config.EmiConfig;
+import dev.emi.emi.runtime.EmiDrawContext;
+import dev.emi.emi.EmiRenderHelper;
+import mekanism.api.MekanismAPI;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectEntry;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTThaumcraftAdditionalItems;
+import net.minecraft.Util;
+import net.minecraft.world.level.material.Fluid;
+import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.PortMode;
+import thaumcraft.client.gui.AspectGuiRenderer;
+import thaumcraft.api.aspects.Aspect;
 
 /**
  * Window for one of this mod's ports.
@@ -130,18 +146,31 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final int RUN_ICON_HEIGHT = 11;
 
     /**
-     * The reach-through switch, on the first plate of the top-right block.
+     * The stacking switch, on the first plate of the top-right block.
      *
-     * <p>At {@code (154,27)}, the slot the stacking switch used to occupy. That switch is gone 鈥?an
-     * energy port has no cells for an entry to span, so the setting controlled nothing there 鈥?and
-     * shifting this one left keeps the buttons on plates the sheet actually has instead of leaving a
-     * hole at the front of the row.</p>
-     *
-     * <p>One plate from the sheet, with the state shown by which of two icons is laid over it:
-     * yellow is passive (the plain behaviour, where the port waits to be reached), red is active (it
-     * also reaches through its own face).</p>
+     * <p>Only shown by item and fluid ports: an energy port has no cells for an entry to span, so
+     * the setting controls nothing there and its plate is given to the reach-through switch
+     * instead.</p>
      */
-    private static final int ACTIVE_X = 154;
+    private static final int MODE_X = 154;
+    private static final int MODE_Y = 27;
+    private static final int MODE_PLATE_U = 44;
+    private static final int MODE_PLATE_V = 178;
+    private static final int MODE_WIDTH = 21;
+    private static final int MODE_HEIGHT = 17;
+    private static final int MODE_ICON_U_SINGLE = 44;
+    private static final int MODE_ICON_U_MULTI = 65;
+    private static final int MODE_ICON_V = 195;
+
+    /**
+     * The reach-through switch: second plate for item and fluid ports, first for an energy port.
+     *
+     * <p>Sitting it after the stacking switch keeps the row contiguous; an energy port has no
+     * stacking switch, so it takes the first plate rather than leaving a gap.</p>
+     */
+    private static final int ACTIVE_X = 179;
+    /** Where the reach-through switch goes when there is no stacking switch in front of it. */
+    private static final int ACTIVE_X_NO_MODE = 154;
     private static final int ACTIVE_Y = 27;
     private static final int ACTIVE_PLATE_U = 44;
     private static final int ACTIVE_PLATE_V = 178;
@@ -249,7 +278,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         this.nameField = makeNameField();
         this.modeField = makeField(GTPortBlockEntity.Field.MODE, this.menu.modeText());
         this.channelField = makeField(GTPortBlockEntity.Field.CHANNEL, this.menu.channelText());
-        this.priorityField = makeField(GTPortBlockEntity.Field.PRIORITY, this.menu.priorityText());
+        this.priorityField = makeField(GTPortBlockEntity.Field.PRIORITY,
+                displayedPriority(this.menu.priorityText()));
         this.fields = List.of(this.nameField, this.modeField, this.channelField, this.priorityField);
 
         placeNameField();
@@ -318,7 +348,30 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         commitName();
         send(GTPortBlockEntity.Field.MODE, this.modeField.getValue());
         send(GTPortBlockEntity.Field.CHANNEL, this.channelField.getValue());
-        send(GTPortBlockEntity.Field.PRIORITY, this.priorityField.getValue());
+        send(GTPortBlockEntity.Field.PRIORITY, canonicalPriority(this.priorityField.getValue()));
+    }
+
+    /**
+     * The grouped form of a stored priority, or the text itself when it is not a number.
+     *
+     * <p>The box shows a number the way the player reads it — {@code 1,600} — while the port keeps
+     * the plain integer.</p>
+     */
+    private static String displayedPriority(String stored) {
+        Integer value = GTNumberInput.parseInt(stored);
+        return value == null ? stored : GTNumberInput.group(value);
+    }
+
+    /**
+     * The plain integer a typed priority means.
+     *
+     * <p>Suffixes ({@code 1.6k}, {@code 16M}) and grouping separators are accepted, since the box
+     * shows them back. Text that is not a number is sent unchanged, so the port's own fallback
+     * still decides what a typo means.</p>
+     */
+    private static String canonicalPriority(String typed) {
+        Integer value = GTNumberInput.parseInt(typed);
+        return value == null ? typed : String.valueOf(value);
     }
 
     /**
@@ -360,12 +413,15 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             // Compared against the in-flight value as well: after a rejected entry the box and the
             // port disagree, and comparing only with the port would treat the correction as
             // "unchanged" and send nothing.
-            String baseline = this.pendingFields.containsKey(field)
-                    ? this.pendingFields.get(field) : current;
+            String baseline = this.pendingFields.getOrDefault(field, current);
             if (baseline.equals(value)) {
                 return;
             }
-            this.pendingFields.put(field, value);
+            // Stored in the form the box will show, not the form that goes on the wire: `echo`
+            // compares against the displayed text, and a bare integer would never match a group
+            // like "1,600", leaving this field pinned to its pending value for good.
+            this.pendingFields.put(field,
+                    field == GTPortBlockEntity.Field.PRIORITY ? displayedPriority(value) : value);
             PacketDistributor.sendToServer(new C2SPortTextPacket(port.getBlockPos(), field, value));
         }
     }
@@ -406,9 +462,23 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             return true;
         }
 
+        // The stacking switch only exists on item and fluid ports, so its plate is checked only
+        // there — otherwise clicking an energy port's first plate would both change the mode and
+        // reach through, since both controls claim the same spot.
+        if (button == 0 && this.menu.kind() != GTPortKind.ENERGY
+                && mouseX >= this.leftPos + MODE_X && mouseX < this.leftPos + MODE_X + MODE_WIDTH
+                && mouseY >= this.topPos + MODE_Y && mouseY < this.topPos + MODE_Y + MODE_HEIGHT) {
+            GTPortBlockEntity port = this.menu.port();
+            if (port != null) {
+                PacketDistributor.sendToServer(new C2SPortTogglePacket(
+                        port.getBlockPos(), C2SPortTogglePacket.Target.STACK_MODE));
+            }
+            return true;
+        }
+
         // The reach-through switch, handled exactly like the other two.
         if (button == 0
-                && mouseX >= this.leftPos + ACTIVE_X && mouseX < this.leftPos + ACTIVE_X + ACTIVE_WIDTH
+                && mouseX >= this.leftPos + activeX() && mouseX < this.leftPos + activeX() + ACTIVE_WIDTH
                 && mouseY >= this.topPos + ACTIVE_Y && mouseY < this.topPos + ACTIVE_Y + ACTIVE_HEIGHT) {
             GTPortBlockEntity port = this.menu.port();
             if (port != null) {
@@ -505,7 +575,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             // alternatives, and the tooltip of the one the player sees is the useful one.
             var stacks = ingredient.getEmiStacks();
             if (!stacks.isEmpty()) {
-                var lines = stacks.get(0).getTooltipText();
+                var lines = stacks.getFirst().getTooltipText();
                 if (!lines.isEmpty()) {
                     graphics.renderComponentTooltip(this.font, lines, mouseX, mouseY);
                     return;
@@ -540,9 +610,24 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
                 : "gui.goldentweaks.port.running.off"), mouseX, mouseY);
     }
 
+    /** Explains the stacking switch: the icon alone does not say which way round it is. */
+    private void renderModeTooltip(GuiGraphics graphics, int mouseX, int mouseY) {
+        if (this.menu.kind() == GTPortKind.ENERGY) {
+            return;
+        }
+        int x = this.leftPos + MODE_X;
+        int y = this.topPos + MODE_Y;
+        if (mouseX < x || mouseX >= x + MODE_WIDTH || mouseY < y || mouseY >= y + MODE_HEIGHT) {
+            return;
+        }
+        graphics.renderTooltip(this.font, Component.translatable(this.menu.isSingleCellMode()
+                ? "gui.goldentweaks.port.stack.single"
+                : "gui.goldentweaks.port.stack.multi"), mouseX, mouseY);
+    }
+
     /** Explains the reach-through switch, whose icon alone does not say which way round it is. */
     private void renderActiveTooltip(GuiGraphics graphics, int mouseX, int mouseY) {
-        int x = this.leftPos + ACTIVE_X;
+        int x = this.leftPos + activeX();
         int y = this.topPos + ACTIVE_Y;
         if (mouseX < x || mouseX >= x + ACTIVE_WIDTH || mouseY < y || mouseY >= y + ACTIVE_HEIGHT) {
             return;
@@ -584,11 +669,11 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         if (ingredient == null) {
             return false;
         }
-        if (dev.emi.emi.config.EmiConfig.viewRecipes.matchesKey(keyCode, scanCode)) {
+        if (EmiConfig.viewRecipes.matchesKey(keyCode, scanCode)) {
             EmiApi.displayRecipes(ingredient);
             return true;
         }
-        if (dev.emi.emi.config.EmiConfig.viewUses.matchesKey(keyCode, scanCode)) {
+        if (EmiConfig.viewUses.matchesKey(keyCode, scanCode)) {
             EmiApi.displayUses(ingredient);
             return true;
         }
@@ -663,7 +748,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     // ---- drawing ----
 
     @Override
-    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+    public void render(@NotNull GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         this.lastMouseX = mouseX;
         this.lastMouseY = mouseY;
         refreshChannelLock();
@@ -673,6 +758,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         renderTooltip(graphics, mouseX, mouseY);
         renderStackTooltip(graphics, mouseX, mouseY);
         renderRunTooltip(graphics, mouseX, mouseY);
+        renderModeTooltip(graphics, mouseX, mouseY);
         renderActiveTooltip(graphics, mouseX, mouseY);
     }
 
@@ -693,7 +779,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         }
         echo(this.modeField, GTPortBlockEntity.Field.MODE, port.modeText());
         echo(this.channelField, GTPortBlockEntity.Field.CHANNEL, port.channelText());
-        echo(this.priorityField, GTPortBlockEntity.Field.PRIORITY, port.priorityText());
+        echo(this.priorityField, GTPortBlockEntity.Field.PRIORITY,
+                displayedPriority(port.priorityText()));
 
         if (this.nameField != null && !this.nameField.isFocused()) {
             String shown = port.getDisplayName().getString();
@@ -753,14 +840,39 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         }
 
         drawRunButton(graphics, mouseX, mouseY);
-        // The stacking switch is deliberately absent: an energy port has no cells for an entry to
-        // span, so the setting had nothing to control there.
+        // An energy port has no cells for an entry to span, so it gets no stacking switch and its
+        // reach-through switch takes the plate that would have held it.
+        if (!energy) {
+            drawModeButton(graphics, mouseX, mouseY);
+        }
         drawActiveButton(graphics, mouseX, mouseY);
+    }
+
+    /** The stacking switch: base plate, then the icon for the mode it is in. */
+    private void drawModeButton(GuiGraphics graphics, int mouseX, int mouseY) {
+        int x = this.leftPos + MODE_X;
+        int y = this.topPos + MODE_Y;
+        graphics.blit(IO_TEXTURE, x, y, MODE_PLATE_U, MODE_PLATE_V,
+                MODE_WIDTH, MODE_HEIGHT);
+        boolean single = this.menu.isSingleCellMode();
+        graphics.blit(IO_TEXTURE, x, y,
+                single ? MODE_ICON_U_SINGLE : MODE_ICON_U_MULTI, MODE_ICON_V,
+                MODE_WIDTH, MODE_HEIGHT);
+    }
+
+    /**
+     * Where the reach-through switch sits for this port.
+     *
+     * <p>After the stacking switch when there is one, on the first plate when there is not. Kept in
+     * one method so the drawing, the click area and the tooltip cannot disagree about it.</p>
+     */
+    private int activeX() {
+        return this.menu.kind() == GTPortKind.ENERGY ? ACTIVE_X_NO_MODE : ACTIVE_X;
     }
 
     /** The reach-through switch: plate, then the icon for the state it is in. */
     private void drawActiveButton(GuiGraphics graphics, int mouseX, int mouseY) {
-        int x = this.leftPos + ACTIVE_X;
+        int x = this.leftPos + activeX();
         int y = this.topPos + ACTIVE_Y;
         graphics.blit(IO_TEXTURE, x, y, ACTIVE_PLATE_U, ACTIVE_PLATE_V,
                 ACTIVE_WIDTH, ACTIVE_HEIGHT);
@@ -806,7 +918,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             return;
         }
         HolderLookup.Provider registries = registries();
-        var context = dev.emi.emi.runtime.EmiDrawContext.wrap(graphics);
+        var context = EmiDrawContext.wrap(graphics);
 
         int perSlot = Math.max(1, this.menu.slotLimit());
         int columns = GTPortMenu.STORAGE_COLUMNS;
@@ -822,8 +934,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             }
             // The amount is a long while the ceiling is an int, so the division is done wide and
             // then clamped: an entry can never need more cells than the grid has.
-            int span = this.menu.isSingleCellMode() ? 1 : (int) Math.max(1L,
-                    Math.min(GTPortMenu.STORAGE_CELLS, (stack.amount() + perSlot - 1) / perSlot));
+            int span = this.menu.isSingleCellMode() ? 1 : (int) Math.clamp((stack.amount() + perSlot - 1) / perSlot, 1L, GTPortMenu.STORAGE_CELLS);
             // Skip entries above the visible window, and clip one that starts inside it.
             if (cursor + span <= this.scrollRow * columns) {
                 cursor += span;
@@ -849,18 +960,139 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         }
     }
 
+    /**
+     * Draws one aspect, deferring to Thaumcraft's own renderer.
+     *
+     * <p>Not a plain blit: the sheet comes from {@code Aspect.image()}, the tint from
+     * {@code Aspect.color()}, and the cosmic aspects are not sheet-based at all — they render as a
+     * dedicated item model. All three of those live in {@code AspectGuiRenderer}, and the mod
+     * already wraps the cosmic case in {@code GTAspectEntry.isCosmic}.</p>
+     *
+     * <p>Guarded because every class named here belongs to Thaumcraft: this screen is loaded on
+     * packs that do not have it.</p>
+     */
+    private static void drawEssentia(GuiGraphics graphics, GTReactionStack stack, int x, int y) {
+        String tag = stack.essentiaTag();
+        if (tag == null) {
+            return;
+        }
+        try {
+            Aspect aspect = Aspect.getAspect(tag);
+            if (aspect == null) {
+                return;
+            }
+            if (GTAspectEntry.isCosmic(tag)) {
+                graphics.renderItem(GTThaumcraftAdditionalItems.cosmicIconStack(), x, y);
+            } else {
+                AspectGuiRenderer.draw(graphics, aspect, x, y, 16, 1.0F);
+            }
+        } catch (NoClassDefFoundError absent) {
+            // Nothing sensible to draw without the mod's renderer.
+        }
+    }
+
+    /**
+     * The still frame of a fluid, at the path vanilla lays them out on.
+     *
+     * <p>Fluids are not items, so there is no sprite to ask for; the texture name is derived from
+     * the fluid's id the same way the vanilla block models do it.</p>
+     */
+    @Nullable
+    private static ResourceLocation fluidSprite(GTReactionStack stack) {
+        Fluid fluid = stack.fluid();
+        if (fluid == null) {
+            return null;
+        }
+        ResourceLocation id = BuiltInRegistries.FLUID.getKey(fluid);
+        // Vanilla's flowing and still frames live under the namespace's own block textures.
+        return ResourceLocation.fromNamespaceAndPath(id.getNamespace(),
+                "textures/block/" + id.getPath() + "_still.png");
+    }
+
+    /**
+     * The icon Mekanism keeps for a chemical, or {@code null} when Mekanism is absent.
+     *
+     * <p>Read through the chemical rather than derived from the id: Mekanism lets a chemical name
+     * its own icon, so the registry entry is the only thing that knows the right path.</p>
+     */
+    @Nullable
+    private static ResourceLocation chemicalSprite(GTReactionStack stack) {
+        try {
+            var holder = MekanismAPI.CHEMICAL_REGISTRY.getHolder(stack.id()).orElse(null);
+            if (holder == null) {
+                return null;
+            }
+            ResourceLocation icon = holder.value().getIcon();
+            // getIcon gives the texture path without an extension or the textures/ prefix.
+            return ResourceLocation.fromNamespaceAndPath(icon.getNamespace(),
+                    "textures/" + icon.getPath() + ".png");
+        } catch (NoClassDefFoundError absent) {
+            return null;
+        }
+    }
+
     /** One stack: the icon through EMI, then its amount on the corner, as EMI draws a slot. */
-    private void drawStack(GuiGraphics graphics, dev.emi.emi.runtime.EmiDrawContext context,
+    private void drawStack(GuiGraphics graphics, EmiDrawContext context,
                            GTReactionStack stack, int x, int y,
                            @Nullable HolderLookup.Provider registries) {
+        // Essentia has no EMI stack at all, so its icon is drawn directly. The count label goes
+        // through EMI's helper only when EMI is installed — that class is not optional otherwise.
+        if (stack.kind() == GTReactionStack.Kind.ESSENTIA) {
+            // scex registers the aspect as a viewer ingredient; drawing that entry instead of the
+            // bare icon is what lets the player look a recipe up by hovering this slot.
+            EmiStack registered = GTAspectEmiStacks.of(stack.essentiaTag());
+            if (registered != null) {
+                registered.setAmount(stack.amount())
+                        .render(graphics, x, y, 0.0F, EmiIngredient.RENDER_ICON);
+                if (ModList.get().isLoaded("emi")) {
+                    EmiRenderHelper.renderAmount(context, x, y,
+                            Component.literal(GTPortAmounts.number(stack.amount(), true)));
+                } else {
+                    drawAmount(graphics, stack.amount(), true, x, y);
+                }
+                return;
+            }
+            drawEssentia(graphics, stack, x, y);
+            // Essentia counts in whole units like an item, so it gets the item-shaped badge
+            // instead of the fluid one that would append "mB".
+            if (ModList.get().isLoaded("emi")) {
+                EmiRenderHelper.renderAmount(context, x, y,
+                        Component.literal(GTPortAmounts.number(stack.amount(), true)));
+            } else {
+                drawAmount(graphics, stack.amount(), true, x, y);
+            }
+            return;
+        }
+
         if (!ModList.get().isLoaded("emi")) {
-            if (stack.kind() == GTReactionStack.Kind.ITEM) {
-                var item = stack.toItemStack();
-                if (!item.isEmpty()) {
-                    graphics.renderItem(item, x, y);
-                    graphics.renderItemDecorations(this.font, item, x, y);
+            // Without EMI the sprite is resolved here from whatever the owning mod ships: an item
+            // stack, a fluid's still frame, or Mekanism's own chemical icon.
+            switch (stack.kind()) {
+                case ITEM -> {
+                    var item = stack.toItemStack();
+                    if (!item.isEmpty()) {
+                        graphics.renderItem(item, x, y);
+                        graphics.renderItemDecorations(this.font, item, x, y);
+                        return;
+                    }
+                }
+                case FLUID -> {
+                    ResourceLocation sprite = fluidSprite(stack);
+                    if (sprite != null) {
+                        graphics.blit(sprite, x, y, 0, 0, 16, 16, 16, 16);
+                    }
+                }
+                case CHEMICAL -> {
+                    ResourceLocation sprite = chemicalSprite(stack);
+                    if (sprite != null) {
+                        graphics.blit(sprite, x, y, 0, 0, 16, 16, 16, 16);
+                    }
+                }
+                default -> {
                 }
             }
+            drawAmount(graphics, stack.amount(),
+                    stack.kind() == GTReactionStack.Kind.ITEM, x, y);
             return;
         }
 
@@ -870,11 +1102,23 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         }
         // Icon only: a stack's own render prints a count for the item flavour alone, so the amount
         // is added below through the very helper EMI uses for that.
-        ingredient.render(graphics, x, y, 0.0F, dev.emi.emi.api.stack.EmiIngredient.RENDER_ICON);
+        ingredient.render(graphics, x, y, 0.0F, EmiIngredient.RENDER_ICON);
 
-        dev.emi.emi.EmiRenderHelper.renderAmount(context, x, y,
+        EmiRenderHelper.renderAmount(context, x, y,
                 Component.literal(GTPortAmounts.number(stack.amount(),
                         stack.kind() == GTReactionStack.Kind.ITEM)));
+    }
+
+    /**
+     * The amount, bottom-right of the cell, in the shape a player expects from an inventory slot.
+     *
+     * <p>Only used when EMI is absent: with EMI installed its own helper draws the same label and
+     * matching its spacing keeps the two windows looking identical.</p>
+     */
+    private void drawAmount(GuiGraphics graphics, long amount, boolean item, int x, int y) {
+        Component text = Component.literal(GTPortAmounts.number(amount, item));
+        int width = this.font.width(text);
+        graphics.drawString(this.font, text, x + 17 - width, y + 9, 0xFFFFFFFF, true);
     }
 
     /** The rail beside the grid: a track plus a marker whose size shows how much fits. */
@@ -889,8 +1133,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
 
         int inner = h - 2;
         int total = Math.max(totalRows(), GTPortMenu.STORAGE_ROWS);
-        int marker = Math.max(MARKER_MIN_HEIGHT, Math.min(inner,
-                Math.round(inner * (float) GTPortMenu.STORAGE_ROWS / (float) total)));
+        int marker = Math.clamp(
+                Math.round(inner * (float) GTPortMenu.STORAGE_ROWS / (float) total), MARKER_MIN_HEIGHT, inner);
         int travel = inner - marker;
         int max = maxScrollRow();
         int markerY = y + 1 + (max <= 0 ? 0 : Math.round(travel * (float) this.scrollRow / (float) max));
@@ -988,8 +1232,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         // energy in, a dynamo hatch pushes it out, and calling both "max input" would mislabel half
         // the ports.
         boolean output = this.menu.port() != null
-                && this.menu.port().mode() == net.weibai.avaritia_more_items
-                        .common.blocks.abstracts.multiblock.port.PortMode.OUTPUT;
+                && this.menu.port().mode() == PortMode.OUTPUT;
         graphics.drawString(this.font,
                 Component.translatable(output
                         ? "gui.goldentweaks.port.energy.output"
@@ -1011,7 +1254,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     }
 
     @Override
-    protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
+    protected void renderLabels(@NotNull GuiGraphics graphics, int mouseX, int mouseY) {
         // The pose is already translated to the panel origin here, so these use panel coordinates.
         if (this.menu.kind() != GTPortKind.ENERGY) {
             drawCapacity(graphics);
@@ -1041,7 +1284,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
 
     private static int marqueeOffset(int cycle) {
         long lapMillis = Math.max(1L, Math.round(cycle / MARQUEE_PIXELS_PER_SECOND * 1000.0D));
-        long phase = net.minecraft.Util.getMillis() % (MARQUEE_PAUSE_MILLIS + lapMillis);
+        long phase = Util.getMillis() % (MARQUEE_PAUSE_MILLIS + lapMillis);
         if (phase < MARQUEE_PAUSE_MILLIS) {
             return 0;
         }
@@ -1057,7 +1300,6 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * used to, which is the only place with room for a seven-digit fraction.</p>
      */
     private void drawCapacity(GuiGraphics graphics) {
-        int x = CAPTION_X;
 
         // Compact rather than every digit: a high-tier hatch holds hundreds of thousands of mB, and
         // the exact figure is unreadable at this size. The same ladder the energy port uses, so a
@@ -1069,7 +1311,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
                 + Component.translatable("gui.goldentweaks.port.cells").getString();
 
         graphics.pose().pushPose();
-        graphics.pose().translate(x, CAPTION_Y, 0.0F);
+        graphics.pose().translate(CAPTION_X, CAPTION_Y, 0.0F);
         graphics.pose().scale(CAPTION_SCALE, CAPTION_SCALE, 1.0F);
         graphics.drawString(this.font, amount, 0, 0, CAPTION_COLOUR, false);
         graphics.drawString(this.font, cells, 0, this.font.lineHeight, CAPTION_COLOUR, false);

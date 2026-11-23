@@ -1,8 +1,5 @@
 package net.fodoth.skina.goldentweaks.compat.avaritia_more_items;
 
-import net.minecraft.resources.ResourceLocation;
-import org.jetbrains.annotations.Nullable;
-
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

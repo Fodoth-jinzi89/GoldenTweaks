@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
@@ -33,8 +34,8 @@ public final class GTProjectionStructures extends SimpleJsonResourceReloadListen
     }
 
     @Override
-    protected void apply(Map<ResourceLocation, JsonElement> objects, ResourceManager resourceManager,
-                         ProfilerFiller profiler) {
+    protected void apply(Map<ResourceLocation, JsonElement> objects, @NotNull ResourceManager resourceManager,
+                         @NotNull ProfilerFiller profiler) {
         this.layouts.clear();
         for (Map.Entry<ResourceLocation, JsonElement> entry : objects.entrySet()) {
             try {

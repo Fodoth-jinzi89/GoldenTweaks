@@ -1,0 +1,7 @@
+{
+  "parent": "goldentweaks:block/multiblock/gt_port_base",
+  "textures": {
+    "icon": "goldentweaks:block/multiblock/port/output_essentia",
+    "ring": "goldentweaks:block/multiblock/port/level/output"
+  }
+}

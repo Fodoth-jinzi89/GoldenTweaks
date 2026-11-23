@@ -48,7 +48,9 @@ public final class GTChemicalReactorMultiblock {
 
     public static final DeferredBlock<GTChemicalReactorMachineBlock> MACHINE =
             BLOCKS.register("chemical_plant_controller",
-                    () -> new GTChemicalReactorMachineBlock(GTMultiblockBlocks.properties()));
+                    () -> new GTChemicalReactorMachineBlock(GTMultiblockBlocks.properties(),
+                            "chemical_reactor", GTChemicalReactorMachineBlockEntity::new,
+                            GTMultiblockBlocks.SHELL_PE));
 
     public static final DeferredItem<BlockItem> MACHINE_ITEM =
             ITEMS.register("chemical_plant_controller",

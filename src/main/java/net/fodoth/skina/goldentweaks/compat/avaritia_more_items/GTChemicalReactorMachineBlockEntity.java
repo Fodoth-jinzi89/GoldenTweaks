@@ -6,6 +6,8 @@ import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlock;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlockEntity;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTPortChannels;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTPortKind;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTPortStorages;
+import net.fodoth.skina.goldentweaks.content.multiblock.GTPortTier;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.util.ItemPickupUtil;
@@ -36,7 +38,6 @@ import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.abstrac
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.pattern.AMiBlockPattern;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.pattern.AMiBlockPattern.BlockPatternMatch;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.pattern.AMiBlockPatternReloadListener;
-import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.MultiblockPortTier;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.MultiblockPortTypes;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.PortMode;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.recipe.IMultiblockRecipeSource;
@@ -55,6 +56,7 @@ import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.network.PacketDistributor;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -68,6 +70,9 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.inventory.MenuType;
 
 /**
  * Tile of the basic chemical reaction kettle.
@@ -378,10 +383,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // Entries are added once, in first-seen order: a mode named by several ports belongs to all
         // of them and needs only one attempt.
         LinkedHashSet<Integer> ordered = new LinkedHashSet<>();
-        boolean anyWildcardPort = false;
+        @SuppressWarnings("unused") boolean anyWildcardPort = false;
         for (MultiblockPortBinding port : sortedPorts()) {
             List<Integer> modes = modesOf(port);
             if (modes.contains(GTPortChannels.WILDCARD)) {
+                //noinspection UnusedAssignment
                 anyWildcardPort = true;
                 continue;
             }
@@ -441,9 +447,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     /** A stable description of which ports a channel group would select. */
     private String portSignatureFor(int channel) {
         StringBuilder out = new StringBuilder();
-        for (MultiblockPortBinding port : this.structure.getPorts()) {
-            if (!isDynamo(port) && portJoins(port, channel)) {
-                out.append(port.pos().asLong()).append(';');
+        if (this.structure != null) {
+            for (MultiblockPortBinding port : this.structure.getPorts()) {
+                if (!isDynamo(port) && portJoins(port, channel)) {
+                    out.append(port.pos().asLong()).append(';');
+                }
             }
         }
         return out.toString();
@@ -617,6 +625,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * where a craft's inputs and products go, and moving them mid-craft would redirect a reaction
      * that was matched against a different set of ports.</p>
      */
+    @SuppressWarnings("unused")
     public boolean isBusy() {
         return this.activeRecipe != null;
     }
@@ -643,6 +652,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /** The channel currently being tried by the search, or {@code null}. */
+    @SuppressWarnings("unused")
     @Nullable
     public Integer selectedChannel() {
         return this.selectedChannel;
@@ -856,7 +866,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         if (census.topTier() == 0) {
             return 0;
         }
-        int single = GTPortEnergyTiers.transfer(tierOf(census.topTier()));
+        int single = GTPortEnergyTiers.transfer(census.topTier());
         // Two or more of the top tier double it; a lone one only reaches half of that doubling.
         return census.topCount() >= 2 ? single * 2 : single / 2;
     }
@@ -869,7 +879,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * what makes the number in the tooltip agree with the power figure beside it: a pair of tier I
      * hatches reads as II, because that is what it supplies.</p>
      *
-     * <p>Capped at the top of the ladder: the boost cannot invent a tier above UV.</p>
+     * <p>Capped at the top of the ladder: the boost cannot invent a tier above MAX.</p>
      */
     public int effectiveEnergyTier() {
         EnergyCensus census = energyPortCensus();
@@ -882,14 +892,9 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         } else {
             tier--;
         }
-        return Math.max(1, Math.min(MultiblockPortTier.values().length, tier));
-    }
-
-    /** The tier enum for a one-based level, clamped into the table's range. */
-    private static MultiblockPortTier tierOf(int level) {
-        MultiblockPortTier[] tiers = MultiblockPortTier.values();
-        int index = Math.max(0, Math.min(tiers.length - 1, level - 1));
-        return tiers[index];
+        // Our own ladder, not AMI's: ours has the tiers above UV, and clamping to AMI's length
+        // would report every one of them as IX.
+        return Math.max(1, Math.min(GTPortTier.values().length, tier));
     }
 
     /** The cheapest rejected recipe of the last search, in FE per tick; zero when none. */
@@ -962,7 +967,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             return 0;
         }
         int wanted = this.overclockLimit < 0 ? tierCeiling : this.overclockLimit;
-        return Math.min(tierCeiling, Math.max(0, wanted));
+        return Math.clamp(wanted, 0, tierCeiling);
     }
 
     /** The steps in force for whatever is running, or the ceiling while idle. */
@@ -1021,7 +1026,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * usable, not silently inert.</p>
      */
     public void setOverclockLimit(int limit) {
-        int sane = limit < NO_OVERCLOCK_LIMIT ? NO_OVERCLOCK_LIMIT : limit;
+        int sane = Math.max(limit, NO_OVERCLOCK_LIMIT);
         if (this.overclockLimit == sane) {
             return;
         }
@@ -1041,12 +1046,25 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     private boolean restoredFromDisk;
 
     public GTChemicalReactorMachineBlockEntity(BlockPos pos, BlockState state) {
-        super(GTChemicalReactorMultiblock.MACHINE_ENTITY.get(), pos, state);
+        this(GTChemicalReactorMultiblock.MACHINE_ENTITY.get(), pos, state);
+    }
+
+    /**
+     * The constructor a second machine uses.
+     *
+     * <p>Everything below this line is shared; a subclass exists only to answer the four
+     * questions in {@link #getPatternId}, {@link #getMachineId}, {@link #casingBlock} and
+     * {@link #getDisplayName}.</p>
+     */
+    protected GTChemicalReactorMachineBlockEntity(
+            BlockEntityType<?> type,
+            BlockPos pos, BlockState state) {
+        super(type, pos, state);
     }
 
     @Override
     protected ResourceLocation getPatternId() {
-        return ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, MACHINE_ID);
+        return ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, getMachineId());
     }
 
     @Override
@@ -1054,15 +1072,28 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         return MACHINE_ID;
     }
 
-    @Override
-    public Component getDisplayName() {
-        return this.customName != null
-                ? this.customName
-                : Component.translatable("block.goldentweaks.chemical_plant_controller");
+    /**
+     * The wall block this machine's shape is built from.
+     *
+     * <p>Read here rather than compared inline so a subclass can answer with its own casing without
+     * the structure check needing to know which machine it is running for.</p>
+     */
+    protected Block casingBlock() {
+        return GTMultiblockBlocks.SHELL_PE.get();
+    }
+
+    /** The translation key this machine is named by when the player has not renamed it. */
+    protected String nameKey() {
+        return "block.goldentweaks.chemical_plant_controller";
     }
 
     @Override
-    public Component getName() {
+    public @NotNull Component getDisplayName() {
+        return this.customName != null ? this.customName : Component.translatable(nameKey());
+    }
+
+    @Override
+    public @NotNull Component getName() {
         return getDisplayName();
     }
 
@@ -1099,13 +1130,24 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    public AbstractContainerMenu createMenu(int containerId, Inventory inventory, Player player) {
+    public AbstractContainerMenu createMenu(int containerId, @NotNull Inventory inventory, @NotNull Player player) {
         // Catch the player up on the running craft: the product broadcast only fires on transitions,
         // so without this the output list would stay empty until the current batch ended.
         if (player instanceof ServerPlayer serverPlayer) {
             sendProductsTo(serverPlayer);
         }
-        return new GTChemicalReactorMenu(containerId, inventory, this);
+        return GTChemicalReactorMenu.create(menuType(), containerId, inventory, this);
+    }
+
+    /**
+     * The window type this machine opens.
+     *
+     * <p>A hook because the menu type decides which screen the client builds: opening the advanced
+     * kettle with the basic type would ask for a window registered under a different id, and the
+     * GUI would not appear.</p>
+     */
+    protected MenuType<?> menuType() {
+        return GTChemicalReactorMultiblock.MENU.get();
     }
 
     /**
@@ -1373,12 +1415,18 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 continue;
             }
             if (port.type() == MultiblockPortTypes.ITEM) {
-                Object capability = MultiblockPortTypes.ITEM.capability(this.level, port.pos());
+                Object capability = null;
+                if (this.level != null) {
+                    capability = MultiblockPortTypes.ITEM.capability(this.level, port.pos());
+                }
                 if (capability instanceof IItemHandler handler) {
                     itemHandlers.add(handler);
                 }
             } else if (port.type() == MultiblockPortTypes.FLUID) {
-                Object capability = MultiblockPortTypes.FLUID.capability(this.level, port.pos());
+                Object capability = null;
+                if (this.level != null) {
+                    capability = MultiblockPortTypes.FLUID.capability(this.level, port.pos());
+                }
                 if (capability instanceof IFluidHandler handler) {
                     fluidHandlers.add(handler);
                 }
@@ -1387,18 +1435,55 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // Items have a list overload that already spans the hatches; fluids do not, so the spill is
         // simulated here the same way it is performed on delivery. Either way the question answered
         // is "does everything fit somewhere", not "does everything fit in one hatch".
-        return MultiblockRecipeMatcher.canInsertItems(items, itemHandlers)
-                && fitsFluids(fluidHandlers, fluids);
+        if (!MultiblockRecipeMatcher.canInsertItems(items, itemHandlers)
+                || !fitsFluids(fluidHandlers, fluids)) {
+            return false;
+        }
+        // The other two kinds have no handler in AMI's view, so their room is asked of the ports
+        // directly. Without this a full essentia or chemical hatch would let the craft start and then
+        // lose that part of the product.
+        return typedOutputsFit(recipe);
     }
 
     /**
-     * Hands out the products of a finished recipe.
+     * Whether the output ports have room for a recipe's essentia and chemicals.
      *
-     * <p>Only the products are handled here: the inputs were already taken from the ports when the
-     * craft started, so they disappear from the machine the moment it begins rather than at the end.
-     * Anything that does not fit in the output ports is dropped — with "void excess" that is the
-     * intent, and without it the ports were checked before the craft started.</p>
+     * <p>Asked as "would the current contents plus the product still fit", which is the same question
+     * the item and fluid checks answer. The port's own stacking rules decide whether a second kind may
+     * join a tank, so this leans on the storage rather than re-implementing it.</p>
      */
+    private boolean typedOutputsFit(MatchedMultiblockRecipe matched) {
+        if (this.level == null || !(matched.recipe() instanceof GTChemicalReactionRecipe reaction)) {
+            return true;
+        }
+        int multiplier = batchMultiplierOf(reaction, matched);
+        for (GTReactionStack product : reaction.outputs()) {
+            if (product.kind() != GTReactionStack.Kind.ESSENTIA
+                    && product.kind() != GTReactionStack.Kind.CHEMICAL) {
+                continue;
+            }
+            long remaining = product.amount() * multiplier;
+            for (GTPortBlockEntity stored : typedPorts(false)) {
+                if (remaining <= 0) {
+                    break;
+                }
+                if (product.kind() == GTReactionStack.Kind.ESSENTIA
+                        && stored.kind() == GTPortKind.ESSENTIA) {
+                    remaining -= GTPortStorages.essentiaRoom(
+                            stored.essentiaStorage(), product.id(), remaining);
+                } else if (product.kind() == GTReactionStack.Kind.CHEMICAL
+                        && stored.kind() == GTPortKind.CHEMICAL) {
+                    remaining -= GTPortStorages.chemicalRoom(
+                            stored.chemicalStorage(), product.id(), remaining);
+                }
+            }
+            if (remaining > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     /**
      * The power the running craft actually draws each tick, after its overclock.
      *
@@ -1423,6 +1508,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
 
         if (finished != null) {
             deliver(finished.itemOutputs(), finished.fluidOutputs());
+            deliverTyped(typedOutputsOf(finished));
         }
         this.setChanged();
         syncToClient();
@@ -1466,10 +1552,15 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // Walked rather than looked up by key: that is the same search the matcher already does, and
         // it keeps this independent of the recipe manager's lookup overloads.
         GTChemicalReactionRecipe found = null;
-        for (RecipeHolder<GTChemicalReactionRecipe> holder : level.getRecipeManager()
-                .getAllRecipesFor(GTChemicalReactionRecipes.TYPE.get())) {
-            if (holder.id().equals(wanted)) {
-                found = holder.value();
+        for (RecipeType<GTChemicalReactionRecipe> type : recipeTypes()) {
+            for (RecipeHolder<GTChemicalReactionRecipe> holder : level.getRecipeManager()
+                    .getAllRecipesFor(type)) {
+                if (holder.id().equals(wanted)) {
+                    found = holder.value();
+                    break;
+                }
+            }
+            if (found != null) {
                 break;
             }
         }
@@ -1576,7 +1667,45 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // Build the matcher's view of the recipe, then check it against what the ports hold. This is
         // the same path AMI takes, just narrowed to one candidate.
         MatchedMultiblockRecipe matched = MatchedMultiblockRecipe.of(recipe);
-        return matched.matches(createRecipeInput()) ? matched : null;
+        if (!matched.matches(createRecipeInput())) {
+            return null;
+        }
+        // AMI's matcher only knows items and fluids. The other two kinds are checked here, or the
+        // machine would happily start a craft whose essentia or chemicals are not in the ports and
+        // then produce nothing it was supposed to consume.
+        return typedInputsAvailable(recipe, 1) ? matched : null;
+    }
+
+    /**
+     * Whether the ports hold the essentia and chemicals a recipe asks for.
+     *
+     * @param multiplier how many crafts are being folded into one run
+     */
+    private boolean typedInputsAvailable(GTChemicalReactionRecipe reaction, int multiplier) {
+        if (this.level == null) {
+            return false;
+        }
+        for (GTReactionStack input : reaction.inputs()) {
+            if (input.kind() != GTReactionStack.Kind.ESSENTIA
+                    && input.kind() != GTReactionStack.Kind.CHEMICAL) {
+                continue;
+            }
+            long needed = input.amount() * multiplier;
+            long held = 0L;
+            for (GTPortBlockEntity stored : typedPorts(true)) {
+                if (input.kind() == GTReactionStack.Kind.ESSENTIA
+                        && stored.kind() == GTPortKind.ESSENTIA) {
+                    held += GTPortStorages.essentiaAmount(stored.essentiaStorage(), input.id());
+                } else if (input.kind() == GTReactionStack.Kind.CHEMICAL
+                        && stored.kind() == GTPortKind.CHEMICAL) {
+                    held += GTPortStorages.chemicalAmount(stored.chemicalStorage(), input.id());
+                }
+            }
+            if (held < needed) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -1618,27 +1747,30 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     @Nullable
     private MatchedMultiblockRecipe matchRecipesOfMode(
             Level level, MultiblockRecipeInput input, @Nullable Integer wanted) {
-        for (RecipeHolder<GTChemicalReactionRecipe> holder : level.getRecipeManager()
-                .getAllRecipesFor(GTChemicalReactionRecipes.TYPE.get())) {
-            GTChemicalReactionRecipe recipe = holder.value();
-            if (recipe.mode() != (wanted == null ? GTPortChannels.WILDCARD : wanted)) {
-                continue;
-            }
-            // A recipe the ports cannot power is not a candidate at all. Checked here rather than at
-            // start so the search moves past it and finds something the machine can actually run.
-            if (!withinEnergyBudget(recipe.getEnergyPerTick())) {
-                // Remembered so the status line can say why nothing started. A recipe skipped here is
-                // indistinguishable from no recipe at all, otherwise.
-                this.refusedForCost = true;
-                // Zero doubles as "nothing recorded yet", so the first rejection wins outright.
-                this.refusedCost = this.refusedCost == 0
-                        ? recipe.getEnergyPerTick()
-                        : Math.min(this.refusedCost, recipe.getEnergyPerTick());
-                continue;
-            }
-            MatchedMultiblockRecipe matched = MatchedMultiblockRecipe.of(recipe);
-            if (matched.matches(input)) {
-                return matched;
+        for (RecipeType<GTChemicalReactionRecipe> type : recipeTypes()) {
+            for (RecipeHolder<GTChemicalReactionRecipe> holder : level.getRecipeManager()
+                    .getAllRecipesFor(type)) {
+                GTChemicalReactionRecipe recipe = holder.value();
+                if (recipe.mode() != (wanted == null ? GTPortChannels.WILDCARD : wanted)) {
+                    continue;
+                }
+                // A recipe the ports cannot power is not a candidate at all. Checked here rather
+                // than at start so the search moves past it and finds something the machine can
+                // actually run.
+                if (!withinEnergyBudget(recipe.getEnergyPerTick())) {
+                    // Remembered so the status line can say why nothing started. A recipe skipped
+                    // here is indistinguishable from no recipe at all, otherwise.
+                    this.refusedForCost = true;
+                    // Zero doubles as "nothing recorded yet", so the first rejection wins outright.
+                    this.refusedCost = this.refusedCost == 0
+                            ? recipe.getEnergyPerTick()
+                            : Math.min(this.refusedCost, recipe.getEnergyPerTick());
+                    continue;
+                }
+                MatchedMultiblockRecipe matched = MatchedMultiblockRecipe.of(recipe);
+                if (matched.matches(input)) {
+                    return matched;
+                }
             }
         }
         return null;
@@ -1663,10 +1795,14 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     private ResourceLocation recipeIdOf(MatchedMultiblockRecipe matched) {
         // Identity comparison is safe here: the manager holds one instance per recipe until the
         // next reload, and a reload also clears the lock's meaning for the old instance.
-        for (RecipeHolder<GTChemicalReactionRecipe> holder : this.level.getRecipeManager()
-                .getAllRecipesFor(GTChemicalReactionRecipes.TYPE.get())) {
-            if (holder.value() == matched.recipe()) {
-                return holder.id();
+        if (this.level != null) {
+            for (RecipeType<GTChemicalReactionRecipe> type : recipeTypes()) {
+                for (RecipeHolder<GTChemicalReactionRecipe> holder : this.level.getRecipeManager()
+                        .getAllRecipesFor(type)) {
+                    if (holder.value() == matched.recipe()) {
+                        return holder.id();
+                    }
+                }
             }
         }
         return null;
@@ -1771,6 +1907,72 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             return;
         }
         MultiblockRecipeMatcher.consumeFluids(recipe.fluidInputs(), fluidHandlers);
+        consumeTypedInputs(recipe);
+    }
+
+    /**
+     * The machine's own ports that can hold essentia or chemicals, in the order delivery follows.
+     *
+     * <p>Walked from the layout rather than from AMI's port list: that list holds only the kinds AMI
+     * recognises, and these ports are our own block. It is also the same walk
+     * {@link #applyCasingToPorts} uses, so a port that shows the machine's casing is exactly a port
+     * its products can reach.</p>
+     *
+     * @param input {@code true} for ports that feed the machine, {@code false} for those that receive
+     */
+    private List<GTPortBlockEntity> typedPorts(boolean input) {
+        if (this.level == null || this.structure == null) {
+            return List.of();
+        }
+        List<GTPortBlockEntity> ports = new ArrayList<>();
+        for (BlockPos pos : shapeCells()) {
+            if (!(this.level.getBlockEntity(pos) instanceof GTPortBlockEntity port)) {
+                continue;
+            }
+            if (port.kind() != GTPortKind.ESSENTIA && port.kind() != GTPortKind.CHEMICAL) {
+                continue;
+            }
+            if ((port.mode() == PortMode.INPUT) != input) {
+                continue;
+            }
+            ports.add(port);
+        }
+        return ports;
+    }
+
+    /**
+     * Removes the essentia and chemicals a craft was matched against.
+     *
+     * <p>AMI's inputs carry only items and fluids, so these two kinds are drawn from the ports'
+     * own storage. The amounts were already checked when the craft began, exactly like the items, so
+     * this cannot come up short in normal play.</p>
+     */
+    private void consumeTypedInputs(MatchedMultiblockRecipe recipe) {
+        if (this.level == null || !(recipe.recipe() instanceof GTChemicalReactionRecipe reaction)) {
+            return;
+        }
+        int multiplier = batchMultiplierOf(reaction, recipe);
+        for (GTReactionStack input : reaction.inputs()) {
+            if (input.kind() != GTReactionStack.Kind.ESSENTIA
+                    && input.kind() != GTReactionStack.Kind.CHEMICAL) {
+                continue;
+            }
+            long remaining = input.amount() * multiplier;
+            for (GTPortBlockEntity stored : typedPorts(true)) {
+                if (remaining <= 0) {
+                    break;
+                }
+                if (input.kind() == GTReactionStack.Kind.ESSENTIA
+                        && stored.kind() == GTPortKind.ESSENTIA) {
+                    remaining -= GTPortStorages.takeEssentia(
+                            stored.essentiaStorage(), input.id(), remaining);
+                } else if (input.kind() == GTReactionStack.Kind.CHEMICAL
+                        && stored.kind() == GTPortKind.CHEMICAL) {
+                    remaining -= GTPortStorages.takeChemical(
+                            stored.chemicalStorage(), input.id(), remaining);
+                }
+            }
+        }
     }
 
     /**
@@ -1795,12 +1997,18 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 continue;
             }
             if (port.type() == MultiblockPortTypes.ITEM) {
-                Object capability = MultiblockPortTypes.ITEM.capability(this.level, port.pos());
+                Object capability = null;
+                if (this.level != null) {
+                    capability = MultiblockPortTypes.ITEM.capability(this.level, port.pos());
+                }
                 if (capability instanceof IItemHandler handler) {
                     itemHandlers.add(handler);
                 }
             } else if (port.type() == MultiblockPortTypes.FLUID) {
-                Object capability = MultiblockPortTypes.FLUID.capability(this.level, port.pos());
+                Object capability = null;
+                if (this.level != null) {
+                    capability = MultiblockPortTypes.FLUID.capability(this.level, port.pos());
+                }
                 if (capability instanceof IFluidHandler handler) {
                     fluidHandlers.add(handler);
                 }
@@ -1826,6 +2034,44 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
 
         // Anything still left had no room; with "void excess" that is the requested behaviour, and
         // without it the craft would not have started.
+    }
+
+    /**
+     * Hands the typed products — essentia and chemicals — to the output ports.
+     *
+     * <p>Kept beside {@link #deliver} rather than folded into it because AMI's matched recipe only
+     * carries items and fluids: those two kinds reach the ports through its own handler interfaces,
+     * while these reach the port's own storage. Splitting them here is what keeps this machine able to
+     * produce all four kinds without AMI having to know about two of them.</p>
+     *
+     * <p>Each port is offered the whole remainder in turn, the same spill-over rule the items use, so a
+     * product that does not fit one hatch moves on to the next.</p>
+     */
+    private void deliverTyped(List<GTReactionStack> products) {
+        if (this.structure == null) {
+            return;
+        }
+        for (GTReactionStack product : products) {
+            if (product.kind() != GTReactionStack.Kind.ESSENTIA
+                    && product.kind() != GTReactionStack.Kind.CHEMICAL) {
+                continue;
+            }
+            long remaining = product.amount();
+            for (GTPortBlockEntity stored : typedPorts(false)) {
+                if (remaining <= 0) {
+                    break;
+                }
+                if (product.kind() == GTReactionStack.Kind.ESSENTIA
+                        && stored.kind() == GTPortKind.ESSENTIA) {
+                    remaining -= GTPortStorages.addEssentia(
+                            stored.essentiaStorage(), product.id(), remaining);
+                } else if (product.kind() == GTReactionStack.Kind.CHEMICAL
+                        && stored.kind() == GTPortKind.CHEMICAL) {
+                    remaining -= GTPortStorages.addChemical(
+                            stored.chemicalStorage(), product.id(), remaining);
+                }
+            }
+        }
     }
 
     /**
@@ -1903,9 +2149,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         List<FluidStack> fluidOutputs = mergeFluids(scaleFluids(recipe.fluidOutputs(), multiplier));
 
         // With "void excess" on, output space no longer caps the batch: the surplus is destroyed on
-        // delivery, so the multiplier is limited by inputs alone.
+        // delivery, so the multiplier is limited by inputs alone. The typed inputs still have to be
+        // on hand, though — those are consumed, not spawned.
         if (this.voidOutput) {
-            return true;
+            return fitsTypedInputs(recipe, multiplier);
         }
 
         // Item and fluid output ports, resolved the same way AMI resolves them: through the
@@ -1919,12 +2166,18 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 continue;
             }
             if (port.type() == MultiblockPortTypes.ITEM) {
-                Object capability = MultiblockPortTypes.ITEM.capability(this.level, port.pos());
+                Object capability = null;
+                if (this.level != null) {
+                    capability = MultiblockPortTypes.ITEM.capability(this.level, port.pos());
+                }
                 if (capability instanceof IItemHandler handler) {
                     itemHandlers.add(handler);
                 }
             } else if (port.type() == MultiblockPortTypes.FLUID) {
-                Object capability = MultiblockPortTypes.FLUID.capability(this.level, port.pos());
+                Object capability = null;
+                if (this.level != null) {
+                    capability = MultiblockPortTypes.FLUID.capability(this.level, port.pos());
+                }
                 if (capability instanceof IFluidHandler handler) {
                     fluidHandlers.add(handler);
                 }
@@ -1932,8 +2185,55 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         }
         // Offered together, so a product may land in whichever hatch has room for it. Asking per
         // hatch would refuse a craft the hatches can plainly hold between them.
-        return MultiblockRecipeMatcher.canInsertItems(outputs, itemHandlers)
-                && fitsFluids(fluidHandlers, fluidOutputs);
+        if (!MultiblockRecipeMatcher.canInsertItems(outputs, itemHandlers)
+                || !fitsFluids(fluidHandlers, fluidOutputs)) {
+            return false;
+        }
+        // The other two kinds cap the batch the same way: a hatch already holding something else
+        // cannot take a scaled-up product, and finding that out after the craft started would lose
+        // it. Batch mode is therefore limited by them too.
+        return fitsTypedOutputs(recipe, multiplier) && fitsTypedInputs(recipe, multiplier);
+    }
+
+    /** Whether the scaled essentia and chemical products fit the output ports. */
+    private boolean fitsTypedOutputs(MatchedMultiblockRecipe matched, int multiplier) {
+        if (!(matched.recipe() instanceof GTChemicalReactionRecipe reaction)) {
+            return true;
+        }
+        if (this.level == null) {
+            return false;
+        }
+        for (GTReactionStack product : reaction.outputs()) {
+            if (product.kind() != GTReactionStack.Kind.ESSENTIA
+                    && product.kind() != GTReactionStack.Kind.CHEMICAL) {
+                continue;
+            }
+            long remaining = product.amount() * multiplier;
+            for (GTPortBlockEntity stored : typedPorts(false)) {
+                if (remaining <= 0) {
+                    break;
+                }
+                if (product.kind() == GTReactionStack.Kind.ESSENTIA
+                        && stored.kind() == GTPortKind.ESSENTIA) {
+                    remaining -= GTPortStorages.essentiaRoom(
+                            stored.essentiaStorage(), product.id(), remaining);
+                } else if (product.kind() == GTReactionStack.Kind.CHEMICAL
+                        && stored.kind() == GTPortKind.CHEMICAL) {
+                    remaining -= GTPortStorages.chemicalRoom(
+                            stored.chemicalStorage(), product.id(), remaining);
+                }
+            }
+            if (remaining > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /** Whether the scaled essentia and chemical inputs are on hand. */
+    private boolean fitsTypedInputs(MatchedMultiblockRecipe matched, int multiplier) {
+        return matched.recipe() instanceof GTChemicalReactionRecipe reaction
+                && typedInputsAvailable(reaction, multiplier);
     }
 
     /**
@@ -1959,7 +2259,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 // One call against the whole handler, the same way delivery fills it: it already
                 // spans its own tanks, so looping over them would only re-ask the first.
                 int accepted = handler.fill(stack,
-                        net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction.SIMULATE);
+                        IFluidHandler.FluidAction.SIMULATE);
                 if (accepted < stack.getAmount()) {
                     next.add(stack.copyWithAmount(stack.getAmount() - accepted));
                 }
@@ -2005,7 +2305,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             // loop just asked the same first tank for room again and again, so an entry larger than
             // a single tank could never spread across the empty ones beside it.
             int accepted = handler.fill(stack,
-                    net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction.EXECUTE);
+                    IFluidHandler.FluidAction.EXECUTE);
             if (accepted < stack.getAmount()) {
                 leftover.add(stack.copyWithAmount(stack.getAmount() - accepted));
             }
@@ -2027,8 +2327,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 continue;
             }
             boolean folded = false;
-            for (int index = 0; index < merged.size(); index++) {
-                ItemStack existing = merged.get(index);
+            for (ItemStack existing : merged) {
                 if (ItemStack.isSameItemSameComponents(existing, stack)) {
                     existing.setCount((int) Math.min(Integer.MAX_VALUE,
                             (long) existing.getCount() + stack.getCount()));
@@ -2051,8 +2350,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 continue;
             }
             boolean folded = false;
-            for (int index = 0; index < merged.size(); index++) {
-                FluidStack existing = merged.get(index);
+            for (FluidStack existing : merged) {
                 if (existing.is(stack.getFluid())) {
                     existing.setAmount((int) Math.min(Integer.MAX_VALUE,
                             (long) existing.getAmount() + stack.getAmount()));
@@ -2105,15 +2403,21 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * even for a recipe this machine did not define.</p>
      */
     private List<GTReactionStack> productsOf(MatchedMultiblockRecipe matched) {
-        // Our own reaction carries typed outputs that can include fluids and chemicals, so it is
-        // preferred whenever the amounts line up with the recipe. When batch mode has scaled the
-        // run, the matched amounts differ from the authored ones, and those scaled figures are what
-        // the GUI must show.
+        // Our own reaction carries typed outputs, so it is used directly: scaling it is a
+        // multiplication, where flattening it would lose the essentia and chemicals entirely — those
+        // have no item or fluid form to flatten into.
         if (matched.recipe() instanceof GTChemicalReactionRecipe reaction) {
             List<GTReactionStack> authored = reaction.outputs();
-            if (sameAmounts(authored, matched.itemOutputs())) {
+            int multiplier = batchMultiplierOf(reaction, matched);
+            if (multiplier <= 1) {
                 return authored;
             }
+            List<GTReactionStack> scaled = new ArrayList<>(authored.size());
+            for (GTReactionStack stack : authored) {
+                scaled.add(new GTReactionStack(stack.kind(), stack.id(),
+                        stack.amount() * multiplier, stack.tag()));
+            }
+            return scaled;
         }
 
         List<GTReactionStack> flattened = new ArrayList<>();
@@ -2135,23 +2439,37 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /**
-     * Whether the authored outputs still describe the matched ones.
+     * The essentia and chemical products of a finished craft, scaled to its batch size.
      *
-     * <p>Used to tell an unscaled run from a batched one: the item counts are enough, because a
-     * batch multiplier is applied to every stack uniformly, so any difference shows up here.</p>
+     * <p>Read from the recipe rather than from AMI's matched view, which carries only items and
+     * fluids. The batch multiplier is recovered from the item totals because that view is where it
+     * was recorded.</p>
      */
-    private static boolean sameAmounts(List<GTReactionStack> authored, List<ItemStack> matched) {
-        long authoredTotal = 0L;
-        for (GTReactionStack stack : authored) {
+    private List<GTReactionStack> typedOutputsOf(MatchedMultiblockRecipe finished) {
+        return productsOf(finished);
+    }
+
+
+    /** The batch size a matched recipe was scaled by, or 1 when it was not. */
+    private static int batchMultiplierOf(GTChemicalReactionRecipe reaction,
+                                         MatchedMultiblockRecipe matched) {
+        long authored = 0L;
+        for (GTReactionStack stack : reaction.outputs()) {
             if (stack.kind() == GTReactionStack.Kind.ITEM) {
-                authoredTotal += stack.amount();
+                authored += stack.amount();
             }
         }
-        long matchedTotal = 0L;
-        for (ItemStack stack : matched) {
-            matchedTotal += stack.getCount();
+        long delivered = 0L;
+        for (ItemStack stack : matched.itemOutputs()) {
+            delivered += stack.getCount();
         }
-        return authoredTotal == matchedTotal;
+        if (authored <= 0 || delivered <= authored) {
+            return 1;
+        }
+        long ratio = delivered / authored;
+        // A merged list can lose a few to rounding, so the ratio is only trusted when it divides
+        // cleanly; otherwise the run is treated as a single craft rather than over-delivering.
+        return ratio * authored == delivered ? (int) Math.min(ratio, Integer.MAX_VALUE) : 1;
     }
 
     /**
@@ -2290,6 +2608,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /** Id of the pinned recipe, or {@code null} when nothing is pinned. */
+    @SuppressWarnings("unused")
     @Nullable
     public ResourceLocation getLockedRecipeId() {
         return this.lockedRecipeId;
@@ -2396,19 +2715,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             if (structure.stillValid(this.level)) {
                 // Shape is intact: re-read the ports so the energy trough and the fluid buffers
                 // pick up anything the player changed.
-                MultiblockStructure refreshed = structure.refreshPorts(this.level);
                 // refreshPorts can hand back null when the shape no longer reads as assembled. That
                 // is not a transient state to ignore: the machine has to drop the stale assembly,
                 // otherwise the refresh button would leave it claiming a shape that is gone.
-                if (refreshed == null) {
-                    this.structure = null;
-                    invalidateStructure();
-                    this.scanCountdown = STRUCTURE_CHECK_INTERVAL_TICKS;
-                    this.setChanged();
-                    this.syncToClient();
-                    return;
-                }
-                this.structure = refreshed;
+                this.structure = structure.refreshPorts(this.level);
             } else {
                 invalidateStructure();
             }
@@ -2417,6 +2727,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         }
 
         this.scanCountdown = STRUCTURE_CHECK_INTERVAL_TICKS;
+
+        // The plates follow the shape, and a refresh is exactly when the shape may have changed
+        // hands: a port swapped for another kind, or the whole machine rebuilt in place.
+        if (this.structure != null) {
+            applyCasingToPorts();
+        }
+
         applyRunningState();
         setChanged();
         // Energy totals come from the port bindings, so the client needs a fresh copy.
@@ -2458,6 +2775,29 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             refreshStructure();
         }
         return result;
+    }
+
+    /**
+     * Puts the ports back to the standard plate when the shape no longer matches.
+     *
+     * <p>Called from the invalidation path rather than from teardown alone: a machine can come apart
+     * because a wall was broken, and those ports are still in the world and must not keep a plate
+     * that belongs to a shape that is gone.</p>
+     */
+    private void clearCasingFromPorts() {
+        if (this.level == null || this.level.isClientSide) {
+            return;
+        }
+        for (BlockPos pos : this.restyledPorts) {
+            BlockState portState = this.level.getBlockState(pos);
+            if (portState.getBlock() instanceof GTPortBlock
+                    && portState.hasProperty(GTPortBlock.CASING)
+                    && portState.getValue(GTPortBlock.CASING) != 0) {
+                this.level.setBlock(pos, portState.setValue(GTPortBlock.CASING, 0),
+                        Block.UPDATE_ALL);
+            }
+        }
+        this.restyledPorts.clear();
     }
 
     /**
@@ -2545,6 +2885,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // The ports are unfrozen first, while their positions are still known: the blocks are about
         // to be removed, and a lock left on them would make the returned items useless.
         setChannelsLocked(false);
+        clearCasingFromPorts();
         this.activeChannel = null;
         this.activeMode = null;
         this.selectedChannel = null;
@@ -2598,9 +2939,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
 
         // Blocks go last, so the tile is still valid while the parts are being collected above.
         for (BlockPos pos : area) {
-            this.level.removeBlock(pos, false);
+            if (this.level != null) {
+                this.level.removeBlock(pos, false);
+            }
         }
-        this.level.removeBlock(this.worldPosition, false);
+        if (this.level != null) {
+            this.level.removeBlock(this.worldPosition, false);
+        }
         return true;
     }
 
@@ -2696,9 +3041,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      *
      * <p>Kept out of the matter cluster: a cluster cannot carry a custom name, and the name is
      * meant to survive taking the machine apart.</p>
+     *
+     * <p>The item comes from the block this tile sits in, not from a named constant: both kettles
+     * share one block class but are two different blocks, and dismantling an advanced machine used
+     * to hand back the basic controller.</p>
      */
     private ItemStack createHostStack() {
-        ItemStack host = new ItemStack(GTChemicalReactorMultiblock.MACHINE_ITEM.get());
+        ItemStack host = new ItemStack(getBlockState().getBlock().asItem());
         if (this.customName != null) {
             host.set(DataComponents.CUSTOM_NAME, this.customName);
         }
@@ -2726,7 +3075,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             // state, which carries no components — so the name is copied across here.
             if (this.level.getBlockEntity(pos) instanceof GTPortBlockEntity port
                     && port.getCustomName() != null) {
-                stack.set(net.minecraft.core.component.DataComponents.CUSTOM_NAME,
+                stack.set(DataComponents.CUSTOM_NAME,
                         port.getCustomName());
             }
             parts.add(stack);
@@ -2776,25 +3125,29 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             }
             if (entity.itemHandler() != null) {
                 IItemHandler handler = entity.itemHandler();
-                for (int slot = 0; slot < handler.getSlots(); slot++) {
-                    ItemStack stack = handler.getStackInSlot(slot);
-                    if (!stack.isEmpty()) {
-                        items.add(stack.copy());
-                        handler.extractItem(slot, stack.getCount(), false);
+                if (handler != null) {
+                    for (int slot = 0; slot < handler.getSlots(); slot++) {
+                        ItemStack stack = handler.getStackInSlot(slot);
+                        if (!stack.isEmpty()) {
+                            items.add(stack.copy());
+                            handler.extractItem(slot, stack.getCount(), false);
+                        }
                     }
                 }
             }
             if (entity.fluidHandler() != null) {
                 IFluidHandler handler = entity.fluidHandler();
-                for (int tank = 0; tank < handler.getTanks(); tank++) {
-                    FluidStack held = handler.getFluidInTank(tank);
-                    if (held.isEmpty()) {
-                        continue;
-                    }
-                    FluidStack drained = handler.drain(held,
-                            IFluidHandler.FluidAction.EXECUTE);
-                    if (!drained.isEmpty()) {
-                        fluids.add(drained);
+                if (handler != null) {
+                    for (int tank = 0; tank < handler.getTanks(); tank++) {
+                        FluidStack held = handler.getFluidInTank(tank);
+                        if (held.isEmpty()) {
+                            continue;
+                        }
+                        FluidStack drained = handler.drain(held,
+                                IFluidHandler.FluidAction.EXECUTE);
+                        if (!drained.isEmpty()) {
+                            fluids.add(drained);
+                        }
                     }
                 }
             }
@@ -2808,6 +3161,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * refers to, and letting the cluster item do the packing means the machine does not have to
      * reimplement its capacity handling.</p>
      */
+    @SuppressWarnings("unused")
     private void giveToPlayer(@Nullable Player player, List<ItemStack> parts) {
         giveToPlayer(player, parts, List.of());
     }
@@ -2873,7 +3227,31 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      */
     @Override
     protected List<IMultiblockRecipeSource> getRecipeSources() {
-        return List.of(IMultiblockRecipeSource.multiblock(GTChemicalReactionRecipes.TYPE.get()));
+        return recipeTypes().stream()
+                .map(IMultiblockRecipeSource::multiblock)
+                .toList();
+    }
+
+    /**
+     * The recipe types this machine searches, in priority order.
+     *
+     * <p>A list rather than a single type because a machine may accept more than one set: the
+     * advanced kettle runs its own recipes <em>and</em> the basic kettle's, so that upgrading a
+     * build does not orphan every pattern the player already made.</p>
+     */
+    protected List<RecipeType<GTChemicalReactionRecipe>> recipeTypes() {
+        return List.of(GTChemicalReactionRecipes.TYPE.get());
+    }
+
+    /**
+     * The recipe type this machine reports to AMI.
+     *
+     * <p>AMI's recipe source takes one type, so this reports the first of {@link #recipeTypes()}.
+     * Deriving it rather than declaring it separately keeps the two from disagreeing about which
+     * set is "the" one.</p>
+     */
+    protected RecipeType<GTChemicalReactionRecipe> recipeType() {
+        return recipeTypes().getFirst();
     }
 
     @Override
@@ -2893,6 +3271,14 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // super already revalidated an assembled shape on this same interval and invalidated it if
         // a block went missing, so the rescan only matters while the machine is unformed.
         if (isFormed()) {
+            // An assembled machine still needs its plates kept current: a port swapped for another
+            // kind keeps the plate of the one it replaced until something asks again, and nothing
+            // else does while the shape holds.
+            if (--this.scanCountdown > 0) {
+                return;
+            }
+            this.scanCountdown = STRUCTURE_CHECK_INTERVAL_TICKS;
+            applyCasingToPorts();
             return;
         }
         if (--this.scanCountdown > 0) {
@@ -2973,9 +3359,6 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
 
         MultiblockStructure structure =
                 MultiblockStructure.of(this.level, this.worldPosition, pattern, match);
-        if (structure == null) {
-            return false;
-        }
 
         // The pattern alone is not enough. Its "x" cells accept the casing tag, which also holds the
         // ports, so a bare frame of ports would shape up without a single real casing — and the
@@ -3001,6 +3384,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         this.structure = structure;
         this.patternVersion = AMiBlockPatternReloadListener.INSTANCE.getVersion();
         this.structureCheckTick = getStructureCheckInterval();
+
+        // The ports' plates follow the machine they are set into, and that choice lives in their own
+        // block state. Written here, on the tick the shape first matches, so the wall is correct
+        // before the player looks at it.
+        applyCasingToPorts();
         setChanged();
         syncToClient();
 
@@ -3021,6 +3409,92 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /**
+     * Ports whose plate this machine has changed.
+     *
+     * <p>Remembered because the revert runs after the structure is gone: walking the pattern again
+     * at that moment would need a shape that no longer matches. Only ports this machine actually
+     * touched are listed, so a port the player built into another machine is never disturbed.</p>
+     */
+    private final Set<BlockPos> restyledPorts = new HashSet<>();
+
+    /**
+     * Stamps this machine's casing onto every port of the current shape.
+     *
+     * <p>The casing is written onto each port's block entity, which is where the renderer reads it:
+     * a block state's value set is closed, so it cannot name a casing from an open set, and the
+     * model asks the entity through its model data.</p>
+     *
+     * <p>The cells are walked from our own layout rather than AMI's port list, because that list
+     * holds only what AMI recognised as a port — a hopper or canister is a port by our rules and
+     * would otherwise be skipped.</p>
+     */
+    private void applyCasingToPorts() {
+        if (this.level == null || this.level.isClientSide || this.structure == null) {
+            return;
+        }
+        int casingIndex = GTMultiblockBlocks.casingIndex(casingBlock());
+
+        // Walked from our own layout rather than AMI's port list: that list holds only what AMI
+        // matched as a port, and a hopper or canister is a port by our rules, not by AMI's.
+        for (BlockPos pos : shapeCells()) {
+            BlockState portState = this.level.getBlockState(pos);
+            if (!(portState.getBlock() instanceof GTPortBlock)
+                    || !portState.hasProperty(GTPortBlock.CASING)) {
+                continue;
+            }
+            if (portState.getValue(GTPortBlock.CASING) == casingIndex) {
+                continue;
+            }
+            // The state carries it: the connected-texture hook that picks a face's sheet is given
+            // the state and nothing else.
+            this.level.setBlock(pos, portState.setValue(GTPortBlock.CASING, casingIndex),
+                    Block.UPDATE_ALL);
+            this.restyledPorts.add(pos.immutable());
+        }
+
+    }
+
+    /**
+     * Every position the current shape occupies.
+     *
+     * <p>Read from the layout and the host's own orientation, which is the same mapping the
+     * structure check and the projector use.</p>
+     */
+    private List<BlockPos> shapeCells() {
+        GTMultiblockPattern layout = GTMultiblockStructures.layout(getPatternId());
+        if (layout == null) {
+            return List.of();
+        }
+
+        BlockState state = getBlockState();
+        Direction facing = state.getValue(GTChemicalReactorMachineBlock.FACING);
+        int roll = state.getValue(GTChemicalReactorMachineBlock.ROLL);
+        boolean mirrored = state.getValue(GTChemicalReactorMachineBlock.MIRRORED);
+
+        Direction forwards = GTChemicalReactorOrientation.patternForwards(facing);
+        Direction up = GTChemicalReactorOrientation.up(facing, roll);
+
+        GTMultiblockPattern.Master master = layout.master();
+        BlockPos anchor = GTChemicalReactorOrientation.frontTopLeft(
+                this.worldPosition, forwards, up, mirrored,
+                master.column(),
+                layout.height() - 1 - master.layer(),
+                layout.depth() - 1 - master.row());
+
+        List<BlockPos> cells = new ArrayList<>();
+        for (int layer = 0; layer < layout.height(); layer++) {
+            for (int row = 0; row < layout.depth(); row++) {
+                for (int column = 0; column < layout.width(); column++) {
+                    cells.add(GTChemicalReactorOrientation.cell(
+                            anchor, forwards, up, mirrored,
+                            layout.height(), layout.depth(), column, layer, row));
+                }
+            }
+        }
+        return cells;
+    }
+
+    /**
      * Why the assembled shape is still not buildable, or {@code null} when it is.
      *
      * <p>Driven by the source layout rather than by the matched structure, because the two cells
@@ -3035,6 +3509,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      *       in a gap but never in a casing cell.</li>
      * </ul>
      */
+    @SuppressWarnings("unused")
     @Nullable
     private Component checkShapeMaterials(MultiblockStructure structure) {
         GTMultiblockPattern layout = GTMultiblockStructures.layout(getPatternId());
@@ -3081,7 +3556,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                         return Component.translatable(
                                 "message.goldentweaks.chemical_reactor.no_dynamo");
                     }
-                    if (here.is(GTMultiblockBlocks.SHELL_PE.get())) {
+                    if (here.is(casingBlock())) {
                         casings++;
                     }
                 }
@@ -3137,6 +3612,9 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // entities, and after this line there is no longer a list of them to walk. Skipping this
         // left every port of a dismantled machine permanently uneditable.
         setChannelsLocked(false);
+        // Same reason as the lock: the ports are still in the world and must go back to the plain
+        // plate, which needs the positions remembered while this machine still knows them.
+        clearCasingFromPorts();
         this.activeChannel = null;
         this.activeMode = null;
         this.selectedChannel = null;
@@ -3212,7 +3690,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+    protected void loadAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.loadAdditional(tag, registries);
         // A reloaded chunk should re-resolve its assembly state on the next tick rather than
         // wait out a fresh period.
@@ -3257,7 +3735,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+    protected void saveAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.saveAdditional(tag, registries);
         writeDisplayState(tag, registries);
         tag.put(TAG_CONTROLLER, this.controllerSlot.serializeNBT(registries));
@@ -3298,7 +3776,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * custom name has to be appended here or the client GUI would keep showing the default one.
      */
     @Override
-    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider registries) {
         CompoundTag tag = super.getUpdateTag(registries);
         writeDisplayState(tag, registries);
         tag.putBoolean(TAG_RUNNING, this.running);
@@ -3308,7 +3786,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    public void handleUpdateTag(CompoundTag tag, HolderLookup.Provider registries) {
+    public void handleUpdateTag(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.handleUpdateTag(tag, registries);
         readDisplayState(tag, registries);
         this.running = tag.getBoolean(TAG_RUNNING);
@@ -3350,17 +3828,17 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    public ItemStack getItem(int slot) {
+    public @NotNull ItemStack getItem(int slot) {
         return this.controllerSlot.getStackInSlot(0);
     }
 
     @Override
-    public void setItem(int slot, ItemStack stack) {
+    public void setItem(int slot, @NotNull ItemStack stack) {
         this.controllerSlot.setStackInSlot(0, stack);
     }
 
     @Override
-    public ItemStack removeItem(int slot, int amount) {
+    public @NotNull ItemStack removeItem(int slot, int amount) {
         ItemStack stack = this.controllerSlot.getStackInSlot(0);
         if (stack.isEmpty()) {
             return ItemStack.EMPTY;
@@ -3371,7 +3849,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    public ItemStack removeItemNoUpdate(int slot) {
+    public @NotNull ItemStack removeItemNoUpdate(int slot) {
         ItemStack stack = this.controllerSlot.getStackInSlot(0);
         this.controllerSlot.setStackInSlot(0, ItemStack.EMPTY);
         return stack;
@@ -3393,7 +3871,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     @Override
-    public boolean canPlaceItem(int slot, ItemStack stack) {
+    public boolean canPlaceItem(int slot, @NotNull ItemStack stack) {
         return true;
     }
 
@@ -3402,7 +3880,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * leaving it reachable would let any pipe drain the machine's own item.
      */
     @Override
-    public int[] getSlotsForFace(Direction side) {
+    public int @NotNull [] getSlotsForFace(@NotNull Direction side) {
         return new int[0];
     }
 

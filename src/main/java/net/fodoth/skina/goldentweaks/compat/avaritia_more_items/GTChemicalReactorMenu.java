@@ -8,9 +8,11 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -105,6 +107,30 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
         this(containerId, inventory, resolveContainer(inventory, pos), resolveTile(inventory, pos));
     }
 
+    /**
+     * Opens the window for a machine that is not the basic kettle.
+     *
+     * <p>The menu type is what the client uses to pick a screen class, so each machine's factory
+     * has to name its own. Resolving the tile happens the same way it does for the basic one.</p>
+     */
+    public static GTChemicalReactorMenu create(MenuType<?> type, int containerId,
+                                               Inventory inventory, BlockPos pos) {
+        return new GTChemicalReactorMenu(type, containerId, inventory,
+                resolveContainer(inventory, pos), resolveTile(inventory, pos));
+    }
+
+    /**
+     * The same, for a caller that already holds the tile.
+     *
+     * <p>{@code createMenu} is handed the entity, so looking it up by position again would be a
+     * redundant walk of the chunk.
+     */
+    public static GTChemicalReactorMenu create(MenuType<?> type, int containerId,
+                                               Inventory inventory,
+                                               GTChemicalReactorMachineBlockEntity tile) {
+        return new GTChemicalReactorMenu(type, containerId, inventory, tile, tile);
+    }
+
     /** Server side constructor, used by {@link GTChemicalReactorMachineBlockEntity#createMenu}. */
     public GTChemicalReactorMenu(int containerId, Inventory inventory, GTChemicalReactorMachineBlockEntity tile) {
         this(containerId, inventory, tile, tile);
@@ -112,7 +138,19 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
 
     private GTChemicalReactorMenu(int containerId, Inventory inventory, Container container,
                                   @Nullable GTChemicalReactorMachineBlockEntity tile) {
-        super(GTChemicalReactorMultiblock.MENU.get(), containerId);
+        this(GTChemicalReactorMultiblock.MENU.get(), containerId, inventory, container, tile);
+    }
+
+    /**
+     * The constructor a second machine uses.
+     *
+     * <p>The menu type is what tells the client which window class to open, so the advanced kettle
+     * has to pass its own; everything below is shared.</p>
+     */
+    protected GTChemicalReactorMenu(MenuType<?> type, int containerId, Inventory inventory,
+                                    Container container,
+                                    @Nullable GTChemicalReactorMachineBlockEntity tile) {
+        super(type, containerId);
         this.container = container;
         this.tile = tile;
 
@@ -240,7 +278,7 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public boolean clickMenuButton(Player player, int id) {
+    public boolean clickMenuButton(@NotNull Player player, int id) {
         if (this.tile == null) {
             return false;
         }
@@ -276,6 +314,7 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
 
     /** Mirrors the status line only; cheap enough to run every tick. */
     private void syncStatus() {
+        assert this.tile != null;
         this.data.set(DATA_STATUS, this.tile.getStatus().ordinal());
         this.data.set(DATA_PROGRESS, this.tile.getRecipeProgress());
         this.data.set(DATA_LENGTH, this.tile.getRecipeLength());
@@ -301,6 +340,7 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
      * the energy ports cap it. The side pane shows this one, because it is what the machine runs
      * at and what the cost is billed against.</p>
      */
+    @SuppressWarnings("unused")
     public int getOverclockSteps() {
         return this.tile == null ? 0 : this.tile.effectiveOverclock();
     }
@@ -363,9 +403,9 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
      * inventory and the hotbar.</p>
      */
     @Override
-    public ItemStack quickMoveStack(Player player, int index) {
+    public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
         Slot slot = this.slots.get(index);
-        if (slot == null || !slot.hasItem()) {
+        if (!slot.hasItem()) {
             return ItemStack.EMPTY;
         }
         ItemStack stack = slot.getItem();
@@ -396,16 +436,20 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public boolean stillValid(Player player) {
+    public boolean stillValid(@NotNull Player player) {
         if (this.tile != null) {
             // The dismantle button removes the host, and a removed block entity keeps its old
             // level and position, so these two checks are what close the screen over the air.
             if (this.tile.isRemoved()) {
                 return false;
             }
+            // The host block class, not one machine's id: both kettles share the class, so naming
+            // the basic id invalidated the advanced window on the tick it opened and vanilla shut
+            // it again. A dismantled host becomes air or casing, neither of that class, so the
+            // teardown case still closes the window.
             if (this.tile.getLevel() != null
-                    && !this.tile.getLevel().getBlockState(this.tile.getBlockPos())
-                            .is(GTChemicalReactorMultiblock.MACHINE.get())) {
+                    && !(this.tile.getLevel().getBlockState(this.tile.getBlockPos())
+                            .getBlock() instanceof GTChemicalReactorMachineBlock)) {
                 return false;
             }
         }
@@ -419,7 +463,7 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
         }
 
         @Override
-        public boolean mayPlace(ItemStack stack) {
+        public boolean mayPlace(@NotNull ItemStack stack) {
             return this.container.canPlaceItem(this.getSlotIndex(), stack);
         }
 

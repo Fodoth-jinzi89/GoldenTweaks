@@ -4,11 +4,9 @@ import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.builder.IRecipeSlotBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
-import mezz.jei.api.gui.placement.IPlaceable;
 import mezz.jei.api.gui.widgets.IRecipeExtrasBuilder;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.ingredients.IIngredientType;
-import mezz.jei.api.neoforge.NeoForgeTypes;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
@@ -25,6 +23,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.fml.ModList;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -47,28 +46,51 @@ public class GTChemicalReactionJeiCategory implements IRecipeCategory<GTChemical
     private static final String MEKANISM = "mekanism";
     private static final String AE2 = "ae2";
 
-    public static final RecipeType<GTChemicalReactionRecipe> TYPE = new RecipeType<>(
-            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, GTChemicalReactionRecipe.ID),
-            GTChemicalReactionRecipe.class);
+    /** The basic kettle's category. */
+    public static final RecipeType<GTChemicalReactionRecipe> TYPE = type("chemical_reaction");
+
+    /** The advanced kettle's category: same panel, entered separately. */
+    public static final RecipeType<GTChemicalReactionRecipe> ADVANCED_TYPE =
+            type("advanced_chemical_reaction");
+
+    private static RecipeType<GTChemicalReactionRecipe> type(String path) {
+        return new RecipeType<>(
+                ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, path),
+                GTChemicalReactionRecipe.class);
+    }
 
     /** One arrow cycle per craft, but never so short that it reads as static. */
     private static final int MIN_ARROW_TICKS = 10;
 
     private final IDrawable icon;
+    private final RecipeType<GTChemicalReactionRecipe> type;
+    private final String titleKey;
 
     public GTChemicalReactionJeiCategory(IGuiHelper guiHelper) {
-        this.icon = guiHelper.createDrawableItemStack(
+        this(guiHelper, TYPE, "chemical_reaction",
                 new ItemStack(GTChemicalReactorMultiblock.MACHINE_ITEM.get()));
     }
 
-    @Override
-    public RecipeType<GTChemicalReactionRecipe> getRecipeType() {
-        return TYPE;
+    /**
+     * @param type     the category this instance answers for
+     * @param titleKey path under {@code emi.category.goldentweaks.} naming it
+     * @param icon     the machine this set belongs to
+     */
+    public GTChemicalReactionJeiCategory(IGuiHelper guiHelper, RecipeType<GTChemicalReactionRecipe> type,
+                                         String titleKey, ItemStack icon) {
+        this.icon = guiHelper.createDrawableItemStack(icon);
+        this.type = type;
+        this.titleKey = "emi.category.goldentweaks." + titleKey;
     }
 
     @Override
-    public Component getTitle() {
-        return Component.translatable("emi.category.goldentweaks.chemical_reaction");
+    public @NotNull RecipeType<GTChemicalReactionRecipe> getRecipeType() {
+        return this.type;
+    }
+
+    @Override
+    public @NotNull Component getTitle() {
+        return Component.translatable(this.titleKey);
     }
 
     @Override
@@ -93,7 +115,7 @@ public class GTChemicalReactionJeiCategory implements IRecipeCategory<GTChemical
      * decides where each page's slots go, so placing them here as well would fight it.</p>
      */
     @Override
-    public void setRecipe(IRecipeLayoutBuilder builder, GTChemicalReactionRecipe recipe, IFocusGroup focuses) {
+    public void setRecipe(@NotNull IRecipeLayoutBuilder builder, GTChemicalReactionRecipe recipe, @NotNull IFocusGroup focuses) {
         for (GTReactionStack stack : recipe.inputs()) {
             addStack(builder.addSlot(RecipeIngredientRole.INPUT), stack);
         }
@@ -173,7 +195,7 @@ public class GTChemicalReactionJeiCategory implements IRecipeCategory<GTChemical
      */
     @Override
     public void createRecipeExtras(IRecipeExtrasBuilder builder, GTChemicalReactionRecipe recipe,
-                                   IFocusGroup focuses) {
+                                   @NotNull IFocusGroup focuses) {
         List<mezz.jei.api.gui.ingredient.IRecipeSlotDrawable> inputs =
                 builder.getRecipeSlots().getSlots(RecipeIngredientRole.INPUT);
         List<mezz.jei.api.gui.ingredient.IRecipeSlotDrawable> outputs =
@@ -225,7 +247,7 @@ public class GTChemicalReactionJeiCategory implements IRecipeCategory<GTChemical
             }
 
             @Override
-            public void draw(GuiGraphics graphics, int xOffset, int yOffset) {
+            public void draw(@NotNull GuiGraphics graphics, int xOffset, int yOffset) {
                 int right = xOffset + GTChemicalReactionLayout.GRID_WIDTH;
                 int bottom = yOffset + GTChemicalReactionLayout.GRID_HEIGHT;
 
@@ -254,7 +276,7 @@ public class GTChemicalReactionJeiCategory implements IRecipeCategory<GTChemical
     }
 
     @Override
-    public void draw(GTChemicalReactionRecipe recipe, IRecipeSlotsView slotsView, GuiGraphics graphics,
+    public void draw(@NotNull GTChemicalReactionRecipe recipe, @NotNull IRecipeSlotsView slotsView, @NotNull GuiGraphics graphics,
                      double mouseX, double mouseY) {
         // Everything is drawn by the extras above; nothing to paint over the slots.
     }

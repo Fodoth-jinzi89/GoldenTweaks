@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.compat.avaritia_more_items;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.neoforged.bus.api.IEventBus;
@@ -23,16 +24,17 @@ public final class GTChemicalReactionRecipes {
     public static final DeferredRegister<RecipeType<?>> TYPES =
             DeferredRegister.create(Registries.RECIPE_TYPE, GoldenTweaks.MODID);
 
-    public static final DeferredHolder<RecipeSerializer<?>,
-            GTChemicalReactionRecipe.Serializer> SERIALIZER =
-            SERIALIZERS.register(GTChemicalReactionRecipe.ID,
-                    GTChemicalReactionRecipe.Serializer::new);
-
     public static final DeferredHolder<RecipeType<?>, RecipeType<GTChemicalReactionRecipe>> TYPE =
             TYPES.register(GTChemicalReactionRecipe.ID,
                     () -> RecipeType.simple(
-                            net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(
+                            ResourceLocation.fromNamespaceAndPath(
                                     GoldenTweaks.MODID, GTChemicalReactionRecipe.ID)));
+
+    // Declared after TYPE: the serializer names it, and a field initialiser may not forward-reference.
+    public static final DeferredHolder<RecipeSerializer<?>,
+            GTChemicalReactionRecipe.Serializer> SERIALIZER =
+            SERIALIZERS.register(GTChemicalReactionRecipe.ID,
+                    () -> new GTChemicalReactionRecipe.Serializer(TYPE.get()));
 
     private GTChemicalReactionRecipes() {
     }

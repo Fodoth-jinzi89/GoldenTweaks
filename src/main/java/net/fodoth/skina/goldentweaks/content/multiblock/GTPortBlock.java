@@ -4,7 +4,6 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
@@ -25,10 +24,14 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.MultiblockPortTier;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.PortMode;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Objects;
 
 /**
  * A port of this mod's own multiblock, replacing AMI's port blocks.
@@ -42,9 +45,20 @@ import org.jetbrains.annotations.Nullable;
  * <p>Only the front face is usable. The port is embedded in a wall, so its other five faces are
  * buried; the capability is therefore exposed on the facing side alone.</p>
  */
-public class GTPortBlock extends BaseEntityBlock {
+public class GTPortBlock extends BaseEntityBlock implements GTCasingProvider {
 
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
+
+    /**
+     * Which casing this port's plate is drawn with, as an index into
+     * {@link GTMultiblockBlocks#CASINGS}.
+     *
+     * <p>In the state because the connected-texture hook that picks a face's sheet is given the state
+     * and nothing else. The bound is the list's size, which is why adding a casing is an edit to that
+     * list rather than to anything here.</p>
+     */
+    public static final IntegerProperty CASING = IntegerProperty.create("casing",
+            0, GTMultiblockBlocks.CASINGS.size() - 1);
 
     private final GTPortKind kind;
     private final PortMode mode;
@@ -67,7 +81,9 @@ public class GTPortBlock extends BaseEntityBlock {
         // registered block, not part of the serialized state, so a reflective codec cannot rebuild
         // them.
         this.codec = simpleCodec(propertiesIn -> new GTPortBlock(propertiesIn, kind, mode, tier));
-        registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH));
+        registerDefaultState(stateDefinition.any()
+                .setValue(FACING, Direction.NORTH)
+                .setValue(CASING, 0));
     }
 
     public GTPortKind kind() {
@@ -83,18 +99,31 @@ public class GTPortBlock extends BaseEntityBlock {
         return this.tier;
     }
 
+    /** The casing block a state's plate is drawn with. */
+    public static Block casingOf(BlockState state) {
+        return state.hasProperty(CASING)
+                ? GTMultiblockBlocks.casingAt(state.getValue(CASING))
+                : GTMultiblockBlocks.casingAt(0);
+    }
+
     @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
+    public Block gtCasing(BlockState state) {
+        return casingOf(state);
+    }
+
+
+    @Override
+    protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
         return this.codec;
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, CASING);
     }
 
     @Override
-    protected RenderShape getRenderShape(BlockState state) {
+    protected @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         // The model draws the shell, icon and ring; no block entity renderer is involved.
         return RenderShape.MODEL;
     }
@@ -114,8 +143,8 @@ public class GTPortBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(
-            Level level, BlockState state, BlockEntityType<T> type) {
-        if (level.isClientSide || type != GTMultiblockBlocks.PORT_ENTITY.get()) {
+            Level level, @NotNull BlockState state, @NotNull BlockEntityType<T> type) {
+        if (level.isClientSide || type != Objects.requireNonNull(GTMultiblockBlocks.PORT_ENTITY).get()) {
             return null;
         }
         return (tickingLevel, pos, tickingState, blockEntity) -> {
@@ -132,12 +161,12 @@ public class GTPortBlock extends BaseEntityBlock {
     }
 
     @Override
-    protected BlockState rotate(BlockState state, Rotation rotation) {
+    protected @NotNull BlockState rotate(BlockState state, Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
     }
 
     @Override
-    protected BlockState mirror(BlockState state, Mirror mirror) {
+    protected @NotNull BlockState mirror(BlockState state, Mirror mirror) {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
@@ -149,8 +178,8 @@ public class GTPortBlock extends BaseEntityBlock {
      * on both sides so the arm swing looks the same.</p>
      */
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
-                                               Player player, BlockHitResult hit) {
+    protected @NotNull InteractionResult useWithoutItem(@NotNull BlockState state, Level level, @NotNull BlockPos pos,
+                                                        @NotNull Player player, @NotNull BlockHitResult hit) {
         if (!level.isClientSide
                 && level.getBlockEntity(pos) instanceof GTPortBlockEntity port
                 && player instanceof ServerPlayer serverPlayer) {
@@ -161,7 +190,7 @@ public class GTPortBlock extends BaseEntityBlock {
                 buffer.writeBlockPos(pos);
                 buffer.writeEnum(port.kind());
                 buffer.writeVarInt(port.itemHandler() == null
-                        ? 0 : port.itemHandler().getSlots());
+                        ? 0 : Objects.requireNonNull(port.itemHandler()).getSlots());
             });
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
@@ -180,7 +209,7 @@ public class GTPortBlock extends BaseEntityBlock {
      * broken hatch comes back as the hatch alone, since charge has no item to travel in.</p>
      */
     @Override
-    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState,
+    public void onRemove(BlockState state, @NotNull Level level, @NotNull BlockPos pos, BlockState newState,
                          boolean movedByPiston) {
         if (!state.is(newState.getBlock())
                 && level.getBlockEntity(pos) instanceof GTPortBlockEntity port) {
@@ -201,8 +230,8 @@ public class GTPortBlock extends BaseEntityBlock {
      * own defaults when it is placed again.</p>
      */
     @Override
-    public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state,
-                              @Nullable BlockEntity blockEntity, ItemStack tool) {
+    public void playerDestroy(Level level, @NotNull Player player, @NotNull BlockPos pos, @NotNull BlockState state,
+                              @Nullable BlockEntity blockEntity, @NotNull ItemStack tool) {
         if (!level.isClientSide
                 && blockEntity instanceof GTPortBlockEntity port
                 && port.getCustomName() != null) {
@@ -215,8 +244,8 @@ public class GTPortBlock extends BaseEntityBlock {
     }
 
     @Override
-    public void setPlacedBy(Level level, BlockPos pos, BlockState state,
-                            @Nullable LivingEntity placer, ItemStack stack) {
+    public void setPlacedBy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state,
+                            @Nullable LivingEntity placer, @NotNull ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
         // Carry the name over from the item, so a port picked up under a custom name comes back
         // with it. The block's own default is used when the item has none.

@@ -5,8 +5,11 @@ import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.Bounds;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactionRecipes;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipe;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipes;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.client.GTAdvancedChemicalReactorScreen;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.client.GTChemicalReactorScreen;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
 import net.minecraft.client.Minecraft;
@@ -33,27 +36,48 @@ public final class GTChemicalReactionEmiPlugin implements EmiPlugin {
             return;
         }
 
+        @Nullable HolderLookup.Provider registries = registries();
+
         registry.addCategory(GTChemicalReactionEmiRecipe.CATEGORY);
+        // The advanced kettle accepts the basic recipe set as well, so it is a valid machine for
+        // this page — a player reading a basic reaction should see both.
         registry.addWorkstation(GTChemicalReactionEmiRecipe.CATEGORY,
                 EmiStack.of(new ItemStack(GTChemicalReactorMultiblock.MACHINE_ITEM.get())));
-
-        @Nullable HolderLookup.Provider registries = registries();
+        registry.addWorkstation(GTChemicalReactionEmiRecipe.CATEGORY,
+                EmiStack.of(new ItemStack(GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get())));
         registry.getRecipeManager()
                 .getAllRecipesFor(GTChemicalReactionRecipes.TYPE.get())
-                .forEach(holder -> registry.addRecipe(toEmiRecipe(holder, registries)));
+                .forEach(holder -> registry.addRecipe(
+                        new GTChemicalReactionEmiRecipe(holder.id(), holder.value(), registries)));
+
+        // The advanced kettle has its own entry: same panel, but filing its recipes under the basic
+        // one would suggest the basic machine can run them.
+        registry.addCategory(GTChemicalReactionEmiRecipe.ADVANCED_CATEGORY);
+        registry.addWorkstation(GTChemicalReactionEmiRecipe.ADVANCED_CATEGORY,
+                EmiStack.of(new ItemStack(GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get())));
+        registry.getRecipeManager()
+                .getAllRecipesFor(GTAdvancedChemicalReactionRecipes.TYPE.get())
+                .forEach(holder -> registry.addRecipe(new GTChemicalReactionEmiRecipe(
+                        holder.id(), holder.value(), registries,
+                        GTChemicalReactionEmiRecipe.ADVANCED_CATEGORY)));
 
         // EMI places its own panels around whatever space a screen announces. The kettle draws a
         // side pane outside its main panel, so without this it lays the recipe list straight over
         // that pane — in both its collapsed and expanded sizes.
+        //
+        // Registered for both screens: EMI matches providers by exact class, so registering only the
+        // base would leave the advanced window with no bounds and its sidebar overlapped.
         registry.addScreenBoundsProvider(GTChemicalReactorScreen.class,
-                screen -> new Bounds(screen.panelLeft(), screen.panelTop(),
-                        screen.sidebarRight() - screen.panelLeft(),
-                        screen.sidebarBottom() - screen.panelTop()));
+                GTChemicalReactionEmiPlugin::kettleBounds);
+        registry.addScreenBoundsProvider(GTAdvancedChemicalReactorScreen.class,
+                GTChemicalReactionEmiPlugin::kettleBounds);
     }
 
-    private static GTChemicalReactionEmiRecipe toEmiRecipe(
-            RecipeHolder<GTChemicalReactionRecipe> holder, @Nullable HolderLookup.Provider registries) {
-        return new GTChemicalReactionEmiRecipe(holder.id(), holder.value(), registries);
+    /** The area the kettle's window occupies, side pane included. */
+    private static Bounds kettleBounds(GTChemicalReactorScreen screen) {
+        return new Bounds(screen.panelLeft(), screen.panelTop(),
+                screen.sidebarRight() - screen.panelLeft(),
+                screen.sidebarBottom() - screen.panelTop());
     }
 
     /**

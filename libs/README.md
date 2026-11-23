@@ -259,7 +259,7 @@
 | thaumcraftcelestial | `1.0.0-port.24` | `thaumcraftcelestial-1.0.0-port.24.jar` |
 | thaumic_tinkerer | `1.0.0-port.65` | `thaumic_tinkerer-1.0.0-port.65.jar` |
 | thaumicbases | `2.1.189.32-port.21` | `thaumicbases-2.1.189.32-port.21.jar` |
-| ThaumicEnergistics | `1.21.1-neoforge-2.6.4-alpha` | `ThaumicEnergistics-1.21.1-neoforge-2.6.4-alpha.jar` |
+| ThaumicEnergistics | `1.21.1-neoforge-2.6.9-alpha` | `ThaumicEnergistics-1.21.1-neoforge-2.6.9-alpha.jar` |
 | thaumichorizons | `1.21.1-0.1.0-scex-dev.43` | `thaumichorizons-1.21.1-0.1.0-scex-dev.43.jar` |
 | toomanyrecipeviewers | `0.9.0+mc.21.1` | `toomanyrecipeviewers-0.9.0+mc.21.1.jar` |
 | worldedit-mod | `7.3.8` | `[基础]worldedit-mod-7.3.8.jar` |

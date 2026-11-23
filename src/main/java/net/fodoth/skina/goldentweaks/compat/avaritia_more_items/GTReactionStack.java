@@ -15,6 +15,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -43,12 +44,20 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
         ITEM,
         FLUID,
         CHEMICAL,
+        /**
+         * Thaumcraft essentia.
+         *
+         * <p>Appended rather than inserted: the ordinal is what the wire codec writes, so
+         * reordering would make a client on the old build misread every entry.</p>
+         */
+        ESSENTIA,
         AE
     }
 
     private static final String FIELD_ITEM = "item";
     private static final String FIELD_FLUID = "fluid";
     private static final String FIELD_CHEMICAL = "chemical";
+    private static final String FIELD_ESSENTIA = "essentia";
     private static final String FIELD_AE = "ae";
     private static final String FIELD_COUNT = "count";
     private static final String FIELD_AMOUNT = "amount";
@@ -69,7 +78,8 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
 
         @Override
         public <T> Stream<T> keys(DynamicOps<T> ops) {
-            return Stream.of(FIELD_ITEM, FIELD_FLUID, FIELD_CHEMICAL, FIELD_AE).map(ops::createString);
+            return Stream.of(FIELD_ITEM, FIELD_FLUID, FIELD_CHEMICAL, FIELD_ESSENTIA, FIELD_AE)
+                    .map(ops::createString);
         }
 
         @Override
@@ -83,11 +93,14 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
             if (input.get(FIELD_CHEMICAL) != null) {
                 return decodeSimple(ops, input.get(FIELD_CHEMICAL), input, Kind.CHEMICAL);
             }
+            if (input.get(FIELD_ESSENTIA) != null) {
+                return decodeSimple(ops, input.get(FIELD_ESSENTIA), input, Kind.ESSENTIA);
+            }
             if (input.get(FIELD_AE) != null) {
                 return decodeAe(ops, input.get(FIELD_AE));
             }
-            return DataResult.error(() -> "reaction stack needs one of "
-                    + FIELD_ITEM + "/" + FIELD_FLUID + "/" + FIELD_CHEMICAL + "/" + FIELD_AE);
+            return DataResult.error(() -> "reaction stack needs one of " + FIELD_ITEM + "/"
+                    + FIELD_FLUID + "/" + FIELD_CHEMICAL + "/" + FIELD_ESSENTIA + "/" + FIELD_AE);
         }
 
         private <T> DataResult<GTReactionStack> decodeSimple(
@@ -106,16 +119,15 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
 
         private <T> DataResult<GTReactionStack> decodeAe(DynamicOps<T> ops, T element) {
             DataResult<CompoundTag> object = CompoundTag.CODEC.parse(ops, element);
-            DataResult<GTReactionStack> result = object.flatMap(tag -> {
-                if (!tag.contains(FIELD_KEY)) {
+            return object.flatMap(tag1 -> {
+                if (!tag1.contains(FIELD_KEY)) {
                     return DataResult.error(() -> FIELD_AE + " needs a " + FIELD_KEY + " tag");
                 }
 
-                long size = tag.contains(FIELD_AMOUNT) ? tag.getLong(FIELD_AMOUNT) : 1L;
+                long size = tag1.contains(FIELD_AMOUNT) ? tag1.getLong(FIELD_AMOUNT) : 1L;
                 return DataResult.success(new GTReactionStack(
-                        Kind.AE, AE_PLACEHOLDER_ID, Math.max(1L, size), Optional.of(tag.getCompound(FIELD_KEY))));
+                        Kind.AE, AE_PLACEHOLDER_ID, Math.max(1L, size), Optional.of(tag1.getCompound(FIELD_KEY))));
             });
-            return result;
         }
 
         @Override
@@ -131,6 +143,10 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
                 }
                 case CHEMICAL -> {
                     prefix.add(FIELD_CHEMICAL, ResourceLocation.CODEC.encodeStart(ops, stack.id()));
+                    prefix.add(FIELD_AMOUNT, Codec.LONG.encodeStart(ops, stack.amount()));
+                }
+                case ESSENTIA -> {
+                    prefix.add(FIELD_ESSENTIA, ResourceLocation.CODEC.encodeStart(ops, stack.id()));
                     prefix.add(FIELD_AMOUNT, Codec.LONG.encodeStart(ops, stack.amount()));
                 }
                 case AE -> {
@@ -160,7 +176,7 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
     public static final StreamCodec<FriendlyByteBuf, GTReactionStack> STREAM_CODEC =
             new StreamCodec<>() {
                 @Override
-                public GTReactionStack decode(FriendlyByteBuf buffer) {
+                public @NotNull GTReactionStack decode(FriendlyByteBuf buffer) {
                     Kind kind = buffer.readEnum(Kind.class);
                     ResourceLocation id = buffer.readResourceLocation();
                     long amount = buffer.readVarLong();
@@ -190,8 +206,24 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
         if (this.kind != Kind.ITEM) {
             return null;
         }
-        ResourceLocation key = this.id;
-        return BuiltInRegistries.ITEM.getOptional(key).orElse(null);
+        return BuiltInRegistries.ITEM.getOptional(this.id).orElse(null);
+    }
+
+    /**
+     * The essentia tag this stack names, e.g. {@code aer}, or {@code null} for the other kinds.
+     *
+     * <p>Stored in the id field as a path with no namespace: essentia is not a registry entry, and
+     * a bare tag is the only name Thaumcraft has for it.</p>
+     */
+    public String essentiaTag() {
+        return this.kind == Kind.ESSENTIA ? this.id.getPath() : null;
+    }
+
+    /** Builds an essentia entry from a Thaumcraft aspect tag. */
+    public static GTReactionStack essentia(String tag, int amount) {
+        return new GTReactionStack(Kind.ESSENTIA,
+                ResourceLocation.fromNamespaceAndPath("thaumcraft", tag),
+                amount, Optional.empty());
     }
 
     /** The fluid this stack names, or {@code null} when it is another kind or the id is unknown. */
@@ -199,8 +231,7 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
         if (this.kind != Kind.FLUID) {
             return null;
         }
-        ResourceLocation key = this.id;
-        return BuiltInRegistries.FLUID.getOptional(key).orElse(null);
+        return BuiltInRegistries.FLUID.getOptional(this.id).orElse(null);
     }
 
     /** Expands an item stack, or {@code ItemStack.EMPTY} for the other kinds. */

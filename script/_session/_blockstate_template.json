@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "casing=0,facing=north": { "model": "goldentweaks:block/multiblock/gt_port_item_input_lv" }
+  }
+}

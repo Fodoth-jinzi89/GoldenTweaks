@@ -7,6 +7,7 @@ import net.minecraft.nbt.Tag;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -117,7 +118,7 @@ public class GTPortFluidStorage implements IFluidHandler {
     }
 
     @Override
-    public FluidStack getFluidInTank(int tank) {
+    public @NotNull FluidStack getFluidInTank(int tank) {
         return this.tanks[tank].getFluid();
     }
 
@@ -127,12 +128,12 @@ public class GTPortFluidStorage implements IFluidHandler {
     }
 
     @Override
-    public boolean isFluidValid(int tank, FluidStack stack) {
+    public boolean isFluidValid(int tank, @NotNull FluidStack stack) {
         return this.tanks[tank].isFluidValid(stack);
     }
 
     @Override
-    public int fill(FluidStack resource, FluidAction action) {
+    public int fill(FluidStack resource, @NotNull FluidAction action) {
         if (resource.isEmpty()) {
             return 0;
         }
@@ -158,7 +159,7 @@ public class GTPortFluidStorage implements IFluidHandler {
     }
 
     @Override
-    public FluidStack drain(FluidStack resource, FluidAction action) {
+    public @NotNull FluidStack drain(FluidStack resource, @NotNull FluidAction action) {
         if (resource.isEmpty()) {
             return FluidStack.EMPTY;
         }
@@ -171,7 +172,7 @@ public class GTPortFluidStorage implements IFluidHandler {
     }
 
     @Override
-    public FluidStack drain(int maxDrain, FluidAction action) {
+    public @NotNull FluidStack drain(int maxDrain, @NotNull FluidAction action) {
         for (FluidTank tank : this.tanks) {
             if (!tank.isEmpty()) {
                 return tank.drain(maxDrain, action);

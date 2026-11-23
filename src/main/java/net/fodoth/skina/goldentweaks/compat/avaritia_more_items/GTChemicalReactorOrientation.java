@@ -68,6 +68,7 @@ public final class GTChemicalReactorOrientation {
     }
 
     /** Whether {@code up} is a legal front-face up direction for {@code facing}. */
+    @SuppressWarnings("unused")
     public static boolean isValidUp(Direction facing, Direction up) {
         return up.getAxis() != facing.getAxis();
     }

@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.content.multiblock;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -8,7 +9,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.locale.Language;
 import net.minecraft.world.Container;
+import net.neoforged.neoforge.client.model.data.ModelData;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
@@ -33,13 +36,16 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import net.weibai.avaritia_more_items.common.items.matter_cluster.BetterMatterClusterItem;
 import net.weibai.avaritia_more_items.common.items.matter_cluster.FluidMatterClusterItem;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.MultiblockPortTier;
-import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.MultiblockPortTypes;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.PortMode;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 /**
  * Storage behind one of this mod's own ports.
@@ -60,6 +66,7 @@ public class GTPortBlockEntity extends BlockEntity
     private static final String TAG_CONTENT = "Content";
     private static final String TAG_MODE = "Mode";
     private static final String TAG_CHANNEL = "Channel";
+
     private static final String TAG_PRIORITY = "Priority";
     private static final String TAG_ENABLED = "Enabled";
     /** Stacking mode: one cell per entry, or as many as it needs. */
@@ -154,6 +161,21 @@ public class GTPortBlockEntity extends BlockEntity
      */
     private boolean channelLocked;
 
+    /**
+     * The chemical storage for a hopper, or {@code null} for any other kind.
+     *
+     * <p>Typed as {@code Object} on purpose: the concrete class names {@code ChemicalStack}, so a
+     * field of that type would have to be resolved whenever this entity loads — and it loads on
+     * every world, including ones without Mekanism. {@link GTPortStorages} narrows it back when the
+     * mod is known to be there.</p>
+     */
+    @Nullable
+    private Object chemicals;
+
+    /** The essentia storage for a tank, or {@code null} for any other kind. Same reasoning. */
+    @Nullable
+    private Object essentia;
+
     /** The tool and filter slots in the lower right, one item each. */
     private final ItemStackHandler toolSlot = new ItemStackHandler(1) {
         @Override
@@ -175,7 +197,7 @@ public class GTPortBlockEntity extends BlockEntity
     private int builtTier = -1;
 
     public GTPortBlockEntity(BlockPos pos, BlockState state) {
-        this(GTMultiblockBlocks.PORT_ENTITY.get(), pos, state);
+        this(Objects.requireNonNull(GTMultiblockBlocks.PORT_ENTITY).get(), pos, state);
     }
 
     public GTPortBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
@@ -252,7 +274,7 @@ public class GTPortBlockEntity extends BlockEntity
                 // tier IX bus holds 81 stacks of up to 576 rather than 9 of 64.
                 int slots = portTier().itemSlots();
                 int limit = portTier().slotLimit();
-                ItemStackHandler replacement = new ItemStackHandler(slots) {
+                this.items = new ItemStackHandler(slots) {
                     /** One cell's worth. The mode changes how many cells a type may spread across,
                      * never how much a single cell holds. */
                     @Override
@@ -270,7 +292,7 @@ public class GTPortBlockEntity extends BlockEntity
                      * and pay no attention to it, and this is the same kind of buffer.</p>
                      */
                     @Override
-                    protected int getStackLimit(int slot, ItemStack stack) {
+                    protected int getStackLimit(int slot, @NotNull ItemStack stack) {
                         return limit;
                     }
 
@@ -283,7 +305,7 @@ public class GTPortBlockEntity extends BlockEntity
                      * less than it was given. The cell's own ceiling is the only limit here.</p>
                      */
                     @Override
-                    public ItemStack extractItem(int slot, int amount, boolean simulate) {
+                    public @NotNull ItemStack extractItem(int slot, int amount, boolean simulate) {
                         if (amount <= 0) {
                             return ItemStack.EMPTY;
                         }
@@ -308,7 +330,7 @@ public class GTPortBlockEntity extends BlockEntity
                      * a cell hold more than a vanilla inventory ever could, and survive the trip.</p>
                      */
                     @Override
-                    public CompoundTag serializeNBT(HolderLookup.Provider registries) {
+                    public @NotNull CompoundTag serializeNBT(HolderLookup.@NotNull Provider registries) {
                         CompoundTag tag = new CompoundTag();
                         ListTag list = new ListTag();
                         for (int slot = 0; slot < getSlots(); slot++) {
@@ -327,7 +349,7 @@ public class GTPortBlockEntity extends BlockEntity
                     }
 
                     @Override
-                    public void deserializeNBT(HolderLookup.Provider registries, CompoundTag tag) {
+                    public void deserializeNBT(HolderLookup.@NotNull Provider registries, @NotNull CompoundTag tag) {
                         for (int slot = 0; slot < getSlots(); slot++) {
                             setStackInSlot(slot, ItemStack.EMPTY);
                         }
@@ -358,7 +380,7 @@ public class GTPortBlockEntity extends BlockEntity
                      * more.</p>
                      */
                     @Override
-                    public ItemStack insertItem(int slot, ItemStack stack, boolean simulate) {
+                    public @NotNull ItemStack insertItem(int slot, @NotNull ItemStack stack, boolean simulate) {
                         if (singleCell && !stack.isEmpty() && holdsTypeElsewhere(slot, stack)) {
                             return stack;
                         }
@@ -370,9 +392,10 @@ public class GTPortBlockEntity extends BlockEntity
                         GTPortBlockEntity.this.onContentChanged();
                     }
                 };
-                this.items = replacement;
                 this.fluids = null;
                 this.energy = null;
+                this.chemicals = null;
+                this.essentia = null;
             }
             case FLUID -> {
                 // One tank per level, each holding 8000 mB per level. Ours rather than AMI's,
@@ -387,17 +410,40 @@ public class GTPortBlockEntity extends BlockEntity
                 this.fluids = replacement;
                 this.items = null;
                 this.energy = null;
+                this.chemicals = null;
+                this.essentia = null;
+            }
+            case CHEMICAL -> {
+                this.items = null;
+                this.fluids = null;
+                this.energy = null;
+                this.chemicals = GTPortStorages.createChemical(
+                        portTier().chemicalTanks(), portTier().chemicalTankCapacity(),
+                        this::isSingleCellMode, this::onContentChanged);
+                this.essentia = null;
+            }
+            case ESSENTIA -> {
+                this.items = null;
+                this.fluids = null;
+                this.energy = null;
+                this.chemicals = null;
+                this.essentia = GTPortStorages.createEssentia(
+                        portTier().essentiaTanks(), portTier().essentiaTankCapacity(),
+                        this::isSingleCellMode, this::isActive,
+                        () -> mode() == PortMode.OUTPUT, this::onContentChanged);
             }
             case ENERGY -> {
                 // A dynamo hatch supplies and stores half what an energy hatch of the same tier
                 // does; the block's own mode is what decides which of the two this port is.
                 boolean output = mode() == PortMode.OUTPUT;
-                int capacity = output
-                        ? GTPortEnergyTiers.outputCapacity(tier())
-                        : GTPortEnergyTiers.capacity(tier());
-                int transfer = output
-                        ? GTPortEnergyTiers.outputTransfer(tier())
-                        : GTPortEnergyTiers.transfer(tier());
+                // Long, not int: the top tiers hold more than an int can express, and clamping on
+                // the way in is the ceiling this was meant to lift.
+                BigInteger capacity = output
+                        ? GTPortEnergyTiers.outputCapacityExact(portTier().level())
+                        : GTPortEnergyTiers.capacityExact(portTier().level());
+                BigInteger transfer = output
+                        ? GTPortEnergyTiers.outputTransferExact(portTier().level())
+                        : GTPortEnergyTiers.transferExact(portTier().level());
                 // Insertion is capped at the transfer rate, extraction is not. The machine draws a
                 // whole tick's cost in one call and reads a shortfall as "no power", so a symmetric
                 // cap would switch it off whenever a recipe cost more than the port's transfer rate.
@@ -406,6 +452,8 @@ public class GTPortBlockEntity extends BlockEntity
                 this.energy = replacement;
                 this.items = null;
                 this.fluids = null;
+                this.chemicals = null;
+                this.essentia = null;
             }
         }
     }
@@ -446,7 +494,7 @@ public class GTPortBlockEntity extends BlockEntity
     }
 
     @Override
-    public ItemStack getItem(int slot) {
+    public @NotNull ItemStack getItem(int slot) {
         if (this.items != null) {
             return slot < this.items.getSlots() ? this.items.getStackInSlot(slot) : ItemStack.EMPTY;
         }
@@ -455,14 +503,14 @@ public class GTPortBlockEntity extends BlockEntity
     }
 
     @Override
-    public void setItem(int slot, ItemStack stack) {
+    public void setItem(int slot, @NotNull ItemStack stack) {
         if (this.items != null && slot < this.items.getSlots()) {
             this.items.insertItem(slot, stack, false);
         }
     }
 
     @Override
-    public ItemStack removeItem(int slot, int amount) {
+    public @NotNull ItemStack removeItem(int slot, int amount) {
         if (this.items == null || slot >= this.items.getSlots()) {
             return ItemStack.EMPTY;
         }
@@ -470,7 +518,7 @@ public class GTPortBlockEntity extends BlockEntity
     }
 
     @Override
-    public ItemStack removeItemNoUpdate(int slot) {
+    public @NotNull ItemStack removeItemNoUpdate(int slot) {
         return removeItem(slot, Integer.MAX_VALUE);
     }
 
@@ -496,7 +544,7 @@ public class GTPortBlockEntity extends BlockEntity
     }
 
     @Override
-    public boolean stillValid(Player player) {
+    public boolean stillValid(@NotNull Player player) {
         return true;
     }
 
@@ -585,9 +633,14 @@ public class GTPortBlockEntity extends BlockEntity
         return switch (kind()) {
             case ITEM -> portTier().itemSlots() * portTier().slotLimit();
             case FLUID -> portTier().fluidTanks() * portTier().tankCapacity();
-            case ENERGY -> mode() == PortMode.OUTPUT
-                    ? GTPortEnergyTiers.outputCapacity(tier())
-                    : GTPortEnergyTiers.capacity(tier());
+            // Clamped here only because the menu syncs an int; the port itself holds the exact
+            // figure.
+            case ENERGY -> (mode() == PortMode.OUTPUT
+                    ? GTPortEnergyTiers.outputCapacityExact(portTier().level())
+                    : GTPortEnergyTiers.capacityExact(portTier().level()))
+                    .min(BigInteger.valueOf(Integer.MAX_VALUE)).intValue();
+            case CHEMICAL -> portTier().chemicalTanks() * portTier().chemicalTankCapacity();
+            case ESSENTIA -> portTier().essentiaTanks() * portTier().essentiaTankCapacity();
         };
     }
 
@@ -602,8 +655,47 @@ public class GTPortBlockEntity extends BlockEntity
             return 0;
         }
         return mode() == PortMode.OUTPUT
-                ? GTPortEnergyTiers.outputTransfer(tier())
-                : GTPortEnergyTiers.transfer(tier());
+                ? GTPortEnergyTiers.outputTransfer(portTier().level())
+                : GTPortEnergyTiers.transfer(portTier().level());
+    }
+
+    /** Tanks a chemical hopper reports, or zero for the other kinds. */
+    public int chemicalTankCount() {
+        return kind() == GTPortKind.CHEMICAL ? portTier().chemicalTanks() : 0;
+    }
+
+    /** Tanks an essentia port reports, or zero for the other kinds. */
+    public int essentiaTankCount() {
+        return kind() == GTPortKind.ESSENTIA ? portTier().essentiaTanks() : 0;
+    }
+
+    /** The chemical handler, or {@code null}. Narrowed by the caller through GTPortStorages. */
+    @Nullable
+    public Object chemicalStorage() {
+        ensureHandler();
+        return this.chemicals;
+    }
+
+    /** The essentia container, or {@code null}. Narrowed by the caller through GTPortStorages. */
+    @Nullable
+    public Object essentiaStorage() {
+        ensureHandler();
+        return this.essentia;
+    }
+
+    /**
+     * The essentia transport the pipe network sees, or {@code null}.
+     *
+     * <p>Declared with its Thaumcraft type rather than as {@code Object}: this accessor is only
+     * called from the capability lambda, which itself only exists inside the Thaumcraft branch of
+     * {@code GTPortCapabilities}. Naming the interface here costs nothing on a world without the
+     * mod — this class is only linked when the port entity is, and the field it reads stays
+     * {@code Object}.</p>
+     */
+    @Nullable
+    public Object essentiaTransportObject() {
+        ensureHandler();
+        return this.essentia;
     }
 
     /** How much one slot of this port holds, which is what an entry's cell span is measured in. */
@@ -623,6 +715,8 @@ public class GTPortBlockEntity extends BlockEntity
             case ITEM -> portTier().slotLimit();
             case FLUID -> portTier().tankCapacity();
             case ENERGY -> Integer.MAX_VALUE;
+            case CHEMICAL -> portTier().chemicalTankCapacity();
+            case ESSENTIA -> portTier().essentiaTankCapacity();
         };
     }
 
@@ -671,6 +765,16 @@ public class GTPortBlockEntity extends BlockEntity
                 }
             }
             case ENERGY -> reachEnergy(target, front);
+            case ESSENTIA -> {
+                if (stepDue) {
+                    reachEssentia(target, front);
+                }
+            }
+            case CHEMICAL -> {
+                if (stepDue) {
+                    reachChemicals(target, front);
+                }
+            }
         }
     }
 
@@ -685,8 +789,11 @@ public class GTPortBlockEntity extends BlockEntity
         if (ours == null) {
             return;
         }
-        IItemHandler theirs = this.level.getCapability(
-                net.neoforged.neoforge.capabilities.Capabilities.ItemHandler.BLOCK, target, front.getOpposite());
+        IItemHandler theirs = null;
+        if (this.level != null) {
+            theirs = this.level.getCapability(
+                    Capabilities.ItemHandler.BLOCK, target, front.getOpposite());
+        }
         if (theirs == null) {
             return;
         }
@@ -731,9 +838,12 @@ public class GTPortBlockEntity extends BlockEntity
         if (ours == null) {
             return;
         }
-        IFluidHandler theirs = this.level.getCapability(
-                net.neoforged.neoforge.capabilities.Capabilities.FluidHandler.BLOCK, target,
-                front.getOpposite());
+        IFluidHandler theirs = null;
+        if (this.level != null) {
+            theirs = this.level.getCapability(
+                    Capabilities.FluidHandler.BLOCK, target,
+                    front.getOpposite());
+        }
         if (theirs == null) {
             return;
         }
@@ -759,14 +869,80 @@ public class GTPortBlockEntity extends BlockEntity
         }
     }
 
+    /**
+     * Essentia counterpart of {@link #reachItems}.
+     *
+     * <p>Essentia is addressed per aspect rather than by slot, so the walk is over ids: an output
+     * offers what it holds, an input asks the neighbour what it has. Both sides go through the
+     * Thaumcraft capability, which is also what the ME interface's access card reads.</p>
+     */
+    private void reachEssentia(BlockPos target, Direction front) {
+        // The storage is built lazily, so ask the accessor rather than reading the field: on the
+        // first tick after a load it is still null here.
+        ensureHandler();
+        Object storage = this.essentia;
+        if (storage == null || this.level == null) {
+            return;
+        }
+        Direction side = front.getOpposite();
+        boolean input = mode() == PortMode.INPUT;
+        int budget = portTier().reachItems();
+        List<ResourceLocation> aspects = input
+                ? GTPortStorages.neighbourEssentiaAspects(this.level, target, side)
+                : GTPortStorages.essentiaAspects(storage);
+        for (ResourceLocation aspect : aspects) {
+            if (budget <= 0) {
+                break;
+            }
+            long moved = GTPortStorages.reachEssentia(
+                    storage, aspect, budget, this.level, target, side, input);
+            if (moved > 0) {
+                budget -= (int) Math.min(moved, budget);
+            }
+        }
+    }
+
+    /**
+     * Chemical counterpart of {@link #reachItems}.
+     *
+     * <p>Chemicals are addressed per chemical rather than by slot, so an output walks what it holds
+     * and an input asks the neighbour what it has — the same shape as the essentia path.</p>
+     */
+    private void reachChemicals(BlockPos target, Direction front) {
+        ensureHandler();
+        Object storage = this.chemicals;
+        if (storage == null || this.level == null) {
+            return;
+        }
+        Direction side = front.getOpposite();
+        boolean input = mode() == PortMode.INPUT;
+        long budget = portTier().reachFluid();
+        List<ResourceLocation> chemicals = input
+                ? GTPortStorages.neighbourChemicalIds(this.level, target, side)
+                : GTPortStorages.chemicalIds(storage);
+        for (ResourceLocation chemical : chemicals) {
+            if (budget <= 0) {
+                break;
+            }
+            long moved = GTPortStorages.reachChemical(
+                    storage, chemical, budget, this.level, target, side, input);
+            if (moved > 0) {
+                budget -= Math.min(moved, budget);
+            }
+        }
+    }
+
     /** Energy counterpart of {@link #reachItems}: a fixed slice per tick, in either direction. */
     private void reachEnergy(BlockPos target, Direction front) {
         if (this.energy == null) {
             return;
         }
-        var capability = net.neoforged.neoforge.capabilities.Capabilities.EnergyStorage.BLOCK;
-        net.neoforged.neoforge.energy.IEnergyStorage theirs =
-                this.level.getCapability(capability, target, front.getOpposite());
+        var capability = Capabilities.EnergyStorage.BLOCK;
+        IEnergyStorage theirs =
+                null;
+        if (this.level != null) {
+            theirs = this.level.getCapability(capability, target, front.getOpposite());
+        }
         if (theirs == null) {
             return;
         }
@@ -816,6 +992,12 @@ public class GTPortBlockEntity extends BlockEntity
         return this.singleCell;
     }
 
+    /** Flips the stacking mode and tells nearby clients. */
+    public void toggleSingleCell() {
+        this.singleCell = !this.singleCell;
+        onContentChanged();
+    }
+
     /** Whether this port currently takes part in the machine. */
     public boolean isEnabled() {
         return this.enabled;
@@ -849,7 +1031,7 @@ public class GTPortBlockEntity extends BlockEntity
      * rather than printing the raw key.</p>
      */
     @Override
-    public Component getDisplayName() {
+    public @NotNull Component getDisplayName() {
         if (this.customName != null) {
             return this.customName;
         }
@@ -880,7 +1062,7 @@ public class GTPortBlockEntity extends BlockEntity
      * machine answers them the same way, so the two agree whichever one a mod reaches for.</p>
      */
     @Override
-    public Component getName() {
+    public @NotNull Component getName() {
         return getDisplayName();
     }
 
@@ -957,8 +1139,6 @@ public class GTPortBlockEntity extends BlockEntity
             case MODE -> this.mode = text;
             case CHANNEL -> this.channel = text;
             case PRIORITY -> this.priority = text;
-            case NAME -> {
-            }
         }
         setChanged();
         if (this.level != null && !this.level.isClientSide) {
@@ -1056,7 +1236,9 @@ public class GTPortBlockEntity extends BlockEntity
                             stack.getAmount(), Optional.empty()));
                 }
             }
-            default -> {
+            case CHEMICAL -> rows.addAll(GTPortStorages.chemicalContents(this.chemicals));
+            case ESSENTIA -> rows.addAll(GTPortStorages.essentiaContents(this.essentia));
+            case ENERGY -> {
             }
         }
         return rows;
@@ -1070,15 +1252,15 @@ public class GTPortBlockEntity extends BlockEntity
 
     @Nullable
     @Override
-    public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+    public AbstractContainerMenu createMenu(int id, @NotNull Inventory inventory, @NotNull Player player) {
         // Reached when something opens this provider without the extra packet data; the packet path
         // used by the block's click handler is the one that normally builds the menu.
         return new GTPortMenu(id, inventory, this.worldPosition, kind(),
-                itemHandler() == null ? 0 : itemHandler().getSlots());
+                itemHandler() == null ? 0 : Objects.requireNonNull(itemHandler()).getSlots());
     }
 
     @Override
-    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider registries) {
         // Contents travel with the block entity update. Without this the client's copy stays empty,
         // so an item port would always look hollow however full it really was.
         return saveWithoutMetadata(registries);
@@ -1091,7 +1273,7 @@ public class GTPortBlockEntity extends BlockEntity
     }
 
     @Override
-    protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+    protected void saveAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.saveAdditional(tag, registries);
         ensureHandler();
         tag.putString(TAG_MODE, this.mode);
@@ -1114,11 +1296,15 @@ public class GTPortBlockEntity extends BlockEntity
             CompoundTag content = new CompoundTag();
             storage.save(content);
             tag.put(TAG_CONTENT, content);
+        } else if (this.chemicals != null) {
+            tag.put(TAG_CONTENT, GTPortStorages.saveChemical(this.chemicals, registries));
+        } else if (this.essentia != null) {
+            tag.put(TAG_CONTENT, GTPortStorages.saveEssentia(this.essentia, registries));
         }
     }
 
     @Override
-    protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+    protected void loadAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.loadAdditional(tag, registries);
         // Build first so the load target already has the right capacity for this state's tier.
         ensureHandler();
@@ -1161,6 +1347,10 @@ public class GTPortBlockEntity extends BlockEntity
             buffer.load(content, registries);
         } else if (this.energy instanceof GTPortEnergyStorage storage) {
             storage.load(content);
+        } else if (this.chemicals != null) {
+            GTPortStorages.loadChemical(this.chemicals, content, registries);
+        } else if (this.essentia != null) {
+            GTPortStorages.loadEssentia(this.essentia, content, registries);
         }
     }
 }

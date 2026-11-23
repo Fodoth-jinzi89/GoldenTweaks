@@ -2,6 +2,6 @@
   "parent": "goldentweaks:block/multiblock/gt_port_base",
   "textures": {
     "icon": "avaritia_more_items:block/multiblock_port/input/energy",
-    "ring": "avaritia_more_items:block/multiblock_port/level/output/7"
+    "ring": "goldentweaks:block/multiblock/port/level/output"
   }
 }

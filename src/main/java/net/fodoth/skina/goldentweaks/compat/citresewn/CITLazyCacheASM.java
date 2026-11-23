@@ -1,5 +1,6 @@
 package net.fodoth.skina.goldentweaks.compat.citresewn;
 
+import org.jetbrains.annotations.NotNull;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.ClassNode;
@@ -48,26 +49,7 @@ public final class CITLazyCacheASM {
                     }
                     // Exact upstream initializer: ALOAD 0, NEW, DUP, GETSTATIC,
                     // DUP, requireNonNull, POP, invokedynamic, <init>, PUTFIELD.
-                    AbstractInsnNode start = insn;
-                    int[] expected = {Opcodes.ALOAD, Opcodes.NEW, Opcodes.DUP, Opcodes.GETSTATIC,
-                            Opcodes.DUP, Opcodes.INVOKESTATIC, Opcodes.POP,
-                            Opcodes.INVOKEDYNAMIC, Opcodes.INVOKESPECIAL, Opcodes.PUTFIELD};
-                    List<AbstractInsnNode> code = new ArrayList<>();
-                    code.add(start);
-                    while (code.size() < expected.length && start.getPrevious() != null) {
-                        start = start.getPrevious();
-                        if (start.getOpcode() >= 0) {
-                            code.add(0, start);
-                        }
-                    }
-                    for (int i = 0; i < expected.length; i++) {
-                        if (code.size() != expected.length || code.get(i).getOpcode() != expected[i]) {
-                            throw new IllegalStateException("Unsupported CIT initializer: " + fieldName);
-                        }
-                    }
-                    if (((VarInsnNode) code.get(0)).var != 0) {
-                        throw new IllegalStateException("Unsupported CIT cache receiver");
-                    }
+                    List<AbstractInsnNode> code = getCode(insn, fieldName);
                     InsnList copy = new InsnList();
                     for (AbstractInsnNode original : code) {
                         copy.add(original.clone(new HashMap<>()));
@@ -99,7 +81,7 @@ public final class CITLazyCacheASM {
             lazy.add(new VarInsnNode(Opcodes.ALOAD, 0));
             lazy.add(new FieldInsnNode(Opcodes.GETFIELD, node.name, fieldName, read.desc));
             lazy.add(new JumpInsnNode(Opcodes.IFNONNULL, ready));
-            lazy.add(initializers.get(0));
+            lazy.add(initializers.getFirst());
             lazy.add(ready);
             lazy.add(new FrameNode(Opcodes.F_SAME, 0, null, 0, null));
             getter.instructions.insert(lazy);
@@ -107,5 +89,29 @@ public final class CITLazyCacheASM {
             getter.access |= Opcodes.ACC_SYNCHRONIZED;
             getter.maxStack = Math.max(getter.maxStack, 5);
         }
+    }
+
+    private static @NotNull List<AbstractInsnNode> getCode(AbstractInsnNode insn, String fieldName) {
+        AbstractInsnNode start = insn;
+        int[] expected = {Opcodes.ALOAD, Opcodes.NEW, Opcodes.DUP, Opcodes.GETSTATIC,
+                Opcodes.DUP, Opcodes.INVOKESTATIC, Opcodes.POP,
+                Opcodes.INVOKEDYNAMIC, Opcodes.INVOKESPECIAL, Opcodes.PUTFIELD};
+        List<AbstractInsnNode> code = new ArrayList<>();
+        code.add(start);
+        while (code.size() < expected.length && start.getPrevious() != null) {
+            start = start.getPrevious();
+            if (start.getOpcode() >= 0) {
+                code.addFirst(start);
+            }
+        }
+        for (int i = 0; i < expected.length; i++) {
+            if (code.size() != expected.length || code.get(i).getOpcode() != expected[i]) {
+                throw new IllegalStateException("Unsupported CIT initializer: " + fieldName);
+            }
+        }
+        if (((VarInsnNode) code.getFirst()).var != 0) {
+            throw new IllegalStateException("Unsupported CIT cache receiver");
+        }
+        return code;
     }
 }
