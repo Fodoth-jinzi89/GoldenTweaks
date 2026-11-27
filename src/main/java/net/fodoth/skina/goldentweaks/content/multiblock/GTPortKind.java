@@ -29,7 +29,19 @@ public enum GTPortKind {
      * <p>Also its own kind: essentia is addressed by {@code Aspect} and carried through Thaumcraft's
      * own transport interface, which shares nothing with fluids beyond the idea of a tank.</p>
      */
-    ESSENTIA("essentia");
+    ESSENTIA("essentia"),
+    /**
+     * A general-purpose assembly: one storage that carries every kind at once.
+     *
+     * <p>Not a variant of any of the above. The others each hold one thing, and a machine's matcher
+     * asks each of its ports for that one thing; this holds a slice of all five, the way AMI's
+     * all-type storage cell does. It is measured in bytes and types rather than slots or tanks, and
+     * its window reports those two figures instead of the cells count.</p>
+     *
+     * <p>Appended last: {@code writeEnum}/{@code readEnum} encode by ordinal, so inserting above
+     * would renumber every kind that is already in a save or a packet.</p>
+     */
+    GENERAL("general");
 
     /** Id fragment used in block ids and texture paths. */
     private final String id;
@@ -44,7 +56,24 @@ public enum GTPortKind {
 
     /** Whether this kind is one of ours, rather than one AMI also ships art for. */
     public boolean isExtended() {
-        return this == CHEMICAL || this == ESSENTIA;
+        return this == CHEMICAL || this == ESSENTIA || this == GENERAL;
+    }
+
+    /**
+     * Whether a port of this kind can hold essentia.
+     *
+     * <p>Asked instead of comparing against {@code ESSENTIA} alone: the general assembly holds
+     * every kind at once, so a port that can take essentia is not necessarily an essentia port.
+     * Written once here rather than repeated at each of the five places the machine walks its
+     * typed ports.</p>
+     */
+    public boolean holdsEssentia() {
+        return this == ESSENTIA || this == GENERAL;
+    }
+
+    /** Whether a port of this kind can hold chemicals. See {@link #holdsEssentia()}. */
+    public boolean holdsChemical() {
+        return this == CHEMICAL || this == GENERAL;
     }
 
     /** Icon texture AMI ships for this kind, or {@code null} if this kind has none. */

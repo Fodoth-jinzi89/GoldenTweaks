@@ -65,6 +65,41 @@ public final class GTPortStorages {
         return ThaumcraftBridge.create(tanks, tankCapacity, singleCell, active, output, changedHook);
     }
 
+    /**
+     * Restricts how many of a chemical hopper's tanks may be used.
+     *
+     * <p>Forwarded rather than left to the caller: the concrete class lives behind a mod check, so
+     * naming it here is what keeps an unmodded world from loading it.</p>
+     */
+    public static void setChemicalQuota(@Nullable Object storage, java.util.function.IntSupplier quota) {
+        if (storage != null) {
+            MekanismBridge.setQuota(storage, quota);
+        }
+    }
+
+    /** The same, for an essentia tank. */
+    public static void setEssentiaQuota(@Nullable Object storage, java.util.function.IntSupplier quota) {
+        if (storage != null) {
+            ThaumcraftBridge.setQuota(storage, quota);
+        }
+    }
+
+    /** Caps one chemical request, for a port sharing a byte budget between kinds. */
+    public static void setChemicalRoom(@Nullable Object storage,
+                                       java.util.function.UnaryOperator<Long> room) {
+        if (storage != null) {
+            MekanismBridge.setRoom(storage, room);
+        }
+    }
+
+    /** The same, for an essentia tank. */
+    public static void setEssentiaRoom(@Nullable Object storage,
+                                       java.util.function.IntUnaryOperator room) {
+        if (storage != null) {
+            ThaumcraftBridge.setRoom(storage, room);
+        }
+    }
+
     // ---- the four operations the entity needs, each forwarded to a bridge ----
 
     public static CompoundTag saveChemical(@Nullable Object storage, HolderLookup.Provider registries) {
@@ -225,6 +260,14 @@ public final class GTPortStorages {
             return storage;
         }
 
+        private static void setQuota(Object storage, java.util.function.IntSupplier quota) {
+            ((GTPortChemicalStorage) storage).setQuota(quota);
+        }
+
+        private static void setRoom(Object storage, java.util.function.UnaryOperator<Long> room) {
+            ((GTPortChemicalStorage) storage).setRoom(room);
+        }
+
         private static CompoundTag save(Object storage, HolderLookup.Provider registries) {
             return ((GTPortChemicalStorage) storage)
                     .save(registries);
@@ -354,6 +397,14 @@ public final class GTPortStorages {
                     tanks, tankCapacity, singleCell, active, output);
             storage.setChangedHook(changedHook);
             return storage;
+        }
+
+        private static void setQuota(Object storage, java.util.function.IntSupplier quota) {
+            ((GTPortEssentiaStorage) storage).setQuota(quota);
+        }
+
+        private static void setRoom(Object storage, java.util.function.IntUnaryOperator room) {
+            ((GTPortEssentiaStorage) storage).setRoom(room);
         }
 
         private static CompoundTag save(Object storage, HolderLookup.Provider registries) {

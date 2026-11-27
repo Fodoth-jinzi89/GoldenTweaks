@@ -48,15 +48,22 @@ import thaumcraft.api.aspects.Aspect;
 /**
  * Window for one of this mod's ports.
  *
- * <p>Everything is positioned from the sheet's own pixels: both panels occupy
- * {@code (0,0)..(210,192)} and their sprites sit below that. Coordinates are constants rather than
- * computed, which is what keeps the three text fields, the storage area and the player's slots
- * aligned with the art.</p>
+ * <p>Everything is positioned from the sheet's own pixels: the panels occupy
+ * {@code (0,0)..(210,178)} — eleven pixels taller for a general assembly — and their sprites sit
+ * below that. Coordinates are constants rather than computed, which is what keeps the three text
+ * fields, the storage area and the player's slots aligned with the art.</p>
  *
- * <p>There are two sheets. Item and fluid ports use {@code gt_port_io}, which carries a 3 by 3
+ * <p>There are three sheets. Item and fluid ports use {@code gt_port_io}, which carries a 3 by 3
  * storage grid; energy ports use {@code gt_port_energy}, where that grid and its rail are replaced
- * by an upright trough. Everything else 鈥?the fields, the name, the buttons, the player area 鈥?is
- * identical, so only the middle of the drawing differs.</p>
+ * by an upright trough; a general assembly uses
+ * {@link #GENERAL_TEXTURE} and draws <em>both</em> halves, since it holds contents and energy at
+ * once, plus a third switch plate for its channel.</p>
+ *
+ * <p>The sheets are separate drawings rather than one stretched copy, so every plate, icon and
+ * trough has its own coordinates per sheet. They are read through the small accessors below
+ * ({@link #modeY()}, {@link #plateV()}, …) which the drawing, the click handler and the tooltip all
+ * call — that is what stops a plate from being painted in one place and answering the cursor in
+ * another.</p>
  *
  * <p>Contents are drawn the way EMI draws a recipe's slots: an icon with its amount on the corner.
  * The grid is a fixed 3 by 3 viewport onto however many entries the port holds, so it scrolls on
@@ -70,6 +77,18 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final ResourceLocation ENERGY_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID,
                     "textures/gui/gt_port_energy.png");
+    /**
+     * The general assembly's sheet: the same panel plus a trough row and a third switch plate.
+     *
+     * <p>Its own file rather than a stretched version of the other two. An assembly holds energy as
+     * well as contents, so it needs both the storage grid and the trough — and a third plate, since
+     * the reach-through switch has nothing to reach with on a part that is not a hatch of one kind.
+     * Drawing all that from the item sheet would mean three conditional offsets on every constant;
+     * a sheet of its own keeps the numbers literal.</p>
+     */
+    private static final ResourceLocation GENERAL_TEXTURE =
+            ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID,
+                    "textures/gui/gt_port_io_general.png");
 
     // ---- panel measurements, all in sheet pixels ----
 
@@ -98,11 +117,15 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final int RAIL_HEIGHT = 58;
 
     /**
-     * The horizontal energy trough on the energy sheet, and the sprite it is filled from.
+     * The horizontal energy trough, and the sprite it is filled from.
      *
      * <p>Laid out exactly like the machine's own trough: a 4 px first cell followed by 20 more at
      * 3 px each, so the fill is a run of lit cells rather than a smooth slice. The window is 61 px
      * wide, which is what those twenty cells add up to.</p>
+     *
+     * <p>These are the <em>single-kind</em> rows; an assembly's trough sits elsewhere and is cut from
+     * its own sheet — see {@link #GENERAL_TROUGH_X}. The cell arithmetic is shared, because the two
+     * troughs are the same shape.</p>
      */
     private static final int TROUGH_X = 82;
     private static final int TROUGH_Y = 32;
@@ -114,13 +137,31 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final int TROUGH_CELL_STEP = 3;
     private static final int TROUGH_CELLS = 20;
 
-    /** The four caption lines under the trough, left-aligned with it. */
+    /**
+     * The same trough on an assembly's sheet.
+     *
+     * <p>Its own coordinates, not the band offset: the trough is the row the rest of the band was
+     * moved down for, so it sits where the single-kind panel used to end rather than eleven pixels
+     * from anything.</p>
+     */
+    private static final int GENERAL_TROUGH_X = 139;
+    private static final int GENERAL_TROUGH_Y = 90;
+    private static final int GENERAL_TROUGH_SPRITE_V = 189;
+
+    /**
+     * The four caption lines under the trough, left-aligned with it.
+     *
+     * <p>Drawn only on the energy hatches; an assembly's window quotes its own ceilings above the
+     * grid, so it carries the trough alone.</p>
+     */
     private static final int ENERGY_TEXT_X = 82;
     private static final int ENERGY_TEXT_TOP = 46;
 
     /** The run switch beside the player's grid, drawn from the same sprite pair the machine uses. */
     private static final int RUN_X = 178;
     private static final int RUN_Y = 95;
+    /** The same switch on an assembly's sheet, whose band sits lower. */
+    private static final int GENERAL_RUN_Y = 106;
     private static final int RUN_WIDTH = 20;
     private static final int RUN_HEIGHT = 9;
     private static final int RUN_SPRITE_U = 0;
@@ -142,6 +183,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final int RUN_ICON_U_RUN = 0;
     private static final int RUN_ICON_U_STOP = 22;
     private static final int RUN_ICON_V = 189;
+    /** The same overlay on an assembly's sheet. */
+    private static final int GENERAL_RUN_ICON_V = 200;
     private static final int RUN_ICON_WIDTH = 22;
     private static final int RUN_ICON_HEIGHT = 11;
 
@@ -155,12 +198,26 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final int MODE_X = 154;
     private static final int MODE_Y = 27;
     private static final int MODE_PLATE_U = 44;
+    private static final int MODE_PLATE_PRESSED_U = 65;
     private static final int MODE_PLATE_V = 178;
     private static final int MODE_WIDTH = 21;
     private static final int MODE_HEIGHT = 17;
     private static final int MODE_ICON_U_SINGLE = 44;
     private static final int MODE_ICON_U_MULTI = 65;
     private static final int MODE_ICON_V = 195;
+
+    /**
+     * The same switch on an assembly's sheet, as its own set of numbers.
+     *
+     * <p>A set rather than an offset: the sheet is drawn art, not a shifted copy, so its plate and
+     * icon rows were re-cut at their own coordinates. One offset applied to everything assumed they
+     * moved together, and putting the drawn plate somewhere the cursor did not follow is what made
+     * the buttons look misplaced.</p>
+     */
+    private static final int GENERAL_MODE_X = 154;
+    private static final int GENERAL_MODE_Y = 27;
+    private static final int GENERAL_PLATE_V = 189;
+    private static final int GENERAL_MODE_ICON_V = 206;
 
     /**
      * The reach-through switch: second plate for item and fluid ports, first for an energy port.
@@ -173,12 +230,48 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private static final int ACTIVE_X_NO_MODE = 154;
     private static final int ACTIVE_Y = 27;
     private static final int ACTIVE_PLATE_U = 44;
+    private static final int ACTIVE_PLATE_PRESSED_U = 65;
     private static final int ACTIVE_PLATE_V = 178;
     private static final int ACTIVE_WIDTH = 21;
     private static final int ACTIVE_HEIGHT = 17;
     private static final int ACTIVE_ICON_U_PASSIVE = 44;
     private static final int ACTIVE_ICON_U_ACTIVE = 65;
     private static final int ACTIVE_ICON_V = 212;
+
+    /**
+     * The same switch on an assembly's sheet.
+     *
+     * <p>It keeps the reach-through switch, since the part still has an inventory and a trough a
+     * pipe can reach; the channel plate sits below it rather than replacing it.</p>
+     */
+    private static final int GENERAL_ACTIVE_X = 179;
+    private static final int GENERAL_ACTIVE_Y = 27;
+    private static final int GENERAL_ACTIVE_ICON_V = 223;
+
+    /**
+     * The channel-participation switch, on the second plate of the same block.
+     *
+     * <p>An assembly only. It answers whether the part counts as an energy hatch or dynamo in its
+     * channel, which is the difference between joining a same-tier pair (and the doubling that
+     * brings) and being a part the machine draws no power from.</p>
+     *
+     * <p>The reach-through switch keeps its plate: an assembly still has an inventory and a trough
+     * that a pipe can reach, so this one sits under it rather than taking its place.</p>
+     */
+    private static final int CHANNEL_X = 154;
+    private static final int CHANNEL_Y = 48;
+    private static final int CHANNEL_PLATE_U = 44;
+    private static final int CHANNEL_PLATE_PRESSED_U = 65;
+    private static final int CHANNEL_PLATE_V = 189;
+    private static final int CHANNEL_WIDTH = 21;
+    private static final int CHANNEL_HEIGHT = 17;
+    private static final int CHANNEL_ICON_U_JOINS = 86;
+    private static final int CHANNEL_ICON_U_ISOLATED = 107;
+    private static final int CHANNEL_ICON_V = 206;
+
+    /** The same, on an assembly's sheet: the second row of that block. */
+    private static final int GENERAL_CHANNEL_X = 154;
+    private static final int GENERAL_CHANNEL_Y = 48;
 
     /** Text drawn directly on the light panel, which needs the darker ink to stay readable. */
     private static final int INK_COLOUR = 0xFF404040;
@@ -223,6 +316,16 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     private double lastMouseY = -1;
 
     /**
+     * Which button the cursor is holding down, or {@code -1} when none.
+     *
+     * <p>Tracked here because the screen has no other way to ask: every switch draws a pressed plate
+     * while it is being clicked, and neither the render callback nor the widget classes carry the
+     * mouse's button state. Hovering alone is not a press — showing the pressed plate on hover made
+     * all three switches look permanently held down.</p>
+     */
+    private int heldButton = -1;
+
+    /**
      * A name that has been sent but not yet echoed back by the server.
      *
      * <p>Without this the box flickered: the packet takes a round trip, and until it lands the local
@@ -237,7 +340,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * Values sent but not yet echoed back, keyed by field.
      *
      * <p>Same problem as the name: the port entity only reports a field once the packet lands, so
-     * until then the echo read the old text and wrote it straight back into the box 鈥?the edit
+     * until then the echo read the old text and wrote it straight back into the box — the edit
      * appeared to bounce for a frame or two. Holding each sent value here keeps the box steady
      * until the server catches up, and it also covers a value the server normalises on save.</p>
      */
@@ -247,7 +350,10 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     public GTPortScreen(GTPortMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
         this.imageWidth = GTPortMenu.IMAGE_WIDTH;
-        this.imageHeight = GTPortMenu.IMAGE_HEIGHT;
+        // An assembly's sheet is eleven pixels taller: its lower band grew a trough row along the
+        // top. One height per sheet, since the window is blitted at this size.
+        this.imageHeight = menu.kind() == GTPortKind.GENERAL
+                ? GTPortMenu.GENERAL_IMAGE_HEIGHT : GTPortMenu.IMAGE_HEIGHT;
         // The text boxes are built in init(), not here: they take this screen's font, and the font
         // is only assigned when the screen is initialised. Building them now would pass null and
         // crash the first time one was rendered.
@@ -293,7 +399,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * Greys the channel field out while a craft is running.
      *
      * <p>The field still shows its value and still commits on close, but it refuses focus and
-     * swallows typing 鈥?the server refuses the edit too, so a modified client gains nothing. The
+     * swallows typing — the server refuses the edit too, so a modified client gains nothing. The
      * other two fields stay live: they carry no meaning to the matcher yet.</p>
      */
     private void refreshChannelLock() {
@@ -433,7 +539,35 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     }
 
     @Override
+    public boolean mouseReleased(double mouseX, double mouseY, int button) {
+        this.heldButton = -1;
+        return super.mouseReleased(mouseX, mouseY, button);
+    }
+
+    /**
+     * Whether a switch is being pressed right now.
+     *
+     * <p>Held, not hovered: the plate is the button's own feedback for a click, and lighting it up
+     * for a mere hover made every switch look stuck down. The cursor must also still be inside the
+     * plate — dragging off it releases the press visually, which is what a button does.</p>
+     */
+    private boolean isPressed(int x, int y, int width, int height, int mouseX, int mouseY) {
+        return this.heldButton >= 0 && over(x, y, width, height, mouseX, mouseY);
+    }
+
+    /** Whether a point is inside a rectangle. */
+    private static boolean over(int x, int y, int width, int height, int mouseX, int mouseY) {
+        return mouseX >= x && mouseX < x + width && mouseY >= y && mouseY < y + height;
+    }
+
+    /** Whether the cursor is over a switch, for the click handler and for its tooltip. */
+    private boolean hits(int x, int y, int width, int height, double mouseX, double mouseY) {
+        return over(x, y, width, height, (int) mouseX, (int) mouseY);
+    }
+
+    @Override
     public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        this.heldButton = button;
         boolean insideField = false;
         for (EditBox box : this.fields) {
             if (box.isMouseOver(mouseX, mouseY)) {
@@ -466,8 +600,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         // there — otherwise clicking an energy port's first plate would both change the mode and
         // reach through, since both controls claim the same spot.
         if (button == 0 && this.menu.kind() != GTPortKind.ENERGY
-                && mouseX >= this.leftPos + MODE_X && mouseX < this.leftPos + MODE_X + MODE_WIDTH
-                && mouseY >= this.topPos + MODE_Y && mouseY < this.topPos + MODE_Y + MODE_HEIGHT) {
+                && hits(this.leftPos + modeX(), this.topPos + modeY(),
+                        MODE_WIDTH, MODE_HEIGHT, mouseX, mouseY)) {
             GTPortBlockEntity port = this.menu.port();
             if (port != null) {
                 PacketDistributor.sendToServer(new C2SPortTogglePacket(
@@ -476,10 +610,22 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             return true;
         }
 
+        // The channel switch, on an assembly only: a dedicated hatch is a hatch by construction.
+        if (button == 0 && this.menu.kind() == GTPortKind.GENERAL
+                && hits(this.leftPos + channelX(), this.topPos + channelY(),
+                        CHANNEL_WIDTH, CHANNEL_HEIGHT, mouseX, mouseY)) {
+            GTPortBlockEntity port = this.menu.port();
+            if (port != null) {
+                PacketDistributor.sendToServer(new C2SPortTogglePacket(
+                        port.getBlockPos(), C2SPortTogglePacket.Target.ENERGY_CHANNEL));
+            }
+            return true;
+        }
+
         // The reach-through switch, handled exactly like the other two.
         if (button == 0
-                && mouseX >= this.leftPos + activeX() && mouseX < this.leftPos + activeX() + ACTIVE_WIDTH
-                && mouseY >= this.topPos + ACTIVE_Y && mouseY < this.topPos + ACTIVE_Y + ACTIVE_HEIGHT) {
+                && hits(this.leftPos + activeX(), this.topPos + activeY(),
+                        ACTIVE_WIDTH, ACTIVE_HEIGHT, mouseX, mouseY)) {
             GTPortBlockEntity port = this.menu.port();
             if (port != null) {
                 PacketDistributor.sendToServer(new C2SPortTogglePacket(
@@ -490,8 +636,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
 
         // The run switch flips participation; the server applies the change and reports it back.
         if (button == 0
-                && mouseX >= this.leftPos + RUN_X && mouseX < this.leftPos + RUN_X + RUN_WIDTH
-                && mouseY >= this.topPos + RUN_Y && mouseY < this.topPos + RUN_Y + RUN_HEIGHT) {
+                && hits(this.leftPos + RUN_X, this.topPos + runY(),
+                        RUN_WIDTH, RUN_HEIGHT, mouseX, mouseY)) {
             GTPortBlockEntity port = this.menu.port();
             if (port != null) {
                 PacketDistributor.sendToServer(new C2SPortTogglePacket(
@@ -505,7 +651,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
         // R and U only mean anything while the cursor is over a stack, and only when no text box
-        // has focus 鈥?otherwise typing an "r" into a field would open a recipe page.
+        // has focus — otherwise typing an "r" into a field would open a recipe page.
         if (!this.fields.isEmpty() && !anyFieldFocused() && keyOverStack(keyCode, scanCode)) {
             return true;
         }
@@ -534,6 +680,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         if (this.menu.kind() == GTPortKind.ENERGY) {
             return -1;
         }
+        List<GTReactionStack> rows = contents();
+        int[] cells = cellOfEntry(rows);
         for (int cell = 0; cell < GTPortMenu.STORAGE_CELLS; cell++) {
             int column = cell % GTPortMenu.STORAGE_COLUMNS;
             int row = cell / GTPortMenu.STORAGE_COLUMNS;
@@ -541,11 +689,44 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             int y = this.topPos + GTPortMenu.STORAGE_Y + row * GTPortMenu.SLOT_STEP;
             if (mouseX >= x && mouseX < x + GTPortMenu.SLOT_SIZE
                     && mouseY >= y && mouseY < y + GTPortMenu.SLOT_SIZE) {
-                int index = this.scrollRow * GTPortMenu.STORAGE_COLUMNS + cell;
-                return index < contents().size() ? index : -1;
+                int absolute = this.scrollRow * GTPortMenu.STORAGE_COLUMNS + cell;
+                for (int index = 0; index < cells.length; index++) {
+                    if (cells[index] == absolute) {
+                        return index;
+                    }
+                }
+                return -1;
             }
         }
         return -1;
+    }
+
+    /**
+     * The cell each entry starts at, in the same walk {@link #drawStacks} uses.
+     *
+     * <p>Shared rather than recomputed: hover used to assume one entry per cell, so as soon as an
+     * entry spanned several the two disagreed — the drawn grid and the tooltip pointed at different
+     * entries, and the entries past the first few cells could not be hovered at all.</p>
+     */
+    private int[] cellOfEntry(List<GTReactionStack> rows) {
+        int[] cells = new int[rows.size()];
+        int perSlot = Math.max(1, this.menu.slotLimit());
+        boolean single = this.menu.isSingleCellMode();
+        int cursor = 0;
+        for (int index = 0; index < rows.size(); index++) {
+            cells[index] = cursor;
+            cursor += spanOf(rows.get(index), perSlot, single);
+        }
+        return cells;
+    }
+
+    /** How many cells one entry claims. */
+    private static int spanOf(GTReactionStack stack, int perSlot, boolean single) {
+        if (single) {
+            return 1;
+        }
+        long span = (stack.amount() + perSlot - 1) / perSlot;
+        return (int) Math.clamp(span, 1L, GTPortMenu.STORAGE_CELLS);
     }
 
     /** The EMI form of one entry, or {@code null} when EMI is absent or cannot build it. */
@@ -595,12 +776,12 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * Explains the run switch while the cursor is over it.
      *
      * <p>The icon is a pair of arrows or a pause bar with no text of its own, so the label has to
-     * say what the button does and which way it is currently set 鈥?the same treatment the machine's
+     * say what the button does and which way it is currently set — the same treatment the machine's
      * own buttons get.</p>
      */
     private void renderRunTooltip(GuiGraphics graphics, int mouseX, int mouseY) {
         int x = this.leftPos + RUN_X;
-        int y = this.topPos + RUN_Y;
+        int y = this.topPos + runY();
         if (mouseX < x || mouseX >= x + RUN_WIDTH || mouseY < y || mouseY >= y + RUN_HEIGHT) {
             return;
         }
@@ -615,20 +796,59 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         if (this.menu.kind() == GTPortKind.ENERGY) {
             return;
         }
-        int x = this.leftPos + MODE_X;
-        int y = this.topPos + MODE_Y;
+        int x = this.leftPos + modeX();
+        int y = this.topPos + modeY();
         if (mouseX < x || mouseX >= x + MODE_WIDTH || mouseY < y || mouseY >= y + MODE_HEIGHT) {
             return;
         }
-        graphics.renderTooltip(this.font, Component.translatable(this.menu.isSingleCellMode()
-                ? "gui.goldentweaks.port.stack.single"
-                : "gui.goldentweaks.port.stack.multi"), mouseX, mouseY);
+        // The assembly's switch answers a different question from a single-kind port's, so it
+        // names a different pair of modes rather than borrowing wording that would read as a
+        // per-entry drawing preference.
+        String tooltip;
+        if (this.menu.kind() == GTPortKind.GENERAL) {
+            tooltip = this.menu.isSingleCellMode()
+                    ? "gui.goldentweaks.port.split.on"
+                    : "gui.goldentweaks.port.split.off";
+        } else {
+            tooltip = this.menu.isSingleCellMode()
+                    ? "gui.goldentweaks.port.stack.single"
+                    : "gui.goldentweaks.port.stack.multi";
+        }
+        graphics.renderTooltip(this.font, Component.translatable(tooltip), mouseX, mouseY);
+    }
+
+    /**
+     * Explains the channel switch.
+     *
+     * <p>Four strings rather than two: the answer depends on the direction as well, since the part
+     * joins as an energy hatch when it feeds the machine and as a dynamo when it receives from it.</p>
+     */
+    private void renderChannelTooltip(GuiGraphics graphics, int mouseX, int mouseY) {
+        if (this.menu.kind() != GTPortKind.GENERAL) {
+            return;
+        }
+        int x = this.leftPos + channelX();
+        int y = this.topPos + channelY();
+        if (mouseX < x || mouseX >= x + CHANNEL_WIDTH || mouseY < y || mouseY >= y + CHANNEL_HEIGHT) {
+            return;
+        }
+        boolean output = this.menu.mode() == PortMode.OUTPUT;
+        boolean joins = this.menu.joinsEnergyChannel();
+        String key;
+        if (output) {
+            key = joins ? "gui.goldentweaks.port.channel.joins.dynamo"
+                    : "gui.goldentweaks.port.channel.isolated.dynamo";
+        } else {
+            key = joins ? "gui.goldentweaks.port.channel.joins.hatch"
+                    : "gui.goldentweaks.port.channel.isolated.hatch";
+        }
+        graphics.renderTooltip(this.font, Component.translatable(key), mouseX, mouseY);
     }
 
     /** Explains the reach-through switch, whose icon alone does not say which way round it is. */
     private void renderActiveTooltip(GuiGraphics graphics, int mouseX, int mouseY) {
         int x = this.leftPos + activeX();
-        int y = this.topPos + ACTIVE_Y;
+        int y = this.topPos + activeY();
         if (mouseX < x || mouseX >= x + ACTIVE_WIDTH || mouseY < y || mouseY >= y + ACTIVE_HEIGHT) {
             return;
         }
@@ -759,6 +979,8 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         renderStackTooltip(graphics, mouseX, mouseY);
         renderRunTooltip(graphics, mouseX, mouseY);
         renderModeTooltip(graphics, mouseX, mouseY);
+        renderChannelTooltip(graphics, mouseX, mouseY);
+        renderTroughTooltip(graphics, mouseX, mouseY);
         renderActiveTooltip(graphics, mouseX, mouseY);
     }
 
@@ -806,7 +1028,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      *
      * <p>While a send is outstanding the box keeps the text the player typed: the port still
      * reports the old value, and writing that back is exactly what made it flash. Once the port
-     * reports what was sent the pending record clears and ordinary echoing resumes 鈥?including a
+     * reports what was sent the pending record clears and ordinary echoing resumes — including a
      * normalised value, which simply differs from the sent one and so lands as the correction.</p>
      */
     private void echo(@Nullable EditBox box, GTPortBlockEntity.Field field, String stored) {
@@ -827,59 +1049,169 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     @Override
     protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
         boolean energy = this.menu.kind() == GTPortKind.ENERGY;
-        graphics.blit(energy ? ENERGY_TEXTURE : IO_TEXTURE, this.leftPos, this.topPos, 0, 0,
+        boolean general = this.menu.kind() == GTPortKind.GENERAL;
+        graphics.blit(sheet(), this.leftPos, this.topPos, 0, 0,
                 this.imageWidth, this.imageHeight);
 
         drawLabels(graphics);
 
         if (energy) {
             drawEnergyTrough(graphics);
+            // Only a hatch gets the four captions below the trough. An assembly's window already
+            // quotes its own ceilings above, and repeating the energy figures there would be the
+            // only place in the window where two units shared one column.
+            drawEnergyCaptions(graphics);
         } else {
             drawStacks(graphics);
             drawRail(graphics);
         }
+        // An assembly holds energy as well as contents, so it draws both — the trough alone, with no
+        // captions under it.
+        if (general) {
+            drawEnergyTrough(graphics);
+        }
 
         drawRunButton(graphics, mouseX, mouseY);
-        // An energy port has no cells for an entry to span, so it gets no stacking switch and its
-        // reach-through switch takes the plate that would have held it.
+        // An energy port has no cells for an entry to span, so it gets no stacking switch.
         if (!energy) {
             drawModeButton(graphics, mouseX, mouseY);
+        }
+        // An assembly gets one more plate than the others: split mode, channel participation, and
+        // reach-through all apply to it. The channel one is not a replacement — reaching through is
+        // still useful, since the part has an inventory and a trough a pipe can reach.
+        if (general) {
+            drawChannelButton(graphics, mouseX, mouseY);
         }
         drawActiveButton(graphics, mouseX, mouseY);
     }
 
-    /** The stacking switch: base plate, then the icon for the mode it is in. */
-    private void drawModeButton(GuiGraphics graphics, int mouseX, int mouseY) {
-        int x = this.leftPos + MODE_X;
-        int y = this.topPos + MODE_Y;
-        graphics.blit(IO_TEXTURE, x, y, MODE_PLATE_U, MODE_PLATE_V,
-                MODE_WIDTH, MODE_HEIGHT);
-        boolean single = this.menu.isSingleCellMode();
-        graphics.blit(IO_TEXTURE, x, y,
-                single ? MODE_ICON_U_SINGLE : MODE_ICON_U_MULTI, MODE_ICON_V,
-                MODE_WIDTH, MODE_HEIGHT);
+    /** The sheet this port draws itself from. */
+    private ResourceLocation sheet() {
+        return switch (this.menu.kind()) {
+            case ENERGY -> ENERGY_TEXTURE;
+            case GENERAL -> GENERAL_TEXTURE;
+            default -> IO_TEXTURE;
+        };
     }
 
-    /**
-     * Where the reach-through switch sits for this port.
-     *
-     * <p>After the stacking switch when there is one, on the first plate when there is not. Kept in
-     * one method so the drawing, the click area and the tooltip cannot disagree about it.</p>
-     */
+    // ---- where this window's sheet puts its plates ----
+    //
+    // One answer per question, used by the drawing, the click handler and the tooltip alike. Each
+    // sheet has its own set of numbers rather than a shared one plus an offset: they are separate
+    // drawings, and the plates were re-cut at their own rows.
+
+    private boolean general() {
+        return this.menu.kind() == GTPortKind.GENERAL;
+    }
+
+    private int modeX() {
+        return general() ? GENERAL_MODE_X : MODE_X;
+    }
+
+    private int modeY() {
+        return general() ? GENERAL_MODE_Y : MODE_Y;
+    }
+
+    private int plateV() {
+        return general() ? GENERAL_PLATE_V : MODE_PLATE_V;
+    }
+
+    private int modeIconV() {
+        return general() ? GENERAL_MODE_ICON_V : MODE_ICON_V;
+    }
+
     private int activeX() {
-        return this.menu.kind() == GTPortKind.ENERGY ? ACTIVE_X_NO_MODE : ACTIVE_X;
+        return general() ? GENERAL_ACTIVE_X
+                : this.menu.kind() == GTPortKind.ENERGY ? ACTIVE_X_NO_MODE : ACTIVE_X;
+    }
+
+    private int activeY() {
+        return general() ? GENERAL_ACTIVE_Y : ACTIVE_Y;
+    }
+
+    private int activeIconV() {
+        return general() ? GENERAL_ACTIVE_ICON_V : ACTIVE_ICON_V;
+    }
+
+    private int channelX() {
+        return general() ? GENERAL_CHANNEL_X : CHANNEL_X;
+    }
+
+    private int channelY() {
+        return general() ? GENERAL_CHANNEL_Y : CHANNEL_Y;
+    }
+
+    private int runY() {
+        return general() ? GENERAL_RUN_Y : RUN_Y;
+    }
+
+    private int runSpriteV() {
+        return general() ? GENERAL_PLATE_V : RUN_SPRITE_V;
+    }
+
+    private int runIconV() {
+        return general() ? GENERAL_RUN_ICON_V : RUN_ICON_V;
+    }
+
+    private int troughSpriteV() {
+        return general() ? GENERAL_TROUGH_SPRITE_V : TROUGH_SPRITE_V;
+    }
+
+    private int troughX() {
+        return general() ? GENERAL_TROUGH_X : TROUGH_X;
+    }
+
+    private int troughY() {
+        return general() ? GENERAL_TROUGH_Y : TROUGH_Y;
+    }
+
+    /** The stacking switch: base plate, then the icon for the mode it is in. */
+    private void drawModeButton(GuiGraphics graphics, int mouseX, int mouseY) {
+        int x = this.leftPos + modeX();
+        int y = this.topPos + modeY();
+        boolean held = isPressed(x, y, MODE_WIDTH, MODE_HEIGHT, mouseX, mouseY);
+        graphics.blit(sheet(), x, y,
+                held ? MODE_PLATE_PRESSED_U : MODE_PLATE_U, plateV(),
+                MODE_WIDTH, MODE_HEIGHT);
+        boolean single = this.menu.isSingleCellMode();
+        graphics.blit(sheet(), x, y,
+                single ? MODE_ICON_U_SINGLE : MODE_ICON_U_MULTI, modeIconV(),
+                MODE_WIDTH, MODE_HEIGHT);
     }
 
     /** The reach-through switch: plate, then the icon for the state it is in. */
     private void drawActiveButton(GuiGraphics graphics, int mouseX, int mouseY) {
         int x = this.leftPos + activeX();
-        int y = this.topPos + ACTIVE_Y;
-        graphics.blit(IO_TEXTURE, x, y, ACTIVE_PLATE_U, ACTIVE_PLATE_V,
+        int y = this.topPos + activeY();
+        boolean held = isPressed(x, y, ACTIVE_WIDTH, ACTIVE_HEIGHT, mouseX, mouseY);
+        graphics.blit(sheet(), x, y,
+                held ? ACTIVE_PLATE_PRESSED_U : ACTIVE_PLATE_U, plateV(),
                 ACTIVE_WIDTH, ACTIVE_HEIGHT);
         boolean active = this.menu.isActivePort();
-        graphics.blit(IO_TEXTURE, x, y,
-                active ? ACTIVE_ICON_U_ACTIVE : ACTIVE_ICON_U_PASSIVE, ACTIVE_ICON_V,
+        graphics.blit(sheet(), x, y,
+                active ? ACTIVE_ICON_U_ACTIVE : ACTIVE_ICON_U_PASSIVE, activeIconV(),
                 ACTIVE_WIDTH, ACTIVE_HEIGHT);
+    }
+
+    /**
+     * The channel-participation switch: plate, then the icon for the state it is in.
+     *
+     * <p>The plate shows the press, not the setting — the same rule the run switch follows. Both
+     * states share one icon position, so the picture says what the switch <em>is</em> and the plate
+     * says whether the cursor is on it; reading the setting from the plate made the button look
+     * permanently held down.</p>
+     */
+    private void drawChannelButton(GuiGraphics graphics, int mouseX, int mouseY) {
+        int x = this.leftPos + channelX();
+        int y = this.topPos + channelY();
+        boolean held = isPressed(x, y, CHANNEL_WIDTH, CHANNEL_HEIGHT, mouseX, mouseY);
+        graphics.blit(GENERAL_TEXTURE, x, y,
+                held ? CHANNEL_PLATE_PRESSED_U : CHANNEL_PLATE_U, CHANNEL_PLATE_V,
+                CHANNEL_WIDTH, CHANNEL_HEIGHT);
+        boolean joins = this.menu.joinsEnergyChannel();
+        graphics.blit(GENERAL_TEXTURE, x, y,
+                joins ? CHANNEL_ICON_U_JOINS : CHANNEL_ICON_U_ISOLATED, CHANNEL_ICON_V,
+                CHANNEL_WIDTH, CHANNEL_HEIGHT);
     }
 
     private void drawLabels(GuiGraphics graphics) {
@@ -910,7 +1242,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * <p>How many cells an entry takes is the stacking mode's whole effect. In single-cell mode each
      * entry is one cell wide, so the grid is a plain row-major list. In multi-cell mode an entry
      * occupies as many cells as it needs, measured as the ceiling of its amount over the slot
-     * ceiling 鈥?a stack of 64 in a 64-per-slot bus takes one cell, a stack of 192 takes three.</p>
+     * ceiling — a stack of 64 in a 64-per-slot bus takes one cell, a stack of 192 takes three.</p>
      */
     private void drawStacks(GuiGraphics graphics) {
         List<GTReactionStack> rows = contents();
@@ -921,6 +1253,7 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
         var context = EmiDrawContext.wrap(graphics);
 
         int perSlot = Math.max(1, this.menu.slotLimit());
+        boolean single = this.menu.isSingleCellMode();
         int columns = GTPortMenu.STORAGE_COLUMNS;
         int capacity = GTPortMenu.STORAGE_CELLS;
 
@@ -932,29 +1265,25 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             if (drawn >= capacity) {
                 break;
             }
-            // The amount is a long while the ceiling is an int, so the division is done wide and
-            // then clamped: an entry can never need more cells than the grid has.
-            int span = this.menu.isSingleCellMode() ? 1 : (int) Math.clamp((stack.amount() + perSlot - 1) / perSlot, 1L, GTPortMenu.STORAGE_CELLS);
+            int span = spanOf(stack, perSlot, single);
             // Skip entries above the visible window, and clip one that starts inside it.
             if (cursor + span <= this.scrollRow * columns) {
                 cursor += span;
                 continue;
             }
-            for (int cell = 0; cell < span && drawn < capacity; cell++) {
-                int absolute = cursor + cell;
-                int windowCell = absolute - this.scrollRow * columns;
-                if (windowCell < 0) {
-                    continue;
-                }
-                if (windowCell >= capacity) {
-                    break;
-                }
+            // The icon goes in the entry's first visible cell; the cells it spans beyond that are
+            // reserved but left blank. Drawing it in each of them repeated one entry as several
+            // identical icons, which read as separate stacks of the same thing.
+            int firstVisible = Math.max(cursor, this.scrollRow * columns);
+            int lastVisible = Math.min(cursor + span, this.scrollRow * columns + capacity);
+            if (firstVisible < lastVisible) {
+                int windowCell = firstVisible - this.scrollRow * columns;
                 int column = windowCell % columns;
                 int row = windowCell / columns;
                 int x = this.leftPos + GTPortMenu.STORAGE_X + column * GTPortMenu.SLOT_STEP;
                 int y = this.topPos + GTPortMenu.STORAGE_Y + row * GTPortMenu.SLOT_STEP;
                 drawStack(graphics, context, stack, x, y, registries);
-                drawn++;
+                drawn += lastVisible - firstVisible;
             }
             cursor += span;
         }
@@ -1151,48 +1480,69 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * step rather than letting one fill smoothly and the other in jumps.</p>
      */
     private void drawEnergyTrough(GuiGraphics graphics) {
-        int capacity = this.menu.syncedCapacity();
-        int stored = this.menu.syncedAmount();
-        int x = this.leftPos + TROUGH_X;
-        int y = this.topPos + TROUGH_Y;
+        int capacity = this.menu.energyCapacity();
+        int stored = this.menu.energyStored();
+        int x = this.leftPos + troughX();
+        int y = this.topPos + troughY();
 
         int cells = capacity <= 0 || stored <= 0
                 ? 0 : (int) Math.min(TROUGH_CELLS, (long) stored * TROUGH_CELLS / capacity);
         if (cells > 0) {
             int width = TROUGH_FIRST_CELL + (cells - 1) * TROUGH_CELL_STEP;
-            graphics.blit(ENERGY_TEXTURE, x, y,
-                    TROUGH_SPRITE_U, TROUGH_SPRITE_V, width, TROUGH_HEIGHT);
+            // A dedicated hatch fills from the energy sheet; an assembly's trough is cut into its
+            // own sheet, so the sprite comes from there instead.
+            boolean general = this.menu.kind() == GTPortKind.GENERAL;
+            graphics.blit(general ? GENERAL_TEXTURE : ENERGY_TEXTURE, x, y,
+                    TROUGH_SPRITE_U, troughSpriteV(), width, TROUGH_HEIGHT);
         }
+    }
 
-        drawEnergyCaptions(graphics);
+    /**
+     * Explains the trough: what is stored and what the part can hold.
+     *
+     * <p>Only an assembly needs this. A dedicated energy hatch prints the same figures on the four
+     * caption lines under its trough; an assembly has no room for those, because its window quotes
+     * its own byte and type ceilings where they would go.</p>
+     */
+    private void renderTroughTooltip(GuiGraphics graphics, int mouseX, int mouseY) {
+        int x = this.leftPos + troughX();
+        int y = this.topPos + troughY();
+        if (mouseX < x || mouseX >= x + TROUGH_SPRITE_WIDTH
+                || mouseY < y || mouseY >= y + TROUGH_HEIGHT) {
+            return;
+        }
+        graphics.renderTooltip(this.font,
+                Component.translatable("gui.goldentweaks.port.energy.stored_value",
+                        GTEnergyFormat.formatWithUnit(this.menu.energyStored(), "FE"),
+                        GTEnergyFormat.formatWithUnit(this.menu.energyCapacity(), "FE")),
+                mouseX, mouseY);
     }
 
     /**
      * The run switch: base plate from the port sheet, icon from the machine's.
      *
      * <p>Two sheets are involved because the port sheets carry the button's base but not its
-     * icons 鈥?the green triple arrow and the yellow pause bar live only on the machine sheet, in
+     * icons — the green triple arrow and the yellow pause bar live only on the machine sheet, in
      * the row the refresh hammer occupies. Blitting the base from ours and the icon from the
      * machine's is what makes the port's switch look like the machine's switch rather than an
      * empty plate.</p>
      */
     private void drawRunButton(GuiGraphics graphics, int mouseX, int mouseY) {
         int x = this.leftPos + RUN_X;
-        int y = this.topPos + RUN_Y;
-        boolean held = mouseX >= x && mouseX < x + RUN_WIDTH
-                && mouseY >= y && mouseY < y + RUN_HEIGHT;
+        int y = this.topPos + runY();
+        boolean held = isPressed(x, y, RUN_WIDTH, RUN_HEIGHT, mouseX, mouseY);
 
         // Base plate: the sprite is 22 by 11 with a transparent margin around a 20 by 9 cell.
         int baseU = held ? RUN_SPRITE_PRESSED_U : RUN_SPRITE_U;
-        graphics.blit(IO_TEXTURE, x + RUN_SPRITE_DX, y + RUN_SPRITE_DY,
-                baseU, RUN_SPRITE_V, RUN_SPRITE_WIDTH, RUN_SPRITE_HEIGHT);
+        graphics.blit(sheet(), x + RUN_SPRITE_DX, y + RUN_SPRITE_DY,
+                baseU, runSpriteV(), RUN_SPRITE_WIDTH, RUN_SPRITE_HEIGHT);
 
         // Icon: green arrows while the port takes part, yellow pause while it does not. It shares
         // the plate's footprint, so it goes down at the same offset and layers over it.
         boolean enabled = this.menu.port() != null && this.menu.port().isEnabled();
         int iconU = enabled ? RUN_ICON_U_RUN : RUN_ICON_U_STOP;
-        graphics.blit(IO_TEXTURE, x + RUN_SPRITE_DX, y + RUN_SPRITE_DY,
-                iconU, RUN_ICON_V, RUN_ICON_WIDTH, RUN_ICON_HEIGHT);
+        graphics.blit(sheet(), x + RUN_SPRITE_DX, y + RUN_SPRITE_DY,
+                iconU, runIconV(), RUN_ICON_WIDTH, RUN_ICON_HEIGHT);
     }
 
     /**
@@ -1300,15 +1650,29 @@ public class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
      * used to, which is the only place with room for a seven-digit fraction.</p>
      */
     private void drawCapacity(GuiGraphics graphics) {
-
-        // Compact rather than every digit: a high-tier hatch holds hundreds of thousands of mB, and
-        // the exact figure is unreadable at this size. The same ladder the energy port uses, so a
-        // number reads the same way across the machine's windows.
-        String unit = this.menu.kind() == GTPortKind.FLUID ? " mB" : "";
-        String amount = GTEnergyFormat.format(this.menu.syncedAmount())
-                + " / " + GTEnergyFormat.format(this.menu.syncedCapacity()) + unit;
-        String cells = this.menu.usedCells() + " / " + this.menu.totalCells() + " "
-                + Component.translatable("gui.goldentweaks.port.cells").getString();
+        String amount;
+        String cells;
+        if (this.menu.kind() == GTPortKind.GENERAL) {
+            // Bytes and types, not a cells count: the assembly's two ceilings are what the player
+            // compares against, and both are formatted on the compact ladder so a top-tier figure
+            // stays readable. Read from the entity on both sides — the ceilings are fixed by the
+            // tier, and the used figures are small enough to arrive with the block update.
+            amount = GTEnergyFormat.format(this.menu.generalBytesUsed())
+                    + " / " + GTEnergyFormat.format(this.menu.generalBytes())
+                    + " " + Component.translatable("gui.goldentweaks.port.bytes").getString();
+            cells = this.menu.generalTypesUsed()
+                    + " / " + GTEnergyFormat.format(this.menu.generalTypes())
+                    + " " + Component.translatable("gui.goldentweaks.port.types").getString();
+        } else {
+            // Compact rather than every digit: a high-tier hatch holds hundreds of thousands of mB,
+            // and the exact figure is unreadable at this size. The same ladder the energy port uses,
+            // so a number reads the same way across the machine's windows.
+            String unit = this.menu.kind() == GTPortKind.FLUID ? " mB" : "";
+            amount = GTEnergyFormat.format(this.menu.syncedAmount())
+                    + " / " + GTEnergyFormat.format(this.menu.syncedCapacity()) + unit;
+            cells = this.menu.usedCells() + " / " + this.menu.totalCells() + " "
+                    + Component.translatable("gui.goldentweaks.port.cells").getString();
+        }
 
         graphics.pose().pushPose();
         graphics.pose().translate(CAPTION_X, CAPTION_Y, 0.0F);

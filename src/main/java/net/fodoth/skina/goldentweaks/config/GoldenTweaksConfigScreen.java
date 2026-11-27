@@ -145,10 +145,6 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.feature.lost_maid_drop_chance",
                     LOST_MAID_DROP_CHANCE, 0.05D, 0.0D, 1.0D);
 
-            ConfigScreenHelper.addInt(feature, eb,
-                    "config.goldentweaks.feature.chemical_reactor_batch_min_ticks",
-                    CHEMICAL_REACTOR_BATCH_MIN_TICKS, 128, 1, 72000);
-
 
             // =========================================================
             // Misc
@@ -210,6 +206,10 @@ public class GoldenTweaksConfigScreen {
                     "config.goldentweaks.multiblock.projection_duration_ms",
                     MULTIBLOCK_PROJECTION_DURATION_MS, 10000, 0, 300000);
 
+            ConfigScreenHelper.addInt(multiblock, eb,
+                    "config.goldentweaks.multiblock.batch_min_ticks",
+                    CHEMICAL_REACTOR_BATCH_MIN_TICKS, 128, 1, 72000);
+
             // =========================================================
             // Balance
             // =========================================================
@@ -257,6 +257,30 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.mio_icif.tesla_coil_wear_armor",
                     MIO_ICIF_TESLA_COIL_WEAR_ARMOR, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.reactor_output_adjustment",
+                    MIO_ICIF_REACTOR_OUTPUT_ADJUSTMENT, true);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.reactor_multiplier",
+                    MIO_ICIF_REACTOR_MULTIPLIER, 10, 1, 1000);
+
+            ConfigScreenHelper.addLong(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.fusion_multiplier",
+                    MIO_ICIF_FUSION_MULTIPLIER, 1000000L, 1L, 1_000_000_000L);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.steam_reactor_multiplier",
+                    MIO_ICIF_STEAM_REACTOR_MULTIPLIER, 10, 1, 1000);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.steam_tunnel_multiplier",
+                    MIO_ICIF_STEAM_TUNNEL_MULTIPLIER, 10, 1, 1000);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.balance.mio_icif.disable_uu_solver",
+                    MIO_ICIF_DISABLE_UU_SOLVER, true);
 
             ConfigScreenHelper.addInt(balance, eb,
                     "config.goldentweaks.balance.mekanism.transporter_transit_cap",
@@ -370,6 +394,19 @@ public class GoldenTweaksConfigScreen {
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.thaumicbases.furnace_fuel_first",
                     FURNACE_FUEL_FIRST, true);
+
+            ConfigScreenHelper.addInt(balance, eb,
+                    "config.goldentweaks.balance.thaumicconcilium.thaumaturge_spawn_weight",
+                    THAUMICCONCILIUM_THAUMATURGE_SPAWN_WEIGHT,
+                    -1, -1, Integer.MAX_VALUE);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.oei.ore_unification_guard",
+                    ORE_UNIFICATION_GUARD, true);
+
+            ConfigScreenHelper.addBool(balance, eb,
+                    "config.goldentweaks.oei.ore_unification_self_heal",
+                    ORE_UNIFICATION_SELF_HEAL, true);
 
             ConfigScreenHelper.addBool(balance, eb,
                     "config.goldentweaks.balance.academy.magic_attack_damage",

@@ -939,6 +939,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("polymorph");
         }
 
+        // 神秘使自然刷新权重改由 GoldenTweaks 配置控制：重定向 BiomeModifier 里那两处权重读取
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.thaumicconcilium")) {
+            return checkIfPresent(
+                    "com.ilya3point999k.thaumicconcilium.common.entities.mobs.thaumaturge.ThaumaturgeModule$Spawns");
+        }
+
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.irons_jewelry")) {
             return isModLoaded("irons_jewelry");
         }

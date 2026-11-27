@@ -62,18 +62,6 @@ public final class GTMultiblockBlocks {
             BLOCKS.register("shell_aluminum", () -> new GTShellBlock(properties(), "OMNIDIRECTIONAL"));
 
 
-    public static final DeferredBlock<GTFacingBlock> INPUT_BUS =
-            BLOCKS.register("input_bus", () -> new GTFacingBlock(properties()));
-
-    public static final DeferredBlock<GTFacingBlock> AUTO_INPUT_BUS =
-            BLOCKS.register("auto_input_bus", () -> new GTFacingBlock(properties()));
-
-    public static final DeferredBlock<GTFacingBlock> OUTPUT_BUS =
-            BLOCKS.register("output_bus", () -> new GTFacingBlock(properties()));
-
-    public static final DeferredBlock<GTFacingBlock> INPUT_CATALYST =
-            BLOCKS.register("input_catalyst", () -> new GTFacingBlock(properties()));
-
     /**
      * Every casing a port can show, in the order the block state's {@code casing} index refers to.
      *
@@ -110,20 +98,6 @@ public final class GTMultiblockBlocks {
 
     public static final DeferredItem<BlockItem> SHELL_ALUMINUM_ITEM =
             ITEMS.register("shell_aluminum", () -> new BlockItem(SHELL_ALUMINUM.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> INPUT_BUS_ITEM =
-            ITEMS.register("input_bus", () -> new BlockItem(INPUT_BUS.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> AUTO_INPUT_BUS_ITEM =
-            ITEMS.register("auto_input_bus",
-                    () -> new BlockItem(AUTO_INPUT_BUS.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> OUTPUT_BUS_ITEM =
-            ITEMS.register("output_bus", () -> new BlockItem(OUTPUT_BUS.get(), new Item.Properties()));
-
-    public static final DeferredItem<BlockItem> INPUT_CATALYST_ITEM =
-            ITEMS.register("input_catalyst",
-                    () -> new BlockItem(INPUT_CATALYST.get(), new Item.Properties()));
 
     // =========================
     // 自有端口（取代 AMI 端口）
@@ -217,6 +191,8 @@ public final class GTMultiblockBlocks {
         return switch (kind) {
             case CHEMICAL -> ModList.get().isLoaded("mekanism");
             case ESSENTIA -> ModList.get().isLoaded("thaumcraft");
+            // The general assembly carries whatever kinds are installed, so it is always worth
+            // registering: with neither mod it still hauls items, fluids and energy.
             default -> true;
         };
     }

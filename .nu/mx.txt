@@ -1,0 +1,43 @@
+public boolean isMaxYield();
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: bipush        8
+       5: if_icmpge     43
+       8: aload_0
+       9: getfield      #49                 // Field itemHandler:Lcom/miophas/singularity_iteration/core/prefab/inventory/MachineItemHandler;
+      12: iload_1
+      13: invokevirtual #67                 // Method com/miophas/singularity_iteration/core/prefab/inventory/MachineItemHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      16: astore_2
+      17: aload_2
+      18: invokevirtual #71                 // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      21: ifne          35
+      24: aload_2
+      25: invokevirtual #85                 // Method net/minecraft/world/item/ItemStack.getCount:()I
+      28: aload_2
+      29: invokevirtual #109                // Method net/minecraft/world/item/ItemStack.getMaxStackSize:()I
+      32: if_icmpge     37
+      35: iconst_0
+      36: ireturn
+      37: iinc          1, 1
+      40: goto          2
+      43: aload_0
+      44: getfield      #49                 // Field itemHandler:Lcom/miophas/singularity_iteration/core/prefab/inventory/MachineItemHandler;
+      47: bipush        8
+      49: invokevirtual #67                 // Method com/miophas/singularity_iteration/core/prefab/inventory/MachineItemHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      52: astore_1
+      53: aload_1
+      54: invokevirtual #71                 // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      57: ifne          75
+      60: aload_1
+      61: invokevirtual #85                 // Method net/minecraft/world/item/ItemStack.getCount:()I
+      64: aload_1
+      65: invokevirtual #109                // Method net/minecraft/world/item/ItemStack.getMaxStackSize:()I
+      68: if_icmplt     75
+      71: iconst_1
+      72: goto          76
+      75: iconst_0
+      76: ireturn
+
+  

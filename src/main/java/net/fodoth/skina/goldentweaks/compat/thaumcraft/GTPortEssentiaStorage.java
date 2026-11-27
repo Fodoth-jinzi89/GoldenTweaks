@@ -51,6 +51,10 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
     private final BooleanSupplier active;
     /** Whether this port outputs; an output advertises the negative of the same figure. */
     private final BooleanSupplier output;
+    /** How many tanks are in use. Read live, so a switch never has to rebuild this store. */
+    private java.util.function.IntSupplier quota = () -> Integer.MAX_VALUE;
+    /** How much of a request may actually be taken. See the fluid store's {@code room}. */
+    private java.util.function.IntUnaryOperator room = wanted -> wanted;
     private Runnable changedHook = () -> {
     };
 
@@ -63,6 +67,26 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
         this.singleCell = singleCell;
         this.active = active;
         this.output = output;
+    }
+
+    /**
+     * Restricts how many tanks this store may use.
+     *
+     * <p>Asked on every write rather than taken at construction, so a player's switch applies
+     * without the store object being replaced — which is what keeps outside references valid.</p>
+     */
+    public void setQuota(java.util.function.IntSupplier quota) {
+        this.quota = quota;
+    }
+
+    /** Caps how much of one request this store may take, for a port sharing a budget. */
+    public void setRoom(java.util.function.IntUnaryOperator room) {
+        this.room = room;
+    }
+
+    /** Whether a tank index is inside the quota. */
+    private boolean inQuota(int tank) {
+        return tank < this.quota.getAsInt();
     }
 
     public void setChangedHook(Runnable hook) {
@@ -198,7 +222,7 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
         }
         long room = 0L;
         boolean started = false;
-        for (int index = 0; index < this.aspects.length && room < wanted; index++) {
+        for (int index = 0; index < this.aspects.length && room < wanted && inQuota(index); index++) {
             boolean same = this.aspects[index] == aspect;
             boolean free = this.aspects[index] == null || this.amounts[index] <= 0;
             // The first tank may hold this aspect or be empty; after that only that same tank counts,
@@ -228,14 +252,14 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
         }
         if (!this.singleCell.getAsBoolean()) {
             for (int index = 0; index < this.aspects.length; index++) {
-                if (this.amounts[index] < this.tankCapacity) {
+                if (inQuota(index) && this.amounts[index] < this.tankCapacity) {
                     return index;
                 }
             }
             return null;
         }
         for (int index = 0; index < this.aspects.length; index++) {
-            if (this.aspects[index] == null || this.amounts[index] <= 0) {
+            if (inQuota(index) && (this.aspects[index] == null || this.amounts[index] <= 0)) {
                 return index;
             }
         }
@@ -252,10 +276,15 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
         if (aspect == null || amount <= 0) {
             return 0;
         }
+        // Clipped first, so a kind borrowing another's share cannot pass the part's total.
+        int allowed = this.room.applyAsInt(amount);
+        if (allowed <= 0) {
+            return 0;
+        }
         if (!this.singleCell.getAsBoolean()) {
             int accepted = 0;
-            int remaining = amount;
-            for (int index = 0; index < this.aspects.length && remaining > 0; index++) {
+            int remaining = allowed;
+            for (int index = 0; index < this.aspects.length && remaining > 0 && inQuota(index); index++) {
                 int moved = addTo(index, aspect, remaining);
                 accepted += moved;
                 remaining -= moved;
@@ -263,7 +292,7 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
             return accepted;
         }
         Integer tank = admit(aspect);
-        return tank == null ? 0 : addTo(tank, aspect, amount);
+        return tank == null ? 0 : addTo(tank, aspect, allowed);
     }
 
     private int addTo(int tank, Aspect aspect, int amount) {

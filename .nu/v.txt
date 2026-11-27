@@ -1,0 +1,17 @@
+======================================================================
+mio_icif_fluid_reactor_validator
+======================================================================
+  45: ldc           #28                 // String Structure chunk unavailable
+  77: ldc           #48                 // String Missing reactor
+  147: ldc           #69                 // String Missing chamber
+  278: ldc           #93                 // String Incomplete vessel shell
+  361: ldc           #104                // String Missing functional port
+  378: ldc           #120                // String fluidPortCount
+  388: ldc           #132                // String accessHatchCount
+  398: ldc           #134                // String redstonePortCount
+  411: ldc           #136                // String redstonePortPositions
+  public java.lang.String getStructureName();
+  0: ldc           #155                // String FluidReactor5x5x5
+======================================================================
+ChamberTopology
+======================================================================

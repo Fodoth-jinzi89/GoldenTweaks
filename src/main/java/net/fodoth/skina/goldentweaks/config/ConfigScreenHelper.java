@@ -117,6 +117,52 @@ public class ConfigScreenHelper {
     }
 
     // =========================================================
+    // LONG
+    // =========================================================
+    public static void addLong(
+            Object category,
+            Object eb,
+            String key,
+            ModConfigSpec.LongValue config,
+            long def,
+            long min,
+            long max
+    ) {
+        try {
+            Object builder = eb.getClass()
+                    .getMethod(
+                            "startLongField",
+                            Component.class,
+                            long.class
+                    )
+                    .invoke(
+                            eb,
+                            Component.translatable(key),
+                            config.get()
+                    );
+
+            invoke(builder, "setDefaultValue", def);
+            invoke(builder, "setMin", min);
+            invoke(builder, "setMax", max);
+
+            applyComment(builder, key);
+
+            bindSaveConsumer(
+                    builder,
+                    config::set
+            );
+
+            Object entry = invoke(builder, "build");
+
+            bind(entry, config);
+
+            addEntry(category, entry);
+
+        } catch (Exception ignored) {
+        }
+    }
+
+    // =========================================================
     // BOOL
     // =========================================================
     public static void addBool(

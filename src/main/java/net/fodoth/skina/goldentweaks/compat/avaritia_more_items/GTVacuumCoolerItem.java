@@ -25,6 +25,8 @@ public class GTVacuumCoolerItem extends GTChemicalReactorItem {
     private static final String PART_FLUID_INPUT = "tooltip.goldentweaks.chemical_reactor.part.fluid_input";
     private static final String PART_OUTPUT_BUS = "tooltip.goldentweaks.chemical_reactor.part.output_bus";
     private static final String PART_FLUID_OUTPUT = "tooltip.goldentweaks.chemical_reactor.part.fluid_output";
+    private static final String PART_GENERAL_INPUT = "tooltip.goldentweaks.chemical_reactor.part.general_input";
+    private static final String PART_GENERAL_OUTPUT = "tooltip.goldentweaks.chemical_reactor.part.general_output";
     private static final String PART_ENERGY_INPUT = "tooltip.goldentweaks.chemical_reactor.part.energy_input";
 
     public GTVacuumCoolerItem(Block block, Properties properties, String casingKey) {
@@ -72,6 +74,10 @@ public class GTVacuumCoolerItem extends GTChemicalReactorItem {
                 new Part(0, PART_FLUID_INPUT),
                 new Part(0, PART_OUTPUT_BUS),
                 new Part(0, PART_FLUID_OUTPUT),
+                // Above the energy hatch, as on the kettles: an assembly covers item, fluid and
+                // energy at once, so it stands in for that hatch rather than beside it.
+                new Part(0, PART_GENERAL_INPUT),
+                new Part(0, PART_GENERAL_OUTPUT),
                 new Part(0, PART_ENERGY_INPUT));
     }
 }

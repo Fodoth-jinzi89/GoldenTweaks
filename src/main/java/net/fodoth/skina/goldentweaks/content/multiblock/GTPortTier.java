@@ -199,6 +199,108 @@ public enum GTPortTier {
         return slotLimit();
     }
 
+    // ---- general assembly: measured in bytes and types ----
+
+    /** The general assembly's base byte count at ULV: one kilobyte. */
+    private static final long GENERAL_BASE_BYTES = 1024L;
+
+    /**
+     * The nominal byte target of a general assembly of this tier: {@code 1k × 4^(level-1)}.
+     *
+     * <p>Quadrupling per level rather than doubling: the assembly replaces five separate hatches at
+     * once, so a level has to buy back more than one of them.</p>
+     *
+     * <p>Not what the part can hold. A cell is {@code int}-wide, so each one is capped at
+     * {@link #GENERAL_CELL_CEILING}; {@link #generalBytes()} is the figure that survives that cap
+     * and is the one the window and the tooltip both quote.</p>
+     */
+    private long generalBytesTarget() {
+        return GENERAL_BASE_BYTES << (2 * (level() - 1));
+    }
+
+    /**
+     * How many distinct types a general assembly of this tier holds: {@code 4 × level}.
+     *
+     * <p>Linear on purpose, the way AE sizes a cell's type count rather than its byte count.</p>
+     */
+    public int generalTypes() {
+        return 4 * level();
+    }
+
+    /** How many kinds a general assembly serves, which is what its cells are split between. */
+    public static final int GENERAL_KINDS = 5;
+
+    /**
+     * How many of those kinds are measured in bytes and therefore get cells.
+     *
+     * <p>Energy is the odd one out: it is a rate-limited store sized from the energy table rather
+     * than a share of the byte budget, so giving it cells as well would leave part of the budget
+     * unspendable.</p>
+     */
+    public static final int GENERAL_BYTE_KINDS = 4;
+
+    /**
+     * The most one cell may hold.
+     *
+     * <p>{@code ItemStackHandler} and {@code FluidTank} are both {@code int}-wide, so this is the
+     * ceiling the game imposes rather than one chosen here. Only the top tiers reach it.</p>
+     */
+    public static final int GENERAL_CELL_CEILING = Integer.MAX_VALUE;
+
+    /**
+     * Cells the whole assembly has, summed over the byte kinds: {@code 8 × level}.
+     *
+     * <p>Twice the type count, so every type can span more than one cell — which is what lets the
+     * assembly act as a buffer rather than a set of pigeonholes. MAX lands on 120, thirty per byte
+     * kind.</p>
+     */
+    public int generalTotalCells() {
+        return 8 * level();
+    }
+
+    /**
+     * Cells one kind gets, out of {@link #generalTotalCells()}.
+     *
+     * <p>Split evenly between the four kinds that are counted in bytes, with the remainder handed
+     * out one cell at a time from the first. Even a budget of eight cells therefore still leaves
+     * every kind with at least one — the point of the split, since a kind with no cell is a kind the
+     * assembly cannot serve at all.</p>
+     *
+     * <p>Energy is not one of them: it is not measured in bytes but in FE, and its store is sized
+     * from the energy table so that it matches a dedicated hatch. See {@link #generalBytes}.</p>
+     *
+     * @param kindIndex 0 for items, then fluids, chemicals and essentia in that order
+     */
+    public int generalCellsForKind(int kindIndex) {
+        int total = generalTotalCells();
+        int base = total / GENERAL_BYTE_KINDS;
+        int remainder = total % GENERAL_BYTE_KINDS;
+        return base + (kindIndex < remainder ? 1 : 0);
+    }
+
+    /**
+     * What one cell holds, in bytes.
+     *
+     * <p>The tier's target divided over every cell, then capped at {@link #GENERAL_CELL_CEILING}.
+     * The cap bites at MAX, where the target works out to 2.29 G per cell: one cell then holds
+     * 2,147,483,647 and the assembly tops out at 257.7 G rather than the 274 G it asks for.</p>
+     */
+    public int generalCellBytes() {
+        long perCell = generalBytesTarget() / generalTotalCells();
+        return (int) Math.max(1L, Math.min(GENERAL_CELL_CEILING, perCell));
+    }
+
+    /**
+     * How many bytes a general assembly of this tier can actually hold.
+     *
+     * <p>The cells' real capacity, which is the target unless a per-cell cap cut it down. Every
+     * reader — window, tooltip and store — quotes this figure, so none of them can promise what the
+     * part cannot deliver.</p>
+     */
+    public long generalBytes() {
+        return (long) generalCellBytes() * generalTotalCells();
+    }
+
     // ---- active-port throughput ----
 
     /** Ticks one transfer step takes: 80 for ULV, 20 for LV, then one. */

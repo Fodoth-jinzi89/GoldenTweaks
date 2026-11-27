@@ -467,8 +467,8 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         graphics.blit(texture(), this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight);
 
         renderEnergyTrough(graphics);
-        renderAddonButtons(graphics);
-        renderSideButtons(graphics);
+        renderAddonButtons(graphics, mouseX, mouseY);
+        renderSideButtons(graphics, mouseX, mouseY);
         renderSidebar(graphics);
     }
 
@@ -715,11 +715,19 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 ENERGY_SPRITE_U, ENERGY_SPRITE_V, width, ENERGY_HEIGHT);
     }
 
-    private void renderAddonButtons(GuiGraphics graphics) {
+    /**
+     * The four addon switches.
+     *
+     * <p>A plate shows the press, not the setting: it lights while the cursor is held down on it,
+     * and the icon on top says which way the switch is. Dragging off a held button releases the
+     * plate, the way a button behaves.</p>
+     */
+    private void renderAddonButtons(GuiGraphics graphics, int mouseX, int mouseY) {
         for (int index = 0; index < ADDON_COUNT; index++) {
             int x = this.leftPos + ADDON_X + index * ADDON_STEP;
             int y = this.topPos + ADDON_Y;
-            int backgroundU = this.held[index] ? ADDON_SPRITE_PRESSED_U : ADDON_SPRITE_U;
+            boolean pressed = this.held[index] && over(x, y, ADDON_WIDTH, ADDON_HEIGHT, mouseX, mouseY);
+            int backgroundU = pressed ? ADDON_SPRITE_PRESSED_U : ADDON_SPRITE_U;
             graphics.blit(texture(), x, y, backgroundU, ADDON_SPRITE_V, ADDON_WIDTH, ADDON_HEIGHT);
 
             if (index == WIDGET_ISOLATE) {
@@ -745,23 +753,32 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         }
     }
 
-    private void renderSideButtons(GuiGraphics graphics) {
+    private void renderSideButtons(GuiGraphics graphics, int mouseX, int mouseY) {
+        // The refresh switch doubles as a spinner: its held flag drives the icon column too, so the
+        // icon is passed in rather than derived here.
         renderSideButton(graphics, WIDGET_REFRESH, SIDE_REFRESH_Y,
-                this.held[WIDGET_REFRESH] ? 1 : 0, SIDE_ICON_V_REFRESH);
+                this.held[WIDGET_REFRESH] ? 1 : 0, SIDE_ICON_V_REFRESH, mouseX, mouseY);
         // Sprite column 0 holds the green arrow and column 1 the yellow pause mark, so a running
         // machine shows the arrow and a stopped one the pause mark.
         renderSideButton(graphics, WIDGET_RUNNING, SIDE_RUNNING_Y,
-                this.menu.isRunning() ? 0 : 1, SIDE_ICON_V_RUNNING);
+                this.menu.isRunning() ? 0 : 1, SIDE_ICON_V_RUNNING, mouseX, mouseY);
         renderSideButton(graphics, WIDGET_DISMANTLE, SIDE_DISMANTLE_Y,
-                this.dismantleArmed ? 1 : 0, SIDE_ICON_V_DISMANTLE);
+                this.dismantleArmed ? 1 : 0, SIDE_ICON_V_DISMANTLE, mouseX, mouseY);
     }
 
-    private void renderSideButton(GuiGraphics graphics, int widget, int y, int iconColumn, int iconV) {
+    private void renderSideButton(GuiGraphics graphics, int widget, int y, int iconColumn,
+                                  int iconV, int mouseX, int mouseY) {
         int x = this.leftPos + SIDE_X;
         int top = this.topPos + y;
-        int backgroundU = this.held[widget] ? SIDE_SPRITE_PRESSED_U : SIDE_SPRITE_U;
+        boolean pressed = this.held[widget] && over(x, top, SIDE_WIDTH, SIDE_HEIGHT, mouseX, mouseY);
+        int backgroundU = pressed ? SIDE_SPRITE_PRESSED_U : SIDE_SPRITE_U;
         graphics.blit(texture(), x, top, backgroundU, SIDE_SPRITE_V, SIDE_WIDTH, SIDE_HEIGHT);
         graphics.blit(texture(), x, top, iconColumn * SIDE_WIDTH, iconV, SIDE_WIDTH, SIDE_HEIGHT);
+    }
+
+    /** Whether a point is inside a plate, for the pressed state. */
+    private static boolean over(int x, int y, int width, int height, int mouseX, int mouseY) {
+        return mouseX >= x && mouseX < x + width && mouseY >= y && mouseY < y + height;
     }
 
     @Override

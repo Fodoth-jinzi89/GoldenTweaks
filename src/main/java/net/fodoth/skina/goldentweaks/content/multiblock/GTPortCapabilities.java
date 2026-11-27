@@ -29,33 +29,35 @@ public final class GTPortCapabilities {
     }
 
     public static void register(RegisterCapabilitiesEvent event) {
-        // AMI's own keys: this is what the multiblock matcher and recipe code query.
+        // A general assembly answers on every kind's capability, since it holds all of them. That
+        // is what lets one part stand in for a row of dedicated ports: the machine asks each
+        // binding for its own capability, and the assembly replies to each.
         assert GTMultiblockBlocks.PORT_ENTITY != null;
         event.registerBlockEntity(AMICapabilities.ITEM.block(),
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
-                        port.kind() == GTPortKind.ITEM
+                        port.kind() == GTPortKind.ITEM || port.kind() == GTPortKind.GENERAL
                                 ? port.itemHandler() : null);
         event.registerBlockEntity(AMICapabilities.FLUID.block(),
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
-                        port.kind() == GTPortKind.FLUID
+                        port.kind() == GTPortKind.FLUID || port.kind() == GTPortKind.GENERAL
                                 ? port.fluidHandler() : null);
         event.registerBlockEntity(AMICapabilities.ENERGY.block(),
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
-                        port.kind() == GTPortKind.ENERGY
+                        port.kind() == GTPortKind.ENERGY || port.kind() == GTPortKind.GENERAL
                                 ? port.energyStorage() : null);
 
         // Standard keys, so other mods' transport can use the ports too.
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
-                        port.kind() == GTPortKind.ITEM
+                        port.kind() == GTPortKind.ITEM || port.kind() == GTPortKind.GENERAL
                                 ? port.itemHandler() : null);
         event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
-                        port.kind() == GTPortKind.FLUID
+                        port.kind() == GTPortKind.FLUID || port.kind() == GTPortKind.GENERAL
                                 ? port.fluidHandler() : null);
         event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK,
                 GTMultiblockBlocks.PORT_ENTITY.get(), (port, side) ->
-                        port.kind() == GTPortKind.ENERGY
+                        port.kind() == GTPortKind.ENERGY || port.kind() == GTPortKind.GENERAL
                                 ? port.energyStorage() : null);
 
         // Chemicals and essentia are answered through their own mods' capabilities, and only when
@@ -84,6 +86,7 @@ public final class GTPortCapabilities {
                     CHEMICAL.block(),
                     GTMultiblockBlocks.PORT_ENTITY.get(),
                     (port, side) -> port.kind() == GTPortKind.CHEMICAL
+                            || port.kind() == GTPortKind.GENERAL
                             ? (IChemicalHandler) port.chemicalStorage() : null);
         }
     }
@@ -95,6 +98,7 @@ public final class GTPortCapabilities {
                     EssentiaCapabilities.TRANSPORT,
                     GTMultiblockBlocks.PORT_ENTITY.get(),
                     (port, side) -> port.kind() == GTPortKind.ESSENTIA
+                            || port.kind() == GTPortKind.GENERAL
                             ? (IEssentiaTransport) port.essentiaTransportObject()
                             : null);
         }

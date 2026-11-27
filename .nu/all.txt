@@ -1,0 +1,29 @@
+nuclear_material constructions: 14
+  private static net.minecraft.world.item.Item lambda$static$141();
+     -> ['0.3']
+  private static net.minecraft.world.item.Item lambda$static$137();
+     -> ['1.5']
+  private static net.minecraft.world.item.Item lambda$static$136();
+     -> ['0.5']
+  private static net.minecraft.world.item.Item lambda$static$135();
+     -> ['0.3']
+  private static net.minecraft.world.item.Item lambda$static$134();
+     -> []
+  private static net.minecraft.world.item.Item lambda$static$133();
+     -> ['6.0']
+  private static net.minecraft.world.item.Item lambda$static$132();
+     -> []
+  private static net.minecraft.world.item.Item lambda$static$131();
+     -> ['6.0']
+  private static net.minecraft.world.item.Item lambda$static$130();
+     -> []
+  private static net.minecraft.world.item.Item lambda$static$106();
+     -> ['5.0']
+  private static net.minecraft.world.item.Item lambda$static$105();
+     -> ['15.0']
+  private static net.minecraft.world.item.Item lambda$static$104();
+     -> ['15.0']
+  private static net.minecraft.world.item.Item lambda$static$98();
+     -> ['2.5']
+  private static net.minecraft.world.item.Item lambda$static$97();
+     -> ['2.5']

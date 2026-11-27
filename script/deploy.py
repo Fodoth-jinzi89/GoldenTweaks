@@ -17,7 +17,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MODS = Path(r"E:\机械动力魔法大冒险\.minecraft\versions\hkx\mods")
-SOURCE = ROOT / "build/libs/goldentweaks-4.7.9.jar"
+LIBS = ROOT / "build/libs"
+
+
+def source_jar():
+    """The mod jar this build produced, or None.
+
+    Found rather than hard-coded: the version changes every release, and a fixed name silently
+    deployed the previous build once the version moved on.
+    """
+    candidates = sorted(
+        (p for p in LIBS.glob("goldentweaks-*.jar")
+         if "sources" not in p.name and "javadoc" not in p.name),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True)
+    return candidates[0] if candidates else None
 
 # Every name this mod has shipped under, so leftovers from older builds are caught too.
 PATTERNS = ("goldentweaks-*.jar", "*goldentweaks*.jar", "*goldentweaks*.jar.disabled")
@@ -41,8 +55,9 @@ def mod_id_of(jar):
 
 def main(argv):
     dry_run = "--dry-run" in argv
-    if not SOURCE.is_file():
-        print(f"missing build output: {SOURCE}")
+    source = source_jar()
+    if source is None:
+        print(f"missing build output: no goldentweaks-*.jar under {LIBS}")
         return 1
 
     present = sorted({p for pattern in PATTERNS for p in MODS.glob(pattern)})
@@ -56,16 +71,16 @@ def main(argv):
         print(f"  skipping {jar.name}: different modId")
 
     if dry_run:
-        print(f"\nwould remove {len(ours)} and copy {SOURCE.name}")
+        print(f"\nwould remove {len(ours)} and copy {source.name}")
         return 0
 
     for jar in ours:
         jar.unlink()
         print(f"removed {jar.name}")
 
-    target = MODS / SOURCE.name
-    shutil.copy2(SOURCE, target)
-    print(f"copied {SOURCE.name} ({target.stat().st_size} bytes)")
+    target = MODS / source.name
+    shutil.copy2(source, target)
+    print(f"copied {source.name} ({target.stat().st_size} bytes)")
     return 0
 
 

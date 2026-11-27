@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BooleanSupplier;
+import java.util.function.IntSupplier;
 
 /**
  * The tanks behind a chemical hopper, with the stacking mode enforced on the way in.
@@ -39,6 +40,10 @@ public class GTPortChemicalStorage implements IChemicalHandler {
     private final long tankCapacity;
     /** Read live from the port, so a toggle applies to the very next insertion. */
     private final BooleanSupplier singleCell;
+    /** How many tanks are in use. Read live, so a switch never has to rebuild this store. */
+    private IntSupplier quota = () -> Integer.MAX_VALUE;
+    /** How much of a request may actually be taken. See the fluid store's {@code room}. */
+    private java.util.function.UnaryOperator<Long> room = wanted -> wanted;
     private Runnable changedHook = () -> {
     };
 
@@ -49,6 +54,26 @@ public class GTPortChemicalStorage implements IChemicalHandler {
         }
         this.tankCapacity = tankCapacity;
         this.singleCell = singleCell;
+    }
+
+    /**
+     * Restricts how many tanks this store may use.
+     *
+     * <p>Asked on every write rather than taken at construction, so a player's switch applies
+     * without the store object being replaced — which is what keeps outside references valid.</p>
+     */
+    public void setQuota(IntSupplier quota) {
+        this.quota = quota;
+    }
+
+    /** Caps how much of one request this store may take, for a port sharing a budget. */
+    public void setRoom(java.util.function.UnaryOperator<Long> room) {
+        this.room = room;
+    }
+
+    /** Whether a tank index is inside the quota. */
+    private boolean inQuota(int tank) {
+        return tank < this.quota.getAsInt();
     }
 
     public void setChangedHook(Runnable hook) {
@@ -112,20 +137,20 @@ public class GTPortChemicalStorage implements IChemicalHandler {
     private Integer admit(ChemicalStack resource) {
         for (int index = 0; index < this.tanks.length; index++) {
             ChemicalStack tank = this.tanks[index];
-            if (!tank.isEmpty() && ChemicalStack.isSameChemical(tank, resource)) {
+            if (inQuota(index) && !tank.isEmpty() && ChemicalStack.isSameChemical(tank, resource)) {
                 return index;
             }
         }
         if (!this.singleCell.getAsBoolean()) {
             for (int index = 0; index < this.tanks.length; index++) {
-                if (this.tanks[index].getAmount() < this.tankCapacity) {
+                if (inQuota(index) && this.tanks[index].getAmount() < this.tankCapacity) {
                     return index;
                 }
             }
             return null;
         }
         for (int index = 0; index < this.tanks.length; index++) {
-            if (this.tanks[index].isEmpty()) {
+            if (inQuota(index) && this.tanks[index].isEmpty()) {
                 return index;
             }
         }
@@ -290,7 +315,7 @@ public class GTPortChemicalStorage implements IChemicalHandler {
         }
         long room = 0L;
         boolean started = false;
-        for (int index = 0; index < this.tanks.length && room < wanted; index++) {
+        for (int index = 0; index < this.tanks.length && room < wanted && inQuota(index); index++) {
             ChemicalStack tank = this.tanks[index];
             boolean same = !tank.isEmpty() && ChemicalStack.isSameChemical(tank, wantedStack);
             boolean free = tank.isEmpty();
@@ -326,8 +351,15 @@ public class GTPortChemicalStorage implements IChemicalHandler {
             return ChemicalStack.EMPTY;
         }
         if (!this.singleCell.getAsBoolean()) {
-            ChemicalStack remaining = stack.copy();
-            for (int index = 0; index < this.tanks.length && !remaining.isEmpty(); index++) {
+            // Clipped first, so a kind borrowing another's share cannot pass the part's total.
+            long allowed = this.room.apply(stack.getAmount());
+            if (allowed <= 0) {
+                return stack;
+            }
+            ChemicalStack request = allowed >= stack.getAmount()
+                    ? stack : stack.copyWithAmount(allowed);
+            ChemicalStack remaining = request.copy();
+            for (int index = 0; index < this.tanks.length && inQuota(index) && !remaining.isEmpty(); index++) {
                 remaining = insertChemical(index, remaining, action);
             }
             return remaining;

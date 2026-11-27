@@ -6,10 +6,6 @@
     "#c:multiblock/input/energy",
     "#c:multiblock/output/item",
     "#c:multiblock/output/fluid",
-    "goldentweaks:input_bus",
-    "goldentweaks:auto_input_bus",
-    "goldentweaks:output_bus",
-    "goldentweaks:input_catalyst",
     "goldentweaks:shell_aluminum"
   ]
 }

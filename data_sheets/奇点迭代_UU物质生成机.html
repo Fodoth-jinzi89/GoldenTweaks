@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>奇点迭代 · UU 物质生成机</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a; --blue:#8fc7ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1180px; max-width:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:13px 22px 12px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:23px; font-weight:800; color:var(--gold); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:5px 10px; text-align:center; min-width:104px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:12.5px; font-weight:800; color:var(--ok);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:11px 12px; min-height:0;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;}
+  .box{border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d); background:var(--panel-2);}
+  .box h2{
+    background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+    color:#ececec; font-size:11.5px; font-weight:800; letter-spacing:.05em;
+    padding:6px 10px; border-bottom:1px solid #111;
+  }
+  .box .body{padding:9px 12px 11px; font-size:12.5px; color:var(--ink); line-height:1.95;}
+  .kv{display:flex; justify-content:space-between; gap:14px; border-bottom:1px dashed #3a3a3a; padding:2px 0;}
+  .kv:last-child{border-bottom:0;}
+  .kv span{color:#a9a9a9;}
+  .kv b{color:#fff; font-weight:800; font-family:"Consolas",monospace;}
+  .kv b.g{color:var(--ok);} .kv b.o{color:#ffd27a;} .kv b.b{color:var(--blue);}
+  table{width:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:11.5px; font-weight:800;
+           letter-spacing:.03em; padding:6px 5px; border:1px solid #111;}
+  tbody td{padding:6px 8px; border:1px solid var(--line); font-size:12.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:26px; height:26px; margin:0 auto; line-height:26px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:12px; text-shadow:1px 1px 0 #000;}
+  .mode{font-weight:800; font-size:12.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:9.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:12.5px; color:#ededed;}
+  td.n b{color:#ffd27a;}
+  td.n.g{color:#8dff6a;}
+  .unit{font-size:9.5px; color:#8a8a8a; font-weight:600;}
+  .bar{height:9px; background:#161616; box-shadow:inset 2px 2px 0 #000; position:relative; margin-top:3px;}
+  .bar i{display:block; height:100%; background:linear-gradient(#a6f57a,#4fa832);}
+  .notes{background:#1b1d21;
+         background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:11.5px; line-height:1.9; text-shadow:1px 1px 0 #000;}
+  .notes p{margin-bottom:3px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes u{color:var(--red); text-decoration:none; font-weight:700;}
+  .notes s{color:var(--blue); text-decoration:none; font-weight:700;}
+
+  /* 截图模式：地址带 ?shot 时启用，去掉页面背景与投影，只留下窗口本体。 */
+  .shot body{padding:0; background:none;}
+  .shot .window{box-shadow:none;}
+</style>
+<script>
+  if (location.search.includes('shot')) {
+    document.documentElement.classList.add('shot');
+  }
+</script>
+</head>
+<body>
+<div class="window">
+
+  <div class="title">
+    <h1>UU 物质生成机
+      <small>MASS FABRICATOR · BLOCK_MATTER_ELC</small>
+    </h1>
+    <div class="stats">
+      <div class="stat"><b>1,000,000 EU</b><span>每 mB 耗电</span></div>
+      <div class="stat"><b>8,192 EU/t</b><span>最大输入</span></div>
+      <div class="stat"><b>8,000 mB</b><span>内部储罐</span></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="grid2">
+      <div class="box">
+        <h2>换算与运行</h2>
+        <div class="body">
+          <div class="kv"><span>EU → UU 物质</span><b class="g">1,000,000 EU = 1 mB</b></div>
+          <div class="kv"><span>每 tick 取电</span><b class="o">内部储能全部电量</b></div>
+          <div class="kv"><span>最大输入速率</span><b>8,192 EU/t</b></div>
+          <div class="kv"><span>内部储能上限</span><b>1,000,000 EU</b></div>
+          <div class="kv"><span>储罐容量</span><b>8,000 mB</b></div>
+          <div class="kv"><span>放大器倍率</span><b class="b">× 6</b></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>槽位布局 · 共 7 格</h2>
+        <div class="body">
+          <div class="kv"><span>槽 0</span><b>放大器（废料等）</b></div>
+          <div class="kv"><span>槽 1</span><b>输出（UU 单元 / 桶）</b></div>
+          <div class="kv"><span>槽 2</span><b>容器（空单元）</b></div>
+          <div class="kv"><span>槽 3 – 6</span><b>升级 × 4</b></div>
+          <div class="kv"><span>流体</span><b class="g">仅输出（UU 物质）</b></div>
+          <div class="kv"><span>能量</span><b class="o">仅输入</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" style="margin-bottom:12px;">
+      <h2>放大器一览 · 槽 0 消耗品，提供额外工作额度</h2>
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:280px"><col style="width:150px">
+          <col style="width:160px"><col style="width:150px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">放大器物品</th>
+            <th class="c">额度</th><th class="c">折合 UU（×6）</th><th class="c">等效省电</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">废料<i>Scrap</i></div></td>
+            <td class="n">5,000</td>
+            <td class="n g">30,000 EU</td>
+            <td class="n"><b>3.0 %</b> <span class="unit">mB</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">废料盒<i>Scrap Box</i></div></td>
+            <td class="n">45,000</td>
+            <td class="n g">270,000 EU</td>
+            <td class="n"><b>27.0 %</b> <span class="unit">mB</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">钍废料<i>Thorium Scrap</i></div></td>
+            <td class="n">360,000</td>
+            <td class="n g">2,160,000 EU</td>
+            <td class="n"><b>216 %</b> <span class="unit">mB</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box">
+      <h2>每 tick 执行顺序 · fabricate()</h2>
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:330px"><col style="width:1fr">
+        </colgroup>
+        <thead>
+          <tr><th class="c">步</th><th class="l">动作</th><th class="l">说明</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">读取内部全部电量 E</div></td>
+            <td>取 <code>scexExactAmount()</code>，<u>不是按需取</u>，有多少拿多少</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">放大器额度 A = min(E, 存量)</div></td>
+            <td>放大器最多补与电量同等大小的额度</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">work += E + A × 6</div></td>
+            <td>放大器额度按 <b>6 倍</b>计入</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">扣除电量 E</div></td>
+            <td>若扣除量 ≠ 取到的量，抛 <code>IllegalStateException</code></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">work ≥ 1,000,000 且罐未满</div></td>
+            <td>灌 1 mB UU，<code>work -= 1,000,000</code></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">6</div></td>
+            <td><div class="mode">work &lt; 10,000 时补放大器</div></td>
+            <td>消耗 1 个，额度累加进 amplifier</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="notes">
+    <p><i>额度 ×6 的由来：</i>源码里是 <code>work += E + A</code>，之后 <code>for i in 1..5: work += A</code>，合计 <em>E + 6A</em>。常量 <code>AMPLIFIER_MULTIPLIER = 6</code> 就是它。</p>
+    <p><u>满罐仍耗电：</u>第 3、4 步先加额度、先扣电，灌 UU 的判断在第 5 步。<b>罐子满了电照扣</b>，只是 work 会一直堆积。长期挂机请配断电控制。</p>
+    <p><u>电量被整包吞掉：</u>它拿的是内部储能<em>全部</em>电量，没有"按需消耗"。想控制速度只能限制输入速率（≤ 8,192 EU/t）。</p>
+    <p><s>放大器优先走配方：</s>先查 <code>mass_fabricator</code> 配方的 <code>getCredit()</code>，查不到才回落到上表的固定值。整合包可自定义。</p>
+    <p><i>无产出配方：</i>这台机器不吃"配方"，唯一的产出逻辑就是 EU → UU 的固定换算，所以没有 JEI/EMI 配方页可看。</p>
+  </div>
+
+</div>
+</body>
+</html>

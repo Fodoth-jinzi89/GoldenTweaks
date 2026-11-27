@@ -73,6 +73,8 @@ public class GTPortBlockEntity extends BlockEntity
     private static final String TAG_SINGLE_CELL = "SingleCell";
     /** Whether the port also pulls from / pushes to the block it faces. */
     private static final String TAG_ACTIVE = "Active";
+    /** Whether an assembly counts as an energy hatch in its channel. */
+    private static final String TAG_ENERGY_CHANNEL = "EnergyChannel";
     private static final String TAG_CUSTOM_NAME = "CustomName";
     private static final String TAG_TOOL = "Tool";
     private static final String TAG_FILTER = "Filter";
@@ -176,6 +178,16 @@ public class GTPortBlockEntity extends BlockEntity
     @Nullable
     private Object essentia;
 
+    /**
+     * The assembly's own storage, or {@code null} for the five single-kind ports.
+     *
+     * <p>Held in addition to the five fields above, not instead of them: the assembly hands its
+     * stores out through those fields so every existing code path keeps working, and this reference
+     * is what answers the two figures the window shows.</p>
+     */
+    @Nullable
+    private GTPortGeneralStorage general;
+
     /** The tool and filter slots in the lower right, one item each. */
     private final ItemStackHandler toolSlot = new ItemStackHandler(1) {
         @Override
@@ -195,6 +207,17 @@ public class GTPortBlockEntity extends BlockEntity
 
     /** Tier the current handler was built for, so a state change can be detected. */
     private int builtTier = -1;
+
+    /**
+     * Whether a general assembly counts as an energy hatch in its channel.
+     *
+     * <p>Only meaningful on an assembly, and only it has the switch: a dedicated hatch is a hatch
+     * by construction. The assembly is not — it holds every kind — so it has to be told whether to
+     * take part in the same-tier census, which is the difference between joining a pair and
+     * supplying at half rate alone. Started on, because a part the player placed to carry power is
+     * one they expect to carry power.</p>
+     */
+    private boolean joinsEnergyChannel = true;
 
     public GTPortBlockEntity(BlockPos pos, BlockState state) {
         this(Objects.requireNonNull(GTMultiblockBlocks.PORT_ENTITY).get(), pos, state);
@@ -264,9 +287,19 @@ public class GTPortBlockEntity extends BlockEntity
         if (firstBuild) {
             // The direction decides both resting switches. Only on the first build: a later rebuild
             // is a tier change, and the player's own choices must survive it.
+            //
+            // Inputs start split, outputs start whole — true for both the single-kind ports and the
+            // assembly. On a single-kind port the switch means "one entry per cell"; on an assembly
+            // it means "the four byte kinds share the cells evenly". Either way an input is what a
+            // craft draws from, so it keeps room for each kind, while an output receives whatever a
+            // finished craft emits and gives the whole part to one kind.
             this.singleCell = mode() == PortMode.INPUT;
             this.active = mode() == PortMode.OUTPUT;
         }
+
+        // Cleared here rather than in each branch: only the assembly branch sets it, and a branch
+        // that forgot to clear it would leave a stale reference answering for a different kind.
+        this.general = null;
 
         switch (kind()) {
             case ITEM -> {
@@ -455,6 +488,19 @@ public class GTPortBlockEntity extends BlockEntity
                 this.chemicals = null;
                 this.essentia = null;
             }
+            case GENERAL -> {
+                // One part holding a slice of every kind. The assembly builds all five stores at
+                // once and hands them back here, so the ordinary accessors keep working unchanged.
+                GTPortGeneralStorage assembly = new GTPortGeneralStorage(
+                        portTier(), this::isSingleCellMode, this::isActive,
+                        () -> mode() == PortMode.OUTPUT, this::onContentChanged);
+                this.general = assembly;
+                this.items = assembly.items();
+                this.fluids = assembly.fluids();
+                this.energy = assembly.energy();
+                this.chemicals = assembly.chemicals();
+                this.essentia = assembly.essentia();
+            }
         }
     }
 
@@ -641,7 +687,47 @@ public class GTPortBlockEntity extends BlockEntity
                     .min(BigInteger.valueOf(Integer.MAX_VALUE)).intValue();
             case CHEMICAL -> portTier().chemicalTanks() * portTier().chemicalTankCapacity();
             case ESSENTIA -> portTier().essentiaTanks() * portTier().essentiaTankCapacity();
+            // Narrows on purpose; #generalBytes is the exact figure the window uses.
+            case GENERAL -> (int) Math.min(Integer.MAX_VALUE, portTier().generalBytes());
         };
+    }
+
+    /**
+     * How many bytes the general assembly holds, exactly.
+     *
+     * <p>{@link #capacity()} cannot carry this: it is synced through {@code ContainerData}, which
+     * is written as a short. This figure is not synced at all — the byte and type ceilings are fixed
+     * by the tier, and the tier is fixed by the block, so the client can derive them from its own
+     * copy of the block state. Only the stored amount has to travel.</p>
+     */
+    public long generalBytes() {
+        ensureHandler();
+        return this.general == null ? portTier().generalBytes() : this.general.byteBudget();
+    }
+
+    /** How many distinct types the general assembly holds, exactly. */
+    public int generalTypes() {
+        ensureHandler();
+        return this.general == null ? portTier().generalTypes() : this.general.typeBudget();
+    }
+
+    /** Bytes the assembly currently holds, summed over the five kinds. */
+    public long generalBytesUsed() {
+        ensureHandler();
+        return this.general == null ? 0L : this.general.bytesUsed();
+    }
+
+    /** Types the assembly currently holds. */
+    public int generalTypesUsed() {
+        ensureHandler();
+        return this.general == null ? 0 : this.general.typesUsed();
+    }
+
+    /** The assembly's own storage, or {@code null} for any other kind. */
+    @Nullable
+    public GTPortGeneralStorage generalStorage() {
+        ensureHandler();
+        return this.general;
     }
 
     /**
@@ -711,12 +797,19 @@ public class GTPortBlockEntity extends BlockEntity
      * in one place instead of assuming the item figure everywhere.</p>
      */
     public int cellSize() {
+        ensureHandler();
         return switch (kind()) {
             case ITEM -> portTier().slotLimit();
             case FLUID -> portTier().tankCapacity();
             case ENERGY -> Integer.MAX_VALUE;
             case CHEMICAL -> portTier().chemicalTankCapacity();
             case ESSENTIA -> portTier().essentiaTankCapacity();
+            // One cell holds one tier's worth of bytes, which is what an amount is measured
+            // against. Not 1: a cell of a hundred bytes holding a hundred items would then claim a
+            // hundred cells and push every other kind out of the window.
+            case GENERAL -> this.general == null
+                    ? portTier().generalCellBytes()
+                    : this.general.cellBytes();
         };
     }
 
@@ -774,6 +867,17 @@ public class GTPortBlockEntity extends BlockEntity
                 if (stepDue) {
                     reachChemicals(target, front);
                 }
+            }
+            case GENERAL -> {
+                // Everything the assembly can hold, in one step. Energy is not gated by the
+                // countdown: its rate is already a per-tick figure, the same as a dedicated port.
+                if (stepDue) {
+                    reachItems(target, front);
+                    reachFluids(target, front);
+                    reachChemicals(target, front);
+                    reachEssentia(target, front);
+                }
+                reachEnergy(target, front);
             }
         }
     }
@@ -992,7 +1096,15 @@ public class GTPortBlockEntity extends BlockEntity
         return this.singleCell;
     }
 
-    /** Flips the stacking mode and tells nearby clients. */
+    /**
+     * Flips the layout and tells nearby clients.
+     *
+     * <p>Nothing is rebuilt. An assembly's stores are all the whole layout's size and ask the switch
+     * how much of themselves each kind may fill, so the flip takes effect on the next write.
+     * Rebuilding would hand out new store objects while the pipes and pattern providers outside still
+     * held the old ones — which read as "flipping the switch ate everything", because the contents
+     * had gone into buffers nothing was reading any more.</p>
+     */
     public void toggleSingleCell() {
         this.singleCell = !this.singleCell;
         onContentChanged();
@@ -1001,6 +1113,22 @@ public class GTPortBlockEntity extends BlockEntity
     /** Whether this port currently takes part in the machine. */
     public boolean isEnabled() {
         return this.enabled;
+    }
+
+    /**
+     * Whether an assembly counts as an energy hatch in its channel.
+     *
+     * <p>Always true on the five single-kind ports: a dedicated hatch of energy is one by
+     * construction, and this switch belongs to the assembly alone.</p>
+     */
+    public boolean joinsEnergyChannel() {
+        return this.joinsEnergyChannel;
+    }
+
+    /** Flips that and tells nearby clients. */
+    public void toggleJoinsEnergyChannel() {
+        this.joinsEnergyChannel = !this.joinsEnergyChannel;
+        onContentChanged();
     }
 
     /** Turns participation on or off, and tells nearby clients so the button follows. */
@@ -1239,6 +1367,32 @@ public class GTPortBlockEntity extends BlockEntity
             }
             case CHEMICAL -> rows.addAll(GTPortStorages.chemicalContents(this.chemicals));
             case ESSENTIA -> rows.addAll(GTPortStorages.essentiaContents(this.essentia));
+            case GENERAL -> {
+                // The four that have a stack form, in the order the other windows list them.
+                // Energy is left out on purpose: it has no stack to draw, and it does not count
+                // against the assembly's bytes either — it keeps a store of its own.
+                if (this.items != null) {
+                    for (int slot = 0; slot < this.items.getSlots(); slot++) {
+                        ItemStack stack = this.items.getStackInSlot(slot);
+                        if (!stack.isEmpty()) {
+                            rows.add(GTReactionStack.item(stack));
+                        }
+                    }
+                }
+                if (this.fluids != null) {
+                    for (int tank = 0; tank < this.fluids.getTanks(); tank++) {
+                        FluidStack stack = this.fluids.getFluidInTank(tank);
+                        if (stack.isEmpty()) {
+                            continue;
+                        }
+                        rows.add(new GTReactionStack(GTReactionStack.Kind.FLUID,
+                                BuiltInRegistries.FLUID.getKey(stack.getFluid()),
+                                stack.getAmount(), Optional.empty()));
+                    }
+                }
+                rows.addAll(GTPortStorages.chemicalContents(this.chemicals));
+                rows.addAll(GTPortStorages.essentiaContents(this.essentia));
+            }
             case ENERGY -> {
             }
         }
@@ -1283,13 +1437,18 @@ public class GTPortBlockEntity extends BlockEntity
         tag.putBoolean(TAG_ENABLED, this.enabled);
         tag.putBoolean(TAG_SINGLE_CELL, this.singleCell);
         tag.putBoolean(TAG_ACTIVE, this.active);
+        tag.putBoolean(TAG_ENERGY_CHANNEL, this.joinsEnergyChannel);
         if (this.customName != null) {
             tag.putString(TAG_CUSTOM_NAME,
                     Component.Serializer.toJson(this.customName, registries));
         }
         tag.put(TAG_TOOL, this.toolSlot.serializeNBT(registries));
         tag.put(TAG_FILTER, this.filterSlot.serializeNBT(registries));
-        if (this.items instanceof ItemStackHandler handler) {
+        if (this.general != null) {
+            // First: the assembly has a store of every kind, so the single-store chain below would
+            // otherwise catch it at the item branch and lose the other four.
+            tag.put(TAG_CONTENT, this.general.save(registries));
+        } else if (this.items instanceof ItemStackHandler handler) {
             tag.put(TAG_CONTENT, handler.serializeNBT(registries));
         } else if (this.fluids instanceof GTPortFluidStorage buffer) {
             tag.put(TAG_CONTENT, buffer.save(registries));
@@ -1307,8 +1466,6 @@ public class GTPortBlockEntity extends BlockEntity
     @Override
     protected void loadAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.loadAdditional(tag, registries);
-        // Build first so the load target already has the right capacity for this state's tier.
-        ensureHandler();
 
         // Fields default rather than stay empty when a tag is missing: a port placed before this
         // state existed, or handed over with no data, still has to show the panel's defaults.
@@ -1323,6 +1480,15 @@ public class GTPortBlockEntity extends BlockEntity
         this.active = tag.contains(TAG_ACTIVE)
                 ? tag.getBoolean(TAG_ACTIVE)
                 : mode() == PortMode.OUTPUT;
+        // Defaults on: a part placed to carry power is one the player expects to carry it.
+        this.joinsEnergyChannel = !tag.contains(TAG_ENERGY_CHANNEL)
+                || tag.getBoolean(TAG_ENERGY_CHANNEL);
+
+        // Built after the fields, not before. The assembly decides its cell counts from the stacking
+        // mode, so building first handed it the default and then loading a payload written in the
+        // other mode: the cells did not line up with what was saved, and every reload came back
+        // with the contents shuffled or empty.
+        ensureHandler();
         try {
             this.customName = tag.contains(TAG_CUSTOM_NAME)
                     ? Component.Serializer.fromJson(tag.getString(TAG_CUSTOM_NAME), registries)
@@ -1342,7 +1508,9 @@ public class GTPortBlockEntity extends BlockEntity
             return;
         }
         CompoundTag content = tag.getCompound(TAG_CONTENT);
-        if (this.items instanceof ItemStackHandler handler) {
+        if (this.general != null) {
+            this.general.load(content, registries);
+        } else if (this.items instanceof ItemStackHandler handler) {
             handler.deserializeNBT(registries, content);
         } else if (this.fluids instanceof GTPortFluidStorage buffer) {
             buffer.load(content, registries);

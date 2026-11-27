@@ -116,6 +116,11 @@ public class GTChemicalReactorItem extends BlockItem {
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.fluid_output"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.chemical_output"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.essentia_output"),
+            // The assemblies sit above the energy hatch, and an assembly already carries the item,
+            // fluid and energy shares a machine needs, so they are alternatives to that hatch
+            // rather than an addition to it.
+            new Part(0, "tooltip.goldentweaks.chemical_reactor.part.general_input"),
+            new Part(0, "tooltip.goldentweaks.chemical_reactor.part.general_output"),
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.energy_input"));
     }
 

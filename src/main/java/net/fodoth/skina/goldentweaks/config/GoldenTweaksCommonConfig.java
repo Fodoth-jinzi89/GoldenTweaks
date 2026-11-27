@@ -70,6 +70,15 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.BooleanValue MIO_ICIF_DISABLE_UU_SOLVER;
 
+    /**
+     * 核弹中心槽里，非奇点迭代自带的铀物品按多少辐射量计算。
+     *
+     * <p>辐射值原本挂在 {@code mio_icif_nuclear_material} 这个类的实例上，外来铀块没有这个类，
+     * 取不到数值就会被当成 0 辐射——核弹于是只剩 IC_TNT 那部分威力。默认 0.3，与奇点迭代
+     * 自己的普通铀（{@code item_uran}）持平。</p>
+     */
+    public static final ModConfigSpec.DoubleValue MIO_ICIF_NUKE_FOREIGN_FUEL_RADIOACTIVITY;
+
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
 
     public static final ModConfigSpec.IntValue ENTROPY_REACTION_MAX_SPEED_MULTIPLIER;
@@ -96,6 +105,15 @@ public final class GoldenTweaksCommonConfig {
     public static final ModConfigSpec.BooleanValue TC_RESEARCH_CACHE;
 
     public static final ModConfigSpec.EnumValue<EarthShockHarmMode> EARTH_SHOCK_HARM_MODE;
+
+    /**
+     * Natural spawn weight for ordinary thaumaturges, overriding the mod's own setting.
+     *
+     * <p>Kept here rather than relying on the mod's config file so a pack can tune it in one place
+     * with everything else. Zero disables natural spawns entirely, exactly as the mod's own option
+     * does — eggs and spawners still work, since this only feeds the biome modifier.</p>
+     */
+    public static final ModConfigSpec.IntValue THAUMICCONCILIUM_THAUMATURGE_SPAWN_WEIGHT;
 
     public static final ModConfigSpec.BooleanValue HUNGRY_NODE_BREAKS_BLOCKS;
 
@@ -207,9 +225,11 @@ public final class GoldenTweaksCommonConfig {
                 .defineInRange("lostMaidDropChance", 0.05D, 0.0D, 1.0D);
 
         // 128 ticks is 6.4 seconds at 20 ticks per second.
+        // Shown under the multiblock category, but the stored path stays where it has always been:
+        // moving it would silently reset every player's chosen value back to the default.
         CHEMICAL_REACTOR_BATCH_MIN_TICKS = builder
-                .translation(key("feature.chemical_reactor_batch_min_ticks"))
-                .comment(comment("feature.chemical_reactor_batch_min_ticks"))
+                .translation(key("multiblock.batch_min_ticks"))
+                .comment(comment("multiblock.batch_min_ticks"))
                 .defineInRange("chemicalReactorBatchMinTicks", 128, 1, 72000);
 
 
@@ -329,6 +349,11 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.mio_icif.disable_uu_solver"))
                 .comment(comment("balance.mio_icif.disable_uu_solver"))
                 .define("disableUuSolver", true);
+
+        MIO_ICIF_NUKE_FOREIGN_FUEL_RADIOACTIVITY = builder
+                .translation(key("balance.mio_icif.nuke_foreign_fuel_radioactivity"))
+                .comment(comment("balance.mio_icif.nuke_foreign_fuel_radioactivity"))
+                .defineInRange("nukeForeignFuelRadioactivity", 0.3D, 0.0D, 1000.0D);
 
         builder.pop();
 
@@ -466,6 +491,18 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.thaumcraft.disable_tainted_node_biome_conversion"))
                 .comment(comment("balance.thaumcraft.disable_tainted_node_biome_conversion"))
                 .define("disableTaintedNodeBiomeConversion", true);
+
+        builder.pop();
+
+        // =========================
+        // thaumic concilium
+        // =========================
+        builder.push("thaumicconcilium");
+
+        THAUMICCONCILIUM_THAUMATURGE_SPAWN_WEIGHT = builder
+                .translation(key("balance.thaumicconcilium.thaumaturge_spawn_weight"))
+                .comment(comment("balance.thaumicconcilium.thaumaturge_spawn_weight"))
+                .defineInRange("thaumaturgeSpawnWeight", -1, -1, Integer.MAX_VALUE);
 
         builder.pop();
 
@@ -1018,6 +1055,29 @@ public final class GoldenTweaksCommonConfig {
 
     public static double getVanillaFishSpawnChance() {
         return GTState.isReady() ? VANILLA_FISH_SPAWN_CHANCE.get() : 0.1D;
+    }
+
+    /**
+     * The spawn weight to use instead of the mod's own, or {@code -1} to leave it alone.
+     *
+     * <p>Negative means "do not override": the mod may ship a weight a pack wants to keep, and
+     * silently replacing it would make its own config file lie. A pack opts in by setting a value.</p>
+     */
+    public static int getThaumaturgeSpawnWeightOverride() {
+        if (!GTState.isReady()) {
+            return -1;
+        }
+
+        return THAUMICCONCILIUM_THAUMATURGE_SPAWN_WEIGHT.get();
+    }
+
+    /** 核弹中心槽里外来铀物品按多少辐射量计；配置未就绪时用默认值。 */
+    public static float getNukeForeignFuelRadioactivity() {
+        if (!GTState.isReady()) {
+            return 0.3F;
+        }
+
+        return MIO_ICIF_NUKE_FOREIGN_FUEL_RADIOACTIVITY.get().floatValue();
     }
 
     private static String key(String path) {

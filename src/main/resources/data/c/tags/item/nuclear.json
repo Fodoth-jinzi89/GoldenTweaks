@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#c:storage_blocks/uranium",
+    "#c:ingots/uranium",
+    "#c:nuggets/uranium",
+    "#c:dusts/uranium",
+    "#c:raw_materials/uranium",
+    "#c:ores/uranium"
+  ]
+}

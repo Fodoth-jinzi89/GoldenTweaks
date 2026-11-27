@@ -13,6 +13,7 @@ import net.fodoth.skina.goldentweaks.compat.academy.network.GTMediaUnloadPacket;
 import net.fodoth.skina.goldentweaks.compat.appflux.AppliedFluxCompat;
 import net.fodoth.skina.goldentweaks.compat.maidsoulcore.MaidLogSuppressor;
 import net.fodoth.skina.goldentweaks.compat.mekanism.GTMekanismChemicals;
+import net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifCreativeTab;
 import net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifDieselGeneratorCompat;
 import net.fodoth.skina.goldentweaks.compat.create.GTCreateItems;
 import net.fodoth.skina.goldentweaks.compat.kaleidoscope.KaleidoCompat;
@@ -231,6 +232,8 @@ public class GoldenTweaks {
             LOGGER.info("Detected mio_icif, allowing the diesel generator to accept piped fuel");
             // 柴油发电机自带燃料罐，但模组没有注册流体能力，只能靠桶输入（见 compat/mioicif）
             modEventBus.addListener(GTMioIcifDieselGeneratorCompat::registerCapabilities);
+            // 模式存储机既没有配方也不在创造栏里，这里补进它的 icif_tab（配方见 data/goldentweaks/recipe/mio_icif）
+            modEventBus.addListener(GTMioIcifCreativeTab::addPatternStorage);
         }
 
         if (ModList.get().isLoaded("ftbchunks")) {

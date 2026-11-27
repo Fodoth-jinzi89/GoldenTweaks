@@ -85,12 +85,11 @@ public class GTUuReplicationEmiPlugin implements EmiPlugin {
         registry.addCategory(page);
         registry.addWorkstation(page, EmiStack.of(replicatorStack()));
 
-        int capacity = GTUuMatter.tankCapacity();
         for (int index = 0; index < rows.size(); index++) {
             GTUuReferencePrices.Row row = rows.get(index);
             registry.addRecipe(new GTUuReplicationEmiRecipe(
                     ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, "uu_replication/" + index),
-                    uu, row.stack(), row.millibuckets(), capacity));
+                    uu, row.stack(), row.millibuckets()));
         }
         GoldenTweaks.LOGGER.info("[GT] UU replication EMI page: {} entries.", rows.size());
     }

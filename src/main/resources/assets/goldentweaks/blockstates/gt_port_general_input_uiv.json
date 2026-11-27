@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "casing=0,facing=north": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv"
+    },
+    "casing=0,facing=east": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 90
+    },
+    "casing=0,facing=south": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 180
+    },
+    "casing=0,facing=west": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 270
+    },
+    "casing=0,facing=up": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "x": 270
+    },
+    "casing=0,facing=down": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "x": 90
+    },
+    "casing=1,facing=north": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv"
+    },
+    "casing=1,facing=east": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 90
+    },
+    "casing=1,facing=south": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 180
+    },
+    "casing=1,facing=west": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 270
+    },
+    "casing=2,facing=north": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv"
+    },
+    "casing=2,facing=east": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 90
+    },
+    "casing=2,facing=south": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 180
+    },
+    "casing=2,facing=west": {
+      "model": "goldentweaks:block/multiblock/gt_port_general_input_uiv",
+      "y": 270
+    }
+  }
+}

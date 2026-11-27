@@ -855,6 +855,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         return 0;
     }
 
+    private record EnergyCensus(int topTier, int topCount) {
+        static final EnergyCensus NONE = new EnergyCensus(0, 0);
+    }
+
     /**
      * The highest energy input port tier, and how many ports share it.
      *
@@ -862,17 +866,19 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * query rather than twice. Anything below the top tier contributes nothing to either: it cannot
      * carry what the top one cannot, and counting it would let a pile of cheap ports beat one good
      * one.</p>
+     *
+     * <p>An assembly counts only while its own switch is on — the same rule
+     * {@link #getEnergyInputHandlers()} applies, since the two have to agree: the census decides what
+     * the machine may be asked to run, and counting a part that is never drawn from would let a
+     * craft start that cannot be powered.</p>
      */
-    private record EnergyCensus(int topTier, int topCount) {
-        static final EnergyCensus NONE = new EnergyCensus(0, 0);
-    }
-
     private EnergyCensus energyPortCensus() {
         if (this.structure == null || this.level == null) {
             return EnergyCensus.NONE;
         }
         int top = 0;
         int count = 0;
+
         for (MultiblockPortBinding port : this.structure.getPorts()) {
             if (!port.isInput() || port.type() != MultiblockPortTypes.ENERGY) {
                 continue;
@@ -880,7 +886,15 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             if (!(this.level.getBlockEntity(port.pos()) instanceof GTPortBlockEntity entity)) {
                 continue;
             }
-            int tier = entity.tier().ordinal() + 1;
+            if (entity.kind() == GTPortKind.GENERAL && !entity.joinsEnergyChannel()) {
+                // Switched out of the census by the player: still a part the machine can use, just
+                // not one that contributes power to this line.
+                continue;
+            }
+            // Our own level, not AMI's tier: AMI's enum ends at IX and this one clamps to it, so
+            // every port above UV would be counted as IX and the upper half of the ladder would
+            // read as one tier.
+            int tier = entity.portTier().level();
             if (tier > top) {
                 top = tier;
                 count = 1;
@@ -909,14 +923,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     /**
      * The ceiling on a recipe's base energy cost, in FE per tick.
      *
-     * <p>"Dual hatch boost": two energy input ports of the highest tier installed can be drawn from
-     * together at twice one of them, so a pair of tier I ports supports a 128 FE/t recipe while a
-     * lone tier I port only supports 32.</p>
+     * <p>"Dual hatch boost": a hatch supplies 2 A but one may only be drawn at 1 A for a recipe, so
+     * a lone MV hatch covers half an MV's throughput while a second of the same tier unlocks the
+     * whole of it — which is one tier's worth, the next voltage up.</p>
      *
-     * <p>The lone-port figure is deliberately not the port's own rate: with nothing to draw against,
-     * the machine may only run a recipe at half that rate, which leaves the other half of the tick's
-     * budget for what the craft itself does. A second port of the same tier unlocks the full
-     * doubling.</p>
+     * <p>So the booster is not a bonus on top of the hatch's rating: it is what makes a pair of
+     * hatches usable at their own stated voltage. A lone one runs the same recipes at half that
+     * rate.</p>
      */
     public BigInteger maxRecipeCost() {
         EnergyCensus census = energyPortCensus();
@@ -929,14 +942,16 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /**
-     * The tier the machine effectively runs at, with the dual-hatch boost counted.
+     * The voltage the machine runs at, with the dual-hatch boost counted.
      *
-     * <p>A lone top-tier hatch is only allowed half of its own rate, while a pair reaches the full
-     * doubling — which is exactly one tier's worth of throughput. Reporting the effective tier is
-     * what makes the number in the tooltip agree with the power figure beside it: a pair of tier I
-     * hatches reads as II, because that is what it supplies.</p>
+     * <p>The lone-hatch current limit does not lower this. A single hatch is still a hatch of its
+     * own voltage — it reads MV because it is an MV part, and what it loses is throughput, not
+     * rating. Reporting a downgraded voltage made the label disagree with the part the player had
+     * installed and with the power figure beside it, and a player reading "LV" next to an MV hatch
+     * had no way to tell the difference between a current limit and a wrong part.</p>
      *
-     * <p>Capped at the top of the ladder: the boost cannot invent a tier above MAX.</p>
+     * <p>A pair reaches one tier above, since two hatches at 1 A each make a full 2 A of the next
+     * voltage. Capped at the top of the ladder: the boost cannot invent a tier above MAX.</p>
      */
     public int effectiveEnergyTier() {
         EnergyCensus census = energyPortCensus();
@@ -946,8 +961,6 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         int tier = census.topTier();
         if (census.topCount() >= 2) {
             tier++;
-        } else {
-            tier--;
         }
         // Our own ladder, not AMI's: ours has the tiers above UV, and clamping to AMI's length
         // would report every one of them as IX.
@@ -1524,11 +1537,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                     break;
                 }
                 if (product.kind() == GTReactionStack.Kind.ESSENTIA
-                        && stored.kind() == GTPortKind.ESSENTIA) {
+                        && stored.kind().holdsEssentia()) {
                     remaining -= GTPortStorages.essentiaRoom(
                             stored.essentiaStorage(), product.id(), remaining);
                 } else if (product.kind() == GTReactionStack.Kind.CHEMICAL
-                        && stored.kind() == GTPortKind.CHEMICAL) {
+                        && stored.kind().holdsChemical()) {
                     remaining -= GTPortStorages.chemicalRoom(
                             stored.chemicalStorage(), product.id(), remaining);
                 }
@@ -1765,10 +1778,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             long held = 0L;
             for (GTPortBlockEntity stored : typedPorts(true)) {
                 if (input.kind() == GTReactionStack.Kind.ESSENTIA
-                        && stored.kind() == GTPortKind.ESSENTIA) {
+                        && stored.kind().holdsEssentia()) {
                     held += GTPortStorages.essentiaAmount(stored.essentiaStorage(), input.id());
                 } else if (input.kind() == GTReactionStack.Kind.CHEMICAL
-                        && stored.kind() == GTPortKind.CHEMICAL) {
+                        && stored.kind().holdsChemical()) {
                     held += GTPortStorages.chemicalAmount(stored.chemicalStorage(), input.id());
                 }
             }
@@ -1896,6 +1909,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * channel {@code 5} must not power a channel {@code 1} recipe. AMI's own implementation walks
      * every energy input port without asking which line it belongs to, so the totals it reports —
      * and the charge {@code consumeEnergy} draws — have to come from this list instead.</p>
+     *
+     * <p>An assembly is included or not by its own switch, and by nothing else: a player who leaves
+     * one in the shape and turns it on means it to supply power, whatever else they placed beside
+     * it. Read per call rather than cached, since the switch and the channel fields may both change
+     * at any time.</p>
      */
     @Override
     public List<IEnergyStorage> getEnergyInputHandlers() {
@@ -1905,6 +1923,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         }
         for (MultiblockPortBinding port : sortedPorts()) {
             if (!port.isInput() || port.type() != MultiblockPortTypes.ENERGY) {
+                continue;
+            }
+            if (this.level.getBlockEntity(port.pos()) instanceof GTPortBlockEntity entity
+                    && entity.kind() == GTPortKind.GENERAL
+                    && !entity.joinsEnergyChannel()) {
+                // Switched out of the power path: the part still holds and passes contents, it
+                // just contributes no charge to this line.
                 continue;
             }
             Object capability = MultiblockPortTypes.ENERGY.capability(this.level, port.pos());
@@ -2042,7 +2067,8 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             if (!(this.level.getBlockEntity(pos) instanceof GTPortBlockEntity port)) {
                 continue;
             }
-            if (port.kind() != GTPortKind.ESSENTIA && port.kind() != GTPortKind.CHEMICAL) {
+            if (port.kind() != GTPortKind.ESSENTIA && port.kind() != GTPortKind.CHEMICAL
+                    && port.kind() != GTPortKind.GENERAL) {
                 continue;
             }
             if ((port.mode() == PortMode.INPUT) != input) {
@@ -2076,11 +2102,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                     break;
                 }
                 if (input.kind() == GTReactionStack.Kind.ESSENTIA
-                        && stored.kind() == GTPortKind.ESSENTIA) {
+                        && stored.kind().holdsEssentia()) {
                     remaining -= GTPortStorages.takeEssentia(
                             stored.essentiaStorage(), input.id(), remaining);
                 } else if (input.kind() == GTReactionStack.Kind.CHEMICAL
-                        && stored.kind() == GTPortKind.CHEMICAL) {
+                        && stored.kind().holdsChemical()) {
                     remaining -= GTPortStorages.takeChemical(
                             stored.chemicalStorage(), input.id(), remaining);
                 }
@@ -2175,11 +2201,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                     break;
                 }
                 if (product.kind() == GTReactionStack.Kind.ESSENTIA
-                        && stored.kind() == GTPortKind.ESSENTIA) {
+                        && stored.kind().holdsEssentia()) {
                     remaining -= GTPortStorages.addEssentia(
                             stored.essentiaStorage(), product.id(), remaining);
                 } else if (product.kind() == GTReactionStack.Kind.CHEMICAL
-                        && stored.kind() == GTPortKind.CHEMICAL) {
+                        && stored.kind().holdsChemical()) {
                     remaining -= GTPortStorages.addChemical(
                             stored.chemicalStorage(), product.id(), remaining);
                 }
@@ -2562,11 +2588,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                     break;
                 }
                 if (product.kind() == GTReactionStack.Kind.ESSENTIA
-                        && stored.kind() == GTPortKind.ESSENTIA) {
+                        && stored.kind().holdsEssentia()) {
                     remaining -= GTPortStorages.essentiaRoom(
                             stored.essentiaStorage(), product.id(), remaining);
                 } else if (product.kind() == GTReactionStack.Kind.CHEMICAL
-                        && stored.kind() == GTPortKind.CHEMICAL) {
+                        && stored.kind().holdsChemical()) {
                     remaining -= GTPortStorages.chemicalRoom(
                             stored.chemicalStorage(), product.id(), remaining);
                 }

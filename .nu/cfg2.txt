@@ -1,0 +1,24 @@
+=== around nuke multiplier def ===
+up
+    2154: iconst_1
+    2155: ldc_w         #799                // String 倍率作用于原装药当量；保留当量 1000000、毁伤半径 2000 的上限
+    2158: aastore
+    2159: dup
+    2160: iconst_2
+    2161: ldc_w         #801                // String 0：禁用核弹的核爆部分，退化为不破坏周围地形的局部普通爆炸
+    2164: aastore
+    2165: invokevirtual #143                // Method net/neoforged/neoforge/common/ModConfigSpec$Builder.comment:([Ljava/lang/String;)Lnet/neoforged/neoforge/common/ModConfigSpec$Builder;
+    2168: ldc_w         #803                // String nukeExplosionMultiplier
+    2171: dconst_1
+    2172: dconst_0
+    2173: ldc2_w        #805                // double 16.0d
+    2176: invokevirtual #200                // Method net/neoforged/neoforge/common/ModConfigSpec$Builder.defineInRange:(Ljava/lang/String;DDD)Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;
+    2179: putstatic     #807                // Field NUKE_EXPLOSION_MULTIPLIER:Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;
+    2182: getstatic     #783                // Field NUCLEAR_BUILDER:Lnet/neoforged/neoforge/common/ModConfigSpec$Builder;
+    2185: iconst_3
+    2186: anewarray     #7                  // class java/lang/String
+    2189: dup
+    
+
+=== nuke block registration ===
+  reactor/block_reactor_nuke

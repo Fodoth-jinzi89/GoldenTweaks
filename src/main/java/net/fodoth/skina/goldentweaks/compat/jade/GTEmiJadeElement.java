@@ -2,8 +2,13 @@ package net.fodoth.skina.goldentweaks.compat.jade;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.emi.emi.api.stack.EmiIngredient;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.phys.Vec2;
+import net.neoforged.fml.ModList;
+import org.jetbrains.annotations.Nullable;
 import snownee.jade.api.ui.Element;
 
 /**
@@ -28,6 +33,25 @@ public final class GTEmiJadeElement extends Element {
     public GTEmiJadeElement(EmiIngredient ingredient, float scale) {
         this.ingredient = ingredient;
         this.scale = scale;
+    }
+
+    /**
+     * The element for one of this mod's own reaction stacks, or {@code null} when it cannot be
+     * drawn.
+     *
+     * <p>{@code null} covers three cases that all look the same from the caller: EMI is not
+     * installed, the id no longer resolves, and the stack is of a kind EMI has no rendering for.
+     * The caller writes the name as text either way, so a missing icon is a smaller loss than a
+     * row that silently disappears.</p>
+     */
+    public static @Nullable GTEmiJadeElement of(GTReactionStack stack, float scale) {
+        if (!ModList.get().isLoaded("emi")) {
+            return null;
+        }
+        var level = Minecraft.getInstance().level;
+        var ingredient = GTReactionStacks.toEmiIngredient(
+                stack, level == null ? null : level.registryAccess());
+        return ingredient == null ? null : new GTEmiJadeElement(ingredient, scale);
     }
 
     @Override

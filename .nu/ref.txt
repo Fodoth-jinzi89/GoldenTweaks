@@ -1,0 +1,19 @@
+registry classes:
+  com/miophas/singularity_iteration/common/registry/mio_icif_blocks$1.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_blocks$2.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_blocks$3.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_blocks$4.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_blocks$5.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_blocks.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_block_entities.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_capacities.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_data_components.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_items$Bronze_Tier.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_items.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_menus.class
+  com/miophas/singularity_iteration/common/registry/mio_icif_sounds.class
+
+classes referencing mio_icif_nuclear_material:
+  com/miophas/singularity_iteration/common/blockentity/reactor/mio_icif_reactor_nuke.class
+  com/miophas/singularity_iteration/common/item/resource/mio_icif_resources.class
+  com/miophas/singularity_iteration/common/menu/generator/NukeMenu.class

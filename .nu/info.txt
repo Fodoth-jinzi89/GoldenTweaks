@@ -1,0 +1,135 @@
+=== mio_icif_nuclear_material ===
+Compiled from "mio_icif_nuclear_material.java"
+public class com.miophas.singularity_iteration.common.item.resource.mio_icif_nuclear_material extends net.minecraft.world.item.Item {
+  private final float radioactivity;
+  public com.miophas.singularity_iteration.common.item.resource.mio_icif_nuclear_material(net.minecraft.world.item.Item$Properties);
+  public com.miophas.singularity_iteration.common.item.resource.mio_icif_nuclear_material(net.minecraft.world.item.Item$Properties, float);
+  public com.miophas.singularity_iteration.common.item.resource.mio_icif_nuclear_material(net.minecraft.world.item.Item$Properties, float, boolean);
+  public float getRadioactivity();
+}
+
+
+=== tags mentioning nuclear/uranium ===
+  data/c/tags/item/crushed_ores/uranium.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:resource/item_uran_ore_crushed",
+      "required": false
+    }
+  ]
+}
+
+  data/c/tags/item/ingots/uranium.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:resource/item_uranium_ingot",
+      "required": false
+    }
+  ]
+}
+
+  data/c/tags/item/nuclear.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:resource/item_uran",
+      "required": false
+    },
+    {
+      "id": "mio_icif:resource/item_uran_235",
+      "required": false
+    },
+    {
+      "id": "mio_icif:resource/item_uran_238",
+      "required": false
+    },
+    {
+      "id": "mio_icif:resource/item_uran_235_small",
+      "required": false
+    },
+    {
+      "id": "mio_icif
+  data/c/tags/item/ores/uranium.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:block_ore_uran",
+      "required": false
+    },
+    {
+      "id": "mio_icif:block_ore_uran_in_deep",
+      "required": false
+    }
+  ]
+}
+
+  data/c/tags/item/purified_ores/uranium.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:resource/item_uran_ore_crushed_purified",
+      "required": false
+    }
+  ]
+}
+
+  data/c/tags/item/raw_materials/uranium.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:resource/item_raw_uran_ore",
+      "required": false
+    }
+  ]
+}
+
+  data/c/tags/item/storage_blocks/raw_uranium.json
+    {
+  "replace": false,
+  "values": [
+    {
+      "id": "mio_icif:block_raw_uranium",
+      "required": false
+    }
+  ]
+}
+
+  data/c/tags/item/storage_blocks/uranium.json
+    {
+  "replace": false,
+  "values": [
+    {
+      "id": "mio_icif:block_uranium",
+      "required": false
+    }
+  ]
+}
+
+  data/mio_icif/tags/item/irradiant_uranium.json
+    {
+  "values": [
+    {
+      "id": "mio_icif:resource/item_irradiant_uranium_ingot",
+      "required": false
+    }
+  ]
+}
+
+
+=== uranium-ish item assets ===
+  assets/mio_icif/models/item/block_raw_uranium.json
+  assets/mio_icif/models/item/block_uranium.json
+  assets/mio_icif/models/item/crop/uranium_rich_crop.json
+  assets/mio_icif/models/item/crop/uranium_rich_seed.json
+  assets/mio_icif/models/item/generator/block_nuclear_reactor_generator.json
+  assets/mio_icif/models/item/normal/item_re_enriched_uranium.json
+  assets/mio_icif/models/item/reactor/item_reactor_uranium_dual.json
+  assets/mio_icif/models/item/reactor/item_reactor_uranium_dual_depleted.json
+  assets/mio_icif/models/item/reactor/item_reactor_uranium_quad.json
+  assets/mio_icif/models/item/reactor/item_reactor_uranium_quad_deplete.json
+  assets/mio_icif/models/item/reactor/item_reactor_uranium_simple.json
+  assets/mio_icif/models/item/reactor/item_reactor_uranium_simple_depleted.json
+  assets/mio_icif/models/item/resource/item_irradiant_uranium_ingot.json
+  assets/mio_icif/models/item/resource/item_uranium_ingot.json

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>奇点迭代 · 核弹</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a; --blue:#8fc7ff; --amber:#ffbe5c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1180px; max-width:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:13px 22px 12px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:23px; font-weight:800; color:var(--red); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:5px 10px; text-align:center; min-width:104px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:12.5px; font-weight:800; color:var(--red);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:11px 12px; min-height:0;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;}
+  .box{border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d); background:var(--panel-2); margin-bottom:12px;}
+  .grid2 .box{margin-bottom:0;}
+  .box h2{
+    background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+    color:#ececec; font-size:11.5px; font-weight:800; letter-spacing:.05em;
+    padding:6px 10px; border-bottom:1px solid #111;
+  }
+  .box .body{padding:9px 12px 11px; font-size:12.5px; color:var(--ink); line-height:1.95;}
+  .kv{display:flex; justify-content:space-between; gap:14px; border-bottom:1px dashed #3a3a3a; padding:2px 0;}
+  .kv:last-child{border-bottom:0;}
+  .kv span{color:#a9a9a9;}
+  .kv b{color:#fff; font-weight:800; font-family:"Consolas",monospace;}
+  .kv b.g{color:var(--ok);} .kv b.o{color:var(--amber);} .kv b.b{color:var(--blue);} .kv b.r{color:var(--red);}
+  table{width:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:11.5px; font-weight:800;
+           letter-spacing:.03em; padding:6px 5px; border:1px solid #111;}
+  tbody td{padding:6px 8px; border:1px solid var(--line); font-size:12.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  tbody tr.hot{background:#3a2424;}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:26px; height:26px; margin:0 auto; line-height:26px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:12px; text-shadow:1px 1px 0 #000;}
+  .slot.core{color:var(--red); box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #6a3030;}
+  .mode{font-weight:800; font-size:12.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:9.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:12.5px; color:#ededed;}
+  td.n b{color:#ffd27a;}
+  td.n.g{color:#8dff6a;}
+  td.n.r{color:#ff8a7a;}
+  .unit{font-size:9.5px; color:#8a8a8a; font-weight:600;}
+  .formula{
+    background:#161616; border:1px solid #333; padding:7px 10px; margin:6px 0 2px;
+    font-family:"Consolas",monospace; font-size:12px; color:#cfcfcf; line-height:1.8;
+  }
+  .formula em{color:var(--gold); font-style:normal; font-weight:700;}
+  .formula b{color:var(--ok);}
+  .notes{background:#1b1d21;
+         background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:11.5px; line-height:1.9; text-shadow:1px 1px 0 #000;}
+  .notes p{margin-bottom:3px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes u{color:var(--red); text-decoration:none; font-weight:700;}
+  .notes s{color:var(--blue); text-decoration:none; font-weight:700;}
+
+  /* 截图模式：地址带 ?shot 时启用，去掉页面背景与投影，只留下窗口本体。 */
+  .shot body{padding:0; background:none;}
+  .shot .window{box-shadow:none;}
+</style>
+<script>
+  if (location.search.includes('shot')) {
+    document.documentElement.classList.add('shot');
+  }
+</script>
+</head>
+<body>
+<div class="window">
+
+  <div class="title">
+    <h1>核弹
+      <small>REACTOR NUKE · BLOCK_REACTOR_NUKE</small>
+    </h1>
+    <div class="stats">
+      <div class="stat"><b>9 格</b><span>1 核装药 + 8 TNT</span></div>
+      <div class="stat"><b>600 tick</b><span>引爆倒计时</span></div>
+      <div class="stat"><b>1,000,000</b><span>威力上限</span></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="grid2">
+      <div class="box">
+        <h2>槽位布局 · 共 9 格</h2>
+        <div class="body">
+          <div class="kv"><span>槽 0 – 7</span><b class="o">IC_TNT × 8</b></div>
+          <div class="kv"><span>槽 8（中心）</span><b class="r">核装药 · 1 格</b></div>
+          <div class="kv"><span>槽 8 可放</span><b class="g">任何 #c:nuclear 物品</b></div>
+          <div class="kv"><span>输入输出面</span><b>仅手动 / 漏斗</b></div>
+          <div class="kv"><span>自动化抽取</span><b class="b">允许</b></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>引爆条件</h2>
+        <div class="body">
+          <div class="kv"><span>触发方式</span><b class="r">红石信号（相邻）</b></div>
+          <div class="kv"><span>倒计时</span><b>600 tick = 30 秒</b></div>
+          <div class="kv"><span>中途断电</span><b class="g">倒计时保留，不重置</b></div>
+          <div class="kv"><span>不就绪</span><b>无 TNT 且无核装药 = 威力 0</b></div>
+          <div class="kv"><span>客户端</span><b class="b">不执行（仅服务端）</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>爆炸威力计算</h2>
+      <div class="body" style="padding-bottom:12px">
+        <div class="formula">
+          基础威力 = <em>TNT 数量</em> × 16 + <em>辐射总量</em> × 100<br>
+          最终威力 = min( 基础威力 × <em>nukeExplosionMultiplier</em> , <b>1,000,000</b> )<br>
+          爆炸半径 = clamp( ceil( 20 + 最终威力 / 25 ) , <b>20</b> , <b>2,000</b> )
+        </div>
+        <div class="kv" style="margin-top:6px"><span>TNT 系数</span><b class="o">16 / 个</b></div>
+        <div class="kv"><span>辐射系数</span><b class="o">100 / 点</b></div>
+        <div class="kv"><span>威力硬顶</span><b>1,000,000（乘完倍率后截断）</b></div>
+        <div class="kv"><span>全局倍率默认</span><b class="b">1.0（可配 0 – 16）</b></div>
+        <div class="kv"><span>半径上限</span><b class="r">2,000 格（威力 50,000 即满）</b></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>核装药辐射值 · 中心槽只放 1 格，辐射随堆叠数线性累加</h2>
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:300px"><col style="width:120px">
+          <col style="width:150px"><col style="width:190px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">材料</th><th class="c">辐射 / 件</th>
+            <th class="c">满堆叠辐射</th><th class="c">折算威力</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">铀 <i>item_uran · 普通铀</i></div></td>
+            <td class="n">0.3</td><td class="n">19.2</td>
+            <td class="n g">1,920</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">铀-238 <i>item_uran_238</i></div></td>
+            <td class="n">0.5</td><td class="n">32.0</td>
+            <td class="n g">3,200</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">铀-235 · 钚 · 贫铀小件 <i>0.3 档</i></div></td>
+            <td class="n">0.3</td><td class="n">19.2</td>
+            <td class="n g">1,920</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">MOX 燃料 · 粒子 <i>2.5 档</i></div></td>
+            <td class="n">2.5</td><td class="n">160.0</td>
+            <td class="n g">16,000</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">浓缩燃料 <i>5.0 档</i></div></td>
+            <td class="n">5.0</td><td class="n">320.0</td>
+            <td class="n g">32,000</td>
+          </tr>
+          <tr class="hot">
+            <td class="c"><div class="slot">6</div></td>
+            <td><div class="mode">高浓缩燃料 <i>6.0 档</i></div></td>
+            <td class="n">6.0</td><td class="n">384.0</td>
+            <td class="n r">38,400</td>
+          </tr>
+          <tr class="hot">
+            <td class="c"><div class="slot">7</div></td>
+            <td><div class="mode">最高档材料 <i>15.0</i></div></td>
+            <td class="n">15.0</td><td class="n">960.0</td>
+            <td class="n r">96,000</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot core">8</div></td>
+            <td><div class="mode">外来铀块（标签匹配）<i>AllTheOres 等 · 取配置默认值</i></div></td>
+            <td class="n">0.3</td><td class="n">19.2</td>
+            <td class="n g">1,920</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box">
+      <h2>一次完整引爆 · tick()</h2>
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:300px"><col style="width:1fr">
+        </colgroup>
+        <thead>
+          <tr><th class="c">步</th><th class="l">动作</th><th class="l">说明</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">检查相邻红石信号</div></td>
+            <td>只在服务端跑；客户端直接返回</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">信号首次为高 → 装填 600 tick</div></td>
+            <td>播放 Note Block 提示音</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">倒计时递减</div></td>
+            <td>信号撤掉也不重置，<b>已经开始就一定会炸</b></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">归零 → 计算威力并生成爆炸实体</div></td>
+            <td>按上表两张系数算出基础威力，再乘全局倍率</td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">清空方块与内容物</div></td>
+            <td>方块本身消失，掉落物按战利品表处理</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="notes">
+    <p><i>中心槽已改为标签匹配：</i>原版用 <code>instanceof mio_icif_nuclear_material</code> 类判断，导致别家的铀块放不进去。现改为 <code>#c:nuclear</code> 标签，AllTheOres 的铀块、锭、粉、原矿都能放。</p>
+    <p><u>辐射值必须一起修：</u>只改入槽判断的话，外来铀块会被算成 <em>0 辐射</em>，核弹就只剩 IC_TNT 那点威力。所以 <code>getTotalRadioactivity</code> 也一并接管了。</p>
+    <p><s>外来物品的辐射值</s>由配置 <code>nukeForeignFuelRadioactivity</code> 控制，默认 <em>0.3</em>，与奇点迭代自家普通铀持平。</p>
+    <p><u>核装药才是威力大头：</u>8 格 IC_TNT 满堆叠只有 512 个 × 16 = <b>8,192</b>，而中心槽一格最高档材料满堆叠就能给 <b>96,000</b>，是 TNT 部分的十倍以上。想造大当量，中心槽的材料档次比 TNT 数量更关键。</p>
+    <p><i>半径 2,000 格很容易吃满：</i>威力到 <b>50,000</b> 半径就顶格了。满 IC_TNT（8,192）加最高档核材料（96,000）合计 104,192，早已远超——所以常规配置下再堆材料也不会更大，除非把倍率调低。</p>
+    <p><u>1,000,000 是乘完倍率才截断的硬顶，</u>但按上面的数算，正常玩法根本碰不到；真正先撞上的是半径上限。</p>
+  </div>
+
+</div>
+</body>
+</html>

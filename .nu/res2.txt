@@ -1,0 +1,49 @@
+static {};
+    Code:
+       0: ldc           #70                 // String mio_icif
+       2: invokestatic  #72                 // Method net/neoforged/neoforge/registries/DeferredRegister.createItems:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+       5: putstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+       8: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      11: ldc           #78                 // String resource/item_adviron_casing
+      13: invokedynamic #80,  0             // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+      18: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      21: putstatic     #87                 // Field ADVIRON_CASING:Lnet/neoforged/neoforge/registries/DeferredItem;
+      24: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      27: ldc           #91                 // String resource/item_adviron_cutblade
+      29: invokedynamic #93,  0             // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+      34: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      37: putstatic     #94                 // Field ADVIRON_CUTBLADE:Lnet/neoforged/neoforge/registries/DeferredItem;
+      40: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      43: ldc           #97                 // String resource/item_adviron_denseplate
+      45: invokedynamic #99,  0             // InvokeDynamic #2:get:()Ljava/util/function/Supplier;
+      50: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      53: putstatic     #100                // Field ADVIRON_DENSEPLATE:Lnet/neoforged/neoforge/registries/DeferredItem;
+      56: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      59: ldc           #103                // String resource/item_adviron_ingot
+      61: invokedynamic #105,  0            // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+      66: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      69: putstatic     #106                // Field ADVIRON_INGOT:Lnet/neoforged/neoforge/registries/DeferredItem;
+      72: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      75: ldc           #109                // String resource/item_adviron_plate
+      77: invokedynamic #111,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+      82: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      85: putstatic     #112                // Field ADVIRON_PLATE:Lnet/neoforged/neoforge/registries/DeferredItem;
+      88: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      91: ldc           #115                // String resource/item_adviron_rotor_blade
+      93: invokedynamic #117,  0            // InvokeDynamic #5:get:()Ljava/util/function/Supplier;
+      98: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     101: putstatic     #118                // Field ADVIRON_ROTOR_BLADE:Lnet/neoforged/neoforge/registries/DeferredItem;
+     104: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     107: ldc           #121                // String resource/item_adviron_shaft
+     109: invokedynamic #123,  0            // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+     114: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     117: putstatic     #124                // Field ADVIRON_SHAFT:Lnet/neoforged/neoforge/registries/DeferredItem;
+     120: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     123: ldc           #127                // String resource/item_alloy_ingot
+     125: invokedynamic #129,  0            // InvokeDynamic #7:get:()Ljava/util/function/Supplier;
+     130: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     133: putstatic     #130                // Field ALLOY_INGOT:Lnet/neoforged/neoforge/registries/DeferredItem;
+     136: getstatic     #7                  // Field ITEMS:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     139: ldc           #133                // String resource/item_alloy_plate
+     141: invokedynamic #135,  0            // InvokeDynamic #8:get:()Ljava/util/function/Supplier;
+     146: invokevirtual #84                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/De

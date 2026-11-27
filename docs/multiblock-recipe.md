@@ -319,6 +319,44 @@ private boolean typedInputsAvailable(GTChemicalReactionRecipe reaction, int mult
 
 **新增配方 kind 时必须同步改这里**，否则那条配方会"匹配成功但什么都产不出"。
 
+### 5.1 必须在**两条**搜索路径上都调用
+
+这是实际踩过的坑，也是最容易漏的一处。配方搜索有两条独立路径：
+
+| 路径 | 方法 | 用途 |
+|---|---|---|
+| 锁定配方 | `matchOneGroup` | 玩家锁了某条配方时，只验证那一条 |
+| 全量搜索 | `matchRecipesOfMode` | 没锁定时遍历类型下所有配方 |
+
+`matchRecipesOfMode` 原本只调了 `recipe.matches(input, level)`——那是 AMI 的匹配器，
+**只认物品和流体**。结果就是：
+
+```
+端口里没有要素  →  recipe.matches 通过（它不查要素）
+                →  配方被选中并开始
+                →  consumeTypedInputs 找不到要素、静默跳过
+                →  成品照发，玩家看到"机器忽略了要素把配方跑完"
+```
+
+修复只在 `matchRecipesOfMode` 里补一行同样的判据：
+
+```java
+if (!recipe.matches(input, level)) {
+    continue;
+}
+// AMI 的匹配器只认物品和流体；要素和化学品要自己查。
+// 漏掉这句，端口里没有要素时配方照样会开始。
+if (!typedInputsAvailable(recipe, 1)) {
+    continue;
+}
+return MatchedMultiblockRecipe.of(recipe);
+```
+
+**两条路径必须用同一个判据**。只改一条的话，行为会取决于玩家有没有锁配方，
+是最难查的那种不一致。
+
+> 排查提示：如果"缺原料也能跑完"，先确认这个 kind 的检查是不是只写在 `matchOneGroup` 里。
+
 ---
 
 ## 6. 批次与超频
@@ -461,6 +499,7 @@ public @NotNull NonNullList<Ingredient> getIngredients() {
 | 有提示"电力不足"但端口满电 | `energy_per_tick` 超过端口供应能力 | 降低 `energy_per_tick`，或换更高等级的能源端口 |
 | 开工即跳闸、原料蒸发 | `energy_per_tick` 贴着端口上限 | 留余量；超频会把账单再翻四倍 |
 | 配方匹配了但没产出 | 自定义 kind 没进 `typedInputsAvailable` | 新增 kind 时必须同步改那个方法 |
+| **缺要素也能开工并跑完** | `typedInputsAvailable` 只在锁定路径调用 | 见 5.1，两条搜索路径都要有 |
 | 查看器里看不到流体 | 预期行为 | JEI/EMI 视图只有物品，见第 8 节 |
 | 进阶釜页面是空的 | 配方 type 写错，或机器没覆盖 `recipeTypes()` | JSON 的 `type` 必须与注册 id 一致 |
 | 解析配方时报错 | kind 字段拼错 / 同时给了两个 kind 字段 | 一条栈只能有 `item`/`fluid`/`chemical`/`essentia`/`ae` 之一 |

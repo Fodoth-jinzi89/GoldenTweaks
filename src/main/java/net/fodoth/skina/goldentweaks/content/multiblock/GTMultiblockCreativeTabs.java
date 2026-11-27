@@ -36,10 +36,6 @@ public final class GTMultiblockCreativeTabs {
                         acceptExternal(output, "goldentweaks:chemical_plant_controller");
                         acceptExternal(output, "goldentweaks:advanced_chemical_plant_controller");
                         acceptExternal(output, "goldentweaks:vacuum_cooler_controller");
-                        output.accept(GTMultiblockBlocks.INPUT_BUS_ITEM.get());
-                        output.accept(GTMultiblockBlocks.AUTO_INPUT_BUS_ITEM.get());
-                        output.accept(GTMultiblockBlocks.OUTPUT_BUS_ITEM.get());
-                        output.accept(GTMultiblockBlocks.INPUT_CATALYST_ITEM.get());
                         // Ports only exist with avaritia_more_items installed.
                         GTMultiblockBlocks.PORT_ITEMS.values().stream()
                                 .flatMap(items -> items.values().stream())

@@ -15,6 +15,21 @@
     "goldentweaks:gt_port_item_input_uiv",
     "goldentweaks:gt_port_item_input_umv",
     "goldentweaks:gt_port_item_input_uxv",
-    "goldentweaks:gt_port_item_input_max"
+    "goldentweaks:gt_port_item_input_max",
+    "goldentweaks:gt_port_general_input_ulv",
+    "goldentweaks:gt_port_general_input_lv",
+    "goldentweaks:gt_port_general_input_mv",
+    "goldentweaks:gt_port_general_input_hv",
+    "goldentweaks:gt_port_general_input_ev",
+    "goldentweaks:gt_port_general_input_iv",
+    "goldentweaks:gt_port_general_input_luv",
+    "goldentweaks:gt_port_general_input_zpm",
+    "goldentweaks:gt_port_general_input_uv",
+    "goldentweaks:gt_port_general_input_uhv",
+    "goldentweaks:gt_port_general_input_uev",
+    "goldentweaks:gt_port_general_input_uiv",
+    "goldentweaks:gt_port_general_input_umv",
+    "goldentweaks:gt_port_general_input_uxv",
+    "goldentweaks:gt_port_general_input_max"
   ]
 }

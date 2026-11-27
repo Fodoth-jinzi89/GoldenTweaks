@@ -1,0 +1,55 @@
+======================================================================
+mio_icif_Block_Nuke
+======================================================================
+Compiled from "mio_icif_Block_Nuke.java"
+public class com.miophas.singularity_iteration.common.block.reactor.mio_icif_Block_Nuke extends net.minecraft.world.level.block.Block implements net.minecraft.world.level.block.EntityBlock {
+  public com.miophas.singularity_iteration.common.block.reactor.mio_icif_Block_Nuke(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+  protected net.minecraft.world.InteractionResult useWithoutItem(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.entity.player.Player, net.minecraft.world.phys.BlockHitResult);
+  public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+  public <T extends net.minecraft.world.level.block.entity.BlockEntity> net.minecraft.world.level.block.entity.BlockEntityTicker<T> getTicker(net.minecraft.world.level.Level, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.block.entity.BlockEntityType<T>);
+  private static <E extends net.minecraft.world.level.block.entity.BlockEntity, A extends net.minecraft.world.level.block.entity.BlockEntity> net.minecraft.world.level.block.entity.BlockEntityTicker<A> createTickerHelper(net.minecraft.world.level.block.entity.BlockEntityType<A>, net.minecraft.world.level.block.entity.BlockEntityType<E>, net.minecraft.world.level.block.entity.BlockEntityTicker<? super E>);
+  public void onRemove(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, boolean);
+}
+
+======================================================================
+mio_icif_reactor_nuke
+======================================================================
+Compiled from "mio_icif_reactor_nuke.java"
+public class com.miophas.singularity_iteration.common.blockentity.reactor.mio_icif_reactor_nuke extends net.minecraft.world.level.block.entity.BlockEntity implements net.minecraft.world.WorldlyContainer,net.minecraft.world.MenuProvider,com.miophas.singularity_iteration.core.api.item.IReactorChamber {
+  private static final com.miophas.singularity_iteration.core.prefab.inventory.SlotLayout LAYOUT;
+  public static final int SLOT_COUNT = 9;
+  public static final int ICTNT_SLOT_START = 0;
+  public static final int ICTNT_SLOT_COUNT = 8;
+  public static final int NUCLEAR_SLOT = 8;
+  public static final int COUNTDOWN_TICKS = 600;
+  private int countdownTicks;
+  private boolean isArmed;
+  protected com.miophas.singularity_iteration.core.prefab.inventory.MachineItemHandler itemHandler;
+  protected final net.minecraft.world.inventory.ContainerData dataAccess;
+  public com.miophas.singularity_iteration.common.blockentity.reactor.mio_icif_reactor_nuke(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+  public int getContainerSize();
+  public boolean isEmpty();
+  public net.minecraft.world.item.ItemStack getItem(int);
+  public net.minecraft.world.item.ItemStack removeItem(int, int);
+  public net.minecraft.world.item.ItemStack removeItemNoUpdate(int);
+  public void setItem(int, net.minecraft.world.item.ItemStack);
+  private boolean isValidSlot(int);
+  public boolean stillValid(net.minecraft.world.entity.player.Player);
+  public void clearContent();
+  public int[] getSlotsForFace(net.minecraft.core.Direction);
+  public boolean canPlaceItemThroughFace(int, net.minecraft.world.item.ItemStack, net.minecraft.core.Direction);
+  public boolean canTakeItemThroughFace(int, net.minecraft.world.item.ItemStack, net.minecraft.core.Direction);
+  public boolean canPlaceItem(int, net.minecraft.world.item.ItemStack);
+  private boolean isIC_TNT(net.minecraft.world.item.ItemStack);
+  protected void saveAdditional(net.minecraft.nbt.CompoundTag, net.minecraft.core.HolderLookup$Provider);
+  protected void loadAdditional(net.minecraft.nbt.CompoundTag, net.minecraft.core.HolderLookup$Provider);
+  public net.minecraft.nbt.CompoundTag getUpdateTag(net.minecraft.core.HolderLookup$Provider);
+  public void handleUpdateTag(net.minecraft.nbt.CompoundTag, net.minecraft.core.HolderLookup$Provider);
+  public int getICTNTCount();
+  public float getTotalRadioactivity();
+  public float calculateExplosionPower();
+  public float calculateBaseExplosionPower();
+  public boolean isMaxYield();
+  public static void tick(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, com.miophas.singularity_iteration.common.blockentity.reactor.mio_icif_reactor_nuke);
+  private static void spawnNukeEntity(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, com.miophas.singularity_iteration.common.blockentity.reactor.mio_icif_reactor_nuke);
+  private static void spawnWarningPar

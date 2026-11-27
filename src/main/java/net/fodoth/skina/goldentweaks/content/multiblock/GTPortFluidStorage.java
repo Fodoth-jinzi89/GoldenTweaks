@@ -34,6 +34,24 @@ public class GTPortFluidStorage implements IFluidHandler {
     private final FluidTank[] tanks;
     /** Read live from the port, so a toggle applies to the very next insertion. */
     private final java.util.function.BooleanSupplier singleCell;
+    /**
+     * How many tanks are in use, read live like the mode.
+     *
+     * <p>A general assembly builds this store at the whole layout's size and lets the player's
+     * switch decide how much of it belongs to this kind. Refusing the tanks past the quota keeps the
+     * store object itself — and everyone's reference to it — intact across a switch, which rebuilding
+     * could not do.</p>
+     */
+    private java.util.function.IntSupplier quota = () -> Integer.MAX_VALUE;
+    /**
+     * How much of a request may actually be taken, in mB.
+     *
+     * <p>Asked on the way in, after the quota has picked the tank. An assembly shares one byte
+     * budget between four kinds, so a kind that is allowed every tank still cannot take more than
+     * the part has left — which is what lets one kind borrow the others' shares without any of them
+     * passing the total.</p>
+     */
+    private java.util.function.IntUnaryOperator room = wanted -> wanted;
     private Runnable changedHook = () -> {
     };
 
@@ -48,6 +66,26 @@ public class GTPortFluidStorage implements IFluidHandler {
             };
         }
         this.singleCell = singleCell;
+    }
+
+    /**
+     * Restricts how many tanks this store may use.
+     *
+     * <p>Asked on every write rather than taken at construction, so a player's switch applies on the
+     * next insertion without the store object being replaced.</p>
+     */
+    public void setQuota(java.util.function.IntSupplier quota) {
+        this.quota = quota;
+    }
+
+    /** Caps how much of one request this store may take, for a port sharing a budget. */
+    public void setRoom(java.util.function.IntUnaryOperator room) {
+        this.room = room;
+    }
+
+    /** Whether a tank index is inside the quota. */
+    private boolean inQuota(int tank) {
+        return tank < this.quota.getAsInt();
     }
 
     public void setChangedHook(Runnable hook) {
@@ -90,22 +128,25 @@ public class GTPortFluidStorage implements IFluidHandler {
     @Nullable
     private FluidTank admit(FluidStack resource) {
         // A tank already holding this fluid always accepts more, in either mode.
-        for (FluidTank tank : this.tanks) {
-            if (!tank.isEmpty() && tank.getFluid().is(resource.getFluid())) {
+        for (int index = 0; index < this.tanks.length; index++) {
+            FluidTank tank = this.tanks[index];
+            if (inQuota(index) && !tank.isEmpty() && tank.getFluid().is(resource.getFluid())) {
                 return tank;
             }
         }
         if (!this.singleCell.getAsBoolean()) {
-            for (FluidTank tank : this.tanks) {
-                if (tank.getFluidAmount() < tank.getCapacity()) {
+            for (int index = 0; index < this.tanks.length; index++) {
+                FluidTank tank = this.tanks[index];
+                if (inQuota(index) && tank.getFluidAmount() < tank.getCapacity()) {
                     return tank;
                 }
             }
             return null;
         }
         // Single-cell: only a tank with nothing in it may start holding something new.
-        for (FluidTank tank : this.tanks) {
-            if (tank.isEmpty()) {
+        for (int index = 0; index < this.tanks.length; index++) {
+            FluidTank tank = this.tanks[index];
+            if (inQuota(index) && tank.isEmpty()) {
                 return tank;
             }
         }
@@ -137,25 +178,33 @@ public class GTPortFluidStorage implements IFluidHandler {
         if (resource.isEmpty()) {
             return 0;
         }
+        // Clipped first, so the shared-budget cap applies to the request rather than to each tank:
+        // a kind borrowing another's share must not pass the part's total.
+        int allowed = this.room.applyAsInt(resource.getAmount());
+        if (allowed <= 0) {
+            return 0;
+        }
+        FluidStack request = allowed >= resource.getAmount()
+                ? resource : resource.copyWithAmount(allowed);
         if (!this.singleCell.getAsBoolean()) {
-            // Multi-cell: take whatever room exists, tank after tank.
+            // Multi-cell: take whatever room exists, tank after tank — but only inside the quota.
             int accepted = 0;
-            FluidStack remaining = resource.copy();
-            for (FluidTank tank : this.tanks) {
+            FluidStack remaining = request.copy();
+            for (int index = 0; index < this.tanks.length && inQuota(index); index++) {
                 if (remaining.isEmpty()) {
                     break;
                 }
-                int moved = tank.fill(remaining, action);
+                int moved = this.tanks[index].fill(remaining, action);
                 accepted += moved;
                 remaining = remaining.copyWithAmount(remaining.getAmount() - moved);
             }
             return accepted;
         }
-        FluidTank tank = admit(resource);
+        FluidTank tank = admit(request);
         if (tank == null) {
             return 0;
         }
-        return tank.fill(resource, action);
+        return tank.fill(request, action);
     }
 
     @Override

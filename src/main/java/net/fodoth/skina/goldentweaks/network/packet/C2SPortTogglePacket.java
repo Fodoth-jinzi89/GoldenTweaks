@@ -27,7 +27,16 @@ public record C2SPortTogglePacket(BlockPos pos, Target target) implements Custom
         /** Whether each entry occupies one cell or spans as many as it needs. */
         STACK_MODE,
         /** Whether the port also reaches through its own face. */
-        ACTIVE
+        ACTIVE,
+        /**
+         * Whether an assembly counts as an energy hatch in its channel.
+         *
+         * <p>The assembly is not a hatch of one kind, so it decides this for itself: joining means
+         * it takes part in the same-tier census, and a lone assembly then supplies at half rate the
+         * way a lone hatch does. An isolated one is still a part the machine can feed and drain, it
+         * just contributes no power — which is what a line that already has a hatch wants.</p>
+         */
+        ENERGY_CHANNEL
     }
 
     public static final Type<C2SPortTogglePacket> TYPE =
@@ -64,6 +73,7 @@ public record C2SPortTogglePacket(BlockPos pos, Target target) implements Custom
                     case ENABLED -> port.setEnabled(!port.isEnabled());
                     case STACK_MODE -> port.toggleSingleCell();
                     case ACTIVE -> port.toggleActive();
+                    case ENERGY_CHANNEL -> port.toggleJoinsEnergyChannel();
                 }
             }
         });
