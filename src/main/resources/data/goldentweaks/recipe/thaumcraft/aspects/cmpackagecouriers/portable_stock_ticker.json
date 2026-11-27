@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cmpackagecouriers:portable_stock_ticker"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "fames": 1,
+    "victus": 1
+  }
+}

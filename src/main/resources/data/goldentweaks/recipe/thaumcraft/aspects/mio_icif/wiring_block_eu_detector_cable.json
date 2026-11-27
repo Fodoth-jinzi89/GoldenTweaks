@@ -1,0 +1,13 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:wiring/block_eu_detector_cable"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "instrumentum": 2,
+    "metallum": 2,
+    "potentia": 1
+  }
+}

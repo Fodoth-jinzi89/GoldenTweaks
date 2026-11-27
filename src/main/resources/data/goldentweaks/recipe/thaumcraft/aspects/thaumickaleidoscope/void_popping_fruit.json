@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumickaleidoscope:void_popping_fruit"
+  },
+  "aspects": {
+    "fames": 1,
+    "praecantatio": 2,
+    "vitreus": 2
+  }
+}

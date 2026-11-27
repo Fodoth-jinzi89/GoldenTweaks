@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:gray_black_red_zhaotou"
+  },
+  "aspects": {
+    "arbor": 1,
+    "fabrico": 2,
+    "ordo": 1
+  }
+}

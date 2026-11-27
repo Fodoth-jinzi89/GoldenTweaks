@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:normal/entity_rubber_boat"
+  },
+  "aspects": {
+    "aqua": 1,
+    "arbor": 3,
+    "herba": 2
+  }
+}

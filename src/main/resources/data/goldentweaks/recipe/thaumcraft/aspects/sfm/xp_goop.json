@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sfm:xp_goop"
+  },
+  "aspects": {
+    "aqua": 1,
+    "permutatio": 2,
+    "praecantatio": 2
+  }
+}

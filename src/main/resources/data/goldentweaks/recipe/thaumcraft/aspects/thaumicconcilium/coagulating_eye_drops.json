@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:coagulating_eye_drops"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "praecantatio": 3
+  }
+}

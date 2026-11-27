@@ -1,6 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.avaritia_more_items.client;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectIcons;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMenu;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
@@ -342,6 +343,14 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 stored = ceiling;
             }
         }
+        // The parallel box has the same problem for the same reason: its ceiling is the hardware's,
+        // so pulling a hatch drops it, and zero there means "no ceiling" rather than "nothing".
+        if (pane == this.parallelPane) {
+            int ceiling = this.menu.getMachineParallelCeiling();
+            if (ceiling > 0 && stored > ceiling) {
+                stored = ceiling;
+            }
+        }
         String shown = GTNumberInput.group(stored);
         if (!shown.equals(pane.field.getValue())) {
             pane.field.setValue(shown);
@@ -420,6 +429,14 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         if (pane == this.overclockPane && typed >= 0) {
             int ceiling = this.menu.getOverclockCeiling();
             if (typed > ceiling) {
+                typed = ceiling;
+            }
+        }
+        // The parallel pane's top is what the machine's hardware grants. Zero is its "no ceiling"
+        // sentinel, so it caps nothing rather than capping everything at zero.
+        if (pane == this.parallelPane) {
+            int ceiling = this.menu.getMachineParallelCeiling();
+            if (ceiling > 0 && typed > ceiling) {
                 typed = ceiling;
             }
         }
@@ -565,17 +582,12 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 ? "gui.goldentweaks.chemical_reactor.sidebar.ratio"
                 : "gui.goldentweaks.chemical_reactor.sidebar.parallel.title",
                 overclock ? ratioLabel() : Component.empty());
-        // The overclock pane reports the count its hatches actually pay for; the parallel pane's
-        // caption is fixed wording.
+        // The overclock pane reports the count its hatches actually pay for; the parallel pane names
+        // the ceiling this machine's hardware grants.
         Component second = overclock
                 ? Component.translatable("gui.goldentweaks.chemical_reactor.sidebar.max",
                         String.valueOf(this.menu.getReachableOverclock()))
-                : Component.translatable("gui.goldentweaks.chemical_reactor.sidebar.parallel.max");
-        second = overclock
-                // The live reachable count, not a fixed phrase: it is exactly what the hatches pay for.
-                ? Component.translatable("gui.goldentweaks.chemical_reactor.sidebar.max",
-                        String.valueOf(this.menu.getReachableOverclock()))
-                : second;
+                : parallelCeilingLabel();
 
         graphics.pose().pushPose();
         graphics.pose().translate(textX, textY, 0.0F);
@@ -600,13 +612,30 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         return Component.literal(SIDEBAR_OVERCLOCK_RATIO);
     }
 
+    /**
+     * The caption under the parallel pane's title, naming the copy ceiling.
+     *
+     * <p>Overridable because the ceiling is not the same on every machine: the basic kettle has a
+     * single parallel part, while the advanced one grants four copies per voltage tier it can
+     * reach, so its figure moves with the hatches.</p>
+     */
+    protected Component parallelCeilingLabel() {
+        return Component.translatable("gui.goldentweaks.chemical_reactor.sidebar.parallel.max");
+    }
+
     /** A stand-in stack for the 4/2 overclock control circuit, so no real stack is needed. */
     private static ItemStack overclockIcon() {
         return new ItemStack(GTMultiblockBlocks.CONTROL_CIRCUIT_OVERCLOCK_4_2.get());
     }
 
-    /** A stand-in stack for the parallel control circuit. */
-    private static ItemStack parallelIcon() {
+    /**
+     * The icon for the parallel pane.
+     *
+     * <p>Overridable because the part that grants parallelism is not the same part on every
+     * machine: the basic kettle ships the single-parallel circuit, while the advanced one ships the
+     * fourfold one and caps parallelism by voltage tier.</p>
+     */
+    protected ItemStack parallelIcon() {
         return new ItemStack(GTMultiblockBlocks.CONTROL_CIRCUIT_PARALLEL_1.get());
     }
 
@@ -911,9 +940,12 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
     /**
      * Draws one output stack.
      *
-     * <p>Items are drawn directly, which needs no optional mod. Fluids, chemicals and AE keys go
-     * through the same EMI conversion the recipe pages use, so a key renders exactly as it does
-     * there; that path is skipped when EMI is absent rather than failing the whole screen.</p>
+     * <p>Items are drawn directly, which needs no optional mod. Essentia is drawn through
+     * Thaumcraft's own aspect renderer for the same reason: it is not an EMI ingredient unless scex
+     * is installed, so routing it through EMI left the cell blank on a pack without that mod.
+     * Fluids, chemicals and AE keys go through the EMI conversion the recipe pages use, so a key
+     * renders exactly as it does there; that path is skipped when EMI is absent rather than failing
+     * the whole screen.</p>
      */
     private void renderProductIcon(GuiGraphics graphics, GTReactionStack stack, int x, int y) {
         if (stack.kind() == GTReactionStack.Kind.ITEM) {
@@ -922,6 +954,14 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
                 graphics.renderItem(item, x, y);
             }
             return;
+        }
+
+        // Essentia first: this path needs only Thaumcraft, so the icon shows even without EMI/scex.
+        if (stack.kind() == GTReactionStack.Kind.ESSENTIA) {
+            String tag = stack.essentiaTag();
+            if (tag != null && GTAspectIcons.draw(graphics, tag, x, y)) {
+                return;
+            }
         }
 
         if (!ModList.get().isLoaded("emi")) {
@@ -943,15 +983,40 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
             // Essentia's own name is a Thaumcraft string, not a translation key this build owns, so
             // it is read through the aspect when the mod is there and the tag is the fallback.
             case ESSENTIA -> essentiaName(stack);
-            // Chemicals and AE keys carry no portable display name here, so the id is the honest
-            // fallback instead of an empty label.
-            case CHEMICAL, AE -> Component.literal(stack.id().getPath());
+            // Mekanism names a chemical through its holder, which carries the translation key, so
+            // going through it is what makes the label readable instead of a raw id.
+            case CHEMICAL -> chemicalName(stack);
+            // AE keys carry no portable display name here, so the id is the honest fallback.
+            case AE -> Component.literal(stack.id().getPath());
         };
         // Amounts are grouped for the same reason rates are: a large batch is unreadable otherwise.
         String size = GTEnergyFormat.formatExpanded(amount);
-        return stack.kind() == GTReactionStack.Kind.ITEM
-                ? Component.literal("").append(name).append(" × " + size)
-                : Component.literal("").append(name).append(" " + size + " mB");
+        return switch (stack.kind()) {
+            case ITEM -> Component.literal("").append(name).append(" × " + size);
+            // Only fluids and chemicals are measured in millibuckets; essentia counts in whole
+            // aspect units, so appending "mB" there would be wrong.
+            case FLUID, CHEMICAL -> Component.literal("").append(name).append(" " + size + " mB");
+            default -> Component.literal("").append(name).append(" " + size);
+        };
+    }
+
+    /**
+     * A chemical's display name.
+     *
+     * <p>Read through Mekanism's holder rather than built from the id, so the label is the same
+     * translated name the mod uses everywhere else. Guarded because {@code MekanismAPI} is only on
+     * the classpath when Mekanism is installed; without it the id path is the fallback.</p>
+     */
+    private static Component chemicalName(GTReactionStack stack) {
+        try {
+            var holder = mekanism.api.MekanismAPI.CHEMICAL_REGISTRY.getHolder(stack.id()).orElse(null);
+            if (holder != null) {
+                return holder.value().getTextComponent();
+            }
+        } catch (NoClassDefFoundError | RuntimeException absent) {
+            // Mekanism absent, or the id names a chemical this pack does not ship.
+        }
+        return Component.literal(stack.id().getPath());
     }
 
     /**
@@ -973,12 +1038,19 @@ public class GTChemicalReactorScreen extends AbstractContainerScreen<GTChemicalR
         }
     }
 
-    /** Production rate in the unit the machine already uses: per second. */
+    /**
+     * Production rate in the unit the machine already uses: per second.
+     *
+     * <p>Only fluids and chemicals are measured in millibuckets. Items count in whole items, and
+     * essentia counts in whole aspect units, so printing "mB" for those would be wrong.</p>
+     */
     private static Component rateText(GTReactionProducts.Line line) {
         String rate = formatRate(line.perSecond());
-        return line.stack().kind() == GTReactionStack.Kind.ITEM
-                ? Component.literal(rate + " / 秒")
-                : Component.literal(rate + " mB / 秒");
+        String unit = switch (line.stack().kind()) {
+            case FLUID, CHEMICAL -> " mB / 秒";
+            default -> " / 秒";
+        };
+        return Component.literal(rate + unit);
     }
 
     /**

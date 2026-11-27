@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_submarine:pressure_goggles"
+  },
+  "aspects": {
+    "metallum": 1,
+    "tutamen": 3
+  }
+}

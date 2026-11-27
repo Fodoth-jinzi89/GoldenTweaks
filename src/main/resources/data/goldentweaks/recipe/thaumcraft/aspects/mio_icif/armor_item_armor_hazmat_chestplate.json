@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:armor/item_armor_hazmat_chestplate"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

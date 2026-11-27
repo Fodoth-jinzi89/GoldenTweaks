@@ -70,4 +70,21 @@ public class GTAdvancedChemicalReactorBlockEntity extends GTChemicalReactorMachi
     protected MenuType<?> menuType() {
         return GTAdvancedChemicalReactorMultiblock.MENU.get();
     }
+
+    /** Parallel copies the advanced kettle grants per voltage tier it can reach. */
+    public static final int PARALLEL_PER_TIER = 4;
+
+    /**
+     * Four copies per voltage tier the machine can actually run.
+     *
+     * <p>The tier is {@link #effectiveEnergyTier()}, not the raw top hatch tier: that is the figure
+     * with the dual-hatch boost already counted, so pairing two hatches of a tier raises the
+     * parallel ceiling by one tier's worth instead of leaving it flat. A machine with no energy
+     * hatch at all yields zero here, which {@code parallelRecipe} reads as "no ceiling" — the craft
+     * cannot start in that state anyway.</p>
+     */
+    @Override
+    public int machineParallelCeiling() {
+        return effectiveEnergyTier() * PARALLEL_PER_TIER;
+    }
 }

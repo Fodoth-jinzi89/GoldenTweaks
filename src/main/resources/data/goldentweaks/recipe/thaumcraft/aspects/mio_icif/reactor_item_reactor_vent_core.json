@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:reactor/item_reactor_vent_core"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "machina": 2,
+    "metallum": 2
+  }
+}

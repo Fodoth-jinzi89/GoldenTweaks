@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_grilling:premium_chili_oil_brush"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 1
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:green_wanzi_rafter_end"
+  },
+  "aspects": {
+    "arbor": 2,
+    "herba": 1
+  }
+}

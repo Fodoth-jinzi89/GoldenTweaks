@@ -1,10 +1,12 @@
+
 {
   "type": "goldentweaks:item_aspect",
   "item": {
     "id": "alshanex_familiars:lightning_mage_shard"
   },
   "aspects": {
+    "ordo": 1,
     "praecantatio": 2,
-    "fulmen": 2
+    "vitreus": 2
   }
 }

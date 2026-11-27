@@ -87,14 +87,6 @@ public abstract class EmiSearchMixin {
         GTEmiSearchEngine.finishBake(GTEmiSearchEngine.fastSearch());
     }
 
-    @Inject(method = "search", at = @At("HEAD"), cancellable = true)
-    private static void gt$fastSearch(String query, CallbackInfo ci) {
-
-        if (GTEmiSearchEngine.submit(query)) {
-            ci.cancel();
-        }
-    }
-
     @SuppressWarnings({"rawtypes", "unchecked"})
     private static void addToSuffixArray(SuffixArray array, Object value, String contents) {
         array.add(value, contents);

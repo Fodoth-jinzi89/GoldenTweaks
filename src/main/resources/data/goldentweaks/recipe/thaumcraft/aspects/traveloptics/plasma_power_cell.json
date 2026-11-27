@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "traveloptics:plasma_power_cell"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:normal/item_diamond_lens"
+  },
+  "aspects": {
+    "lux": 1,
+    "vitreus": 2
+  }
+}

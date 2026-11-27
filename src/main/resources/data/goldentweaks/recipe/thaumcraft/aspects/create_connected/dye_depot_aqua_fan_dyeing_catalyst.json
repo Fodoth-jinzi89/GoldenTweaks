@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_connected:dye_depot_aqua_fan_dyeing_catalyst"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "machina": 2,
+    "metallum": 2
+  }
+}

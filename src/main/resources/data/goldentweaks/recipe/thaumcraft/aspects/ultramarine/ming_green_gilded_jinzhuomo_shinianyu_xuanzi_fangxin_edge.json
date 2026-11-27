@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:ming_green_gilded_jinzhuomo_shinianyu_xuanzi_fangxin_edge"
+  },
+  "aspects": {
+    "arbor": 1,
+    "fabrico": 2,
+    "ordo": 1
+  }
+}

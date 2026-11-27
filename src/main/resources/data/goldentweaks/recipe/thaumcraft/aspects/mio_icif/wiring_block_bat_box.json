@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:wiring/block_bat_box"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

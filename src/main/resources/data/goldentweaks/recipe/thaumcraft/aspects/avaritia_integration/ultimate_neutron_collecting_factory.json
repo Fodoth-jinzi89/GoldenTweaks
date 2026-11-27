@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:ultimate_neutron_collecting_factory"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "machina": 2,
+    "metallum": 2
+  }
+}

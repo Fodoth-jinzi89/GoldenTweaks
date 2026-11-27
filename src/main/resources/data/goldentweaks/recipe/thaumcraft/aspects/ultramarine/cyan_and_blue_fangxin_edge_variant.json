@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:cyan_and_blue_fangxin_edge_variant"
+  },
+  "aspects": {
+    "arbor": 1,
+    "fabrico": 2,
+    "ordo": 1
+  }
+}

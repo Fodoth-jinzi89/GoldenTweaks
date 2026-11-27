@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:large_landscape_painting_screen"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 1
+  }
+}

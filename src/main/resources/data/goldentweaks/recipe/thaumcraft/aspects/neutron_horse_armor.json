@@ -1,9 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": {
-    "id": "avaritia:neutron_horse_armor"
-  },
-  "aspects": {
-    "dense": 6
-  }
-}

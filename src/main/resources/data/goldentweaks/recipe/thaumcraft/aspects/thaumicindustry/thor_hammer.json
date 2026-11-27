@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicindustry:thor_hammer"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 2
+  }
+}

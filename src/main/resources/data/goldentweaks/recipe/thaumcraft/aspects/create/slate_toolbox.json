@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create:slate_toolbox"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

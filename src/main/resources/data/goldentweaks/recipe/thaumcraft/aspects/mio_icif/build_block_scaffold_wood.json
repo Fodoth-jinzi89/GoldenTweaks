@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:build/block_scaffold_wood"
+  },
+  "aspects": {
+    "arbor": 2,
+    "herba": 1
+  }
+}

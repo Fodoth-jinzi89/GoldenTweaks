@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:utau_helmet"
+  },
+  "aspects": {
+    "metallum": 1,
+    "tutamen": 3
+  }
+}

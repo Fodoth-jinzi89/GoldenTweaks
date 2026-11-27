@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:purple_silk_fabric_roll"
+  },
+  "aspects": {
+    "arbor": 1,
+    "fabrico": 2,
+    "ordo": 1
+  }
+}

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:plated_fish"
+  },
+  "aspects": {
+    "bestia": 1,
+    "fames": 2,
+    "ignis": 1
+  }
+}

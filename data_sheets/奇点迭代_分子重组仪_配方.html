@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>分子重组仪 · 配方</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1100px; max-width:100%; max-height:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:14px 22px 13px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:24px; font-weight:800; color:var(--gold); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:6px 11px; text-align:center; min-width:112px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:13px; font-weight:800; color:var(--ok);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:10px 12px; min-height:0; overflow:auto;}
+  table{width:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:12px; font-weight:800;
+           letter-spacing:.03em; padding:8px 6px; border:1px solid #111; position:sticky; top:0; z-index:2;}
+  tbody td{padding:5px 9px; border:1px solid var(--line); font-size:13.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:28px; height:28px; margin:0 auto; line-height:28px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:13px; text-shadow:1px 1px 0 #000;}
+  .mode{font-weight:800; font-size:13.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:10.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:13.5px; color:#ededed;}
+  td.n b{color:#ffd27a;}
+  .t{font-family:"Consolas",monospace; font-weight:800; font-size:13.5px; color:#cfe9ff;}
+  .t small{display:block; font-weight:600; font-size:10.5px; color:#8a8a8a; letter-spacing:.02em;}
+  .ticks{font-family:"Consolas",monospace; font-weight:700; color:#a8b6c4;}
+  .notes{background:#1b1d21; background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:12px; line-height:1.9; text-shadow:1px 1px 0 #000;
+         display:flex; flex-wrap:wrap; column-gap:24px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes .k{white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="title">
+      <h1>分子重组仪 · 配方一览<small>MOLECULAR TRANSFORMER — RECIPES @ EV</small></h1>
+      <div class="stats">
+        <div class="stat"><b>120,000,000 EU</b><span>储能</span></div>
+        <div class="stat"><b>2,048 EU/t</b><span>EV 输入</span></div>
+        <div class="stat"><b>17</b><span>配方</span></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:250px"><col style="width:260px">
+          <col style="width:130px"><col style="width:180px"><col style="width:120px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">输入</th><th class="l">输出</th>
+            <th class="c">EU / 件</th><th class="c">EV 耗时</th><th class="c">tick 数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">泥土<i>Dirt</i></div></td>
+            <td><div class="mode">黏土<i>Clay</i></div></td>
+            <td class="n"><b>50,000</b></td>
+            <td class="c"><span class="t">1.25 s<small>25 tick</small></span></td>
+            <td class="c"><span class="ticks">25</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">沙子<i>Sand</i></div></td>
+            <td><div class="mode">沙砾<i>Gravel</i></div></td>
+            <td class="n"><b>50,000</b></td>
+            <td class="c"><span class="t">1.25 s<small>25 tick</small></span></td>
+            <td class="c"><span class="ticks">25</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">木炭<i>Charcoal</i></div></td>
+            <td><div class="mode">煤炭<i>Coal</i></div></td>
+            <td class="n"><b>60,000</b></td>
+            <td class="c"><span class="t">1.50 s<small>30 tick</small></span></td>
+            <td class="c"><span class="ticks">30</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">下界岩<i>Netherrack</i></div></td>
+            <td><div class="mode">火药<i>Gunpowder</i></div></td>
+            <td class="n"><b>70,000</b></td>
+            <td class="c"><span class="t">1.75 s<small>35 tick</small></span></td>
+            <td class="c"><span class="ticks">35</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">甘蔗<i>Sugar Cane</i></div></td>
+            <td><div class="mode">黏液球<i>Slime Ball</i></div></td>
+            <td class="n"><b>90,000</b></td>
+            <td class="c"><span class="t">2.20 s<small>44 tick</small></span></td>
+            <td class="c"><span class="ticks">44</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">6</div></td>
+            <td><div class="mode">银锭<i>Silver Ingot</i></div></td>
+            <td><div class="mode">金锭<i>Gold Ingot</i></div></td>
+            <td class="n"><b>500,000</b></td>
+            <td class="c"><span class="t">12.25 s<small>245 tick</small></span></td>
+            <td class="c"><span class="ticks">245</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">7</div></td>
+            <td><div class="mode">锡锭<i>Tin Ingot</i></div></td>
+            <td><div class="mode">银锭<i>Silver Ingot</i></div></td>
+            <td class="n"><b>500,000</b></td>
+            <td class="c"><span class="t">12.25 s<small>245 tick</small></span></td>
+            <td class="c"><span class="ticks">245</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">8</div></td>
+            <td><div class="mode">黄色羊毛<i>Yellow Wool</i></div></td>
+            <td><div class="mode">荧石<i>Glowstone</i></div></td>
+            <td class="n"><b>750,000</b></td>
+            <td class="c"><span class="t">18.35 s<small>367 tick</small></span></td>
+            <td class="c"><span class="ticks">367</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">9</div></td>
+            <td><div class="mode">蓝色羊毛<i>Blue Wool</i></div></td>
+            <td><div class="mode">青金石块<i>Lapis Block</i></div></td>
+            <td class="n"><b>1,000,000</b></td>
+            <td class="c"><span class="t">24.45 s<small>489 tick</small></span></td>
+            <td class="c"><span class="ticks">489</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">10</div></td>
+            <td><div class="mode">红色羊毛<i>Red Wool</i></div></td>
+            <td><div class="mode">红石块<i>Redstone Block</i></div></td>
+            <td class="n"><b>1,000,000</b></td>
+            <td class="c"><span class="t">24.45 s<small>489 tick</small></span></td>
+            <td class="c"><span class="ticks">489</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">11</div></td>
+            <td><div class="mode">荧石粉<i>Glowstone Dust</i></div></td>
+            <td><div class="mode">小块阳光化合物<i>Small Sunnarium</i></div></td>
+            <td class="n"><b>1,000,000</b></td>
+            <td class="c"><span class="t">24.45 s<small>489 tick</small></span></td>
+            <td class="c"><span class="ticks">489</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">12</div></td>
+            <td><div class="mode">煤炭<i>Coal</i></div></td>
+            <td><div class="mode">工业钻石<i>Industrial Diamond</i></div></td>
+            <td class="n"><b>9,000,000</b></td>
+            <td class="c"><span class="t">3.66 min<small>4395 tick</small></span></td>
+            <td class="c"><span class="ticks">4,395</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">13</div></td>
+            <td><div class="mode">荧石<i>Glowstone</i></div></td>
+            <td><div class="mode">阳光化合物<i>Sunnarium</i></div></td>
+            <td class="n"><b>9,000,000</b></td>
+            <td class="c"><span class="t">3.66 min<small>4395 tick</small></span></td>
+            <td class="c"><span class="ticks">4,395</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">14</div></td>
+            <td><div class="mode">铁锭<i>Iron Ingot</i></div></td>
+            <td><div class="mode">铱<i>Iridium</i></div></td>
+            <td class="n"><b>9,000,000</b></td>
+            <td class="c"><span class="t">3.66 min<small>4395 tick</small></span></td>
+            <td class="c"><span class="ticks">4,395</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">15</div></td>
+            <td><div class="mode">钚<i>Plutonium</i></div></td>
+            <td><div class="mode">质子碎片<i>Proton Shard</i></div></td>
+            <td class="n"><b>15,500,000</b></td>
+            <td class="c"><span class="t">6.31 min<small>7569 tick</small></span></td>
+            <td class="c"><span class="ticks">7,569</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">16</div></td>
+            <td><div class="mode">凋灵骷髅头颅<i>Wither Skeleton Skull</i></div></td>
+            <td><div class="mode">下界之星<i>Nether Star</i></div></td>
+            <td class="n"><b>120,000,000</b></td>
+            <td class="c"><span class="t">48.8 min<small>58594 tick</small></span></td>
+            <td class="c"><span class="ticks">58,594</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">17</div></td>
+            <td><div class="mode">八联质子燃料棒外壳<i>Proton Octuple Casing</i></div></td>
+            <td><div class="mode">八联燃料棒(质子)<i>Proton Octuple Rod</i></div></td>
+            <td class="n"><b>2,108,000,000</b></td>
+            <td class="c"><span class="t">14.3 小时<small>1029297 tick</small></span></td>
+            <td class="c"><span class="ticks">1,029,297</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <span class="k"><i>◆</i> EV = <em>2,048 EU/t</em>；耗时 = ⌈EU ÷ 2,048⌉ tick ÷ 20</span>
+      <span class="k"><i>◆</i> 供电越高越快：单 tick 内最多连做 <em>64</em> 次，实际速度随输入线性提高</span>
+      <span class="k"><i>◆</i> 第 16 项正好等于储能上限 120,000,000 EU，需要充满一整个储能才能做一件</span>
+      <span class="k"><i>◆</i> 机器输入电压无上限；上表只按 EV 输入估算，更高电压会显著缩短耗时</span>
+    </div>
+  </div>
+</body>
+</html>

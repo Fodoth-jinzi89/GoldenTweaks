@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:noctis_rozuli_axe"
+  },
+  "aspects": {
+    "metallum": 2,
+    "telum": 3
+  }
+}

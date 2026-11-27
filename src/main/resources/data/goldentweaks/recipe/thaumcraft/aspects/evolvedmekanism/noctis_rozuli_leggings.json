@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:noctis_rozuli_leggings"
+  },
+  "aspects": {
+    "metallum": 1,
+    "tutamen": 3
+  }
+}

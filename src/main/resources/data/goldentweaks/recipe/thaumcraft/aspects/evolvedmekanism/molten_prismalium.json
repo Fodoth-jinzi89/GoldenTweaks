@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_prismalium"
+  },
+  "aspects": {
+    "aqua": 2,
+    "ignis": 1,
+    "permutatio": 3
+  }
+}

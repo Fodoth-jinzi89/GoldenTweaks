@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:module/item_module_micro_capacitor"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 2,
+    "potentia": 1
+  }
+}

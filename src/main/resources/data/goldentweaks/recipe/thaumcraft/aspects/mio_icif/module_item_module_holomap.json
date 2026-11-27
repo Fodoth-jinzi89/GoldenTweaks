@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:module/item_module_holomap"
+  },
+  "aspects": {
+    "charta": 2,
+    "cognitio": 2
+  }
+}

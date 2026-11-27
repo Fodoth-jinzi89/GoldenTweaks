@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:build/block_irradiant_glass_pane"
+  },
+  "aspects": {
+    "lux": 1,
+    "vitreus": 2
+  }
+}

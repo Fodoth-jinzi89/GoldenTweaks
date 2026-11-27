@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:noctis_rozuli_shovel"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 2
+  }
+}

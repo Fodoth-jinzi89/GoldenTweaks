@@ -1,0 +1,31 @@
+{
+  "type": "goldentweaks:research",
+  "key": "GT_ISOTOPE_CONVERSION",
+  "category": "GT_MODIFICATIONS",
+  "column": -2,
+  "row": 6,
+  "complexity": 2,
+  "icon": {
+    "id": "mio_icif:resource/item_uran_235_small",
+    "count": 1
+  },
+  "aspects": {
+    "explosion": 1,
+    "dense": 1,
+    "destroy": 1
+  },
+  "parents": [
+    "TRANSIRON"
+  ],
+  "concealed": true,
+  "pages": [
+    {
+      "type": "goldentweaks:text",
+      "text": "tc.research_page.GT_ISOTOPE_CONVERSION.1"
+    },
+    {
+      "type": "goldentweaks:arcane_crafting",
+      "recipe_id": "goldentweaks:isotope_conversion"
+    }
+  ]
+}

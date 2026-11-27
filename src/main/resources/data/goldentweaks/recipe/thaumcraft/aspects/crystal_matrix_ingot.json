@@ -1,8 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": { "id": "avaritia:crystal_matrix_ingot" },
-  "aspects": {
-    "terminus": 4,
-    "vitreus": 2
-  }
-}

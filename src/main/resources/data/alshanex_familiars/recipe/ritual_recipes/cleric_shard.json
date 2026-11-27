@@ -34,7 +34,10 @@
     }
   ],
   "result": {
-    "id": "alshanex_familiars:cleric_shard"
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:cleric_pet"
+    }
   },
   "particle_type": "minecraft:heart"
 }

@@ -5,8 +5,8 @@
   },
   "aspects": {
     "machina": 9,
-    "alkimia": 5,
     "potentia": 16,
-    "metallum": 12
+    "metallum": 12,
+    "permutatio": 5
   }
 }

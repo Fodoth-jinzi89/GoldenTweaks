@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:koi_head"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

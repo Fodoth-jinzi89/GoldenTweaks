@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:wither_crystal_dusts"
+  },
+  "aspects": {
+    "metallum": 1,
+    "perditio": 2,
+    "terra": 1
+  }
+}

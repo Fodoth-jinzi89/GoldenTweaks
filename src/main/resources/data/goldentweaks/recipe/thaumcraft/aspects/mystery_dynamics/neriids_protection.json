@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mystery_dynamics:neriids_protection"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 1
+  }
+}

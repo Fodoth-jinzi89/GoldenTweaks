@@ -27,6 +27,7 @@ param(
     [Parameter(Mandatory = $true)][string]$Namespace,
     [string]$AspectRoot = (Join-Path $PSScriptRoot "..\..\src\main\resources\data\goldentweaks\recipe\thaumcraft"),
     [ValidateSet("items", "entities", "both")][string]$Kind = "items",
+    [string]$CoveredPath = "",
     [switch]$Apply
 )
 
@@ -35,7 +36,14 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $script:Ns = $Namespace
 
 # namespace dependent fallback for ids that no rule matches
-if ($Namespace -match '^(create|offroad|pipez|shaolib|mespliced|neoecoae|ae2lt|thermal|cofh|mio_icif|envirotech|envirocore|valkyrielib|avaritia_more_items|create_aerofreight)') {
+$script:ThaumFamily = '^(thaumcraft|thaumcraftcelestial|thaumichorizons|thaumicbases|thaumic_tinkerer|thaumicenergistics|thaumicindustry|thaumickaleidoscope|thaumicconcilium|forbiddenmagic|taintedmagic|mystery_dynamics|gadomancy)$'
+if ($Namespace -eq 'enviromats') {
+    $script:Fallback = @{ saxum = 2; terra = 1; ordo = 1 }
+} elseif ($Namespace -match '^(ultramarine|amendments|theatrical|dndecor)$') {
+    $script:Fallback = @{ fabrico = 2; arbor = 1; ordo = 1 }
+} elseif ($Namespace -match $script:ThaumFamily) {
+    $script:Fallback = @{ praecantatio = 3; cognitio = 1 }
+} elseif ($Namespace -match '^(create|offroad|pipez|shaolib|mespliced|neoecoae|ae2lt|thermal|cofh|thermalendergy|rftoolsbase|mio_icif|envirotech|envirocore|valkyrielib|avaritia_more_items|avaritia_integration|create_aerofreight|evolvedmekanism|mekanism|createmoderntech|cbcmoreshells|create_connected|create_dragons_plus|createdieselgenerators|alltheores|silentgems|etlunar|goldentweaks|structure_layout_optimizer|bandwidthoptimizer|aeallpattern|scex_cryotheum_cell|sfm|retrofactorymanager|allthecompressed|oneenoughitem)') {
     $script:Fallback = @{ machina = 2; metallum = 2; fabrico = 1 }
 } elseif ($Namespace -match 'maid|animation|touhou') {
     $script:Fallback = @{ pannus = 2; corpus = 1 }
@@ -61,6 +69,16 @@ function Get-NsIds([string]$jarPath, [string]$ns, [string]$what) {
             } catch { $ms.Dispose() }
         }
         try {
+            # real ids: lang keys drop the block state suffix (block.<ns>.producer.machine -> producer/machine)
+            # so keep a lang derived id only when the plain form or its slash form matches a model path
+            $modelPaths = New-Object 'System.Collections.Generic.HashSet[string]'
+            foreach ($a in $archives) {
+                foreach ($e in $a.Entries) {
+                    if ($e.FullName -match "^assets/([^/]+)/(?:models/(?:item|block)|blockstates)/(.+)\.json$") {
+                        if ($Matches[1] -eq $ns) { [void]$modelPaths.Add($Matches[2]) }
+                    }
+                }
+            }
             foreach ($a in $archives) {
                 foreach ($e in $a.Entries) {
                     if ($e.FullName -notmatch "^assets/([^/]+)/lang/en_us\.json$") { continue }
@@ -75,7 +93,14 @@ function Get-NsIds([string]$jarPath, [string]$ns, [string]$what) {
                             if ($dot -lt 0) { [void]$set.Add("$ns`:$rest"); continue }
                             $head = $rest.Substring(0, $dot)
                             $tail = $rest.Substring($dot + 1)
-                            if ($head -eq $ns) { [void]$set.Add("$ns`:$tail") } else { [void]$set.Add("$ns`:$rest") }
+                            if ($head -eq $ns) {
+                                if ($tail -notmatch '\.') { [void]$set.Add("$ns`:$tail"); continue }
+                                $slashed = $tail -replace '\.', '/'
+                                if ($modelPaths.Contains($slashed)) { [void]$set.Add("$ns`:$slashed") }
+                            } elseif ($head -cmatch '^[a-z0-9_]+$' -and $tail -notmatch '[\.:]' -and $tail -notmatch '^(name|desc|description|tooltip|shift|hint|info|text|working|status|message|jei|jei_desc)$') {
+                                # assets/<ns>/lang describing another namespace (thermal_foundation -> thermal:apatite_ore)
+                                [void]$set.Add("$head`:$tail")
+                            }
                         }
                     } else {
                         foreach ($m in [regex]::Matches($t, '"entity\.([^"]+)"\s*:')) {
@@ -104,10 +129,18 @@ function Get-NsIds([string]$jarPath, [string]$ns, [string]$what) {
 }
 
 $covered = New-Object 'System.Collections.Generic.HashSet[string]'
-foreach ($f in Get-ChildItem -LiteralPath $AspectRoot -Recurse -Filter *.json -File | Where-Object { $_.FullName -match '\\aspects\\|\\entity_aspects\\' }) {
-    $t = Get-Content -LiteralPath $f.FullName -Raw -Encoding UTF8
-    $m = [regex]::Match($t, '"id"\s*:\s*"([^"]+)"')
-    if ($m.Success) { [void]$covered.Add($m.Groups[1].Value) }
+if ($CoveredPath -and (Test-Path -LiteralPath $CoveredPath)) {
+    # one id per line, produced by gen-missing-aspects.ps1 (avoids rescanning every aspect file)
+    foreach ($line in [IO.File]::ReadLines($CoveredPath)) {
+        $id = $line.Trim()
+        if ($id) { [void]$covered.Add($id) }
+    }
+} else {
+    foreach ($f in Get-ChildItem -LiteralPath $AspectRoot -Recurse -Filter *.json -File | Where-Object { $_.FullName -match '\\aspects\\|\\entity_aspects\\' }) {
+        $t = Get-Content -LiteralPath $f.FullName -Raw -Encoding UTF8
+        $m = [regex]::Match($t, '"id"\s*:\s*"([^"]+)"')
+        if ($m.Success) { [void]$covered.Add($m.Groups[1].Value) }
+    }
 }
 
 # ---------- rules ----------
@@ -204,6 +237,60 @@ function Get-ItemAspects([string]$path) {
         if ($path -match '^stripped_bamboo') { return @{ arbor = 3; fabrico = 2 } }
         if ($path -eq 'frozen_bun') { return @{ gelum = 3; fames = 2; victus = 2 } }
     }
+    if ($script:Ns -eq 'sfm') {
+        if ($path -match '_facade$') { return @{ fabrico = 2; metallum = 2 } }
+        if ($path -match 'cable') { return @{ machina = 3; metallum = 2; iter = 1 } }
+        if ($path -match 'manager') { return @{ machina = 3; cognitio = 3; potentia = 1 } }
+        if ($path -eq 'buffer') { return @{ vas = 2; vacuos = 2; machina = 1 } }
+        if ($path -eq 'disk') { return @{ cognitio = 3; machina = 2 } }
+        if ($path -match '^(form|labelgun|network_tool)$') { return @{ instrumentum = 2; cognitio = 2; machina = 1 } }
+        if ($path -eq 'printing_press') { return @{ machina = 3; cognitio = 1; charta = 1 } }
+        if ($path -match 'tank|barrel') { return @{ vas = 3; vacuos = 2; aqua = 1 } }
+        if ($path -eq 'xp_goop') { return @{ praecantatio = 2; permutatio = 2; aqua = 1 } }
+    }
+    if ($script:Ns -eq 'thaumicconcilium') {
+        if ($path -match '^pontifex_') { return @{ tutamen = 3; praecantatio = 3; humanus = 2 } }
+        if ($path -match '_focus$|^impulse_foci$|^signal_foci$') { return @{ praecantatio = 3; instrumentum = 2; cognitio = 1 } }
+        if ($path -match 'spawn_egg$|^overanimated_spawn_egg$') { return @{ bestia = 3; praecantatio = 3; vinculum = 2 } }
+        if ($path -match '_bracelet$|^burdening_amulet$|^tight_belt$|_vindings$') { return @{ praecantatio = 3; tutamen = 2; accessories = 1 } }
+        if ($path -match '_drum$') { return @{ sonus = 3; arbor = 2; praecantatio = 1 } }
+        if ($path -match 'crucible') { return @{ praecantatio = 2; ignis = 2; vas = 2; mixtura = 1 } }
+        if ($path -match 'crystal|gem$|_gem') { return @{ vitreus = 2; praecantatio = 2; ordo = 1 } }
+        if ($path -match 'syringe|_device$|^protobody$|^valet_core$|^assistance_core$') { return @{ machina = 2; praecantatio = 2; cognitio = 1 } }
+        if ($path -match '^bottle_of_|_vapour$|^nether_membrane$|^thaumic_slag$') { return @{ mixtura = 2; aqua = 1; praecantatio = 1 } }
+        if ($path -match 'shard_mill') { return @{ machina = 2; vitreus = 2; praecantatio = 1 } }
+        if ($path -match '^tainted_|^solid_void$|^void_reality$') { return @{ vitium = 3; praecantatio = 2; tenebrae = 1 } }
+        if ($path -match '^crimson_annales$|^hex_of_|^red_powered_mind$|^diamond_') { return @{ praecantatio = 3; cognitio = 2; tenebrae = 1 } }
+        if ($path -match 'windings$') { return @{ pannus = 2; praecantatio = 2; tutamen = 1 } }
+        if ($path -match '^lithographer$|^polishment_device$|^vis_condenser$|^astral_monitor$|^spotlight_focus$') { return @{ machina = 2; cognitio = 2; praecantatio = 1 } }
+        if ($path -match 'witchery|botanist|nether_explorer|samurai|dump_jackboots|surfer_shorts') { return @{ pannus = 2; praecantatio = 2; tutamen = 1 } }
+    }
+    if ($script:Ns -eq 'thaumicenergistics') {
+        if ($path -match '_storage_cell_|cell_housing|^advanced_storage_casing$') { return @{ vacuos = 3; vas = 3; praecantatio = 1 } }
+        if ($path -match 'arcane_crafting_chamber') { return @{ machina = 3; praecantatio = 2; fabrico = 1 } }
+        if ($path -eq 'essentia_terminal') { return @{ machina = 3; cognitio = 3; praecantatio = 1 } }
+        if ($path -match 'budding_thaumic_crystal|crystal_bud|^mystic_crystal$|^mystic_crystal_block$|crystal_cluster|^mystic_crystal_dust$') { return @{ vitreus = 3; praecantatio = 2; ordo = 1 } }
+        if ($path -match '^mystic_circuit_board$|^mystic_processor$|^thaumic_processor_press$|^thaumic_upgrade_smithing_template$') { return @{ cognitio = 2; machina = 2; metallum = 1 } }
+        if ($path -match 'thaumic_crystal_') { return @{ instrumentum = 2; vitreus = 2; praecantatio = 1 } }
+    }
+    if ($script:Ns -eq 'thaumickaleidoscope') {
+        if ($path -match 'gum$') { return @{ praecantatio = 2; fames = 2; ignis = 1 } }
+        if ($path -match '^tainted_') { return @{ vitium = 3; fames = 1; victus = 1 } }
+        if ($path -match 'salis_seaweed') { return @{ praecantatio = 2; herba = 2; aqua = 1 } }
+        if ($path -match 'mana_bean') { return @{ praecantatio = 2; fames = 2; herba = 1 } }
+        if ($path -match 'tentacle|slime_stew') { return @{ bestia = 2; fames = 2; praecantatio = 1 } }
+        if ($path -match 'crystal|void_popping') { return @{ vitreus = 2; praecantatio = 2; fames = 1 } }
+        if ($path -match 'arcane_butter') { return @{ praecantatio = 2; fames = 2; victus = 1 } }
+    }
+    if ($script:Ns -eq 'thaumicindustry') {
+        if ($path -match 'research_table|research') { return @{ cognitio = 3; machina = 2; praecantatio = 2 } }
+        if ($path -match 'generator|turbine|boiler') { return @{ machina = 3; potentia = 2; praecantatio = 1 } }
+        if ($path -match 'circuit|processor|chip') { return @{ cognitio = 2; machina = 2; potentia = 1 } }
+    }
+    if ($script:Ns -eq 'forbiddenmagic' -or $script:Ns -eq 'taintedmagic') {
+        if ($path -match 'shard') { return @{ vitium = 2; vitreus = 2; praecantatio = 1 } }
+        if ($path -match 'blood') { return @{ victus = 2; praecantatio = 2; corpus = 1 } }
+    }
     if ($script:Ns -eq 'valkyrielib') {
         if ($path -eq 'guide') { return @{ cognitio = 3; charta = 2; humanus = 1 } }
         if ($path -eq 'info_tablet') { return @{ cognitio = 3; vitreus = 2; machina = 1 } }
@@ -281,6 +368,30 @@ function Get-ItemAspects([string]$path) {
     if ($path -match '^money_|credit_card|shopping_computer|purchasing_box|receipt_printer|business_license|guide_book|handbook|clipboard') { return @{ lucrum = 2; cognitio = 1 } }
     if ($path -match 'pipe|waterwheel|water_pump|water_oxygen|chicken_coop|feeding_trough|fertile_farmland|floating_platform|scarecrow|septic_tank|incubator|insect_board|fish_display_board|fish_bowl|pet_nest|bait_station|^uav|^phone$|^carton$|takeaway_bag|handcart') { return @{ fabrico = 2; machina = 1 } }
     if ($path -match 'sauce|paste|_oil$|powder|substance|fertilizer|jinkela|methane_tank|marsh_gas|particles') { return @{ herba = 2; permutatio = 1; fames = 1 } }
+    # ---------- generic structural / material rules (namespaces without a dedicated branch) ----------
+    if ($path -match '_bucket$') { return @{ aqua = 2; vas = 2 } }
+    if ($path -match 'storage_cell|item_cell') { return @{ vas = 3; vacuos = 3 } }
+    if ($path -match '(^|_)(log|wood|planks|sapling|leaves|door|trapdoor|fence|fence_gate|hanging_sign|sign|raft|boat|chest_boat|rafter|rafter_end|bracket|beam|joist|post|boards)$') { return @{ arbor = 2; herba = 1 } }
+    if ($path -match '(slab|stairs|wall|bricks?|tiles?|polished|chiseled|cracked|mossy|pillar|column|brick|basalt|alabaster|marble|granite|andesite|diorite|calcite|tuff|limestone|terracotta|plaster)$') { return @{ saxum = 2; terra = 1; ordo = 1 } }
+    if ($path -match '(gem|gems|crystal|crystals|shard|shards|gemstone|jade|opal|amber|quartz)$') { return @{ vitreus = 2; praecantatio = 2; ordo = 1 } }
+    if ($path -match '(_ore$|_ores$|deepslate_|_raw$|^raw_)') { return @{ terra = 2; metallum = 2; saxum = 1 } }
+    if ($path -match '(dust|dusts|powder|powders|crushed|grit|clump|clumps|flour)$') { return @{ perditio = 2; terra = 1; metallum = 1 } }
+    if ($path -match '(_fluid$|^molten_|molten_)') { return @{ permutatio = 3; aqua = 2; ignis = 1 } }
+    if ($path -match '(plate|plating|gear|gears|rod|rods|nugget|nuggets|ingot|ingots|wire|wires|coil|coils|spring|springs|screw|screws|bolt|bolts|casing|shell|chassis|girder|girders|pipe|pipes|sheet|foil|bracket|brackets|housing)$') { return @{ metallum = 2; fabrico = 1 } }
+    if ($path -match '(cogwheel|cogwheels|flywheel|shaft|shafts|bearing|bearings|piston|pistons|valve|valves|regulator|actuator|clutch|hose|pulley|pulleys)$') { return @{ machina = 2; metallum = 2; motus = 1 } }
+    if ($path -match '(cell|cells|chest|chests|crate|crates|box|boxes|bag|bags|tank|tanks|canister|canisters|barrel|barrels|drum|drums|jar|jars|bottle|bottles|flask|flasks|vat|vats|basket|baskets|bin|bins)$') { return @{ vas = 2; vacuos = 2 } }
+    if ($path -match '(circuit|circuits|processor|processors|chip|chips|pcb|board|boards|transistor|diode|capacitor|resistor|layout|layouts|template|templates)$') { return @{ cognitio = 2; machina = 2; potentia = 1 } }
+    if ($path -match '(machine|machines|generator|generators|reactor|reactors|furnace|furnaces|crusher|mixer|assembler|fabricator|compressor|drill|pump|engine|engines|motor|motors|turbine|turbines|boiler|boilers|cooler|heater|extractor|infuser|smelter|kiln|separator|charger|injector)$') { return @{ machina = 3; potentia = 2 } }
+    if ($path -match '(lamp|lamps|lantern|lanterns|light|lights|torch|torches|candle|candles)$') { return @{ lux = 3 } }
+    if ($path -match '(helmet|helmets|chestplate|chestplates|leggings|boots|goggles|gloves|greaves)$') { return @{ tutamen = 3; metallum = 1 } }
+    if ($path -match '(robe|robes|hat|hats|hood|cloak|mantle|cap|mask|apron|scarf)$') { return @{ pannus = 2; tutamen = 2 } }
+    if ($path -match '(pickaxe|pickaxes|shovel|shovels|hoe|hoes|scythe|scythes|shears|needle|needles|rasp|mallet|mallets|saw|saws|file|files|trowel|trowels|wrench|wrenches|hammer|hammers)$') { return @{ instrumentum = 2; metallum = 2 } }
+    if ($path -match '(sword|swords|dagger|daggers|spear|spears|blade|blades|katana|saber|axe|axes)$') { return @{ telum = 3; metallum = 2 } }
+    if ($path -match '(_crop$|_crops$|_seeds?$|_sprout$|_seedling$|_straw$|_hay$|^hay_)') { return @{ herba = 2; victus = 1; terra = 1 } }
+    if ($path -match '(book|books|tome|tomes|scroll|scrolls|page|pages|note|notes|map|maps|blueprint|blueprints|schematic|schematics|manual|manuals|guide|guides|letter|letters|card|cards|ticket|tickets|menu|menus|journal|journals|recipe|recipes|record|records|license|licenses|permit|permission|certificate|diploma)$') { return @{ cognitio = 2; charta = 2 } }
+    if ($path -match '(coin|coins|token|tokens|banknote|currency|credit|credits)$') { return @{ lucrum = 2; metallum = 1 } }
+    if ($path -match '(carpet|carpets|rug|rugs|curtain|curtains|cushion|cushions|banner|banners|tapestry|fabric|fabrics|cloth|cloths|string|strings|rope|ropes|thread|threads|silk|wool)$') { return @{ pannus = 2; fabrico = 1 } }
+    if ($path -match '(glass|pane|panes|lens|lenses)$') { return @{ vitreus = 2; lux = 1 } }
     return $script:Fallback
 }
 
@@ -314,7 +425,10 @@ function Format-Aspects($map) {
 $written = 0
 $summary = @{}
 function Emit([string]$id, $aspects, [string]$sub, [string]$field) {
-    $dir = Join-Path (Join-Path $AspectRoot $sub) $Namespace
+    # a lang file can describe ids of another namespace (thermal_foundation -> thermal:...),
+    # so file them under the namespace the id actually belongs to
+    $idNs = ($id -split ':', 2)[0]
+    $dir = Join-Path (Join-Path $AspectRoot $sub) $idNs
     if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir | Out-Null }
     $tpl = "`n{`n  `"type`": `"goldentweaks:$($field)_aspect`",`n  `"$field`": {`n    `"id`": `"$id`"`n  },`n  `"aspects`": {`n$(Format-Aspects $aspects)`n  }`n}`n"
     [IO.File]::WriteAllText((Join-Path $dir (Get-FileName $id)), $tpl, (New-Object Text.UTF8Encoding($false)))

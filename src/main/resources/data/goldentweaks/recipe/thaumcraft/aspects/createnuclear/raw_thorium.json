@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:raw_thorium"
+  },
+  "aspects": {
+    "aqua": 1,
+    "bestia": 2,
+    "victus": 2
+  }
+}

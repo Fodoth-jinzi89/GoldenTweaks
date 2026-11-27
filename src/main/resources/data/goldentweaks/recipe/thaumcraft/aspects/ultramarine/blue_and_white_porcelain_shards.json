@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:blue_and_white_porcelain_shards"
+  },
+  "aspects": {
+    "ordo": 1,
+    "praecantatio": 2,
+    "vitreus": 2
+  }
+}

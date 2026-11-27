@@ -21,6 +21,8 @@ public final class GTMultiblockClientExtensions {
     private static final int CONTROL_CIRCUIT_BASE_TINT = 0xFFC9C9C9;
     private static final int CONTROL_CIRCUIT_OVERCLOCK_4_2_TINT = 0xFF90CCF8;
     private static final int CONTROL_CIRCUIT_PARALLEL_1_TINT = 0xFF74CD80;
+    /** The fourfold parallel part shares the parallel circuit's green: same family, denser icon. */
+    private static final int CONTROL_CIRCUIT_PARALLEL_4X_TINT = CONTROL_CIRCUIT_PARALLEL_1_TINT;
 
     /** Model tint index 0 is the ring. */
     private static final int TINT_RING = 0;
@@ -50,6 +52,8 @@ public final class GTMultiblockClientExtensions {
                 GTMultiblockBlocks.CONTROL_CIRCUIT_OVERCLOCK_4_2.get());
         event.register((stack, tintIndex) -> tintIndex == 0 ? CONTROL_CIRCUIT_PARALLEL_1_TINT : 0xFFFFFFFF,
                 GTMultiblockBlocks.CONTROL_CIRCUIT_PARALLEL_1.get());
+        event.register((stack, tintIndex) -> tintIndex == 0 ? CONTROL_CIRCUIT_PARALLEL_4X_TINT : 0xFFFFFFFF,
+                GTMultiblockBlocks.CONTROL_CIRCUIT_PARALLEL_4X.get());
 
         // One registration per port item, each answering with its own tier's colour. The tier is a
         // field on the item, so the answer is a constant rather than a lookup per frame.

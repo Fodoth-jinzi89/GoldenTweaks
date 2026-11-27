@@ -198,9 +198,11 @@ public class GTChemicalReactionRecipe implements IMultiblockRecipe {
 
     @Override
     public boolean matches(MultiblockRecipeInput input, Level level) {
-        // Delegate to AMI's matcher rather than comparing hand-rolled: it already accounts for
-        // stack counts, fluid amounts and partially filled ports.
-        return IMultiblockRecipe.super.matches(input, level);
+        // Own matching rather than AMI's: a reaction may name an item by id alone (a used coolant
+        // cell), and an exact-component comparison would never find it. Counts, partially filled
+        // ports and fluids are all handled by GTReactionMatcher.
+        return GTReactionMatcher.plan(this.inputs, 1L, input.getItems()) != null
+                && GTReactionMatcher.matchesFluids(this.inputs, 1L, input.getFluids());
     }
 
     @Override

@@ -1,0 +1,10 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:octagonal_palace_lantern"
+  },
+  "aspects": {
+    "lux": 3
+  }
+}

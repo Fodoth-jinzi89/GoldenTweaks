@@ -1,0 +1,17 @@
+{
+  "type": "goldentweaks:vacuum_cooling",
+  "inputs": [
+    {
+      "item": "minecraft:ice",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "minecraft:packed_ice",
+      "count": 1
+    }
+  ],
+  "processing_time": 20,
+  "energy_per_tick": 480
+}

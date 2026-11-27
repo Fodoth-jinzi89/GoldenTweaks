@@ -7,6 +7,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolerMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 
 /**
@@ -28,5 +29,9 @@ public class GTChemicalReactorClientEvents {
         // that one is registered against the screen class, and a subclass matches it.
         event.register(GTAdvancedChemicalReactorMultiblock.MENU.get(),
                 GTAdvancedChemicalReactorScreen::new);
+        // The vacuum cooler has a menu type of its own, and a menu without a registered screen is
+        // closed by the client on the tick it opens — which is why right-clicking the controller
+        // appeared to do nothing.
+        event.register(GTVacuumCoolerMultiblock.MENU.get(), GTVacuumCoolerScreen::new);
     }
 }

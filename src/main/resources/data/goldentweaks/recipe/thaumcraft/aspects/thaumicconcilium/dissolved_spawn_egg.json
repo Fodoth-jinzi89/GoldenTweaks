@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:dissolved_spawn_egg"
+  },
+  "aspects": {
+    "bestia": 3,
+    "praecantatio": 3,
+    "vinculum": 2
+  }
+}

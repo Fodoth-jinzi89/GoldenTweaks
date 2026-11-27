@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createbigcannons:cannon_drill_bit"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "machina": 2,
+    "metallum": 2
+  }
+}

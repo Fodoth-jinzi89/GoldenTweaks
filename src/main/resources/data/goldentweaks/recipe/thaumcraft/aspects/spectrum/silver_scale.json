@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:silver_scale"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "pannus": 2
+  }
+}

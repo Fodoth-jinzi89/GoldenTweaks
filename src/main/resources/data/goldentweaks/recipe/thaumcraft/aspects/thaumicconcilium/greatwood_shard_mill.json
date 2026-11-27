@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:greatwood_shard_mill"
+  },
+  "aspects": {
+    "machina": 2,
+    "praecantatio": 1,
+    "vitreus": 2
+  }
+}

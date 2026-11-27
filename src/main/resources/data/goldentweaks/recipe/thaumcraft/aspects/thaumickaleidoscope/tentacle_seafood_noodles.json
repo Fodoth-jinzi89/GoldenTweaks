@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumickaleidoscope:tentacle_seafood_noodles"
+  },
+  "aspects": {
+    "bestia": 2,
+    "fames": 2,
+    "praecantatio": 1
+  }
+}

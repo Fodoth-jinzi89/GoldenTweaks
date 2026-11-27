@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:lithographer"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 2,
+    "praecantatio": 1
+  }
+}

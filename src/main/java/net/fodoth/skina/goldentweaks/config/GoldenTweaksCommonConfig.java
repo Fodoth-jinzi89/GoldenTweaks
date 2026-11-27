@@ -58,6 +58,18 @@ public final class GoldenTweaksCommonConfig {
 
     public static final ModConfigSpec.BooleanValue MIO_ICIF_TESLA_COIL_WEAR_ARMOR;
 
+    public static final ModConfigSpec.BooleanValue MIO_ICIF_REACTOR_OUTPUT_ADJUSTMENT;
+
+    public static final ModConfigSpec.IntValue MIO_ICIF_REACTOR_MULTIPLIER;
+
+    public static final ModConfigSpec.LongValue MIO_ICIF_FUSION_MULTIPLIER;
+
+    public static final ModConfigSpec.IntValue MIO_ICIF_STEAM_REACTOR_MULTIPLIER;
+
+    public static final ModConfigSpec.IntValue MIO_ICIF_STEAM_TUNNEL_MULTIPLIER;
+
+    public static final ModConfigSpec.BooleanValue MIO_ICIF_DISABLE_UU_SOLVER;
+
     public static final ModConfigSpec.BooleanValue RECYCLER_FACTORY_STACK_UPGRADES;
 
     public static final ModConfigSpec.IntValue ENTROPY_REACTION_MAX_SPEED_MULTIPLIER;
@@ -287,6 +299,36 @@ public final class GoldenTweaksCommonConfig {
                 .translation(key("balance.mio_icif.tesla_coil_wear_armor"))
                 .comment(comment("balance.mio_icif.tesla_coil_wear_armor"))
                 .define("teslaCoilWearArmor", true);
+
+        MIO_ICIF_REACTOR_OUTPUT_ADJUSTMENT = builder
+                .translation(key("balance.mio_icif.reactor_output_adjustment"))
+                .comment(comment("balance.mio_icif.reactor_output_adjustment"))
+                .define("reactorOutputAdjustment", true);
+
+        MIO_ICIF_REACTOR_MULTIPLIER = builder
+                .translation(key("balance.mio_icif.reactor_multiplier"))
+                .comment(comment("balance.mio_icif.reactor_multiplier"))
+                .defineInRange("reactorMultiplier", 10, 1, 1000);
+
+        MIO_ICIF_FUSION_MULTIPLIER = builder
+                .translation(key("balance.mio_icif.fusion_multiplier"))
+                .comment(comment("balance.mio_icif.fusion_multiplier"))
+                .defineInRange("fusionMultiplier", 1000000L, 1L, 1_000_000_000L);
+
+        MIO_ICIF_STEAM_REACTOR_MULTIPLIER = builder
+                .translation(key("balance.mio_icif.steam_reactor_multiplier"))
+                .comment(comment("balance.mio_icif.steam_reactor_multiplier"))
+                .defineInRange("steamReactorMultiplier", 10, 1, 1000);
+
+        MIO_ICIF_STEAM_TUNNEL_MULTIPLIER = builder
+                .translation(key("balance.mio_icif.steam_tunnel_multiplier"))
+                .comment(comment("balance.mio_icif.steam_tunnel_multiplier"))
+                .defineInRange("steamTunnelMultiplier", 10, 1, 1000);
+
+        MIO_ICIF_DISABLE_UU_SOLVER = builder
+                .translation(key("balance.mio_icif.disable_uu_solver"))
+                .comment(comment("balance.mio_icif.disable_uu_solver"))
+                .define("disableUuSolver", true);
 
         builder.pop();
 
@@ -651,6 +693,53 @@ public final class GoldenTweaksCommonConfig {
 
     public static boolean isMioIcifTeslaCoilWearArmor() {
         return GTState.isReady() ? MIO_ICIF_TESLA_COIL_WEAR_ARMOR.get() : true;
+    }
+
+    /**
+     * 核电产能调整总开关。关闭时核反应堆恢复原版数值，并重新显示方块物品的「能量等级」提示。
+     */
+    public static boolean isMioIcifReactorOutputAdjusted() {
+        return GTState.isReady() ? MIO_ICIF_REACTOR_OUTPUT_ADJUSTMENT.get() : true;
+    }
+
+    public static int getMioIcifReactorMultiplier() {
+        return GTState.isReady() ? MIO_ICIF_REACTOR_MULTIPLIER.get() : 10;
+    }
+
+    /** 关闭调整时返回 1，让倍率相乘的调用点自然退化为原版行为。 */
+    public static int getEffectiveMioIcifReactorMultiplier() {
+        return isMioIcifReactorOutputAdjusted() ? getMioIcifReactorMultiplier() : 1;
+    }
+
+    /**
+     * 聚变堆产能倍率，默认 1,000,000。
+     *
+     * <p>原始输出被硬编码在 2,147,483,647（int 上限）处，这里同时放开该截断，
+     * 否则倍率超过 1 就会被截回原值。</p>
+     */
+    public static long getMioIcifFusionMultiplier() {
+        return GTState.isReady() ? MIO_ICIF_FUSION_MULTIPLIER.get() : 1000000L;
+    }
+
+    /**
+     * 蒸汽反应堆流体倍率，默认 10。
+     *
+     * <p>统一放大内部水/蒸汽储量、每次循环的耗水量与产汽量。原版把水汽换算写死在
+     * {@code 1 水 = 100 蒸汽} 与 {@code 蒸汽 = 热量 × 40}，放大储量而不放大循环预算
+     * 只会让水箱更耐存、产出不变，所以这里同时放大循环预算。</p>
+     */
+    public static int getMioIcifSteamReactorMultiplier() {
+        return GTState.isReady() ? MIO_ICIF_STEAM_REACTOR_MULTIPLIER.get() : 10;
+    }
+
+    /**
+     * 蒸汽隧道（涡轮机）流体倍率，默认 10。
+     *
+     * <p>放大流体端口的蒸汽储量、每次做功消耗的蒸汽量，以及随之而来的发电量；
+     * 电力端口的储量与输出也随之放大，否则产出会被端口容量卡回原值。</p>
+     */
+    public static int getMioIcifSteamTunnelMultiplier() {
+        return GTState.isReady() ? MIO_ICIF_STEAM_TUNNEL_MULTIPLIER.get() : 10;
     }
 
     public static int getIJHagglerMaxDiscount() {

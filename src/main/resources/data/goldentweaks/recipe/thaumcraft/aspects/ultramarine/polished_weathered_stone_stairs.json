@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:polished_weathered_stone_stairs"
+  },
+  "aspects": {
+    "ordo": 1,
+    "saxum": 2,
+    "terra": 1
+  }
+}

@@ -15,10 +15,15 @@ import org.spongepowered.asm.mixin.injection.Redirect;
  * TMRV 把 JEI 配方转成 EMI 渲染，槽位框与物品都由 EMI {@link SlotWidget} 基于槽位矩形绘制。
  * 这里在 {@code drawStack} 中改写物品的实际渲染坐标，从而只移动物品、不动槽位框。已覆盖：
  * <ul>
- *     <li>神秘时代「要素来源」要素安瓿槽 (64, 5)</li>
- *     <li>scex_aspect_jei 要素组合 (127, 20)</li>
+ *     <li>神秘时代「要素来源」要素安瓿槽 (124, 6)</li>
  *     <li>AcademyCraft 幻想融合机 (90, 16)、金属成型机 (90, 13)</li>
  * </ul>
+ *
+ * <p><b>迁移说明：</b>「要素来源」页原先来自独立模组 {@code scex_aspect_jei}，其输出槽在
+ * {@code (127, 20)}；该页已并入神秘时代本体
+ * （{@code thaumcraft.integration.jei.AspectSourceRecipeCategory}），
+ * 槽位改为 {@code (124, 6)}——{@code setRecipe} 里 {@code addSlot(...)} 的两个 bipush
+ * 就是这对坐标。旧的 {@code (64, 5)} 是更早期布局，已不再可能出现。</p>
  */
 @Mixin(SlotWidget.class)
 public abstract class SlotWidgetMixin {
@@ -38,12 +43,11 @@ public abstract class SlotWidgetMixin {
 
     @Unique
     private static boolean gt$isShiftedOutputSlot(int x, int y) {
-        if (x == 64 && y == 5) {
+        // 神秘时代「要素来源」的输出槽（并入本体后的坐标）。
+        if (x == 124 && y == 6) {
             return true;
         }
-        if (x == 127 && y == 20) {
-            return true;
-        }
+        // AcademyCraft 幻想融合机 / 金属成型机。
         return x == 90 && (y == 13 || y == 16);
     }
 

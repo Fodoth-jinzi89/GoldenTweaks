@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "touhou_lost_maid:example_block"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

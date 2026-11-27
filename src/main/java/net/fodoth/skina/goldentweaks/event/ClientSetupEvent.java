@@ -1,7 +1,6 @@
 package net.fodoth.skina.goldentweaks.event;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.emi.GTEmiSearchEngine;
 import net.fodoth.skina.goldentweaks.compat.emilink.GTEmiLinkCacheGuard;
 import net.fodoth.skina.goldentweaks.compat.dangomusic.GTDangoMusicEvents;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksConfigScreen;
@@ -11,24 +10,11 @@ import net.neoforged.fml.ModList;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 
 @EventBusSubscriber(modid = GoldenTweaks.MODID, value = Dist.CLIENT)
 public class ClientSetupEvent {
-
-    /**
-     * Drives the EMI tooltip index bake, a slice per tick.
-     *
-     * <p>It has to run on this thread: {@code getTooltipText} fires the item tooltip event, and mods
-     * handling it are not all thread-safe. Doing the work here in small slices keeps it off the
-     * screen's critical path without the concurrency hazard a background thread would bring.</p>
-     */
-    @SubscribeEvent
-    public static void onClientTick(ClientTickEvent.Post event) {
-        GTEmiSearchEngine.tickTooltipBake();
-    }
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {

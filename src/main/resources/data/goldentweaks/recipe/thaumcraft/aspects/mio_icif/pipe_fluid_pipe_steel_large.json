@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:pipe/fluid_pipe_steel_large"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "machina": 1
+  }
+}

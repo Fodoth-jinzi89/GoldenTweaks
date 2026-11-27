@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TTT",
+    "DID",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "mio_icif:reactor/item_reactor_thick_reflector"
+    },
+    "D": {
+      "tag": "c:dense_plates/copper"
+    },
+    "I": {
+      "item": "mio_icif:resource/item_iridium_plate"
+    }
+  },
+  "result": {
+    "id": "mio_icif:reactor/item_reactor_iridium_reflector",
+    "count": 1
+  }
+}

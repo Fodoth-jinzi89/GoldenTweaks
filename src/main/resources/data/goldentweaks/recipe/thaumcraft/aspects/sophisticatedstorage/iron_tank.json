@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:iron_tank"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

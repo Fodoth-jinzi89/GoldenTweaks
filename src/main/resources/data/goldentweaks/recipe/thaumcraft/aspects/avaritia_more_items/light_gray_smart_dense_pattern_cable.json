@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:light_gray_smart_dense_pattern_cable"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "machina": 2,
+    "metallum": 2
+  }
+}

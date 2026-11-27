@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "croptopia:barley_crop"
+  },
+  "aspects": {
+    "herba": 2,
+    "terra": 1,
+    "victus": 1
+  }
+}

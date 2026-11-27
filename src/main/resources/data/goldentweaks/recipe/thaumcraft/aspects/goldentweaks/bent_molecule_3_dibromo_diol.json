@@ -4,8 +4,8 @@
     "id": "goldentweaks:bent_molecule_3_dibromo_diol"
   },
   "aspects": {
-    "alkimia": 11,
     "aqua": 7,
-    "potentia": 3
+    "potentia": 3,
+    "permutatio": 11
   }
 }

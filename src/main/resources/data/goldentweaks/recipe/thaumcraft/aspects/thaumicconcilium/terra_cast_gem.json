@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:terra_cast_gem"
+  },
+  "aspects": {
+    "ordo": 1,
+    "praecantatio": 2,
+    "vitreus": 2
+  }
+}

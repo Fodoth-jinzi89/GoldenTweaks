@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmoderntech:adjustable_spyglass"
+  },
+  "aspects": {
+    "lux": 1,
+    "vitreus": 2
+  }
+}

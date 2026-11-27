@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sfm:printing_press"
+  },
+  "aspects": {
+    "charta": 1,
+    "cognitio": 1,
+    "machina": 3
+  }
+}

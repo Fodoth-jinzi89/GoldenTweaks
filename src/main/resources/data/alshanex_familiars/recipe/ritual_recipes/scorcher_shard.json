@@ -40,7 +40,10 @@
     }
   ],
   "result": {
-    "id": "alshanex_familiars:scorcher_shard"
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:scorcher_pet"
+    }
   },
   "particle_type": "minecraft:flame"
 }

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:build/block_iron_tank"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

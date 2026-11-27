@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:essentia_terminal"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3,
+    "praecantatio": 1
+  }
+}

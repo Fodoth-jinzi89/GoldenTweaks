@@ -355,6 +355,17 @@ public class GTChemicalReactorMenu extends AbstractContainerMenu {
         return this.tile == null ? 0 : this.tile.overclockCeiling();
     }
 
+    /**
+     * The parallel copies this machine's hardware grants, or zero when it imposes no ceiling.
+     *
+     * <p>Read straight from the tile rather than recomputed from a voltage tier here: the arithmetic
+     * belongs to the machine that applies it, and duplicating it in the window is how the figure the
+     * player sees drifts away from the figure the scheduler uses.</p>
+     */
+    public int getMachineParallelCeiling() {
+        return this.tile == null ? 0 : this.tile.machineParallelCeiling();
+    }
+
     /** Cheapst recipe the last search turned down for cost, in FE per tick; zero when none. */
     public int getRefusedCost() {
         return combine(DATA_REFUSED_LO, DATA_REFUSED_HI);

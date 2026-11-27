@@ -4,8 +4,8 @@
     "id": "goldentweaks:ziegler_natta_catalyst"
   },
   "aspects": {
-    "alkimia": 2,
     "potentia": 13,
-    "metallum": 9
+    "metallum": 9,
+    "permutatio": 2
   }
 }

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "fluidlogistics:redstone_fluid_valve"
+  },
+  "aspects": {
+    "machina": 2,
+    "metallum": 2,
+    "motus": 1
+  }
+}

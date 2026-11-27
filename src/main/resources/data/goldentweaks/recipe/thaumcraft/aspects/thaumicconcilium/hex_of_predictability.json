@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:hex_of_predictability"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "praecantatio": 3,
+    "tenebrae": 1
+  }
+}

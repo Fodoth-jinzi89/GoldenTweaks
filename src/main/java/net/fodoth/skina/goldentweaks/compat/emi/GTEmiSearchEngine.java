@@ -371,25 +371,47 @@ public final class GTEmiSearchEngine {
     }
 
     /**
-     * 每次 tick 最多烘焙这么多条 tooltip。
+     * Guards every {@code getTooltipText} call made for indexing.
      *
-     * <p>取值偏小：一次 {@code getTooltipText} 会触发整个 Tooltip 事件链，其它模组的处理器可能做
-     * 不轻的工作，逐个来既能摊平开销，也不会让玩家在加载后感到卡顿。</p>
+     * <p>{@code getTooltipText} fires the item tooltip event, and some handlers are not thread-safe —
+     * cuisinedelight, for example, writes into a shared {@code HashSet}. Calling it from a background
+     * thread while the main thread is also rendering tooltips corrupts that set. Holding this lock for
+     * the duration of a batch makes the two serialise instead of overlap.</p>
+     *
+     * <p>The main thread never waits on it: EMI's own bake takes the lock when it can and otherwise
+     * leaves the tooltips for our pass, so no input is ever blocked on indexing.</p>
      */
-    private static final int TOOLTIP_BAKE_PER_TICK = 8;
+    private static final Object TOOLTIP_LOCK = new Object();
 
     /**
-     * 正在进行的 tooltip 烘焙任务，没有则为 {@code null}。
+     * How long one batch may hold {@link #TOOLTIP_LOCK}.
      *
-     * <p>必须在<b>主线程</b>执行，不能像早期版本那样丢到后台线程：{@code getTooltipText} 会触发
-     * {@code ItemTooltip} 事件，不少模组的处理器并不是线程安全的（例如 cuisinedelight 会往一个
-     * 共享的 {@code HashSet} 里写）。在后台线程调用会和主线程并发修改同一个容器，损坏 HashMap 的
-     * 内部结构并抛 {@code ClassCastException}。分帧执行既避开了这个并发问题，又不会阻塞。</p>
+     * <p>Chosen so a tooltip being rendered on the main thread waits at most this long. Batching by
+     * time rather than by count also copes with the input being wildly uneven — measured across this
+     * pack, an average tooltip is under 2 ms but the slowest are hundreds of times that.</p>
      */
-    @Nullable
-    private static TooltipBake pendingTooltipBake;
+    private static final long TOOLTIP_BATCH_MILLIS = 50;
 
-    /** 一个分帧进行的 tooltip 烘焙任务。 */
+    /**
+     * Tooltips to index, gathered by {@code finishBake} and worked through by {@link #tooltipWorker}.
+     *
+     * <p>Deliberately not built during startup: 132k tooltips took over three minutes there, which
+     * blocked the client from ever reaching the world. It starts on the first search that asks for a
+     * tooltip match instead, off the render thread, so the cost lands where someone is already waiting
+     * for a result.</p>
+     */
+    private static final List<EmiStack> TOOLTIP_QUEUE = new ArrayList<>();
+
+    private static volatile boolean tooltipBakeRequested;
+    private static volatile boolean tooltipBakeRunning;
+
+    @Nullable
+    private static volatile Thread tooltipWorker;
+
+    /** The index the queued tooltips will be attached to, or {@code null} when none is pending. */
+    @Nullable
+    private static volatile Index tooltipTarget;
+
     private static final class TooltipBake {
 
         private final Index target;
@@ -405,64 +427,116 @@ public final class GTEmiSearchEngine {
     }
 
     /**
-     * 阶段 2：在主线程分帧生成 tooltip 并建好 tooltip 索引。
+     * Records the tooltips to index and the index to attach them to, without building anything.
      *
-     * <p>完成后 swap 进 {@link Index#tooltips} 并 bump 代次，之后 `$` 类搜索自动变完整。</p>
+     * <p>The work is deliberately deferred past startup: doing it there took over three minutes and
+     * blocked the client from reaching the world at all. It is started by
+     * {@link #requestTooltipBake()} instead, on the first search that wants a tooltip match.</p>
      */
     private static void startDeferredTooltipBake(Index target) {
-        pendingTooltipBake = new TooltipBake(target, List.copyOf(DEFERRED_TOOLTIP_STACKS));
+        synchronized (TOOLTIP_QUEUE) {
+            TOOLTIP_QUEUE.clear();
+            TOOLTIP_QUEUE.addAll(DEFERRED_TOOLTIP_STACKS);
+            tooltipTarget = target;
+            tooltipBakeRequested = false;
+            tooltipBakeRunning = false;
+        }
     }
 
     /**
-     * 推进当前的 tooltip 烘焙任务，由客户端 tick 驱动。
+     * Starts the tooltip bake if it has not run yet.
      *
-     * <p>每 tick 处理一小批，处理完就停；下一 tick 继续，直到整批结束。</p>
+     * <p>Called from the search path, so the first {@code $} query is what pays for the index. Kicking
+     * it off here rather than on every search keeps it to one run per resource reload.</p>
      */
-    public static void tickTooltipBake() {
-        TooltipBake bake = pendingTooltipBake;
-        if (bake == null) {
+    public static void requestTooltipBake() {
+        if (tooltipBakeRequested || tooltipTarget == null) {
+            return;
+        }
+        synchronized (TOOLTIP_QUEUE) {
+            if (tooltipBakeRequested || tooltipTarget == null || TOOLTIP_QUEUE.isEmpty()) {
+                return;
+            }
+            tooltipBakeRequested = true;
+
+            Thread thread = new Thread(GTEmiSearchEngine::runTooltipBake,
+                    "goldentweaks-emi-tooltips");
+            thread.setDaemon(true);
+            thread.setPriority(Thread.MIN_PRIORITY);
+            tooltipWorker = thread;
+            thread.start();
+        }
+    }
+
+    /**
+     * Builds the tooltip index off the render thread.
+     *
+     * <p>{@code getTooltipText} is taken under {@link #TOOLTIP_LOCK} in batches rather than one call at
+     * a time, because the lock is what keeps this from overlapping the main thread's own tooltip
+     * rendering inside a non-thread-safe event handler. Holding it per batch rather than per call means
+     * the main thread waits at most one batch, and it never waits at all while nothing is being
+     * rendered — which is the case during startup and while the search screen is open.</p>
+     */
+    private static void runTooltipBake() {
+        Index target;
+        List<EmiStack> stacks;
+        synchronized (TOOLTIP_QUEUE) {
+            target = tooltipTarget;
+            stacks = List.copyOf(TOOLTIP_QUEUE);
+            tooltipBakeRunning = true;
+        }
+        if (target == null || stacks.isEmpty()) {
+            tooltipBakeRunning = false;
             return;
         }
 
+        TooltipBake bake = new TooltipBake(target, stacks);
         try {
-            int budget = TOOLTIP_BAKE_PER_TICK;
-            while (budget-- > 0 && bake.cursor < bake.stacks.size()) {
-                EmiStack stack = bake.stacks.get(bake.cursor++);
-                int stackIndex = bake.target.byIdentity.getInt(stack);
-                if (stackIndex < 0) {
-                    continue;
-                }
-                List<Component> lines = stack.getTooltipText();
-                if (lines == null) {
-                    continue;
-                }
-                // 第 0 行是物品名，已经在名称索引里，这里从 1 开始取附加信息。
-                for (int i = 1; i < lines.size(); i++) {
-                    Component line = lines.get(i);
-                    if (line != null) {
-                        String text = line.getString().toLowerCase();
-                        if (!text.isEmpty()) {
-                            bake.builder.put(text, stackIndex);
+            while (bake.cursor < bake.stacks.size()) {
+                // One batch per lock acquisition: long enough to make the locking cost irrelevant,
+                // short enough that a rendered tooltip is never held up for more than a few hundred ms.
+                synchronized (TOOLTIP_LOCK) {
+                    long deadline = System.currentTimeMillis() + TOOLTIP_BATCH_MILLIS;
+                    while (bake.cursor < bake.stacks.size() && System.currentTimeMillis() < deadline) {
+                        EmiStack stack = bake.stacks.get(bake.cursor++);
+                        int stackIndex = bake.target.byIdentity.getInt(stack);
+                        if (stackIndex < 0) {
+                            continue;
+                        }
+                        List<Component> lines = stack.getTooltipText();
+                        if (lines == null) {
+                            continue;
+                        }
+                        // Line 0 is the item's name and is already in the name index.
+                        for (int i = 1; i < lines.size(); i++) {
+                            Component line = lines.get(i);
+                            if (line != null) {
+                                String text = line.getString().toLowerCase();
+                                if (!text.isEmpty()) {
+                                    bake.builder.put(text, stackIndex);
+                                }
+                            }
                         }
                     }
                 }
-            }
-
-            if (bake.cursor < bake.stacks.size()) {
-                return;
+                Thread.yield();
             }
 
             GTEmiSubstringIndex built = bake.builder.build();
             bake.target.tooltips = built;
             invalidate();
-            pendingTooltipBake = null;
 
             GoldenTweaks.LOGGER.info("GoldenTweaks: tooltip 索引已建好（{} 项，{} ms），搜索已完整",
                     built.keyCount(), System.currentTimeMillis() - bake.started);
         } catch (Throwable throwable) {
-            // 放弃这一轮：索引不完整总好过每 tick 反复报同一个错。
-            pendingTooltipBake = null;
+            // Give up on this round: an incomplete index beats a thread that keeps failing forever.
             GoldenTweaks.LOGGER.error("GoldenTweaks: 构建 tooltip 索引失败，`$` 类搜索将不可用", throwable);
+        } finally {
+            synchronized (TOOLTIP_QUEUE) {
+                tooltipBakeRunning = false;
+                tooltipTarget = null;
+                TOOLTIP_QUEUE.clear();
+            }
         }
     }
 
@@ -881,7 +955,9 @@ public final class GTEmiSearchEngine {
                 return new Leaf(regex ? KIND_REGEX_MOD : KIND_MOD, regex ? pattern : indexed, negated);
             }
             if (type == QueryType.TOOLTIP) {
-                return new Leaf(regex ? KIND_REGEX_TOOLTIP : KIND_TOOLTIP, regex ? pattern : indexed, negated);
+                // Explicit `$`: this is the one path that starts the tooltip index.
+                return new Leaf(regex ? KIND_REGEX_TOOLTIP : KIND_TOOLTIP,
+                        regex ? pattern : indexed, negated, true);
             }
             if (type == QueryType.TAG) {
                 return new Leaf(regex ? KIND_REGEX_TAG : KIND_TAG, pattern, negated);
@@ -995,7 +1071,7 @@ public final class GTEmiSearchEngine {
 
         switch (leaf.kind) {
             case KIND_NAME -> resolve(out, index, leaf.pattern, index.names, EmiSearch.names);
-            case KIND_TOOLTIP -> resolveTooltip(out, index, leaf.pattern);
+            case KIND_TOOLTIP -> resolveTooltip(out, index, leaf.pattern, leaf.explicit);
             case KIND_MOD -> resolve(out, index, leaf.pattern, index.mods, EmiSearch.mods);
             case KIND_ALIAS -> resolveAlias(out, index, leaf.pattern);
             case KIND_TAG -> {
@@ -1045,13 +1121,20 @@ public final class GTEmiSearchEngine {
      * <p>阶段 2 还没建好时按「不命中」处理并提示一次 —— 绝不能算成「全中」，
      * 那会让最初几秒的搜索结果变多且全是错的。</p>
      */
-    private static void resolveTooltip(Bits out, Index index, String token) {
+    private static void resolveTooltip(Bits out, Index index, String token, boolean explicit) {
 
         GTEmiSubstringIndex tooltips = index.tooltips;
         if (tooltips == null) {
-            if (!warnedTooltipPending) {
-                warnedTooltipPending = true;
-                GoldenTweaks.LOGGER.info("GoldenTweaks: tooltip 索引尚未建好，本次 `$` 搜索不包含 tooltip 匹配");
+            // Only an explicit `$` starts the build. The index used to be built at startup, where it
+            // took over three minutes and blocked the client from reaching the world; deferring to the
+            // first real request puts the cost where someone is already waiting for results.
+            if (explicit) {
+                requestTooltipBake();
+                if (!warnedTooltipPending) {
+                    warnedTooltipPending = true;
+                    GoldenTweaks.LOGGER.info(
+                            "GoldenTweaks: tooltip 索引正在后台构建，本次 `$` 搜索暂不包含 tooltip 匹配");
+                }
             }
             return;
         }
@@ -1169,10 +1252,25 @@ public final class GTEmiSearchEngine {
         final int kind;
         final String pattern;
 
+        /**
+         * True when the query wrote {@code $} explicitly, rather than this leaf coming from
+         * "search tooltips by default".
+         *
+         * <p>Only an explicit request starts the tooltip index. The default-inclusion leaf is added to
+         * every plain query, so triggering on that would build the index the moment anything is typed
+         * — which is the startup cost this was moved away from.</p>
+         */
+        final boolean explicit;
+
         Leaf(int kind, String pattern, boolean negated) {
+            this(kind, pattern, negated, false);
+        }
+
+        Leaf(int kind, String pattern, boolean negated, boolean explicit) {
             super(negated);
             this.kind = kind;
             this.pattern = pattern;
+            this.explicit = explicit;
         }
 
         @Override

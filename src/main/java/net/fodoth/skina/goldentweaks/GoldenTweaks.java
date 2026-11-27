@@ -101,6 +101,14 @@ public class GoldenTweaks {
         if (ModList.get().isLoaded("avaritia_more_items")) {
             modEventBus.addListener(GTPortCapabilities::register);
         }
+        // 让 ThaumicEnergistics 的样板供应器能直接推要素进源质端口。放在 FMLCommonSetup 里，
+        // 那时 TE 的端点表已经初始化完毕。
+        if (ModList.get().isLoaded("avaritia_more_items")
+                && ModList.get().isLoaded("thaumicenergistics")
+                && ModList.get().isLoaded("thaumcraft")) {
+            modEventBus.addListener(net.fodoth.skina.goldentweaks.compat.thaumicenergistics
+                    .GTPortEssentiaEndpointProvider::register);
+        }
         GTMultiblockCreativeTabs.register(modEventBus);
         GTReactorFluids.register(modEventBus);
         if (ModList.get().isLoaded("create_aerofreight")) {

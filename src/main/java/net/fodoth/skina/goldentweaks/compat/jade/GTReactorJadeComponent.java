@@ -7,6 +7,7 @@ import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactorStatus;
+import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectNames;
 import net.fodoth.skina.goldentweaks.util.GTDurationFormat;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -111,9 +112,10 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
         }
 
         // Only while a craft runs: an idle machine draws the hatch rate at most, and stating a power
-        // figure for a reaction that is not happening would be a guess.
-        int power = root.getInt(GTReactorJadeProvider.POWER);
-        if (power > 0) {
+        // figure for a reaction that is not happening would be a guess. Read as a long: a parallel
+        // craft's bill can exceed the int range, and narrowing it would print the wrong figure.
+        long power = root.getLong(GTReactorJadeProvider.POWER);
+        if (power > 0L) {
             tooltip.add(figureLine("gui.goldentweaks.jade.power", power));
         }
 
@@ -150,7 +152,7 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
      * value, exactly as the energy bar's own label does it, so "XFE/t" stays in the translation
      * rather than being spelled out here.</p>
      */
-    private static Component figureLine(String labelKey, int value) {
+    private static Component figureLine(String labelKey, long value) {
         return Component.translatable(labelKey).withStyle(ChatFormatting.GREEN)
                 .append(Component.literal(GTEnergyFormat.formatWithUnit(value, "FE/t"))
                         .withStyle(ChatFormatting.AQUA));
@@ -335,24 +337,25 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
         tooltip.add(Component.translatable("gui.goldentweaks.jade.expected")
                 .withStyle(ChatFormatting.GRAY));
 
-        List<IElement> row = new ArrayList<>();
         int shown = 0;
         for (int index = 0; index < products.size() && shown < MAX_PRODUCTS; index++) {
-            IElement icon = iconOf(products.getCompound(index));
+            CompoundTag entry = products.getCompound(index);
+            IElement icon = iconOf(entry);
             if (icon == null) {
                 // Nothing to draw: an id this client cannot resolve, or a kind that needs EMI when it
                 // is not installed. The row is skipped rather than replaced with text, because the
                 // panel is read as a set of slots and a lone name among them reads as an error.
                 continue;
             }
-            // The icon alone: every kind that has one also carries its own amount badge, so a
-            // second copy of the number beside it would say the same thing twice.
+            // Bare icon plus a written amount, one product per line. Jade's own badge is an int, and
+            // a parallel craft can exceed that, so the number is spelled out beside the icon instead
+            // of being drawn as a stack count — the same figure the machine's own window prints.
+            List<IElement> row = new ArrayList<>(3);
             row.add(icon);
-            row.add(IElementHelper.get().spacer(4, 0));
-            shown++;
-        }
-        if (!row.isEmpty()) {
+            row.add(IElementHelper.get().spacer(2, 0));
+            row.add(IElementHelper.get().text(productLabel(entry)));
             tooltip.add(row);
+            shown++;
         }
 
         int remaining = products.size() - shown;
@@ -381,18 +384,97 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
             if (fluid == null) {
                 return null;
             }
-            return IElementHelper.get().fluid(JadeFluidObject.of(
-                    fluid, entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT)));
+            // A single unit, so the icon is just a picture: the real amount is written beside it.
+            // Jade's own badge is an int and would be wrong past that anyway.
+            return IElementHelper.get().fluid(JadeFluidObject.of(fluid, 1L));
         }
         if (GTReactorJadeProvider.KIND_NAMED.equals(kind)) {
-            return emiIconOf(entry, id, entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT));
+            return emiIconOf(entry, id, 1L);
         }
         var item = BuiltInRegistries.ITEM.getOptional(id).orElse(null);
         if (item == null) {
             return null;
         }
-        return IElementHelper.get().item(
-                new ItemStack(item, entry.getInt(GTReactorJadeProvider.PRODUCT_COUNT)));
+        // One item, not a stack: a stack count is capped at 99 and drawn over the icon, which would
+        // both understate the craft and say the same thing the label already says correctly.
+        return IElementHelper.get().item(new ItemStack(item, 1));
+    }
+
+    /**
+     * One product as a written line, e.g. {@code Coal × 8} or {@code Water 1,000 mB}.
+     *
+     * <p>The same shapes the machine's own window uses: items count in whole items, fluids and
+     * chemicals in millibuckets, and essentia in whole aspect units, so no unit is guessed.</p>
+     *
+     * <p>The real kind is only consulted for {@link GTReactorJadeProvider#KIND_NAMED} entries. An
+     * item entry carries no real-kind field at all, so asking anyway would fall through to the
+     * resolver's "assume chemical" default and label a stack of items in millibuckets.</p>
+     */
+    private static Component productLabel(CompoundTag entry) {
+        String kind = entry.getString(GTReactorJadeProvider.PRODUCT_KIND);
+        ResourceLocation id = ResourceLocation.tryParse(
+                entry.getString(GTReactorJadeProvider.PRODUCT_ID));
+        long amount = entry.getLong(GTReactorJadeProvider.PRODUCT_COUNT);
+        // Grouped the way the player's language groups numbers, so a large parallel craft stays
+        // readable instead of becoming an unbroken run of digits.
+        String size = GTEnergyFormat.formatExpanded(amount);
+
+        Component name = nameOf(entry, kind, id);
+        if (name == null) {
+            name = Component.literal(id == null ? "?" : id.getPath());
+        }
+        if (GTReactorJadeProvider.KIND_FLUID.equals(kind)) {
+            return Component.literal("").append(name).append(" " + size + " mB");
+        }
+        if (GTReactorJadeProvider.KIND_NAMED.equals(kind)) {
+            GTReactionStack.Kind real = realKindOf(entry);
+            if (real == GTReactionStack.Kind.CHEMICAL) {
+                return Component.literal("").append(name).append(" " + size + " mB");
+            }
+            // Essentia counts in whole aspect units and an AE key has no unit of its own, so both
+            // take the bare figure — matching the machine window's own formatting.
+            return Component.literal("").append(name).append(" " + size);
+        }
+        return Component.literal("").append(name).append(" × " + size);
+    }
+
+    /** The display name of one product entry, or {@code null} when it cannot be resolved. */
+    @Nullable
+    private static Component nameOf(CompoundTag entry, String kind, @Nullable ResourceLocation id) {
+        if (id == null) {
+            return null;
+        }
+        if (GTReactorJadeProvider.KIND_FLUID.equals(kind)) {
+            var fluid = BuiltInRegistries.FLUID.getOptional(id).orElse(null);
+            return fluid == null ? null : fluid.getFluidType().getDescription();
+        }
+        if (!GTReactorJadeProvider.KIND_NAMED.equals(kind)) {
+            var item = BuiltInRegistries.ITEM.getOptional(id).orElse(null);
+            return item == null ? null : new ItemStack(item).getHoverName();
+        }
+        GTReactionStack.Kind real = realKindOf(entry);
+        if (real == GTReactionStack.Kind.CHEMICAL) {
+            // Mekanism names a chemical through its holder, which carries the translation key; the
+            // registry lookup is guarded because Mekanism is not always on the classpath.
+            try {
+                var holder = mekanism.api.MekanismAPI.CHEMICAL_REGISTRY.getHolder(id).orElse(null);
+                if (holder != null) {
+                    return holder.value().getTextComponent();
+                }
+            } catch (NoClassDefFoundError | RuntimeException absent) {
+                // Mekanism absent, or the id names a chemical this pack does not ship.
+            }
+            return Component.literal(id.getPath());
+        }
+        // Essentia: its name is a Thaumcraft string, so the aspect is read when the mod is there and
+        // the raw tag is the fallback — still unambiguous, just untranslated.
+        String tag = id.getPath();
+        try {
+            var aspect = GTAspectNames.of(tag);
+            return aspect == null ? Component.literal(tag) : aspect;
+        } catch (NoClassDefFoundError absent) {
+            return Component.literal(tag);
+        }
     }
 
     @Nullable

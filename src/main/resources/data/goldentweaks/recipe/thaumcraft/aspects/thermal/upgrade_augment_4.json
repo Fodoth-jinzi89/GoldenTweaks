@@ -1,12 +1,12 @@
+
 {
   "type": "goldentweaks:item_aspect",
   "item": {
-    "id": "goldentweaks:upgrade_augment_4"
+    "id": "thermal:upgrade_augment_4"
   },
   "aspects": {
-    "fabrico": 3,
-    "cognitio": 2,
+    "fabrico": 1,
     "machina": 2,
-    "vinculum": 2
+    "metallum": 2
   }
 }

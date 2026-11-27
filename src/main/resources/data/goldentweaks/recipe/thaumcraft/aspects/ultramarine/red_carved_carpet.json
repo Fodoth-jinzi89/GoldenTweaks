@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:red_carved_carpet"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "pannus": 2
+  }
+}

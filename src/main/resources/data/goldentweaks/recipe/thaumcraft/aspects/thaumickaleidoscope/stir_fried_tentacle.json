@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumickaleidoscope:stir_fried_tentacle"
+  },
+  "aspects": {
+    "bestia": 1,
+    "fames": 2,
+    "ignis": 1
+  }
+}

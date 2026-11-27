@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "hazennstuff:geckolib_soul_flame_chestplate"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

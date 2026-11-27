@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia:neutron_wolf_armor"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "fames": 1,
+    "victus": 1
+  }
+}

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:crimson_annales"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "praecantatio": 3,
+    "tenebrae": 1
+  }
+}

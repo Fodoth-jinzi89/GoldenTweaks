@@ -1,0 +1,10 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "supplementaries:skull_candle"
+  },
+  "aspects": {
+    "lux": 3
+  }
+}

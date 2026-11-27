@@ -13,6 +13,7 @@ import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReacti
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolerMultiblock;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
@@ -50,11 +51,16 @@ public final class GTMultiblockBlocks {
     }
 
     public static final DeferredBlock<GTShellBlock> SHELL_PE =
-            BLOCKS.register("shell_pe", () -> new GTShellBlock(properties()));
+            BLOCKS.register("shell_pe", () -> new GTShellBlock(properties(), "OMNIDIRECTIONAL"));
 
     /** The polypropylene shell: the same part, one material tier up. */
     public static final DeferredBlock<GTShellBlock> SHELL_PP =
-            BLOCKS.register("shell_pp", () -> new GTShellBlock(properties()));
+            BLOCKS.register("shell_pp", () -> new GTShellBlock(properties(), "OMNIDIRECTIONAL"));
+
+    /** The aluminium shell: the same part, one material tier up again. */
+    public static final DeferredBlock<GTShellBlock> SHELL_ALUMINUM =
+            BLOCKS.register("shell_aluminum", () -> new GTShellBlock(properties(), "OMNIDIRECTIONAL"));
+
 
     public static final DeferredBlock<GTFacingBlock> INPUT_BUS =
             BLOCKS.register("input_bus", () -> new GTFacingBlock(properties()));
@@ -79,7 +85,7 @@ public final class GTMultiblockBlocks {
      * models are not touched.</p>
      */
     public static final java.util.List<DeferredBlock<GTShellBlock>> CASINGS = java.util.List.of(
-            SHELL_PE, SHELL_PP);
+            SHELL_PE, SHELL_PP, SHELL_ALUMINUM);
 
     /** The index of a casing in {@link #CASINGS}, or 0 when it is not one of them. */
     public static int casingIndex(Block casing) {
@@ -101,6 +107,9 @@ public final class GTMultiblockBlocks {
 
     public static final DeferredItem<BlockItem> SHELL_PP_ITEM =
             ITEMS.register("shell_pp", () -> new BlockItem(SHELL_PP.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> SHELL_ALUMINUM_ITEM =
+            ITEMS.register("shell_aluminum", () -> new BlockItem(SHELL_ALUMINUM.get(), new Item.Properties()));
 
     public static final DeferredItem<BlockItem> INPUT_BUS_ITEM =
             ITEMS.register("input_bus", () -> new BlockItem(INPUT_BUS.get(), new Item.Properties()));
@@ -234,6 +243,16 @@ public final class GTMultiblockBlocks {
     public static final DeferredItem<Item> CONTROL_CIRCUIT_PARALLEL_1 =
             ITEMS.register("control_circuit_parallel_1", () -> new Item(new Item.Properties()));
 
+    /**
+     * Same base with the fourfold-parallel icon layered on top.
+     *
+     * <p>Names the machine that carries it, not a fixed multiplier: what it grants is four parallels
+     * per voltage tier the reactors can reach, so the ceiling moves with the hatches rather than
+     * being a single number printed on the part.</p>
+     */
+    public static final DeferredItem<Item> CONTROL_CIRCUIT_PARALLEL_4X =
+            ITEMS.register("control_circuit_parallel_4x", () -> new Item(new Item.Properties()));
+
     private GTMultiblockBlocks() {
     }
 
@@ -282,6 +301,34 @@ public final class GTMultiblockBlocks {
     @Nullable
     public static ResourceLocation structureForHost(BlockState state) {
         return state.getBlock() instanceof GTChemicalReactorMachineBlock host ? host.structureId() : null;
+    }
+
+    /**
+     * Whether the projector has a shape to show for this block.
+     *
+     * <p>Two sources answer yes: our own hosts, which name a structure file, and Singularity
+     * Iteration's multiblock controllers, whose shapes are read from SI's in-code blueprints.
+     * Each mod is only consulted when it is installed, so neither can throw when absent.</p>
+     */
+    public static boolean hasProjection(BlockState state) {
+        if (ModList.get().isLoaded("avaritia_more_items") && structureForHost(state) != null) {
+            return true;
+        }
+        return net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures.available()
+                && net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures
+                        .layoutFor(state) != null;
+    }
+
+    /**
+     * Whether this block is a Singularity Iteration multiblock controller.
+     *
+     * <p>SI's controllers open their own GUI on a plain right click and have no orientation
+     * properties of ours, so they need their own handling instead of {@link #rotateHost}.</p>
+     */
+    public static boolean isMioIcifHost(BlockState state) {
+        return net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures.available()
+                && net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures
+                        .layoutFor(state) != null;
     }
 
     /** Current orientation of a host block, read from the blockstate. */
@@ -345,6 +392,7 @@ public final class GTMultiblockBlocks {
             GTPortMenu.MENU_TYPES.register(eventBus);
             GTChemicalReactorMultiblock.register(eventBus);
             GTAdvancedChemicalReactorMultiblock.register(eventBus);
+            GTVacuumCoolerMultiblock.register(eventBus);
             // The kettle's recipes implement an AMI interface, so they are only registered when
             // the host itself is.
             GTChemicalReactionRecipes.register(eventBus);

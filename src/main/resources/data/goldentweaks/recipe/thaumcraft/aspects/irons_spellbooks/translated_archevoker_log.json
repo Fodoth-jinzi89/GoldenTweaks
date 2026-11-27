@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "irons_spellbooks:translated_archevoker_log"
+  },
+  "aspects": {
+    "arbor": 2,
+    "herba": 1
+  }
+}

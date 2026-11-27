@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "spectrum:weeping_gala_fronds_plant"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "fames": 1,
+    "victus": 1
+  }
+}

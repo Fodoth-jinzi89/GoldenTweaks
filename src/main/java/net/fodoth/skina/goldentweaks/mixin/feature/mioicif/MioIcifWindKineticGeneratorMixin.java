@@ -16,6 +16,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 /**
  * Inside a Compact Machines dimension the wind kinetic generator ignores rotor obstruction and uses the wind
  * of the highest-wind outdoor position in clear weather (the peak of the wind curve, multiplier 1).
+ *
+ * <p>{@code calculateKineticOutput} multiplies {@code windStrength} by {@code obstructionFactor},
+ * {@code facingFactor} and {@code wakeFactor}, so the compact path has to set all four — leaving the factors at
+ * their default {@code 0} would zero the output.</p>
  */
 @Mixin(value = mio_icif_Wind_Kinetic_Generator.class, remap = false)
 public abstract class MioIcifWindKineticGeneratorMixin {
@@ -26,11 +30,23 @@ public abstract class MioIcifWindKineticGeneratorMixin {
     @Shadow
     private int lastObstruction;
 
+    @Shadow
+    private double obstructionFactor;
+
+    @Shadow
+    private double facingFactor;
+
+    @Shadow
+    private double wakeFactor;
+
     @Inject(method = "updateWindStrength", at = @At("HEAD"), cancellable = true)
     private void goldentweaks$compactSpaceWindStrength(CallbackInfo ci) {
         if (((BlockEntity) (Object) this).getLevel() instanceof ServerLevel server
                 && GTMioIcifCompactSpace.isCompact(server)) {
             this.lastObstruction = 0;
+            this.obstructionFactor = 1.0D;
+            this.facingFactor = 1.0D;
+            this.wakeFactor = 1.0D;
             boolean hasRotor = ((mio_icif_Wind_Kinetic_Generator) (Object) this)
                     .getRotorStack().getItem() instanceof IKineticRotor;
             this.windStrength = hasRotor

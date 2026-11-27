@@ -63,5 +63,8 @@
   "filter.ftbfiltersystem.custom.tooltip": "面向模组开发者和整合包作者的高级过滤器。\n在尝试匹配时会触发 CustomFilterEvent；设置事件结果以表示匹配成功或失败。\n使用文本框提供自由文本数据，该数据会作为 'data' 参数传递给事件。",
   "filter.ftbfiltersystem.expression.name": "表达式",
   "filter.ftbfiltersystem.expression.tooltip": "允许输入字面量过滤器表达式，或从物品栏中的过滤器物品加载。\n建议（但非必须）为其指定自定义名称，以便区分。",
-  "filter.ftbfiltersystem.root.name": "根（全部满足）"
+  "filter.ftbfiltersystem.root.name": "根（全部满足）",
+  "ftbfiltersystem.message.gave_or_filter": "已创建一个包含 %s 种物品的「任一满足」过滤器",
+  "ftbfiltersystem.message.or_filter": "以下 %s 种物品中的任意一种",
+  "ftbfiltersystem.message.hold_shift": "按住 Shift 查看详细信息"
 }

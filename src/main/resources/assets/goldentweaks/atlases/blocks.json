@@ -19,6 +19,14 @@
     {
       "type": "minecraft:single",
       "resource": "goldentweaks:block/shell_pp_ctm"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:block/shell_pe_ctm"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "goldentweaks:block/shell_aluminum_ctm"
     }
   ]
 }

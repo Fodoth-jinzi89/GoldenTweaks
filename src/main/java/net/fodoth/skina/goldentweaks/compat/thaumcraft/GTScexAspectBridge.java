@@ -1,5 +1,6 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
+import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import org.jetbrains.annotations.Nullable;
 
 import java.lang.reflect.Method;
@@ -18,9 +19,25 @@ import java.lang.reflect.Method;
  */
 public final class GTScexAspectBridge {
 
-    private static final String SCEX_INGREDIENT = "dev.scex.aspectjei.AspectIngredient";
-    private static final String SCEX_HELPER = "dev.scex.aspectjei.AspectIngredientHelper";
-    private static final String SCEX_RENDERER = "dev.scex.aspectjei.AspectIngredientRenderer";
+    /**
+     * 要素作为查看器 ingredient 的三件套类名。
+     *
+     * <p>原先是独立模组 {@code scex_aspect_jei} 的 {@code dev.scex.aspectjei.*}。该模组已并入
+     * 神秘时代本体，同样的角色改由 {@code thaumcraft.integration.jei} 提供：
+     * {@code JeiAspect} 实现了 {@code IIngredientType<JeiAspect>} 并持有 {@code Aspect}，
+     * {@code JeiAspectHelper} 是配套的 {@code IIngredientHelper}。
+     * 类名与成员名（{@code TYPE}、{@code aspect()}）都与旧实现一致，所以这里只需要换包名。</p>
+     */
+    private static final String SCEX_INGREDIENT = "thaumcraft.integration.jei.JeiAspect";
+    private static final String SCEX_HELPER = "thaumcraft.integration.jei.JeiAspectHelper";
+    /**
+     * 内置版配套的 renderer。
+     *
+     * <p>不能省成 {@code null} 让 TMRV 回退：{@code TMRVStack.render} 里直接
+     * {@code getfield renderer} 然后 {@code invokeinterface getWidth()}，没有任何判空，
+     * 传 null 会在第一帧绘制时 NPE。</p>
+     */
+    private static final String SCEX_RENDERER = "thaumcraft.integration.jei.JeiAspectRenderer";
     private static final String ASPECT = "thaumcraft.api.aspects.Aspect";
     private static final String TMRV_STACK =
             "dev.nolij.toomanyrecipeviewers.impl.ingredient.TMRVStack";
@@ -145,7 +162,11 @@ public final class GTScexAspectBridge {
             aspectLookup = aspectClass.getMethod("getAspect", String.class);
             ingredientConstructor = scexIngredient.getConstructor(aspectClass);
             ingredientType = scexIngredient.getField("TYPE").get(null);
-            ingredientHelper = helperClass.getConstructor().newInstance();
+            // 内置版的 helper 构造器是包内可见的，getConstructor() 会抛 NoSuchMethodException，
+            // 那会让整个桥接 usable=false —— 表现是要素在 EMI 里无法悬停/搜索，且没有任何日志。
+            var helperConstructor = helperClass.getDeclaredConstructor();
+            helperConstructor.setAccessible(true);
+            ingredientHelper = helperConstructor.newInstance();
             ingredientRenderer = renderer(loader);
 
             stackFactory = tmrvClass.getMethod("create",
@@ -164,22 +185,31 @@ public final class GTScexAspectBridge {
 
             usable = true;
         } catch (ReflectiveOperationException | LinkageError | SecurityException unavailable) {
+            // 这里曾经完全静默：桥接一旦不可用，要素在 EMI 里就只剩裸图标，查不了配方/用途，
+            // 而日志里一个字都没有。把原因打出来，省得下次再从行为倒推。
+            GoldenTweaks.LOGGER.warn(
+                    "[GT] Aspect viewer bridge unavailable; aspects cannot be looked up in EMI", unavailable);
             usable = false;
         }
     }
 
     /**
-     * scex's renderer, or {@code null} to let TMRV use the helper's own.
+     * 查看器的 renderer 实例，或 {@code null} 让 TMRV 用 helper 自带的绘制。
      *
-     * <p>Both draw the same thing; the explicit instance is preferred only because it is the one
-     * scex registered.</p>
+     * <p>内置版的 {@code JeiAspectRenderer} 构造器是包内可见的，{@code getConstructor()} 找不到，
+     * 必须走 {@code getDeclaredConstructor()} 并临时放开访问权。</p>
      */
     @Nullable
     private static Object renderer(ClassLoader loader) {
+        if (SCEX_RENDERER == null) {
+            return null;
+        }
         try {
             Class<?> rendererClass = Class.forName(SCEX_RENDERER, false, loader);
-            return rendererClass.getConstructor().newInstance();
-        } catch (ReflectiveOperationException | LinkageError absent) {
+            var constructor = rendererClass.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            return constructor.newInstance();
+        } catch (ReflectiveOperationException | LinkageError | SecurityException absent) {
             return null;
         }
     }

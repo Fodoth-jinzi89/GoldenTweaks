@@ -1,0 +1,10 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "amendments:wall_lantern"
+  },
+  "aspects": {
+    "lux": 3
+  }
+}

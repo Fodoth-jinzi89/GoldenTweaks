@@ -26,7 +26,14 @@
     "casing=1,facing=north": {
       "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max"
     },
+    "casing=2,facing=north": {
+      "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max"
+    },
     "casing=1,facing=east": {
+      "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
+      "y": 90
+    },
+    "casing=2,facing=east": {
       "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
       "y": 90
     },
@@ -34,7 +41,15 @@
       "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
       "y": 180
     },
+    "casing=2,facing=south": {
+      "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
+      "y": 180
+    },
     "casing=1,facing=west": {
+      "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
+      "y": 270
+    },
+    "casing=2,facing=west": {
       "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
       "y": 270
     },
@@ -42,7 +57,15 @@
       "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
       "x": 270
     },
+    "casing=2,facing=up": {
+      "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
+      "x": 270
+    },
     "casing=1,facing=down": {
+      "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
+      "x": 90
+    },
+    "casing=2,facing=down": {
       "model": "goldentweaks:block/multiblock/gt_port_chemical_input_max",
       "x": 90
     }

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sfm:tough_fancy_cable_facade"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "metallum": 2
+  }
+}

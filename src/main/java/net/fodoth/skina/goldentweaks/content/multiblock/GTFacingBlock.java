@@ -17,9 +17,8 @@ import org.jetbrains.annotations.NotNull;
  * <p>Every component renders the shared PE shell as its bottom layer and draws its
  * own overlay on the front face. The shell layer uses the same
  * {@code goldentweaks:block/shell_pe} texture as the plain shell block, so the
- * Continuity definition in {@code optifine/ctm/shell_pe.properties} (which matches
- * on that tile and uses {@code connect=tile}) joins components and shells into one
- * continuous surface.</p>
+ * connected-texture behaviour joins components and shells into one continuous
+ * surface. See {@code GTPortCasingBehaviour}.</p>
  */
 public class GTFacingBlock extends Block {
 

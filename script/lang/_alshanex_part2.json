@@ -1,0 +1,128 @@
+{
+  "guide.alshanex_familiars.sitting": "坐下",
+  "guide.alshanex_familiars.sitting.0": "用§l木棍§r右键点击你的魔宠即可让它坐下：它会留在原地并且不再攻击。\n\n再次右键点击即可让它站起。受到伤害也会让它站起。\n\n用于坐下的物品可以通过标签自由更改。",
+
+  "guide.alshanex_familiars.health": "生命与复苏",
+  "guide.alshanex_familiars.health.0": "魔宠可以在§l魔宠床§r上睡觉恢复生命，也可以喂食魔宠食物：任何经过缩小台的根食物。恢复量等同于该食物能填饱的饥饿值。\n\n你的魔宠无法伤害你，也不会互相伤害。",
+  "guide.alshanex_familiars.health.1": "当魔宠将要死亡时：\n\n1. 如果你已解锁§l学习死灵法术§r进度（击败亡灵之王）且拥有 80 点法力，会消耗法力并以半血复活。\n2. 否则会消耗与其绑定的§l迷你图腾§r来复活。\n3. 如果你装备了魔宠盔甲，它们会陷入眩晕而非死亡。\n4. 否则它会死亡并离开你的魔宠队伍。§l魔宠蛋§r仍可将它带回。",
+  "guide.alshanex_familiars.health.1.title": "死亡与复苏",
+
+  "guide.alshanex_familiars.compendium": "魔宠图鉴",
+  "guide.alshanex_familiars.compendium.0": "一本列出游戏中所有魔宠的书。在左页选择一只魔宠，即可查看 3D 预览和三个标签页：§l关于§r（获取方式）、§l能力§r（其能力与法术）以及§l颜色§r。",
+  "guide.alshanex_familiars.compendium.1": "「颜色」标签页会列出每个部位可用的所有颜色。已解锁的颜色可以在预览中试穿；未解锁的显示为「?」：将鼠标悬停其上可查看获取方式。\n\n当你驯服一只拥有该颜色的魔宠，或将自己的魔宠重新染成该颜色时，该颜色即解锁。外观则在背包中携带其缩小版物品时解锁。",
+  "guide.alshanex_familiars.compendium.1.title": "收集颜色",
+
+  "guide.alshanex_familiars.familiar_bed": "魔宠床",
+  "guide.alshanex_familiars.familiar_bed.0": "失去生命的魔宠会寻找附近的空床并在上面睡到康复为止。\n\n用染料右键点击已放置的床可以改变其颜色。\n\n床也会孵化§l魔宠蛋§r：床中放有蛋时，任何魔宠都无法在上面睡觉。",
+
+  "guide.alshanex_familiars.familiar_house": "魔宠小屋",
+  "guide.alshanex_familiars.familiar_house.0": "可存放最多 10 只魔宠，且不计入你的携带上限。存放在其中的魔宠不会受到伤害，也不会攻击其他生物。",
+  "guide.alshanex_familiars.familiar_house.1": "§l存放模式：§r魔宠可在你与小屋之间自由往返。\n\n§l游荡模式：§r存放的魔宠会在小屋周围漫游（默认 25 格），你可以开启或关闭它们的能力。",
+  "guide.alshanex_familiars.familiar_house.1.title": "模式",
+  "guide.alshanex_familiars.familiar_house.2": "只有其主人才能破坏它，且只能在空置的存放模式下破坏。\n\n只有§l一个§r魔宠小屋能在另一个小屋的 16 格范围内生效。",
+  "guide.alshanex_familiars.familiar_house.2.title": "规则",
+
+  "guide.alshanex_familiars.shrinking_station": "缩小台",
+  "guide.alshanex_familiars.shrinking_station.0": "缩小器可将物品缩小到魔宠大小。放入物品并取出结果；它也能与漏斗配合使用。",
+  "guide.alshanex_familiars.shrinking_station.1": "食物会变成魔宠食物，染料会变成用于眼睛颜色的缩小染料，帽子和武器则会变成外观饰品。其他配方请见各自的条目。",
+  "guide.alshanex_familiars.shrinking_station.1.title": "它能缩小什么",
+
+  "guide.alshanex_familiars.colors": "魔宠颜色",
+  "guide.alshanex_familiars.colors.0": "魔宠的部分部位，如衣物、帽子或树叶，可以有不同的颜色。它们来自：\n\n§l其生成的生物群系§r。\n§l随机的染料颜色§r（自然生成时）。\n§l染料§r：为主部位染色，例如衣物。\n§l缩小染料§r：为眼睛染色。",
+  "guide.alshanex_familiars.colors.1": "§l猎人§r、§l死灵法师§r与§l瘟疫医生§r：使用缩小染料时按住 Shift，可改为给狗的眼睛、骷髅的眼睛或灯笼染色。\n\n§l凋灵石§r：将任意魔宠重置回其原始颜色，且不会被消耗。",
+  "guide.alshanex_familiars.colors.1.title": "特殊颜色",
+  "guide.alshanex_familiars.colors.2": "§l德鲁伊：§r树叶为其树叶染色，原木（包括去皮）为其木质部染色。\n§l猎人：§r原木为其弩染色。\n§l霜灵：§r冰、浮冰、蓝冰或雪块为其冰霜染色。\n\n只有主人才能为魔宠重新染色；若颜色未发生变化，则不会消耗任何物品。\n\n查看《魔宠图鉴》可了解所有可能性。",
+  "guide.alshanex_familiars.colors.2.title": "物品颜色",
+  "guide.alshanex_familiars.colors.3": "将任意染料缩小后可为眼睛染色。",
+
+  "guide.alshanex_familiars.identity_vessel": "身份容器",
+  "guide.alshanex_familiars.identity_vessel.0": "将一只魔宠的颜色转移到同类型的另一只魔宠身上。\n\n对一只魔宠使用空容器：容器会记录它的颜色，而该魔宠则恢复原始外观。",
+  "guide.alshanex_familiars.identity_vessel.1": "对同类型的另一只魔宠使用已填充的容器。原本为原始外观的部位会获得记录的颜色，而已经带有颜色的部位则会得到两者的§l混合§r。\n\n这是获得混合颜色的唯一方法。使用后容器会重新变为空。",
+  "guide.alshanex_familiars.identity_vessel.1.title": "赋予身份",
+  "guide.alshanex_familiars.identity_vessel.2": "制作一个容器。奥术符文与陶片会留在它们的雕像上。",
+  "guide.alshanex_familiars.identity_vessel.3": "复制已填充的容器：将一个空容器放在中央，已填充的放在一个雕像上。已填充的容器会被保留，中央的容器则复制它的身份。",
+
+  "guide.alshanex_familiars.cosmetics": "外观饰品",
+  "guide.alshanex_familiars.cosmetics.0": "魔宠可以戴§l帽子§r并持有§l武器§r。它们纯粹是视觉效果。\n\n1. 在缩小台中将帽子或武器缩小。\n2. 用它右键点击你的魔宠。如果两者皆可，按住 Shift 将其作为帽子戴上。\n3. 用空手按住 Shift 右键可先取下武器，再取下帽子。",
+  "guide.alshanex_familiars.cosmetics.1": "图鉴中显示了每只魔宠可以佩戴何种外观，以及有哪些可用的外观。",
+  "guide.alshanex_familiars.cosmetics.1.title": "制作外观饰品",
+
+  "guide.alshanex_familiars.familiar_camera": "魔宠相机",
+  "guide.alshanex_familiars.familiar_camera.0": "为魔宠拍照，记录它们的颜色、帽子、武器与姿态。\n\n§l右键§r放大。§l左键§r为距准星最近的魔宠拍照，最远 48 格。",
+  "guide.alshanex_familiars.familiar_camera.1": "每张照片消耗背包中的§l一张纸§r，且相机需要一秒才能再次就绪。\n\n它对准的是魔宠被绘制的实际位置，因此你可以捕捉到跳跃或施法中的瞬间。任何魔宠都可以被拍照，无论是否已驯服。",
+  "guide.alshanex_familiars.familiar_camera.1.title": "拍照",
+
+  "guide.alshanex_familiars.familiar_photo": "魔宠照片",
+  "guide.alshanex_familiars.familiar_photo.0": "照片的提示框会显示魔宠的类型、主人、颜色、帽子、武器与姿态（按住 Shift 查看详情），以及拍摄者和拍摄时间。\n\n放在物品展示框中会显示照片本身；使用隐形展示框可使其更大。",
+  "guide.alshanex_familiars.familiar_photo.1": "照片也是雕塑台制作雕塑的素材。照片不会被消耗，因此一张照片可以做成许多雕塑。",
+
+  "guide.alshanex_familiars.origin_island": "寻找起源之岛",
+  "guide.alshanex_familiars.origin_island.0": "海洋中一座失落已久的岛屿，藏着魔宠起源的秘密。它的中心矗立着世界上唯一的仪式场。\n\n找到它需要几个步骤。",
+  "guide.alshanex_familiars.origin_island.1": "嗅探兽有时会挖出水晶浆果。将其喂给已驯服的魔宠：它会模糊地回忆起过去，并凝结为一块记忆碎片。",
+  "guide.alshanex_familiars.origin_island.2": "像使用末影之眼一样使用记忆碎片：它们会飞向起源之岛。",
+
+  "guide.alshanex_familiars.bottled_soul": "瓶装魔宠灵魂",
+  "guide.alshanex_familiars.bottled_soul.0": "起源之岛上生活着迷失的小灵魂：那是从未达到最终形态的魔宠早期形态。\n\n用空瓶捕捉它们。瓶装灵魂是大多数仪式的核心，也可以放归野外。",
+
+  "guide.alshanex_familiars.ritual_site": "仪式场",
+  "guide.alshanex_familiars.ritual_site.0": "仪式核心，每侧各 2 格处放置一座魔宠雕像。这些雕像是基座。你会在起源之岛的中心找到一座。",
+  "guide.alshanex_familiars.ritual_site.1": "放置仪式的中心物品，结果会在其上出现。",
+
+  "guide.alshanex_familiars.performing_rituals": "执行仪式",
+  "guide.alshanex_familiars.performing_rituals.0": "1. 用材料右键点击每座雕像以放置。再次右键可取回。\n2. 用中心物品右键点击仪式核心。\n3. 如果一切与配方匹配，仪式会充能 5 秒。\n4. 结果会出现在核心上。",
+  "guide.alshanex_familiars.performing_rituals.1": "本指南中带§2绿色边框§r的材料不会被消耗：它们会留在雕像上供下一次仪式使用。\n\n在充能期间取走物品会中断仪式；当一切归位后会从头开始。\n\n仪式自动化器可以替你执行仪式。",
+  "guide.alshanex_familiars.performing_rituals.1.title": "须知",
+
+  "guide.alshanex_familiars.shards": "魔宠碎片",
+  "guide.alshanex_familiars.shards.0": "使用碎片会创造其对应的魔宠，并且已经属于你。颜色来自生物群系的魔宠，会采用使用碎片时所在生物群系的颜色。\n\n这些碎片通过仪式制作。",
+
+  "guide.alshanex_familiars.working_familiars": "工作魔宠",
+  "guide.alshanex_familiars.working_familiars.0": "有些方块由你的魔宠运作。从你携带的魔宠中指派一只：它会离开你的魔宠队伍并在该方块处工作，直到你解除指派。\n\n第一个指派魔宠的玩家将占有该方块，且只有他能使用。如果方块被破坏，其中的魔宠会回到主人身边，即使主人离线也是如此。",
+
+  "guide.alshanex_familiars.ritual_automator": "仪式自动化器",
+  "guide.alshanex_familiars.ritual_automator.0": "它会自行执行仪式，由一位§l大法师§r通过一个小型传送门搬运物品。",
+  "guide.alshanex_familiars.ritual_automator.1": "将其放置在仪式核心 10 格范围内（上下 5 格）。它会作用于最近的那个核心。\n\n在它§l正下方§r放置一个箱子或木桶：它会从中取出材料并将结果放入其中。\n\n打开它，选择配方并按下§l设置配方§r，然后选择一位大法师并按下§l指派§r。",
+  "guide.alshanex_familiars.ritual_automator.1.title": "设置",
+  "guide.alshanex_familiars.ritual_automator.2": "不属于该配方的物品会被送回其容器。\n\n多个自动化器可以共享一个核心：它们轮流工作。设置为相同配方的自动化器会互相补充材料。\n\n材料不足的自动化器会等待，让其他自动化器继续工作。",
+  "guide.alshanex_familiars.ritual_automator.2.title": "协同工作",
+
+  "guide.alshanex_familiars.scroll_reroll_station": "卷轴重掷台",
+  "guide.alshanex_familiars.scroll_reroll_station.0": "大法师的工坊，用于处理法术卷轴。它从 3 格范围内的容器取出卷轴，重掷直到符合你的要求，然后放回。",
+  "guide.alshanex_familiars.scroll_reroll_station.1": "在左侧指派一位大法师。在右侧设置§l输入§r与§l输出§r筛选：学派、稀有度、等级、法术与法术标签。\n\n空的分类接受任何内容。同一分类内的任意条目都可匹配；跨分类则必须全部匹配。",
+  "guide.alshanex_familiars.scroll_reroll_station.1.title": "筛选",
+  "guide.alshanex_familiars.scroll_reroll_station.2": "每 2 秒卷轴会随机变成同稀有度的另一个，有 5% 的概率提升一个稀有度。稀有度永远不会下降。\n\n本模组的法术，例如 Megido、冰河时代与炎拳，§l只能§r在这里获得。",
+  "guide.alshanex_familiars.scroll_reroll_station.2.title": "重掷",
+
+  "guide.alshanex_familiars.sculpture_station": "雕塑工作台",
+  "guide.alshanex_familiars.sculpture_station.0": "将魔宠照片变为雕塑。§l德鲁伊§r雕刻雕塑，§l幻术师§r为其上色。",
+  "guide.alshanex_familiars.sculpture_station.1": "讲台面向你，雕塑在它后方制作。该空间内不能放置方块。",
+  "guide.alshanex_familiars.sculpture_station.1.W": "工作区域：一片空的 3x3x3 空间",
+  "guide.alshanex_familiars.sculpture_station.1.d": "德鲁伊的位置（高 2 格）",
+  "guide.alshanex_familiars.sculpture_station.1.i": "幻术师的位置（高 2 格）",
+  "guide.alshanex_familiars.sculpture_station.1.P": "你",
+  "guide.alshanex_familiars.sculpture_station.2": "打开它并指派一位德鲁伊和一位幻术师。从背包中选择一张照片、旋转预览、选择从半格到 3 格的尺寸，然后按下§l雕刻§r。\n\n德鲁伊会长出木质雕塑，随后幻术师为其上色。照片不会被消耗。",
+  "guide.alshanex_familiars.sculpture_station.2.title": "雕刻",
+
+  "guide.alshanex_familiars.sculptures": "雕塑",
+  "guide.alshanex_familiars.sculptures.0": "完全按照照片中的样子显示魔宠，尺寸与制作时相同。它们像魔宠的身体一样是实体的。\n\n破坏时会作为物品掉落，并保留其全部信息；用斧头更快。可以放置在任何放得下的地方。",
+
+  "guide.alshanex_familiars.consumables": "升级如何运作",
+  "guide.alshanex_familiars.consumables.0": "用消耗品右键点击已驯服的魔宠，可§l永久§r提升其某项属性。\n\n每个等级在魔宠达到该等级的上限后便不再生效，因此你需要更高等级的消耗品才能继续提升。提示框会显示属性、加成、上限与等级。",
+
+  "guide.alshanex_familiars.life_fruits": "生命果实",
+  "guide.alshanex_familiars.life_fruits.0": "提升最大生命值并将魔宠治疗至满血。\n\n等级 1：+10%（最高 50%）\n等级 2：+25%（最高 100%）\n等级 3：+50%（最高 150%）",
+  "guide.alshanex_familiars.life_fruits.5": "探索时发现的§l生命宝石§r值得换取一枚黄金生命果实。",
+
+  "guide.alshanex_familiars.armor_plates": "盔甲板",
+  "guide.alshanex_familiars.armor_plates.0": "提升护甲值。\n\n等级 1：+2（最高 10）\n等级 2：+3（最高 16）\n等级 3：+4（最高 20）",
+  "guide.alshanex_familiars.armor_plates.1": "探索时发现的§l生锈头盔§r可以缩小成§l下界合金镀层§r。",
+
+  "guide.alshanex_familiars.power_essences": "力量精华",
+  "guide.alshanex_familiars.power_essences.0": "提升法术强度。\n\n等级 1：+3%（最高 15%）\n等级 2：+5%（最高 30%）\n等级 3：+15%（最高 45%）\n\n次级精华由死灵法师或唤魔者等魔法生物掉落。",
+
+  "guide.alshanex_familiars.resist_essences": "抗性精华",
+  "guide.alshanex_familiars.resist_essences.0": "提升法术抗性。\n\n等级 1：+3%（最高 15%）\n等级 2：+5%（最高 30%）\n等级 3：+15%（最高 45%）",
+
+  "guide.alshanex_familiars.tiny_shield": "迷你护盾",
+  "guide.alshanex_familiars.tiny_shield.0": "使魔宠有较低概率格挡攻击。每只魔宠只能装备一个。\n\n在武器匠的箱子中也能找到。"
+}

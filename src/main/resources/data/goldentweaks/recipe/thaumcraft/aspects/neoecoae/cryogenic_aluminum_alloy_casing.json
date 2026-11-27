@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:cryogenic_aluminum_alloy_casing"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

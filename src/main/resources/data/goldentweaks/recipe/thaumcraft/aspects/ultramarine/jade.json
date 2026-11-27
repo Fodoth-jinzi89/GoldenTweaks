@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:jade"
+  },
+  "aspects": {
+    "ordo": 1,
+    "praecantatio": 2,
+    "vitreus": 2
+  }
+}

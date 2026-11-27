@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_grilling:raw_bun_slice_skewer"
+  },
+  "aspects": {
+    "aqua": 1,
+    "bestia": 2,
+    "victus": 2
+  }
+}

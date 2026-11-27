@@ -4,9 +4,6 @@
     "id": "avaritia:neutron_ring"
   },
   "aspects": {
-    "dense": 6,
-    "gravitas": 4,
-    "accessories": 3,
-    "metallum": 3
+    "dense": 6
   }
 }

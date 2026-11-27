@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:wiring/block_eesu_charger"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

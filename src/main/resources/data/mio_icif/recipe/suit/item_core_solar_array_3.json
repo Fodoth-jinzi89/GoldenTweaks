@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " S ",
+    "CPC",
+    "GTG"
+  ],
+  "key": {
+    "S": {
+      "type": "mio_icif:electric",
+      "item": "mio_icif:generator/block_ultimate_hybrid_solar_panel"
+    },
+    "C": {
+      "tag": "c:circuits/advanced"
+    },
+    "P": {
+      "item": "mio_icif:resource/item_iridium_plate"
+    },
+    "G": {
+      "item": "mio_icif:wiring/cable/block_glass_cable"
+    },
+    "T": {
+      "type": "mio_icif:electric",
+      "item": "mio_icif:wiring/transformer_hv_ev"
+    }
+  },
+  "result": {
+    "id": "mio_icif:module/item_core_solar_array_3",
+    "count": 1
+  }
+}

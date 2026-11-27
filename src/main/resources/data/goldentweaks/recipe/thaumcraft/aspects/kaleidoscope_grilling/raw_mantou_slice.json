@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_grilling:raw_mantou_slice"
+  },
+  "aspects": {
+    "aqua": 1,
+    "bestia": 2,
+    "victus": 2
+  }
+}

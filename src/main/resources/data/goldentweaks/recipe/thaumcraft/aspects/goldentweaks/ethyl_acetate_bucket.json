@@ -4,8 +4,8 @@
     "id": "goldentweaks:ethyl_acetate_bucket"
   },
   "aspects": {
-    "alkimia": 8,
     "aqua": 4,
-    "potentia": 15
+    "potentia": 15,
+    "permutatio": 8
   }
 }

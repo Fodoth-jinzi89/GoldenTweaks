@@ -1,0 +1,27 @@
+{
+  "layers": [
+    [
+      "xxx",
+      "xxx",
+      "xxx"
+    ],
+    [
+      "xxx",
+      "xox",
+      "xax"
+    ],
+    [
+      "xxx",
+      "xxx",
+      "xxx"
+    ]
+  ],
+  "keys": {
+    "a": {
+      "block": "goldentweaks:vacuum_cooler_controller"
+    },
+    "x": "#goldentweaks:multiblock/vacuum_cooler_casing"
+  },
+  "master": "a",
+  "any": "o"
+}

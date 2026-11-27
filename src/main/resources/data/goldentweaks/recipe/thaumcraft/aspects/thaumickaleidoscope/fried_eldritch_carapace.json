@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumickaleidoscope:fried_eldritch_carapace"
+  },
+  "aspects": {
+    "bestia": 1,
+    "fames": 2,
+    "ignis": 1
+  }
+}

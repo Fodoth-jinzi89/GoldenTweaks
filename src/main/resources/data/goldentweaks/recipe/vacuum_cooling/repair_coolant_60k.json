@@ -1,0 +1,18 @@
+{
+  "type": "goldentweaks:vacuum_cooling",
+  "inputs": [
+    {
+      "item": "mio_icif:reactor/item_reactor_coolant_six",
+      "count": 1,
+      "any_components": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "mio_icif:reactor/item_reactor_coolant_six",
+      "count": 1
+    }
+  ],
+  "processing_time": 60,
+  "energy_per_tick": 480
+}

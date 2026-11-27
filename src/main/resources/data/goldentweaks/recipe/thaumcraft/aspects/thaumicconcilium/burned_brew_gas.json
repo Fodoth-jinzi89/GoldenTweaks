@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:burned_brew_gas"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "praecantatio": 3
+  }
+}

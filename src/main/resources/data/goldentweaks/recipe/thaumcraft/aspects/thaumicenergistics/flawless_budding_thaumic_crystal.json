@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:flawless_budding_thaumic_crystal"
+  },
+  "aspects": {
+    "ordo": 1,
+    "praecantatio": 2,
+    "vitreus": 3
+  }
+}

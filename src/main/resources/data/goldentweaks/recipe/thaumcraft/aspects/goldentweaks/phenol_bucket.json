@@ -4,9 +4,8 @@
     "id": "goldentweaks:phenol_bucket"
   },
   "aspects": {
-    "alkimia": 3,
     "potentia": 14,
-    "permutatio": 10,
+    "permutatio": 13,
     "ignis": 6
   }
 }

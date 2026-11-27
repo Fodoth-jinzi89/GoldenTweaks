@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_nether:seed_bag"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

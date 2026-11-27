@@ -9,8 +9,11 @@ import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemic
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipe;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipes;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolerMultiblock;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolingRecipes;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.client.GTAdvancedChemicalReactorScreen;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.client.GTChemicalReactorScreen;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.client.GTVacuumCoolerScreen;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
@@ -61,15 +64,28 @@ public final class GTChemicalReactionEmiPlugin implements EmiPlugin {
                         holder.id(), holder.value(), registries,
                         GTChemicalReactionEmiRecipe.ADVANCED_CATEGORY)));
 
+        // The vacuum cooler: its own page, because filing a cooling reaction under the kettle would
+        // suggest the kettle can run it.
+        registry.addCategory(GTChemicalReactionEmiRecipe.VACUUM_CATEGORY);
+        registry.addWorkstation(GTChemicalReactionEmiRecipe.VACUUM_CATEGORY,
+                EmiStack.of(new ItemStack(GTVacuumCoolerMultiblock.MACHINE_ITEM.get())));
+        registry.getRecipeManager()
+                .getAllRecipesFor(GTVacuumCoolingRecipes.TYPE.get())
+                .forEach(holder -> registry.addRecipe(new GTChemicalReactionEmiRecipe(
+                        holder.id(), holder.value(), registries,
+                        GTChemicalReactionEmiRecipe.VACUUM_CATEGORY)));
+
         // EMI places its own panels around whatever space a screen announces. The kettle draws a
         // side pane outside its main panel, so without this it lays the recipe list straight over
         // that pane — in both its collapsed and expanded sizes.
         //
-        // Registered for both screens: EMI matches providers by exact class, so registering only the
-        // base would leave the advanced window with no bounds and its sidebar overlapped.
+        // Registered per screen class: EMI matches providers by exact class, so each window needs its
+        // own entry or it would be laid out with no bounds and have its sidebar overlapped.
         registry.addScreenBoundsProvider(GTChemicalReactorScreen.class,
                 GTChemicalReactionEmiPlugin::kettleBounds);
         registry.addScreenBoundsProvider(GTAdvancedChemicalReactorScreen.class,
+                GTChemicalReactionEmiPlugin::kettleBounds);
+        registry.addScreenBoundsProvider(GTVacuumCoolerScreen.class,
                 GTChemicalReactionEmiPlugin::kettleBounds);
     }
 

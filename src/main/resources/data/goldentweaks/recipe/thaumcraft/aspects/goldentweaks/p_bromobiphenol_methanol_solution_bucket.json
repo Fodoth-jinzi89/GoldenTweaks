@@ -4,9 +4,8 @@
     "id": "goldentweaks:p_bromobiphenol_methanol_solution_bucket"
   },
   "aspects": {
-    "permutatio": 9,
+    "permutatio": 21,
     "ignis": 5,
-    "tenebrae": 16,
-    "alkimia": 12
+    "tenebrae": 16
   }
 }

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:void_reality"
+  },
+  "aspects": {
+    "praecantatio": 2,
+    "tenebrae": 1,
+    "vitium": 3
+  }
+}

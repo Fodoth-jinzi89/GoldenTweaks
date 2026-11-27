@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:cell/item_cell_biomass"
+  },
+  "aspects": {
+    "vacuos": 3,
+    "vas": 3
+  }
+}

@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "powergrid:carbon_pile"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "fames": 1,
+    "victus": 1
+  }
+}

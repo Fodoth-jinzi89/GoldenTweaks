@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:advanced_storage_casing"
+  },
+  "aspects": {
+    "praecantatio": 1,
+    "vacuos": 3,
+    "vas": 3
+  }
+}

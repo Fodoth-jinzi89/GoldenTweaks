@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:wireless_arcane_crafting_terminal"
+  },
+  "aspects": {
+    "cognitio": 2,
+    "machina": 3
+  }
+}

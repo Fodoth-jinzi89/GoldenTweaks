@@ -4,8 +4,6 @@
     "id": "avaritia:neutron_nugget"
   },
   "aspects": {
-    "dense": 6,
-    "gravitas": 4,
-    "metallum": 3
+    "dense": 4
   }
 }

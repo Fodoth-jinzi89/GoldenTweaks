@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:thaumic_slag"
+  },
+  "aspects": {
+    "aqua": 1,
+    "mixtura": 2,
+    "praecantatio": 1
+  }
+}

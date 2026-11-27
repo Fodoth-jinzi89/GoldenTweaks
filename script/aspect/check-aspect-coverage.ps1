@@ -61,29 +61,56 @@ foreach ($jar in Get-ChildItem -LiteralPath $PackMods -Filter *.jar -File) {
     try { $set = Get-ArchiveSet $jar.FullName } catch { continue }
     try {
         $nested += $set.Archives.Count - 1
+        # model / blockstate paths of this jar, per namespace
+        $modelNs = @{}
         foreach ($archive in $set.Archives) {
             foreach ($e in $archive.Entries) {
                 $n = $e.FullName
                 if ($n -match '^assets/([^/]+)/(?:models/(?:item|block)|blockstates)/(.+)\.json$') {
-                    [void]$valid.Add($Matches[1] + ':' + $Matches[2])
+                    $mns = $Matches[1]
+                    $mp = $Matches[2]
+                    [void]$valid.Add($mns + ':' + $mp)
+                    if (-not $modelNs.ContainsKey($mns)) { $modelNs[$mns] = New-Object 'System.Collections.Generic.HashSet[string]' }
+                    [void]$modelNs[$mns].Add($mp)
                 }
+            }
+        }
+        foreach ($archive in $set.Archives) {
+            foreach ($e in $archive.Entries) {
+                $n = $e.FullName
                 if ($n -notmatch '^assets/([^/]+)/lang/en_us\.json$') { continue }
                 $ns = $Matches[1]
+                $modelPaths = $null
+                if ($modelNs.ContainsKey($ns)) { $modelPaths = $modelNs[$ns] }
                 $reader = New-Object IO.StreamReader($e.Open())
                 $text = $reader.ReadToEnd()
                 $reader.Close()
                 foreach ($m in [regex]::Matches($text, '"(item|block|entity)\.([^"]+)"\s*:')) {
+                    $kind = $m.Groups[1].Value
                     $rest = $m.Groups[2].Value
                     $dot = $rest.IndexOf('.')
+                    $id = $null
                     if ($dot -lt 0) {
                         $id = "$ns`:$rest"
                     } else {
                         $head = $rest.Substring(0, $dot)
                         $tail = $rest.Substring($dot + 1)
-                        if ($head -eq $ns) { $id = "$ns`:$tail" } else { $id = "$ns`:$rest" }
+                        if ($head -eq $ns) {
+                            if ($kind -eq 'entity' -or $tail -notmatch '\.') {
+                                $id = "$ns`:$tail"
+                            } else {
+                                # a lang sub key (x.tooltip / x.working) unless the path really exists as a model
+                                $slashed = $tail -replace '\.', '/'
+                                if ($modelPaths -and $modelPaths.Contains($slashed)) { $id = "$ns`:$slashed" }
+                            }
+                        } elseif ($kind -ne 'entity' -and $head -cmatch '^[a-z0-9_]+$' -and $tail -notmatch '[\.:]' -and $tail -notmatch '^(name|desc|description|tooltip|shift|hint|info|text|working|status|message|jei|jei_desc)$') {
+                            # assets/<ns>/lang describing another namespace (thermal_foundation -> thermal:apatite_ore)
+                            $id = "$head`:$tail"
+                        }
                     }
+                    if (-not $id) { continue }
                     [void]$valid.Add($id)
-                    if ($m.Groups[1].Value -ne 'entity') { [void]$packItems.Add($id) }
+                    if ($kind -ne 'entity') { [void]$packItems.Add($id) }
                 }
             }
         }

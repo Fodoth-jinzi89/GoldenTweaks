@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:biome_irradiation_extractor"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

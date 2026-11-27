@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:normal/item_thorium_scrapbox"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

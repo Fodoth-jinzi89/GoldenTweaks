@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicindustry:arcane_chainsaw"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 2
+  }
+}

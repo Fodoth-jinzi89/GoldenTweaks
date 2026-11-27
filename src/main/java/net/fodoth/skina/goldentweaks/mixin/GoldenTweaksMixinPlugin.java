@@ -304,9 +304,24 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("mio_icif") && isModLoaded("oneenoughitem");
         }
 
+        // 蒸汽隧道电力端口的 Jade 层级显示：目标类是 Jade 的类，必须装了 Jade 才能应用
+        if (mixinClassName.endsWith("MioIcifSteamTunnelJadeTierMixin")) {
+            return isModLoaded("mio_icif") && isModLoaded("jade");
+        }
+
         // mio_icif 高炉平衡：基础高炉缓冲与时长、电力纳米高炉统一 20t
         if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.balance.mioicif")) {
             return isModLoaded("mio_icif");
+        }
+
+        // EzUnclear 联动：核反应堆爆炸改为「挂起 → 聊天确认后引爆」，需要两个模组同时在场
+        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.ezunclear")) {
+            return isModLoaded("mio_icif") && isModLoaded("ezunclear");
+        }
+
+        // JAOPCA 的 Create 压板配方按标签产出，需要跳过 super_iridium
+        if (mixinClassName.endsWith("fix.jaopca.JaopcaCreatePlateRecipeMixin")) {
+            return isModLoaded("jaopca") && isModLoaded("create");
         }
 
         if (mixinClassName.endsWith("fix.watut.PlayerStatusManagerClientMixin")) {
@@ -468,6 +483,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return checkIfPresent("net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.pattern.AMiBlockPatternReloadListener");
         }
 
+        // AMI 的匹配配方把每 tick 能耗存成 int，并行倍率放大后会溢出；这个 mixin 给它挂一个
+        // 额外携带精确值的访问器，只在 AMI 存在时才有意义
+        if (mixinClassName.endsWith("feature.avaritia_more_items.GTExactEnergyMixin")) {
+            return checkIfPresent("net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.recipe.MatchedMultiblockRecipe");
+        }
+
         // Architectury 的事件监听器列表在分发过程中被注册/注销会抛 ConcurrentModificationException，
         // 把 EventImpl 的列表替换成迭代时取快照的实现
         if (mixinClassName.endsWith("fix.architectury.ArchitecturyEventListMixin")) {
@@ -523,6 +544,12 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
         // AEQC 的「收藏缺失项」按钮同样走 JEI 内部类，纯 EMI 下不可用，改接 EMI 收藏夹
         if (mixinClassName.endsWith("fix.aeqc.BookmarkMissingButtonMixin")) {
             return isModLoaded("aeqc") && isModLoaded("emi");
+        }
+
+        // AEQC 取悬停物品时直接解引用 JEI 运行时，而它在进入存档后、EMI 重建完成前仍是 null，
+        // 此时按快捷键会抛 NPE；这个守卫让它在没有运行时的时候返回空
+        if (mixinClassName.endsWith("fix.aeqc.JeiUtilRuntimeGuardMixin")) {
+            return isModLoaded("aeqc");
         }
 
         if (mixinClassName.endsWith("fix.thaumcraft.ThaumatoriumOutputMixin")) {
@@ -682,22 +709,16 @@ public class GoldenTweaksMixinPlugin implements IMixinConfigPlugin {
             return isModLoaded("toomanyrecipeviewers");
         }
 
-        // 神秘时代 / scex 要素扫描：跳过对全部三万多物品逐个做的无用 getUidForStack 探错
-        if (mixinClassName.endsWith("fix.thaumcraft.ThaumcraftJeiPluginFastScanMixin")) {
-            return isModLoaded("thaumcraft") && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
+        // 要素来源页的 EMI「每批材料」卡顿修复。页面已由神秘时代本体提供
+        // （thaumcraft:aspect_sources），所以这里只需要神秘时代 + TMRV + EMI，
+        // 不再需要旧的独立模组 scex_aspect_jei。
+        if (mixinClassName.endsWith("fix.thaumcraft.AspectSourceRecipeCostMixin")) {
+            return isModLoaded("thaumcraft") && isModLoaded("toomanyrecipeviewers") && isModLoaded("emi");
         }
 
-        if (mixinClassName.startsWith("net.fodoth.skina.goldentweaks.mixin.fix.scexaspect.")) {
-            // 「要素来源」补注册那条要直接调 JEI 的 IRecipeRegistration#addRecipes（TMRV 也算 jei）
-            if (mixinClassName.endsWith("fix.scexaspect.AspectIntegrationSourcesMixin")) {
-                return isModLoaded("scex_aspect_jei") && isModLoaded("thaumcraft")
-                        && (isModLoaded("jei") || isModLoaded("toomanyrecipeviewers"));
-            }
-            // 目标是 TMRV 的 TMRVRecipe（EMI 侧渲染 JEI 配方才有的成本提示），改动点直接引用 EMI 的 EmiRecipeCategory
-            if (mixinClassName.endsWith("fix.scexaspect.AspectSourceRecipeCostMixin")) {
-                return isModLoaded("scex_aspect_jei") && isModLoaded("toomanyrecipeviewers") && isModLoaded("emi");
-            }
-            return isModLoaded("scex_aspect_jei") && isModLoaded("thaumcraft");
+        // Moonlight 客户端启动时后台线程抓取 GitHub 上的 hub 信息，网络不通时超时并刷 WARN 日志
+        if (mixinClassName.endsWith("shut.MoonlightHubFetchMixin")) {
+            return FMLEnvironment.dist.isClient() && isModLoaded("moonlight");
         }
 
         if (mixinClassName.endsWith("shut.AEKeyLegacyComponentLoggerMixin")) {

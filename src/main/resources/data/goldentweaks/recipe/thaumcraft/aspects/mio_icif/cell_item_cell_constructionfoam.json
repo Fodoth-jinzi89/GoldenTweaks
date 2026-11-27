@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:cell/item_cell_constructionfoam"
+  },
+  "aspects": {
+    "vacuos": 3,
+    "vas": 3
+  }
+}

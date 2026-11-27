@@ -4,7 +4,7 @@
       "type": "neoforge:mod_loaded",
       "modid": "tunes_n_tomes"
     },
-	{
+    {
       "type": "neoforge:mod_loaded",
       "modid": "hazentouvelib"
     }
@@ -44,7 +44,10 @@
     }
   ],
   "result": {
-    "id": "alshanex_familiars:bard_shard"
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:bard_pet"
+    }
   },
   "particle_type": "minecraft:note"
 }

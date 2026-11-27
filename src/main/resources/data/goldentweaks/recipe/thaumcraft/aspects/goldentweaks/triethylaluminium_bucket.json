@@ -4,8 +4,8 @@
     "id": "goldentweaks:triethylaluminium_bucket"
   },
   "aspects": {
-    "alkimia": 2,
     "potentia": 13,
-    "metallum": 9
+    "metallum": 9,
+    "permutatio": 2
   }
 }

@@ -1,0 +1,12 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:plague_pet"
+    }
+  },
+  "aspects": {
+    "praecantatio": 2
+  }
+}

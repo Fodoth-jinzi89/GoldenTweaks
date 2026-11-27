@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:arcane_crafting",
+  "mode": "shapeless",
+  "research": "GT_ISOTOPE_CONVERSION",
+  "result": {
+    "id": "mio_icif:resource/item_uran_235_small",
+    "count": 4
+  },
+  "aspects": {
+    "perditio": 8
+  },
+  "ingredients": [
+    {
+      "type": "item",
+      "id": "mio_icif:resource/item_uran_238",
+      "count": 1
+    }
+  ]
+}

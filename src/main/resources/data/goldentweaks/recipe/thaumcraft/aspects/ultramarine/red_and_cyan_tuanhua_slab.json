@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:red_and_cyan_tuanhua_slab"
+  },
+  "aspects": {
+    "ordo": 1,
+    "saxum": 2,
+    "terra": 1
+  }
+}

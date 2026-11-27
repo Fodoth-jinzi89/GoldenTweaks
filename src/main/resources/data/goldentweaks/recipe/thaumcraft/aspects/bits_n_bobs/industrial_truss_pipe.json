@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bits_n_bobs:industrial_truss_pipe"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "machina": 1
+  }
+}

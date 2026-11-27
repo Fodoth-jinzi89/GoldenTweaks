@@ -4,8 +4,8 @@
     "id": "goldentweaks:bent_molecule_7_dibromo_reaction_solution_bucket"
   },
   "aspects": {
-    "alkimia": 5,
     "aqua": 16,
-    "potentia": 12
+    "potentia": 12,
+    "permutatio": 5
   }
 }

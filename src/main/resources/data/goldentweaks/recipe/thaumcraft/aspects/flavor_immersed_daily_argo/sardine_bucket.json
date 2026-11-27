@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "flavor_immersed_daily_argo:sardine_bucket"
+  },
+  "aspects": {
+    "aqua": 2,
+    "vas": 2
+  }
+}

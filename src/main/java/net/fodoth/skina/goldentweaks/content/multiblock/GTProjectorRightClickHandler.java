@@ -28,7 +28,7 @@ public final class GTProjectorRightClickHandler {
         }
 
         BlockState state = event.getLevel().getBlockState(event.getPos());
-        if (GTMultiblockBlocks.structureForHost(state) == null) {
+        if (!GTMultiblockBlocks.hasProjection(state)) {
             return;
         }
 

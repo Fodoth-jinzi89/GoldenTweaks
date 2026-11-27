@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:denser_neutron_roller_press_machine"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

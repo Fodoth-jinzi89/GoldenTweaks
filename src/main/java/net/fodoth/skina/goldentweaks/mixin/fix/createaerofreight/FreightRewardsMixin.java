@@ -2,6 +2,7 @@ package net.fodoth.skina.goldentweaks.mixin.fix.createaerofreight;
 
 import cn.blockforge.generated.createareofreight.FreightRewards;
 import cn.blockforge.generated.createareofreight.FreightRewardsConfig;
+import cn.blockforge.generated.createareofreight.OrderRewardOptions;
 import cn.blockforge.generated.createareofreight.api.reward.RewardEntry;
 import java.util.List;
 import net.fodoth.skina.goldentweaks.compat.createaerofreight.GTRewardSelection;
@@ -41,7 +42,8 @@ public abstract class FreightRewardsMixin {
 
     @Inject(method = "rewardAmounts", at = @At("RETURN"), cancellable = true)
     private static void gt$order(int scaledCount, double timeMultiplier, boolean late, List<RewardEntry> specialties,
-            boolean fixedRewards, CallbackInfoReturnable<List<FreightRewards.RewardAmount>> cir) {
+            boolean fixedRewards, OrderRewardOptions options,
+            CallbackInfoReturnable<List<FreightRewards.RewardAmount>> cir) {
         cir.setReturnValue(GTRewardSelection.specialtiesFirst(cir.getReturnValue(), FreightRewardsConfig.generalRewards().size()));
     }
 }

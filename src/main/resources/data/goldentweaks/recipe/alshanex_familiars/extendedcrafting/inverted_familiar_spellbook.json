@@ -23,19 +23,31 @@
   ],
   "key": {
     "A": {
-      "item": "alshanex_familiars:archmage_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:archmage_pet"
+      }
     },
     "B": {
-      "item": "alshanex_familiars:bard_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:bard_pet"
+      }
     },
     "C": {
       "item": "goldentweaks:armor_plate_tier_5"
     },
     "D": {
-      "item": "alshanex_familiars:cleric_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:cleric_pet"
+      }
     },
     "E": {
-      "item": "alshanex_familiars:summoner_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:summoner_pet"
+      }
     },
     "F": {
       "item": "irons_spellbooks:diamond_spell_book"
@@ -53,19 +65,34 @@
       "item": "irons_spellbooks:dragonskin_spell_book"
     },
     "K": {
-      "item": "alshanex_familiars:hunter_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:hunter_pet"
+      }
     },
     "L": {
-      "item": "alshanex_familiars:lightning_mage_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:mage_pet"
+      }
     },
     "M": {
-      "item": "alshanex_familiars:druid_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:druid_pet"
+      }
     },
     "N": {
-      "item": "alshanex_familiars:plague_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:plague_pet"
+      }
     },
     "O": {
-      "item": "alshanex_familiars:dragon_warrior_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:dragon_warrior_pet"
+      }
     },
     "P": {
       "item": "irons_spellbooks:ice_spell_book"
@@ -83,19 +110,31 @@
       "item": "irons_spellbooks:netherite_spell_book"
     },
     "U": {
-      "item": "alshanex_familiars:frostling_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:frostling_pet"
+      }
     },
     "V": {
-      "item": "alshanex_familiars:illusionist_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:illusionist_pet"
+      }
     },
     "W": {
       "item": "goldentweaks:life_fruit_tier_5"
     },
     "X": {
-      "item": "alshanex_familiars:scorcher_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:scorcher_pet"
+      }
     },
     "Y": {
-      "item": "alshanex_familiars:necromancer_shard"
+      "id": "familiarslib:familiar_egg",
+      "components": {
+        "familiarslib:familiar_type": "alshanex_familiars:necromancer_pet"
+      }
     }
   },
   "result": {

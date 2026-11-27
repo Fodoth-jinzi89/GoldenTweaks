@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "farmersdelight:earthworm"
+  },
+  "aspects": {
+    "bestia": 2,
+    "victus": 1
+  }
+}

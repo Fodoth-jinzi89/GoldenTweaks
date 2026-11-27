@@ -35,7 +35,13 @@ public final class GoldenTweaksClientConfig {
     public static final ModConfigSpec.BooleanValue EMI_SKIP_VANILLA_SEARCH_INDEX;
     /** 把 tooltip 索引推迟到重载之后的后台线程构建（进世界更快；完成前 `$` 类搜索暂不含 tooltip）。 */
     public static final ModConfigSpec.BooleanValue EMI_DEFER_SEARCH_INDEX;
-    /** 神秘时代/scex 要素扫描里跳过对每个物品的无用 JEI UID 探错（一次重载省约 22 秒）。 */
+    /**
+     * 已失效，仅保留以免旧配置文件报「未知键」。
+     *
+     * <p>它原本用于跳过神秘时代要素扫描里对每个物品的无用 JEI UID 探错。新版神秘时代把这段
+     * 扫描改成了 {@code JeiAspectSourceBuild} 的异步构建并带版本缓存，探错问题不复存在，
+     * 对应的 mixin 也已删除。</p>
+     */
     public static final ModConfigSpec.BooleanValue JEI_ASPECT_SCAN_SKIP_UID;
     /** 创造模式标签分组挪到重载之后的后台线程（先按注册顺序可见，随后自动排好序；省 2.65 秒主线程停顿）。 */
     public static final ModConfigSpec.BooleanValue EMI_DEFER_CREATIVE_GROUPS;

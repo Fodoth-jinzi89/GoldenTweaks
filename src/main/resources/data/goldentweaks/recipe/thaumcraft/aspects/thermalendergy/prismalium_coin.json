@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermalendergy:prismalium_coin"
+  },
+  "aspects": {
+    "lucrum": 2,
+    "metallum": 1
+  }
+}

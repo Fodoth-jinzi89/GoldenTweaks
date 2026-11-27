@@ -1,0 +1,19 @@
+{
+  "item.aces_spell_utils.example_unqiue_ability_spellbook": "秘典",
+  "item.aces_spell_utils.example_unqiue_ability_spellbook.desc": "命中时做出邪恶之事",
+  "item.aces_spell_utils.example_impact_frame_white": "示例冲击帧（白）",
+  "item.aces_spell_utils.example_impact_frame_red": "示例冲击帧（红）",
+  "item.aces_spell_utils.example_impact_frame_blue": "示例冲击帧（蓝）",
+  "item.aces_spell_utils.example_impact_frame_green": "示例冲击帧（绿）",
+  "item.aces_spell_utils.example_impact_frame_purple": "示例冲击帧（紫）",
+  "item.aces_spell_utils.example_impact_frame_white_aberration": "示例冲击帧（白，色差）",
+  "item.aces_spell_utils.example_chromatic_aberration": "示例色差",
+  "item.aces_spell_utils.example_trail": "示例拖尾",
+  "item.aces_spell_utils.example_ribbon": "示例丝带拖尾",
+  "item.aces_spell_utils.example_roar": "示例咆哮扭曲",
+  "item.aces_spell_utils.example_roar_ring": "示例咆哮扭曲（环形）",
+  "item.aces_spell_utils.example_dome": "示例咆哮穹顶",
+
+  "school.aces_spell_utils.technomancy": "科技",
+  "school.aces_spell_utils.hydro": "海洋"
+}

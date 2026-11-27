@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "scex_cryotheum_cell:infinite_cryotheum_cell"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

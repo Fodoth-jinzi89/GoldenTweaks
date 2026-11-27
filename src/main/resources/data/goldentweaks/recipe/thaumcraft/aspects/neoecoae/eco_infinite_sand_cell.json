@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:eco_infinite_sand_cell"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

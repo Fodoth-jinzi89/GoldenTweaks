@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:arcane_crafting_chamber_l4"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "machina": 3,
+    "praecantatio": 2
+  }
+}

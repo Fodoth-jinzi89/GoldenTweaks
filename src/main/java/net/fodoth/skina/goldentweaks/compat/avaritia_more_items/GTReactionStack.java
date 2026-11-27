@@ -6,8 +6,10 @@ import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.MapLike;
 import com.mojang.serialization.RecordBuilder;
+import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceLocation;
@@ -16,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -62,6 +65,27 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
     private static final String FIELD_COUNT = "count";
     private static final String FIELD_AMOUNT = "amount";
     private static final String FIELD_KEY = "key";
+
+    /**
+     * Marks an item entry as matching by id alone, ignoring data components.
+     *
+     * <p>Carried inside the existing tag slot rather than as a record component, so the wire format
+     * and every constructor stay as they are. The flag is read only for items.</p>
+     *
+     * <p>What it is for: a used reactor coolant cell differs from a fresh one only by its stored-heat
+     * component, so an exact-component match could never accept "any wear". A recipe that repairs such
+     * an item asks for it with {@code "any_components": true} and a clean output.</p>
+     */
+    private static final String FIELD_ANY_COMPONENTS = "any_components";
+    private static final String TAG_ANY_COMPONENTS = "goldentweaks:any_components";
+
+    /**
+     * Carries an item's data components inside the entry's tag slot.
+     *
+     * <p>The same slot already holds {@link #TAG_ANY_COMPONENTS}, so the two are kept under separate
+     * keys: a recipe never sets both, and a port's snapshot only ever sets this one.</p>
+     */
+    private static final String TAG_COMPONENTS = "goldentweaks:components";
 
     /** Placeholder id for AE entries: an AE key carries its own identity inside the NBT tag. */
     public static final ResourceLocation AE_PLACEHOLDER_ID =
@@ -114,7 +138,28 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
             DataResult<Long> size = Codec.LONG.parse(ops,
                     sizeElement == null ? ops.createLong(fallback) : sizeElement);
 
-            return id.apply2((value, count) -> new GTReactionStack(kind, value, count, Optional.empty()), size);
+            // Only items carry components, so the flag is meaningless for the bulk kinds; ignoring it
+            // there keeps a stray field from silently changing how a fluid is matched.
+            boolean anyComponents = counted && isAnyComponents(ops, input);
+
+            return id.apply2((value, count) -> new GTReactionStack(kind, value, count,
+                    anyComponents ? Optional.of(anyComponentsTag()) : Optional.empty()), size);
+        }
+
+        /** Reads the {@code any_components} flag, tolerating its absence. */
+        private static <T> boolean isAnyComponents(DynamicOps<T> ops, MapLike<T> input) {
+            T element = input.get(FIELD_ANY_COMPONENTS);
+            if (element == null) {
+                return false;
+            }
+            return Codec.BOOL.parse(ops, element).result().orElse(false);
+        }
+
+        /** The marker stored in the tag slot for an any-components entry. */
+        private static CompoundTag anyComponentsTag() {
+            CompoundTag tag = new CompoundTag();
+            tag.putBoolean(TAG_ANY_COMPONENTS, true);
+            return tag;
         }
 
         private <T> DataResult<GTReactionStack> decodeAe(DynamicOps<T> ops, T element) {
@@ -136,6 +181,16 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
                 case ITEM -> {
                     prefix.add(FIELD_ITEM, ResourceLocation.CODEC.encodeStart(ops, stack.id()));
                     prefix.add(FIELD_COUNT, Codec.LONG.encodeStart(ops, stack.amount()));
+                    if (stack.anyComponents()) {
+                        prefix.add(FIELD_ANY_COMPONENTS, Codec.BOOL.encodeStart(ops, true));
+                    }
+                    // A port's snapshot carries the real components; they have to be written back or
+                    // the entry would encode as a plain stack and the window would show a fresh part.
+                    stack.tag().map(tag -> tag.get(TAG_COMPONENTS))
+                            .filter(CompoundTag.class::isInstance)
+                            .map(CompoundTag.class::cast)
+                            .ifPresent(components -> prefix.add(
+                                    TAG_COMPONENTS, CompoundTag.CODEC.encodeStart(ops, components)));
                 }
                 case FLUID -> {
                     prefix.add(FIELD_FLUID, ResourceLocation.CODEC.encodeStart(ops, stack.id()));
@@ -210,6 +265,17 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
     }
 
     /**
+     * Whether this item entry matches by id alone, ignoring data components.
+     *
+     * <p>Always false for the non-item kinds: they have no components to ignore.</p>
+     */
+    public boolean anyComponents() {
+        return this.kind == Kind.ITEM
+                && this.tag.isPresent()
+                && this.tag.get().getBoolean(TAG_ANY_COMPONENTS);
+    }
+
+    /**
      * The essentia tag this stack names, e.g. {@code aer}, or {@code null} for the other kinds.
      *
      * <p>Stored in the id field as a path with no namespace: essentia is not a registry entry, and
@@ -226,6 +292,42 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
                 amount, Optional.empty());
     }
 
+    /**
+     * An item entry that remembers the stack's data components.
+     *
+     * <p>Needed wherever a real stack is being described rather than asked for: the port window lists
+     * what it holds, and a worn part must not be listed as a fresh one. A stack with no components of
+     * its own carries no tag, so a plain item round-trips exactly as before.</p>
+     */
+    public static GTReactionStack item(ItemStack stack) {
+        ResourceLocation id = BuiltInRegistries.ITEM.getKey(stack.getItem());
+        CompoundTag components = componentsOf(stack);
+        return new GTReactionStack(Kind.ITEM, id, stack.getCount(),
+                components == null ? Optional.empty() : Optional.of(components));
+    }
+
+    /**
+     * The stack's components as a tag, or {@code null} when it has none.
+     *
+     * <p>Encoded through {@code DataComponents.CODEC} rather than copied by hand so the whole component
+     * map travels, including modded ones this class has never heard of.</p>
+     */
+    @Nullable
+    private static CompoundTag componentsOf(ItemStack stack) {
+        if (stack.isEmpty() || stack.getComponentsPatch().isEmpty()) {
+            return null;
+        }
+        DataResult<Tag> encoded = DataComponentPatch.CODEC.encodeStart(
+                net.minecraft.nbt.NbtOps.INSTANCE, stack.getComponentsPatch());
+        Tag tag = encoded.result().orElse(null);
+        if (!(tag instanceof CompoundTag compound)) {
+            return null;
+        }
+        CompoundTag wrapper = new CompoundTag();
+        wrapper.put(TAG_COMPONENTS, compound);
+        return wrapper;
+    }
+
     /** The fluid this stack names, or {@code null} when it is another kind or the id is unknown. */
     public Fluid fluid() {
         if (this.kind != Kind.FLUID) {
@@ -240,7 +342,29 @@ public record GTReactionStack(Kind kind, ResourceLocation id, long amount, Optio
         if (item == null) {
             return ItemStack.EMPTY;
         }
-        return new ItemStack(item, (int) Math.min(Integer.MAX_VALUE, this.amount));
+        ItemStack stack = new ItemStack(item, (int) Math.min(Integer.MAX_VALUE, this.amount));
+        applyComponents(stack);
+        return stack;
+    }
+
+    /**
+     * Puts this entry's recorded components back onto a freshly built stack.
+     *
+     * <p>A no-op unless the entry was built by {@link #item(ItemStack)} or names components in its
+     * recipe: the {@code any_components} marker is not a component set, so it is passed over.</p>
+     */
+    private void applyComponents(ItemStack stack) {
+        CompoundTag wrapper = this.tag.orElse(null);
+        if (wrapper == null) {
+            return;
+        }
+        Tag recorded = wrapper.get(TAG_COMPONENTS);
+        if (!(recorded instanceof CompoundTag compound)) {
+            return;
+        }
+        DataResult<DataComponentPatch> parsed = DataComponentPatch.CODEC.parse(
+                net.minecraft.nbt.NbtOps.INSTANCE, compound);
+        parsed.result().ifPresent(stack::applyComponents);
     }
 
     /** Expands a fluid stack, or {@code FluidStack.EMPTY} for the other kinds. */

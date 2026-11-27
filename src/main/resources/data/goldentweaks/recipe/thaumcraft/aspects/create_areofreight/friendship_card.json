@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "create_areofreight:friendship_card"
+  },
+  "aspects": {
+    "charta": 1,
+    "cognitio": 2,
+    "humanus": 3
+  }
+}

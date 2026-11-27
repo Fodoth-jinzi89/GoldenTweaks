@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "bakeries:scone_dough"
+  },
+  "aspects": {
+    "fames": 1,
+    "herba": 2
+  }
+}

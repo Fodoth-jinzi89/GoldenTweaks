@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:electrum_dual_cannon_barrel"
+  },
+  "aspects": {
+    "vacuos": 2,
+    "vas": 2
+  }
+}

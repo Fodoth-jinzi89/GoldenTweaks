@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgear:redstone_coated_upgrade"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 2
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:matrix_mechanical_mixer"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

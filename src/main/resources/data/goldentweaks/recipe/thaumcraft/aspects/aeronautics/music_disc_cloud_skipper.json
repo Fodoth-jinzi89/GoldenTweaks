@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "aeronautics:music_disc_cloud_skipper"
+  },
+  "aspects": {
+    "pannus": 1,
+    "sonus": 3
+  }
+}

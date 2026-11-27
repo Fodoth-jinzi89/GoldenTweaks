@@ -9,6 +9,7 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipe;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTAdvancedChemicalReactorMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolerMultiblock;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
@@ -41,6 +42,10 @@ public class GTChemicalReactionEmiRecipe implements EmiRecipe {
     /** The advanced kettle's page: same layout, its own entry in the sidebar. */
     public static final EmiRecipeCategory ADVANCED_CATEGORY = category("advanced_chemical_reaction",
             GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get());
+
+    /** The vacuum cooler's page: same layout again, its own sidebar entry. */
+    public static final EmiRecipeCategory VACUUM_CATEGORY = category("vacuum_cooling",
+            GTVacuumCoolerMultiblock.MACHINE_ITEM.get());
 
     private static EmiRecipeCategory category(String path, net.minecraft.world.item.Item icon) {
         return new EmiRecipeCategory(

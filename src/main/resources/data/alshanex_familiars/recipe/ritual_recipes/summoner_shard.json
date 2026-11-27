@@ -40,7 +40,10 @@
     }
   ],
   "result": {
-    "id": "alshanex_familiars:summoner_shard"
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:summoner_pet"
+    }
   },
   "particle_type": "minecraft:sculk_charge_pop"
 }

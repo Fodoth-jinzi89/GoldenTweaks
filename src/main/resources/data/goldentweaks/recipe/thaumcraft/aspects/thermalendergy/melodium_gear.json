@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermalendergy:melodium_gear"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

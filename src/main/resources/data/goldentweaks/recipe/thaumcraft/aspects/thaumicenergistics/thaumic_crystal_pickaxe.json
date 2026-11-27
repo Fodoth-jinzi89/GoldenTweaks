@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicenergistics:thaumic_crystal_pickaxe"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "praecantatio": 1,
+    "vitreus": 2
+  }
+}

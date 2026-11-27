@@ -234,7 +234,7 @@
 | emi | `1.1.24+1.21.1+neoforge` | `emi-1.1.24+1.21.1+neoforge.jar` |
 | entity_model_features | `3.3.12` | `entity_model_features-3.3.12-1.21-neoforge.jar` |
 | entity_texture_features | `7.2.6` | `entity_texture_features-7.2.6-1.21-neoforge.jar` |
-| forbiddenmagic | `1.0.0-port.33` | `forbiddenmagic-1.0.0-port.33.jar` |
+| forbiddenmagic | `1.0.0-port.34` | `forbiddenmagic-1.0.0-port.34.jar` |
 | guideme | `21.1.19` | `guideme-21.1.19.jar` |
 | iris-neoforge | `1.8.14-beta.1+mc1.21.1` | `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` |
 | Jade | `1.21.1-NeoForge-15.10.6` | `Jade-1.21.1-NeoForge-15.10.6.jar` |
@@ -252,15 +252,18 @@
 | avaritia（Re-Avaritia） | `1.4.4` | `Re-Avaritia-neoforge-1.21.1-1.4.4-release.jar` |
 | renderblender | `1.0.0` | `renderblender-1.0.0.jar` |
 | sable-neoforge | `2.0.5` | `[S]-sable-2.0.5-neoforge-1.21.1.jar` |
-| scex-thaumcraft-aspects-jei | `1.21.1-1.0.0-rc7` | `scex-thaumcraft-aspects-jei-1.21.1-1.0.0-rc7.jar` |
 | sodium-neoforge | `0.8.13+mc1.21.1` | `sodium-neoforge-0.8.13+mc1.21.1.jar` |
-| taintedmagic | `1.0.0-port.35` | `taintedmagic-1.0.0-port.35.jar` |
-| thaumcraft | `0.3.0-port.280-scex.compat.1` | `thaumcraft-0.3.0-port.280-scex.compat.1.jar` |
-| thaumcraftcelestial | `1.0.0-port.24` | `thaumcraftcelestial-1.0.0-port.24.jar` |
-| thaumic_tinkerer | `1.0.0-port.65` | `thaumic_tinkerer-1.0.0-port.65.jar` |
-| thaumicbases | `2.1.189.32-port.21` | `thaumicbases-2.1.189.32-port.21.jar` |
-| ThaumicEnergistics | `1.21.1-neoforge-2.6.9-alpha` | `ThaumicEnergistics-1.21.1-neoforge-2.6.9-alpha.jar` |
-| thaumichorizons | `1.21.1-0.1.0-scex-dev.43` | `thaumichorizons-1.21.1-0.1.0-scex-dev.43.jar` |
+| taintedmagic | `1.0.0-port.37` | `taintedmagic-1.0.0-port.37.jar` |
+| thaumcraft | `0.3.0-port.281-scex.compat.1.technomapi.2.concilium-api.14.r11` | `thaumcraft-0.3.0-port.281-scex.compat.1.technomapi.2.concilium-api.14.r11.jar` |
+| thaumcraftcelestial | `1.0.0-port.25` | `thaumcraftcelestial-1.0.0-port.25.jar` |
+| thaumic_tinkerer | `1.0.0-port.66-concilium-api.2` | `thaumic_tinkerer-1.0.0-port.66-concilium-api.2.jar` |
+| thaumicbases | `2.1.189.32-port.11` | `thaumicbases-2.1.189.32-port.11.jar` |
+| thaumicconcilium | `0.1.0-port.146` | `thaumicconcilium-0.1.0-port.146.jar` |
+| ThaumicEnergistics | `1.21.1-neoforge-2.6.10-scex.1` | `ThaumicEnergistics-1.21.1-neoforge-2.6.10-scex.1.jar` |
+| thaumichorizons | `1.21.1-0.1.0-scex-dev.44.concilium-api.3` | `thaumichorizons-1.21.1-0.1.0-scex-dev.44.concilium-api.3.jar` |
+| thaumicindustry | `0.2.0` | `thaumicindustry-0.2.0.jar` |
+| thaumickaleidoscope | `0.1.0-k6` | `thaumickaleidoscope-0.1.0-k6.jar` |
+| Thaumcraft 神秘动力学 (mystery_dynamics) | `0.9.3-scex.1` | `Thaumcraft-神秘动力学-0.9.3-scex.1.jar` |
 | toomanyrecipeviewers | `0.9.0+mc.21.1` | `toomanyrecipeviewers-0.9.0+mc.21.1.jar` |
 | worldedit-mod | `7.3.8` | `[基础]worldedit-mod-7.3.8.jar` |
 | yeetusexperimentus-neoforge | `87.0.0` | `yeetusexperimentus-neoforge-87.0.0.jar` |

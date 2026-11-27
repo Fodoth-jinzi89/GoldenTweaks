@@ -449,6 +449,54 @@ public class GTPortEssentiaStorage implements IAspectContainer, IEssentiaTranspo
         return add(aspect, amount);
     }
 
+    /**
+     * 探测版写入：存储总线与样板供应器先用它问「能收多少」。
+     *
+     * <p><b>这个覆写是必需的。</b>{@code IEssentiaTransport} 给的默认实现是
+     * {@code return 0}（就两条字节码：{@code iconst_0 / ireturn}），而
+     * {@code EssentiaContainerStorage.insert} 在 {@code SIMULATE} 阶段只信这个返回值：
+     * 拿到 0 就判定「目标收不了」，于是根本不发起真正的写入。</p>
+     *
+     * <p>表现就是：ME 存储总线贴着端口时，要素停在网络里或样板供应器里不动；
+     * 而在网络里塞一个能存要素的元件，要素改从网络内部消化，看起来就"正常"了 ——
+     * 那只是绕开了这条判定，不是修好了它。</p>
+     */
+    @Override
+    public int simulateAddEssentia(Aspect aspect, int amount, Direction side) {
+        if (aspect == null || amount <= 0) {
+            return 0;
+        }
+        Integer tank = admit(aspect);
+        if (tank == null) {
+            return 0;
+        }
+        int room = Math.max(0, Math.min(amount, this.tankCapacity - this.amounts[tank]));
+        if (room > 0 && !this.simulateLogged) {
+            this.simulateLogged = true;
+            net.fodoth.skina.goldentweaks.GoldenTweaks.LOGGER.info(
+                    "[GT] simulateAddEssentia({}) accepted probe: room {} of {}",
+                    aspect.getTag(), room, amount);
+        }
+        return room;
+    }
+
+    /**
+     * 探测版抽取，与 {@link #simulateAddEssentia} 对称。
+     *
+     * <p>默认实现同样是 {@code return 0}，不覆写的话任何经 {@code IEssentiaTransport}
+     * 从端口抽要素的装置（存储总线、导出总线）都会认为端口是空的。</p>
+     */
+    @Override
+    public int simulateTakeEssentia(Aspect aspect, int amount, Direction side) {
+        if (aspect == null || amount <= 0) {
+            return 0;
+        }
+        return Math.max(0, Math.min(amount, containerContains(aspect)));
+    }
+
+    /** 只打印一次，避免每 tick 刷屏。 */
+    private boolean simulateLogged;
+
     /** The first aspect this port holds, which is what a tube asks before deciding to pull. */
     @Override
     public Aspect getEssentiaType(Direction side) {

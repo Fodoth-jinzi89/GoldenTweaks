@@ -1,10 +1,12 @@
+
 {
   "type": "goldentweaks:item_aspect",
   "item": {
     "id": "alshanex_familiars:dragon_warrior_shard"
   },
   "aspects": {
+    "ordo": 1,
     "praecantatio": 2,
-    "dragon": 6
+    "vitreus": 2
   }
 }

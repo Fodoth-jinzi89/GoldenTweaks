@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maidsoulkitchen:old_maid_backpack_big"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

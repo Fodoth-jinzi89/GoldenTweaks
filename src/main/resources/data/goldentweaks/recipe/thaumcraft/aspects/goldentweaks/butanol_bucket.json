@@ -4,9 +4,8 @@
     "id": "goldentweaks:butanol_bucket"
   },
   "aspects": {
-    "alkimia": 13,
     "aqua": 9,
     "potentia": 5,
-    "permutatio": 16
+    "permutatio": 29
   }
 }

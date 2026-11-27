@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:yellow_green_blue_carved_wood"
+  },
+  "aspects": {
+    "arbor": 2,
+    "herba": 1
+  }
+}

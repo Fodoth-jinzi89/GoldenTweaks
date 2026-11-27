@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:fusion/block_fusion_toroidal_coil"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

@@ -20,6 +20,13 @@ public abstract class AspectSourceListScreenMixin {
         ThaumonomiconAspectSources.resetFrame();
     }
 
+    /**
+     * 滚轮翻页。
+     *
+     * <p>目标在新版神秘时代里从 {@code mouseScrolled(DDD)} 变成了 {@code mouseScrolled(DDDD)}，
+     * 多出的是水平滚动量。{@code @Inject} 的处理方法必须与目标描述符逐项对齐，少一个参数就会
+     * 在类加载时抛 {@code InvalidInjectionException}，所以这里按新签名写全四个 double。</p>
+     */
     @Inject(method = "mouseScrolled", at = @At("HEAD"), cancellable = true)
     private void gt$scrollAspectSourceList(double mouseX, double mouseY, double scrollX, double scrollY,
                                            CallbackInfoReturnable<Boolean> cir) {

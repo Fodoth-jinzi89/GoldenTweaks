@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:witchery_oak_stockade"
+  },
+  "aspects": {
+    "pannus": 2,
+    "praecantatio": 2,
+    "tutamen": 1
+  }
+}

@@ -5,9 +5,8 @@
   },
   "aspects": {
     "potentia": 16,
-    "permutatio": 12,
+    "permutatio": 27,
     "ignis": 8,
-    "tenebrae": 4,
-    "alkimia": 15
+    "tenebrae": 4
   }
 }

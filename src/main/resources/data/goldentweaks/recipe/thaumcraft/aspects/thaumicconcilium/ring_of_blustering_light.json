@@ -1,0 +1,10 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:ring_of_blustering_light"
+  },
+  "aspects": {
+    "lux": 3
+  }
+}

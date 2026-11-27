@@ -40,14 +40,17 @@ public abstract class MioIcifWindGeneratorMixin {
     @Inject(method = "calculateEnergyOutput", at = @At("HEAD"), cancellable = true)
     private void goldentweaks$compactSpaceEnergyOutput(Level level, BlockPos pos, CallbackInfoReturnable<Integer> cir) {
         if (GTMioIcifCompactSpace.isCompact(level)) {
-            //The compact dimension itself is only 48 blocks tall, so simulate the outdoor sky height.
+            // The compact dimension is far smaller than the outdoor sky, so simulate the outdoor height above
+            // the outdoor sea level — the same span the normal path measures from pos.getY() down to baseHeight().
             MinecraftServer server = level.getServer();
+            Level reference = server != null ? server.overworld() : level;
+            int top = reference.getMinBuildHeight() + reference.getHeight();
+            int base = reference.getSeaLevel() + 1;
             this.obstacleCount = 0;
-            this.effectiveHeight = server != null
-                    ? server.overworld().getMaxBuildHeight()
-                    : level.getMaxBuildHeight();
+            this.effectiveHeight = Math.max(base, top);
+            // Clear weather: the normal path would multiply by weather()'s 1.0 here.
             double output = (double) mio_icif_wind_generator.MAX_WIND_STRENGTH
-                    * Math.max(0, this.effectiveHeight - 64) / 750.0D
+                    * (this.effectiveHeight - base) / 750.0D
                     * GTMioIcifCompactSpace.windFraction();
             cir.setReturnValue(Math.max(0, (int) Math.round(output)));
         }

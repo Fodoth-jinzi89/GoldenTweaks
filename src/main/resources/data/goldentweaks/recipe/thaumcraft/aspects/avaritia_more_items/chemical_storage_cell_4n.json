@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_more_items:chemical_storage_cell_4n"
+  },
+  "aspects": {
+    "vacuos": 3,
+    "vas": 3
+  }
+}

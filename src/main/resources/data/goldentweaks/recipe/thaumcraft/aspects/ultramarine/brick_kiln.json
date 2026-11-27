@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:brick_kiln"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

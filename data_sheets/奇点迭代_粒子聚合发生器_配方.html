@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>粒子聚合发生器 · 配方</title>
+<style>
+  :root{
+    --panel:#2e2e2e; --panel-2:#272727; --line:#161616;
+    --bev-l:#5b5b5b; --bev-d:#0d0d0d;
+    --gold:#ffcf40; --red:#ff4d4d; --ink:#dcdcdc; --ok:#8dff6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    background-color:#101012;
+    background-image:
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%),
+      linear-gradient(45deg,#181819 25%,transparent 25%,transparent 75%,#181819 75%);
+    background-size:18px 18px; background-position:0 0,9px 9px;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .window{
+    width:1240px; max-width:100%; max-height:100%;
+    background:var(--panel); display:grid; grid-template-rows:auto 1fr auto;
+    border:3px solid; border-color:var(--bev-l) var(--bev-d) var(--bev-d) var(--bev-l);
+    box-shadow:0 0 0 4px #000, 0 18px 44px rgba(0,0,0,.75);
+    overflow:hidden; text-shadow:1px 1px 0 #000;
+  }
+  .title{
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px),
+      linear-gradient(#3c3c3c,#242424);
+    border-bottom:3px solid #060606;
+    box-shadow:inset 0 -3px 0 #4a4a4a, inset 0 3px 0 rgba(255,255,255,.05);
+    padding:14px 22px 13px; color:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .title h1{font-size:24px; font-weight:800; color:var(--gold); text-shadow:2px 2px 0 #000;}
+  .title h1 small{display:block; margin-top:3px; font-size:11px; font-weight:600; letter-spacing:.24em; color:#b9b9b9; text-shadow:1px 1px 0 #000;}
+  .stats{display:flex; gap:8px; flex:none;}
+  .stat{background:#1b1b1b; border:2px solid; border-color:#4a4a4a #050505 #050505 #4a4a4a; padding:6px 11px; text-align:center; min-width:118px; color:#e6e6e6; text-shadow:1px 1px 0 #000;}
+  .stat b{display:block; font-size:13px; font-weight:800; color:var(--ok);}
+  .stat span{font-size:10px; letter-spacing:.08em; color:#a6a6a6;}
+  .wrap{padding:10px 12px; min-height:0; overflow:auto;}
+  table{width:100%; border-collapse:collapse; table-layout:fixed;
+        border:2px solid; border-color:var(--bev-d) var(--bev-l) var(--bev-l) var(--bev-d);}
+  thead th{background:#3f3f3f; box-shadow:inset 0 2px 0 #5c5c5c, inset 0 -2px 0 #1a1a1a;
+           color:#ececec; text-shadow:1px 1px 0 #000; font-size:12px; font-weight:800;
+           letter-spacing:.03em; padding:8px 6px; border:1px solid #111; position:sticky; top:0; z-index:2;}
+  tbody td{padding:6px 9px; border:1px solid var(--line); font-size:13.5px; color:var(--ink);
+           text-shadow:1px 1px 0 #000; vertical-align:middle;}
+  tbody tr:nth-child(odd){background:var(--panel);}
+  tbody tr:nth-child(even){background:var(--panel-2);}
+  .c{text-align:center;} .l{text-align:left;}
+  .slot{width:28px; height:28px; margin:0 auto; line-height:28px; text-align:center; background:#1c1c1c;
+        box-shadow:inset 2px 2px 0 #080808, inset -2px -2px 0 #4a4a4a; color:var(--gold);
+        font-weight:800; font-size:13px; text-shadow:1px 1px 0 #000;}
+  .mode{font-weight:800; font-size:13.5px; color:#f2f2f2;}
+  .mode i{display:block; font-style:normal; font-size:10.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  td.n{text-align:center; font-weight:800; font-family:"Consolas",monospace; font-size:13.5px; color:#ededed;}
+  td.n b{color:#ffd27a;}
+  .t{font-family:"Consolas",monospace; font-weight:800; font-size:13.5px; color:#cfe9ff;}
+  .t small{display:block; font-weight:600; font-size:10.5px; color:#8a8a8a; letter-spacing:.02em;}
+  .ticks{font-family:"Consolas",monospace; font-weight:700; color:#a8b6c4;}
+  .kind{font-weight:800; font-size:13px; color:#f2f2f2;}
+  .kind i{display:block; font-style:normal; font-size:10.5px; font-weight:600; color:#9a9a9a; margin-top:1px;}
+  .dens{font-family:"Consolas",monospace; font-weight:700; font-size:13px; color:#cfe9ff;}
+  .dens small{display:block; font-weight:600; font-size:10.5px; color:#8a8a8a;}
+  .flag{display:inline-block; padding:1px 6px; font-size:10.5px; font-weight:800; letter-spacing:.05em;
+        border:1px solid #111; box-shadow:inset 1px 1px 0 rgba(255,255,255,.15);}
+  .flag.rad{background:#4a1414; color:#ffb3b3;}
+  .flag.unreal{background:#1e2a3a; color:#a9cbe8;}
+  .flag.dash{background:#1c1c1c; color:#6f6f6f;}
+  .notes{background:#1b1d21; background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 4px);
+         border-top:3px solid #050505; box-shadow:inset 0 3px 0 rgba(255,255,255,.04);
+         padding:10px 20px 12px; color:#c6c6c6; font-size:12px; line-height:1.9; text-shadow:1px 1px 0 #000;
+         display:flex; flex-wrap:wrap; column-gap:24px;}
+  .notes i{color:var(--gold); font-style:normal; font-weight:700;}
+  .notes em{color:var(--ok); font-style:normal; font-weight:700;}
+  .notes .k{white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="title">
+      <h1>粒子聚合发生器 · 配方一览<small>NEUTRON POLYMERIZER — RECIPES</small></h1>
+      <div class="stats">
+        <div class="stat"><b>1,536 EU/t</b><span>每 tick 耗电</span></div>
+        <div class="stat"><b>1,500 tick</b><span>每件耗时 · 75 s</span></div>
+        <div class="stat"><b>2,304,000 EU</b><span>每件总耗电</span></div>
+        <div class="stat"><b>7</b><span>配方</span></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:52px"><col style="width:270px"><col style="width:250px">
+          <col style="width:130px"><col style="width:190px"><col style="width:176px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="c">#</th><th class="l">输入</th><th class="l">输出</th>
+            <th class="c">工序</th><th class="c">密度 从 → 到</th><th class="c">标记</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="c"><div class="slot">1</div></td>
+            <td><div class="mode">煤炭<i>Coal</i></div></td>
+            <td><div class="mode">钻石<i>Diamond</i></div></td>
+            <td class="c"><div class="kind">相变<i>phase</i></div></td>
+            <td class="c"><span class="dens">1.35 → 3.51</span></td>
+            <td class="c"><span class="flag dash">—</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">2</div></td>
+            <td><div class="mode">铁锭<i>Iron Ingot · c:ingots/iron</i></div></td>
+            <td><div class="mode">铌钛合金锭<i>Niobium-Titanium Ingot</i></div></td>
+            <td class="c"><div class="kind">致密化<i>densify</i></div></td>
+            <td class="c"><span class="dens">7.87 → 6.0</span></td>
+            <td class="c"><span class="flag dash">—</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">3</div></td>
+            <td><div class="mode">钛锭<i>Titanium Ingot · c:ingots/titanium</i></div></td>
+            <td><div class="mode">铱<i>Iridium</i></div></td>
+            <td class="c"><div class="kind">嬗变<i>transmute</i></div></td>
+            <td class="c"><span class="dens">4.51 → 22.56</span></td>
+            <td class="c"><span class="flag dash">—</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">4</div></td>
+            <td><div class="mode">铌钛合金锭<i>Niobium-Titanium Ingot</i></div></td>
+            <td><div class="mode">纳米超流体金属<i>Nano Living Metal</i></div></td>
+            <td class="c"><div class="kind">致密化<i>densify</i></div></td>
+            <td class="c"><span class="dens">6.0 → 19,000</span></td>
+            <td class="c"><span class="flag unreal">非真实</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">5</div></td>
+            <td><div class="mode">纳米超流体金属<i>Nano Living Metal</i></div></td>
+            <td><div class="mode">简并态零素<i>Neutron Plate</i></div></td>
+            <td class="c"><div class="kind">致密化<i>densify</i></div></td>
+            <td class="c"><span class="dens">19,000 → 4×10¹⁴</span></td>
+            <td class="c"><span class="flag rad">辐射</span> <span class="flag unreal">非真实</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">6</div></td>
+            <td><div class="mode">高级电路板<i>Advanced Circuit · c:circuits/advanced</i></div></td>
+            <td><div class="mode">超级电路板<i>Super Circuit</i></div></td>
+            <td class="c"><div class="kind">结构重排<i>structure</i></div></td>
+            <td class="c"><span class="dens">1.9 → 2.1</span></td>
+            <td class="c"><span class="flag dash">—</span></td>
+          </tr>
+          <tr>
+            <td class="c"><div class="slot">7</div></td>
+            <td><div class="mode">IV 导线<i>Glass Cable</i></div></td>
+            <td><div class="mode">超导合金导线<i>Superconducting Cable</i></div></td>
+            <td class="c"><div class="kind">结构重排<i>structure</i></div></td>
+            <td class="c"><span class="dens">2.5 → 6.0</span></td>
+            <td class="c"><span class="flag dash">—</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <span class="k"><i>◆</i> 全部配方统一 <em>1,500 tick（75 s）</em>、<em>1,536 EU/t</em>，单件合计 <em>2,304,000 EU</em></span>
+      <span class="k"><i>◆</i> 第 5 项产出的简并态零素是<em>辐射源</em>：机器辐射半径 = 6 − 周围铅块面数，六面贴满铅块即为 0</span>
+      <span class="k"><i>◆</i> 带「非真实」标记的配方，密度只是设定值，并非物理真实密度</span>
+      <span class="k"><i>◆</i> 铁 → 铌钛合金 → 纳米超流体金属 → 简并态零素 是一条完整的三级提纯链</span>
+    </div>
+  </div>
+</body>
+</html>

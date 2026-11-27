@@ -1215,9 +1215,10 @@ public class GTPortBlockEntity extends BlockEntity
                     if (stack.isEmpty()) {
                         continue;
                     }
-                    rows.add(new GTReactionStack(GTReactionStack.Kind.ITEM,
-                            BuiltInRegistries.ITEM.getKey(stack.getItem()),
-                            stack.getCount(), Optional.empty()));
+                    // The components ride along: a port holds whatever the player put in, and a used
+                    // coolant cell differs from a fresh one only by its stored-heat component. Showing
+                    // the bare id made every worn part look new in the window.
+                    rows.add(GTReactionStack.item(stack));
                 }
             }
             case FLUID -> {

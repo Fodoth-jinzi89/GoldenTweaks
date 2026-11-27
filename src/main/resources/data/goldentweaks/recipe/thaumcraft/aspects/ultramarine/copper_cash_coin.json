@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:copper_cash_coin"
+  },
+  "aspects": {
+    "lucrum": 2,
+    "metallum": 1
+  }
+}

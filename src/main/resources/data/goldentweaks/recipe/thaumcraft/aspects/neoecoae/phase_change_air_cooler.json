@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "neoecoae:phase_change_air_cooler"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:blue_and_white_porcelain_axe"
+  },
+  "aspects": {
+    "metallum": 2,
+    "telum": 3
+  }
+}

@@ -4,6 +4,7 @@
     "id": "minecraft:polished_deepslate"
   },
   "aspects": {
-    "spelunca": 6
+    "terra": 5,
+    "tenebrae": 1
   }
 }

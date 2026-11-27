@@ -29,6 +29,10 @@
     {
       "chance": 0.30,
       "id": "alltheores:raw_uranium"
+    },
+    {
+      "chance": 0.30,
+      "id": "mio_icif:resource/item_raw_niobium_ore"
     }
   ]
 }

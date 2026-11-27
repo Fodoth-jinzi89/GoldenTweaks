@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "simulated:green_portable_engine"
+  },
+  "aspects": {
+    "machina": 3,
+    "metallum": 2
+  }
+}

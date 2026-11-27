@@ -5,6 +5,7 @@ import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorOrientation;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockBuilder;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockPattern;
+import net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -66,7 +67,7 @@ public final class GTMultiblockProjectionClient {
         }
 
         BlockState state = event.getLevel().getBlockState(event.getPos());
-        if (GTMultiblockBlocks.structureForHost(state) == null) {
+        if (!GTMultiblockBlocks.hasProjection(state)) {
             return;
         }
 
@@ -110,6 +111,17 @@ public final class GTMultiblockProjectionClient {
         }
 
         BlockState hostState = level.getBlockState(hostPos);
+
+        // Singularity Iteration controllers carry no structure file; their shapes come from SI's
+        // own blueprints, and their cells are offsets rather than our layer/row/column indices.
+        if (GTMioIcifStructures.available()) {
+            GTMioIcifStructures.Layout siLayout = GTMioIcifStructures.layoutFor(hostState);
+            if (siLayout != null) {
+                drawSiProjection(level, hostPos, hostState, siLayout, event, minecraft);
+                return;
+            }
+        }
+
         ResourceLocation structureId = GTMultiblockBlocks.structureForHost(hostState);
         GTMultiblockBlocks.HostOrientation orientation = GTMultiblockBlocks.hostOrientation(hostState);
         if (structureId == null || orientation == null || orientation.formed()) {
@@ -174,6 +186,60 @@ public final class GTMultiblockProjectionClient {
                     pose.popPose();
                 }
             }
+        }
+
+        buffers.endBatch();
+    }
+
+    /**
+     * Draws the projection of a Singularity Iteration multiblock.
+     *
+     * <p>SI's cells are offsets from the controller, and SI's own validator is the only thing that
+     * decides whether the machine forms — so the cells for the controller's current facing are
+     * exactly what the player must be shown. The steam tunnel generates its shape per facing, and
+     * the fusion tokamak turns its offsets, both already reflected in {@code cells(facing)}.</p>
+     *
+     * <p>A cell that already holds its block is skipped rather than drawn: the point of the
+     * projection is the parts that are still missing.</p>
+     */
+    private static void drawSiProjection(ClientLevel level, BlockPos hostPos, BlockState hostState,
+                                         GTMioIcifStructures.Layout layout, RenderLevelStageEvent event,
+                                         Minecraft minecraft) {
+        if (GTMioIcifStructures.formed(hostState)) {
+            GTMultiblockProjection.clear();
+            return;
+        }
+
+        Vec3 camera = event.getCamera().getPosition();
+        if (camera.distanceToSqr(
+                hostPos.getX() + 0.5D, hostPos.getY() + 0.5D, hostPos.getZ() + 0.5D) > VISIBLE_RANGE_SQR) {
+            return;
+        }
+
+        Direction facing = GTMioIcifStructures.facing(hostState);
+
+        ItemRenderer itemRenderer = minecraft.getItemRenderer();
+        MultiBufferSource.BufferSource buffers = minecraft.renderBuffers().bufferSource();
+        PoseStack pose = event.getPoseStack();
+
+        for (GTMioIcifStructures.Cell cell : layout.cells(facing)) {
+            BlockPos pos = hostPos.offset(cell.x(), cell.y(), cell.z());
+            if (!level.isLoaded(pos)) {
+                continue;
+            }
+            if (level.getBlockState(pos).is(cell.block())) {
+                continue;
+            }
+
+            pose.pushPose();
+            pose.translate(pos.getX() + 0.5D - camera.x,
+                    pos.getY() + 0.5D - camera.y,
+                    pos.getZ() + 0.5D - camera.z);
+            pose.scale(PROJECTION_SCALE, PROJECTION_SCALE, PROJECTION_SCALE);
+            int light = LevelRenderer.getLightColor(level, pos);
+            itemRenderer.renderStatic(new ItemStack(cell.block()), ItemDisplayContext.NONE, light,
+                    OverlayTexture.NO_OVERLAY, pose, buffers, level, 0);
+            pose.popPose();
         }
 
         buffers.endBatch();

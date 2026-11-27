@@ -1,17 +1,5 @@
 {
   "ftbchunks": "FTB区块声明",
-  "ftbchunks.noise": "噪点",
-  "ftbchunks.shadows": "阴影",
-  "ftbchunks.chunk_grid": "区块边界",
-  "ftbchunks.reduced_color_palette": "简化色板",
-  "ftbchunks.saturation": "饱和度",
-  "ftbchunks.debug_info": "调试信息",
-  "ftbchunks.claimed_chunks_on_map": "在地图上显示声明的区块",
-  "ftbchunks.own_claimed_chunks_on_map": "在地图上显示你自己声明的区块",
-  "ftbchunks.in_world_waypoints": "在世界上显示路径点",
-  "ftbchunks.death_waypoints": "死亡时创建死亡路径点",
-  "ftbchunks.map_mode": "地图模式",
-  "ftbchunks.water_height_factor": "水面权重系数",
   "ftbchunks.config.client.minimap": "小地图位置",
   "ftbchunks.config.client.minimap.scale": "小地图比例",
   "ftbchunks.config.client.minimap.locked_north": "小地图锁定北方",
@@ -22,7 +10,6 @@
   "ftbchunks.config.client.minimap.large_entities": "小地图大型实体",
   "ftbchunks.config.client.minimap.xyz": "小地图XYZ",
   "ftbchunks.config.client.minimap.biome": "小地图生物群系",
-  "ftbchunks.minimap_blur": "小地图锐化",
   "ftbchunks.config.client.minimap.compass": "小地图指南针",
   "ftbchunks.config.client.minimap.visibility": "小地图透明度",
   "ftbchunks.config.client.minimap.zone": "小地图区域",
@@ -355,5 +342,10 @@
   "ftbchunks.command.waypoint_added": "已添加路径点'%s'",
   "ftbchunks.claim_mode.freehand": "自由声明",
   "ftbchunks.claim_mode.rectangle": "矩形声明",
-  "ftbchunks.claim_mode.circle": "圆形声明"
+  "ftbchunks.claim_mode.circle": "圆形声明",
+  "ftbchunks.config.server.nether_portal_creation": "下界传送门创建",
+  "ftbchunks.config.server.nether_portal_creation.tooltip": "当原版尝试为某位玩家在其被其他团队认领的区块中创建下界传送门时如何处理：\nno_portal：允许玩家传送，但不创建传送门结构\nfailure：完全阻止传送\nallow：照常创建传送门",
+  "ftbchunks.nether_portal.failure": "无法传送至此：已阻止远程创建传送门！",
+  "ftbchunks.nether_portal.no_portal": "允许传送，但已阻止创建传送门",
+  "ftbchunks.admin_bypass_reminder": "提醒：FTB 区块管理员的保护绕过当前已启用。\n可用 '/ftbchunks admin bypass_protection' 切换。"
 }

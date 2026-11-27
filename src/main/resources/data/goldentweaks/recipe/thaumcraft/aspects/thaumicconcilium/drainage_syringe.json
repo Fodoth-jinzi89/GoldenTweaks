@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:drainage_syringe"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 2,
+    "praecantatio": 2
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "cbcmoreshells:normal_sap_super_heavy_shell"
+  },
+  "aspects": {
+    "metallum": 2,
+    "telum": 3
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:upgrade/pulling_upgrade"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 2
+  }
+}

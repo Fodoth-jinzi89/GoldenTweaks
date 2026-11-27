@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thermal:petrotheum_fluid"
+  },
+  "aspects": {
+    "aqua": 2,
+    "ignis": 1,
+    "permutatio": 3
+  }
+}

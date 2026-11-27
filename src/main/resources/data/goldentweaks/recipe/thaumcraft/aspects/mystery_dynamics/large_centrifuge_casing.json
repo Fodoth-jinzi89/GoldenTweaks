@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mystery_dynamics:large_centrifuge_casing"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

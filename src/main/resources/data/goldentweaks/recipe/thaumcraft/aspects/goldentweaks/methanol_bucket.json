@@ -4,8 +4,7 @@
     "id": "goldentweaks:methanol_bucket"
   },
   "aspects": {
-    "permutatio": 12,
-    "alkimia": 8,
+    "permutatio": 20,
     "aqua": 4,
     "potentia": 15
   }

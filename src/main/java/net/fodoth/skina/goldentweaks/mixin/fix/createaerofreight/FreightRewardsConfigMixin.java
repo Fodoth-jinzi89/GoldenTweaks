@@ -4,6 +4,8 @@ import cn.blockforge.generated.createareofreight.FreightRewardsConfig;
 import cn.blockforge.generated.createareofreight.api.reward.RewardEntry;
 import cn.blockforge.generated.createareofreight.infrastructure.config.RewardPoolFileConfig;
 import java.util.List;
+
+import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -12,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = FreightRewardsConfig.class, remap = false)
 public abstract class FreightRewardsConfigMixin {
-    @Redirect(method = "poolFor", at = @At(value = "FIELD", target = "Lcn/blockforge/generated/createareofreight/FreightRewardsConfig;EMERGENCY_POOL:Ljava/util/List;"))
+    @Redirect(method = "poolFor", at = @At(value = "FIELD", target = "Lcn/blockforge/generated/createareofreight/FreightRewardsConfig;EMERGENCY_POOL:Ljava/util/List;", opcode = Opcodes.GETSTATIC))
     private static List<RewardEntry> gt$noEmergencyIron() {
         return List.of();
     }

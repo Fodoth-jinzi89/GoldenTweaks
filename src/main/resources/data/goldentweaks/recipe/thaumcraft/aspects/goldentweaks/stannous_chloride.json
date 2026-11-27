@@ -5,9 +5,9 @@
   },
   "aspects": {
     "vitium": 16,
-    "alkimia": 12,
     "aqua": 8,
     "ignis": 4,
-    "perditio": 15
+    "perditio": 15,
+    "permutatio": 12
   }
 }

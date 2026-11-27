@@ -51,26 +51,44 @@ public class GTChemicalReactorItem extends BlockItem {
     private static final String HINT = "tooltip.goldentweaks.chemical_reactor.hint";
 
     /** The shape's block extent, in blocks: the same figure for every kettle ever built. */
-    private static final int SIZE_X = 3;
-    private static final int SIZE_Y = 3;
-    private static final int SIZE_Z = 4;
+    protected int sizeX() {
+        return 3;
+    }
+
+    protected int sizeY() {
+        return 3;
+    }
+
+    protected int sizeZ() {
+        return 4;
+    }
 
     /** Where the controller sits, as a player would say it out loud. */
-    private static final int CONTROLLER_LAYER = 2;
+    protected int controllerLayer() {
+        return 2;
+    }
 
     /** The shell minimum the shape check enforces, repeated here so the two cannot drift apart. */
-    private static final int MIN_SHELLS = 8;
+    protected static final int MIN_SHELLS = 8;
+
+    /** The casing key this machine's tooltip names, for a subclass building its own part list. */
+    protected String casingKey() {
+        return this.casingKey;
+    }
 
     /** Indent for the structure block, so the list reads as belonging to the header above it. */
     private static final String INDENT = "    ";
 
     /**
-     * One entry of the structure list: the minimum count and the part's name key.
+     * One entry of the structure list.
      *
      * <p>A minimum of zero means "may be absent", which is why those lines read {@code 0+}. The
      * shell line is the only one with a real floor.</p>
+     *
+     * <p>Public because a machine in another package builds its own list: this type is part of the
+     * subclassing contract, not an implementation detail.</p>
      */
-    private record Part(int minimum, String nameKey) {
+    public record Part(int minimum, String nameKey) {
     }
 
     /** The shell key this item's tooltip names; set per machine through the constructor. */
@@ -78,7 +96,14 @@ public class GTChemicalReactorItem extends BlockItem {
 
     private static final String DEFAULT_CASING = "block.goldentweaks.shell_pe";
 
-    private static List<Part> partsFor(String casingKey) {
+    /**
+     * The parts a machine's Shift list names, in reading order.
+     *
+     * <p>Overridden per machine: the vacuum cooler accepts no chemical hopper and no essentia tank,
+     * so listing them would describe a structure that cannot exist. The base list is what the two
+     * kettles share.</p>
+     */
+    protected List<Part> parts() {
         return List.of(
             // The block's own name: it says exactly what the structure line needs, so there is no
             // second spelling of "PE casing" to keep in step.
@@ -94,6 +119,21 @@ public class GTChemicalReactorItem extends BlockItem {
             new Part(0, "tooltip.goldentweaks.chemical_reactor.part.energy_input"));
     }
 
+    /** The kind name shown on the first line. */
+    protected String kindKey() {
+        return KIND_VALUE;
+    }
+
+    /** The circuit line's first entry: the overclock part this machine ships. */
+    protected String overclockCircuitKey() {
+        return CIRCUITS_OVERCLOCK;
+    }
+
+    /** The circuit line's second entry: the parallel part this machine ships. */
+    protected String parallelCircuitKey() {
+        return CIRCUITS_PARALLEL;
+    }
+
     public GTChemicalReactorItem(Block block, Item.Properties properties) {
         this(block, properties, DEFAULT_CASING);
     }
@@ -107,19 +147,20 @@ public class GTChemicalReactorItem extends BlockItem {
     @Override
     public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltip,
                                 @NotNull TooltipFlag flag) {
-        tooltip.add(row(KIND_LABEL, ChatFormatting.WHITE, KIND_VALUE, ChatFormatting.YELLOW));
+        tooltip.add(row(KIND_LABEL, ChatFormatting.WHITE, kindKey(), ChatFormatting.YELLOW));
 
         tooltip.add(Component.translatable(CONTROLS_HEADER).withStyle(ChatFormatting.WHITE));
         tooltip.add(Component.translatable(CONTROLS_LIST).withStyle(ChatFormatting.YELLOW));
 
-        // Two circuits on one line, each in its own colour: the aqua overclock circuit, then the
-        // green parallel one.
-        tooltip.add(Component.translatable(CIRCUITS_OVERCLOCK).withStyle(ChatFormatting.AQUA)
+        // Two circuits on one line, each in its own colour: the overclock circuit, then the
+        // parallel one. Both names come from the machine, because the advanced kettle ships a
+        // different parallel part than the basic one.
+        tooltip.add(Component.translatable(overclockCircuitKey()).withStyle(ChatFormatting.AQUA)
                 .append(Component.literal(" "))
-                .append(Component.translatable(CIRCUITS_PARALLEL).withStyle(ChatFormatting.GREEN)));
+                .append(Component.translatable(parallelCircuitKey()).withStyle(ChatFormatting.GREEN)));
 
         if (shiftDown()) {
-            addStructure(tooltip, this.casingKey);
+            addStructure(tooltip);
         } else {
             tooltip.add(Component.translatable(SHIFT_PROMPT).withStyle(ChatFormatting.DARK_GRAY)
                     .append(Component.translatable(SHIFT_KEY).withStyle(ChatFormatting.WHITE))
@@ -139,13 +180,13 @@ public class GTChemicalReactorItem extends BlockItem {
     }
 
     /** The breakdown behind the Shift prompt. */
-    private static void addStructure(List<Component> tooltip, String casingKey) {
+    private void addStructure(List<Component> tooltip) {
         tooltip.add(sizeLine());
         tooltip.add(Component.translatable(STRUCT_HEADER).withStyle(ChatFormatting.WHITE));
         tooltip.add(controllerLine());
 
-        for (Part part : partsFor(casingKey)) {
-            tooltip.add(partLine(part, casingKey));
+        for (Part part : parts()) {
+            tooltip.add(partLine(part, this.casingKey));
         }
         tooltip.add(Component.translatable(BOOST).withStyle(ChatFormatting.BLUE));
         tooltip.add(Component.translatable(HINT).withStyle(ChatFormatting.GREEN));
@@ -158,16 +199,16 @@ public class GTChemicalReactorItem extends BlockItem {
      * structure file is written in — layers, width, depth — because those are the three figures a
      * player comparing the file against the machine will be looking for.</p>
      */
-    private static Component sizeLine() {
+    private Component sizeLine() {
         ChatFormatting value = ChatFormatting.GOLD;
         ChatFormatting dim = ChatFormatting.DARK_GRAY;
 
         MutableComponent line = Component.translatable(SIZE_LABEL).withStyle(ChatFormatting.WHITE)
-                .append(Component.literal(String.valueOf(SIZE_X)).withStyle(value))
+                .append(Component.literal(String.valueOf(sizeX())).withStyle(value))
                 .append(Component.translatable(SIZE_AXIS).withStyle(dim))
-                .append(Component.literal(String.valueOf(SIZE_Y)).withStyle(value))
+                .append(Component.literal(String.valueOf(sizeY())).withStyle(value))
                 .append(Component.translatable(SIZE_AXIS).withStyle(dim))
-                .append(Component.literal(String.valueOf(SIZE_Z)).withStyle(value))
+                .append(Component.literal(String.valueOf(sizeZ())).withStyle(value))
                 .append(Component.literal(" (").withStyle(dim));
         // The axes are named, not numbered: L, W and H are the file's own vocabulary.
         line.append(Component.literal("L").withStyle(value))
@@ -180,11 +221,11 @@ public class GTChemicalReactorItem extends BlockItem {
     }
 
     /** {@code 控制器：第二层，正面中央}, indented with the rest of the structure block. */
-    private static Component controllerLine() {
+    private Component controllerLine() {
         return Component.literal(INDENT)
                 .append(Component.translatable(CONTROLLER_LABEL).withStyle(ChatFormatting.WHITE))
                 .append(Component.translatable(CONTROLLER_VALUE,
-                                String.valueOf(CONTROLLER_LAYER))
+                                String.valueOf(controllerLayer()))
                         .withStyle(ChatFormatting.DARK_GRAY));
     }
 

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sfm:disk"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 2
+  }
+}

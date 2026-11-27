@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sable_schematic_api:blueprint_budget"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "fames": 1,
+    "victus": 1
+  }
+}

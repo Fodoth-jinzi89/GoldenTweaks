@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:carved_red_pillar_head"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

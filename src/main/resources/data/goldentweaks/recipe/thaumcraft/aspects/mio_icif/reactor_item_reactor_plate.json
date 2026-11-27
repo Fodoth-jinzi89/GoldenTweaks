@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:reactor/item_reactor_plate"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

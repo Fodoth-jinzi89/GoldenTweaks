@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+  "type": "evolvedmekanism:solidifying",
+  "duration": 60,
+  "item_input": {
+    "item": "evolvedmekanism:mold_plate"
+  },
+  "fluid_input": {
+    "fluid": "evolvedmekanism:molten_iridium",
+    "amount": 90
+  },
+  "extra_input": {
+    "fluid": "mekanism:oxygen",
+    "amount": 90
+  },
+  "output": {
+    "item": "alltheores:iridium_plate"
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:resource/item_tin_nugget"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

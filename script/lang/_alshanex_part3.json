@@ -1,0 +1,90 @@
+{
+  "guide.alshanex_familiars.strange_mushroom": "奇异蘑菇",
+  "guide.alshanex_familiars.strange_mushroom.0": "为魔宠附加一叠§l激怒§r效果：每层 +0.5 攻击伤害。受到攻击时可能消耗一层，获得数秒的「心跳骤停」。每只魔宠最多 10 层。\n\n由哞菇掉落，也可通过剪除沼泽怪获得。",
+
+  "guide.alshanex_familiars.tiny_totem": "迷你图腾",
+  "guide.alshanex_familiars.tiny_totem.0": "将其与一只魔宠绑定。当该魔宠死亡且无法用法力复活时，图腾会被消耗，以半血将其复活。\n\n一只魔宠只能拥有一个图腾，且该图腾在背包任意位置都能生效。",
+
+  "guide.alshanex_familiars.magic_eye": "魔法之眼",
+  "guide.alshanex_familiars.magic_eye.0": "像使用望远镜一样使用它，对准魔宠即可查看其法术强度与法术抗性升级。",
+
+  "guide.alshanex_familiars.trinket_slot": "饰品栏",
+  "guide.alshanex_familiars.trinket_slot.0": "魔宠饰品佩戴于§l魔宠饰品§r饰品栏位。每个饰品强化一种魔宠类型：佩戴期间，该类型魔宠施放的法术品质会大幅提升。\n\n每个饰品也会为你提供其自身的属性。",
+
+  "guide.alshanex_familiars.forest_trinket.0": "强化§l德鲁伊§r：佩戴期间，你的德鲁伊魔宠施放更强的法术。\n\n§l你的属性：§r+15% 自然抗性，+5% 自然法术强度。\n\n§l获取：§r丛林神庙。",
+  "guide.alshanex_familiars.hunter_trinket.0": "强化§l猎人§r：佩戴期间，你的猎人魔宠施放更强的法术。\n\n§l你的属性：§r+5% 唤能法术强度，+5% 自然法术强度。\n\n§l获取：§r掠夺者前哨站与猎人营地。",
+  "guide.alshanex_familiars.necromancer_trinket.0": "强化§l死灵法师§r：佩戴期间，你的死灵法师魔宠施放更强的法术。\n\n§l你的属性：§r+15% 召唤伤害，+5% 血液法术强度。\n\n§l获取：§r墓地。",
+  "guide.alshanex_familiars.summoner_trinket.0": "强化§l唤魔师§r：佩戴期间，你的唤魔师魔宠施放更强的法术。\n\n§l你的属性：§r+10% 邪术抗性，+5% 邪术法术强度。\n\n§l获取：§r远古城市。",
+  "guide.alshanex_familiars.archmage_trinket.0": "强化§l大法师§r：佩戴期间，你的大法师魔宠施放更强的法术。\n\n§l你的属性：§r+5% 法术抗性，+5% 法术强度。\n\n§l获取：§r大法师实验室与末地城。",
+  "guide.alshanex_familiars.illusionist_trinket.0": "强化§l幻术师§r：佩戴期间，你的幻术师魔宠施放更强的法术。\n\n§l你的属性：§r+10% 唤能抗性，+10% 唤能法术强度。\n\n§l获取：§r林地府邸。",
+  "guide.alshanex_familiars.scorcher_trinket.0": "强化§l炽热§r：佩戴期间，你的炽热魔宠施放更强的法术。\n\n§l你的属性：§r+10% 火焰抗性，+10% 火焰法术强度。\n\n§l获取：§r烈焰术士塔。",
+  "guide.alshanex_familiars.cleric_trinket.0": "强化§l牧师§r：佩戴期间，你的牧师魔宠施放更强的法术。\n\n§l你的属性：§r+10% 神圣抗性，+10% 神圣法术强度。\n\n§l获取：§r牧师住所。",
+  "guide.alshanex_familiars.mage_trinket.0": "强化§l雷霆术士§r：佩戴期间，你的雷霆术士魔宠施放更强的法术。\n\n§l你的属性：§r+10% 雷电抗性，+10% 雷电法术强度。\n\n§l获取：§r山间塔楼。",
+  "guide.alshanex_familiars.plague_trinket.0": "强化§l瘟疫医生§r：佩戴期间，你的瘟疫医生魔宠施放更强的法术。\n\n§l你的属性：§r+5% 自然抗性，+15% 自然法术强度。\n\n§l获取：§r冰刺破败者。",
+  "guide.alshanex_familiars.frostling_trinket.0": "强化§l霜灵§r：佩戴期间，你的霜灵魔宠施放更强的法术。\n\n§l你的属性：§r+10% 冰霜抗性，+10% 冰霜法术强度。\n\n§l获取：§r冰蛛巢穴。",
+  "guide.alshanex_familiars.dragon_warrior_trinket.0": "强化§l巨龙§r：佩戴期间，你的巨龙魔宠施放更强的法术。\n\n§l你的属性：§r+10% 末影抗性，+10% 末影法术强度。\n\n§l获取：§r末影龙掉落。",
+  "guide.alshanex_familiars.bard_trinket.0": "强化§l吟游诗人§r：佩戴期间，你的吟游诗人魔宠施放更强的法术。\n\n§l你的属性：§r+10% 旋律抗性，+10% 旋律法术强度。\n\n§l获取：§r神秘球体。",
+
+  "guide.alshanex_familiars.pandora_box": "潘多拉魔盒",
+  "guide.alshanex_familiars.pandora_box.0": "让你一次召唤多只魔宠。将其放入饰品栏后，选择键会打开一个网格：最多选择 10 只魔宠，召唤键会一次召唤或收回全部。",
+
+  "guide.alshanex_familiars.cracked_hourglass": "裂开的沙漏",
+  "guide.alshanex_familiars.cracked_hourglass.0": "+10% 冷却缩减，并将魔宠被「魔宠学者套装」最后一击眩晕的时间减半。",
+  "guide.alshanex_familiars.cracked_hourglass.1": "在炼金锅中加入「无时糖浆」酿造一座钟。在起源之岛上也能找到。",
+
+  "guide.alshanex_familiars.familiologist_armor": "魔宠学者盔甲",
+  "guide.alshanex_familiars.familiologist_armor.0": "钻石级保护，每件 +125 最大法力。当至少有一只魔宠被召唤时，整套装备会提供额外加成。",
+  "guide.alshanex_familiars.familiologist_armor.1": "§l保护：§r你的魔宠受到的伤害更少；在外面越少，减伤越多：1 只时 50%，10 只时 5%。\n\n§l法力共享：§r+25% 法术强度，按你已召唤魔宠的学派平均分配。\n\n§l最后一击：§r本应死亡的魔宠会恢复至满血并眩晕，每只已召唤魔宠提供 5 秒。",
+  "guide.alshanex_familiars.familiologist_armor.1.title": "套装加成",
+  "guide.alshanex_familiars.familiologist_armor.2": "用水晶浆果与奥术精华升级巫师盔甲。",
+
+  "guide.alshanex_familiars.familiar_idol": "魔宠雕像",
+  "guide.alshanex_familiars.familiar_idol.0": "为魔宠饲养者打造的法杖：7 点攻击伤害，+15% 魔宠伤害，+5% 冷却缩减，+5% 法术强度。\n\n可挖掘起源之岛的可疑沙子获得。",
+
+  "guide.alshanex_familiars.familiar_spellbook": "魔宠共鸣法典",
+  "guide.alshanex_familiars.familiar_spellbook.0": "+200 最大法力，+12% 施法时间缩减，+8% 法术强度。\n\n装备时，你已召唤的魔宠会共享你的魔法属性，并在它们之间均分。",
+
+  "guide.alshanex_familiars.healing_curio.0": "戒指：+5% 法力回复。你已驯服的魔宠会消耗你的法力缓慢恢复。\n\n可在牧师住所找到。",
+  "guide.alshanex_familiars.invisibility_curio.0": "戒指：+50 最大法力。生命值低于 25% 的已驯服魔宠会隐身。",
+  "guide.alshanex_familiars.statue_curio.0": "戒指：+5% 法术抗性。生命值低于一半的已驯服魔宠会获得橡木皮肤。",
+  "guide.alshanex_familiars.evasion_curio.0": "戒指：+15% 冷却缩减。生命值低于 25% 的已驯服魔宠每 5 秒可闪避 2 次攻击。\n\n可在末地城找到。",
+
+  "guide.alshanex_familiars.truth_mirror": "真实之镜",
+  "guide.alshanex_familiars.truth_mirror.0": "幻术师会伪装成其他主世界魔宠生成。对可疑的魔宠使用镜子，可使其显露真身。",
+
+  "guide.alshanex_familiars.poison_vial": "毒素瓶",
+  "guide.alshanex_familiars.poison_vial.0": "将其给予已驯服的§l德鲁伊§r，可将其转化为§l瘟疫医生§r。",
+  "guide.alshanex_familiars.poison_vial.1": "在装满「强力中毒」效果的炼金锅中酿造一瓶毒蜘蛛毒牙。",
+
+  "guide.alshanex_familiars.spider_fang": "毒蜘蛛毒牙",
+  "guide.alshanex_familiars.spider_fang.0": "由洞穴蜘蛛掉落。用于酿造毒素瓶，也能治疗瘟疫医生魔宠。",
+
+  "guide.alshanex_familiars.mysterious_orb": "神秘球体",
+  "guide.alshanex_familiars.mysterious_orb.0": "右键点击可获得吟游诗人的竖琴与失落旋律。只有在你通过驯服每一种魔宠获得§l人类学家§r成就后才会生效。\n\n在未驯服的魔宠附近用竖琴施放旋律法术，可将其转化为吟游诗人。",
+
+  "guide.alshanex_familiars.origin_island_structure": "起源之岛",
+  "guide.alshanex_familiars.origin_island_structure.0": "岛中藏有仪式场、可捕捉瓶中的迷失灵魂，以及埋藏着饰品、珍玩与魔宠雕像的可疑沙子。\n\n它的箱子中可能有一张通往猎人营地的地图。使用记忆碎片可以找到它。",
+
+  "guide.alshanex_familiars.hunters_campsite": "猎人营地",
+  "guide.alshanex_familiars.hunters_campsite.0": "猎人成群生活在营地中，营地分布在它们的狩猎场：主要是猎物丰富的森林。\n\n通往它们的地图可在起源之岛上找到。",
+
+  "guide.alshanex_familiars.graveyard": "墓地",
+  "guide.alshanex_familiars.graveyard.0": "见于灵魂沙峡谷，那里死亡主宰一切。死灵法师会被这些地方吸引。",
+
+  "guide.alshanex_familiars.summoners_lab": "唤魔师实验室",
+  "guide.alshanex_familiars.summoners_lab.0": "唤魔师在远古城市中建造了实验室，以便近距离研究幽匿。",
+
+  "guide.alshanex_familiars.archmage_settlement": "大法师聚落",
+  "guide.alshanex_familiars.archmage_settlement.0": "大法师们前往末地研究无尽虚空，并在其周围建造了临时住所。",
+
+  "guide.alshanex_familiars.familiar_egg": "魔宠蛋",
+  "guide.alshanex_familiars.familiar_egg.0": "当你的魔宠死亡或放归后，其精华会残留在此事发生的维度中。\n\n右键点击一个空的§l魔宠蛋§r，即可从其中选择一只，并选择它蛋的颜色：其自身颜色或某个颜色层。此选择无法撤销。",
+  "guide.alshanex_familiars.familiar_egg.1": "将蛋放在空闲的§l魔宠床§r上。它会在 5 分钟内裂开，随后在你处于该维度且有空间接收并召唤一只魔宠时孵化。它会以半血、已在床上睡着的状态回来。\n\n每个维度会记住你最近 20 只迷失的魔宠。\n\n破坏床可收回蛋。",
+  "guide.alshanex_familiars.familiar_egg.1.title": "孵化",
+  "guide.alshanex_familiars.familiar_egg.2": "在起源之岛的仪式场执行，中心放置一枚嗅探兽蛋。",
+
+  "guide.alshanex_familiars.typed_eggs": "定型魔宠蛋",
+  "guide.alshanex_familiars.typed_eggs.0": "这些蛋各自孕育一只特定类型的新魔宠，例如§l德鲁伊蛋§r。\n\n将其放在空闲的§l魔宠床§r上：它会孵化出一只自出生起就属于你的魔宠。颜色来自生物群系的魔宠，会采用其孵化处生物群系的颜色。",
+  "guide.alshanex_familiars.typed_eggs.1": "蛋会在 5 分钟内裂开，随后在你处于该维度且有空间接收并再召唤一只魔宠时孵化。\n\n新生魔宠以半血、已召唤、在床上睡着的状态孵化。\n\n放置蛋的人即为它的主人。",
+  "guide.alshanex_familiars.typed_eggs.1.title": "孵化"
+}

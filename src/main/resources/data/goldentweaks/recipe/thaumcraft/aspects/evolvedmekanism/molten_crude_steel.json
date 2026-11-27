@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "evolvedmekanism:molten_crude_steel"
+  },
+  "aspects": {
+    "aqua": 2,
+    "ignis": 1,
+    "permutatio": 3
+  }
+}

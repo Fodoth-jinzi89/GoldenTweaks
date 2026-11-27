@@ -30,10 +30,12 @@ public final class GTMultiblockCreativeTabs {
                         output.accept(GTMultiblockBlocks.PROJECTOR.get());
                         output.accept(GTMultiblockBlocks.SHELL_PE_ITEM.get());
                         output.accept(GTMultiblockBlocks.SHELL_PP_ITEM.get());
+                        output.accept(GTMultiblockBlocks.SHELL_ALUMINUM_ITEM.get());
                         // The host is registered by whichever path is active, so it is resolved by
                         // name instead of through a field that only one of the two paths holds.
                         acceptExternal(output, "goldentweaks:chemical_plant_controller");
                         acceptExternal(output, "goldentweaks:advanced_chemical_plant_controller");
+                        acceptExternal(output, "goldentweaks:vacuum_cooler_controller");
                         output.accept(GTMultiblockBlocks.INPUT_BUS_ITEM.get());
                         output.accept(GTMultiblockBlocks.AUTO_INPUT_BUS_ITEM.get());
                         output.accept(GTMultiblockBlocks.OUTPUT_BUS_ITEM.get());
@@ -46,6 +48,7 @@ public final class GTMultiblockCreativeTabs {
                         output.accept(GTMultiblockBlocks.CONTROL_CIRCUIT_BASE.get());
                         output.accept(GTMultiblockBlocks.CONTROL_CIRCUIT_OVERCLOCK_4_2.get());
                         output.accept(GTMultiblockBlocks.CONTROL_CIRCUIT_PARALLEL_1.get());
+                        output.accept(GTMultiblockBlocks.CONTROL_CIRCUIT_PARALLEL_4X.get());
                     })
                     .build());
 

@@ -1,5 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.avaritia_more_items;
 
+import java.math.BigInteger;
+
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTPortEnergyTiers;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlock;
@@ -131,6 +133,8 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     private ResourceLocation pendingRecipe;
     private int pendingProgress;
     private int pendingLength;
+    /** Copies the saved craft ran, read back so a resumed craft keeps its parallel bill. */
+    private int pendingCopies = 1;
     /** The group the parked craft belonged to; unlimited when the save did not name one. */
     @Nullable
     private Integer pendingChannel;
@@ -180,6 +184,8 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     private static final String TAG_ACTIVE_PROGRESS = "ActiveProgress";
     private static final String TAG_ACTIVE_LENGTH = "ActiveLength";
     private static final String TAG_ACTIVE_OVERCLOCK = "ActiveOverclock";
+    /** How many copies the saved craft ran; without it a resumed craft would bill a single one. */
+    private static final String TAG_ACTIVE_COPIES = "ActiveCopies";
     /** The group the craft was matched against, so it keeps drawing from and delivering to it. */
     private static final String TAG_ACTIVE_CHANNEL = "ActiveChannel";
     private static final String TAG_ACTIVE_MODE = "ActiveMode";
@@ -277,6 +283,27 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * port mid-craft must not change how much power the run in flight is billed.</p>
      */
     private int activeOverclock;
+
+    /**
+     * How many copies of the recipe this craft runs, from parallel times batch.
+     *
+     * <p>Recorded rather than re-derived: essentia and chemical amounts are not part of the matched
+     * item/fluid lists, so recovering the multiplier from those lists only works while a recipe has
+     * item outputs at all. Keeping the figure makes a purely typed recipe scale exactly like an
+     * item one.</p>
+     *
+     * <p>Not persisted: it describes the craft in flight, which is rebuilt after a reload.</p>
+     */
+    private int runCopies = 1;
+
+    /**
+     * The exact per-tick bill of the running craft, before any overclock.
+     *
+     * <p>{@code BigInteger} because the product of a large multiplier and a costly recipe has no
+     * reason to fit an {@code int} — and saturating it here would silently make a huge machine
+     * behave like a merely large one. Billing saturates only when it reaches the FE API.</p>
+     */
+    private BigInteger runCost = BigInteger.ZERO;
 
     /**
      * The channel group whose ports may be used, or {@code null} when every port is allowed.
@@ -754,6 +781,16 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     public static final int ALWAYS_MAX_PARALLEL = 0;
 
     /**
+     * Largest multiplier the batch/parallel search will ever consider.
+     *
+     * <p>A recipe with no countable inputs divides to no ceiling at all, and scaling a record by an
+     * unbounded figure would build lists big enough to exhaust the heap before the fit check could
+     * refuse them. The cap is far above any port count a structure can hold, so it never limits a
+     * real machine.</p>
+     */
+    private static final int MAX_SEARCHED_MULTIPLIER = 1 << 16;
+
+    /**
      * The ceiling on how many batches may run at once.
      *
      * <p>{@link #ALWAYS_MAX_PARALLEL} is the default and means no ceiling of its own: the machine
@@ -772,9 +809,18 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      *
      * <p>Clamped rather than validated: a negative count has no meaning, so it collapses to the
      * "always maximum" value instead of being rejected.</p>
+     *
+     * <p>Also capped at what this machine's hardware grants, when it grants anything at all. The
+     * window clamps the box for the same reason, but a packet can carry any int — the limit the
+     * player sets and the limit the scheduler enforces have to be the same number, so the check
+     * belongs here rather than only in the window.</p>
      */
     public void setParallelLimit(int limit) {
         int sane = Math.max(ALWAYS_MAX_PARALLEL, limit);
+        int ceiling = machineParallelCeiling();
+        if (ceiling > 0 && sane > ceiling) {
+            sane = ceiling;
+        }
         if (this.parallelLimit == sane) {
             return;
         }
@@ -796,6 +842,17 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      */
     public int maxOverclock() {
         return energyPortCensus().topTier();
+    }
+
+    /**
+     * The ceiling this machine's class puts on parallel copies, or zero for none.
+     *
+     * <p>Separate from {@link #getParallelLimit()}, which is the player's setting: this is what the
+     * hardware grants. Zero means "no ceiling of its own", which is what every machine did before
+     * this hook existed — a subclass that does cap says so by returning a count.</p>
+     */
+    public int machineParallelCeiling() {
+        return 0;
     }
 
     /**
@@ -861,14 +918,14 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * budget for what the craft itself does. A second port of the same tier unlocks the full
      * doubling.</p>
      */
-    public int maxRecipeCost() {
+    public BigInteger maxRecipeCost() {
         EnergyCensus census = energyPortCensus();
         if (census.topTier() == 0) {
-            return 0;
+            return BigInteger.ZERO;
         }
-        int single = GTPortEnergyTiers.transfer(census.topTier());
+        BigInteger single = GTPortEnergyTiers.transferExact(census.topTier());
         // Two or more of the top tier double it; a lone one only reaches half of that doubling.
-        return census.topCount() >= 2 ? single * 2 : single / 2;
+        return census.topCount() >= 2 ? single.shiftLeft(1) : single.shiftRight(1);
     }
 
     /**
@@ -916,30 +973,8 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * on the first tick.</p>
      */
     public boolean withinEnergyBudget(int baseCostPerTick) {
-        return baseCostPerTick <= 0 || baseCostPerTick <= maxRecipeCost();
-    }
-
-    /**
-     * Overclock levels this machine should run a recipe at.
-     *
-     * <p>Three limits apply and the smallest wins. The tier ceiling says how far this class of
-     * machine can overclock at all; the player's setting says how far they want to; and the supply
-     * ceiling says how far the hatches can actually pay for — a step quadruples the bill, so a
-     * recipe two steps up would draw {@code 16 ×} its base cost, which the ports may not carry.</p>
-     *
-     * <p>That last limit is what ties the pane's number to the hatches: with a pair of tier I ports
-     * the supply ceiling is 128 FE/t, so a 128 FE/t recipe affords no step and a 32 FE/t recipe
-     * affords exactly one, because {@code 32 × 4 = 128}.</p>
-     */
-    public int overclockSteps(int baseCostPerTick) {
-        // Walk down from the ceiling until the bill fits the hatches. Costs saturate, so this
-        // terminates; the answer is 0 when even the base cost is out of reach.
-        int ceiling = maxRecipeCost();
-        int steps = reachableOverclock();
-        while (steps > 0 && overclockedCost(baseCostPerTick, steps) > ceiling) {
-            steps--;
-        }
-        return steps;
+        return baseCostPerTick <= 0
+                || BigInteger.valueOf(baseCostPerTick).compareTo(maxRecipeCost()) <= 0;
     }
 
     /**
@@ -980,18 +1015,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * Energy one tick costs at {@code steps} overclocks.
      *
      * <p>Each step quadruples the rate while halving the run time, so one craft costs twice as much
-     * in total. Saturated rather than wrapped: a high tier with a costly recipe can reach the int
-     * limit, and a negative cost would credit the machine instead of billing it.</p>
+     * in total. Exact, with no ceiling: the figure only has to be comparable while deciding how
+     * many copies and steps fit, and capping it there would quietly make a huge machine behave like
+     * a merely large one. Where an {@code int} is unavoidable — the FE API — the value is saturated
+     * at the point of use instead.</p>
      */
-    private static int overclockedCost(int baseCost, int steps) {
-        long cost = baseCost;
-        for (int step = 0; step < steps; step++) {
-            cost *= 4L;
-            if (cost >= Integer.MAX_VALUE) {
-                return Integer.MAX_VALUE;
-            }
-        }
-        return (int) cost;
+    private static BigInteger overclockedCost(BigInteger baseCost, int steps) {
+        return baseCost.multiply(BigInteger.valueOf(4).pow(steps));
     }
 
     /**
@@ -1011,7 +1041,20 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
 
     /** Applies the pinned overclock to a freshly started craft. */
     private void applyOverclock(MatchedMultiblockRecipe recipe) {
-        this.activeOverclock = overclockSteps(recipe.energyPerTick());
+        // The record's int is already saturated, so the exact bill is rebuilt from runCost, which
+        // parallelRecipe filled in. A batch does not change the bill, so the parallel figure carries
+        // straight over; when nothing was parallelised runCost is zero and the record is used.
+        if (this.runCost.signum() <= 0) {
+            this.runCost = BigInteger.valueOf(recipe.energyPerTick());
+        }
+
+        BigInteger ceiling = maxParallelPower();
+        int steps = reachableOverclock();
+        while (steps > 0 && overclockedCost(this.runCost, steps).compareTo(ceiling) > 0) {
+            steps--;
+        }
+
+        this.activeOverclock = steps;
         this.maxProgress = overclockedLength(recipe.processingTime(), this.activeOverclock);
         this.progress = 0;
         this.setChanged();
@@ -1183,6 +1226,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      */
     private void tripBreaker(GTReactorStatus reason) {
         this.activeRecipe = null;
+        // Cleared with the craft, for the same reason completeRecipe clears them: applyOverclock
+        // prices the next craft from runCost, so a leftover figure would be billed for a craft that
+        // is no longer running.
+        this.runCost = BigInteger.ZERO;
+        this.runCopies = 1;
         this.progress = 0;
         this.maxProgress = 0;
         // Force a fresh search once the player switches the machine back on.
@@ -1283,9 +1331,11 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             if (found == null) {
                 return;
             }
-            // Batch mode multiplies a short recipe up to the configured floor; a long one is left
-            // as it is.
-            MatchedMultiblockRecipe batched = batchRecipe(found);
+            // Parallel first, then batch. Parallel multiplies the per-tick bill and leaves the
+            // length alone, so it has to happen before the overclock looks for room in that bill;
+            // batching only stretches a short recipe and costs nothing extra, so it goes last.
+            MatchedMultiblockRecipe parallelised = parallelRecipe(found);
+            MatchedMultiblockRecipe batched = batchRecipe(parallelised);
             if (!startRecipe(batched)) {
                 // Not enough inputs or no room for the results; try again on a later tick.
                 this.selectedChannel = null;
@@ -1338,8 +1388,8 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         }
 
         // Billed at the rate pinned when the craft started, which is what the overclock bought.
-        int cost = activePowerDraw();
-        if (cost > 0 && !consumeEnergy(cost)) {
+        BigInteger bill = activePowerDraw();
+        if (bill.signum() > 0 && !consumeEnergy(bill)) {
             tripBreaker();
             return;
         }
@@ -1364,7 +1414,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         if (next == null) {
             return;
         }
-        MatchedMultiblockRecipe nextBatched = batchRecipe(next);
+        // Parallel first, then batch: parallel multiplies the per-tick bill and leaves the length
+        // alone, so it has to be priced in before the overclock looks for room in that bill.
+        MatchedMultiblockRecipe nextParallel = parallelRecipe(next);
+        MatchedMultiblockRecipe nextBatched = batchRecipe(nextParallel);
         if (!startRecipe(nextBatched)) {
             this.selectedChannel = null;
             this.selectedMode = null;
@@ -1456,7 +1509,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         if (this.level == null || !(matched.recipe() instanceof GTChemicalReactionRecipe reaction)) {
             return true;
         }
-        int multiplier = batchMultiplierOf(reaction, matched);
+        // The record is already scaled by everything that ran before this point — parallel and, when
+        // applied, batch — so the figure is read from the recorded copies rather than multiplied
+        // again here.
+        int multiplier = copiesOf(matched);
         for (GTReactionStack product : reaction.outputs()) {
             if (product.kind() != GTReactionStack.Kind.ESSENTIA
                     && product.kind() != GTReactionStack.Kind.CHEMICAL) {
@@ -1491,11 +1547,13 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * overclock steps pays sixteen times its base rate, and a tooltip quoting the base would be off
      * by that factor on every overclocked run. Zero while nothing is running.</p>
      */
-    public int activePowerDraw() {
+    public BigInteger activePowerDraw() {
         if (this.activeRecipe == null) {
-            return 0;
+            return BigInteger.ZERO;
         }
-        return overclockedCost(this.activeRecipe.energyPerTick(), this.activeOverclock);
+        // The exact parallel/batch bill, not the record's int: a huge craft would otherwise be
+        // billed as if its multiplier had been capped.
+        return overclockedCost(this.runCost, this.activeOverclock);
     }
 
     private void completeRecipe() {
@@ -1503,6 +1561,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         this.progress = 0;
         this.maxProgress = 0;
         this.activeRecipe = null;
+        // Cleared with the craft: applyOverclock reads runCost to rebuild the bill, so a leftover
+        // figure would price the next craft — which may be a different recipe — at this one's rate.
+        this.runCost = BigInteger.ZERO;
+        this.runCopies = 1;
         this.lastRecipeSearchVersion = -1;
         this.lastInputSignature = Integer.MIN_VALUE;
 
@@ -1574,6 +1636,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             this.pendingRecipe = null;
             this.pendingProgress = 0;
             this.pendingLength = 0;
+            this.pendingCopies = 1;
             return;
         }
 
@@ -1588,6 +1651,12 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 Math.max(0, this.activeOverclock))));
         this.progress = Math.max(0, Math.min(this.pendingProgress, this.maxProgress));
         this.activeRecipe = resumed;
+        // Billing is driven by runCost, and this path rebuilds the record from the recipe
+        // definition, which knows nothing of the copies that were running, so both figures are
+        // restored from the save. Leaving runCost at zero would resume the craft for free.
+        this.runCopies = Math.max(1, this.pendingCopies);
+        this.runCost = BigInteger.valueOf(resumed.energyPerTick())
+                .multiply(BigInteger.valueOf(this.runCopies));
         // Pinned before the first tick can run, or the resumed craft would be billed against every
         // port on the machine instead of the ones it was matched with.
         this.activeChannel = this.pendingChannel;
@@ -1600,6 +1669,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         this.activeProcessingTime = resumed.processingTime();
         this.pendingProgress = 0;
         this.pendingLength = 0;
+        this.pendingCopies = 1;
         // The craft owns the ports again, so their channels are frozen exactly as they were.
         setChannelsLocked(true);
         this.setChanged();
@@ -1664,14 +1734,15 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
             return null;
         }
 
-        // Build the matcher's view of the recipe, then check it against what the ports hold. This is
-        // the same path AMI takes, just narrowed to one candidate.
-        MatchedMultiblockRecipe matched = MatchedMultiblockRecipe.of(recipe);
-        if (!matched.matches(createRecipeInput())) {
+        // Ask the recipe itself: a MatchedMultiblockRecipe only knows the plain ItemStack snapshot
+        // taken when it was built, so a lock on an "any_components" recipe would never re-validate.
+        MultiblockRecipeInput input = createRecipeInput();
+        if (!recipe.matches(input, level)) {
             return null;
         }
-        // AMI's matcher only knows items and fluids. The other two kinds are checked here, or the
-        // machine would happily start a craft whose essentia or chemicals are not in the ports and
+        MatchedMultiblockRecipe matched = MatchedMultiblockRecipe.of(recipe);
+        // The recipe's own matching covers items and fluids. The other two kinds are checked here, or
+        // the machine would happily start a craft whose essentia or chemicals are not in the ports and
         // then produce nothing it was supposed to consume.
         return typedInputsAvailable(recipe, 1) ? matched : null;
     }
@@ -1713,8 +1784,8 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      *
      * <p>AMI's own search walks every recipe and stops at the first that matches the ports. Adding a
      * mode filter means the walk has to be ours: the recipe list is the same, but a candidate is
-     * only tried when {@link #modeAccepts} allows it. Everything else — how a candidate is matched
-     * against the ports — still goes through AMI's matcher.</p>
+     * only tried when {@link #modeAccepts} allows it. Each candidate is asked to match itself, so
+     * per-entry component rules survive the search.</p>
      */
     @Nullable
     private MatchedMultiblockRecipe findRecipeForMode(Level level) {
@@ -1767,10 +1838,20 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                             : Math.min(this.refusedCost, recipe.getEnergyPerTick());
                     continue;
                 }
-                MatchedMultiblockRecipe matched = MatchedMultiblockRecipe.of(recipe);
-                if (matched.matches(input)) {
-                    return matched;
+                // MatchedMultiblockRecipe is built from a recipe's plain ItemStack inputs and matches
+                // only against that snapshot, so it can never honour a recipe's own matching. Asking
+                // the recipe itself is what lets "any_components" entries be found at all.
+                if (!recipe.matches(input, level)) {
+                    continue;
                 }
+                // 物品和流体在上一行已经查过，但配方还可能要求要素或化学品，而 AMI 的匹配器
+                // 只认前两者。漏掉这一句，端口里没有要素时配方照样会开始，然后在
+                // consumeTypedInputs 里找不到货、静默跳过，最后把成品交出来 —— 表现就是
+                // 「机器忽略了要素把配方跑完」。这里和 matchOneGroup 必须用同一个判据。
+                if (!typedInputsAvailable(recipe, 1)) {
+                    continue;
+                }
+                return MatchedMultiblockRecipe.of(recipe);
             }
         }
         return null;
@@ -1903,11 +1984,43 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
 
         // Items first: if they cannot all be taken there is nothing sensible to do with the fluids,
         // and the ports are left untouched for the next attempt.
-        if (!MultiblockRecipeMatcher.consumeItems(recipe.itemInputs(), itemHandlers)) {
+        if (!consumeItems(recipe, itemHandlers)) {
             return;
         }
         MultiblockRecipeMatcher.consumeFluids(recipe.fluidInputs(), fluidHandlers);
         consumeTypedInputs(recipe);
+    }
+
+    /**
+     * Takes a recipe's item inputs from the ports, honouring each entry's component rule.
+     *
+     * <p>Walks the handlers twice: the plan decides how many units come from which slot, then the
+     * extraction actually performs it. Planning against a snapshot rather than extracting as it goes
+     * keeps a half-taken craft from being left behind when the last entry turns out to be short.</p>
+     */
+    private boolean consumeItems(MatchedMultiblockRecipe recipe, List<IItemHandler> handlers) {
+        List<ItemStack> pool = new ArrayList<>();
+        for (IItemHandler handler : handlers) {
+            for (int slot = 0; slot < handler.getSlots(); slot++) {
+                pool.add(handler.getStackInSlot(slot));
+            }
+        }
+
+        int[] plan = GTReactionMatcher.plan(itemInputsOf(recipe), Math.max(1, this.runCopies), pool);
+        if (plan == null) {
+            return false;
+        }
+
+        int flat = 0;
+        for (IItemHandler handler : handlers) {
+            for (int slot = 0; slot < handler.getSlots(); slot++, flat++) {
+                if (plan[flat] <= 0) {
+                    continue;
+                }
+                handler.extractItem(slot, plan[flat], false);
+            }
+        }
+        return true;
     }
 
     /**
@@ -1951,7 +2064,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         if (this.level == null || !(recipe.recipe() instanceof GTChemicalReactionRecipe reaction)) {
             return;
         }
-        int multiplier = batchMultiplierOf(reaction, recipe);
+        int multiplier = copiesOf(recipe);
         for (GTReactionStack input : reaction.inputs()) {
             if (input.kind() != GTReactionStack.Kind.ESSENTIA
                     && input.kind() != GTReactionStack.Kind.CHEMICAL) {
@@ -2075,6 +2188,126 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /**
+     * Runs as many copies of a recipe at once as the hatches can power.
+     *
+     * <p><b>Parallel is not batch.</b> A batch merges N copies into one longer run at unchanged
+     * power, so the same energy is spent over N times the ticks. Parallel runs N copies
+     * <em>simultaneously</em>: the craft takes exactly as long as one, and the cost is multiplied by
+     * N. That is why this happens before {@link #batchRecipe}, and before the overclock is pinned —
+     * the boosted power is what the overclock then has to fit into.</p>
+     *
+     * <p>The number of copies is bounded by three things: the player's parallel ceiling, the power
+     * the hatches can deliver ({@link #maxRecipeCost()}), and how many copies the inputs and output
+     * space actually allow. The first two are checked here arithmetically, the last through
+     * {@link #fits}, because stacking rules and port space are only known to the matcher.</p>
+     *
+     * <p>Down-counting rather than dividing: {@code fits} is the authority on how far a multiplier
+     * can go, and a machine asked for 64 copies should not loop 64 times over a recipe that only
+     * allows two.</p>
+     */
+    private MatchedMultiblockRecipe parallelRecipe(MatchedMultiblockRecipe recipe) {
+        // Reset first: a recipe that ends up un-parallelised must not inherit the previous craft's
+        // copies or bill.
+        this.runCopies = 1;
+        this.runCost = BigInteger.ZERO;
+
+        int wanted = this.parallelLimit == ALWAYS_MAX_PARALLEL
+                ? Integer.MAX_VALUE : this.parallelLimit;
+        // A machine may cap parallelism on its own, below whatever the player asked for: the
+        // advanced kettle grants four copies per voltage tier it can reach. Zero means its class
+        // imposes no ceiling, which is the base kettle.
+        int machineCeiling = machineParallelCeiling();
+        if (machineCeiling > 0) {
+            wanted = Math.min(wanted, machineCeiling);
+        }
+        int affordable = affordableParallelism(recipe.energyPerTick());
+        int limit = (int) Math.min(wanted, affordable);
+        if (limit <= 1) {
+            return recipe;
+        }
+
+        int multiplier = Math.min(limit, maxFeasibleMultiplier(recipe, limit));
+        if (multiplier <= 1) {
+            return recipe;
+        }
+
+        // Same merge-then-scale shape as a batch, but the length is untouched: the copies run at the
+        // same time, so the only figure that grows is the power bill.
+        List<ItemStack> inputs = mergeItems(scaleItems(recipe.itemInputs(), multiplier));
+        List<FluidStack> fluidInputs = mergeFluids(scaleFluids(recipe.fluidInputs(), multiplier));
+        List<ItemStack> outputs = mergeItems(scaleItems(recipe.itemOutputs(), multiplier));
+        List<FluidStack> fluidOutputs = mergeFluids(scaleFluids(recipe.fluidOutputs(), multiplier));
+
+        // The true bill is kept alongside the record. AMI's field is an int, so a large multiplier
+        // could not be stored there; the exact figure lives both in runCost (which billing uses) and
+        // on the record itself through the exact-energy hook, so anything else reading the recipe
+        // sees the same number.
+        BigInteger cost = BigInteger.valueOf(recipe.energyPerTick())
+                .multiply(BigInteger.valueOf(multiplier));
+        this.runCopies = multiplier;
+        this.runCost = cost;
+
+        MatchedMultiblockRecipe scaled = new MatchedMultiblockRecipe(recipe.recipe(), inputs,
+                fluidInputs, outputs, fluidOutputs, recipe.processingTime(), saturate(cost));
+        // Through Object: the record is final and does not declare the interface, so javac would
+        // reject a direct cast even though the mixin adds it at runtime.
+        ((GTExactEnergy) (Object) scaled).gt$setExactEnergy(cost);
+        return scaled;
+    }
+
+    /** An exact figure as the {@code int} an API insists on, saturated rather than wrapped. */
+    private static int saturate(BigInteger value) {
+        if (value.compareTo(BIG_INT_MAX) >= 0) {
+            return Integer.MAX_VALUE;
+        }
+        return Math.max(0, value.intValue());
+    }
+
+    /**
+     * How many copies of a recipe the energy hatches can power at once.
+     *
+     * <p><b>Parallel raises the current, not the voltage.</b> The tier decides which recipes a
+     * machine may run at all — that is {@link #maxRecipeCost()}, and for a lone hatch it is only
+     * half the rated power because the rest of the tick is the craft's own draw. Running N copies
+     * at once does not make the machine any better at high tiers; it just pulls more current at the
+     * same voltage. So the budget here is the hatches' whole rated throughput, which for a single
+     * hatch is twice {@code maxRecipeCost} and for a pair is the same figure.</p>
+     *
+     * <p>That distinction is what a future 64 A hatch would exploit: it could never admit a
+     * higher-tier recipe, but it could run a great many cheap ones in parallel.</p>
+     */
+    private int affordableParallelism(int baseCostPerTick) {
+        if (baseCostPerTick <= 0) {
+            return Integer.MAX_VALUE;
+        }
+        BigInteger budget = maxParallelPower();
+        if (budget.signum() <= 0) {
+            return 1;
+        }
+        BigInteger copies = budget.divide(BigInteger.valueOf(baseCostPerTick));
+        return copies.compareTo(BIG_INT_MAX) >= 0 ? Integer.MAX_VALUE : Math.max(1, copies.intValue());
+    }
+
+    /** {@code Integer.MAX_VALUE} as a {@code BigInteger}, to keep the comparisons readable. */
+    private static final BigInteger BIG_INT_MAX = BigInteger.valueOf(Integer.MAX_VALUE);
+
+    /**
+     * The throughput the energy hatches can supply to parallel copies, in FE per tick.
+     *
+     * <p>One top-tier hatch is worth its full rated transfer here, where the recipe ceiling only
+     * counts half of it; two or more are worth twice that, matching
+     * {@link #maxRecipeCost()}'s dual-hatch boost so the two stay consistent.</p>
+     */
+    public BigInteger maxParallelPower() {
+        EnergyCensus census = energyPortCensus();
+        if (census.topTier() == 0) {
+            return BigInteger.ZERO;
+        }
+        BigInteger single = GTPortEnergyTiers.transferExact(census.topTier());
+        return census.topCount() >= 2 ? single.shiftLeft(1) : single;
+    }
+
+    /**
      * Scales a short reaction up so one run lasts at least the configured minimum.
      *
      * <p>The multiplier is the smallest whole number that reaches the floor, which is what makes a
@@ -2085,6 +2318,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      *
      * <p>When the multiplier lands on one, the recipe is returned untouched, so a long reaction and
      * a machine without batch mode behave exactly as before.</p>
+     *
+     * <p>Runs after {@link #parallelRecipe} deliberately: parallel multiplies the power bill, and a
+     * batch does not, so folding copies together first and then multiplying the price would charge
+     * for copies that were never actually run at once.</p>
      */
     private MatchedMultiblockRecipe batchRecipe(MatchedMultiblockRecipe recipe) {
         if (!this.batchMode) {
@@ -2106,6 +2343,9 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // Merged, not merely scaled: a batch that produces four stacks of one item should present as
         // one entry of four hundred, otherwise the list, the space check and the delivery all see a
         // scatter of identical rows competing for separate slots.
+        // The typed multiplier accumulates with parallel's: a batch of a parallel run is copies x
+        // batch, and essentia has to follow exactly that.
+        this.runCopies = (int) Math.min(Integer.MAX_VALUE, (long) this.runCopies * multiplier);
         List<ItemStack> inputs = mergeItems(scaleItems(recipe.itemInputs(), multiplier));
         List<FluidStack> fluidInputs = mergeFluids(scaleFluids(recipe.fluidInputs(), multiplier));
         List<ItemStack> outputs = mergeItems(scaleItems(recipe.itemOutputs(), multiplier));
@@ -2120,28 +2360,120 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     /**
      * Largest multiplier the machine can actually run, capped at {@code wanted}.
      *
-     * <p>Counted down rather than computed, because "can this fit" depends on stacking rules and
-     * remaining port space, which only the matcher can answer. The cap on iterations keeps a huge
-     * requested batch from turning into a long loop.</p>
+     * <p>The search is narrowed twice before anything is tried. A division over the ports gives the
+     * most copies the ingredients could ever cover — an upper bound, since entries may compete for
+     * one stack and output space is ignored. Then the range is halved instead of walked: "does this
+     * batch fit" is monotone in the multiplier, because every demand and every product grows with
+     * it, so if a candidate fits, so does everything below it.</p>
+     *
+     * <p>Halving matters when the ports are short — the common case is a batch of one, which a
+     * countdown reaches only after trying every rejected value first.</p>
      */
     private int maxFeasibleMultiplier(MatchedMultiblockRecipe recipe, int wanted) {
-        for (int candidate = wanted; candidate > 1; candidate--) {
-            if (fits(recipe, candidate)) {
-                return candidate;
+        if (wanted <= 1) {
+            return 1;
+        }
+        MultiblockRecipeInput available = createRecipeInput();
+        long coverable = GTReactionMatcher.capacity(itemInputsOf(recipe),
+                Math.max(1, this.runCopies), available.getItems(), available.getFluids());
+        // A recipe whose inputs all resolve to "no ceiling" reports Long.MAX_VALUE. Multiplying that
+        // out would build a scaled copy list large enough to exhaust the heap, so the batch is capped
+        // at a size the machines are physically able to run anyway.
+        coverable = Math.min(coverable, MAX_SEARCHED_MULTIPLIER);
+        int high = (int) Math.min(wanted, Math.min(coverable, Integer.MAX_VALUE));
+        if (high <= 1) {
+            return 1;
+        }
+        if (fits(recipe, high)) {
+            return high;
+        }
+
+        // The search below treats 1 as a known fit, so it is checked rather than assumed: output
+        // space can still refuse the plain batch, and answering 1 for a batch that cannot run at all
+        // would start a craft that never finishes.
+        if (!fits(recipe, 1)) {
+            return 1;
+        }
+
+        // Invariant: low is known to fit, high is known not to. Closing the gap leaves low as the
+        // answer, and every probe is a real fit check — no candidate is skipped on the way down.
+        int low = 1;
+        while (high - low > 1) {
+            int middle = (low + high) >>> 1;
+            if (fits(recipe, middle)) {
+                low = middle;
+            } else {
+                high = middle;
             }
         }
-        return 1;
+        return low;
+    }
+
+    /**
+     * Whether the ports hold the recipe's item inputs.
+     *
+     * <p>Goes through {@link GTReactionMatcher} rather than AMI's matcher: a reaction may ask for an
+     * item by id alone (a used coolant cell), which an exact-component comparison cannot express.</p>
+     *
+     * <p>The counts are the recipe's own, so the multiplier is parallel times the batch candidate —
+     * the record's item lists were already scaled and cannot be used here without losing the
+     * per-entry component rules.</p>
+     */
+    private boolean matchesItems(MatchedMultiblockRecipe matched, int batchCandidate,
+                                 MultiblockRecipeInput available) {
+        long copies = (long) Math.max(1, this.runCopies) * Math.max(1, batchCandidate);
+        return GTReactionMatcher.plan(itemInputsOf(matched), copies, available.getItems()) != null;
+    }
+
+    /**
+     * The matched recipe's item inputs, with the parallel and batch copies already folded in.
+     *
+     * <p>Read from the recipe rather than from the matched record so the per-entry component rules
+     * survive; the record's item lists were flattened to plain stacks when it was built.</p>
+     */
+    private static List<GTReactionStack> itemInputsOf(MatchedMultiblockRecipe matched) {
+        if (matched.recipe() instanceof GTChemicalReactionRecipe reaction) {
+            return reaction.inputs();
+        }
+        // A recipe this machine did not define: fall back to the flattened item list, which matches
+        // exactly — the only rule an unknown recipe type can carry.
+        List<GTReactionStack> inputs = new ArrayList<>();
+        for (ItemStack stack : matched.itemInputs()) {
+            if (!stack.isEmpty()) {
+                inputs.add(new GTReactionStack(GTReactionStack.Kind.ITEM,
+                        net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()),
+                        stack.getCount(), java.util.Optional.empty()));
+            }
+        }
+        return inputs;
+    }
+
+    /** The matched recipe's fluid inputs, already scaled. */
+    private static List<GTReactionStack> fluidInputsOf(MatchedMultiblockRecipe matched) {
+        if (matched.recipe() instanceof GTChemicalReactionRecipe reaction) {
+            return reaction.inputs();
+        }
+        List<GTReactionStack> inputs = new ArrayList<>();
+        for (FluidStack stack : matched.fluidInputs()) {
+            if (!stack.isEmpty()) {
+                inputs.add(new GTReactionStack(GTReactionStack.Kind.FLUID,
+                        net.minecraft.core.registries.BuiltInRegistries.FLUID.getKey(stack.getFluid()),
+                        stack.getAmount(), java.util.Optional.empty()));
+            }
+        }
+        return inputs;
     }
 
     /** Whether every scaled input is available and every scaled output would fit. */
     private boolean fits(MatchedMultiblockRecipe recipe, int multiplier) {
         MultiblockRecipeInput available = createRecipeInput();
-        if (!MultiblockRecipeMatcher.matchesItems(
-                mergeItems(scaleItems(recipe.itemInputs(), multiplier)), available)) {
+        if (!matchesItems(recipe, multiplier, available)) {
             return false;
         }
-        if (!MultiblockRecipeMatcher.matchesFluids(
-                mergeFluids(scaleFluids(recipe.fluidInputs(), multiplier)), available)) {
+        if (!GTReactionMatcher.matchesFluids(
+                fluidInputsOf(recipe),
+                (long) Math.max(1, this.runCopies) * Math.max(1, multiplier),
+                available.getFluids())) {
             return false;
         }
 
@@ -2191,18 +2523,34 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         }
         // The other two kinds cap the batch the same way: a hatch already holding something else
         // cannot take a scaled-up product, and finding that out after the craft started would lose
-        // it. Batch mode is therefore limited by them too.
+        // it. Batch mode is therefore limited by them too, and by the parallel copies already
+        // folded into the recipe — hence totalCopies, not just the batch candidate.
         return fitsTypedOutputs(recipe, multiplier) && fitsTypedInputs(recipe, multiplier);
     }
 
+    /**
+     * The total number of copies a fit check has to reserve typed space for.
+     *
+     * <p>{@code batchCandidate} is only the batch under consideration; the recipe has already been
+     * scaled by parallel, so the true multiple is that field times this candidate. Using only the
+     * candidate would let a recipe pass the check and then overrun the hatches when it finishes.</p>
+     */
+    private int totalCopies(int batchCandidate) {
+        long total = (long) Math.max(1, this.runCopies) * Math.max(1, batchCandidate);
+        return (int) Math.min(Integer.MAX_VALUE, total);
+    }
+
     /** Whether the scaled essentia and chemical products fit the output ports. */
-    private boolean fitsTypedOutputs(MatchedMultiblockRecipe matched, int multiplier) {
+    private boolean fitsTypedOutputs(MatchedMultiblockRecipe matched, int batchCandidate) {
         if (!(matched.recipe() instanceof GTChemicalReactionRecipe reaction)) {
             return true;
         }
         if (this.level == null) {
             return false;
         }
+        // Parallel multiplied the recipe before this check ran, so the reservation is the batch
+        // candidate times what was already running.
+        int multiplier = totalCopies(batchCandidate);
         for (GTReactionStack product : reaction.outputs()) {
             if (product.kind() != GTReactionStack.Kind.ESSENTIA
                     && product.kind() != GTReactionStack.Kind.CHEMICAL) {
@@ -2231,9 +2579,9 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
     /** Whether the scaled essentia and chemical inputs are on hand. */
-    private boolean fitsTypedInputs(MatchedMultiblockRecipe matched, int multiplier) {
+    private boolean fitsTypedInputs(MatchedMultiblockRecipe matched, int batchCandidate) {
         return matched.recipe() instanceof GTChemicalReactionRecipe reaction
-                && typedInputsAvailable(reaction, multiplier);
+                && typedInputsAvailable(reaction, totalCopies(batchCandidate));
     }
 
     /**
@@ -2408,7 +2756,7 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         // have no item or fluid form to flatten into.
         if (matched.recipe() instanceof GTChemicalReactionRecipe reaction) {
             List<GTReactionStack> authored = reaction.outputs();
-            int multiplier = batchMultiplierOf(reaction, matched);
+            int multiplier = copiesOf(matched);
             if (multiplier <= 1) {
                 return authored;
             }
@@ -2450,9 +2798,24 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
     }
 
 
-    /** The batch size a matched recipe was scaled by, or 1 when it was not. */
-    private static int batchMultiplierOf(GTChemicalReactionRecipe reaction,
-                                         MatchedMultiblockRecipe matched) {
+    /**
+     * How many copies of the recipe a matched run represents.
+     *
+     * <p>Read from {@link #runCopies}, which parallel and batch each multiply as they scale. Deriving
+     * it from the item lists instead — the previous approach — worked only for recipes that had item
+     * outputs at all, and left essentia and chemicals unscaled for a recipe made purely of them.
+     * Typed amounts therefore follow exactly the same multiplier as items and fluids.</p>
+     *
+     * <p>Falls back to one when the run was not scaled, and to the old derivation when a caller is
+     * looking at a record matched before this craft started: guessing high would over-deliver.</p>
+     */
+    private int copiesOf(MatchedMultiblockRecipe matched) {
+        if (this.runCopies > 1) {
+            return this.runCopies;
+        }
+        if (!(matched.recipe() instanceof GTChemicalReactionRecipe reaction)) {
+            return 1;
+        }
         long authored = 0L;
         for (GTReactionStack stack : reaction.outputs()) {
             if (stack.kind() == GTReactionStack.Kind.ITEM) {
@@ -2532,11 +2895,20 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
      * <p>The stored total is checked first so a shortfall never leaves a partial payment behind:
      * ports cannot be topped up within the same tick, and a half-paid tick would be lost energy.</p>
      */
-    private boolean consumeEnergy(int amount) {
-        if (this.getStoredInputEnergy() < amount) {
+    private boolean consumeEnergy(BigInteger amount) {
+        if (amount.signum() <= 0) {
+            return true;
+        }
+        // The store and the FE API both speak int, so a bill beyond that cannot be paid: refusing it
+        // trips the breaker exactly like any other shortfall, which is the honest answer.
+        if (amount.compareTo(BIG_INT_MAX) > 0) {
             return false;
         }
-        int remaining = amount;
+        int needed = amount.intValue();
+        if (this.getStoredInputEnergy() < needed) {
+            return false;
+        }
+        int remaining = needed;
         for (var handler : getEnergyInputHandlers()) {
             if (remaining <= 0) {
                 break;
@@ -3725,6 +4097,10 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
         this.pendingProgress = tag.getInt(TAG_ACTIVE_PROGRESS);
         this.pendingLength = tag.getInt(TAG_ACTIVE_LENGTH);
         this.activeOverclock = tag.getInt(TAG_ACTIVE_OVERCLOCK);
+        // Saved with the craft: the record is rebuilt from the recipe definition on load, which
+        // knows nothing of how many copies were running, so without this a resumed parallel craft
+        // would quietly fall back to billing one copy.
+        this.pendingCopies = tag.contains(TAG_ACTIVE_COPIES) ? tag.getInt(TAG_ACTIVE_COPIES) : 1;
         this.pendingChannel = tag.contains(TAG_ACTIVE_CHANNEL) ? tag.getInt(TAG_ACTIVE_CHANNEL) : null;
         this.pendingMode = tag.contains(TAG_ACTIVE_MODE) ? tag.getInt(TAG_ACTIVE_MODE) : null;
         // Set unconditionally and never read back from the tag: waiting is what a load does, not
@@ -3759,6 +4135,9 @@ public class GTChemicalReactorMachineBlockEntity extends AbstractMultiblockTile 
                 tag.putInt(TAG_ACTIVE_PROGRESS, this.progress);
                 tag.putInt(TAG_ACTIVE_LENGTH, this.maxProgress);
                 tag.putInt(TAG_ACTIVE_OVERCLOCK, this.activeOverclock);
+                // How many copies were running. Saved because the recipe alone does not say: a
+                // resumed craft would otherwise bill one copy and run at a fraction of its cost.
+                tag.putInt(TAG_ACTIVE_COPIES, Math.max(1, this.runCopies));
                 // The ports the run is pinned to. Restoring the recipe without them would let a
                 // resumed craft draw from a different group than the one it took its inputs from.
                 if (this.activeChannel != null) {

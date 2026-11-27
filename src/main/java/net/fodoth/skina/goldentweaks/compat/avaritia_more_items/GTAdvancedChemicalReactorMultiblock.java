@@ -1,7 +1,6 @@
 package net.fodoth.skina.goldentweaks.compat.avaritia_more_items;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTChemicalReactorItem;
 import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.MenuType;
@@ -70,7 +69,7 @@ public final class GTAdvancedChemicalReactorMultiblock {
     @SuppressWarnings("unused")
     public static final DeferredItem<BlockItem> MACHINE_ITEM =
             ITEMS.register(ID,
-                    () -> new GTChemicalReactorItem(MACHINE.get(), new Item.Properties(),
+                    () -> new GTAdvancedChemicalReactorItem(MACHINE.get(), new Item.Properties(),
                             "block.goldentweaks.shell_pp"));
 
     @SuppressWarnings("ConstantConditions")

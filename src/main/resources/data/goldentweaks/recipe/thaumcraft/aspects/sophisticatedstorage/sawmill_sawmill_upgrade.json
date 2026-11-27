@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sophisticatedstorage:sawmill/sawmill_upgrade"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 2
+  }
+}

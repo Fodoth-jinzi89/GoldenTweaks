@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "forbiddenmagic:tainted_blood_shard"
+  },
+  "aspects": {
+    "praecantatio": 1,
+    "vitium": 2,
+    "vitreus": 2
+  }
+}

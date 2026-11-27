@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "sfm:tunnelled_manager"
+  },
+  "aspects": {
+    "cognitio": 3,
+    "machina": 3,
+    "potentia": 1
+  }
+}

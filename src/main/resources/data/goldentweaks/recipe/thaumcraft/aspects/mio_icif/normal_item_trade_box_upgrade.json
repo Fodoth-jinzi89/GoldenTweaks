@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:normal/item_trade_box_upgrade"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "machina": 2
+  }
+}

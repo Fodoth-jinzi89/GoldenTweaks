@@ -53,6 +53,10 @@ public class GTChemicalReactionJeiCategory implements IRecipeCategory<GTChemical
     public static final RecipeType<GTChemicalReactionRecipe> ADVANCED_TYPE =
             type("advanced_chemical_reaction");
 
+    /** The vacuum cooler's category: same panel again, its own entry. */
+    public static final RecipeType<GTChemicalReactionRecipe> VACUUM_TYPE =
+            type("vacuum_cooling");
+
     private static RecipeType<GTChemicalReactionRecipe> type(String path) {
         return new RecipeType<>(
                 ResourceLocation.fromNamespaceAndPath(GoldenTweaks.MODID, path),

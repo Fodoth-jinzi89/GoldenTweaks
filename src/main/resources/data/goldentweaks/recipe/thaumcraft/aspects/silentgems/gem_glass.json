@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "silentgems:gem_glass"
+  },
+  "aspects": {
+    "lux": 1,
+    "vitreus": 2
+  }
+}

@@ -26,7 +26,14 @@
     "casing=1,facing=north": {
       "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm"
     },
+    "casing=2,facing=north": {
+      "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm"
+    },
     "casing=1,facing=east": {
+      "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
+      "y": 90
+    },
+    "casing=2,facing=east": {
       "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
       "y": 90
     },
@@ -34,7 +41,15 @@
       "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
       "y": 180
     },
+    "casing=2,facing=south": {
+      "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
+      "y": 180
+    },
     "casing=1,facing=west": {
+      "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
+      "y": 270
+    },
+    "casing=2,facing=west": {
       "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
       "y": 270
     },
@@ -42,7 +57,15 @@
       "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
       "x": 270
     },
+    "casing=2,facing=up": {
+      "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
+      "x": 270
+    },
     "casing=1,facing=down": {
+      "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
+      "x": 90
+    },
+    "casing=2,facing=down": {
       "model": "goldentweaks:block/multiblock/gt_port_essentia_output_zpm",
       "x": 90
     }

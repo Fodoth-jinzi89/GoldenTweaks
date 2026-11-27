@@ -1,0 +1,5 @@
+{
+  "ftbfiltersystem.message.gave_or_filter": "已创建一个包含 %s 种物品的「任一满足」过滤器",
+  "ftbfiltersystem.message.or_filter": "以下 %s 种物品中的任意一种",
+  "ftbfiltersystem.message.hold_shift": "按住 Shift 查看详细信息"
+}

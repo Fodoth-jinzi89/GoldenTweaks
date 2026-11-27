@@ -1,0 +1,7 @@
+{
+  "ftbchunks.config.server.nether_portal_creation": "下界传送门创建",
+  "ftbchunks.config.server.nether_portal_creation.tooltip": "当原版尝试为某位玩家在其被其他团队认领的区块中创建下界传送门时如何处理：\nno_portal：允许玩家传送，但不创建传送门结构\nfailure：完全阻止传送\nallow：照常创建传送门",
+  "ftbchunks.nether_portal.failure": "无法传送至此：已阻止远程创建传送门！",
+  "ftbchunks.nether_portal.no_portal": "允许传送，但已阻止创建传送门",
+  "ftbchunks.admin_bypass_reminder": "提醒：FTB 区块管理员的保护绕过当前已启用。\n可用 '/ftbchunks admin bypass_protection' 切换。"
+}

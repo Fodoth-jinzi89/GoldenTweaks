@@ -198,6 +198,8 @@
     "goldentweaks:gt_port_essentia_output_uxv",
     "goldentweaks:gt_port_essentia_output_max",
     "goldentweaks:shell_pp",
-    "goldentweaks:advanced_chemical_plant_controller"
+    "goldentweaks:shell_aluminum",
+    "goldentweaks:advanced_chemical_plant_controller",
+    "goldentweaks:vacuum_cooler_controller"
   ]
 }

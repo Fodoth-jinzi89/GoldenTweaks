@@ -4,8 +4,7 @@
     "id": "goldentweaks:hexane_bucket"
   },
   "aspects": {
-    "permutatio": 8,
-    "alkimia": 4,
+    "permutatio": 12,
     "aqua": 15
   }
 }

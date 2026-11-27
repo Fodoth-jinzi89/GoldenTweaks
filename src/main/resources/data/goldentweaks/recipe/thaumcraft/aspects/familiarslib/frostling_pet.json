@@ -1,0 +1,13 @@
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:frostling_pet"
+    }
+  },
+  "aspects": {
+    "gelum": 3,
+    "praecantatio": 2
+  }
+}

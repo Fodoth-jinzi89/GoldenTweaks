@@ -1,0 +1,10 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:standing_lamp"
+  },
+  "aspects": {
+    "lux": 3
+  }
+}

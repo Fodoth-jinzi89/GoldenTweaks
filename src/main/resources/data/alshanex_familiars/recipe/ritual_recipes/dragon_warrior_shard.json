@@ -40,7 +40,10 @@
     }
   ],
   "result": {
-    "id": "alshanex_familiars:dragon_warrior_shard"
+    "id": "familiarslib:familiar_egg",
+    "components": {
+      "familiarslib:familiar_type": "alshanex_familiars:dragon_warrior_pet"
+    }
   },
   "particle_type": "minecraft:dragon_breath"
 }

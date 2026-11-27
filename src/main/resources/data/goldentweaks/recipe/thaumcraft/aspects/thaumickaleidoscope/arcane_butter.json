@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumickaleidoscope:arcane_butter"
+  },
+  "aspects": {
+    "fames": 2,
+    "praecantatio": 2,
+    "victus": 1
+  }
+}

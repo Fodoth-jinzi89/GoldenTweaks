@@ -43,12 +43,37 @@ import java.util.Map;
 public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
 
     /**
-     * The CT layout a casing sheet uses.
+     * The CT layout a casing sheet uses, which depends on how that casing's art was drawn.
      *
-     * <p>A four-direction sheet: a plate connects along the four edges of each face, which is what
-     * {@code _ctm} art provides. The corner-aware layouts would expect a larger sheet.</p>
+     * <p>{@code OMNIDIRECTIONAL} reads the four diagonals as well as the edges, so a plate meeting
+     * another diagonally gets a concave inner corner rather than a straight seam. That needs an 8x8
+     * sheet of 47 usable cells, which in turn needs four corner marks the 4x4 art has no pixel for.</p>
+     *
+     * <p>A casing whose sheet has not been converted has to stay on {@code RECTANGLE}: its {@code _ctm}
+     * is 4x4, and reading it with the eight-direction layout would slice each cell into quarters. Which
+     * one applies is declared by the block, not read off the sheet — see {@link #resolveType}.</p>
+     *
+     * <p>Only the converted sheet ships. The 4x4 sheet and the corner tile it is built from are art
+     * sources; they live under {@code arts/} and stay out of the jar.</p>
      */
-    private static final CTType TYPE = AllCTTypes.RECTANGLE;
+    private static CTType TYPE_OMNI = AllCTTypes.OMNIDIRECTIONAL;
+    private static CTType TYPE_EDGES = AllCTTypes.RECTANGLE;
+
+    /**
+     * Every layout a casing may name, keyed by the name used in the block registration.
+     *
+     * <p>Naming is needed because four of the eight layouts are 4x4 sheets — CROSS, ROOF, ROOF_STAIR
+     * and RECTANGLE — so the sheet's size cannot tell them apart.</p>
+     */
+    private static final Map<String, CTType> NAMED_LAYOUTS = Map.of(
+            "HORIZONTAL", AllCTTypes.HORIZONTAL,
+            "HORIZONTAL_KRYPPERS", AllCTTypes.HORIZONTAL_KRYPPERS,
+            "VERTICAL", AllCTTypes.VERTICAL,
+            "OMNIDIRECTIONAL", AllCTTypes.OMNIDIRECTIONAL,
+            "ROOF", AllCTTypes.ROOF,
+            "ROOF_STAIR", AllCTTypes.ROOF_STAIR,
+            "CROSS", AllCTTypes.CROSS,
+            "RECTANGLE", AllCTTypes.RECTANGLE);
 
     /** A shift entry for one (drawn sheet, connected sheet) pair. */
     private record Shift(ResourceLocation drawn, ResourceLocation connected) {
@@ -63,6 +88,15 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
      * registry throws {@link java.util.ConcurrentModificationException}.</p>
      */
     private static volatile Map<Shift, CTSpriteShiftEntry> SHIFTS = Map.of();
+
+    /**
+     * Which layout each casing's art uses, resolved alongside {@link #SHIFTS}.
+     *
+     * <p>Kept separate from the shifts because {@code getDataType} is asked during chunk meshing and
+     * must not touch the atlas there. Emptied until the first stitch, during which every casing falls
+     * back to the edges-only layout — which is what its art is until proven otherwise.</p>
+     */
+    private static volatile Map<Block, CTType> TYPES = Map.of();
 
     public GTPortCasingBehaviour() {
         super();
@@ -114,10 +148,29 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
         return mine != null && mine == casingOf(otherState);
     }
 
+    /**
+     * The layout to decode this cell's neighbours with.
+     *
+     * <p>`CTModel` calls this to pick the index formula, so it has to describe the sheet actually on
+     * the plate — which is why it is answered per casing rather than from a shared constant. Answering
+     * {@code OMNIDIRECTIONAL} for a casing whose art is still 4x4 would sample a quarter-cell and shift
+     * every quad into the wrong place.</p>
+     */
     @Override
     public CTType getDataType(BlockAndTintGetter level, BlockPos pos, BlockState state,
                               Direction direction) {
-        return TYPE;
+        return typeOf(casingOf(state));
+    }
+
+    /**
+     * The layout a casing's art uses: eight-direction when it has corner marks, else edges only.
+     *
+     * <p>Read from {@link #TYPES}, which is resolved once per stitch rather than per quad: this runs for
+     * every face of every plate while chunks are meshed, and asking the atlas there would put a map
+     * lookup on the meshing path for a value that cannot change between stitches.</p>
+     */
+    private static CTType typeOf(Block casing) {
+        return casing == null ? TYPE_EDGES : TYPES.getOrDefault(casing, TYPE_EDGES);
     }
 
     /** The casing a state draws, or {@code null} when its block draws none. */
@@ -129,8 +182,8 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
 
     /** Whether a sprite is a casing's own sheet, and so a plate that may be re-skinned. */
     private static boolean isCasingSheet(ResourceLocation sprite) {
-        for (var casing : GTMultiblockBlocks.CASINGS) {
-            if (sprite.equals(sheetOf(casing.get()))) {
+        for (Block casing : allCasings()) {
+            if (sprite.equals(sheetOf(casing))) {
                 return true;
             }
         }
@@ -160,26 +213,83 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
      * {@code _ctm} art exists.</p>
      */
     public static void rebuildShifts() {
+        TextureAtlas atlas = Minecraft.getInstance().getModelManager()
+                .getAtlas(TextureAtlas.LOCATION_BLOCKS);
+
+        java.util.List<Block> casings = allCasings();
+        Map<Block, CTType> types = new HashMap<>();
         Map<Shift, CTSpriteShiftEntry> built = new HashMap<>();
-        for (var drawn : GTMultiblockBlocks.CASINGS) {
-            ResourceLocation drawnSheet = sheetOf(drawn.get());
+        for (Block drawn : casings) {
+            ResourceLocation drawnSheet = sheetOf(drawn);
             if (drawnSheet == null) {
                 continue;
             }
-            for (var connected : GTMultiblockBlocks.CASINGS) {
-                ResourceLocation connectedSheet = connectedSheetOf(connected.get());
+            for (Block target : casings) {
+                ResourceLocation connectedSheet = connectedSheetOf(target);
                 if (connectedSheet == null) {
                     continue;
                 }
+                // The type belongs to the sheet being sampled, so it is read from that sheet's own
+                // size rather than from anything declared beside it.
+                CTType type = types.computeIfAbsent(target, block -> resolveType(block, atlas));
                 Shift key = new Shift(drawnSheet, connectedSheet);
-                CTSpriteShiftEntry entry = buildShift(key);
+                CTSpriteShiftEntry entry = buildShift(key, type, atlas);
                 if (entry != null) {
                     built.put(key, entry);
                 }
             }
         }
+        TYPES = Map.copyOf(types);
         SHIFTS = Map.copyOf(built);
-        GoldenTweaks.LOGGER.info("[GT] casing shifts resolved: {}", built.size());
+
+        // The sheet's pixel width decides the layout and the layout decides how indices address the
+        // sheet, so both are reported: a wrong width here shows up in game as cells reading from the
+        // wrong place, which is otherwise very hard to attribute.
+        for (Block block : casings) {
+            ResourceLocation sheet = connectedSheetOf(block);
+            int width = -1;
+            if (atlas != null && sheet != null) {
+                width = atlas.getSprite(sheet).contents().width();
+            }
+            GoldenTweaks.LOGGER.info("[GT] casing {}: sheet={} width={} layout={}",
+                    BuiltInRegistries.BLOCK.getKey(block), sheet, width,
+                    typeOf(block).getId().getPath().toUpperCase(java.util.Locale.ROOT));
+        }
+        GoldenTweaks.LOGGER.info("[GT] casing shifts resolved: {} ({} with corner art)",
+                built.size(), types.values().stream().filter(t -> t == TYPE_OMNI).count());
+    }
+
+    /**
+     * The layout a casing's connected sheet is drawn in, read from what the casing declares.
+     *
+     * <p>Nothing is inferred from the sheet's dimensions. Four of the eight layouts are 4x4 sheets, so a
+     * size cannot tell CROSS from ROOF from ROOF_STAIR from RECTANGLE — and a wrong guess draws the
+     * wrong cells with no visible error, only art that looks subtly off. Every casing therefore names
+     * its layout; one that names nothing gets the edges-only default, which at least draws correctly
+     * for that layout.</p>
+     */
+    private static CTType resolveType(Block casing, TextureAtlas atlas) {
+        if (casing instanceof net.fodoth.skina.goldentweaks.content.multiblock.GTShellBlock shell) {
+            String named = shell.ctLayout();
+            if (named != null) {
+                CTType type = NAMED_LAYOUTS.get(named);
+                if (type != null) {
+                    return type;
+                }
+            }
+        }
+        return TYPE_EDGES;
+    }
+
+    /**
+     * Every casing whose sheet should be resolved.
+     */
+    private static java.util.List<Block> allCasings() {
+        java.util.List<Block> all = new java.util.ArrayList<>();
+        for (var casing : GTMultiblockBlocks.CASINGS) {
+            all.add(casing.get());
+        }
+        return all;
     }
 
     /**
@@ -206,17 +316,15 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
      * <p>Called from {@link #rebuildShifts} and nowhere else: it registers two {@link StitchedSprite}s,
      * which is not safe on a chunk-mesh worker.</p>
      */
-    private static CTSpriteShiftEntry buildShift(Shift key) {
+    private static CTSpriteShiftEntry buildShift(Shift key, CTType type, TextureAtlas atlas) {
         // Constructed here rather than through `CTSpriteShifter.getCT`: that helper caches its entry on
         // the first call and never re-runs the texture lookup, so an entry built before the atlas was
         // readable keeps two null sprites for the rest of the session.
-        CTSpriteShiftEntry entry = new CTSpriteShiftEntry(TYPE);
+        CTSpriteShiftEntry entry = new CTSpriteShiftEntry(type);
         entry.set(key.drawn(), key.connected());
 
         // `set` only registers proxies; they are filled by this callback, which otherwise ran before
         // this entry existed. Re-running it now fills this one from the current atlas.
-        TextureAtlas atlas = Minecraft.getInstance().getModelManager()
-                .getAtlas(TextureAtlas.LOCATION_BLOCKS);
         if (atlas != null) {
             StitchedSprite.onTextureStitchPost(atlas);
         }

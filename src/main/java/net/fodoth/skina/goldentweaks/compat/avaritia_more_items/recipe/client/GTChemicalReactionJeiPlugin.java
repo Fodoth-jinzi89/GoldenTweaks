@@ -11,6 +11,8 @@ import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReacti
 import java.util.List;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactionRecipes;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMultiblock;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolerMultiblock;
+import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTVacuumCoolingRecipes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -55,7 +57,10 @@ public final class GTChemicalReactionJeiPlugin implements IModPlugin {
                 new GTChemicalReactionJeiCategory(guiHelper),
                 new GTChemicalReactionJeiCategory(guiHelper,
                         GTChemicalReactionJeiCategory.ADVANCED_TYPE, "advanced_chemical_reaction",
-                        new ItemStack(GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get())));
+                        new ItemStack(GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get())),
+                new GTChemicalReactionJeiCategory(guiHelper,
+                        GTChemicalReactionJeiCategory.VACUUM_TYPE, "vacuum_cooling",
+                        new ItemStack(GTVacuumCoolerMultiblock.MACHINE_ITEM.get())));
     }
 
     @Override
@@ -74,6 +79,8 @@ public final class GTChemicalReactionJeiPlugin implements IModPlugin {
                 valuesOf(level, GTChemicalReactionRecipes.TYPE.get()));
         registration.addRecipes(GTChemicalReactionJeiCategory.ADVANCED_TYPE,
                 valuesOf(level, GTAdvancedChemicalReactionRecipes.TYPE.get()));
+        registration.addRecipes(GTChemicalReactionJeiCategory.VACUUM_TYPE,
+                valuesOf(level, GTVacuumCoolingRecipes.TYPE.get()));
     }
 
     @Override
@@ -91,6 +98,11 @@ public final class GTChemicalReactionJeiPlugin implements IModPlugin {
         registration.addRecipeCatalyst(
                 new ItemStack(GTAdvancedChemicalReactorMultiblock.MACHINE_ITEM.get()),
                 GTChemicalReactionJeiCategory.ADVANCED_TYPE);
+        // The cooler is its own machine and runs only its own set, so it is a catalyst for that
+        // page alone.
+        registration.addRecipeCatalyst(
+                new ItemStack(GTVacuumCoolerMultiblock.MACHINE_ITEM.get()),
+                GTChemicalReactionJeiCategory.VACUUM_TYPE);
     }
 
     /** The recipes of one type, as plain values. */

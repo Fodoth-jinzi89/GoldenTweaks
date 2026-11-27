@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createnuclear:thorium_bucket"
+  },
+  "aspects": {
+    "aqua": 2,
+    "vas": 2
+  }
+}

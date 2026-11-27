@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "thaumicconcilium:warp_extraction_focus"
+  },
+  "aspects": {
+    "cognitio": 1,
+    "instrumentum": 2,
+    "praecantatio": 3
+  }
+}

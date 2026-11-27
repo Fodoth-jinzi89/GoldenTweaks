@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mystery_dynamics:arcane_turbine"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

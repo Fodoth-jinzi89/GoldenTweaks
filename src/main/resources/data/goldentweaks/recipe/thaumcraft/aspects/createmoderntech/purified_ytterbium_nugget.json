@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "createmoderntech:purified_ytterbium_nugget"
+  },
+  "aspects": {
+    "fabrico": 1,
+    "metallum": 2
+  }
+}

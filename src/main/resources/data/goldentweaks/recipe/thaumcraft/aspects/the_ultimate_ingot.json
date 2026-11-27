@@ -1,8 +1,0 @@
-{
-  "type": "goldentweaks:item_aspect",
-  "item": { "id": "extendedcrafting:the_ultimate_ingot" },
-  "aspects": {
-    "perfictus": 9,
-    "metallum": 9
-  }
-}

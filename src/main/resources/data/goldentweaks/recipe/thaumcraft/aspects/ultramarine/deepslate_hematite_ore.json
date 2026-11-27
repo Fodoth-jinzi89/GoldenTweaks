@@ -1,0 +1,12 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:deepslate_hematite_ore"
+  },
+  "aspects": {
+    "metallum": 2,
+    "saxum": 1,
+    "terra": 2
+  }
+}

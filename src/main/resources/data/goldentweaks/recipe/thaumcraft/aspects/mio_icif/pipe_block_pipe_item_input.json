@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:pipe/block_pipe_item_input"
+  },
+  "aspects": {
+    "fabrico": 2,
+    "machina": 1
+  }
+}

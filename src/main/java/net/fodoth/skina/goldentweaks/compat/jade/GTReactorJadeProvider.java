@@ -1,5 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.jade;
 
+import java.math.BigInteger;
+
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlockEntity;
 import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
@@ -81,8 +83,10 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
         root.putInt(CAPACITY, machine.energyCapacity());
         root.putInt(RATE, machine.getInputEnergyRate());
         // Next to the hatch rate on purpose: this is what the craft actually costs, and the two are
-        // what a player compares when deciding whether the hatches can carry it.
-        root.putInt(POWER, machine.activePowerDraw());
+        // what a player compares when deciding whether the hatches can carry it. Stored as a long
+        // because a parallel craft's bill can exceed the int range; saturated, since NBT has no
+        // unbounded integer and the panel only ever prints a figure.
+        root.putLong(POWER, clampPower(machine.activePowerDraw()));
         // The effective tier, not the raw one: a dual-hatch pair supplies a tier's worth more, and
         // the line sits directly above the power figure it has to agree with.
         root.putInt(ENERGY_TIER, machine.effectiveEnergyTier());
@@ -113,12 +117,14 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
                     entry.putString(PRODUCT_KIND, KIND_ITEM);
                     entry.putString(PRODUCT_ID,
                             BuiltInRegistries.ITEM.getKey(item.getItem()).toString());
-                    entry.putInt(PRODUCT_COUNT, item.getCount());
+                    // Long throughout: a parallel craft multiplies the per-craft amount, and the
+                    // panel would otherwise print a saturated figure as if it were the real one.
+                    entry.putLong(PRODUCT_COUNT, item.getCount());
                 }
                 case FLUID -> {
                     entry.putString(PRODUCT_KIND, KIND_FLUID);
                     entry.putString(PRODUCT_ID, stack.id().toString());
-                    entry.putInt(PRODUCT_COUNT, (int) Math.min(Integer.MAX_VALUE, stack.amount()));
+                    entry.putLong(PRODUCT_COUNT, stack.amount());
                 }
                 default -> {
                     // Chemicals and aspects have no icon Jade can build, but both have one in EMI, so
@@ -126,7 +132,7 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
                     entry.putString(PRODUCT_KIND, KIND_NAMED);
                     entry.putString(PRODUCT_REAL_KIND, stack.kind().name());
                     entry.putString(PRODUCT_ID, stack.id().toString());
-                    entry.putInt(PRODUCT_COUNT, (int) Math.min(Integer.MAX_VALUE, stack.amount()));
+                    entry.putLong(PRODUCT_COUNT, stack.amount());
                 }
             }
             if (listed) {
@@ -137,4 +143,14 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
 
         tag.put(ROOT, root);
     }
+
+    /** An exact power figure as the {@code long} NBT speaks, saturated rather than wrapped. */
+    private static long clampPower(BigInteger value) {
+        if (value.compareTo(LONG_MAX) >= 0) {
+            return Long.MAX_VALUE;
+        }
+        return Math.max(0L, value.longValue());
+    }
+
+    private static final BigInteger LONG_MAX = BigInteger.valueOf(Long.MAX_VALUE);
 }

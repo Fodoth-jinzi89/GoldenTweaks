@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "mio_icif:producer/block_lapis_reactor_coolant_injector"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

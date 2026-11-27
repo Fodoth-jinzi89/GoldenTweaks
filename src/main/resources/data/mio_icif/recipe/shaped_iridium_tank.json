@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PUP",
+    "U U",
+    "PUP"
+  ],
+  "key": {
+    "P": {"item": "mio_icif:resource/item_iridium_plate"},
+    "U": {
+      "type": "mio_icif:fluid_cell",
+      "fluid": "minecraft:empty"
+    }
+  },
+  "result": {
+    "id": "mio_icif:build/block_iridium_tank",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "maid_restaurant:cuboid_zone_definition"
+  },
+  "aspects": {
+    "corpus": 1,
+    "pannus": 2
+  }
+}

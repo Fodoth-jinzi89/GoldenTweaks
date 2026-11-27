@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "avaritia_integration:neutron_advanced_solar_generator"
+  },
+  "aspects": {
+    "machina": 3,
+    "potentia": 2
+  }
+}

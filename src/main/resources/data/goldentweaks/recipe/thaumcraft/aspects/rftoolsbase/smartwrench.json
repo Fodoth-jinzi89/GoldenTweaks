@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "rftoolsbase:smartwrench"
+  },
+  "aspects": {
+    "instrumentum": 2,
+    "metallum": 2
+  }
+}

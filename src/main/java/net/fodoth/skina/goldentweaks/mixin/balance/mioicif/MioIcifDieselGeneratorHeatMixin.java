@@ -64,11 +64,6 @@ public abstract class MioIcifDieselGeneratorHeatMixin {
         return original.call(blockEntity, GT_EV_OUTPUT);
     }
 
-    @ModifyConstant(method = "tick", constant = @Constant(longValue = 120L))
-    private static long gt$legacyFuelEnergy(long original) {
-        return GT_HEAT_PER_UNIT;
-    }
-
     @ModifyConstant(method = "scexReadFuelCredit", constant = @Constant(longValue = 120L))
     private static long gt$fuelCreditCap(long original) {
         return GT_HEAT_PER_UNIT;

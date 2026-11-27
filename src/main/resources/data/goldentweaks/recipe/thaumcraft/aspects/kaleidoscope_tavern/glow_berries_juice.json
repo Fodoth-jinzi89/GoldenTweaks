@@ -1,0 +1,11 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "kaleidoscope_tavern:glow_berries_juice"
+  },
+  "aspects": {
+    "fames": 1,
+    "herba": 2
+  }
+}

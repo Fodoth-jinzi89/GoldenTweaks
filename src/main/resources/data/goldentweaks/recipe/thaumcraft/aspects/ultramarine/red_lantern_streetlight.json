@@ -1,0 +1,10 @@
+
+{
+  "type": "goldentweaks:item_aspect",
+  "item": {
+    "id": "ultramarine:red_lantern_streetlight"
+  },
+  "aspects": {
+    "lux": 3
+  }
+}
