@@ -2,8 +2,8 @@ package net.fodoth.skina.goldentweaks.compat.jade;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.emi.emi.api.stack.EmiIngredient;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStacks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.phys.Vec2;

@@ -6,8 +6,8 @@ import com.simibubi.create.foundation.block.connected.CTType;
 import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
 import net.createmod.catnip.render.StitchedSprite;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTCasingProvider;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTCasingProvider;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.MissingTextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureAtlas;
@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.HashMap;
 import java.util.Map;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTShellBlock;
 
 /**
  * Connects every casing plate to the casing wall it sits in.
@@ -56,8 +57,8 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
      * <p>Only the converted sheet ships. The 4x4 sheet and the corner tile it is built from are art
      * sources; they live under {@code arts/} and stay out of the jar.</p>
      */
-    private static CTType TYPE_OMNI = AllCTTypes.OMNIDIRECTIONAL;
-    private static CTType TYPE_EDGES = AllCTTypes.RECTANGLE;
+    private static final CTType TYPE_OMNI = AllCTTypes.OMNIDIRECTIONAL;
+    private static final CTType TYPE_EDGES = AllCTTypes.RECTANGLE;
 
     /**
      * Every layout a casing may name, keyed by the name used in the block registration.
@@ -196,9 +197,6 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
             return null;
         }
         ResourceLocation id = BuiltInRegistries.BLOCK.getKey(casing);
-        if (id == null) {
-            return null;
-        }
         return ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/" + id.getPath() + "_ctm");
     }
 
@@ -221,9 +219,6 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
         Map<Shift, CTSpriteShiftEntry> built = new HashMap<>();
         for (Block drawn : casings) {
             ResourceLocation drawnSheet = sheetOf(drawn);
-            if (drawnSheet == null) {
-                continue;
-            }
             for (Block target : casings) {
                 ResourceLocation connectedSheet = connectedSheetOf(target);
                 if (connectedSheet == null) {
@@ -248,7 +243,7 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
         for (Block block : casings) {
             ResourceLocation sheet = connectedSheetOf(block);
             int width = -1;
-            if (atlas != null && sheet != null) {
+            if (sheet != null) {
                 width = atlas.getSprite(sheet).contents().width();
             }
             GoldenTweaks.LOGGER.info("[GT] casing {}: sheet={} width={} layout={}",
@@ -269,7 +264,7 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
      * for that layout.</p>
      */
     private static CTType resolveType(Block casing, TextureAtlas atlas) {
-        if (casing instanceof net.fodoth.skina.goldentweaks.content.multiblock.GTShellBlock shell) {
+        if (casing instanceof GTShellBlock shell) {
             String named = shell.ctLayout();
             if (named != null) {
                 CTType type = NAMED_LAYOUTS.get(named);
@@ -302,9 +297,6 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
     private static boolean isUsable(CTSpriteShiftEntry entry) {
         var original = entry.getOriginal();
         var target = entry.getTarget();
-        if (original == null || target == null) {
-            return false;
-        }
         ResourceLocation missing = MissingTextureAtlasSprite.getLocation();
         return !original.contents().name().equals(missing)
                 && !target.contents().name().equals(missing);
@@ -335,7 +327,6 @@ public class GTPortCasingBehaviour extends ConnectedTextureBehaviour.Base {
     /** The block texture a casing draws, from its registered id. */
     private static ResourceLocation sheetOf(Block casing) {
         ResourceLocation id = BuiltInRegistries.BLOCK.getKey(casing);
-        return id == null ? null
-                : ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/" + id.getPath());
+        return ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/" + id.getPath());
     }
 }

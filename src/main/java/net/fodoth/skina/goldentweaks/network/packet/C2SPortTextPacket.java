@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;

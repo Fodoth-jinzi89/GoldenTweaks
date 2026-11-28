@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.feature.avaritia_more_items;
 
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTExactEnergy;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTExactEnergy;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.recipe.MatchedMultiblockRecipe;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;

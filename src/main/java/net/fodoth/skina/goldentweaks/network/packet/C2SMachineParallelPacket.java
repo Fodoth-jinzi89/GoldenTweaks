@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMachineBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -50,7 +50,7 @@ public record C2SMachineParallelPacket(BlockPos pos, int limit) implements Custo
                 return;
             }
             if (player.level().getBlockEntity(pkt.pos())
-                    instanceof GTChemicalReactorMachineBlockEntity machine) {
+                    instanceof GTMachineBlockEntity machine) {
                 machine.setParallelLimit(pkt.limit());
             }
         });

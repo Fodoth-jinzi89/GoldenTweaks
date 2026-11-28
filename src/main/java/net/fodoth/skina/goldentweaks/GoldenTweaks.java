@@ -34,9 +34,9 @@ import net.fodoth.skina.goldentweaks.compat.thaumicbases.GTThaumicBasesFurnaceCo
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksClientConfig;
 import net.fodoth.skina.goldentweaks.config.GoldenTweaksCommonConfig;
 import net.fodoth.skina.goldentweaks.content.GoldenDandelion;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortCapabilities;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockCreativeTabs;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockBlocks;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortCapabilities;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockCreativeTabs;
 import net.fodoth.skina.goldentweaks.content.craftsmen.GTCraftsmenCreativeTabs;
 import net.fodoth.skina.goldentweaks.content.craftsmen.GTCraftsmenItems;
 import net.fodoth.skina.goldentweaks.content.reactors.GTReactorCreativeTabs;

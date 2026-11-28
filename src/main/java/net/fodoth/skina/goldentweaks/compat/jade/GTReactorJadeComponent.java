@@ -1,12 +1,12 @@
 package net.fodoth.skina.goldentweaks.compat.jade;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortTier;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMenu;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStacks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactorStatus;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortTier;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMachineMenu;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTEnergyFormat;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStacks;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactorStatus;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectNames;
 import net.fodoth.skina.goldentweaks.util.GTDurationFormat;
 import net.minecraft.ChatFormatting;
@@ -210,16 +210,16 @@ public final class GTReactorJadeComponent implements IBlockComponentProvider {
     @Nullable
     private static Component switchSummary(int flags) {
         List<Component> lit = new ArrayList<>();
-        if ((flags & GTChemicalReactorMenu.FLAG_LOCK_RECIPE) != 0) {
+        if ((flags & GTMachineMenu.FLAG_LOCK_RECIPE) != 0) {
             lit.add(Component.translatable("gui.goldentweaks.chemical_reactor.lock.short"));
         }
-        if ((flags & GTChemicalReactorMenu.FLAG_VOID_OUTPUT) != 0) {
+        if ((flags & GTMachineMenu.FLAG_VOID_OUTPUT) != 0) {
             lit.add(Component.translatable("gui.goldentweaks.chemical_reactor.void.short"));
         }
-        if ((flags & GTChemicalReactorMenu.FLAG_BATCH_MODE) != 0) {
+        if ((flags & GTMachineMenu.FLAG_BATCH_MODE) != 0) {
             lit.add(Component.translatable("gui.goldentweaks.chemical_reactor.batch.short"));
         }
-        if ((flags & GTChemicalReactorMenu.FLAG_ISOLATE_INPUT) != 0) {
+        if ((flags & GTMachineMenu.FLAG_ISOLATE_INPUT) != 0) {
             lit.add(Component.translatable("gui.goldentweaks.chemical_reactor.isolate.short"));
         }
         if (lit.isEmpty()) {

@@ -2,11 +2,11 @@ package net.fodoth.skina.goldentweaks.content.multiblock.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorOrientation;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockBuilder;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockPattern;
+import net.fodoth.skina.goldentweaks.content.multiblock.basic_chemical_plant.GTChemicalReactorOrientation;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockBuilder;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockPattern;
 import net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.LevelRenderer;

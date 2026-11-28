@@ -3,8 +3,8 @@ package net.fodoth.skina.goldentweaks.compat.jade;
 import java.math.BigInteger;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlockEntity;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMachineBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStack;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -71,7 +71,7 @@ public final class GTReactorJadeProvider implements IServerDataProvider<BlockAcc
 
     @Override
     public void appendServerData(CompoundTag tag, BlockAccessor accessor) {
-        if (!(accessor.getBlockEntity() instanceof GTChemicalReactorMachineBlockEntity machine)) {
+        if (!(accessor.getBlockEntity() instanceof GTMachineBlockEntity machine)) {
             return;
         }
 

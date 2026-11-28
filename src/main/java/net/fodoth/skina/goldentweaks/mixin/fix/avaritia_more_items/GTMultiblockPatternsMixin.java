@@ -2,7 +2,7 @@ package net.fodoth.skina.goldentweaks.mixin.fix.avaritia_more_items;
 
 import com.google.gson.JsonElement;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockStructures;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockStructures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.profiling.ProfilerFiller;

@@ -1,9 +1,9 @@
 package net.fodoth.skina.goldentweaks.compat.thaumicenergistics;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlockEntity;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortKind;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortStorages;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortKind;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortStorages;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.entity.BlockEntity;

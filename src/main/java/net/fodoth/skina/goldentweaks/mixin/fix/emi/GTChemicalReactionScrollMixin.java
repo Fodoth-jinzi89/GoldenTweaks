@@ -3,7 +3,7 @@ package net.fodoth.skina.goldentweaks.mixin.fix.emi;
 import dev.emi.emi.api.widget.Widget;
 import dev.emi.emi.screen.RecipeScreen;
 import dev.emi.emi.screen.WidgetGroup;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.recipe.client.GTChemicalReactionPagedGrid;
+import net.fodoth.skina.goldentweaks.content.multiblock.recipe.client.GTChemicalReactionPagedGrid;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;

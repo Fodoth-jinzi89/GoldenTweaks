@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.jade;
 
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlock;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlock;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMachineBlock;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlock;
 import net.neoforged.fml.ModList;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
@@ -25,13 +25,13 @@ public final class GTJadePlugin implements IWailaPlugin {
     @Override
     public void register(IWailaCommonRegistration registration) {
         registration.registerBlockDataProvider(new GTReactorJadeProvider(),
-                GTChemicalReactorMachineBlock.class);
+                GTMachineBlock.class);
     }
 
     @Override
     public void registerClient(IWailaClientRegistration registration) {
         registration.registerBlockComponent(new GTReactorJadeComponent(),
-                GTChemicalReactorMachineBlock.class);
+                GTMachineBlock.class);
         // Guarded: the port classes reference AMI's port types, and naming one of them without the
         // mod present fails class verification outright.
         if (ModList.get().isLoaded("avaritia_more_items")) {

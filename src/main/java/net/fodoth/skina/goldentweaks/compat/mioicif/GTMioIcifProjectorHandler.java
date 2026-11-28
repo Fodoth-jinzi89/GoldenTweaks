@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.mioicif;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockBlocks;
 import net.fodoth.skina.goldentweaks.network.packet.S2CShowMultiblockProjectionPacket;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

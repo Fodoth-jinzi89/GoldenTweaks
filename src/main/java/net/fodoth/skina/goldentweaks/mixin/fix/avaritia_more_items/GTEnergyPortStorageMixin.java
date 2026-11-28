@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.avaritia_more_items;
 
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyBufferFix;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTEnergyBufferFix;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.neoforged.neoforge.energy.EnergyStorage;

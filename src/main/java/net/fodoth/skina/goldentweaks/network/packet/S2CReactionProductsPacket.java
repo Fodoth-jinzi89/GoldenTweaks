@@ -1,8 +1,8 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionProducts;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionProducts;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;

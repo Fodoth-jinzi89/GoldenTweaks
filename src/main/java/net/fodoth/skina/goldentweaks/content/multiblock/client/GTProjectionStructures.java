@@ -3,7 +3,7 @@ package net.fodoth.skina.goldentweaks.content.multiblock.client;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTMultiblockPattern;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockPattern;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;

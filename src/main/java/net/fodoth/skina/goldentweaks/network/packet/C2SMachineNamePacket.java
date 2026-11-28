@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.network.packet;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTChemicalReactorMachineBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMachineBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -54,7 +54,7 @@ public record C2SMachineNamePacket(BlockPos pos, String name) implements CustomP
                 return;
             }
             if (player.level().getBlockEntity(pkt.pos())
-                    instanceof GTChemicalReactorMachineBlockEntity machine) {
+                    instanceof GTMachineBlockEntity machine) {
                 // An empty name clears the override, which is what deleting the box should do.
                 machine.setCustomName(pkt.name().isBlank()
                         ? null : Component.literal(pkt.name()));

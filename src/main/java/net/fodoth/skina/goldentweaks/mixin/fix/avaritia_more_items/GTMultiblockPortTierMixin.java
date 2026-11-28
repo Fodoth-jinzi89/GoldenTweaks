@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.avaritia_more_items;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlock;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.weibai.avaritia_more_items.common.blocks.abstracts.multiblock.port.MultiblockPortTier;

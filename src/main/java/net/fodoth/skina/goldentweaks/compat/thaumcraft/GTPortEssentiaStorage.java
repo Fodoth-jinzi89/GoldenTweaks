@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.compat.thaumcraft;
 
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStack;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

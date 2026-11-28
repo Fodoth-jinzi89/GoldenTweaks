@@ -1,6 +1,6 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.avaritia_more_items;
 
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTRecipeMatcherBridge;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTRecipeMatcherBridge;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.items.IItemHandler;

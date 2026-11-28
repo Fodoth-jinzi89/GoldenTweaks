@@ -1,8 +1,8 @@
 package net.fodoth.skina.goldentweaks.content.multiblock.client;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTMultiblockBlocks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortTier;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTMultiblockBlocks;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortTier;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.mixin.fix.thaumcraft;
 
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlockEntity;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortKind;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortKind;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;

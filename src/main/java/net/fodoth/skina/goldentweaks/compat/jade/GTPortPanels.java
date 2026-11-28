@@ -1,7 +1,7 @@
 package net.fodoth.skina.goldentweaks.compat.jade;
 
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlock;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortKind;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlock;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortKind;
 import snownee.jade.api.Accessor;
 import snownee.jade.api.BlockAccessor;
 

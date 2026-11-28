@@ -4,7 +4,7 @@ import appeng.api.integrations.emi.EmiStackConverters;
 import appeng.api.stacks.AEKey;
 import appeng.api.stacks.GenericStack;
 import dev.emi.emi.api.stack.EmiStack;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.recipe.client.GTEssentiaEmiStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.recipe.client.GTEssentiaEmiStack;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTScexAspectBridge;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.ModList;

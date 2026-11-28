@@ -2,7 +2,7 @@ package net.fodoth.skina.goldentweaks.content.multiblock.client;
 
 import com.simibubi.create.foundation.block.connected.CTModel;
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTCasingProvider;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTCasingProvider;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;

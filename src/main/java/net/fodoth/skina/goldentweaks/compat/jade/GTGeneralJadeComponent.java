@@ -1,11 +1,11 @@
 package net.fodoth.skina.goldentweaks.compat.jade;
 
 import net.fodoth.skina.goldentweaks.GoldenTweaks;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTEnergyFormat;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTEnergyFormat;
 import net.fodoth.skina.goldentweaks.compat.thaumcraft.GTAspectNames;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortBlockEntity;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortGeneralStorage;
-import net.fodoth.skina.goldentweaks.content.multiblock.GTPortKind;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortBlockEntity;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortGeneralStorage;
+import net.fodoth.skina.goldentweaks.content.multiblock.port.GTPortKind;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

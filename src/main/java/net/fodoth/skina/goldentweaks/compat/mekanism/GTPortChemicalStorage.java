@@ -2,7 +2,7 @@ package net.fodoth.skina.goldentweaks.compat.mekanism;
 
 import mekanism.api.Action;
 import mekanism.api.MekanismAPI;
-import net.fodoth.skina.goldentweaks.compat.avaritia_more_items.GTReactionStack;
+import net.fodoth.skina.goldentweaks.content.multiblock.common.GTReactionStack;
 import mekanism.api.chemical.ChemicalStack;
 import mekanism.api.chemical.IChemicalHandler;
 import net.minecraft.core.HolderLookup;
