@@ -79,14 +79,14 @@ public abstract class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
     /** Secondary captions are drawn smaller so two of them fit under their headings. */
     protected static final float CAPTION_SCALE = 0.75F;
 
-    /** The storage grid's scroll rail, in panel coordinates. */
-    protected static final int RAIL_X = 140;
-    protected static final int RAIL_Y = 28;
-    protected static final int RAIL_WIDTH = 8;
-    protected static final int RAIL_HEIGHT = 58;
-
+    /**
+     * The storage grid's scroll rail, in panel coordinates.
+     *
+     * <p>The rail owns its own geometry and hit test, so nothing outside this line needs the raw
+     * numbers: the drawing, the click and the scroll-to-row all ask the component.</p>
+     */
     private static final GTScrollRail RAIL = GTScrollRail.bordered(
-            RAIL_X, RAIL_Y, RAIL_WIDTH, RAIL_HEIGHT,
+            140, 28, 8, 58,
             0xFF8B8B8B, 0xFF373737, 0xFFC6C6C6, 10);
 
     /**
@@ -511,8 +511,7 @@ public abstract class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
 
         // Clicking the rail jumps to that position, the way a page scrollbar behaves.
         if (button == 0 && scrolls()
-                && hits(this.leftPos + RAIL_X, this.topPos + RAIL_Y,
-                        RAIL_WIDTH, RAIL_HEIGHT, mouseX, mouseY)) {
+                && RAIL.hits(mouseX, mouseY, this.leftPos, this.topPos)) {
             scrollTo(mouseY);
             return true;
         }
@@ -786,9 +785,7 @@ public abstract class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
             this.scrollRow = 0;
             return;
         }
-        int trackTop = this.topPos + RAIL_Y + 1;
-        int trackHeight = RAIL_HEIGHT - 2;
-        double progress = (mouseY - trackTop) / (double) trackHeight;
+        double progress = RAIL.fractionAt(mouseY, this.topPos);
         this.scrollRow = Mth.clamp((int) Math.round(progress * max), 0, max);
     }
 
@@ -954,7 +951,8 @@ public abstract class GTPortScreen extends AbstractContainerScreen<GTPortMenu> {
 
     /** The rail beside the grid: a track plus a marker whose size shows how much fits. */
     protected void drawRail(GuiGraphics graphics) {
-        RAIL.draw(graphics, totalRows(), GTPortMenu.STORAGE_ROWS, this.scrollRow);
+        RAIL.draw(graphics, totalRows(), GTPortMenu.STORAGE_ROWS, this.scrollRow,
+                this.leftPos, this.topPos);
     }
 
     /**

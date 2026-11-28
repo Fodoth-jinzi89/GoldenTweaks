@@ -1078,8 +1078,9 @@ public class GTMachineScreen extends AbstractContainerScreen<GTMachineMenu> {
         if (rowCount <= visibleRows) {
             return;
         }
-        // Panel coordinates: renderLabels' pose is already shifted to the panel origin.
-        LIST_RAIL.draw(graphics, rowCount, visibleRows, (int) Math.round(this.scrollTarget));
+        // Drawn from renderLabels, whose pose is already shifted to the panel origin, so the rail's
+        // own panel coordinates need no further offset.
+        LIST_RAIL.draw(graphics, rowCount, visibleRows, (int) Math.round(this.scrollTarget), 0, 0);
     }
 
     /** Current product list for this machine, read from the client cache. */
