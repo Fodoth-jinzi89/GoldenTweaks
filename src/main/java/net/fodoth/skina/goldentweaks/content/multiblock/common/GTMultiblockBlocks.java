@@ -296,9 +296,8 @@ public final class GTMultiblockBlocks {
         if (ModList.get().isLoaded("avaritia_more_items") && structureForHost(state) != null) {
             return true;
         }
-        return net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures.available()
-                && net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures
-                        .layoutFor(state) != null;
+        return GTMioIcifStructures.available()
+                && GTMioIcifStructures.layoutFor(state) != null;
     }
 
     /**
@@ -308,9 +307,8 @@ public final class GTMultiblockBlocks {
      * properties of ours, so they need their own handling instead of {@link #rotateHost}.</p>
      */
     public static boolean isMioIcifHost(BlockState state) {
-        return net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures.available()
-                && net.fodoth.skina.goldentweaks.compat.mioicif.GTMioIcifStructures
-                        .layoutFor(state) != null;
+        return GTMioIcifStructures.available()
+                && GTMioIcifStructures.layoutFor(state) != null;
     }
 
     /** Current orientation of a host block, read from the blockstate. */

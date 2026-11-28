@@ -15,7 +15,6 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import net.fodoth.skina.goldentweaks.content.multiblock.basic_chemical_plant.GTChemicalReactorMultiblock;
-import net.fodoth.skina.goldentweaks.content.multiblock.client.GTMachineScreen;
 
 /**
  * Container menu of the basic chemical reaction kettle.
